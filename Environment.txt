@@ -1,0 +1,1 @@
+.\bsp_Device;.\bsp_System;.\MM_Device\CMSIS;.\MM_Device\MM32F327x\HAL_Lib\Inc;.\MM_Device\MM32F327x\Include;.\MM_Device\MM32F327x
