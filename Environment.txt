@@ -1,1 +1,1 @@
-.\bsp_Device;.\bsp_System;.\MM_Device\CMSIS;.\MM_Device\MM32F327x\HAL_Lib\Inc;.\MM_Device\MM32F327x\Include;.\MM_Device\MM32F327x
+.\bsp_Device;.\bsp_System;.\MM_Device\CMSIS;.\MM_Device\MM32F327x\HAL_Lib\Inc;.\MM_Device\MM32F327x\Include;.\MM_Device\MM32F327x;.\bsp_Device\RT_APP;.\RT_Thread\bsp;.\RT_Thread\components\finsh;.\RT_Thread\components\device;.\RT_Thread\include;.\RT_Thread\include\libc;.\RT_Thread\src

@@ -40,24 +40,24 @@ void IIC_Delay(void){
 //	IIC1SCKº¯Êý
 char IIC1_SCK(char var){
 	if(var==IIC_RESET){
-		HAL_GPIO_WritePin(IIC_SCK_GPIO_Port,IIC_SCK_Pin,GPIO_PIN_RESET);
+		GPIO_ResetBits(GPIOB,GPIO_Pin_15);
 		return 2;}
 	else if(var==IIC_SET){
-		HAL_GPIO_WritePin(IIC_SCK_GPIO_Port,IIC_SCK_Pin,GPIO_PIN_SET);
+		GPIO_SetBits(GPIOB,GPIO_Pin_15);
 		return 2;}
-	else{
-		return HAL_GPIO_ReadPin(IIC_SCK_GPIO_Port,IIC_SCK_Pin);}
+	else
+		return GPIO_ReadOutputDataBit(GPIOB,GPIO_Pin_15);
 	}
 //	IIC1SDAº¯Êý
 char IIC1_SDA(char var){
 	if(var==IIC_RESET){
-		HAL_GPIO_WritePin(IIC_SDA_GPIO_Port,IIC_SDA_Pin,GPIO_PIN_RESET);
+		GPIO_ResetBits(GPIOB,GPIO_Pin_14);
 		return 2;}
 	else if(var==IIC_SET){
-		HAL_GPIO_WritePin(IIC_SDA_GPIO_Port,IIC_SDA_Pin,GPIO_PIN_SET);
+		GPIO_ResetBits(GPIOB,GPIO_Pin_14);
 		return 2;}
-	else{
-		return HAL_GPIO_ReadPin(IIC_SDA_GPIO_Port,IIC_SDA_Pin);}
+	else
+		return GPIO_ReadOutputDataBit(GPIOB,GPIO_Pin_14);
 	}
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //----------------------------------------------------------------------------------------------------

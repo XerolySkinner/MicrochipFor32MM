@@ -21,6 +21,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //----------------------------------------------------------------------------------------------------
 //	头文件
+#include "User.h"
 #include "vartable.h"
 #include "bsp_MM32F3277G9P.h"
 #include "bsp_Console.h"
@@ -33,7 +34,7 @@
 //	变量和定义
 //	
 #define		console_num(num)	(*((num*)(console_buff+1)))
-#define		CONSOLE_BUFF_LEN 32
+#define		CONSOLE_BUFF_LEN 	USER_CONSOLE_STACK
 uint8_t 	console_buff[CONSOLE_BUFF_LEN]={0};
 struct		console_pack consolePack={0,0,0};
 //////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -70,11 +71,14 @@ void HAL_UART_IdleCpltCallback(UART_TypeDef *huart){
 		if(console_buff[0]==0){
 			switch(console_buff[1]){
 			case 0:
-				printf("按钮0\r\n");break;
+				printf("按钮0\r\n");
+				break;
 			case 1:
-				printf("按钮1\r\n");break;
+				printf("按钮1\r\n");
+				break;
 			default:
-				printf("按钮未知\r\n");break;}}
+				printf("按钮未知\r\n");
+				break;}}
 //----------------------------------------------------------------------------------------------------
 //	包识别区-默认小端接收方式
 		if(console_buff[0]==1){

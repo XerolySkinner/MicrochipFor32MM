@@ -23,6 +23,8 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //----------------------------------------------------------------------------------------------------
 //	头文件
+#include "User.h"
+#include "bsp_MM32F3277G9P.h"
 #include "mm32_device.h"
 #include "hal_gpio.h"
 #include "hal_rcc.h"
@@ -31,11 +33,14 @@
 #include "hal_misc.h"
 #include "hal_uart.h"
 #include "hal_spi.h"
+
+#include "bsp_RT.h"
+#include "bsp_Console.h"
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //----------------------------------------------------------------------------------------------------
 //	全局变量
 //
-#define		TESUTO_UART		UART1		//调试通信用
+void SystemInit (void);
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //----------------------------------------------------------------------------------------------------
 //	程序
@@ -59,104 +64,80 @@ void MM32_RCC_Init(void){//时钟由此开启
 	RCC_APB1PeriphClockCmd(RCC_APB1ENR_TIM4,ENABLE);
 	return;}
 //----------------------------------------------------------------------------------------------------
-void MM32_GPIO_Init(void){//管脚初始化
+void MM32_GPIO_Startup(GPIO_TypeDef* gpio,u16 init_struct,GPIOMode_TypeDef set){
 	GPIO_InitTypeDef GPIOSET_Init;
 	GPIO_StructInit(&GPIOSET_Init);
-	//管脚启用
-	GPIOSET_Init.GPIO_Speed=GPIO_Speed_50MHz;
-	GPIOSET_Init.GPIO_Mode=GPIO_Mode_Out_PP;
-	//涉及灯
-		GPIOSET_Init.GPIO_Pin=GPIO_Pin_13;
-		GPIO_Init(GPIOB,&GPIOSET_Init);
-		GPIOSET_Init.GPIO_Pin=GPIO_Pin_2;
-		GPIO_Init(GPIOH,&GPIOSET_Init);
-	//涉及蜂鸣器
-	GPIOSET_Init.GPIO_Pin=GPIO_Pin_12;
-		GPIO_Init(GPIOD,&GPIOSET_Init);
-	//涉及PWM
+		GPIOSET_Init.GPIO_Mode	= set;
+		GPIOSET_Init.GPIO_Pin	= init_struct;
+		GPIOSET_Init.GPIO_Speed	= GPIO_Speed_50MHz;
+	GPIO_Init(gpio,&GPIOSET_Init);
+	return;}
+//----------------------------------------------------------------------------------------------------
+void MM32_GPIO_Init(void){
+	//	涉及灯
+	MM32_GPIO_Startup(GPIOB,GPIO_Pin_13,GPIO_Mode_Out_PP);
+	MM32_GPIO_Startup(GPIOH,GPIO_Pin_2,GPIO_Mode_Out_PP);
+	//	涉及蜂鸣器
+	MM32_GPIO_Startup(GPIOD,GPIO_Pin_12,GPIO_Mode_Out_PP);
+	//	涉及PWM
 	GPIO_PinAFConfig(GPIOA, GPIO_PinSource0, GPIO_AF_1);
 	GPIO_PinAFConfig(GPIOA, GPIO_PinSource1, GPIO_AF_1);
 	GPIO_PinAFConfig(GPIOA, GPIO_PinSource2, GPIO_AF_1);
 	GPIO_PinAFConfig(GPIOA, GPIO_PinSource3, GPIO_AF_1);
-
-	GPIOSET_Init.GPIO_Mode=GPIO_Mode_AF_PP;
-	GPIOSET_Init.GPIO_Pin=
-		GPIO_Pin_0|
-		GPIO_Pin_1|
-		GPIO_Pin_2|
-		GPIO_Pin_3;
-		GPIO_Init(GPIOA,&GPIOSET_Init);
-	//涉及编码器
+	
+	MM32_GPIO_Startup(GPIOA,GPIO_Pin_0,GPIO_Mode_AF_PP);
+	MM32_GPIO_Startup(GPIOA,GPIO_Pin_1,GPIO_Mode_AF_PP);
+	MM32_GPIO_Startup(GPIOA,GPIO_Pin_2,GPIO_Mode_AF_PP);
+	MM32_GPIO_Startup(GPIOA,GPIO_Pin_3,GPIO_Mode_AF_PP);
+	//	涉及编码器
 	GPIO_PinAFConfig(GPIOB, GPIO_PinSource4, GPIO_AF_2);
 	GPIO_PinAFConfig(GPIOB, GPIO_PinSource5, GPIO_AF_2);
 	GPIO_PinAFConfig(GPIOB, GPIO_PinSource6, GPIO_AF_2);
 	GPIO_PinAFConfig(GPIOB, GPIO_PinSource7, GPIO_AF_2);
 	
-	GPIOSET_Init.GPIO_Mode=GPIO_Mode_IPU;
-	GPIOSET_Init.GPIO_Pin=
-		GPIO_Pin_4|
-		GPIO_Pin_5|
-		GPIO_Pin_6|
-		GPIO_Pin_7;
-		GPIO_Init(GPIOB,&GPIOSET_Init);
-	//涉及按钮
-	GPIOSET_Init.GPIO_Mode=GPIO_Mode_IPU;
-	GPIOSET_Init.GPIO_Pin=
-		GPIO_Pin_0|
-		GPIO_Pin_1|
-		GPIO_Pin_2|
-		GPIO_Pin_3|
-		GPIO_Pin_14|
-		GPIO_Pin_15;
-	GPIO_Init(GPIOD,&GPIOSET_Init);
-	//涉及UART
+	MM32_GPIO_Startup(GPIOB,GPIO_Pin_4,GPIO_Mode_IPU);
+	MM32_GPIO_Startup(GPIOB,GPIO_Pin_5,GPIO_Mode_IPU);
+	MM32_GPIO_Startup(GPIOB,GPIO_Pin_6,GPIO_Mode_IPU);
+	MM32_GPIO_Startup(GPIOB,GPIO_Pin_7,GPIO_Mode_IPU);
+	//	涉及按钮
+	MM32_GPIO_Startup(GPIOD,GPIO_Pin_0,GPIO_Mode_IPU);
+	MM32_GPIO_Startup(GPIOD,GPIO_Pin_1,GPIO_Mode_IPU);
+	MM32_GPIO_Startup(GPIOD,GPIO_Pin_2,GPIO_Mode_IPU);
+	MM32_GPIO_Startup(GPIOD,GPIO_Pin_3,GPIO_Mode_IPU);
+	MM32_GPIO_Startup(GPIOD,GPIO_Pin_14,GPIO_Mode_IPU);
+	MM32_GPIO_Startup(GPIOD,GPIO_Pin_15,GPIO_Mode_IPU);
+	//	涉及UART
+	//		UART-1
 	GPIO_PinAFConfig(GPIOA, GPIO_PinSource9, GPIO_AF_7);
 	GPIO_PinAFConfig(GPIOA, GPIO_PinSource10, GPIO_AF_7);
-	
+	MM32_GPIO_Startup(GPIOA,GPIO_Pin_9,GPIO_Mode_AF_PP);
+	MM32_GPIO_Startup(GPIOA,GPIO_Pin_10,GPIO_Mode_IPU);
+	//		UART-3
 	GPIO_PinAFConfig(GPIOC, GPIO_PinSource10, GPIO_AF_7);
 	GPIO_PinAFConfig(GPIOC, GPIO_PinSource11, GPIO_AF_7);
-	
-	GPIOSET_Init.GPIO_Mode=GPIO_Mode_AF_PP;
-	GPIOSET_Init.GPIO_Pin=GPIO_Pin_10;
-	GPIO_Init(GPIOC,&GPIOSET_Init);
-	GPIOSET_Init.GPIO_Mode=GPIO_Mode_IPU;
-	GPIOSET_Init.GPIO_Pin=GPIO_Pin_11;
-	GPIO_Init(GPIOC,&GPIOSET_Init);
-	
-	GPIOSET_Init.GPIO_Mode=GPIO_Mode_AF_PP;
-	GPIOSET_Init.GPIO_Pin=GPIO_Pin_9;
-	GPIO_Init(GPIOA,&GPIOSET_Init);
-	GPIOSET_Init.GPIO_Mode=GPIO_Mode_IPU;
-	GPIOSET_Init.GPIO_Pin=GPIO_Pin_10;
-	GPIO_Init(GPIOA,&GPIOSET_Init);	
-	//涉及MPU6050
-	GPIOSET_Init.GPIO_Mode=GPIO_Mode_Out_OD;
-	GPIOSET_Init.GPIO_Pin=GPIO_Pin_14;
-	GPIO_Init(GPIOB,&GPIOSET_Init);
-	GPIOSET_Init.GPIO_Mode=GPIO_Mode_Out_OD;
-	GPIOSET_Init.GPIO_Pin=GPIO_Pin_15;
-	GPIO_Init(GPIOB,&GPIOSET_Init);
-	//涉及马达转向
-	GPIOSET_Init.GPIO_Mode=GPIO_Mode_Out_PP;
-	GPIOSET_Init.GPIO_Pin=GPIO_Pin_13|GPIO_Pin_12|GPIO_Pin_11|GPIO_Pin_10;
-	GPIO_Init(GPIOB,&GPIOSET_Init);
-	//涉及调试
-	GPIOSET_Init.GPIO_Mode=GPIO_Mode_Out_PP;
-	GPIOSET_Init.GPIO_Pin=GPIO_Pin_9;
-	GPIO_Init(GPIOB,&GPIOSET_Init);
-//管脚状态初始化
-	GPIO_WriteBit(GPIOH,GPIO_Pin_2,Bit_RESET);
-	GPIO_WriteBit(GPIOB,GPIO_Pin_13,Bit_RESET);
+	MM32_GPIO_Startup(GPIOC,GPIO_Pin_10,GPIO_Mode_AF_PP);
+	MM32_GPIO_Startup(GPIOC,GPIO_Pin_11,GPIO_Mode_IPU);
+	//	涉及MPU6050
+	MM32_GPIO_Startup(GPIOB,GPIO_Pin_14,GPIO_Mode_Out_PP);
+	MM32_GPIO_Startup(GPIOB,GPIO_Pin_15,GPIO_Mode_Out_PP);
+	//	涉及马达转向
+	MM32_GPIO_Startup(GPIOB,GPIO_Pin_13,GPIO_Mode_Out_PP);
+	MM32_GPIO_Startup(GPIOB,GPIO_Pin_12,GPIO_Mode_Out_PP);
+	MM32_GPIO_Startup(GPIOB,GPIO_Pin_11,GPIO_Mode_Out_PP);
+	MM32_GPIO_Startup(GPIOB,GPIO_Pin_10,GPIO_Mode_Out_PP);
+	//	涉及调试
+	MM32_GPIO_Startup(GPIOB,GPIO_Pin_9,GPIO_Mode_Out_PP);
+	MM32_GPIO_Startup(GPIOB,GPIO_Pin_8,GPIO_Mode_Out_PP);
 	return;}
 //----------------------------------------------------------------------------------------------------
 void MM32_UART_Init(void){
-	UART_InitTypeDef 		UARTSET_Init;
-	UARTSET_Init.BaudRate=115200;
-	UARTSET_Init.WordLength = UART_WordLength_8b;
-	UARTSET_Init.StopBits = UART_StopBits_1;
-	UARTSET_Init.Parity = UART_Parity_No;
-	UARTSET_Init.HWFlowControl=UART_HWFlowControl_None;
-	UARTSET_Init.Mode = UART_Mode_Rx | UART_Mode_Tx;
+	UART_InitTypeDef 			UARTSET_Init;
+	UARTSET_Init.BaudRate		=115200;
+	UARTSET_Init.WordLength 	= UART_WordLength_8b;
+	UARTSET_Init.StopBits 		= UART_StopBits_1;
+	UARTSET_Init.Parity 		= UART_Parity_No;
+	UARTSET_Init.HWFlowControl	= UART_HWFlowControl_None;
+	UARTSET_Init.Mode 			= UART_Mode_Rx | UART_Mode_Tx;
 	UART_Init(UART3,&UARTSET_Init);
 	UART_Init(UART1,&UARTSET_Init);
 	UART_Cmd(UART3,ENABLE);
@@ -164,17 +145,17 @@ void MM32_UART_Init(void){
 	return;}
 //----------------------------------------------------------------------------------------------------
 void UART_Receive_DMA(UART_TypeDef* uart, uint32_t cmar, uint16_t cndtr){
-    DMA_InitTypeDef  DMA_StructInit;
-	DMA_Channel_TypeDef* dmaCha=NULL;
+    DMA_InitTypeDef  			DMA_StructInit;
+	DMA_Channel_TypeDef* 		dmaCha=NULL;
 
-	if(uart==UART1)dmaCha=DMA1_Channel5;
-	else if(uart==UART2)dmaCha=DMA1_Channel6;
-	else if(uart==UART3)dmaCha=DMA1_Channel3;
-	else if(uart==UART6)dmaCha=DMA1_Channel1;
+	if(uart==UART1)dmaCha		= DMA1_Channel5;
+	else if(uart==UART2)dmaCha	= DMA1_Channel6;
+	else if(uart==UART3)dmaCha	= DMA1_Channel3;
+	else if(uart==UART6)dmaCha	= DMA1_Channel1;
 	else RCC_AHBPeriphClockCmd(RCC_AHBENR_DMA2, ENABLE);
 	
-	if(uart==UART4)dmaCha=DMA2_Channel3;
-	else if(uart==UART5)dmaCha=DMA2_Channel1;
+	if(uart==UART4)dmaCha		= DMA2_Channel3;
+	else if(uart==UART5)dmaCha	= DMA2_Channel1;
 	else RCC_AHBPeriphClockCmd(RCC_AHBENR_DMA1, ENABLE);
 	
     DMA_DeInit(dmaCha);
@@ -197,46 +178,57 @@ void UART_Receive_DMA(UART_TypeDef* uart, uint32_t cmar, uint16_t cndtr){
 //----------------------------------------------------------------------------------------------------
 void MM32_NVIC_Init(void){
 	NVIC_InitTypeDef		NVIC_InitStructure;
-	
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
-	
-	NVIC_InitStructure.NVIC_IRQChannel = UART3_IRQn;
-	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=1;
-	NVIC_InitStructure.NVIC_IRQChannelSubPriority =1;
-	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+	#ifdef USER_NVIC_UART3
+	NVIC_InitStructure.NVIC_IRQChannel 					= UART3_IRQn;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority= 1;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority 		= 1;
+	NVIC_InitStructure.NVIC_IRQChannelCmd 				= ENABLE;
 	NVIC_Init(&NVIC_InitStructure);
 	UART_ITConfig(UART3,UART_IT_RXIEN,ENABLE);
+	#endif
 	
-	NVIC_InitStructure.NVIC_IRQChannel = UART1_IRQn;
-	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=1;
-	NVIC_InitStructure.NVIC_IRQChannelSubPriority =1;
-	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+	#ifdef USER_NVIC_UART1
+	NVIC_InitStructure.NVIC_IRQChannel 					= UART1_IRQn;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority= 1;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority 		= 1;
+	NVIC_InitStructure.NVIC_IRQChannelCmd 				= ENABLE;
 	NVIC_Init(&NVIC_InitStructure);
 	UART_ITConfig(UART1,UART_IT_RXIEN,ENABLE);
+	#endif
 	
-//	NVIC_InitStructure.NVIC_IRQChannel = TIM1_UP_IRQn;
-//	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=1;
-//	NVIC_InitStructure.NVIC_IRQChannelSubPriority =1;
-//	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
-//	NVIC_Init(&NVIC_InitStructure);
-//	TIM_ITConfig(TIM1,TIM_IT_Update,ENABLE);
+	#ifdef USER_NVIC_TIM1
+	NVIC_InitStructure.NVIC_IRQChannel 					= TIM1_UP_IRQn;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority= 1;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority 		= 1;
+	NVIC_InitStructure.NVIC_IRQChannelCmd 				= ENABLE;
+	NVIC_Init(&NVIC_InitStructure);
+	TIM_ITConfig(TIM1,TIM_IT_Update,ENABLE);
+	#endif
 	return;}
 //----------------------------------------------------------------------------------------------------
 void MM32_TIM_Init(void){
 	TIM_TimeBaseInitTypeDef	TIMSET_Init;
 	TIM_OCInitTypeDef		TIMOC_Init;
 	TIM_ICInitTypeDef		TIMIC_Init;
+//	固定事件循环
+	TIMSET_Init.TIM_Period			= 10000-1;
+	TIMSET_Init.TIM_Prescaler		= 12000-1;
+	TIMSET_Init.TIM_ClockDivision	=TIM_CKD_DIV1;
+	TIMSET_Init.TIM_CounterMode		=TIM_CounterMode_Up;
+	TIM_TimeBaseInit(TIM1,&TIMSET_Init);
+	TIM_Cmd(TIM1,ENABLE);
 //	定时器(PWM)
-	TIMSET_Init.TIM_Period=100;
-	TIMSET_Init.TIM_Prescaler=1024;
-	TIMSET_Init.TIM_ClockDivision=TIM_CKD_DIV1;
-	TIMSET_Init.TIM_CounterMode=TIM_CounterMode_Down;
+	TIMSET_Init.TIM_Period			= 100;
+	TIMSET_Init.TIM_Prescaler		= 1024;
+	TIMSET_Init.TIM_ClockDivision	= TIM_CKD_DIV1;
+	TIMSET_Init.TIM_CounterMode		= TIM_CounterMode_Down;
 	TIM_TimeBaseInit(TIM2,&TIMSET_Init);
 	
-	TIMOC_Init.TIM_OCMode = TIM_OCMode_PWM1;
-	TIMOC_Init.TIM_OutputState = TIM_OutputState_Enable;
-	TIMOC_Init. TIM_Pulse=0;
-	TIMOC_Init.TIM_OCPolarity = TIM_OCPolarity_High;
+	TIMOC_Init.TIM_OCMode 			= TIM_OCMode_PWM1;
+	TIMOC_Init.TIM_OutputState 		= TIM_OutputState_Enable;
+	TIMOC_Init. TIM_Pulse			= 0;
+	TIMOC_Init.TIM_OCPolarity 		= TIM_OCPolarity_High;
 	
 	TIM_OC1Init(TIM2,&TIMOC_Init);
 	TIM_OC2Init(TIM2,&TIMOC_Init);
@@ -251,32 +243,32 @@ void MM32_TIM_Init(void){
 	TIM_Cmd(TIM2,ENABLE);
 //	定时器(编码器)
 	TIM_TimeBaseStructInit(&TIMSET_Init);
-	TIMSET_Init.TIM_Prescaler = 0x0; // 预分频器 
-	TIMSET_Init.TIM_Period = 0xFFFF; //设定计数器自动重装值
-	TIMSET_Init.TIM_ClockDivision = TIM_CKD_DIV1;//选择时钟分频：不分频
-	TIMSET_Init.TIM_CounterMode = TIM_CounterMode_Up;  
+	TIMSET_Init.TIM_Prescaler 		= 0x0;			// 预分频器 
+	TIMSET_Init.TIM_Period 			= 0xFFFF;		// 设定计数器自动重装值
+	TIMSET_Init.TIM_ClockDivision 	= TIM_CKD_DIV1;	// 选择时钟分频：不分频
+	TIMSET_Init.TIM_CounterMode 	= TIM_CounterMode_Up;  
 	TIM_TimeBaseInit(TIM4, &TIMSET_Init);
 	TIM_EncoderInterfaceConfig(TIM4, TIM_EncoderMode_TI12, TIM_ICPolarity_Rising, TIM_ICPolarity_Rising);//使用编码器模式3
 	TIM_ICStructInit(&TIMIC_Init);
-	TIMIC_Init.TIM_ICFilter = 10;
+	TIMIC_Init.TIM_ICFilter 		= 10;
 	TIM_ICInit(TIM4, &TIMIC_Init);
-	TIM_ClearFlag(TIM4, TIM_FLAG_Update);//清除TIM的更新标志位
+	TIM_ClearFlag(TIM4, TIM_FLAG_Update);			//清除TIM的更新标志位
 	TIM_ITConfig(TIM4, TIM_IT_Update, ENABLE);
 	//Reset counter
 	TIM_SetCounter(TIM4,0);
 	TIM_Cmd(TIM4, ENABLE); 
 	
 	TIM_TimeBaseStructInit(&TIMSET_Init);
-	TIMSET_Init.TIM_Prescaler = 0x0; // 预分频器 
-	TIMSET_Init.TIM_Period = 0xFFFF; //设定计数器自动重装值
-	TIMSET_Init.TIM_ClockDivision = TIM_CKD_DIV1;//选择时钟分频：不分频
-	TIMSET_Init.TIM_CounterMode = TIM_CounterMode_Up;  
+	TIMSET_Init.TIM_Prescaler 		= 0x0; 			// 预分频器 
+	TIMSET_Init.TIM_Period 			= 0xFFFF; 		//设定计数器自动重装值
+	TIMSET_Init.TIM_ClockDivision 	= TIM_CKD_DIV1;	//选择时钟分频：不分频
+	TIMSET_Init.TIM_CounterMode 	= TIM_CounterMode_Up;  
 	TIM_TimeBaseInit(TIM3, &TIMSET_Init);
 	TIM_EncoderInterfaceConfig(TIM3, TIM_EncoderMode_TI12, TIM_ICPolarity_Rising, TIM_ICPolarity_Rising);//使用编码器模式3
 	TIM_ICStructInit(&TIMIC_Init);
-	TIMIC_Init.TIM_ICFilter = 10;
+	TIMIC_Init.TIM_ICFilter 		= 10;
 	TIM_ICInit(TIM3, &TIMIC_Init);
-	TIM_ClearFlag(TIM3, TIM_FLAG_Update);//清除TIM的更新标志位
+	TIM_ClearFlag(TIM3, TIM_FLAG_Update);			//清除TIM的更新标志位
 	TIM_ITConfig(TIM3, TIM_IT_Update, ENABLE);
 	//Reset counter
 	TIM_SetCounter(TIM3,0);
@@ -290,5 +282,9 @@ void MM32_Init(void){
 	MM32_UART_Init();
 	MM32_TIM_Init();
 	MM32_NVIC_Init();
+	
+	#ifdef USER_CONSOLE
+	bsp_ConsoleInit(UART1);
+	#endif
 	return;}
 //////////////////////////////////////////////////////////////////////////////////////////////////////

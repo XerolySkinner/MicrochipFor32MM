@@ -25,11 +25,34 @@
 //----------------------------------------------------------------------------------------------------
 //	程序
 //	
-//	UART3中断函数
+//	UART1中断函数
 void UART1_IRQHandler(void){
+	rt_interrupt_enter();
+	#ifdef USER_CONSOLE
 	bsp_ConsoleJump(UART1);
-}
+	#endif
+	//	TODO:Uart1中断处理函数
+	rt_interrupt_leave();
+	}
+//----------------------------------------------------------------------------------------------------
+//	UART3中断函数
 void UART3_IRQHandler(void){
+	rt_interrupt_enter();
+	#ifdef USER_CONSOLE
 	bsp_ConsoleJump(UART3);
-}
+	#endif
+	//	TODO:Uart1中断处理函数
+	rt_interrupt_leave();
+	}
+//----------------------------------------------------------------------------------------------------
+//	定时器中断函数
+void TIM1_UP_IRQHandler(void){
+	rt_interrupt_enter();
+	//	TODO:TIM1中断处理函数
+	TIM_ClearITPendingBit(TIM1,TIM_IT_Update);
+	
+	rt_interrupt_leave();
+	}
+//	踢他定时器
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////

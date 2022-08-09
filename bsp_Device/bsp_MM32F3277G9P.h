@@ -32,11 +32,6 @@
 //----------------------------------------------------------------------------------------------------
 //	程序声明
 //	
-#define		LED1_ON(void)	GPIO_WriteBit(GPIOH,GPIO_Pin_2,Bit_RESET)
-#define		LED1_OFF(void)	GPIO_WriteBit(GPIOH,GPIO_Pin_2,Bit_SET)
-#define		LED2_ON(void)	GPIO_WriteBit(GPIOB,GPIO_Pin_13,Bit_RESET)
-#define		LED2_OFF(void)	GPIO_WriteBit(GPIOB,GPIO_Pin_13,Bit_SET)
-
 void MM32_Init(void);
 void MM32_RCC_Init(void);
 void MM32_GPIO_Init(void);
@@ -44,6 +39,25 @@ void MM32_UART_Init(void);
 void MM32_NVIC_Init(void);
 void MM32_TIM_Init(void);
 void UART_Receive_DMA(UART_TypeDef* uart, uint32_t cmar, uint16_t cndtr);
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//----------------------------------------------------------------------------------------------------
+//	常用声明
+//	
+#define		LED1_ON(void)	GPIO_WriteBit(GPIOH,GPIO_Pin_2,Bit_RESET)
+#define		LED1_OFF(void)	GPIO_WriteBit(GPIOH,GPIO_Pin_2,Bit_SET)
+#define		LED1_SW(void)	GPIO_WriteBit(GPIOH,GPIO_Pin_2,(BitAction)(!GPIO_ReadOutputDataBit(GPIOH,GPIO_Pin_2)))
+	
+#define		LED2_ON(void)	GPIO_WriteBit(GPIOB,GPIO_Pin_13,Bit_RESET)
+#define		LED2_OFF(void)	GPIO_WriteBit(GPIOB,GPIO_Pin_13,Bit_SET)
+#define		LED2_SW(void)	GPIO_WriteBit(GPIOB,GPIO_Pin_13,(BitAction)(!GPIO_ReadOutputDataBit(GPIOB,GPIO_Pin_13)))
+	
+#define		DB1_ON(void)	GPIO_WriteBit(GPIOB,GPIO_Pin_9,Bit_RESET)
+#define		DB1_OFF(void)	GPIO_WriteBit(GPIOB,GPIO_Pin_9,Bit_SET)
+#define		DB1_SW(void)	GPIO_WriteBit(GPIOB,GPIO_Pin_9,(BitAction)(!GPIO_ReadOutputDataBit(GPIOB,GPIO_Pin_9)))
+
+#define		DB2_ON(void)	GPIO_WriteBit(GPIOB,GPIO_Pin_8,Bit_RESET)
+#define		DB2_OFF(void)	GPIO_WriteBit(GPIOB,GPIO_Pin_8,Bit_SET)
+#define		DB2_SW(void)	GPIO_WriteBit(GPIOB,GPIO_Pin_8,(BitAction)(!GPIO_ReadOutputDataBit(GPIOB,GPIO_Pin_8)))
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //----------------------------------------------------------------------------------------------------
 //	管脚定义
