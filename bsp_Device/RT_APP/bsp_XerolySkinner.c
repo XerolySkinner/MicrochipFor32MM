@@ -26,14 +26,14 @@
 //	程序
 //	
 void XerolySkinner_main(void* parameter){
-	
 	rt_enter_critical();
-	rt_kprintf("[1]线程挂入:XerolySkinner\r\n");
+	printf("[1]线程挂入:XerolySkinner\r\n");
 	rt_exit_critical();
-	
 	while(1){
-		osDelay(1);
+		osDelay(5000);
+		rt_enter_critical();
 		DB2_SW();
+		rt_exit_critical();
 		}
 	}
 //////////////////////////////////////////////////////////////////////////////////////////////////////

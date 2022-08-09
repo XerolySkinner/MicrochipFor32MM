@@ -181,8 +181,8 @@ void MM32_NVIC_Init(void){
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
 	#ifdef USER_NVIC_UART3
 	NVIC_InitStructure.NVIC_IRQChannel 					= UART3_IRQn;
-	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority= 1;
-	NVIC_InitStructure.NVIC_IRQChannelSubPriority 		= 1;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority= 0;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority 		= 0;
 	NVIC_InitStructure.NVIC_IRQChannelCmd 				= ENABLE;
 	NVIC_Init(&NVIC_InitStructure);
 	UART_ITConfig(UART3,UART_IT_RXIEN,ENABLE);
@@ -190,8 +190,8 @@ void MM32_NVIC_Init(void){
 	
 	#ifdef USER_NVIC_UART1
 	NVIC_InitStructure.NVIC_IRQChannel 					= UART1_IRQn;
-	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority= 1;
-	NVIC_InitStructure.NVIC_IRQChannelSubPriority 		= 1;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority= 0;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority 		= 0;
 	NVIC_InitStructure.NVIC_IRQChannelCmd 				= ENABLE;
 	NVIC_Init(&NVIC_InitStructure);
 	UART_ITConfig(UART1,UART_IT_RXIEN,ENABLE);
@@ -284,7 +284,7 @@ void MM32_Init(void){
 	MM32_NVIC_Init();
 	
 	#ifdef USER_CONSOLE
-	bsp_ConsoleInit(UART1);
+	bsp_ConsoleInit(UART3);
 	#endif
 	return;}
 //////////////////////////////////////////////////////////////////////////////////////////////////////

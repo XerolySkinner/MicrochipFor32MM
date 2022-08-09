@@ -45,11 +45,12 @@ void rt_hw_console_output(const char *str){
 			UART_SendData(UART1, *str++);
 			while(!(UART1->CSR & UART_CSR_TXC));}
 	rt_exit_critical();}
+
 //	用于RT_Thread系统控制台输入
 char rt_hw_console_getchar(void){
-    int ch = -1;
-	if(UART_GetFlagStatus(UART1, UART_FLAG_RXAVL) != RESET){
+	int ch = -1;
+	if(UART_GetFlagStatus(UART1,UART_FLAG_RXAVL) != RESET){
         ch = UART_ReceiveData(UART1) & 0xFF;}
-    return ch;}
+	return ch;}
 #endif
 //////////////////////////////////////////////////////////////////////////////////////////////////////

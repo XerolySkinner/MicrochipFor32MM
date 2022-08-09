@@ -11,7 +11,7 @@
 // <o>the priority of finsh thread <1-30>
 //  <i>the priority of finsh thread
 //  <i>Default: 21
-#define FINSH_THREAD_PRIORITY       21
+#define FINSH_THREAD_PRIORITY       7
 // <o>the stack of finsh thread <1-4096>
 //  <i>the stack of finsh thread
 //  <i>Default: 4096  (4096Byte)

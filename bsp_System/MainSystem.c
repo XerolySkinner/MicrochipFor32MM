@@ -32,14 +32,15 @@ void mainSetup(void){
 //----------------------------------------------------------------------------------------------------
 //	main线程
 int main(void){
+	bsp_RT_Init();
 	rt_enter_critical();
-	rt_kprintf("[0]线程挂入:main\r\n");
+	printf("[0]线程挂入:main\r\n");
 	rt_exit_critical();
-	
-	RT_Thread_app_Init();
 	while(1){
-		osDelay(1);
+		osDelay(6000);
+		rt_enter_critical();
 		DB1_SW();
+		rt_exit_critical();
 		}
-}
+	}
 //////////////////////////////////////////////////////////////////////////////////////////////////////

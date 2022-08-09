@@ -37,7 +37,7 @@
 
 //<h>启用相关NVIC中断
 	//<c>使能UART1的NVIC中断
-	#define USER_NVIC_UART1
+	//#define USER_NVIC_UART1
 	//</c>
 	
 	//<c>使能UART3的NVIC中断
@@ -50,18 +50,16 @@
 //</h>
 
 //<h>特殊功能
-	//<c>使用控制台通讯
+	//<c>使用上位机传输数据
 	#define USER_CONSOLE
 	//</c>
-	//<o>控制台可用栈长
-	//<i>默认64,使用控制台通讯为前置选项
+	//<o>设置上位机单条数据栈长
+	//<i>默认64,使用上位机为前置选项
 	#define USER_CONSOLE_STACK 64
 //</h>
 //<<< end of configuration section >>>
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 #ifndef USER_RT_Thread
-#define	rt_enter_critical();	;
-#define	rt_exit_critical();		;
 #endif
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 #endif

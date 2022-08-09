@@ -44,9 +44,16 @@ struct		console_pack consolePack={0,0,0};
 void bsp_ConsoleInit(UART_TypeDef *huart){
 	UART_ITConfig(huart,UART_IER_RXIDLE, ENABLE);
 	UART_DMACmd(huart, UART_DMAReq_EN, ENABLE);
-    DMA_Cmd(DMA1_Channel5, ENABLE);
+	if(huart==UART1)DMA_Cmd(DMA1_Channel5, ENABLE);
+	if(huart==UART2)DMA_Cmd(DMA1_Channel6, ENABLE);
+	if(huart==UART3)DMA_Cmd(DMA1_Channel3, ENABLE);
+	if(huart==UART6)DMA_Cmd(DMA1_Channel1, ENABLE);
+	if(huart==UART4)DMA_Cmd(DMA2_Channel3, ENABLE);
+	if(huart==UART5)DMA_Cmd(DMA2_Channel1, ENABLE);
 	UART_Receive_DMA(huart,(uint32_t)console_buff,CONSOLE_BUFF_LEN);}
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 //----------------------------------------------------------------------------------------------------
+//	接到回调函数指令
 void bsp_ConsoleJump(UART_TypeDef *huart){
 	DMA_Channel_TypeDef* dmaCha=NULL;
 	if(huart==UART1)dmaCha=DMA1_Channel5;
@@ -57,39 +64,45 @@ void bsp_ConsoleJump(UART_TypeDef *huart){
 	if(huart==UART5)dmaCha=DMA2_Channel1;
 	//	空闲中断跳转
 	if(UART_GetITStatus(huart, UART_ISR_RXIDLE) != RESET){
-		UART_ClearITPendingBit(huart, UART_ICR_RXIDLE);
 		DMA_Cmd(dmaCha, DISABLE);
 		HAL_UART_IdleCpltCallback(huart);
 		DMA_Cmd(dmaCha, ENABLE);
-		UART_Receive_DMA(huart,(uint32_t)console_buff,CONSOLE_BUFF_LEN);}}
+		UART_Receive_DMA(huart,(uint32_t)console_buff,CONSOLE_BUFF_LEN);
+		UART_ClearITPendingBit(huart, UART_ICR_RXIDLE);}}
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 //----------------------------------------------------------------------------------------------------
+//	回调处理函数
+//		[0]:研究表明,使用RT-Thread系统的时候,本模块使用空闲中断会进行拆包,首字节会被单独拆开,
+//			因此,使用系统的时候,包前缀00.绥靖政策.
+//		[1]:我有预感,不要用00作为标识符,所以我讲00为帧头的数据作为空数据处理了.
+//		[2]:还是在搭配系统的情况下,这个东西不能保证100正确接收到数据,建议还是加个帧尾判别为好
+//		[3]:做实验的时候用的是蓝牙,也可能是蓝牙导致的这些问题.
 void HAL_UART_IdleCpltCallback(UART_TypeDef *huart){
-	if(huart==UART1){
+	if(console_buff[0]==0);
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //----------------------------------------------------------------------------------------------------
 //	按钮识别区
-		if(console_buff[0]==0){
-			switch(console_buff[1]){
-			case 0:
-				printf("按钮0\r\n");
-				break;
-			case 1:
-				printf("按钮1\r\n");
-				break;
-			default:
-				printf("按钮未知\r\n");
-				break;}}
+	else if(console_buff[0]==1){
+		switch(console_buff[1]){
+		case 0:
+			printf("\r\n按钮0\r\n");
+			break;
+		case 1:
+			printf("\r\n按钮1\r\n");
+			break;
+		default:
+			printf("\r\n按钮未知\r\n");
+			break;}}
 //----------------------------------------------------------------------------------------------------
 //	包识别区-默认小端接收方式
-		if(console_buff[0]==1){
-			memcpy(&consolePack,console_buff+1,sizeof(struct console_pack));
-			printf("包接收数据:%d %d %d\r\n",consolePack.var0,consolePack.var1,consolePack.var2);
+	else if(console_buff[0]==2){
+		memcpy(&consolePack,console_buff+1,sizeof(struct console_pack));
+		printf("\r\n包接收数据:%d %d %d\r\n",consolePack.var0,consolePack.var1,consolePack.var2);
 		}
 //----------------------------------------------------------------------------------------------------
 //	数值识别区
-		if(console_buff[0]==2)printf("2号:%d\r\n",console_num(int));
+	else if(console_buff[0]==3)printf("\r\n2号:%d\r\n",console_num(int));
 //----------------------------------------------------------------------------------------------------
 //////////////////////////////////////////////////////////////////////////////////////////////////////
-		}
 	}
 //////////////////////////////////////////////////////////////////////////////////////////////////////
