@@ -1,0 +1,840 @@
+\hypertarget{reg__rtc_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/reg\+\_\+rtc.h 文件参考}
+\label{reg__rtc_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_rtc.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_rtc.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_r_t_c___type_def}{RTC\+\_\+\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em RTC Registers Structure Definition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a4265e665d56225412e57a61d87417022}{RTC\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x2800)
+\begin{DoxyCompactList}\small\item\em RTC Base Address Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a5359a088f5d8b20ce74d920e46059304}{RTC}}~((\mbox{\hyperlink{struct_r_t_c___type_def}{RTC\+\_\+\+Type\+Def}}$\ast$)\mbox{\hyperlink{reg__rtc_8h_a4265e665d56225412e57a61d87417022}{RTC\+\_\+\+BASE}})
+\begin{DoxyCompactList}\small\item\em RTC type pointer Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a2d9593192bbde4e0053c42dcc908d475}{RTC\+\_\+\+CR\+\_\+\+SECIE\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em RTC\+\_\+\+CR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_abb93da33d18c6332753fd3b155fa8c9d}{RTC\+\_\+\+CR\+\_\+\+SECIE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a2d9593192bbde4e0053c42dcc908d475}{RTC\+\_\+\+CR\+\_\+\+SECIE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Second Interrupt Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a6a71fa2d663e59ec1beec43fc792a4fd}{RTC\+\_\+\+CR\+\_\+\+ALRIE\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a70861ead98d3c573cafccb97f614e8b0}{RTC\+\_\+\+CR\+\_\+\+ALRIE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a6a71fa2d663e59ec1beec43fc792a4fd}{RTC\+\_\+\+CR\+\_\+\+ALRIE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Alarm Interrupt Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a0125c21cf4e19d80719cc0fdea548028}{RTC\+\_\+\+CR\+\_\+\+OWIE\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_aa6e96c573d3a63f0f17960248af3875d}{RTC\+\_\+\+CR\+\_\+\+OWIE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a0125c21cf4e19d80719cc0fdea548028}{RTC\+\_\+\+CR\+\_\+\+OWIE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em OverfloW Interrupt Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a553cadd0b71ba668395ac7a3e0bde137}{RTC\+\_\+\+CSR\+\_\+\+SECF\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em RTC\+\_\+\+CSR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_ad172f47174857934034f3605ad7f0779}{RTC\+\_\+\+CSR\+\_\+\+SECF}}~(0x01 $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a553cadd0b71ba668395ac7a3e0bde137}{RTC\+\_\+\+CSR\+\_\+\+SECF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Second Flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a7eb10825e2f6671bc2b1e022b04299f2}{RTC\+\_\+\+CSR\+\_\+\+ALRF\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a0f948feed3e8a8d0a105c2f02e9d3e99}{RTC\+\_\+\+CSR\+\_\+\+ALRF}}~(0x01 $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a7eb10825e2f6671bc2b1e022b04299f2}{RTC\+\_\+\+CSR\+\_\+\+ALRF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Alarm Flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a4b05cf745a30fde44b9bfa2a3b5517e9}{RTC\+\_\+\+CSR\+\_\+\+OWF\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a35afab36891609205a3e11b50094d778}{RTC\+\_\+\+CSR\+\_\+\+OWF}}~(0x01 $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a4b05cf745a30fde44b9bfa2a3b5517e9}{RTC\+\_\+\+CSR\+\_\+\+OWF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em OverfloW Flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_adad14c2771ff358aeb8471ecdaeafd7a}{RTC\+\_\+\+CSR\+\_\+\+RSF\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_aed357a7df00864a03513026adc12650c}{RTC\+\_\+\+CSR\+\_\+\+RSF}}~(0x01 $<$$<$ \mbox{\hyperlink{reg__rtc_8h_adad14c2771ff358aeb8471ecdaeafd7a}{RTC\+\_\+\+CSR\+\_\+\+RSF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Registers Synchronized Flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_aed0d0b0437c7d0962a4ae29c058e3597}{RTC\+\_\+\+CSR\+\_\+\+CNF\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_af7d5f433a5c1dda47eb193e866b4c437}{RTC\+\_\+\+CSR\+\_\+\+CNF}}~(0x01 $<$$<$ \mbox{\hyperlink{reg__rtc_8h_aed0d0b0437c7d0962a4ae29c058e3597}{RTC\+\_\+\+CSR\+\_\+\+CNF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Configuration Flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a66619a652e0b448f93c06ff55b11dd36}{RTC\+\_\+\+CSR\+\_\+\+RTOFF\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a73ff2a195fe9ecc3993f5df7804eaa08}{RTC\+\_\+\+CSR\+\_\+\+RTOFF}}~(0x01 $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a66619a652e0b448f93c06ff55b11dd36}{RTC\+\_\+\+CSR\+\_\+\+RTOFF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em RTC operation OFF \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a18157811ed025544742cdec22c11e40e}{RTC\+\_\+\+CSR\+\_\+\+ALPEN\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a145517d99b27d01d134b873d94cc1ed9}{RTC\+\_\+\+CSR\+\_\+\+ALPEN}}~(0x01 $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a18157811ed025544742cdec22c11e40e}{RTC\+\_\+\+CSR\+\_\+\+ALPEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em RTC Alarm Loop Enable ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a7897d7cf022e940f146b6427eb4cd1e1}{RTC\+\_\+\+PRLH\+\_\+\+PRL\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a5209d66a77da940d9a187bbaf73dc8a0}{RTC\+\_\+\+PRLH\+\_\+\+PRL}}~(0x0F $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a7897d7cf022e940f146b6427eb4cd1e1}{RTC\+\_\+\+PRLH\+\_\+\+PRL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em RTC Prescaler Reload Value High \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a09a2c15c1b12beb340a12b8403298d03}{RTC\+\_\+\+PRLL\+\_\+\+PRL\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em RTC\+\_\+\+PRLL Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_ac1cd2db7134d6b3e21477ed466dd4d7c}{RTC\+\_\+\+PRLL\+\_\+\+PRL}}~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a09a2c15c1b12beb340a12b8403298d03}{RTC\+\_\+\+PRLL\+\_\+\+PRL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em RTC Prescaler Reload Value Low \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_afb26ee799bc660dcfcd201c4c676509e}{RTC\+\_\+\+DIVH\+\_\+\+DIV\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em RTC\+\_\+\+DIVH Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_aa578dd1c56c830ae66e74b9f9e2cfe55}{RTC\+\_\+\+DIVH\+\_\+\+DIV}}~(0x0F $<$$<$ \mbox{\hyperlink{reg__rtc_8h_afb26ee799bc660dcfcd201c4c676509e}{RTC\+\_\+\+DIVH\+\_\+\+DIV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em RTC Clock Divider High \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_abbb8121d68981224fd4849f107605c66}{RTC\+\_\+\+DIVL\+\_\+\+DIV\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em RTC\+\_\+\+DIVL Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_af2cb11a2f2f4cc67c51416966275c7c6}{RTC\+\_\+\+DIVL\+\_\+\+DIV}}~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__rtc_8h_abbb8121d68981224fd4849f107605c66}{RTC\+\_\+\+DIVL\+\_\+\+DIV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em RTC Clock Divider Low \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a6e6800829deab1114d3a3d5da9e88d2d}{RTC\+\_\+\+CNTH\+\_\+\+CNT\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em RTC\+\_\+\+CNTH Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_ac3f170fa1bfd0caaa944fd91c84d655a}{RTC\+\_\+\+CNTH\+\_\+\+CNT}}~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a6e6800829deab1114d3a3d5da9e88d2d}{RTC\+\_\+\+CNTH\+\_\+\+CNT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em RTC Counter High \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a14e1be8414ba75c4816ac1d5a48938f5}{RTC\+\_\+\+CNTL\+\_\+\+CNT\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em RTC\+\_\+\+CNTL Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a9c1ffe24c6e3a6dd68fc01e181df3134}{RTC\+\_\+\+CNTL\+\_\+\+CNT}}~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a14e1be8414ba75c4816ac1d5a48938f5}{RTC\+\_\+\+CNTL\+\_\+\+CNT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em RTC Counter Low \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a5cc582e1957d3081f74f3ed01a82dcfd}{RTC\+\_\+\+ALRH\+\_\+\+ALR\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em RTC\+\_\+\+ALRH Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a358a341d3db0e3a7c0209d8fcdb494bb}{RTC\+\_\+\+ALRH\+\_\+\+ALR}}~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a5cc582e1957d3081f74f3ed01a82dcfd}{RTC\+\_\+\+ALRH\+\_\+\+ALR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em RTC Alarm High \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_ac91e3c8ecaa9150214c5a2e362d78da4}{RTC\+\_\+\+ALRL\+\_\+\+ALR\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em RTC\+\_\+\+ALRL Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a1a9493c2f2052a220c0f327f68921192}{RTC\+\_\+\+ALRL\+\_\+\+ALR}}~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__rtc_8h_ac91e3c8ecaa9150214c5a2e362d78da4}{RTC\+\_\+\+ALRL\+\_\+\+ALR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em RTC Alarm Low \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a08328b0b17104e8815a81ba2ab8d6600}{RTC\+\_\+\+MSRH\+\_\+\+MSR\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em RTC\+\_\+\+MSRH Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a5d340ce7e557396fadebc344be99e711}{RTC\+\_\+\+MSRH\+\_\+\+MSR}}~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a08328b0b17104e8815a81ba2ab8d6600}{RTC\+\_\+\+MSRH\+\_\+\+MSR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em RTC MS Alarm Register High \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_ad4c46cf1b176e3ae1a56ccebb130320b}{RTC\+\_\+\+MSRL\+\_\+\+MSR\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em RTC\+\_\+\+MSRL Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a7257cbbaa31ad6ddc564969b4b6a68cf}{RTC\+\_\+\+MSRL\+\_\+\+MSR}}~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__rtc_8h_ad4c46cf1b176e3ae1a56ccebb130320b}{RTC\+\_\+\+MSRL\+\_\+\+MSR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em RTC MS Alarm Register Low \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a59210372d766469ff62415f65afd39ee}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+TEST\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em RTC\+\_\+\+LSE\+\_\+\+CFG Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a24dbe4ddfc6dc7328b54caa0e66053bb}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+TEST}}~(0x0\+FU $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a59210372d766469ff62415f65afd39ee}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+TEST\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Test control signal \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a0384f852d6635fd1cb0094e8f4a57927}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+DR\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a82aa83aec3e9cb9c461514a210a6c051}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+DR}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a0384f852d6635fd1cb0094e8f4a57927}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+DR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Drive capability selection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_accffb62579dd3936a9134fad870469e5}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+RFB\+\_\+\+SEL\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a9626d8b65a7167505bfb04b2cda371f8}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+RFB\+\_\+\+SEL\+\_\+3}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__rtc_8h_accffb62579dd3936a9134fad870469e5}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+RFB\+\_\+\+SEL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Feedback resistance selection 3M ~\newline
+ \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a353962cf521eacd7beb2996284576705}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+RFB\+\_\+\+SEL\+\_\+6}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__rtc_8h_accffb62579dd3936a9134fad870469e5}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+RFB\+\_\+\+SEL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Feedback resistance selection 6M \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a8e2f00148815a73ee510cee07d4e3352}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+RFB\+\_\+\+SEL\+\_\+10}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__rtc_8h_accffb62579dd3936a9134fad870469e5}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+RFB\+\_\+\+SEL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Feedback resistance selection 10M \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_ac96c21b66d3ea30e958b73b82ba8644b}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+RFB\+\_\+\+SEL\+\_\+12}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__rtc_8h_accffb62579dd3936a9134fad870469e5}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+RFB\+\_\+\+SEL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Feedback resistance selection 12M \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_ab511b0ee5cb7d40600be90b7d27a3e28}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+IB\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__rtc_8h_a7473841e2c154443c05d9ec6c1d933b1}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+IB}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__rtc_8h_ad4c46cf1b176e3ae1a56ccebb130320b}{RTC\+\_\+\+MSRL\+\_\+\+MSR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Bias current regulation \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{reg__rtc_8h_a5359a088f5d8b20ce74d920e46059304}\label{reg__rtc_8h_a5359a088f5d8b20ce74d920e46059304}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC@{RTC}}
+\index{RTC@{RTC}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC}{RTC}}
+{\footnotesize\ttfamily \#define RTC~((\mbox{\hyperlink{struct_r_t_c___type_def}{RTC\+\_\+\+Type\+Def}}$\ast$)\mbox{\hyperlink{reg__rtc_8h_a4265e665d56225412e57a61d87417022}{RTC\+\_\+\+BASE}})}
+
+
+
+RTC type pointer Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00085}{85}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a358a341d3db0e3a7c0209d8fcdb494bb}\label{reg__rtc_8h_a358a341d3db0e3a7c0209d8fcdb494bb}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_ALRH\_ALR@{RTC\_ALRH\_ALR}}
+\index{RTC\_ALRH\_ALR@{RTC\_ALRH\_ALR}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_ALRH\_ALR}{RTC\_ALRH\_ALR}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+ALRH\+\_\+\+ALR~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a5cc582e1957d3081f74f3ed01a82dcfd}{RTC\+\_\+\+ALRH\+\_\+\+ALR\+\_\+\+Pos}})}
+
+
+
+RTC Alarm High 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00156}{156}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a5cc582e1957d3081f74f3ed01a82dcfd}\label{reg__rtc_8h_a5cc582e1957d3081f74f3ed01a82dcfd}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_ALRH\_ALR\_Pos@{RTC\_ALRH\_ALR\_Pos}}
+\index{RTC\_ALRH\_ALR\_Pos@{RTC\_ALRH\_ALR\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_ALRH\_ALR\_Pos}{RTC\_ALRH\_ALR\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+ALRH\+\_\+\+ALR\+\_\+\+Pos~(0)}
+
+
+
+RTC\+\_\+\+ALRH Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00155}{155}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a1a9493c2f2052a220c0f327f68921192}\label{reg__rtc_8h_a1a9493c2f2052a220c0f327f68921192}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_ALRL\_ALR@{RTC\_ALRL\_ALR}}
+\index{RTC\_ALRL\_ALR@{RTC\_ALRL\_ALR}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_ALRL\_ALR}{RTC\_ALRL\_ALR}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+ALRL\+\_\+\+ALR~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__rtc_8h_ac91e3c8ecaa9150214c5a2e362d78da4}{RTC\+\_\+\+ALRL\+\_\+\+ALR\+\_\+\+Pos}})}
+
+
+
+RTC Alarm Low 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00162}{162}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_ac91e3c8ecaa9150214c5a2e362d78da4}\label{reg__rtc_8h_ac91e3c8ecaa9150214c5a2e362d78da4}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_ALRL\_ALR\_Pos@{RTC\_ALRL\_ALR\_Pos}}
+\index{RTC\_ALRL\_ALR\_Pos@{RTC\_ALRL\_ALR\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_ALRL\_ALR\_Pos}{RTC\_ALRL\_ALR\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+ALRL\+\_\+\+ALR\+\_\+\+Pos~(0)}
+
+
+
+RTC\+\_\+\+ALRL Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00161}{161}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a4265e665d56225412e57a61d87417022}\label{reg__rtc_8h_a4265e665d56225412e57a61d87417022}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_BASE@{RTC\_BASE}}
+\index{RTC\_BASE@{RTC\_BASE}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_BASE}{RTC\_BASE}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x2800)}
+
+
+
+RTC Base Address Definition 
+
+Base Address\+: 0x40002800 
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00047}{47}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_ac3f170fa1bfd0caaa944fd91c84d655a}\label{reg__rtc_8h_ac3f170fa1bfd0caaa944fd91c84d655a}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CNTH\_CNT@{RTC\_CNTH\_CNT}}
+\index{RTC\_CNTH\_CNT@{RTC\_CNTH\_CNT}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CNTH\_CNT}{RTC\_CNTH\_CNT}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CNTH\+\_\+\+CNT~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a6e6800829deab1114d3a3d5da9e88d2d}{RTC\+\_\+\+CNTH\+\_\+\+CNT\+\_\+\+Pos}})}
+
+
+
+RTC Counter High 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00144}{144}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a6e6800829deab1114d3a3d5da9e88d2d}\label{reg__rtc_8h_a6e6800829deab1114d3a3d5da9e88d2d}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CNTH\_CNT\_Pos@{RTC\_CNTH\_CNT\_Pos}}
+\index{RTC\_CNTH\_CNT\_Pos@{RTC\_CNTH\_CNT\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CNTH\_CNT\_Pos}{RTC\_CNTH\_CNT\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CNTH\+\_\+\+CNT\+\_\+\+Pos~(0)}
+
+
+
+RTC\+\_\+\+CNTH Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00143}{143}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a9c1ffe24c6e3a6dd68fc01e181df3134}\label{reg__rtc_8h_a9c1ffe24c6e3a6dd68fc01e181df3134}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CNTL\_CNT@{RTC\_CNTL\_CNT}}
+\index{RTC\_CNTL\_CNT@{RTC\_CNTL\_CNT}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CNTL\_CNT}{RTC\_CNTL\_CNT}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CNTL\+\_\+\+CNT~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a14e1be8414ba75c4816ac1d5a48938f5}{RTC\+\_\+\+CNTL\+\_\+\+CNT\+\_\+\+Pos}})}
+
+
+
+RTC Counter Low 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00150}{150}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a14e1be8414ba75c4816ac1d5a48938f5}\label{reg__rtc_8h_a14e1be8414ba75c4816ac1d5a48938f5}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CNTL\_CNT\_Pos@{RTC\_CNTL\_CNT\_Pos}}
+\index{RTC\_CNTL\_CNT\_Pos@{RTC\_CNTL\_CNT\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CNTL\_CNT\_Pos}{RTC\_CNTL\_CNT\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CNTL\+\_\+\+CNT\+\_\+\+Pos~(0)}
+
+
+
+RTC\+\_\+\+CNTL Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00149}{149}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a70861ead98d3c573cafccb97f614e8b0}\label{reg__rtc_8h_a70861ead98d3c573cafccb97f614e8b0}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CR\_ALRIE@{RTC\_CR\_ALRIE}}
+\index{RTC\_CR\_ALRIE@{RTC\_CR\_ALRIE}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CR\_ALRIE}{RTC\_CR\_ALRIE}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CR\+\_\+\+ALRIE~(0x01U $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a6a71fa2d663e59ec1beec43fc792a4fd}{RTC\+\_\+\+CR\+\_\+\+ALRIE\+\_\+\+Pos}})}
+
+
+
+Alarm Interrupt Enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00095}{95}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a6a71fa2d663e59ec1beec43fc792a4fd}\label{reg__rtc_8h_a6a71fa2d663e59ec1beec43fc792a4fd}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CR\_ALRIE\_Pos@{RTC\_CR\_ALRIE\_Pos}}
+\index{RTC\_CR\_ALRIE\_Pos@{RTC\_CR\_ALRIE\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CR\_ALRIE\_Pos}{RTC\_CR\_ALRIE\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CR\+\_\+\+ALRIE\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00094}{94}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_aa6e96c573d3a63f0f17960248af3875d}\label{reg__rtc_8h_aa6e96c573d3a63f0f17960248af3875d}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CR\_OWIE@{RTC\_CR\_OWIE}}
+\index{RTC\_CR\_OWIE@{RTC\_CR\_OWIE}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CR\_OWIE}{RTC\_CR\_OWIE}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CR\+\_\+\+OWIE~(0x01U $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a0125c21cf4e19d80719cc0fdea548028}{RTC\+\_\+\+CR\+\_\+\+OWIE\+\_\+\+Pos}})}
+
+
+
+OverfloW Interrupt Enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00097}{97}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a0125c21cf4e19d80719cc0fdea548028}\label{reg__rtc_8h_a0125c21cf4e19d80719cc0fdea548028}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CR\_OWIE\_Pos@{RTC\_CR\_OWIE\_Pos}}
+\index{RTC\_CR\_OWIE\_Pos@{RTC\_CR\_OWIE\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CR\_OWIE\_Pos}{RTC\_CR\_OWIE\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CR\+\_\+\+OWIE\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00096}{96}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_abb93da33d18c6332753fd3b155fa8c9d}\label{reg__rtc_8h_abb93da33d18c6332753fd3b155fa8c9d}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CR\_SECIE@{RTC\_CR\_SECIE}}
+\index{RTC\_CR\_SECIE@{RTC\_CR\_SECIE}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CR\_SECIE}{RTC\_CR\_SECIE}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CR\+\_\+\+SECIE~(0x01U $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a2d9593192bbde4e0053c42dcc908d475}{RTC\+\_\+\+CR\+\_\+\+SECIE\+\_\+\+Pos}})}
+
+
+
+Second Interrupt Enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00093}{93}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a2d9593192bbde4e0053c42dcc908d475}\label{reg__rtc_8h_a2d9593192bbde4e0053c42dcc908d475}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CR\_SECIE\_Pos@{RTC\_CR\_SECIE\_Pos}}
+\index{RTC\_CR\_SECIE\_Pos@{RTC\_CR\_SECIE\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CR\_SECIE\_Pos}{RTC\_CR\_SECIE\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CR\+\_\+\+SECIE\+\_\+\+Pos~(0)}
+
+
+
+RTC\+\_\+\+CR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00092}{92}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a145517d99b27d01d134b873d94cc1ed9}\label{reg__rtc_8h_a145517d99b27d01d134b873d94cc1ed9}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CSR\_ALPEN@{RTC\_CSR\_ALPEN}}
+\index{RTC\_CSR\_ALPEN@{RTC\_CSR\_ALPEN}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CSR\_ALPEN}{RTC\_CSR\_ALPEN}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CSR\+\_\+\+ALPEN~(0x01 $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a18157811ed025544742cdec22c11e40e}{RTC\+\_\+\+CSR\+\_\+\+ALPEN\+\_\+\+Pos}})}
+
+
+
+RTC Alarm Loop Enable ///////////////////////////////////////////////////////////////////////////// 
+
+RTC\+\_\+\+PRLH Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00118}{118}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a18157811ed025544742cdec22c11e40e}\label{reg__rtc_8h_a18157811ed025544742cdec22c11e40e}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CSR\_ALPEN\_Pos@{RTC\_CSR\_ALPEN\_Pos}}
+\index{RTC\_CSR\_ALPEN\_Pos@{RTC\_CSR\_ALPEN\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CSR\_ALPEN\_Pos}{RTC\_CSR\_ALPEN\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CSR\+\_\+\+ALPEN\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00114}{114}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a0f948feed3e8a8d0a105c2f02e9d3e99}\label{reg__rtc_8h_a0f948feed3e8a8d0a105c2f02e9d3e99}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CSR\_ALRF@{RTC\_CSR\_ALRF}}
+\index{RTC\_CSR\_ALRF@{RTC\_CSR\_ALRF}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CSR\_ALRF}{RTC\_CSR\_ALRF}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CSR\+\_\+\+ALRF~(0x01 $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a7eb10825e2f6671bc2b1e022b04299f2}{RTC\+\_\+\+CSR\+\_\+\+ALRF\+\_\+\+Pos}})}
+
+
+
+Alarm Flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00105}{105}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a7eb10825e2f6671bc2b1e022b04299f2}\label{reg__rtc_8h_a7eb10825e2f6671bc2b1e022b04299f2}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CSR\_ALRF\_Pos@{RTC\_CSR\_ALRF\_Pos}}
+\index{RTC\_CSR\_ALRF\_Pos@{RTC\_CSR\_ALRF\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CSR\_ALRF\_Pos}{RTC\_CSR\_ALRF\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CSR\+\_\+\+ALRF\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00104}{104}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_af7d5f433a5c1dda47eb193e866b4c437}\label{reg__rtc_8h_af7d5f433a5c1dda47eb193e866b4c437}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CSR\_CNF@{RTC\_CSR\_CNF}}
+\index{RTC\_CSR\_CNF@{RTC\_CSR\_CNF}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CSR\_CNF}{RTC\_CSR\_CNF}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CSR\+\_\+\+CNF~(0x01 $<$$<$ \mbox{\hyperlink{reg__rtc_8h_aed0d0b0437c7d0962a4ae29c058e3597}{RTC\+\_\+\+CSR\+\_\+\+CNF\+\_\+\+Pos}})}
+
+
+
+Configuration Flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00111}{111}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_aed0d0b0437c7d0962a4ae29c058e3597}\label{reg__rtc_8h_aed0d0b0437c7d0962a4ae29c058e3597}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CSR\_CNF\_Pos@{RTC\_CSR\_CNF\_Pos}}
+\index{RTC\_CSR\_CNF\_Pos@{RTC\_CSR\_CNF\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CSR\_CNF\_Pos}{RTC\_CSR\_CNF\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CSR\+\_\+\+CNF\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00110}{110}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a35afab36891609205a3e11b50094d778}\label{reg__rtc_8h_a35afab36891609205a3e11b50094d778}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CSR\_OWF@{RTC\_CSR\_OWF}}
+\index{RTC\_CSR\_OWF@{RTC\_CSR\_OWF}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CSR\_OWF}{RTC\_CSR\_OWF}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CSR\+\_\+\+OWF~(0x01 $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a4b05cf745a30fde44b9bfa2a3b5517e9}{RTC\+\_\+\+CSR\+\_\+\+OWF\+\_\+\+Pos}})}
+
+
+
+OverfloW Flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00107}{107}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a4b05cf745a30fde44b9bfa2a3b5517e9}\label{reg__rtc_8h_a4b05cf745a30fde44b9bfa2a3b5517e9}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CSR\_OWF\_Pos@{RTC\_CSR\_OWF\_Pos}}
+\index{RTC\_CSR\_OWF\_Pos@{RTC\_CSR\_OWF\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CSR\_OWF\_Pos}{RTC\_CSR\_OWF\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CSR\+\_\+\+OWF\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00106}{106}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_aed357a7df00864a03513026adc12650c}\label{reg__rtc_8h_aed357a7df00864a03513026adc12650c}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CSR\_RSF@{RTC\_CSR\_RSF}}
+\index{RTC\_CSR\_RSF@{RTC\_CSR\_RSF}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CSR\_RSF}{RTC\_CSR\_RSF}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CSR\+\_\+\+RSF~(0x01 $<$$<$ \mbox{\hyperlink{reg__rtc_8h_adad14c2771ff358aeb8471ecdaeafd7a}{RTC\+\_\+\+CSR\+\_\+\+RSF\+\_\+\+Pos}})}
+
+
+
+Registers Synchronized Flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00109}{109}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_adad14c2771ff358aeb8471ecdaeafd7a}\label{reg__rtc_8h_adad14c2771ff358aeb8471ecdaeafd7a}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CSR\_RSF\_Pos@{RTC\_CSR\_RSF\_Pos}}
+\index{RTC\_CSR\_RSF\_Pos@{RTC\_CSR\_RSF\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CSR\_RSF\_Pos}{RTC\_CSR\_RSF\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CSR\+\_\+\+RSF\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00108}{108}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a73ff2a195fe9ecc3993f5df7804eaa08}\label{reg__rtc_8h_a73ff2a195fe9ecc3993f5df7804eaa08}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CSR\_RTOFF@{RTC\_CSR\_RTOFF}}
+\index{RTC\_CSR\_RTOFF@{RTC\_CSR\_RTOFF}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CSR\_RTOFF}{RTC\_CSR\_RTOFF}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CSR\+\_\+\+RTOFF~(0x01 $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a66619a652e0b448f93c06ff55b11dd36}{RTC\+\_\+\+CSR\+\_\+\+RTOFF\+\_\+\+Pos}})}
+
+
+
+RTC operation OFF 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00113}{113}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a66619a652e0b448f93c06ff55b11dd36}\label{reg__rtc_8h_a66619a652e0b448f93c06ff55b11dd36}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CSR\_RTOFF\_Pos@{RTC\_CSR\_RTOFF\_Pos}}
+\index{RTC\_CSR\_RTOFF\_Pos@{RTC\_CSR\_RTOFF\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CSR\_RTOFF\_Pos}{RTC\_CSR\_RTOFF\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CSR\+\_\+\+RTOFF\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00112}{112}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_ad172f47174857934034f3605ad7f0779}\label{reg__rtc_8h_ad172f47174857934034f3605ad7f0779}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CSR\_SECF@{RTC\_CSR\_SECF}}
+\index{RTC\_CSR\_SECF@{RTC\_CSR\_SECF}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CSR\_SECF}{RTC\_CSR\_SECF}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CSR\+\_\+\+SECF~(0x01 $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a553cadd0b71ba668395ac7a3e0bde137}{RTC\+\_\+\+CSR\+\_\+\+SECF\+\_\+\+Pos}})}
+
+
+
+Second Flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00103}{103}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a553cadd0b71ba668395ac7a3e0bde137}\label{reg__rtc_8h_a553cadd0b71ba668395ac7a3e0bde137}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_CSR\_SECF\_Pos@{RTC\_CSR\_SECF\_Pos}}
+\index{RTC\_CSR\_SECF\_Pos@{RTC\_CSR\_SECF\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_CSR\_SECF\_Pos}{RTC\_CSR\_SECF\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+CSR\+\_\+\+SECF\+\_\+\+Pos~(0)}
+
+
+
+RTC\+\_\+\+CSR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00102}{102}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_aa578dd1c56c830ae66e74b9f9e2cfe55}\label{reg__rtc_8h_aa578dd1c56c830ae66e74b9f9e2cfe55}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_DIVH\_DIV@{RTC\_DIVH\_DIV}}
+\index{RTC\_DIVH\_DIV@{RTC\_DIVH\_DIV}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_DIVH\_DIV}{RTC\_DIVH\_DIV}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+DIVH\+\_\+\+DIV~(0x0F $<$$<$ \mbox{\hyperlink{reg__rtc_8h_afb26ee799bc660dcfcd201c4c676509e}{RTC\+\_\+\+DIVH\+\_\+\+DIV\+\_\+\+Pos}})}
+
+
+
+RTC Clock Divider High 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00132}{132}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_afb26ee799bc660dcfcd201c4c676509e}\label{reg__rtc_8h_afb26ee799bc660dcfcd201c4c676509e}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_DIVH\_DIV\_Pos@{RTC\_DIVH\_DIV\_Pos}}
+\index{RTC\_DIVH\_DIV\_Pos@{RTC\_DIVH\_DIV\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_DIVH\_DIV\_Pos}{RTC\_DIVH\_DIV\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+DIVH\+\_\+\+DIV\+\_\+\+Pos~(0)}
+
+
+
+RTC\+\_\+\+DIVH Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00131}{131}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_af2cb11a2f2f4cc67c51416966275c7c6}\label{reg__rtc_8h_af2cb11a2f2f4cc67c51416966275c7c6}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_DIVL\_DIV@{RTC\_DIVL\_DIV}}
+\index{RTC\_DIVL\_DIV@{RTC\_DIVL\_DIV}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_DIVL\_DIV}{RTC\_DIVL\_DIV}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+DIVL\+\_\+\+DIV~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__rtc_8h_abbb8121d68981224fd4849f107605c66}{RTC\+\_\+\+DIVL\+\_\+\+DIV\+\_\+\+Pos}})}
+
+
+
+RTC Clock Divider Low 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00138}{138}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_abbb8121d68981224fd4849f107605c66}\label{reg__rtc_8h_abbb8121d68981224fd4849f107605c66}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_DIVL\_DIV\_Pos@{RTC\_DIVL\_DIV\_Pos}}
+\index{RTC\_DIVL\_DIV\_Pos@{RTC\_DIVL\_DIV\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_DIVL\_DIV\_Pos}{RTC\_DIVL\_DIV\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+DIVL\+\_\+\+DIV\+\_\+\+Pos~(0)}
+
+
+
+RTC\+\_\+\+DIVL Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00137}{137}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a82aa83aec3e9cb9c461514a210a6c051}\label{reg__rtc_8h_a82aa83aec3e9cb9c461514a210a6c051}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_LSE\_CFG\_DR@{RTC\_LSE\_CFG\_DR}}
+\index{RTC\_LSE\_CFG\_DR@{RTC\_LSE\_CFG\_DR}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_LSE\_CFG\_DR}{RTC\_LSE\_CFG\_DR}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+DR~(0x03U $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a0384f852d6635fd1cb0094e8f4a57927}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+DR\+\_\+\+Pos}})}
+
+
+
+Drive capability selection 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00185}{185}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a0384f852d6635fd1cb0094e8f4a57927}\label{reg__rtc_8h_a0384f852d6635fd1cb0094e8f4a57927}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_LSE\_CFG\_DR\_Pos@{RTC\_LSE\_CFG\_DR\_Pos}}
+\index{RTC\_LSE\_CFG\_DR\_Pos@{RTC\_LSE\_CFG\_DR\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_LSE\_CFG\_DR\_Pos}{RTC\_LSE\_CFG\_DR\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+DR\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00184}{184}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a7473841e2c154443c05d9ec6c1d933b1}\label{reg__rtc_8h_a7473841e2c154443c05d9ec6c1d933b1}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_LSE\_CFG\_IB@{RTC\_LSE\_CFG\_IB}}
+\index{RTC\_LSE\_CFG\_IB@{RTC\_LSE\_CFG\_IB}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_LSE\_CFG\_IB}{RTC\_LSE\_CFG\_IB}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+IB~(0x01U $<$$<$ \mbox{\hyperlink{reg__rtc_8h_ad4c46cf1b176e3ae1a56ccebb130320b}{RTC\+\_\+\+MSRL\+\_\+\+MSR\+\_\+\+Pos}})}
+
+
+
+Bias current regulation 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00192}{192}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_ab511b0ee5cb7d40600be90b7d27a3e28}\label{reg__rtc_8h_ab511b0ee5cb7d40600be90b7d27a3e28}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_LSE\_CFG\_IB\_Pos@{RTC\_LSE\_CFG\_IB\_Pos}}
+\index{RTC\_LSE\_CFG\_IB\_Pos@{RTC\_LSE\_CFG\_IB\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_LSE\_CFG\_IB\_Pos}{RTC\_LSE\_CFG\_IB\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+IB\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00191}{191}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a8e2f00148815a73ee510cee07d4e3352}\label{reg__rtc_8h_a8e2f00148815a73ee510cee07d4e3352}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_LSE\_CFG\_RFB\_SEL\_10@{RTC\_LSE\_CFG\_RFB\_SEL\_10}}
+\index{RTC\_LSE\_CFG\_RFB\_SEL\_10@{RTC\_LSE\_CFG\_RFB\_SEL\_10}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_LSE\_CFG\_RFB\_SEL\_10}{RTC\_LSE\_CFG\_RFB\_SEL\_10}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+RFB\+\_\+\+SEL\+\_\+10~(0x01U $<$$<$ \mbox{\hyperlink{reg__rtc_8h_accffb62579dd3936a9134fad870469e5}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+RFB\+\_\+\+SEL\+\_\+\+Pos}})}
+
+
+
+Feedback resistance selection 10M 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00189}{189}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_ac96c21b66d3ea30e958b73b82ba8644b}\label{reg__rtc_8h_ac96c21b66d3ea30e958b73b82ba8644b}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_LSE\_CFG\_RFB\_SEL\_12@{RTC\_LSE\_CFG\_RFB\_SEL\_12}}
+\index{RTC\_LSE\_CFG\_RFB\_SEL\_12@{RTC\_LSE\_CFG\_RFB\_SEL\_12}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_LSE\_CFG\_RFB\_SEL\_12}{RTC\_LSE\_CFG\_RFB\_SEL\_12}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+RFB\+\_\+\+SEL\+\_\+12~(0x00U $<$$<$ \mbox{\hyperlink{reg__rtc_8h_accffb62579dd3936a9134fad870469e5}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+RFB\+\_\+\+SEL\+\_\+\+Pos}})}
+
+
+
+Feedback resistance selection 12M 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00190}{190}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a9626d8b65a7167505bfb04b2cda371f8}\label{reg__rtc_8h_a9626d8b65a7167505bfb04b2cda371f8}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_LSE\_CFG\_RFB\_SEL\_3@{RTC\_LSE\_CFG\_RFB\_SEL\_3}}
+\index{RTC\_LSE\_CFG\_RFB\_SEL\_3@{RTC\_LSE\_CFG\_RFB\_SEL\_3}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_LSE\_CFG\_RFB\_SEL\_3}{RTC\_LSE\_CFG\_RFB\_SEL\_3}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+RFB\+\_\+\+SEL\+\_\+3~(0x03U $<$$<$ \mbox{\hyperlink{reg__rtc_8h_accffb62579dd3936a9134fad870469e5}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+RFB\+\_\+\+SEL\+\_\+\+Pos}})}
+
+
+
+Feedback resistance selection 3M ~\newline
+ 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00187}{187}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a353962cf521eacd7beb2996284576705}\label{reg__rtc_8h_a353962cf521eacd7beb2996284576705}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_LSE\_CFG\_RFB\_SEL\_6@{RTC\_LSE\_CFG\_RFB\_SEL\_6}}
+\index{RTC\_LSE\_CFG\_RFB\_SEL\_6@{RTC\_LSE\_CFG\_RFB\_SEL\_6}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_LSE\_CFG\_RFB\_SEL\_6}{RTC\_LSE\_CFG\_RFB\_SEL\_6}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+RFB\+\_\+\+SEL\+\_\+6~(0x02U $<$$<$ \mbox{\hyperlink{reg__rtc_8h_accffb62579dd3936a9134fad870469e5}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+RFB\+\_\+\+SEL\+\_\+\+Pos}})}
+
+
+
+Feedback resistance selection 6M 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00188}{188}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_accffb62579dd3936a9134fad870469e5}\label{reg__rtc_8h_accffb62579dd3936a9134fad870469e5}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_LSE\_CFG\_RFB\_SEL\_Pos@{RTC\_LSE\_CFG\_RFB\_SEL\_Pos}}
+\index{RTC\_LSE\_CFG\_RFB\_SEL\_Pos@{RTC\_LSE\_CFG\_RFB\_SEL\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_LSE\_CFG\_RFB\_SEL\_Pos}{RTC\_LSE\_CFG\_RFB\_SEL\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+RFB\+\_\+\+SEL\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00186}{186}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a24dbe4ddfc6dc7328b54caa0e66053bb}\label{reg__rtc_8h_a24dbe4ddfc6dc7328b54caa0e66053bb}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_LSE\_CFG\_TEST@{RTC\_LSE\_CFG\_TEST}}
+\index{RTC\_LSE\_CFG\_TEST@{RTC\_LSE\_CFG\_TEST}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_LSE\_CFG\_TEST}{RTC\_LSE\_CFG\_TEST}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+TEST~(0x0\+FU $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a59210372d766469ff62415f65afd39ee}{RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+TEST\+\_\+\+Pos}})}
+
+
+
+Test control signal 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00183}{183}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a59210372d766469ff62415f65afd39ee}\label{reg__rtc_8h_a59210372d766469ff62415f65afd39ee}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_LSE\_CFG\_TEST\_Pos@{RTC\_LSE\_CFG\_TEST\_Pos}}
+\index{RTC\_LSE\_CFG\_TEST\_Pos@{RTC\_LSE\_CFG\_TEST\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_LSE\_CFG\_TEST\_Pos}{RTC\_LSE\_CFG\_TEST\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+LSE\+\_\+\+CFG\+\_\+\+TEST\+\_\+\+Pos~(0)}
+
+
+
+RTC\+\_\+\+LSE\+\_\+\+CFG Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00182}{182}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a5d340ce7e557396fadebc344be99e711}\label{reg__rtc_8h_a5d340ce7e557396fadebc344be99e711}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_MSRH\_MSR@{RTC\_MSRH\_MSR}}
+\index{RTC\_MSRH\_MSR@{RTC\_MSRH\_MSR}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_MSRH\_MSR}{RTC\_MSRH\_MSR}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+MSRH\+\_\+\+MSR~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a08328b0b17104e8815a81ba2ab8d6600}{RTC\+\_\+\+MSRH\+\_\+\+MSR\+\_\+\+Pos}})}
+
+
+
+RTC MS Alarm Register High 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00169}{169}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a08328b0b17104e8815a81ba2ab8d6600}\label{reg__rtc_8h_a08328b0b17104e8815a81ba2ab8d6600}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_MSRH\_MSR\_Pos@{RTC\_MSRH\_MSR\_Pos}}
+\index{RTC\_MSRH\_MSR\_Pos@{RTC\_MSRH\_MSR\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_MSRH\_MSR\_Pos}{RTC\_MSRH\_MSR\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+MSRH\+\_\+\+MSR\+\_\+\+Pos~(0)}
+
+
+
+RTC\+\_\+\+MSRH Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00168}{168}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a7257cbbaa31ad6ddc564969b4b6a68cf}\label{reg__rtc_8h_a7257cbbaa31ad6ddc564969b4b6a68cf}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_MSRL\_MSR@{RTC\_MSRL\_MSR}}
+\index{RTC\_MSRL\_MSR@{RTC\_MSRL\_MSR}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_MSRL\_MSR}{RTC\_MSRL\_MSR}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+MSRL\+\_\+\+MSR~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__rtc_8h_ad4c46cf1b176e3ae1a56ccebb130320b}{RTC\+\_\+\+MSRL\+\_\+\+MSR\+\_\+\+Pos}})}
+
+
+
+RTC MS Alarm Register Low 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00176}{176}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_ad4c46cf1b176e3ae1a56ccebb130320b}\label{reg__rtc_8h_ad4c46cf1b176e3ae1a56ccebb130320b}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_MSRL\_MSR\_Pos@{RTC\_MSRL\_MSR\_Pos}}
+\index{RTC\_MSRL\_MSR\_Pos@{RTC\_MSRL\_MSR\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_MSRL\_MSR\_Pos}{RTC\_MSRL\_MSR\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+MSRL\+\_\+\+MSR\+\_\+\+Pos~(0)}
+
+
+
+RTC\+\_\+\+MSRL Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00175}{175}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a5209d66a77da940d9a187bbaf73dc8a0}\label{reg__rtc_8h_a5209d66a77da940d9a187bbaf73dc8a0}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_PRLH\_PRL@{RTC\_PRLH\_PRL}}
+\index{RTC\_PRLH\_PRL@{RTC\_PRLH\_PRL}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_PRLH\_PRL}{RTC\_PRLH\_PRL}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+PRLH\+\_\+\+PRL~(0x0F $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a7897d7cf022e940f146b6427eb4cd1e1}{RTC\+\_\+\+PRLH\+\_\+\+PRL\+\_\+\+Pos}})}
+
+
+
+RTC Prescaler Reload Value High 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00120}{120}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a7897d7cf022e940f146b6427eb4cd1e1}\label{reg__rtc_8h_a7897d7cf022e940f146b6427eb4cd1e1}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_PRLH\_PRL\_Pos@{RTC\_PRLH\_PRL\_Pos}}
+\index{RTC\_PRLH\_PRL\_Pos@{RTC\_PRLH\_PRL\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_PRLH\_PRL\_Pos}{RTC\_PRLH\_PRL\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+PRLH\+\_\+\+PRL\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00119}{119}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_ac1cd2db7134d6b3e21477ed466dd4d7c}\label{reg__rtc_8h_ac1cd2db7134d6b3e21477ed466dd4d7c}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_PRLL\_PRL@{RTC\_PRLL\_PRL}}
+\index{RTC\_PRLL\_PRL@{RTC\_PRLL\_PRL}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_PRLL\_PRL}{RTC\_PRLL\_PRL}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+PRLL\+\_\+\+PRL~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__rtc_8h_a09a2c15c1b12beb340a12b8403298d03}{RTC\+\_\+\+PRLL\+\_\+\+PRL\+\_\+\+Pos}})}
+
+
+
+RTC Prescaler Reload Value Low 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00126}{126}} 行定义.
+
+\mbox{\Hypertarget{reg__rtc_8h_a09a2c15c1b12beb340a12b8403298d03}\label{reg__rtc_8h_a09a2c15c1b12beb340a12b8403298d03}} 
+\index{reg\_rtc.h@{reg\_rtc.h}!RTC\_PRLL\_PRL\_Pos@{RTC\_PRLL\_PRL\_Pos}}
+\index{RTC\_PRLL\_PRL\_Pos@{RTC\_PRLL\_PRL\_Pos}!reg\_rtc.h@{reg\_rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_PRLL\_PRL\_Pos}{RTC\_PRLL\_PRL\_Pos}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+PRLL\+\_\+\+PRL\+\_\+\+Pos~(0)}
+
+
+
+RTC\+\_\+\+PRLL Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00125}{125}} 行定义.
+

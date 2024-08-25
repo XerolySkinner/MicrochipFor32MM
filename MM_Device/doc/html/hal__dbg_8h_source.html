@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>template: C:/Users/XerolySkinner/Desktop/MM_Device/MM32F327x/HAL_Lib/Inc/hal_dbg.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">template
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8a23370bd962f2be3cb202251f8a0865.html">MM32F327x</a></li><li class="navelem"><a class="el" href="dir_3b1bed74bcb45e4245a73e66928ea90d.html">HAL_Lib</a></li><li class="navelem"><a class="el" href="dir_d0c94a65a7731bb943335e05fa4de4c7.html">Inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">hal_dbg.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="hal__dbg_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// Define to prevent recursive inclusion</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#ifndef __HAL_DBG_H</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#define __HAL_DBG_H</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Files includes</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">types.h</a>&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="reg__common_8h.html">reg_common.h</a>&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="reg__dbg_8h.html">reg_dbg.h</a>&quot;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#ifdef _HAL_DBG_C_</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#define GLOBAL</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="group___d_i_v___exported___variables.html#ga3de33738fd3c7e77bffbcfaefc3e7645">   48</a></span><span class="preprocessor">#define GLOBAL extern</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#undef GLOBAL</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___d_b_g___exported___functions.html#gaf1e0a240cfefc296959ef90cff04157e">DBGMCU_Configure</a>(<a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> periph, <a class="code hl_enumeration" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#endif </span><span class="comment">// __HAL_DBG_H</span></div>
+<div class="ttc" id="agroup___d_b_g___exported___functions_html_gaf1e0a240cfefc296959ef90cff04157e"><div class="ttname"><a href="group___d_b_g___exported___functions.html#gaf1e0a240cfefc296959ef90cff04157e">DBGMCU_Configure</a></div><div class="ttdeci">void DBGMCU_Configure(u32 periph, FunctionalState state)</div><div class="ttdoc">Enables or disables the specified DBG peripheral.</div><div class="ttdef"><b>Definition:</b> <a href="hal__dbg_8c_source.html#l00044">hal_dbg.c:44</a></div></div>
+<div class="ttc" id="areg__common_8h_html"><div class="ttname"><a href="reg__common_8h.html">reg_common.h</a></div><div class="ttdoc">THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY.</div></div>
+<div class="ttc" id="areg__dbg_8h_html"><div class="ttname"><a href="reg__dbg_8h.html">reg_dbg.h</a></div><div class="ttdoc">THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY.</div></div>
+<div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">THIS FILE PROVIDES ALL THE TYPE FIRMWARE FUNCTIONS.</div></div>
+<div class="ttc" id="atypes_8h_html_a10e94b422ef0c20dcdec20d31a1f5049"><div class="ttname"><a href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a></div><div class="ttdeci">unsigned int u32</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00054">types.h:54</a></div></div>
+<div class="ttc" id="atypes_8h_html_ac9a7e9a35d2513ec15c3b537aaa4fba1"><div class="ttname"><a href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a></div><div class="ttdeci">FunctionalState</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00074">types.h:74</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

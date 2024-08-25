@@ -1,0 +1,100 @@
+\hypertarget{hal__sdio_8c}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Src/hal\+\_\+sdio.c 文件参考}
+\label{hal__sdio_8c}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_sdio.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_sdio.c}}
+
+
+THIS FILE PROVIDES ALL THE SDIO FIRMWARE FUNCTIONS.  
+
+
+{\ttfamily \#include \char`\"{}reg\+\_\+sdio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}hal\+\_\+sdio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}hal\+\_\+rcc.\+h\char`\"{}}\newline
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{hal__sdio_8c_ac641047eae753bca34f8407f5b5f69ad}{\+\_\+\+HAL\+\_\+\+SDIO\+\_\+\+C\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_gac359d2c6c67a2590f8f9b720c0e4ff1b}{SDIO\+\_\+\+De\+Init}} (void)
+\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga778d338c29df4fae9ef69432e6df32ad}{SDIO\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{struct_s_d_i_o___init_type_def}{SDIO\+\_\+\+Init\+Type\+Def}} $\ast$SDIO\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each SDIO\+\_\+\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_gaa83209c09e921521aca2587fb5b22ea2}{SDIO\+\_\+\+Data\+Struct\+Init}} (\mbox{\hyperlink{struct_s_d_i_o___data_init_type_def}{SDIO\+\_\+\+Data\+Init\+Type\+Def}} $\ast$SDIO\+\_\+\+Data\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each SDIO\+\_\+\+Data\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga6824fe7b29eebad5e26e1e81b39f884d}{SDIO\+\_\+\+Clock\+Set}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} value)
+\begin{DoxyCompactList}\small\item\em Initializes the SDIO data path according to the specified parameters in the SDIO\+\_\+\+Data\+Init\+Struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_gad40764a8e37c0ed5c9141ae338ff0203}{SDIO\+\_\+\+Init}} (\mbox{\hyperlink{struct_s_d_i_o___init_type_def}{SDIO\+\_\+\+Init\+Type\+Def}} $\ast$SDIO\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the SDIO peripheral according to the specified parameters in the SDIO\+\_\+\+Init\+Struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_gaf40594ca2987d8b4fc4dbb9d59ccf3e0}{SDIO\+\_\+\+ITConfig}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+IT, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the SDIO interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga38f1b73fa641efeeb6a96472d989c767}{SDIO\+\_\+\+CRCConfig}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+CRC, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the SDIO CRC. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_gaa843456dbaf1590d8a5b3dc5a075dcf9}{SDIO\+\_\+\+Clock\+\_\+\+Set}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} clkdiv)
+\begin{DoxyCompactList}\small\item\em Port transfer speed mode. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga9f053c27018521095d7333e7df238764}{SD\+\_\+\+Power\+OFF}} (void)
+\begin{DoxyCompactList}\small\item\em Turn off the SDIO switch. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga09d9e89f49c87c82aec79c97b7068e24}{SDIO\+\_\+\+Cmd\+Struct\+Init}} (\mbox{\hyperlink{struct_s_d_i_o___cmd_init_type_def}{SDIO\+\_\+\+Cmd\+Init\+Type\+Def}} $\ast$SDIO\+\_\+\+Cmd\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each SDIO\+\_\+\+Cmd\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga6ac7722df2ba23f1a716db8a4b38a49a}{SDIO\+\_\+\+Send\+\_\+\+Cmd}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} cmdindex, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} waitrsp, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} arg)
+\begin{DoxyCompactList}\small\item\em SDIO sends command functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga77ff57848ed54cc9dbfcb2cdfd4d3104}{Cmd\+Error}} (void)
+\begin{DoxyCompactList}\small\item\em Check the execution status of CMD0. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga384372e7cd037af3dbc92da854508c70}{Cmd\+Resp1\+Error}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} cmd)
+\begin{DoxyCompactList}\small\item\em Check the error status of the R1 response. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___s_d_i_o___exported___functions_gae875982cdc6a453c2793073e8004585e}{Cmd\+Resp2\+Error}} (void)
+\begin{DoxyCompactList}\small\item\em Check the execution status of CMD2. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga2c77db272852343b90b0b06573a60e88}{Cmd\+Resp3\+Error}} (void)
+\begin{DoxyCompactList}\small\item\em Check the execution status of CMD3. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___s_d_i_o___exported___functions_gacfe36517f07f12f6b5512ca99cf5e6a1}{Cmd\+Resp6\+Error}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} cmd, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} $\ast$prca)
+\begin{DoxyCompactList}\small\item\em Check the execution status of CMD6. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga6f8858b757aa1b13e112175cddaf62b9}{Cmd\+Resp7\+Error}} (void)
+\begin{DoxyCompactList}\small\item\em Check the execution status of CMD7. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga8ed0e660e0b895d3f9cb9a560ad50291}{SDIO\+\_\+\+Send\+\_\+\+Data\+\_\+\+Cfg}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} datatimeout, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} datalen, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} blksize, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} dir)
+\begin{DoxyCompactList}\small\item\em Write data direction block size configuration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga3c1401afcecef6ccea6fec1b291c8e67}{SDIO\+\_\+\+Clear\+Flag}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+FLAG)
+\begin{DoxyCompactList}\small\item\em Clears the SDIO\textquotesingle{}s Flag pending bits. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga160c7fe3b6f5c5812caa893a47f3e89a}{SDIO\+\_\+\+Clear\+ITPending\+Bit}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Clears the SDIO\textquotesingle{}s interrupt pending bits. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga2c48bd26d3f6a531cb667bfaf6525520}{SDIO\+\_\+\+Get\+Flag\+Status}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+FLAG)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified SDIO flag is set or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga186e0c0406b9f6e56e33421f287a613b}{SDIO\+\_\+\+Get\+Time\+Out\+Counter}} (void)
+\begin{DoxyCompactList}\small\item\em Reads the value of the data transfer timeout count \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga2e0007f7bb12c1b43f7495c6a4a20b50}{SDIO\+\_\+\+Read\+Data}} (void)
+\begin{DoxyCompactList}\small\item\em Read one data word from FIFO. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_gac5a58e2b720a0492c693b60024ee41b0}{SDIO\+\_\+\+Write\+Data}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} tempbuff)
+\begin{DoxyCompactList}\small\item\em Write one data word to FIFO. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga66814bad725d7dbd8dd0ad3b92235328}{SDIO\+\_\+\+Get\+Data\+Counter}} (void)
+\begin{DoxyCompactList}\small\item\em Returns number of remaining data bytes to be transferred. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga5c83f845a6c1f66883c3bb6254977cda}{SDIO\+\_\+\+DMACmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enable or Dsiable DMA . \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE PROVIDES ALL THE SDIO FIRMWARE FUNCTIONS. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{hal__sdio_8c_ac641047eae753bca34f8407f5b5f69ad}\label{hal__sdio_8c_ac641047eae753bca34f8407f5b5f69ad}} 
+\index{hal\_sdio.c@{hal\_sdio.c}!\_HAL\_SDIO\_C\_@{\_HAL\_SDIO\_C\_}}
+\index{\_HAL\_SDIO\_C\_@{\_HAL\_SDIO\_C\_}!hal\_sdio.c@{hal\_sdio.c}}
+\doxysubsubsection{\texorpdfstring{\_HAL\_SDIO\_C\_}{\_HAL\_SDIO\_C\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+HAL\+\_\+\+SDIO\+\_\+\+C\+\_\+}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00019}{19}} 行定义.
+

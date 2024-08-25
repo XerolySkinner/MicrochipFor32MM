@@ -1,0 +1,116 @@
+\hypertarget{reg__crs_8h_source}{}\doxysection{reg\+\_\+crs.\+h}
+\label{reg__crs_8h_source}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_crs.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_crs.h}}
+\mbox{\hyperlink{reg__crs_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00019}00019 \textcolor{comment}{// Define to prevent recursive inclusion}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00021}00021 \textcolor{preprocessor}{\#ifndef \_\_REG\_CRS\_H}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00022}00022 \textcolor{preprocessor}{\#define \_\_REG\_CRS\_H}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00024}00024 \textcolor{comment}{// Files includes}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00026}00026 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00027}00027 \textcolor{preprocessor}{\#include <stdbool.h>}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00028}00028 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{types_8h}{types.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00033}00033 \textcolor{preprocessor}{\#if defined ( \_\_CC\_ARM )}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00034}00034 \textcolor{preprocessor}{\#pragma anon\_unions}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00035}00035 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00047}\mbox{\hyperlink{reg__crs_8h_a53cd25310ec0663a7395042bd860fedc}{00047}} \textcolor{preprocessor}{\#define CRS\_BASE                        (APB1PERIPH\_BASE + 0x6C00)              }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00054}\mbox{\hyperlink{struct_c_r_s___type_def}{00054}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00055}\mbox{\hyperlink{struct_c_r_s___type_def_ab61bee0e4a478fe9fa4a42900d8bb89b}{00055}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_r_s___type_def_ab61bee0e4a478fe9fa4a42900d8bb89b}{CR}};                                                                }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00056}\mbox{\hyperlink{struct_c_r_s___type_def_af2899a9243e86ad37d4ddc8fcccbe718}{00056}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_r_s___type_def_af2899a9243e86ad37d4ddc8fcccbe718}{CFGR}};                                                              }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00057}\mbox{\hyperlink{struct_c_r_s___type_def_a93af5b20b28db90c9e3c1e3e6c6346c9}{00057}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_r_s___type_def_a93af5b20b28db90c9e3c1e3e6c6346c9}{ISR}};                                                               }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00058}\mbox{\hyperlink{struct_c_r_s___type_def_a20ae0dc3788a9448bfe4d89d70c1e4e1}{00058}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_r_s___type_def_a20ae0dc3788a9448bfe4d89d70c1e4e1}{ICR}};                                                               }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00059}00059 \} \mbox{\hyperlink{struct_c_r_s___type_def}{CRS\_TypeDef}};}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00066}\mbox{\hyperlink{reg__crs_8h_ad151b2f8dbc243ac0ce1fad0c4306328}{00066}} \textcolor{preprocessor}{\#define CRS                         ((CRS\_TypeDef*) CRS\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00073}\mbox{\hyperlink{reg__crs_8h_a0fe0aa3809ebf66e37089884266eec47}{00073}} \textcolor{preprocessor}{\#define CRS\_CR\_OKIE\_Pos             (0)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00074}\mbox{\hyperlink{reg__crs_8h_a7693a62cacfca8ab9699a22e94fe938f}{00074}} \textcolor{preprocessor}{\#define CRS\_CR\_OKIE                 (0x01U << CRS\_CR\_OKIE\_Pos)              }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00075}\mbox{\hyperlink{reg__crs_8h_a08e3f6522b576ee3ce450ec58e37caf3}{00075}} \textcolor{preprocessor}{\#define CRS\_CR\_WARNIE\_Pos           (1)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00076}\mbox{\hyperlink{reg__crs_8h_aade9041f148c18e199ed7cf5c4228dba}{00076}} \textcolor{preprocessor}{\#define CRS\_CR\_WARNIE               (0x01U << CRS\_CR\_WARNIE\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00077}\mbox{\hyperlink{reg__crs_8h_afe82fc749bd2c929d741dd3f19c6c833}{00077}} \textcolor{preprocessor}{\#define CRS\_CR\_ERRIE\_Pos            (2)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00078}\mbox{\hyperlink{reg__crs_8h_ac616bbfe903ec7cc2be289db5fba0fe5}{00078}} \textcolor{preprocessor}{\#define CRS\_CR\_ERRIE                (0x01U << CRS\_CR\_ERRIE\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00079}\mbox{\hyperlink{reg__crs_8h_af003e149a5929f9003a0436cb792b9ba}{00079}} \textcolor{preprocessor}{\#define CRS\_CR\_EXPTIE\_Pos           (3)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00080}\mbox{\hyperlink{reg__crs_8h_af122171aeba18f537d001ef840cb428c}{00080}} \textcolor{preprocessor}{\#define CRS\_CR\_EXPTIE               (0x01U << CRS\_CR\_EXPTIE\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00081}\mbox{\hyperlink{reg__crs_8h_a8104505d704f81461ebe96b2042b6cc4}{00081}} \textcolor{preprocessor}{\#define CRS\_CR\_CNTEN\_Pos            (5)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00082}\mbox{\hyperlink{reg__crs_8h_af64de8225612fa55f0a771dd47a4f282}{00082}} \textcolor{preprocessor}{\#define CRS\_CR\_CNTEN                (0x01U << CRS\_CR\_CNTEN\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00083}\mbox{\hyperlink{reg__crs_8h_adc58c855511f7dee3f38862400350951}{00083}} \textcolor{preprocessor}{\#define CRS\_CR\_AUTOTRIMEN\_Pos       (6)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00084}\mbox{\hyperlink{reg__crs_8h_afa48432b942f1896e05a2eff91178edd}{00084}} \textcolor{preprocessor}{\#define CRS\_CR\_AUTOTRIMEN           (0x01U << CRS\_CR\_AUTOTRIMEN\_Pos)        }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00085}\mbox{\hyperlink{reg__crs_8h_a0a1aaab3255d1a601461b0af51ee2b71}{00085}} \textcolor{preprocessor}{\#define CRS\_CR\_SWSYNC\_Pos           (7)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00086}\mbox{\hyperlink{reg__crs_8h_a53d79706214ba4ee9310e4b678d67e44}{00086}} \textcolor{preprocessor}{\#define CRS\_CR\_SWSYNC               (0x01U << CRS\_CR\_SWSYNC\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00087}\mbox{\hyperlink{reg__crs_8h_a8403e00f9da8b5d82edf71bad235fdfe}{00087}} \textcolor{preprocessor}{\#define CRS\_CR\_TRIM\_Pos             (8)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00088}\mbox{\hyperlink{reg__crs_8h_a755d695431db14c1b3b15a48ede61c13}{00088}} \textcolor{preprocessor}{\#define CRS\_CR\_TRIM                 (0x3FFU << CRS\_CR\_TRIM\_Pos)              }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00089}00089 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00093}\mbox{\hyperlink{reg__crs_8h_a391a7b80ee20474bda366e0f915a4923}{00093}} \textcolor{preprocessor}{\#define CRS\_CFGR\_RELOAD\_Pos         (0)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00094}\mbox{\hyperlink{reg__crs_8h_a7e54b011ada0eeb4b6ed9cdd24d517f9}{00094}} \textcolor{preprocessor}{\#define CRS\_CFGR\_RELOAD             (0xFFFFU << CRS\_CFGR\_RELOAD\_Pos)        }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00095}\mbox{\hyperlink{reg__crs_8h_a5e716be61ad7e9eec068b4dff4a96a7b}{00095}} \textcolor{preprocessor}{\#define CRS\_CFGR\_FELIM\_Pos          (16)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00096}\mbox{\hyperlink{reg__crs_8h_a48c70ae21b6a35ed520a2b30df2c4852}{00096}} \textcolor{preprocessor}{\#define CRS\_CFGR\_FELIM              (0xFFU << CRS\_CFGR\_FELIM\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00097}\mbox{\hyperlink{reg__crs_8h_a4e7965c47b6e5d024044760ffe816e7e}{00097}} \textcolor{preprocessor}{\#define CRS\_CFGR\_DIV\_Pos            (24)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00098}\mbox{\hyperlink{reg__crs_8h_a098a67ef20794332d0308c761fb47a0f}{00098}} \textcolor{preprocessor}{\#define CRS\_CFGR\_DIV                (0x07U << CRS\_CFGR\_DIV\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00099}\mbox{\hyperlink{reg__crs_8h_a460d617d51a570ac67bdd340d8e134cb}{00099}} \textcolor{preprocessor}{\#define CRS\_CFGR\_SRC\_Pos            (28)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00100}\mbox{\hyperlink{reg__crs_8h_aed7df5ce417054248a351c81eba62f26}{00100}} \textcolor{preprocessor}{\#define CRS\_CFGR\_SRC                (0x03U << CRS\_CFGR\_SRC\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00101}\mbox{\hyperlink{reg__crs_8h_aaca87c760933eeb6f50243ef87473baa}{00101}} \textcolor{preprocessor}{\#define CRS\_CFGR\_SRC\_MCO            (0x00U << CRS\_CFGR\_SRC\_Pos)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00102}\mbox{\hyperlink{reg__crs_8h_a8afdbae0491f899a8ff30055fccc0b30}{00102}} \textcolor{preprocessor}{\#define CRS\_CFGR\_SRC\_USBSOF         (0x02U << CRS\_CFGR\_SRC\_Pos)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00103}\mbox{\hyperlink{reg__crs_8h_a23d63b667d8bd57e2612a27444d0d2d1}{00103}} \textcolor{preprocessor}{\#define CRS\_CFGR\_POL\_Pos            (31)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00104}\mbox{\hyperlink{reg__crs_8h_a34b1b16b28f551ef51f08f7372385ad5}{00104}} \textcolor{preprocessor}{\#define CRS\_CFGR\_POL                (0x01U << CRS\_CFGR\_POL\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00109}\mbox{\hyperlink{reg__crs_8h_afbaa9dcfcade7b3c6e7598b3870db9eb}{00109}} \textcolor{preprocessor}{\#define CRS\_ISR\_OKIF\_Pos            (0)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00110}\mbox{\hyperlink{reg__crs_8h_a4f8a2b5888a0bac6ede515ec2eb125d7}{00110}} \textcolor{preprocessor}{\#define CRS\_ISR\_OKIF                (0x01U << CRS\_ISR\_OKIF\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00111}\mbox{\hyperlink{reg__crs_8h_ae0da8b092f26c78938de23c0dea143b9}{00111}} \textcolor{preprocessor}{\#define CRS\_ISR\_WARNIF\_Pos          (1)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00112}\mbox{\hyperlink{reg__crs_8h_a87e76b7dee2efca11a6ec0b578fe6531}{00112}} \textcolor{preprocessor}{\#define CRS\_ISR\_WARNIF              (0x01U << CRS\_ISR\_WARNIF\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00113}\mbox{\hyperlink{reg__crs_8h_ac51bb5861aa3290d200a5c3edd122904}{00113}} \textcolor{preprocessor}{\#define CRS\_ISR\_ERRIF\_Pos           (2)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00114}\mbox{\hyperlink{reg__crs_8h_a9e5871b1ea8f8602415a766bb9356329}{00114}} \textcolor{preprocessor}{\#define CRS\_ISR\_ERRIF               (0x01U << CRS\_ISR\_ERRIF\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00115}\mbox{\hyperlink{reg__crs_8h_a060dc6a61fcb74cef01cea42fb48dc23}{00115}} \textcolor{preprocessor}{\#define CRS\_ISR\_EXPTIF\_Pos          (3)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00116}\mbox{\hyperlink{reg__crs_8h_ac11c44aaef0968554c0e6795864c2f5f}{00116}} \textcolor{preprocessor}{\#define CRS\_ISR\_EXPTIF              (0x01U << CRS\_ISR\_EXPTIF\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00117}\mbox{\hyperlink{reg__crs_8h_a0bb4fe6aefd586988a62a5837baa26ea}{00117}} \textcolor{preprocessor}{\#define CRS\_ISR\_ERR\_Pos             (8)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00118}\mbox{\hyperlink{reg__crs_8h_ae9826e0b009afd0d8b1ed51b44d4a4ee}{00118}} \textcolor{preprocessor}{\#define CRS\_ISR\_ERR                 (0x01U << CRS\_ISR\_ERR\_Pos)              }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00119}\mbox{\hyperlink{reg__crs_8h_a1ab20c62ea8ea4943f71da58aba7ba43}{00119}} \textcolor{preprocessor}{\#define CRS\_ISR\_MISS\_Pos            (9)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00120}\mbox{\hyperlink{reg__crs_8h_a79febd04bfdf302df013d199ce1bbff4}{00120}} \textcolor{preprocessor}{\#define CRS\_ISR\_MISS                (0x01U << CRS\_ISR\_MISS\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00121}\mbox{\hyperlink{reg__crs_8h_ac7bc2e7aa3cd36c7c76255488ccc26fe}{00121}} \textcolor{preprocessor}{\#define CRS\_ISR\_OVERFLOW\_Pos        (10)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00122}\mbox{\hyperlink{reg__crs_8h_a938cebb3399bb229e30fdec64ff06d75}{00122}} \textcolor{preprocessor}{\#define CRS\_ISR\_OVERFLOW            (0x01U << CRS\_ISR\_OVERFLOW\_Pos)         }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00123}\mbox{\hyperlink{reg__crs_8h_afbcb80aba05f7db27d4b5436f6b4b4ba}{00123}} \textcolor{preprocessor}{\#define CRS\_ISR\_FEDIR\_Pos           (15)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00124}\mbox{\hyperlink{reg__crs_8h_a91196b059d8ff52c4f28bc964c8a446a}{00124}} \textcolor{preprocessor}{\#define CRS\_ISR\_FEDIR               (0x01U << CRS\_ISR\_FEDIR\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00125}\mbox{\hyperlink{reg__crs_8h_a4a4fbc555cf26b952581829f83c57764}{00125}} \textcolor{preprocessor}{\#define CRS\_ISR\_FECAP\_Pos           (16)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00126}\mbox{\hyperlink{reg__crs_8h_af0b8a9757678f28814b1a0c1baca63e2}{00126}} \textcolor{preprocessor}{\#define CRS\_ISR\_FECAP               (0xFFFFU << CRS\_ISR\_FECAP\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00131}\mbox{\hyperlink{reg__crs_8h_a4f12e85fa8a9989ec220086c6c6caaa6}{00131}} \textcolor{preprocessor}{\#define CRS\_ICR\_OK\_Pos              (0)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00132}\mbox{\hyperlink{reg__crs_8h_a8d91af50cd99c0d6e7b3bc28fabf1bff}{00132}} \textcolor{preprocessor}{\#define CRS\_ICR\_OK                  (0x01U << CRS\_ICR\_OK\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00133}\mbox{\hyperlink{reg__crs_8h_a5a84038704cfa2a772713387d20b9c43}{00133}} \textcolor{preprocessor}{\#define CRS\_ICR\_WARN\_Pos            (1)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00134}\mbox{\hyperlink{reg__crs_8h_aa70486f4c09b204cd1f0331d150d48aa}{00134}} \textcolor{preprocessor}{\#define CRS\_ICR\_WARN                (0x01U << CRS\_ICR\_WARN\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00135}\mbox{\hyperlink{reg__crs_8h_af7041f3114d8a56c81fc27e0e46adfba}{00135}} \textcolor{preprocessor}{\#define CRS\_ICR\_ERR\_Pos             (2)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00136}\mbox{\hyperlink{reg__crs_8h_a19b06e76ac148cedc3367ee3a91f4011}{00136}} \textcolor{preprocessor}{\#define CRS\_ICR\_ERR                 (0x01U << CRS\_ICR\_ERR\_Pos)              }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00137}\mbox{\hyperlink{reg__crs_8h_a9f21860b6afcaa1fcd8ca23213a11626}{00137}} \textcolor{preprocessor}{\#define CRS\_ICR\_EXPT\_Pos            (3)}}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00138}\mbox{\hyperlink{reg__crs_8h_ac01d1ca905f12bd849a17d02a502c9d2}{00138}} \textcolor{preprocessor}{\#define CRS\_ICR\_EXPT                (0x01U << CRS\_ICR\_EXPT\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00139}00139 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00140}00140 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00141}00141 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00142}00142 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00143}00143 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00145}00145 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00147}00147 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00149}00149 }
+\DoxyCodeLine{\Hypertarget{reg__crs_8h_source_l00151}00151 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

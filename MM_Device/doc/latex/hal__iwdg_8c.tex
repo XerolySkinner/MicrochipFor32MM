@@ -1,0 +1,74 @@
+\hypertarget{hal__iwdg_8c}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Src/hal\+\_\+iwdg.c 文件参考}
+\label{hal__iwdg_8c}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_iwdg.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_iwdg.c}}
+
+
+THIS FILE PROVIDES ALL THE IWDG FIRMWARE FUNCTIONS.  
+
+
+{\ttfamily \#include \char`\"{}hal\+\_\+iwdg.\+h\char`\"{}}\newline
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{hal__iwdg_8c_a32d1afa664bbccea25634f61c169bbd1}{\+\_\+\+HAL\+\_\+\+IWDG\+\_\+\+C\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga7adc5086ce232328863e0f164011a946}{IWDG\+\_\+\+Write\+Access\+Cmd}} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} write\+\_\+access)
+\begin{DoxyCompactList}\small\item\em Enables or disables write access to IWDG\+\_\+\+PR and IWDG\+\_\+\+RLR registers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga8182f9cae2e129bd8c966171ada66ce1}{IWDG\+\_\+\+Set\+Prescaler}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} prescaler)
+\begin{DoxyCompactList}\small\item\em Sets IWDG Prescaler value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga1f05c0eaf5faaf46717d933e6b814e62}{IWDG\+\_\+\+Set\+Reload}} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} reload)
+\begin{DoxyCompactList}\small\item\em Set IWDG reload value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga9c7b08511ad180d326510150bdca99d2}{IWDG\+\_\+\+Get\+Reload}} (void)
+\begin{DoxyCompactList}\small\item\em Get IWDG reload value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga7147ebabdc3fef97f532b171a4e70d49}{IWDG\+\_\+\+Reload\+Counter}} (void)
+\begin{DoxyCompactList}\small\item\em Reloads IWDG counter with value defined in the reload register (write access to IWDG\+\_\+\+PR and IWDG\+\_\+\+RLR registers disabled). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga479b2921c86f8c67b819f5c4bea6bdb6}{IWDG\+\_\+\+Enable}} (void)
+\begin{DoxyCompactList}\small\item\em Enables IWDG (write access to IWDG\+\_\+\+PR and IWDG\+\_\+\+RLR registers disabled). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga04c382c8e3ccaf3451f1bc2de83bb67b}{IWDG\+\_\+\+Get\+Flag\+Status}} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} flag)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified IWDG flag is set or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga50830ed9d09b5b7586fee5d5ed2b3c7c}{PVU\+\_\+\+Check\+Status}} (void)
+\begin{DoxyCompactList}\small\item\em Checks prescaler value has been updated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga4264f0d0541d333834205640b4c77db7}{RVU\+\_\+\+Check\+Status}} (void)
+\begin{DoxyCompactList}\small\item\em Checks count relead value has been updated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga058a5430b080dce148df62933932b63b}{IWDG\+\_\+\+Overflow\+Config}} (\mbox{\hyperlink{group___i_w_d_g___exported___constants_ga866e1f07a188267e058b19ea9f77727c}{IWDGOverflow\+Config\+\_\+\+Type\+Def}} overflow\+\_\+config)
+\begin{DoxyCompactList}\small\item\em IWDG overflow configuration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga37c286f262f5ee78e9c62bfc12e85d85}{IWDG\+\_\+\+Clear\+ITPending\+Bit}} (void)
+\begin{DoxyCompactList}\small\item\em Clear interrupt flag \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_gac12ba70229372185eb753d209d980e40}{IWDG\+\_\+\+Clear\+IT}} (void)
+\begin{DoxyCompactList}\small\item\em Clear interrupt flag \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga76d561e0d0759a90ce0f077eb2e610f7}{IWDG\+\_\+\+Enable\+IT}} (void)
+\begin{DoxyCompactList}\small\item\em Enable IWDG interrupt function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga01505e58442cbc9df8dedfe62fc81366}{IWDG\+\_\+\+Reset}} (void)
+\begin{DoxyCompactList}\small\item\em Disable IWDG interrupt function \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE PROVIDES ALL THE IWDG FIRMWARE FUNCTIONS. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{hal__iwdg_8c_source}{hal\+\_\+iwdg.\+c}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{hal__iwdg_8c_a32d1afa664bbccea25634f61c169bbd1}\label{hal__iwdg_8c_a32d1afa664bbccea25634f61c169bbd1}} 
+\index{hal\_iwdg.c@{hal\_iwdg.c}!\_HAL\_IWDG\_C\_@{\_HAL\_IWDG\_C\_}}
+\index{\_HAL\_IWDG\_C\_@{\_HAL\_IWDG\_C\_}!hal\_iwdg.c@{hal\_iwdg.c}}
+\doxysubsubsection{\texorpdfstring{\_HAL\_IWDG\_C\_}{\_HAL\_IWDG\_C\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+HAL\+\_\+\+IWDG\+\_\+\+C\+\_\+}
+
+
+
+在文件 \mbox{\hyperlink{hal__iwdg_8c_source}{hal\+\_\+iwdg.\+c}} 第 \mbox{\hyperlink{hal__iwdg_8c_source_l00019}{19}} 行定义.
+

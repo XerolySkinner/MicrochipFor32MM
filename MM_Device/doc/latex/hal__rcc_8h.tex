@@ -1,0 +1,266 @@
+\hypertarget{hal__rcc_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Inc/hal\+\_\+rcc.h 文件参考}
+\label{hal__rcc_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_rcc.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_rcc.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE RCC FIRMWARE LIBRARY.  
+
+
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}reg\+\_\+common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mm32\+\_\+reg.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_r_c_c___clocks_type_def}{RCC\+\_\+\+Clocks\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em RCC clock frequency type definition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___exported___variables_ga3de33738fd3c7e77bffbcfaefc3e7645}{GLOBAL}}~extern
+\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_gaf79c982653100ce2c61af761adfc7cab}{RCCHSE\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggaf79c982653100ce2c61af761adfc7cabaca6d3f37abab454bad865a276a7ecf7f}{RCC\+\_\+\+HSE\+\_\+\+OFF}} = 0
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggaf79c982653100ce2c61af761adfc7cabaea98bb74fc53bf7eb75d10d2f84bb6c3}{RCC\+\_\+\+HSE\+\_\+\+ON}} = RCC\+\_\+\+CR\+\_\+\+HSEON
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggaf79c982653100ce2c61af761adfc7caba4cfaffa45f1fda45e90ea47ec414bc77}{RCC\+\_\+\+HSE\+\_\+\+Bypass}} = RCC\+\_\+\+CR\+\_\+\+HSEBYP
+ \}
+\begin{DoxyCompactList}\small\item\em HSE configuration \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_gae49e46645a362f436cbea1f4b0ad9e8d}{RCC\+\_\+\+Register\+Flag\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae49e46645a362f436cbea1f4b0ad9e8daaf3a317a0c2e03cd10a0201eb1a2db79}{CR\+\_\+\+REG\+\_\+\+INDEX}} = 1
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae49e46645a362f436cbea1f4b0ad9e8da31549e6163e3ef75bfd73e16b19094dd}{BDCR\+\_\+\+REG\+\_\+\+INDEX}} = 2
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae49e46645a362f436cbea1f4b0ad9e8daf0b4505debdd38f65f337338e17808ed}{CSR\+\_\+\+REG\+\_\+\+INDEX}} = 3
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae49e46645a362f436cbea1f4b0ad9e8daf451b3515e32025f1adea0fc3a669dc8}{RCC\+\_\+\+FLAG\+\_\+\+MASK}} = 0x1\+FU
+ \}
+\begin{DoxyCompactList}\small\item\em Used for flags \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_gae8c5d530bd004628086e325a834211dc}{RCC\+\_\+\+FLAG\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dcaf2db6972c4815a618192891075b13e73}{RCC\+\_\+\+FLAG\+\_\+\+HSIRDY}} = ((u8)((CR\+\_\+\+REG\+\_\+\+INDEX \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5U) $\vert$ RCC\+\_\+\+CR\+\_\+\+HSIRDY\+\_\+\+Pos))
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca2ab8ac62d5534cf5df273e3afc6afce0}{RCC\+\_\+\+FLAG\+\_\+\+HSERDY}} = ((u8)((CR\+\_\+\+REG\+\_\+\+INDEX \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5U) $\vert$ RCC\+\_\+\+CR\+\_\+\+HSERDY\+\_\+\+Pos))
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca007016aaaa0476bef52c9aaf4d0e59f1}{RCC\+\_\+\+FLAG\+\_\+\+PLLRDY}} = ((u8)((CR\+\_\+\+REG\+\_\+\+INDEX \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5U) $\vert$ RCC\+\_\+\+CR\+\_\+\+PLLRDY\+\_\+\+Pos))
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dcad94cd0936d9edc078e6d0f8b12bad58d}{RCC\+\_\+\+FLAG\+\_\+\+LSIRDY}} = ((u8)((CSR\+\_\+\+REG\+\_\+\+INDEX \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5U) $\vert$ RCC\+\_\+\+CSR\+\_\+\+LSIRDY\+\_\+\+Pos))
+, \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dcafb5733f727662f2c3a9ce926c55572e6}{RCC\+\_\+\+FLAG\+\_\+\+PINRST}} = ((u8)((CSR\+\_\+\+REG\+\_\+\+INDEX \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5U) $\vert$ RCC\+\_\+\+CSR\+\_\+\+PINRSTF\+\_\+\+Pos))
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca7af41d553891f564801283e643b8fd00}{RCC\+\_\+\+FLAG\+\_\+\+PORRST}} = ((u8)((CSR\+\_\+\+REG\+\_\+\+INDEX \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5U) $\vert$ RCC\+\_\+\+CSR\+\_\+\+PORRSTF\+\_\+\+Pos))
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dcac4133127119bcf2ffc55c78a34c154cc}{RCC\+\_\+\+FLAG\+\_\+\+SFTRST}} = ((u8)((CSR\+\_\+\+REG\+\_\+\+INDEX \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5U) $\vert$ RCC\+\_\+\+CSR\+\_\+\+SFTRSTF\+\_\+\+Pos))
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca786385e48af0457b51bceb7217df50fe}{RCC\+\_\+\+FLAG\+\_\+\+IWDGRST}} = ((u8)((CSR\+\_\+\+REG\+\_\+\+INDEX \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5U) $\vert$ RCC\+\_\+\+CSR\+\_\+\+IWDGRSTF\+\_\+\+Pos))
+, \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca65ffc59cc41d608e7443a41ce9aa8bcd}{RCC\+\_\+\+FLAG\+\_\+\+WWDGRST}} = ((u8)((CSR\+\_\+\+REG\+\_\+\+INDEX \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5U) $\vert$ RCC\+\_\+\+CSR\+\_\+\+WWDGRSTF\+\_\+\+Pos))
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca4478ab7374127bb5ac2b456ef186b1ee}{RCC\+\_\+\+FLAG\+\_\+\+LSERDY}} = ((u8)((BDCR\+\_\+\+REG\+\_\+\+INDEX \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5U) $\vert$ RCC\+\_\+\+BDCR\+\_\+\+LSERDY\+\_\+\+Pos))
+ \}
+\begin{DoxyCompactList}\small\item\em RCC Flag \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_gab314ddace15b8d75ef143188c3061a97}{SYSCLK\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab314ddace15b8d75ef143188c3061a97a1876e08e92a9ea07faac183d918ac1fc}{RCC\+\_\+\+HSI}} = 0
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab314ddace15b8d75ef143188c3061a97aa72a0e027ef7492439824d675d4a2fb4}{RCC\+\_\+\+HSE}} = 1
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab314ddace15b8d75ef143188c3061a97a627d71402d403a5517bd652ece1d5013}{RCC\+\_\+\+PLL}} = 2
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab314ddace15b8d75ef143188c3061a97a4e5d0c838caa0e75a56ea47ef36ad782}{RCC\+\_\+\+LSI}} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em System clock source \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga8d9ccc495d0577912191a7bc9bdbd8d7}{RCC\+\_\+\+PLLSource\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga8d9ccc495d0577912191a7bc9bdbd8d7a7554132678a1982b133a9083507a458a}{RCC\+\_\+\+HSI\+\_\+\+Div4}} = 0
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga8d9ccc495d0577912191a7bc9bdbd8d7a80ac75f7a601538d570ee5f676d83c13}{RCC\+\_\+\+HSI\+\_\+\+Div}} = 0
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga8d9ccc495d0577912191a7bc9bdbd8d7ad6b7b3c95a02ef2fa46437118f29b955}{RCC\+\_\+\+HSE\+\_\+\+Div1}} = RCC\+\_\+\+PLLCFGR\+\_\+\+PLLSRC
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga8d9ccc495d0577912191a7bc9bdbd8d7aab26b33cc9eb380205ad19d589900b4d}{RCC\+\_\+\+HSE\+\_\+\+Div2}} = (RCC\+\_\+\+PLLCFGR\+\_\+\+PLLXTPRE $\vert$ RCC\+\_\+\+PLLCFGR\+\_\+\+PLLSRC)
+ \}
+\begin{DoxyCompactList}\small\item\em PLL entry clock source \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_gab9ba8af25cbeccce21dc2dbf0b10a666}{RCC\+\_\+\+PLLMul\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a69d077da02c15bf354e7059563ca0a70}{RCC\+\_\+\+PLLMul\+\_\+2}} = 0x00000000U
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a2f451119fd4032b9b022d3def9b213bd}{RCC\+\_\+\+PLLMul\+\_\+3}} = 0x00040000U
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666ad7cd3b75b9dc6420a1e7bc0e92b5aed2}{RCC\+\_\+\+PLLMul\+\_\+4}} = 0x00080000U
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a7182192624db710c5d56ca427abc430c}{RCC\+\_\+\+PLLMul\+\_\+5}} = 0x000\+C0000U
+, \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a063361caa80e01124069d8bacedb60b7}{RCC\+\_\+\+PLLMul\+\_\+6}} = 0x00100000U
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a67dfb901a4b30a64adc5a9242751a713}{RCC\+\_\+\+PLLMul\+\_\+7}} = 0x00140000U
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a4a97d52a5d55db081d9a5af3f6ec7737}{RCC\+\_\+\+PLLMul\+\_\+8}} = 0x00180000U
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666aaea5784dbdbab03baa7b856d6a516a48}{RCC\+\_\+\+PLLMul\+\_\+9}} = 0x001\+C0000U
+, \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a061808b8d83fefd0951447fe2b45c336}{RCC\+\_\+\+PLLMul\+\_\+10}} = 0x00200000U
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a511c72ef202c682b105f219c676a3467}{RCC\+\_\+\+PLLMul\+\_\+11}} = 0x00240000U
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a6db238fda79a08d967c6546ce9ce9d0a}{RCC\+\_\+\+PLLMul\+\_\+12}} = 0x00280000U
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666aa0bd292fe98bce311843b756a91abc61}{RCC\+\_\+\+PLLMul\+\_\+13}} = 0x002\+C0000U
+, \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a6012597b880cebab49ea9a459de342b5}{RCC\+\_\+\+PLLMul\+\_\+14}} = 0x00300000U
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a6a9290f81809e00d97db149449bb97ae}{RCC\+\_\+\+PLLMul\+\_\+15}} = 0x00340000U
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666aa0212c0cc64e30fa91d388a07046ee5c}{RCC\+\_\+\+PLLMul\+\_\+16}} = 0x00380000U
+ \}
+\begin{DoxyCompactList}\small\item\em PLL multiplication factor \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga42d9f90e4aa8d927be0c7736b1f654a3}{RCC\+\_\+\+AHB\+\_\+\+CLK\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3ad45c38b95a87d8b852dc45a19400d2d7}{RCC\+\_\+\+SYSCLK\+\_\+\+Div1}} = RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+\+DIV1
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3ae186496933abb4a3d5938c01e2368bfe}{RCC\+\_\+\+SYSCLK\+\_\+\+Div2}} = RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+\+DIV2
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3afee0526efd1ae394727784654907664e}{RCC\+\_\+\+SYSCLK\+\_\+\+Div4}} = RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+\+DIV4
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3aec19bb60f5d71f8249fdf8d4b178add1}{RCC\+\_\+\+SYSCLK\+\_\+\+Div8}} = RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+\+DIV8
+, \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3a3736dae4d173dd1bde40a78364401b2a}{RCC\+\_\+\+SYSCLK\+\_\+\+Div16}} = RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+\+DIV16
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3a26932baf04b8bdd61b81e9ec1bc0e52a}{RCC\+\_\+\+SYSCLK\+\_\+\+Div64}} = RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+\+DIV64
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3a77cbc053d7384abe4d9686dc9310c106}{RCC\+\_\+\+SYSCLK\+\_\+\+Div128}} = RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+\+DIV128
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3ab7dfec7167e79b1dd9c68fd942877604}{RCC\+\_\+\+SYSCLK\+\_\+\+Div256}} = RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+\+DIV256
+, \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3ac86a954031f593404f0d6a1056ea274c}{RCC\+\_\+\+SYSCLK\+\_\+\+Div512}} = RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+\+DIV512
+ \}
+\begin{DoxyCompactList}\small\item\em AHB clock source \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga61fd16d8e595865d03e612b0aedf67c5}{RCC\+\_\+\+APB1\+\_\+\+APB2\+\_\+\+CLK\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_gga61fd16d8e595865d03e612b0aedf67c5ac2728fc66c8f41bdfe4c5966e1515c1c}{RCC\+\_\+\+HCLK\+\_\+\+Div1}} = RCC\+\_\+\+CFGR\+\_\+\+PPRE1\+\_\+\+DIV1
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga61fd16d8e595865d03e612b0aedf67c5a32d2dc1ca495b273d32ee2187c6c5b0d}{RCC\+\_\+\+HCLK\+\_\+\+Div2}} = RCC\+\_\+\+CFGR\+\_\+\+PPRE1\+\_\+\+DIV2
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga61fd16d8e595865d03e612b0aedf67c5a8eedf8b2dcc1407e3a421e456cf5e828}{RCC\+\_\+\+HCLK\+\_\+\+Div4}} = RCC\+\_\+\+CFGR\+\_\+\+PPRE1\+\_\+\+DIV4
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga61fd16d8e595865d03e612b0aedf67c5a5e74588c938f079fbbc23e78bd7f2240}{RCC\+\_\+\+HCLK\+\_\+\+Div8}} = RCC\+\_\+\+CFGR\+\_\+\+PPRE1\+\_\+\+DIV8
+, \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_gga61fd16d8e595865d03e612b0aedf67c5a1d4e0022531dbec71cbe9c35488958bb}{RCC\+\_\+\+HCLK\+\_\+\+Div16}} = RCC\+\_\+\+CFGR\+\_\+\+PPRE1\+\_\+\+DIV16
+ \}
+\begin{DoxyCompactList}\small\item\em APB1 and APB2clock source \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga6873373a50342c72526dbcf1cd3b05b5}{RCC\+\_\+\+USBCLKSOURCE\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga6873373a50342c72526dbcf1cd3b05b5ab48da416d36ca81f66371ccbd9c00ed2}{RCC\+\_\+\+USBCLKSource\+\_\+\+PLLCLK\+\_\+\+Div1}} = 0
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga6873373a50342c72526dbcf1cd3b05b5a9ef8bdece42869c252efd7df4b2c377c}{RCC\+\_\+\+USBCLKSource\+\_\+\+PLLCLK\+\_\+\+Div2}} = 1
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga6873373a50342c72526dbcf1cd3b05b5a1569f739ea3c2c9998be4c972037beeb}{RCC\+\_\+\+USBCLKSource\+\_\+\+PLLCLK\+\_\+\+Div3}} = 2
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga6873373a50342c72526dbcf1cd3b05b5a2a80abd7f894cdc214591fa0fcb52a1a}{RCC\+\_\+\+USBCLKSource\+\_\+\+PLLCLK\+\_\+\+Div4}} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em USB Device clock source \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga845eb12e4204b847a7a8ab99ce0e448f}{RCC\+\_\+\+ADCCLKSOURCE\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga845eb12e4204b847a7a8ab99ce0e448fa0d7c2592dffcd51c6395188acaa667c4}{RCC\+\_\+\+PCLK2\+\_\+\+Div2}} = (0x00000000)
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga845eb12e4204b847a7a8ab99ce0e448fae17aa2c849017ff372882c743e356e84}{RCC\+\_\+\+PCLK2\+\_\+\+Div4}} = (0x00004000)
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga845eb12e4204b847a7a8ab99ce0e448fa4c9eaa6d82170956b5fa8b84e9437451}{RCC\+\_\+\+PCLK2\+\_\+\+Div6}} = (0x00008000)
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga845eb12e4204b847a7a8ab99ce0e448fa45a0cc19fe2d3ff5c4ec7f19117d96f9}{RCC\+\_\+\+PCLK2\+\_\+\+Div8}} = (0x0000\+C000)
+ \}
+\begin{DoxyCompactList}\small\item\em ADC clock source \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga8c4dfb3b1aa4dd4c65a4322c05d08ac5}{RCC\+\_\+\+LSE\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga8c4dfb3b1aa4dd4c65a4322c05d08ac5afc4a3d76bab24af90d4fe951d1beeb7e}{RCC\+\_\+\+LSE\+\_\+\+OFF}} = 0
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga8c4dfb3b1aa4dd4c65a4322c05d08ac5a34dc6dd7ed85b6add353deab0501d395}{RCC\+\_\+\+LSE\+\_\+\+ON}} = RCC\+\_\+\+BDCR\+\_\+\+LSEON
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga8c4dfb3b1aa4dd4c65a4322c05d08ac5a015533c1130388356b2ced8438b60652}{RCC\+\_\+\+LSE\+\_\+\+Bypass}} = RCC\+\_\+\+BDCR\+\_\+\+LSEBYP
+ \}
+\begin{DoxyCompactList}\small\item\em LSE configuration \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga76fd6ebbea4e50a4faf71e81c51ef317}{RCC\+\_\+\+RTCCLKSOURCE\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga76fd6ebbea4e50a4faf71e81c51ef317a141f917b9d76d12df475fa94cce98e26}{RCC\+\_\+\+RTCCLKSource\+\_\+\+LSE}} = RCC\+\_\+\+BDCR\+\_\+\+RTCSEL\+\_\+\+LSE
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga76fd6ebbea4e50a4faf71e81c51ef317aade81f57e0e2d4a1c12601732c838871}{RCC\+\_\+\+RTCCLKSource\+\_\+\+LSI}} = RCC\+\_\+\+BDCR\+\_\+\+RTCSEL\+\_\+\+LSI
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga76fd6ebbea4e50a4faf71e81c51ef317ac1627b4b062ea9ac0905c52dce9d3de3}{RCC\+\_\+\+RTCCLKSource\+\_\+\+HSE\+\_\+\+Div128}} = RCC\+\_\+\+BDCR\+\_\+\+RTCSEL\+\_\+\+HSE
+ \}
+\begin{DoxyCompactList}\small\item\em RTC clock source \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga6af1d0d9d1463f9368e6f4b731f7859f}{RCC\+\_\+\+MCO\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fa252e0edac21dd997e817ec47408aee93}{RCC\+\_\+\+MCO\+\_\+\+No\+Clock}} = RCC\+\_\+\+CFGR\+\_\+\+MCO\+\_\+\+NOCLOCK
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fa46ba48e6d10df6aad7a6cd07de7e9ebe}{RCC\+\_\+\+MCO\+\_\+\+LSI}} = RCC\+\_\+\+CFGR\+\_\+\+MCO\+\_\+\+LSI
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fae9aef096471a9176e9b4f19b95fb8cfc}{RCC\+\_\+\+MCO\+\_\+\+LSE}} = RCC\+\_\+\+CFGR\+\_\+\+MCO\+\_\+\+LSE
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fa7c8423f42ccdac5a3a7f8ff7db29667e}{RCC\+\_\+\+MCO\+\_\+\+SYSCLK}} = RCC\+\_\+\+CFGR\+\_\+\+MCO\+\_\+\+SYSCLK
+, \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fab594556c859f119d1027f6b25282015f}{RCC\+\_\+\+MCO\+\_\+\+HSI}} = RCC\+\_\+\+CFGR\+\_\+\+MCO\+\_\+\+HSI
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fa217322258f801c19609debbf02b592f1}{RCC\+\_\+\+MCO\+\_\+\+HSE}} = RCC\+\_\+\+CFGR\+\_\+\+MCO\+\_\+\+HSE
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fab3193d958ce6db168afe5a89a92aae8f}{RCC\+\_\+\+MCO\+\_\+\+PLLCLK\+\_\+\+Div2}} = RCC\+\_\+\+CFGR\+\_\+\+MCO\+\_\+\+PLL
+ \}
+\begin{DoxyCompactList}\small\item\em Clock source to output on MCO pin \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga23735f41dde839d727e55c310e5b1e8f}{RCC\+\_\+\+IT\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fa9e7bae0e7ae96ace9c0e96a925fcf14b}{RCC\+\_\+\+IT\+\_\+\+LSIRDY}} = RCC\+\_\+\+CIR\+\_\+\+LSIRDYF
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fae0973b5644ecb0e0a994d894a72a435c}{RCC\+\_\+\+IT\+\_\+\+LSERDY}} = RCC\+\_\+\+CIR\+\_\+\+LSERDYF
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fa8a031a64f7e4540eb8adaac112b6130b}{RCC\+\_\+\+IT\+\_\+\+HSIRDY}} = RCC\+\_\+\+CIR\+\_\+\+HSIRDYF
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fa5884f9e4902450684748bdd668a54115}{RCC\+\_\+\+IT\+\_\+\+HSERDY}} = RCC\+\_\+\+CIR\+\_\+\+HSERDYF
+, \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fae976644e593acf21735e5b1d3833c5fc}{RCC\+\_\+\+IT\+\_\+\+PLLRDY}} = RCC\+\_\+\+CIR\+\_\+\+PLLRDYF
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fa8619f9d46a9d6c40617825bd2977c735}{RCC\+\_\+\+IT\+\_\+\+CSS}} = RCC\+\_\+\+CIR\+\_\+\+CSSF
+ \}
+\begin{DoxyCompactList}\small\item\em RCC Interrupt source \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gacb77a0b6147f1e4427cc797a9bb25ba3}{RCC\+\_\+\+De\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Resets the RCC clock configuration to default state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga3e8bc2e6f7ae26aec2081dbfe686304b}{RCC\+\_\+\+HSEConfig}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_gaf79c982653100ce2c61af761adfc7cab}{RCCHSE\+\_\+\+Type\+Def}} state)
+\begin{DoxyCompactList}\small\item\em Configures the External High Speed oscillator (HSE). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga5e70adef1e770c79463d0ff7ab06daf1}{RCC\+\_\+\+HSICmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Internal High Speed oscillator (HSI). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga41ec26146346c4312ed52f0af08d90c6}{RCC\+\_\+\+SYSCLKConfig}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_gab314ddace15b8d75ef143188c3061a97}{SYSCLK\+\_\+\+Type\+Def}} sys\+\_\+clk\+\_\+source)
+\begin{DoxyCompactList}\small\item\em Configures the system clock (SYSCLK). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gab80e92fad32d9b81ba9ce347c69c5c8a}{RCC\+\_\+\+PLLDMDNConfig}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} plldn, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} plldm)
+\begin{DoxyCompactList}\small\item\em Configures the PLL clock source and DM DN factor. This function must be used only when the PLL is disabled. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gad234bcd2bc739b7c577963e674b2f9c9}{RCC\+\_\+\+PLLConfig}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_ga8d9ccc495d0577912191a7bc9bdbd8d7}{RCC\+\_\+\+PLLSource\+\_\+\+Type\+Def}} pll\+\_\+src, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gab9ba8af25cbeccce21dc2dbf0b10a666}{RCC\+\_\+\+PLLMul\+\_\+\+Type\+Def}} pll\+\_\+mul)
+\begin{DoxyCompactList}\small\item\em Configures the PLL clock source and multiplication factor. This function must be used only when the PLL is disabled. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gaa13d7c409c45ee4d92c738755f063d19}{RCC\+\_\+\+PLLCmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the PLL. The PLL can not be disabled if it is used as system clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga808e5d9a77ff2dff623717a5c15cc1f8}{RCC\+\_\+\+HCLKConfig}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_ga42d9f90e4aa8d927be0c7736b1f654a3}{RCC\+\_\+\+AHB\+\_\+\+CLK\+\_\+\+Type\+Def}} sys\+\_\+clk)
+\begin{DoxyCompactList}\small\item\em Configures the AHB clock (hclk). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga8e8f479cad164c2e30d3b0d027332bf9}{RCC\+\_\+\+PCLK1\+Config}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_ga61fd16d8e595865d03e612b0aedf67c5}{RCC\+\_\+\+APB1\+\_\+\+APB2\+\_\+\+CLK\+\_\+\+Type\+Def}} hclk)
+\begin{DoxyCompactList}\small\item\em Configures the Low Speed APB clock (pclk1). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gaae996202123e188d6a1384eaedc66f6c}{RCC\+\_\+\+PCLK2\+Config}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_ga61fd16d8e595865d03e612b0aedf67c5}{RCC\+\_\+\+APB1\+\_\+\+APB2\+\_\+\+CLK\+\_\+\+Type\+Def}} hclk)
+\begin{DoxyCompactList}\small\item\em Configures the High Speed APB clock (pclk2). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gad0ec21ebb92969e32f5a0a76a008ce6e}{RCC\+\_\+\+USBCLKConfig}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_ga6873373a50342c72526dbcf1cd3b05b5}{RCC\+\_\+\+USBCLKSOURCE\+\_\+\+Type\+Def}} usb\+\_\+clk\+\_\+src)
+\begin{DoxyCompactList}\small\item\em Configures the USB clock (USBCLK). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga008d409c5d4a347536a370ae1935947a}{RCC\+\_\+\+ADCCLKConfig}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_ga845eb12e4204b847a7a8ab99ce0e448f}{RCC\+\_\+\+ADCCLKSOURCE\+\_\+\+Type\+Def}} pclk2)
+\begin{DoxyCompactList}\small\item\em Configures the ADC clock (ADCCLK). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gadfa2f9ce00b1ca0457cf9104e5e9c703}{RCC\+\_\+\+LSICmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Internal Low Speed oscillator (LSI). LSI can not be disabled if the IWDG is running. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gab03110b6f30807553c03748727771b89}{RCC\+\_\+\+RTCCLKCmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the RTC clock. This function must be used only after the RTC clock was selected using the RCC\+\_\+\+RTCCLKConfig function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga9900ce044315a61b416f69338f31c07b}{RCC\+\_\+\+LSEConfig}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_ga8c4dfb3b1aa4dd4c65a4322c05d08ac5}{RCC\+\_\+\+LSE\+\_\+\+Type\+Def}} state)
+\begin{DoxyCompactList}\small\item\em Configures the External Low Speed oscillator (LSE). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gaf177e87d3bc68670c03eeb1eb6845b6b}{RCC\+\_\+\+RTCCLKConfig}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_ga76fd6ebbea4e50a4faf71e81c51ef317}{RCC\+\_\+\+RTCCLKSOURCE\+\_\+\+Type\+Def}} rtc\+\_\+clk\+\_\+src)
+\begin{DoxyCompactList}\small\item\em Configures the RTC clock (RTCCLK). Once the RTC clock is selected it can be changed unless the Backup domain is reset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga90652428211c565c37cd4df3257fc83f}{RCC\+\_\+\+Backup\+Reset\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Forces or releases the Backup domain reset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gaedc1a52bbaba2a78e347a03d7d9a9035}{RCC\+\_\+\+Get\+Clocks\+Freq}} (\mbox{\hyperlink{struct_r_c_c___clocks_type_def}{RCC\+\_\+\+Clocks\+Type\+Def}} $\ast$clk)
+\begin{DoxyCompactList}\small\item\em Returns the frequency of different on chip clocks. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gacd97489bbec7a0dcb21abfcb5b9dbd3a}{RCC\+\_\+\+AHBPeriph\+Clock\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ahb\+\_\+periph, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the AHB peripheral clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga2e1483f271a5daa2ffa6dc9f5b51adfd}{RCC\+\_\+\+AHB2\+Periph\+Clock\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ahb\+\_\+periph, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga5da33a30efc37868890cdd67aa324751}{RCC\+\_\+\+AHB3\+Periph\+Clock\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ahb\+\_\+periph, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga2284d4bad95f741f57168435ee90956d}{RCC\+\_\+\+AHBPeriph\+Reset\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ahb\+\_\+periph, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Forces or releases Low Speed AHB peripheral reset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga256b3cb351a7fb7ab3d696e4d6d49c50}{RCC\+\_\+\+AHB2\+Periph\+Reset\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ahb\+\_\+periph, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Forces or releases Low Speed AHB2 peripheral reset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga14aa9397569cbcd3cec46c779844bf65}{RCC\+\_\+\+AHB3\+Periph\+Reset\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ahb\+\_\+periph, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Forces or releases Low Speed AHB2 peripheral reset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga6795c56926d46ee70db7475bf70e443f}{RCC\+\_\+\+APB2\+Periph\+Clock\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} apb2\+\_\+periph, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the High Speed APB (APB2) peripheral clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gabd7a5ac36fb2b92827889cec53fd0141}{RCC\+\_\+\+APB1\+Periph\+Clock\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} apb1\+\_\+periph, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Low Speed APB (APB1) peripheral clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga4600254f45c034633b409f6ba479f6f2}{RCC\+\_\+\+APB2\+Periph\+Reset\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} apb2\+\_\+periph, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Forces or releases High Speed APB (APB2) peripheral reset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gaa7a94d7540b0936a8f07191dd99b2022}{RCC\+\_\+\+APB1\+Periph\+Reset\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} apb1\+\_\+periph, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Forces or releases Low Speed APB (APB1) peripheral reset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga188fcb7cc4581356a6edca60f08774b5}{RCC\+\_\+\+Clock\+Security\+System\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Clock Security System. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga905a9a034d8641fe7bfcbbffb1aa632b}{RCC\+\_\+\+MCOConfig}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_ga6af1d0d9d1463f9368e6f4b731f7859f}{RCC\+\_\+\+MCO\+\_\+\+Type\+Def}} mco\+\_\+src)
+\begin{DoxyCompactList}\small\item\em Selects the clock source to output on MCO pin. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga53f909dbb15a54124419084ebda97d72}{RCC\+\_\+\+Clear\+Flag}} (void)
+\begin{DoxyCompactList}\small\item\em Clears the RCC reset flags. The reset flags are\+: RCC\+\_\+\+FLAG\+\_\+\+PINRST, RCC\+\_\+\+FLAG\+\_\+\+PORRST, RCC\+\_\+\+FLAG\+\_\+\+SFTRST, RCC\+\_\+\+FLAG\+\_\+\+IWDGRST, RCC\+\_\+\+FLAG\+\_\+\+WWDGRST, RCC\+\_\+\+FLAG\+\_\+\+LPWRRST \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gabc85bb6ecf765af60d5f9a07b84e464f}{RCC\+\_\+\+ITConfig}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_ga23735f41dde839d727e55c310e5b1e8f}{RCC\+\_\+\+IT\+\_\+\+Type\+Def}} it, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified RCC interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gad2f4eec45ba567b4e978abc69d6b94ad}{RCC\+\_\+\+Clear\+ITPending\+Bit}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} it)
+\begin{DoxyCompactList}\small\item\em Clears the RCC{\ucr}?interrupt pending bits. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{group___r_c_c___exported___functions_gac1c3e8cbc43e62cd101da77bba77ca75}{RCC\+\_\+\+Get\+SYSCLKSource}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the clock source used as system clock. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___r_c_c___exported___functions_gace95b2b7607483d30009e9162ec6febb}{RCC\+\_\+\+Get\+Sys\+Clock\+Freq}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the clock frequency of different on chip clocks. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___r_c_c___exported___functions_ga0b703bee35b03b826d2f3af5d2c89aae}{RCC\+\_\+\+Get\+HCLKFreq}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the hclk frequency of different on chip clocks. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___r_c_c___exported___functions_ga5837c7297ea0173b6b2661993ba47479}{RCC\+\_\+\+Get\+PCLK1\+Freq}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the pclk1 frequency of different on chip clocks. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___r_c_c___exported___functions_gaa089422d0ddc2847a8cf0d4997bde5c3}{RCC\+\_\+\+Get\+PCLK2\+Freq}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the pclk2 frequency of different on chip clocks. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___r_c_c___exported___functions_ga06abd1ebec26432c3d67a3aecd1619ed}{RCC\+\_\+\+Get\+Flag\+Status}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_gae8c5d530bd004628086e325a834211dc}{RCC\+\_\+\+FLAG\+\_\+\+Type\+Def}} flag)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified RCC flag is set or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a8333b96c67f83cba354b3407fcbb6ee8}{Error\+Status}} \mbox{\hyperlink{group___r_c_c___exported___functions_gae0f15692614dd048ee4110a056f001dc}{RCC\+\_\+\+Wait\+For\+HSEStart\+Up}} (void)
+\begin{DoxyCompactList}\small\item\em Waits for HSE start-\/up. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a8333b96c67f83cba354b3407fcbb6ee8}{Error\+Status}} \mbox{\hyperlink{group___r_c_c___exported___functions_gad009e601704dce329f700f8748df052c}{RCC\+\_\+\+Wait\+For\+Flag\+Start\+Up}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_gae8c5d530bd004628086e325a834211dc}{RCC\+\_\+\+FLAG\+\_\+\+Type\+Def}} flag)
+\begin{DoxyCompactList}\small\item\em Waits for flag start-\/up. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} \mbox{\hyperlink{group___r_c_c___exported___functions_gaab0139c6bc2ed8bd504ca33adb25b25a}{RCC\+\_\+\+Get\+ITStatus}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_ga23735f41dde839d727e55c310e5b1e8f}{RCC\+\_\+\+IT\+\_\+\+Type\+Def}} it)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified RCC interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gaeb09313c4e0f9c5e62b1f6977b4ac61b}{ex\+RCC\+\_\+\+Systick\+Disable}} ()
+\begin{DoxyCompactList}\small\item\em Disable systick \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gaf17fec75486646e8ef5e4421bb3dafd4}{ex\+RCC\+\_\+\+Systick\+Enable}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} sys\+\_\+tick\+\_\+period)
+\begin{DoxyCompactList}\small\item\em Enable systick \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gad9e30971b169c6fee0f090ef9948a17a}{ex\+RCC\+\_\+\+APB1\+Periph\+Reset}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} apb1\+\_\+periph)
+\begin{DoxyCompactList}\small\item\em Forces or releases Low Speed APB (APB1) peripheral reset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gafaf2c96ab5171fc65c71b167e80c0539}{ex\+RCC\+\_\+\+APB2\+Periph\+Reset}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} apb2\+\_\+periph)
+\begin{DoxyCompactList}\small\item\em Forces or releases High Speed APB (APB2) peripheral reset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga21c12642dce3869c0301ddc4459f820a}{ex\+RCC\+\_\+\+Backup\+Reset}} ()
+\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gad2335a1af8c24a8bed54b34dbc3cbfa9}{RCC\+\_\+\+ADC\+\_\+\+Clock\+Cmd}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$peripheral, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified ADC peripheral Clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga16523c13eb82fb3cbf19a6d59e52be2f}{RCC\+\_\+\+GPIO\+\_\+\+Clock\+Cmd}} (\mbox{\hyperlink{struct_g_p_i_o___type_def}{GPIO\+\_\+\+Type\+Def}} $\ast$peripheral, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified GPIO peripheral Clock. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE RCC FIRMWARE LIBRARY. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{hal__rcc_8h_source}{hal\+\_\+rcc.\+h}} 中定义.
+

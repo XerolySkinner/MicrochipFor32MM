@@ -1,0 +1,2658 @@
+\hypertarget{reg__uart_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/reg\+\_\+uart.h 文件参考}
+\label{reg__uart_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_uart.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_uart.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_u_a_r_t___type_def}{UART\+\_\+\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em UART Register Structure Definition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a383bf0c4670c3a7fa72df80f66331a46}{UART1\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a25b99d6065f1c8f751e78f43ade652cb}{APB2\+PERIPH\+\_\+\+BASE}} + 0x3800)
+\begin{DoxyCompactList}\small\item\em UART Base Address Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ac9998d643534960b684d45a60b998421}{UART2\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x4400)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x40004400 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a2eff3896840fdf741bd67d2d7fe99a34}{UART3\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x4800)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x40004800 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a94d92270bf587ccdc3a37a5bb5d20467}{UART4\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x4\+C00)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x40004\+C00 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_aa155689c0e206e6994951dc3cf31052a}{UART5\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x5000)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x40005000 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a77f0753cf94e8b7b3e04a52a896f9dcb}{UART6\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a25b99d6065f1c8f751e78f43ade652cb}{APB2\+PERIPH\+\_\+\+BASE}} + 0x3\+C00)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x40013\+C00 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a3150e4b10ec876c0b20f22de12a8fa40}{UART7\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x7800)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x40007800 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ac9c6cd59a248941d9d2462ab21a2346e}{UART8\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x7\+C00)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x40007\+C00 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a8d69bf04d07af4fbbab5a8bd291f65ff}{UART1}}~((\mbox{\hyperlink{struct_u_a_r_t___type_def}{UART\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__uart_8h_a383bf0c4670c3a7fa72df80f66331a46}{UART1\+\_\+\+BASE}})
+\begin{DoxyCompactList}\small\item\em UART type pointer Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{UART2}}~((\mbox{\hyperlink{struct_u_a_r_t___type_def}{UART\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__uart_8h_ac9998d643534960b684d45a60b998421}{UART2\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a961726a611b38bcaf61f3d598b0a59ec}{UART3}}~((\mbox{\hyperlink{struct_u_a_r_t___type_def}{UART\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__uart_8h_a2eff3896840fdf741bd67d2d7fe99a34}{UART3\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a7c035f6f443c999fc043b2b7fb598800}{UART4}}~((\mbox{\hyperlink{struct_u_a_r_t___type_def}{UART\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__uart_8h_a94d92270bf587ccdc3a37a5bb5d20467}{UART4\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a9274e37cf5e8a174fc5dd627b98ec0fe}{UART5}}~((\mbox{\hyperlink{struct_u_a_r_t___type_def}{UART\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__uart_8h_aa155689c0e206e6994951dc3cf31052a}{UART5\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a61531d783c55be06875e7029331ffd67}{UART6}}~((\mbox{\hyperlink{struct_u_a_r_t___type_def}{UART\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__uart_8h_a77f0753cf94e8b7b3e04a52a896f9dcb}{UART6\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a20bc10f5b73e8b51724b2f23c5b2e785}{UART7}}~((\mbox{\hyperlink{struct_u_a_r_t___type_def}{UART\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__uart_8h_a3150e4b10ec876c0b20f22de12a8fa40}{UART7\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a2fe70804956e53dcbdc82dbacbbbfabc}{UART8}}~((\mbox{\hyperlink{struct_u_a_r_t___type_def}{UART\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__uart_8h_ac9c6cd59a248941d9d2462ab21a2346e}{UART8\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a1ab204596214046146d550091ec0ab98}{UART\+\_\+\+TDR\+\_\+\+DATA\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em UART\+\_\+\+TDR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a86766d4cdade6d63fe5956e575241e4d}{UART\+\_\+\+TDR\+\_\+\+DATA}}~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__uart_8h_a1ab204596214046146d550091ec0ab98}{UART\+\_\+\+TDR\+\_\+\+DATA\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmit data register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ad6a1fff82f3c5c3e40dfda73927e28f2}{UART\+\_\+\+RDR\+\_\+\+DATA\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em UART\+\_\+\+RDR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_abb111f48e513b2f57a33a4f23c5fb7f5}{UART\+\_\+\+RDR\+\_\+\+DATA}}~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__uart_8h_ad6a1fff82f3c5c3e40dfda73927e28f2}{UART\+\_\+\+RDR\+\_\+\+DATA\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive data register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ababea7657559106b3e2b6e44b8186096}{UART\+\_\+\+CSR\+\_\+\+TXC\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em UART\+\_\+\+CSR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a116c94895a66ef962dfeb8490184eec4}{UART\+\_\+\+CSR\+\_\+\+TXC}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ababea7657559106b3e2b6e44b8186096}{UART\+\_\+\+CSR\+\_\+\+TXC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmit complete flag bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a7e8dc094ccab823017510a433fabde9a}{UART\+\_\+\+CSR\+\_\+\+RXAVL\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a3781e44cbef4ece0aa99c82fccfd3fcd}{UART\+\_\+\+CSR\+\_\+\+RXAVL}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a7e8dc094ccab823017510a433fabde9a}{UART\+\_\+\+CSR\+\_\+\+RXAVL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive valid data flag bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a13e504e795997c65fe589ba5d0ea4a23}{UART\+\_\+\+CSR\+\_\+\+TXFULL\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a8efc192af3c2d7979137bd07c98f2514}{UART\+\_\+\+CSR\+\_\+\+TXFULL}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a13e504e795997c65fe589ba5d0ea4a23}{UART\+\_\+\+CSR\+\_\+\+TXFULL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmit buffer full flag bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a4cc292feee4fbfd6c98956505d32a4ec}{UART\+\_\+\+CSR\+\_\+\+TXEPT\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a7d3c0f23c007e26635040e5dd405f74c}{UART\+\_\+\+CSR\+\_\+\+TXEPT}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a4cc292feee4fbfd6c98956505d32a4ec}{UART\+\_\+\+CSR\+\_\+\+TXEPT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmit buffer empty flag bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_aeec425a2a0f843006f006c66c0af6c11}{UART\+\_\+\+ISR\+\_\+\+TX\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em UART\+\_\+\+ISR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a0e8ac0d5fa50cbe95233c5e4de1b19a0}{UART\+\_\+\+ISR\+\_\+\+TX}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_aeec425a2a0f843006f006c66c0af6c11}{UART\+\_\+\+ISR\+\_\+\+TX\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmit buffer empty interrupt flag bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a6c579743b8ebb6075117dd92117f7b13}{UART\+\_\+\+ISR\+\_\+\+RX\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a0ec3f8aee12539ec289749174e145fdf}{UART\+\_\+\+ISR\+\_\+\+RX}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a6c579743b8ebb6075117dd92117f7b13}{UART\+\_\+\+ISR\+\_\+\+RX\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive valid data interrupt flag bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a30c00be4419716a787836553fb3f7514}{UART\+\_\+\+ISR\+\_\+\+TXC\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_acdc5dad033adb254a0a3a9751e3e39c5}{UART\+\_\+\+ISR\+\_\+\+TXC}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a30c00be4419716a787836553fb3f7514}{UART\+\_\+\+ISR\+\_\+\+TXC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmit complete interrupt flag bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a5334f9c1d6e55f2f707effc6d9c8fa40}{UART\+\_\+\+ISR\+\_\+\+RXOERR\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a966b9b736c3cec59dbb5443d972ee98d}{UART\+\_\+\+ISR\+\_\+\+RXOERR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a5334f9c1d6e55f2f707effc6d9c8fa40}{UART\+\_\+\+ISR\+\_\+\+RXOERR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive overflow error interrupt flag bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ae6df8d041916d88151041e0cbd9e88cd}{UART\+\_\+\+ISR\+\_\+\+RXPERR\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a3dc84023999d0955092ae32ed91bbef2}{UART\+\_\+\+ISR\+\_\+\+RXPERR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ae6df8d041916d88151041e0cbd9e88cd}{UART\+\_\+\+ISR\+\_\+\+RXPERR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Parity error interrupt flag bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a6bd854e00cb9f17ec3e6f17a6905f393}{UART\+\_\+\+ISR\+\_\+\+RXFERR\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ac1534b9013eb3b107883a46d21bba893}{UART\+\_\+\+ISR\+\_\+\+RXFERR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a6bd854e00cb9f17ec3e6f17a6905f393}{UART\+\_\+\+ISR\+\_\+\+RXFERR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Frame error interrupt flag bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a85ce33a7ff6e110600d6774225805b2d}{UART\+\_\+\+ISR\+\_\+\+RXBRK\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a30a90f64ed0300b3d31bdbb400c47a99}{UART\+\_\+\+ISR\+\_\+\+RXBRK}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a85ce33a7ff6e110600d6774225805b2d}{UART\+\_\+\+ISR\+\_\+\+RXBRK\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive frame break interrupt flag bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a2d77e320cde28e3ba4b8551596184508}{UART\+\_\+\+ISR\+\_\+\+TXBRK\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a87e3a311167a2e137e1e2a20c6e36729}{UART\+\_\+\+ISR\+\_\+\+TXBRK}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a2d77e320cde28e3ba4b8551596184508}{UART\+\_\+\+ISR\+\_\+\+TXBRK\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmit Break Frame Interrupt Flag Bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ad3dcb527529641144aa7fa3d3eb53bd7}{UART\+\_\+\+ISR\+\_\+\+RXB8\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a8356b1452f09c1f03d9ebbb627e9682e}{UART\+\_\+\+ISR\+\_\+\+RXB8}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ad3dcb527529641144aa7fa3d3eb53bd7}{UART\+\_\+\+ISR\+\_\+\+RXB8\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive Bit 8 Interrupt Flag Bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_aae937f5f8a9d9b500903d96f8cefe5c5}{UART\+\_\+\+ISR\+\_\+\+RXIDLE\+\_\+\+Pos}}~(9)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a9761c80dd4977276b8d7d6572bf6507e}{UART\+\_\+\+ISR\+\_\+\+RXIDLE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_aae937f5f8a9d9b500903d96f8cefe5c5}{UART\+\_\+\+ISR\+\_\+\+RXIDLE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive Bit 8 Interrupt clear Bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a54e925872e5934d08ddadfbaa6f86eda}{UART\+\_\+\+ISR\+\_\+\+ABREND\+\_\+\+INTF\+\_\+\+Pos}}~(10)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_acf314ed11e998e4def7abeea072aedfa}{UART\+\_\+\+ISR\+\_\+\+ABREND\+\_\+\+INTF}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a54e925872e5934d08ddadfbaa6f86eda}{UART\+\_\+\+ISR\+\_\+\+ABREND\+\_\+\+INTF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Auto baud rate end interrupt flag bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_acf3655f2c2d0fbfca86028901063265c}{UART\+\_\+\+ISR\+\_\+\+ABRERR\+\_\+\+INTF\+\_\+\+Pos}}~(11)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a57bc1ee47bde35aacf89009ee41b00e8}{UART\+\_\+\+ISR\+\_\+\+ABRERR\+\_\+\+INTF}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_acf3655f2c2d0fbfca86028901063265c}{UART\+\_\+\+ISR\+\_\+\+ABRERR\+\_\+\+INTF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Auto baud rate error interrupt flag bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ae2af5ece78f0fa8e45a6e57ba56824ab}{UART\+\_\+\+IER\+\_\+\+TX\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em UART\+\_\+\+IER Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_aad48cb4cd654171e57c3e33a6373b5dc}{UART\+\_\+\+IER\+\_\+\+TX}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ae2af5ece78f0fa8e45a6e57ba56824ab}{UART\+\_\+\+IER\+\_\+\+TX\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmit buffer empty interrupt enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a3457c26b1abc3aeea93aeaf1c1d36dfb}{UART\+\_\+\+IER\+\_\+\+RX\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a6265b02e3680dd7e798ffba3606b7d27}{UART\+\_\+\+IER\+\_\+\+RX}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a3457c26b1abc3aeea93aeaf1c1d36dfb}{UART\+\_\+\+IER\+\_\+\+RX\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive buffer interrupt enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ace39afa4b70bf403c282ce9c781a0a20}{UART\+\_\+\+IER\+\_\+\+TXC\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_aa201448c97aa4b67b979606164a3ad1d}{UART\+\_\+\+IER\+\_\+\+TXC}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ace39afa4b70bf403c282ce9c781a0a20}{UART\+\_\+\+IER\+\_\+\+TXC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmit complete interrupt enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ac64fb2f8c82d805c261193a0b9e0f23e}{UART\+\_\+\+IER\+\_\+\+RXOERR\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ace5249a4ca9d4a6156e3e15f21cac384}{UART\+\_\+\+IER\+\_\+\+RXOERR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ac64fb2f8c82d805c261193a0b9e0f23e}{UART\+\_\+\+IER\+\_\+\+RXOERR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive overflow error interrupt enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a67cddc6a6cce8d6abab8ee9ae369720d}{UART\+\_\+\+IER\+\_\+\+RXPERR\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a1fc555ee6ad0e36d63121a8a1a9db4fe}{UART\+\_\+\+IER\+\_\+\+RXPERR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a67cddc6a6cce8d6abab8ee9ae369720d}{UART\+\_\+\+IER\+\_\+\+RXPERR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Parity error interrupt enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a266bc79e5a9dc791e31470ee6ecb3b71}{UART\+\_\+\+IER\+\_\+\+RXFERR\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ae188782aa4b6c18850319dc90476ac06}{UART\+\_\+\+IER\+\_\+\+RXFERR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a266bc79e5a9dc791e31470ee6ecb3b71}{UART\+\_\+\+IER\+\_\+\+RXFERR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Frame error interrupt enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a09ab61f8c5cbe1662850fbd6a44e9902}{UART\+\_\+\+IER\+\_\+\+RXBRK\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a78096e0a2e40ba46638c098876796f6f}{UART\+\_\+\+IER\+\_\+\+RXBRK}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a09ab61f8c5cbe1662850fbd6a44e9902}{UART\+\_\+\+IER\+\_\+\+RXBRK\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive frame break interrupt enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_af23b95c07698ed7ce550114c3a70c128}{UART\+\_\+\+IER\+\_\+\+TXBRK\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a4bd034d8d2796d05eaece2edd818c38a}{UART\+\_\+\+IER\+\_\+\+TXBRK}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_af23b95c07698ed7ce550114c3a70c128}{UART\+\_\+\+IER\+\_\+\+TXBRK\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmit Break Frame Interrupt Enable Bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a7c8b35c2b0bd9aca0f8f3b379c4c0507}{UART\+\_\+\+IER\+\_\+\+RXB8\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ae49d455826b53c1238c6469a4d1759ec}{UART\+\_\+\+IER\+\_\+\+RXB8}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a7c8b35c2b0bd9aca0f8f3b379c4c0507}{UART\+\_\+\+IER\+\_\+\+RXB8\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive Bit 8 Interrupt Enable Bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a292b5499a6b25509b3143dfcf5735336}{UART\+\_\+\+IER\+\_\+\+RXIDLE\+\_\+\+Pos}}~(9)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a02b1d0d5fbc5b1cf9bfbea0b7fe33458}{UART\+\_\+\+IER\+\_\+\+RXIDLE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a292b5499a6b25509b3143dfcf5735336}{UART\+\_\+\+IER\+\_\+\+RXIDLE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive Bit 8 Interrupt clear Bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a27520b84a10b5e9fc55793b05c6cbf4c}{UART\+\_\+\+IER\+\_\+\+ABREND\+\_\+\+IEN\+\_\+\+Pos}}~(10)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_aabbbd664441fe95cc8c7f47e55592310}{UART\+\_\+\+IER\+\_\+\+ABREND\+\_\+\+IEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a27520b84a10b5e9fc55793b05c6cbf4c}{UART\+\_\+\+IER\+\_\+\+ABREND\+\_\+\+IEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Auto baud rate end enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a9e9f8a7e74523a52d0bbf9b6888c3b8f}{UART\+\_\+\+IER\+\_\+\+ABRERR\+\_\+\+IEN\+\_\+\+Pos}}~(11)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ab6846901ac72a8c6ae66209c1f0fad6e}{UART\+\_\+\+IER\+\_\+\+ABRERR\+\_\+\+IEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a9e9f8a7e74523a52d0bbf9b6888c3b8f}{UART\+\_\+\+IER\+\_\+\+ABRERR\+\_\+\+IEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Auto baud rate error enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_afe25f017a04459b88b7575f9335baac2}{UART\+\_\+\+ICR\+\_\+\+TX\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em UART\+\_\+\+ICR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a182c6c394d12283c1d61dbe2174b12d0}{UART\+\_\+\+ICR\+\_\+\+TX}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_afe25f017a04459b88b7575f9335baac2}{UART\+\_\+\+ICR\+\_\+\+TX\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmit buffer empty interrupt clear bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a97b5e06d1e40c9ac3ed2521212ac5106}{UART\+\_\+\+ICR\+\_\+\+RX\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a0cf3aff7b57d9bddc24fe00d08ff6330}{UART\+\_\+\+ICR\+\_\+\+RX}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a97b5e06d1e40c9ac3ed2521212ac5106}{UART\+\_\+\+ICR\+\_\+\+RX\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive interrupt clear bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a15d7ce03feb0390c1e9c23ce3bf0591d}{UART\+\_\+\+ICR\+\_\+\+TXC\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ab876c1450f64a238228de688606143fc}{UART\+\_\+\+ICR\+\_\+\+TXC}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a15d7ce03feb0390c1e9c23ce3bf0591d}{UART\+\_\+\+ICR\+\_\+\+TXC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmit complete interrupt clear bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a586dfa2f682983ad1cf7a04511de5f14}{UART\+\_\+\+ICR\+\_\+\+RXOERR\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a2d6430cbb53873cadaa171060023cdb9}{UART\+\_\+\+ICR\+\_\+\+RXOERR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a586dfa2f682983ad1cf7a04511de5f14}{UART\+\_\+\+ICR\+\_\+\+RXOERR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive overflow error interrupt clear bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a957076c9c27de01e5c55a123084c0814}{UART\+\_\+\+ICR\+\_\+\+RXPERR\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ae2e5c75870ae372fad9a3c6d59cd4b74}{UART\+\_\+\+ICR\+\_\+\+RXPERR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a957076c9c27de01e5c55a123084c0814}{UART\+\_\+\+ICR\+\_\+\+RXPERR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Parity error interrupt clear bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ae971c6c56885662896992204cfdbadca}{UART\+\_\+\+ICR\+\_\+\+RXFERR\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a19c57b8f55fa1928e29046d980d91b7b}{UART\+\_\+\+ICR\+\_\+\+RXFERR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ae971c6c56885662896992204cfdbadca}{UART\+\_\+\+ICR\+\_\+\+RXFERR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Frame error interrupt clear bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ae723b7313b8756352ff0a550c364b1d3}{UART\+\_\+\+ICR\+\_\+\+RXBRK\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a8b3e8dba6bbb8e684b4390aadffd898e}{UART\+\_\+\+ICR\+\_\+\+RXBRK}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ae723b7313b8756352ff0a550c364b1d3}{UART\+\_\+\+ICR\+\_\+\+RXBRK\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive frame break interrupt clear bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a96195fe3b99b89a4e5af9f41e9e17ba4}{UART\+\_\+\+ICR\+\_\+\+TXBRK\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ab75a735ed783532715716975a79439c4}{UART\+\_\+\+ICR\+\_\+\+TXBRK}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a96195fe3b99b89a4e5af9f41e9e17ba4}{UART\+\_\+\+ICR\+\_\+\+TXBRK\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmit Break Frame Interrupt clear Bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_afea89a8c0900b9f3756f0d2d370795f0}{UART\+\_\+\+ICR\+\_\+\+RXB8\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_af89f18b80da5f56b64fb7fe8453eafe3}{UART\+\_\+\+ICR\+\_\+\+RXB8}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_afea89a8c0900b9f3756f0d2d370795f0}{UART\+\_\+\+ICR\+\_\+\+RXB8\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive Bit 8 Interrupt clear Bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_aa337a3a81c2673bf94b94bfa3aa82929}{UART\+\_\+\+ICR\+\_\+\+RXIDLE\+\_\+\+Pos}}~(9)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a3fc38114c91d479457b0819a84c889cf}{UART\+\_\+\+ICR\+\_\+\+RXIDLE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_aa337a3a81c2673bf94b94bfa3aa82929}{UART\+\_\+\+ICR\+\_\+\+RXIDLE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive Bit 8 Interrupt clear Bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a72e8d00132add4ef6edb970b3625d122}{UART\+\_\+\+ICR\+\_\+\+ABRENDCLR\+\_\+\+Pos}}~(10)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a0bda35a96aae8bf6585612029cf5c885}{UART\+\_\+\+ICR\+\_\+\+ABRENDCLR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a72e8d00132add4ef6edb970b3625d122}{UART\+\_\+\+ICR\+\_\+\+ABRENDCLR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Auto baud rate end clear bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a9258f40af729a8fa858b90c73b1a9728}{UART\+\_\+\+ICR\+\_\+\+ABRERRCLR\+\_\+\+Pos}}~(11)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a11714521c254a6045cbb39da71e7e4c7}{UART\+\_\+\+ICR\+\_\+\+ABRERRCLR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a9258f40af729a8fa858b90c73b1a9728}{UART\+\_\+\+ICR\+\_\+\+ABRERRCLR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Auto baud rate error clear bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a574aec5018a489d2c9f6938cd5f59976}{UART\+\_\+\+GCR\+\_\+\+UART\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em UART\+\_\+\+GCR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a589711af826ec302ee77b7c6e01627e5}{UART\+\_\+\+GCR\+\_\+\+UART}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a574aec5018a489d2c9f6938cd5f59976}{UART\+\_\+\+GCR\+\_\+\+UART\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em UART mode selection bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a19712d3c481b1ba0330e35dd76ffc3b1}{UART\+\_\+\+GCR\+\_\+\+DMA\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ac81a6e99eccb96a57ab179dfb367d4be}{UART\+\_\+\+GCR\+\_\+\+DMA}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a19712d3c481b1ba0330e35dd76ffc3b1}{UART\+\_\+\+GCR\+\_\+\+DMA\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DMA mode selection bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ac6b1540bf9c1930534e3bf74449ef42c}{UART\+\_\+\+GCR\+\_\+\+AUTOFLOW\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a367541d1bd923b4729815e1169c351ab}{UART\+\_\+\+GCR\+\_\+\+AUTOFLOW}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ac6b1540bf9c1930534e3bf74449ef42c}{UART\+\_\+\+GCR\+\_\+\+AUTOFLOW\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Automatic flow control enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a05c61d5c2ee3bf4bb55cebfdbb89c703}{UART\+\_\+\+GCR\+\_\+\+RX\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_aa25fd40511f15ad69f7d4c0468540503}{UART\+\_\+\+GCR\+\_\+\+RX}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a05c61d5c2ee3bf4bb55cebfdbb89c703}{UART\+\_\+\+GCR\+\_\+\+RX\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Enable receive \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a27dddcab64449b09806d3c35725df65b}{UART\+\_\+\+GCR\+\_\+\+TX\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_aa85573706feb2b66083812396a49906f}{UART\+\_\+\+GCR\+\_\+\+TX}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a27dddcab64449b09806d3c35725df65b}{UART\+\_\+\+GCR\+\_\+\+TX\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Enable transmit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a2ca6782d379c74e464167db19401b5da}{UART\+\_\+\+GCR\+\_\+\+SELB8\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a9c1faf464c66242431623f5a28b40f66}{UART\+\_\+\+GCR\+\_\+\+SELB8}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a2ca6782d379c74e464167db19401b5da}{UART\+\_\+\+GCR\+\_\+\+SELB8\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em UART mode selection bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a3ad2c892b1dc3dc2e9b79a9a6b2fd053}{UART\+\_\+\+GCR\+\_\+\+SWAP\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a8061711a58e7aa1992e84a4632175ed4}{UART\+\_\+\+GCR\+\_\+\+SWAP}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a3ad2c892b1dc3dc2e9b79a9a6b2fd053}{UART\+\_\+\+GCR\+\_\+\+SWAP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DMA mode selection bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ac75b02a01b172062fdcc38cc54b0a915}{UART\+\_\+\+GCR\+\_\+\+RXTOG\+\_\+\+Pos}}~(9)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ab6b996e690672f435cb0d9d8496cc0f7}{UART\+\_\+\+GCR\+\_\+\+RXTOG}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ac75b02a01b172062fdcc38cc54b0a915}{UART\+\_\+\+GCR\+\_\+\+RXTOG\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Automatic flow control enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a615880e1eb993f08707acc5de124e086}{UART\+\_\+\+GCR\+\_\+\+TXTOG\+\_\+\+Pos}}~(10)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a20d189154f093c3d89d866011d8ce45d}{UART\+\_\+\+GCR\+\_\+\+TXTOG}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a615880e1eb993f08707acc5de124e086}{UART\+\_\+\+GCR\+\_\+\+TXTOG\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Enable receive \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a0bb29721cf4634207f36b40423622617}{UART\+\_\+\+CCR\+\_\+\+PEN\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em UART\+\_\+\+CCR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a8a629239bf263ae183bab7bfafeb13c5}{UART\+\_\+\+CCR\+\_\+\+PEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a0bb29721cf4634207f36b40423622617}{UART\+\_\+\+CCR\+\_\+\+PEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Parity enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a52de974f30d8ca93e3206f0e3bab6ace}{UART\+\_\+\+CCR\+\_\+\+PSEL\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a7c8311e5ff58aa98cf8f1567f50d60d3}{UART\+\_\+\+CCR\+\_\+\+PSEL}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a52de974f30d8ca93e3206f0e3bab6ace}{UART\+\_\+\+CCR\+\_\+\+PSEL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Parity selection bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a0988603a70037f33f11b5b96bceeef31}{UART\+\_\+\+CCR\+\_\+\+SPB\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_af2abac091db4e0afa6df0ee847f17755}{UART\+\_\+\+CCR\+\_\+\+SPB}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a0988603a70037f33f11b5b96bceeef31}{UART\+\_\+\+CCR\+\_\+\+SPB\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Stop bit selection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ae18b41072a2f559bfdfe55b420746212}{UART\+\_\+\+CCR\+\_\+\+SPB0\+\_\+\+Pos}}~\mbox{\hyperlink{reg__uart_8h_a0988603a70037f33f11b5b96bceeef31}{UART\+\_\+\+CCR\+\_\+\+SPB\+\_\+\+Pos}}
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a94d0f2a43481dffe8eb738bb61f441f1}{UART\+\_\+\+CCR\+\_\+\+SPB0}}~\mbox{\hyperlink{reg__uart_8h_af2abac091db4e0afa6df0ee847f17755}{UART\+\_\+\+CCR\+\_\+\+SPB}}
+\begin{DoxyCompactList}\small\item\em Stop bit 0 selection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_acdd4f53e581cfb20c0ef494a327ffb62}{UART\+\_\+\+CCR\+\_\+\+BRK\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a9d81049d6de33fbfe5974b25069c17b8}{UART\+\_\+\+CCR\+\_\+\+BRK}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_acdd4f53e581cfb20c0ef494a327ffb62}{UART\+\_\+\+CCR\+\_\+\+BRK\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em UART transmit frame break \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_acd6d316907826be184db97a3675503ac}{UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ae7bc01446224b563f598e4c6ffcfadf7}{UART\+\_\+\+CCR\+\_\+\+CHAR}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__uart_8h_acd6d316907826be184db97a3675503ac}{UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em UART width bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a034c81332e4a31684c5c0f0dc0a646c7}{UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+5b}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__uart_8h_acd6d316907826be184db97a3675503ac}{UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em UART Word Length 5b \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_aea24296c7fb30d12620d1fe947cb3789}{UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+6b}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_acd6d316907826be184db97a3675503ac}{UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em UART Word Length 6b \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a8c32327f26a7307c00f1b32db1b4849a}{UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+7b}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__uart_8h_acd6d316907826be184db97a3675503ac}{UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em UART Word Length 7b \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_abc123b959de573d7812c25b6b207ef19}{UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+8b}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__uart_8h_acd6d316907826be184db97a3675503ac}{UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em UART Word Length 8b \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a5d8b0dda408ddc10e5c40edd99fb3c48}{UART\+\_\+\+CCR\+\_\+\+SPB1\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a87b66fc1a77c2d1cd30b7096bc66f0b4}{UART\+\_\+\+CCR\+\_\+\+SPB1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a5d8b0dda408ddc10e5c40edd99fb3c48}{UART\+\_\+\+CCR\+\_\+\+SPB1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Stop bit 1 selection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_abb37a333c01a22dc08a3910465b5c39c}{UART\+\_\+\+CCR\+\_\+\+B8\+RXD\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_acc7ecb1c3e54a6250b0c25f04a43b610}{UART\+\_\+\+CCR\+\_\+\+B8\+RXD}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_abb37a333c01a22dc08a3910465b5c39c}{UART\+\_\+\+CCR\+\_\+\+B8\+RXD\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Synchronous frame receive \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ad6818444f47868aada3b36c4a56e4c40}{UART\+\_\+\+CCR\+\_\+\+B8\+TXD\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a7d3e5a3b077f69eab3fd79ae3420c8bb}{UART\+\_\+\+CCR\+\_\+\+B8\+TXD}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ad6818444f47868aada3b36c4a56e4c40}{UART\+\_\+\+CCR\+\_\+\+B8\+TXD\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Synchronous frame transmit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a775803894e77bcb5c80fa015d93e4f90}{UART\+\_\+\+CCR\+\_\+\+B8\+POL\+\_\+\+Pos}}~(9)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a9ddbbe0acf3d852580dc0f896e1e4372}{UART\+\_\+\+CCR\+\_\+\+B8\+POL}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a775803894e77bcb5c80fa015d93e4f90}{UART\+\_\+\+CCR\+\_\+\+B8\+POL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Synchronous frame polarity control bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a1ffec9581a30416c0ce1ab63d51befca}{UART\+\_\+\+CCR\+\_\+\+B8\+TOG\+\_\+\+Pos}}~(10)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_af4f0521d9067d662cda5d7df94d0a06d}{UART\+\_\+\+CCR\+\_\+\+B8\+TOG}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a1ffec9581a30416c0ce1ab63d51befca}{UART\+\_\+\+CCR\+\_\+\+B8\+TOG\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Synchronous frame auto toggle bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ab2d4e4a4cb494e2c96659defd93e9a40}{UART\+\_\+\+CCR\+\_\+\+B8\+EN\+\_\+\+Pos}}~(11)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a1ed0004a09d7dd8dfacd8bee987ca67a}{UART\+\_\+\+CCR\+\_\+\+B8\+EN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ab2d4e4a4cb494e2c96659defd93e9a40}{UART\+\_\+\+CCR\+\_\+\+B8\+EN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Synchronous frame enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a99af3331acafb013e3acd2ec21962993}{UART\+\_\+\+CCR\+\_\+\+RWU\+\_\+\+Pos}}~(12)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a8a022fb91e23214863405827c564b551}{UART\+\_\+\+CCR\+\_\+\+RWU}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a99af3331acafb013e3acd2ec21962993}{UART\+\_\+\+CCR\+\_\+\+RWU\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive wake up method \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a32e4466c066a942c973925a027d03fe5}{UART\+\_\+\+CCR\+\_\+\+WAKE\+\_\+\+Pos}}~(13)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_af111c13f85d729ba3dcd1b16081a5231}{UART\+\_\+\+CCR\+\_\+\+WAKE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a32e4466c066a942c973925a027d03fe5}{UART\+\_\+\+CCR\+\_\+\+WAKE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Wake up method \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_acb2941a78f07f5ed29527724c454a083}{UART\+\_\+\+CCR\+\_\+\+LIN\+\_\+\+Pos}}~(14)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ab6fa883039aef8ee3964146b23222561}{UART\+\_\+\+CCR\+\_\+\+LIN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_acb2941a78f07f5ed29527724c454a083}{UART\+\_\+\+CCR\+\_\+\+LIN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Wake up method \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a68a25068706ba124f29d13da0a07f7b3}{UART\+\_\+\+BRR\+\_\+\+MANTISSA\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em UART\+\_\+\+BRR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a10b2adf888a271b67bb19ee476023f3e}{UART\+\_\+\+BRR\+\_\+\+MANTISSA}}~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__uart_8h_a68a25068706ba124f29d13da0a07f7b3}{UART\+\_\+\+BRR\+\_\+\+MANTISSA\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em UART DIV MANTISSA \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ab5f90b895b676c18999aa35007014b80}{UART\+\_\+\+BRR\+\_\+\+FRACTION\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em UART\+\_\+\+FRA Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ac0009582af01f8e19a1c9f235fa49ce9}{UART\+\_\+\+BRR\+\_\+\+FRACTION}}~(0x0\+FU $<$$<$ \mbox{\hyperlink{reg__uart_8h_ab5f90b895b676c18999aa35007014b80}{UART\+\_\+\+BRR\+\_\+\+FRACTION\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em UART DIV FRACTION \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a9b7528c449e072da57850d9c89c2151e}{UART\+\_\+\+RXAR\+\_\+\+ADDR\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em UART\+\_\+\+RXAR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a13a76a978fb634f1757ab40b5a9ac062}{UART\+\_\+\+RXAR\+\_\+\+ADDR}}~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__uart_8h_a9b7528c449e072da57850d9c89c2151e}{UART\+\_\+\+RXAR\+\_\+\+ADDR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Synchronous frame match address \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a83e26a8ae5322e61df1966cfdf447346}{UART\+\_\+\+RXMR\+\_\+\+MASK\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em UART\+\_\+\+RXMR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a07dca1aa19c8d6f630d876762670c794}{UART\+\_\+\+RXMR\+\_\+\+MASK}}~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__uart_8h_a83e26a8ae5322e61df1966cfdf447346}{UART\+\_\+\+RXMR\+\_\+\+MASK\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Synchronous frame match address mask \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_abd5ba5db92ae1ff840819cbe61aa8e71}{UART\+\_\+\+SCR\+\_\+\+SCEN\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em UART\+\_\+\+SCR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a7d34c81e77774d8f4b1f4a2885a6a5e8}{UART\+\_\+\+SCR\+\_\+\+SCEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_abd5ba5db92ae1ff840819cbe61aa8e71}{UART\+\_\+\+SCR\+\_\+\+SCEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em ISO7816 enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_abcacac905b15ef42b850abfea0b15989}{UART\+\_\+\+SCR\+\_\+\+SCARB\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a8be85911aeb148f6b0c02dad544a695e}{UART\+\_\+\+SCR\+\_\+\+SCARB}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_abcacac905b15ef42b850abfea0b15989}{UART\+\_\+\+SCR\+\_\+\+SCARB\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em ISO7816 check auto answer bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a24af28792b5dd3cbd4e1580a7bf2d15c}{UART\+\_\+\+SCR\+\_\+\+NACK\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ab6e55d56c97ade98b26c77a8f78f34ac}{UART\+\_\+\+SCR\+\_\+\+NACK}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a24af28792b5dd3cbd4e1580a7bf2d15c}{UART\+\_\+\+SCR\+\_\+\+NACK\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Master receive frame answer bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_aac67015c93ea7447e4048f88f13064de}{UART\+\_\+\+SCR\+\_\+\+SCFCNT\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a35ec4a961d9853ed29785c642661115c}{UART\+\_\+\+SCR\+\_\+\+SCFCNT}}~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__uart_8h_aac67015c93ea7447e4048f88f13064de}{UART\+\_\+\+SCR\+\_\+\+SCFCNT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em ISO7816 protection counter bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_acd3d6bc8e167ab91617f4b07cef80c4e}{UART\+\_\+\+SCR\+\_\+\+HDSEL\+\_\+\+Pos}}~(12)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a019b867d1db321a74021521d75f1c663}{UART\+\_\+\+SCR\+\_\+\+HDSEL}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_acd3d6bc8e167ab91617f4b07cef80c4e}{UART\+\_\+\+SCR\+\_\+\+HDSEL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Single-\/line half-\/duplex mode selection bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a2f0e0127a0f34d4144c4a0de9cde6a97}{UART\+\_\+\+ABRCR\+\_\+\+ABREN\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_aa844d1230abf09b5e69d7b354ff16607}{UART\+\_\+\+ABRCR\+\_\+\+ABREN}}~(0x01U$<$$<$\mbox{\hyperlink{reg__uart_8h_a2f0e0127a0f34d4144c4a0de9cde6a97}{UART\+\_\+\+ABRCR\+\_\+\+ABREN\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_aded05b3ecafc825dfe5e8b088b82020a}{UART\+\_\+\+ABRCR\+\_\+\+BITCNT\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a7699ee27318dd02282d456226d9683a3}{UART\+\_\+\+ABRCR\+\_\+\+BITCNT}}~(0x03U$<$$<$\mbox{\hyperlink{reg__uart_8h_aded05b3ecafc825dfe5e8b088b82020a}{UART\+\_\+\+ABRCR\+\_\+\+BITCNT\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a368f8cf6b051cc0913cd6af50740b1fa}{UART\+\_\+\+ABRCR\+\_\+\+BITCNT\+\_\+\+MODE0}}~(0x00U$<$$<$\mbox{\hyperlink{reg__uart_8h_aded05b3ecafc825dfe5e8b088b82020a}{UART\+\_\+\+ABRCR\+\_\+\+BITCNT\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ab23b495879bfe40a0981657e7576f367}{UART\+\_\+\+ABRCR\+\_\+\+BITCNT\+\_\+\+MODE1}}~(0x01U$<$$<$\mbox{\hyperlink{reg__uart_8h_aded05b3ecafc825dfe5e8b088b82020a}{UART\+\_\+\+ABRCR\+\_\+\+BITCNT\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ac518db404ebd91f36ed894be32aede90}{UART\+\_\+\+ABRCR\+\_\+\+BITCNT\+\_\+\+MODE2}}~(0x02U$<$$<$\mbox{\hyperlink{reg__uart_8h_aded05b3ecafc825dfe5e8b088b82020a}{UART\+\_\+\+ABRCR\+\_\+\+BITCNT\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a8858d11da289336a3c82c673e38dbced}{UART\+\_\+\+ABRCR\+\_\+\+BITCNT\+\_\+\+MODE3}}~(0x03U$<$$<$\mbox{\hyperlink{reg__uart_8h_aded05b3ecafc825dfe5e8b088b82020a}{UART\+\_\+\+ABRCR\+\_\+\+BITCNT\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ae1f47d329d54a82b7c2935ce36cb4e76}{UART\+\_\+\+ABRCR\+\_\+\+FORMER\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a71300ec671eba543445f440b5120d380}{UART\+\_\+\+ABRCR\+\_\+\+FORMER}}~(0x01U$<$$<$\mbox{\hyperlink{reg__uart_8h_ae1f47d329d54a82b7c2935ce36cb4e76}{UART\+\_\+\+ABRCR\+\_\+\+FORMER\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a801f6987db295e5d3ce9e901e11449f3}{UART\+\_\+\+ABRCR\+\_\+\+LATTER\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a6301c22b946a5010c988fc73a6c70fd5}{UART\+\_\+\+ABRCR\+\_\+\+LATTER}}~(0x01U$<$$<$\mbox{\hyperlink{reg__uart_8h_a801f6987db295e5d3ce9e901e11449f3}{UART\+\_\+\+ABRCR\+\_\+\+LATTER\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{reg__uart_8h_ac8775ea0ca907802bad4eeaf58e80e58}{UART\+\_\+\+IDLR\+\_\+\+IDLR\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em UART\+\_\+\+IDLR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__uart_8h_a67ed091862f6081c43d7ce19912c21db}{UART\+\_\+\+IDLR\+\_\+\+IDLR}}~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__uart_8h_ac8775ea0ca907802bad4eeaf58e80e58}{UART\+\_\+\+IDLR\+\_\+\+IDLR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em ISO7816 enable bit \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{reg__uart_8h_a8d69bf04d07af4fbbab5a8bd291f65ff}\label{reg__uart_8h_a8d69bf04d07af4fbbab5a8bd291f65ff}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART1@{UART1}}
+\index{UART1@{UART1}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART1}{UART1}}
+{\footnotesize\ttfamily \#define UART1~((\mbox{\hyperlink{struct_u_a_r_t___type_def}{UART\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__uart_8h_a383bf0c4670c3a7fa72df80f66331a46}{UART1\+\_\+\+BASE}})}
+
+
+
+UART type pointer Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00092}{92}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a383bf0c4670c3a7fa72df80f66331a46}\label{reg__uart_8h_a383bf0c4670c3a7fa72df80f66331a46}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART1\_BASE@{UART1\_BASE}}
+\index{UART1\_BASE@{UART1\_BASE}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART1\_BASE}{UART1\_BASE}}
+{\footnotesize\ttfamily \#define UART1\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a25b99d6065f1c8f751e78f43ade652cb}{APB2\+PERIPH\+\_\+\+BASE}} + 0x3800)}
+
+
+
+UART Base Address Definition 
+
+Base Address\+: 0x40013800 
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00049}{49}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}\label{reg__uart_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART2@{UART2}}
+\index{UART2@{UART2}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART2}{UART2}}
+{\footnotesize\ttfamily \#define UART2~((\mbox{\hyperlink{struct_u_a_r_t___type_def}{UART\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__uart_8h_ac9998d643534960b684d45a60b998421}{UART2\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00093}{93}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ac9998d643534960b684d45a60b998421}\label{reg__uart_8h_ac9998d643534960b684d45a60b998421}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART2\_BASE@{UART2\_BASE}}
+\index{UART2\_BASE@{UART2\_BASE}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART2\_BASE}{UART2\_BASE}}
+{\footnotesize\ttfamily \#define UART2\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x4400)}
+
+
+
+Base Address\+: 0x40004400 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00050}{50}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a961726a611b38bcaf61f3d598b0a59ec}\label{reg__uart_8h_a961726a611b38bcaf61f3d598b0a59ec}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART3@{UART3}}
+\index{UART3@{UART3}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART3}{UART3}}
+{\footnotesize\ttfamily \#define UART3~((\mbox{\hyperlink{struct_u_a_r_t___type_def}{UART\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__uart_8h_a2eff3896840fdf741bd67d2d7fe99a34}{UART3\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00095}{95}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a2eff3896840fdf741bd67d2d7fe99a34}\label{reg__uart_8h_a2eff3896840fdf741bd67d2d7fe99a34}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART3\_BASE@{UART3\_BASE}}
+\index{UART3\_BASE@{UART3\_BASE}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART3\_BASE}{UART3\_BASE}}
+{\footnotesize\ttfamily \#define UART3\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x4800)}
+
+
+
+Base Address\+: 0x40004800 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00051}{51}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a7c035f6f443c999fc043b2b7fb598800}\label{reg__uart_8h_a7c035f6f443c999fc043b2b7fb598800}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART4@{UART4}}
+\index{UART4@{UART4}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART4}{UART4}}
+{\footnotesize\ttfamily \#define UART4~((\mbox{\hyperlink{struct_u_a_r_t___type_def}{UART\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__uart_8h_a94d92270bf587ccdc3a37a5bb5d20467}{UART4\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00096}{96}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a94d92270bf587ccdc3a37a5bb5d20467}\label{reg__uart_8h_a94d92270bf587ccdc3a37a5bb5d20467}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART4\_BASE@{UART4\_BASE}}
+\index{UART4\_BASE@{UART4\_BASE}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART4\_BASE}{UART4\_BASE}}
+{\footnotesize\ttfamily \#define UART4\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x4\+C00)}
+
+
+
+Base Address\+: 0x40004\+C00 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00052}{52}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a9274e37cf5e8a174fc5dd627b98ec0fe}\label{reg__uart_8h_a9274e37cf5e8a174fc5dd627b98ec0fe}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART5@{UART5}}
+\index{UART5@{UART5}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART5}{UART5}}
+{\footnotesize\ttfamily \#define UART5~((\mbox{\hyperlink{struct_u_a_r_t___type_def}{UART\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__uart_8h_aa155689c0e206e6994951dc3cf31052a}{UART5\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00097}{97}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_aa155689c0e206e6994951dc3cf31052a}\label{reg__uart_8h_aa155689c0e206e6994951dc3cf31052a}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART5\_BASE@{UART5\_BASE}}
+\index{UART5\_BASE@{UART5\_BASE}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART5\_BASE}{UART5\_BASE}}
+{\footnotesize\ttfamily \#define UART5\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x5000)}
+
+
+
+Base Address\+: 0x40005000 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00053}{53}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a61531d783c55be06875e7029331ffd67}\label{reg__uart_8h_a61531d783c55be06875e7029331ffd67}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART6@{UART6}}
+\index{UART6@{UART6}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART6}{UART6}}
+{\footnotesize\ttfamily \#define UART6~((\mbox{\hyperlink{struct_u_a_r_t___type_def}{UART\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__uart_8h_a77f0753cf94e8b7b3e04a52a896f9dcb}{UART6\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00098}{98}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a77f0753cf94e8b7b3e04a52a896f9dcb}\label{reg__uart_8h_a77f0753cf94e8b7b3e04a52a896f9dcb}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART6\_BASE@{UART6\_BASE}}
+\index{UART6\_BASE@{UART6\_BASE}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART6\_BASE}{UART6\_BASE}}
+{\footnotesize\ttfamily \#define UART6\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a25b99d6065f1c8f751e78f43ade652cb}{APB2\+PERIPH\+\_\+\+BASE}} + 0x3\+C00)}
+
+
+
+Base Address\+: 0x40013\+C00 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00054}{54}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a20bc10f5b73e8b51724b2f23c5b2e785}\label{reg__uart_8h_a20bc10f5b73e8b51724b2f23c5b2e785}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART7@{UART7}}
+\index{UART7@{UART7}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART7}{UART7}}
+{\footnotesize\ttfamily \#define UART7~((\mbox{\hyperlink{struct_u_a_r_t___type_def}{UART\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__uart_8h_a3150e4b10ec876c0b20f22de12a8fa40}{UART7\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00099}{99}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a3150e4b10ec876c0b20f22de12a8fa40}\label{reg__uart_8h_a3150e4b10ec876c0b20f22de12a8fa40}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART7\_BASE@{UART7\_BASE}}
+\index{UART7\_BASE@{UART7\_BASE}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART7\_BASE}{UART7\_BASE}}
+{\footnotesize\ttfamily \#define UART7\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x7800)}
+
+
+
+Base Address\+: 0x40007800 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00055}{55}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a2fe70804956e53dcbdc82dbacbbbfabc}\label{reg__uart_8h_a2fe70804956e53dcbdc82dbacbbbfabc}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART8@{UART8}}
+\index{UART8@{UART8}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART8}{UART8}}
+{\footnotesize\ttfamily \#define UART8~((\mbox{\hyperlink{struct_u_a_r_t___type_def}{UART\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__uart_8h_ac9c6cd59a248941d9d2462ab21a2346e}{UART8\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00100}{100}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ac9c6cd59a248941d9d2462ab21a2346e}\label{reg__uart_8h_ac9c6cd59a248941d9d2462ab21a2346e}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART8\_BASE@{UART8\_BASE}}
+\index{UART8\_BASE@{UART8\_BASE}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART8\_BASE}{UART8\_BASE}}
+{\footnotesize\ttfamily \#define UART8\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x7\+C00)}
+
+
+
+Base Address\+: 0x40007\+C00 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00056}{56}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_aa844d1230abf09b5e69d7b354ff16607}\label{reg__uart_8h_aa844d1230abf09b5e69d7b354ff16607}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ABRCR\_ABREN@{UART\_ABRCR\_ABREN}}
+\index{UART\_ABRCR\_ABREN@{UART\_ABRCR\_ABREN}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ABRCR\_ABREN}{UART\_ABRCR\_ABREN}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ABRCR\+\_\+\+ABREN~(0x01U$<$$<$\mbox{\hyperlink{reg__uart_8h_a2f0e0127a0f34d4144c4a0de9cde6a97}{UART\+\_\+\+ABRCR\+\_\+\+ABREN\+\_\+\+Pos}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00334}{334}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a2f0e0127a0f34d4144c4a0de9cde6a97}\label{reg__uart_8h_a2f0e0127a0f34d4144c4a0de9cde6a97}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ABRCR\_ABREN\_Pos@{UART\_ABRCR\_ABREN\_Pos}}
+\index{UART\_ABRCR\_ABREN\_Pos@{UART\_ABRCR\_ABREN\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ABRCR\_ABREN\_Pos}{UART\_ABRCR\_ABREN\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ABRCR\+\_\+\+ABREN\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00333}{333}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a7699ee27318dd02282d456226d9683a3}\label{reg__uart_8h_a7699ee27318dd02282d456226d9683a3}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ABRCR\_BITCNT@{UART\_ABRCR\_BITCNT}}
+\index{UART\_ABRCR\_BITCNT@{UART\_ABRCR\_BITCNT}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ABRCR\_BITCNT}{UART\_ABRCR\_BITCNT}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ABRCR\+\_\+\+BITCNT~(0x03U$<$$<$\mbox{\hyperlink{reg__uart_8h_aded05b3ecafc825dfe5e8b088b82020a}{UART\+\_\+\+ABRCR\+\_\+\+BITCNT\+\_\+\+Pos}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00336}{336}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a368f8cf6b051cc0913cd6af50740b1fa}\label{reg__uart_8h_a368f8cf6b051cc0913cd6af50740b1fa}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ABRCR\_BITCNT\_MODE0@{UART\_ABRCR\_BITCNT\_MODE0}}
+\index{UART\_ABRCR\_BITCNT\_MODE0@{UART\_ABRCR\_BITCNT\_MODE0}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ABRCR\_BITCNT\_MODE0}{UART\_ABRCR\_BITCNT\_MODE0}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ABRCR\+\_\+\+BITCNT\+\_\+\+MODE0~(0x00U$<$$<$\mbox{\hyperlink{reg__uart_8h_aded05b3ecafc825dfe5e8b088b82020a}{UART\+\_\+\+ABRCR\+\_\+\+BITCNT\+\_\+\+Pos}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00337}{337}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ab23b495879bfe40a0981657e7576f367}\label{reg__uart_8h_ab23b495879bfe40a0981657e7576f367}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ABRCR\_BITCNT\_MODE1@{UART\_ABRCR\_BITCNT\_MODE1}}
+\index{UART\_ABRCR\_BITCNT\_MODE1@{UART\_ABRCR\_BITCNT\_MODE1}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ABRCR\_BITCNT\_MODE1}{UART\_ABRCR\_BITCNT\_MODE1}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ABRCR\+\_\+\+BITCNT\+\_\+\+MODE1~(0x01U$<$$<$\mbox{\hyperlink{reg__uart_8h_aded05b3ecafc825dfe5e8b088b82020a}{UART\+\_\+\+ABRCR\+\_\+\+BITCNT\+\_\+\+Pos}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00338}{338}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ac518db404ebd91f36ed894be32aede90}\label{reg__uart_8h_ac518db404ebd91f36ed894be32aede90}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ABRCR\_BITCNT\_MODE2@{UART\_ABRCR\_BITCNT\_MODE2}}
+\index{UART\_ABRCR\_BITCNT\_MODE2@{UART\_ABRCR\_BITCNT\_MODE2}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ABRCR\_BITCNT\_MODE2}{UART\_ABRCR\_BITCNT\_MODE2}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ABRCR\+\_\+\+BITCNT\+\_\+\+MODE2~(0x02U$<$$<$\mbox{\hyperlink{reg__uart_8h_aded05b3ecafc825dfe5e8b088b82020a}{UART\+\_\+\+ABRCR\+\_\+\+BITCNT\+\_\+\+Pos}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00339}{339}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a8858d11da289336a3c82c673e38dbced}\label{reg__uart_8h_a8858d11da289336a3c82c673e38dbced}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ABRCR\_BITCNT\_MODE3@{UART\_ABRCR\_BITCNT\_MODE3}}
+\index{UART\_ABRCR\_BITCNT\_MODE3@{UART\_ABRCR\_BITCNT\_MODE3}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ABRCR\_BITCNT\_MODE3}{UART\_ABRCR\_BITCNT\_MODE3}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ABRCR\+\_\+\+BITCNT\+\_\+\+MODE3~(0x03U$<$$<$\mbox{\hyperlink{reg__uart_8h_aded05b3ecafc825dfe5e8b088b82020a}{UART\+\_\+\+ABRCR\+\_\+\+BITCNT\+\_\+\+Pos}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00340}{340}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_aded05b3ecafc825dfe5e8b088b82020a}\label{reg__uart_8h_aded05b3ecafc825dfe5e8b088b82020a}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ABRCR\_BITCNT\_Pos@{UART\_ABRCR\_BITCNT\_Pos}}
+\index{UART\_ABRCR\_BITCNT\_Pos@{UART\_ABRCR\_BITCNT\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ABRCR\_BITCNT\_Pos}{UART\_ABRCR\_BITCNT\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ABRCR\+\_\+\+BITCNT\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00335}{335}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a71300ec671eba543445f440b5120d380}\label{reg__uart_8h_a71300ec671eba543445f440b5120d380}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ABRCR\_FORMER@{UART\_ABRCR\_FORMER}}
+\index{UART\_ABRCR\_FORMER@{UART\_ABRCR\_FORMER}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ABRCR\_FORMER}{UART\_ABRCR\_FORMER}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ABRCR\+\_\+\+FORMER~(0x01U$<$$<$\mbox{\hyperlink{reg__uart_8h_ae1f47d329d54a82b7c2935ce36cb4e76}{UART\+\_\+\+ABRCR\+\_\+\+FORMER\+\_\+\+Pos}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00342}{342}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ae1f47d329d54a82b7c2935ce36cb4e76}\label{reg__uart_8h_ae1f47d329d54a82b7c2935ce36cb4e76}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ABRCR\_FORMER\_Pos@{UART\_ABRCR\_FORMER\_Pos}}
+\index{UART\_ABRCR\_FORMER\_Pos@{UART\_ABRCR\_FORMER\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ABRCR\_FORMER\_Pos}{UART\_ABRCR\_FORMER\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ABRCR\+\_\+\+FORMER\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00341}{341}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a6301c22b946a5010c988fc73a6c70fd5}\label{reg__uart_8h_a6301c22b946a5010c988fc73a6c70fd5}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ABRCR\_LATTER@{UART\_ABRCR\_LATTER}}
+\index{UART\_ABRCR\_LATTER@{UART\_ABRCR\_LATTER}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ABRCR\_LATTER}{UART\_ABRCR\_LATTER}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ABRCR\+\_\+\+LATTER~(0x01U$<$$<$\mbox{\hyperlink{reg__uart_8h_a801f6987db295e5d3ce9e901e11449f3}{UART\+\_\+\+ABRCR\+\_\+\+LATTER\+\_\+\+Pos}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00344}{344}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a801f6987db295e5d3ce9e901e11449f3}\label{reg__uart_8h_a801f6987db295e5d3ce9e901e11449f3}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ABRCR\_LATTER\_Pos@{UART\_ABRCR\_LATTER\_Pos}}
+\index{UART\_ABRCR\_LATTER\_Pos@{UART\_ABRCR\_LATTER\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ABRCR\_LATTER\_Pos}{UART\_ABRCR\_LATTER\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ABRCR\+\_\+\+LATTER\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00343}{343}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ac0009582af01f8e19a1c9f235fa49ce9}\label{reg__uart_8h_ac0009582af01f8e19a1c9f235fa49ce9}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_BRR\_FRACTION@{UART\_BRR\_FRACTION}}
+\index{UART\_BRR\_FRACTION@{UART\_BRR\_FRACTION}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_BRR\_FRACTION}{UART\_BRR\_FRACTION}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+BRR\+\_\+\+FRACTION~(0x0\+FU $<$$<$ \mbox{\hyperlink{reg__uart_8h_ab5f90b895b676c18999aa35007014b80}{UART\+\_\+\+BRR\+\_\+\+FRACTION\+\_\+\+Pos}})}
+
+
+
+UART DIV FRACTION 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00303}{303}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ab5f90b895b676c18999aa35007014b80}\label{reg__uart_8h_ab5f90b895b676c18999aa35007014b80}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_BRR\_FRACTION\_Pos@{UART\_BRR\_FRACTION\_Pos}}
+\index{UART\_BRR\_FRACTION\_Pos@{UART\_BRR\_FRACTION\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_BRR\_FRACTION\_Pos}{UART\_BRR\_FRACTION\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+BRR\+\_\+\+FRACTION\+\_\+\+Pos~(0)}
+
+
+
+UART\+\_\+\+FRA Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00302}{302}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a10b2adf888a271b67bb19ee476023f3e}\label{reg__uart_8h_a10b2adf888a271b67bb19ee476023f3e}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_BRR\_MANTISSA@{UART\_BRR\_MANTISSA}}
+\index{UART\_BRR\_MANTISSA@{UART\_BRR\_MANTISSA}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_BRR\_MANTISSA}{UART\_BRR\_MANTISSA}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+BRR\+\_\+\+MANTISSA~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__uart_8h_a68a25068706ba124f29d13da0a07f7b3}{UART\+\_\+\+BRR\+\_\+\+MANTISSA\+\_\+\+Pos}})}
+
+
+
+UART DIV MANTISSA 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00297}{297}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a68a25068706ba124f29d13da0a07f7b3}\label{reg__uart_8h_a68a25068706ba124f29d13da0a07f7b3}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_BRR\_MANTISSA\_Pos@{UART\_BRR\_MANTISSA\_Pos}}
+\index{UART\_BRR\_MANTISSA\_Pos@{UART\_BRR\_MANTISSA\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_BRR\_MANTISSA\_Pos}{UART\_BRR\_MANTISSA\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+BRR\+\_\+\+MANTISSA\+\_\+\+Pos~(0)}
+
+
+
+UART\+\_\+\+BRR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00296}{296}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a1ed0004a09d7dd8dfacd8bee987ca67a}\label{reg__uart_8h_a1ed0004a09d7dd8dfacd8bee987ca67a}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_B8EN@{UART\_CCR\_B8EN}}
+\index{UART\_CCR\_B8EN@{UART\_CCR\_B8EN}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_B8EN}{UART\_CCR\_B8EN}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+B8\+EN~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ab2d4e4a4cb494e2c96659defd93e9a40}{UART\+\_\+\+CCR\+\_\+\+B8\+EN\+\_\+\+Pos}})}
+
+
+
+Synchronous frame enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00284}{284}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ab2d4e4a4cb494e2c96659defd93e9a40}\label{reg__uart_8h_ab2d4e4a4cb494e2c96659defd93e9a40}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_B8EN\_Pos@{UART\_CCR\_B8EN\_Pos}}
+\index{UART\_CCR\_B8EN\_Pos@{UART\_CCR\_B8EN\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_B8EN\_Pos}{UART\_CCR\_B8EN\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+B8\+EN\+\_\+\+Pos~(11)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00283}{283}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a9ddbbe0acf3d852580dc0f896e1e4372}\label{reg__uart_8h_a9ddbbe0acf3d852580dc0f896e1e4372}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_B8POL@{UART\_CCR\_B8POL}}
+\index{UART\_CCR\_B8POL@{UART\_CCR\_B8POL}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_B8POL}{UART\_CCR\_B8POL}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+B8\+POL~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a775803894e77bcb5c80fa015d93e4f90}{UART\+\_\+\+CCR\+\_\+\+B8\+POL\+\_\+\+Pos}})}
+
+
+
+Synchronous frame polarity control bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00280}{280}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a775803894e77bcb5c80fa015d93e4f90}\label{reg__uart_8h_a775803894e77bcb5c80fa015d93e4f90}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_B8POL\_Pos@{UART\_CCR\_B8POL\_Pos}}
+\index{UART\_CCR\_B8POL\_Pos@{UART\_CCR\_B8POL\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_B8POL\_Pos}{UART\_CCR\_B8POL\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+B8\+POL\+\_\+\+Pos~(9)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00279}{279}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_acc7ecb1c3e54a6250b0c25f04a43b610}\label{reg__uart_8h_acc7ecb1c3e54a6250b0c25f04a43b610}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_B8RXD@{UART\_CCR\_B8RXD}}
+\index{UART\_CCR\_B8RXD@{UART\_CCR\_B8RXD}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_B8RXD}{UART\_CCR\_B8RXD}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+B8\+RXD~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_abb37a333c01a22dc08a3910465b5c39c}{UART\+\_\+\+CCR\+\_\+\+B8\+RXD\+\_\+\+Pos}})}
+
+
+
+Synchronous frame receive 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00276}{276}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_abb37a333c01a22dc08a3910465b5c39c}\label{reg__uart_8h_abb37a333c01a22dc08a3910465b5c39c}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_B8RXD\_Pos@{UART\_CCR\_B8RXD\_Pos}}
+\index{UART\_CCR\_B8RXD\_Pos@{UART\_CCR\_B8RXD\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_B8RXD\_Pos}{UART\_CCR\_B8RXD\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+B8\+RXD\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00275}{275}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_af4f0521d9067d662cda5d7df94d0a06d}\label{reg__uart_8h_af4f0521d9067d662cda5d7df94d0a06d}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_B8TOG@{UART\_CCR\_B8TOG}}
+\index{UART\_CCR\_B8TOG@{UART\_CCR\_B8TOG}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_B8TOG}{UART\_CCR\_B8TOG}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+B8\+TOG~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a1ffec9581a30416c0ce1ab63d51befca}{UART\+\_\+\+CCR\+\_\+\+B8\+TOG\+\_\+\+Pos}})}
+
+
+
+Synchronous frame auto toggle bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00282}{282}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a1ffec9581a30416c0ce1ab63d51befca}\label{reg__uart_8h_a1ffec9581a30416c0ce1ab63d51befca}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_B8TOG\_Pos@{UART\_CCR\_B8TOG\_Pos}}
+\index{UART\_CCR\_B8TOG\_Pos@{UART\_CCR\_B8TOG\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_B8TOG\_Pos}{UART\_CCR\_B8TOG\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+B8\+TOG\+\_\+\+Pos~(10)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00281}{281}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a7d3e5a3b077f69eab3fd79ae3420c8bb}\label{reg__uart_8h_a7d3e5a3b077f69eab3fd79ae3420c8bb}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_B8TXD@{UART\_CCR\_B8TXD}}
+\index{UART\_CCR\_B8TXD@{UART\_CCR\_B8TXD}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_B8TXD}{UART\_CCR\_B8TXD}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+B8\+TXD~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ad6818444f47868aada3b36c4a56e4c40}{UART\+\_\+\+CCR\+\_\+\+B8\+TXD\+\_\+\+Pos}})}
+
+
+
+Synchronous frame transmit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00278}{278}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ad6818444f47868aada3b36c4a56e4c40}\label{reg__uart_8h_ad6818444f47868aada3b36c4a56e4c40}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_B8TXD\_Pos@{UART\_CCR\_B8TXD\_Pos}}
+\index{UART\_CCR\_B8TXD\_Pos@{UART\_CCR\_B8TXD\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_B8TXD\_Pos}{UART\_CCR\_B8TXD\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+B8\+TXD\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00277}{277}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a9d81049d6de33fbfe5974b25069c17b8}\label{reg__uart_8h_a9d81049d6de33fbfe5974b25069c17b8}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_BRK@{UART\_CCR\_BRK}}
+\index{UART\_CCR\_BRK@{UART\_CCR\_BRK}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_BRK}{UART\_CCR\_BRK}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+BRK~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_acdd4f53e581cfb20c0ef494a327ffb62}{UART\+\_\+\+CCR\+\_\+\+BRK\+\_\+\+Pos}})}
+
+
+
+UART transmit frame break 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00265}{265}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_acdd4f53e581cfb20c0ef494a327ffb62}\label{reg__uart_8h_acdd4f53e581cfb20c0ef494a327ffb62}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_BRK\_Pos@{UART\_CCR\_BRK\_Pos}}
+\index{UART\_CCR\_BRK\_Pos@{UART\_CCR\_BRK\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_BRK\_Pos}{UART\_CCR\_BRK\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+BRK\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00264}{264}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ae7bc01446224b563f598e4c6ffcfadf7}\label{reg__uart_8h_ae7bc01446224b563f598e4c6ffcfadf7}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_CHAR@{UART\_CCR\_CHAR}}
+\index{UART\_CCR\_CHAR@{UART\_CCR\_CHAR}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_CHAR}{UART\_CCR\_CHAR}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+CHAR~(0x03U $<$$<$ \mbox{\hyperlink{reg__uart_8h_acd6d316907826be184db97a3675503ac}{UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+\+Pos}})}
+
+
+
+UART width bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00267}{267}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a034c81332e4a31684c5c0f0dc0a646c7}\label{reg__uart_8h_a034c81332e4a31684c5c0f0dc0a646c7}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_CHAR\_5b@{UART\_CCR\_CHAR\_5b}}
+\index{UART\_CCR\_CHAR\_5b@{UART\_CCR\_CHAR\_5b}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_CHAR\_5b}{UART\_CCR\_CHAR\_5b}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+5b~(0x00U $<$$<$ \mbox{\hyperlink{reg__uart_8h_acd6d316907826be184db97a3675503ac}{UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+\+Pos}})}
+
+
+
+UART Word Length 5b 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00268}{268}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_aea24296c7fb30d12620d1fe947cb3789}\label{reg__uart_8h_aea24296c7fb30d12620d1fe947cb3789}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_CHAR\_6b@{UART\_CCR\_CHAR\_6b}}
+\index{UART\_CCR\_CHAR\_6b@{UART\_CCR\_CHAR\_6b}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_CHAR\_6b}{UART\_CCR\_CHAR\_6b}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+6b~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_acd6d316907826be184db97a3675503ac}{UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+\+Pos}})}
+
+
+
+UART Word Length 6b 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00269}{269}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a8c32327f26a7307c00f1b32db1b4849a}\label{reg__uart_8h_a8c32327f26a7307c00f1b32db1b4849a}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_CHAR\_7b@{UART\_CCR\_CHAR\_7b}}
+\index{UART\_CCR\_CHAR\_7b@{UART\_CCR\_CHAR\_7b}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_CHAR\_7b}{UART\_CCR\_CHAR\_7b}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+7b~(0x02U $<$$<$ \mbox{\hyperlink{reg__uart_8h_acd6d316907826be184db97a3675503ac}{UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+\+Pos}})}
+
+
+
+UART Word Length 7b 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00270}{270}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_abc123b959de573d7812c25b6b207ef19}\label{reg__uart_8h_abc123b959de573d7812c25b6b207ef19}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_CHAR\_8b@{UART\_CCR\_CHAR\_8b}}
+\index{UART\_CCR\_CHAR\_8b@{UART\_CCR\_CHAR\_8b}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_CHAR\_8b}{UART\_CCR\_CHAR\_8b}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+8b~(0x03U $<$$<$ \mbox{\hyperlink{reg__uart_8h_acd6d316907826be184db97a3675503ac}{UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+\+Pos}})}
+
+
+
+UART Word Length 8b 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00271}{271}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_acd6d316907826be184db97a3675503ac}\label{reg__uart_8h_acd6d316907826be184db97a3675503ac}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_CHAR\_Pos@{UART\_CCR\_CHAR\_Pos}}
+\index{UART\_CCR\_CHAR\_Pos@{UART\_CCR\_CHAR\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_CHAR\_Pos}{UART\_CCR\_CHAR\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00266}{266}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ab6fa883039aef8ee3964146b23222561}\label{reg__uart_8h_ab6fa883039aef8ee3964146b23222561}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_LIN@{UART\_CCR\_LIN}}
+\index{UART\_CCR\_LIN@{UART\_CCR\_LIN}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_LIN}{UART\_CCR\_LIN}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+LIN~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_acb2941a78f07f5ed29527724c454a083}{UART\+\_\+\+CCR\+\_\+\+LIN\+\_\+\+Pos}})}
+
+
+
+Wake up method 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00291}{291}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_acb2941a78f07f5ed29527724c454a083}\label{reg__uart_8h_acb2941a78f07f5ed29527724c454a083}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_LIN\_Pos@{UART\_CCR\_LIN\_Pos}}
+\index{UART\_CCR\_LIN\_Pos@{UART\_CCR\_LIN\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_LIN\_Pos}{UART\_CCR\_LIN\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+LIN\+\_\+\+Pos~(14)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00290}{290}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a8a629239bf263ae183bab7bfafeb13c5}\label{reg__uart_8h_a8a629239bf263ae183bab7bfafeb13c5}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_PEN@{UART\_CCR\_PEN}}
+\index{UART\_CCR\_PEN@{UART\_CCR\_PEN}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_PEN}{UART\_CCR\_PEN}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+PEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a0bb29721cf4634207f36b40423622617}{UART\+\_\+\+CCR\+\_\+\+PEN\+\_\+\+Pos}})}
+
+
+
+Parity enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00252}{252}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a0bb29721cf4634207f36b40423622617}\label{reg__uart_8h_a0bb29721cf4634207f36b40423622617}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_PEN\_Pos@{UART\_CCR\_PEN\_Pos}}
+\index{UART\_CCR\_PEN\_Pos@{UART\_CCR\_PEN\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_PEN\_Pos}{UART\_CCR\_PEN\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+PEN\+\_\+\+Pos~(0)}
+
+
+
+UART\+\_\+\+CCR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00251}{251}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a7c8311e5ff58aa98cf8f1567f50d60d3}\label{reg__uart_8h_a7c8311e5ff58aa98cf8f1567f50d60d3}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_PSEL@{UART\_CCR\_PSEL}}
+\index{UART\_CCR\_PSEL@{UART\_CCR\_PSEL}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_PSEL}{UART\_CCR\_PSEL}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+PSEL~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a52de974f30d8ca93e3206f0e3bab6ace}{UART\+\_\+\+CCR\+\_\+\+PSEL\+\_\+\+Pos}})}
+
+
+
+Parity selection bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00254}{254}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a52de974f30d8ca93e3206f0e3bab6ace}\label{reg__uart_8h_a52de974f30d8ca93e3206f0e3bab6ace}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_PSEL\_Pos@{UART\_CCR\_PSEL\_Pos}}
+\index{UART\_CCR\_PSEL\_Pos@{UART\_CCR\_PSEL\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_PSEL\_Pos}{UART\_CCR\_PSEL\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+PSEL\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00253}{253}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a8a022fb91e23214863405827c564b551}\label{reg__uart_8h_a8a022fb91e23214863405827c564b551}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_RWU@{UART\_CCR\_RWU}}
+\index{UART\_CCR\_RWU@{UART\_CCR\_RWU}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_RWU}{UART\_CCR\_RWU}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+RWU~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a99af3331acafb013e3acd2ec21962993}{UART\+\_\+\+CCR\+\_\+\+RWU\+\_\+\+Pos}})}
+
+
+
+Receive wake up method 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00286}{286}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a99af3331acafb013e3acd2ec21962993}\label{reg__uart_8h_a99af3331acafb013e3acd2ec21962993}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_RWU\_Pos@{UART\_CCR\_RWU\_Pos}}
+\index{UART\_CCR\_RWU\_Pos@{UART\_CCR\_RWU\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_RWU\_Pos}{UART\_CCR\_RWU\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+RWU\+\_\+\+Pos~(12)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00285}{285}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_af2abac091db4e0afa6df0ee847f17755}\label{reg__uart_8h_af2abac091db4e0afa6df0ee847f17755}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_SPB@{UART\_CCR\_SPB}}
+\index{UART\_CCR\_SPB@{UART\_CCR\_SPB}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_SPB}{UART\_CCR\_SPB}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+SPB~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a0988603a70037f33f11b5b96bceeef31}{UART\+\_\+\+CCR\+\_\+\+SPB\+\_\+\+Pos}})}
+
+
+
+Stop bit selection 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00257}{257}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a94d0f2a43481dffe8eb738bb61f441f1}\label{reg__uart_8h_a94d0f2a43481dffe8eb738bb61f441f1}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_SPB0@{UART\_CCR\_SPB0}}
+\index{UART\_CCR\_SPB0@{UART\_CCR\_SPB0}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_SPB0}{UART\_CCR\_SPB0}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+SPB0~\mbox{\hyperlink{reg__uart_8h_af2abac091db4e0afa6df0ee847f17755}{UART\+\_\+\+CCR\+\_\+\+SPB}}}
+
+
+
+Stop bit 0 selection 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00262}{262}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ae18b41072a2f559bfdfe55b420746212}\label{reg__uart_8h_ae18b41072a2f559bfdfe55b420746212}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_SPB0\_Pos@{UART\_CCR\_SPB0\_Pos}}
+\index{UART\_CCR\_SPB0\_Pos@{UART\_CCR\_SPB0\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_SPB0\_Pos}{UART\_CCR\_SPB0\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+SPB0\+\_\+\+Pos~\mbox{\hyperlink{reg__uart_8h_a0988603a70037f33f11b5b96bceeef31}{UART\+\_\+\+CCR\+\_\+\+SPB\+\_\+\+Pos}}}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00261}{261}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a87b66fc1a77c2d1cd30b7096bc66f0b4}\label{reg__uart_8h_a87b66fc1a77c2d1cd30b7096bc66f0b4}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_SPB1@{UART\_CCR\_SPB1}}
+\index{UART\_CCR\_SPB1@{UART\_CCR\_SPB1}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_SPB1}{UART\_CCR\_SPB1}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+SPB1~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a5d8b0dda408ddc10e5c40edd99fb3c48}{UART\+\_\+\+CCR\+\_\+\+SPB1\+\_\+\+Pos}})}
+
+
+
+Stop bit 1 selection 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00274}{274}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a5d8b0dda408ddc10e5c40edd99fb3c48}\label{reg__uart_8h_a5d8b0dda408ddc10e5c40edd99fb3c48}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_SPB1\_Pos@{UART\_CCR\_SPB1\_Pos}}
+\index{UART\_CCR\_SPB1\_Pos@{UART\_CCR\_SPB1\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_SPB1\_Pos}{UART\_CCR\_SPB1\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+SPB1\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00273}{273}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a0988603a70037f33f11b5b96bceeef31}\label{reg__uart_8h_a0988603a70037f33f11b5b96bceeef31}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_SPB\_Pos@{UART\_CCR\_SPB\_Pos}}
+\index{UART\_CCR\_SPB\_Pos@{UART\_CCR\_SPB\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_SPB\_Pos}{UART\_CCR\_SPB\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+SPB\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00256}{256}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_af111c13f85d729ba3dcd1b16081a5231}\label{reg__uart_8h_af111c13f85d729ba3dcd1b16081a5231}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_WAKE@{UART\_CCR\_WAKE}}
+\index{UART\_CCR\_WAKE@{UART\_CCR\_WAKE}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_WAKE}{UART\_CCR\_WAKE}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+WAKE~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a32e4466c066a942c973925a027d03fe5}{UART\+\_\+\+CCR\+\_\+\+WAKE\+\_\+\+Pos}})}
+
+
+
+Wake up method 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00288}{288}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a32e4466c066a942c973925a027d03fe5}\label{reg__uart_8h_a32e4466c066a942c973925a027d03fe5}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CCR\_WAKE\_Pos@{UART\_CCR\_WAKE\_Pos}}
+\index{UART\_CCR\_WAKE\_Pos@{UART\_CCR\_WAKE\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CCR\_WAKE\_Pos}{UART\_CCR\_WAKE\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CCR\+\_\+\+WAKE\+\_\+\+Pos~(13)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00287}{287}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a3781e44cbef4ece0aa99c82fccfd3fcd}\label{reg__uart_8h_a3781e44cbef4ece0aa99c82fccfd3fcd}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CSR\_RXAVL@{UART\_CSR\_RXAVL}}
+\index{UART\_CSR\_RXAVL@{UART\_CSR\_RXAVL}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CSR\_RXAVL}{UART\_CSR\_RXAVL}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CSR\+\_\+\+RXAVL~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a7e8dc094ccab823017510a433fabde9a}{UART\+\_\+\+CSR\+\_\+\+RXAVL\+\_\+\+Pos}})}
+
+
+
+Receive valid data flag bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00121}{121}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a7e8dc094ccab823017510a433fabde9a}\label{reg__uart_8h_a7e8dc094ccab823017510a433fabde9a}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CSR\_RXAVL\_Pos@{UART\_CSR\_RXAVL\_Pos}}
+\index{UART\_CSR\_RXAVL\_Pos@{UART\_CSR\_RXAVL\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CSR\_RXAVL\_Pos}{UART\_CSR\_RXAVL\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CSR\+\_\+\+RXAVL\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00120}{120}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a116c94895a66ef962dfeb8490184eec4}\label{reg__uart_8h_a116c94895a66ef962dfeb8490184eec4}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CSR\_TXC@{UART\_CSR\_TXC}}
+\index{UART\_CSR\_TXC@{UART\_CSR\_TXC}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CSR\_TXC}{UART\_CSR\_TXC}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CSR\+\_\+\+TXC~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ababea7657559106b3e2b6e44b8186096}{UART\+\_\+\+CSR\+\_\+\+TXC\+\_\+\+Pos}})}
+
+
+
+Transmit complete flag bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00119}{119}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ababea7657559106b3e2b6e44b8186096}\label{reg__uart_8h_ababea7657559106b3e2b6e44b8186096}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CSR\_TXC\_Pos@{UART\_CSR\_TXC\_Pos}}
+\index{UART\_CSR\_TXC\_Pos@{UART\_CSR\_TXC\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CSR\_TXC\_Pos}{UART\_CSR\_TXC\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CSR\+\_\+\+TXC\+\_\+\+Pos~(0)}
+
+
+
+UART\+\_\+\+CSR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00118}{118}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a7d3c0f23c007e26635040e5dd405f74c}\label{reg__uart_8h_a7d3c0f23c007e26635040e5dd405f74c}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CSR\_TXEPT@{UART\_CSR\_TXEPT}}
+\index{UART\_CSR\_TXEPT@{UART\_CSR\_TXEPT}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CSR\_TXEPT}{UART\_CSR\_TXEPT}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CSR\+\_\+\+TXEPT~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a4cc292feee4fbfd6c98956505d32a4ec}{UART\+\_\+\+CSR\+\_\+\+TXEPT\+\_\+\+Pos}})}
+
+
+
+Transmit buffer empty flag bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00125}{125}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a4cc292feee4fbfd6c98956505d32a4ec}\label{reg__uart_8h_a4cc292feee4fbfd6c98956505d32a4ec}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CSR\_TXEPT\_Pos@{UART\_CSR\_TXEPT\_Pos}}
+\index{UART\_CSR\_TXEPT\_Pos@{UART\_CSR\_TXEPT\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CSR\_TXEPT\_Pos}{UART\_CSR\_TXEPT\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CSR\+\_\+\+TXEPT\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00124}{124}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a8efc192af3c2d7979137bd07c98f2514}\label{reg__uart_8h_a8efc192af3c2d7979137bd07c98f2514}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CSR\_TXFULL@{UART\_CSR\_TXFULL}}
+\index{UART\_CSR\_TXFULL@{UART\_CSR\_TXFULL}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CSR\_TXFULL}{UART\_CSR\_TXFULL}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CSR\+\_\+\+TXFULL~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a13e504e795997c65fe589ba5d0ea4a23}{UART\+\_\+\+CSR\+\_\+\+TXFULL\+\_\+\+Pos}})}
+
+
+
+Transmit buffer full flag bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00123}{123}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a13e504e795997c65fe589ba5d0ea4a23}\label{reg__uart_8h_a13e504e795997c65fe589ba5d0ea4a23}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_CSR\_TXFULL\_Pos@{UART\_CSR\_TXFULL\_Pos}}
+\index{UART\_CSR\_TXFULL\_Pos@{UART\_CSR\_TXFULL\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_CSR\_TXFULL\_Pos}{UART\_CSR\_TXFULL\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+CSR\+\_\+\+TXFULL\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00122}{122}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a367541d1bd923b4729815e1169c351ab}\label{reg__uart_8h_a367541d1bd923b4729815e1169c351ab}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_GCR\_AUTOFLOW@{UART\_GCR\_AUTOFLOW}}
+\index{UART\_GCR\_AUTOFLOW@{UART\_GCR\_AUTOFLOW}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_GCR\_AUTOFLOW}{UART\_GCR\_AUTOFLOW}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+GCR\+\_\+\+AUTOFLOW~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ac6b1540bf9c1930534e3bf74449ef42c}{UART\+\_\+\+GCR\+\_\+\+AUTOFLOW\+\_\+\+Pos}})}
+
+
+
+Automatic flow control enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00233}{233}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ac6b1540bf9c1930534e3bf74449ef42c}\label{reg__uart_8h_ac6b1540bf9c1930534e3bf74449ef42c}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_GCR\_AUTOFLOW\_Pos@{UART\_GCR\_AUTOFLOW\_Pos}}
+\index{UART\_GCR\_AUTOFLOW\_Pos@{UART\_GCR\_AUTOFLOW\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_GCR\_AUTOFLOW\_Pos}{UART\_GCR\_AUTOFLOW\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+GCR\+\_\+\+AUTOFLOW\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00232}{232}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ac81a6e99eccb96a57ab179dfb367d4be}\label{reg__uart_8h_ac81a6e99eccb96a57ab179dfb367d4be}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_GCR\_DMA@{UART\_GCR\_DMA}}
+\index{UART\_GCR\_DMA@{UART\_GCR\_DMA}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_GCR\_DMA}{UART\_GCR\_DMA}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+GCR\+\_\+\+DMA~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a19712d3c481b1ba0330e35dd76ffc3b1}{UART\+\_\+\+GCR\+\_\+\+DMA\+\_\+\+Pos}})}
+
+
+
+DMA mode selection bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00231}{231}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a19712d3c481b1ba0330e35dd76ffc3b1}\label{reg__uart_8h_a19712d3c481b1ba0330e35dd76ffc3b1}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_GCR\_DMA\_Pos@{UART\_GCR\_DMA\_Pos}}
+\index{UART\_GCR\_DMA\_Pos@{UART\_GCR\_DMA\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_GCR\_DMA\_Pos}{UART\_GCR\_DMA\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+GCR\+\_\+\+DMA\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00230}{230}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_aa25fd40511f15ad69f7d4c0468540503}\label{reg__uart_8h_aa25fd40511f15ad69f7d4c0468540503}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_GCR\_RX@{UART\_GCR\_RX}}
+\index{UART\_GCR\_RX@{UART\_GCR\_RX}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_GCR\_RX}{UART\_GCR\_RX}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+GCR\+\_\+\+RX~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a05c61d5c2ee3bf4bb55cebfdbb89c703}{UART\+\_\+\+GCR\+\_\+\+RX\+\_\+\+Pos}})}
+
+
+
+Enable receive 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00235}{235}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a05c61d5c2ee3bf4bb55cebfdbb89c703}\label{reg__uart_8h_a05c61d5c2ee3bf4bb55cebfdbb89c703}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_GCR\_RX\_Pos@{UART\_GCR\_RX\_Pos}}
+\index{UART\_GCR\_RX\_Pos@{UART\_GCR\_RX\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_GCR\_RX\_Pos}{UART\_GCR\_RX\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+GCR\+\_\+\+RX\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00234}{234}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ab6b996e690672f435cb0d9d8496cc0f7}\label{reg__uart_8h_ab6b996e690672f435cb0d9d8496cc0f7}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_GCR\_RXTOG@{UART\_GCR\_RXTOG}}
+\index{UART\_GCR\_RXTOG@{UART\_GCR\_RXTOG}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_GCR\_RXTOG}{UART\_GCR\_RXTOG}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+GCR\+\_\+\+RXTOG~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ac75b02a01b172062fdcc38cc54b0a915}{UART\+\_\+\+GCR\+\_\+\+RXTOG\+\_\+\+Pos}})}
+
+
+
+Automatic flow control enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00244}{244}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ac75b02a01b172062fdcc38cc54b0a915}\label{reg__uart_8h_ac75b02a01b172062fdcc38cc54b0a915}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_GCR\_RXTOG\_Pos@{UART\_GCR\_RXTOG\_Pos}}
+\index{UART\_GCR\_RXTOG\_Pos@{UART\_GCR\_RXTOG\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_GCR\_RXTOG\_Pos}{UART\_GCR\_RXTOG\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+GCR\+\_\+\+RXTOG\+\_\+\+Pos~(9)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00243}{243}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a9c1faf464c66242431623f5a28b40f66}\label{reg__uart_8h_a9c1faf464c66242431623f5a28b40f66}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_GCR\_SELB8@{UART\_GCR\_SELB8}}
+\index{UART\_GCR\_SELB8@{UART\_GCR\_SELB8}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_GCR\_SELB8}{UART\_GCR\_SELB8}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+GCR\+\_\+\+SELB8~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a2ca6782d379c74e464167db19401b5da}{UART\+\_\+\+GCR\+\_\+\+SELB8\+\_\+\+Pos}})}
+
+
+
+UART mode selection bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00240}{240}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a2ca6782d379c74e464167db19401b5da}\label{reg__uart_8h_a2ca6782d379c74e464167db19401b5da}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_GCR\_SELB8\_Pos@{UART\_GCR\_SELB8\_Pos}}
+\index{UART\_GCR\_SELB8\_Pos@{UART\_GCR\_SELB8\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_GCR\_SELB8\_Pos}{UART\_GCR\_SELB8\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+GCR\+\_\+\+SELB8\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00239}{239}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a8061711a58e7aa1992e84a4632175ed4}\label{reg__uart_8h_a8061711a58e7aa1992e84a4632175ed4}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_GCR\_SWAP@{UART\_GCR\_SWAP}}
+\index{UART\_GCR\_SWAP@{UART\_GCR\_SWAP}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_GCR\_SWAP}{UART\_GCR\_SWAP}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+GCR\+\_\+\+SWAP~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a3ad2c892b1dc3dc2e9b79a9a6b2fd053}{UART\+\_\+\+GCR\+\_\+\+SWAP\+\_\+\+Pos}})}
+
+
+
+DMA mode selection bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00242}{242}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a3ad2c892b1dc3dc2e9b79a9a6b2fd053}\label{reg__uart_8h_a3ad2c892b1dc3dc2e9b79a9a6b2fd053}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_GCR\_SWAP\_Pos@{UART\_GCR\_SWAP\_Pos}}
+\index{UART\_GCR\_SWAP\_Pos@{UART\_GCR\_SWAP\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_GCR\_SWAP\_Pos}{UART\_GCR\_SWAP\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+GCR\+\_\+\+SWAP\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00241}{241}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_aa85573706feb2b66083812396a49906f}\label{reg__uart_8h_aa85573706feb2b66083812396a49906f}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_GCR\_TX@{UART\_GCR\_TX}}
+\index{UART\_GCR\_TX@{UART\_GCR\_TX}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_GCR\_TX}{UART\_GCR\_TX}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+GCR\+\_\+\+TX~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a27dddcab64449b09806d3c35725df65b}{UART\+\_\+\+GCR\+\_\+\+TX\+\_\+\+Pos}})}
+
+
+
+Enable transmit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00237}{237}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a27dddcab64449b09806d3c35725df65b}\label{reg__uart_8h_a27dddcab64449b09806d3c35725df65b}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_GCR\_TX\_Pos@{UART\_GCR\_TX\_Pos}}
+\index{UART\_GCR\_TX\_Pos@{UART\_GCR\_TX\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_GCR\_TX\_Pos}{UART\_GCR\_TX\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+GCR\+\_\+\+TX\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00236}{236}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a20d189154f093c3d89d866011d8ce45d}\label{reg__uart_8h_a20d189154f093c3d89d866011d8ce45d}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_GCR\_TXTOG@{UART\_GCR\_TXTOG}}
+\index{UART\_GCR\_TXTOG@{UART\_GCR\_TXTOG}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_GCR\_TXTOG}{UART\_GCR\_TXTOG}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+GCR\+\_\+\+TXTOG~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a615880e1eb993f08707acc5de124e086}{UART\+\_\+\+GCR\+\_\+\+TXTOG\+\_\+\+Pos}})}
+
+
+
+Enable receive 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00246}{246}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a615880e1eb993f08707acc5de124e086}\label{reg__uart_8h_a615880e1eb993f08707acc5de124e086}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_GCR\_TXTOG\_Pos@{UART\_GCR\_TXTOG\_Pos}}
+\index{UART\_GCR\_TXTOG\_Pos@{UART\_GCR\_TXTOG\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_GCR\_TXTOG\_Pos}{UART\_GCR\_TXTOG\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+GCR\+\_\+\+TXTOG\+\_\+\+Pos~(10)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00245}{245}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a589711af826ec302ee77b7c6e01627e5}\label{reg__uart_8h_a589711af826ec302ee77b7c6e01627e5}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_GCR\_UART@{UART\_GCR\_UART}}
+\index{UART\_GCR\_UART@{UART\_GCR\_UART}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_GCR\_UART}{UART\_GCR\_UART}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+GCR\+\_\+\+UART~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a574aec5018a489d2c9f6938cd5f59976}{UART\+\_\+\+GCR\+\_\+\+UART\+\_\+\+Pos}})}
+
+
+
+UART mode selection bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00229}{229}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a574aec5018a489d2c9f6938cd5f59976}\label{reg__uart_8h_a574aec5018a489d2c9f6938cd5f59976}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_GCR\_UART\_Pos@{UART\_GCR\_UART\_Pos}}
+\index{UART\_GCR\_UART\_Pos@{UART\_GCR\_UART\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_GCR\_UART\_Pos}{UART\_GCR\_UART\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+GCR\+\_\+\+UART\+\_\+\+Pos~(0)}
+
+
+
+UART\+\_\+\+GCR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00228}{228}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a0bda35a96aae8bf6585612029cf5c885}\label{reg__uart_8h_a0bda35a96aae8bf6585612029cf5c885}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_ABRENDCLR@{UART\_ICR\_ABRENDCLR}}
+\index{UART\_ICR\_ABRENDCLR@{UART\_ICR\_ABRENDCLR}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_ABRENDCLR}{UART\_ICR\_ABRENDCLR}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+ABRENDCLR~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a72e8d00132add4ef6edb970b3625d122}{UART\+\_\+\+ICR\+\_\+\+ABRENDCLR\+\_\+\+Pos}})}
+
+
+
+Auto baud rate end clear bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00221}{221}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a72e8d00132add4ef6edb970b3625d122}\label{reg__uart_8h_a72e8d00132add4ef6edb970b3625d122}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_ABRENDCLR\_Pos@{UART\_ICR\_ABRENDCLR\_Pos}}
+\index{UART\_ICR\_ABRENDCLR\_Pos@{UART\_ICR\_ABRENDCLR\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_ABRENDCLR\_Pos}{UART\_ICR\_ABRENDCLR\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+ABRENDCLR\+\_\+\+Pos~(10)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00220}{220}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a11714521c254a6045cbb39da71e7e4c7}\label{reg__uart_8h_a11714521c254a6045cbb39da71e7e4c7}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_ABRERRCLR@{UART\_ICR\_ABRERRCLR}}
+\index{UART\_ICR\_ABRERRCLR@{UART\_ICR\_ABRERRCLR}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_ABRERRCLR}{UART\_ICR\_ABRERRCLR}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+ABRERRCLR~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a9258f40af729a8fa858b90c73b1a9728}{UART\+\_\+\+ICR\+\_\+\+ABRERRCLR\+\_\+\+Pos}})}
+
+
+
+Auto baud rate error clear bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00223}{223}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a9258f40af729a8fa858b90c73b1a9728}\label{reg__uart_8h_a9258f40af729a8fa858b90c73b1a9728}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_ABRERRCLR\_Pos@{UART\_ICR\_ABRERRCLR\_Pos}}
+\index{UART\_ICR\_ABRERRCLR\_Pos@{UART\_ICR\_ABRERRCLR\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_ABRERRCLR\_Pos}{UART\_ICR\_ABRERRCLR\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+ABRERRCLR\+\_\+\+Pos~(11)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00222}{222}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a0cf3aff7b57d9bddc24fe00d08ff6330}\label{reg__uart_8h_a0cf3aff7b57d9bddc24fe00d08ff6330}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_RX@{UART\_ICR\_RX}}
+\index{UART\_ICR\_RX@{UART\_ICR\_RX}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_RX}{UART\_ICR\_RX}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+RX~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a97b5e06d1e40c9ac3ed2521212ac5106}{UART\+\_\+\+ICR\+\_\+\+RX\+\_\+\+Pos}})}
+
+
+
+Receive interrupt clear bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00198}{198}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a97b5e06d1e40c9ac3ed2521212ac5106}\label{reg__uart_8h_a97b5e06d1e40c9ac3ed2521212ac5106}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_RX\_Pos@{UART\_ICR\_RX\_Pos}}
+\index{UART\_ICR\_RX\_Pos@{UART\_ICR\_RX\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_RX\_Pos}{UART\_ICR\_RX\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+RX\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00197}{197}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_af89f18b80da5f56b64fb7fe8453eafe3}\label{reg__uart_8h_af89f18b80da5f56b64fb7fe8453eafe3}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_RXB8@{UART\_ICR\_RXB8}}
+\index{UART\_ICR\_RXB8@{UART\_ICR\_RXB8}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_RXB8}{UART\_ICR\_RXB8}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+RXB8~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_afea89a8c0900b9f3756f0d2d370795f0}{UART\+\_\+\+ICR\+\_\+\+RXB8\+\_\+\+Pos}})}
+
+
+
+Receive Bit 8 Interrupt clear Bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00216}{216}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_afea89a8c0900b9f3756f0d2d370795f0}\label{reg__uart_8h_afea89a8c0900b9f3756f0d2d370795f0}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_RXB8\_Pos@{UART\_ICR\_RXB8\_Pos}}
+\index{UART\_ICR\_RXB8\_Pos@{UART\_ICR\_RXB8\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_RXB8\_Pos}{UART\_ICR\_RXB8\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+RXB8\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00215}{215}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a8b3e8dba6bbb8e684b4390aadffd898e}\label{reg__uart_8h_a8b3e8dba6bbb8e684b4390aadffd898e}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_RXBRK@{UART\_ICR\_RXBRK}}
+\index{UART\_ICR\_RXBRK@{UART\_ICR\_RXBRK}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_RXBRK}{UART\_ICR\_RXBRK}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+RXBRK~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ae723b7313b8756352ff0a550c364b1d3}{UART\+\_\+\+ICR\+\_\+\+RXBRK\+\_\+\+Pos}})}
+
+
+
+Receive frame break interrupt clear bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00211}{211}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ae723b7313b8756352ff0a550c364b1d3}\label{reg__uart_8h_ae723b7313b8756352ff0a550c364b1d3}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_RXBRK\_Pos@{UART\_ICR\_RXBRK\_Pos}}
+\index{UART\_ICR\_RXBRK\_Pos@{UART\_ICR\_RXBRK\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_RXBRK\_Pos}{UART\_ICR\_RXBRK\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+RXBRK\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00210}{210}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a19c57b8f55fa1928e29046d980d91b7b}\label{reg__uart_8h_a19c57b8f55fa1928e29046d980d91b7b}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_RXFERR@{UART\_ICR\_RXFERR}}
+\index{UART\_ICR\_RXFERR@{UART\_ICR\_RXFERR}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_RXFERR}{UART\_ICR\_RXFERR}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+RXFERR~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ae971c6c56885662896992204cfdbadca}{UART\+\_\+\+ICR\+\_\+\+RXFERR\+\_\+\+Pos}})}
+
+
+
+Frame error interrupt clear bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00209}{209}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ae971c6c56885662896992204cfdbadca}\label{reg__uart_8h_ae971c6c56885662896992204cfdbadca}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_RXFERR\_Pos@{UART\_ICR\_RXFERR\_Pos}}
+\index{UART\_ICR\_RXFERR\_Pos@{UART\_ICR\_RXFERR\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_RXFERR\_Pos}{UART\_ICR\_RXFERR\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+RXFERR\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00208}{208}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a3fc38114c91d479457b0819a84c889cf}\label{reg__uart_8h_a3fc38114c91d479457b0819a84c889cf}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_RXIDLE@{UART\_ICR\_RXIDLE}}
+\index{UART\_ICR\_RXIDLE@{UART\_ICR\_RXIDLE}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_RXIDLE}{UART\_ICR\_RXIDLE}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+RXIDLE~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_aa337a3a81c2673bf94b94bfa3aa82929}{UART\+\_\+\+ICR\+\_\+\+RXIDLE\+\_\+\+Pos}})}
+
+
+
+Receive Bit 8 Interrupt clear Bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00219}{219}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_aa337a3a81c2673bf94b94bfa3aa82929}\label{reg__uart_8h_aa337a3a81c2673bf94b94bfa3aa82929}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_RXIDLE\_Pos@{UART\_ICR\_RXIDLE\_Pos}}
+\index{UART\_ICR\_RXIDLE\_Pos@{UART\_ICR\_RXIDLE\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_RXIDLE\_Pos}{UART\_ICR\_RXIDLE\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+RXIDLE\+\_\+\+Pos~(9)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00218}{218}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a2d6430cbb53873cadaa171060023cdb9}\label{reg__uart_8h_a2d6430cbb53873cadaa171060023cdb9}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_RXOERR@{UART\_ICR\_RXOERR}}
+\index{UART\_ICR\_RXOERR@{UART\_ICR\_RXOERR}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_RXOERR}{UART\_ICR\_RXOERR}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+RXOERR~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a586dfa2f682983ad1cf7a04511de5f14}{UART\+\_\+\+ICR\+\_\+\+RXOERR\+\_\+\+Pos}})}
+
+
+
+Receive overflow error interrupt clear bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00204}{204}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a586dfa2f682983ad1cf7a04511de5f14}\label{reg__uart_8h_a586dfa2f682983ad1cf7a04511de5f14}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_RXOERR\_Pos@{UART\_ICR\_RXOERR\_Pos}}
+\index{UART\_ICR\_RXOERR\_Pos@{UART\_ICR\_RXOERR\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_RXOERR\_Pos}{UART\_ICR\_RXOERR\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+RXOERR\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00203}{203}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ae2e5c75870ae372fad9a3c6d59cd4b74}\label{reg__uart_8h_ae2e5c75870ae372fad9a3c6d59cd4b74}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_RXPERR@{UART\_ICR\_RXPERR}}
+\index{UART\_ICR\_RXPERR@{UART\_ICR\_RXPERR}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_RXPERR}{UART\_ICR\_RXPERR}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+RXPERR~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a957076c9c27de01e5c55a123084c0814}{UART\+\_\+\+ICR\+\_\+\+RXPERR\+\_\+\+Pos}})}
+
+
+
+Parity error interrupt clear bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00206}{206}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a957076c9c27de01e5c55a123084c0814}\label{reg__uart_8h_a957076c9c27de01e5c55a123084c0814}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_RXPERR\_Pos@{UART\_ICR\_RXPERR\_Pos}}
+\index{UART\_ICR\_RXPERR\_Pos@{UART\_ICR\_RXPERR\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_RXPERR\_Pos}{UART\_ICR\_RXPERR\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+RXPERR\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00205}{205}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a182c6c394d12283c1d61dbe2174b12d0}\label{reg__uart_8h_a182c6c394d12283c1d61dbe2174b12d0}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_TX@{UART\_ICR\_TX}}
+\index{UART\_ICR\_TX@{UART\_ICR\_TX}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_TX}{UART\_ICR\_TX}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+TX~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_afe25f017a04459b88b7575f9335baac2}{UART\+\_\+\+ICR\+\_\+\+TX\+\_\+\+Pos}})}
+
+
+
+Transmit buffer empty interrupt clear bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00196}{196}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_afe25f017a04459b88b7575f9335baac2}\label{reg__uart_8h_afe25f017a04459b88b7575f9335baac2}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_TX\_Pos@{UART\_ICR\_TX\_Pos}}
+\index{UART\_ICR\_TX\_Pos@{UART\_ICR\_TX\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_TX\_Pos}{UART\_ICR\_TX\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+TX\+\_\+\+Pos~(0)}
+
+
+
+UART\+\_\+\+ICR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00195}{195}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ab75a735ed783532715716975a79439c4}\label{reg__uart_8h_ab75a735ed783532715716975a79439c4}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_TXBRK@{UART\_ICR\_TXBRK}}
+\index{UART\_ICR\_TXBRK@{UART\_ICR\_TXBRK}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_TXBRK}{UART\_ICR\_TXBRK}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+TXBRK~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a96195fe3b99b89a4e5af9f41e9e17ba4}{UART\+\_\+\+ICR\+\_\+\+TXBRK\+\_\+\+Pos}})}
+
+
+
+Transmit Break Frame Interrupt clear Bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00214}{214}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a96195fe3b99b89a4e5af9f41e9e17ba4}\label{reg__uart_8h_a96195fe3b99b89a4e5af9f41e9e17ba4}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_TXBRK\_Pos@{UART\_ICR\_TXBRK\_Pos}}
+\index{UART\_ICR\_TXBRK\_Pos@{UART\_ICR\_TXBRK\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_TXBRK\_Pos}{UART\_ICR\_TXBRK\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+TXBRK\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00213}{213}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ab876c1450f64a238228de688606143fc}\label{reg__uart_8h_ab876c1450f64a238228de688606143fc}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_TXC@{UART\_ICR\_TXC}}
+\index{UART\_ICR\_TXC@{UART\_ICR\_TXC}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_TXC}{UART\_ICR\_TXC}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+TXC~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a15d7ce03feb0390c1e9c23ce3bf0591d}{UART\+\_\+\+ICR\+\_\+\+TXC\+\_\+\+Pos}})}
+
+
+
+Transmit complete interrupt clear bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00201}{201}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a15d7ce03feb0390c1e9c23ce3bf0591d}\label{reg__uart_8h_a15d7ce03feb0390c1e9c23ce3bf0591d}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ICR\_TXC\_Pos@{UART\_ICR\_TXC\_Pos}}
+\index{UART\_ICR\_TXC\_Pos@{UART\_ICR\_TXC\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ICR\_TXC\_Pos}{UART\_ICR\_TXC\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ICR\+\_\+\+TXC\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00200}{200}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a67ed091862f6081c43d7ce19912c21db}\label{reg__uart_8h_a67ed091862f6081c43d7ce19912c21db}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IDLR\_IDLR@{UART\_IDLR\_IDLR}}
+\index{UART\_IDLR\_IDLR@{UART\_IDLR\_IDLR}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IDLR\_IDLR}{UART\_IDLR\_IDLR}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IDLR\+\_\+\+IDLR~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__uart_8h_ac8775ea0ca907802bad4eeaf58e80e58}{UART\+\_\+\+IDLR\+\_\+\+IDLR\+\_\+\+Pos}})}
+
+
+
+ISO7816 enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00350}{350}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ac8775ea0ca907802bad4eeaf58e80e58}\label{reg__uart_8h_ac8775ea0ca907802bad4eeaf58e80e58}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IDLR\_IDLR\_Pos@{UART\_IDLR\_IDLR\_Pos}}
+\index{UART\_IDLR\_IDLR\_Pos@{UART\_IDLR\_IDLR\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IDLR\_IDLR\_Pos}{UART\_IDLR\_IDLR\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IDLR\+\_\+\+IDLR\+\_\+\+Pos~(0)}
+
+
+
+UART\+\_\+\+IDLR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00349}{349}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_aabbbd664441fe95cc8c7f47e55592310}\label{reg__uart_8h_aabbbd664441fe95cc8c7f47e55592310}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_ABREND\_IEN@{UART\_IER\_ABREND\_IEN}}
+\index{UART\_IER\_ABREND\_IEN@{UART\_IER\_ABREND\_IEN}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_ABREND\_IEN}{UART\_IER\_ABREND\_IEN}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+ABREND\+\_\+\+IEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a27520b84a10b5e9fc55793b05c6cbf4c}{UART\+\_\+\+IER\+\_\+\+ABREND\+\_\+\+IEN\+\_\+\+Pos}})}
+
+
+
+Auto baud rate end enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00187}{187}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a27520b84a10b5e9fc55793b05c6cbf4c}\label{reg__uart_8h_a27520b84a10b5e9fc55793b05c6cbf4c}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_ABREND\_IEN\_Pos@{UART\_IER\_ABREND\_IEN\_Pos}}
+\index{UART\_IER\_ABREND\_IEN\_Pos@{UART\_IER\_ABREND\_IEN\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_ABREND\_IEN\_Pos}{UART\_IER\_ABREND\_IEN\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+ABREND\+\_\+\+IEN\+\_\+\+Pos~(10)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00186}{186}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ab6846901ac72a8c6ae66209c1f0fad6e}\label{reg__uart_8h_ab6846901ac72a8c6ae66209c1f0fad6e}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_ABRERR\_IEN@{UART\_IER\_ABRERR\_IEN}}
+\index{UART\_IER\_ABRERR\_IEN@{UART\_IER\_ABRERR\_IEN}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_ABRERR\_IEN}{UART\_IER\_ABRERR\_IEN}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+ABRERR\+\_\+\+IEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a9e9f8a7e74523a52d0bbf9b6888c3b8f}{UART\+\_\+\+IER\+\_\+\+ABRERR\+\_\+\+IEN\+\_\+\+Pos}})}
+
+
+
+Auto baud rate error enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00189}{189}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a9e9f8a7e74523a52d0bbf9b6888c3b8f}\label{reg__uart_8h_a9e9f8a7e74523a52d0bbf9b6888c3b8f}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_ABRERR\_IEN\_Pos@{UART\_IER\_ABRERR\_IEN\_Pos}}
+\index{UART\_IER\_ABRERR\_IEN\_Pos@{UART\_IER\_ABRERR\_IEN\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_ABRERR\_IEN\_Pos}{UART\_IER\_ABRERR\_IEN\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+ABRERR\+\_\+\+IEN\+\_\+\+Pos~(11)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00188}{188}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a6265b02e3680dd7e798ffba3606b7d27}\label{reg__uart_8h_a6265b02e3680dd7e798ffba3606b7d27}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_RX@{UART\_IER\_RX}}
+\index{UART\_IER\_RX@{UART\_IER\_RX}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_RX}{UART\_IER\_RX}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+RX~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a3457c26b1abc3aeea93aeaf1c1d36dfb}{UART\+\_\+\+IER\+\_\+\+RX\+\_\+\+Pos}})}
+
+
+
+Receive buffer interrupt enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00165}{165}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a3457c26b1abc3aeea93aeaf1c1d36dfb}\label{reg__uart_8h_a3457c26b1abc3aeea93aeaf1c1d36dfb}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_RX\_Pos@{UART\_IER\_RX\_Pos}}
+\index{UART\_IER\_RX\_Pos@{UART\_IER\_RX\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_RX\_Pos}{UART\_IER\_RX\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+RX\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00164}{164}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ae49d455826b53c1238c6469a4d1759ec}\label{reg__uart_8h_ae49d455826b53c1238c6469a4d1759ec}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_RXB8@{UART\_IER\_RXB8}}
+\index{UART\_IER\_RXB8@{UART\_IER\_RXB8}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_RXB8}{UART\_IER\_RXB8}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+RXB8~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a7c8b35c2b0bd9aca0f8f3b379c4c0507}{UART\+\_\+\+IER\+\_\+\+RXB8\+\_\+\+Pos}})}
+
+
+
+Receive Bit 8 Interrupt Enable Bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00182}{182}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a7c8b35c2b0bd9aca0f8f3b379c4c0507}\label{reg__uart_8h_a7c8b35c2b0bd9aca0f8f3b379c4c0507}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_RXB8\_Pos@{UART\_IER\_RXB8\_Pos}}
+\index{UART\_IER\_RXB8\_Pos@{UART\_IER\_RXB8\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_RXB8\_Pos}{UART\_IER\_RXB8\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+RXB8\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00181}{181}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a78096e0a2e40ba46638c098876796f6f}\label{reg__uart_8h_a78096e0a2e40ba46638c098876796f6f}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_RXBRK@{UART\_IER\_RXBRK}}
+\index{UART\_IER\_RXBRK@{UART\_IER\_RXBRK}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_RXBRK}{UART\_IER\_RXBRK}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+RXBRK~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a09ab61f8c5cbe1662850fbd6a44e9902}{UART\+\_\+\+IER\+\_\+\+RXBRK\+\_\+\+Pos}})}
+
+
+
+Receive frame break interrupt enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00177}{177}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a09ab61f8c5cbe1662850fbd6a44e9902}\label{reg__uart_8h_a09ab61f8c5cbe1662850fbd6a44e9902}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_RXBRK\_Pos@{UART\_IER\_RXBRK\_Pos}}
+\index{UART\_IER\_RXBRK\_Pos@{UART\_IER\_RXBRK\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_RXBRK\_Pos}{UART\_IER\_RXBRK\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+RXBRK\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00176}{176}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ae188782aa4b6c18850319dc90476ac06}\label{reg__uart_8h_ae188782aa4b6c18850319dc90476ac06}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_RXFERR@{UART\_IER\_RXFERR}}
+\index{UART\_IER\_RXFERR@{UART\_IER\_RXFERR}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_RXFERR}{UART\_IER\_RXFERR}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+RXFERR~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a266bc79e5a9dc791e31470ee6ecb3b71}{UART\+\_\+\+IER\+\_\+\+RXFERR\+\_\+\+Pos}})}
+
+
+
+Frame error interrupt enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00175}{175}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a266bc79e5a9dc791e31470ee6ecb3b71}\label{reg__uart_8h_a266bc79e5a9dc791e31470ee6ecb3b71}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_RXFERR\_Pos@{UART\_IER\_RXFERR\_Pos}}
+\index{UART\_IER\_RXFERR\_Pos@{UART\_IER\_RXFERR\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_RXFERR\_Pos}{UART\_IER\_RXFERR\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+RXFERR\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00174}{174}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a02b1d0d5fbc5b1cf9bfbea0b7fe33458}\label{reg__uart_8h_a02b1d0d5fbc5b1cf9bfbea0b7fe33458}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_RXIDLE@{UART\_IER\_RXIDLE}}
+\index{UART\_IER\_RXIDLE@{UART\_IER\_RXIDLE}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_RXIDLE}{UART\_IER\_RXIDLE}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+RXIDLE~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a292b5499a6b25509b3143dfcf5735336}{UART\+\_\+\+IER\+\_\+\+RXIDLE\+\_\+\+Pos}})}
+
+
+
+Receive Bit 8 Interrupt clear Bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00185}{185}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a292b5499a6b25509b3143dfcf5735336}\label{reg__uart_8h_a292b5499a6b25509b3143dfcf5735336}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_RXIDLE\_Pos@{UART\_IER\_RXIDLE\_Pos}}
+\index{UART\_IER\_RXIDLE\_Pos@{UART\_IER\_RXIDLE\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_RXIDLE\_Pos}{UART\_IER\_RXIDLE\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+RXIDLE\+\_\+\+Pos~(9)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00184}{184}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ace5249a4ca9d4a6156e3e15f21cac384}\label{reg__uart_8h_ace5249a4ca9d4a6156e3e15f21cac384}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_RXOERR@{UART\_IER\_RXOERR}}
+\index{UART\_IER\_RXOERR@{UART\_IER\_RXOERR}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_RXOERR}{UART\_IER\_RXOERR}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+RXOERR~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ac64fb2f8c82d805c261193a0b9e0f23e}{UART\+\_\+\+IER\+\_\+\+RXOERR\+\_\+\+Pos}})}
+
+
+
+Receive overflow error interrupt enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00171}{171}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ac64fb2f8c82d805c261193a0b9e0f23e}\label{reg__uart_8h_ac64fb2f8c82d805c261193a0b9e0f23e}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_RXOERR\_Pos@{UART\_IER\_RXOERR\_Pos}}
+\index{UART\_IER\_RXOERR\_Pos@{UART\_IER\_RXOERR\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_RXOERR\_Pos}{UART\_IER\_RXOERR\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+RXOERR\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00170}{170}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a1fc555ee6ad0e36d63121a8a1a9db4fe}\label{reg__uart_8h_a1fc555ee6ad0e36d63121a8a1a9db4fe}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_RXPERR@{UART\_IER\_RXPERR}}
+\index{UART\_IER\_RXPERR@{UART\_IER\_RXPERR}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_RXPERR}{UART\_IER\_RXPERR}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+RXPERR~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a67cddc6a6cce8d6abab8ee9ae369720d}{UART\+\_\+\+IER\+\_\+\+RXPERR\+\_\+\+Pos}})}
+
+
+
+Parity error interrupt enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00173}{173}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a67cddc6a6cce8d6abab8ee9ae369720d}\label{reg__uart_8h_a67cddc6a6cce8d6abab8ee9ae369720d}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_RXPERR\_Pos@{UART\_IER\_RXPERR\_Pos}}
+\index{UART\_IER\_RXPERR\_Pos@{UART\_IER\_RXPERR\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_RXPERR\_Pos}{UART\_IER\_RXPERR\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+RXPERR\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00172}{172}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_aad48cb4cd654171e57c3e33a6373b5dc}\label{reg__uart_8h_aad48cb4cd654171e57c3e33a6373b5dc}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_TX@{UART\_IER\_TX}}
+\index{UART\_IER\_TX@{UART\_IER\_TX}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_TX}{UART\_IER\_TX}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+TX~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ae2af5ece78f0fa8e45a6e57ba56824ab}{UART\+\_\+\+IER\+\_\+\+TX\+\_\+\+Pos}})}
+
+
+
+Transmit buffer empty interrupt enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00163}{163}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ae2af5ece78f0fa8e45a6e57ba56824ab}\label{reg__uart_8h_ae2af5ece78f0fa8e45a6e57ba56824ab}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_TX\_Pos@{UART\_IER\_TX\_Pos}}
+\index{UART\_IER\_TX\_Pos@{UART\_IER\_TX\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_TX\_Pos}{UART\_IER\_TX\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+TX\+\_\+\+Pos~(0)}
+
+
+
+UART\+\_\+\+IER Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00162}{162}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a4bd034d8d2796d05eaece2edd818c38a}\label{reg__uart_8h_a4bd034d8d2796d05eaece2edd818c38a}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_TXBRK@{UART\_IER\_TXBRK}}
+\index{UART\_IER\_TXBRK@{UART\_IER\_TXBRK}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_TXBRK}{UART\_IER\_TXBRK}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+TXBRK~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_af23b95c07698ed7ce550114c3a70c128}{UART\+\_\+\+IER\+\_\+\+TXBRK\+\_\+\+Pos}})}
+
+
+
+Transmit Break Frame Interrupt Enable Bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00180}{180}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_af23b95c07698ed7ce550114c3a70c128}\label{reg__uart_8h_af23b95c07698ed7ce550114c3a70c128}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_TXBRK\_Pos@{UART\_IER\_TXBRK\_Pos}}
+\index{UART\_IER\_TXBRK\_Pos@{UART\_IER\_TXBRK\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_TXBRK\_Pos}{UART\_IER\_TXBRK\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+TXBRK\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00179}{179}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_aa201448c97aa4b67b979606164a3ad1d}\label{reg__uart_8h_aa201448c97aa4b67b979606164a3ad1d}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_TXC@{UART\_IER\_TXC}}
+\index{UART\_IER\_TXC@{UART\_IER\_TXC}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_TXC}{UART\_IER\_TXC}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+TXC~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ace39afa4b70bf403c282ce9c781a0a20}{UART\+\_\+\+IER\+\_\+\+TXC\+\_\+\+Pos}})}
+
+
+
+Transmit complete interrupt enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00168}{168}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ace39afa4b70bf403c282ce9c781a0a20}\label{reg__uart_8h_ace39afa4b70bf403c282ce9c781a0a20}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_IER\_TXC\_Pos@{UART\_IER\_TXC\_Pos}}
+\index{UART\_IER\_TXC\_Pos@{UART\_IER\_TXC\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER\_TXC\_Pos}{UART\_IER\_TXC\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+IER\+\_\+\+TXC\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00167}{167}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_acf314ed11e998e4def7abeea072aedfa}\label{reg__uart_8h_acf314ed11e998e4def7abeea072aedfa}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_ABREND\_INTF@{UART\_ISR\_ABREND\_INTF}}
+\index{UART\_ISR\_ABREND\_INTF@{UART\_ISR\_ABREND\_INTF}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_ABREND\_INTF}{UART\_ISR\_ABREND\_INTF}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+ABREND\+\_\+\+INTF~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a54e925872e5934d08ddadfbaa6f86eda}{UART\+\_\+\+ISR\+\_\+\+ABREND\+\_\+\+INTF\+\_\+\+Pos}})}
+
+
+
+Auto baud rate end interrupt flag bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00155}{155}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a54e925872e5934d08ddadfbaa6f86eda}\label{reg__uart_8h_a54e925872e5934d08ddadfbaa6f86eda}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_ABREND\_INTF\_Pos@{UART\_ISR\_ABREND\_INTF\_Pos}}
+\index{UART\_ISR\_ABREND\_INTF\_Pos@{UART\_ISR\_ABREND\_INTF\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_ABREND\_INTF\_Pos}{UART\_ISR\_ABREND\_INTF\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+ABREND\+\_\+\+INTF\+\_\+\+Pos~(10)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00154}{154}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a57bc1ee47bde35aacf89009ee41b00e8}\label{reg__uart_8h_a57bc1ee47bde35aacf89009ee41b00e8}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_ABRERR\_INTF@{UART\_ISR\_ABRERR\_INTF}}
+\index{UART\_ISR\_ABRERR\_INTF@{UART\_ISR\_ABRERR\_INTF}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_ABRERR\_INTF}{UART\_ISR\_ABRERR\_INTF}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+ABRERR\+\_\+\+INTF~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_acf3655f2c2d0fbfca86028901063265c}{UART\+\_\+\+ISR\+\_\+\+ABRERR\+\_\+\+INTF\+\_\+\+Pos}})}
+
+
+
+Auto baud rate error interrupt flag bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00157}{157}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_acf3655f2c2d0fbfca86028901063265c}\label{reg__uart_8h_acf3655f2c2d0fbfca86028901063265c}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_ABRERR\_INTF\_Pos@{UART\_ISR\_ABRERR\_INTF\_Pos}}
+\index{UART\_ISR\_ABRERR\_INTF\_Pos@{UART\_ISR\_ABRERR\_INTF\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_ABRERR\_INTF\_Pos}{UART\_ISR\_ABRERR\_INTF\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+ABRERR\+\_\+\+INTF\+\_\+\+Pos~(11)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00156}{156}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a0ec3f8aee12539ec289749174e145fdf}\label{reg__uart_8h_a0ec3f8aee12539ec289749174e145fdf}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_RX@{UART\_ISR\_RX}}
+\index{UART\_ISR\_RX@{UART\_ISR\_RX}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_RX}{UART\_ISR\_RX}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+RX~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a6c579743b8ebb6075117dd92117f7b13}{UART\+\_\+\+ISR\+\_\+\+RX\+\_\+\+Pos}})}
+
+
+
+Receive valid data interrupt flag bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00133}{133}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a6c579743b8ebb6075117dd92117f7b13}\label{reg__uart_8h_a6c579743b8ebb6075117dd92117f7b13}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_RX\_Pos@{UART\_ISR\_RX\_Pos}}
+\index{UART\_ISR\_RX\_Pos@{UART\_ISR\_RX\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_RX\_Pos}{UART\_ISR\_RX\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+RX\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00132}{132}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a8356b1452f09c1f03d9ebbb627e9682e}\label{reg__uart_8h_a8356b1452f09c1f03d9ebbb627e9682e}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_RXB8@{UART\_ISR\_RXB8}}
+\index{UART\_ISR\_RXB8@{UART\_ISR\_RXB8}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_RXB8}{UART\_ISR\_RXB8}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+RXB8~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ad3dcb527529641144aa7fa3d3eb53bd7}{UART\+\_\+\+ISR\+\_\+\+RXB8\+\_\+\+Pos}})}
+
+
+
+Receive Bit 8 Interrupt Flag Bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00150}{150}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ad3dcb527529641144aa7fa3d3eb53bd7}\label{reg__uart_8h_ad3dcb527529641144aa7fa3d3eb53bd7}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_RXB8\_Pos@{UART\_ISR\_RXB8\_Pos}}
+\index{UART\_ISR\_RXB8\_Pos@{UART\_ISR\_RXB8\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_RXB8\_Pos}{UART\_ISR\_RXB8\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+RXB8\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00149}{149}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a30a90f64ed0300b3d31bdbb400c47a99}\label{reg__uart_8h_a30a90f64ed0300b3d31bdbb400c47a99}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_RXBRK@{UART\_ISR\_RXBRK}}
+\index{UART\_ISR\_RXBRK@{UART\_ISR\_RXBRK}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_RXBRK}{UART\_ISR\_RXBRK}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+RXBRK~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a85ce33a7ff6e110600d6774225805b2d}{UART\+\_\+\+ISR\+\_\+\+RXBRK\+\_\+\+Pos}})}
+
+
+
+Receive frame break interrupt flag bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00145}{145}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a85ce33a7ff6e110600d6774225805b2d}\label{reg__uart_8h_a85ce33a7ff6e110600d6774225805b2d}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_RXBRK\_Pos@{UART\_ISR\_RXBRK\_Pos}}
+\index{UART\_ISR\_RXBRK\_Pos@{UART\_ISR\_RXBRK\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_RXBRK\_Pos}{UART\_ISR\_RXBRK\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+RXBRK\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00144}{144}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ac1534b9013eb3b107883a46d21bba893}\label{reg__uart_8h_ac1534b9013eb3b107883a46d21bba893}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_RXFERR@{UART\_ISR\_RXFERR}}
+\index{UART\_ISR\_RXFERR@{UART\_ISR\_RXFERR}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_RXFERR}{UART\_ISR\_RXFERR}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+RXFERR~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a6bd854e00cb9f17ec3e6f17a6905f393}{UART\+\_\+\+ISR\+\_\+\+RXFERR\+\_\+\+Pos}})}
+
+
+
+Frame error interrupt flag bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00143}{143}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a6bd854e00cb9f17ec3e6f17a6905f393}\label{reg__uart_8h_a6bd854e00cb9f17ec3e6f17a6905f393}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_RXFERR\_Pos@{UART\_ISR\_RXFERR\_Pos}}
+\index{UART\_ISR\_RXFERR\_Pos@{UART\_ISR\_RXFERR\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_RXFERR\_Pos}{UART\_ISR\_RXFERR\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+RXFERR\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00142}{142}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a9761c80dd4977276b8d7d6572bf6507e}\label{reg__uart_8h_a9761c80dd4977276b8d7d6572bf6507e}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_RXIDLE@{UART\_ISR\_RXIDLE}}
+\index{UART\_ISR\_RXIDLE@{UART\_ISR\_RXIDLE}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_RXIDLE}{UART\_ISR\_RXIDLE}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+RXIDLE~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_aae937f5f8a9d9b500903d96f8cefe5c5}{UART\+\_\+\+ISR\+\_\+\+RXIDLE\+\_\+\+Pos}})}
+
+
+
+Receive Bit 8 Interrupt clear Bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00153}{153}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_aae937f5f8a9d9b500903d96f8cefe5c5}\label{reg__uart_8h_aae937f5f8a9d9b500903d96f8cefe5c5}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_RXIDLE\_Pos@{UART\_ISR\_RXIDLE\_Pos}}
+\index{UART\_ISR\_RXIDLE\_Pos@{UART\_ISR\_RXIDLE\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_RXIDLE\_Pos}{UART\_ISR\_RXIDLE\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+RXIDLE\+\_\+\+Pos~(9)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00152}{152}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a966b9b736c3cec59dbb5443d972ee98d}\label{reg__uart_8h_a966b9b736c3cec59dbb5443d972ee98d}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_RXOERR@{UART\_ISR\_RXOERR}}
+\index{UART\_ISR\_RXOERR@{UART\_ISR\_RXOERR}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_RXOERR}{UART\_ISR\_RXOERR}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+RXOERR~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a5334f9c1d6e55f2f707effc6d9c8fa40}{UART\+\_\+\+ISR\+\_\+\+RXOERR\+\_\+\+Pos}})}
+
+
+
+Receive overflow error interrupt flag bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00139}{139}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a5334f9c1d6e55f2f707effc6d9c8fa40}\label{reg__uart_8h_a5334f9c1d6e55f2f707effc6d9c8fa40}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_RXOERR\_Pos@{UART\_ISR\_RXOERR\_Pos}}
+\index{UART\_ISR\_RXOERR\_Pos@{UART\_ISR\_RXOERR\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_RXOERR\_Pos}{UART\_ISR\_RXOERR\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+RXOERR\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00138}{138}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a3dc84023999d0955092ae32ed91bbef2}\label{reg__uart_8h_a3dc84023999d0955092ae32ed91bbef2}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_RXPERR@{UART\_ISR\_RXPERR}}
+\index{UART\_ISR\_RXPERR@{UART\_ISR\_RXPERR}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_RXPERR}{UART\_ISR\_RXPERR}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+RXPERR~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_ae6df8d041916d88151041e0cbd9e88cd}{UART\+\_\+\+ISR\+\_\+\+RXPERR\+\_\+\+Pos}})}
+
+
+
+Parity error interrupt flag bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00141}{141}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ae6df8d041916d88151041e0cbd9e88cd}\label{reg__uart_8h_ae6df8d041916d88151041e0cbd9e88cd}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_RXPERR\_Pos@{UART\_ISR\_RXPERR\_Pos}}
+\index{UART\_ISR\_RXPERR\_Pos@{UART\_ISR\_RXPERR\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_RXPERR\_Pos}{UART\_ISR\_RXPERR\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+RXPERR\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00140}{140}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a0e8ac0d5fa50cbe95233c5e4de1b19a0}\label{reg__uart_8h_a0e8ac0d5fa50cbe95233c5e4de1b19a0}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_TX@{UART\_ISR\_TX}}
+\index{UART\_ISR\_TX@{UART\_ISR\_TX}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_TX}{UART\_ISR\_TX}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+TX~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_aeec425a2a0f843006f006c66c0af6c11}{UART\+\_\+\+ISR\+\_\+\+TX\+\_\+\+Pos}})}
+
+
+
+Transmit buffer empty interrupt flag bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00131}{131}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_aeec425a2a0f843006f006c66c0af6c11}\label{reg__uart_8h_aeec425a2a0f843006f006c66c0af6c11}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_TX\_Pos@{UART\_ISR\_TX\_Pos}}
+\index{UART\_ISR\_TX\_Pos@{UART\_ISR\_TX\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_TX\_Pos}{UART\_ISR\_TX\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+TX\+\_\+\+Pos~(0)}
+
+
+
+UART\+\_\+\+ISR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00130}{130}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a87e3a311167a2e137e1e2a20c6e36729}\label{reg__uart_8h_a87e3a311167a2e137e1e2a20c6e36729}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_TXBRK@{UART\_ISR\_TXBRK}}
+\index{UART\_ISR\_TXBRK@{UART\_ISR\_TXBRK}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_TXBRK}{UART\_ISR\_TXBRK}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+TXBRK~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a2d77e320cde28e3ba4b8551596184508}{UART\+\_\+\+ISR\+\_\+\+TXBRK\+\_\+\+Pos}})}
+
+
+
+Transmit Break Frame Interrupt Flag Bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00148}{148}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a2d77e320cde28e3ba4b8551596184508}\label{reg__uart_8h_a2d77e320cde28e3ba4b8551596184508}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_TXBRK\_Pos@{UART\_ISR\_TXBRK\_Pos}}
+\index{UART\_ISR\_TXBRK\_Pos@{UART\_ISR\_TXBRK\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_TXBRK\_Pos}{UART\_ISR\_TXBRK\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+TXBRK\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00147}{147}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_acdc5dad033adb254a0a3a9751e3e39c5}\label{reg__uart_8h_acdc5dad033adb254a0a3a9751e3e39c5}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_TXC@{UART\_ISR\_TXC}}
+\index{UART\_ISR\_TXC@{UART\_ISR\_TXC}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_TXC}{UART\_ISR\_TXC}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+TXC~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a30c00be4419716a787836553fb3f7514}{UART\+\_\+\+ISR\+\_\+\+TXC\+\_\+\+Pos}})}
+
+
+
+Transmit complete interrupt flag bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00136}{136}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a30c00be4419716a787836553fb3f7514}\label{reg__uart_8h_a30c00be4419716a787836553fb3f7514}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_ISR\_TXC\_Pos@{UART\_ISR\_TXC\_Pos}}
+\index{UART\_ISR\_TXC\_Pos@{UART\_ISR\_TXC\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_ISR\_TXC\_Pos}{UART\_ISR\_TXC\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+ISR\+\_\+\+TXC\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00135}{135}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_abb111f48e513b2f57a33a4f23c5fb7f5}\label{reg__uart_8h_abb111f48e513b2f57a33a4f23c5fb7f5}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_RDR\_DATA@{UART\_RDR\_DATA}}
+\index{UART\_RDR\_DATA@{UART\_RDR\_DATA}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_RDR\_DATA}{UART\_RDR\_DATA}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+RDR\+\_\+\+DATA~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__uart_8h_ad6a1fff82f3c5c3e40dfda73927e28f2}{UART\+\_\+\+RDR\+\_\+\+DATA\+\_\+\+Pos}})}
+
+
+
+Receive data register 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00113}{113}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ad6a1fff82f3c5c3e40dfda73927e28f2}\label{reg__uart_8h_ad6a1fff82f3c5c3e40dfda73927e28f2}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_RDR\_DATA\_Pos@{UART\_RDR\_DATA\_Pos}}
+\index{UART\_RDR\_DATA\_Pos@{UART\_RDR\_DATA\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_RDR\_DATA\_Pos}{UART\_RDR\_DATA\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+RDR\+\_\+\+DATA\+\_\+\+Pos~(0)}
+
+
+
+UART\+\_\+\+RDR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00112}{112}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a13a76a978fb634f1757ab40b5a9ac062}\label{reg__uart_8h_a13a76a978fb634f1757ab40b5a9ac062}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_RXAR\_ADDR@{UART\_RXAR\_ADDR}}
+\index{UART\_RXAR\_ADDR@{UART\_RXAR\_ADDR}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_RXAR\_ADDR}{UART\_RXAR\_ADDR}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+RXAR\+\_\+\+ADDR~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__uart_8h_a9b7528c449e072da57850d9c89c2151e}{UART\+\_\+\+RXAR\+\_\+\+ADDR\+\_\+\+Pos}})}
+
+
+
+Synchronous frame match address 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00309}{309}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a9b7528c449e072da57850d9c89c2151e}\label{reg__uart_8h_a9b7528c449e072da57850d9c89c2151e}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_RXAR\_ADDR\_Pos@{UART\_RXAR\_ADDR\_Pos}}
+\index{UART\_RXAR\_ADDR\_Pos@{UART\_RXAR\_ADDR\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_RXAR\_ADDR\_Pos}{UART\_RXAR\_ADDR\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+RXAR\+\_\+\+ADDR\+\_\+\+Pos~(0)}
+
+
+
+UART\+\_\+\+RXAR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00308}{308}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a07dca1aa19c8d6f630d876762670c794}\label{reg__uart_8h_a07dca1aa19c8d6f630d876762670c794}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_RXMR\_MASK@{UART\_RXMR\_MASK}}
+\index{UART\_RXMR\_MASK@{UART\_RXMR\_MASK}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_RXMR\_MASK}{UART\_RXMR\_MASK}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+RXMR\+\_\+\+MASK~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__uart_8h_a83e26a8ae5322e61df1966cfdf447346}{UART\+\_\+\+RXMR\+\_\+\+MASK\+\_\+\+Pos}})}
+
+
+
+Synchronous frame match address mask 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00315}{315}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a83e26a8ae5322e61df1966cfdf447346}\label{reg__uart_8h_a83e26a8ae5322e61df1966cfdf447346}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_RXMR\_MASK\_Pos@{UART\_RXMR\_MASK\_Pos}}
+\index{UART\_RXMR\_MASK\_Pos@{UART\_RXMR\_MASK\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_RXMR\_MASK\_Pos}{UART\_RXMR\_MASK\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+RXMR\+\_\+\+MASK\+\_\+\+Pos~(0)}
+
+
+
+UART\+\_\+\+RXMR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00314}{314}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a019b867d1db321a74021521d75f1c663}\label{reg__uart_8h_a019b867d1db321a74021521d75f1c663}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_SCR\_HDSEL@{UART\_SCR\_HDSEL}}
+\index{UART\_SCR\_HDSEL@{UART\_SCR\_HDSEL}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_SCR\_HDSEL}{UART\_SCR\_HDSEL}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+SCR\+\_\+\+HDSEL~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_acd3d6bc8e167ab91617f4b07cef80c4e}{UART\+\_\+\+SCR\+\_\+\+HDSEL\+\_\+\+Pos}})}
+
+
+
+Single-\/line half-\/duplex mode selection bit ///////////////////////////////////////////////////////////////////////////// 
+
+UART\+\_\+\+ABRCR Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00332}{332}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_acd3d6bc8e167ab91617f4b07cef80c4e}\label{reg__uart_8h_acd3d6bc8e167ab91617f4b07cef80c4e}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_SCR\_HDSEL\_Pos@{UART\_SCR\_HDSEL\_Pos}}
+\index{UART\_SCR\_HDSEL\_Pos@{UART\_SCR\_HDSEL\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_SCR\_HDSEL\_Pos}{UART\_SCR\_HDSEL\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+SCR\+\_\+\+HDSEL\+\_\+\+Pos~(12)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00328}{328}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_ab6e55d56c97ade98b26c77a8f78f34ac}\label{reg__uart_8h_ab6e55d56c97ade98b26c77a8f78f34ac}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_SCR\_NACK@{UART\_SCR\_NACK}}
+\index{UART\_SCR\_NACK@{UART\_SCR\_NACK}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_SCR\_NACK}{UART\_SCR\_NACK}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+SCR\+\_\+\+NACK~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_a24af28792b5dd3cbd4e1580a7bf2d15c}{UART\+\_\+\+SCR\+\_\+\+NACK\+\_\+\+Pos}})}
+
+
+
+Master receive frame answer bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00325}{325}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a24af28792b5dd3cbd4e1580a7bf2d15c}\label{reg__uart_8h_a24af28792b5dd3cbd4e1580a7bf2d15c}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_SCR\_NACK\_Pos@{UART\_SCR\_NACK\_Pos}}
+\index{UART\_SCR\_NACK\_Pos@{UART\_SCR\_NACK\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_SCR\_NACK\_Pos}{UART\_SCR\_NACK\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+SCR\+\_\+\+NACK\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00324}{324}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a8be85911aeb148f6b0c02dad544a695e}\label{reg__uart_8h_a8be85911aeb148f6b0c02dad544a695e}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_SCR\_SCARB@{UART\_SCR\_SCARB}}
+\index{UART\_SCR\_SCARB@{UART\_SCR\_SCARB}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_SCR\_SCARB}{UART\_SCR\_SCARB}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+SCR\+\_\+\+SCARB~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_abcacac905b15ef42b850abfea0b15989}{UART\+\_\+\+SCR\+\_\+\+SCARB\+\_\+\+Pos}})}
+
+
+
+ISO7816 check auto answer bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00323}{323}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_abcacac905b15ef42b850abfea0b15989}\label{reg__uart_8h_abcacac905b15ef42b850abfea0b15989}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_SCR\_SCARB\_Pos@{UART\_SCR\_SCARB\_Pos}}
+\index{UART\_SCR\_SCARB\_Pos@{UART\_SCR\_SCARB\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_SCR\_SCARB\_Pos}{UART\_SCR\_SCARB\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+SCR\+\_\+\+SCARB\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00322}{322}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a7d34c81e77774d8f4b1f4a2885a6a5e8}\label{reg__uart_8h_a7d34c81e77774d8f4b1f4a2885a6a5e8}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_SCR\_SCEN@{UART\_SCR\_SCEN}}
+\index{UART\_SCR\_SCEN@{UART\_SCR\_SCEN}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_SCR\_SCEN}{UART\_SCR\_SCEN}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+SCR\+\_\+\+SCEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__uart_8h_abd5ba5db92ae1ff840819cbe61aa8e71}{UART\+\_\+\+SCR\+\_\+\+SCEN\+\_\+\+Pos}})}
+
+
+
+ISO7816 enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00321}{321}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_abd5ba5db92ae1ff840819cbe61aa8e71}\label{reg__uart_8h_abd5ba5db92ae1ff840819cbe61aa8e71}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_SCR\_SCEN\_Pos@{UART\_SCR\_SCEN\_Pos}}
+\index{UART\_SCR\_SCEN\_Pos@{UART\_SCR\_SCEN\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_SCR\_SCEN\_Pos}{UART\_SCR\_SCEN\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+SCR\+\_\+\+SCEN\+\_\+\+Pos~(0)}
+
+
+
+UART\+\_\+\+SCR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00320}{320}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a35ec4a961d9853ed29785c642661115c}\label{reg__uart_8h_a35ec4a961d9853ed29785c642661115c}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_SCR\_SCFCNT@{UART\_SCR\_SCFCNT}}
+\index{UART\_SCR\_SCFCNT@{UART\_SCR\_SCFCNT}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_SCR\_SCFCNT}{UART\_SCR\_SCFCNT}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+SCR\+\_\+\+SCFCNT~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__uart_8h_aac67015c93ea7447e4048f88f13064de}{UART\+\_\+\+SCR\+\_\+\+SCFCNT\+\_\+\+Pos}})}
+
+
+
+ISO7816 protection counter bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00327}{327}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_aac67015c93ea7447e4048f88f13064de}\label{reg__uart_8h_aac67015c93ea7447e4048f88f13064de}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_SCR\_SCFCNT\_Pos@{UART\_SCR\_SCFCNT\_Pos}}
+\index{UART\_SCR\_SCFCNT\_Pos@{UART\_SCR\_SCFCNT\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_SCR\_SCFCNT\_Pos}{UART\_SCR\_SCFCNT\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+SCR\+\_\+\+SCFCNT\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00326}{326}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a86766d4cdade6d63fe5956e575241e4d}\label{reg__uart_8h_a86766d4cdade6d63fe5956e575241e4d}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_TDR\_DATA@{UART\_TDR\_DATA}}
+\index{UART\_TDR\_DATA@{UART\_TDR\_DATA}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_TDR\_DATA}{UART\_TDR\_DATA}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+TDR\+\_\+\+DATA~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__uart_8h_a1ab204596214046146d550091ec0ab98}{UART\+\_\+\+TDR\+\_\+\+DATA\+\_\+\+Pos}})}
+
+
+
+Transmit data register 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00107}{107}} 行定义.
+
+\mbox{\Hypertarget{reg__uart_8h_a1ab204596214046146d550091ec0ab98}\label{reg__uart_8h_a1ab204596214046146d550091ec0ab98}} 
+\index{reg\_uart.h@{reg\_uart.h}!UART\_TDR\_DATA\_Pos@{UART\_TDR\_DATA\_Pos}}
+\index{UART\_TDR\_DATA\_Pos@{UART\_TDR\_DATA\_Pos}!reg\_uart.h@{reg\_uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_TDR\_DATA\_Pos}{UART\_TDR\_DATA\_Pos}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+TDR\+\_\+\+DATA\+\_\+\+Pos~(0)}
+
+
+
+UART\+\_\+\+TDR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00106}{106}} 行定义.
+

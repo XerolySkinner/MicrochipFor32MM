@@ -1,0 +1,531 @@
+\hypertarget{struct_c_a_n___type_def}{}\doxysection{CAN\+\_\+\+Type\+Def结构体 参考}
+\label{struct_c_a_n___type_def}\index{CAN\_TypeDef@{CAN\_TypeDef}}
+
+
+CAN Register Structure Definition  
+
+
+
+
+{\ttfamily \#include $<$reg\+\_\+can.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_a2b339dcfae80c8ba63b560c0fd685f22}{CR}}
+\begin{DoxyCompactList}\small\item\em Control register, offset\+: 0x00 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_a146c410948a5336c55e93303676c21ac}{CMR}}
+\begin{DoxyCompactList}\small\item\em Command register, offset\+: 0x04 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_accd0cd8b7399b6247701b7c24ffb5614}{SR}}
+\begin{DoxyCompactList}\small\item\em \texorpdfstring{$<$}{<}Status register, offset\+: 0x08 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_a8c36066bedec7d4220cf375a28e8001e}{IR}}
+\begin{DoxyCompactList}\small\item\em Interrupt register, offset\+: 0x0c \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_a116d37226e060551006824057ca4f127}{ACR}}
+\begin{DoxyCompactList}\small\item\em Acceptance Code register, offset\+: 0x10 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_a50dc42ef1e269aeefcdc20ee3bd1d162}{AMR}}
+\begin{DoxyCompactList}\small\item\em Acceptance Mask register, offset\+: 0x14 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_a3f5eba6cd1b489169b256136f0d7e0ef}{BTR0}}
+\begin{DoxyCompactList}\small\item\em Bus Timing register 0, offset\+: 0x18 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_ad9a1319bd5d952986d431761d3e02460}{BTR1}}
+\begin{DoxyCompactList}\small\item\em Bus Timing register 1, offset\+: 0x1C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_a8c80ac26ea0f0a696eb02d8080a9b17c}{RESERVED0}}
+\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_ad445ad7ddf302273f379ea701e5ee246}{RESERVED1}}
+\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_a37b8519a5ef71c9e50833a93ad30147e}{TXID0}}
+\begin{DoxyCompactList}\small\item\em Send ID register 0, offset\+: 0x28 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_a517ed0a53a92034927eb41179f2dc6db}{TXID1}}
+\begin{DoxyCompactList}\small\item\em Send ID register 1, offset\+: 0x2c \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_a706096d7af9e016c24317530a8b5d2cd}{TXDR0}}
+\begin{DoxyCompactList}\small\item\em Send Data register 0, offset\+: 0x30 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_a5c99dbf0bf377cea93f809affa493c3e}{TXDR1}}
+\begin{DoxyCompactList}\small\item\em Send Data register 1, offset\+: 0x34 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_ab22ad637b040286e156ad6c92df915c9}{TXDR2}}
+\begin{DoxyCompactList}\small\item\em Send Data register 2, offset\+: 0x38 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_afdf7d374863c6ec235f5da9f09b5be98}{TXDR3}}
+\begin{DoxyCompactList}\small\item\em Send Data register 3, offset\+: 0x3c \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_abaa77b867af066d07268287e33ff6fe7}{TXDR4}}
+\begin{DoxyCompactList}\small\item\em Send Data register 4, offset\+: 0x40 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_af2428fb6dbe4bacce2804058a3165a61}{TXDR5}}
+\begin{DoxyCompactList}\small\item\em Send Data register 5, offset\+: 0x44 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_a337aba9368c28dffc5b51be1394d2a19}{TXDR6}}
+\begin{DoxyCompactList}\small\item\em Send Data register 6, offset\+: 0x48 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_ac168d543921cefe65746d75c1a17104d}{TXDR7}}
+\begin{DoxyCompactList}\small\item\em Send Data register 7, offset\+: 0x4c \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_a7faa5a038ea5bbc3f6f583645458fe94}{RXID0}}
+\begin{DoxyCompactList}\small\item\em Mode register, offset\+: 0x50 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_afdc578477455df91937ebf520f3f81cb}{RXID1}}
+\begin{DoxyCompactList}\small\item\em Mode register, offset\+: 0x54 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_a22c333e0fe080542a2a9a8a8f0c43fa7}{RXDR0}}
+\begin{DoxyCompactList}\small\item\em Mode register, offset\+: 0x58 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_ac976a7223e12558a0ca0766156600ae9}{RXDR1}}
+\begin{DoxyCompactList}\small\item\em Mode register, offset\+: 0x5C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_a5b46e00382a51a20f22db134316679b0}{RXDR2}}
+\begin{DoxyCompactList}\small\item\em Mode register, offset\+: 0x60 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_a4b85aa0a9559bca80b119b1d5db83975}{RXDR3}}
+\begin{DoxyCompactList}\small\item\em Mode register, offset\+: 0x64 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_a2d52b8a0647970fe3f9772716f4bf24c}{RXDR4}}
+\begin{DoxyCompactList}\small\item\em Mode register, offset\+: 0x68 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_ac4902f37c42518c2753e19d760015442}{RXDR5}}
+\begin{DoxyCompactList}\small\item\em Mode register, offset\+: 0x6c \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_a2d7e1382fc5d865b9d7326d5d762c4f5}{RXDR6}}
+\begin{DoxyCompactList}\small\item\em Mode register, offset\+: 0x70 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_a2484ce093b82ac990c17259364beeaf4}{RXDR7}}
+\begin{DoxyCompactList}\small\item\em Mode register, offset\+: 0x74 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_a24788faea738ad082f60a58644724716}{RESERVED2}}
+\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_a_n___type_def_aaffe2f652d547a3cb5d390568fb356d4}{CDR}}
+\begin{DoxyCompactList}\small\item\em Clock Divider register, offset\+: 0x7c \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+CAN Register Structure Definition 
+
+CAN basic 
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00058}{58}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{struct_c_a_n___type_def_a116d37226e060551006824057ca4f127}\label{struct_c_a_n___type_def_a116d37226e060551006824057ca4f127}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!ACR@{ACR}}
+\index{ACR@{ACR}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{ACR}{ACR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+ACR}
+
+
+
+Acceptance Code register, offset\+: 0x10 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00063}{63}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_a50dc42ef1e269aeefcdc20ee3bd1d162}\label{struct_c_a_n___type_def_a50dc42ef1e269aeefcdc20ee3bd1d162}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!AMR@{AMR}}
+\index{AMR@{AMR}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{AMR}{AMR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+AMR}
+
+
+
+Acceptance Mask register, offset\+: 0x14 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00064}{64}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_a3f5eba6cd1b489169b256136f0d7e0ef}\label{struct_c_a_n___type_def_a3f5eba6cd1b489169b256136f0d7e0ef}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!BTR0@{BTR0}}
+\index{BTR0@{BTR0}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{BTR0}{BTR0}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+BTR0}
+
+
+
+Bus Timing register 0, offset\+: 0x18 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00065}{65}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_ad9a1319bd5d952986d431761d3e02460}\label{struct_c_a_n___type_def_ad9a1319bd5d952986d431761d3e02460}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!BTR1@{BTR1}}
+\index{BTR1@{BTR1}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{BTR1}{BTR1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+BTR1}
+
+
+
+Bus Timing register 1, offset\+: 0x1C 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00066}{66}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_aaffe2f652d547a3cb5d390568fb356d4}\label{struct_c_a_n___type_def_aaffe2f652d547a3cb5d390568fb356d4}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!CDR@{CDR}}
+\index{CDR@{CDR}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CDR}{CDR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+CDR}
+
+
+
+Clock Divider register, offset\+: 0x7c 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00090}{90}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_a146c410948a5336c55e93303676c21ac}\label{struct_c_a_n___type_def_a146c410948a5336c55e93303676c21ac}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!CMR@{CMR}}
+\index{CMR@{CMR}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CMR}{CMR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+CMR}
+
+
+
+Command register, offset\+: 0x04 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00060}{60}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_a2b339dcfae80c8ba63b560c0fd685f22}\label{struct_c_a_n___type_def_a2b339dcfae80c8ba63b560c0fd685f22}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!CR@{CR}}
+\index{CR@{CR}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CR}{CR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+CR}
+
+
+
+Control register, offset\+: 0x00 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00059}{59}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_a8c36066bedec7d4220cf375a28e8001e}\label{struct_c_a_n___type_def_a8c36066bedec7d4220cf375a28e8001e}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!IR@{IR}}
+\index{IR@{IR}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{IR}{IR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+IR}
+
+
+
+Interrupt register, offset\+: 0x0c 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00062}{62}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_a8c80ac26ea0f0a696eb02d8080a9b17c}\label{struct_c_a_n___type_def_a8c80ac26ea0f0a696eb02d8080a9b17c}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!RESERVED0@{RESERVED0}}
+\index{RESERVED0@{RESERVED0}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RESERVED0}{RESERVED0}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+RESERVED0}
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00067}{67}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_ad445ad7ddf302273f379ea701e5ee246}\label{struct_c_a_n___type_def_ad445ad7ddf302273f379ea701e5ee246}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!RESERVED1@{RESERVED1}}
+\index{RESERVED1@{RESERVED1}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RESERVED1}{RESERVED1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+RESERVED1}
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00068}{68}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_a24788faea738ad082f60a58644724716}\label{struct_c_a_n___type_def_a24788faea738ad082f60a58644724716}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!RESERVED2@{RESERVED2}}
+\index{RESERVED2@{RESERVED2}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RESERVED2}{RESERVED2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+RESERVED2}
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00089}{89}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_a22c333e0fe080542a2a9a8a8f0c43fa7}\label{struct_c_a_n___type_def_a22c333e0fe080542a2a9a8a8f0c43fa7}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!RXDR0@{RXDR0}}
+\index{RXDR0@{RXDR0}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RXDR0}{RXDR0}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+RXDR0}
+
+
+
+Mode register, offset\+: 0x58 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00081}{81}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_ac976a7223e12558a0ca0766156600ae9}\label{struct_c_a_n___type_def_ac976a7223e12558a0ca0766156600ae9}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!RXDR1@{RXDR1}}
+\index{RXDR1@{RXDR1}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RXDR1}{RXDR1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+RXDR1}
+
+
+
+Mode register, offset\+: 0x5C 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00082}{82}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_a5b46e00382a51a20f22db134316679b0}\label{struct_c_a_n___type_def_a5b46e00382a51a20f22db134316679b0}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!RXDR2@{RXDR2}}
+\index{RXDR2@{RXDR2}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RXDR2}{RXDR2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+RXDR2}
+
+
+
+Mode register, offset\+: 0x60 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00083}{83}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_a4b85aa0a9559bca80b119b1d5db83975}\label{struct_c_a_n___type_def_a4b85aa0a9559bca80b119b1d5db83975}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!RXDR3@{RXDR3}}
+\index{RXDR3@{RXDR3}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RXDR3}{RXDR3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+RXDR3}
+
+
+
+Mode register, offset\+: 0x64 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00084}{84}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_a2d52b8a0647970fe3f9772716f4bf24c}\label{struct_c_a_n___type_def_a2d52b8a0647970fe3f9772716f4bf24c}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!RXDR4@{RXDR4}}
+\index{RXDR4@{RXDR4}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RXDR4}{RXDR4}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+RXDR4}
+
+
+
+Mode register, offset\+: 0x68 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00085}{85}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_ac4902f37c42518c2753e19d760015442}\label{struct_c_a_n___type_def_ac4902f37c42518c2753e19d760015442}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!RXDR5@{RXDR5}}
+\index{RXDR5@{RXDR5}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RXDR5}{RXDR5}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+RXDR5}
+
+
+
+Mode register, offset\+: 0x6c 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00086}{86}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_a2d7e1382fc5d865b9d7326d5d762c4f5}\label{struct_c_a_n___type_def_a2d7e1382fc5d865b9d7326d5d762c4f5}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!RXDR6@{RXDR6}}
+\index{RXDR6@{RXDR6}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RXDR6}{RXDR6}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+RXDR6}
+
+
+
+Mode register, offset\+: 0x70 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00087}{87}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_a2484ce093b82ac990c17259364beeaf4}\label{struct_c_a_n___type_def_a2484ce093b82ac990c17259364beeaf4}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!RXDR7@{RXDR7}}
+\index{RXDR7@{RXDR7}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RXDR7}{RXDR7}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+RXDR7}
+
+
+
+Mode register, offset\+: 0x74 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00088}{88}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_a7faa5a038ea5bbc3f6f583645458fe94}\label{struct_c_a_n___type_def_a7faa5a038ea5bbc3f6f583645458fe94}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!RXID0@{RXID0}}
+\index{RXID0@{RXID0}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RXID0}{RXID0}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+RXID0}
+
+
+
+Mode register, offset\+: 0x50 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00079}{79}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_afdc578477455df91937ebf520f3f81cb}\label{struct_c_a_n___type_def_afdc578477455df91937ebf520f3f81cb}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!RXID1@{RXID1}}
+\index{RXID1@{RXID1}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RXID1}{RXID1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+RXID1}
+
+
+
+Mode register, offset\+: 0x54 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00080}{80}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_accd0cd8b7399b6247701b7c24ffb5614}\label{struct_c_a_n___type_def_accd0cd8b7399b6247701b7c24ffb5614}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!SR@{SR}}
+\index{SR@{SR}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{SR}{SR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+SR}
+
+
+
+\texorpdfstring{$<$}{<}Status register, offset\+: 0x08 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00061}{61}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_a706096d7af9e016c24317530a8b5d2cd}\label{struct_c_a_n___type_def_a706096d7af9e016c24317530a8b5d2cd}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!TXDR0@{TXDR0}}
+\index{TXDR0@{TXDR0}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{TXDR0}{TXDR0}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+TXDR0}
+
+
+
+Send Data register 0, offset\+: 0x30 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00071}{71}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_a5c99dbf0bf377cea93f809affa493c3e}\label{struct_c_a_n___type_def_a5c99dbf0bf377cea93f809affa493c3e}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!TXDR1@{TXDR1}}
+\index{TXDR1@{TXDR1}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{TXDR1}{TXDR1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+TXDR1}
+
+
+
+Send Data register 1, offset\+: 0x34 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00072}{72}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_ab22ad637b040286e156ad6c92df915c9}\label{struct_c_a_n___type_def_ab22ad637b040286e156ad6c92df915c9}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!TXDR2@{TXDR2}}
+\index{TXDR2@{TXDR2}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{TXDR2}{TXDR2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+TXDR2}
+
+
+
+Send Data register 2, offset\+: 0x38 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00073}{73}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_afdf7d374863c6ec235f5da9f09b5be98}\label{struct_c_a_n___type_def_afdf7d374863c6ec235f5da9f09b5be98}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!TXDR3@{TXDR3}}
+\index{TXDR3@{TXDR3}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{TXDR3}{TXDR3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+TXDR3}
+
+
+
+Send Data register 3, offset\+: 0x3c 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00074}{74}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_abaa77b867af066d07268287e33ff6fe7}\label{struct_c_a_n___type_def_abaa77b867af066d07268287e33ff6fe7}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!TXDR4@{TXDR4}}
+\index{TXDR4@{TXDR4}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{TXDR4}{TXDR4}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+TXDR4}
+
+
+
+Send Data register 4, offset\+: 0x40 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00075}{75}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_af2428fb6dbe4bacce2804058a3165a61}\label{struct_c_a_n___type_def_af2428fb6dbe4bacce2804058a3165a61}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!TXDR5@{TXDR5}}
+\index{TXDR5@{TXDR5}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{TXDR5}{TXDR5}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+TXDR5}
+
+
+
+Send Data register 5, offset\+: 0x44 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00076}{76}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_a337aba9368c28dffc5b51be1394d2a19}\label{struct_c_a_n___type_def_a337aba9368c28dffc5b51be1394d2a19}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!TXDR6@{TXDR6}}
+\index{TXDR6@{TXDR6}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{TXDR6}{TXDR6}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+TXDR6}
+
+
+
+Send Data register 6, offset\+: 0x48 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00077}{77}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_ac168d543921cefe65746d75c1a17104d}\label{struct_c_a_n___type_def_ac168d543921cefe65746d75c1a17104d}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!TXDR7@{TXDR7}}
+\index{TXDR7@{TXDR7}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{TXDR7}{TXDR7}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+TXDR7}
+
+
+
+Send Data register 7, offset\+: 0x4c 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00078}{78}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_a37b8519a5ef71c9e50833a93ad30147e}\label{struct_c_a_n___type_def_a37b8519a5ef71c9e50833a93ad30147e}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!TXID0@{TXID0}}
+\index{TXID0@{TXID0}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{TXID0}{TXID0}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+TXID0}
+
+
+
+Send ID register 0, offset\+: 0x28 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00069}{69}} 行定义.
+
+\mbox{\Hypertarget{struct_c_a_n___type_def_a517ed0a53a92034927eb41179f2dc6db}\label{struct_c_a_n___type_def_a517ed0a53a92034927eb41179f2dc6db}} 
+\index{CAN\_TypeDef@{CAN\_TypeDef}!TXID1@{TXID1}}
+\index{TXID1@{TXID1}!CAN\_TypeDef@{CAN\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{TXID1}{TXID1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Type\+Def\+::\+TXID1}
+
+
+
+Send ID register 1, offset\+: 0x2c 
+
+
+
+在文件 \mbox{\hyperlink{reg__can_8h_source}{reg\+\_\+can.\+h}} 第 \mbox{\hyperlink{reg__can_8h_source_l00070}{70}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/\mbox{\hyperlink{reg__can_8h}{reg\+\_\+can.\+h}}\end{DoxyCompactItemize}

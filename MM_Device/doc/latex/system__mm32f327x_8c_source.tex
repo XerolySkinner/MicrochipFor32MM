@@ -1,0 +1,778 @@
+\hypertarget{system__mm32f327x_8c_source}{}\doxysection{system\+\_\+mm32f327x.\+c}
+\label{system__mm32f327x_8c_source}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/system\_mm32f327x.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/system\_mm32f327x.c}}
+\mbox{\hyperlink{system__mm32f327x_8c}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00018}00018 \textcolor{comment}{// Define to prevent recursive inclusion}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00019}\mbox{\hyperlink{system__mm32f327x_8c_a781e6363ce778e1e27424b9c82a9823d}{00019}} \textcolor{preprocessor}{\#define \_SYSTEM\_MM32\_C\_}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00021}00021 \textcolor{comment}{// Files includes}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00026}00026 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{mm32__device_8h}{mm32\_device.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00058}00058 \textcolor{comment}{//\#define SYSCLK\_FREQ\_HSE    HSE\_VALUE          //HSE\_VALUE is define in reg\_common.h}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00059}00059 \textcolor{comment}{//\#define SYSCLK\_FREQ\_24MHz  (HSE\_VALUE*3)      //24000000 based HSE\_VALUE = 8000000}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00060}00060 \textcolor{comment}{//\#define SYSCLK\_FREQ\_36MHz  (HSE\_VALUE*9/2)    //36000000 based HSE\_VALUE = 8000000}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00061}00061 \textcolor{comment}{//\#define SYSCLK\_FREQ\_48MHz  (HSE\_VALUE*6)      //48000000 based HSE\_VALUE = 8000000}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00062}00062 \textcolor{comment}{//\#define SYSCLK\_FREQ\_XXMHz  (HSE\_VALUE*6)      //48000000 based HSE\_VALUE = 8000000}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00063}00063 \textcolor{comment}{//\#define SYSCLK\_FREQ\_XXMHz  (HSE\_VALUE*9)      //72000000 based HSE\_VALUE = 8000000}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00064}00064 \textcolor{comment}{//\#define SYSCLK\_FREQ\_XXMHz  (HSE\_VALUE*12)      //96000000 based HSE\_VALUE = 8000000}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00065}\mbox{\hyperlink{system__mm32f327x_8c_a6dce85162fbead9e6d5e90860ecdff39}{00065}} \textcolor{preprocessor}{\#define SYSCLK\_FREQ\_XXMHz (HSE\_VALUE*15)       }\textcolor{comment}{//120000000 based HSE\_VALUE = 8000000}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00067}00067 \textcolor{preprocessor}{\#if defined(SYSCLK\_FREQ\_HSE) || defined(SYSCLK\_FREQ\_24MHz) || defined(SYSCLK\_FREQ\_36MHz) || defined(SYSCLK\_FREQ\_48MHz) || defined(SYSCLK\_FREQ\_XXMHz)}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00069}00069 \textcolor{preprocessor}{\#if defined(HSE\_VALUE) \&\& (!(HSE\_VALUE == 8000000))}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00070}00070 \textcolor{preprocessor}{\#warning redefine HSE\_VALUE in reg\_common.h Line 48 and ignore this warning}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00071}00071 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00073}00073 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00076}00076 \textcolor{comment}{//\#define SYSCLK\_HSI\_24MHz  24000000}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00077}00077 \textcolor{comment}{//\#define SYSCLK\_HSI\_36MHz  36000000}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00078}00078 \textcolor{comment}{//\#define SYSCLK\_HSI\_48MHz  48000000}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00079}00079 \textcolor{comment}{//\#define SYSCLK\_HSI\_XXMHz  48000000}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00080}00080 \textcolor{comment}{//\#define SYSCLK\_HSI\_XXMHz  72000000}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00081}00081 \textcolor{comment}{//\#define SYSCLK\_HSI\_XXMHz  96000000}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00082}\mbox{\hyperlink{system__mm32f327x_8c_af8e936b2c3dcb8b776b4ea3a63dbd661}{00082}} \textcolor{preprocessor}{\#define SYSCLK\_HSI\_XXMHz  120000000}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00086}\mbox{\hyperlink{system__mm32f327x_8c_a40e1495541cbb4acbe3f1819bd87a9fe}{00086}} \textcolor{preprocessor}{\#define VECT\_TAB\_OFFSET  0x0}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00089}00089 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00093}00093 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00095}00095 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00099}00099 \textcolor{preprocessor}{\#if defined SYSCLK\_FREQ\_HSE}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00100}00100 \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{SystemCoreClock}}         = SYSCLK\_FREQ\_HSE;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00101}00101 \textcolor{preprocessor}{\#elif defined SYSCLK\_FREQ\_24MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00102}00102 \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{SystemCoreClock}}         = SYSCLK\_FREQ\_24MHz;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00103}00103 \textcolor{preprocessor}{\#elif defined SYSCLK\_FREQ\_36MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00104}00104 \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{SystemCoreClock}}         = SYSCLK\_FREQ\_36MHz;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00105}00105 \textcolor{preprocessor}{\#elif defined SYSCLK\_FREQ\_48MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00106}00106 \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{SystemCoreClock}}         = SYSCLK\_FREQ\_48MHz;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00107}00107 \textcolor{preprocessor}{\#elif defined SYSCLK\_FREQ\_XXMHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00108}\mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{00108}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{SystemCoreClock}}         = \mbox{\hyperlink{system__mm32f327x_8c_a6dce85162fbead9e6d5e90860ecdff39}{SYSCLK\_FREQ\_XXMHz}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00109}00109 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00110}00110 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00111}00111 \textcolor{preprocessor}{\#elif defined SYSCLK\_HSI\_24MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00112}00112 \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{SystemCoreClock}}         = SYSCLK\_HSI\_24MHz;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00113}00113 \textcolor{preprocessor}{\#elif defined SYSCLK\_HSI\_36MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00114}00114 \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{SystemCoreClock}}         = SYSCLK\_HSI\_36MHz;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00115}00115 \textcolor{preprocessor}{\#elif defined SYSCLK\_HSI\_48MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00116}00116 \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{SystemCoreClock}}         = SYSCLK\_HSI\_48MHz;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00117}00117 \textcolor{preprocessor}{\#elif defined SYSCLK\_HSI\_XXMHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00118}00118 \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{SystemCoreClock}}         = \mbox{\hyperlink{system__mm32f327x_8c_af8e936b2c3dcb8b776b4ea3a63dbd661}{SYSCLK\_HSI\_XXMHz}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00119}00119 \textcolor{preprocessor}{\#else }\textcolor{comment}{//HSI Selected as System Clock source }}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00120}00120 \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{SystemCoreClock}}         = \mbox{\hyperlink{reg__common_8h_aaa8c76e274d0f6dd2cefb5d0b17fbc37}{HSI\_VALUE}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00121}00121 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00122}00122 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00123}\mbox{\hyperlink{system__mm32f327x_8c_a5c044e897505fea7d75ad9a67e1ad1ef}{00123}} \mbox{\hyperlink{core__armv8mbl_8h_af63697ed9952cc71e1225efe205f6cd3}{\_\_I}} \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{system__mm32f327x_8c_a5c044e897505fea7d75ad9a67e1ad1ef}{AHBPrescTable}}[16] = \{0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9\};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00124}00124 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00126}00126 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00128}00128 \textcolor{keyword}{static} \textcolor{keywordtype}{void} SetSysClock(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00129}00129 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00130}00130 \textcolor{preprocessor}{\#if defined SYSCLK\_FREQ\_HSE}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00131}00131 \textcolor{keyword}{static} \textcolor{keywordtype}{void} SetSysClockToHSE(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00132}00132 \textcolor{preprocessor}{\#elif defined SYSCLK\_FREQ\_24MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00133}00133 \textcolor{keyword}{static} \textcolor{keywordtype}{void} SetSysClockTo24(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00134}00134 \textcolor{preprocessor}{\#elif defined SYSCLK\_FREQ\_36MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00135}00135 \textcolor{keyword}{static} \textcolor{keywordtype}{void} SetSysClockTo36(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00136}00136 \textcolor{preprocessor}{\#elif defined SYSCLK\_FREQ\_48MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00137}00137 \textcolor{keyword}{static} \textcolor{keywordtype}{void} SetSysClockTo48(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00138}00138 \textcolor{preprocessor}{\#elif defined SYSCLK\_FREQ\_XXMHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00139}00139 \textcolor{keyword}{static} \textcolor{keywordtype}{void} SetSysClockToXX(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00140}00140 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00141}00141 \textcolor{preprocessor}{\#elif defined SYSCLK\_HSI\_24MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00142}00142 \textcolor{keyword}{static} \textcolor{keywordtype}{void} SetSysClockTo24\_HSI(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00143}00143 \textcolor{preprocessor}{\#elif defined SYSCLK\_HSI\_36MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00144}00144 \textcolor{keyword}{static} \textcolor{keywordtype}{void} SetSysClockTo36\_HSI(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00145}00145 \textcolor{preprocessor}{\#elif defined SYSCLK\_HSI\_48MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00146}00146 \textcolor{keyword}{static} \textcolor{keywordtype}{void} SetSysClockTo48\_HSI(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00147}00147 \textcolor{preprocessor}{\#elif defined SYSCLK\_HSI\_XXMHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00148}00148 \textcolor{keyword}{static} \textcolor{keywordtype}{void} SetSysClockToXX\_HSI(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00149}00149 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00150}00150 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00151}00151 \textcolor{preprocessor}{\#ifdef DATA\_IN\_ExtSRAM}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00152}00152 \textcolor{keyword}{static} \textcolor{keywordtype}{void} SystemInit\_ExtMemCtl(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00153}00153 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//DATA\_IN\_ExtSRAM }}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00154}00154 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00155}00155 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00157}00157 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00158}00158 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00159}00159 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00166}00166 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00167}\mbox{\hyperlink{system__mm32f327x_8c_a93f514700ccf00d08dbdcff7f1224eb2}{00167}} \textcolor{keywordtype}{void} \mbox{\hyperlink{system__mm32f327x_8c_a93f514700ccf00d08dbdcff7f1224eb2}{SystemInit}} (\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00168}00168 \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00169}00169     \textcolor{comment}{//Reset the RCC clock configuration to the default reset state(for debug purpose)}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00170}00170     \textcolor{comment}{//Set HSION bit}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00171}00171     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000001;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00172}00172 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00173}00173     \textcolor{comment}{//Reset SW, HPRE, PPRE1, PPRE2, ADCPRE and MCO bits}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00174}00174     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \&= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0xF8FFC00C;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00175}00175 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00176}00176     \textcolor{comment}{//Reset HSEON, CSSON and PLLON bits}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00177}00177     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \&= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0xFEF6FFFF;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00178}00178 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00179}00179     \textcolor{comment}{//Reset HSEBYP bit}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00180}00180     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \&= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0xFFFBFFFF;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00181}00181 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00182}00182     \textcolor{comment}{//Reset PLLSRC, PLLXTPRE, PLLMUL and USBPRE/OTGFSPRE bits}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00183}00183     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \&= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0xFF3CFFFF;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00184}00184     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \&= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x008FFFFF;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00185}00185 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00186}00186     \textcolor{comment}{//Disable all interrupts and clear pending bits}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00187}00187     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CIR = 0x009F0000;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00188}00188     \textcolor{comment}{//Configure the System clock frequency, HCLK, PCLK2 and PCLK1 prescalers}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00189}00189     \textcolor{comment}{//Configure the Flash Latency cycles and enable prefetch buffer}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00190}00190     SetSysClock();}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00191}00191 \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00192}00192 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00193}00193 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00200}\mbox{\hyperlink{system__mm32f327x_8c_afd4b20f1c6938500c7a069bd08656000}{00200}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{system__mm32f327x_8c_afd4b20f1c6938500c7a069bd08656000}{AutoCalPllFactor}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} pllclkSourceFrq, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} pllclkFrq, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}* plln, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}* pllm)}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00201}00201 \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00202}00202     \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} n, m;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00203}00203     \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} tempFrq;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00204}00204     \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} minDiff = pllclkFrq;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00205}00205     \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}  flag = 0;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00206}00206     \textcolor{keywordflow}{for}(m = 0; m < 4 ; m++) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00207}00207         \textcolor{keywordflow}{for}(n = 0; n < 64 ; n++) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00208}00208             tempFrq =  pllclkSourceFrq * (n + 1) / (m + 1);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00209}00209             tempFrq = (tempFrq >  pllclkFrq) ? (tempFrq -\/ pllclkFrq) : (pllclkFrq -\/ tempFrq) ;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00210}00210 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00211}00211             \textcolor{keywordflow}{if}(minDiff > tempFrq) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00212}00212                 minDiff =  tempFrq;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00213}00213                 *plln = n;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00214}00214                 *pllm = m;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00215}00215             \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00216}00216             \textcolor{keywordflow}{if}(minDiff == 0) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00217}00217                 flag = 1;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00218}00218                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00219}00219             \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00220}00220         \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00221}00221         \textcolor{keywordflow}{if}(flag != 0) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00222}00222             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00223}00223         \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00224}00224     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00225}00225     \textcolor{keywordflow}{return}  minDiff;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00226}00226 \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00227}00227 \textcolor{keyword}{static} \textcolor{keywordtype}{void} DELAY\_xUs(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} count)}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00228}00228 \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00229}00229     \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} temp;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00230}00230     \mbox{\hyperlink{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>CTRL = 0x0;                                                        \textcolor{comment}{//disable systick function}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00231}00231     \mbox{\hyperlink{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>LOAD = count * 8;                                                    \textcolor{comment}{//time count for 1us with HSI as SYSCLK}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00232}00232     \mbox{\hyperlink{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>VAL = 0x00;                                                        \textcolor{comment}{//clear counter}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00233}00233     \mbox{\hyperlink{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>CTRL = 0x5;                                                        \textcolor{comment}{//start discrease with Polling}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00234}00234     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00235}00235         temp = \mbox{\hyperlink{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>CTRL;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00236}00236     \} \textcolor{keywordflow}{while}((temp \& 0x01) \&\& !(temp \& (1 << 16)));                              \textcolor{comment}{//wait time count done}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00237}00237     \mbox{\hyperlink{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>CTRL \&= \string~SysTick\_CTRL\_ENABLE\_Msk;                                  \textcolor{comment}{//Close Counter}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00238}00238     \mbox{\hyperlink{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>VAL = 0X00;                                                        \textcolor{comment}{//clear counter}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00239}00239 \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00243}00243 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00244}00244 \textcolor{keyword}{static} \textcolor{keywordtype}{void} SetSysClock(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00245}00245 \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00246}00246     \mbox{\hyperlink{reg__flash_8h_a43fd55aa78bd891ebbd6a450f5eecce4}{CACHE}}-\/>CCR \&= \string~(0x3 << 3);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00247}00247     \mbox{\hyperlink{reg__flash_8h_a43fd55aa78bd891ebbd6a450f5eecce4}{CACHE}}-\/>CCR |= 1;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00248}00248     \textcolor{keywordflow}{while}((\mbox{\hyperlink{reg__flash_8h_a43fd55aa78bd891ebbd6a450f5eecce4}{CACHE}}-\/>SR \& 0x3) != 2);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00249}00249 \textcolor{preprocessor}{\#ifdef SYSCLK\_FREQ\_HSE}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00250}00250     SetSysClockToHSE();}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00251}00251 \textcolor{preprocessor}{\#elif defined SYSCLK\_FREQ\_24MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00252}00252     SetSysClockTo24();}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00253}00253 \textcolor{preprocessor}{\#elif defined SYSCLK\_FREQ\_36MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00254}00254     SetSysClockTo36();}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00255}00255 \textcolor{preprocessor}{\#elif defined SYSCLK\_FREQ\_48MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00256}00256     SetSysClockTo48();}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00257}00257 \textcolor{preprocessor}{\#elif defined SYSCLK\_FREQ\_XXMHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00258}00258     SetSysClockToXX();}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00259}00259 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00260}00260 \textcolor{preprocessor}{\#elif defined SYSCLK\_HSI\_24MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00261}00261     SetSysClockTo24\_HSI();}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00262}00262 \textcolor{preprocessor}{\#elif defined SYSCLK\_HSI\_36MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00263}00263     SetSysClockTo36\_HSI();}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00264}00264 \textcolor{preprocessor}{\#elif defined SYSCLK\_HSI\_48MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00265}00265     SetSysClockTo48\_HSI();}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00266}00266 \textcolor{preprocessor}{\#elif defined SYSCLK\_HSI\_XXMHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00267}00267     SetSysClockToXX\_HSI();}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00268}00268 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00269}00269 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00270}00270     \textcolor{comment}{//If none of the define above is enabled, the HSI is used as System clock}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00271}00271     \textcolor{comment}{//source (default after reset)}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00272}00272 \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00273}00273 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00274}00274 \textcolor{preprocessor}{\#ifdef SYSCLK\_FREQ\_HSE}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00275}00275 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00281}00281 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00282}00282 \textcolor{keyword}{static} \textcolor{keywordtype}{void} SetSysClockToHSE(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00283}00283 \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00284}00284     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} StartUpCounter = 0, HSEStatus = 0;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00285}00285     \mbox{\hyperlink{types_8h_a0ce6887c26c1c49ad3be5710dd42bfd6}{s32}} i;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00286}00286 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00287}00287     \textcolor{comment}{//SYSCLK, HCLK, PCLK2 and PCLK1 configuration -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00288}00288     \textcolor{comment}{//Enable HSE}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00289}00289     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR |= ((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_adb8228c9020595b4cf9995137b8c9a7d}{RCC\_CR\_HSEON}});}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00290}00290 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00291}00291     \textcolor{comment}{//Wait till HSE is ready and if Time out is reached exit}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00292}00292     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00293}00293         HSEStatus = \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_a86a34e00182c83409d89ff566cb02cc4}{RCC\_CR\_HSERDY}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00294}00294         StartUpCounter++;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00295}00295     \} \textcolor{keywordflow}{while}((HSEStatus == 0) \&\& (StartUpCounter != \mbox{\hyperlink{reg__common_8h_a68ecbc9b0a1a40a1ec9d18d5e9747c4f}{HSE\_STARTUP\_TIMEOUT}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00296}00296 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00297}00297     \textcolor{keywordflow}{if} ((\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_a86a34e00182c83409d89ff566cb02cc4}{RCC\_CR\_HSERDY}}) != \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}}) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00298}00298         HSEStatus = (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00299}00299         i = 2000;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00300}00300         \textcolor{keywordflow}{while}(i-\/-\/);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00301}00301     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00302}00302     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00303}00303         HSEStatus = (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00304}00304     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00305}00305 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00306}00306     \textcolor{keywordflow}{if} (HSEStatus == (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00307}00307         \textcolor{comment}{//Enable Prefetch Buffer}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00308}00308         \mbox{\hyperlink{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}{FLASH}}-\/>ACR |= \mbox{\hyperlink{reg__flash_8h_a5285ab198307213dce0629f9b7c6fc86}{FLASH\_ACR\_PRFTBE}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00309}00309 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00310}00310         \textcolor{comment}{//Flash 0 wait state ,bit0\string~2}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00311}00311         \mbox{\hyperlink{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}{FLASH}}-\/>ACR \&= \string~0x07;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00312}00312         \textcolor{comment}{//HCLK = SYSCLK}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00313}00313         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a2b7d7f29b09a49c31404fc0d44645c84}{RCC\_CFGR\_HPRE\_DIV1}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00314}00314 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00315}00315         \textcolor{comment}{//PCLK2 = HCLK}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00316}00316         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a247aebf1999a38ea07785558d277bb1a}{RCC\_CFGR\_PPRE2\_DIV1}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00317}00317 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00318}00318         \textcolor{comment}{//PCLK1 = HCLK}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00319}00319         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_ac8f6562bb2ecf65055a2f42cbb48ef11}{RCC\_CFGR\_PPRE1\_DIV1}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00320}00320 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00321}00321         \textcolor{comment}{//Select HSE as system clock source}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00322}00322         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \&= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\string~(\mbox{\hyperlink{reg__rcc_8h_a0eea5e5f7743a7e8995b8beeb18355c1}{RCC\_CFGR\_SW}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00323}00323         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_afb563f217242d969f4355d0818fde705}{RCC\_CFGR\_SW\_HSE}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00324}00324 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00325}00325         \textcolor{comment}{//Wait till HSE is used as system clock source}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00326}00326         \textcolor{keywordflow}{while} ((\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \& (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a15bf2269500dc97e137315f44aa015c9}{RCC\_CFGR\_SWS}}) != (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x04) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00327}00327         \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00328}00328     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00329}00329     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00330}00330         \textcolor{comment}{//If HSE fails to start-\/up, the application will have wrong clock}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00331}00331         \textcolor{comment}{//configuration. User can add here some code to deal with this error}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00332}00332     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00333}00333 \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00334}00334 \textcolor{preprocessor}{\#elif defined SYSCLK\_FREQ\_24MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00335}00335 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00341}00341 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00342}00342 \textcolor{keyword}{static} \textcolor{keywordtype}{void} SetSysClockTo24(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00343}00343 \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00344}00344     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} StartUpCounter = 0, HSEStatus = 0;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00345}00345     \mbox{\hyperlink{types_8h_a0ce6887c26c1c49ad3be5710dd42bfd6}{s32}} i;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00346}00346 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00347}00347     \textcolor{comment}{//SYSCLK, HCLK, PCLK2 and PCLK1 configuration -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00348}00348     \textcolor{comment}{//Enable HSE}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00349}00349     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR |= ((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_adb8228c9020595b4cf9995137b8c9a7d}{RCC\_CR\_HSEON}});}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00350}00350 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00351}00351     \textcolor{comment}{//Wait till HSE is ready and if Time out is reached exit}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00352}00352     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00353}00353         HSEStatus = \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_a86a34e00182c83409d89ff566cb02cc4}{RCC\_CR\_HSERDY}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00354}00354         StartUpCounter++;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00355}00355     \} \textcolor{keywordflow}{while}((HSEStatus == 0) \&\& (StartUpCounter != \mbox{\hyperlink{reg__common_8h_a68ecbc9b0a1a40a1ec9d18d5e9747c4f}{HSE\_STARTUP\_TIMEOUT}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00356}00356 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00357}00357     \textcolor{keywordflow}{if} ((\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_a86a34e00182c83409d89ff566cb02cc4}{RCC\_CR\_HSERDY}}) != \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}}) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00358}00358         HSEStatus = (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00359}00359         i = 2000;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00360}00360         \textcolor{keywordflow}{while}(i-\/-\/);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00361}00361     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00362}00362     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00363}00363         HSEStatus = (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00364}00364     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00365}00365 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00366}00366     \textcolor{keywordflow}{if} (HSEStatus == (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00367}00367         \textcolor{comment}{//Enable Prefetch Buffer}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00368}00368         \mbox{\hyperlink{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}{FLASH}}-\/>ACR |= \mbox{\hyperlink{reg__flash_8h_a5285ab198307213dce0629f9b7c6fc86}{FLASH\_ACR\_PRFTBE}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00369}00369         \textcolor{comment}{//Flash 0 wait state ,bit0\string~2}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00370}00370         \mbox{\hyperlink{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}{FLASH}}-\/>ACR \&= \string~0x07;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00371}00371         \mbox{\hyperlink{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}{FLASH}}-\/>ACR |= 0x01;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00372}00372         \textcolor{comment}{//HCLK = SYSCLK}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00373}00373         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a2b7d7f29b09a49c31404fc0d44645c84}{RCC\_CFGR\_HPRE\_DIV1}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00374}00374 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00375}00375         \textcolor{comment}{//PCLK2 = HCLK}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00376}00376         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a247aebf1999a38ea07785558d277bb1a}{RCC\_CFGR\_PPRE2\_DIV1}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00377}00377 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00378}00378         \textcolor{comment}{//PCLK1 = HCLK}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00379}00379         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_ac8f6562bb2ecf65055a2f42cbb48ef11}{RCC\_CFGR\_PPRE1\_DIV1}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00380}00380 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00381}00381         \textcolor{comment}{// PLL configuration:  = (HSE ) * (2+1) = 24 MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00382}00382         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR \&= \string~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ) \mbox{\hyperlink{reg__rcc_8h_a92cb53ea81d2c47537eb217cc6659a2e}{RCC\_PLLCFGR\_PLLSRC}} | \mbox{\hyperlink{reg__rcc_8h_a688964adc7a4a2b8a83464cc0b5f026f}{RCC\_PLLCFGR\_PLLXTPRE}}) ;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00383}00383         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ) \mbox{\hyperlink{reg__rcc_8h_a92cb53ea81d2c47537eb217cc6659a2e}{RCC\_PLLCFGR\_PLLSRC}}  ;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00384}00384 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00385}00385         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR |= \mbox{\hyperlink{reg__rcc_8h_ae630b8e610ae204fdada83dccb07b55c}{RCC\_APB1ENR\_PWR}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00386}00386         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR \&= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})((\string~\mbox{\hyperlink{reg__rcc_8h_a75a60f299b808c6481da3f3928ef1be2}{RCC\_PLLCFGR\_PLL\_DN}}) \& (\string~RCC\_PLLCFGR\_PLL\_DP));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00387}00387         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR |= ((0 << \mbox{\hyperlink{reg__rcc_8h_ae05cb1a1054014a63f9aba06b60baeee}{RCC\_PLLCFGR\_PLL\_DN\_Pos}}) | (2 << \mbox{\hyperlink{reg__rcc_8h_afee85633cdd348752c941efb7a57ae4d}{RCC\_PLLCFGR\_PLL\_DP\_Pos}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00388}00388         \textcolor{comment}{//Enable PLL}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00389}00389         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR |= \mbox{\hyperlink{reg__rcc_8h_ad0e73d5b0a4883e074d40029b49ee47e}{RCC\_CR\_PLLON}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00390}00390 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00391}00391         \textcolor{comment}{//Wait till PLL is ready}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00392}00392         \textcolor{keywordflow}{while}((\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_afa12d7ac6a7f0f91d066aeb2c6071888}{RCC\_CR\_PLLRDY}}) == 0) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00393}00393         \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00394}00394 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00395}00395         \textcolor{comment}{//Select PLL as system clock source}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00396}00396         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \&= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\string~(\mbox{\hyperlink{reg__rcc_8h_a0eea5e5f7743a7e8995b8beeb18355c1}{RCC\_CFGR\_SW}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00397}00397         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a87389cacb2eaf53730da13a2a33cd487}{RCC\_CFGR\_SW\_PLL}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00398}00398 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00399}00399         \textcolor{comment}{//Wait till PLL is used as system clock source}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00400}00400         \textcolor{keywordflow}{while} ((\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \& (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a15bf2269500dc97e137315f44aa015c9}{RCC\_CFGR\_SWS}}) != (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x08) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00401}00401         \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00402}00402     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00403}00403     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00404}00404         \textcolor{comment}{//If HSE fails to start-\/up, the application will have wrong clock}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00405}00405         \textcolor{comment}{//configuration. User can add here some code to deal with this error}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00406}00406     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00407}00407 \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00408}00408 \textcolor{preprocessor}{\#elif defined SYSCLK\_FREQ\_36MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00409}00409 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00415}00415 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00416}00416 \textcolor{keyword}{static} \textcolor{keywordtype}{void} SetSysClockTo36(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00417}00417 \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00418}00418     \mbox{\hyperlink{types_8h_a0ce6887c26c1c49ad3be5710dd42bfd6}{s32}} i;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00419}00419     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} StartUpCounter = 0, HSEStatus = 0;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00420}00420 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00421}00421     \textcolor{comment}{//SYSCLK, HCLK, PCLK2 and PCLK1 configuration -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00422}00422     \textcolor{comment}{//Enable HSE}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00423}00423     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR |= ((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_adb8228c9020595b4cf9995137b8c9a7d}{RCC\_CR\_HSEON}});}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00424}00424 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00425}00425     \textcolor{comment}{//Wait till HSE is ready and if Time out is reached exit}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00426}00426     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00427}00427         HSEStatus = \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_a86a34e00182c83409d89ff566cb02cc4}{RCC\_CR\_HSERDY}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00428}00428         StartUpCounter++;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00429}00429     \} \textcolor{keywordflow}{while}((HSEStatus == 0) \&\& (StartUpCounter != \mbox{\hyperlink{reg__common_8h_a68ecbc9b0a1a40a1ec9d18d5e9747c4f}{HSE\_STARTUP\_TIMEOUT}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00430}00430 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00431}00431     \textcolor{keywordflow}{if} ((\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_a86a34e00182c83409d89ff566cb02cc4}{RCC\_CR\_HSERDY}}) != \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}}) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00432}00432         HSEStatus = (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00433}00433         i = 2000;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00434}00434         \textcolor{keywordflow}{while}(i-\/-\/);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00435}00435     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00436}00436     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00437}00437         HSEStatus = (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00438}00438     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00439}00439 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00440}00440     \textcolor{keywordflow}{if} (HSEStatus == (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00441}00441         \textcolor{comment}{//Enable Prefetch Buffer}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00442}00442         \mbox{\hyperlink{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}{FLASH}}-\/>ACR |= \mbox{\hyperlink{reg__flash_8h_a5285ab198307213dce0629f9b7c6fc86}{FLASH\_ACR\_PRFTBE}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00443}00443 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00444}00444         \textcolor{comment}{//Flash 0 wait state ,bit0\string~2}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00445}00445         \mbox{\hyperlink{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}{FLASH}}-\/>ACR \&= \string~0x07;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00446}00446         \mbox{\hyperlink{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}{FLASH}}-\/>ACR |= 0x01;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00447}00447         \textcolor{comment}{//HCLK = SYSCLK}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00448}00448         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a2b7d7f29b09a49c31404fc0d44645c84}{RCC\_CFGR\_HPRE\_DIV1}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00449}00449 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00450}00450         \textcolor{comment}{//PCLK2 = HCLK}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00451}00451         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a247aebf1999a38ea07785558d277bb1a}{RCC\_CFGR\_PPRE2\_DIV1}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00452}00452 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00453}00453         \textcolor{comment}{//PCLK1 = HCLK}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00454}00454         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_ac8f6562bb2ecf65055a2f42cbb48ef11}{RCC\_CFGR\_PPRE1\_DIV1}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00455}00455         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR \&= \string~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ) \mbox{\hyperlink{reg__rcc_8h_a92cb53ea81d2c47537eb217cc6659a2e}{RCC\_PLLCFGR\_PLLSRC}} | \mbox{\hyperlink{reg__rcc_8h_a688964adc7a4a2b8a83464cc0b5f026f}{RCC\_PLLCFGR\_PLLXTPRE}}) ;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00456}00456         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ) \mbox{\hyperlink{reg__rcc_8h_a92cb53ea81d2c47537eb217cc6659a2e}{RCC\_PLLCFGR\_PLLSRC}}  ;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00457}00457 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00458}00458         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR |= \mbox{\hyperlink{reg__rcc_8h_ae630b8e610ae204fdada83dccb07b55c}{RCC\_APB1ENR\_PWR}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00459}00459         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR \&= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})((\string~\mbox{\hyperlink{reg__rcc_8h_a75a60f299b808c6481da3f3928ef1be2}{RCC\_PLLCFGR\_PLL\_DN}}) \& (\string~RCC\_PLLCFGR\_PLL\_DP));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00460}00460         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR |= ((1 << \mbox{\hyperlink{reg__rcc_8h_ae05cb1a1054014a63f9aba06b60baeee}{RCC\_PLLCFGR\_PLL\_DN\_Pos}}) | (8 << \mbox{\hyperlink{reg__rcc_8h_afee85633cdd348752c941efb7a57ae4d}{RCC\_PLLCFGR\_PLL\_DP\_Pos}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00461}00461         \textcolor{comment}{//Enable PLL}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00462}00462         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR |= \mbox{\hyperlink{reg__rcc_8h_ad0e73d5b0a4883e074d40029b49ee47e}{RCC\_CR\_PLLON}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00463}00463 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00464}00464         \textcolor{comment}{//Wait till PLL is ready}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00465}00465         \textcolor{keywordflow}{while}((\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_afa12d7ac6a7f0f91d066aeb2c6071888}{RCC\_CR\_PLLRDY}}) == 0) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00466}00466         \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00467}00467 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00468}00468         \textcolor{comment}{//Select PLL as system clock source}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00469}00469         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \&= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\string~(\mbox{\hyperlink{reg__rcc_8h_a0eea5e5f7743a7e8995b8beeb18355c1}{RCC\_CFGR\_SW}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00470}00470         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a87389cacb2eaf53730da13a2a33cd487}{RCC\_CFGR\_SW\_PLL}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00471}00471 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00472}00472         \textcolor{comment}{//Wait till PLL is used as system clock source}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00473}00473         \textcolor{keywordflow}{while} ((\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \& (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a15bf2269500dc97e137315f44aa015c9}{RCC\_CFGR\_SWS}}) != (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x08) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00474}00474         \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00475}00475     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00476}00476     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00477}00477         \textcolor{comment}{//If HSE fails to start-\/up, the application will have wrong clock}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00478}00478         \textcolor{comment}{//configuration. User can add here some code to deal with this error}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00479}00479     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00480}00480 \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00481}00481 \textcolor{preprocessor}{\#elif defined SYSCLK\_FREQ\_48MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00482}00482 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00488}00488 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00489}00489 \textcolor{keyword}{static} \textcolor{keywordtype}{void} SetSysClockTo48(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00490}00490 \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00491}00491     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} StartUpCounter = 0, HSEStatus = 0;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00492}00492     \mbox{\hyperlink{types_8h_a0ce6887c26c1c49ad3be5710dd42bfd6}{s32}} i;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00493}00493     \textcolor{comment}{//SYSCLK, HCLK, PCLK2 and PCLK1 configuration -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00494}00494     \textcolor{comment}{//Enable HSE}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00495}00495     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR |= ((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_adb8228c9020595b4cf9995137b8c9a7d}{RCC\_CR\_HSEON}});}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00496}00496 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00497}00497     \textcolor{comment}{//Wait till HSE is ready and if Time out is reached exit}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00498}00498     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00499}00499         HSEStatus = \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_a86a34e00182c83409d89ff566cb02cc4}{RCC\_CR\_HSERDY}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00500}00500         StartUpCounter++;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00501}00501     \} \textcolor{keywordflow}{while}((HSEStatus == 0) \&\& (StartUpCounter != \mbox{\hyperlink{reg__common_8h_a68ecbc9b0a1a40a1ec9d18d5e9747c4f}{HSE\_STARTUP\_TIMEOUT}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00502}00502 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00503}00503     \textcolor{keywordflow}{if} ((\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_a86a34e00182c83409d89ff566cb02cc4}{RCC\_CR\_HSERDY}}) != \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}}) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00504}00504         HSEStatus = (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00505}00505         i = 2000;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00506}00506         \textcolor{keywordflow}{while}(i-\/-\/);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00507}00507     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00508}00508     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00509}00509         HSEStatus = (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00510}00510     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00511}00511 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00512}00512     \textcolor{keywordflow}{if} (HSEStatus == (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00513}00513         \textcolor{comment}{//Enable Prefetch Buffer}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00514}00514         \mbox{\hyperlink{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}{FLASH}}-\/>ACR |= \mbox{\hyperlink{reg__flash_8h_a5285ab198307213dce0629f9b7c6fc86}{FLASH\_ACR\_PRFTBE}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00515}00515         \textcolor{comment}{//Flash 0 wait state ,bit0\string~2}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00516}00516         \mbox{\hyperlink{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}{FLASH}}-\/>ACR \&= \string~0x07;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00517}00517         \mbox{\hyperlink{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}{FLASH}}-\/>ACR |= 0x02;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00518}00518         \textcolor{comment}{//HCLK = SYSCLK}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00519}00519         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a2b7d7f29b09a49c31404fc0d44645c84}{RCC\_CFGR\_HPRE\_DIV1}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00520}00520 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00521}00521         \textcolor{comment}{//PCLK2 = HCLK}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00522}00522         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a247aebf1999a38ea07785558d277bb1a}{RCC\_CFGR\_PPRE2\_DIV1}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00523}00523 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00524}00524         \textcolor{comment}{//PCLK1 = HCLK}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00525}00525         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_af832ad6844c907d9bb37c1536defcb0d}{RCC\_CFGR\_PPRE1\_DIV2}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00526}00526 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00527}00527         \textcolor{comment}{// PLL configuration:  = (HSE ) * (5+1) = 48MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00528}00528         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR \&= \string~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ) \mbox{\hyperlink{reg__rcc_8h_a92cb53ea81d2c47537eb217cc6659a2e}{RCC\_PLLCFGR\_PLLSRC}} | \mbox{\hyperlink{reg__rcc_8h_a688964adc7a4a2b8a83464cc0b5f026f}{RCC\_PLLCFGR\_PLLXTPRE}}) ;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00529}00529         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ) \mbox{\hyperlink{reg__rcc_8h_a92cb53ea81d2c47537eb217cc6659a2e}{RCC\_PLLCFGR\_PLLSRC}}  ;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00530}00530 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00531}00531         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR |= \mbox{\hyperlink{reg__rcc_8h_ae630b8e610ae204fdada83dccb07b55c}{RCC\_APB1ENR\_PWR}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00532}00532         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR \&= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})((\string~\mbox{\hyperlink{reg__rcc_8h_a75a60f299b808c6481da3f3928ef1be2}{RCC\_PLLCFGR\_PLL\_DN}}) \& (\string~RCC\_PLLCFGR\_PLL\_DP));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00533}00533         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR |= ((0 << \mbox{\hyperlink{reg__rcc_8h_ae05cb1a1054014a63f9aba06b60baeee}{RCC\_PLLCFGR\_PLL\_DN\_Pos}}) | (5 << \mbox{\hyperlink{reg__rcc_8h_afee85633cdd348752c941efb7a57ae4d}{RCC\_PLLCFGR\_PLL\_DP\_Pos}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00534}00534         \textcolor{comment}{//Enable PLL}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00535}00535         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR |= \mbox{\hyperlink{reg__rcc_8h_ad0e73d5b0a4883e074d40029b49ee47e}{RCC\_CR\_PLLON}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00536}00536 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00537}00537         \textcolor{comment}{//Wait till PLL is ready}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00538}00538         \textcolor{keywordflow}{while}((\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_afa12d7ac6a7f0f91d066aeb2c6071888}{RCC\_CR\_PLLRDY}}) == 0) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00539}00539         \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00540}00540 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00541}00541         \textcolor{comment}{//Select PLL as system clock source}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00542}00542         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \&= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\string~(\mbox{\hyperlink{reg__rcc_8h_a0eea5e5f7743a7e8995b8beeb18355c1}{RCC\_CFGR\_SW}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00543}00543         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a87389cacb2eaf53730da13a2a33cd487}{RCC\_CFGR\_SW\_PLL}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00544}00544 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00545}00545         \textcolor{comment}{//Wait till PLL is used as system clock source}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00546}00546         \textcolor{keywordflow}{while} ((\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \& (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a15bf2269500dc97e137315f44aa015c9}{RCC\_CFGR\_SWS}}) != (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x08) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00547}00547         \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00548}00548     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00549}00549     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00550}00550         \textcolor{comment}{//If HSE fails to start-\/up, the application will have wrong clock}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00551}00551         \textcolor{comment}{//configuration. User can add here some code to deal with this error}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00552}00552     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00553}00553 \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00554}00554 \textcolor{preprocessor}{\#elif defined SYSCLK\_FREQ\_XXMHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00555}00555 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00561}00561 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00562}00562 \textcolor{keyword}{static} \textcolor{keywordtype}{void} SetSysClockToXX(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00563}00563 \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00564}00564     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} temp, tn, tm;\textcolor{comment}{//j,}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00565}00565     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} StartUpCounter = 0, HSEStatus = 0;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00566}00566 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00567}00567     \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} plln, pllm;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00568}00568 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00569}00569     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR |= \mbox{\hyperlink{reg__rcc_8h_af4fcacf94a97f7d49a70e089b39cf474}{RCC\_CR\_HSION}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00570}00570     \textcolor{keywordflow}{while}(!(\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_a9dbac3f2bc04f04ebafe1e66ae3fcf0d}{RCC\_CR\_HSIRDY}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00571}00571     \textcolor{comment}{//PLL SYSCLK, HCLK, PCLK2 and PCLK1 configuration -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00572}00572     \textcolor{comment}{//Enable HSE}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00573}00573     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR |= ((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_adb8228c9020595b4cf9995137b8c9a7d}{RCC\_CR\_HSEON}});}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00574}00574 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00575}00575     DELAY\_xUs(5);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00576}00576 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00577}00577     \textcolor{keywordflow}{if}(\mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{SystemCoreClock}} > 96000000) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00578}00578         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR |= \mbox{\hyperlink{reg__rcc_8h_ae630b8e610ae204fdada83dccb07b55c}{RCC\_APB1ENR\_PWR}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00579}00579         \mbox{\hyperlink{reg__pwr_8h_a04651c526497822a859942b928e57f8e}{PWR}}-\/>CR \&= \string~(3 << 14);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00580}00580         \mbox{\hyperlink{reg__pwr_8h_a04651c526497822a859942b928e57f8e}{PWR}}-\/>CR |= 3 << 14;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00581}00581     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00582}00582     \textcolor{comment}{//Wait till HSE is ready and if Time out is reached exit}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00583}00583     \textcolor{keywordflow}{while}(1) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00584}00584         HSEStatus = \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_a86a34e00182c83409d89ff566cb02cc4}{RCC\_CR\_HSERDY}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00585}00585         \textcolor{keywordflow}{if}(HSEStatus != 0)}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00586}00586             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00587}00587         StartUpCounter++;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00588}00588         \textcolor{keywordflow}{if}(StartUpCounter >= (10 * \mbox{\hyperlink{reg__common_8h_a68ecbc9b0a1a40a1ec9d18d5e9747c4f}{HSE\_STARTUP\_TIMEOUT}}))}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00589}00589             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00590}00590     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00591}00591 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00592}00592     \textcolor{keywordflow}{if} ((\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_a86a34e00182c83409d89ff566cb02cc4}{RCC\_CR\_HSERDY}}) == \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}}) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00593}00593         \textcolor{comment}{//If HSE fails to start-\/up, the application will have wrong clock}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00594}00594         \textcolor{comment}{//configuration. User can add here some code to deal with this error}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00595}00595         HSEStatus = (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00596}00596         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00597}00597     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00598}00598 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00599}00599     HSEStatus = (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00600}00600     DELAY\_xUs(5);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00601}00601 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00602}00602     \mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{SystemCoreClock}}         = \mbox{\hyperlink{system__mm32f327x_8c_a6dce85162fbead9e6d5e90860ecdff39}{SYSCLK\_FREQ\_XXMHz}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00603}00603     \textcolor{comment}{//Enable Prefetch Buffer}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00604}00604     \mbox{\hyperlink{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}{FLASH}}-\/>ACR |= \mbox{\hyperlink{reg__flash_8h_a5285ab198307213dce0629f9b7c6fc86}{FLASH\_ACR\_PRFTBE}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00605}00605     \textcolor{comment}{//Flash 0 wait state ,bit0\string~2}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00606}00606     \mbox{\hyperlink{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}{FLASH}}-\/>ACR \&= \string~FLASH\_ACR\_LATENCY;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00607}00607     temp = (\mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{SystemCoreClock}} -\/ 1) / 24000000;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00608}00608     \mbox{\hyperlink{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}{FLASH}}-\/>ACR |= (temp \& \mbox{\hyperlink{reg__flash_8h_aef5e44cbb084160a6004ca9951ec7318}{FLASH\_ACR\_LATENCY}});}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00609}00609     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \&= (\string~RCC\_CFGR\_HPRE) \& ( \string~\mbox{\hyperlink{reg__rcc_8h_a50b2423a5fea74a47b9eb8ab51869412}{RCC\_CFGR\_PPRE1}}) \& (\string~RCC\_CFGR\_PPRE2);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00610}00610 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00611}00611     \textcolor{comment}{//HCLK = AHB = FCLK = SYSCLK divided by 4}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00612}00612     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_affe860867ae4b1b6d28473ded1546d91}{RCC\_CFGR\_HPRE\_DIV4}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00613}00613 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00614}00614     \textcolor{comment}{//PCLK2 = APB2 = HCLK divided by 1, APB2 is high APB CLK}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00615}00615     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a247aebf1999a38ea07785558d277bb1a}{RCC\_CFGR\_PPRE2\_DIV1}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00616}00616 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00617}00617     \textcolor{keywordflow}{if}(\mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{SystemCoreClock}} > 72000000) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00618}00618         \textcolor{comment}{//PCLK1 = APB1 = HCLK divided by 4, APB1 is low APB CLK}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00619}00619         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a0e340725f46e9462d9b02a079b9fa8ae}{RCC\_CFGR\_PPRE1\_DIV4}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00620}00620     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00621}00621     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{SystemCoreClock}} > 36000000) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00622}00622         \textcolor{comment}{//PCLK1 = APB1 = HCLK divided by 2, APB1 is low APB CLK}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00623}00623         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_af832ad6844c907d9bb37c1536defcb0d}{RCC\_CFGR\_PPRE1\_DIV2}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00624}00624     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00625}00625 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00626}00626     \mbox{\hyperlink{system__mm32f327x_8c_afd4b20f1c6938500c7a069bd08656000}{AutoCalPllFactor}}(\mbox{\hyperlink{reg__common_8h_aeafcff4f57440c60e64812dddd13e7cb}{HSE\_VALUE}}, \mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{SystemCoreClock}}, \&plln, \&pllm);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00627}00627 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00628}00628     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR \&= \string~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ) \mbox{\hyperlink{reg__rcc_8h_a92cb53ea81d2c47537eb217cc6659a2e}{RCC\_PLLCFGR\_PLLSRC}} | \mbox{\hyperlink{reg__rcc_8h_a688964adc7a4a2b8a83464cc0b5f026f}{RCC\_PLLCFGR\_PLLXTPRE}}) ;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00629}00629     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ) \mbox{\hyperlink{reg__rcc_8h_a92cb53ea81d2c47537eb217cc6659a2e}{RCC\_PLLCFGR\_PLLSRC}}  ;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00630}00630 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00631}00631     tm = (((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})pllm) \& 0x07);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00632}00632     tn = (((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})plln) \& 0x7F);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00633}00633 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00634}00634     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR |= \mbox{\hyperlink{reg__rcc_8h_ae630b8e610ae204fdada83dccb07b55c}{RCC\_APB1ENR\_PWR}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00635}00635     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR \&= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})((\string~\mbox{\hyperlink{reg__rcc_8h_a75a60f299b808c6481da3f3928ef1be2}{RCC\_PLLCFGR\_PLL\_DN}}) \& (\string~RCC\_PLLCFGR\_PLL\_DP));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00636}00636     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR |= ((tn << \mbox{\hyperlink{reg__rcc_8h_ae05cb1a1054014a63f9aba06b60baeee}{RCC\_PLLCFGR\_PLL\_DN\_Pos}}) | (tm << \mbox{\hyperlink{reg__rcc_8h_afee85633cdd348752c941efb7a57ae4d}{RCC\_PLLCFGR\_PLL\_DP\_Pos}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00637}00637     \textcolor{comment}{//Enable PLL}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00638}00638     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR |= \mbox{\hyperlink{reg__rcc_8h_ad0e73d5b0a4883e074d40029b49ee47e}{RCC\_CR\_PLLON}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00639}00639     \textcolor{comment}{//Wait till PLL is ready}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00640}00640     \textcolor{keywordflow}{while}((\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_afa12d7ac6a7f0f91d066aeb2c6071888}{RCC\_CR\_PLLRDY}}) == 0) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00641}00641         \mbox{\hyperlink{cmsis__armcc_8h_a1378040bcf22428955c6e3ce9c2053cd}{\_\_ASM}} (\textcolor{stringliteral}{"{}nop"{}}) ;\textcolor{comment}{//\_\_NOP();}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00642}00642     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00643}00643     \textcolor{comment}{//Select PLL as system clock source}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00644}00644     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \&= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\string~(\mbox{\hyperlink{reg__rcc_8h_a0eea5e5f7743a7e8995b8beeb18355c1}{RCC\_CFGR\_SW}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00645}00645     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a87389cacb2eaf53730da13a2a33cd487}{RCC\_CFGR\_SW\_PLL}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00646}00646 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00647}00647     \textcolor{comment}{//Wait till PLL is used as system clock source}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00648}00648     \textcolor{keywordflow}{while} ((\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \& (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a15bf2269500dc97e137315f44aa015c9}{RCC\_CFGR\_SWS}}) != (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a2c67e2279804a83ef24438267d9d4a6c}{RCC\_CFGR\_SWS\_PLL}}) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00649}00649         \mbox{\hyperlink{cmsis__armcc_8h_a1378040bcf22428955c6e3ce9c2053cd}{\_\_ASM}} (\textcolor{stringliteral}{"{}nop"{}}) ;\textcolor{comment}{//\_\_NOP();}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00650}00650     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00651}00651 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00652}00652     DELAY\_xUs(1);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00653}00653     \textcolor{comment}{// set HCLK = AHB = FCLK = SYSCLK divided by 2}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00654}00654     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \&= (\string~(\mbox{\hyperlink{reg__rcc_8h_ad4c209254b4d64fed532dc3b1b225cad}{RCC\_CFGR\_PPRE\_0}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00655}00655     DELAY\_xUs(1);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00656}00656 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00657}00657     \textcolor{comment}{// set HCLK = AHB = FCLK = SYSCLK divided by 1}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00658}00658     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \&= (\string~(\mbox{\hyperlink{reg__rcc_8h_ac71a9f5fc044c76e56563d29c8621550}{RCC\_CFGR\_PPRE\_3}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00659}00659 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00660}00660     DELAY\_xUs(1);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00661}00661 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00662}00662 \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00663}00663 \textcolor{preprocessor}{\#elif defined SYSCLK\_HSI\_24MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00664}00664 \textcolor{keywordtype}{void} SetSysClockTo24\_HSI(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00665}00665 \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00666}00666     \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} temp = 0;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00667}00667 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00668}00668     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR |= \mbox{\hyperlink{reg__rcc_8h_af4fcacf94a97f7d49a70e089b39cf474}{RCC\_CR\_HSION}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00669}00669 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00670}00670     \textcolor{keywordflow}{while}(!(\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_a9dbac3f2bc04f04ebafe1e66ae3fcf0d}{RCC\_CR\_HSIRDY}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00671}00671     \mbox{\hyperlink{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}{FLASH}}-\/>ACR = \mbox{\hyperlink{reg__flash_8h_a5285ab198307213dce0629f9b7c6fc86}{FLASH\_ACR\_PRFTBE}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00672}00672 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00673}00673     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR = \mbox{\hyperlink{reg__rcc_8h_a5fcb524f6ca203ddff1862c124d4f89f}{RCC\_CFGR\_PPRE1\_2}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00674}00674     \textcolor{comment}{// PLL configuration:  = (HSI = 8M ) * (2+1)/(0+1) = 24 MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00675}00675     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR \&= \string~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ) \mbox{\hyperlink{reg__rcc_8h_a92cb53ea81d2c47537eb217cc6659a2e}{RCC\_PLLCFGR\_PLLSRC}} | \mbox{\hyperlink{reg__rcc_8h_a688964adc7a4a2b8a83464cc0b5f026f}{RCC\_PLLCFGR\_PLLXTPRE}}) ;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00676}00676     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ) \mbox{\hyperlink{reg__rcc_8h_a92cb53ea81d2c47537eb217cc6659a2e}{RCC\_PLLCFGR\_PLLSRC}}  ;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00677}00677 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00678}00678     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR |= \mbox{\hyperlink{reg__rcc_8h_ae630b8e610ae204fdada83dccb07b55c}{RCC\_APB1ENR\_PWR}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00679}00679     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR \&= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})((\string~\mbox{\hyperlink{reg__rcc_8h_a75a60f299b808c6481da3f3928ef1be2}{RCC\_PLLCFGR\_PLL\_DN}}) \& (\string~RCC\_PLLCFGR\_PLL\_DP));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00680}00680     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR |= ((0 << \mbox{\hyperlink{reg__rcc_8h_ae05cb1a1054014a63f9aba06b60baeee}{RCC\_PLLCFGR\_PLL\_DN\_Pos}}) | (2 << \mbox{\hyperlink{reg__rcc_8h_afee85633cdd348752c941efb7a57ae4d}{RCC\_PLLCFGR\_PLL\_DP\_Pos}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00681}00681 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00682}00682 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00683}00683     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR |= \mbox{\hyperlink{reg__rcc_8h_ad0e73d5b0a4883e074d40029b49ee47e}{RCC\_CR\_PLLON}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00684}00684 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00685}00685     \textcolor{keywordflow}{while}(!(\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_afa12d7ac6a7f0f91d066aeb2c6071888}{RCC\_CR\_PLLRDY}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00686}00686 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00687}00687     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \&= \string~RCC\_CFGR\_SW;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00688}00688 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00689}00689     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= \mbox{\hyperlink{reg__rcc_8h_a87389cacb2eaf53730da13a2a33cd487}{RCC\_CFGR\_SW\_PLL}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00690}00690 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00691}00691     \textcolor{keywordflow}{while}(temp != 0x02) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00692}00692         temp = \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR >> 2;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00693}00693         temp \&= 0x03;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00694}00694     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00695}00695 \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00696}00696 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00697}00697 \textcolor{preprocessor}{\#elif defined SYSCLK\_HSI\_36MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00698}00698 \textcolor{keywordtype}{void} SetSysClockTo36\_HSI(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00699}00699 \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00700}00700     \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} temp = 0;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00701}00701 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00702}00702     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR |= \mbox{\hyperlink{reg__rcc_8h_af4fcacf94a97f7d49a70e089b39cf474}{RCC\_CR\_HSION}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00703}00703 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00704}00704     \textcolor{keywordflow}{while}(!(\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_a9dbac3f2bc04f04ebafe1e66ae3fcf0d}{RCC\_CR\_HSIRDY}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00705}00705     \mbox{\hyperlink{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}{FLASH}}-\/>ACR = \mbox{\hyperlink{reg__flash_8h_a85155f5d3f34ebe83989513793498c72}{FLASH\_ACR\_LATENCY\_1}} | \mbox{\hyperlink{reg__flash_8h_a5285ab198307213dce0629f9b7c6fc86}{FLASH\_ACR\_PRFTBE}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00706}00706     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR = \mbox{\hyperlink{reg__rcc_8h_a5fcb524f6ca203ddff1862c124d4f89f}{RCC\_CFGR\_PPRE1\_2}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00707}00707     \textcolor{comment}{// PLL configuration:  = (HSI = 8M ) * (8+1)/(1+1) = 36 MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00708}00708     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR \&= \string~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ) \mbox{\hyperlink{reg__rcc_8h_a92cb53ea81d2c47537eb217cc6659a2e}{RCC\_PLLCFGR\_PLLSRC}} | \mbox{\hyperlink{reg__rcc_8h_a688964adc7a4a2b8a83464cc0b5f026f}{RCC\_PLLCFGR\_PLLXTPRE}}) ;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00709}00709     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ) \mbox{\hyperlink{reg__rcc_8h_a92cb53ea81d2c47537eb217cc6659a2e}{RCC\_PLLCFGR\_PLLSRC}}  ;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00710}00710 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00711}00711     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR |= \mbox{\hyperlink{reg__rcc_8h_ae630b8e610ae204fdada83dccb07b55c}{RCC\_APB1ENR\_PWR}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00712}00712     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR \&= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})((\string~\mbox{\hyperlink{reg__rcc_8h_a75a60f299b808c6481da3f3928ef1be2}{RCC\_PLLCFGR\_PLL\_DN}}) \& (\string~RCC\_PLLCFGR\_PLL\_DP));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00713}00713     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR |= ((1 << \mbox{\hyperlink{reg__rcc_8h_ae05cb1a1054014a63f9aba06b60baeee}{RCC\_PLLCFGR\_PLL\_DN\_Pos}}) | (8 << \mbox{\hyperlink{reg__rcc_8h_afee85633cdd348752c941efb7a57ae4d}{RCC\_PLLCFGR\_PLL\_DP\_Pos}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00714}00714 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00715}00715     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR |= \mbox{\hyperlink{reg__rcc_8h_ad0e73d5b0a4883e074d40029b49ee47e}{RCC\_CR\_PLLON}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00716}00716 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00717}00717     \textcolor{keywordflow}{while}(!(\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_afa12d7ac6a7f0f91d066aeb2c6071888}{RCC\_CR\_PLLRDY}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00718}00718 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00719}00719     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \&= \string~ RCC\_CFGR\_SW;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00720}00720 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00721}00721     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= \mbox{\hyperlink{reg__rcc_8h_a87389cacb2eaf53730da13a2a33cd487}{RCC\_CFGR\_SW\_PLL}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00722}00722 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00723}00723     \textcolor{keywordflow}{while}(temp != 0x02) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00724}00724         temp = \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR >> 2;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00725}00725         temp \&= 0x03;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00726}00726     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00727}00727 \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00728}00728 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00729}00729 \textcolor{preprocessor}{\#elif defined SYSCLK\_HSI\_48MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00730}00730 \textcolor{keywordtype}{void} SetSysClockTo48\_HSI(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00731}00731 \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00732}00732     \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} temp = 0;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00733}00733 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00734}00734     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR |= \mbox{\hyperlink{reg__rcc_8h_af4fcacf94a97f7d49a70e089b39cf474}{RCC\_CR\_HSION}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00735}00735 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00736}00736     \textcolor{keywordflow}{while}(!(\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_a9dbac3f2bc04f04ebafe1e66ae3fcf0d}{RCC\_CR\_HSIRDY}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00737}00737     \mbox{\hyperlink{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}{FLASH}}-\/>ACR = \mbox{\hyperlink{reg__flash_8h_a85155f5d3f34ebe83989513793498c72}{FLASH\_ACR\_LATENCY\_1}} | \mbox{\hyperlink{reg__flash_8h_a5285ab198307213dce0629f9b7c6fc86}{FLASH\_ACR\_PRFTBE}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00738}00738     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR = \mbox{\hyperlink{reg__rcc_8h_a5fcb524f6ca203ddff1862c124d4f89f}{RCC\_CFGR\_PPRE1\_2}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00739}00739 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00740}00740 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00741}00741 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00742}00742 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00743}00743 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00744}00744     \textcolor{comment}{// PLL configuration:  = (HSI = 8M ) * (5+1)/(0+1) = 36 MHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00745}00745     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR \&= \string~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ) \mbox{\hyperlink{reg__rcc_8h_a92cb53ea81d2c47537eb217cc6659a2e}{RCC\_PLLCFGR\_PLLSRC}} | \mbox{\hyperlink{reg__rcc_8h_a688964adc7a4a2b8a83464cc0b5f026f}{RCC\_PLLCFGR\_PLLXTPRE}}) ;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00746}00746     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ) \mbox{\hyperlink{reg__rcc_8h_a92cb53ea81d2c47537eb217cc6659a2e}{RCC\_PLLCFGR\_PLLSRC}}  ;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00747}00747 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00748}00748     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR |= \mbox{\hyperlink{reg__rcc_8h_ae630b8e610ae204fdada83dccb07b55c}{RCC\_APB1ENR\_PWR}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00749}00749     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR \&= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})((\string~\mbox{\hyperlink{reg__rcc_8h_a75a60f299b808c6481da3f3928ef1be2}{RCC\_PLLCFGR\_PLL\_DN}}) \& (\string~RCC\_PLLCFGR\_PLL\_DP));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00750}00750     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR |= ((0 << \mbox{\hyperlink{reg__rcc_8h_ae05cb1a1054014a63f9aba06b60baeee}{RCC\_PLLCFGR\_PLL\_DN\_Pos}}) | (5 << \mbox{\hyperlink{reg__rcc_8h_afee85633cdd348752c941efb7a57ae4d}{RCC\_PLLCFGR\_PLL\_DP\_Pos}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00751}00751 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00752}00752     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR |= \mbox{\hyperlink{reg__rcc_8h_ad0e73d5b0a4883e074d40029b49ee47e}{RCC\_CR\_PLLON}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00753}00753 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00754}00754     \textcolor{keywordflow}{while}(!(\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_afa12d7ac6a7f0f91d066aeb2c6071888}{RCC\_CR\_PLLRDY}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00755}00755 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00756}00756     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \&= \string~RCC\_CFGR\_SW;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00757}00757 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00758}00758     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= \mbox{\hyperlink{reg__rcc_8h_a87389cacb2eaf53730da13a2a33cd487}{RCC\_CFGR\_SW\_PLL}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00759}00759 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00760}00760     \textcolor{keywordflow}{while}(temp != 0x02) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00761}00761         temp = \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR >> 2;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00762}00762         temp \&= 0x03;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00763}00763     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00764}00764 \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00765}00765 \textcolor{preprocessor}{\#elif defined SYSCLK\_HSI\_XXMHz}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00766}00766 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00767}00767 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00768}00768 \textcolor{keyword}{static} \textcolor{keywordtype}{void} SetSysClockToXX\_HSI(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00769}00769 \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00770}00770     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} temp, tn, tm;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00771}00771     \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} plln, pllm;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00772}00772 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00773}00773     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR |= \mbox{\hyperlink{reg__rcc_8h_af4fcacf94a97f7d49a70e089b39cf474}{RCC\_CR\_HSION}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00774}00774     \textcolor{keywordflow}{while}(!(\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_a9dbac3f2bc04f04ebafe1e66ae3fcf0d}{RCC\_CR\_HSIRDY}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00775}00775 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00776}00776     \textcolor{keywordflow}{if}(\mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{SystemCoreClock}} > 96000000) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00777}00777         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR |= \mbox{\hyperlink{reg__rcc_8h_ae630b8e610ae204fdada83dccb07b55c}{RCC\_APB1ENR\_PWR}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00778}00778         \mbox{\hyperlink{reg__pwr_8h_a04651c526497822a859942b928e57f8e}{PWR}}-\/>CR \&= \string~(3 << 14);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00779}00779         \mbox{\hyperlink{reg__pwr_8h_a04651c526497822a859942b928e57f8e}{PWR}}-\/>CR |= 3 << 14;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00780}00780     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00781}00781 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00782}00782 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00783}00783 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00784}00784     \mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{SystemCoreClock}}         = \mbox{\hyperlink{system__mm32f327x_8c_af8e936b2c3dcb8b776b4ea3a63dbd661}{SYSCLK\_HSI\_XXMHz}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00785}00785     \textcolor{comment}{//Enable Prefetch Buffer}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00786}00786     \mbox{\hyperlink{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}{FLASH}}-\/>ACR |= \mbox{\hyperlink{reg__flash_8h_a5285ab198307213dce0629f9b7c6fc86}{FLASH\_ACR\_PRFTBE}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00787}00787     \textcolor{comment}{//Flash 0 wait state ,bit0\string~2}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00788}00788     \mbox{\hyperlink{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}{FLASH}}-\/>ACR \&= \string~FLASH\_ACR\_LATENCY;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00789}00789 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00790}00790     temp = (\mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{SystemCoreClock}} -\/ 1) / 24000000;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00791}00791 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00792}00792     \mbox{\hyperlink{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}{FLASH}}-\/>ACR |= (temp \& \mbox{\hyperlink{reg__flash_8h_aef5e44cbb084160a6004ca9951ec7318}{FLASH\_ACR\_LATENCY}});}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00793}00793 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00794}00794 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00795}00795     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \&= (\string~RCC\_CFGR\_HPRE) \& ( \string~\mbox{\hyperlink{reg__rcc_8h_a50b2423a5fea74a47b9eb8ab51869412}{RCC\_CFGR\_PPRE1}}) \& (\string~RCC\_CFGR\_PPRE2);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00796}00796     \textcolor{comment}{//HCLK = AHB = FCLK = SYSCLK divided by 4}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00797}00797     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_affe860867ae4b1b6d28473ded1546d91}{RCC\_CFGR\_HPRE\_DIV4}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00798}00798 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00799}00799     \textcolor{comment}{//PCLK2 = APB2 = HCLK divided by 1, APB2 is high APB CLK}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00800}00800     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a247aebf1999a38ea07785558d277bb1a}{RCC\_CFGR\_PPRE2\_DIV1}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00801}00801 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00802}00802     \textcolor{keywordflow}{if}(\mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{SystemCoreClock}} > 72000000) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00803}00803         \textcolor{comment}{//PCLK1 = APB1 = HCLK divided by 4, APB1 is low APB CLK}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00804}00804         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a0e340725f46e9462d9b02a079b9fa8ae}{RCC\_CFGR\_PPRE1\_DIV4}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00805}00805     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00806}00806     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{SystemCoreClock}} > 36000000) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00807}00807         \textcolor{comment}{//PCLK1 = APB1 = HCLK divided by 2, APB1 is low APB CLK}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00808}00808         \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_af832ad6844c907d9bb37c1536defcb0d}{RCC\_CFGR\_PPRE1\_DIV2}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00809}00809     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00810}00810 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00811}00811 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00812}00812 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00813}00813     \mbox{\hyperlink{system__mm32f327x_8c_afd4b20f1c6938500c7a069bd08656000}{AutoCalPllFactor}}(\mbox{\hyperlink{reg__common_8h_aee9d6c09484289993593170c29f4d425}{HSI\_VALUE\_PLL\_ON}}, \mbox{\hyperlink{system__mm32f327x_8c_a05abea3c816d3b613c089742c0eb3d6e}{SystemCoreClock}}, \&plln, \&pllm);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00814}00814 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00815}00815     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR \&= \string~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ) \mbox{\hyperlink{reg__rcc_8h_a92cb53ea81d2c47537eb217cc6659a2e}{RCC\_PLLCFGR\_PLLSRC}} | \mbox{\hyperlink{reg__rcc_8h_a688964adc7a4a2b8a83464cc0b5f026f}{RCC\_PLLCFGR\_PLLXTPRE}}) ;}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00816}00816     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR \&= \string~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ) \mbox{\hyperlink{reg__rcc_8h_a92cb53ea81d2c47537eb217cc6659a2e}{RCC\_PLLCFGR\_PLLSRC}});}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00817}00817 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00818}00818     tm = (((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})pllm) \& 0x07);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00819}00819     tn = (((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})plln) \& 0x7F);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00820}00820 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00821}00821     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR |= \mbox{\hyperlink{reg__rcc_8h_ae630b8e610ae204fdada83dccb07b55c}{RCC\_APB1ENR\_PWR}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00822}00822     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR \&= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})((\string~\mbox{\hyperlink{reg__rcc_8h_a75a60f299b808c6481da3f3928ef1be2}{RCC\_PLLCFGR\_PLL\_DN}}) \& (\string~RCC\_PLLCFGR\_PLL\_DP));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00823}00823     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>PLLCFGR |= ((tn << \mbox{\hyperlink{reg__rcc_8h_ae05cb1a1054014a63f9aba06b60baeee}{RCC\_PLLCFGR\_PLL\_DN\_Pos}}) | (tm << \mbox{\hyperlink{reg__rcc_8h_afee85633cdd348752c941efb7a57ae4d}{RCC\_PLLCFGR\_PLL\_DP\_Pos}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00824}00824     \textcolor{comment}{//Enable PLL}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00825}00825     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR |= \mbox{\hyperlink{reg__rcc_8h_ad0e73d5b0a4883e074d40029b49ee47e}{RCC\_CR\_PLLON}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00826}00826     \textcolor{comment}{//Wait till PLL is ready}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00827}00827     \textcolor{keywordflow}{while}((\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR \& \mbox{\hyperlink{reg__rcc_8h_afa12d7ac6a7f0f91d066aeb2c6071888}{RCC\_CR\_PLLRDY}}) == 0) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00828}00828         \mbox{\hyperlink{cmsis__armcc_8h_a1378040bcf22428955c6e3ce9c2053cd}{\_\_ASM}} (\textcolor{stringliteral}{"{}nop"{}}) ;\textcolor{comment}{//\_\_NOP();}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00829}00829     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00830}00830     \textcolor{comment}{//Select PLL as system clock source}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00831}00831     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \&= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\string~(\mbox{\hyperlink{reg__rcc_8h_a0eea5e5f7743a7e8995b8beeb18355c1}{RCC\_CFGR\_SW}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00832}00832     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a87389cacb2eaf53730da13a2a33cd487}{RCC\_CFGR\_SW\_PLL}};}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00833}00833 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00834}00834     \textcolor{comment}{//Wait till PLL is used as system clock source}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00835}00835     \textcolor{keywordflow}{while} ((\mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \& (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a15bf2269500dc97e137315f44aa015c9}{RCC\_CFGR\_SWS}}) != (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__rcc_8h_a2c67e2279804a83ef24438267d9d4a6c}{RCC\_CFGR\_SWS\_PLL}}) \{}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00836}00836         \mbox{\hyperlink{cmsis__armcc_8h_a1378040bcf22428955c6e3ce9c2053cd}{\_\_ASM}} (\textcolor{stringliteral}{"{}nop"{}}) ;\textcolor{comment}{//\_\_NOP();}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00837}00837     \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00838}00838 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00839}00839     DELAY\_xUs(1);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00840}00840     \textcolor{comment}{// set HCLK = AHB = FCLK = SYSCLK divided by 2}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00841}00841     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \&= (\string~(\mbox{\hyperlink{reg__rcc_8h_ad4c209254b4d64fed532dc3b1b225cad}{RCC\_CFGR\_PPRE\_0}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00842}00842     DELAY\_xUs(1);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00843}00843 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00844}00844     \textcolor{comment}{// set HCLK = AHB = FCLK = SYSCLK divided by 1}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00845}00845     \mbox{\hyperlink{reg__rcc_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR \&= (\string~(\mbox{\hyperlink{reg__rcc_8h_ac71a9f5fc044c76e56563d29c8621550}{RCC\_CFGR\_PPRE\_3}}));}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00846}00846 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00847}00847     DELAY\_xUs(1);}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00848}00848 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00849}00849 \}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00850}00850 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00851}00851 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00852}00852 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00853}00853 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00854}00854 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00856}00856 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00857}00857 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00858}00858 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00860}00860 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00861}00861 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00862}00862 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00864}00864 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00865}00865 }
+\DoxyCodeLine{\Hypertarget{system__mm32f327x_8c_source_l00866}00866 }
+
+\end{DoxyCode}

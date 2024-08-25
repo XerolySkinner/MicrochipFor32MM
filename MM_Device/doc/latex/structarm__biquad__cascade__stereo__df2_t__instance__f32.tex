@@ -1,0 +1,65 @@
+\hypertarget{structarm__biquad__cascade__stereo__df2_t__instance__f32}{}\doxysection{arm\+\_\+biquad\+\_\+cascade\+\_\+stereo\+\_\+df2\+T\+\_\+instance\+\_\+f32结构体 参考}
+\label{structarm__biquad__cascade__stereo__df2_t__instance__f32}\index{arm\_biquad\_cascade\_stereo\_df2T\_instance\_f32@{arm\_biquad\_cascade\_stereo\_df2T\_instance\_f32}}
+
+
+Instance structure for the floating-\/point transposed direct form II Biquad cascade filter.  
+
+
+
+
+{\ttfamily \#include $<$arm\+\_\+math.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structarm__biquad__cascade__stereo__df2_t__instance__f32_a5655328252da5c2c2425ceed253bc4f1}{num\+Stages}}
+\item 
+\mbox{\hyperlink{arm__math_8h_a4611b605e45ab401f02cab15c5e38715}{float32\+\_\+t}} $\ast$ \mbox{\hyperlink{structarm__biquad__cascade__stereo__df2_t__instance__f32_a2cb00048bb1fe957a03c1ff56dfaf8f0}{p\+State}}
+\item 
+\mbox{\hyperlink{arm__math_8h_a4611b605e45ab401f02cab15c5e38715}{float32\+\_\+t}} $\ast$ \mbox{\hyperlink{structarm__biquad__cascade__stereo__df2_t__instance__f32_a58b15644de62a632c5e9d4a563569dc6}{p\+Coeffs}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Instance structure for the floating-\/point transposed direct form II Biquad cascade filter. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l03627}{3627}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{structarm__biquad__cascade__stereo__df2_t__instance__f32_a5655328252da5c2c2425ceed253bc4f1}\label{structarm__biquad__cascade__stereo__df2_t__instance__f32_a5655328252da5c2c2425ceed253bc4f1}} 
+\index{arm\_biquad\_cascade\_stereo\_df2T\_instance\_f32@{arm\_biquad\_cascade\_stereo\_df2T\_instance\_f32}!numStages@{numStages}}
+\index{numStages@{numStages}!arm\_biquad\_cascade\_stereo\_df2T\_instance\_f32@{arm\_biquad\_cascade\_stereo\_df2T\_instance\_f32}}
+\doxysubsubsection{\texorpdfstring{numStages}{numStages}}
+{\footnotesize\ttfamily uint8\+\_\+t arm\+\_\+biquad\+\_\+cascade\+\_\+stereo\+\_\+df2\+T\+\_\+instance\+\_\+f32\+::num\+Stages}
+
+number of 2nd order stages in the filter. Overall order is 2$\ast$num\+Stages. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l03628}{3628}} 行定义.
+
+\mbox{\Hypertarget{structarm__biquad__cascade__stereo__df2_t__instance__f32_a58b15644de62a632c5e9d4a563569dc6}\label{structarm__biquad__cascade__stereo__df2_t__instance__f32_a58b15644de62a632c5e9d4a563569dc6}} 
+\index{arm\_biquad\_cascade\_stereo\_df2T\_instance\_f32@{arm\_biquad\_cascade\_stereo\_df2T\_instance\_f32}!pCoeffs@{pCoeffs}}
+\index{pCoeffs@{pCoeffs}!arm\_biquad\_cascade\_stereo\_df2T\_instance\_f32@{arm\_biquad\_cascade\_stereo\_df2T\_instance\_f32}}
+\doxysubsubsection{\texorpdfstring{pCoeffs}{pCoeffs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{arm__math_8h_a4611b605e45ab401f02cab15c5e38715}{float32\+\_\+t}}$\ast$ arm\+\_\+biquad\+\_\+cascade\+\_\+stereo\+\_\+df2\+T\+\_\+instance\+\_\+f32\+::p\+Coeffs}
+
+points to the array of coefficients. The array is of length 5$\ast$num\+Stages. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l03630}{3630}} 行定义.
+
+\mbox{\Hypertarget{structarm__biquad__cascade__stereo__df2_t__instance__f32_a2cb00048bb1fe957a03c1ff56dfaf8f0}\label{structarm__biquad__cascade__stereo__df2_t__instance__f32_a2cb00048bb1fe957a03c1ff56dfaf8f0}} 
+\index{arm\_biquad\_cascade\_stereo\_df2T\_instance\_f32@{arm\_biquad\_cascade\_stereo\_df2T\_instance\_f32}!pState@{pState}}
+\index{pState@{pState}!arm\_biquad\_cascade\_stereo\_df2T\_instance\_f32@{arm\_biquad\_cascade\_stereo\_df2T\_instance\_f32}}
+\doxysubsubsection{\texorpdfstring{pState}{pState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{arm__math_8h_a4611b605e45ab401f02cab15c5e38715}{float32\+\_\+t}}$\ast$ arm\+\_\+biquad\+\_\+cascade\+\_\+stereo\+\_\+df2\+T\+\_\+instance\+\_\+f32\+::p\+State}
+
+points to the array of state coefficients. The array is of length 4$\ast$num\+Stages. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l03629}{3629}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+CMSIS/\mbox{\hyperlink{arm__math_8h}{arm\+\_\+math.\+h}}\end{DoxyCompactItemize}

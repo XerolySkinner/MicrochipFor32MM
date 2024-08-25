@@ -1,0 +1,250 @@
+\hypertarget{group___w_w_d_g___exported___functions}{}\doxysection{WWDG\+\_\+\+Exported\+\_\+\+Functions}
+\label{group___w_w_d_g___exported___functions}\index{WWDG\_Exported\_Functions@{WWDG\_Exported\_Functions}}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___w_w_d_g___exported___functions_ga1b1260b29ebd4d77ddacfda1433fd3b8}{WWDG\+\_\+\+De\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Deinitializes the WWDG peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___w_w_d_g___exported___functions_ga34a589b9bcff65f66b668104a70474c2}{WWDG\+\_\+\+Set\+Prescaler}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} prescaler)
+\begin{DoxyCompactList}\small\item\em Sets the WWDG Prescaler. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___w_w_d_g___exported___functions_ga300fe6e036a39f0b2afb61eaef39e2ad}{WWDG\+\_\+\+Set\+Window\+Value}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} window\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Sets the WWDG window value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___w_w_d_g___exported___functions_gaf89349338e1c76065d46c44ecfcc5399}{WWDG\+\_\+\+Enable\+IT}} ()
+\begin{DoxyCompactList}\small\item\em Enables the WWDG Early Wakeup interrupt(\+EWI). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___w_w_d_g___exported___functions_ga1cc54e88140ed41b5b841827fe24af8c}{WWDG\+\_\+\+Set\+Counter}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} count)
+\begin{DoxyCompactList}\small\item\em Sets the WWDG counter value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___w_w_d_g___exported___functions_ga3fbec6b1ceeac07d7fbdfc3fd27fe122}{WWDG\+\_\+\+Get\+Counter}} ()
+\begin{DoxyCompactList}\small\item\em Enables WWDG and load the counter value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___w_w_d_g___exported___functions_gafe7aa18bd66fb5548de08429070e831c}{WWDG\+\_\+\+Enable}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} count)
+\begin{DoxyCompactList}\small\item\em Enables WWDG and load the counter value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___w_w_d_g___exported___functions_ga72379e299a3ed528bc37dcf8e411c093}{WWDG\+\_\+\+Get\+Flag\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Checks whether the Early Wakeup interrupt flag is set or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___w_w_d_g___exported___functions_gad16e73c97d4dae79cd88049e8438b98e}{WWDG\+\_\+\+Clear\+Flag}} ()
+\begin{DoxyCompactList}\small\item\em Clears Early Wakeup interrupt flag. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+\doxysubsection{函数说明}
+\mbox{\Hypertarget{group___w_w_d_g___exported___functions_gad16e73c97d4dae79cd88049e8438b98e}\label{group___w_w_d_g___exported___functions_gad16e73c97d4dae79cd88049e8438b98e}} 
+\index{WWDG\_Exported\_Functions@{WWDG\_Exported\_Functions}!WWDG\_ClearFlag@{WWDG\_ClearFlag}}
+\index{WWDG\_ClearFlag@{WWDG\_ClearFlag}!WWDG\_Exported\_Functions@{WWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{WWDG\_ClearFlag()}{WWDG\_ClearFlag()}}
+{\footnotesize\ttfamily void WWDG\+\_\+\+Clear\+Flag (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Clears Early Wakeup interrupt flag. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__wwdg_8c_source}{hal\+\_\+wwdg.\+c}} 第 \mbox{\hyperlink{hal__wwdg_8c_source_l00138}{138}} 行定义.
+
+\mbox{\Hypertarget{group___w_w_d_g___exported___functions_ga1b1260b29ebd4d77ddacfda1433fd3b8}\label{group___w_w_d_g___exported___functions_ga1b1260b29ebd4d77ddacfda1433fd3b8}} 
+\index{WWDG\_Exported\_Functions@{WWDG\_Exported\_Functions}!WWDG\_DeInit@{WWDG\_DeInit}}
+\index{WWDG\_DeInit@{WWDG\_DeInit}!WWDG\_Exported\_Functions@{WWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{WWDG\_DeInit()}{WWDG\_DeInit()}}
+{\footnotesize\ttfamily void WWDG\+\_\+\+De\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Deinitializes the WWDG peripheral registers to their default reset values. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__wwdg_8c_source}{hal\+\_\+wwdg.\+c}} 第 \mbox{\hyperlink{hal__wwdg_8c_source_l00043}{43}} 行定义.
+
+\mbox{\Hypertarget{group___w_w_d_g___exported___functions_gafe7aa18bd66fb5548de08429070e831c}\label{group___w_w_d_g___exported___functions_gafe7aa18bd66fb5548de08429070e831c}} 
+\index{WWDG\_Exported\_Functions@{WWDG\_Exported\_Functions}!WWDG\_Enable@{WWDG\_Enable}}
+\index{WWDG\_Enable@{WWDG\_Enable}!WWDG\_Exported\_Functions@{WWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{WWDG\_Enable()}{WWDG\_Enable()}}
+{\footnotesize\ttfamily void WWDG\+\_\+\+Enable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{count }\end{DoxyParamCaption})}
+
+
+
+Enables WWDG and load the counter value. 
+
+
+\begin{DoxyParams}{参数}
+{\em Counter} & specifies the watchdog counter value. This parameter must be a number between 0x40 and 0x7F (to prevent generating an immediate reset). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__wwdg_8c_source}{hal\+\_\+wwdg.\+c}} 第 \mbox{\hyperlink{hal__wwdg_8c_source_l00118}{118}} 行定义.
+
+\mbox{\Hypertarget{group___w_w_d_g___exported___functions_gaf89349338e1c76065d46c44ecfcc5399}\label{group___w_w_d_g___exported___functions_gaf89349338e1c76065d46c44ecfcc5399}} 
+\index{WWDG\_Exported\_Functions@{WWDG\_Exported\_Functions}!WWDG\_EnableIT@{WWDG\_EnableIT}}
+\index{WWDG\_EnableIT@{WWDG\_EnableIT}!WWDG\_Exported\_Functions@{WWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{WWDG\_EnableIT()}{WWDG\_EnableIT()}}
+{\footnotesize\ttfamily void WWDG\+\_\+\+Enable\+IT (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Enables the WWDG Early Wakeup interrupt(\+EWI). 
+
+\begin{DoxyNote}{注解}
+Once enabled this interrupt cannot be disabled except by a system reset. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__wwdg_8c_source}{hal\+\_\+wwdg.\+c}} 第 \mbox{\hyperlink{hal__wwdg_8c_source_l00082}{82}} 行定义.
+
+\mbox{\Hypertarget{group___w_w_d_g___exported___functions_ga3fbec6b1ceeac07d7fbdfc3fd27fe122}\label{group___w_w_d_g___exported___functions_ga3fbec6b1ceeac07d7fbdfc3fd27fe122}} 
+\index{WWDG\_Exported\_Functions@{WWDG\_Exported\_Functions}!WWDG\_GetCounter@{WWDG\_GetCounter}}
+\index{WWDG\_GetCounter@{WWDG\_GetCounter}!WWDG\_Exported\_Functions@{WWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{WWDG\_GetCounter()}{WWDG\_GetCounter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} WWDG\+\_\+\+Get\+Counter (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Enables WWDG and load the counter value. 
+
+
+\begin{DoxyParams}{参数}
+{\em Counter} & specifies the watchdog counter value. This parameter must be a number between 0x40 and 0x7F (to prevent generating an immediate reset). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__wwdg_8c_source}{hal\+\_\+wwdg.\+c}} 第 \mbox{\hyperlink{hal__wwdg_8c_source_l00106}{106}} 行定义.
+
+\mbox{\Hypertarget{group___w_w_d_g___exported___functions_ga72379e299a3ed528bc37dcf8e411c093}\label{group___w_w_d_g___exported___functions_ga72379e299a3ed528bc37dcf8e411c093}} 
+\index{WWDG\_Exported\_Functions@{WWDG\_Exported\_Functions}!WWDG\_GetFlagStatus@{WWDG\_GetFlagStatus}}
+\index{WWDG\_GetFlagStatus@{WWDG\_GetFlagStatus}!WWDG\_Exported\_Functions@{WWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{WWDG\_GetFlagStatus()}{WWDG\_GetFlagStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} WWDG\+\_\+\+Get\+Flag\+Status (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Checks whether the Early Wakeup interrupt flag is set or not. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em The} & new state of the Early Wakeup interrupt flag (SET or RESET). \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__wwdg_8c_source}{hal\+\_\+wwdg.\+c}} 第 \mbox{\hyperlink{hal__wwdg_8c_source_l00128}{128}} 行定义.
+
+\mbox{\Hypertarget{group___w_w_d_g___exported___functions_ga1cc54e88140ed41b5b841827fe24af8c}\label{group___w_w_d_g___exported___functions_ga1cc54e88140ed41b5b841827fe24af8c}} 
+\index{WWDG\_Exported\_Functions@{WWDG\_Exported\_Functions}!WWDG\_SetCounter@{WWDG\_SetCounter}}
+\index{WWDG\_SetCounter@{WWDG\_SetCounter}!WWDG\_Exported\_Functions@{WWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{WWDG\_SetCounter()}{WWDG\_SetCounter()}}
+{\footnotesize\ttfamily void WWDG\+\_\+\+Set\+Counter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{count }\end{DoxyParamCaption})}
+
+
+
+Sets the WWDG counter value. 
+
+
+\begin{DoxyParams}{参数}
+{\em Counter} & specifies the watchdog counter value. This parameter must be a number between 0x40 and 0x7F (to prevent generating an immediate reset). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__wwdg_8c_source}{hal\+\_\+wwdg.\+c}} 第 \mbox{\hyperlink{hal__wwdg_8c_source_l00094}{94}} 行定义.
+
+\mbox{\Hypertarget{group___w_w_d_g___exported___functions_ga34a589b9bcff65f66b668104a70474c2}\label{group___w_w_d_g___exported___functions_ga34a589b9bcff65f66b668104a70474c2}} 
+\index{WWDG\_Exported\_Functions@{WWDG\_Exported\_Functions}!WWDG\_SetPrescaler@{WWDG\_SetPrescaler}}
+\index{WWDG\_SetPrescaler@{WWDG\_SetPrescaler}!WWDG\_Exported\_Functions@{WWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{WWDG\_SetPrescaler()}{WWDG\_SetPrescaler()}}
+{\footnotesize\ttfamily void WWDG\+\_\+\+Set\+Prescaler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{prescaler }\end{DoxyParamCaption})}
+
+
+
+Sets the WWDG Prescaler. 
+
+
+\begin{DoxyParams}{参数}
+{\em WWDG\+\_\+\+Prescaler} & specifies the WWDG Prescaler. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item WWDG\+\_\+\+Prescaler\+\_\+1\+: WWDG counter clock = APB1\+CLK / 4096 / 1 \item WWDG\+\_\+\+Prescaler\+\_\+2\+: WWDG counter clock = APB1\+CLK / 4096 / 2 \item WWDG\+\_\+\+Prescaler\+\_\+4\+: WWDG counter clock = APB1\+CLK / 4096 / 4 \item WWDG\+\_\+\+Prescaler\+\_\+8\+: WWDG counter clock = APB1\+CLK / 4096 / 8 \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__wwdg_8c_source}{hal\+\_\+wwdg.\+c}} 第 \mbox{\hyperlink{hal__wwdg_8c_source_l00058}{58}} 行定义.
+
+\mbox{\Hypertarget{group___w_w_d_g___exported___functions_ga300fe6e036a39f0b2afb61eaef39e2ad}\label{group___w_w_d_g___exported___functions_ga300fe6e036a39f0b2afb61eaef39e2ad}} 
+\index{WWDG\_Exported\_Functions@{WWDG\_Exported\_Functions}!WWDG\_SetWindowValue@{WWDG\_SetWindowValue}}
+\index{WWDG\_SetWindowValue@{WWDG\_SetWindowValue}!WWDG\_Exported\_Functions@{WWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{WWDG\_SetWindowValue()}{WWDG\_SetWindowValue()}}
+{\footnotesize\ttfamily void WWDG\+\_\+\+Set\+Window\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{window\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+Sets the WWDG window value. 
+
+
+\begin{DoxyParams}{参数}
+{\em Window\+Value} & specifies the window value to be compared to the downcounter. This parameter value must be lower than 0x80. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__wwdg_8c_source}{hal\+\_\+wwdg.\+c}} 第 \mbox{\hyperlink{hal__wwdg_8c_source_l00070}{70}} 行定义.
+

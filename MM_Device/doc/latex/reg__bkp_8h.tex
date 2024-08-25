@@ -1,0 +1,438 @@
+\hypertarget{reg__bkp_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/reg\+\_\+bkp.h 文件参考}
+\label{reg__bkp_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_bkp.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_bkp.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_b_k_p___type_def}{BKP\+\_\+\+Type\+Def}}
+\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_aa15d5a9f40794105397ba5ea567c4ae1}{BKP\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x2840)
+\begin{DoxyCompactList}\small\item\em BKP Base Address Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_ae17d8fcae92dc2d9660f8ee90e35223f}{BKP\+\_\+\+NUMBER}}~20
+\begin{DoxyCompactList}\small\item\em BKP Register Structure Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_aa38716de06974ea948ad34ef7bfee00b}{BKP}}~((\mbox{\hyperlink{struct_b_k_p___type_def}{BKP\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__bkp_8h_aa15d5a9f40794105397ba5ea567c4ae1}{BKP\+\_\+\+BASE}})
+\begin{DoxyCompactList}\small\item\em BKP type pointer Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_ae4957302466f6603859deb61e7e8aaa6}{BKP\+\_\+\+DR\+\_\+\+DATA\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em BKP\+\_\+\+DRn Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_abf625d4c30bf97370cf3a32c8ab247a6}{BKP\+\_\+\+DR\+\_\+\+DATA}}~(0x\+FFFFU $<$$<$ BKP\+\_\+\+DR\+\_\+\+DATA)
+\begin{DoxyCompactList}\small\item\em Backup data \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_a1dc9a21a9e1a675c9b1bd87fa9d9013f}{BKP\+\_\+\+RTCCR\+\_\+\+CAL\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em BKP\+\_\+\+RTCCR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_a4f2eeeef42c2f7a59d28a9d5eb4c6857}{BKP\+\_\+\+RTCCR\+\_\+\+CAL}}~(0x7\+FU $<$$<$ \mbox{\hyperlink{reg__bkp_8h_a1dc9a21a9e1a675c9b1bd87fa9d9013f}{BKP\+\_\+\+RTCCR\+\_\+\+CAL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Calibration value \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_aaca60166a0ab716868796303ecf45e80}{BKP\+\_\+\+RTCCR\+\_\+\+CCO\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_a639d569ffd9211519b910c1e6304f7b3}{BKP\+\_\+\+RTCCR\+\_\+\+CCO}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__bkp_8h_aaca60166a0ab716868796303ecf45e80}{BKP\+\_\+\+RTCCR\+\_\+\+CCO\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Calibration Clock Output \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_a81d443e9c74b61cfc60fd676c4cc90fa}{BKP\+\_\+\+RTCCR\+\_\+\+ASOE\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_a924692225ba4db945660687fe47f50b4}{BKP\+\_\+\+RTCCR\+\_\+\+ASOE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__bkp_8h_a81d443e9c74b61cfc60fd676c4cc90fa}{BKP\+\_\+\+RTCCR\+\_\+\+ASOE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Alarm or Second Output Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_a926f475a65d4a047cdf7d500da0c9a14}{BKP\+\_\+\+RTCCR\+\_\+\+ASOS\+\_\+\+Pos}}~(9)
+\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_a8d017e8f3c09696cd74e170a95966be4}{BKP\+\_\+\+RTCCR\+\_\+\+ASOS}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__bkp_8h_a926f475a65d4a047cdf7d500da0c9a14}{BKP\+\_\+\+RTCCR\+\_\+\+ASOS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Alarm or Second Output Selection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_a6db61fcc7d1444ff12406da7037de8ba}{BKP\+\_\+\+CR\+\_\+\+TPE\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em BKP\+\_\+\+CR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_adbb835fd9fbe4d74e598d15de3c12e63}{BKP\+\_\+\+CR\+\_\+\+TPE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__bkp_8h_a6db61fcc7d1444ff12406da7037de8ba}{BKP\+\_\+\+CR\+\_\+\+TPE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em TAMPER pin enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_a18d7c36060fcb6e08bc92f2deaea4723}{BKP\+\_\+\+CR\+\_\+\+TPAL\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_a28cd1469212463d8a772b0b67543d320}{BKP\+\_\+\+CR\+\_\+\+TPAL}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__bkp_8h_a18d7c36060fcb6e08bc92f2deaea4723}{BKP\+\_\+\+CR\+\_\+\+TPAL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em TAMPER pin active level \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_aab62a21db9c02dba38ff571ab5987baf}{BKP\+\_\+\+CSR\+\_\+\+CTE\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em BKP\+\_\+\+CSR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_ad8cec91d3c30db07961227bcea5c5452}{BKP\+\_\+\+CSR\+\_\+\+CTE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__bkp_8h_aab62a21db9c02dba38ff571ab5987baf}{BKP\+\_\+\+CSR\+\_\+\+CTE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Clear Tamper event \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_a03592009722e1bdf8adf628e8e13d394}{BKP\+\_\+\+CSR\+\_\+\+CTI\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_ad7dc97ae504ef58fb2137c1fdd02fc4e}{BKP\+\_\+\+CSR\+\_\+\+CTI}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__bkp_8h_a03592009722e1bdf8adf628e8e13d394}{BKP\+\_\+\+CSR\+\_\+\+CTI\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Clear Tamper Interrupt \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_a40d13d56abb0c190bf4868ae8c1856a2}{BKP\+\_\+\+CSR\+\_\+\+TPIE\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_a38baaf48576f4b3ab209369e04d468ad}{BKP\+\_\+\+CSR\+\_\+\+TPIE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__bkp_8h_a40d13d56abb0c190bf4868ae8c1856a2}{BKP\+\_\+\+CSR\+\_\+\+TPIE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em TAMPER Pin interrupt enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_a3460bc8069d2269ceac8df9dc03a2c8a}{BKP\+\_\+\+CSR\+\_\+\+TEF\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_a71a05fe4e45b0dc0b1f970e51085678d}{BKP\+\_\+\+CSR\+\_\+\+TEF}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__bkp_8h_a3460bc8069d2269ceac8df9dc03a2c8a}{BKP\+\_\+\+CSR\+\_\+\+TEF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Tamper Event Flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_a24caf26d8ffaa4cc0e25d49c1e203f36}{BKP\+\_\+\+CSR\+\_\+\+TIF\+\_\+\+Pos}}~(9)
+\item 
+\#define \mbox{\hyperlink{reg__bkp_8h_a3a8317e460ec3e18c78869beacd0bac8}{BKP\+\_\+\+CSR\+\_\+\+TIF}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__bkp_8h_a24caf26d8ffaa4cc0e25d49c1e203f36}{BKP\+\_\+\+CSR\+\_\+\+TIF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Tamper Interrupt Flag \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{reg__bkp_8h_aa38716de06974ea948ad34ef7bfee00b}\label{reg__bkp_8h_aa38716de06974ea948ad34ef7bfee00b}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP@{BKP}}
+\index{BKP@{BKP}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP}{BKP}}
+{\footnotesize\ttfamily \#define BKP~((\mbox{\hyperlink{struct_b_k_p___type_def}{BKP\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__bkp_8h_aa15d5a9f40794105397ba5ea567c4ae1}{BKP\+\_\+\+BASE}})}
+
+
+
+BKP type pointer Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00091}{91}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_aa15d5a9f40794105397ba5ea567c4ae1}\label{reg__bkp_8h_aa15d5a9f40794105397ba5ea567c4ae1}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_BASE@{BKP\_BASE}}
+\index{BKP\_BASE@{BKP\_BASE}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_BASE}{BKP\_BASE}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x2840)}
+
+
+
+BKP Base Address Definition 
+
+Base Address\+: 0x40002840 
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00048}{48}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_a28cd1469212463d8a772b0b67543d320}\label{reg__bkp_8h_a28cd1469212463d8a772b0b67543d320}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_CR\_TPAL@{BKP\_CR\_TPAL}}
+\index{BKP\_CR\_TPAL@{BKP\_CR\_TPAL}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_CR\_TPAL}{BKP\_CR\_TPAL}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+CR\+\_\+\+TPAL~(0x01U $<$$<$ \mbox{\hyperlink{reg__bkp_8h_a18d7c36060fcb6e08bc92f2deaea4723}{BKP\+\_\+\+CR\+\_\+\+TPAL\+\_\+\+Pos}})}
+
+
+
+TAMPER pin active level 
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00119}{119}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_a18d7c36060fcb6e08bc92f2deaea4723}\label{reg__bkp_8h_a18d7c36060fcb6e08bc92f2deaea4723}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_CR\_TPAL\_Pos@{BKP\_CR\_TPAL\_Pos}}
+\index{BKP\_CR\_TPAL\_Pos@{BKP\_CR\_TPAL\_Pos}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_CR\_TPAL\_Pos}{BKP\_CR\_TPAL\_Pos}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+CR\+\_\+\+TPAL\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00118}{118}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_adbb835fd9fbe4d74e598d15de3c12e63}\label{reg__bkp_8h_adbb835fd9fbe4d74e598d15de3c12e63}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_CR\_TPE@{BKP\_CR\_TPE}}
+\index{BKP\_CR\_TPE@{BKP\_CR\_TPE}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_CR\_TPE}{BKP\_CR\_TPE}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+CR\+\_\+\+TPE~(0x01U $<$$<$ \mbox{\hyperlink{reg__bkp_8h_a6db61fcc7d1444ff12406da7037de8ba}{BKP\+\_\+\+CR\+\_\+\+TPE\+\_\+\+Pos}})}
+
+
+
+TAMPER pin enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00117}{117}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_a6db61fcc7d1444ff12406da7037de8ba}\label{reg__bkp_8h_a6db61fcc7d1444ff12406da7037de8ba}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_CR\_TPE\_Pos@{BKP\_CR\_TPE\_Pos}}
+\index{BKP\_CR\_TPE\_Pos@{BKP\_CR\_TPE\_Pos}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_CR\_TPE\_Pos}{BKP\_CR\_TPE\_Pos}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+CR\+\_\+\+TPE\+\_\+\+Pos~(0)}
+
+
+
+BKP\+\_\+\+CR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00116}{116}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_ad8cec91d3c30db07961227bcea5c5452}\label{reg__bkp_8h_ad8cec91d3c30db07961227bcea5c5452}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_CSR\_CTE@{BKP\_CSR\_CTE}}
+\index{BKP\_CSR\_CTE@{BKP\_CSR\_CTE}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_CSR\_CTE}{BKP\_CSR\_CTE}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+CSR\+\_\+\+CTE~(0x01U $<$$<$ \mbox{\hyperlink{reg__bkp_8h_aab62a21db9c02dba38ff571ab5987baf}{BKP\+\_\+\+CSR\+\_\+\+CTE\+\_\+\+Pos}})}
+
+
+
+Clear Tamper event 
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00125}{125}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_aab62a21db9c02dba38ff571ab5987baf}\label{reg__bkp_8h_aab62a21db9c02dba38ff571ab5987baf}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_CSR\_CTE\_Pos@{BKP\_CSR\_CTE\_Pos}}
+\index{BKP\_CSR\_CTE\_Pos@{BKP\_CSR\_CTE\_Pos}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_CSR\_CTE\_Pos}{BKP\_CSR\_CTE\_Pos}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+CSR\+\_\+\+CTE\+\_\+\+Pos~(0)}
+
+
+
+BKP\+\_\+\+CSR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00124}{124}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_ad7dc97ae504ef58fb2137c1fdd02fc4e}\label{reg__bkp_8h_ad7dc97ae504ef58fb2137c1fdd02fc4e}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_CSR\_CTI@{BKP\_CSR\_CTI}}
+\index{BKP\_CSR\_CTI@{BKP\_CSR\_CTI}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_CSR\_CTI}{BKP\_CSR\_CTI}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+CSR\+\_\+\+CTI~(0x01U $<$$<$ \mbox{\hyperlink{reg__bkp_8h_a03592009722e1bdf8adf628e8e13d394}{BKP\+\_\+\+CSR\+\_\+\+CTI\+\_\+\+Pos}})}
+
+
+
+Clear Tamper Interrupt 
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00127}{127}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_a03592009722e1bdf8adf628e8e13d394}\label{reg__bkp_8h_a03592009722e1bdf8adf628e8e13d394}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_CSR\_CTI\_Pos@{BKP\_CSR\_CTI\_Pos}}
+\index{BKP\_CSR\_CTI\_Pos@{BKP\_CSR\_CTI\_Pos}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_CSR\_CTI\_Pos}{BKP\_CSR\_CTI\_Pos}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+CSR\+\_\+\+CTI\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00126}{126}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_a71a05fe4e45b0dc0b1f970e51085678d}\label{reg__bkp_8h_a71a05fe4e45b0dc0b1f970e51085678d}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_CSR\_TEF@{BKP\_CSR\_TEF}}
+\index{BKP\_CSR\_TEF@{BKP\_CSR\_TEF}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_CSR\_TEF}{BKP\_CSR\_TEF}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+CSR\+\_\+\+TEF~(0x01U $<$$<$ \mbox{\hyperlink{reg__bkp_8h_a3460bc8069d2269ceac8df9dc03a2c8a}{BKP\+\_\+\+CSR\+\_\+\+TEF\+\_\+\+Pos}})}
+
+
+
+Tamper Event Flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00131}{131}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_a3460bc8069d2269ceac8df9dc03a2c8a}\label{reg__bkp_8h_a3460bc8069d2269ceac8df9dc03a2c8a}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_CSR\_TEF\_Pos@{BKP\_CSR\_TEF\_Pos}}
+\index{BKP\_CSR\_TEF\_Pos@{BKP\_CSR\_TEF\_Pos}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_CSR\_TEF\_Pos}{BKP\_CSR\_TEF\_Pos}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+CSR\+\_\+\+TEF\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00130}{130}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_a3a8317e460ec3e18c78869beacd0bac8}\label{reg__bkp_8h_a3a8317e460ec3e18c78869beacd0bac8}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_CSR\_TIF@{BKP\_CSR\_TIF}}
+\index{BKP\_CSR\_TIF@{BKP\_CSR\_TIF}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_CSR\_TIF}{BKP\_CSR\_TIF}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+CSR\+\_\+\+TIF~(0x01U $<$$<$ \mbox{\hyperlink{reg__bkp_8h_a24caf26d8ffaa4cc0e25d49c1e203f36}{BKP\+\_\+\+CSR\+\_\+\+TIF\+\_\+\+Pos}})}
+
+
+
+Tamper Interrupt Flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00133}{133}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_a24caf26d8ffaa4cc0e25d49c1e203f36}\label{reg__bkp_8h_a24caf26d8ffaa4cc0e25d49c1e203f36}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_CSR\_TIF\_Pos@{BKP\_CSR\_TIF\_Pos}}
+\index{BKP\_CSR\_TIF\_Pos@{BKP\_CSR\_TIF\_Pos}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_CSR\_TIF\_Pos}{BKP\_CSR\_TIF\_Pos}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+CSR\+\_\+\+TIF\+\_\+\+Pos~(9)}
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00132}{132}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_a38baaf48576f4b3ab209369e04d468ad}\label{reg__bkp_8h_a38baaf48576f4b3ab209369e04d468ad}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_CSR\_TPIE@{BKP\_CSR\_TPIE}}
+\index{BKP\_CSR\_TPIE@{BKP\_CSR\_TPIE}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_CSR\_TPIE}{BKP\_CSR\_TPIE}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+CSR\+\_\+\+TPIE~(0x01U $<$$<$ \mbox{\hyperlink{reg__bkp_8h_a40d13d56abb0c190bf4868ae8c1856a2}{BKP\+\_\+\+CSR\+\_\+\+TPIE\+\_\+\+Pos}})}
+
+
+
+TAMPER Pin interrupt enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00129}{129}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_a40d13d56abb0c190bf4868ae8c1856a2}\label{reg__bkp_8h_a40d13d56abb0c190bf4868ae8c1856a2}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_CSR\_TPIE\_Pos@{BKP\_CSR\_TPIE\_Pos}}
+\index{BKP\_CSR\_TPIE\_Pos@{BKP\_CSR\_TPIE\_Pos}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_CSR\_TPIE\_Pos}{BKP\_CSR\_TPIE\_Pos}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+CSR\+\_\+\+TPIE\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00128}{128}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_abf625d4c30bf97370cf3a32c8ab247a6}\label{reg__bkp_8h_abf625d4c30bf97370cf3a32c8ab247a6}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_DR\_DATA@{BKP\_DR\_DATA}}
+\index{BKP\_DR\_DATA@{BKP\_DR\_DATA}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_DR\_DATA}{BKP\_DR\_DATA}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+DR\+\_\+\+DATA~(0x\+FFFFU $<$$<$ BKP\+\_\+\+DR\+\_\+\+DATA)}
+
+
+
+Backup data 
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00099}{99}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_ae4957302466f6603859deb61e7e8aaa6}\label{reg__bkp_8h_ae4957302466f6603859deb61e7e8aaa6}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_DR\_DATA\_Pos@{BKP\_DR\_DATA\_Pos}}
+\index{BKP\_DR\_DATA\_Pos@{BKP\_DR\_DATA\_Pos}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_DR\_DATA\_Pos}{BKP\_DR\_DATA\_Pos}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+DR\+\_\+\+DATA\+\_\+\+Pos~(0)}
+
+
+
+BKP\+\_\+\+DRn Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00098}{98}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_ae17d8fcae92dc2d9660f8ee90e35223f}\label{reg__bkp_8h_ae17d8fcae92dc2d9660f8ee90e35223f}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_NUMBER@{BKP\_NUMBER}}
+\index{BKP\_NUMBER@{BKP\_NUMBER}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_NUMBER}{BKP\_NUMBER}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+NUMBER~20}
+
+
+
+BKP Register Structure Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00059}{59}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_a924692225ba4db945660687fe47f50b4}\label{reg__bkp_8h_a924692225ba4db945660687fe47f50b4}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_RTCCR\_ASOE@{BKP\_RTCCR\_ASOE}}
+\index{BKP\_RTCCR\_ASOE@{BKP\_RTCCR\_ASOE}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_RTCCR\_ASOE}{BKP\_RTCCR\_ASOE}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+RTCCR\+\_\+\+ASOE~(0x01U $<$$<$ \mbox{\hyperlink{reg__bkp_8h_a81d443e9c74b61cfc60fd676c4cc90fa}{BKP\+\_\+\+RTCCR\+\_\+\+ASOE\+\_\+\+Pos}})}
+
+
+
+Alarm or Second Output Enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00109}{109}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_a81d443e9c74b61cfc60fd676c4cc90fa}\label{reg__bkp_8h_a81d443e9c74b61cfc60fd676c4cc90fa}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_RTCCR\_ASOE\_Pos@{BKP\_RTCCR\_ASOE\_Pos}}
+\index{BKP\_RTCCR\_ASOE\_Pos@{BKP\_RTCCR\_ASOE\_Pos}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_RTCCR\_ASOE\_Pos}{BKP\_RTCCR\_ASOE\_Pos}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+RTCCR\+\_\+\+ASOE\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00108}{108}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_a8d017e8f3c09696cd74e170a95966be4}\label{reg__bkp_8h_a8d017e8f3c09696cd74e170a95966be4}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_RTCCR\_ASOS@{BKP\_RTCCR\_ASOS}}
+\index{BKP\_RTCCR\_ASOS@{BKP\_RTCCR\_ASOS}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_RTCCR\_ASOS}{BKP\_RTCCR\_ASOS}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+RTCCR\+\_\+\+ASOS~(0x01U $<$$<$ \mbox{\hyperlink{reg__bkp_8h_a926f475a65d4a047cdf7d500da0c9a14}{BKP\+\_\+\+RTCCR\+\_\+\+ASOS\+\_\+\+Pos}})}
+
+
+
+Alarm or Second Output Selection 
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00111}{111}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_a926f475a65d4a047cdf7d500da0c9a14}\label{reg__bkp_8h_a926f475a65d4a047cdf7d500da0c9a14}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_RTCCR\_ASOS\_Pos@{BKP\_RTCCR\_ASOS\_Pos}}
+\index{BKP\_RTCCR\_ASOS\_Pos@{BKP\_RTCCR\_ASOS\_Pos}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_RTCCR\_ASOS\_Pos}{BKP\_RTCCR\_ASOS\_Pos}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+RTCCR\+\_\+\+ASOS\+\_\+\+Pos~(9)}
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00110}{110}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_a4f2eeeef42c2f7a59d28a9d5eb4c6857}\label{reg__bkp_8h_a4f2eeeef42c2f7a59d28a9d5eb4c6857}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_RTCCR\_CAL@{BKP\_RTCCR\_CAL}}
+\index{BKP\_RTCCR\_CAL@{BKP\_RTCCR\_CAL}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_RTCCR\_CAL}{BKP\_RTCCR\_CAL}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+RTCCR\+\_\+\+CAL~(0x7\+FU $<$$<$ \mbox{\hyperlink{reg__bkp_8h_a1dc9a21a9e1a675c9b1bd87fa9d9013f}{BKP\+\_\+\+RTCCR\+\_\+\+CAL\+\_\+\+Pos}})}
+
+
+
+Calibration value 
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00105}{105}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_a1dc9a21a9e1a675c9b1bd87fa9d9013f}\label{reg__bkp_8h_a1dc9a21a9e1a675c9b1bd87fa9d9013f}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_RTCCR\_CAL\_Pos@{BKP\_RTCCR\_CAL\_Pos}}
+\index{BKP\_RTCCR\_CAL\_Pos@{BKP\_RTCCR\_CAL\_Pos}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_RTCCR\_CAL\_Pos}{BKP\_RTCCR\_CAL\_Pos}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+RTCCR\+\_\+\+CAL\+\_\+\+Pos~(0)}
+
+
+
+BKP\+\_\+\+RTCCR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00104}{104}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_a639d569ffd9211519b910c1e6304f7b3}\label{reg__bkp_8h_a639d569ffd9211519b910c1e6304f7b3}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_RTCCR\_CCO@{BKP\_RTCCR\_CCO}}
+\index{BKP\_RTCCR\_CCO@{BKP\_RTCCR\_CCO}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_RTCCR\_CCO}{BKP\_RTCCR\_CCO}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+RTCCR\+\_\+\+CCO~(0x01U $<$$<$ \mbox{\hyperlink{reg__bkp_8h_aaca60166a0ab716868796303ecf45e80}{BKP\+\_\+\+RTCCR\+\_\+\+CCO\+\_\+\+Pos}})}
+
+
+
+Calibration Clock Output 
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00107}{107}} 行定义.
+
+\mbox{\Hypertarget{reg__bkp_8h_aaca60166a0ab716868796303ecf45e80}\label{reg__bkp_8h_aaca60166a0ab716868796303ecf45e80}} 
+\index{reg\_bkp.h@{reg\_bkp.h}!BKP\_RTCCR\_CCO\_Pos@{BKP\_RTCCR\_CCO\_Pos}}
+\index{BKP\_RTCCR\_CCO\_Pos@{BKP\_RTCCR\_CCO\_Pos}!reg\_bkp.h@{reg\_bkp.h}}
+\doxysubsubsection{\texorpdfstring{BKP\_RTCCR\_CCO\_Pos}{BKP\_RTCCR\_CCO\_Pos}}
+{\footnotesize\ttfamily \#define BKP\+\_\+\+RTCCR\+\_\+\+CCO\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__bkp_8h_source}{reg\+\_\+bkp.\+h}} 第 \mbox{\hyperlink{reg__bkp_8h_source_l00106}{106}} 行定义.
+

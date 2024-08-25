@@ -1,0 +1,603 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>template: C:/Users/XerolySkinner/Desktop/MM_Device/MM32F327x/HAL_Lib/Inc/hal_sdio.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">template
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8a23370bd962f2be3cb202251f8a0865.html">MM32F327x</a></li><li class="navelem"><a class="el" href="dir_3b1bed74bcb45e4245a73e66928ea90d.html">HAL_Lib</a></li><li class="navelem"><a class="el" href="dir_d0c94a65a7731bb943335e05fa4de4c7.html">Inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle"><div class="title">hal_sdio.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="mm32__reg_8h_source.html">mm32_reg.h</a>&quot;</code><br />
+</div>
+<p><a href="hal__sdio_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_d___c_s_d.html">SD_CSD</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SD card CSD register data  <a href="struct_s_d___c_s_d.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_d___c_i_d.html">SD_CID</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SD card CID register data  <a href="struct_s_d___c_i_d.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_d___card_info.html">SD_CardInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SD message ,include CSD,CID data  <a href="struct_s_d___card_info.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_d_i_o___init_type_def.html">SDIO_InitTypeDef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDIO init  <a href="struct_s_d_i_o___init_type_def.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_d_i_o___cmd_init_type_def.html">SDIO_CmdInitTypeDef</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_d_i_o___data_init_type_def.html">SDIO_DataInitTypeDef</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ga8ff1f3960378e05ec3c949940e1c49d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga8ff1f3960378e05ec3c949940e1c49d0">SDIO_FLAG_CCRCFAIL</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000001)</td></tr>
+<tr class="memdesc:ga8ff1f3960378e05ec3c949940e1c49d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output Maximum frequency selection  <a href="group___g_p_i_o___exported___types.html#ga8ff1f3960378e05ec3c949940e1c49d0">更多...</a><br /></td></tr>
+<tr class="separator:ga8ff1f3960378e05ec3c949940e1c49d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6de936ea11cbc79444d519268ad9f9bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga6de936ea11cbc79444d519268ad9f9bd">SDIO_FLAG_DCRCFAIL</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000002)</td></tr>
+<tr class="separator:ga6de936ea11cbc79444d519268ad9f9bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7389f64ff6cfa4f459bf852b5faede30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga7389f64ff6cfa4f459bf852b5faede30">SDIO_FLAG_CTIMEOUT</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000004)</td></tr>
+<tr class="separator:ga7389f64ff6cfa4f459bf852b5faede30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d2fd219dd9fea522862195ab9568345"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga2d2fd219dd9fea522862195ab9568345">SDIO_FLAG_DTIMEOUT</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000008)</td></tr>
+<tr class="separator:ga2d2fd219dd9fea522862195ab9568345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd18f8e5d5387a38dccbe1bf28ae5dbc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gabd18f8e5d5387a38dccbe1bf28ae5dbc">SDIO_FLAG_TXUNDERR</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000010)</td></tr>
+<tr class="separator:gabd18f8e5d5387a38dccbe1bf28ae5dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad49d60039e40d31b734cfacf90caa84f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gad49d60039e40d31b734cfacf90caa84f">SDIO_FLAG_RXOVERR</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000020)</td></tr>
+<tr class="separator:gad49d60039e40d31b734cfacf90caa84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga083531db75a1e4c05c47578763d53af1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga083531db75a1e4c05c47578763d53af1">SDIO_FLAG_CMDREND</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000040)</td></tr>
+<tr class="separator:ga083531db75a1e4c05c47578763d53af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac81f3837aac17a6aed7310a8ea460f17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gac81f3837aac17a6aed7310a8ea460f17">SDIO_FLAG_CMDSENT</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000080)</td></tr>
+<tr class="separator:gac81f3837aac17a6aed7310a8ea460f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaacb2f6207c149e05f8bdd70e5d49926"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gaaacb2f6207c149e05f8bdd70e5d49926">SDIO_FLAG_DATAEND</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000100)</td></tr>
+<tr class="separator:gaaacb2f6207c149e05f8bdd70e5d49926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae83f7cb3fa1183898131f3de47c2333e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gae83f7cb3fa1183898131f3de47c2333e">SDIO_FLAG_STBITERR</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000200)</td></tr>
+<tr class="separator:gae83f7cb3fa1183898131f3de47c2333e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5452d8033567821709bd7d5f06547b70"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga5452d8033567821709bd7d5f06547b70">SDIO_FLAG_DBCKEND</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000400)</td></tr>
+<tr class="separator:ga5452d8033567821709bd7d5f06547b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad12a9b2bd30e7b907cbabfd92fc645b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gad12a9b2bd30e7b907cbabfd92fc645b3">SDIO_FLAG_CMDACT</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000800)</td></tr>
+<tr class="separator:gad12a9b2bd30e7b907cbabfd92fc645b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad5d075c98012586b169ec131aab2eeb5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gad5d075c98012586b169ec131aab2eeb5">SDIO_FLAG_TXACT</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00001000)</td></tr>
+<tr class="separator:gad5d075c98012586b169ec131aab2eeb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc935dd830338970890a05922dff8ab7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gacc935dd830338970890a05922dff8ab7">SDIO_FLAG_RXACT</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00002000)</td></tr>
+<tr class="separator:gacc935dd830338970890a05922dff8ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9277461d3c8984dc31af318e2df1959"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gae9277461d3c8984dc31af318e2df1959">SDIO_FLAG_TXFIFOHE</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00004000)</td></tr>
+<tr class="separator:gae9277461d3c8984dc31af318e2df1959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c5942ae3df21efad2d7c61a46015758"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga8c5942ae3df21efad2d7c61a46015758">SDIO_FLAG_RXFIFOHF</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00008000)</td></tr>
+<tr class="separator:ga8c5942ae3df21efad2d7c61a46015758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3ca936300ef251639a4cfbe2f63b6b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gad3ca936300ef251639a4cfbe2f63b6b8">SDIO_FLAG_TXFIFOF</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00010000)</td></tr>
+<tr class="separator:gad3ca936300ef251639a4cfbe2f63b6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf92cb783f000b8d946fe8ace81b51df2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gaf92cb783f000b8d946fe8ace81b51df2">SDIO_FLAG_RXFIFOF</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00020000)</td></tr>
+<tr class="separator:gaf92cb783f000b8d946fe8ace81b51df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac41ef05773abad79b4b0c443a77733db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gac41ef05773abad79b4b0c443a77733db">SDIO_FLAG_TXFIFOE</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00040000)</td></tr>
+<tr class="separator:gac41ef05773abad79b4b0c443a77733db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59ea7e2dc22df742053c5e525b98599d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga59ea7e2dc22df742053c5e525b98599d">SDIO_FLAG_RXFIFOE</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00080000)</td></tr>
+<tr class="separator:ga59ea7e2dc22df742053c5e525b98599d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c6620d6b16b6af19d3e14f40e688631"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga9c6620d6b16b6af19d3e14f40e688631">SDIO_FLAG_TXDAVL</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00100000)</td></tr>
+<tr class="separator:ga9c6620d6b16b6af19d3e14f40e688631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7558b354658171bb6aa1b6f1e16d8e21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga7558b354658171bb6aa1b6f1e16d8e21">SDIO_FLAG_RXDAVL</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00200000)</td></tr>
+<tr class="separator:ga7558b354658171bb6aa1b6f1e16d8e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae888ec1c9885c35a5f8e01bcffe324a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gae888ec1c9885c35a5f8e01bcffe324a1">SDIO_FLAG_SDIOIT</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00400000)</td></tr>
+<tr class="separator:gae888ec1c9885c35a5f8e01bcffe324a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c8d09a405944948e7a1c5493d49aff1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga3c8d09a405944948e7a1c5493d49aff1">SDIO_FLAG_CEATAEND</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00800000)</td></tr>
+<tr class="separator:ga3c8d09a405944948e7a1c5493d49aff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab8ed7f9a9d82da979eb76222f04db7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gaab8ed7f9a9d82da979eb76222f04db7f">SD_POLLING_MODE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:gaab8ed7f9a9d82da979eb76222f04db7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3f9516a5e6764baf2083f76f4bc0eea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gad3f9516a5e6764baf2083f76f4bc0eea">SD_DMA_MODE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:gad3f9516a5e6764baf2083f76f4bc0eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d34df51b7f169e0be94fea97d0c1639"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#ga9d34df51b7f169e0be94fea97d0c1639">SD_CMD_GO_IDLE_STATE</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)0)</td></tr>
+<tr class="separator:ga9d34df51b7f169e0be94fea97d0c1639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74eabc4acadc80ad0242d52942c8d76a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#ga74eabc4acadc80ad0242d52942c8d76a">SD_CMD_SEND_OP_COND</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)1)</td></tr>
+<tr class="separator:ga74eabc4acadc80ad0242d52942c8d76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d9d3a1da54a30d81e1d2a9c6a2d9b4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#ga3d9d3a1da54a30d81e1d2a9c6a2d9b4f">SD_CMD_ALL_SEND_CID</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)2)</td></tr>
+<tr class="separator:ga3d9d3a1da54a30d81e1d2a9c6a2d9b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7e0f4e84001656eac62b41179376a25"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#gaa7e0f4e84001656eac62b41179376a25">SD_CMD_SET_REL_ADDR</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)3)</td></tr>
+<tr class="separator:gaa7e0f4e84001656eac62b41179376a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89e890726a09716bb1a5c6ef6d0d3d90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#ga89e890726a09716bb1a5c6ef6d0d3d90">SD_CMD_SET_DSR</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)4)</td></tr>
+<tr class="separator:ga89e890726a09716bb1a5c6ef6d0d3d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f4e5909200ef9eb61ac2252f4099360"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#ga5f4e5909200ef9eb61ac2252f4099360">SD_CMD_SDIO_SEN_OP_COND</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)5)</td></tr>
+<tr class="separator:ga5f4e5909200ef9eb61ac2252f4099360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga88fb9fd3b2c9fea10b79da9a569d4471"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#ga88fb9fd3b2c9fea10b79da9a569d4471">SD_CMD_HS_SWITCH</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)6)</td></tr>
+<tr class="separator:ga88fb9fd3b2c9fea10b79da9a569d4471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf049767ff08cf35fcddef8f413964050"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#gaf049767ff08cf35fcddef8f413964050">SD_CMD_SEL_DESEL_CARD</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)7)</td></tr>
+<tr class="separator:gaf049767ff08cf35fcddef8f413964050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeea3a373a0065cab0080a56395bc5a19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#gaeea3a373a0065cab0080a56395bc5a19">SD_CMD_HS_SEND_EXT_CSD</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)8)</td></tr>
+<tr class="separator:gaeea3a373a0065cab0080a56395bc5a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaffe6f096eefb62711d4ba298c4598e2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#gaffe6f096eefb62711d4ba298c4598e2e">SD_CMD_SEND_CSD</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)9)</td></tr>
+<tr class="separator:gaffe6f096eefb62711d4ba298c4598e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0df99cd4f523813b603109db94f07c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#gad0df99cd4f523813b603109db94f07c6">SD_CMD_SEND_CID</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)10)</td></tr>
+<tr class="separator:gad0df99cd4f523813b603109db94f07c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf2a1a56e95b0b5ebeca09a38c9538e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#gacf2a1a56e95b0b5ebeca09a38c9538e7">SD_CMD_READ_DAT_UNTIL_STOP</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)11)</td></tr>
+<tr class="separator:gacf2a1a56e95b0b5ebeca09a38c9538e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45a924a12fc702bebac386ed429a60ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#ga45a924a12fc702bebac386ed429a60ff">SD_CMD_STOP_TRANSMISSION</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)12)</td></tr>
+<tr class="separator:ga45a924a12fc702bebac386ed429a60ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d58ed74fb20e34fb557fa97c1935fe3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#ga4d58ed74fb20e34fb557fa97c1935fe3">SD_CMD_SEND_STATUS</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)13)</td></tr>
+<tr class="separator:ga4d58ed74fb20e34fb557fa97c1935fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4dbc2cc034c8f582602063be358ad160"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#ga4dbc2cc034c8f582602063be358ad160">SD_CMD_HS_BUSTEST_READ</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)14)</td></tr>
+<tr class="separator:ga4dbc2cc034c8f582602063be358ad160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab8adaf3188d195b83ba32a9e72863072"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#gab8adaf3188d195b83ba32a9e72863072">SD_CMD_GO_INACTIVE_STATE</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)15)</td></tr>
+<tr class="separator:gab8adaf3188d195b83ba32a9e72863072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77edc6b67b0921f4473adc7b95039de3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#ga77edc6b67b0921f4473adc7b95039de3">SD_CMD_SET_BLOCKLEN</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)16)</td></tr>
+<tr class="separator:ga77edc6b67b0921f4473adc7b95039de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a0361bd4864fe9368ba54bc9b2bda24"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#ga8a0361bd4864fe9368ba54bc9b2bda24">SD_CMD_READ_SINGLE_BLOCK</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)17)</td></tr>
+<tr class="separator:ga8a0361bd4864fe9368ba54bc9b2bda24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafedc6b182681752a4299dffdd1ce74da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#gafedc6b182681752a4299dffdd1ce74da">SD_CMD_READ_MULT_BLOCK</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)18)</td></tr>
+<tr class="separator:gafedc6b182681752a4299dffdd1ce74da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2bc9f60a2cc409365a49862d8551349e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#ga2bc9f60a2cc409365a49862d8551349e">SD_CMD_HS_BUSTEST_WRITE</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)19)</td></tr>
+<tr class="separator:ga2bc9f60a2cc409365a49862d8551349e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6478634540db1fa3fcd044315d1238b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#ga6478634540db1fa3fcd044315d1238b5">SD_CMD_WRITE_DAT_UNTIL_STOP</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)20)</td></tr>
+<tr class="separator:ga6478634540db1fa3fcd044315d1238b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5dd52de3e95163402a5cd995620d4d01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#ga5dd52de3e95163402a5cd995620d4d01">SD_CMD_SET_BLOCK_COUNT</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)23)</td></tr>
+<tr class="separator:ga5dd52de3e95163402a5cd995620d4d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20a1c8427ec19835fe2782ec8febd5ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#ga20a1c8427ec19835fe2782ec8febd5ca">SD_CMD_WRITE_SINGLE_BLOCK</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)24)</td></tr>
+<tr class="separator:ga20a1c8427ec19835fe2782ec8febd5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe82a884b2692654c9862bb25b8706ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#gafe82a884b2692654c9862bb25b8706ce">SD_CMD_WRITE_MULT_BLOCK</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)25)</td></tr>
+<tr class="separator:gafe82a884b2692654c9862bb25b8706ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae4c3d35575ecc87fb571f2bfb80f3847"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#gae4c3d35575ecc87fb571f2bfb80f3847">SD_CMD_PROG_CID</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)26)</td></tr>
+<tr class="separator:gae4c3d35575ecc87fb571f2bfb80f3847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf911e3c602583e43e3bc16def5feebfc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#gaf911e3c602583e43e3bc16def5feebfc">SD_CMD_PROG_CSD</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)27)</td></tr>
+<tr class="separator:gaf911e3c602583e43e3bc16def5feebfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a35e2c3f9d6237bf7a3577225d077d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#ga7a35e2c3f9d6237bf7a3577225d077d8">SD_CMD_SET_WRITE_PROT</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)28)</td></tr>
+<tr class="separator:ga7a35e2c3f9d6237bf7a3577225d077d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1c159cda7e89dfc085ac66e90790a56"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#gac1c159cda7e89dfc085ac66e90790a56">SD_CMD_CLR_WRITE_PROT</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)29)</td></tr>
+<tr class="separator:gac1c159cda7e89dfc085ac66e90790a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabeb680262be8cc173543ae8b1874c83d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#gabeb680262be8cc173543ae8b1874c83d">SD_CMD_SEND_WRITE_PROT</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)30)</td></tr>
+<tr class="separator:gabeb680262be8cc173543ae8b1874c83d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga34496e2b57973936b853bb1d20dc277d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#ga34496e2b57973936b853bb1d20dc277d">SD_CMD_SD_ERASE_GRP_START</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)32)</td></tr>
+<tr class="separator:ga34496e2b57973936b853bb1d20dc277d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3118ae546ea7ba60735b866552047ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#gae3118ae546ea7ba60735b866552047ac">SD_CMD_SD_ERASE_GRP_END</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)33)</td></tr>
+<tr class="separator:gae3118ae546ea7ba60735b866552047ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae91f1c058f4b0aace233e0e4866fa1d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#gae91f1c058f4b0aace233e0e4866fa1d3">SD_CMD_ERASE_GRP_START</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)35)</td></tr>
+<tr class="separator:gae91f1c058f4b0aace233e0e4866fa1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd1685e886f2b4cdeed5813d430a9bf3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#gabd1685e886f2b4cdeed5813d430a9bf3">SD_CMD_ERASE_GRP_END</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)36)</td></tr>
+<tr class="separator:gabd1685e886f2b4cdeed5813d430a9bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16f4d3918ba7fb538f8d1f3fb8bb0bd1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#ga16f4d3918ba7fb538f8d1f3fb8bb0bd1">SD_CMD_ERASE</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)38)</td></tr>
+<tr class="separator:ga16f4d3918ba7fb538f8d1f3fb8bb0bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8319cdb71748237d00c937f0fa47fda"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#gac8319cdb71748237d00c937f0fa47fda">SD_CMD_FAST_IO</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)39)</td></tr>
+<tr class="separator:gac8319cdb71748237d00c937f0fa47fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac71656d887c8fad884e95ec525a0a8af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#gac71656d887c8fad884e95ec525a0a8af">SD_CMD_GO_IRQ_STATE</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)40)</td></tr>
+<tr class="separator:gac71656d887c8fad884e95ec525a0a8af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac89f6043b27673973f4a2b7e106a5f63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#gac89f6043b27673973f4a2b7e106a5f63">SD_CMD_LOCK_UNLOCK</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)42)</td></tr>
+<tr class="separator:gac89f6043b27673973f4a2b7e106a5f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga389f949c4ceace711f57dd00f71a8760"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#ga389f949c4ceace711f57dd00f71a8760">SD_CMD_APP_CMD</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)55)</td></tr>
+<tr class="separator:ga389f949c4ceace711f57dd00f71a8760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga201db10c31dd8f6e30d99ca58dd291e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#ga201db10c31dd8f6e30d99ca58dd291e6">SD_CMD_GEN_CMD</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)56)</td></tr>
+<tr class="separator:ga201db10c31dd8f6e30d99ca58dd291e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab88d7dbeaf38955b1c7d2806f6b446c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_i_o.html#gab88d7dbeaf38955b1c7d2806f6b446c2">SD_CMD_NO_CMD</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)64)</td></tr>
+<tr class="separator:gab88d7dbeaf38955b1c7d2806f6b446c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b28ab176d0d05d7f971809aeb07b758"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___following.html#ga1b28ab176d0d05d7f971809aeb07b758">SD_CMD_APP_SD_SET_BUSWIDTH</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)6)</td></tr>
+<tr class="separator:ga1b28ab176d0d05d7f971809aeb07b758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2984265566ee729869324cf5b842a601"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___following.html#ga2984265566ee729869324cf5b842a601">SD_CMD_SD_APP_STAUS</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)13)</td></tr>
+<tr class="separator:ga2984265566ee729869324cf5b842a601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae38cb2fd8f0e7cb42c76e3b11055c424"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___following.html#gae38cb2fd8f0e7cb42c76e3b11055c424">SD_CMD_SD_APP_SEND_NUM_WRITE_BLOCKS</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)22)</td></tr>
+<tr class="separator:gae38cb2fd8f0e7cb42c76e3b11055c424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga980954ae3a961028fd59f67a1a30a7de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___following.html#ga980954ae3a961028fd59f67a1a30a7de">SD_CMD_SD_APP_OP_COND</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)41)</td></tr>
+<tr class="separator:ga980954ae3a961028fd59f67a1a30a7de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga713f0d9a7c99b7becea80f232c024b59"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___following.html#ga713f0d9a7c99b7becea80f232c024b59">SD_CMD_SD_APP_SET_CLR_CARD_DETECT</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)42)</td></tr>
+<tr class="separator:ga713f0d9a7c99b7becea80f232c024b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11c23db52041ccaca4a2dbcafca62c88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___following.html#ga11c23db52041ccaca4a2dbcafca62c88">SD_CMD_SD_APP_SEND_SCR</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)51)</td></tr>
+<tr class="separator:ga11c23db52041ccaca4a2dbcafca62c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09d3d2d61d003d6bf75c3fb128e86dbb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___following.html#ga09d3d2d61d003d6bf75c3fb128e86dbb">SD_CMD_SDIO_RW_DIRECT</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)52)</td></tr>
+<tr class="separator:ga09d3d2d61d003d6bf75c3fb128e86dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf40f42039cf756a3805800b48e2790ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___following.html#gaf40f42039cf756a3805800b48e2790ed">SD_CMD_SDIO_RW_EXTENDED</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)53)</td></tr>
+<tr class="separator:gaf40f42039cf756a3805800b48e2790ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f8828be53bb69d6436c03c9c2f427c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___following.html#ga4f8828be53bb69d6436c03c9c2f427c6">SD_CMD_SD_APP_GET_MKB</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)43)</td></tr>
+<tr class="separator:ga4f8828be53bb69d6436c03c9c2f427c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2e3bf3ef0ee9a3cbb20d43700521ea7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___following.html#gaf2e3bf3ef0ee9a3cbb20d43700521ea7">SD_CMD_SD_APP_GET_MID</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)44)</td></tr>
+<tr class="separator:gaf2e3bf3ef0ee9a3cbb20d43700521ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga120a1adc8c10961c831b197f0fd51f76"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___following.html#ga120a1adc8c10961c831b197f0fd51f76">SD_CMD_SD_APP_SET_CER_RN1</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)45)</td></tr>
+<tr class="separator:ga120a1adc8c10961c831b197f0fd51f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab8fbec70c55b91b2227dd592b7257eae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___following.html#gab8fbec70c55b91b2227dd592b7257eae">SD_CMD_SD_APP_GET_CER_RN2</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)46)</td></tr>
+<tr class="separator:gab8fbec70c55b91b2227dd592b7257eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6775fd69fe0e739c7464951bd6aacdf1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___following.html#ga6775fd69fe0e739c7464951bd6aacdf1">SD_CMD_SD_APP_SET_CER_RES2</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)47)</td></tr>
+<tr class="separator:ga6775fd69fe0e739c7464951bd6aacdf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f39072d4c981331dfc1956c09d8a72c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___following.html#ga0f39072d4c981331dfc1956c09d8a72c">SD_CMD_SD_APP_GET_CER_RES1</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)48)</td></tr>
+<tr class="separator:ga0f39072d4c981331dfc1956c09d8a72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f4041b0d212f2d5d3f725b0beb97f0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___following.html#ga7f4041b0d212f2d5d3f725b0beb97f0e">SD_CMD_SD_APP_SECURE_READ_MULTIPLE_BLOCK</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)18)</td></tr>
+<tr class="separator:ga7f4041b0d212f2d5d3f725b0beb97f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97cfaea6d5d8646eda4e40b5e0bcbf94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___following.html#ga97cfaea6d5d8646eda4e40b5e0bcbf94">SD_CMD_SD_APP_SECURE_WRITE_MULTIPLE_BLOCK</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)25)</td></tr>
+<tr class="separator:ga97cfaea6d5d8646eda4e40b5e0bcbf94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga60d30f8255fe89e8d1c4aaabb4f3a60f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___following.html#ga60d30f8255fe89e8d1c4aaabb4f3a60f">SD_CMD_SD_APP_SECURE_ERASE</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)38)</td></tr>
+<tr class="separator:ga60d30f8255fe89e8d1c4aaabb4f3a60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15e57ba63b8da2bf43d0205efd532b89"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___following.html#ga15e57ba63b8da2bf43d0205efd532b89">SD_CMD_SD_APP_CHANGE_SECURE_AREA</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)49)</td></tr>
+<tr class="separator:ga15e57ba63b8da2bf43d0205efd532b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga025052e51318ae13855774c1acf04ee2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___following.html#ga025052e51318ae13855774c1acf04ee2">SD_CMD_SD_APP_SECURE_WRITE_MKB</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)48)</td></tr>
+<tr class="separator:ga025052e51318ae13855774c1acf04ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa713e311ddfaf2265d1ba673543a32b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d.html#gaa713e311ddfaf2265d1ba673543a32b2">SDIO_STD_CAPACITY_SD_CARD_V1_1</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000000)</td></tr>
+<tr class="separator:gaa713e311ddfaf2265d1ba673543a32b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e67ed9afb202bc0d2993e17ce940b0d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d.html#ga9e67ed9afb202bc0d2993e17ce940b0d">SDIO_STD_CAPACITY_SD_CARD_V2_0</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000001)</td></tr>
+<tr class="separator:ga9e67ed9afb202bc0d2993e17ce940b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac99ee44931ecbf64e04623c442c00916"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d.html#gac99ee44931ecbf64e04623c442c00916">SDIO_HIGH_CAPACITY_SD_CARD</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000002)</td></tr>
+<tr class="separator:gac99ee44931ecbf64e04623c442c00916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga857bc50f4f97f7f5f525da94db9b2774"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d.html#ga857bc50f4f97f7f5f525da94db9b2774">SDIO_MULTIMEDIA_CARD</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000003)</td></tr>
+<tr class="separator:ga857bc50f4f97f7f5f525da94db9b2774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a0f3bb0a673de7c62c071865307a36e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d.html#ga2a0f3bb0a673de7c62c071865307a36e">SDIO_SECURE_DIGITAL_IO_CARD</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000004)</td></tr>
+<tr class="separator:ga2a0f3bb0a673de7c62c071865307a36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga202a3247319d79b72bd2968761b75144"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d.html#ga202a3247319d79b72bd2968761b75144">SDIO_HIGH_SPEED_MULTIMEDIA_CARD</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000005)</td></tr>
+<tr class="separator:ga202a3247319d79b72bd2968761b75144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga63b1da6dd1a51131f3b53f1fbfb41ae3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d.html#ga63b1da6dd1a51131f3b53f1fbfb41ae3">SDIO_SECURE_DIGITAL_IO_COMBO_CARD</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000006)</td></tr>
+<tr class="separator:ga63b1da6dd1a51131f3b53f1fbfb41ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1551b2950a3d0c5fa148957b4f169d0d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d.html#ga1551b2950a3d0c5fa148957b4f169d0d">SDIO_HIGH_CAPACITY_MMC_CARD</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000007)</td></tr>
+<tr class="separator:ga1551b2950a3d0c5fa148957b4f169d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga070d2ce7b6bb7e5c05602aa8c308d0c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ga070d2ce7b6bb7e5c05602aa8c308d0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab07b969cd21592c74e8ad5d929e97055"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gab07b969cd21592c74e8ad5d929e97055">SDIO_STATIC_FLAGS</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x000005FF)</td></tr>
+<tr class="separator:gab07b969cd21592c74e8ad5d929e97055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga451e336c7bc16567a28475fcb75c9828"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga451e336c7bc16567a28475fcb75c9828">SDIO_CMD0TIMEOUT</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00010000)</td></tr>
+<tr class="separator:ga451e336c7bc16567a28475fcb75c9828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga382d18d77d13eec35d8378641681998e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga382d18d77d13eec35d8378641681998e">SDIO_DATATIMEOUT</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0xFFFFFFFF)</td></tr>
+<tr class="separator:ga382d18d77d13eec35d8378641681998e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga159336f05115165cc73502767aab0518"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga159336f05115165cc73502767aab0518">SDIO_FIFO_Address</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x40018080)</td></tr>
+<tr class="separator:ga159336f05115165cc73502767aab0518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69314e11291e427652a4f6a3a5b1c439"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mask.html#ga69314e11291e427652a4f6a3a5b1c439">SD_OCR_ADDR_OUT_OF_RANGE</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x80000000)</td></tr>
+<tr class="separator:ga69314e11291e427652a4f6a3a5b1c439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga540633bf8f3289c628063e2c1bd5f9ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mask.html#ga540633bf8f3289c628063e2c1bd5f9ab">SD_OCR_ADDR_MISALIGNED</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x40000000)</td></tr>
+<tr class="separator:ga540633bf8f3289c628063e2c1bd5f9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad528da3ef5cf61ecf6d500a9b527c3e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mask.html#gad528da3ef5cf61ecf6d500a9b527c3e9">SD_OCR_BLOCK_LEN_ERR</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x20000000)</td></tr>
+<tr class="separator:gad528da3ef5cf61ecf6d500a9b527c3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga749b810615490fcf173d5355a6f42075"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mask.html#ga749b810615490fcf173d5355a6f42075">SD_OCR_ERASE_SEQ_ERR</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x10000000)</td></tr>
+<tr class="separator:ga749b810615490fcf173d5355a6f42075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadbeb08085e7282275fd5684b5d59d5aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mask.html#gadbeb08085e7282275fd5684b5d59d5aa">SD_OCR_BAD_ERASE_PARAM</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x08000000)</td></tr>
+<tr class="separator:gadbeb08085e7282275fd5684b5d59d5aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabe0162775c8357aa31263ec2225bd123"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mask.html#gabe0162775c8357aa31263ec2225bd123">SD_OCR_WRITE_PROT_VIOLATION</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x04000000)</td></tr>
+<tr class="separator:gabe0162775c8357aa31263ec2225bd123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9a82e52cc83dd23035bc0fdd9a88cf4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mask.html#gac9a82e52cc83dd23035bc0fdd9a88cf4">SD_OCR_LOCK_UNLOCK_FAILED</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x01000000)</td></tr>
+<tr class="separator:gac9a82e52cc83dd23035bc0fdd9a88cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75c4da9e9ca6b935c3afb213dda9c7d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mask.html#ga75c4da9e9ca6b935c3afb213dda9c7d0">SD_OCR_COM_CRC_FAILED</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00800000)</td></tr>
+<tr class="separator:ga75c4da9e9ca6b935c3afb213dda9c7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaacbea47f6b504f11a696e9164d4eb7cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mask.html#gaacbea47f6b504f11a696e9164d4eb7cd">SD_OCR_ILLEGAL_CMD</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00400000)</td></tr>
+<tr class="separator:gaacbea47f6b504f11a696e9164d4eb7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1631f9e745f1f6c1ded6fba841a05a3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mask.html#ga1631f9e745f1f6c1ded6fba841a05a3d">SD_OCR_CARD_ECC_FAILED</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00200000)</td></tr>
+<tr class="separator:ga1631f9e745f1f6c1ded6fba841a05a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3530c6edf8d326b2d72a8a7fb488957b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mask.html#ga3530c6edf8d326b2d72a8a7fb488957b">SD_OCR_CC_ERROR</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00100000)</td></tr>
+<tr class="separator:ga3530c6edf8d326b2d72a8a7fb488957b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11edb9b3be6266ffb00b9a507e3b9fff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mask.html#ga11edb9b3be6266ffb00b9a507e3b9fff">SD_OCR_GENERAL_UNKNOWN_ERROR</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00080000)</td></tr>
+<tr class="separator:ga11edb9b3be6266ffb00b9a507e3b9fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26270305d70e7d17a8bde14c15378bfd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mask.html#ga26270305d70e7d17a8bde14c15378bfd">SD_OCR_STREAM_READ_UNDERRUN</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00040000)</td></tr>
+<tr class="separator:ga26270305d70e7d17a8bde14c15378bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b9973ae82de6ca9acb76444a9204407"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mask.html#ga3b9973ae82de6ca9acb76444a9204407">SD_OCR_STREAM_WRITE_OVERRUN</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00020000)</td></tr>
+<tr class="separator:ga3b9973ae82de6ca9acb76444a9204407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a2a4ac30f0b473c87f283c9b25508c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mask.html#ga5a2a4ac30f0b473c87f283c9b25508c7">SD_OCR_CID_CSD_OVERWRIETE</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00010000)</td></tr>
+<tr class="separator:ga5a2a4ac30f0b473c87f283c9b25508c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe54250dcb2461950611828b409b8c42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mask.html#gafe54250dcb2461950611828b409b8c42">SD_OCR_WP_ERASE_SKIP</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00008000)</td></tr>
+<tr class="separator:gafe54250dcb2461950611828b409b8c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e3e8df5237733fa61ced5304d6e25b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mask.html#ga4e3e8df5237733fa61ced5304d6e25b8">SD_OCR_CARD_ECC_DISABLED</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00004000)</td></tr>
+<tr class="separator:ga4e3e8df5237733fa61ced5304d6e25b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67cbe1781e4db67d3b2fe422ba63de09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mask.html#ga67cbe1781e4db67d3b2fe422ba63de09">SD_OCR_ERASE_RESET</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00002000)</td></tr>
+<tr class="separator:ga67cbe1781e4db67d3b2fe422ba63de09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b6aa7c64b853586d3eecfd251d7709f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mask.html#ga2b6aa7c64b853586d3eecfd251d7709f">SD_OCR_AKE_SEQ_ERROR</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000008)</td></tr>
+<tr class="separator:ga2b6aa7c64b853586d3eecfd251d7709f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace772bc4b0b2fdf6488e308afe8f29d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mask.html#gace772bc4b0b2fdf6488e308afe8f29d1">SD_OCR_ERRORBITS</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0xFDFFE008)</td></tr>
+<tr class="separator:gace772bc4b0b2fdf6488e308afe8f29d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77d65e0cdecf792a2928b61cc85ed687"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___masks.html#ga77d65e0cdecf792a2928b61cc85ed687">SD_R6_GENERAL_UNKNOWN_ERROR</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00002000)</td></tr>
+<tr class="separator:ga77d65e0cdecf792a2928b61cc85ed687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f58bfcb28f68b87113fea12b172a247"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___masks.html#ga4f58bfcb28f68b87113fea12b172a247">SD_R6_ILLEGAL_CMD</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00004000)</td></tr>
+<tr class="separator:ga4f58bfcb28f68b87113fea12b172a247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4677c73c4e8e7e1ec2161554cfdfeeb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___masks.html#gad4677c73c4e8e7e1ec2161554cfdfeeb">SD_R6_COM_CRC_FAILED</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00008000)</td></tr>
+<tr class="separator:gad4677c73c4e8e7e1ec2161554cfdfeeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c04dbb0a43806365bea64893961079e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga0c04dbb0a43806365bea64893961079e">SD_VOLTAGE_WINDOW_SD</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x80100000)</td></tr>
+<tr class="separator:ga0c04dbb0a43806365bea64893961079e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad5a86eaeba6869b6b2139b92ddfb3a1f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gad5a86eaeba6869b6b2139b92ddfb3a1f">SD_HIGH_CAPACITY</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x40000000)</td></tr>
+<tr class="separator:gad5a86eaeba6869b6b2139b92ddfb3a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3cb5fdbf46102857a99b044415873f14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga3cb5fdbf46102857a99b044415873f14">SD_STD_CAPACITY</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000000)</td></tr>
+<tr class="separator:ga3cb5fdbf46102857a99b044415873f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac37389a0323f1a04aec2b59c905f0f6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gac37389a0323f1a04aec2b59c905f0f6a">SD_CHECK_PATTERN</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x000001AA)</td></tr>
+<tr class="separator:gac37389a0323f1a04aec2b59c905f0f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac3500603f00e9b96f513b8464e4b3270"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gac3500603f00e9b96f513b8464e4b3270">SD_VOLTAGE_WINDOW_MMC</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x80FF8000)</td></tr>
+<tr class="separator:gac3500603f00e9b96f513b8464e4b3270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8166660dfea1f2a865e30a8f86269b7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga8166660dfea1f2a865e30a8f86269b7f">SD_MAX_VOLT_TRIAL</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x0000FFFF)</td></tr>
+<tr class="separator:ga8166660dfea1f2a865e30a8f86269b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa989d106109048a2fb453928325d1f7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gaa989d106109048a2fb453928325d1f7d">SD_ALLZERO</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000000)</td></tr>
+<tr class="separator:gaa989d106109048a2fb453928325d1f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6877313126588b7f2ce96f9b4d9a59b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga6877313126588b7f2ce96f9b4d9a59b1">SD_WIDE_BUS_SUPPORT</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00040000)</td></tr>
+<tr class="separator:ga6877313126588b7f2ce96f9b4d9a59b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadfcb6043212373c69f3f740732f5d2b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gadfcb6043212373c69f3f740732f5d2b2">SD_SINGLE_BUS_SUPPORT</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00010000)</td></tr>
+<tr class="separator:gadfcb6043212373c69f3f740732f5d2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0560d0e5f15b8c676bd1c53bf0ac381f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga0560d0e5f15b8c676bd1c53bf0ac381f">SD_CARD_LOCKED</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x02000000)</td></tr>
+<tr class="separator:ga0560d0e5f15b8c676bd1c53bf0ac381f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad109f64b893f8dc28265271dd74c3027"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gad109f64b893f8dc28265271dd74c3027">SD_CARD_PROGRAMMING</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000007)</td></tr>
+<tr class="separator:gad109f64b893f8dc28265271dd74c3027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga289ac705245cf4d150b07b44aecbac54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga289ac705245cf4d150b07b44aecbac54">SD_CARD_RECEIVING</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000006)</td></tr>
+<tr class="separator:ga289ac705245cf4d150b07b44aecbac54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ca34cf6f4e38835347bc2dc29f9469e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga9ca34cf6f4e38835347bc2dc29f9469e">SD_DATATIMEOUT</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0xFFFFFFFF)</td></tr>
+<tr class="separator:ga9ca34cf6f4e38835347bc2dc29f9469e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37de3e6a7edfd787d09efddc589120ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga37de3e6a7edfd787d09efddc589120ae">SD_0TO7BITS</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x000000FF)</td></tr>
+<tr class="separator:ga37de3e6a7edfd787d09efddc589120ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2057731e114d40de0d0d6d2ff74f1501"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga2057731e114d40de0d0d6d2ff74f1501">SD_8TO15BITS</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x0000FF00)</td></tr>
+<tr class="separator:ga2057731e114d40de0d0d6d2ff74f1501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga177a89af799d66f7782e6e8dd4e1438f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga177a89af799d66f7782e6e8dd4e1438f">SD_16TO23BITS</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00FF0000)</td></tr>
+<tr class="separator:ga177a89af799d66f7782e6e8dd4e1438f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d61f23b4fcf1efb4a16b26bd1f54550"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga3d61f23b4fcf1efb4a16b26bd1f54550">SD_24TO31BITS</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0xFF000000)</td></tr>
+<tr class="separator:ga3d61f23b4fcf1efb4a16b26bd1f54550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3be502d718368f47d02b554e863f30b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga3be502d718368f47d02b554e863f30b1">SD_MAX_DATA_LENGTH</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x01FFFFFF)</td></tr>
+<tr class="separator:ga3be502d718368f47d02b554e863f30b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga96eec3ea095e393f51ab2686d928908c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga96eec3ea095e393f51ab2686d928908c">SD_HALFFIFO</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000008)</td></tr>
+<tr class="separator:ga96eec3ea095e393f51ab2686d928908c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga95cd045964036c67c40103ab6aa504b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga95cd045964036c67c40103ab6aa504b7">SD_HALFFIFOBYTES</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000020)</td></tr>
+<tr class="separator:ga95cd045964036c67c40103ab6aa504b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac93a99c6a0f8999f37e690d6955872ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gac93a99c6a0f8999f37e690d6955872ac">SD_CCCC_LOCK_UNLOCK</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000080)</td></tr>
+<tr class="separator:gac93a99c6a0f8999f37e690d6955872ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8cbc04a4adf7c5588ddeb8e29f391f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gad8cbc04a4adf7c5588ddeb8e29f391f2">SD_CCCC_WRITE_PROT</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000040)</td></tr>
+<tr class="separator:gad8cbc04a4adf7c5588ddeb8e29f391f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8f161db032555d848d233e6883e1ddf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gaf8f161db032555d848d233e6883e1ddf">SD_CCCC_ERASE</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000020)</td></tr>
+<tr class="separator:gaf8f161db032555d848d233e6883e1ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe1c9bdbdccf901be62203bf5547147e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gafe1c9bdbdccf901be62203bf5547147e">SDIO_SEND_IF_COND</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000008)</td></tr>
+<tr class="separator:gafe1c9bdbdccf901be62203bf5547147e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga308b8ef0e79ba451644dda923bb3ac41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga308b8ef0e79ba451644dda923bb3ac41">SDIO_Response_No</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00)</td></tr>
+<tr class="separator:ga308b8ef0e79ba451644dda923bb3ac41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f61768f90641648fd5c12e8d2f7e508"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga1f61768f90641648fd5c12e8d2f7e508">SDIO_Response_Short</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x01)</td></tr>
+<tr class="separator:ga1f61768f90641648fd5c12e8d2f7e508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1a11a8750612b344214f846784046bb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga1a11a8750612b344214f846784046bb0">SDIO_Response_Long</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x03)</td></tr>
+<tr class="separator:ga1a11a8750612b344214f846784046bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa86e90ddc3426b242a5230b3360c620d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gaa86e90ddc3426b242a5230b3360c620d">SDIO_DataBlockSize_1b</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000000)</td></tr>
+<tr class="separator:gaa86e90ddc3426b242a5230b3360c620d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7209d9d52635b66df85712c6fcd668ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga7209d9d52635b66df85712c6fcd668ea">SDIO_DataBlockSize_2b</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000001)</td></tr>
+<tr class="separator:ga7209d9d52635b66df85712c6fcd668ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59cbaecfdebd63177d1208c268626f0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga59cbaecfdebd63177d1208c268626f0a">SDIO_DataBlockSize_4b</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000002)</td></tr>
+<tr class="separator:ga59cbaecfdebd63177d1208c268626f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga14f91159c8c4faf49a335ed9b6a94d0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga14f91159c8c4faf49a335ed9b6a94d0b">SDIO_DataBlockSize_8b</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000003)</td></tr>
+<tr class="separator:ga14f91159c8c4faf49a335ed9b6a94d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52a7bdab9a75edd94d9c1152e8b078e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga52a7bdab9a75edd94d9c1152e8b078e2">SDIO_DataBlockSize_16b</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000004)</td></tr>
+<tr class="separator:ga52a7bdab9a75edd94d9c1152e8b078e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0f89aa989c0cedf8d69eb28548413ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gad0f89aa989c0cedf8d69eb28548413ca">SDIO_DataBlockSize_32b</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000005)</td></tr>
+<tr class="separator:gad0f89aa989c0cedf8d69eb28548413ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga981c219228ae8df11a501e15843338d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga981c219228ae8df11a501e15843338d4">SDIO_DataBlockSize_64b</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000006)</td></tr>
+<tr class="separator:ga981c219228ae8df11a501e15843338d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba545c3a5e0f3296341d89a647cb9751"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gaba545c3a5e0f3296341d89a647cb9751">SDIO_DataBlockSize_128b</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000007)</td></tr>
+<tr class="separator:gaba545c3a5e0f3296341d89a647cb9751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa099d7706f98a4fa6eb88277dc6680cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gaa099d7706f98a4fa6eb88277dc6680cf">SDIO_DataBlockSize_256b</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000008)</td></tr>
+<tr class="separator:gaa099d7706f98a4fa6eb88277dc6680cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa619848f7700962c5b7065f43e286e0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gaa619848f7700962c5b7065f43e286e0b">SDIO_DataBlockSize_512b</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000009)</td></tr>
+<tr class="separator:gaa619848f7700962c5b7065f43e286e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7dad3c1c33e63a00eb6301b0a1135baf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga7dad3c1c33e63a00eb6301b0a1135baf">SDIO_DataBlockSize_1024b</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x0000000A)</td></tr>
+<tr class="separator:ga7dad3c1c33e63a00eb6301b0a1135baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41eb937621c7ffcf2688c6bc0ea31464"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga41eb937621c7ffcf2688c6bc0ea31464">SDIO_DataBlockSize_2048b</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x0000000B)</td></tr>
+<tr class="separator:ga41eb937621c7ffcf2688c6bc0ea31464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga360411488abdbaf9eee9b99fca793f79"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga360411488abdbaf9eee9b99fca793f79">SDIO_DataBlockSize_4096b</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x0000000C)</td></tr>
+<tr class="separator:ga360411488abdbaf9eee9b99fca793f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf61913f3eff52c0f728db9ffbdaca7d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gaf61913f3eff52c0f728db9ffbdaca7d2">SDIO_DataBlockSize_8192b</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x0000000D)</td></tr>
+<tr class="separator:gaf61913f3eff52c0f728db9ffbdaca7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae80bc49dbed677f7087d523c31fe10ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gae80bc49dbed677f7087d523c31fe10ae">SDIO_DataBlockSize_16384b</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x0000000E)</td></tr>
+<tr class="separator:gae80bc49dbed677f7087d523c31fe10ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef8af0ffa4ea04b3362338d268cc0935"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gaef8af0ffa4ea04b3362338d268cc0935">SDIO_TransferDir_ToCard</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000000)</td></tr>
+<tr class="separator:gaef8af0ffa4ea04b3362338d268cc0935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga55a6d9613d3e2e7762296b45d0d13222"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga55a6d9613d3e2e7762296b45d0d13222">SDIO_TransferDir_ToSDIO</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000002)</td></tr>
+<tr class="separator:ga55a6d9613d3e2e7762296b45d0d13222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga266294e1ffd7a4b45e62bff753ca44b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga266294e1ffd7a4b45e62bff753ca44b2">SDIO_Wait_No</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000000)</td></tr>
+<tr class="separator:ga266294e1ffd7a4b45e62bff753ca44b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3914bbe26a656c8e151272ccdc12c71c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga3914bbe26a656c8e151272ccdc12c71c">SDIO_Wait_IT</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000100)</td></tr>
+<tr class="separator:ga3914bbe26a656c8e151272ccdc12c71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a4104023a7f8403ddd159ec3bbb8592"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#ga2a4104023a7f8403ddd159ec3bbb8592">SDIO_Wait_Pend</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000200)</td></tr>
+<tr class="separator:ga2a4104023a7f8403ddd159ec3bbb8592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:gacff91fa68daa1d1ee967b5b3fb3dbd8c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gacff91fa68daa1d1ee967b5b3fb3dbd8c">SD_Error</a> { <br />
+&#160;&#160;<a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca6dfaca7c6ace1889e0294f4ec3ec535c">SD_CMD_CRC_FAIL</a> = 1
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8cad99fcef385ca3270d3bce97ed972ff1c">SD_DATA_CRC_FAIL</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8cae1c1b2d0962bd3f40490b15aed01c8ff">SD_CMD_RSP_TIMEOUT</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8cac5f321853ccd7c8aaa571afab467dddd">SD_DATA_TIMEOUT</a>
+, <br />
+&#160;&#160;<a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca7b3c2c028697b45c7e4ab738dfb32732">SD_TX_UNDERRUN</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca8536106ed9ebb00c16d0f42d78f31e37">SD_RX_OVERRUN</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8cacc0291fc528b2bb330ca1487a8a3f3cd">SD_START_BIT_ERR</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca2435ce658dcb58fc0970c9750fecbf10">SD_CMD_OUT_OF_RANGE</a>
+, <br />
+&#160;&#160;<a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8cac862cc999fa6648eeb631ea82a07a51e">SD_ADDR_MISALIGNED</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8cadd08e6cdc391423ee7c1ba246faf42c3">SD_BLOCK_LEN_ERR</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8cae83866c46e2c68646ce05ff3707b042e">SD_ERASE_SEQ_ERR</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8cac52c7addfcb59055f5701898c3484d06">SD_BAD_ERASE_PARAM</a>
+, <br />
+&#160;&#160;<a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca4e295d82b6481694f927367f35aa182d">SD_WRITE_PROT_VIOLATION</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca093949ff310e17d6596e686804cd0e1e">SD_LOCK_UNLOCK_FAILED</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca01a35bd6664353a1af3b9ac093acdf94">SD_COM_CRC_FAILED</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca7fefea39264d07dd179b12be8bf2e51c">SD_ILLEGAL_CMD</a>
+, <br />
+&#160;&#160;<a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca283091b73f40d5c229c2c3f3d0f4cb74">SD_CARD_ECC_FAILED</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca2c6401e2495de3d9fd3b41c273fda150">SD_CC_ERROR</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca46c693b1502d9e2137ead7857cfe5f9b">SD_GENERAL_UNKNOWN_ERROR</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8caadb3266a9761e9e3d82c1b2512ef6668">SD_STREAM_READ_UNDERRUN</a>
+, <br />
+&#160;&#160;<a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca3847c922ab4b7f94469768c63084af6b">SD_STREAM_WRITE_OVERRUN</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8cadc80e2b4a985f211d85fae68e15fd136">SD_CID_CSD_OVERWRITE</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca07b0cc4f75330bdc7efb59f3b3492a3f">SD_WP_ERASE_SKIP</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca4db59f403f83442543a1f1bef242efbd">SD_CARD_ECC_DISABLED</a>
+, <br />
+&#160;&#160;<a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca59f8949439bd7871cb2cf3238c6282c5">SD_ERASE_RESET</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8cafbcf7369094d1a0fa1932c552ab45382">SD_AKE_SEQ_ERROR</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca97d498fc349b05a8945156a9f3ccdff5">SD_INVALID_VOLTRANGE</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca82b0b9ba6052f6f2bd0bee7e79cf8ef3">SD_ADDR_OUT_OF_RANGE</a>
+, <br />
+&#160;&#160;<a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca9566932cb0ad8fe80d5610da9d11fb55">SD_SWITCH_ERROR</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca9e97f8897dab543749255331f57ae1a7">SD_SDIO_DISABLED</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8cae4e66b4e0f2a5f5a49b3c785d9905e8b">SD_SDIO_FUNCTION_BUSY</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8caab75aa11f151a11569079c41d019ef3c">SD_SDIO_FUNCTION_FAILED</a>
+, <br />
+&#160;&#160;<a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca544f7094c7417e8e3be527d83c65d024">SD_SDIO_UNKNOWN_FUNCTION</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca3edc8995af0f0ca919abd400d01d235d">SD_INTERNAL_ERROR</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8cad2334607a2604507143ebbd5fcc82876">SD_NOT_CONFIGURED</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca48c30b9e7fbd21a2e3dc134b9d0c8bff">SD_REQUEST_PENDING</a>
+, <br />
+&#160;&#160;<a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8cada6e80166445f5ee6b7e808a4e7aff23">SD_REQUEST_NOT_APPLICABLE</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca1111de40fd22949b14d492954755a70c">SD_INVALID_PARAMETER</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca788dcef7dd77feb8a8ba97d84813a8fb">SD_UNSUPPORTED_FEATURE</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca280d7d545d73078027a223ff35a2b696">SD_UNSUPPORTED_HW</a>
+, <br />
+&#160;&#160;<a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8ca0002d0c8feceb0fb4cd7d9fc96066c3d">SD_ERROR</a>
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacff91fa68daa1d1ee967b5b3fb3dbd8cae7d9e30a15fd1bc4b2cd8f10208e76a6">SD_OK</a> = 0
+<br />
+ }</td></tr>
+<tr class="memdesc:gacff91fa68daa1d1ee967b5b3fb3dbd8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDIO Various error enumeration definitions  <a href="group___g_p_i_o___exported___types.html#gacff91fa68daa1d1ee967b5b3fb3dbd8c">更多...</a><br /></td></tr>
+<tr class="separator:gacff91fa68daa1d1ee967b5b3fb3dbd8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacdc2533a9bff7dc10def0945f5915398"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gacdc2533a9bff7dc10def0945f5915398">SDCardState</a> { <br />
+&#160;&#160;<a class="el" href="group___g_p_i_o___exported___types.html#ggacdc2533a9bff7dc10def0945f5915398a7105d3ddde877b8d09471eb482fb5520">SD_CARD_READY</a> = ((u32)0x00000001)
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacdc2533a9bff7dc10def0945f5915398a18689e3260641d154376eba9a1e3da47">SD_CARD_IDENTIFICATION</a> = ((u32)0x00000002)
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacdc2533a9bff7dc10def0945f5915398a6e24b45fe387177e2383bac672525f1a">SD_CARD_STANDBY</a> = ((u32)0x00000003)
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacdc2533a9bff7dc10def0945f5915398a090f585cfc114861ad07114914a3ad1d">SD_CARD_TRANSFER</a> = ((u32)0x00000004)
+, <br />
+&#160;&#160;<a class="el" href="group___g_p_i_o___exported___types.html#ggacdc2533a9bff7dc10def0945f5915398a23dec93b22009b39f7b7311f22a7c396">SD_CARD_SENDING</a> = ((u32)0x00000005)
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacdc2533a9bff7dc10def0945f5915398a467165b416761a4858546d616c8dac12">SD_CARD_RECEIVING</a> = ((u32)0x00000006)
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacdc2533a9bff7dc10def0945f5915398aa72e3de9b7ac3217b05862ec2412c6cc">SD_CARD_PROGRAMMING</a> = ((u32)0x00000007)
+, <a class="el" href="group___g_p_i_o___exported___types.html#ggacdc2533a9bff7dc10def0945f5915398ac5dd213f085b94ecd3735f15d6a257ec">SD_CARD_DISCONNECTED</a> = ((u32)0x00000008)
+, <br />
+&#160;&#160;<a class="el" href="group___g_p_i_o___exported___types.html#ggacdc2533a9bff7dc10def0945f5915398aed9c89d9fc0101e995ae957f132af14c">SD_CARD_ERROR</a> = ((u32)0x000000FF)
+<br />
+ }</td></tr>
+<tr class="memdesc:gacdc2533a9bff7dc10def0945f5915398"><td class="mdescLeft">&#160;</td><td class="mdescRight">SD state  <a href="group___g_p_i_o___exported___types.html#gacdc2533a9bff7dc10def0945f5915398">更多...</a><br /></td></tr>
+<tr class="separator:gacdc2533a9bff7dc10def0945f5915398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:gac359d2c6c67a2590f8f9b720c0e4ff1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#gac359d2c6c67a2590f8f9b720c0e4ff1b">SDIO_DeInit</a> (void)</td></tr>
+<tr class="separator:gac359d2c6c67a2590f8f9b720c0e4ff1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga778d338c29df4fae9ef69432e6df32ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga778d338c29df4fae9ef69432e6df32ad">SDIO_StructInit</a> (<a class="el" href="struct_s_d_i_o___init_type_def.html">SDIO_InitTypeDef</a> *SDIO_InitStruct)</td></tr>
+<tr class="memdesc:ga778d338c29df4fae9ef69432e6df32ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills each SDIO_InitStruct member with its default value.  <a href="group___i2_c___exported___functions.html#ga778d338c29df4fae9ef69432e6df32ad">更多...</a><br /></td></tr>
+<tr class="separator:ga778d338c29df4fae9ef69432e6df32ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6824fe7b29eebad5e26e1e81b39f884d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga6824fe7b29eebad5e26e1e81b39f884d">SDIO_ClockSet</a> (<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> value)</td></tr>
+<tr class="memdesc:ga6824fe7b29eebad5e26e1e81b39f884d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the SDIO data path according to the specified parameters in the SDIO_DataInitStruct.  <a href="group___i2_c___exported___functions.html#ga6824fe7b29eebad5e26e1e81b39f884d">更多...</a><br /></td></tr>
+<tr class="separator:ga6824fe7b29eebad5e26e1e81b39f884d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad40764a8e37c0ed5c9141ae338ff0203"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#gad40764a8e37c0ed5c9141ae338ff0203">SDIO_Init</a> (<a class="el" href="struct_s_d_i_o___init_type_def.html">SDIO_InitTypeDef</a> *SDIO_InitStruct)</td></tr>
+<tr class="memdesc:gad40764a8e37c0ed5c9141ae338ff0203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the SDIO peripheral according to the specified parameters in the SDIO_InitStruct.  <a href="group___i2_c___exported___functions.html#gad40764a8e37c0ed5c9141ae338ff0203">更多...</a><br /></td></tr>
+<tr class="separator:gad40764a8e37c0ed5c9141ae338ff0203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf40594ca2987d8b4fc4dbb9d59ccf3e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#gaf40594ca2987d8b4fc4dbb9d59ccf3e0">SDIO_ITConfig</a> (<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> SDIO_IT, <a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="memdesc:gaf40594ca2987d8b4fc4dbb9d59ccf3e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the SDIO interrupts.  <a href="group___i2_c___exported___functions.html#gaf40594ca2987d8b4fc4dbb9d59ccf3e0">更多...</a><br /></td></tr>
+<tr class="separator:gaf40594ca2987d8b4fc4dbb9d59ccf3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38f1b73fa641efeeb6a96472d989c767"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga38f1b73fa641efeeb6a96472d989c767">SDIO_CRCConfig</a> (<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> SDIO_CRC, <a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="memdesc:ga38f1b73fa641efeeb6a96472d989c767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the SDIO CRC.  <a href="group___i2_c___exported___functions.html#ga38f1b73fa641efeeb6a96472d989c767">更多...</a><br /></td></tr>
+<tr class="separator:ga38f1b73fa641efeeb6a96472d989c767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa843456dbaf1590d8a5b3dc5a075dcf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#gaa843456dbaf1590d8a5b3dc5a075dcf9">SDIO_Clock_Set</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> clkdiv)</td></tr>
+<tr class="memdesc:gaa843456dbaf1590d8a5b3dc5a075dcf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Port transfer speed mode.  <a href="group___i2_c___exported___functions.html#gaa843456dbaf1590d8a5b3dc5a075dcf9">更多...</a><br /></td></tr>
+<tr class="separator:gaa843456dbaf1590d8a5b3dc5a075dcf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6ac7722df2ba23f1a716db8a4b38a49a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga6ac7722df2ba23f1a716db8a4b38a49a">SDIO_Send_Cmd</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> cmdindex, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> waitrsp, <a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> arg)</td></tr>
+<tr class="memdesc:ga6ac7722df2ba23f1a716db8a4b38a49a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDIO sends command functions.  <a href="group___i2_c___exported___functions.html#ga6ac7722df2ba23f1a716db8a4b38a49a">更多...</a><br /></td></tr>
+<tr class="separator:ga6ac7722df2ba23f1a716db8a4b38a49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f053c27018521095d7333e7df238764"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___g_p_i_o___exported___types.html#gacff91fa68daa1d1ee967b5b3fb3dbd8c">SD_Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga9f053c27018521095d7333e7df238764">SD_PowerOFF</a> (void)</td></tr>
+<tr class="memdesc:ga9f053c27018521095d7333e7df238764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn off the SDIO switch.  <a href="group___i2_c___exported___functions.html#ga9f053c27018521095d7333e7df238764">更多...</a><br /></td></tr>
+<tr class="separator:ga9f053c27018521095d7333e7df238764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77ff57848ed54cc9dbfcb2cdfd4d3104"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___g_p_i_o___exported___types.html#gacff91fa68daa1d1ee967b5b3fb3dbd8c">SD_Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga77ff57848ed54cc9dbfcb2cdfd4d3104">CmdError</a> (void)</td></tr>
+<tr class="memdesc:ga77ff57848ed54cc9dbfcb2cdfd4d3104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the execution status of CMD0.  <a href="group___i2_c___exported___functions.html#ga77ff57848ed54cc9dbfcb2cdfd4d3104">更多...</a><br /></td></tr>
+<tr class="separator:ga77ff57848ed54cc9dbfcb2cdfd4d3104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae875982cdc6a453c2793073e8004585e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___g_p_i_o___exported___types.html#gacff91fa68daa1d1ee967b5b3fb3dbd8c">SD_Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#gae875982cdc6a453c2793073e8004585e">CmdResp2Error</a> (void)</td></tr>
+<tr class="memdesc:gae875982cdc6a453c2793073e8004585e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the execution status of CMD2.  <a href="group___i2_c___exported___functions.html#gae875982cdc6a453c2793073e8004585e">更多...</a><br /></td></tr>
+<tr class="separator:gae875982cdc6a453c2793073e8004585e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c77db272852343b90b0b06573a60e88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___g_p_i_o___exported___types.html#gacff91fa68daa1d1ee967b5b3fb3dbd8c">SD_Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga2c77db272852343b90b0b06573a60e88">CmdResp3Error</a> (void)</td></tr>
+<tr class="memdesc:ga2c77db272852343b90b0b06573a60e88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the execution status of CMD3.  <a href="group___i2_c___exported___functions.html#ga2c77db272852343b90b0b06573a60e88">更多...</a><br /></td></tr>
+<tr class="separator:ga2c77db272852343b90b0b06573a60e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacfe36517f07f12f6b5512ca99cf5e6a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___g_p_i_o___exported___types.html#gacff91fa68daa1d1ee967b5b3fb3dbd8c">SD_Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#gacfe36517f07f12f6b5512ca99cf5e6a1">CmdResp6Error</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> cmd, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> *prca)</td></tr>
+<tr class="memdesc:gacfe36517f07f12f6b5512ca99cf5e6a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the execution status of CMD6.  <a href="group___i2_c___exported___functions.html#gacfe36517f07f12f6b5512ca99cf5e6a1">更多...</a><br /></td></tr>
+<tr class="separator:gacfe36517f07f12f6b5512ca99cf5e6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f8858b757aa1b13e112175cddaf62b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___g_p_i_o___exported___types.html#gacff91fa68daa1d1ee967b5b3fb3dbd8c">SD_Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga6f8858b757aa1b13e112175cddaf62b9">CmdResp7Error</a> (void)</td></tr>
+<tr class="memdesc:ga6f8858b757aa1b13e112175cddaf62b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the execution status of CMD7.  <a href="group___i2_c___exported___functions.html#ga6f8858b757aa1b13e112175cddaf62b9">更多...</a><br /></td></tr>
+<tr class="separator:ga6f8858b757aa1b13e112175cddaf62b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga384372e7cd037af3dbc92da854508c70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___g_p_i_o___exported___types.html#gacff91fa68daa1d1ee967b5b3fb3dbd8c">SD_Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga384372e7cd037af3dbc92da854508c70">CmdResp1Error</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> cmd)</td></tr>
+<tr class="memdesc:ga384372e7cd037af3dbc92da854508c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the error status of the R1 response.  <a href="group___i2_c___exported___functions.html#ga384372e7cd037af3dbc92da854508c70">更多...</a><br /></td></tr>
+<tr class="separator:ga384372e7cd037af3dbc92da854508c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ed0e660e0b895d3f9cb9a560ad50291"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga8ed0e660e0b895d3f9cb9a560ad50291">SDIO_Send_Data_Cfg</a> (<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> datatimeout, <a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> datalen, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> blksize, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> dir)</td></tr>
+<tr class="memdesc:ga8ed0e660e0b895d3f9cb9a560ad50291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data direction block size configuration.  <a href="group___i2_c___exported___functions.html#ga8ed0e660e0b895d3f9cb9a560ad50291">更多...</a><br /></td></tr>
+<tr class="separator:ga8ed0e660e0b895d3f9cb9a560ad50291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga160c7fe3b6f5c5812caa893a47f3e89a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga160c7fe3b6f5c5812caa893a47f3e89a">SDIO_ClearITPendingBit</a> (<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> SDIO_IT)</td></tr>
+<tr class="memdesc:ga160c7fe3b6f5c5812caa893a47f3e89a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the SDIO's interrupt pending bits.  <a href="group___i2_c___exported___functions.html#ga160c7fe3b6f5c5812caa893a47f3e89a">更多...</a><br /></td></tr>
+<tr class="separator:ga160c7fe3b6f5c5812caa893a47f3e89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c48bd26d3f6a531cb667bfaf6525520"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a89136caac2e14c55151f527ac02daaff">FlagStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga2c48bd26d3f6a531cb667bfaf6525520">SDIO_GetFlagStatus</a> (<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> SDIO_FLAG)</td></tr>
+<tr class="memdesc:ga2c48bd26d3f6a531cb667bfaf6525520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified SDIO flag is set or not.  <a href="group___i2_c___exported___functions.html#ga2c48bd26d3f6a531cb667bfaf6525520">更多...</a><br /></td></tr>
+<tr class="separator:ga2c48bd26d3f6a531cb667bfaf6525520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga186e0c0406b9f6e56e33421f287a613b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga186e0c0406b9f6e56e33421f287a613b">SDIO_GetTimeOutCounter</a> (void)</td></tr>
+<tr class="memdesc:ga186e0c0406b9f6e56e33421f287a613b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the value of the data transfer timeout count  <a href="group___i2_c___exported___functions.html#ga186e0c0406b9f6e56e33421f287a613b">更多...</a><br /></td></tr>
+<tr class="separator:ga186e0c0406b9f6e56e33421f287a613b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2e0007f7bb12c1b43f7495c6a4a20b50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga2e0007f7bb12c1b43f7495c6a4a20b50">SDIO_ReadData</a> (void)</td></tr>
+<tr class="memdesc:ga2e0007f7bb12c1b43f7495c6a4a20b50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read one data word from FIFO.  <a href="group___i2_c___exported___functions.html#ga2e0007f7bb12c1b43f7495c6a4a20b50">更多...</a><br /></td></tr>
+<tr class="separator:ga2e0007f7bb12c1b43f7495c6a4a20b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5a58e2b720a0492c693b60024ee41b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#gac5a58e2b720a0492c693b60024ee41b0">SDIO_WriteData</a> (<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> tempbuff)</td></tr>
+<tr class="memdesc:gac5a58e2b720a0492c693b60024ee41b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write one data word to FIFO.  <a href="group___i2_c___exported___functions.html#gac5a58e2b720a0492c693b60024ee41b0">更多...</a><br /></td></tr>
+<tr class="separator:gac5a58e2b720a0492c693b60024ee41b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c83f845a6c1f66883c3bb6254977cda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga5c83f845a6c1f66883c3bb6254977cda">SDIO_DMACmd</a> (<a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="memdesc:ga5c83f845a6c1f66883c3bb6254977cda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or Dsiable DMA .  <a href="group___i2_c___exported___functions.html#ga5c83f845a6c1f66883c3bb6254977cda">更多...</a><br /></td></tr>
+<tr class="separator:ga5c83f845a6c1f66883c3bb6254977cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:gad9b4efaae93cd75532b18c0528a4ca3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s_d___card_info.html">SD_CardInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_p_i_o___exported___types.html#gad9b4efaae93cd75532b18c0528a4ca3d">SDCardInfo</a></td></tr>
+<tr class="separator:gad9b4efaae93cd75532b18c0528a4ca3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

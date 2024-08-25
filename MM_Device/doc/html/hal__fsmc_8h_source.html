@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>template: C:/Users/XerolySkinner/Desktop/MM_Device/MM32F327x/HAL_Lib/Inc/hal_fsmc.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">template
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8a23370bd962f2be3cb202251f8a0865.html">MM32F327x</a></li><li class="navelem"><a class="el" href="dir_3b1bed74bcb45e4245a73e66928ea90d.html">HAL_Lib</a></li><li class="navelem"><a class="el" href="dir_d0c94a65a7731bb943335e05fa4de4c7.html">Inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">hal_fsmc.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="hal__fsmc_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// Define to prevent recursive inclusion</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#ifndef __HAL_FSMC_H</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#define __HAL_FSMC_H</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Files includes</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">types.h</a>&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="reg__common_8h.html">reg_common.h</a>&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="reg__fsmc_8h.html">reg_fsmc.h</a>&quot;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">// Timing parameter configuration register set selection register set0 register set1 register set2</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ga7f8af59af780df8068c73f99ebe98e4b">   51</a></span><span class="preprocessor">#define FSMC_TimingRegSelect_0    ((u32)0x00000000)</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#gaa526b31f718d47362b0353a815162593">   52</a></span><span class="preprocessor">#define FSMC_TimingRegSelect_1    ((u32)0x00000100)</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ga16c79c66250fea570edfddcd1afd80c8">   53</a></span><span class="preprocessor">#define FSMC_TimingRegSelect_2    ((u32)0x00000200)</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">// Capacity of external device</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#gadd0bd90615fa8200bc721a834be2296c">   56</a></span><span class="preprocessor">#define FSMC_MemSize_None   ((u32)0x00000000)</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ga97602fa58abfc6be84234a988495ee14">   57</a></span><span class="preprocessor">#define FSMC_MemSize_64KB   ((u32)0x00000001)</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#gace1d6bc99b68494ea5120ee5d2031a07">   58</a></span><span class="preprocessor">#define FSMC_MemSize_128KB  ((u32)0x00000002)</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#gaeb43fe37592e3aab6907a584a8b45f64">   59</a></span><span class="preprocessor">#define FSMC_MemSize_256KB  ((u32)0x00000002)</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ga882e00998030f25678e8523f6f800797">   60</a></span><span class="preprocessor">#define FSMC_MemSize_512KB  ((u32)0x00000004)</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ga1887ddc6ae27ef82ddd670a926d820b1">   61</a></span><span class="preprocessor">#define FSMC_MemSize_1MB    ((u32)0x00000005)</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ga110a4284639d1427a976cf747830701c">   62</a></span><span class="preprocessor">#define FSMC_MemSize_2MB    ((u32)0x00000006)</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ga79878c25c00d9e030a292ca0f569e0f8">   63</a></span><span class="preprocessor">#define FSMC_MemSize_4MB    ((u32)0x00000007)</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ga76514e85b7a0b396aa6ca851ccb59c57">   64</a></span><span class="preprocessor">#define FSMC_MemSize_8MB    ((u32)0x00000008)</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ga87d62de8c8d40275eec0fbe7ea065305">   65</a></span><span class="preprocessor">#define FSMC_MemSize_16MB   ((u32)0x00000009)</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ga4a599db9a6f68638dcc9035c07b0e9cd">   66</a></span><span class="preprocessor">#define FSMC_MemSize_32MB   ((u32)0x0000000A)</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ga5b954760145bc8e04129ee399efb72f1">   67</a></span><span class="preprocessor">#define FSMC_MemSize_64MB   ((u32)0x0000000B)</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ga6858523bbffe17b54b846d3f07a29da3">   68</a></span><span class="preprocessor">#define FSMC_MemSize_128MB  ((u32)0x0000000C)</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#gaa12cadf18327eac4e077c51b1db17fa9">   69</a></span><span class="preprocessor">#define FSMC_MemSize_256MB  ((u32)0x0000000D)</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#gab03f685c5f69faf7f42b7bd3418350e5">   70</a></span><span class="preprocessor">#define FSMC_MemSize_512MB  ((u32)0x0000000E)</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ga8a7f5efa43dadebbb34866f301479e73">   71</a></span><span class="preprocessor">#define FSMC_MemSize_1GB    ((u32)0x0000000F)</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#gaad4126a8487157b523e73904a7686492">   72</a></span><span class="preprocessor">#define FSMC_MemSize_2GB    ((u32)0x00000010)</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#gab17c45dceb9187b5c7c4f171c4afd065">   73</a></span><span class="preprocessor">#define FSMC_MemSize_4GB    ((u32)0x00000011)</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">// Memory data bus bit width setting</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#gac7e350865ac6d8b44cfded181628e1bb">   77</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ggac7e350865ac6d8b44cfded181628e1bba20d1d7d1a0afa5acb4057ebb25477b3b">   78</a></span>    <a class="code hl_enumvalue" href="group___f_s_m_c___exported___types.html#ggac7e350865ac6d8b44cfded181628e1bba20d1d7d1a0afa5acb4057ebb25477b3b">FSMC_DataWidth_16bits</a>      = (0x0000), <span class="comment">//16bits</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ggac7e350865ac6d8b44cfded181628e1bba79480b3f4dfe2376da8c11bc9901c5f6">   79</a></span>    <a class="code hl_enumvalue" href="group___f_s_m_c___exported___types.html#ggac7e350865ac6d8b44cfded181628e1bba79480b3f4dfe2376da8c11bc9901c5f6">FSMC_DataWidth_32bits</a>      = (0x0001), <span class="comment">//32bits</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ggac7e350865ac6d8b44cfded181628e1bba1bd17967893a58c6d097515b9450b76e">   80</a></span>    <a class="code hl_enumvalue" href="group___f_s_m_c___exported___types.html#ggac7e350865ac6d8b44cfded181628e1bba1bd17967893a58c6d097515b9450b76e">FSMC_DataWidth_64bits</a>      = (0x0002), <span class="comment">//64bits</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ggac7e350865ac6d8b44cfded181628e1bba2cd17faf19f57be0d4a879309585fbf6">   81</a></span>    <a class="code hl_enumvalue" href="group___f_s_m_c___exported___types.html#ggac7e350865ac6d8b44cfded181628e1bba2cd17faf19f57be0d4a879309585fbf6">FSMC_DataWidth_128bits</a>     = (0x0003), <span class="comment">//128bits</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ggac7e350865ac6d8b44cfded181628e1bbaee88f750697f6d53751f712b91d5ce9e">   82</a></span>    <a class="code hl_enumvalue" href="group___f_s_m_c___exported___types.html#ggac7e350865ac6d8b44cfded181628e1bbaee88f750697f6d53751f712b91d5ce9e">FSMC_DataWidth_8bits</a>       = (0x0004), <span class="comment">//8bits</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>} <a class="code hl_enumeration" href="group___f_s_m_c___exported___types.html#gac7e350865ac6d8b44cfded181628e1bb">FSMC_NORSRAM_DataWidth_TypeDef</a>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ga99bd18a2610c2b6bf2454edeeb7e992e">   85</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#gga99bd18a2610c2b6bf2454edeeb7e992ea6ee9c39fd28179c00823121a913bbb1d">   86</a></span>    <a class="code hl_enumvalue" href="group___f_s_m_c___exported___types.html#gga99bd18a2610c2b6bf2454edeeb7e992ea6ee9c39fd28179c00823121a913bbb1d">FSMC_NORSRAM_BANK0</a> = 0,</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#gga99bd18a2610c2b6bf2454edeeb7e992ea42f8b89bbd085c1794ea5e3c53c1f7d8">   87</a></span>    <a class="code hl_enumvalue" href="group___f_s_m_c___exported___types.html#gga99bd18a2610c2b6bf2454edeeb7e992ea42f8b89bbd085c1794ea5e3c53c1f7d8">FSMC_NORSRAM_BANK1</a> = 1,</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#gga99bd18a2610c2b6bf2454edeeb7e992ea5f3a18df99a2974b1a6ae0ca114b6321">   88</a></span>    <a class="code hl_enumvalue" href="group___f_s_m_c___exported___types.html#gga99bd18a2610c2b6bf2454edeeb7e992ea5f3a18df99a2974b1a6ae0ca114b6321">FSMC_NORSRAM_BANK2</a> = 2,</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>} <a class="code hl_enumeration" href="group___f_s_m_c___exported___types.html#ga99bd18a2610c2b6bf2454edeeb7e992e">FSMC_NORSRAM_BANK_TypeDef</a>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html">   91</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html#ae3088eb8408e474c07879a2a1be37230">   92</a></span>    <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html#ae3088eb8408e474c07879a2a1be37230">FSMC_SMReadPipe</a>;                                                        <span class="comment">//sm_read_pipe[1:0] The cycle of latching read data, that is, the cycle when ready_resp is pulled high</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html#a759a96c9d895528522aa1d6e6cce4d09">   94</a></span>    <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html#a759a96c9d895528522aa1d6e6cce4d09">FSMC_ReadyMode</a>;                                                         <span class="comment">//Select whether the hready_resp signal comes from the FSMC IP internal or external DEVICE, only for writing and reading external DEVICE operations.</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="comment">//0: Internal FSMC 1: External DEVICE (ie from FSMC_NWAIT)</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html#a9e2d261e8419f9e0640021c9783d9773">   96</a></span>    <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html#a9e2d261e8419f9e0640021c9783d9773">FSMC_WritePeriod</a>;                                                       <span class="comment">//Write cycle</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html#a2d08e2ab227ff55186d0dfc6dd4b9f7e">   98</a></span>    <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html#a2d08e2ab227ff55186d0dfc6dd4b9f7e">FSMC_WriteHoldTime</a>;                                                     <span class="comment">//Address/data hold time during write operation</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html#a3a0b83c9773301063a1a0806a395fbe4">  100</a></span>    <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html#a3a0b83c9773301063a1a0806a395fbe4">FSMC_AddrSetTime</a>;                                                       <span class="comment">//Address establishment time</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html#a57d209c28a4f78a8513d8f2f2d09c7ea">  102</a></span>    <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html#a57d209c28a4f78a8513d8f2f2d09c7ea">FSMC_ReadPeriod</a>;                                                        <span class="comment">//Read cycle</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html#a99f8777c4959878f72eb51181fbb36ca">  104</a></span>    <a class="code hl_enumeration" href="group___f_s_m_c___exported___types.html#gac7e350865ac6d8b44cfded181628e1bb">FSMC_NORSRAM_DataWidth_TypeDef</a> <a class="code hl_variable" href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html#a99f8777c4959878f72eb51181fbb36ca">FSMC_DataWidth</a>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>} <a class="code hl_struct" href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html">FSMC_NORSRAM_Bank_InitTypeDef</a>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="struct_f_s_m_c___init_type_def.html">  108</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="struct_f_s_m_c___init_type_def.html#acc1b5f5c6d67814b27505cbad60d962f">  109</a></span>    <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_f_s_m_c___init_type_def.html#acc1b5f5c6d67814b27505cbad60d962f">FSMC_Mode</a>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="struct_f_s_m_c___init_type_def.html#a2d1bf3846817b35a9d4bb0f3b1ac0d98">  110</a></span>    <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_f_s_m_c___init_type_def.html#a2d1bf3846817b35a9d4bb0f3b1ac0d98">FSMC_TimingRegSelect</a>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="struct_f_s_m_c___init_type_def.html#a3dab2677b1af91417fc47daf09a09220">  111</a></span>    <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_f_s_m_c___init_type_def.html#a3dab2677b1af91417fc47daf09a09220">FSMC_MemSize</a>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="struct_f_s_m_c___init_type_def.html#a0c110440e254de96707f5744506c62e4">  112</a></span>    <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_f_s_m_c___init_type_def.html#a0c110440e254de96707f5744506c62e4">FSMC_MemType</a>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="struct_f_s_m_c___init_type_def.html#ab1bb053d84782e494ffaa6d263b76d28">  113</a></span>    <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_f_s_m_c___init_type_def.html#ab1bb053d84782e494ffaa6d263b76d28">FSMC_AddrDataMode</a>;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>} <a class="code hl_struct" href="struct_f_s_m_c___init_type_def.html">FSMC_InitTypeDef</a>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#gabe0f6a5befc2d7267d4eb580d412d5d6">  117</a></span><span class="preprocessor">#define FSMC_MemType_SDRAM          ((u32)0x0&lt;&lt;5)</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ga38c486cc00707b7772eb205fee9fbac6">  118</a></span><span class="preprocessor">#define FSMC_MemType_NorSRAM        ((u32)0x1&lt;&lt;5)</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#gafbb133a5380fb6191896832c65330706">  119</a></span><span class="preprocessor">#define FSMC_MemType_FLASH          ((u32)0x2&lt;&lt;5)</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ga2971dfe628b2f1cf1a3e8d127801ff2a">  120</a></span><span class="preprocessor">#define FSMC_MemType_RESERVED       ((u32)0x3&lt;&lt;5)</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">//SYSCFG_CFGR1</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ga9034fea13f3d8432e1d61cec4fe3840f">  122</a></span><span class="preprocessor">#define FSMC_Mode_6800              ((u32)0x40000000)</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#gaf2f2ea3455cc2ef0c3ec4d2c04e80fb0">  123</a></span><span class="preprocessor">#define FSMC_Mode_8080              ((u32)0x20000000)</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#gacf43401396c600535a4ca7001aea0e5b">  124</a></span><span class="preprocessor">#define FSMC_Mode_NorFlash          ((u32)0x00000000)</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#gaae23df1b8fe5ede25662ea9f22439014">  126</a></span><span class="preprocessor">#define FSMC_AddrDataMUX            ((u32)0x00000000)</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="group___f_s_m_c___exported___types.html#ga9ef899479d3b98c4208b18ded67bc6c6">  127</a></span><span class="preprocessor">#define FSMC_AddrDataDeMUX          ((u32)0x10000000)</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___f_s_m_c___exported___types.html#ga99b09272a4eb324309c4339993f7ffc9">FSMC_NORSRAMStructInit</a>(<a class="code hl_struct" href="struct_f_s_m_c___init_type_def.html">FSMC_InitTypeDef</a>* init_struct);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___f_s_m_c___exported___types.html#ga4408aa26918b6cf7a84f0fa482cc6613">FSMC_NORSRAM_BankStructInit</a>(<a class="code hl_struct" href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html">FSMC_NORSRAM_Bank_InitTypeDef</a>* init_struct);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___f_s_m_c___exported___types.html#ga2594e3181adfc5140f69d9c5abb5f82c">FSMC_NORSRAMInit</a>(<a class="code hl_struct" href="struct_f_s_m_c___init_type_def.html">FSMC_InitTypeDef</a>* init_struct);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___f_s_m_c___exported___types.html#ga43f72d46ad740647528f6cc45684cdd0">FSMC_NORSRAM_Bank_Init</a>(<a class="code hl_struct" href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html">FSMC_NORSRAM_Bank_InitTypeDef</a>* FSMC_Bank_InitStruct, <a class="code hl_enumeration" href="group___f_s_m_c___exported___types.html#ga99bd18a2610c2b6bf2454edeeb7e992e">FSMC_NORSRAM_BANK_TypeDef</a> bank);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="preprocessor">#endif </span><span class="comment">// __HAL_FSMC_H </span></div>
+<div class="ttc" id="agroup___f_s_m_c___exported___types_html_ga2594e3181adfc5140f69d9c5abb5f82c"><div class="ttname"><a href="group___f_s_m_c___exported___types.html#ga2594e3181adfc5140f69d9c5abb5f82c">FSMC_NORSRAMInit</a></div><div class="ttdeci">void FSMC_NORSRAMInit(FSMC_InitTypeDef *init_struct)</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8c_source.html#l00062">hal_fsmc.c:62</a></div></div>
+<div class="ttc" id="agroup___f_s_m_c___exported___types_html_ga43f72d46ad740647528f6cc45684cdd0"><div class="ttname"><a href="group___f_s_m_c___exported___types.html#ga43f72d46ad740647528f6cc45684cdd0">FSMC_NORSRAM_Bank_Init</a></div><div class="ttdeci">void FSMC_NORSRAM_Bank_Init(FSMC_NORSRAM_Bank_InitTypeDef *FSMC_Bank_InitStruct, FSMC_NORSRAM_BANK_TypeDef bank)</div><div class="ttdoc">Initialize the FSMC_NORSRAM Timing according to the specified parameters in the FSMC_NORSRAM_TimingTy...</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8c_source.html#l00079">hal_fsmc.c:79</a></div></div>
+<div class="ttc" id="agroup___f_s_m_c___exported___types_html_ga4408aa26918b6cf7a84f0fa482cc6613"><div class="ttname"><a href="group___f_s_m_c___exported___types.html#ga4408aa26918b6cf7a84f0fa482cc6613">FSMC_NORSRAM_BankStructInit</a></div><div class="ttdeci">void FSMC_NORSRAM_BankStructInit(FSMC_NORSRAM_Bank_InitTypeDef *init_struct)</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8c_source.html#l00051">hal_fsmc.c:51</a></div></div>
+<div class="ttc" id="agroup___f_s_m_c___exported___types_html_ga99b09272a4eb324309c4339993f7ffc9"><div class="ttname"><a href="group___f_s_m_c___exported___types.html#ga99b09272a4eb324309c4339993f7ffc9">FSMC_NORSRAMStructInit</a></div><div class="ttdeci">void FSMC_NORSRAMStructInit(FSMC_InitTypeDef *init_struct)</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8c_source.html#l00042">hal_fsmc.c:42</a></div></div>
+<div class="ttc" id="agroup___f_s_m_c___exported___types_html_ga99bd18a2610c2b6bf2454edeeb7e992e"><div class="ttname"><a href="group___f_s_m_c___exported___types.html#ga99bd18a2610c2b6bf2454edeeb7e992e">FSMC_NORSRAM_BANK_TypeDef</a></div><div class="ttdeci">FSMC_NORSRAM_BANK_TypeDef</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00085">hal_fsmc.h:85</a></div></div>
+<div class="ttc" id="agroup___f_s_m_c___exported___types_html_gac7e350865ac6d8b44cfded181628e1bb"><div class="ttname"><a href="group___f_s_m_c___exported___types.html#gac7e350865ac6d8b44cfded181628e1bb">FSMC_NORSRAM_DataWidth_TypeDef</a></div><div class="ttdeci">FSMC_NORSRAM_DataWidth_TypeDef</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00077">hal_fsmc.h:77</a></div></div>
+<div class="ttc" id="agroup___f_s_m_c___exported___types_html_gga99bd18a2610c2b6bf2454edeeb7e992ea42f8b89bbd085c1794ea5e3c53c1f7d8"><div class="ttname"><a href="group___f_s_m_c___exported___types.html#gga99bd18a2610c2b6bf2454edeeb7e992ea42f8b89bbd085c1794ea5e3c53c1f7d8">FSMC_NORSRAM_BANK1</a></div><div class="ttdeci">@ FSMC_NORSRAM_BANK1</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00087">hal_fsmc.h:87</a></div></div>
+<div class="ttc" id="agroup___f_s_m_c___exported___types_html_gga99bd18a2610c2b6bf2454edeeb7e992ea5f3a18df99a2974b1a6ae0ca114b6321"><div class="ttname"><a href="group___f_s_m_c___exported___types.html#gga99bd18a2610c2b6bf2454edeeb7e992ea5f3a18df99a2974b1a6ae0ca114b6321">FSMC_NORSRAM_BANK2</a></div><div class="ttdeci">@ FSMC_NORSRAM_BANK2</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00088">hal_fsmc.h:88</a></div></div>
+<div class="ttc" id="agroup___f_s_m_c___exported___types_html_gga99bd18a2610c2b6bf2454edeeb7e992ea6ee9c39fd28179c00823121a913bbb1d"><div class="ttname"><a href="group___f_s_m_c___exported___types.html#gga99bd18a2610c2b6bf2454edeeb7e992ea6ee9c39fd28179c00823121a913bbb1d">FSMC_NORSRAM_BANK0</a></div><div class="ttdeci">@ FSMC_NORSRAM_BANK0</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00086">hal_fsmc.h:86</a></div></div>
+<div class="ttc" id="agroup___f_s_m_c___exported___types_html_ggac7e350865ac6d8b44cfded181628e1bba1bd17967893a58c6d097515b9450b76e"><div class="ttname"><a href="group___f_s_m_c___exported___types.html#ggac7e350865ac6d8b44cfded181628e1bba1bd17967893a58c6d097515b9450b76e">FSMC_DataWidth_64bits</a></div><div class="ttdeci">@ FSMC_DataWidth_64bits</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00080">hal_fsmc.h:80</a></div></div>
+<div class="ttc" id="agroup___f_s_m_c___exported___types_html_ggac7e350865ac6d8b44cfded181628e1bba20d1d7d1a0afa5acb4057ebb25477b3b"><div class="ttname"><a href="group___f_s_m_c___exported___types.html#ggac7e350865ac6d8b44cfded181628e1bba20d1d7d1a0afa5acb4057ebb25477b3b">FSMC_DataWidth_16bits</a></div><div class="ttdeci">@ FSMC_DataWidth_16bits</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00078">hal_fsmc.h:78</a></div></div>
+<div class="ttc" id="agroup___f_s_m_c___exported___types_html_ggac7e350865ac6d8b44cfded181628e1bba2cd17faf19f57be0d4a879309585fbf6"><div class="ttname"><a href="group___f_s_m_c___exported___types.html#ggac7e350865ac6d8b44cfded181628e1bba2cd17faf19f57be0d4a879309585fbf6">FSMC_DataWidth_128bits</a></div><div class="ttdeci">@ FSMC_DataWidth_128bits</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00081">hal_fsmc.h:81</a></div></div>
+<div class="ttc" id="agroup___f_s_m_c___exported___types_html_ggac7e350865ac6d8b44cfded181628e1bba79480b3f4dfe2376da8c11bc9901c5f6"><div class="ttname"><a href="group___f_s_m_c___exported___types.html#ggac7e350865ac6d8b44cfded181628e1bba79480b3f4dfe2376da8c11bc9901c5f6">FSMC_DataWidth_32bits</a></div><div class="ttdeci">@ FSMC_DataWidth_32bits</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00079">hal_fsmc.h:79</a></div></div>
+<div class="ttc" id="agroup___f_s_m_c___exported___types_html_ggac7e350865ac6d8b44cfded181628e1bbaee88f750697f6d53751f712b91d5ce9e"><div class="ttname"><a href="group___f_s_m_c___exported___types.html#ggac7e350865ac6d8b44cfded181628e1bbaee88f750697f6d53751f712b91d5ce9e">FSMC_DataWidth_8bits</a></div><div class="ttdeci">@ FSMC_DataWidth_8bits</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00082">hal_fsmc.h:82</a></div></div>
+<div class="ttc" id="areg__common_8h_html"><div class="ttname"><a href="reg__common_8h.html">reg_common.h</a></div><div class="ttdoc">THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY.</div></div>
+<div class="ttc" id="areg__fsmc_8h_html"><div class="ttname"><a href="reg__fsmc_8h.html">reg_fsmc.h</a></div><div class="ttdoc">THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY.</div></div>
+<div class="ttc" id="astruct_f_s_m_c___init_type_def_html"><div class="ttname"><a href="struct_f_s_m_c___init_type_def.html">FSMC_InitTypeDef</a></div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00108">hal_fsmc.h:108</a></div></div>
+<div class="ttc" id="astruct_f_s_m_c___init_type_def_html_a0c110440e254de96707f5744506c62e4"><div class="ttname"><a href="struct_f_s_m_c___init_type_def.html#a0c110440e254de96707f5744506c62e4">FSMC_InitTypeDef::FSMC_MemType</a></div><div class="ttdeci">u32 FSMC_MemType</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00112">hal_fsmc.h:112</a></div></div>
+<div class="ttc" id="astruct_f_s_m_c___init_type_def_html_a2d1bf3846817b35a9d4bb0f3b1ac0d98"><div class="ttname"><a href="struct_f_s_m_c___init_type_def.html#a2d1bf3846817b35a9d4bb0f3b1ac0d98">FSMC_InitTypeDef::FSMC_TimingRegSelect</a></div><div class="ttdeci">u32 FSMC_TimingRegSelect</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00110">hal_fsmc.h:110</a></div></div>
+<div class="ttc" id="astruct_f_s_m_c___init_type_def_html_a3dab2677b1af91417fc47daf09a09220"><div class="ttname"><a href="struct_f_s_m_c___init_type_def.html#a3dab2677b1af91417fc47daf09a09220">FSMC_InitTypeDef::FSMC_MemSize</a></div><div class="ttdeci">u32 FSMC_MemSize</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00111">hal_fsmc.h:111</a></div></div>
+<div class="ttc" id="astruct_f_s_m_c___init_type_def_html_ab1bb053d84782e494ffaa6d263b76d28"><div class="ttname"><a href="struct_f_s_m_c___init_type_def.html#ab1bb053d84782e494ffaa6d263b76d28">FSMC_InitTypeDef::FSMC_AddrDataMode</a></div><div class="ttdeci">u32 FSMC_AddrDataMode</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00113">hal_fsmc.h:113</a></div></div>
+<div class="ttc" id="astruct_f_s_m_c___init_type_def_html_acc1b5f5c6d67814b27505cbad60d962f"><div class="ttname"><a href="struct_f_s_m_c___init_type_def.html#acc1b5f5c6d67814b27505cbad60d962f">FSMC_InitTypeDef::FSMC_Mode</a></div><div class="ttdeci">u32 FSMC_Mode</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00109">hal_fsmc.h:109</a></div></div>
+<div class="ttc" id="astruct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def_html"><div class="ttname"><a href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html">FSMC_NORSRAM_Bank_InitTypeDef</a></div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00091">hal_fsmc.h:91</a></div></div>
+<div class="ttc" id="astruct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def_html_a2d08e2ab227ff55186d0dfc6dd4b9f7e"><div class="ttname"><a href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html#a2d08e2ab227ff55186d0dfc6dd4b9f7e">FSMC_NORSRAM_Bank_InitTypeDef::FSMC_WriteHoldTime</a></div><div class="ttdeci">u32 FSMC_WriteHoldTime</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00098">hal_fsmc.h:98</a></div></div>
+<div class="ttc" id="astruct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def_html_a3a0b83c9773301063a1a0806a395fbe4"><div class="ttname"><a href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html#a3a0b83c9773301063a1a0806a395fbe4">FSMC_NORSRAM_Bank_InitTypeDef::FSMC_AddrSetTime</a></div><div class="ttdeci">u32 FSMC_AddrSetTime</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00100">hal_fsmc.h:100</a></div></div>
+<div class="ttc" id="astruct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def_html_a57d209c28a4f78a8513d8f2f2d09c7ea"><div class="ttname"><a href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html#a57d209c28a4f78a8513d8f2f2d09c7ea">FSMC_NORSRAM_Bank_InitTypeDef::FSMC_ReadPeriod</a></div><div class="ttdeci">u32 FSMC_ReadPeriod</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00102">hal_fsmc.h:102</a></div></div>
+<div class="ttc" id="astruct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def_html_a759a96c9d895528522aa1d6e6cce4d09"><div class="ttname"><a href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html#a759a96c9d895528522aa1d6e6cce4d09">FSMC_NORSRAM_Bank_InitTypeDef::FSMC_ReadyMode</a></div><div class="ttdeci">u32 FSMC_ReadyMode</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00094">hal_fsmc.h:94</a></div></div>
+<div class="ttc" id="astruct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def_html_a99f8777c4959878f72eb51181fbb36ca"><div class="ttname"><a href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html#a99f8777c4959878f72eb51181fbb36ca">FSMC_NORSRAM_Bank_InitTypeDef::FSMC_DataWidth</a></div><div class="ttdeci">FSMC_NORSRAM_DataWidth_TypeDef FSMC_DataWidth</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00104">hal_fsmc.h:104</a></div></div>
+<div class="ttc" id="astruct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def_html_a9e2d261e8419f9e0640021c9783d9773"><div class="ttname"><a href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html#a9e2d261e8419f9e0640021c9783d9773">FSMC_NORSRAM_Bank_InitTypeDef::FSMC_WritePeriod</a></div><div class="ttdeci">u32 FSMC_WritePeriod</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00096">hal_fsmc.h:96</a></div></div>
+<div class="ttc" id="astruct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def_html_ae3088eb8408e474c07879a2a1be37230"><div class="ttname"><a href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html#ae3088eb8408e474c07879a2a1be37230">FSMC_NORSRAM_Bank_InitTypeDef::FSMC_SMReadPipe</a></div><div class="ttdeci">u32 FSMC_SMReadPipe</div><div class="ttdef"><b>Definition:</b> <a href="hal__fsmc_8h_source.html#l00092">hal_fsmc.h:92</a></div></div>
+<div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">THIS FILE PROVIDES ALL THE TYPE FIRMWARE FUNCTIONS.</div></div>
+<div class="ttc" id="atypes_8h_html_a10e94b422ef0c20dcdec20d31a1f5049"><div class="ttname"><a href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a></div><div class="ttdeci">unsigned int u32</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00054">types.h:54</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

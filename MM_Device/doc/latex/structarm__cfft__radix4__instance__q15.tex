@@ -1,0 +1,113 @@
+\hypertarget{structarm__cfft__radix4__instance__q15}{}\doxysection{arm\+\_\+cfft\+\_\+radix4\+\_\+instance\+\_\+q15结构体 参考}
+\label{structarm__cfft__radix4__instance__q15}\index{arm\_cfft\_radix4\_instance\_q15@{arm\_cfft\_radix4\_instance\_q15}}
+
+
+Instance structure for the Q15 CFFT/\+CIFFT function.  
+
+
+
+
+{\ttfamily \#include $<$arm\+\_\+math.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structarm__cfft__radix4__instance__q15_a5fc543e7d84ca8cb7cf6648970f21ca6}{fft\+Len}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structarm__cfft__radix4__instance__q15_a2ecff6ea735cb4d22e922d0fd5736655}{ifft\+Flag}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structarm__cfft__radix4__instance__q15_a101e3f7b0bd6b5b14cd5214f23df4133}{bit\+Reverse\+Flag}}
+\item 
+\mbox{\hyperlink{arm__math_8h_ab5a8fb21a5b3b983d5f54f31614052ea}{q15\+\_\+t}} $\ast$ \mbox{\hyperlink{structarm__cfft__radix4__instance__q15_a29dd693537e45421a36891f8439e1fba}{p\+Twiddle}}
+\item 
+uint16\+\_\+t $\ast$ \mbox{\hyperlink{structarm__cfft__radix4__instance__q15_a4acf704ae0cf30b53bf0fbfae8e34a59}{p\+Bit\+Rev\+Table}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structarm__cfft__radix4__instance__q15_af32fdc78bcc27ca385f9b76a0a1f71c3}{twid\+Coef\+Modifier}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structarm__cfft__radix4__instance__q15_a6b010e5f02d1130c621e3d2e26b95df1}{bit\+Rev\+Factor}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Instance structure for the Q15 CFFT/\+CIFFT function. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02007}{2007}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{structarm__cfft__radix4__instance__q15_a101e3f7b0bd6b5b14cd5214f23df4133}\label{structarm__cfft__radix4__instance__q15_a101e3f7b0bd6b5b14cd5214f23df4133}} 
+\index{arm\_cfft\_radix4\_instance\_q15@{arm\_cfft\_radix4\_instance\_q15}!bitReverseFlag@{bitReverseFlag}}
+\index{bitReverseFlag@{bitReverseFlag}!arm\_cfft\_radix4\_instance\_q15@{arm\_cfft\_radix4\_instance\_q15}}
+\doxysubsubsection{\texorpdfstring{bitReverseFlag}{bitReverseFlag}}
+{\footnotesize\ttfamily uint8\+\_\+t arm\+\_\+cfft\+\_\+radix4\+\_\+instance\+\_\+q15\+::bit\+Reverse\+Flag}
+
+flag that enables (bit\+Reverse\+Flag=1) or disables (bit\+Reverse\+Flag=0) bit reversal of output. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02010}{2010}} 行定义.
+
+\mbox{\Hypertarget{structarm__cfft__radix4__instance__q15_a6b010e5f02d1130c621e3d2e26b95df1}\label{structarm__cfft__radix4__instance__q15_a6b010e5f02d1130c621e3d2e26b95df1}} 
+\index{arm\_cfft\_radix4\_instance\_q15@{arm\_cfft\_radix4\_instance\_q15}!bitRevFactor@{bitRevFactor}}
+\index{bitRevFactor@{bitRevFactor}!arm\_cfft\_radix4\_instance\_q15@{arm\_cfft\_radix4\_instance\_q15}}
+\doxysubsubsection{\texorpdfstring{bitRevFactor}{bitRevFactor}}
+{\footnotesize\ttfamily uint16\+\_\+t arm\+\_\+cfft\+\_\+radix4\+\_\+instance\+\_\+q15\+::bit\+Rev\+Factor}
+
+bit reversal modifier that supports different size FFTs with the same bit reversal table. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02014}{2014}} 行定义.
+
+\mbox{\Hypertarget{structarm__cfft__radix4__instance__q15_a5fc543e7d84ca8cb7cf6648970f21ca6}\label{structarm__cfft__radix4__instance__q15_a5fc543e7d84ca8cb7cf6648970f21ca6}} 
+\index{arm\_cfft\_radix4\_instance\_q15@{arm\_cfft\_radix4\_instance\_q15}!fftLen@{fftLen}}
+\index{fftLen@{fftLen}!arm\_cfft\_radix4\_instance\_q15@{arm\_cfft\_radix4\_instance\_q15}}
+\doxysubsubsection{\texorpdfstring{fftLen}{fftLen}}
+{\footnotesize\ttfamily uint16\+\_\+t arm\+\_\+cfft\+\_\+radix4\+\_\+instance\+\_\+q15\+::fft\+Len}
+
+length of the FFT. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02008}{2008}} 行定义.
+
+\mbox{\Hypertarget{structarm__cfft__radix4__instance__q15_a2ecff6ea735cb4d22e922d0fd5736655}\label{structarm__cfft__radix4__instance__q15_a2ecff6ea735cb4d22e922d0fd5736655}} 
+\index{arm\_cfft\_radix4\_instance\_q15@{arm\_cfft\_radix4\_instance\_q15}!ifftFlag@{ifftFlag}}
+\index{ifftFlag@{ifftFlag}!arm\_cfft\_radix4\_instance\_q15@{arm\_cfft\_radix4\_instance\_q15}}
+\doxysubsubsection{\texorpdfstring{ifftFlag}{ifftFlag}}
+{\footnotesize\ttfamily uint8\+\_\+t arm\+\_\+cfft\+\_\+radix4\+\_\+instance\+\_\+q15\+::ifft\+Flag}
+
+flag that selects forward (ifft\+Flag=0) or inverse (ifft\+Flag=1) transform. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02009}{2009}} 行定义.
+
+\mbox{\Hypertarget{structarm__cfft__radix4__instance__q15_a4acf704ae0cf30b53bf0fbfae8e34a59}\label{structarm__cfft__radix4__instance__q15_a4acf704ae0cf30b53bf0fbfae8e34a59}} 
+\index{arm\_cfft\_radix4\_instance\_q15@{arm\_cfft\_radix4\_instance\_q15}!pBitRevTable@{pBitRevTable}}
+\index{pBitRevTable@{pBitRevTable}!arm\_cfft\_radix4\_instance\_q15@{arm\_cfft\_radix4\_instance\_q15}}
+\doxysubsubsection{\texorpdfstring{pBitRevTable}{pBitRevTable}}
+{\footnotesize\ttfamily uint16\+\_\+t$\ast$ arm\+\_\+cfft\+\_\+radix4\+\_\+instance\+\_\+q15\+::p\+Bit\+Rev\+Table}
+
+points to the bit reversal table. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02012}{2012}} 行定义.
+
+\mbox{\Hypertarget{structarm__cfft__radix4__instance__q15_a29dd693537e45421a36891f8439e1fba}\label{structarm__cfft__radix4__instance__q15_a29dd693537e45421a36891f8439e1fba}} 
+\index{arm\_cfft\_radix4\_instance\_q15@{arm\_cfft\_radix4\_instance\_q15}!pTwiddle@{pTwiddle}}
+\index{pTwiddle@{pTwiddle}!arm\_cfft\_radix4\_instance\_q15@{arm\_cfft\_radix4\_instance\_q15}}
+\doxysubsubsection{\texorpdfstring{pTwiddle}{pTwiddle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{arm__math_8h_ab5a8fb21a5b3b983d5f54f31614052ea}{q15\+\_\+t}}$\ast$ arm\+\_\+cfft\+\_\+radix4\+\_\+instance\+\_\+q15\+::p\+Twiddle}
+
+points to the twiddle factor table. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02011}{2011}} 行定义.
+
+\mbox{\Hypertarget{structarm__cfft__radix4__instance__q15_af32fdc78bcc27ca385f9b76a0a1f71c3}\label{structarm__cfft__radix4__instance__q15_af32fdc78bcc27ca385f9b76a0a1f71c3}} 
+\index{arm\_cfft\_radix4\_instance\_q15@{arm\_cfft\_radix4\_instance\_q15}!twidCoefModifier@{twidCoefModifier}}
+\index{twidCoefModifier@{twidCoefModifier}!arm\_cfft\_radix4\_instance\_q15@{arm\_cfft\_radix4\_instance\_q15}}
+\doxysubsubsection{\texorpdfstring{twidCoefModifier}{twidCoefModifier}}
+{\footnotesize\ttfamily uint16\+\_\+t arm\+\_\+cfft\+\_\+radix4\+\_\+instance\+\_\+q15\+::twid\+Coef\+Modifier}
+
+twiddle coefficient modifier that supports different size FFTs with the same twiddle factor table. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02013}{2013}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+CMSIS/\mbox{\hyperlink{arm__math_8h}{arm\+\_\+math.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,1578 @@
+\hypertarget{reg__flash_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/reg\+\_\+flash.h 文件参考}
+\label{reg__flash_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_flash.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_flash.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_f_l_a_s_h___type_def}{FLASH\+\_\+\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em FLASH Registers Structure Definition \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_o_b___type_def}{OB\+\_\+\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em OPT Structure Definition \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_p_r_o_t_e_c_t___type_def}{PROTECT\+\_\+\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em PROTECT BYTES Structure Definition \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c_a_c_h_e___type_def}{CACHE\+\_\+\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em CACHE BYTES Structure Definition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a23a9099a5f8fc9c6e253c0eecb2be8db}{FLASH\+\_\+\+BASE}}~(0x08000000U)
+\begin{DoxyCompactList}\small\item\em MM32 MCU Memory/\+Peripherals mapping \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a05e8f3d2e5868754a7cd88614955aecc}{SRAM\+\_\+\+BASE}}~(0x20000000U)
+\begin{DoxyCompactList}\small\item\em SRAM base address in the alias region \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a2709d0accca252f2dd923e6a40135c52}{CACHE\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a25b99d6065f1c8f751e78f43ade652cb}{APB2\+PERIPH\+\_\+\+BASE}} + 0x6000)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x40016000 ~\newline
+ \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a8311d9a635d57a643676ca37bf461dd3}{FLASH\+\_\+\+REG\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x2000)
+\begin{DoxyCompactList}\small\item\em FLASH Base Address Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_ab5b5fb155f9ee15dfb6d757da1adc926}{OB\+\_\+\+BASE}}~(0x1\+FFFF800U)
+\begin{DoxyCompactList}\small\item\em Flash Option Bytes base address \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_aaf5081b0cfe00529bf531417058d8ee8}{PROTECT\+\_\+\+BASE}}~(0x1\+FFE0000U)
+\begin{DoxyCompactList}\small\item\em Flash Protect Bytes base address \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}{FLASH}}~((\mbox{\hyperlink{struct_f_l_a_s_h___type_def}{FLASH\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__flash_8h_a8311d9a635d57a643676ca37bf461dd3}{FLASH\+\_\+\+REG\+\_\+\+BASE}})
+\begin{DoxyCompactList}\small\item\em FLASH type pointer Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_ad2d5f875cdc6d696735f20fa23a895c3}{OB}}~((\mbox{\hyperlink{struct_o_b___type_def}{OB\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__flash_8h_ab5b5fb155f9ee15dfb6d757da1adc926}{OB\+\_\+\+BASE}})
+\begin{DoxyCompactList}\small\item\em OPTB type pointer Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a9bc09c4fadd88692e00a50fa44ed8555}{PROTECT}}~((\mbox{\hyperlink{struct_p_r_o_t_e_c_t___type_def}{PROTECT\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__flash_8h_aaf5081b0cfe00529bf531417058d8ee8}{PROTECT\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a43fd55aa78bd891ebbd6a450f5eecce4}{CACHE}}~((\mbox{\hyperlink{struct_c_a_c_h_e___type_def}{CACHE\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__flash_8h_a2709d0accca252f2dd923e6a40135c52}{CACHE\+\_\+\+BASE}})
+\begin{DoxyCompactList}\small\item\em CACHE pointer Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_acd27f57311268ed1ad0ddb1a207ce9a4}{FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em FLASH\+\_\+\+ACR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_aef5e44cbb084160a6004ca9951ec7318}{FLASH\+\_\+\+ACR\+\_\+\+LATENCY}}~(0x07U $<$$<$ \mbox{\hyperlink{reg__flash_8h_acd27f57311268ed1ad0ddb1a207ce9a4}{FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em LATENCY\mbox{[}2\+:0\mbox{]} bits (Latency) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a6560c1d58df18c8740d70591bf7bc1ad}{FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+0}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__flash_8h_acd27f57311268ed1ad0ddb1a207ce9a4}{FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 0 waiting state \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a85155f5d3f34ebe83989513793498c72}{FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_acd27f57311268ed1ad0ddb1a207ce9a4}{FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 1 waiting state ~\newline
+ \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a61b5089d0c86db787ebef496c9057918}{FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+2}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__flash_8h_acd27f57311268ed1ad0ddb1a207ce9a4}{FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 2 waiting state \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_ab6fd9ca7da8325ebbe9d651cedc1be0e}{FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+3}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__flash_8h_acd27f57311268ed1ad0ddb1a207ce9a4}{FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 3 waiting state \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_ac2b7184353c076341249a7c4e1bbc324}{FLASH\+\_\+\+ACR\+\_\+\+HLFCYA\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a6e66d0fa94c019e9c27a3d79e8228cd9}{FLASH\+\_\+\+ACR\+\_\+\+HLFCYA}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_ac2b7184353c076341249a7c4e1bbc324}{FLASH\+\_\+\+ACR\+\_\+\+HLFCYA\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Flash Half Cycle Access Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a288f4e0368a7d8d18e626a54caf995a9}{FLASH\+\_\+\+ACR\+\_\+\+PRFTBE\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a5285ab198307213dce0629f9b7c6fc86}{FLASH\+\_\+\+ACR\+\_\+\+PRFTBE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a288f4e0368a7d8d18e626a54caf995a9}{FLASH\+\_\+\+ACR\+\_\+\+PRFTBE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Prefetch Buffer Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a8998834e7fc4fa0855cf5e7424b7abea}{FLASH\+\_\+\+ACR\+\_\+\+PRFTBS\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a1e73d25ffe7e7a258a873e1fbef17445}{FLASH\+\_\+\+ACR\+\_\+\+PRFTBS}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a8998834e7fc4fa0855cf5e7424b7abea}{FLASH\+\_\+\+ACR\+\_\+\+PRFTBS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Prefetch Buffer Status ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a72dd303c0d32dad568dc108a27ddff67}{FLASH\+\_\+\+KEYR\+\_\+\+FKEY\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_ad9db8057ca6bb3aebc554fa40f2de8ee}{FLASH\+\_\+\+KEYR\+\_\+\+FKEY}}~(0x\+FFFFFFFFU $<$$<$ \mbox{\hyperlink{reg__flash_8h_a72dd303c0d32dad568dc108a27ddff67}{FLASH\+\_\+\+KEYR\+\_\+\+FKEY\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em FLASH Key \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a97a955c9fb95aadc41510e8186911f06}{FLASH\+\_\+\+OPTKEYR\+\_\+\+OPTKEY\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em FLASH\+\_\+\+OPTKEYR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_aa2984934a116e341420122bcc44019f1}{FLASH\+\_\+\+OPTKEYR\+\_\+\+OPTKEY}}~(0x\+FFFFFFFFU $<$$<$ \mbox{\hyperlink{reg__flash_8h_a97a955c9fb95aadc41510e8186911f06}{FLASH\+\_\+\+OPTKEYR\+\_\+\+OPTKEY\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Option Byte Key \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_ad8f128bca20566a98420c91e6019aeee}{FLASH\+\_\+\+SR\+\_\+\+BUSY\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em FLASH\+\_\+\+SR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_aceacb6d53beb00e92d7d7a7cb41a19d2}{FLASH\+\_\+\+SR\+\_\+\+BUSY}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_ad8f128bca20566a98420c91e6019aeee}{FLASH\+\_\+\+SR\+\_\+\+BUSY\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Busy \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_ade46f1b130b188d41613fc87661a8815}{FLASH\+\_\+\+SR\+\_\+\+PGERR\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a60f40ca765714598a62aa216a5ccd8e4}{FLASH\+\_\+\+SR\+\_\+\+PGERR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_ade46f1b130b188d41613fc87661a8815}{FLASH\+\_\+\+SR\+\_\+\+PGERR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Programming Error \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_abd56872fd365b645d51c217e901958f6}{FLASH\+\_\+\+SR\+\_\+\+WRPRTERR\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a2e403606e5ac23cb07701aeebc1f73e5}{FLASH\+\_\+\+SR\+\_\+\+WRPRTERR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_abd56872fd365b645d51c217e901958f6}{FLASH\+\_\+\+SR\+\_\+\+WRPRTERR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Write Protection Error \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a2013e875c4c210b820e502feea6c9fb1}{FLASH\+\_\+\+SR\+\_\+\+EOP\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_ae1301c6b487cfefa247c54a576a0c12b}{FLASH\+\_\+\+SR\+\_\+\+EOP}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a2013e875c4c210b820e502feea6c9fb1}{FLASH\+\_\+\+SR\+\_\+\+EOP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em End of operation \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a0a5addaa1ee5049b0c99023d91dd4a70}{FLASH\+\_\+\+CR\+\_\+\+PG\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em FLASH\+\_\+\+CR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a47754b39bd7a7c79c251d6376f97f661}{FLASH\+\_\+\+CR\+\_\+\+PG}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a0a5addaa1ee5049b0c99023d91dd4a70}{FLASH\+\_\+\+CR\+\_\+\+PG\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Programming \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a4ae43572c697cddd88e48b945828c526}{FLASH\+\_\+\+CR\+\_\+\+PER\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_ad845355ade49d56cf70ad0ff09595a23}{FLASH\+\_\+\+CR\+\_\+\+PER}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a4ae43572c697cddd88e48b945828c526}{FLASH\+\_\+\+CR\+\_\+\+PER\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Page Erase \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a0627fa13f9e31a0250d6917e4d2ecbc1}{FLASH\+\_\+\+CR\+\_\+\+MER\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a4a287aa5a625125301306a02fb69c53a}{FLASH\+\_\+\+CR\+\_\+\+MER}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a0627fa13f9e31a0250d6917e4d2ecbc1}{FLASH\+\_\+\+CR\+\_\+\+MER\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Mass Erase \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a3f0371da9e5f8f8e95b038107426ce6f}{FLASH\+\_\+\+CR\+\_\+\+OPTPG\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a6736a5478a87f35a6a0cb66d8784a5ab}{FLASH\+\_\+\+CR\+\_\+\+OPTPG}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a3f0371da9e5f8f8e95b038107426ce6f}{FLASH\+\_\+\+CR\+\_\+\+OPTPG\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Option Byte Programming \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_ae89abf0177ab4bcf030984073b74a182}{FLASH\+\_\+\+CR\+\_\+\+OPTER\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a19fbf5dc4339b1ec8630675f03ad6fe0}{FLASH\+\_\+\+CR\+\_\+\+OPTER}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_ae89abf0177ab4bcf030984073b74a182}{FLASH\+\_\+\+CR\+\_\+\+OPTER\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Option Byte Erase \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a7925df36a4d15838d8cb457f671e7532}{FLASH\+\_\+\+CR\+\_\+\+STRT\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_afe4dd28134f93f52b1d4ec5b36a99864}{FLASH\+\_\+\+CR\+\_\+\+STRT}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a7925df36a4d15838d8cb457f671e7532}{FLASH\+\_\+\+CR\+\_\+\+STRT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Start \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_aa74509adc6db3db66803966b25423cae}{FLASH\+\_\+\+CR\+\_\+\+LOCK\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_ab25f1fa4127fa015361b61a6f3180784}{FLASH\+\_\+\+CR\+\_\+\+LOCK}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_aa74509adc6db3db66803966b25423cae}{FLASH\+\_\+\+CR\+\_\+\+LOCK\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Lock \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_aa6cdcb203f948b1d30cba476001d9074}{FLASH\+\_\+\+CR\+\_\+\+OPTWRE\+\_\+\+Pos}}~(9)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a27d44bc9617cc430de9413b385dfe0c3}{FLASH\+\_\+\+CR\+\_\+\+OPTWRE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_aa6cdcb203f948b1d30cba476001d9074}{FLASH\+\_\+\+CR\+\_\+\+OPTWRE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Option Bytes Write Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_ab075c4eeff509cfe0f34040c29edfb05}{FLASH\+\_\+\+CR\+\_\+\+ERRIE\+\_\+\+Pos}}~(10)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a930897cecdaa9dbef8c640b84acbd8c2}{FLASH\+\_\+\+CR\+\_\+\+ERRIE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_ab075c4eeff509cfe0f34040c29edfb05}{FLASH\+\_\+\+CR\+\_\+\+ERRIE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Error Interrupt Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a4e162a7fa45cb85ba0df0942a2519478}{FLASH\+\_\+\+CR\+\_\+\+EOPIE\+\_\+\+Pos}}~(12)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_ab9e69856f654ec430a42791a34799db0}{FLASH\+\_\+\+CR\+\_\+\+EOPIE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a4e162a7fa45cb85ba0df0942a2519478}{FLASH\+\_\+\+CR\+\_\+\+EOPIE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em End of operation interrupt enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a17a157edb20903a57b2d5ebd0efa66f2}{FLASH\+\_\+\+AR\+\_\+\+FAR\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em FLASH\+\_\+\+AR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_aafc00fde8118ce03602d00d34a80fec4}{FLASH\+\_\+\+AR\+\_\+\+FAR}}~(0x\+FFFFFFFFU $<$$<$ \mbox{\hyperlink{reg__flash_8h_a17a157edb20903a57b2d5ebd0efa66f2}{FLASH\+\_\+\+AR\+\_\+\+FAR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Flash Address \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a97bfb7f45709e6f143c64857b5150565}{FLASH\+\_\+\+OBR\+\_\+\+OPTERR\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em FLASH\+\_\+\+OBR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_ab52c27d6657bd72f1860fa25a1faf8e3}{FLASH\+\_\+\+OBR\+\_\+\+OPTERR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a97bfb7f45709e6f143c64857b5150565}{FLASH\+\_\+\+OBR\+\_\+\+OPTERR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Option Byte Error \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a7cb5e11b3eae03c7d2b36686737a71c3}{FLASH\+\_\+\+OBR\+\_\+\+RDPRT\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a052763d6c2daf0a422577a6c8a0be977}{FLASH\+\_\+\+OBR\+\_\+\+RDPRT}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a7cb5e11b3eae03c7d2b36686737a71c3}{FLASH\+\_\+\+OBR\+\_\+\+RDPRT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Read protection level status \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_aefde313300f0e954d27f87e6256274b4}{FLASH\+\_\+\+OBR\+\_\+\+USER\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a1585552c59923cb1e1979cdfdc77b991}{FLASH\+\_\+\+OBR\+\_\+\+USER}}~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__flash_8h_aefde313300f0e954d27f87e6256274b4}{FLASH\+\_\+\+OBR\+\_\+\+USER\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em User Option Bytes \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a5a18df54a9254985b1ee69c5666e68b6}{FLASH\+\_\+\+OBR\+\_\+\+WDG\+\_\+\+SW}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_aefde313300f0e954d27f87e6256274b4}{FLASH\+\_\+\+OBR\+\_\+\+USER\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em WDG\+\_\+\+SW \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a04297fb424e7aa9a3dd834cceecc3f0b}{FLASH\+\_\+\+OBR\+\_\+\+RST\+\_\+\+STOP}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__flash_8h_aefde313300f0e954d27f87e6256274b4}{FLASH\+\_\+\+OBR\+\_\+\+USER\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em n\+RST\+\_\+\+STOP \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a5700f8b280578cb6eff3a3f784cf93a7}{FLASH\+\_\+\+OBR\+\_\+\+RST\+\_\+\+STDBY}}~(0x04U $<$$<$ \mbox{\hyperlink{reg__flash_8h_aefde313300f0e954d27f87e6256274b4}{FLASH\+\_\+\+OBR\+\_\+\+USER\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em n\+RST\+\_\+\+STDBY \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_ac2aeecbeab5b5d2655a854a738a8e5fa}{FLASH\+\_\+\+OBR\+\_\+\+Data0\+\_\+\+Pos}}~(10)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a91bc14334e9930bc6f3ebf9ea77e17b6}{FLASH\+\_\+\+OBR\+\_\+\+Data0}}~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__flash_8h_ac2aeecbeab5b5d2655a854a738a8e5fa}{FLASH\+\_\+\+OBR\+\_\+\+Data0\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em User data storage option byte \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a05e703fc3c42fdd5db65ba81a49d0a68}{FLASH\+\_\+\+OBR\+\_\+\+Data1\+\_\+\+Pos}}~(18)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a5123395ca5fc5b3e6790acafa77a1bf8}{FLASH\+\_\+\+OBR\+\_\+\+Data1}}~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__flash_8h_a05e703fc3c42fdd5db65ba81a49d0a68}{FLASH\+\_\+\+OBR\+\_\+\+Data1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em User data storage option byte \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_aa2cba593e56feed77b6c08f544fd327b}{FLASH\+\_\+\+WRPR\+\_\+\+WRP\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em FLASH\+\_\+\+WRPR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a1d3842e780ec47c1127de0ed4a93821d}{FLASH\+\_\+\+WRPR\+\_\+\+WRP}}~(0x\+FFFFFFFFU $<$$<$ \mbox{\hyperlink{reg__flash_8h_aa2cba593e56feed77b6c08f544fd327b}{FLASH\+\_\+\+WRPR\+\_\+\+WRP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Write Protect \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_aafee84206c1bbdb951f99ed2d9ffd861}{CACHE\+\_\+\+CCR\+\_\+\+EN\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em CACHE\+\_\+\+CCR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_af74174131bfcab4a10f1b1d8c6f178c6}{CACHE\+\_\+\+CCR\+\_\+\+EN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_aafee84206c1bbdb951f99ed2d9ffd861}{CACHE\+\_\+\+CCR\+\_\+\+EN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Cache Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a1ee99127c28fd0ce8a2c13848a471bce}{CACHE\+\_\+\+CCR\+\_\+\+INV\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_ae9a34c0dff592cdc3ed48b47eedaaa0f}{CACHE\+\_\+\+CCR\+\_\+\+INV}}~(0x01U $<$$<$ CACHE\+\_\+\+CCR\+\_\+\+INV\+\_\+\+REQ\+\_\+\+Pos)
+\begin{DoxyCompactList}\small\item\em Manually invalidate the request \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_aceef6cd150c79c0420eec0fa14fca4dc}{CACHE\+\_\+\+CCR\+\_\+\+POW\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a036b5453ddf4e87b004f2ac23583565b}{CACHE\+\_\+\+CCR\+\_\+\+POW}}~(0x01U $<$$<$ CACHE\+\_\+\+CCR\+\_\+\+POW\+\_\+\+REQ\+\_\+\+Pos)
+\begin{DoxyCompactList}\small\item\em Manual SRAM power request \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a55e73987f56f96a7a85e94ae29233524}{CACHE\+\_\+\+CCR\+\_\+\+MAN\+\_\+\+POW\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a2b60d6ed4df7e5572dffef0940539167}{CACHE\+\_\+\+CCR\+\_\+\+MAN\+\_\+\+POW}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a55e73987f56f96a7a85e94ae29233524}{CACHE\+\_\+\+CCR\+\_\+\+MAN\+\_\+\+POW\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Set manual or automatic SRAM power request \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a7a4ffa7a0e2a0260a5c1846d6e484374}{CACHE\+\_\+\+CCR\+\_\+\+MAN\+\_\+\+INV\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a8c15ebf8c4c62bbfba17e54a9a92cfca}{CACHE\+\_\+\+CCR\+\_\+\+MAN\+\_\+\+INV}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a7a4ffa7a0e2a0260a5c1846d6e484374}{CACHE\+\_\+\+CCR\+\_\+\+MAN\+\_\+\+INV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Manually or automatically disable it \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a02299952071052fe8c4116b4f1c778e7}{CACHE\+\_\+\+CCR\+\_\+\+PREFETCH\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_ab3399de5a87326a632eedb1f60002269}{CACHE\+\_\+\+CCR\+\_\+\+PREFETCH}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a02299952071052fe8c4116b4f1c778e7}{CACHE\+\_\+\+CCR\+\_\+\+PREFETCH\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Prefetch function \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a5c8511c63a7bcdc444c7863f665442ef}{CACHE\+\_\+\+CCR\+\_\+\+STATISTIC\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_ae7a875a3e3578c6921daa1a95fdffb81}{CACHE\+\_\+\+CCR\+\_\+\+STATISTIC}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a5c8511c63a7bcdc444c7863f665442ef}{CACHE\+\_\+\+CCR\+\_\+\+STATISTIC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Statistics enable ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_af2a2d8df49def319ddb6ea64665184e8}{CACHE\+\_\+\+SR\+\_\+\+CS\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a87d298738e8e728ca3f42ae8083087bc}{CACHE\+\_\+\+SR\+\_\+\+CS0}}~(0x00U $<$$<$ CACHE\+\_\+\+CCR\+\_\+\+CS\+\_\+\+Pos)
+\begin{DoxyCompactList}\small\item\em Cache is disabled \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_aa6d29f5e0bc1e24255f741719442970a}{CACHE\+\_\+\+SR\+\_\+\+CS1}}~(0x01U $<$$<$ CACHE\+\_\+\+CCR\+\_\+\+CS\+\_\+\+Pos)
+\begin{DoxyCompactList}\small\item\em Cache is being enabled \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_aaba60630059ae216546278c6d9428f7b}{CACHE\+\_\+\+SR\+\_\+\+CS2}}~(0x02U $<$$<$ CACHE\+\_\+\+CCR\+\_\+\+CS\+\_\+\+Pos)
+\begin{DoxyCompactList}\small\item\em Cache is enabled \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a1b3e3a681c70ba70ca4d4a3b0e09a6d8}{CACHE\+\_\+\+SR\+\_\+\+CS3}}~(0x03U $<$$<$ CACHE\+\_\+\+CCR\+\_\+\+CS\+\_\+\+Pos)
+\begin{DoxyCompactList}\small\item\em Cache is being disabled \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_aed977af8a79d4c0101c0a591b8aa3f2c}{CACHE\+\_\+\+SR\+\_\+\+INV\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a616d8fa111ce881a59a33d75facf4f1f}{CACHE\+\_\+\+SR\+\_\+\+INV}}~(0x01U $<$$<$ CACHE\+\_\+\+CCR\+\_\+\+INV\+\_\+\+REQ\+\_\+\+Pos)
+\begin{DoxyCompactList}\small\item\em Invalidation status \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a2fc512cb2911832a499ee991acd3e236}{CACHE\+\_\+\+SR\+\_\+\+POW\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a0017ad445983fb15d510ab2bfe4fbf7b}{CACHE\+\_\+\+SR\+\_\+\+POW}}~(0x01U $<$$<$ CACHE\+\_\+\+CCR\+\_\+\+POW\+\_\+\+REQ\+\_\+\+Pos)
+\begin{DoxyCompactList}\small\item\em SRAM power response ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_aeebcbca702a3f602a7bbdda0a1e1eeea}{CACHE\+\_\+\+IMR\+\_\+\+MAN\+\_\+\+INV\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_acb811104aaf7f03481ecd0f5674efef6}{CACHE\+\_\+\+IMR\+\_\+\+MAN\+\_\+\+INV}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_aeebcbca702a3f602a7bbdda0a1e1eeea}{CACHE\+\_\+\+IMR\+\_\+\+MAN\+\_\+\+INV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Mask the interrupt request of manual invalidation error \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_ac1f433019d0a005e90a915d5f5a45eb0}{CACHE\+\_\+\+IMR\+\_\+\+POW\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a4017efbac34a14fa2515bb2720c814dc}{CACHE\+\_\+\+IMR\+\_\+\+POW}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_ac1f433019d0a005e90a915d5f5a45eb0}{CACHE\+\_\+\+IMR\+\_\+\+POW\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Mask the interrupt request of power supply error ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a2770af913e399b61128f469e17c73c5f}{CACHE\+\_\+\+ISR\+\_\+\+MAN\+\_\+\+INV\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a7ad40e62d55a6edaabdbb53a2871f124}{CACHE\+\_\+\+ISR\+\_\+\+MAN\+\_\+\+INV}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a2770af913e399b61128f469e17c73c5f}{CACHE\+\_\+\+ISR\+\_\+\+MAN\+\_\+\+INV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Manual invalidation of error flags \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a267738d44e84dcca68647394f0403ac7}{CACHE\+\_\+\+ISR\+\_\+\+POW\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__flash_8h_abffe616c3dde1a2afd1291ce32a33f3e}{CACHE\+\_\+\+ISR\+\_\+\+POW}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a267738d44e84dcca68647394f0403ac7}{CACHE\+\_\+\+ISR\+\_\+\+POW\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SRAM power error flags ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_ab3fb8507fd5822230bf8651caf5a606f}{CACHE\+\_\+\+CSHR}}~(0x\+FFFFU )
+\begin{DoxyCompactList}\small\item\em Cache Hits ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__flash_8h_a2fb3e54ff04f1bc11de01bbfc065b5d7}{CACHE\+\_\+\+CSMR}}~(0x\+FFFFU )
+\begin{DoxyCompactList}\small\item\em Cache Lost times \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{reg__flash_8h_a43fd55aa78bd891ebbd6a450f5eecce4}\label{reg__flash_8h_a43fd55aa78bd891ebbd6a450f5eecce4}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE@{CACHE}}
+\index{CACHE@{CACHE}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE}{CACHE}}
+{\footnotesize\ttfamily \#define CACHE~((\mbox{\hyperlink{struct_c_a_c_h_e___type_def}{CACHE\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__flash_8h_a2709d0accca252f2dd923e6a40135c52}{CACHE\+\_\+\+BASE}})}
+
+
+
+CACHE pointer Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00126}{126}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a2709d0accca252f2dd923e6a40135c52}\label{reg__flash_8h_a2709d0accca252f2dd923e6a40135c52}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_BASE@{CACHE\_BASE}}
+\index{CACHE\_BASE@{CACHE\_BASE}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_BASE}{CACHE\_BASE}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a25b99d6065f1c8f751e78f43ade652cb}{APB2\+PERIPH\+\_\+\+BASE}} + 0x6000)}
+
+
+
+Base Address\+: 0x40016000 ~\newline
+ 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00044}{44}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_af74174131bfcab4a10f1b1d8c6f178c6}\label{reg__flash_8h_af74174131bfcab4a10f1b1d8c6f178c6}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_CCR\_EN@{CACHE\_CCR\_EN}}
+\index{CACHE\_CCR\_EN@{CACHE\_CCR\_EN}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_CCR\_EN}{CACHE\_CCR\_EN}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+CCR\+\_\+\+EN~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_aafee84206c1bbdb951f99ed2d9ffd861}{CACHE\+\_\+\+CCR\+\_\+\+EN\+\_\+\+Pos}})}
+
+
+
+Cache Enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00228}{228}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_aafee84206c1bbdb951f99ed2d9ffd861}\label{reg__flash_8h_aafee84206c1bbdb951f99ed2d9ffd861}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_CCR\_EN\_Pos@{CACHE\_CCR\_EN\_Pos}}
+\index{CACHE\_CCR\_EN\_Pos@{CACHE\_CCR\_EN\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_CCR\_EN\_Pos}{CACHE\_CCR\_EN\_Pos}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+CCR\+\_\+\+EN\+\_\+\+Pos~(0)}
+
+
+
+CACHE\+\_\+\+CCR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00227}{227}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_ae9a34c0dff592cdc3ed48b47eedaaa0f}\label{reg__flash_8h_ae9a34c0dff592cdc3ed48b47eedaaa0f}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_CCR\_INV@{CACHE\_CCR\_INV}}
+\index{CACHE\_CCR\_INV@{CACHE\_CCR\_INV}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_CCR\_INV}{CACHE\_CCR\_INV}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+CCR\+\_\+\+INV~(0x01U $<$$<$ CACHE\+\_\+\+CCR\+\_\+\+INV\+\_\+\+REQ\+\_\+\+Pos)}
+
+
+
+Manually invalidate the request 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00230}{230}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a1ee99127c28fd0ce8a2c13848a471bce}\label{reg__flash_8h_a1ee99127c28fd0ce8a2c13848a471bce}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_CCR\_INV\_Pos@{CACHE\_CCR\_INV\_Pos}}
+\index{CACHE\_CCR\_INV\_Pos@{CACHE\_CCR\_INV\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_CCR\_INV\_Pos}{CACHE\_CCR\_INV\_Pos}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+CCR\+\_\+\+INV\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00229}{229}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a8c15ebf8c4c62bbfba17e54a9a92cfca}\label{reg__flash_8h_a8c15ebf8c4c62bbfba17e54a9a92cfca}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_CCR\_MAN\_INV@{CACHE\_CCR\_MAN\_INV}}
+\index{CACHE\_CCR\_MAN\_INV@{CACHE\_CCR\_MAN\_INV}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_CCR\_MAN\_INV}{CACHE\_CCR\_MAN\_INV}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+CCR\+\_\+\+MAN\+\_\+\+INV~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a7a4ffa7a0e2a0260a5c1846d6e484374}{CACHE\+\_\+\+CCR\+\_\+\+MAN\+\_\+\+INV\+\_\+\+Pos}})}
+
+
+
+Manually or automatically disable it 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00236}{236}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a7a4ffa7a0e2a0260a5c1846d6e484374}\label{reg__flash_8h_a7a4ffa7a0e2a0260a5c1846d6e484374}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_CCR\_MAN\_INV\_Pos@{CACHE\_CCR\_MAN\_INV\_Pos}}
+\index{CACHE\_CCR\_MAN\_INV\_Pos@{CACHE\_CCR\_MAN\_INV\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_CCR\_MAN\_INV\_Pos}{CACHE\_CCR\_MAN\_INV\_Pos}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+CCR\+\_\+\+MAN\+\_\+\+INV\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00235}{235}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a2b60d6ed4df7e5572dffef0940539167}\label{reg__flash_8h_a2b60d6ed4df7e5572dffef0940539167}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_CCR\_MAN\_POW@{CACHE\_CCR\_MAN\_POW}}
+\index{CACHE\_CCR\_MAN\_POW@{CACHE\_CCR\_MAN\_POW}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_CCR\_MAN\_POW}{CACHE\_CCR\_MAN\_POW}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+CCR\+\_\+\+MAN\+\_\+\+POW~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a55e73987f56f96a7a85e94ae29233524}{CACHE\+\_\+\+CCR\+\_\+\+MAN\+\_\+\+POW\+\_\+\+Pos}})}
+
+
+
+Set manual or automatic SRAM power request 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00234}{234}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a55e73987f56f96a7a85e94ae29233524}\label{reg__flash_8h_a55e73987f56f96a7a85e94ae29233524}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_CCR\_MAN\_POW\_Pos@{CACHE\_CCR\_MAN\_POW\_Pos}}
+\index{CACHE\_CCR\_MAN\_POW\_Pos@{CACHE\_CCR\_MAN\_POW\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_CCR\_MAN\_POW\_Pos}{CACHE\_CCR\_MAN\_POW\_Pos}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+CCR\+\_\+\+MAN\+\_\+\+POW\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00233}{233}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a036b5453ddf4e87b004f2ac23583565b}\label{reg__flash_8h_a036b5453ddf4e87b004f2ac23583565b}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_CCR\_POW@{CACHE\_CCR\_POW}}
+\index{CACHE\_CCR\_POW@{CACHE\_CCR\_POW}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_CCR\_POW}{CACHE\_CCR\_POW}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+CCR\+\_\+\+POW~(0x01U $<$$<$ CACHE\+\_\+\+CCR\+\_\+\+POW\+\_\+\+REQ\+\_\+\+Pos)}
+
+
+
+Manual SRAM power request 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00232}{232}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_aceef6cd150c79c0420eec0fa14fca4dc}\label{reg__flash_8h_aceef6cd150c79c0420eec0fa14fca4dc}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_CCR\_POW\_Pos@{CACHE\_CCR\_POW\_Pos}}
+\index{CACHE\_CCR\_POW\_Pos@{CACHE\_CCR\_POW\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_CCR\_POW\_Pos}{CACHE\_CCR\_POW\_Pos}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+CCR\+\_\+\+POW\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00231}{231}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_ab3399de5a87326a632eedb1f60002269}\label{reg__flash_8h_ab3399de5a87326a632eedb1f60002269}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_CCR\_PREFETCH@{CACHE\_CCR\_PREFETCH}}
+\index{CACHE\_CCR\_PREFETCH@{CACHE\_CCR\_PREFETCH}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_CCR\_PREFETCH}{CACHE\_CCR\_PREFETCH}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+CCR\+\_\+\+PREFETCH~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a02299952071052fe8c4116b4f1c778e7}{CACHE\+\_\+\+CCR\+\_\+\+PREFETCH\+\_\+\+Pos}})}
+
+
+
+Prefetch function 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00238}{238}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a02299952071052fe8c4116b4f1c778e7}\label{reg__flash_8h_a02299952071052fe8c4116b4f1c778e7}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_CCR\_PREFETCH\_Pos@{CACHE\_CCR\_PREFETCH\_Pos}}
+\index{CACHE\_CCR\_PREFETCH\_Pos@{CACHE\_CCR\_PREFETCH\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_CCR\_PREFETCH\_Pos}{CACHE\_CCR\_PREFETCH\_Pos}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+CCR\+\_\+\+PREFETCH\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00237}{237}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_ae7a875a3e3578c6921daa1a95fdffb81}\label{reg__flash_8h_ae7a875a3e3578c6921daa1a95fdffb81}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_CCR\_STATISTIC@{CACHE\_CCR\_STATISTIC}}
+\index{CACHE\_CCR\_STATISTIC@{CACHE\_CCR\_STATISTIC}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_CCR\_STATISTIC}{CACHE\_CCR\_STATISTIC}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+CCR\+\_\+\+STATISTIC~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a5c8511c63a7bcdc444c7863f665442ef}{CACHE\+\_\+\+CCR\+\_\+\+STATISTIC\+\_\+\+Pos}})}
+
+
+
+Statistics enable ///////////////////////////////////////////////////////////////////////////// 
+
+CACHE\+\_\+\+SR Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00243}{243}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a5c8511c63a7bcdc444c7863f665442ef}\label{reg__flash_8h_a5c8511c63a7bcdc444c7863f665442ef}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_CCR\_STATISTIC\_Pos@{CACHE\_CCR\_STATISTIC\_Pos}}
+\index{CACHE\_CCR\_STATISTIC\_Pos@{CACHE\_CCR\_STATISTIC\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_CCR\_STATISTIC\_Pos}{CACHE\_CCR\_STATISTIC\_Pos}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+CCR\+\_\+\+STATISTIC\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00239}{239}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_ab3fb8507fd5822230bf8651caf5a606f}\label{reg__flash_8h_ab3fb8507fd5822230bf8651caf5a606f}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_CSHR@{CACHE\_CSHR}}
+\index{CACHE\_CSHR@{CACHE\_CSHR}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_CSHR}{CACHE\_CSHR}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+CSHR~(0x\+FFFFU )}
+
+
+
+Cache Hits ///////////////////////////////////////////////////////////////////////////// 
+
+CACHE\+\_\+\+CSHR Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00273}{273}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a2fb3e54ff04f1bc11de01bbfc065b5d7}\label{reg__flash_8h_a2fb3e54ff04f1bc11de01bbfc065b5d7}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_CSMR@{CACHE\_CSMR}}
+\index{CACHE\_CSMR@{CACHE\_CSMR}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_CSMR}{CACHE\_CSMR}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+CSMR~(0x\+FFFFU )}
+
+
+
+Cache Lost times 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00274}{274}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_acb811104aaf7f03481ecd0f5674efef6}\label{reg__flash_8h_acb811104aaf7f03481ecd0f5674efef6}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_IMR\_MAN\_INV@{CACHE\_IMR\_MAN\_INV}}
+\index{CACHE\_IMR\_MAN\_INV@{CACHE\_IMR\_MAN\_INV}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_IMR\_MAN\_INV}{CACHE\_IMR\_MAN\_INV}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+IMR\+\_\+\+MAN\+\_\+\+INV~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_aeebcbca702a3f602a7bbdda0a1e1eeea}{CACHE\+\_\+\+IMR\+\_\+\+MAN\+\_\+\+INV\+\_\+\+Pos}})}
+
+
+
+Mask the interrupt request of manual invalidation error 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00257}{257}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_aeebcbca702a3f602a7bbdda0a1e1eeea}\label{reg__flash_8h_aeebcbca702a3f602a7bbdda0a1e1eeea}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_IMR\_MAN\_INV\_Pos@{CACHE\_IMR\_MAN\_INV\_Pos}}
+\index{CACHE\_IMR\_MAN\_INV\_Pos@{CACHE\_IMR\_MAN\_INV\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_IMR\_MAN\_INV\_Pos}{CACHE\_IMR\_MAN\_INV\_Pos}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+IMR\+\_\+\+MAN\+\_\+\+INV\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00256}{256}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a4017efbac34a14fa2515bb2720c814dc}\label{reg__flash_8h_a4017efbac34a14fa2515bb2720c814dc}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_IMR\_POW@{CACHE\_IMR\_POW}}
+\index{CACHE\_IMR\_POW@{CACHE\_IMR\_POW}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_IMR\_POW}{CACHE\_IMR\_POW}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+IMR\+\_\+\+POW~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_ac1f433019d0a005e90a915d5f5a45eb0}{CACHE\+\_\+\+IMR\+\_\+\+POW\+\_\+\+Pos}})}
+
+
+
+Mask the interrupt request of power supply error ///////////////////////////////////////////////////////////////////////////// 
+
+CACHE\+\_\+\+ISR Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00262}{262}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_ac1f433019d0a005e90a915d5f5a45eb0}\label{reg__flash_8h_ac1f433019d0a005e90a915d5f5a45eb0}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_IMR\_POW\_Pos@{CACHE\_IMR\_POW\_Pos}}
+\index{CACHE\_IMR\_POW\_Pos@{CACHE\_IMR\_POW\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_IMR\_POW\_Pos}{CACHE\_IMR\_POW\_Pos}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+IMR\+\_\+\+POW\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00258}{258}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a7ad40e62d55a6edaabdbb53a2871f124}\label{reg__flash_8h_a7ad40e62d55a6edaabdbb53a2871f124}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_ISR\_MAN\_INV@{CACHE\_ISR\_MAN\_INV}}
+\index{CACHE\_ISR\_MAN\_INV@{CACHE\_ISR\_MAN\_INV}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_ISR\_MAN\_INV}{CACHE\_ISR\_MAN\_INV}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+ISR\+\_\+\+MAN\+\_\+\+INV~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a2770af913e399b61128f469e17c73c5f}{CACHE\+\_\+\+ISR\+\_\+\+MAN\+\_\+\+INV\+\_\+\+Pos}})}
+
+
+
+Manual invalidation of error flags 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00264}{264}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a2770af913e399b61128f469e17c73c5f}\label{reg__flash_8h_a2770af913e399b61128f469e17c73c5f}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_ISR\_MAN\_INV\_Pos@{CACHE\_ISR\_MAN\_INV\_Pos}}
+\index{CACHE\_ISR\_MAN\_INV\_Pos@{CACHE\_ISR\_MAN\_INV\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_ISR\_MAN\_INV\_Pos}{CACHE\_ISR\_MAN\_INV\_Pos}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+ISR\+\_\+\+MAN\+\_\+\+INV\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00263}{263}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_abffe616c3dde1a2afd1291ce32a33f3e}\label{reg__flash_8h_abffe616c3dde1a2afd1291ce32a33f3e}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_ISR\_POW@{CACHE\_ISR\_POW}}
+\index{CACHE\_ISR\_POW@{CACHE\_ISR\_POW}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_ISR\_POW}{CACHE\_ISR\_POW}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+ISR\+\_\+\+POW~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a267738d44e84dcca68647394f0403ac7}{CACHE\+\_\+\+ISR\+\_\+\+POW\+\_\+\+Pos}})}
+
+
+
+SRAM power error flags ///////////////////////////////////////////////////////////////////////////// 
+
+CACHE\+\_\+\+CSHR Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00269}{269}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a267738d44e84dcca68647394f0403ac7}\label{reg__flash_8h_a267738d44e84dcca68647394f0403ac7}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_ISR\_POW\_Pos@{CACHE\_ISR\_POW\_Pos}}
+\index{CACHE\_ISR\_POW\_Pos@{CACHE\_ISR\_POW\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_ISR\_POW\_Pos}{CACHE\_ISR\_POW\_Pos}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+ISR\+\_\+\+POW\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00265}{265}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a87d298738e8e728ca3f42ae8083087bc}\label{reg__flash_8h_a87d298738e8e728ca3f42ae8083087bc}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_SR\_CS0@{CACHE\_SR\_CS0}}
+\index{CACHE\_SR\_CS0@{CACHE\_SR\_CS0}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_SR\_CS0}{CACHE\_SR\_CS0}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+SR\+\_\+\+CS0~(0x00U $<$$<$ CACHE\+\_\+\+CCR\+\_\+\+CS\+\_\+\+Pos)}
+
+
+
+Cache is disabled 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00245}{245}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_aa6d29f5e0bc1e24255f741719442970a}\label{reg__flash_8h_aa6d29f5e0bc1e24255f741719442970a}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_SR\_CS1@{CACHE\_SR\_CS1}}
+\index{CACHE\_SR\_CS1@{CACHE\_SR\_CS1}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_SR\_CS1}{CACHE\_SR\_CS1}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+SR\+\_\+\+CS1~(0x01U $<$$<$ CACHE\+\_\+\+CCR\+\_\+\+CS\+\_\+\+Pos)}
+
+
+
+Cache is being enabled 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00246}{246}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_aaba60630059ae216546278c6d9428f7b}\label{reg__flash_8h_aaba60630059ae216546278c6d9428f7b}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_SR\_CS2@{CACHE\_SR\_CS2}}
+\index{CACHE\_SR\_CS2@{CACHE\_SR\_CS2}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_SR\_CS2}{CACHE\_SR\_CS2}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+SR\+\_\+\+CS2~(0x02U $<$$<$ CACHE\+\_\+\+CCR\+\_\+\+CS\+\_\+\+Pos)}
+
+
+
+Cache is enabled 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00247}{247}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a1b3e3a681c70ba70ca4d4a3b0e09a6d8}\label{reg__flash_8h_a1b3e3a681c70ba70ca4d4a3b0e09a6d8}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_SR\_CS3@{CACHE\_SR\_CS3}}
+\index{CACHE\_SR\_CS3@{CACHE\_SR\_CS3}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_SR\_CS3}{CACHE\_SR\_CS3}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+SR\+\_\+\+CS3~(0x03U $<$$<$ CACHE\+\_\+\+CCR\+\_\+\+CS\+\_\+\+Pos)}
+
+
+
+Cache is being disabled 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00248}{248}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_af2a2d8df49def319ddb6ea64665184e8}\label{reg__flash_8h_af2a2d8df49def319ddb6ea64665184e8}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_SR\_CS\_Pos@{CACHE\_SR\_CS\_Pos}}
+\index{CACHE\_SR\_CS\_Pos@{CACHE\_SR\_CS\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_SR\_CS\_Pos}{CACHE\_SR\_CS\_Pos}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+SR\+\_\+\+CS\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00244}{244}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a616d8fa111ce881a59a33d75facf4f1f}\label{reg__flash_8h_a616d8fa111ce881a59a33d75facf4f1f}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_SR\_INV@{CACHE\_SR\_INV}}
+\index{CACHE\_SR\_INV@{CACHE\_SR\_INV}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_SR\_INV}{CACHE\_SR\_INV}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+SR\+\_\+\+INV~(0x01U $<$$<$ CACHE\+\_\+\+CCR\+\_\+\+INV\+\_\+\+REQ\+\_\+\+Pos)}
+
+
+
+Invalidation status 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00250}{250}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_aed977af8a79d4c0101c0a591b8aa3f2c}\label{reg__flash_8h_aed977af8a79d4c0101c0a591b8aa3f2c}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_SR\_INV\_Pos@{CACHE\_SR\_INV\_Pos}}
+\index{CACHE\_SR\_INV\_Pos@{CACHE\_SR\_INV\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_SR\_INV\_Pos}{CACHE\_SR\_INV\_Pos}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+SR\+\_\+\+INV\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00249}{249}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a0017ad445983fb15d510ab2bfe4fbf7b}\label{reg__flash_8h_a0017ad445983fb15d510ab2bfe4fbf7b}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_SR\_POW@{CACHE\_SR\_POW}}
+\index{CACHE\_SR\_POW@{CACHE\_SR\_POW}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_SR\_POW}{CACHE\_SR\_POW}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+SR\+\_\+\+POW~(0x01U $<$$<$ CACHE\+\_\+\+CCR\+\_\+\+POW\+\_\+\+REQ\+\_\+\+Pos)}
+
+
+
+SRAM power response ///////////////////////////////////////////////////////////////////////////// 
+
+CACHE\+\_\+\+IMR Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00255}{255}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a2fc512cb2911832a499ee991acd3e236}\label{reg__flash_8h_a2fc512cb2911832a499ee991acd3e236}} 
+\index{reg\_flash.h@{reg\_flash.h}!CACHE\_SR\_POW\_Pos@{CACHE\_SR\_POW\_Pos}}
+\index{CACHE\_SR\_POW\_Pos@{CACHE\_SR\_POW\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_SR\_POW\_Pos}{CACHE\_SR\_POW\_Pos}}
+{\footnotesize\ttfamily \#define CACHE\+\_\+\+SR\+\_\+\+POW\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00251}{251}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}\label{reg__flash_8h_a844ea28ba1e0a5a0e497f16b61ea306b}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH@{FLASH}}
+\index{FLASH@{FLASH}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH}{FLASH}}
+{\footnotesize\ttfamily \#define FLASH~((\mbox{\hyperlink{struct_f_l_a_s_h___type_def}{FLASH\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__flash_8h_a8311d9a635d57a643676ca37bf461dd3}{FLASH\+\_\+\+REG\+\_\+\+BASE}})}
+
+
+
+FLASH type pointer Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00117}{117}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a6e66d0fa94c019e9c27a3d79e8228cd9}\label{reg__flash_8h_a6e66d0fa94c019e9c27a3d79e8228cd9}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_ACR\_HLFCYA@{FLASH\_ACR\_HLFCYA}}
+\index{FLASH\_ACR\_HLFCYA@{FLASH\_ACR\_HLFCYA}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_ACR\_HLFCYA}{FLASH\_ACR\_HLFCYA}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+ACR\+\_\+\+HLFCYA~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_ac2b7184353c076341249a7c4e1bbc324}{FLASH\+\_\+\+ACR\+\_\+\+HLFCYA\+\_\+\+Pos}})}
+
+
+
+Flash Half Cycle Access Enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00137}{137}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_ac2b7184353c076341249a7c4e1bbc324}\label{reg__flash_8h_ac2b7184353c076341249a7c4e1bbc324}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_ACR\_HLFCYA\_Pos@{FLASH\_ACR\_HLFCYA\_Pos}}
+\index{FLASH\_ACR\_HLFCYA\_Pos@{FLASH\_ACR\_HLFCYA\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_ACR\_HLFCYA\_Pos}{FLASH\_ACR\_HLFCYA\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+ACR\+\_\+\+HLFCYA\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00136}{136}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_aef5e44cbb084160a6004ca9951ec7318}\label{reg__flash_8h_aef5e44cbb084160a6004ca9951ec7318}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_ACR\_LATENCY@{FLASH\_ACR\_LATENCY}}
+\index{FLASH\_ACR\_LATENCY@{FLASH\_ACR\_LATENCY}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_ACR\_LATENCY}{FLASH\_ACR\_LATENCY}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+ACR\+\_\+\+LATENCY~(0x07U $<$$<$ \mbox{\hyperlink{reg__flash_8h_acd27f57311268ed1ad0ddb1a207ce9a4}{FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+\+Pos}})}
+
+
+
+LATENCY\mbox{[}2\+:0\mbox{]} bits (Latency) 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00131}{131}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a6560c1d58df18c8740d70591bf7bc1ad}\label{reg__flash_8h_a6560c1d58df18c8740d70591bf7bc1ad}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_ACR\_LATENCY\_0@{FLASH\_ACR\_LATENCY\_0}}
+\index{FLASH\_ACR\_LATENCY\_0@{FLASH\_ACR\_LATENCY\_0}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_ACR\_LATENCY\_0}{FLASH\_ACR\_LATENCY\_0}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+0~(0x00U $<$$<$ \mbox{\hyperlink{reg__flash_8h_acd27f57311268ed1ad0ddb1a207ce9a4}{FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+\+Pos}})}
+
+
+
+0 waiting state 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00132}{132}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a85155f5d3f34ebe83989513793498c72}\label{reg__flash_8h_a85155f5d3f34ebe83989513793498c72}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_ACR\_LATENCY\_1@{FLASH\_ACR\_LATENCY\_1}}
+\index{FLASH\_ACR\_LATENCY\_1@{FLASH\_ACR\_LATENCY\_1}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_ACR\_LATENCY\_1}{FLASH\_ACR\_LATENCY\_1}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+1~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_acd27f57311268ed1ad0ddb1a207ce9a4}{FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+\+Pos}})}
+
+
+
+1 waiting state ~\newline
+ 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00133}{133}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a61b5089d0c86db787ebef496c9057918}\label{reg__flash_8h_a61b5089d0c86db787ebef496c9057918}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_ACR\_LATENCY\_2@{FLASH\_ACR\_LATENCY\_2}}
+\index{FLASH\_ACR\_LATENCY\_2@{FLASH\_ACR\_LATENCY\_2}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_ACR\_LATENCY\_2}{FLASH\_ACR\_LATENCY\_2}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+2~(0x02U $<$$<$ \mbox{\hyperlink{reg__flash_8h_acd27f57311268ed1ad0ddb1a207ce9a4}{FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+\+Pos}})}
+
+
+
+2 waiting state 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00134}{134}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_ab6fd9ca7da8325ebbe9d651cedc1be0e}\label{reg__flash_8h_ab6fd9ca7da8325ebbe9d651cedc1be0e}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_ACR\_LATENCY\_3@{FLASH\_ACR\_LATENCY\_3}}
+\index{FLASH\_ACR\_LATENCY\_3@{FLASH\_ACR\_LATENCY\_3}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_ACR\_LATENCY\_3}{FLASH\_ACR\_LATENCY\_3}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+3~(0x03U $<$$<$ \mbox{\hyperlink{reg__flash_8h_acd27f57311268ed1ad0ddb1a207ce9a4}{FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+\+Pos}})}
+
+
+
+3 waiting state 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00135}{135}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_acd27f57311268ed1ad0ddb1a207ce9a4}\label{reg__flash_8h_acd27f57311268ed1ad0ddb1a207ce9a4}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_ACR\_LATENCY\_Pos@{FLASH\_ACR\_LATENCY\_Pos}}
+\index{FLASH\_ACR\_LATENCY\_Pos@{FLASH\_ACR\_LATENCY\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_ACR\_LATENCY\_Pos}{FLASH\_ACR\_LATENCY\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+\+Pos~(0)}
+
+
+
+FLASH\+\_\+\+ACR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00130}{130}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a5285ab198307213dce0629f9b7c6fc86}\label{reg__flash_8h_a5285ab198307213dce0629f9b7c6fc86}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_ACR\_PRFTBE@{FLASH\_ACR\_PRFTBE}}
+\index{FLASH\_ACR\_PRFTBE@{FLASH\_ACR\_PRFTBE}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_ACR\_PRFTBE}{FLASH\_ACR\_PRFTBE}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+ACR\+\_\+\+PRFTBE~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a288f4e0368a7d8d18e626a54caf995a9}{FLASH\+\_\+\+ACR\+\_\+\+PRFTBE\+\_\+\+Pos}})}
+
+
+
+Prefetch Buffer Enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00139}{139}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a288f4e0368a7d8d18e626a54caf995a9}\label{reg__flash_8h_a288f4e0368a7d8d18e626a54caf995a9}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_ACR\_PRFTBE\_Pos@{FLASH\_ACR\_PRFTBE\_Pos}}
+\index{FLASH\_ACR\_PRFTBE\_Pos@{FLASH\_ACR\_PRFTBE\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_ACR\_PRFTBE\_Pos}{FLASH\_ACR\_PRFTBE\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+ACR\+\_\+\+PRFTBE\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00138}{138}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a1e73d25ffe7e7a258a873e1fbef17445}\label{reg__flash_8h_a1e73d25ffe7e7a258a873e1fbef17445}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_ACR\_PRFTBS@{FLASH\_ACR\_PRFTBS}}
+\index{FLASH\_ACR\_PRFTBS@{FLASH\_ACR\_PRFTBS}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_ACR\_PRFTBS}{FLASH\_ACR\_PRFTBS}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+ACR\+\_\+\+PRFTBS~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a8998834e7fc4fa0855cf5e7424b7abea}{FLASH\+\_\+\+ACR\+\_\+\+PRFTBS\+\_\+\+Pos}})}
+
+
+
+Prefetch Buffer Status ///////////////////////////////////////////////////////////////////////////// 
+
+FLASH\+\_\+\+KEYR Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00144}{144}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a8998834e7fc4fa0855cf5e7424b7abea}\label{reg__flash_8h_a8998834e7fc4fa0855cf5e7424b7abea}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_ACR\_PRFTBS\_Pos@{FLASH\_ACR\_PRFTBS\_Pos}}
+\index{FLASH\_ACR\_PRFTBS\_Pos@{FLASH\_ACR\_PRFTBS\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_ACR\_PRFTBS\_Pos}{FLASH\_ACR\_PRFTBS\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+ACR\+\_\+\+PRFTBS\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00140}{140}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_aafc00fde8118ce03602d00d34a80fec4}\label{reg__flash_8h_aafc00fde8118ce03602d00d34a80fec4}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_AR\_FAR@{FLASH\_AR\_FAR}}
+\index{FLASH\_AR\_FAR@{FLASH\_AR\_FAR}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_AR\_FAR}{FLASH\_AR\_FAR}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+AR\+\_\+\+FAR~(0x\+FFFFFFFFU $<$$<$ \mbox{\hyperlink{reg__flash_8h_a17a157edb20903a57b2d5ebd0efa66f2}{FLASH\+\_\+\+AR\+\_\+\+FAR\+\_\+\+Pos}})}
+
+
+
+Flash Address 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00194}{194}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a17a157edb20903a57b2d5ebd0efa66f2}\label{reg__flash_8h_a17a157edb20903a57b2d5ebd0efa66f2}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_AR\_FAR\_Pos@{FLASH\_AR\_FAR\_Pos}}
+\index{FLASH\_AR\_FAR\_Pos@{FLASH\_AR\_FAR\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_AR\_FAR\_Pos}{FLASH\_AR\_FAR\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+AR\+\_\+\+FAR\+\_\+\+Pos~(0)}
+
+
+
+FLASH\+\_\+\+AR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00193}{193}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a23a9099a5f8fc9c6e253c0eecb2be8db}\label{reg__flash_8h_a23a9099a5f8fc9c6e253c0eecb2be8db}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_BASE@{FLASH\_BASE}}
+\index{FLASH\_BASE@{FLASH\_BASE}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_BASE}{FLASH\_BASE}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+BASE~(0x08000000U)}
+
+
+
+MM32 MCU Memory/\+Peripherals mapping 
+
+FLASH base address in the alias region 
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00041}{41}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_ab9e69856f654ec430a42791a34799db0}\label{reg__flash_8h_ab9e69856f654ec430a42791a34799db0}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_CR\_EOPIE@{FLASH\_CR\_EOPIE}}
+\index{FLASH\_CR\_EOPIE@{FLASH\_CR\_EOPIE}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_CR\_EOPIE}{FLASH\_CR\_EOPIE}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+CR\+\_\+\+EOPIE~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a4e162a7fa45cb85ba0df0942a2519478}{FLASH\+\_\+\+CR\+\_\+\+EOPIE\+\_\+\+Pos}})}
+
+
+
+End of operation interrupt enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00188}{188}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a4e162a7fa45cb85ba0df0942a2519478}\label{reg__flash_8h_a4e162a7fa45cb85ba0df0942a2519478}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_CR\_EOPIE\_Pos@{FLASH\_CR\_EOPIE\_Pos}}
+\index{FLASH\_CR\_EOPIE\_Pos@{FLASH\_CR\_EOPIE\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_CR\_EOPIE\_Pos}{FLASH\_CR\_EOPIE\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+CR\+\_\+\+EOPIE\+\_\+\+Pos~(12)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00187}{187}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a930897cecdaa9dbef8c640b84acbd8c2}\label{reg__flash_8h_a930897cecdaa9dbef8c640b84acbd8c2}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_CR\_ERRIE@{FLASH\_CR\_ERRIE}}
+\index{FLASH\_CR\_ERRIE@{FLASH\_CR\_ERRIE}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_CR\_ERRIE}{FLASH\_CR\_ERRIE}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+CR\+\_\+\+ERRIE~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_ab075c4eeff509cfe0f34040c29edfb05}{FLASH\+\_\+\+CR\+\_\+\+ERRIE\+\_\+\+Pos}})}
+
+
+
+Error Interrupt Enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00186}{186}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_ab075c4eeff509cfe0f34040c29edfb05}\label{reg__flash_8h_ab075c4eeff509cfe0f34040c29edfb05}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_CR\_ERRIE\_Pos@{FLASH\_CR\_ERRIE\_Pos}}
+\index{FLASH\_CR\_ERRIE\_Pos@{FLASH\_CR\_ERRIE\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_CR\_ERRIE\_Pos}{FLASH\_CR\_ERRIE\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+CR\+\_\+\+ERRIE\+\_\+\+Pos~(10)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00185}{185}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_ab25f1fa4127fa015361b61a6f3180784}\label{reg__flash_8h_ab25f1fa4127fa015361b61a6f3180784}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_CR\_LOCK@{FLASH\_CR\_LOCK}}
+\index{FLASH\_CR\_LOCK@{FLASH\_CR\_LOCK}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_CR\_LOCK}{FLASH\_CR\_LOCK}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+CR\+\_\+\+LOCK~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_aa74509adc6db3db66803966b25423cae}{FLASH\+\_\+\+CR\+\_\+\+LOCK\+\_\+\+Pos}})}
+
+
+
+Lock 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00182}{182}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_aa74509adc6db3db66803966b25423cae}\label{reg__flash_8h_aa74509adc6db3db66803966b25423cae}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_CR\_LOCK\_Pos@{FLASH\_CR\_LOCK\_Pos}}
+\index{FLASH\_CR\_LOCK\_Pos@{FLASH\_CR\_LOCK\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_CR\_LOCK\_Pos}{FLASH\_CR\_LOCK\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+CR\+\_\+\+LOCK\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00181}{181}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a4a287aa5a625125301306a02fb69c53a}\label{reg__flash_8h_a4a287aa5a625125301306a02fb69c53a}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_CR\_MER@{FLASH\_CR\_MER}}
+\index{FLASH\_CR\_MER@{FLASH\_CR\_MER}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_CR\_MER}{FLASH\_CR\_MER}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+CR\+\_\+\+MER~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a0627fa13f9e31a0250d6917e4d2ecbc1}{FLASH\+\_\+\+CR\+\_\+\+MER\+\_\+\+Pos}})}
+
+
+
+Mass Erase 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00174}{174}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a0627fa13f9e31a0250d6917e4d2ecbc1}\label{reg__flash_8h_a0627fa13f9e31a0250d6917e4d2ecbc1}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_CR\_MER\_Pos@{FLASH\_CR\_MER\_Pos}}
+\index{FLASH\_CR\_MER\_Pos@{FLASH\_CR\_MER\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_CR\_MER\_Pos}{FLASH\_CR\_MER\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+CR\+\_\+\+MER\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00173}{173}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a19fbf5dc4339b1ec8630675f03ad6fe0}\label{reg__flash_8h_a19fbf5dc4339b1ec8630675f03ad6fe0}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_CR\_OPTER@{FLASH\_CR\_OPTER}}
+\index{FLASH\_CR\_OPTER@{FLASH\_CR\_OPTER}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_CR\_OPTER}{FLASH\_CR\_OPTER}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+CR\+\_\+\+OPTER~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_ae89abf0177ab4bcf030984073b74a182}{FLASH\+\_\+\+CR\+\_\+\+OPTER\+\_\+\+Pos}})}
+
+
+
+Option Byte Erase 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00178}{178}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_ae89abf0177ab4bcf030984073b74a182}\label{reg__flash_8h_ae89abf0177ab4bcf030984073b74a182}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_CR\_OPTER\_Pos@{FLASH\_CR\_OPTER\_Pos}}
+\index{FLASH\_CR\_OPTER\_Pos@{FLASH\_CR\_OPTER\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_CR\_OPTER\_Pos}{FLASH\_CR\_OPTER\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+CR\+\_\+\+OPTER\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00177}{177}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a6736a5478a87f35a6a0cb66d8784a5ab}\label{reg__flash_8h_a6736a5478a87f35a6a0cb66d8784a5ab}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_CR\_OPTPG@{FLASH\_CR\_OPTPG}}
+\index{FLASH\_CR\_OPTPG@{FLASH\_CR\_OPTPG}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_CR\_OPTPG}{FLASH\_CR\_OPTPG}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+CR\+\_\+\+OPTPG~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a3f0371da9e5f8f8e95b038107426ce6f}{FLASH\+\_\+\+CR\+\_\+\+OPTPG\+\_\+\+Pos}})}
+
+
+
+Option Byte Programming 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00176}{176}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a3f0371da9e5f8f8e95b038107426ce6f}\label{reg__flash_8h_a3f0371da9e5f8f8e95b038107426ce6f}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_CR\_OPTPG\_Pos@{FLASH\_CR\_OPTPG\_Pos}}
+\index{FLASH\_CR\_OPTPG\_Pos@{FLASH\_CR\_OPTPG\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_CR\_OPTPG\_Pos}{FLASH\_CR\_OPTPG\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+CR\+\_\+\+OPTPG\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00175}{175}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a27d44bc9617cc430de9413b385dfe0c3}\label{reg__flash_8h_a27d44bc9617cc430de9413b385dfe0c3}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_CR\_OPTWRE@{FLASH\_CR\_OPTWRE}}
+\index{FLASH\_CR\_OPTWRE@{FLASH\_CR\_OPTWRE}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_CR\_OPTWRE}{FLASH\_CR\_OPTWRE}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+CR\+\_\+\+OPTWRE~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_aa6cdcb203f948b1d30cba476001d9074}{FLASH\+\_\+\+CR\+\_\+\+OPTWRE\+\_\+\+Pos}})}
+
+
+
+Option Bytes Write Enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00184}{184}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_aa6cdcb203f948b1d30cba476001d9074}\label{reg__flash_8h_aa6cdcb203f948b1d30cba476001d9074}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_CR\_OPTWRE\_Pos@{FLASH\_CR\_OPTWRE\_Pos}}
+\index{FLASH\_CR\_OPTWRE\_Pos@{FLASH\_CR\_OPTWRE\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_CR\_OPTWRE\_Pos}{FLASH\_CR\_OPTWRE\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+CR\+\_\+\+OPTWRE\+\_\+\+Pos~(9)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00183}{183}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_ad845355ade49d56cf70ad0ff09595a23}\label{reg__flash_8h_ad845355ade49d56cf70ad0ff09595a23}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_CR\_PER@{FLASH\_CR\_PER}}
+\index{FLASH\_CR\_PER@{FLASH\_CR\_PER}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_CR\_PER}{FLASH\_CR\_PER}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+CR\+\_\+\+PER~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a4ae43572c697cddd88e48b945828c526}{FLASH\+\_\+\+CR\+\_\+\+PER\+\_\+\+Pos}})}
+
+
+
+Page Erase 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00172}{172}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a4ae43572c697cddd88e48b945828c526}\label{reg__flash_8h_a4ae43572c697cddd88e48b945828c526}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_CR\_PER\_Pos@{FLASH\_CR\_PER\_Pos}}
+\index{FLASH\_CR\_PER\_Pos@{FLASH\_CR\_PER\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_CR\_PER\_Pos}{FLASH\_CR\_PER\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+CR\+\_\+\+PER\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00171}{171}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a47754b39bd7a7c79c251d6376f97f661}\label{reg__flash_8h_a47754b39bd7a7c79c251d6376f97f661}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_CR\_PG@{FLASH\_CR\_PG}}
+\index{FLASH\_CR\_PG@{FLASH\_CR\_PG}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_CR\_PG}{FLASH\_CR\_PG}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+CR\+\_\+\+PG~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a0a5addaa1ee5049b0c99023d91dd4a70}{FLASH\+\_\+\+CR\+\_\+\+PG\+\_\+\+Pos}})}
+
+
+
+Programming 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00170}{170}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a0a5addaa1ee5049b0c99023d91dd4a70}\label{reg__flash_8h_a0a5addaa1ee5049b0c99023d91dd4a70}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_CR\_PG\_Pos@{FLASH\_CR\_PG\_Pos}}
+\index{FLASH\_CR\_PG\_Pos@{FLASH\_CR\_PG\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_CR\_PG\_Pos}{FLASH\_CR\_PG\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+CR\+\_\+\+PG\+\_\+\+Pos~(0)}
+
+
+
+FLASH\+\_\+\+CR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00169}{169}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_afe4dd28134f93f52b1d4ec5b36a99864}\label{reg__flash_8h_afe4dd28134f93f52b1d4ec5b36a99864}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_CR\_STRT@{FLASH\_CR\_STRT}}
+\index{FLASH\_CR\_STRT@{FLASH\_CR\_STRT}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_CR\_STRT}{FLASH\_CR\_STRT}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+CR\+\_\+\+STRT~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a7925df36a4d15838d8cb457f671e7532}{FLASH\+\_\+\+CR\+\_\+\+STRT\+\_\+\+Pos}})}
+
+
+
+Start 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00180}{180}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a7925df36a4d15838d8cb457f671e7532}\label{reg__flash_8h_a7925df36a4d15838d8cb457f671e7532}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_CR\_STRT\_Pos@{FLASH\_CR\_STRT\_Pos}}
+\index{FLASH\_CR\_STRT\_Pos@{FLASH\_CR\_STRT\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_CR\_STRT\_Pos}{FLASH\_CR\_STRT\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+CR\+\_\+\+STRT\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00179}{179}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_ad9db8057ca6bb3aebc554fa40f2de8ee}\label{reg__flash_8h_ad9db8057ca6bb3aebc554fa40f2de8ee}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_KEYR\_FKEY@{FLASH\_KEYR\_FKEY}}
+\index{FLASH\_KEYR\_FKEY@{FLASH\_KEYR\_FKEY}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_KEYR\_FKEY}{FLASH\_KEYR\_FKEY}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+KEYR\+\_\+\+FKEY~(0x\+FFFFFFFFU $<$$<$ \mbox{\hyperlink{reg__flash_8h_a72dd303c0d32dad568dc108a27ddff67}{FLASH\+\_\+\+KEYR\+\_\+\+FKEY\+\_\+\+Pos}})}
+
+
+
+FLASH Key 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00146}{146}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a72dd303c0d32dad568dc108a27ddff67}\label{reg__flash_8h_a72dd303c0d32dad568dc108a27ddff67}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_KEYR\_FKEY\_Pos@{FLASH\_KEYR\_FKEY\_Pos}}
+\index{FLASH\_KEYR\_FKEY\_Pos@{FLASH\_KEYR\_FKEY\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_KEYR\_FKEY\_Pos}{FLASH\_KEYR\_FKEY\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+KEYR\+\_\+\+FKEY\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00145}{145}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a91bc14334e9930bc6f3ebf9ea77e17b6}\label{reg__flash_8h_a91bc14334e9930bc6f3ebf9ea77e17b6}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_OBR\_Data0@{FLASH\_OBR\_Data0}}
+\index{FLASH\_OBR\_Data0@{FLASH\_OBR\_Data0}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_OBR\_Data0}{FLASH\_OBR\_Data0}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+OBR\+\_\+\+Data0~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__flash_8h_ac2aeecbeab5b5d2655a854a738a8e5fa}{FLASH\+\_\+\+OBR\+\_\+\+Data0\+\_\+\+Pos}})}
+
+
+
+User data storage option byte 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00212}{212}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_ac2aeecbeab5b5d2655a854a738a8e5fa}\label{reg__flash_8h_ac2aeecbeab5b5d2655a854a738a8e5fa}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_OBR\_Data0\_Pos@{FLASH\_OBR\_Data0\_Pos}}
+\index{FLASH\_OBR\_Data0\_Pos@{FLASH\_OBR\_Data0\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_OBR\_Data0\_Pos}{FLASH\_OBR\_Data0\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+OBR\+\_\+\+Data0\+\_\+\+Pos~(10)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00211}{211}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a5123395ca5fc5b3e6790acafa77a1bf8}\label{reg__flash_8h_a5123395ca5fc5b3e6790acafa77a1bf8}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_OBR\_Data1@{FLASH\_OBR\_Data1}}
+\index{FLASH\_OBR\_Data1@{FLASH\_OBR\_Data1}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_OBR\_Data1}{FLASH\_OBR\_Data1}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+OBR\+\_\+\+Data1~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__flash_8h_a05e703fc3c42fdd5db65ba81a49d0a68}{FLASH\+\_\+\+OBR\+\_\+\+Data1\+\_\+\+Pos}})}
+
+
+
+User data storage option byte 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00214}{214}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a05e703fc3c42fdd5db65ba81a49d0a68}\label{reg__flash_8h_a05e703fc3c42fdd5db65ba81a49d0a68}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_OBR\_Data1\_Pos@{FLASH\_OBR\_Data1\_Pos}}
+\index{FLASH\_OBR\_Data1\_Pos@{FLASH\_OBR\_Data1\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_OBR\_Data1\_Pos}{FLASH\_OBR\_Data1\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+OBR\+\_\+\+Data1\+\_\+\+Pos~(18)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00213}{213}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_ab52c27d6657bd72f1860fa25a1faf8e3}\label{reg__flash_8h_ab52c27d6657bd72f1860fa25a1faf8e3}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_OBR\_OPTERR@{FLASH\_OBR\_OPTERR}}
+\index{FLASH\_OBR\_OPTERR@{FLASH\_OBR\_OPTERR}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_OBR\_OPTERR}{FLASH\_OBR\_OPTERR}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+OBR\+\_\+\+OPTERR~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a97bfb7f45709e6f143c64857b5150565}{FLASH\+\_\+\+OBR\+\_\+\+OPTERR\+\_\+\+Pos}})}
+
+
+
+Option Byte Error 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00200}{200}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a97bfb7f45709e6f143c64857b5150565}\label{reg__flash_8h_a97bfb7f45709e6f143c64857b5150565}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_OBR\_OPTERR\_Pos@{FLASH\_OBR\_OPTERR\_Pos}}
+\index{FLASH\_OBR\_OPTERR\_Pos@{FLASH\_OBR\_OPTERR\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_OBR\_OPTERR\_Pos}{FLASH\_OBR\_OPTERR\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+OBR\+\_\+\+OPTERR\+\_\+\+Pos~(0)}
+
+
+
+FLASH\+\_\+\+OBR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00199}{199}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a052763d6c2daf0a422577a6c8a0be977}\label{reg__flash_8h_a052763d6c2daf0a422577a6c8a0be977}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_OBR\_RDPRT@{FLASH\_OBR\_RDPRT}}
+\index{FLASH\_OBR\_RDPRT@{FLASH\_OBR\_RDPRT}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_OBR\_RDPRT}{FLASH\_OBR\_RDPRT}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+OBR\+\_\+\+RDPRT~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a7cb5e11b3eae03c7d2b36686737a71c3}{FLASH\+\_\+\+OBR\+\_\+\+RDPRT\+\_\+\+Pos}})}
+
+
+
+Read protection level status 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00202}{202}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a7cb5e11b3eae03c7d2b36686737a71c3}\label{reg__flash_8h_a7cb5e11b3eae03c7d2b36686737a71c3}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_OBR\_RDPRT\_Pos@{FLASH\_OBR\_RDPRT\_Pos}}
+\index{FLASH\_OBR\_RDPRT\_Pos@{FLASH\_OBR\_RDPRT\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_OBR\_RDPRT\_Pos}{FLASH\_OBR\_RDPRT\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+OBR\+\_\+\+RDPRT\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00201}{201}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a5700f8b280578cb6eff3a3f784cf93a7}\label{reg__flash_8h_a5700f8b280578cb6eff3a3f784cf93a7}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_OBR\_RST\_STDBY@{FLASH\_OBR\_RST\_STDBY}}
+\index{FLASH\_OBR\_RST\_STDBY@{FLASH\_OBR\_RST\_STDBY}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_OBR\_RST\_STDBY}{FLASH\_OBR\_RST\_STDBY}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+OBR\+\_\+\+RST\+\_\+\+STDBY~(0x04U $<$$<$ \mbox{\hyperlink{reg__flash_8h_aefde313300f0e954d27f87e6256274b4}{FLASH\+\_\+\+OBR\+\_\+\+USER\+\_\+\+Pos}})}
+
+
+
+n\+RST\+\_\+\+STDBY 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00208}{208}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a04297fb424e7aa9a3dd834cceecc3f0b}\label{reg__flash_8h_a04297fb424e7aa9a3dd834cceecc3f0b}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_OBR\_RST\_STOP@{FLASH\_OBR\_RST\_STOP}}
+\index{FLASH\_OBR\_RST\_STOP@{FLASH\_OBR\_RST\_STOP}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_OBR\_RST\_STOP}{FLASH\_OBR\_RST\_STOP}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+OBR\+\_\+\+RST\+\_\+\+STOP~(0x02U $<$$<$ \mbox{\hyperlink{reg__flash_8h_aefde313300f0e954d27f87e6256274b4}{FLASH\+\_\+\+OBR\+\_\+\+USER\+\_\+\+Pos}})}
+
+
+
+n\+RST\+\_\+\+STOP 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00207}{207}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a1585552c59923cb1e1979cdfdc77b991}\label{reg__flash_8h_a1585552c59923cb1e1979cdfdc77b991}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_OBR\_USER@{FLASH\_OBR\_USER}}
+\index{FLASH\_OBR\_USER@{FLASH\_OBR\_USER}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_OBR\_USER}{FLASH\_OBR\_USER}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+OBR\+\_\+\+USER~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__flash_8h_aefde313300f0e954d27f87e6256274b4}{FLASH\+\_\+\+OBR\+\_\+\+USER\+\_\+\+Pos}})}
+
+
+
+User Option Bytes 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00204}{204}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_aefde313300f0e954d27f87e6256274b4}\label{reg__flash_8h_aefde313300f0e954d27f87e6256274b4}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_OBR\_USER\_Pos@{FLASH\_OBR\_USER\_Pos}}
+\index{FLASH\_OBR\_USER\_Pos@{FLASH\_OBR\_USER\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_OBR\_USER\_Pos}{FLASH\_OBR\_USER\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+OBR\+\_\+\+USER\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00203}{203}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a5a18df54a9254985b1ee69c5666e68b6}\label{reg__flash_8h_a5a18df54a9254985b1ee69c5666e68b6}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_OBR\_WDG\_SW@{FLASH\_OBR\_WDG\_SW}}
+\index{FLASH\_OBR\_WDG\_SW@{FLASH\_OBR\_WDG\_SW}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_OBR\_WDG\_SW}{FLASH\_OBR\_WDG\_SW}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+OBR\+\_\+\+WDG\+\_\+\+SW~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_aefde313300f0e954d27f87e6256274b4}{FLASH\+\_\+\+OBR\+\_\+\+USER\+\_\+\+Pos}})}
+
+
+
+WDG\+\_\+\+SW 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00206}{206}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_aa2984934a116e341420122bcc44019f1}\label{reg__flash_8h_aa2984934a116e341420122bcc44019f1}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_OPTKEYR\_OPTKEY@{FLASH\_OPTKEYR\_OPTKEY}}
+\index{FLASH\_OPTKEYR\_OPTKEY@{FLASH\_OPTKEYR\_OPTKEY}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_OPTKEYR\_OPTKEY}{FLASH\_OPTKEYR\_OPTKEY}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+OPTKEYR\+\_\+\+OPTKEY~(0x\+FFFFFFFFU $<$$<$ \mbox{\hyperlink{reg__flash_8h_a97a955c9fb95aadc41510e8186911f06}{FLASH\+\_\+\+OPTKEYR\+\_\+\+OPTKEY\+\_\+\+Pos}})}
+
+
+
+Option Byte Key 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00152}{152}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a97a955c9fb95aadc41510e8186911f06}\label{reg__flash_8h_a97a955c9fb95aadc41510e8186911f06}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_OPTKEYR\_OPTKEY\_Pos@{FLASH\_OPTKEYR\_OPTKEY\_Pos}}
+\index{FLASH\_OPTKEYR\_OPTKEY\_Pos@{FLASH\_OPTKEYR\_OPTKEY\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_OPTKEYR\_OPTKEY\_Pos}{FLASH\_OPTKEYR\_OPTKEY\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+OPTKEYR\+\_\+\+OPTKEY\+\_\+\+Pos~(0)}
+
+
+
+FLASH\+\_\+\+OPTKEYR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00151}{151}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a8311d9a635d57a643676ca37bf461dd3}\label{reg__flash_8h_a8311d9a635d57a643676ca37bf461dd3}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_REG\_BASE@{FLASH\_REG\_BASE}}
+\index{FLASH\_REG\_BASE@{FLASH\_REG\_BASE}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_REG\_BASE}{FLASH\_REG\_BASE}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+REG\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x2000)}
+
+
+
+FLASH Base Address Definition 
+
+Base Address\+: 0x40022000 /////////////////////////////////////////////////////////////////////////////
+
+OPTB Base Address Definition 
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00052}{52}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_aceacb6d53beb00e92d7d7a7cb41a19d2}\label{reg__flash_8h_aceacb6d53beb00e92d7d7a7cb41a19d2}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_SR\_BUSY@{FLASH\_SR\_BUSY}}
+\index{FLASH\_SR\_BUSY@{FLASH\_SR\_BUSY}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_SR\_BUSY}{FLASH\_SR\_BUSY}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+SR\+\_\+\+BUSY~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_ad8f128bca20566a98420c91e6019aeee}{FLASH\+\_\+\+SR\+\_\+\+BUSY\+\_\+\+Pos}})}
+
+
+
+Busy 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00158}{158}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_ad8f128bca20566a98420c91e6019aeee}\label{reg__flash_8h_ad8f128bca20566a98420c91e6019aeee}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_SR\_BUSY\_Pos@{FLASH\_SR\_BUSY\_Pos}}
+\index{FLASH\_SR\_BUSY\_Pos@{FLASH\_SR\_BUSY\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_SR\_BUSY\_Pos}{FLASH\_SR\_BUSY\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+SR\+\_\+\+BUSY\+\_\+\+Pos~(0)}
+
+
+
+FLASH\+\_\+\+SR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00157}{157}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_ae1301c6b487cfefa247c54a576a0c12b}\label{reg__flash_8h_ae1301c6b487cfefa247c54a576a0c12b}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_SR\_EOP@{FLASH\_SR\_EOP}}
+\index{FLASH\_SR\_EOP@{FLASH\_SR\_EOP}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_SR\_EOP}{FLASH\_SR\_EOP}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+SR\+\_\+\+EOP~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_a2013e875c4c210b820e502feea6c9fb1}{FLASH\+\_\+\+SR\+\_\+\+EOP\+\_\+\+Pos}})}
+
+
+
+End of operation 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00164}{164}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a2013e875c4c210b820e502feea6c9fb1}\label{reg__flash_8h_a2013e875c4c210b820e502feea6c9fb1}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_SR\_EOP\_Pos@{FLASH\_SR\_EOP\_Pos}}
+\index{FLASH\_SR\_EOP\_Pos@{FLASH\_SR\_EOP\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_SR\_EOP\_Pos}{FLASH\_SR\_EOP\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+SR\+\_\+\+EOP\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00163}{163}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a60f40ca765714598a62aa216a5ccd8e4}\label{reg__flash_8h_a60f40ca765714598a62aa216a5ccd8e4}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_SR\_PGERR@{FLASH\_SR\_PGERR}}
+\index{FLASH\_SR\_PGERR@{FLASH\_SR\_PGERR}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_SR\_PGERR}{FLASH\_SR\_PGERR}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+SR\+\_\+\+PGERR~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_ade46f1b130b188d41613fc87661a8815}{FLASH\+\_\+\+SR\+\_\+\+PGERR\+\_\+\+Pos}})}
+
+
+
+Programming Error 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00160}{160}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_ade46f1b130b188d41613fc87661a8815}\label{reg__flash_8h_ade46f1b130b188d41613fc87661a8815}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_SR\_PGERR\_Pos@{FLASH\_SR\_PGERR\_Pos}}
+\index{FLASH\_SR\_PGERR\_Pos@{FLASH\_SR\_PGERR\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_SR\_PGERR\_Pos}{FLASH\_SR\_PGERR\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+SR\+\_\+\+PGERR\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00159}{159}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a2e403606e5ac23cb07701aeebc1f73e5}\label{reg__flash_8h_a2e403606e5ac23cb07701aeebc1f73e5}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_SR\_WRPRTERR@{FLASH\_SR\_WRPRTERR}}
+\index{FLASH\_SR\_WRPRTERR@{FLASH\_SR\_WRPRTERR}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_SR\_WRPRTERR}{FLASH\_SR\_WRPRTERR}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+SR\+\_\+\+WRPRTERR~(0x01U $<$$<$ \mbox{\hyperlink{reg__flash_8h_abd56872fd365b645d51c217e901958f6}{FLASH\+\_\+\+SR\+\_\+\+WRPRTERR\+\_\+\+Pos}})}
+
+
+
+Write Protection Error 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00162}{162}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_abd56872fd365b645d51c217e901958f6}\label{reg__flash_8h_abd56872fd365b645d51c217e901958f6}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_SR\_WRPRTERR\_Pos@{FLASH\_SR\_WRPRTERR\_Pos}}
+\index{FLASH\_SR\_WRPRTERR\_Pos@{FLASH\_SR\_WRPRTERR\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_SR\_WRPRTERR\_Pos}{FLASH\_SR\_WRPRTERR\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+SR\+\_\+\+WRPRTERR\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00161}{161}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a1d3842e780ec47c1127de0ed4a93821d}\label{reg__flash_8h_a1d3842e780ec47c1127de0ed4a93821d}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_WRPR\_WRP@{FLASH\_WRPR\_WRP}}
+\index{FLASH\_WRPR\_WRP@{FLASH\_WRPR\_WRP}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_WRPR\_WRP}{FLASH\_WRPR\_WRP}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+WRPR\+\_\+\+WRP~(0x\+FFFFFFFFU $<$$<$ \mbox{\hyperlink{reg__flash_8h_aa2cba593e56feed77b6c08f544fd327b}{FLASH\+\_\+\+WRPR\+\_\+\+WRP\+\_\+\+Pos}})}
+
+
+
+Write Protect 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00220}{220}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_aa2cba593e56feed77b6c08f544fd327b}\label{reg__flash_8h_aa2cba593e56feed77b6c08f544fd327b}} 
+\index{reg\_flash.h@{reg\_flash.h}!FLASH\_WRPR\_WRP\_Pos@{FLASH\_WRPR\_WRP\_Pos}}
+\index{FLASH\_WRPR\_WRP\_Pos@{FLASH\_WRPR\_WRP\_Pos}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_WRPR\_WRP\_Pos}{FLASH\_WRPR\_WRP\_Pos}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+WRPR\+\_\+\+WRP\+\_\+\+Pos~(0)}
+
+
+
+FLASH\+\_\+\+WRPR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00219}{219}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_ad2d5f875cdc6d696735f20fa23a895c3}\label{reg__flash_8h_ad2d5f875cdc6d696735f20fa23a895c3}} 
+\index{reg\_flash.h@{reg\_flash.h}!OB@{OB}}
+\index{OB@{OB}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{OB}{OB}}
+{\footnotesize\ttfamily \#define OB~((\mbox{\hyperlink{struct_o_b___type_def}{OB\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__flash_8h_ab5b5fb155f9ee15dfb6d757da1adc926}{OB\+\_\+\+BASE}})}
+
+
+
+OPTB type pointer Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00121}{121}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_ab5b5fb155f9ee15dfb6d757da1adc926}\label{reg__flash_8h_ab5b5fb155f9ee15dfb6d757da1adc926}} 
+\index{reg\_flash.h@{reg\_flash.h}!OB\_BASE@{OB\_BASE}}
+\index{OB\_BASE@{OB\_BASE}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{OB\_BASE}{OB\_BASE}}
+{\footnotesize\ttfamily \#define OB\+\_\+\+BASE~(0x1\+FFFF800U)}
+
+
+
+Flash Option Bytes base address 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00053}{53}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a9bc09c4fadd88692e00a50fa44ed8555}\label{reg__flash_8h_a9bc09c4fadd88692e00a50fa44ed8555}} 
+\index{reg\_flash.h@{reg\_flash.h}!PROTECT@{PROTECT}}
+\index{PROTECT@{PROTECT}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{PROTECT}{PROTECT}}
+{\footnotesize\ttfamily \#define PROTECT~((\mbox{\hyperlink{struct_p_r_o_t_e_c_t___type_def}{PROTECT\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__flash_8h_aaf5081b0cfe00529bf531417058d8ee8}{PROTECT\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00122}{122}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_aaf5081b0cfe00529bf531417058d8ee8}\label{reg__flash_8h_aaf5081b0cfe00529bf531417058d8ee8}} 
+\index{reg\_flash.h@{reg\_flash.h}!PROTECT\_BASE@{PROTECT\_BASE}}
+\index{PROTECT\_BASE@{PROTECT\_BASE}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{PROTECT\_BASE}{PROTECT\_BASE}}
+{\footnotesize\ttfamily \#define PROTECT\+\_\+\+BASE~(0x1\+FFE0000U)}
+
+
+
+Flash Protect Bytes base address 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00054}{54}} 行定义.
+
+\mbox{\Hypertarget{reg__flash_8h_a05e8f3d2e5868754a7cd88614955aecc}\label{reg__flash_8h_a05e8f3d2e5868754a7cd88614955aecc}} 
+\index{reg\_flash.h@{reg\_flash.h}!SRAM\_BASE@{SRAM\_BASE}}
+\index{SRAM\_BASE@{SRAM\_BASE}!reg\_flash.h@{reg\_flash.h}}
+\doxysubsubsection{\texorpdfstring{SRAM\_BASE}{SRAM\_BASE}}
+{\footnotesize\ttfamily \#define SRAM\+\_\+\+BASE~(0x20000000U)}
+
+
+
+SRAM base address in the alias region 
+
+
+
+在文件 \mbox{\hyperlink{reg__flash_8h_source}{reg\+\_\+flash.\+h}} 第 \mbox{\hyperlink{reg__flash_8h_source_l00042}{42}} 行定义.
+

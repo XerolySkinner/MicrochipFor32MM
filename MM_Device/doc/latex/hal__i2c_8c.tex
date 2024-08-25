@@ -1,0 +1,95 @@
+\hypertarget{hal__i2c_8c}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Src/hal\+\_\+i2c.c 文件参考}
+\label{hal__i2c_8c}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_i2c.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_i2c.c}}
+
+
+THIS FILE PROVIDES ALL THE I2C FIRMWARE FUNCTIONS.  
+
+
+{\ttfamily \#include \char`\"{}hal\+\_\+i2c.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}hal\+\_\+rcc.\+h\char`\"{}}\newline
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{hal__i2c_8c_a2d982add3815120a215da879561543e7}{\+\_\+\+HAL\+\_\+\+I2\+C\+\_\+\+C\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga69380f6129ce1581e41d8e0d1b25c958}{I2\+C\+\_\+\+De\+Init}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c)
+\begin{DoxyCompactList}\small\item\em Deinitializes the i2c peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga3839b536c9800c395f7fd10ef0a8e279}{I2\+C\+\_\+\+Init}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{struct_i2_c___init_type_def}{I2\+C\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Initializes the i2c peripheral according to the specified parameters in the init\+\_\+struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_gad4199a23b333cb40233ff75efbdfa08d}{I2\+C\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{struct_i2_c___init_type_def}{I2\+C\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Fills each init\+\_\+struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga53f9ecacc7f09701757e5addf89983ce}{I2\+C\+\_\+\+Cmd}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified I2C peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga4172649657a39b3f6584bba8dd5f8b9c}{I2\+C\+\_\+\+DMACmd}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified I2C DMA requests. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga700c1f27d4610e7eb12d36ca05cd213e}{I2\+C\+\_\+\+Generate\+START}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Generates i2c communication START condition. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga4de5e078677611c91d8647ca40adf10c}{I2\+C\+\_\+\+Generate\+STOP}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Generates i2c communication STOP condition. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga0f311a119ff4a27677512c83f1f3771b}{I2\+C\+\_\+\+Own\+Address2\+Config}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} addr)
+\begin{DoxyCompactList}\small\item\em Configures the specified I2C own address2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_gadd6c06938cff550c455e4a58e0de9f00}{I2\+C\+\_\+\+Dual\+Address\+Cmd}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified I2C dual addressing mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga5c5f30fdf41a2ab1c753d25ff21fc3a7}{I2\+C\+\_\+\+General\+Call\+Cmd}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified I2C general call feature. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_gafb14f8e75c0e27ec682549d2e87480e8}{I2\+C\+\_\+\+ITConfig}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} it, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified I2C interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga30ae2753e07b8be67fead01cc4a6c3ec}{I2\+C\+\_\+\+Send\+Data}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} dat)
+\begin{DoxyCompactList}\small\item\em Sends a data byte through the i2c peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga163d5ac428611b829ce0d6d89e84657a}{I2\+C\+\_\+\+Read\+Cmd}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c)
+\begin{DoxyCompactList}\small\item\em Returns the most recent received data by the i2c peripheral. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{group___i2_c___exported___functions_gaa922a0851c796a5a9eb0bab5fac8dc24}{I2\+C\+\_\+\+Receive\+Data}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c)
+\begin{DoxyCompactList}\small\item\em Returns the most recent received data by the i2c peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga7eceb46187692e92a97a2fda4def7821}{I2\+C\+\_\+\+Send7bit\+Address}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} addr, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} dir)
+\begin{DoxyCompactList}\small\item\em Transmits the address byte to select the slave device. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{group___i2_c___exported___functions_gad2590a23bf6dd57f8a6916ec36d08eb0}{I2\+C\+\_\+\+Read\+Register}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} reg)
+\begin{DoxyCompactList}\small\item\em Reads the specified I2C register and returns its value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___i2_c___exported___functions_gafd48431b1598a215f09adad5b99f0515}{I2\+C\+\_\+\+Get\+Last\+Event}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c)
+\begin{DoxyCompactList}\small\item\em Returns the last i2c Event. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a8333b96c67f83cba354b3407fcbb6ee8}{Error\+Status}} \mbox{\hyperlink{group___i2_c___exported___functions_ga1cc15c043882bc35b4915cc637210d7e}{I2\+C\+\_\+\+Check\+Event}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} event)
+\begin{DoxyCompactList}\small\item\em Checks whether the last i2c Event is equal to the one passed as parameter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___i2_c___exported___functions_gaba350d5d9381c896f6969ef71c0f27d5}{I2\+C\+\_\+\+Get\+Flag\+Status}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified I2C flag is set or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga587a26c383854b1b5ba8b82118c27df7}{I2\+C\+\_\+\+Clear\+Flag}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)
+\begin{DoxyCompactList}\small\item\em Clears the i2c\textquotesingle{}s pending flags. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} \mbox{\hyperlink{group___i2_c___exported___functions_ga33a115ef514621ef398933423e7b649f}{I2\+C\+\_\+\+Get\+ITStatus}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified I2C interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga0614543157a1767110ebb90296d07a5d}{I2\+C\+\_\+\+Clear\+ITPending\+Bit}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it)
+\begin{DoxyCompactList}\small\item\em Clears the i2c interrupt pending bits. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga18e70469f0df86f7937f1c3db840f30a}{I2\+C\+\_\+\+Send\+Slave\+Address}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} addr)
+\begin{DoxyCompactList}\small\item\em Configures slave address. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga7a9f63bdb11d49135f61e50ad551fe76}{I2\+C\+\_\+\+Slave\+Configure}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the I2C slave mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE PROVIDES ALL THE I2C FIRMWARE FUNCTIONS. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{hal__i2c_8c_a2d982add3815120a215da879561543e7}\label{hal__i2c_8c_a2d982add3815120a215da879561543e7}} 
+\index{hal\_i2c.c@{hal\_i2c.c}!\_HAL\_I2C\_C\_@{\_HAL\_I2C\_C\_}}
+\index{\_HAL\_I2C\_C\_@{\_HAL\_I2C\_C\_}!hal\_i2c.c@{hal\_i2c.c}}
+\doxysubsubsection{\texorpdfstring{\_HAL\_I2C\_C\_}{\_HAL\_I2C\_C\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+HAL\+\_\+\+I2\+C\+\_\+\+C\+\_\+}
+
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00019}{19}} 行定义.
+

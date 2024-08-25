@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>template: C:/Users/XerolySkinner/Desktop/MM_Device/MM32F327x/HAL_Lib/Src/hal_i2c.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">template
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8a23370bd962f2be3cb202251f8a0865.html">MM32F327x</a></li><li class="navelem"><a class="el" href="dir_3b1bed74bcb45e4245a73e66928ea90d.html">HAL_Lib</a></li><li class="navelem"><a class="el" href="dir_7c9ac39f302c264f6f2d20643460873b.html">Src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">hal_i2c.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>THIS FILE PROVIDES ALL THE I2C FIRMWARE FUNCTIONS.  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="hal__i2c_8h_source.html">hal_i2c.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hal__rcc_8h_source.html">hal_rcc.h</a>&quot;</code><br />
+</div>
+<p><a href="hal__i2c_8c_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a2d982add3815120a215da879561543e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal__i2c_8c.html#a2d982add3815120a215da879561543e7">_HAL_I2C_C_</a></td></tr>
+<tr class="separator:a2d982add3815120a215da879561543e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ga69380f6129ce1581e41d8e0d1b25c958"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga69380f6129ce1581e41d8e0d1b25c958">I2C_DeInit</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c)</td></tr>
+<tr class="memdesc:ga69380f6129ce1581e41d8e0d1b25c958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitializes the i2c peripheral registers to their default reset values.  <a href="group___i2_c___exported___functions.html#ga69380f6129ce1581e41d8e0d1b25c958">更多...</a><br /></td></tr>
+<tr class="separator:ga69380f6129ce1581e41d8e0d1b25c958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3839b536c9800c395f7fd10ef0a8e279"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga3839b536c9800c395f7fd10ef0a8e279">I2C_Init</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c, <a class="el" href="struct_i2_c___init_type_def.html">I2C_InitTypeDef</a> *init_struct)</td></tr>
+<tr class="memdesc:ga3839b536c9800c395f7fd10ef0a8e279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the i2c peripheral according to the specified parameters in the init_struct.  <a href="group___i2_c___exported___functions.html#ga3839b536c9800c395f7fd10ef0a8e279">更多...</a><br /></td></tr>
+<tr class="separator:ga3839b536c9800c395f7fd10ef0a8e279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4199a23b333cb40233ff75efbdfa08d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#gad4199a23b333cb40233ff75efbdfa08d">I2C_StructInit</a> (<a class="el" href="struct_i2_c___init_type_def.html">I2C_InitTypeDef</a> *init_struct)</td></tr>
+<tr class="memdesc:gad4199a23b333cb40233ff75efbdfa08d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills each init_struct member with its default value.  <a href="group___i2_c___exported___functions.html#gad4199a23b333cb40233ff75efbdfa08d">更多...</a><br /></td></tr>
+<tr class="separator:gad4199a23b333cb40233ff75efbdfa08d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53f9ecacc7f09701757e5addf89983ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga53f9ecacc7f09701757e5addf89983ce">I2C_Cmd</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c, <a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="memdesc:ga53f9ecacc7f09701757e5addf89983ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the specified I2C peripheral.  <a href="group___i2_c___exported___functions.html#ga53f9ecacc7f09701757e5addf89983ce">更多...</a><br /></td></tr>
+<tr class="separator:ga53f9ecacc7f09701757e5addf89983ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4172649657a39b3f6584bba8dd5f8b9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga4172649657a39b3f6584bba8dd5f8b9c">I2C_DMACmd</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c, <a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="memdesc:ga4172649657a39b3f6584bba8dd5f8b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the specified I2C DMA requests.  <a href="group___i2_c___exported___functions.html#ga4172649657a39b3f6584bba8dd5f8b9c">更多...</a><br /></td></tr>
+<tr class="separator:ga4172649657a39b3f6584bba8dd5f8b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga700c1f27d4610e7eb12d36ca05cd213e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga700c1f27d4610e7eb12d36ca05cd213e">I2C_GenerateSTART</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c, <a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="memdesc:ga700c1f27d4610e7eb12d36ca05cd213e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates i2c communication START condition.  <a href="group___i2_c___exported___functions.html#ga700c1f27d4610e7eb12d36ca05cd213e">更多...</a><br /></td></tr>
+<tr class="separator:ga700c1f27d4610e7eb12d36ca05cd213e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4de5e078677611c91d8647ca40adf10c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga4de5e078677611c91d8647ca40adf10c">I2C_GenerateSTOP</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c, <a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="memdesc:ga4de5e078677611c91d8647ca40adf10c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates i2c communication STOP condition.  <a href="group___i2_c___exported___functions.html#ga4de5e078677611c91d8647ca40adf10c">更多...</a><br /></td></tr>
+<tr class="separator:ga4de5e078677611c91d8647ca40adf10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f311a119ff4a27677512c83f1f3771b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga0f311a119ff4a27677512c83f1f3771b">I2C_OwnAddress2Config</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> addr)</td></tr>
+<tr class="memdesc:ga0f311a119ff4a27677512c83f1f3771b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the specified I2C own address2.  <a href="group___i2_c___exported___functions.html#ga0f311a119ff4a27677512c83f1f3771b">更多...</a><br /></td></tr>
+<tr class="separator:ga0f311a119ff4a27677512c83f1f3771b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd6c06938cff550c455e4a58e0de9f00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#gadd6c06938cff550c455e4a58e0de9f00">I2C_DualAddressCmd</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c, <a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="memdesc:gadd6c06938cff550c455e4a58e0de9f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the specified I2C dual addressing mode.  <a href="group___i2_c___exported___functions.html#gadd6c06938cff550c455e4a58e0de9f00">更多...</a><br /></td></tr>
+<tr class="separator:gadd6c06938cff550c455e4a58e0de9f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c5f30fdf41a2ab1c753d25ff21fc3a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga5c5f30fdf41a2ab1c753d25ff21fc3a7">I2C_GeneralCallCmd</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c, <a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="memdesc:ga5c5f30fdf41a2ab1c753d25ff21fc3a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the specified I2C general call feature.  <a href="group___i2_c___exported___functions.html#ga5c5f30fdf41a2ab1c753d25ff21fc3a7">更多...</a><br /></td></tr>
+<tr class="separator:ga5c5f30fdf41a2ab1c753d25ff21fc3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb14f8e75c0e27ec682549d2e87480e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#gafb14f8e75c0e27ec682549d2e87480e8">I2C_ITConfig</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> it, <a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="memdesc:gafb14f8e75c0e27ec682549d2e87480e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the specified I2C interrupts.  <a href="group___i2_c___exported___functions.html#gafb14f8e75c0e27ec682549d2e87480e8">更多...</a><br /></td></tr>
+<tr class="separator:gafb14f8e75c0e27ec682549d2e87480e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30ae2753e07b8be67fead01cc4a6c3ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga30ae2753e07b8be67fead01cc4a6c3ec">I2C_SendData</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> dat)</td></tr>
+<tr class="memdesc:ga30ae2753e07b8be67fead01cc4a6c3ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a data byte through the i2c peripheral.  <a href="group___i2_c___exported___functions.html#ga30ae2753e07b8be67fead01cc4a6c3ec">更多...</a><br /></td></tr>
+<tr class="separator:ga30ae2753e07b8be67fead01cc4a6c3ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga163d5ac428611b829ce0d6d89e84657a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga163d5ac428611b829ce0d6d89e84657a">I2C_ReadCmd</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c)</td></tr>
+<tr class="memdesc:ga163d5ac428611b829ce0d6d89e84657a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the most recent received data by the i2c peripheral.  <a href="group___i2_c___exported___functions.html#ga163d5ac428611b829ce0d6d89e84657a">更多...</a><br /></td></tr>
+<tr class="separator:ga163d5ac428611b829ce0d6d89e84657a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa922a0851c796a5a9eb0bab5fac8dc24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#gaa922a0851c796a5a9eb0bab5fac8dc24">I2C_ReceiveData</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c)</td></tr>
+<tr class="memdesc:gaa922a0851c796a5a9eb0bab5fac8dc24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the most recent received data by the i2c peripheral.  <a href="group___i2_c___exported___functions.html#gaa922a0851c796a5a9eb0bab5fac8dc24">更多...</a><br /></td></tr>
+<tr class="separator:gaa922a0851c796a5a9eb0bab5fac8dc24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7eceb46187692e92a97a2fda4def7821"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga7eceb46187692e92a97a2fda4def7821">I2C_Send7bitAddress</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> addr, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> dir)</td></tr>
+<tr class="memdesc:ga7eceb46187692e92a97a2fda4def7821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmits the address byte to select the slave device.  <a href="group___i2_c___exported___functions.html#ga7eceb46187692e92a97a2fda4def7821">更多...</a><br /></td></tr>
+<tr class="separator:ga7eceb46187692e92a97a2fda4def7821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2590a23bf6dd57f8a6916ec36d08eb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#gad2590a23bf6dd57f8a6916ec36d08eb0">I2C_ReadRegister</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> reg)</td></tr>
+<tr class="memdesc:gad2590a23bf6dd57f8a6916ec36d08eb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the specified I2C register and returns its value.  <a href="group___i2_c___exported___functions.html#gad2590a23bf6dd57f8a6916ec36d08eb0">更多...</a><br /></td></tr>
+<tr class="separator:gad2590a23bf6dd57f8a6916ec36d08eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd48431b1598a215f09adad5b99f0515"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#gafd48431b1598a215f09adad5b99f0515">I2C_GetLastEvent</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c)</td></tr>
+<tr class="memdesc:gafd48431b1598a215f09adad5b99f0515"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last i2c Event.  <a href="group___i2_c___exported___functions.html#gafd48431b1598a215f09adad5b99f0515">更多...</a><br /></td></tr>
+<tr class="separator:gafd48431b1598a215f09adad5b99f0515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1cc15c043882bc35b4915cc637210d7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a8333b96c67f83cba354b3407fcbb6ee8">ErrorStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga1cc15c043882bc35b4915cc637210d7e">I2C_CheckEvent</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c, <a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> event)</td></tr>
+<tr class="memdesc:ga1cc15c043882bc35b4915cc637210d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the last i2c Event is equal to the one passed as parameter.  <a href="group___i2_c___exported___functions.html#ga1cc15c043882bc35b4915cc637210d7e">更多...</a><br /></td></tr>
+<tr class="separator:ga1cc15c043882bc35b4915cc637210d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba350d5d9381c896f6969ef71c0f27d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a89136caac2e14c55151f527ac02daaff">FlagStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#gaba350d5d9381c896f6969ef71c0f27d5">I2C_GetFlagStatus</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c, <a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> flag)</td></tr>
+<tr class="memdesc:gaba350d5d9381c896f6969ef71c0f27d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified I2C flag is set or not.  <a href="group___i2_c___exported___functions.html#gaba350d5d9381c896f6969ef71c0f27d5">更多...</a><br /></td></tr>
+<tr class="separator:gaba350d5d9381c896f6969ef71c0f27d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga587a26c383854b1b5ba8b82118c27df7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga587a26c383854b1b5ba8b82118c27df7">I2C_ClearFlag</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c, <a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> flag)</td></tr>
+<tr class="memdesc:ga587a26c383854b1b5ba8b82118c27df7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the i2c's pending flags.  <a href="group___i2_c___exported___functions.html#ga587a26c383854b1b5ba8b82118c27df7">更多...</a><br /></td></tr>
+<tr class="separator:ga587a26c383854b1b5ba8b82118c27df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga33a115ef514621ef398933423e7b649f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a39d4411201fb731279ad5a409b2b80d7">ITStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga33a115ef514621ef398933423e7b649f">I2C_GetITStatus</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c, <a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> it)</td></tr>
+<tr class="memdesc:ga33a115ef514621ef398933423e7b649f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified I2C interrupt has occurred or not.  <a href="group___i2_c___exported___functions.html#ga33a115ef514621ef398933423e7b649f">更多...</a><br /></td></tr>
+<tr class="separator:ga33a115ef514621ef398933423e7b649f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0614543157a1767110ebb90296d07a5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga0614543157a1767110ebb90296d07a5d">I2C_ClearITPendingBit</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c, <a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> it)</td></tr>
+<tr class="memdesc:ga0614543157a1767110ebb90296d07a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the i2c interrupt pending bits.  <a href="group___i2_c___exported___functions.html#ga0614543157a1767110ebb90296d07a5d">更多...</a><br /></td></tr>
+<tr class="separator:ga0614543157a1767110ebb90296d07a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18e70469f0df86f7937f1c3db840f30a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga18e70469f0df86f7937f1c3db840f30a">I2C_SendSlaveAddress</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> addr)</td></tr>
+<tr class="memdesc:ga18e70469f0df86f7937f1c3db840f30a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures slave address.  <a href="group___i2_c___exported___functions.html#ga18e70469f0df86f7937f1c3db840f30a">更多...</a><br /></td></tr>
+<tr class="separator:ga18e70469f0df86f7937f1c3db840f30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a9f63bdb11d49135f61e50ad551fe76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___exported___functions.html#ga7a9f63bdb11d49135f61e50ad551fe76">I2C_SlaveConfigure</a> (<a class="el" href="struct_i2_c___type_def.html">I2C_TypeDef</a> *i2c, <a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="memdesc:ga7a9f63bdb11d49135f61e50ad551fe76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the I2C slave mode.  <a href="group___i2_c___exported___functions.html#ga7a9f63bdb11d49135f61e50ad551fe76">更多...</a><br /></td></tr>
+<tr class="separator:ga7a9f63bdb11d49135f61e50ad551fe76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >THIS FILE PROVIDES ALL THE I2C FIRMWARE FUNCTIONS. </p>
+<dl class="section author"><dt>作者</dt><dd>AE TEAM </dd></dl>
+<dl class="section attention"><dt>注意</dt><dd></dd></dl>
+<p>THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.</p>
+<h2><center> COPYRIGHT MINDMOTION </center></h2>
+
+<p class="definition">在文件 <a class="el" href="hal__i2c_8c_source.html">hal_i2c.c</a> 中定义.</p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a2d982add3815120a215da879561543e7" name="a2d982add3815120a215da879561543e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d982add3815120a215da879561543e7">&#9670;&#160;</a></span>_HAL_I2C_C_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _HAL_I2C_C_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="hal__i2c_8c_source.html">hal_i2c.c</a> 第 <a class="el" href="hal__i2c_8c_source.html#l00019">19</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

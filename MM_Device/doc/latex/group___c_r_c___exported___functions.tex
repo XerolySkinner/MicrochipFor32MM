@@ -1,0 +1,169 @@
+\hypertarget{group___c_r_c___exported___functions}{}\doxysection{CRC\+\_\+\+Exported\+\_\+\+Functions}
+\label{group___c_r_c___exported___functions}\index{CRC\_Exported\_Functions@{CRC\_Exported\_Functions}}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___c_r_c___exported___functions_ga2f19fb9b7798bf3488a466986c1df3b6}{CRC\+\_\+\+Reset\+DR}} ()
+\begin{DoxyCompactList}\small\item\em Resets the CRC Data register (DR). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_r_c___exported___functions_gac8c50abbd317c57b71704aa8ffd1fc88}{CRC\+\_\+\+Set\+IDRegister}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} id\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Stores a 8-\/bit data in the Independent Data(\+ID) register. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___c_r_c___exported___functions_gadb2fdf526beaab30aea0a37eb8131452}{CRC\+\_\+\+Calc\+CRC}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} data)
+\begin{DoxyCompactList}\small\item\em Computes the 32-\/bit CRC of a given data word(32-\/bit). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___c_r_c___exported___functions_gab22be1533ba2e396172c29997ef02d88}{CRC\+\_\+\+Calc\+Block\+CRC}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} $\ast$buffer, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} length)
+\begin{DoxyCompactList}\small\item\em Computes the 32-\/bit CRC of a given buffer of data word(32-\/bit). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___c_r_c___exported___functions_gaf101a072a332ae38e625409a6152bfb5}{CRC\+\_\+\+Get\+CRC}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the current CRC value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{group___c_r_c___exported___functions_ga016d233487b1abd814914a174a4936f1}{CRC\+\_\+\+Get\+IDRegister}} ()
+\begin{DoxyCompactList}\small\item\em Returns the 8-\/bit data stored in the Independent Data(\+ID) register \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+\doxysubsection{函数说明}
+\mbox{\Hypertarget{group___c_r_c___exported___functions_gab22be1533ba2e396172c29997ef02d88}\label{group___c_r_c___exported___functions_gab22be1533ba2e396172c29997ef02d88}} 
+\index{CRC\_Exported\_Functions@{CRC\_Exported\_Functions}!CRC\_CalcBlockCRC@{CRC\_CalcBlockCRC}}
+\index{CRC\_CalcBlockCRC@{CRC\_CalcBlockCRC}!CRC\_Exported\_Functions@{CRC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CRC\_CalcBlockCRC()}{CRC\_CalcBlockCRC()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CRC\+\_\+\+Calc\+Block\+CRC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{length }\end{DoxyParamCaption})}
+
+
+
+Computes the 32-\/bit CRC of a given buffer of data word(32-\/bit). 
+
+
+\begin{DoxyParams}{参数}
+{\em buffer} & pointer to the buffer containing the data to be computed \\
+\hline
+{\em length} & length of the buffer to be computed \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 32-\/bit} & CRC \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__crc_8c_source}{hal\+\_\+crc.\+c}} 第 \mbox{\hyperlink{hal__crc_8c_source_l00063}{63}} 行定义.
+
+\mbox{\Hypertarget{group___c_r_c___exported___functions_gadb2fdf526beaab30aea0a37eb8131452}\label{group___c_r_c___exported___functions_gadb2fdf526beaab30aea0a37eb8131452}} 
+\index{CRC\_Exported\_Functions@{CRC\_Exported\_Functions}!CRC\_CalcCRC@{CRC\_CalcCRC}}
+\index{CRC\_CalcCRC@{CRC\_CalcCRC}!CRC\_Exported\_Functions@{CRC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CRC\_CalcCRC()}{CRC\_CalcCRC()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CRC\+\_\+\+Calc\+CRC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{data }\end{DoxyParamCaption})}
+
+
+
+Computes the 32-\/bit CRC of a given data word(32-\/bit). 
+
+
+\begin{DoxyParams}{参数}
+{\em Data} & data word(32-\/bit) to compute its CRC \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 32-\/bit} & CRC \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__crc_8c_source}{hal\+\_\+crc.\+c}} 第 \mbox{\hyperlink{hal__crc_8c_source_l00051}{51}} 行定义.
+
+\mbox{\Hypertarget{group___c_r_c___exported___functions_gaf101a072a332ae38e625409a6152bfb5}\label{group___c_r_c___exported___functions_gaf101a072a332ae38e625409a6152bfb5}} 
+\index{CRC\_Exported\_Functions@{CRC\_Exported\_Functions}!CRC\_GetCRC@{CRC\_GetCRC}}
+\index{CRC\_GetCRC@{CRC\_GetCRC}!CRC\_Exported\_Functions@{CRC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CRC\_GetCRC()}{CRC\_GetCRC()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CRC\+\_\+\+Get\+CRC (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Returns the current CRC value. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 32-\/bit} & CRC \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__crc_8c_source}{hal\+\_\+crc.\+c}} 第 \mbox{\hyperlink{hal__crc_8c_source_l00077}{77}} 行定义.
+
+\mbox{\Hypertarget{group___c_r_c___exported___functions_ga016d233487b1abd814914a174a4936f1}\label{group___c_r_c___exported___functions_ga016d233487b1abd814914a174a4936f1}} 
+\index{CRC\_Exported\_Functions@{CRC\_Exported\_Functions}!CRC\_GetIDRegister@{CRC\_GetIDRegister}}
+\index{CRC\_GetIDRegister@{CRC\_GetIDRegister}!CRC\_Exported\_Functions@{CRC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CRC\_GetIDRegister()}{CRC\_GetIDRegister()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} CRC\+\_\+\+Get\+IDRegister (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Returns the 8-\/bit data stored in the Independent Data(\+ID) register 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 8-\/bit} & value of the ID register \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__crc_8c_source}{hal\+\_\+crc.\+c}} 第 \mbox{\hyperlink{hal__crc_8c_source_l00097}{97}} 行定义.
+
+\mbox{\Hypertarget{group___c_r_c___exported___functions_ga2f19fb9b7798bf3488a466986c1df3b6}\label{group___c_r_c___exported___functions_ga2f19fb9b7798bf3488a466986c1df3b6}} 
+\index{CRC\_Exported\_Functions@{CRC\_Exported\_Functions}!CRC\_ResetDR@{CRC\_ResetDR}}
+\index{CRC\_ResetDR@{CRC\_ResetDR}!CRC\_Exported\_Functions@{CRC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CRC\_ResetDR()}{CRC\_ResetDR()}}
+{\footnotesize\ttfamily void CRC\+\_\+\+Reset\+DR (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Resets the CRC Data register (DR). 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__crc_8c_source}{hal\+\_\+crc.\+c}} 第 \mbox{\hyperlink{hal__crc_8c_source_l00041}{41}} 行定义.
+
+\mbox{\Hypertarget{group___c_r_c___exported___functions_gac8c50abbd317c57b71704aa8ffd1fc88}\label{group___c_r_c___exported___functions_gac8c50abbd317c57b71704aa8ffd1fc88}} 
+\index{CRC\_Exported\_Functions@{CRC\_Exported\_Functions}!CRC\_SetIDRegister@{CRC\_SetIDRegister}}
+\index{CRC\_SetIDRegister@{CRC\_SetIDRegister}!CRC\_Exported\_Functions@{CRC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CRC\_SetIDRegister()}{CRC\_SetIDRegister()}}
+{\footnotesize\ttfamily void CRC\+\_\+\+Set\+IDRegister (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{id\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+Stores a 8-\/bit data in the Independent Data(\+ID) register. 
+
+
+\begin{DoxyParams}{参数}
+{\em id\+\_\+value} & 8-\/bit value to be stored in the ID register \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__crc_8c_source}{hal\+\_\+crc.\+c}} 第 \mbox{\hyperlink{hal__crc_8c_source_l00087}{87}} 行定义.
+

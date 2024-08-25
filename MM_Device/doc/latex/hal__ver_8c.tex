@@ -1,0 +1,228 @@
+\hypertarget{hal__ver_8c}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Src/hal\+\_\+ver.c 文件参考}
+\label{hal__ver_8c}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_ver.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_ver.c}}
+
+
+THIS FILE PROVIDES ALL THE LIB AND THE CHIPSET INFORMATION.  
+
+
+{\ttfamily \#include \char`\"{}hal\+\_\+ver.\+h\char`\"{}}\newline
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{hal__ver_8c_acda621571e246f143e5e4f96cbea7f4b}{\+\_\+\+HAL\+\_\+\+VER\+\_\+\+C\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{hal__ver_8c_a52daee22cead5b15dbc3a0e0a66ee709}{\+\_\+\+\_\+\+MM32\+\_\+\+LIB\+\_\+\+VERSION\+\_\+\+MAIN}}~(0x0U)
+\begin{DoxyCompactList}\small\item\em \mbox{[}31\+:24\mbox{]} main version \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{hal__ver_8c_acac060969df57e35d10b5d8d9cfa54c3}{\+\_\+\+\_\+\+MM32\+\_\+\+LIB\+\_\+\+VERSION\+\_\+\+SUB1}}~(0x9U)
+\begin{DoxyCompactList}\small\item\em \mbox{[}23\+:16\mbox{]} sub1 version \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{hal__ver_8c_ae191f5ee2ad98b5649606c555388cc4a}{\+\_\+\+\_\+\+MM32\+\_\+\+LIB\+\_\+\+VERSION\+\_\+\+SUB2}}~(0x0U)
+\begin{DoxyCompactList}\small\item\em \mbox{[}15\+:8\mbox{]} sub2 version \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{hal__ver_8c_a994ec69872c95395e7e55f36f9bbf3ac}{\+\_\+\+\_\+\+MM32\+\_\+\+LIB\+\_\+\+VERSION\+\_\+\+RC}}~(0x00U)
+\begin{DoxyCompactList}\small\item\em \mbox{[}7\+:0\mbox{]} release candidate \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{hal__ver_8c_a3311c1261fc4138e4363f0fb61aa4457}{\+\_\+\+\_\+\+MM32\+\_\+\+LIB\+\_\+\+VERSION}}
+\item 
+\#define \mbox{\hyperlink{hal__ver_8c_a095400984b0a4a1c56e9c40b450a6816}{\+\_\+\+\_\+\+MM32\+\_\+\+LIB\+\_\+\+RELESE\+\_\+\+YEARH}}~(0x20U)
+\begin{DoxyCompactList}\small\item\em \mbox{[}31\+:24\mbox{]} release year high \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{hal__ver_8c_a17174bcde453adbf34e705073903f2eb}{\+\_\+\+\_\+\+MM32\+\_\+\+LIB\+\_\+\+RELESE\+\_\+\+YEARL}}~(0x21U)
+\begin{DoxyCompactList}\small\item\em \mbox{[}23\+:16\mbox{]} release year low \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{hal__ver_8c_af646bb2901e0d43ec2d13adcddec5ab7}{\+\_\+\+\_\+\+MM32\+\_\+\+LIB\+\_\+\+RELESE\+\_\+\+MONTH}}~(0x05U)
+\begin{DoxyCompactList}\small\item\em \mbox{[}15\+:8\mbox{]} release month \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{hal__ver_8c_ad8eb38756427dfa825a48a3ef1790922}{\+\_\+\+\_\+\+MM32\+\_\+\+LIB\+\_\+\+RELESE\+\_\+\+DAY}}~(0x10U)
+\begin{DoxyCompactList}\small\item\em \mbox{[}7\+:0\mbox{]} release day \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{hal__ver_8c_a98352ec1ea09342aefab4ed652ee875d}{\+\_\+\+\_\+\+MM32\+\_\+\+LIB\+\_\+\+RELESE\+\_\+\+DATE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___lib_gaf6ec93dd06ec3ef2a3c46f443533b9a8}{Get\+\_\+\+MM32\+Lib\+Version}} (void)
+\begin{DoxyCompactList}\small\item\em This method returns the Lib revision. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___lib_ga2d4db38da75482d2c33e8b99cabf92bc}{Get\+\_\+\+MM32\+Lib\+Release\+Date}} (void)
+\begin{DoxyCompactList}\small\item\em This method returns the Lib release date. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___lib_ga44844af0d0aad62ea1f49643f971139f}{Get\+\_\+\+Chipset\+REVID}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the device revision identifier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___lib_gada26846bbaa4c55df94b341e82e50b75}{Get\+\_\+\+Chipset\+DEVID}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the device identifier.. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___lib_gab9fa76c092cb330c7754d543991b41e8}{Get\+\_\+\+Chipset\+UIDw0}} (void)
+\begin{DoxyCompactList}\small\item\em Returns first word of the unique device identifier (UID based on 96 bits) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___lib_gade5f87118c29bcf76d8ae4dc74177af7}{Get\+\_\+\+Chipset\+UIDw1}} (void)
+\begin{DoxyCompactList}\small\item\em Returns second word of the unique device identifier (UID based on 96 bits) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___lib_gaae7fe8710aab50990246150a49711da0}{Get\+\_\+\+Chipset\+UIDw2}} (void)
+\begin{DoxyCompactList}\small\item\em Returns third word of the unique device identifier (UID based on 96 bits) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE PROVIDES ALL THE LIB AND THE CHIPSET INFORMATION. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{hal__ver_8c_source}{hal\+\_\+ver.\+c}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{hal__ver_8c_a98352ec1ea09342aefab4ed652ee875d}\label{hal__ver_8c_a98352ec1ea09342aefab4ed652ee875d}} 
+\index{hal\_ver.c@{hal\_ver.c}!\_\_MM32\_LIB\_RELESE\_DATE@{\_\_MM32\_LIB\_RELESE\_DATE}}
+\index{\_\_MM32\_LIB\_RELESE\_DATE@{\_\_MM32\_LIB\_RELESE\_DATE}!hal\_ver.c@{hal\_ver.c}}
+\doxysubsubsection{\texorpdfstring{\_\_MM32\_LIB\_RELESE\_DATE}{\_\_MM32\_LIB\_RELESE\_DATE}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+MM32\+\_\+\+LIB\+\_\+\+RELESE\+\_\+\+DATE}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{                                         ((\mbox{\hyperlink{hal__ver_8c_a095400984b0a4a1c56e9c40b450a6816}{\_\_MM32\_LIB\_RELESE\_YEARH}} << 24U)\(\backslash\)}
+\DoxyCodeLine{                                         |(\mbox{\hyperlink{hal__ver_8c_a17174bcde453adbf34e705073903f2eb}{\_\_MM32\_LIB\_RELESE\_YEARL}} << 16U)\(\backslash\)}
+\DoxyCodeLine{                                         |(\mbox{\hyperlink{hal__ver_8c_af646bb2901e0d43ec2d13adcddec5ab7}{\_\_MM32\_LIB\_RELESE\_MONTH}} << 8U )\(\backslash\)}
+\DoxyCodeLine{                                         |(\mbox{\hyperlink{hal__ver_8c_ad8eb38756427dfa825a48a3ef1790922}{\_\_MM32\_LIB\_RELESE\_DAY}}))}
+
+\end{DoxyCode}
+
+
+在文件 \mbox{\hyperlink{hal__ver_8c_source}{hal\+\_\+ver.\+c}} 第 \mbox{\hyperlink{hal__ver_8c_source_l00041}{41}} 行定义.
+
+\mbox{\Hypertarget{hal__ver_8c_ad8eb38756427dfa825a48a3ef1790922}\label{hal__ver_8c_ad8eb38756427dfa825a48a3ef1790922}} 
+\index{hal\_ver.c@{hal\_ver.c}!\_\_MM32\_LIB\_RELESE\_DAY@{\_\_MM32\_LIB\_RELESE\_DAY}}
+\index{\_\_MM32\_LIB\_RELESE\_DAY@{\_\_MM32\_LIB\_RELESE\_DAY}!hal\_ver.c@{hal\_ver.c}}
+\doxysubsubsection{\texorpdfstring{\_\_MM32\_LIB\_RELESE\_DAY}{\_\_MM32\_LIB\_RELESE\_DAY}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+MM32\+\_\+\+LIB\+\_\+\+RELESE\+\_\+\+DAY~(0x10U)}
+
+
+
+\mbox{[}7\+:0\mbox{]} release day 
+
+
+
+在文件 \mbox{\hyperlink{hal__ver_8c_source}{hal\+\_\+ver.\+c}} 第 \mbox{\hyperlink{hal__ver_8c_source_l00040}{40}} 行定义.
+
+\mbox{\Hypertarget{hal__ver_8c_af646bb2901e0d43ec2d13adcddec5ab7}\label{hal__ver_8c_af646bb2901e0d43ec2d13adcddec5ab7}} 
+\index{hal\_ver.c@{hal\_ver.c}!\_\_MM32\_LIB\_RELESE\_MONTH@{\_\_MM32\_LIB\_RELESE\_MONTH}}
+\index{\_\_MM32\_LIB\_RELESE\_MONTH@{\_\_MM32\_LIB\_RELESE\_MONTH}!hal\_ver.c@{hal\_ver.c}}
+\doxysubsubsection{\texorpdfstring{\_\_MM32\_LIB\_RELESE\_MONTH}{\_\_MM32\_LIB\_RELESE\_MONTH}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+MM32\+\_\+\+LIB\+\_\+\+RELESE\+\_\+\+MONTH~(0x05U)}
+
+
+
+\mbox{[}15\+:8\mbox{]} release month 
+
+
+
+在文件 \mbox{\hyperlink{hal__ver_8c_source}{hal\+\_\+ver.\+c}} 第 \mbox{\hyperlink{hal__ver_8c_source_l00039}{39}} 行定义.
+
+\mbox{\Hypertarget{hal__ver_8c_a095400984b0a4a1c56e9c40b450a6816}\label{hal__ver_8c_a095400984b0a4a1c56e9c40b450a6816}} 
+\index{hal\_ver.c@{hal\_ver.c}!\_\_MM32\_LIB\_RELESE\_YEARH@{\_\_MM32\_LIB\_RELESE\_YEARH}}
+\index{\_\_MM32\_LIB\_RELESE\_YEARH@{\_\_MM32\_LIB\_RELESE\_YEARH}!hal\_ver.c@{hal\_ver.c}}
+\doxysubsubsection{\texorpdfstring{\_\_MM32\_LIB\_RELESE\_YEARH}{\_\_MM32\_LIB\_RELESE\_YEARH}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+MM32\+\_\+\+LIB\+\_\+\+RELESE\+\_\+\+YEARH~(0x20U)}
+
+
+
+\mbox{[}31\+:24\mbox{]} release year high 
+
+
+
+在文件 \mbox{\hyperlink{hal__ver_8c_source}{hal\+\_\+ver.\+c}} 第 \mbox{\hyperlink{hal__ver_8c_source_l00037}{37}} 行定义.
+
+\mbox{\Hypertarget{hal__ver_8c_a17174bcde453adbf34e705073903f2eb}\label{hal__ver_8c_a17174bcde453adbf34e705073903f2eb}} 
+\index{hal\_ver.c@{hal\_ver.c}!\_\_MM32\_LIB\_RELESE\_YEARL@{\_\_MM32\_LIB\_RELESE\_YEARL}}
+\index{\_\_MM32\_LIB\_RELESE\_YEARL@{\_\_MM32\_LIB\_RELESE\_YEARL}!hal\_ver.c@{hal\_ver.c}}
+\doxysubsubsection{\texorpdfstring{\_\_MM32\_LIB\_RELESE\_YEARL}{\_\_MM32\_LIB\_RELESE\_YEARL}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+MM32\+\_\+\+LIB\+\_\+\+RELESE\+\_\+\+YEARL~(0x21U)}
+
+
+
+\mbox{[}23\+:16\mbox{]} release year low 
+
+
+
+在文件 \mbox{\hyperlink{hal__ver_8c_source}{hal\+\_\+ver.\+c}} 第 \mbox{\hyperlink{hal__ver_8c_source_l00038}{38}} 行定义.
+
+\mbox{\Hypertarget{hal__ver_8c_a3311c1261fc4138e4363f0fb61aa4457}\label{hal__ver_8c_a3311c1261fc4138e4363f0fb61aa4457}} 
+\index{hal\_ver.c@{hal\_ver.c}!\_\_MM32\_LIB\_VERSION@{\_\_MM32\_LIB\_VERSION}}
+\index{\_\_MM32\_LIB\_VERSION@{\_\_MM32\_LIB\_VERSION}!hal\_ver.c@{hal\_ver.c}}
+\doxysubsubsection{\texorpdfstring{\_\_MM32\_LIB\_VERSION}{\_\_MM32\_LIB\_VERSION}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+MM32\+\_\+\+LIB\+\_\+\+VERSION}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{                                         ((\mbox{\hyperlink{hal__ver_8c_a52daee22cead5b15dbc3a0e0a66ee709}{\_\_MM32\_LIB\_VERSION\_MAIN}} << 24U)\(\backslash\)}
+\DoxyCodeLine{                                         |(\mbox{\hyperlink{hal__ver_8c_acac060969df57e35d10b5d8d9cfa54c3}{\_\_MM32\_LIB\_VERSION\_SUB1}} << 16U)\(\backslash\)}
+\DoxyCodeLine{                                         |(\mbox{\hyperlink{hal__ver_8c_ae191f5ee2ad98b5649606c555388cc4a}{\_\_MM32\_LIB\_VERSION\_SUB2}} << 8U )\(\backslash\)}
+\DoxyCodeLine{                                         |(\mbox{\hyperlink{hal__ver_8c_a994ec69872c95395e7e55f36f9bbf3ac}{\_\_MM32\_LIB\_VERSION\_RC}}))}
+
+\end{DoxyCode}
+
+
+在文件 \mbox{\hyperlink{hal__ver_8c_source}{hal\+\_\+ver.\+c}} 第 \mbox{\hyperlink{hal__ver_8c_source_l00031}{31}} 行定义.
+
+\mbox{\Hypertarget{hal__ver_8c_a52daee22cead5b15dbc3a0e0a66ee709}\label{hal__ver_8c_a52daee22cead5b15dbc3a0e0a66ee709}} 
+\index{hal\_ver.c@{hal\_ver.c}!\_\_MM32\_LIB\_VERSION\_MAIN@{\_\_MM32\_LIB\_VERSION\_MAIN}}
+\index{\_\_MM32\_LIB\_VERSION\_MAIN@{\_\_MM32\_LIB\_VERSION\_MAIN}!hal\_ver.c@{hal\_ver.c}}
+\doxysubsubsection{\texorpdfstring{\_\_MM32\_LIB\_VERSION\_MAIN}{\_\_MM32\_LIB\_VERSION\_MAIN}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+MM32\+\_\+\+LIB\+\_\+\+VERSION\+\_\+\+MAIN~(0x0U)}
+
+
+
+\mbox{[}31\+:24\mbox{]} main version 
+
+
+
+在文件 \mbox{\hyperlink{hal__ver_8c_source}{hal\+\_\+ver.\+c}} 第 \mbox{\hyperlink{hal__ver_8c_source_l00027}{27}} 行定义.
+
+\mbox{\Hypertarget{hal__ver_8c_a994ec69872c95395e7e55f36f9bbf3ac}\label{hal__ver_8c_a994ec69872c95395e7e55f36f9bbf3ac}} 
+\index{hal\_ver.c@{hal\_ver.c}!\_\_MM32\_LIB\_VERSION\_RC@{\_\_MM32\_LIB\_VERSION\_RC}}
+\index{\_\_MM32\_LIB\_VERSION\_RC@{\_\_MM32\_LIB\_VERSION\_RC}!hal\_ver.c@{hal\_ver.c}}
+\doxysubsubsection{\texorpdfstring{\_\_MM32\_LIB\_VERSION\_RC}{\_\_MM32\_LIB\_VERSION\_RC}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+MM32\+\_\+\+LIB\+\_\+\+VERSION\+\_\+\+RC~(0x00U)}
+
+
+
+\mbox{[}7\+:0\mbox{]} release candidate 
+
+
+
+在文件 \mbox{\hyperlink{hal__ver_8c_source}{hal\+\_\+ver.\+c}} 第 \mbox{\hyperlink{hal__ver_8c_source_l00030}{30}} 行定义.
+
+\mbox{\Hypertarget{hal__ver_8c_acac060969df57e35d10b5d8d9cfa54c3}\label{hal__ver_8c_acac060969df57e35d10b5d8d9cfa54c3}} 
+\index{hal\_ver.c@{hal\_ver.c}!\_\_MM32\_LIB\_VERSION\_SUB1@{\_\_MM32\_LIB\_VERSION\_SUB1}}
+\index{\_\_MM32\_LIB\_VERSION\_SUB1@{\_\_MM32\_LIB\_VERSION\_SUB1}!hal\_ver.c@{hal\_ver.c}}
+\doxysubsubsection{\texorpdfstring{\_\_MM32\_LIB\_VERSION\_SUB1}{\_\_MM32\_LIB\_VERSION\_SUB1}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+MM32\+\_\+\+LIB\+\_\+\+VERSION\+\_\+\+SUB1~(0x9U)}
+
+
+
+\mbox{[}23\+:16\mbox{]} sub1 version 
+
+
+
+在文件 \mbox{\hyperlink{hal__ver_8c_source}{hal\+\_\+ver.\+c}} 第 \mbox{\hyperlink{hal__ver_8c_source_l00028}{28}} 行定义.
+
+\mbox{\Hypertarget{hal__ver_8c_ae191f5ee2ad98b5649606c555388cc4a}\label{hal__ver_8c_ae191f5ee2ad98b5649606c555388cc4a}} 
+\index{hal\_ver.c@{hal\_ver.c}!\_\_MM32\_LIB\_VERSION\_SUB2@{\_\_MM32\_LIB\_VERSION\_SUB2}}
+\index{\_\_MM32\_LIB\_VERSION\_SUB2@{\_\_MM32\_LIB\_VERSION\_SUB2}!hal\_ver.c@{hal\_ver.c}}
+\doxysubsubsection{\texorpdfstring{\_\_MM32\_LIB\_VERSION\_SUB2}{\_\_MM32\_LIB\_VERSION\_SUB2}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+MM32\+\_\+\+LIB\+\_\+\+VERSION\+\_\+\+SUB2~(0x0U)}
+
+
+
+\mbox{[}15\+:8\mbox{]} sub2 version 
+
+
+
+在文件 \mbox{\hyperlink{hal__ver_8c_source}{hal\+\_\+ver.\+c}} 第 \mbox{\hyperlink{hal__ver_8c_source_l00029}{29}} 行定义.
+
+\mbox{\Hypertarget{hal__ver_8c_acda621571e246f143e5e4f96cbea7f4b}\label{hal__ver_8c_acda621571e246f143e5e4f96cbea7f4b}} 
+\index{hal\_ver.c@{hal\_ver.c}!\_HAL\_VER\_C\_@{\_HAL\_VER\_C\_}}
+\index{\_HAL\_VER\_C\_@{\_HAL\_VER\_C\_}!hal\_ver.c@{hal\_ver.c}}
+\doxysubsubsection{\texorpdfstring{\_HAL\_VER\_C\_}{\_HAL\_VER\_C\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+HAL\+\_\+\+VER\+\_\+\+C\+\_\+}
+
+
+
+在文件 \mbox{\hyperlink{hal__ver_8c_source}{hal\+\_\+ver.\+c}} 第 \mbox{\hyperlink{hal__ver_8c_source_l00019}{19}} 行定义.
+

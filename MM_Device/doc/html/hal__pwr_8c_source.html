@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>template: C:/Users/XerolySkinner/Desktop/MM_Device/MM32F327x/HAL_Lib/Src/hal_pwr.c 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">template
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8a23370bd962f2be3cb202251f8a0865.html">MM32F327x</a></li><li class="navelem"><a class="el" href="dir_3b1bed74bcb45e4245a73e66928ea90d.html">HAL_Lib</a></li><li class="navelem"><a class="el" href="dir_7c9ac39f302c264f6f2d20643460873b.html">Src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">hal_pwr.c</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="hal__pwr_8c.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Define to prevent recursive inclusion</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="hal__pwr_8c.html#a3c7b9734854c5b929c9d696374de033a">   19</a></span><span class="preprocessor">#define __HAL_PWR_C_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// Files includes</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="hal__pwr_8h.html">hal_pwr.h</a>&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="hal__rcc_8h.html">hal_rcc.h</a>&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="hal__syscfg_8h.html">hal_syscfg.h</a>&quot;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="group___p_w_r___exported___functions.html#gad03a0aac7bc3bc3a9fd012f3769a6990">   43</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___p_w_r___exported___functions.html#gad03a0aac7bc3bc3a9fd012f3769a6990">PWR_DeInit</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_function" href="group___r_c_c___exported___functions.html#gad9e30971b169c6fee0f090ef9948a17a">exRCC_APB1PeriphReset</a>(<a class="code hl_define" href="reg__rcc_8h.html#ae630b8e610ae204fdada83dccb07b55c">RCC_APB1ENR_PWR</a>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="group___p_w_r___exported___functions.html#gae2eff9578fadfd85912aec19069cf8bf">   54</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___p_w_r___exported___functions.html#gae2eff9578fadfd85912aec19069cf8bf">PWR_BackupAccessCmd</a>(<a class="code hl_enumeration" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>{</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    (state) ? (<a class="code hl_define" href="reg__rcc_8h.html#a74944438a086975793d26ae48d5882d4">RCC</a>-&gt;BDCR |= <a class="code hl_define" href="reg__rcc_8h.html#ab56a1848dcac240ec805f568e4a49d60">RCC_BDCR_DBP</a>) : (<a class="code hl_define" href="reg__rcc_8h.html#a74944438a086975793d26ae48d5882d4">RCC</a>-&gt;BDCR &amp;= ~RCC_BDCR_DBP);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="group___p_w_r___exported___functions.html#gaa211e4b10afd5881233b7f5f74540f1a">   65</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___p_w_r___exported___functions.html#gaa211e4b10afd5881233b7f5f74540f1a">PWR_PVDCmd</a>(<a class="code hl_enumeration" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>{</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    (state) ? (<a class="code hl_define" href="reg__syscfg_8h.html#a3c833fe1c486cb62250ccbca32899cb8">SYSCFG</a>-&gt;PDETCSR |= <a class="code hl_define" href="reg__syscfg_8h.html#a352165efb5d3fa83538b089d7f9f5a8d">SYSCFG_PDETCSR_PVDE</a>) : (<a class="code hl_define" href="reg__syscfg_8h.html#a3c833fe1c486cb62250ccbca32899cb8">SYSCFG</a>-&gt;PDETCSR &amp;= ~SYSCFG_PDETCSR_PVDE);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="group___p_w_r___exported___functions.html#ga3833bb772fae7bba52750786b097dfc6">   88</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___p_w_r___exported___functions.html#ga3833bb772fae7bba52750786b097dfc6">PWR_PVDLevelConfig</a>(<a class="code hl_enumeration" href="group___p_w_r___exported___types.html#gac427c07ca3dda23389ab60ed004f98d9">emPVD_Level_Typedef</a> pvd_level)</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>{</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <a class="code hl_define" href="reg__syscfg_8h.html#a3c833fe1c486cb62250ccbca32899cb8">SYSCFG</a>-&gt;PDETCSR = (<a class="code hl_define" href="reg__syscfg_8h.html#a3c833fe1c486cb62250ccbca32899cb8">SYSCFG</a>-&gt;PDETCSR &amp; (~SYSCFG_PDETCSR_PLS)) | pvd_level;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="group___p_w_r___exported___functions.html#gab41dba96a770ff4ea02b3b440ae92a91">   98</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___p_w_r___exported___functions.html#gab41dba96a770ff4ea02b3b440ae92a91">PWR_WakeUpPinCmd</a>(<a class="code hl_enumeration" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>{</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    (state != <a class="code hl_enumvalue" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d">DISABLE</a>) ? (<a class="code hl_define" href="reg__pwr_8h.html#a04651c526497822a859942b928e57f8e">PWR</a>-&gt;CR2 |= <a class="code hl_define" href="reg__pwr_8h.html#a84ebdf0893ad3ea77bb259030b20f3a6">PWR_CR2_EWUP1</a>) : (<a class="code hl_define" href="reg__pwr_8h.html#a04651c526497822a859942b928e57f8e">PWR</a>-&gt;CSR &amp;= ~PWR_CR2_EWUP1);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="group___p_w_r___exported___functions.html#gaa25d647b84d6f8f506b2918f1f87ff83">  109</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___p_w_r___exported___functions.html#gaa25d647b84d6f8f506b2918f1f87ff83">PWR_WakeUpPinXCmd</a>(<a class="code hl_enumeration" href="group___p_w_r___exported___types.html#ga8a3ee125c096dff610dd319ba2feb737">emWUP_Pin_Typedef</a> pin, <a class="code hl_enumeration" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>{</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    (state != <a class="code hl_enumvalue" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d">DISABLE</a>) ? (<a class="code hl_define" href="reg__pwr_8h.html#a04651c526497822a859942b928e57f8e">PWR</a>-&gt;CR2 |= (<a class="code hl_define" href="reg__pwr_8h.html#a84ebdf0893ad3ea77bb259030b20f3a6">PWR_CR2_EWUP1</a> &lt;&lt; pin)) : (<a class="code hl_define" href="reg__pwr_8h.html#a04651c526497822a859942b928e57f8e">PWR</a>-&gt;CSR &amp;= ~(<a class="code hl_define" href="reg__pwr_8h.html#a84ebdf0893ad3ea77bb259030b20f3a6">PWR_CR2_EWUP1</a> &lt;&lt; pin));</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>}</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="group___p_w_r___exported___functions.html#ga9bf6928eb09403e960cb6a1bd361bcf5">  127</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___p_w_r___exported___functions.html#ga9bf6928eb09403e960cb6a1bd361bcf5">PWR_EnterSTOPMode</a>(<a class="code hl_enumeration" href="group___p_w_r___exported___types.html#ga4ee40bcbad76fea558842b351bc5d37f">emPWR_Reg_Stop_mode_Typedef</a> regulator, <a class="code hl_enumeration" href="group___p_w_r___exported___types.html#gaae72de7edd29fb153afdb2608728474d">emPWR_STOP_ModeEn_Typedef</a> stop_entry)</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>{</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <a class="code hl_define" href="types_8h.html#a9604563d4bca5bd6bc9a17c9511e599b">MODIFY_REG</a>(<a class="code hl_define" href="reg__pwr_8h.html#a04651c526497822a859942b928e57f8e">PWR</a>-&gt;CR, <a class="code hl_define" href="reg__pwr_8h.html#a9e3698fe3e13232fecda6c1d9b3544f3">PWR_CR_LDPS</a>, regulator);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <a class="code hl_define" href="group___c_m_s_i_s__core__base.html#gaaaf6477c2bde2f00f99e3c2fd1060b01">SCB</a>-&gt;SCR |= <a class="code hl_define" href="group___c_m_s_i_s___s_c_b.html#ga77c06a69c63f4b3f6ec1032e911e18e7">SCB_SCR_SLEEPDEEP_Msk</a>;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordflow">if</span>(stop_entry == <a class="code hl_enumvalue" href="group___p_w_r___exported___types.html#ggaae72de7edd29fb153afdb2608728474da160ae65e723e72e07ffb36b076aa9838">PWR_STOPEntry_WFI</a>) {</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <a class="code hl_define" href="group___c_m_s_i_s___core___instruction_interface.html#gad23bf2b78a9a4524157c9de0d30b7448">__WFI</a>();</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <a class="code hl_define" href="group___c_m_s_i_s___core___instruction_interface.html#gaac6cc7dd4325d9cb40d3290fa5244b3d">__WFE</a>();</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    }</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>}</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="group___p_w_r___exported___functions.html#ga00ddae00a9c327b81b24d2597b0052f3">  146</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___p_w_r___exported___functions.html#ga00ddae00a9c327b81b24d2597b0052f3">PWR_EnterSTANDBYMode</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>{</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <a class="code hl_define" href="reg__pwr_8h.html#a04651c526497822a859942b928e57f8e">PWR</a>-&gt;CR |= <a class="code hl_define" href="reg__pwr_8h.html#a8c8075e98772470804c9e3fe74984115">PWR_CR_PDDS</a>;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <a class="code hl_define" href="reg__pwr_8h.html#a04651c526497822a859942b928e57f8e">PWR</a>-&gt;SCR |= <a class="code hl_define" href="reg__pwr_8h.html#a2a12f5af4994abe5b34cf7eae3dacf70">PWR_SCR_CWUF1</a> | <a class="code hl_define" href="reg__pwr_8h.html#a4128b0b9a09d2443ce0e4eef81177a8d">PWR_SCR_CWUF2</a> | <a class="code hl_define" href="reg__pwr_8h.html#a2b435bfeeeb80cd6e640fa6f9210649a">PWR_SCR_CWUF3</a> | <a class="code hl_define" href="reg__pwr_8h.html#a032b297a06e80628d63eb25dd1388268">PWR_SCR_CWUF4</a> | <a class="code hl_define" href="reg__pwr_8h.html#af1cc08299b937e0c1c87e24aa153c005">PWR_SCR_CWUF5</a> | <a class="code hl_define" href="reg__pwr_8h.html#acd258d21ebd14e16b095749fd5ff20ce">PWR_SCR_CWUF6</a>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <a class="code hl_define" href="group___c_m_s_i_s__core__base.html#gaaaf6477c2bde2f00f99e3c2fd1060b01">SCB</a>-&gt;SCR |= <a class="code hl_define" href="group___c_m_s_i_s___s_c_b.html#ga77c06a69c63f4b3f6ec1032e911e18e7">SCB_SCR_SLEEPDEEP_Msk</a>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="preprocessor">#if defined(__CC_ARM)</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    __force_stores();</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <a class="code hl_define" href="group___c_m_s_i_s___core___instruction_interface.html#gad23bf2b78a9a4524157c9de0d30b7448">__WFI</a>();</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>}</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="group___p_w_r___exported___functions.html#ga51597d0a03c890acc07621ab0d13db17">  166</a></span><a class="code hl_enumeration" href="types_8h.html#a89136caac2e14c55151f527ac02daaff">FlagStatus</a> <a class="code hl_function" href="group___p_w_r___exported___functions.html#ga51597d0a03c890acc07621ab0d13db17">PWR_GetPVDOFlagStatus</a>(<a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> flag)</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>{</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keywordflow">return</span> (<a class="code hl_enumeration" href="types_8h.html#a89136caac2e14c55151f527ac02daaff">FlagStatus</a>)(<a class="code hl_define" href="reg__syscfg_8h.html#a3c833fe1c486cb62250ccbca32899cb8">SYSCFG</a>-&gt;PDETCSR &amp; flag);</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>}</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="group___p_w_r___exported___functions.html#ga799a90abe5e4482a0da11ec8adc21a16">  179</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___p_w_r___exported___functions.html#ga799a90abe5e4482a0da11ec8adc21a16">PWR_ClearPVDOFlag</a>(<a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> flag)</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>{</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <a class="code hl_define" href="reg__pwr_8h.html#a04651c526497822a859942b928e57f8e">PWR</a>-&gt;CR |= flag &lt;&lt; 2;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>}</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="group___p_w_r___exported___functions.html#ga28c2352270def8931a00c3e281905755">  193</a></span><a class="code hl_enumeration" href="types_8h.html#a89136caac2e14c55151f527ac02daaff">FlagStatus</a> <a class="code hl_function" href="group___p_w_r___exported___functions.html#ga28c2352270def8931a00c3e281905755">PWR_GetFlagStatus</a>(<a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> flag)</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>{</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="keywordflow">return</span> (<a class="code hl_enumeration" href="types_8h.html#a89136caac2e14c55151f527ac02daaff">FlagStatus</a>)(<a class="code hl_define" href="reg__pwr_8h.html#a04651c526497822a859942b928e57f8e">PWR</a>-&gt;CSR &amp; flag);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>}</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="group___p_w_r___exported___functions.html#ga635227b2d1225d815e2d10f0dff68c49">  206</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___p_w_r___exported___functions.html#ga635227b2d1225d815e2d10f0dff68c49">PWR_ClearFlag</a>(<a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> flag)</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>{</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <a class="code hl_define" href="reg__pwr_8h.html#a04651c526497822a859942b928e57f8e">PWR</a>-&gt;CR |= flag &lt;&lt; 2;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>}</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="ttc" id="agroup___c_m_s_i_s___core___instruction_interface_html_gaac6cc7dd4325d9cb40d3290fa5244b3d"><div class="ttname"><a href="group___c_m_s_i_s___core___instruction_interface.html#gaac6cc7dd4325d9cb40d3290fa5244b3d">__WFE</a></div><div class="ttdeci">#define __WFE</div><div class="ttdoc">Wait For Event</div><div class="ttdef"><b>Definition:</b> <a href="cmsis__armcc_8h_source.html#l00387">cmsis_armcc.h:387</a></div></div>
+<div class="ttc" id="agroup___c_m_s_i_s___core___instruction_interface_html_gad23bf2b78a9a4524157c9de0d30b7448"><div class="ttname"><a href="group___c_m_s_i_s___core___instruction_interface.html#gad23bf2b78a9a4524157c9de0d30b7448">__WFI</a></div><div class="ttdeci">#define __WFI</div><div class="ttdoc">Wait For Interrupt</div><div class="ttdef"><b>Definition:</b> <a href="cmsis__armcc_8h_source.html#l00379">cmsis_armcc.h:379</a></div></div>
+<div class="ttc" id="agroup___c_m_s_i_s___s_c_b_html_ga77c06a69c63f4b3f6ec1032e911e18e7"><div class="ttname"><a href="group___c_m_s_i_s___s_c_b.html#ga77c06a69c63f4b3f6ec1032e911e18e7">SCB_SCR_SLEEPDEEP_Msk</a></div><div class="ttdeci">#define SCB_SCR_SLEEPDEEP_Msk</div><div class="ttdef"><b>Definition:</b> <a href="core__armv8mbl_8h_source.html#l00478">core_armv8mbl.h:478</a></div></div>
+<div class="ttc" id="agroup___c_m_s_i_s__core__base_html_gaaaf6477c2bde2f00f99e3c2fd1060b01"><div class="ttname"><a href="group___c_m_s_i_s__core__base.html#gaaaf6477c2bde2f00f99e3c2fd1060b01">SCB</a></div><div class="ttdeci">#define SCB</div><div class="ttdef"><b>Definition:</b> <a href="core__armv8mbl_8h_source.html#l01151">core_armv8mbl.h:1151</a></div></div>
+<div class="ttc" id="agroup___p_w_r___exported___functions_html_ga00ddae00a9c327b81b24d2597b0052f3"><div class="ttname"><a href="group___p_w_r___exported___functions.html#ga00ddae00a9c327b81b24d2597b0052f3">PWR_EnterSTANDBYMode</a></div><div class="ttdeci">void PWR_EnterSTANDBYMode(void)</div><div class="ttdoc">Enters STANDBY mode.</div><div class="ttdef"><b>Definition:</b> <a href="hal__pwr_8c_source.html#l00146">hal_pwr.c:146</a></div></div>
+<div class="ttc" id="agroup___p_w_r___exported___functions_html_ga28c2352270def8931a00c3e281905755"><div class="ttname"><a href="group___p_w_r___exported___functions.html#ga28c2352270def8931a00c3e281905755">PWR_GetFlagStatus</a></div><div class="ttdeci">FlagStatus PWR_GetFlagStatus(u32 flag)</div><div class="ttdoc">Checks whether the specified PWR flag is set or not.</div><div class="ttdef"><b>Definition:</b> <a href="hal__pwr_8c_source.html#l00193">hal_pwr.c:193</a></div></div>
+<div class="ttc" id="agroup___p_w_r___exported___functions_html_ga3833bb772fae7bba52750786b097dfc6"><div class="ttname"><a href="group___p_w_r___exported___functions.html#ga3833bb772fae7bba52750786b097dfc6">PWR_PVDLevelConfig</a></div><div class="ttdeci">void PWR_PVDLevelConfig(emPVD_Level_Typedef pvd_level)</div><div class="ttdoc">Configures the voltage threshold detected by the Power Voltage Detector(PVD).</div><div class="ttdef"><b>Definition:</b> <a href="hal__pwr_8c_source.html#l00088">hal_pwr.c:88</a></div></div>
+<div class="ttc" id="agroup___p_w_r___exported___functions_html_ga51597d0a03c890acc07621ab0d13db17"><div class="ttname"><a href="group___p_w_r___exported___functions.html#ga51597d0a03c890acc07621ab0d13db17">PWR_GetPVDOFlagStatus</a></div><div class="ttdeci">FlagStatus PWR_GetPVDOFlagStatus(u32 flag)</div><div class="ttdoc">Checks whether the specified PWR flag is set or not.</div><div class="ttdef"><b>Definition:</b> <a href="hal__pwr_8c_source.html#l00166">hal_pwr.c:166</a></div></div>
+<div class="ttc" id="agroup___p_w_r___exported___functions_html_ga635227b2d1225d815e2d10f0dff68c49"><div class="ttname"><a href="group___p_w_r___exported___functions.html#ga635227b2d1225d815e2d10f0dff68c49">PWR_ClearFlag</a></div><div class="ttdeci">void PWR_ClearFlag(u32 flag)</div><div class="ttdoc">Clears the PWR's pending flags.</div><div class="ttdef"><b>Definition:</b> <a href="hal__pwr_8c_source.html#l00206">hal_pwr.c:206</a></div></div>
+<div class="ttc" id="agroup___p_w_r___exported___functions_html_ga799a90abe5e4482a0da11ec8adc21a16"><div class="ttname"><a href="group___p_w_r___exported___functions.html#ga799a90abe5e4482a0da11ec8adc21a16">PWR_ClearPVDOFlag</a></div><div class="ttdeci">void PWR_ClearPVDOFlag(u32 flag)</div><div class="ttdoc">Clears the PWR's pending flags.</div><div class="ttdef"><b>Definition:</b> <a href="hal__pwr_8c_source.html#l00179">hal_pwr.c:179</a></div></div>
+<div class="ttc" id="agroup___p_w_r___exported___functions_html_ga9bf6928eb09403e960cb6a1bd361bcf5"><div class="ttname"><a href="group___p_w_r___exported___functions.html#ga9bf6928eb09403e960cb6a1bd361bcf5">PWR_EnterSTOPMode</a></div><div class="ttdeci">void PWR_EnterSTOPMode(emPWR_Reg_Stop_mode_Typedef regulator, emPWR_STOP_ModeEn_Typedef stop_entry)</div><div class="ttdoc">Enters STOP mode.</div><div class="ttdef"><b>Definition:</b> <a href="hal__pwr_8c_source.html#l00127">hal_pwr.c:127</a></div></div>
+<div class="ttc" id="agroup___p_w_r___exported___functions_html_gaa211e4b10afd5881233b7f5f74540f1a"><div class="ttname"><a href="group___p_w_r___exported___functions.html#gaa211e4b10afd5881233b7f5f74540f1a">PWR_PVDCmd</a></div><div class="ttdeci">void PWR_PVDCmd(FunctionalState state)</div><div class="ttdoc">Enables or disables the Power Voltage Detector(PVD).</div><div class="ttdef"><b>Definition:</b> <a href="hal__pwr_8c_source.html#l00065">hal_pwr.c:65</a></div></div>
+<div class="ttc" id="agroup___p_w_r___exported___functions_html_gaa25d647b84d6f8f506b2918f1f87ff83"><div class="ttname"><a href="group___p_w_r___exported___functions.html#gaa25d647b84d6f8f506b2918f1f87ff83">PWR_WakeUpPinXCmd</a></div><div class="ttdeci">void PWR_WakeUpPinXCmd(emWUP_Pin_Typedef pin, FunctionalState state)</div><div class="ttdoc">Enables or disables the WakeUp Pin functionality.</div><div class="ttdef"><b>Definition:</b> <a href="hal__pwr_8c_source.html#l00109">hal_pwr.c:109</a></div></div>
+<div class="ttc" id="agroup___p_w_r___exported___functions_html_gab41dba96a770ff4ea02b3b440ae92a91"><div class="ttname"><a href="group___p_w_r___exported___functions.html#gab41dba96a770ff4ea02b3b440ae92a91">PWR_WakeUpPinCmd</a></div><div class="ttdeci">void PWR_WakeUpPinCmd(FunctionalState state)</div><div class="ttdoc">Enables or disables the WakeUp Pin functionality.</div><div class="ttdef"><b>Definition:</b> <a href="hal__pwr_8c_source.html#l00098">hal_pwr.c:98</a></div></div>
+<div class="ttc" id="agroup___p_w_r___exported___functions_html_gad03a0aac7bc3bc3a9fd012f3769a6990"><div class="ttname"><a href="group___p_w_r___exported___functions.html#gad03a0aac7bc3bc3a9fd012f3769a6990">PWR_DeInit</a></div><div class="ttdeci">void PWR_DeInit(void)</div><div class="ttdoc">Deinitializes the PWR peripheral registers to their default reset values.</div><div class="ttdef"><b>Definition:</b> <a href="hal__pwr_8c_source.html#l00043">hal_pwr.c:43</a></div></div>
+<div class="ttc" id="agroup___p_w_r___exported___functions_html_gae2eff9578fadfd85912aec19069cf8bf"><div class="ttname"><a href="group___p_w_r___exported___functions.html#gae2eff9578fadfd85912aec19069cf8bf">PWR_BackupAccessCmd</a></div><div class="ttdeci">void PWR_BackupAccessCmd(FunctionalState state)</div><div class="ttdoc">Enables or disables access to the RTC and backup registers.</div><div class="ttdef"><b>Definition:</b> <a href="hal__pwr_8c_source.html#l00054">hal_pwr.c:54</a></div></div>
+<div class="ttc" id="agroup___p_w_r___exported___types_html_ga4ee40bcbad76fea558842b351bc5d37f"><div class="ttname"><a href="group___p_w_r___exported___types.html#ga4ee40bcbad76fea558842b351bc5d37f">emPWR_Reg_Stop_mode_Typedef</a></div><div class="ttdeci">emPWR_Reg_Stop_mode_Typedef</div><div class="ttdoc">Regulator_state_is_STOP_mode</div><div class="ttdef"><b>Definition:</b> <a href="hal__pwr_8h_source.html#l00076">hal_pwr.h:76</a></div></div>
+<div class="ttc" id="agroup___p_w_r___exported___types_html_ga8a3ee125c096dff610dd319ba2feb737"><div class="ttname"><a href="group___p_w_r___exported___types.html#ga8a3ee125c096dff610dd319ba2feb737">emWUP_Pin_Typedef</a></div><div class="ttdeci">emWUP_Pin_Typedef</div><div class="ttdef"><b>Definition:</b> <a href="hal__pwr_8h_source.html#l00040">hal_pwr.h:40</a></div></div>
+<div class="ttc" id="agroup___p_w_r___exported___types_html_gaae72de7edd29fb153afdb2608728474d"><div class="ttname"><a href="group___p_w_r___exported___types.html#gaae72de7edd29fb153afdb2608728474d">emPWR_STOP_ModeEn_Typedef</a></div><div class="ttdeci">emPWR_STOP_ModeEn_Typedef</div><div class="ttdoc">STOP_mode_entry</div><div class="ttdef"><b>Definition:</b> <a href="hal__pwr_8h_source.html#l00083">hal_pwr.h:83</a></div></div>
+<div class="ttc" id="agroup___p_w_r___exported___types_html_gac427c07ca3dda23389ab60ed004f98d9"><div class="ttname"><a href="group___p_w_r___exported___types.html#gac427c07ca3dda23389ab60ed004f98d9">emPVD_Level_Typedef</a></div><div class="ttdeci">emPVD_Level_Typedef</div><div class="ttdoc">PVD_detection_level</div><div class="ttdef"><b>Definition:</b> <a href="hal__pwr_8h_source.html#l00051">hal_pwr.h:51</a></div></div>
+<div class="ttc" id="agroup___p_w_r___exported___types_html_ggaae72de7edd29fb153afdb2608728474da160ae65e723e72e07ffb36b076aa9838"><div class="ttname"><a href="group___p_w_r___exported___types.html#ggaae72de7edd29fb153afdb2608728474da160ae65e723e72e07ffb36b076aa9838">PWR_STOPEntry_WFI</a></div><div class="ttdeci">@ PWR_STOPEntry_WFI</div><div class="ttdef"><b>Definition:</b> <a href="hal__pwr_8h_source.html#l00084">hal_pwr.h:84</a></div></div>
+<div class="ttc" id="agroup___r_c_c___exported___functions_html_gad9e30971b169c6fee0f090ef9948a17a"><div class="ttname"><a href="group___r_c_c___exported___functions.html#gad9e30971b169c6fee0f090ef9948a17a">exRCC_APB1PeriphReset</a></div><div class="ttdeci">void exRCC_APB1PeriphReset(u32 apb1_periph)</div><div class="ttdoc">Forces or releases Low Speed APB (APB1) peripheral reset.</div><div class="ttdef"><b>Definition:</b> <a href="hal__rcc_8c_source.html#l00750">hal_rcc.c:750</a></div></div>
+<div class="ttc" id="ahal__pwr_8h_html"><div class="ttname"><a href="hal__pwr_8h.html">hal_pwr.h</a></div><div class="ttdoc">THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE PWR FIRMWARE LIBRARY.</div></div>
+<div class="ttc" id="ahal__rcc_8h_html"><div class="ttname"><a href="hal__rcc_8h.html">hal_rcc.h</a></div><div class="ttdoc">THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE RCC FIRMWARE LIBRARY.</div></div>
+<div class="ttc" id="ahal__syscfg_8h_html"><div class="ttname"><a href="hal__syscfg_8h.html">hal_syscfg.h</a></div><div class="ttdoc">THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE EXTI FIRMWARE LIBRARY.</div></div>
+<div class="ttc" id="areg__pwr_8h_html_a032b297a06e80628d63eb25dd1388268"><div class="ttname"><a href="reg__pwr_8h.html#a032b297a06e80628d63eb25dd1388268">PWR_SCR_CWUF4</a></div><div class="ttdeci">#define PWR_SCR_CWUF4</div><div class="ttdoc">clear wake-up flag 4</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00198">reg_pwr.h:198</a></div></div>
+<div class="ttc" id="areg__pwr_8h_html_a04651c526497822a859942b928e57f8e"><div class="ttname"><a href="reg__pwr_8h.html#a04651c526497822a859942b928e57f8e">PWR</a></div><div class="ttdeci">#define PWR</div><div class="ttdoc">PWR type pointer Definition</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00078">reg_pwr.h:78</a></div></div>
+<div class="ttc" id="areg__pwr_8h_html_a2a12f5af4994abe5b34cf7eae3dacf70"><div class="ttname"><a href="reg__pwr_8h.html#a2a12f5af4994abe5b34cf7eae3dacf70">PWR_SCR_CWUF1</a></div><div class="ttdeci">#define PWR_SCR_CWUF1</div><div class="ttdoc">clear wake-up flag 1</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00192">reg_pwr.h:192</a></div></div>
+<div class="ttc" id="areg__pwr_8h_html_a2b435bfeeeb80cd6e640fa6f9210649a"><div class="ttname"><a href="reg__pwr_8h.html#a2b435bfeeeb80cd6e640fa6f9210649a">PWR_SCR_CWUF3</a></div><div class="ttdeci">#define PWR_SCR_CWUF3</div><div class="ttdoc">clear wake-up flag 3</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00196">reg_pwr.h:196</a></div></div>
+<div class="ttc" id="areg__pwr_8h_html_a4128b0b9a09d2443ce0e4eef81177a8d"><div class="ttname"><a href="reg__pwr_8h.html#a4128b0b9a09d2443ce0e4eef81177a8d">PWR_SCR_CWUF2</a></div><div class="ttdeci">#define PWR_SCR_CWUF2</div><div class="ttdoc">clear wake-up flag 2</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00194">reg_pwr.h:194</a></div></div>
+<div class="ttc" id="areg__pwr_8h_html_a84ebdf0893ad3ea77bb259030b20f3a6"><div class="ttname"><a href="reg__pwr_8h.html#a84ebdf0893ad3ea77bb259030b20f3a6">PWR_CR2_EWUP1</a></div><div class="ttdeci">#define PWR_CR2_EWUP1</div><div class="ttdoc">Enable WKUP1 wake-up pin</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00111">reg_pwr.h:111</a></div></div>
+<div class="ttc" id="areg__pwr_8h_html_a8c8075e98772470804c9e3fe74984115"><div class="ttname"><a href="reg__pwr_8h.html#a8c8075e98772470804c9e3fe74984115">PWR_CR_PDDS</a></div><div class="ttdeci">#define PWR_CR_PDDS</div><div class="ttdoc">Power Down Deepsleep</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00089">reg_pwr.h:89</a></div></div>
+<div class="ttc" id="areg__pwr_8h_html_a9e3698fe3e13232fecda6c1d9b3544f3"><div class="ttname"><a href="reg__pwr_8h.html#a9e3698fe3e13232fecda6c1d9b3544f3">PWR_CR_LDPS</a></div><div class="ttdeci">#define PWR_CR_LDPS</div><div class="ttdoc">Domain Write Protction</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00086">reg_pwr.h:86</a></div></div>
+<div class="ttc" id="areg__pwr_8h_html_acd258d21ebd14e16b095749fd5ff20ce"><div class="ttname"><a href="reg__pwr_8h.html#acd258d21ebd14e16b095749fd5ff20ce">PWR_SCR_CWUF6</a></div><div class="ttdeci">#define PWR_SCR_CWUF6</div><div class="ttdoc">clear wake-up flag 6 /////////////////////////////////////////////////////////////////////////////</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00205">reg_pwr.h:202</a></div></div>
+<div class="ttc" id="areg__pwr_8h_html_af1cc08299b937e0c1c87e24aa153c005"><div class="ttname"><a href="reg__pwr_8h.html#af1cc08299b937e0c1c87e24aa153c005">PWR_SCR_CWUF5</a></div><div class="ttdeci">#define PWR_SCR_CWUF5</div><div class="ttdoc">clear wake-up flag 5</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00200">reg_pwr.h:200</a></div></div>
+<div class="ttc" id="areg__rcc_8h_html_a74944438a086975793d26ae48d5882d4"><div class="ttname"><a href="reg__rcc_8h.html#a74944438a086975793d26ae48d5882d4">RCC</a></div><div class="ttdeci">#define RCC</div><div class="ttdoc">RCC type pointer Definition</div><div class="ttdef"><b>Definition:</b> <a href="reg__rcc_8h_source.html#l00092">reg_rcc.h:92</a></div></div>
+<div class="ttc" id="areg__rcc_8h_html_ab56a1848dcac240ec805f568e4a49d60"><div class="ttname"><a href="reg__rcc_8h.html#ab56a1848dcac240ec805f568e4a49d60">RCC_BDCR_DBP</a></div><div class="ttdeci">#define RCC_BDCR_DBP</div><div class="ttdoc">DBP clock enable</div><div class="ttdef"><b>Definition:</b> <a href="reg__rcc_8h_source.html#l00511">reg_rcc.h:511</a></div></div>
+<div class="ttc" id="areg__rcc_8h_html_ae630b8e610ae204fdada83dccb07b55c"><div class="ttname"><a href="reg__rcc_8h.html#ae630b8e610ae204fdada83dccb07b55c">RCC_APB1ENR_PWR</a></div><div class="ttdeci">#define RCC_APB1ENR_PWR</div><div class="ttdoc">Power interface clock enable</div><div class="ttdef"><b>Definition:</b> <a href="reg__rcc_8h_source.html#l00478">reg_rcc.h:478</a></div></div>
+<div class="ttc" id="areg__syscfg_8h_html_a352165efb5d3fa83538b089d7f9f5a8d"><div class="ttname"><a href="reg__syscfg_8h.html#a352165efb5d3fa83538b089d7f9f5a8d">SYSCFG_PDETCSR_PVDE</a></div><div class="ttdeci">#define SYSCFG_PDETCSR_PVDE</div><div class="ttdoc">Power Voltage Detector Enable</div><div class="ttdef"><b>Definition:</b> <a href="reg__syscfg_8h_source.html#l00232">reg_syscfg.h:232</a></div></div>
+<div class="ttc" id="areg__syscfg_8h_html_a3c833fe1c486cb62250ccbca32899cb8"><div class="ttname"><a href="reg__syscfg_8h.html#a3c833fe1c486cb62250ccbca32899cb8">SYSCFG</a></div><div class="ttdeci">#define SYSCFG</div><div class="ttdef"><b>Definition:</b> <a href="reg__syscfg_8h_source.html#l00068">reg_syscfg.h:68</a></div></div>
+<div class="ttc" id="atypes_8h_html_a10e94b422ef0c20dcdec20d31a1f5049"><div class="ttname"><a href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a></div><div class="ttdeci">unsigned int u32</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00054">types.h:54</a></div></div>
+<div class="ttc" id="atypes_8h_html_a89136caac2e14c55151f527ac02daaff"><div class="ttname"><a href="types_8h.html#a89136caac2e14c55151f527ac02daaff">FlagStatus</a></div><div class="ttdeci">FlagStatus</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00073">types.h:73</a></div></div>
+<div class="ttc" id="atypes_8h_html_a9604563d4bca5bd6bc9a17c9511e599b"><div class="ttname"><a href="types_8h.html#a9604563d4bca5bd6bc9a17c9511e599b">MODIFY_REG</a></div><div class="ttdeci">#define MODIFY_REG(reg, CLEARMASK, SETMASK)</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00099">types.h:99</a></div></div>
+<div class="ttc" id="atypes_8h_html_ac9a7e9a35d2513ec15c3b537aaa4fba1"><div class="ttname"><a href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a></div><div class="ttdeci">FunctionalState</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00074">types.h:74</a></div></div>
+<div class="ttc" id="atypes_8h_html_ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d"><div class="ttname"><a href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d">DISABLE</a></div><div class="ttdeci">@ DISABLE</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00074">types.h:74</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

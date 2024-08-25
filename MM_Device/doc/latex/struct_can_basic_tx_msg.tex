@@ -1,0 +1,109 @@
+\hypertarget{struct_can_basic_tx_msg}{}\doxysection{Can\+Basic\+Tx\+Msg结构体 参考}
+\label{struct_can_basic_tx_msg}\index{CanBasicTxMsg@{CanBasicTxMsg}}
+
+
+CAN\+\_\+\+Basic Tx message structure definition  
+
+
+
+
+{\ttfamily \#include $<$hal\+\_\+can.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_can_basic_tx_msg_ae4aae768c6a5930a429a4329b74aedf2}{IDH}}
+\begin{DoxyCompactList}\small\item\em Specifies the standard high identifier. This parameter can be a value between 0 to 0x\+FF. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_can_basic_tx_msg_a68c7528d27c30ad4ba589095389ad046}{IDL}}
+\begin{DoxyCompactList}\small\item\em Specifies the standard low identifier. This parameter can be a value between 0 to 0x7. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_can_basic_tx_msg_aac9723dc041f55507b586f08b01018f2}{RTR}}
+\begin{DoxyCompactList}\small\item\em Specifies the type of frame for the message that will be transmitted. This parameter can be @\+Trans\+Frame. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_can_basic_tx_msg_a8b2db3fb73051eba68d017a96af9139a}{DLC}}
+\begin{DoxyCompactList}\small\item\em Specifies the length of the frame that will be transmitted. This parameter can be a value between 0 to 8. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_can_basic_tx_msg_a83cc60301b869f57b8152c949856c1fb}{Data}} \mbox{[}8\mbox{]}
+\begin{DoxyCompactList}\small\item\em Contains the data to be transmitted. It ranges from 0 to 0x\+FF. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+CAN\+\_\+\+Basic Tx message structure definition 
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00202}{202}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{struct_can_basic_tx_msg_a83cc60301b869f57b8152c949856c1fb}\label{struct_can_basic_tx_msg_a83cc60301b869f57b8152c949856c1fb}} 
+\index{CanBasicTxMsg@{CanBasicTxMsg}!Data@{Data}}
+\index{Data@{Data}!CanBasicTxMsg@{CanBasicTxMsg}}
+\doxysubsubsection{\texorpdfstring{Data}{Data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Can\+Basic\+Tx\+Msg\+::\+Data\mbox{[}8\mbox{]}}
+
+
+
+Contains the data to be transmitted. It ranges from 0 to 0x\+FF. 
+
+
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00207}{207}} 行定义.
+
+\mbox{\Hypertarget{struct_can_basic_tx_msg_a8b2db3fb73051eba68d017a96af9139a}\label{struct_can_basic_tx_msg_a8b2db3fb73051eba68d017a96af9139a}} 
+\index{CanBasicTxMsg@{CanBasicTxMsg}!DLC@{DLC}}
+\index{DLC@{DLC}!CanBasicTxMsg@{CanBasicTxMsg}}
+\doxysubsubsection{\texorpdfstring{DLC}{DLC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Can\+Basic\+Tx\+Msg\+::\+DLC}
+
+
+
+Specifies the length of the frame that will be transmitted. This parameter can be a value between 0 to 8. 
+
+
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00206}{206}} 行定义.
+
+\mbox{\Hypertarget{struct_can_basic_tx_msg_ae4aae768c6a5930a429a4329b74aedf2}\label{struct_can_basic_tx_msg_ae4aae768c6a5930a429a4329b74aedf2}} 
+\index{CanBasicTxMsg@{CanBasicTxMsg}!IDH@{IDH}}
+\index{IDH@{IDH}!CanBasicTxMsg@{CanBasicTxMsg}}
+\doxysubsubsection{\texorpdfstring{IDH}{IDH}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Can\+Basic\+Tx\+Msg\+::\+IDH}
+
+
+
+Specifies the standard high identifier. This parameter can be a value between 0 to 0x\+FF. 
+
+
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00203}{203}} 行定义.
+
+\mbox{\Hypertarget{struct_can_basic_tx_msg_a68c7528d27c30ad4ba589095389ad046}\label{struct_can_basic_tx_msg_a68c7528d27c30ad4ba589095389ad046}} 
+\index{CanBasicTxMsg@{CanBasicTxMsg}!IDL@{IDL}}
+\index{IDL@{IDL}!CanBasicTxMsg@{CanBasicTxMsg}}
+\doxysubsubsection{\texorpdfstring{IDL}{IDL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Can\+Basic\+Tx\+Msg\+::\+IDL}
+
+
+
+Specifies the standard low identifier. This parameter can be a value between 0 to 0x7. 
+
+
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00204}{204}} 行定义.
+
+\mbox{\Hypertarget{struct_can_basic_tx_msg_aac9723dc041f55507b586f08b01018f2}\label{struct_can_basic_tx_msg_aac9723dc041f55507b586f08b01018f2}} 
+\index{CanBasicTxMsg@{CanBasicTxMsg}!RTR@{RTR}}
+\index{RTR@{RTR}!CanBasicTxMsg@{CanBasicTxMsg}}
+\doxysubsubsection{\texorpdfstring{RTR}{RTR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Can\+Basic\+Tx\+Msg\+::\+RTR}
+
+
+
+Specifies the type of frame for the message that will be transmitted. This parameter can be @\+Trans\+Frame. 
+
+
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00205}{205}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Inc/\mbox{\hyperlink{hal__can_8h}{hal\+\_\+can.\+h}}\end{DoxyCompactItemize}

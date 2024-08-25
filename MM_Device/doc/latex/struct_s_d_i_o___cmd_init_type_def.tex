@@ -1,0 +1,80 @@
+\hypertarget{struct_s_d_i_o___cmd_init_type_def}{}\doxysection{SDIO\+\_\+\+Cmd\+Init\+Type\+Def结构体 参考}
+\label{struct_s_d_i_o___cmd_init_type_def}\index{SDIO\_CmdInitTypeDef@{SDIO\_CmdInitTypeDef}}
+
+
+{\ttfamily \#include $<$hal\+\_\+sdio.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___cmd_init_type_def_a805f2c603cbec687f2ecf8a0f0ce582b}{SDIO\+\_\+\+Argument}}
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___cmd_init_type_def_ab4e4ff40d8295a9cf08829e552dec964}{SDIO\+\_\+\+Cmd\+Index}}
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___cmd_init_type_def_a550e0368580051feec9d7599063cdd5a}{SDIO\+\_\+\+Response}}
+\begin{DoxyCompactList}\small\item\em Specifies the SDIO command index. It must be lower than 0x40. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___cmd_init_type_def_a5010f9ec3f62280b22bc6bb5b2d18111}{SDIO\+\_\+\+Wait}}
+\begin{DoxyCompactList}\small\item\em This parameter can be a value of SDIO\+\_\+\+Response\+\_\+\+Type \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00224}{224}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{struct_s_d_i_o___cmd_init_type_def_a805f2c603cbec687f2ecf8a0f0ce582b}\label{struct_s_d_i_o___cmd_init_type_def_a805f2c603cbec687f2ecf8a0f0ce582b}} 
+\index{SDIO\_CmdInitTypeDef@{SDIO\_CmdInitTypeDef}!SDIO\_Argument@{SDIO\_Argument}}
+\index{SDIO\_Argument@{SDIO\_Argument}!SDIO\_CmdInitTypeDef@{SDIO\_CmdInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{SDIO\_Argument}{SDIO\_Argument}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Cmd\+Init\+Type\+Def\+::\+SDIO\+\_\+\+Argument}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00225}{225}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___cmd_init_type_def_ab4e4ff40d8295a9cf08829e552dec964}\label{struct_s_d_i_o___cmd_init_type_def_ab4e4ff40d8295a9cf08829e552dec964}} 
+\index{SDIO\_CmdInitTypeDef@{SDIO\_CmdInitTypeDef}!SDIO\_CmdIndex@{SDIO\_CmdIndex}}
+\index{SDIO\_CmdIndex@{SDIO\_CmdIndex}!SDIO\_CmdInitTypeDef@{SDIO\_CmdInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CmdIndex}{SDIO\_CmdIndex}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Cmd\+Init\+Type\+Def\+::\+SDIO\+\_\+\+Cmd\+Index}
+
+Specifies the SDIO command argument which is sent to a card as part of a command message. If a command contains an argument, it must be loaded into this register before writing the command to the command register 
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00230}{230}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___cmd_init_type_def_a550e0368580051feec9d7599063cdd5a}\label{struct_s_d_i_o___cmd_init_type_def_a550e0368580051feec9d7599063cdd5a}} 
+\index{SDIO\_CmdInitTypeDef@{SDIO\_CmdInitTypeDef}!SDIO\_Response@{SDIO\_Response}}
+\index{SDIO\_Response@{SDIO\_Response}!SDIO\_CmdInitTypeDef@{SDIO\_CmdInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{SDIO\_Response}{SDIO\_Response}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Cmd\+Init\+Type\+Def\+::\+SDIO\+\_\+\+Response}
+
+
+
+Specifies the SDIO command index. It must be lower than 0x40. 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00232}{232}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___cmd_init_type_def_a5010f9ec3f62280b22bc6bb5b2d18111}\label{struct_s_d_i_o___cmd_init_type_def_a5010f9ec3f62280b22bc6bb5b2d18111}} 
+\index{SDIO\_CmdInitTypeDef@{SDIO\_CmdInitTypeDef}!SDIO\_Wait@{SDIO\_Wait}}
+\index{SDIO\_Wait@{SDIO\_Wait}!SDIO\_CmdInitTypeDef@{SDIO\_CmdInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{SDIO\_Wait}{SDIO\_Wait}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Cmd\+Init\+Type\+Def\+::\+SDIO\+\_\+\+Wait}
+
+
+
+This parameter can be a value of SDIO\+\_\+\+Response\+\_\+\+Type 
+
+Specifies the SDIO response type. 
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00235}{235}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Inc/\mbox{\hyperlink{hal__sdio_8h}{hal\+\_\+sdio.\+h}}\end{DoxyCompactItemize}

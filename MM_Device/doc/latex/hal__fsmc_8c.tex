@@ -1,0 +1,56 @@
+\hypertarget{hal__fsmc_8c}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Src/hal\+\_\+fsmc.c 文件参考}
+\label{hal__fsmc_8c}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_fsmc.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_fsmc.c}}
+
+
+THIS FILE PROVIDES ALL THE FSMC FIRMWARE FUNCTIONS. Interface with SRAM, PSRAM, NOR memories Interrupts and flags management  
+
+
+{\ttfamily \#include \char`\"{}reg\+\_\+rcc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}reg\+\_\+syscfg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}hal\+\_\+fsmc.\+h\char`\"{}}\newline
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{hal__fsmc_8c_a86fc145beb4842c313bf4b7db6eaecbb}{\+\_\+\+HAL\+\_\+\+FSMC\+\_\+\+C\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___f_s_m_c___exported___functions_ga99b09272a4eb324309c4339993f7ffc9}{FSMC\+\_\+\+NORSRAMStruct\+Init}} (\mbox{\hyperlink{struct_f_s_m_c___init_type_def}{FSMC\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\item 
+void \mbox{\hyperlink{group___f_s_m_c___exported___functions_ga4408aa26918b6cf7a84f0fa482cc6613}{FSMC\+\_\+\+NORSRAM\+\_\+\+Bank\+Struct\+Init}} (\mbox{\hyperlink{struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def}{FSMC\+\_\+\+NORSRAM\+\_\+\+Bank\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\item 
+void \mbox{\hyperlink{group___f_s_m_c___exported___functions_ga2594e3181adfc5140f69d9c5abb5f82c}{FSMC\+\_\+\+NORSRAMInit}} (\mbox{\hyperlink{struct_f_s_m_c___init_type_def}{FSMC\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\item 
+void \mbox{\hyperlink{group___f_s_m_c___exported___functions_ga43f72d46ad740647528f6cc45684cdd0}{FSMC\+\_\+\+NORSRAM\+\_\+\+Bank\+\_\+\+Init}} (\mbox{\hyperlink{struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def}{FSMC\+\_\+\+NORSRAM\+\_\+\+Bank\+\_\+\+Init\+Type\+Def}} $\ast$FSMC\+\_\+\+Bank\+\_\+\+Init\+Struct, \mbox{\hyperlink{group___f_s_m_c___exported___types_ga99bd18a2610c2b6bf2454edeeb7e992e}{FSMC\+\_\+\+NORSRAM\+\_\+\+BANK\+\_\+\+Type\+Def}} bank)
+\begin{DoxyCompactList}\small\item\em Initialize the FSMC\+\_\+\+NORSRAM Timing according to the specified parameters in the FSMC\+\_\+\+NORSRAM\+\_\+\+Timing\+Type\+Def \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE PROVIDES ALL THE FSMC FIRMWARE FUNCTIONS. Interface with SRAM, PSRAM, NOR memories Interrupts and flags management 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{hal__fsmc_8c_source}{hal\+\_\+fsmc.\+c}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{hal__fsmc_8c_a86fc145beb4842c313bf4b7db6eaecbb}\label{hal__fsmc_8c_a86fc145beb4842c313bf4b7db6eaecbb}} 
+\index{hal\_fsmc.c@{hal\_fsmc.c}!\_HAL\_FSMC\_C\_@{\_HAL\_FSMC\_C\_}}
+\index{\_HAL\_FSMC\_C\_@{\_HAL\_FSMC\_C\_}!hal\_fsmc.c@{hal\_fsmc.c}}
+\doxysubsubsection{\texorpdfstring{\_HAL\_FSMC\_C\_}{\_HAL\_FSMC\_C\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+HAL\+\_\+\+FSMC\+\_\+\+C\+\_\+}
+
+
+
+在文件 \mbox{\hyperlink{hal__fsmc_8c_source}{hal\+\_\+fsmc.\+c}} 第 \mbox{\hyperlink{hal__fsmc_8c_source_l00021}{21}} 行定义.
+

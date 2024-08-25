@@ -1,0 +1,77 @@
+\hypertarget{structarm__fir__interpolate__instance__q31}{}\doxysection{arm\+\_\+fir\+\_\+interpolate\+\_\+instance\+\_\+q31结构体 参考}
+\label{structarm__fir__interpolate__instance__q31}\index{arm\_fir\_interpolate\_instance\_q31@{arm\_fir\_interpolate\_instance\_q31}}
+
+
+Instance structure for the Q31 FIR interpolator.  
+
+
+
+
+{\ttfamily \#include $<$arm\+\_\+math.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structarm__fir__interpolate__instance__q31_a5cdf0a631cb74e0e9588c388abe5235c}{L}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structarm__fir__interpolate__instance__q31_a5d243796584afc7cd6c557f00b7acca5}{phase\+Length}}
+\item 
+\mbox{\hyperlink{arm__math_8h_adc89a3547f5324b7b3b95adec3806bc0}{q31\+\_\+t}} $\ast$ \mbox{\hyperlink{structarm__fir__interpolate__instance__q31_afa719433687e1936ec3403d0d32f06e6}{p\+Coeffs}}
+\item 
+\mbox{\hyperlink{arm__math_8h_adc89a3547f5324b7b3b95adec3806bc0}{q31\+\_\+t}} $\ast$ \mbox{\hyperlink{structarm__fir__interpolate__instance__q31_addde04514b6e6ac72be3d609f0398b1a}{p\+State}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Instance structure for the Q31 FIR interpolator. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l03456}{3456}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{structarm__fir__interpolate__instance__q31_a5cdf0a631cb74e0e9588c388abe5235c}\label{structarm__fir__interpolate__instance__q31_a5cdf0a631cb74e0e9588c388abe5235c}} 
+\index{arm\_fir\_interpolate\_instance\_q31@{arm\_fir\_interpolate\_instance\_q31}!L@{L}}
+\index{L@{L}!arm\_fir\_interpolate\_instance\_q31@{arm\_fir\_interpolate\_instance\_q31}}
+\doxysubsubsection{\texorpdfstring{L}{L}}
+{\footnotesize\ttfamily uint8\+\_\+t arm\+\_\+fir\+\_\+interpolate\+\_\+instance\+\_\+q31\+::L}
+
+upsample factor. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l03457}{3457}} 行定义.
+
+\mbox{\Hypertarget{structarm__fir__interpolate__instance__q31_afa719433687e1936ec3403d0d32f06e6}\label{structarm__fir__interpolate__instance__q31_afa719433687e1936ec3403d0d32f06e6}} 
+\index{arm\_fir\_interpolate\_instance\_q31@{arm\_fir\_interpolate\_instance\_q31}!pCoeffs@{pCoeffs}}
+\index{pCoeffs@{pCoeffs}!arm\_fir\_interpolate\_instance\_q31@{arm\_fir\_interpolate\_instance\_q31}}
+\doxysubsubsection{\texorpdfstring{pCoeffs}{pCoeffs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{arm__math_8h_adc89a3547f5324b7b3b95adec3806bc0}{q31\+\_\+t}}$\ast$ arm\+\_\+fir\+\_\+interpolate\+\_\+instance\+\_\+q31\+::p\+Coeffs}
+
+points to the coefficient array. The array is of length L$\ast$phase\+Length. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l03459}{3459}} 行定义.
+
+\mbox{\Hypertarget{structarm__fir__interpolate__instance__q31_a5d243796584afc7cd6c557f00b7acca5}\label{structarm__fir__interpolate__instance__q31_a5d243796584afc7cd6c557f00b7acca5}} 
+\index{arm\_fir\_interpolate\_instance\_q31@{arm\_fir\_interpolate\_instance\_q31}!phaseLength@{phaseLength}}
+\index{phaseLength@{phaseLength}!arm\_fir\_interpolate\_instance\_q31@{arm\_fir\_interpolate\_instance\_q31}}
+\doxysubsubsection{\texorpdfstring{phaseLength}{phaseLength}}
+{\footnotesize\ttfamily uint16\+\_\+t arm\+\_\+fir\+\_\+interpolate\+\_\+instance\+\_\+q31\+::phase\+Length}
+
+length of each polyphase filter component. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l03458}{3458}} 行定义.
+
+\mbox{\Hypertarget{structarm__fir__interpolate__instance__q31_addde04514b6e6ac72be3d609f0398b1a}\label{structarm__fir__interpolate__instance__q31_addde04514b6e6ac72be3d609f0398b1a}} 
+\index{arm\_fir\_interpolate\_instance\_q31@{arm\_fir\_interpolate\_instance\_q31}!pState@{pState}}
+\index{pState@{pState}!arm\_fir\_interpolate\_instance\_q31@{arm\_fir\_interpolate\_instance\_q31}}
+\doxysubsubsection{\texorpdfstring{pState}{pState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{arm__math_8h_adc89a3547f5324b7b3b95adec3806bc0}{q31\+\_\+t}}$\ast$ arm\+\_\+fir\+\_\+interpolate\+\_\+instance\+\_\+q31\+::p\+State}
+
+points to the state variable array. The array is of length block\+Size+phase\+Length-\/1. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l03460}{3460}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+CMSIS/\mbox{\hyperlink{arm__math_8h}{arm\+\_\+math.\+h}}\end{DoxyCompactItemize}

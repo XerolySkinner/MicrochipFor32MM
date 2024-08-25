@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>template: C:/Users/XerolySkinner/Desktop/MM_Device/MM32F327x/Include/reg_comp.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">template
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8a23370bd962f2be3cb202251f8a0865.html">MM32F327x</a></li><li class="navelem"><a class="el" href="dir_558e241ee7368c5b8b9a34748b15bdf8.html">Include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">reg_comp.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="reg__comp_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// Define to prevent recursive inclusion</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#ifndef __REG_COMP_H</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#define __REG_COMP_H</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Files includes</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">types.h</a>&quot;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#if defined ( __CC_ARM )</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#pragma anon_unions</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#aa9f5d2999c6918e385d7a526c4f6b1d3">   46</a></span><span class="preprocessor">#define COMP_BASE                       (APB2PERIPH_BASE + 0x4000)              </span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="struct_c_o_m_p___type_def.html">   51</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="struct_c_o_m_p___type_def.html#a906be5681b7db6e55adfee1f714b038f">   55</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_c_o_m_p___type_def.html#a906be5681b7db6e55adfee1f714b038f">RESERVED1</a>;                                                         </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="struct_c_o_m_p___type_def.html#ace58156b45cb2ae2a13d6eb05e3efd3c">   56</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_c_o_m_p___type_def.html#ace58156b45cb2ae2a13d6eb05e3efd3c">RESERVED2</a>;                                                         </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="struct_c_o_m_p___type_def.html#a77f64a841d884ee180755d046d3ba0ba">   57</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_c_o_m_p___type_def.html#a77f64a841d884ee180755d046d3ba0ba">RESERVED3</a>;                                                         </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">union </span>{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="struct_c_o_m_p___type_def.html#ad41213faf794b1c6849910b2f9765f07">   59</a></span>        <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_c_o_m_p___type_def.html#ad41213faf794b1c6849910b2f9765f07">CSR1</a>;                                                          </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="struct_c_o_m_p___type_def.html#a0762925796ebf489feb3cf45e47b8131">   60</a></span>        <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_c_o_m_p___type_def.html#a0762925796ebf489feb3cf45e47b8131">COMP1_CSR</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    };</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">union </span>{</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="struct_c_o_m_p___type_def.html#a667a54bcd3bb5f87cb9c1dcb98c39619">   63</a></span>        <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_c_o_m_p___type_def.html#a667a54bcd3bb5f87cb9c1dcb98c39619">CSR2</a>;                                                          </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="struct_c_o_m_p___type_def.html#a3603525186dab04f5617d004aba45e3c">   64</a></span>        <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_c_o_m_p___type_def.html#a3603525186dab04f5617d004aba45e3c">COMP2_CSR</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    };</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="struct_c_o_m_p___type_def.html#abdbfd135b23338f5f9bebcf3a94b9934">   66</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_c_o_m_p___type_def.html#abdbfd135b23338f5f9bebcf3a94b9934">RESERVED4</a>;                                                         </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">union </span>{</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="struct_c_o_m_p___type_def.html#ac08b21c6668789c46f495f0f9f43a74c">   68</a></span>        <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_c_o_m_p___type_def.html#ac08b21c6668789c46f495f0f9f43a74c">CRV</a>;                                                           </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="struct_c_o_m_p___type_def.html#a9a1f33915624704ea38646a4c53aa0c6">   69</a></span>        <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_c_o_m_p___type_def.html#a9a1f33915624704ea38646a4c53aa0c6">COMP_CRV</a>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    };</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">union </span>{</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="struct_c_o_m_p___type_def.html#ae165b36ef5a14b4c6e6f5f2899ee7b17">   72</a></span>        <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_c_o_m_p___type_def.html#ae165b36ef5a14b4c6e6f5f2899ee7b17">POLL1</a>;                                                         </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="struct_c_o_m_p___type_def.html#a03e11684fdd29e8ac8713e08745f50e1">   73</a></span>        <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_c_o_m_p___type_def.html#a03e11684fdd29e8ac8713e08745f50e1">COMP1_POLL</a>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    };</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">union </span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="struct_c_o_m_p___type_def.html#a2dbe33886d3873edbc920ab834ad1ad1">   76</a></span>        <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_c_o_m_p___type_def.html#a2dbe33886d3873edbc920ab834ad1ad1">POLL2</a>;                                                         </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="struct_c_o_m_p___type_def.html#acced4a0f2f51cada5ae3504130dbcc32">   77</a></span>        <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_c_o_m_p___type_def.html#acced4a0f2f51cada5ae3504130dbcc32">COMP2_POLL</a>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    };</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>} <a class="code hl_struct" href="struct_c_o_m_p___type_def.html">COMP_TypeDef</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a076912543697dbe4c46b79e8e44ad2fb">   85</a></span><span class="preprocessor">#define COMP                            ((COMP_TypeDef*) COMP_BASE)</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a498f8c6f080f53a4bd0cbd3f4cdf2958">   94</a></span><span class="preprocessor">#define COMP_CSR_EN_Pos             (0)</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a6feb7a7d13ffb5a2811aa35c8abed1ed">   95</a></span><span class="preprocessor">#define COMP_CSR_EN                 (0x01U &lt;&lt; COMP_CSR_EN_Pos)              </span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a95c778b1623c98a0ee3224f77778eaee">   96</a></span><span class="preprocessor">#define COMP_CSR_MODE_Pos           (2)</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a881160b873bd1d13a7a6460efbf1ba72">   97</a></span><span class="preprocessor">#define COMP_CSR_MODE               (0x03U &lt;&lt; COMP_CSR_MODE_Pos)            </span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a25ce3990789222d13a2f93b133747195">   98</a></span><span class="preprocessor">#define COMP_CSR_MODE_LOWESTPOWER   (0x00U &lt;&lt; COMP_CSR_MODE_Pos)            </span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#ac511854578324b91e9785b79342b159d">   99</a></span><span class="preprocessor">#define COMP_CSR_MODE_LOWPOWER      (0x01U &lt;&lt; COMP_CSR_MODE_Pos)            </span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a2e0b130148eed0ff956647415338fb27">  100</a></span><span class="preprocessor">#define COMP_CSR_MODE_MEDIUMRATE    (0x02U &lt;&lt; COMP_CSR_MODE_Pos)            </span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#acbe54e9ef6314d3306be24e55bb03940">  101</a></span><span class="preprocessor">#define COMP_CSR_MODE_HIGHRATE      (0x03U &lt;&lt; COMP_CSR_MODE_Pos)            </span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#aefd6c4cab80b398a40650cc9beaa05da">  103</a></span><span class="preprocessor">#define COMP_CSR_INM_Pos            (4)</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a33b67cb6f1105bfff36ec312a416138a">  104</a></span><span class="preprocessor">#define COMP_CSR_INM                (0x03U &lt;&lt; COMP_CSR_INM_Pos)             </span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a0fbc524823f2fdafccb620df2823a0aa">  105</a></span><span class="preprocessor">#define COMP_CSR_INM_0              (0x00U &lt;&lt; COMP_CSR_INM_Pos)             </span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a88dd0ee91abcd0c3e9bd668999e99bae">  106</a></span><span class="preprocessor">#define COMP_CSR_INM_1              (0x01U &lt;&lt; COMP_CSR_INM_Pos)             </span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a5ca7609136c6f515ccb15df27ff0d288">  107</a></span><span class="preprocessor">#define COMP_CSR_INM_2              (0x02U &lt;&lt; COMP_CSR_INM_Pos)             </span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a96b57989efd8aa2ca25f13f54078b9f0">  108</a></span><span class="preprocessor">#define COMP_CSR_INM_3              (0x03U &lt;&lt; COMP_CSR_INM_Pos)             </span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a228353e524f3ed06bdb3a9e93a3345aa">  110</a></span><span class="preprocessor">#define COMP_CSR_INP_Pos            (7)</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a0eac6adbdca70aeea3e28ecfed561824">  111</a></span><span class="preprocessor">#define COMP_CSR_INP                (0x03U &lt;&lt; COMP_CSR_INP_Pos)             </span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a2045e358c5c2c3e9901d218b76bf9544">  112</a></span><span class="preprocessor">#define COMP_CSR_INP_INP0           (0x00U &lt;&lt; COMP_CSR_INP_Pos)             </span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a5b74bd78d643c273727db59fdddbe558">  113</a></span><span class="preprocessor">#define COMP_CSR_INP_INP1           (0x01U &lt;&lt; COMP_CSR_INP_Pos)             </span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a6010b10f67b3720db622e4b066d1170f">  114</a></span><span class="preprocessor">#define COMP_CSR_INP_INP2           (0x02U &lt;&lt; COMP_CSR_INP_Pos)             </span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#afca76f50ef70a99773a31bffcd8f34de">  115</a></span><span class="preprocessor">#define COMP_CSR_INP_INP3           (0x03U &lt;&lt; COMP_CSR_INP_Pos)             </span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#adee3e7131d3ea11a5fe7c5cef3ab2e27">  117</a></span><span class="preprocessor">#define COMP_CSR_OUT_Pos            (10)</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#af2b4659e7c1951210a2857a301b82f72">  118</a></span><span class="preprocessor">#define COMP_CSR_OUT                (0x0FU &lt;&lt; COMP_CSR_OUT_Pos)             </span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#ab0853e7d22daacd9afca97fbdee023a4">  119</a></span><span class="preprocessor">#define COMP_CSR_OUT_TIM1_BRAKE     (0x02U &lt;&lt; COMP_CSR_OUT_Pos)             </span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a64719a223c627689308a19afa0273497">  120</a></span><span class="preprocessor">#define COMP_CSR_OUT_TIM8_BRAKE     (0x03U &lt;&lt; COMP_CSR_OUT_Pos)             </span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#abf318332c4fc0199ddabb9a129d9e211">  121</a></span><span class="preprocessor">#define COMP_CSR_OUT_TIM1_OCREFCLR  (0x06U &lt;&lt; COMP_CSR_OUT_Pos)             </span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a98d6964003360baad0f6257f2438113e">  122</a></span><span class="preprocessor">#define COMP_CSR_OUT_TIM1_CAPTURE1  (0x07U &lt;&lt; COMP_CSR_OUT_Pos)             </span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a61bc1316d52a1ee311a4c90e121deed5">  123</a></span><span class="preprocessor">#define COMP_CSR_OUT_TIM2_CAPTURE4  (0x08U &lt;&lt; COMP_CSR_OUT_Pos)             </span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a8bed44e97308d2a07972cd56d513b5dd">  124</a></span><span class="preprocessor">#define COMP_CSR_OUT_TIM2_OCREFCLR  (0x09U &lt;&lt; COMP_CSR_OUT_Pos)             </span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a4662aa361e6dca6e85045531e7dfe3a4">  125</a></span><span class="preprocessor">#define COMP_CSR_OUT_TIM3_CAPTURE1  (0x0AU &lt;&lt; COMP_CSR_OUT_Pos)             </span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#aec7fe9a0d8b0209ee03bc6262fb079ae">  126</a></span><span class="preprocessor">#define COMP_CSR_OUT_TIM3_OCREFCLR  (0x0BU &lt;&lt; COMP_CSR_OUT_Pos)             </span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a68f00cbec25bf7ba628ddc50684b4fcf">  127</a></span><span class="preprocessor">#define COMP_CSR_OUT_TIM8_OCREFCLR  (0x0FU &lt;&lt; COMP_CSR_OUT_Pos)             </span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#afcb2a0b29a8f499894c46125d15b02eb">  129</a></span><span class="preprocessor">#define COMP_CSR_POL_Pos            (15)</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a779101ba19f64f50bcd2dc2cb2df665a">  130</a></span><span class="preprocessor">#define COMP_CSR_POL                (0x01U &lt;&lt; COMP_CSR_POL_Pos)             </span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a4ca1d8272428fd1386b9a971b687a589">  131</a></span><span class="preprocessor">#define COMP_CSR_HYST_Pos           (16)</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#afe57b321ccbc7cbef7ab5dba15ec851f">  132</a></span><span class="preprocessor">#define COMP_CSR_HYST               (0x03U &lt;&lt; COMP_CSR_HYST_Pos)            </span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a921b78b44b1638adb97b4a3fea45e77a">  133</a></span><span class="preprocessor">#define COMP_CSR_HYST_0             (0x00U &lt;&lt; COMP_CSR_HYST_Pos)            </span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a2902565b63e379c195aafdac4f0b1603">  134</a></span><span class="preprocessor">#define COMP_CSR_HYST_15            (0x01U &lt;&lt; COMP_CSR_HYST_Pos)            </span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a71b1d05cb078848fee5a453829aec585">  135</a></span><span class="preprocessor">#define COMP_CSR_HYST_30            (0x02U &lt;&lt; COMP_CSR_HYST_Pos)            </span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a48fb16def552a8f1d3721e5c5bcc352d">  136</a></span><span class="preprocessor">#define COMP_CSR_HYST_90            (0x03U &lt;&lt; COMP_CSR_HYST_Pos)            </span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a7b69d030b00e87017fe10e25d99d9397">  138</a></span><span class="preprocessor">#define COMP_CSR_OFLT_Pos           (18)</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a20bb581c539a0f361f50c50e37f319ad">  139</a></span><span class="preprocessor">#define COMP_CSR_OFLT               (0x07U &lt;&lt; COMP_CSR_OFLT_Pos)            </span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a298dd3892325a32d74a2c708708cc49c">  140</a></span><span class="preprocessor">#define COMP_CSR_OFLT_0             (0x00U &lt;&lt; COMP_CSR_OFLT_Pos)            </span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#adb8661186a10a74ddb89a3786b0f702e">  141</a></span><span class="preprocessor">#define COMP_CSR_OFLT_1             (0x01U &lt;&lt; COMP_CSR_OFLT_Pos)            </span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a12819b74773d3428bfe119a083d341de">  142</a></span><span class="preprocessor">#define COMP_CSR_OFLT_2             (0x02U &lt;&lt; COMP_CSR_OFLT_Pos)            </span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a9c6a0c7d4165628ec653ebb92d30a181">  143</a></span><span class="preprocessor">#define COMP_CSR_OFLT_3             (0x03U &lt;&lt; COMP_CSR_OFLT_Pos)            </span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a532d7389875b706eba88a35a2af2d312">  144</a></span><span class="preprocessor">#define COMP_CSR_OFLT_4             (0x04U &lt;&lt; COMP_CSR_OFLT_Pos)            </span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a6f14240f4c80d15fe8837f4b909c8025">  145</a></span><span class="preprocessor">#define COMP_CSR_OFLT_5             (0x05U &lt;&lt; COMP_CSR_OFLT_Pos)            </span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a7e54f4e3844ade67f578badae23fccdf">  146</a></span><span class="preprocessor">#define COMP_CSR_OFLT_6             (0x06U &lt;&lt; COMP_CSR_OFLT_Pos)            </span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a0b3e57ea29e5f11b9bb49a61a212e0d5">  147</a></span><span class="preprocessor">#define COMP_CSR_OFLT_7             (0x07U &lt;&lt; COMP_CSR_OFLT_Pos)            </span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a2920def2d91945439453d4127493b5a7">  149</a></span><span class="preprocessor">#define COMP_CSR_STA_Pos            (30)</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a9c1f2c955f4c137673d5c820444c0c3b">  150</a></span><span class="preprocessor">#define COMP_CSR_STA                (0x01U &lt;&lt; COMP_CSR_STA_Pos)             </span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#ae38ed1b1eb108ae669a872817a81e22c">  151</a></span><span class="preprocessor">#define COMP_CSR_LOCK_Pos           (31)</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a7a926a0b464f05c1f53a783275878832">  152</a></span><span class="preprocessor">#define COMP_CSR_LOCK               (0x01U &lt;&lt; COMP_CSR_LOCK_Pos)            </span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a749fb6a7f6b003937f11c2abe543d1bc">  158</a></span><span class="preprocessor">#define COMP_CRV_Pos                (0)</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#acde012fd35100ffae61c3e8c32880e73">  159</a></span><span class="preprocessor">#define COMP_CRV_MASK               (0x0FU &lt;&lt; COMP_CRV_Pos)                 </span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#aa97a5644962d05f0a917f4454fe1001b">  160</a></span><span class="preprocessor">#define COMP_CRV_1_20               (0x00U &lt;&lt; COMP_CRV_Pos)                 </span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a31ec621fd926a16bd9629368b42429e8">  161</a></span><span class="preprocessor">#define COMP_CRV_2_20               (0x01U &lt;&lt; COMP_CRV_Pos)                 </span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a98f66e892716dd963073379d153622c7">  162</a></span><span class="preprocessor">#define COMP_CRV_3_20               (0x02U &lt;&lt; COMP_CRV_Pos)                 </span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a9dc0d397b28acb6b0ff0c6dd0749aea7">  163</a></span><span class="preprocessor">#define COMP_CRV_4_20               (0x03U &lt;&lt; COMP_CRV_Pos)                 </span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a13a7706dfef8f491cacd7c76a8f2ba50">  164</a></span><span class="preprocessor">#define COMP_CRV_5_20               (0x04U &lt;&lt; COMP_CRV_Pos)                 </span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#ace103a17b0c7259d51dc79186b88ef25">  165</a></span><span class="preprocessor">#define COMP_CRV_6_20               (0x05U &lt;&lt; COMP_CRV_Pos)                 </span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a6ae9f400639fd7d5d6c3760ec3dadce6">  166</a></span><span class="preprocessor">#define COMP_CRV_7_20               (0x06U &lt;&lt; COMP_CRV_Pos)                 </span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a04a6fc851484aeedcffcd67134669507">  167</a></span><span class="preprocessor">#define COMP_CRV_8_20               (0x07U &lt;&lt; COMP_CRV_Pos)                 </span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a9054414fb3a5d5066b50bf7f5e31ecd5">  168</a></span><span class="preprocessor">#define COMP_CRV_9_20               (0x08U &lt;&lt; COMP_CRV_Pos)                 </span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a905af938d8e33dc2cf73f184c1dc6c8d">  169</a></span><span class="preprocessor">#define COMP_CRV_10_20              (0x09U &lt;&lt; COMP_CRV_Pos)                 </span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a8c733cf005c9b7ba7957c5b1c13898d0">  170</a></span><span class="preprocessor">#define COMP_CRV_11_20              (0x0AU &lt;&lt; COMP_CRV_Pos)                 </span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#abf1d95e9e1dfb9a8edd89bd6bd03abc9">  171</a></span><span class="preprocessor">#define COMP_CRV_12_20              (0x0BU &lt;&lt; COMP_CRV_Pos)                 </span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a1bf8ba7ac4b8ce4a26ebe094969ec5f5">  172</a></span><span class="preprocessor">#define COMP_CRV_13_20              (0x0CU &lt;&lt; COMP_CRV_Pos)                 </span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#af7b5ec03be6448df4e8bb7b531def2c1">  173</a></span><span class="preprocessor">#define COMP_CRV_14_20              (0x0DU &lt;&lt; COMP_CRV_Pos)                 </span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a8018e0fcf73365cfb8f85e84907afa42">  174</a></span><span class="preprocessor">#define COMP_CRV_15_20              (0x0EU &lt;&lt; COMP_CRV_Pos)                 </span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#aa81a6b8208133262d6d256c4d6d92078">  175</a></span><span class="preprocessor">#define COMP_CRV_16_20              (0x0FU &lt;&lt; COMP_CRV_Pos)                 </span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a55a5b9eda28d7b2530f4daa5876c2e3c">  177</a></span><span class="preprocessor">#define COMP_CRV_EN_Pos             (4)</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a8eeaceb3ac796ea173c95d3964cb00cf">  178</a></span><span class="preprocessor">#define COMP_CRV_EN                 (0x01U &lt;&lt; COMP_CRV_EN_Pos)              </span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a90725796b88d16ca54300330fc203c3d">  179</a></span><span class="preprocessor">#define COMP_CRV_EN_DISABLE         (0x00U &lt;&lt; COMP_CRV_EN_Pos)              </span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#abc3955323687208b089160cf251030e2">  180</a></span><span class="preprocessor">#define COMP_CRV_EN_ENABLE          (0x01U &lt;&lt; COMP_CRV_EN_Pos)              </span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a7c48217e78495ea9ce554cbb1a1dbbe1">  181</a></span><span class="preprocessor">#define COMP_CRV_SRC_Pos            (5)</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a34b573cfa8296c0e42c1f09e39a98784">  182</a></span><span class="preprocessor">#define COMP_CRV_SRC                (0x01U &lt;&lt; COMP_CRV_SRC_Pos)             </span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#ab967d08bdc1c8ed29874034eddd3f99b">  183</a></span><span class="preprocessor">#define COMP_CRV_SRC_VREF           (0x00U &lt;&lt; COMP_CRV_SRC_Pos)             </span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a89343663aff99ac0237ef8b747fc2276">  184</a></span><span class="preprocessor">#define COMP_CRV_SRC_AVDD           (0x01U &lt;&lt; COMP_CRV_SRC_Pos)             </span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a025c45c087afc2373cb7643d542394ba">  189</a></span><span class="preprocessor">#define COMP_POLL_EN_Pos            (0)</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#aa975186d178fa9a56a7993b4242db68e">  190</a></span><span class="preprocessor">#define COMP_POLL_EN                (0x01U &lt;&lt; COMP_POLL_EN_Pos)              </span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#ada77b63fd53677a238a3741aceb8ab0f">  191</a></span><span class="preprocessor">#define COMP_POLL_EN_DISABLE        (0x00U &lt;&lt; COMP_POLL_EN_Pos)              </span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a184043897ac472c62db1055f996351df">  192</a></span><span class="preprocessor">#define COMP_POLL_EN_ENABLE         (0x01U &lt;&lt; COMP_POLL_EN_Pos)              </span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#ab5ee8c4ce1305ab2459f9c44c1bd9166">  193</a></span><span class="preprocessor">#define COMP_POLL_CH_Pos            (1)</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a1d0c78842575ce6c884cc54c78b05567">  194</a></span><span class="preprocessor">#define COMP_POLL_CH                (0x01U &lt;&lt; COMP_POLL_CH_Pos)              </span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#ae161c2a025afe5b76caf0cf33dfd18e7">  195</a></span><span class="preprocessor">#define COMP_POLL_CH_1_2            (0x00U &lt;&lt; COMP_POLL_CH_Pos)              </span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a2c3bcd979c88ff989c9a380b2143a7cb">  196</a></span><span class="preprocessor">#define COMP_POLL_CH_1_2_3          (0x01U &lt;&lt; COMP_POLL_CH_Pos)              </span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a4cd2f8b646bd16455acb390a8945a306">  197</a></span><span class="preprocessor">#define COMP_POLL_FIXN_Pos          (2)</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#ab2dd27174cfa8cc49413c4001d85e58e">  198</a></span><span class="preprocessor">#define COMP_POLL_FIXN              (0x01U &lt;&lt; COMP_POLL_FIXN_Pos)            </span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a8a5bd544edfe483d03bd9123f60ea648">  199</a></span><span class="preprocessor">#define COMP_POLL_FIXN_NOTFIXED     (0x00U &lt;&lt; COMP_POLL_FIXN_Pos)            </span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a4b1f234e822c53de5967de8b212f2fc4">  200</a></span><span class="preprocessor">#define COMP_POLL_FIXN_FIXED        (0x01U &lt;&lt; COMP_POLL_FIXN_Pos)            </span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#adbefe75ed1f229606d0b769925878778">  201</a></span><span class="preprocessor">#define COMP_POLL_PERIOD_Pos        (4)</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a9831b529fc21028dc460f3c3b1f84941">  202</a></span><span class="preprocessor">#define COMP_POLL_PERIOD            (0x07U &lt;&lt; COMP_POLL_PERIOD_Pos)          </span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a7b084e0485d7dc01ce71130367cda3ff">  203</a></span><span class="preprocessor">#define COMP_POLL_PERIOD_1          (0x00U &lt;&lt; COMP_POLL_PERIOD_Pos)          </span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a57089e14ccbef2ff28b62e6f9272bf57">  204</a></span><span class="preprocessor">#define COMP_POLL_PERIOD_2          (0x01U &lt;&lt; COMP_POLL_PERIOD_Pos)          </span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#aadfbe260084d451e4ba19cf42665440c">  205</a></span><span class="preprocessor">#define COMP_POLL_PERIOD_4          (0x02U &lt;&lt; COMP_POLL_PERIOD_Pos)          </span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a2470040f3dd3d7720069376e1db416bc">  206</a></span><span class="preprocessor">#define COMP_POLL_PERIOD_8          (0x03U &lt;&lt; COMP_POLL_PERIOD_Pos)          </span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a716d82d67523f858dd0b9ea5e3d31dac">  207</a></span><span class="preprocessor">#define COMP_POLL_PERIOD_16         (0x04U &lt;&lt; COMP_POLL_PERIOD_Pos)          </span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a9bc0b951e48797eadf656565259064df">  208</a></span><span class="preprocessor">#define COMP_POLL_PERIOD_32         (0x05U &lt;&lt; COMP_POLL_PERIOD_Pos)          </span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a14705584334ece6ef68b23e42f2ce844">  209</a></span><span class="preprocessor">#define COMP_POLL_PERIOD_64         (0x06U &lt;&lt; COMP_POLL_PERIOD_Pos)          </span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a4f3e488d974f6ece8990b0780ba3c4f7">  210</a></span><span class="preprocessor">#define COMP_POLL_PERIOD_128        (0x07U &lt;&lt; COMP_POLL_PERIOD_Pos)          </span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a4f939cea5a47fbd26981d1bb8e148372">  211</a></span><span class="preprocessor">#define COMP_POLL_POUT_Pos          (8)</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a9d3aae859034a877dae352942d5cd591">  212</a></span><span class="preprocessor">#define COMP_POLL_POUT              (0x07U &lt;&lt; COMP_POLL_POUT_Pos)            </span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#a2ff01397f672c3948f74be34cef60bbe">  213</a></span><span class="preprocessor">#define COMP_POLL_POUT_Low          (0x00U &lt;&lt; COMP_POLL_POUT_Pos)            </span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="reg__comp_8h.html#ae5dc390a97eea7924da51519cd65f40c">  214</a></span><span class="preprocessor">#define COMP_POLL_POUT_High         (0x01U &lt;&lt; COMP_POLL_POUT_Pos)            </span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="acore__armv8mbl_8h_html_aec43007d9998a0a0e01faede4133d6be"><div class="ttname"><a href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a></div><div class="ttdeci">#define __IO</div><div class="ttdef"><b>Definition:</b> <a href="core__armv8mbl_8h_source.html#l00194">core_armv8mbl.h:194</a></div></div>
+<div class="ttc" id="astruct_c_o_m_p___type_def_html"><div class="ttname"><a href="struct_c_o_m_p___type_def.html">COMP_TypeDef</a></div><div class="ttdoc">Comparators Register Structure Definition</div><div class="ttdef"><b>Definition:</b> <a href="reg__comp_8h_source.html#l00051">reg_comp.h:51</a></div></div>
+<div class="ttc" id="astruct_c_o_m_p___type_def_html_a03e11684fdd29e8ac8713e08745f50e1"><div class="ttname"><a href="struct_c_o_m_p___type_def.html#a03e11684fdd29e8ac8713e08745f50e1">COMP_TypeDef::COMP1_POLL</a></div><div class="ttdeci">__IO u32 COMP1_POLL</div><div class="ttdef"><b>Definition:</b> <a href="reg__comp_8h_source.html#l00073">reg_comp.h:73</a></div></div>
+<div class="ttc" id="astruct_c_o_m_p___type_def_html_a0762925796ebf489feb3cf45e47b8131"><div class="ttname"><a href="struct_c_o_m_p___type_def.html#a0762925796ebf489feb3cf45e47b8131">COMP_TypeDef::COMP1_CSR</a></div><div class="ttdeci">__IO u32 COMP1_CSR</div><div class="ttdef"><b>Definition:</b> <a href="reg__comp_8h_source.html#l00060">reg_comp.h:60</a></div></div>
+<div class="ttc" id="astruct_c_o_m_p___type_def_html_a2dbe33886d3873edbc920ab834ad1ad1"><div class="ttname"><a href="struct_c_o_m_p___type_def.html#a2dbe33886d3873edbc920ab834ad1ad1">COMP_TypeDef::POLL2</a></div><div class="ttdeci">__IO u32 POLL2</div><div class="ttdoc">COMP2 polling register offset: 0x20</div><div class="ttdef"><b>Definition:</b> <a href="reg__comp_8h_source.html#l00076">reg_comp.h:76</a></div></div>
+<div class="ttc" id="astruct_c_o_m_p___type_def_html_a3603525186dab04f5617d004aba45e3c"><div class="ttname"><a href="struct_c_o_m_p___type_def.html#a3603525186dab04f5617d004aba45e3c">COMP_TypeDef::COMP2_CSR</a></div><div class="ttdeci">__IO u32 COMP2_CSR</div><div class="ttdef"><b>Definition:</b> <a href="reg__comp_8h_source.html#l00064">reg_comp.h:64</a></div></div>
+<div class="ttc" id="astruct_c_o_m_p___type_def_html_a667a54bcd3bb5f87cb9c1dcb98c39619"><div class="ttname"><a href="struct_c_o_m_p___type_def.html#a667a54bcd3bb5f87cb9c1dcb98c39619">COMP_TypeDef::CSR2</a></div><div class="ttdeci">__IO u32 CSR2</div><div class="ttdoc">COMP2 Control Status Register offset: 0x10</div><div class="ttdef"><b>Definition:</b> <a href="reg__comp_8h_source.html#l00063">reg_comp.h:63</a></div></div>
+<div class="ttc" id="astruct_c_o_m_p___type_def_html_a77f64a841d884ee180755d046d3ba0ba"><div class="ttname"><a href="struct_c_o_m_p___type_def.html#a77f64a841d884ee180755d046d3ba0ba">COMP_TypeDef::RESERVED3</a></div><div class="ttdeci">__IO u32 RESERVED3</div><div class="ttdoc">offset: 0x08</div><div class="ttdef"><b>Definition:</b> <a href="reg__comp_8h_source.html#l00057">reg_comp.h:57</a></div></div>
+<div class="ttc" id="astruct_c_o_m_p___type_def_html_a906be5681b7db6e55adfee1f714b038f"><div class="ttname"><a href="struct_c_o_m_p___type_def.html#a906be5681b7db6e55adfee1f714b038f">COMP_TypeDef::RESERVED1</a></div><div class="ttdeci">__IO u32 RESERVED1</div><div class="ttdoc">offset: 0x00</div><div class="ttdef"><b>Definition:</b> <a href="reg__comp_8h_source.html#l00055">reg_comp.h:55</a></div></div>
+<div class="ttc" id="astruct_c_o_m_p___type_def_html_a9a1f33915624704ea38646a4c53aa0c6"><div class="ttname"><a href="struct_c_o_m_p___type_def.html#a9a1f33915624704ea38646a4c53aa0c6">COMP_TypeDef::COMP_CRV</a></div><div class="ttdeci">__IO u32 COMP_CRV</div><div class="ttdef"><b>Definition:</b> <a href="reg__comp_8h_source.html#l00069">reg_comp.h:69</a></div></div>
+<div class="ttc" id="astruct_c_o_m_p___type_def_html_abdbfd135b23338f5f9bebcf3a94b9934"><div class="ttname"><a href="struct_c_o_m_p___type_def.html#abdbfd135b23338f5f9bebcf3a94b9934">COMP_TypeDef::RESERVED4</a></div><div class="ttdeci">__IO u32 RESERVED4</div><div class="ttdoc">offset: 0x14</div><div class="ttdef"><b>Definition:</b> <a href="reg__comp_8h_source.html#l00066">reg_comp.h:66</a></div></div>
+<div class="ttc" id="astruct_c_o_m_p___type_def_html_ac08b21c6668789c46f495f0f9f43a74c"><div class="ttname"><a href="struct_c_o_m_p___type_def.html#ac08b21c6668789c46f495f0f9f43a74c">COMP_TypeDef::CRV</a></div><div class="ttdeci">__IO u32 CRV</div><div class="ttdoc">COMP external reference voltage register offset: 0x18</div><div class="ttdef"><b>Definition:</b> <a href="reg__comp_8h_source.html#l00068">reg_comp.h:68</a></div></div>
+<div class="ttc" id="astruct_c_o_m_p___type_def_html_acced4a0f2f51cada5ae3504130dbcc32"><div class="ttname"><a href="struct_c_o_m_p___type_def.html#acced4a0f2f51cada5ae3504130dbcc32">COMP_TypeDef::COMP2_POLL</a></div><div class="ttdeci">__IO u32 COMP2_POLL</div><div class="ttdef"><b>Definition:</b> <a href="reg__comp_8h_source.html#l00077">reg_comp.h:77</a></div></div>
+<div class="ttc" id="astruct_c_o_m_p___type_def_html_ace58156b45cb2ae2a13d6eb05e3efd3c"><div class="ttname"><a href="struct_c_o_m_p___type_def.html#ace58156b45cb2ae2a13d6eb05e3efd3c">COMP_TypeDef::RESERVED2</a></div><div class="ttdeci">__IO u32 RESERVED2</div><div class="ttdoc">offset: 0x04</div><div class="ttdef"><b>Definition:</b> <a href="reg__comp_8h_source.html#l00056">reg_comp.h:56</a></div></div>
+<div class="ttc" id="astruct_c_o_m_p___type_def_html_ad41213faf794b1c6849910b2f9765f07"><div class="ttname"><a href="struct_c_o_m_p___type_def.html#ad41213faf794b1c6849910b2f9765f07">COMP_TypeDef::CSR1</a></div><div class="ttdeci">__IO u32 CSR1</div><div class="ttdoc">COMP1 Control Status Register offset: 0x0C</div><div class="ttdef"><b>Definition:</b> <a href="reg__comp_8h_source.html#l00059">reg_comp.h:59</a></div></div>
+<div class="ttc" id="astruct_c_o_m_p___type_def_html_ae165b36ef5a14b4c6e6f5f2899ee7b17"><div class="ttname"><a href="struct_c_o_m_p___type_def.html#ae165b36ef5a14b4c6e6f5f2899ee7b17">COMP_TypeDef::POLL1</a></div><div class="ttdeci">__IO u32 POLL1</div><div class="ttdoc">COMP1 polling register offset: 0x1C</div><div class="ttdef"><b>Definition:</b> <a href="reg__comp_8h_source.html#l00072">reg_comp.h:72</a></div></div>
+<div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">THIS FILE PROVIDES ALL THE TYPE FIRMWARE FUNCTIONS.</div></div>
+<div class="ttc" id="atypes_8h_html_a10e94b422ef0c20dcdec20d31a1f5049"><div class="ttname"><a href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a></div><div class="ttdeci">unsigned int u32</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00054">types.h:54</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

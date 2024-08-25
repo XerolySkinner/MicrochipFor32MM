@@ -1,0 +1,621 @@
+\hypertarget{struct_s_d___c_s_d}{}\doxysection{SD\+\_\+\+CSD结构体 参考}
+\label{struct_s_d___c_s_d}\index{SD\_CSD@{SD\_CSD}}
+
+
+SD card CSD register data  
+
+
+
+
+{\ttfamily \#include $<$hal\+\_\+sdio.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_ac06130c4f4492b290d097b46a3cc2b37}{CSDStruct}}
+\begin{DoxyCompactList}\small\item\em CSD structure \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_a5dafb65fd7dc353594703d56f3313707}{Sys\+Spec\+Version}}
+\begin{DoxyCompactList}\small\item\em System specification version \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_afb87e4d92dbcc3a40dce164868e42cc9}{Reserved1}}
+\begin{DoxyCompactList}\small\item\em Reserved \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_a43724dccb9d8c7a25f9cda4f8bd660f0}{TAAC}}
+\begin{DoxyCompactList}\small\item\em Data read access-\/time 1 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_a1fa2b287a7eddd44c0d0c7b8338cf3dd}{NSAC}}
+\begin{DoxyCompactList}\small\item\em Data read access-\/time 2 in CLK cycles \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_ac158fe027c7885fd46b8a0c9e541ce7f}{Max\+Bus\+Clk\+Frec}}
+\begin{DoxyCompactList}\small\item\em Max. bus clock frequency \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{struct_s_d___c_s_d_aa993a67c4f3c704f9f9a85410b94682d}{Card\+Comd\+Classes}}
+\begin{DoxyCompactList}\small\item\em Card command classes \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_a94f06fe3625401e1ff297db5f2d874a8}{Rd\+Block\+Len}}
+\begin{DoxyCompactList}\small\item\em Max. read data block length \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_a86ca5a14a0a3cda6a7578bc2b814543f}{Part\+Block\+Read}}
+\begin{DoxyCompactList}\small\item\em Partial blocks for read allowed \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_abdfcfa444fc0e23b933e0f3e59664fe1}{Wr\+Block\+Misalign}}
+\begin{DoxyCompactList}\small\item\em Write block misalignment \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_a64fba5b3758796199897435db3e2b973}{Rd\+Block\+Misalign}}
+\begin{DoxyCompactList}\small\item\em Read block misalignment \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_a0f8a5e691dd189ee0349d521c1d28c7f}{DSRImpl}}
+\begin{DoxyCompactList}\small\item\em DSR implemented \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_afad3efc2dc47b24b0d8947e01dcd573b}{Reserved2}}
+\begin{DoxyCompactList}\small\item\em Reserved \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d___c_s_d_a30121b745254f073c8a566a0d6159ac5}{Device\+Size}}
+\begin{DoxyCompactList}\small\item\em Device Size \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_a548c1fdbb9c89d306863c0bf71cfea89}{Max\+Rd\+Current\+VDDMin}}
+\begin{DoxyCompactList}\small\item\em Max. read current @ VDD min \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_ae7ae935e70d9d050e3acbe3df3658e40}{Max\+Rd\+Current\+VDDMax}}
+\begin{DoxyCompactList}\small\item\em Max. read current @ VDD max \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_a16f3f5dfb9b59415617fce10b00e750f}{Max\+Wr\+Current\+VDDMin}}
+\begin{DoxyCompactList}\small\item\em Max. write current @ VDD min \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_aa9b1d3ad293e909f8c346a35e7c282ef}{Max\+Wr\+Current\+VDDMax}}
+\begin{DoxyCompactList}\small\item\em Max. write current @ VDD max \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_a986f4ebb5fb911233113b16a2a2e1ba7}{Device\+Size\+Mul}}
+\begin{DoxyCompactList}\small\item\em Device size multiplier \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_a5c44ccda8920d88dfd4659175562efde}{Erase\+Gr\+Size}}
+\begin{DoxyCompactList}\small\item\em Erase group size \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_aca7cfbf3c4bd6b20081957c5a3234bcd}{Erase\+Gr\+Mul}}
+\begin{DoxyCompactList}\small\item\em Erase group size multiplier \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_a875d46b9c89495318667109c53a5b274}{Wr\+Protect\+Gr\+Size}}
+\begin{DoxyCompactList}\small\item\em Write protect group size \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_a0aaf040664adf12b0f19da6a218ee4da}{Wr\+Protect\+Gr\+Enable}}
+\begin{DoxyCompactList}\small\item\em Write protect group enable \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_ae39c1046019ce835e248de438b57dcef}{Man\+Defl\+ECC}}
+\begin{DoxyCompactList}\small\item\em Manufacturer default ECC \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_a216b2ff329b2c9950d8dd9bbe762e403}{Wr\+Speed\+Fact}}
+\begin{DoxyCompactList}\small\item\em Write speed factor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_a2a6f1e7ed3db2c7e59b9616b31ae3eac}{Max\+Wr\+Block\+Len}}
+\begin{DoxyCompactList}\small\item\em Max. write data block length \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_a0d26fcf7ca04e88bcc92bae42ae5f278}{Write\+Block\+Pa\+Partial}}
+\begin{DoxyCompactList}\small\item\em Partial blocks for write allowed \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_a029bd9c87c23778f98d526df38a9dc6c}{Reserved3}}
+\begin{DoxyCompactList}\small\item\em Reserded \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_a070bff83a2ae6a4ceb9622109fd886a3}{Content\+Protect\+Appli}}
+\begin{DoxyCompactList}\small\item\em Content protection application \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_a0de3e13fe50d1be5a44e945ecd792db4}{File\+Format\+Grouop}}
+\begin{DoxyCompactList}\small\item\em File format group \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_ada16b06a9513d88b81f7e1d724ead6cc}{Copy\+Flag}}
+\begin{DoxyCompactList}\small\item\em Copy flag (OTP) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_a0b01e4701b109f45236e79447f077ce6}{Perm\+Wr\+Protect}}
+\begin{DoxyCompactList}\small\item\em Permanent write protection \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_aa04d97d04ddbed6f52af598f2786e4b0}{Temp\+Wr\+Protect}}
+\begin{DoxyCompactList}\small\item\em Temporary write protection \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_ad9671e3b209f8dea496c94c845bf78db}{File\+Format}}
+\begin{DoxyCompactList}\small\item\em File Format \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_a4c0b472a8dd1001c4cbde480706abc34}{ECC}}
+\begin{DoxyCompactList}\small\item\em ECC code \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_a83585678d8955cd102c701e7a2384b18}{CSD\+\_\+\+CRC}}
+\begin{DoxyCompactList}\small\item\em CSD CRC \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_s_d___c_s_d_af6e6b2df33a637418ada8bd59bfcabed}{Reserved4}}
+\begin{DoxyCompactList}\small\item\em always 1 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+SD card CSD register data 
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00130}{130}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{struct_s_d___c_s_d_aa993a67c4f3c704f9f9a85410b94682d}\label{struct_s_d___c_s_d_aa993a67c4f3c704f9f9a85410b94682d}} 
+\index{SD\_CSD@{SD\_CSD}!CardComdClasses@{CardComdClasses}}
+\index{CardComdClasses@{CardComdClasses}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{CardComdClasses}{CardComdClasses}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} SD\+\_\+\+CSD\+::\+Card\+Comd\+Classes}
+
+
+
+Card command classes 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00137}{137}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a070bff83a2ae6a4ceb9622109fd886a3}\label{struct_s_d___c_s_d_a070bff83a2ae6a4ceb9622109fd886a3}} 
+\index{SD\_CSD@{SD\_CSD}!ContentProtectAppli@{ContentProtectAppli}}
+\index{ContentProtectAppli@{ContentProtectAppli}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{ContentProtectAppli}{ContentProtectAppli}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Content\+Protect\+Appli}
+
+
+
+Content protection application 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00159}{159}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_ada16b06a9513d88b81f7e1d724ead6cc}\label{struct_s_d___c_s_d_ada16b06a9513d88b81f7e1d724ead6cc}} 
+\index{SD\_CSD@{SD\_CSD}!CopyFlag@{CopyFlag}}
+\index{CopyFlag@{CopyFlag}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{CopyFlag}{CopyFlag}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Copy\+Flag}
+
+
+
+Copy flag (OTP) 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00161}{161}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a83585678d8955cd102c701e7a2384b18}\label{struct_s_d___c_s_d_a83585678d8955cd102c701e7a2384b18}} 
+\index{SD\_CSD@{SD\_CSD}!CSD\_CRC@{CSD\_CRC}}
+\index{CSD\_CRC@{CSD\_CRC}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{CSD\_CRC}{CSD\_CRC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+CSD\+\_\+\+CRC}
+
+
+
+CSD CRC 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00166}{166}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_ac06130c4f4492b290d097b46a3cc2b37}\label{struct_s_d___c_s_d_ac06130c4f4492b290d097b46a3cc2b37}} 
+\index{SD\_CSD@{SD\_CSD}!CSDStruct@{CSDStruct}}
+\index{CSDStruct@{CSDStruct}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{CSDStruct}{CSDStruct}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+CSDStruct}
+
+
+
+CSD structure 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00131}{131}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a30121b745254f073c8a566a0d6159ac5}\label{struct_s_d___c_s_d_a30121b745254f073c8a566a0d6159ac5}} 
+\index{SD\_CSD@{SD\_CSD}!DeviceSize@{DeviceSize}}
+\index{DeviceSize@{DeviceSize}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{DeviceSize}{DeviceSize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SD\+\_\+\+CSD\+::\+Device\+Size}
+
+
+
+Device Size 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00144}{144}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a986f4ebb5fb911233113b16a2a2e1ba7}\label{struct_s_d___c_s_d_a986f4ebb5fb911233113b16a2a2e1ba7}} 
+\index{SD\_CSD@{SD\_CSD}!DeviceSizeMul@{DeviceSizeMul}}
+\index{DeviceSizeMul@{DeviceSizeMul}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{DeviceSizeMul}{DeviceSizeMul}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Device\+Size\+Mul}
+
+
+
+Device size multiplier 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00149}{149}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a0f8a5e691dd189ee0349d521c1d28c7f}\label{struct_s_d___c_s_d_a0f8a5e691dd189ee0349d521c1d28c7f}} 
+\index{SD\_CSD@{SD\_CSD}!DSRImpl@{DSRImpl}}
+\index{DSRImpl@{DSRImpl}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{DSRImpl}{DSRImpl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+DSRImpl}
+
+
+
+DSR implemented 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00142}{142}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a4c0b472a8dd1001c4cbde480706abc34}\label{struct_s_d___c_s_d_a4c0b472a8dd1001c4cbde480706abc34}} 
+\index{SD\_CSD@{SD\_CSD}!ECC@{ECC}}
+\index{ECC@{ECC}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{ECC}{ECC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+ECC}
+
+
+
+ECC code 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00165}{165}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_aca7cfbf3c4bd6b20081957c5a3234bcd}\label{struct_s_d___c_s_d_aca7cfbf3c4bd6b20081957c5a3234bcd}} 
+\index{SD\_CSD@{SD\_CSD}!EraseGrMul@{EraseGrMul}}
+\index{EraseGrMul@{EraseGrMul}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{EraseGrMul}{EraseGrMul}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Erase\+Gr\+Mul}
+
+
+
+Erase group size multiplier 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00151}{151}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a5c44ccda8920d88dfd4659175562efde}\label{struct_s_d___c_s_d_a5c44ccda8920d88dfd4659175562efde}} 
+\index{SD\_CSD@{SD\_CSD}!EraseGrSize@{EraseGrSize}}
+\index{EraseGrSize@{EraseGrSize}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{EraseGrSize}{EraseGrSize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Erase\+Gr\+Size}
+
+
+
+Erase group size 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00150}{150}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_ad9671e3b209f8dea496c94c845bf78db}\label{struct_s_d___c_s_d_ad9671e3b209f8dea496c94c845bf78db}} 
+\index{SD\_CSD@{SD\_CSD}!FileFormat@{FileFormat}}
+\index{FileFormat@{FileFormat}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{FileFormat}{FileFormat}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+File\+Format}
+
+
+
+File Format 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00164}{164}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a0de3e13fe50d1be5a44e945ecd792db4}\label{struct_s_d___c_s_d_a0de3e13fe50d1be5a44e945ecd792db4}} 
+\index{SD\_CSD@{SD\_CSD}!FileFormatGrouop@{FileFormatGrouop}}
+\index{FileFormatGrouop@{FileFormatGrouop}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{FileFormatGrouop}{FileFormatGrouop}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+File\+Format\+Grouop}
+
+
+
+File format group 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00160}{160}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_ae39c1046019ce835e248de438b57dcef}\label{struct_s_d___c_s_d_ae39c1046019ce835e248de438b57dcef}} 
+\index{SD\_CSD@{SD\_CSD}!ManDeflECC@{ManDeflECC}}
+\index{ManDeflECC@{ManDeflECC}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{ManDeflECC}{ManDeflECC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Man\+Defl\+ECC}
+
+
+
+Manufacturer default ECC 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00154}{154}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_ac158fe027c7885fd46b8a0c9e541ce7f}\label{struct_s_d___c_s_d_ac158fe027c7885fd46b8a0c9e541ce7f}} 
+\index{SD\_CSD@{SD\_CSD}!MaxBusClkFrec@{MaxBusClkFrec}}
+\index{MaxBusClkFrec@{MaxBusClkFrec}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{MaxBusClkFrec}{MaxBusClkFrec}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Max\+Bus\+Clk\+Frec}
+
+
+
+Max. bus clock frequency 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00136}{136}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_ae7ae935e70d9d050e3acbe3df3658e40}\label{struct_s_d___c_s_d_ae7ae935e70d9d050e3acbe3df3658e40}} 
+\index{SD\_CSD@{SD\_CSD}!MaxRdCurrentVDDMax@{MaxRdCurrentVDDMax}}
+\index{MaxRdCurrentVDDMax@{MaxRdCurrentVDDMax}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{MaxRdCurrentVDDMax}{MaxRdCurrentVDDMax}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Max\+Rd\+Current\+VDDMax}
+
+
+
+Max. read current @ VDD max 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00146}{146}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a548c1fdbb9c89d306863c0bf71cfea89}\label{struct_s_d___c_s_d_a548c1fdbb9c89d306863c0bf71cfea89}} 
+\index{SD\_CSD@{SD\_CSD}!MaxRdCurrentVDDMin@{MaxRdCurrentVDDMin}}
+\index{MaxRdCurrentVDDMin@{MaxRdCurrentVDDMin}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{MaxRdCurrentVDDMin}{MaxRdCurrentVDDMin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Max\+Rd\+Current\+VDDMin}
+
+
+
+Max. read current @ VDD min 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00145}{145}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a2a6f1e7ed3db2c7e59b9616b31ae3eac}\label{struct_s_d___c_s_d_a2a6f1e7ed3db2c7e59b9616b31ae3eac}} 
+\index{SD\_CSD@{SD\_CSD}!MaxWrBlockLen@{MaxWrBlockLen}}
+\index{MaxWrBlockLen@{MaxWrBlockLen}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{MaxWrBlockLen}{MaxWrBlockLen}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Max\+Wr\+Block\+Len}
+
+
+
+Max. write data block length 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00156}{156}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_aa9b1d3ad293e909f8c346a35e7c282ef}\label{struct_s_d___c_s_d_aa9b1d3ad293e909f8c346a35e7c282ef}} 
+\index{SD\_CSD@{SD\_CSD}!MaxWrCurrentVDDMax@{MaxWrCurrentVDDMax}}
+\index{MaxWrCurrentVDDMax@{MaxWrCurrentVDDMax}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{MaxWrCurrentVDDMax}{MaxWrCurrentVDDMax}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Max\+Wr\+Current\+VDDMax}
+
+
+
+Max. write current @ VDD max 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00148}{148}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a16f3f5dfb9b59415617fce10b00e750f}\label{struct_s_d___c_s_d_a16f3f5dfb9b59415617fce10b00e750f}} 
+\index{SD\_CSD@{SD\_CSD}!MaxWrCurrentVDDMin@{MaxWrCurrentVDDMin}}
+\index{MaxWrCurrentVDDMin@{MaxWrCurrentVDDMin}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{MaxWrCurrentVDDMin}{MaxWrCurrentVDDMin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Max\+Wr\+Current\+VDDMin}
+
+
+
+Max. write current @ VDD min 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00147}{147}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a1fa2b287a7eddd44c0d0c7b8338cf3dd}\label{struct_s_d___c_s_d_a1fa2b287a7eddd44c0d0c7b8338cf3dd}} 
+\index{SD\_CSD@{SD\_CSD}!NSAC@{NSAC}}
+\index{NSAC@{NSAC}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{NSAC}{NSAC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+NSAC}
+
+
+
+Data read access-\/time 2 in CLK cycles 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00135}{135}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a86ca5a14a0a3cda6a7578bc2b814543f}\label{struct_s_d___c_s_d_a86ca5a14a0a3cda6a7578bc2b814543f}} 
+\index{SD\_CSD@{SD\_CSD}!PartBlockRead@{PartBlockRead}}
+\index{PartBlockRead@{PartBlockRead}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{PartBlockRead}{PartBlockRead}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Part\+Block\+Read}
+
+
+
+Partial blocks for read allowed 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00139}{139}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a0b01e4701b109f45236e79447f077ce6}\label{struct_s_d___c_s_d_a0b01e4701b109f45236e79447f077ce6}} 
+\index{SD\_CSD@{SD\_CSD}!PermWrProtect@{PermWrProtect}}
+\index{PermWrProtect@{PermWrProtect}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{PermWrProtect}{PermWrProtect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Perm\+Wr\+Protect}
+
+
+
+Permanent write protection 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00162}{162}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a94f06fe3625401e1ff297db5f2d874a8}\label{struct_s_d___c_s_d_a94f06fe3625401e1ff297db5f2d874a8}} 
+\index{SD\_CSD@{SD\_CSD}!RdBlockLen@{RdBlockLen}}
+\index{RdBlockLen@{RdBlockLen}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{RdBlockLen}{RdBlockLen}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Rd\+Block\+Len}
+
+
+
+Max. read data block length 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00138}{138}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a64fba5b3758796199897435db3e2b973}\label{struct_s_d___c_s_d_a64fba5b3758796199897435db3e2b973}} 
+\index{SD\_CSD@{SD\_CSD}!RdBlockMisalign@{RdBlockMisalign}}
+\index{RdBlockMisalign@{RdBlockMisalign}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{RdBlockMisalign}{RdBlockMisalign}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Rd\+Block\+Misalign}
+
+
+
+Read block misalignment 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00141}{141}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_afb87e4d92dbcc3a40dce164868e42cc9}\label{struct_s_d___c_s_d_afb87e4d92dbcc3a40dce164868e42cc9}} 
+\index{SD\_CSD@{SD\_CSD}!Reserved1@{Reserved1}}
+\index{Reserved1@{Reserved1}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{Reserved1}{Reserved1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Reserved1}
+
+
+
+Reserved 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00133}{133}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_afad3efc2dc47b24b0d8947e01dcd573b}\label{struct_s_d___c_s_d_afad3efc2dc47b24b0d8947e01dcd573b}} 
+\index{SD\_CSD@{SD\_CSD}!Reserved2@{Reserved2}}
+\index{Reserved2@{Reserved2}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{Reserved2}{Reserved2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Reserved2}
+
+
+
+Reserved 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00143}{143}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a029bd9c87c23778f98d526df38a9dc6c}\label{struct_s_d___c_s_d_a029bd9c87c23778f98d526df38a9dc6c}} 
+\index{SD\_CSD@{SD\_CSD}!Reserved3@{Reserved3}}
+\index{Reserved3@{Reserved3}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{Reserved3}{Reserved3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Reserved3}
+
+
+
+Reserded 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00158}{158}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_af6e6b2df33a637418ada8bd59bfcabed}\label{struct_s_d___c_s_d_af6e6b2df33a637418ada8bd59bfcabed}} 
+\index{SD\_CSD@{SD\_CSD}!Reserved4@{Reserved4}}
+\index{Reserved4@{Reserved4}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{Reserved4}{Reserved4}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Reserved4}
+
+
+
+always 1 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00167}{167}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a5dafb65fd7dc353594703d56f3313707}\label{struct_s_d___c_s_d_a5dafb65fd7dc353594703d56f3313707}} 
+\index{SD\_CSD@{SD\_CSD}!SysSpecVersion@{SysSpecVersion}}
+\index{SysSpecVersion@{SysSpecVersion}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{SysSpecVersion}{SysSpecVersion}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Sys\+Spec\+Version}
+
+
+
+System specification version 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00132}{132}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a43724dccb9d8c7a25f9cda4f8bd660f0}\label{struct_s_d___c_s_d_a43724dccb9d8c7a25f9cda4f8bd660f0}} 
+\index{SD\_CSD@{SD\_CSD}!TAAC@{TAAC}}
+\index{TAAC@{TAAC}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{TAAC}{TAAC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+TAAC}
+
+
+
+Data read access-\/time 1 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00134}{134}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_aa04d97d04ddbed6f52af598f2786e4b0}\label{struct_s_d___c_s_d_aa04d97d04ddbed6f52af598f2786e4b0}} 
+\index{SD\_CSD@{SD\_CSD}!TempWrProtect@{TempWrProtect}}
+\index{TempWrProtect@{TempWrProtect}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{TempWrProtect}{TempWrProtect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Temp\+Wr\+Protect}
+
+
+
+Temporary write protection 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00163}{163}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_abdfcfa444fc0e23b933e0f3e59664fe1}\label{struct_s_d___c_s_d_abdfcfa444fc0e23b933e0f3e59664fe1}} 
+\index{SD\_CSD@{SD\_CSD}!WrBlockMisalign@{WrBlockMisalign}}
+\index{WrBlockMisalign@{WrBlockMisalign}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{WrBlockMisalign}{WrBlockMisalign}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Wr\+Block\+Misalign}
+
+
+
+Write block misalignment 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00140}{140}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a0d26fcf7ca04e88bcc92bae42ae5f278}\label{struct_s_d___c_s_d_a0d26fcf7ca04e88bcc92bae42ae5f278}} 
+\index{SD\_CSD@{SD\_CSD}!WriteBlockPaPartial@{WriteBlockPaPartial}}
+\index{WriteBlockPaPartial@{WriteBlockPaPartial}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{WriteBlockPaPartial}{WriteBlockPaPartial}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Write\+Block\+Pa\+Partial}
+
+
+
+Partial blocks for write allowed 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00157}{157}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a0aaf040664adf12b0f19da6a218ee4da}\label{struct_s_d___c_s_d_a0aaf040664adf12b0f19da6a218ee4da}} 
+\index{SD\_CSD@{SD\_CSD}!WrProtectGrEnable@{WrProtectGrEnable}}
+\index{WrProtectGrEnable@{WrProtectGrEnable}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{WrProtectGrEnable}{WrProtectGrEnable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Wr\+Protect\+Gr\+Enable}
+
+
+
+Write protect group enable 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00153}{153}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a875d46b9c89495318667109c53a5b274}\label{struct_s_d___c_s_d_a875d46b9c89495318667109c53a5b274}} 
+\index{SD\_CSD@{SD\_CSD}!WrProtectGrSize@{WrProtectGrSize}}
+\index{WrProtectGrSize@{WrProtectGrSize}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{WrProtectGrSize}{WrProtectGrSize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Wr\+Protect\+Gr\+Size}
+
+
+
+Write protect group size 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00152}{152}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d___c_s_d_a216b2ff329b2c9950d8dd9bbe762e403}\label{struct_s_d___c_s_d_a216b2ff329b2c9950d8dd9bbe762e403}} 
+\index{SD\_CSD@{SD\_CSD}!WrSpeedFact@{WrSpeedFact}}
+\index{WrSpeedFact@{WrSpeedFact}!SD\_CSD@{SD\_CSD}}
+\doxysubsubsection{\texorpdfstring{WrSpeedFact}{WrSpeedFact}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} SD\+\_\+\+CSD\+::\+Wr\+Speed\+Fact}
+
+
+
+Write speed factor 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00155}{155}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Inc/\mbox{\hyperlink{hal__sdio_8h}{hal\+\_\+sdio.\+h}}\end{DoxyCompactItemize}

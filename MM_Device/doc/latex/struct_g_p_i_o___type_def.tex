@@ -1,0 +1,189 @@
+\hypertarget{struct_g_p_i_o___type_def}{}\doxysection{GPIO\+\_\+\+Type\+Def结构体 参考}
+\label{struct_g_p_i_o___type_def}\index{GPIO\_TypeDef@{GPIO\_TypeDef}}
+
+
+GPIO Registers Structure Definition  
+
+
+
+
+{\ttfamily \#include $<$reg\+\_\+gpio.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_g_p_i_o___type_def_ac3d5b3f8bcc71bca68f0e908f1ba5e89}{CRL}}
+\begin{DoxyCompactList}\small\item\em Control Register Low, offset\+: 0x00 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_g_p_i_o___type_def_a0f2241c0e47de586f62b3e65e94ccaad}{CRH}}
+\begin{DoxyCompactList}\small\item\em Control Register High, offset\+: 0x04 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_g_p_i_o___type_def_ad661ef4fef49b97b770a0d1af6780807}{IDR}}
+\begin{DoxyCompactList}\small\item\em Input Data Register, offset\+: 0x08 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_g_p_i_o___type_def_aa9339b4485884259632c6ba289b53f9d}{ODR}}
+\begin{DoxyCompactList}\small\item\em Output Data Register, offset\+: 0x0C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_g_p_i_o___type_def_a127bec2d2e15a2fb683850e79260cd8f}{BSRR}}
+\begin{DoxyCompactList}\small\item\em Bit Set or Reset Register, offset\+: 0x10 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_g_p_i_o___type_def_ac659a338514abf6469cdf30b3bef676e}{BRR}}
+\begin{DoxyCompactList}\small\item\em Bit Reset Register, offset\+: 0x14 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_g_p_i_o___type_def_a0c90fcf9734d0aa23141c2b7361175f5}{LCKR}}
+\begin{DoxyCompactList}\small\item\em Lock Register, offset\+: 0x18 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_g_p_i_o___type_def_a1397b5c15d14c02db474df418d64a961}{DCR}}
+\begin{DoxyCompactList}\small\item\em Pin Output Open Drain Config Register, offset\+: 0x1C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_g_p_i_o___type_def_a98c4720a456e86caee717e3a9a4f7c80}{AFRL}}
+\begin{DoxyCompactList}\small\item\em Port Multiplexing Function Low Register, offset\+: 0x20 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_g_p_i_o___type_def_ab34c062a5e5a2009f037e325c6027995}{AFRH}}
+\begin{DoxyCompactList}\small\item\em Port Multiplexing Function High Register, offset\+: 0x24 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+GPIO Registers Structure Definition 
+
+在文件 \mbox{\hyperlink{reg__gpio_8h_source}{reg\+\_\+gpio.\+h}} 第 \mbox{\hyperlink{reg__gpio_8h_source_l00061}{61}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{struct_g_p_i_o___type_def_ab34c062a5e5a2009f037e325c6027995}\label{struct_g_p_i_o___type_def_ab34c062a5e5a2009f037e325c6027995}} 
+\index{GPIO\_TypeDef@{GPIO\_TypeDef}!AFRH@{AFRH}}
+\index{AFRH@{AFRH}!GPIO\_TypeDef@{GPIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{AFRH}{AFRH}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} GPIO\+\_\+\+Type\+Def\+::\+AFRH}
+
+
+
+Port Multiplexing Function High Register, offset\+: 0x24 
+
+
+
+在文件 \mbox{\hyperlink{reg__gpio_8h_source}{reg\+\_\+gpio.\+h}} 第 \mbox{\hyperlink{reg__gpio_8h_source_l00071}{71}} 行定义.
+
+\mbox{\Hypertarget{struct_g_p_i_o___type_def_a98c4720a456e86caee717e3a9a4f7c80}\label{struct_g_p_i_o___type_def_a98c4720a456e86caee717e3a9a4f7c80}} 
+\index{GPIO\_TypeDef@{GPIO\_TypeDef}!AFRL@{AFRL}}
+\index{AFRL@{AFRL}!GPIO\_TypeDef@{GPIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{AFRL}{AFRL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} GPIO\+\_\+\+Type\+Def\+::\+AFRL}
+
+
+
+Port Multiplexing Function Low Register, offset\+: 0x20 
+
+
+
+在文件 \mbox{\hyperlink{reg__gpio_8h_source}{reg\+\_\+gpio.\+h}} 第 \mbox{\hyperlink{reg__gpio_8h_source_l00070}{70}} 行定义.
+
+\mbox{\Hypertarget{struct_g_p_i_o___type_def_ac659a338514abf6469cdf30b3bef676e}\label{struct_g_p_i_o___type_def_ac659a338514abf6469cdf30b3bef676e}} 
+\index{GPIO\_TypeDef@{GPIO\_TypeDef}!BRR@{BRR}}
+\index{BRR@{BRR}!GPIO\_TypeDef@{GPIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{BRR}{BRR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} GPIO\+\_\+\+Type\+Def\+::\+BRR}
+
+
+
+Bit Reset Register, offset\+: 0x14 
+
+
+
+在文件 \mbox{\hyperlink{reg__gpio_8h_source}{reg\+\_\+gpio.\+h}} 第 \mbox{\hyperlink{reg__gpio_8h_source_l00067}{67}} 行定义.
+
+\mbox{\Hypertarget{struct_g_p_i_o___type_def_a127bec2d2e15a2fb683850e79260cd8f}\label{struct_g_p_i_o___type_def_a127bec2d2e15a2fb683850e79260cd8f}} 
+\index{GPIO\_TypeDef@{GPIO\_TypeDef}!BSRR@{BSRR}}
+\index{BSRR@{BSRR}!GPIO\_TypeDef@{GPIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{BSRR}{BSRR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} GPIO\+\_\+\+Type\+Def\+::\+BSRR}
+
+
+
+Bit Set or Reset Register, offset\+: 0x10 
+
+
+
+在文件 \mbox{\hyperlink{reg__gpio_8h_source}{reg\+\_\+gpio.\+h}} 第 \mbox{\hyperlink{reg__gpio_8h_source_l00066}{66}} 行定义.
+
+\mbox{\Hypertarget{struct_g_p_i_o___type_def_a0f2241c0e47de586f62b3e65e94ccaad}\label{struct_g_p_i_o___type_def_a0f2241c0e47de586f62b3e65e94ccaad}} 
+\index{GPIO\_TypeDef@{GPIO\_TypeDef}!CRH@{CRH}}
+\index{CRH@{CRH}!GPIO\_TypeDef@{GPIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CRH}{CRH}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} GPIO\+\_\+\+Type\+Def\+::\+CRH}
+
+
+
+Control Register High, offset\+: 0x04 
+
+
+
+在文件 \mbox{\hyperlink{reg__gpio_8h_source}{reg\+\_\+gpio.\+h}} 第 \mbox{\hyperlink{reg__gpio_8h_source_l00063}{63}} 行定义.
+
+\mbox{\Hypertarget{struct_g_p_i_o___type_def_ac3d5b3f8bcc71bca68f0e908f1ba5e89}\label{struct_g_p_i_o___type_def_ac3d5b3f8bcc71bca68f0e908f1ba5e89}} 
+\index{GPIO\_TypeDef@{GPIO\_TypeDef}!CRL@{CRL}}
+\index{CRL@{CRL}!GPIO\_TypeDef@{GPIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CRL}{CRL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} GPIO\+\_\+\+Type\+Def\+::\+CRL}
+
+
+
+Control Register Low, offset\+: 0x00 
+
+
+
+在文件 \mbox{\hyperlink{reg__gpio_8h_source}{reg\+\_\+gpio.\+h}} 第 \mbox{\hyperlink{reg__gpio_8h_source_l00062}{62}} 行定义.
+
+\mbox{\Hypertarget{struct_g_p_i_o___type_def_a1397b5c15d14c02db474df418d64a961}\label{struct_g_p_i_o___type_def_a1397b5c15d14c02db474df418d64a961}} 
+\index{GPIO\_TypeDef@{GPIO\_TypeDef}!DCR@{DCR}}
+\index{DCR@{DCR}!GPIO\_TypeDef@{GPIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DCR}{DCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} GPIO\+\_\+\+Type\+Def\+::\+DCR}
+
+
+
+Pin Output Open Drain Config Register, offset\+: 0x1C 
+
+
+
+在文件 \mbox{\hyperlink{reg__gpio_8h_source}{reg\+\_\+gpio.\+h}} 第 \mbox{\hyperlink{reg__gpio_8h_source_l00069}{69}} 行定义.
+
+\mbox{\Hypertarget{struct_g_p_i_o___type_def_ad661ef4fef49b97b770a0d1af6780807}\label{struct_g_p_i_o___type_def_ad661ef4fef49b97b770a0d1af6780807}} 
+\index{GPIO\_TypeDef@{GPIO\_TypeDef}!IDR@{IDR}}
+\index{IDR@{IDR}!GPIO\_TypeDef@{GPIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{IDR}{IDR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} GPIO\+\_\+\+Type\+Def\+::\+IDR}
+
+
+
+Input Data Register, offset\+: 0x08 
+
+
+
+在文件 \mbox{\hyperlink{reg__gpio_8h_source}{reg\+\_\+gpio.\+h}} 第 \mbox{\hyperlink{reg__gpio_8h_source_l00064}{64}} 行定义.
+
+\mbox{\Hypertarget{struct_g_p_i_o___type_def_a0c90fcf9734d0aa23141c2b7361175f5}\label{struct_g_p_i_o___type_def_a0c90fcf9734d0aa23141c2b7361175f5}} 
+\index{GPIO\_TypeDef@{GPIO\_TypeDef}!LCKR@{LCKR}}
+\index{LCKR@{LCKR}!GPIO\_TypeDef@{GPIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{LCKR}{LCKR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} GPIO\+\_\+\+Type\+Def\+::\+LCKR}
+
+
+
+Lock Register, offset\+: 0x18 
+
+
+
+在文件 \mbox{\hyperlink{reg__gpio_8h_source}{reg\+\_\+gpio.\+h}} 第 \mbox{\hyperlink{reg__gpio_8h_source_l00068}{68}} 行定义.
+
+\mbox{\Hypertarget{struct_g_p_i_o___type_def_aa9339b4485884259632c6ba289b53f9d}\label{struct_g_p_i_o___type_def_aa9339b4485884259632c6ba289b53f9d}} 
+\index{GPIO\_TypeDef@{GPIO\_TypeDef}!ODR@{ODR}}
+\index{ODR@{ODR}!GPIO\_TypeDef@{GPIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{ODR}{ODR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} GPIO\+\_\+\+Type\+Def\+::\+ODR}
+
+
+
+Output Data Register, offset\+: 0x0C 
+
+
+
+在文件 \mbox{\hyperlink{reg__gpio_8h_source}{reg\+\_\+gpio.\+h}} 第 \mbox{\hyperlink{reg__gpio_8h_source_l00065}{65}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/\mbox{\hyperlink{reg__gpio_8h}{reg\+\_\+gpio.\+h}}\end{DoxyCompactItemize}

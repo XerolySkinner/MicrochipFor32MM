@@ -1,0 +1,206 @@
+\hypertarget{hal__eth_8c}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Src/hal\+\_\+eth.c 文件参考}
+\label{hal__eth_8c}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_eth.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_eth.c}}
+
+
+THIS FILE PROVIDES ALL THE \mbox{\hyperlink{hal__eth_8c}{HAL\+\_\+eth.\+c}} EXAMPLE. ////////////////////////////////////////////////////////////////////////////  
+
+
+{\ttfamily \#include \char`\"{}hal\+\_\+rcc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}hal\+\_\+eth.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}reg\+\_\+eth.\+h\char`\"{}}\newline
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{hal__eth_8c_ac2cbca14a697dadfa2f89721e71f712c}{\+\_\+\+HAL\+\_\+\+ETH\+\_\+\+C\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga0d96b5b1d88725ebdac89e28b786ec84}{ETH\+\_\+\+De\+Init}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gac54a402a9f6ef39d58dda12b8a3d4c28}{ETH\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{struct_e_t_h___init_type_def}{ETH\+\_\+\+Init\+Type\+Def}} $\ast$ptr)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gac48f5f162f903cbc373ce40d5c431db8}{ETH\+\_\+\+Init}} (\mbox{\hyperlink{struct_e_t_h___init_type_def}{ETH\+\_\+\+Init\+Type\+Def}} $\ast$ptr, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} phy\+\_\+addr)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga91dc3e4848316fd9bc5f14ed44451e4c}{ETH\+\_\+\+Start}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga357c1a92a470453dd39ee1fbb18549c2}{ETH\+\_\+\+Stop}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga9d948f6ed00271299b8bd7a22b82d790}{ETH\+\_\+\+MACTransmission\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga677304f7761589df6ad033080363f020}{ETH\+\_\+\+MACReception\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___e_t_h___exported___types_ga5ed03ee5131dbd95a3c54f5a41044c14}{ETH\+\_\+\+Get\+Flow\+Control\+Busy\+Status}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga77e9c30c78e2e8e8c863c62f71431fb3}{ETH\+\_\+\+Initiate\+Pause\+Control\+Frame}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gadfa25887fa512afff494d46a1ce49782}{ETH\+\_\+\+Back\+Pressure\+Activation\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga9f183f75ac5536a44ed9f569957abab3}{ETH\+\_\+\+MACAddress\+Config}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} reg\+\_\+addr, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} $\ast$mac\+\_\+addr)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gae61d9905b8b5ad78c0e53bcdc99c691b}{ETH\+\_\+\+Get\+MACAddress}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} reg\+\_\+addr, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} $\ast$mac\+\_\+addr)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga1c001e7b425251c3e2034250634bdd49}{ETH\+\_\+\+MACAddress\+Perfect\+Filter\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} reg\+\_\+addr, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga0538170a844bf22c69d718e4f6e27a1b}{ETH\+\_\+\+MACAddress\+Filter\+Config}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} reg\+\_\+addr, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gaa4c25a36bf8b19fab584ee0399f2258e}{ETH\+\_\+\+MACAddress\+Mask\+Bytes\+Filter\+Config}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} reg\+\_\+addr, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} mask\+\_\+byte)
+\item 
+\mbox{\hyperlink{struct_frame_type_def}{Frame\+Type\+Def}} \mbox{\hyperlink{group___e_t_h___exported___types_ga32da1044684ecb01ed759fbceb603d03}{ETH\+\_\+\+Get\+\_\+\+Received\+\_\+\+Frame}} (void)
+\item 
+\mbox{\hyperlink{struct_frame_type_def}{Frame\+Type\+Def}} \mbox{\hyperlink{group___e_t_h___exported___types_gad81f857bbc1cf82415ffb0aa58667a5b}{ETH\+\_\+\+Get\+\_\+\+Received\+\_\+\+Frame\+\_\+interrupt}} (void)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gaf98d220821472850da356956425ce5c9}{ETH\+\_\+\+Prepare\+\_\+\+Transmit\+\_\+\+Descriptors}} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} len)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga3d586c3291acae6cdf6b9cdd51b15bea}{ETH\+\_\+\+DMARx\+Desc\+Chain\+Init}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} $\ast$buf, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} cnt)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga6a0dc2593e3181df90750ec63aa97eb6}{ETH\+\_\+\+Check\+Frame\+Received}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga0a898109c1b814effc3218b816b7b9e0}{ETH\+\_\+\+DMATx\+Desc\+Chain\+Init}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} $\ast$buf, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} cnt)
+\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___e_t_h___exported___types_ga4ba3c7ed9c0ed95674fd28905d6c76bf}{ETH\+\_\+\+Get\+DMATx\+Desc\+Flag\+Status}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gae984f019d7751d4957bf6ff3d41168d2}{ETH\+\_\+\+Get\+DMATx\+Desc\+Collision\+Count}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga1793eeacea8865863d49d718b93ab18a}{ETH\+\_\+\+Set\+DMATx\+Desc\+Own\+Bit}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga49395c02284a930bec9196c52b0b1633}{ETH\+\_\+\+DMATx\+Desc\+Transmit\+ITConfig}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga392222e52c9219837df739594a35f6c5}{ETH\+\_\+\+DMATx\+Desc\+Frame\+Segment\+Config}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} val)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gaf6a0af2257e0abeba47de54add9d3d38}{ETH\+\_\+\+DMATx\+Desc\+Checksum\+Insertion\+Config}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} val)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga823957a4dc7c93d83060e534c2a38a3e}{ETH\+\_\+\+DMATx\+Desc\+CRCCmd}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gafb39af5b4b32c7d117433e6324467dfb}{ETH\+\_\+\+DMATx\+Desc\+Second\+Address\+Chained\+Cmd}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gab4d79c04a4edbc4721d3295905e96c70}{ETH\+\_\+\+DMATx\+Desc\+Short\+Frame\+Padding\+Cmd}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga7a4320cb1cce11b6dc9d70dd7ec006cd}{ETH\+\_\+\+DMATx\+Desc\+Buffer\+Size\+Config}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} buf1\+\_\+size, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} buf2\+\_\+size)
+\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___e_t_h___exported___types_gad84f5cb887f2a26eec9e73b7efc5ce48}{ETH\+\_\+\+Get\+DMARx\+Desc\+Flag\+Status}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga93137d99a8d6fad58221c8e8cb1c948b}{ETH\+\_\+\+Set\+DMARx\+Desc\+Own\+Bit}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gaa706748af8275b2d93c43960b747f38e}{ETH\+\_\+\+Get\+DMARx\+Desc\+Frame\+Length}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gad6cae545376b4f9fa1db5755a014be3f}{ETH\+\_\+\+DMARx\+Desc\+Receive\+ITConfig}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gaa67743cfc12787eb97ec2fe7c08ca86f}{ETH\+\_\+\+Get\+DMARx\+Desc\+Buffer\+Size}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} buf)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga765d129e2375108daa94bf0031f0c4d3}{ETH\+\_\+\+Get\+Rx\+Pkt\+Size}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gac5b991b83a1a26f4d3fdfcb44a9e2961}{ETH\+\_\+\+Software\+Reset}} (void)
+\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___e_t_h___exported___types_ga92fe59489331817a185f80d4ffdebc6a}{ETH\+\_\+\+Get\+Software\+Reset\+Status}} (void)
+\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___e_t_h___exported___types_ga7dab5819120f80db4fa99fecb84006eb}{ETH\+\_\+\+Get\+DMAFlag\+Status}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga48da821b79f04dab1a0c47b979676aeb}{ETH\+\_\+\+DMAClear\+Flag}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga5a91e77822eef95867a541a301a4cb93}{ETH\+\_\+\+DMAITConfig}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+\mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} \mbox{\hyperlink{group___e_t_h___exported___types_ga62f0618f34823bc1a4c41786973997f2}{ETH\+\_\+\+Get\+DMAITStatus}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga03bd042e399230d6f8d7f9155d6b57fe}{ETH\+\_\+\+DMAClear\+ITPending\+Bit}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga71fa89afbbf80e3fea7552166d290a80}{ETH\+\_\+\+Get\+Transmit\+Process\+State}} (void)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gacefed0f80e333cea4e88ebf417c4844f}{ETH\+\_\+\+Get\+Receive\+Process\+State}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga886f872a0046bbb3f9f08890bb10a7d6}{ETH\+\_\+\+Flush\+Transmit\+FIFO}} (void)
+\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___e_t_h___exported___types_gaf6c37cbdce7cf962d8de25ac635e37c9}{ETH\+\_\+\+Get\+Flush\+Transmit\+FIFOStatus}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga3078e7bc9e79d3b09d4e76c55c2db7fa}{ETH\+\_\+\+DMATransmission\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga8e05697da368b53b0346769850f0eac9}{ETH\+\_\+\+DMAReception\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___e_t_h___exported___types_gaf6b44c63ca8293301d461bc6c9d55e56}{ETH\+\_\+\+Get\+DMAOverflow\+Status}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} val)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gadb1e5e7222fab956d9277d84760b34cc}{ETH\+\_\+\+Get\+Rx\+Overflow\+Missed\+Frame\+Counter}} (void)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga44d76c8743a17b6ec41c3856859afec2}{ETH\+\_\+\+Get\+Buffer\+Unavailable\+Missed\+Frame\+Counter}} (void)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga55e2fd40116ae98a5f65f77a0ad8be76}{ETH\+\_\+\+Get\+Current\+Tx\+Desc\+Start\+Address}} (void)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga9de31600819c649378016d7440e85cc6}{ETH\+\_\+\+Get\+Current\+Rx\+Desc\+Start\+Address}} (void)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga95649bf5ab9e52638e59b8316580b33d}{ETH\+\_\+\+Get\+Current\+Tx\+Buffer\+Address}} (void)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gafb40ac65a86624dc294f5ff83faf5994}{ETH\+\_\+\+Get\+Current\+Rx\+Buffer\+Address}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gae933a3ddae920fc22a764bdf4af0b3a5}{ETH\+\_\+\+Resume\+DMATransmission}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gaf2149971fef6d9478acb91a0592ed7af}{ETH\+\_\+\+Resume\+DMAReception}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga03cc6b16dcc36a247608c59870a51a05}{ETH\+\_\+\+Set\+Receive\+Watchdog\+Timer}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} val)
+\item 
+\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{group___e_t_h___exported___types_gad885ad03ba3496c9c2711e7a39225762}{ETH\+\_\+\+Read\+PHYRegister}} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} addr, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} reg)
+\item 
+\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{group___e_t_h___exported___types_ga4bcaddc18a6a27f45f7ddbd5313224ba}{ETH\+\_\+\+Write\+PHYRegister}} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} addr, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} reg, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} val)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga4d29bede54c69b0304afc50ce58f3dfb}{ETH\+\_\+\+PHYLoop\+Back\+Cmd}} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} addr, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gad19ac0436076c96431e887c3684b0712}{ETH\+\_\+\+Reset\+Wake\+Up\+Frame\+Filter\+Register\+Pointer}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga74262f8956e42da4376ad4078502bf30}{ETH\+\_\+\+Set\+Wake\+Up\+Frame\+Filter\+Register}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} $\ast$buf)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gae48f02d1bcee46f99d1ea49c2ff9aba8}{ETH\+\_\+\+Global\+Unicast\+Wake\+Up\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___e_t_h___exported___types_ga7148c6f5ee9b946e50831c0676e00188}{ETH\+\_\+\+Get\+PMTFlag\+Status}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga4001aea745a9816c038bb3ec83a2fd00}{ETH\+\_\+\+Wake\+Up\+Frame\+Detection\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga867d3cc0ddf06ebe98c3abe83f182604}{ETH\+\_\+\+Magic\+Packet\+Detection\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga614f8683bd5797e8a7b40f19478e7cf5}{ETH\+\_\+\+Power\+Down\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga6317136f5ca8aff711630b595e5639b3}{ETH\+\_\+\+MMCCounter\+Full\+Preset}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gaefaef524644df31d09c8c6d68829414f}{ETH\+\_\+\+MMCCounter\+Half\+Preset}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga9c61c8a5b5bfa8f1621ec692941dcbc1}{ETH\+\_\+\+MMCCounter\+Freeze\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga97785440d18126ece27ac75b32149989}{ETH\+\_\+\+MMCReset\+On\+Read\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga20132209f423a151fe614707c9b8b651}{ETH\+\_\+\+MMCCounter\+Rollover\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga414106bd2efd86e44ea8469ef3229843}{ETH\+\_\+\+MMCCounters\+Reset}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gaaa90ae5d6854f5c8c0e4664bb24bc149}{ETH\+\_\+\+MMCITConfig}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+\mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} \mbox{\hyperlink{group___e_t_h___exported___types_gad36d923315142ae01fe9bcd4f9728016}{ETH\+\_\+\+Get\+MMCITStatus}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gae7cd3f7055068e12fcd7346ea1bea8fd}{ETH\+\_\+\+Get\+MMCRegister}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} reg)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE PROVIDES ALL THE \mbox{\hyperlink{hal__eth_8c}{HAL\+\_\+eth.\+c}} EXAMPLE. //////////////////////////////////////////////////////////////////////////// 
+
+\begin{DoxyAuthor}{作者}
+AE TEM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{hal__eth_8c_source}{hal\+\_\+eth.\+c}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{hal__eth_8c_ac2cbca14a697dadfa2f89721e71f712c}\label{hal__eth_8c_ac2cbca14a697dadfa2f89721e71f712c}} 
+\index{hal\_eth.c@{hal\_eth.c}!\_HAL\_ETH\_C\_@{\_HAL\_ETH\_C\_}}
+\index{\_HAL\_ETH\_C\_@{\_HAL\_ETH\_C\_}!hal\_eth.c@{hal\_eth.c}}
+\doxysubsubsection{\texorpdfstring{\_HAL\_ETH\_C\_}{\_HAL\_ETH\_C\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+HAL\+\_\+\+ETH\+\_\+\+C\+\_\+}
+
+
+
+在文件 \mbox{\hyperlink{hal__eth_8c_source}{hal\+\_\+eth.\+c}} 第 \mbox{\hyperlink{hal__eth_8c_source_l00018}{18}} 行定义.
+

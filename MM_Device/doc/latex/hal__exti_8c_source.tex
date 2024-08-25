@@ -1,0 +1,128 @@
+\hypertarget{hal__exti_8c_source}{}\doxysection{hal\+\_\+exti.\+c}
+\label{hal__exti_8c_source}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_exti.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_exti.c}}
+\mbox{\hyperlink{hal__exti_8c}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00018}00018 \textcolor{comment}{// Define to prevent recursive inclusion}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00019}\mbox{\hyperlink{hal__exti_8c_a12ea8a3cc08a43fe59a12e512fd17531}{00019}} \textcolor{preprocessor}{\#define \_HAL\_EXTI\_C\_}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00021}00021 \textcolor{comment}{// Files includes}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00022}00022 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{hal__exti_8h}{hal\_exti.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00054}\mbox{\hyperlink{group___e_x_t_i___exported___functions_ga07072e339cb9ecb9cd9d4b94afc9f317}{00054}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_x_t_i___exported___functions_ga07072e339cb9ecb9cd9d4b94afc9f317}{EXTI\_DeInit}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00055}00055 \{}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00056}00056     \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} i;}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00057}00057     \textcolor{comment}{// Clear all}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00058}00058     \mbox{\hyperlink{group___e_x_t_i___exported___functions_ga8cd70060b65a41ce0ff035bf23f0e8a2}{exEXTI\_LineDisable}}(\string~0x00000000);}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00060}00060     \textcolor{comment}{// rc\_w1}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00061}00061     \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>PR = \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>PR;}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00063}00063     \textcolor{comment}{// Set EXTI\_CFGR1 register to reset value without affecting MEM\_MODE bits}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00064}00064     \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>CFGR \&= \mbox{\hyperlink{reg__exti_8h_a18bc5396de045d69a7171d03ee6078d1}{EXTI\_CFGR\_MEMMODE}};}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00066}00066     \textcolor{comment}{// Set EXTICRx registers to reset value}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00067}00067     \textcolor{keywordflow}{for} (i = 0; i < 4; i++) \{}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00068}00068         \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>CR[i] = 0;}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00069}00069     \}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00070}00070 \}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00082}\mbox{\hyperlink{group___e_x_t_i___exported___functions_ga30d95253b9eda228801f4e562ea81e89}{00082}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_x_t_i___exported___functions_ga30d95253b9eda228801f4e562ea81e89}{EXTI\_LineConfig}}(\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} port\_source\_gpio, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} pin\_source)}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00083}00083 \{}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00084}00084     \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>CR[pin\_source >> 0x02] \&= \string~(0x0F << (0x04 * (pin\_source \& 0x03)));}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00085}00085     \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>CR[pin\_source >> 0x02] |= ((port\_source\_gpio) << (0x04 * (pin\_source \& 0x03)));}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00086}00086 \}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00095}\mbox{\hyperlink{group___e_x_t_i___exported___functions_ga7a843bf13cb7f901a57690c0de1760e9}{00095}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_x_t_i___exported___functions_ga7a843bf13cb7f901a57690c0de1760e9}{EXTI\_Init}}(\mbox{\hyperlink{struct_e_x_t_i___init_type_def}{EXTI\_InitTypeDef}}* init\_struct)}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00096}00096 \{}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00097}00097     \textcolor{keywordflow}{if} (init\_struct-\/>\mbox{\hyperlink{group___m_m32___hardware___abstract___layer_gac1769bc5badaef4cffbcf105e3fe1c27}{EXTI\_LineCmd}} != \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d}{DISABLE}}) \{}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00098}00098         \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>IMR  \&= \string~init\_struct-\/>EXTI\_Line;}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00099}00099         \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>EMR  \&= \string~init\_struct-\/>EXTI\_Line;}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00100}00100         \textcolor{keywordflow}{if} (init\_struct-\/>\mbox{\hyperlink{group___m_m32___hardware___abstract___layer_ga741816862b9cd43cc80781dc89150e7e}{EXTI\_Mode}} == \mbox{\hyperlink{group___e_x_t_i___exported___types_ggad5e69af98dc0dfdf64417adc1cf57929a8c6ccdd7b1bc4872731306537e8c3b42}{EXTI\_Mode\_Interrupt}}) \{}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00101}00101             \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>IMR |= init\_struct-\/>\mbox{\hyperlink{group___m_m32___hardware___abstract___layer_ga490f6df72047947d2d04228bc932c72c}{EXTI\_Line}};}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00102}00102         \}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00103}00103         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00104}00104             \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>EMR |= init\_struct-\/>\mbox{\hyperlink{group___m_m32___hardware___abstract___layer_ga490f6df72047947d2d04228bc932c72c}{EXTI\_Line}};}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00105}00105         \}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00106}00106         \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>RTSR \&= \string~init\_struct-\/>EXTI\_Line;}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00107}00107         \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>FTSR \&= \string~init\_struct-\/>EXTI\_Line;}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00108}00108         \textcolor{keywordflow}{if} (init\_struct-\/>\mbox{\hyperlink{group___m_m32___hardware___abstract___layer_gab0bd8417e78fe2b43eed79e44064510c}{EXTI\_Trigger}} == \mbox{\hyperlink{group___e_x_t_i___exported___types_gga9da190f5425d1b421a06bced8cc48e9bab09db55a2e9118e86d03d69698434ebb}{EXTI\_Trigger\_Rising\_Falling}}) \{}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00109}00109             \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>RTSR |= init\_struct-\/>\mbox{\hyperlink{group___m_m32___hardware___abstract___layer_ga490f6df72047947d2d04228bc932c72c}{EXTI\_Line}};}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00110}00110             \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>FTSR |= init\_struct-\/>\mbox{\hyperlink{group___m_m32___hardware___abstract___layer_ga490f6df72047947d2d04228bc932c72c}{EXTI\_Line}};                               \textcolor{comment}{// Rising and Faling    afio}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00111}00111         \}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00112}00112         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (init\_struct-\/>\mbox{\hyperlink{group___m_m32___hardware___abstract___layer_gab0bd8417e78fe2b43eed79e44064510c}{EXTI\_Trigger}} == \mbox{\hyperlink{group___e_x_t_i___exported___types_gga9da190f5425d1b421a06bced8cc48e9baaa73605adf491dbe97994612e228af5e}{EXTI\_Trigger\_Rising}}) \{}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00113}00113             \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>RTSR |= init\_struct-\/>\mbox{\hyperlink{group___m_m32___hardware___abstract___layer_ga490f6df72047947d2d04228bc932c72c}{EXTI\_Line}};}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00114}00114         \}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00115}00115         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00116}00116             \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>FTSR |= init\_struct-\/>\mbox{\hyperlink{group___m_m32___hardware___abstract___layer_ga490f6df72047947d2d04228bc932c72c}{EXTI\_Line}};}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00117}00117         \}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00118}00118     \}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00119}00119     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00120}00120         \textcolor{keywordflow}{if} (init\_struct-\/>\mbox{\hyperlink{group___m_m32___hardware___abstract___layer_ga741816862b9cd43cc80781dc89150e7e}{EXTI\_Mode}} == \mbox{\hyperlink{group___e_x_t_i___exported___types_ggad5e69af98dc0dfdf64417adc1cf57929a8c6ccdd7b1bc4872731306537e8c3b42}{EXTI\_Mode\_Interrupt}}) \{}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00121}00121             \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>IMR \&= \string~init\_struct-\/>EXTI\_Line;}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00122}00122         \}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00123}00123         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00124}00124             \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>EMR \&= \string~init\_struct-\/>EXTI\_Line;}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00125}00125         \}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00126}00126     \}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00127}00127 \}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00128}00128 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00135}\mbox{\hyperlink{group___e_x_t_i___exported___functions_ga127d64ed8bbf22bc4320b5a9da5fac41}{00135}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_x_t_i___exported___functions_ga127d64ed8bbf22bc4320b5a9da5fac41}{EXTI\_StructInit}}(\mbox{\hyperlink{struct_e_x_t_i___init_type_def}{EXTI\_InitTypeDef}}* init\_struct)}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00136}00136 \{}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00137}00137     init\_struct-\/>\mbox{\hyperlink{group___m_m32___hardware___abstract___layer_ga490f6df72047947d2d04228bc932c72c}{EXTI\_Line}}    = \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga7b0c50de49bcaa711c1e310219b97281}{EXTI\_LineNone}};}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00138}00138     init\_struct-\/>\mbox{\hyperlink{group___m_m32___hardware___abstract___layer_ga741816862b9cd43cc80781dc89150e7e}{EXTI\_Mode}}    = \mbox{\hyperlink{group___e_x_t_i___exported___types_ggad5e69af98dc0dfdf64417adc1cf57929a8c6ccdd7b1bc4872731306537e8c3b42}{EXTI\_Mode\_Interrupt}};}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00139}00139     init\_struct-\/>\mbox{\hyperlink{group___m_m32___hardware___abstract___layer_gab0bd8417e78fe2b43eed79e44064510c}{EXTI\_Trigger}} = \mbox{\hyperlink{group___e_x_t_i___exported___types_gga9da190f5425d1b421a06bced8cc48e9bac4a21d397aa4648b8f8cf961f71f3ac5}{EXTI\_Trigger\_Falling}};}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00140}00140     init\_struct-\/>\mbox{\hyperlink{group___m_m32___hardware___abstract___layer_gac1769bc5badaef4cffbcf105e3fe1c27}{EXTI\_LineCmd}} = \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d}{DISABLE}};}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00141}00141 \}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00142}00142 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00149}\mbox{\hyperlink{group___e_x_t_i___exported___functions_gad8487c708c0028186b0eb26e012d03b6}{00149}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_x_t_i___exported___functions_gad8487c708c0028186b0eb26e012d03b6}{EXTI\_GenerateSWInterrupt}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} line)}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00150}00150 \{}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00151}00151     \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>SWIER |= line;}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00152}00152 \}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00153}00153 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00159}\mbox{\hyperlink{group___e_x_t_i___exported___functions_ga3a1b7a3ef902bfda17ccb3eb87ee434d}{00159}} \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}} \mbox{\hyperlink{group___e_x_t_i___exported___functions_ga3a1b7a3ef902bfda17ccb3eb87ee434d}{EXTI\_GetFlagStatus}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} line)}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00160}00160 \{}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00161}00161     \textcolor{keywordflow}{return} (\mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>PR \& line) ? \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792}{SET}} : \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}};}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00162}00162 \}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00163}00163 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00169}\mbox{\hyperlink{group___e_x_t_i___exported___functions_gaf9589bccbc0b41cf61894f93d218ebdc}{00169}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_x_t_i___exported___functions_gaf9589bccbc0b41cf61894f93d218ebdc}{EXTI\_ClearFlag}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} line)}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00170}00170 \{}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00171}00171     \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>PR = line;}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00172}00172 \}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00173}00173 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00179}\mbox{\hyperlink{group___e_x_t_i___exported___functions_ga34a372a08e16385a049540248f402af3}{00179}} \mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} \mbox{\hyperlink{group___e_x_t_i___exported___functions_ga34a372a08e16385a049540248f402af3}{EXTI\_GetITStatus}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} line)}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00180}00180 \{}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00181}00181     \textcolor{keywordflow}{return} ((\mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>PR \& line) \&\& (\mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>IMR \& line)) ? \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792}{SET}} : \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}};}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00182}00182 \}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00183}00183 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00189}\mbox{\hyperlink{group___e_x_t_i___exported___functions_ga846246bcabd3da20d865ca5d6a40652d}{00189}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_x_t_i___exported___functions_ga846246bcabd3da20d865ca5d6a40652d}{EXTI\_ClearITPendingBit}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} line)}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00190}00190 \{}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00191}00191     \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>PR = line;}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00192}00192 \}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00193}00193 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00199}\mbox{\hyperlink{group___e_x_t_i___exported___functions_ga8cd70060b65a41ce0ff035bf23f0e8a2}{00199}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_x_t_i___exported___functions_ga8cd70060b65a41ce0ff035bf23f0e8a2}{exEXTI\_LineDisable}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} line)}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00200}00200 \{}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00201}00201     \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>IMR  \&= \string~line;}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00202}00202     \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>EMR  \&= \string~line;}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00203}00203     \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>RTSR \&= \string~line;}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00204}00204     \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>FTSR \&= \string~line;}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00205}00205 \}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00206}00206 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00212}\mbox{\hyperlink{group___e_x_t_i___exported___functions_ga34079e388056a84d3c723388dea9ad2f}{00212}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_x_t_i___exported___functions_ga34079e388056a84d3c723388dea9ad2f}{exEXTI\_GetAllFlagStatus}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00213}00213 \{}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00214}00214     \textcolor{keywordflow}{return} \mbox{\hyperlink{reg__exti_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>PR;}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00215}00215 \}}
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00216}00216 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00218}00218 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00220}00220 }
+\DoxyCodeLine{\Hypertarget{hal__exti_8c_source_l00222}00222 }
+
+\end{DoxyCode}

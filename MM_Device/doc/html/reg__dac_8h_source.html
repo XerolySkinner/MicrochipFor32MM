@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>template: C:/Users/XerolySkinner/Desktop/MM_Device/MM32F327x/Include/reg_dac.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">template
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8a23370bd962f2be3cb202251f8a0865.html">MM32F327x</a></li><li class="navelem"><a class="el" href="dir_558e241ee7368c5b8b9a34748b15bdf8.html">Include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">reg_dac.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="reg__dac_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// Define to prevent recursive inclusion</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#ifndef __REG_DAC_H</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#define __REG_DAC_H</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Files includes</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">types.h</a>&quot;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#if defined ( __CC_ARM )</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#pragma anon_unions</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#ad18d0b914c7f68cecbee1a2d23a67d38">   47</a></span><span class="preprocessor">#define DAC_BASE                        (APB1PERIPH_BASE + 0x7400)              </span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="struct_d_a_c___type_def.html">   54</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="struct_d_a_c___type_def.html#aac010860679bd3c5665fa5489e657ece">   55</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_d_a_c___type_def.html#aac010860679bd3c5665fa5489e657ece">CR</a>;                                                                </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="struct_d_a_c___type_def.html#a6eccd447f58c493f911c5aca6b4cbc51">   56</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_d_a_c___type_def.html#a6eccd447f58c493f911c5aca6b4cbc51">SWTRIGR</a>;                                                           </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="struct_d_a_c___type_def.html#a58bb296fb0ad683c229ad5f523518160">   57</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_d_a_c___type_def.html#a58bb296fb0ad683c229ad5f523518160">DHR12R1</a>;                                                           </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="struct_d_a_c___type_def.html#a057047f2476020075fbc2e15df3a9783">   58</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_d_a_c___type_def.html#a057047f2476020075fbc2e15df3a9783">DHR12L1</a>;                                                           </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="struct_d_a_c___type_def.html#a76683744875b11e7644f72e7ca29476a">   59</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_d_a_c___type_def.html#a76683744875b11e7644f72e7ca29476a">DHR8R1</a>;                                                            </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="struct_d_a_c___type_def.html#ae940ddd59d2199713f18730e4c12e83d">   60</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_d_a_c___type_def.html#ae940ddd59d2199713f18730e4c12e83d">DHR12R2</a>;                                                           </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="struct_d_a_c___type_def.html#adccdd1fbc45178e509a604c1b4cf127d">   61</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_d_a_c___type_def.html#adccdd1fbc45178e509a604c1b4cf127d">DHR12L2</a>;                                                           </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="struct_d_a_c___type_def.html#a2ae43a8c455ebbdfecbcc2fcf57c3cf5">   62</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_d_a_c___type_def.html#a2ae43a8c455ebbdfecbcc2fcf57c3cf5">DHR8R2</a>;                                                            </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="struct_d_a_c___type_def.html#a7e13dc7f1ca687d727cd987a135cbeb6">   63</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_d_a_c___type_def.html#a7e13dc7f1ca687d727cd987a135cbeb6">DHR12RD</a>;                                                           </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="struct_d_a_c___type_def.html#acfef5e58237f1aa916c2f913622337df">   64</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_d_a_c___type_def.html#acfef5e58237f1aa916c2f913622337df">DHR12LD</a>;                                                           </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="struct_d_a_c___type_def.html#ad93e2c6d3e7a0b34faca2ee5e4927432">   65</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_d_a_c___type_def.html#ad93e2c6d3e7a0b34faca2ee5e4927432">DHR8RD</a>;                                                            </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="struct_d_a_c___type_def.html#a43466a2e43f978de412b197ed5029098">   66</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_d_a_c___type_def.html#a43466a2e43f978de412b197ed5029098">DOR1</a>;                                                              </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="struct_d_a_c___type_def.html#af93b78bcb32586e36551add3cc652515">   67</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_d_a_c___type_def.html#af93b78bcb32586e36551add3cc652515">DOR2</a>;                                                              </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>} <a class="code hl_struct" href="struct_d_a_c___type_def.html">DAC_TypeDef</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a4aa2a4ab86ce00c23035e5cee2e7fc7e">   75</a></span><span class="preprocessor">#define DAC                         ((DAC_TypeDef*) DAC_BASE)</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a7663eb8440e12383fc88241acbfc99cf">   82</a></span><span class="preprocessor">#define DAC_CR_EN1_Pos              (0)</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#abd8cedbb3dda03d56ac0ba92d2d9cefd">   83</a></span><span class="preprocessor">#define DAC_CR_EN1                  (0x01U &lt;&lt; DAC_CR_EN1_Pos)               </span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a9f43af44fba93c50bf4765608ec6d902">   84</a></span><span class="preprocessor">#define DAC_CR_BOFF1_Pos            (1)</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a0b1e2b83ae1ab889cb1e34a99746c9d8">   85</a></span><span class="preprocessor">#define DAC_CR_BOFF1                (0x01U &lt;&lt; DAC_CR_BOFF1_Pos)             </span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a6ef4ab719505604c7a41e31c27fd05dd">   86</a></span><span class="preprocessor">#define DAC_CR_TEN1_Pos             (2)</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a998aa4fd791ea2f4626df6ddc8fc7109">   87</a></span><span class="preprocessor">#define DAC_CR_TEN1                 (0x01U &lt;&lt; DAC_CR_TEN1_Pos)              </span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#adc5baf43a193c631ad3c05eb24b97a7b">   88</a></span><span class="preprocessor">#define DAC_CR_TSEL1_Pos            (3)</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#af951c1a57a1a19e356df57d908f09c6c">   89</a></span><span class="preprocessor">#define DAC_CR_TSEL1                (0x07U &lt;&lt; DAC_CR_TSEL1_Pos)             </span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a82cd645673b77b73d1ddc0e8d0817e5b">   90</a></span><span class="preprocessor">#define DAC_CR_TSEL1_TIM1_TRIG      (0x00U &lt;&lt; DAC_CR_TSEL1_Pos)             </span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a983ee70d5c8c0e67dff839fd5933761f">   91</a></span><span class="preprocessor">#define DAC_CR_TSEL1_TIM3_TRIG      (0x01U &lt;&lt; DAC_CR_TSEL1_Pos)             </span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#adbef9920d56c222df69bb5f30fddd4b4">   92</a></span><span class="preprocessor">#define DAC_CR_TSEL1_TIM2_TRIG      (0x04U &lt;&lt; DAC_CR_TSEL1_Pos)             </span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#ad5c94b86c37eb2a3447fd32e805f2e87">   93</a></span><span class="preprocessor">#define DAC_CR_TSEL1_TIM4_TRIG      (0x05U &lt;&lt; DAC_CR_TSEL1_Pos)             </span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a44a45d4429ff3d518f52a3bb01af4595">   94</a></span><span class="preprocessor">#define DAC_CR_TSEL1_EXTI9          (0x06U &lt;&lt; DAC_CR_TSEL1_Pos)             </span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a7ebdb78dfe892329e53e7f054d2240af">   95</a></span><span class="preprocessor">#define DAC_CR_TSEL1_SOFTWARE       (0x07U &lt;&lt; DAC_CR_TSEL1_Pos)             </span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a16a0202d6e3295400dc21b2088d333e1">   96</a></span><span class="preprocessor">#define DAC_CR_WAVE1_Pos            (6)</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a90491f31219d07175629eecdcdc9271e">   97</a></span><span class="preprocessor">#define DAC_CR_WAVE1                (0x03U &lt;&lt; DAC_CR_WAVE1_Pos)             </span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a7cd586a125f0f7ffb5784bfb5228e9cb">   98</a></span><span class="preprocessor">#define DAC_CR_WAVE1_NONE           (0x00U &lt;&lt; DAC_CR_WAVE1_Pos)             </span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a0bdbd7bb6004048e7eaa6c0d1ec21608">   99</a></span><span class="preprocessor">#define DAC_CR_WAVE1_NOISE          (0x01U &lt;&lt; DAC_CR_WAVE1_Pos)             </span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a014195407a7aecbb236be4708aaa70f2">  100</a></span><span class="preprocessor">#define DAC_CR_WAVE1_TRIANGLE       (0x02U &lt;&lt; DAC_CR_WAVE1_Pos)             </span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a018b4d24c02a803f2efb996745f49015">  101</a></span><span class="preprocessor">#define DAC_CR_MAMP1_Pos            (8)</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a3bcf611b2f0b975513325895bf16e085">  102</a></span><span class="preprocessor">#define DAC_CR_MAMP1                (0x0FU &lt;&lt; DAC_CR_MAMP1_Pos)             </span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a6cc15817842cb7992d449c448684f68d">  103</a></span><span class="preprocessor">#define DAC_CR_MAMP1_1              (0x00U &lt;&lt; DAC_CR_MAMP1_Pos)             </span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#afdc83b4feb742c632ba66f55d102432b">  104</a></span><span class="preprocessor">#define DAC_CR_MAMP1_3              (0x01U &lt;&lt; DAC_CR_MAMP1_Pos)             </span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#ac2f9f59b831361a8c2ac5de8bffbe3e4">  105</a></span><span class="preprocessor">#define DAC_CR_MAMP1_7              (0x02U &lt;&lt; DAC_CR_MAMP1_Pos)             </span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a8e320c9606c7a570fddd9681b6ed997c">  106</a></span><span class="preprocessor">#define DAC_CR_MAMP1_15             (0x03U &lt;&lt; DAC_CR_MAMP1_Pos)             </span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a7eed009c4b12947d955eff8295402bfa">  107</a></span><span class="preprocessor">#define DAC_CR_MAMP1_31             (0x04U &lt;&lt; DAC_CR_MAMP1_Pos)             </span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a05c15d4e386634c82369d71043b7918e">  108</a></span><span class="preprocessor">#define DAC_CR_MAMP1_63             (0x05U &lt;&lt; DAC_CR_MAMP1_Pos)             </span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a1d5571b796535d153cf5b482eca4ae25">  109</a></span><span class="preprocessor">#define DAC_CR_MAMP1_127            (0x06U &lt;&lt; DAC_CR_MAMP1_Pos)             </span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#acdb2bb69dd8285bcd1c52f2cd0cb9e2d">  110</a></span><span class="preprocessor">#define DAC_CR_MAMP1_255            (0x07U &lt;&lt; DAC_CR_MAMP1_Pos)             </span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a48cf58532c20342b777faeec4638a8e2">  111</a></span><span class="preprocessor">#define DAC_CR_MAMP1_511            (0x08U &lt;&lt; DAC_CR_MAMP1_Pos)             </span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a1fb4a60a08e60c92b4f772c0d48be081">  112</a></span><span class="preprocessor">#define DAC_CR_MAMP1_1023           (0x09U &lt;&lt; DAC_CR_MAMP1_Pos)             </span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a980567f3a4c7502c95b69b5ffabe44ed">  113</a></span><span class="preprocessor">#define DAC_CR_MAMP1_2047           (0x0AU &lt;&lt; DAC_CR_MAMP1_Pos)             </span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a4402c4b16acfdf0e1708870123af4926">  114</a></span><span class="preprocessor">#define DAC_CR_MAMP1_4095           (0x0BU &lt;&lt; DAC_CR_MAMP1_Pos)             </span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#ac1caf9621895f2a99c4b33a0908247b6">  115</a></span><span class="preprocessor">#define DAC_CR_DMAEN1_Pos           (12)</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a995c19d8c8de9ee09057ec6151154e17">  116</a></span><span class="preprocessor">#define DAC_CR_DMAEN1               (0x01U &lt;&lt; DAC_CR_DMAEN1_Pos)            </span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#af2dbea8c55239069a24139f398785af4">  117</a></span><span class="preprocessor">#define DAC_CR_EN2_Pos              (16)</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#aa65db2420e02fc6813842f57134d898f">  118</a></span><span class="preprocessor">#define DAC_CR_EN2                  (0x01U &lt;&lt; DAC_CR_EN2_Pos)               </span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#abb3eb9eaa48220ba7cac6204c4637b75">  119</a></span><span class="preprocessor">#define DAC_CR_BOFF2_Pos            (17)</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#add6f660a5f15262beca06b9098a559e9">  120</a></span><span class="preprocessor">#define DAC_CR_BOFF2                (0x01U &lt;&lt; DAC_CR_BOFF2_Pos)             </span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#aa2ef8fa2150330a16a2b19f17caa051e">  121</a></span><span class="preprocessor">#define DAC_CR_TEN2_Pos             (18)</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#ab8fc527f6ddb787123da09d2085b772f">  122</a></span><span class="preprocessor">#define DAC_CR_TEN2                 (0x01U &lt;&lt; DAC_CR_TEN2_Pos)              </span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a80a933188591c4fbcad260c256105277">  123</a></span><span class="preprocessor">#define DAC_CR_TSEL2_Pos            (19)</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a73b4d0ccff78f7c3862903e7b0e66302">  124</a></span><span class="preprocessor">#define DAC_CR_TSEL2                (0x07U &lt;&lt; DAC_CR_TSEL2_Pos)             </span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a2d12f6284b51f734669fd8829fc2a82f">  125</a></span><span class="preprocessor">#define DAC_CR_TSEL2_TIM1_TRIG      (0x00U &lt;&lt; DAC_CR_TSEL2_Pos)             </span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a610faf2ea53f20089fa743deed51fbb9">  126</a></span><span class="preprocessor">#define DAC_CR_TSEL2_TIM3_TRIG      (0x01U &lt;&lt; DAC_CR_TSEL2_Pos)             </span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#aadab668d44e27de079ec69a2d05a5a27">  127</a></span><span class="preprocessor">#define DAC_CR_TSEL2_TIM2_TRIG      (0x04U &lt;&lt; DAC_CR_TSEL2_Pos)             </span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a8486a5c30bef4d0d4bc79b72da59a1fb">  128</a></span><span class="preprocessor">#define DAC_CR_TSEL2_TIM4_TRIG      (0x05U &lt;&lt; DAC_CR_TSEL2_Pos)             </span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a971ea99a077cc5197d2231c93baf1f63">  129</a></span><span class="preprocessor">#define DAC_CR_TSEL2_EXTI9          (0x06U &lt;&lt; DAC_CR_TSEL2_Pos)             </span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#ad183e0fb500d45c7c80b9b853ee51400">  130</a></span><span class="preprocessor">#define DAC_CR_TSEL2_SOFTWARE       (0x07U &lt;&lt; DAC_CR_TSEL2_Pos)             </span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a7795c9de47dc6747045ee7e2e6fb8ba9">  131</a></span><span class="preprocessor">#define DAC_CR_WAVE2_Pos            (22)</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#acf24e48cf288db4a4643057dd09e3a7b">  132</a></span><span class="preprocessor">#define DAC_CR_WAVE2                (0x03U &lt;&lt; DAC_CR_WAVE2_Pos)             </span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a4a5cb7bb2c8902ca022ef2aa0a85bea6">  133</a></span><span class="preprocessor">#define DAC_CR_WAVE2_NONE           (0x00U &lt;&lt; DAC_CR_WAVE2_Pos)             </span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#adece7a1a3d6d3b318e1ba0693fffc397">  134</a></span><span class="preprocessor">#define DAC_CR_WAVE2_NOISE          (0x01U &lt;&lt; DAC_CR_WAVE2_Pos)             </span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a276e7bfcefb8555803e92b07e60746a0">  135</a></span><span class="preprocessor">#define DAC_CR_WAVE2_TRIANGLE       (0x02U &lt;&lt; DAC_CR_WAVE2_Pos)             </span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a7cccefc999aeab6622afaf662c7c8c50">  136</a></span><span class="preprocessor">#define DAC_CR_MAMP2_Pos            (24)</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a7cf03fe2359cb0f11c33f793c2e92bdd">  137</a></span><span class="preprocessor">#define DAC_CR_MAMP2                (0x0FU &lt;&lt; DAC_CR_MAMP2_Pos)             </span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a860032e8196838cd36a655c1749139d6">  138</a></span><span class="preprocessor">#define DAC_CR_MAMP2_1              (0x00U &lt;&lt; DAC_CR_MAMP2_Pos)             </span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#aa0fe77a2029873111cbe723a5cba9c57">  139</a></span><span class="preprocessor">#define DAC_CR_MAMP2_3              (0x01U &lt;&lt; DAC_CR_MAMP2_Pos)             </span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#ae506d8258724df4599dadc1943db136f">  140</a></span><span class="preprocessor">#define DAC_CR_MAMP2_7              (0x02U &lt;&lt; DAC_CR_MAMP2_Pos)             </span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a5d418bc60fa4fc6376e981bb25e19053">  141</a></span><span class="preprocessor">#define DAC_CR_MAMP2_15             (0x03U &lt;&lt; DAC_CR_MAMP2_Pos)             </span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#ab4478cca0c71f0617eaa171d9f29f613">  142</a></span><span class="preprocessor">#define DAC_CR_MAMP2_31             (0x04U &lt;&lt; DAC_CR_MAMP2_Pos)             </span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#ada0cdfe2c2eb590c4a59aaa8b43aae7e">  143</a></span><span class="preprocessor">#define DAC_CR_MAMP2_63             (0x05U &lt;&lt; DAC_CR_MAMP2_Pos)             </span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a2c681aa98eacb0d6004f39245c659051">  144</a></span><span class="preprocessor">#define DAC_CR_MAMP2_127            (0x06U &lt;&lt; DAC_CR_MAMP2_Pos)             </span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a1875f9c5918c6384d4342bfb8db47148">  145</a></span><span class="preprocessor">#define DAC_CR_MAMP2_255            (0x07U &lt;&lt; DAC_CR_MAMP2_Pos)             </span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a8e7a8446e12e6f3a99270b8d6001a355">  146</a></span><span class="preprocessor">#define DAC_CR_MAMP2_511            (0x08U &lt;&lt; DAC_CR_MAMP2_Pos)             </span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a3d14db05c0b84a38a08ca5975c770631">  147</a></span><span class="preprocessor">#define DAC_CR_MAMP2_1023           (0x09U &lt;&lt; DAC_CR_MAMP2_Pos)             </span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a2de33684b4b5fccfa88b3d9b6a7c3d35">  148</a></span><span class="preprocessor">#define DAC_CR_MAMP2_2047           (0x0AU &lt;&lt; DAC_CR_MAMP2_Pos)             </span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#ab6aaffaef57d56c451d08a76594bc8ac">  149</a></span><span class="preprocessor">#define DAC_CR_MAMP2_4095           (0x0BU &lt;&lt; DAC_CR_MAMP2_Pos)             </span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a264e3d328584463c5164a7cca726cabb">  150</a></span><span class="preprocessor">#define DAC_CR_DMAEN2_Pos           (28)</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a6f905c2ac89f976df6c4beffdde58b53">  151</a></span><span class="preprocessor">#define DAC_CR_DMAEN2               (0x01U &lt;&lt; DAC_CR_DMAEN2_Pos)            </span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a32d8b5dafe7a5f4963e5f12656e48ee1">  156</a></span><span class="preprocessor">#define DAC_SWTRIGR_SWTRIG1_Pos     (0)</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a970ef02dffaceb35ff1dd7aceb67acdd">  157</a></span><span class="preprocessor">#define DAC_SWTRIGR_SWTRIG1         (0x01U &lt;&lt; DAC_SWTRIGR_SWTRIG1_Pos)      </span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#adb85dac71ddd76ce877fad49a47634b5">  158</a></span><span class="preprocessor">#define DAC_SWTRIGR_SWTRIG2_Pos     (1)</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#af0e53585b505d21f5c457476bd5a18f8">  159</a></span><span class="preprocessor">#define DAC_SWTRIGR_SWTRIG2         (0x01U &lt;&lt; DAC_SWTRIGR_SWTRIG2_Pos)      </span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a1444c7ceda390c29b964ed3d884c0817">  160</a></span><span class="preprocessor">#define DAC_SWTRIGR_DACPRE_Pos      (8)</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#ac5538a4cedf0045e00b22f4fe2344321">  161</a></span><span class="preprocessor">#define DAC_SWTRIGR_DACPRE          (0x7FU &lt;&lt; DAC_SWTRIGR_DACPRE_Pos)       </span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#ab3250ec13530e0e363f0ab92c149774f">  166</a></span><span class="preprocessor">#define DAC_DHR12R1_DACC1DHR_Pos    (0)</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a5295b5cb7f5d71ed2e8a310deb00013d">  167</a></span><span class="preprocessor">#define DAC_DHR12R1_DACC1DHR        (0xFFFU &lt;&lt; DAC_DHR12R1_DACC1DHR_Pos)    </span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#ac1dcdc73fc338b3548cddcf84fb0c951">  172</a></span><span class="preprocessor">#define DAC_DHR12L1_DACC1DHR_Pos    (4)</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a0d34667f8f4b753689c8c936c28471c5">  173</a></span><span class="preprocessor">#define DAC_DHR12L1_DACC1DHR        (0xFFFU &lt;&lt; DAC_DHR12L1_DACC1DHR_Pos)    </span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a6b874c02d121c755a1d4523f2e39134e">  178</a></span><span class="preprocessor">#define DAC_DHR8R1_DACC1DHR_Pos     (0)</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#ae1fc9f022fe4a08f67c51646177b26cb">  179</a></span><span class="preprocessor">#define DAC_DHR8R1_DACC1DHR         (0xFFU &lt;&lt; DAC_DHR8R1_DACC1DHR_Pos)      </span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#add13752ec5bc912023c608426e47908e">  184</a></span><span class="preprocessor">#define DAC_DHR12R2_DACC2DHR_Pos    (0)</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a7506e369b37d55826042b540b10e44c7">  185</a></span><span class="preprocessor">#define DAC_DHR12R2_DACC2DHR        (0xFFFU &lt;&lt; DAC_DHR12R2_DACC2DHR_Pos)    </span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a8fe559f6278c4abd3b5db6277e82925b">  190</a></span><span class="preprocessor">#define DAC_DHR12L2_DACC2DHR_Pos    (4)</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a0f66bd794202221e1a55547673b7abab">  191</a></span><span class="preprocessor">#define DAC_DHR12L2_DACC2DHR        (0xFFFU &lt;&lt; DAC_DHR12L2_DACC2DHR_Pos)    </span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a4a8082de99f7eef453237a409763718b">  196</a></span><span class="preprocessor">#define DAC_DHR8R2_DACC2DHR_Pos     (0)</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a7da94dc053e6637efb9ccb57b7ae481c">  197</a></span><span class="preprocessor">#define DAC_DHR8R2_DACC2DHR         (0xFFU &lt;&lt; DAC_DHR8R2_DACC2DHR_Pos)      </span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a6d1a7b56cdc34694e1aa032be202e79d">  202</a></span><span class="preprocessor">#define DAC_DHR12RD_DACC1DHR_Pos    (0)</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#aca45719f3d365c9495bdcf6364ae59f8">  203</a></span><span class="preprocessor">#define DAC_DHR12RD_DACC1DHR        (0xFFFU &lt;&lt; DAC_DHR12RD_DACC1DHR_Pos)    </span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#ae522220c8b02ab4bcf82f122a45997d3">  204</a></span><span class="preprocessor">#define DAC_DHR12RD_DACC2DHR_Pos    (16)</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a3edd68db1697af93027e05f6b764c540">  205</a></span><span class="preprocessor">#define DAC_DHR12RD_DACC2DHR        (0xFFFU &lt;&lt; DAC_DHR12RD_DACC2DHR_Pos)    </span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#aa367fe7ed3f9b2d5114dcc46ccab7468">  210</a></span><span class="preprocessor">#define DAC_DHR12LD_DACC1DHR_Pos    (4)</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a203db656bfef6fedee17b99fb77b1bdd">  211</a></span><span class="preprocessor">#define DAC_DHR12LD_DACC1DHR        (0xFFFU &lt;&lt; DAC_DHR12LD_DACC1DHR_Pos)    </span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#ade1db665f01f9d179045057d0e857da0">  212</a></span><span class="preprocessor">#define DAC_DHR12LD_DACC2DHR_Pos    (20)</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a8421d613b182aab8d6c58592bcda6c17">  213</a></span><span class="preprocessor">#define DAC_DHR12LD_DACC2DHR        (0xFFFU &lt;&lt; DAC_DHR12LD_DACC2DHR_Pos)    </span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#ac004fb7fdc93225fb835b27e39229a57">  218</a></span><span class="preprocessor">#define DAC_DHR8RD_DACC1DHR_Pos     (0)</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a9aee01ad181fa5b541864ed62907d70d">  219</a></span><span class="preprocessor">#define DAC_DHR8RD_DACC1DHR         (0xFFU &lt;&lt; DAC_DHR8RD_DACC1DHR_Pos)      </span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#abf849d0278349997f891d987def91224">  220</a></span><span class="preprocessor">#define DAC_DHR8RD_DACC2DHR_Pos     (8)</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#ae31631eaac76ebecb059918c351ef3c9">  221</a></span><span class="preprocessor">#define DAC_DHR8RD_DACC2DHR         (0xFFU &lt;&lt; DAC_DHR8RD_DACC2DHR_Pos)      </span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#aacef98a0af264fa6b23a187e74d7c82d">  226</a></span><span class="preprocessor">#define DAC_DOR1_DACC1DOR_Pos       (0)</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a5b4192938e039dc25a7df8fcc5f3932a">  227</a></span><span class="preprocessor">#define DAC_DOR1_DACC1DOR           (0xFFFU &lt;&lt; DAC_DOR1_DACC1DOR_Pos)       </span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#a17aa70d42a524b2dd911326fa65630f1">  232</a></span><span class="preprocessor">#define DAC_DOR2_DACC2DOR_Pos       (0)</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno"><a class="line" href="reg__dac_8h.html#acaaa39c1e82279918918b072fd56db04">  233</a></span><span class="preprocessor">#define DAC_DOR2_DACC2DOR           (0xFFFU &lt;&lt; DAC_DOR2_DACC2DOR_Pos)       </span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="acore__armv8mbl_8h_html_aec43007d9998a0a0e01faede4133d6be"><div class="ttname"><a href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a></div><div class="ttdeci">#define __IO</div><div class="ttdef"><b>Definition:</b> <a href="core__armv8mbl_8h_source.html#l00194">core_armv8mbl.h:194</a></div></div>
+<div class="ttc" id="astruct_d_a_c___type_def_html"><div class="ttname"><a href="struct_d_a_c___type_def.html">DAC_TypeDef</a></div><div class="ttdoc">Digital to analog converter register</div><div class="ttdef"><b>Definition:</b> <a href="reg__dac_8h_source.html#l00054">reg_dac.h:54</a></div></div>
+<div class="ttc" id="astruct_d_a_c___type_def_html_a057047f2476020075fbc2e15df3a9783"><div class="ttname"><a href="struct_d_a_c___type_def.html#a057047f2476020075fbc2e15df3a9783">DAC_TypeDef::DHR12L1</a></div><div class="ttdeci">__IO u32 DHR12L1</div><div class="ttdoc">Channel 1 12-bit left align data register, offset: 0x0C</div><div class="ttdef"><b>Definition:</b> <a href="reg__dac_8h_source.html#l00058">reg_dac.h:58</a></div></div>
+<div class="ttc" id="astruct_d_a_c___type_def_html_a2ae43a8c455ebbdfecbcc2fcf57c3cf5"><div class="ttname"><a href="struct_d_a_c___type_def.html#a2ae43a8c455ebbdfecbcc2fcf57c3cf5">DAC_TypeDef::DHR8R2</a></div><div class="ttdeci">__IO u32 DHR8R2</div><div class="ttdoc">Channel 2 8-bit right align data register, offset: 0x1C</div><div class="ttdef"><b>Definition:</b> <a href="reg__dac_8h_source.html#l00062">reg_dac.h:62</a></div></div>
+<div class="ttc" id="astruct_d_a_c___type_def_html_a43466a2e43f978de412b197ed5029098"><div class="ttname"><a href="struct_d_a_c___type_def.html#a43466a2e43f978de412b197ed5029098">DAC_TypeDef::DOR1</a></div><div class="ttdeci">__IO u32 DOR1</div><div class="ttdoc">Channel 1 output register, offset: 0x2C</div><div class="ttdef"><b>Definition:</b> <a href="reg__dac_8h_source.html#l00066">reg_dac.h:66</a></div></div>
+<div class="ttc" id="astruct_d_a_c___type_def_html_a58bb296fb0ad683c229ad5f523518160"><div class="ttname"><a href="struct_d_a_c___type_def.html#a58bb296fb0ad683c229ad5f523518160">DAC_TypeDef::DHR12R1</a></div><div class="ttdeci">__IO u32 DHR12R1</div><div class="ttdoc">Channel 1 12-bit right align data register, offset: 0x08</div><div class="ttdef"><b>Definition:</b> <a href="reg__dac_8h_source.html#l00057">reg_dac.h:57</a></div></div>
+<div class="ttc" id="astruct_d_a_c___type_def_html_a6eccd447f58c493f911c5aca6b4cbc51"><div class="ttname"><a href="struct_d_a_c___type_def.html#a6eccd447f58c493f911c5aca6b4cbc51">DAC_TypeDef::SWTRIGR</a></div><div class="ttdeci">__IO u32 SWTRIGR</div><div class="ttdoc">DAC software trigger register, offset: 0x04</div><div class="ttdef"><b>Definition:</b> <a href="reg__dac_8h_source.html#l00056">reg_dac.h:56</a></div></div>
+<div class="ttc" id="astruct_d_a_c___type_def_html_a76683744875b11e7644f72e7ca29476a"><div class="ttname"><a href="struct_d_a_c___type_def.html#a76683744875b11e7644f72e7ca29476a">DAC_TypeDef::DHR8R1</a></div><div class="ttdeci">__IO u32 DHR8R1</div><div class="ttdoc">Channel 1 8-bit right align data register, offset: 0x10</div><div class="ttdef"><b>Definition:</b> <a href="reg__dac_8h_source.html#l00059">reg_dac.h:59</a></div></div>
+<div class="ttc" id="astruct_d_a_c___type_def_html_a7e13dc7f1ca687d727cd987a135cbeb6"><div class="ttname"><a href="struct_d_a_c___type_def.html#a7e13dc7f1ca687d727cd987a135cbeb6">DAC_TypeDef::DHR12RD</a></div><div class="ttdeci">__IO u32 DHR12RD</div><div class="ttdoc">Dual channel 12-bit right align data register,offset: 0x20</div><div class="ttdef"><b>Definition:</b> <a href="reg__dac_8h_source.html#l00063">reg_dac.h:63</a></div></div>
+<div class="ttc" id="astruct_d_a_c___type_def_html_aac010860679bd3c5665fa5489e657ece"><div class="ttname"><a href="struct_d_a_c___type_def.html#aac010860679bd3c5665fa5489e657ece">DAC_TypeDef::CR</a></div><div class="ttdeci">__IO u32 CR</div><div class="ttdoc">DAC control register, offset: 0x00</div><div class="ttdef"><b>Definition:</b> <a href="reg__dac_8h_source.html#l00055">reg_dac.h:55</a></div></div>
+<div class="ttc" id="astruct_d_a_c___type_def_html_acfef5e58237f1aa916c2f913622337df"><div class="ttname"><a href="struct_d_a_c___type_def.html#acfef5e58237f1aa916c2f913622337df">DAC_TypeDef::DHR12LD</a></div><div class="ttdeci">__IO u32 DHR12LD</div><div class="ttdoc">Dual channel 12-bit left align data register, offset: 0x24</div><div class="ttdef"><b>Definition:</b> <a href="reg__dac_8h_source.html#l00064">reg_dac.h:64</a></div></div>
+<div class="ttc" id="astruct_d_a_c___type_def_html_ad93e2c6d3e7a0b34faca2ee5e4927432"><div class="ttname"><a href="struct_d_a_c___type_def.html#ad93e2c6d3e7a0b34faca2ee5e4927432">DAC_TypeDef::DHR8RD</a></div><div class="ttdeci">__IO u32 DHR8RD</div><div class="ttdoc">Dual channel 8-bit right align data register, offset: 0x28</div><div class="ttdef"><b>Definition:</b> <a href="reg__dac_8h_source.html#l00065">reg_dac.h:65</a></div></div>
+<div class="ttc" id="astruct_d_a_c___type_def_html_adccdd1fbc45178e509a604c1b4cf127d"><div class="ttname"><a href="struct_d_a_c___type_def.html#adccdd1fbc45178e509a604c1b4cf127d">DAC_TypeDef::DHR12L2</a></div><div class="ttdeci">__IO u32 DHR12L2</div><div class="ttdoc">Channel 2 12-bit left align data register, offset: 0x18</div><div class="ttdef"><b>Definition:</b> <a href="reg__dac_8h_source.html#l00061">reg_dac.h:61</a></div></div>
+<div class="ttc" id="astruct_d_a_c___type_def_html_ae940ddd59d2199713f18730e4c12e83d"><div class="ttname"><a href="struct_d_a_c___type_def.html#ae940ddd59d2199713f18730e4c12e83d">DAC_TypeDef::DHR12R2</a></div><div class="ttdeci">__IO u32 DHR12R2</div><div class="ttdoc">Channel 2 12-bit right align data register, offset: 0x14</div><div class="ttdef"><b>Definition:</b> <a href="reg__dac_8h_source.html#l00060">reg_dac.h:60</a></div></div>
+<div class="ttc" id="astruct_d_a_c___type_def_html_af93b78bcb32586e36551add3cc652515"><div class="ttname"><a href="struct_d_a_c___type_def.html#af93b78bcb32586e36551add3cc652515">DAC_TypeDef::DOR2</a></div><div class="ttdeci">__IO u32 DOR2</div><div class="ttdoc">Channel 2 output register, offset: 0x30</div><div class="ttdef"><b>Definition:</b> <a href="reg__dac_8h_source.html#l00067">reg_dac.h:67</a></div></div>
+<div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">THIS FILE PROVIDES ALL THE TYPE FIRMWARE FUNCTIONS.</div></div>
+<div class="ttc" id="atypes_8h_html_a10e94b422ef0c20dcdec20d31a1f5049"><div class="ttname"><a href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a></div><div class="ttdeci">unsigned int u32</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00054">types.h:54</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

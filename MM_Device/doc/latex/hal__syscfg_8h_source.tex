@@ -1,0 +1,52 @@
+\hypertarget{hal__syscfg_8h_source}{}\doxysection{hal\+\_\+syscfg.\+h}
+\label{hal__syscfg_8h_source}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_syscfg.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_syscfg.h}}
+\mbox{\hyperlink{hal__syscfg_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00019}00019 \textcolor{comment}{// Define to prevent recursive inclusion}}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00020}00020 \textcolor{preprocessor}{\#ifndef \_\_HAL\_SYSCFG\_H}}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00021}00021 \textcolor{preprocessor}{\#define \_\_HAL\_SYSCFG\_H}}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00023}00023 \textcolor{comment}{// Files includes}}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00024}00024 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{types_8h}{types.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00025}00025 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{mm32__device_8h}{mm32\_device.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00026}00026 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{hal__exti_8h}{hal\_EXTI.H}}"{}}}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00044}00044 \textcolor{comment}{// @defgroup SYSCFG\_Memory\_Remap\_Config}}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00045}\mbox{\hyperlink{group___s_y_s_c_f_g___exported___types_gaca6b4b48448ddf67fdaa37412a0202ff}{00045}} \textcolor{preprocessor}{\#define SYSCFG\_MemoryRemap\_Flash                ((u8)0x00)}}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00046}\mbox{\hyperlink{group___s_y_s_c_f_g___exported___types_ga0ffce44d4469c3f7693285dc972252fd}{00046}} \textcolor{preprocessor}{\#define SYSCFG\_MemoryRemap\_SystemMemory         ((u8)0x01)}}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00047}\mbox{\hyperlink{group___s_y_s_c_f_g___exported___types_ga3dc9c7f02f9457d344ffe377df125ee2}{00047}} \textcolor{preprocessor}{\#define SYSCFG\_MemoryRemap\_SRAM                 ((u8)0x03)}}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00059}00059 \textcolor{comment}{// Exported macro -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00060}00060 \textcolor{comment}{// Exported functions -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00062}00062 \textcolor{comment}{//  Function used to set the SYSCFG configuration to the default reset state}}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00063}\mbox{\hyperlink{group___s_y_s_c_f_g___h_a_l_gaeeb5ae028da21cccc0114c55174436f8}{00063}} \textcolor{preprocessor}{\#define SYSCFG\_DeInit                   EXTI\_DeInit}}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00064}\mbox{\hyperlink{group___s_y_s_c_f_g___h_a_l_gaba0190592fa0175d2d9f8d758cf429a1}{00064}} \textcolor{preprocessor}{\#define SYSCFG\_MemoryRemapConfig        EXTI\_MemoryRemapConfig}}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00065}\mbox{\hyperlink{group___s_y_s_c_f_g___h_a_l_ga4c849057cff839920fe4b874b3900351}{00065}} \textcolor{preprocessor}{\#define SYSCFG\_EXTILineConfig           EXTI\_LineConfig}}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00066}\mbox{\hyperlink{group___s_y_s_c_f_g___h_a_l_gabb742f060711b204a7617750d3debf2e}{00066}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___s_y_s_c_f_g___h_a_l_gabb742f060711b204a7617750d3debf2e}{SYSCFG\_GetPendingIT}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ITSourceLine);}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00067}\mbox{\hyperlink{group___s_y_s_c_f_g___h_a_l_ga595e4a7dd94be9517777610e60cdb07b}{00067}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___s_y_s_c_f_g___h_a_l_ga595e4a7dd94be9517777610e60cdb07b}{SYSCFG\_BreakConfig}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SYSCFG\_Break);}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00068}\mbox{\hyperlink{group___s_y_s_c_f_g___h_a_l_ga545d9cfd3e1fae1e912873e4e20c2c2a}{00068}} \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}} \mbox{\hyperlink{group___s_y_s_c_f_g___h_a_l_ga545d9cfd3e1fae1e912873e4e20c2c2a}{SYSCFG\_GetFlagStatus}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SYSCFG\_Flag);}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00069}\mbox{\hyperlink{group___s_y_s_c_f_g___h_a_l_gad31afb404c868e9859d7a69cb5f08bd6}{00069}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___s_y_s_c_f_g___h_a_l_gad31afb404c868e9859d7a69cb5f08bd6}{SYSCFG\_ClearFlag}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SYSCFG\_Flag);}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00079}00079 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\_\_HAL\_SYSCFG\_H }}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00081}00081 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{hal__syscfg_8h_source_l00083}00083 }
+
+\end{DoxyCode}

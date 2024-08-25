@@ -1,0 +1,700 @@
+\hypertarget{group___s_d_i_o___exported___functions}{}\doxysection{SDIO\+\_\+\+Exported\+\_\+\+Functions}
+\label{group___s_d_i_o___exported___functions}\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+
+
+Deinitializes the SDIO peripheral registers to their default reset values.  
+
+
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_gac359d2c6c67a2590f8f9b720c0e4ff1b}{SDIO\+\_\+\+De\+Init}} (void)
+\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga778d338c29df4fae9ef69432e6df32ad}{SDIO\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{struct_s_d_i_o___init_type_def}{SDIO\+\_\+\+Init\+Type\+Def}} $\ast$SDIO\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each SDIO\+\_\+\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_gaa83209c09e921521aca2587fb5b22ea2}{SDIO\+\_\+\+Data\+Struct\+Init}} (\mbox{\hyperlink{struct_s_d_i_o___data_init_type_def}{SDIO\+\_\+\+Data\+Init\+Type\+Def}} $\ast$SDIO\+\_\+\+Data\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each SDIO\+\_\+\+Data\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga6824fe7b29eebad5e26e1e81b39f884d}{SDIO\+\_\+\+Clock\+Set}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} value)
+\begin{DoxyCompactList}\small\item\em Initializes the SDIO data path according to the specified parameters in the SDIO\+\_\+\+Data\+Init\+Struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_gad40764a8e37c0ed5c9141ae338ff0203}{SDIO\+\_\+\+Init}} (\mbox{\hyperlink{struct_s_d_i_o___init_type_def}{SDIO\+\_\+\+Init\+Type\+Def}} $\ast$SDIO\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the SDIO peripheral according to the specified parameters in the SDIO\+\_\+\+Init\+Struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_gaf40594ca2987d8b4fc4dbb9d59ccf3e0}{SDIO\+\_\+\+ITConfig}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+IT, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the SDIO interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga38f1b73fa641efeeb6a96472d989c767}{SDIO\+\_\+\+CRCConfig}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+CRC, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the SDIO CRC. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_gaa843456dbaf1590d8a5b3dc5a075dcf9}{SDIO\+\_\+\+Clock\+\_\+\+Set}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} clkdiv)
+\begin{DoxyCompactList}\small\item\em Port transfer speed mode. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga9f053c27018521095d7333e7df238764}{SD\+\_\+\+Power\+OFF}} (void)
+\begin{DoxyCompactList}\small\item\em Turn off the SDIO switch. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga09d9e89f49c87c82aec79c97b7068e24}{SDIO\+\_\+\+Cmd\+Struct\+Init}} (\mbox{\hyperlink{struct_s_d_i_o___cmd_init_type_def}{SDIO\+\_\+\+Cmd\+Init\+Type\+Def}} $\ast$SDIO\+\_\+\+Cmd\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each SDIO\+\_\+\+Cmd\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga6ac7722df2ba23f1a716db8a4b38a49a}{SDIO\+\_\+\+Send\+\_\+\+Cmd}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} cmdindex, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} waitrsp, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} arg)
+\begin{DoxyCompactList}\small\item\em SDIO sends command functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga77ff57848ed54cc9dbfcb2cdfd4d3104}{Cmd\+Error}} (void)
+\begin{DoxyCompactList}\small\item\em Check the execution status of CMD0. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga384372e7cd037af3dbc92da854508c70}{Cmd\+Resp1\+Error}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} cmd)
+\begin{DoxyCompactList}\small\item\em Check the error status of the R1 response. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___s_d_i_o___exported___functions_gae875982cdc6a453c2793073e8004585e}{Cmd\+Resp2\+Error}} (void)
+\begin{DoxyCompactList}\small\item\em Check the execution status of CMD2. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga2c77db272852343b90b0b06573a60e88}{Cmd\+Resp3\+Error}} (void)
+\begin{DoxyCompactList}\small\item\em Check the execution status of CMD3. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___s_d_i_o___exported___functions_gacfe36517f07f12f6b5512ca99cf5e6a1}{Cmd\+Resp6\+Error}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} cmd, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} $\ast$prca)
+\begin{DoxyCompactList}\small\item\em Check the execution status of CMD6. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga6f8858b757aa1b13e112175cddaf62b9}{Cmd\+Resp7\+Error}} (void)
+\begin{DoxyCompactList}\small\item\em Check the execution status of CMD7. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga8ed0e660e0b895d3f9cb9a560ad50291}{SDIO\+\_\+\+Send\+\_\+\+Data\+\_\+\+Cfg}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} datatimeout, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} datalen, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} blksize, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} dir)
+\begin{DoxyCompactList}\small\item\em Write data direction block size configuration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga3c1401afcecef6ccea6fec1b291c8e67}{SDIO\+\_\+\+Clear\+Flag}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+FLAG)
+\begin{DoxyCompactList}\small\item\em Clears the SDIO\textquotesingle{}s Flag pending bits. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga160c7fe3b6f5c5812caa893a47f3e89a}{SDIO\+\_\+\+Clear\+ITPending\+Bit}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Clears the SDIO\textquotesingle{}s interrupt pending bits. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga2c48bd26d3f6a531cb667bfaf6525520}{SDIO\+\_\+\+Get\+Flag\+Status}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+FLAG)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified SDIO flag is set or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga186e0c0406b9f6e56e33421f287a613b}{SDIO\+\_\+\+Get\+Time\+Out\+Counter}} (void)
+\begin{DoxyCompactList}\small\item\em Reads the value of the data transfer timeout count \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga2e0007f7bb12c1b43f7495c6a4a20b50}{SDIO\+\_\+\+Read\+Data}} (void)
+\begin{DoxyCompactList}\small\item\em Read one data word from FIFO. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_gac5a58e2b720a0492c693b60024ee41b0}{SDIO\+\_\+\+Write\+Data}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} tempbuff)
+\begin{DoxyCompactList}\small\item\em Write one data word to FIFO. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga66814bad725d7dbd8dd0ad3b92235328}{SDIO\+\_\+\+Get\+Data\+Counter}} (void)
+\begin{DoxyCompactList}\small\item\em Returns number of remaining data bytes to be transferred. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_d_i_o___exported___functions_ga5c83f845a6c1f66883c3bb6254977cda}{SDIO\+\_\+\+DMACmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enable or Dsiable DMA . \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Deinitializes the SDIO peripheral registers to their default reset values. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+\doxysubsection{函数说明}
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga77ff57848ed54cc9dbfcb2cdfd4d3104}\label{group___s_d_i_o___exported___functions_ga77ff57848ed54cc9dbfcb2cdfd4d3104}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!CmdError@{CmdError}}
+\index{CmdError@{CmdError}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CmdError()}{CmdError()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} Cmd\+Error (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Check the execution status of CMD0. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em card} & error code. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00242}{242}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga384372e7cd037af3dbc92da854508c70}\label{group___s_d_i_o___exported___functions_ga384372e7cd037af3dbc92da854508c70}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!CmdResp1Error@{CmdResp1Error}}
+\index{CmdResp1Error@{CmdResp1Error}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CmdResp1Error()}{CmdResp1Error()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} Cmd\+Resp1\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{cmd }\end{DoxyParamCaption})}
+
+
+
+Check the error status of the R1 response. 
+
+
+\begin{DoxyParams}{参数}
+{\em cmd} & \+: Current command. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em card} & error code. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00260}{260}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_gae875982cdc6a453c2793073e8004585e}\label{group___s_d_i_o___exported___functions_gae875982cdc6a453c2793073e8004585e}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!CmdResp2Error@{CmdResp2Error}}
+\index{CmdResp2Error@{CmdResp2Error}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CmdResp2Error()}{CmdResp2Error()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} Cmd\+Resp2\+Error (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Check the execution status of CMD2. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em card} & error code. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00290}{290}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga2c77db272852343b90b0b06573a60e88}\label{group___s_d_i_o___exported___functions_ga2c77db272852343b90b0b06573a60e88}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!CmdResp3Error@{CmdResp3Error}}
+\index{CmdResp3Error@{CmdResp3Error}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CmdResp3Error()}{CmdResp3Error()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} Cmd\+Resp3\+Error (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Check the execution status of CMD3. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em card} & error code. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00317}{317}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_gacfe36517f07f12f6b5512ca99cf5e6a1}\label{group___s_d_i_o___exported___functions_gacfe36517f07f12f6b5512ca99cf5e6a1}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!CmdResp6Error@{CmdResp6Error}}
+\index{CmdResp6Error@{CmdResp6Error}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CmdResp6Error()}{CmdResp6Error()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} Cmd\+Resp6\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{cmd,  }\item[{\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} $\ast$}]{prca }\end{DoxyParamCaption})}
+
+
+
+Check the execution status of CMD6. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em card} & error code. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00337}{337}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga6f8858b757aa1b13e112175cddaf62b9}\label{group___s_d_i_o___exported___functions_ga6f8858b757aa1b13e112175cddaf62b9}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!CmdResp7Error@{CmdResp7Error}}
+\index{CmdResp7Error@{CmdResp7Error}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CmdResp7Error()}{CmdResp7Error()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} Cmd\+Resp7\+Error (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Check the execution status of CMD7. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em card} & error code. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00380}{380}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga9f053c27018521095d7333e7df238764}\label{group___s_d_i_o___exported___functions_ga9f053c27018521095d7333e7df238764}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!SD\_PowerOFF@{SD\_PowerOFF}}
+\index{SD\_PowerOFF@{SD\_PowerOFF}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SD\_PowerOFF()}{SD\_PowerOFF()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} SD\+\_\+\+Power\+OFF (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Turn off the SDIO switch. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00180}{180}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga3c1401afcecef6ccea6fec1b291c8e67}\label{group___s_d_i_o___exported___functions_ga3c1401afcecef6ccea6fec1b291c8e67}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!SDIO\_ClearFlag@{SDIO\_ClearFlag}}
+\index{SDIO\_ClearFlag@{SDIO\_ClearFlag}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_ClearFlag()}{SDIO\_ClearFlag()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+Clear\+Flag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{SDIO\+\_\+\+FLAG }\end{DoxyParamCaption})}
+
+
+
+Clears the SDIO\textquotesingle{}s Flag pending bits. 
+
+
+\begin{DoxyParams}{参数}
+{\em SDIO\+\_\+\+IT} & specifies the flag pending bit to clear. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00453}{453}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga160c7fe3b6f5c5812caa893a47f3e89a}\label{group___s_d_i_o___exported___functions_ga160c7fe3b6f5c5812caa893a47f3e89a}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!SDIO\_ClearITPendingBit@{SDIO\_ClearITPendingBit}}
+\index{SDIO\_ClearITPendingBit@{SDIO\_ClearITPendingBit}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_ClearITPendingBit()}{SDIO\_ClearITPendingBit()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+Clear\+ITPending\+Bit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{SDIO\+\_\+\+IT }\end{DoxyParamCaption})}
+
+
+
+Clears the SDIO\textquotesingle{}s interrupt pending bits. 
+
+
+\begin{DoxyParams}{参数}
+{\em SDIO\+\_\+\+IT} & specifies the interrupt pending bit to clear. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00462}{462}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_gaa843456dbaf1590d8a5b3dc5a075dcf9}\label{group___s_d_i_o___exported___functions_gaa843456dbaf1590d8a5b3dc5a075dcf9}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!SDIO\_Clock\_Set@{SDIO\_Clock\_Set}}
+\index{SDIO\_Clock\_Set@{SDIO\_Clock\_Set}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_Clock\_Set()}{SDIO\_Clock\_Set()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+Clock\+\_\+\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{clkdiv }\end{DoxyParamCaption})}
+
+
+
+Port transfer speed mode. 
+
+
+\begin{DoxyParams}{参数}
+{\em clkdiv} & \+: High/low speed. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00170}{170}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga6824fe7b29eebad5e26e1e81b39f884d}\label{group___s_d_i_o___exported___functions_ga6824fe7b29eebad5e26e1e81b39f884d}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!SDIO\_ClockSet@{SDIO\_ClockSet}}
+\index{SDIO\_ClockSet@{SDIO\_ClockSet}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_ClockSet()}{SDIO\_ClockSet()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+Clock\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{value }\end{DoxyParamCaption})}
+
+
+
+Initializes the SDIO data path according to the specified parameters in the SDIO\+\_\+\+Data\+Init\+Struct. 
+
+
+\begin{DoxyParams}{参数}
+{\em SDIO\+\_\+\+Data\+Init\+Struct} & \+: pointer to a \mbox{\hyperlink{struct_s_d_i_o___data_init_type_def}{SDIO\+\_\+\+Data\+Init\+Type\+Def}} structure that contains the configuration information for the SDIO command. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+The frequency division factor is configured to generate the SDIO clock. 
+\begin{DoxyParams}{参数}
+{\em value} & \+: 1MHz = Fhclk/((mmc\+\_\+cardsel\mbox{[}5 \+: 0\mbox{]} + 1) × 2) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00123}{123}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga09d9e89f49c87c82aec79c97b7068e24}\label{group___s_d_i_o___exported___functions_ga09d9e89f49c87c82aec79c97b7068e24}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!SDIO\_CmdStructInit@{SDIO\_CmdStructInit}}
+\index{SDIO\_CmdStructInit@{SDIO\_CmdStructInit}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CmdStructInit()}{SDIO\_CmdStructInit()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+Cmd\+Struct\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_d_i_o___cmd_init_type_def}{SDIO\+\_\+\+Cmd\+Init\+Type\+Def}} $\ast$}]{SDIO\+\_\+\+Cmd\+Init\+Struct }\end{DoxyParamCaption})}
+
+
+
+Fills each SDIO\+\_\+\+Cmd\+Init\+Struct member with its default value. 
+
+
+\begin{DoxyParams}{参数}
+{\em SDIO\+\_\+\+Cmd\+Init\+Struct} & pointer to an \mbox{\hyperlink{struct_s_d_i_o___cmd_init_type_def}{SDIO\+\_\+\+Cmd\+Init\+Type\+Def}} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00191}{191}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga38f1b73fa641efeeb6a96472d989c767}\label{group___s_d_i_o___exported___functions_ga38f1b73fa641efeeb6a96472d989c767}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!SDIO\_CRCConfig@{SDIO\_CRCConfig}}
+\index{SDIO\_CRCConfig@{SDIO\_CRCConfig}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CRCConfig()}{SDIO\_CRCConfig()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+CRCConfig (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{SDIO\+\_\+\+CRC,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the SDIO CRC. 
+
+
+\begin{DoxyParams}{参数}
+{\em SDIO\+\_\+\+CRC} & specifies the SDIO CRC sources to be enabled or disabled. state \+: new state of the specified SDIO CRC. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00160}{160}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_gaa83209c09e921521aca2587fb5b22ea2}\label{group___s_d_i_o___exported___functions_gaa83209c09e921521aca2587fb5b22ea2}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!SDIO\_DataStructInit@{SDIO\_DataStructInit}}
+\index{SDIO\_DataStructInit@{SDIO\_DataStructInit}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DataStructInit()}{SDIO\_DataStructInit()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+Data\+Struct\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_d_i_o___data_init_type_def}{SDIO\+\_\+\+Data\+Init\+Type\+Def}} $\ast$}]{SDIO\+\_\+\+Data\+Init\+Struct }\end{DoxyParamCaption})}
+
+
+
+Fills each SDIO\+\_\+\+Data\+Init\+Struct member with its default value. 
+
+
+\begin{DoxyParams}{参数}
+{\em SDIO\+\_\+\+Data\+Init\+Struct} & pointer to an \mbox{\hyperlink{struct_s_d_i_o___data_init_type_def}{SDIO\+\_\+\+Data\+Init\+Type\+Def}} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00073}{73}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_gac359d2c6c67a2590f8f9b720c0e4ff1b}\label{group___s_d_i_o___exported___functions_gac359d2c6c67a2590f8f9b720c0e4ff1b}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!SDIO\_DeInit@{SDIO\_DeInit}}
+\index{SDIO\_DeInit@{SDIO\_DeInit}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DeInit()}{SDIO\_DeInit()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+De\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00043}{43}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga5c83f845a6c1f66883c3bb6254977cda}\label{group___s_d_i_o___exported___functions_ga5c83f845a6c1f66883c3bb6254977cda}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!SDIO\_DMACmd@{SDIO\_DMACmd}}
+\index{SDIO\_DMACmd@{SDIO\_DMACmd}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DMACmd()}{SDIO\_DMACmd()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+DMACmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enable or Dsiable DMA . 
+
+
+\begin{DoxyParams}{参数}
+{\em tempbuff} & \+: Write data. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00516}{516}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga66814bad725d7dbd8dd0ad3b92235328}\label{group___s_d_i_o___exported___functions_ga66814bad725d7dbd8dd0ad3b92235328}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!SDIO\_GetDataCounter@{SDIO\_GetDataCounter}}
+\index{SDIO\_GetDataCounter@{SDIO\_GetDataCounter}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_GetDataCounter()}{SDIO\_GetDataCounter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Get\+Data\+Counter (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Returns number of remaining data bytes to be transferred. 
+
+
+\begin{DoxyParams}{参数}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em Number} & of remaining data bytes to be transferred \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00507}{507}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga2c48bd26d3f6a531cb667bfaf6525520}\label{group___s_d_i_o___exported___functions_ga2c48bd26d3f6a531cb667bfaf6525520}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!SDIO\_GetFlagStatus@{SDIO\_GetFlagStatus}}
+\index{SDIO\_GetFlagStatus@{SDIO\_GetFlagStatus}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_GetFlagStatus()}{SDIO\_GetFlagStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} SDIO\+\_\+\+Get\+Flag\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{SDIO\+\_\+\+FLAG }\end{DoxyParamCaption})}
+
+
+
+Checks whether the specified SDIO flag is set or not. 
+
+
+\begin{DoxyParams}{参数}
+{\em SDIO\+\_\+\+FLAG} & specifies the flag to check. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em The} & new state of SDIO\+\_\+\+FLAG (SET or RESET). \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00471}{471}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga186e0c0406b9f6e56e33421f287a613b}\label{group___s_d_i_o___exported___functions_ga186e0c0406b9f6e56e33421f287a613b}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!SDIO\_GetTimeOutCounter@{SDIO\_GetTimeOutCounter}}
+\index{SDIO\_GetTimeOutCounter@{SDIO\_GetTimeOutCounter}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_GetTimeOutCounter()}{SDIO\_GetTimeOutCounter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Get\+Time\+Out\+Counter (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Reads the value of the data transfer timeout count 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em timeout} & count. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00480}{480}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_gad40764a8e37c0ed5c9141ae338ff0203}\label{group___s_d_i_o___exported___functions_gad40764a8e37c0ed5c9141ae338ff0203}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!SDIO\_Init@{SDIO\_Init}}
+\index{SDIO\_Init@{SDIO\_Init}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_Init()}{SDIO\_Init()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_d_i_o___init_type_def}{SDIO\+\_\+\+Init\+Type\+Def}} $\ast$}]{SDIO\+\_\+\+Init\+Struct }\end{DoxyParamCaption})}
+
+
+
+Initializes the SDIO peripheral according to the specified parameters in the SDIO\+\_\+\+Init\+Struct. 
+
+
+\begin{DoxyParams}{参数}
+{\em SDIO\+\_\+\+Init\+Struct} & \+: pointer to a \mbox{\hyperlink{struct_s_d_i_o___init_type_def}{SDIO\+\_\+\+Init\+Type\+Def}} structure that contains the configuration information for the SDIO peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00136}{136}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_gaf40594ca2987d8b4fc4dbb9d59ccf3e0}\label{group___s_d_i_o___exported___functions_gaf40594ca2987d8b4fc4dbb9d59ccf3e0}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!SDIO\_ITConfig@{SDIO\_ITConfig}}
+\index{SDIO\_ITConfig@{SDIO\_ITConfig}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_ITConfig()}{SDIO\_ITConfig()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+ITConfig (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{SDIO\+\_\+\+IT,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the SDIO interrupts. 
+
+
+\begin{DoxyParams}{参数}
+{\em SDIO\+\_\+\+IT} & specifies the SDIO interrupt sources to be enabled or disabled. state \+: new state of the specified SDIO interrupts. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00150}{150}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga2e0007f7bb12c1b43f7495c6a4a20b50}\label{group___s_d_i_o___exported___functions_ga2e0007f7bb12c1b43f7495c6a4a20b50}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!SDIO\_ReadData@{SDIO\_ReadData}}
+\index{SDIO\_ReadData@{SDIO\_ReadData}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_ReadData()}{SDIO\_ReadData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Read\+Data (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Read one data word from FIFO. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em Data} & received. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00489}{489}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga6ac7722df2ba23f1a716db8a4b38a49a}\label{group___s_d_i_o___exported___functions_ga6ac7722df2ba23f1a716db8a4b38a49a}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!SDIO\_Send\_Cmd@{SDIO\_Send\_Cmd}}
+\index{SDIO\_Send\_Cmd@{SDIO\_Send\_Cmd}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_Send\_Cmd()}{SDIO\_Send\_Cmd()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+Send\+\_\+\+Cmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{cmdindex,  }\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{waitrsp,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{arg }\end{DoxyParamCaption})}
+
+
+
+SDIO sends command functions. 
+
+
+\begin{DoxyParams}{参数}
+{\em cmdindex} & \+: Type the command. waitrsp \+: Expected correspondence. arg \+: parameter. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00208}{208}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga8ed0e660e0b895d3f9cb9a560ad50291}\label{group___s_d_i_o___exported___functions_ga8ed0e660e0b895d3f9cb9a560ad50291}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!SDIO\_Send\_Data\_Cfg@{SDIO\_Send\_Data\_Cfg}}
+\index{SDIO\_Send\_Data\_Cfg@{SDIO\_Send\_Data\_Cfg}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_Send\_Data\_Cfg()}{SDIO\_Send\_Data\_Cfg()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+Send\+\_\+\+Data\+\_\+\+Cfg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{datatimeout,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{datalen,  }\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{blksize,  }\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{dir }\end{DoxyParamCaption})}
+
+
+
+Write data direction block size configuration. 
+
+
+\begin{DoxyParams}{参数}
+{\em datatimeout} & \+: maximum latency. datalen \+: data len blksize \+: block count. dir \+: direction \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00411}{411}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga778d338c29df4fae9ef69432e6df32ad}\label{group___s_d_i_o___exported___functions_ga778d338c29df4fae9ef69432e6df32ad}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!SDIO\_StructInit@{SDIO\_StructInit}}
+\index{SDIO\_StructInit@{SDIO\_StructInit}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_StructInit()}{SDIO\_StructInit()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+Struct\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_d_i_o___init_type_def}{SDIO\+\_\+\+Init\+Type\+Def}} $\ast$}]{SDIO\+\_\+\+Init\+Struct }\end{DoxyParamCaption})}
+
+
+
+Fills each SDIO\+\_\+\+Init\+Struct member with its default value. 
+
+
+\begin{DoxyParams}{参数}
+{\em SDIO\+\_\+\+Init\+Struct} & pointer to an \mbox{\hyperlink{struct_s_d_i_o___init_type_def}{SDIO\+\_\+\+Init\+Type\+Def}} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00054}{54}} 行定义.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_gac5a58e2b720a0492c693b60024ee41b0}\label{group___s_d_i_o___exported___functions_gac5a58e2b720a0492c693b60024ee41b0}} 
+\index{SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}!SDIO\_WriteData@{SDIO\_WriteData}}
+\index{SDIO\_WriteData@{SDIO\_WriteData}!SDIO\_Exported\_Functions@{SDIO\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_WriteData()}{SDIO\_WriteData()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+Write\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{tempbuff }\end{DoxyParamCaption})}
+
+
+
+Write one data word to FIFO. 
+
+
+\begin{DoxyParams}{参数}
+{\em tempbuff} & \+: Write data. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00498}{498}} 行定义.
+

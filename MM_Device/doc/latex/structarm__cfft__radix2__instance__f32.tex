@@ -1,0 +1,125 @@
+\hypertarget{structarm__cfft__radix2__instance__f32}{}\doxysection{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+f32结构体 参考}
+\label{structarm__cfft__radix2__instance__f32}\index{arm\_cfft\_radix2\_instance\_f32@{arm\_cfft\_radix2\_instance\_f32}}
+
+
+Instance structure for the floating-\/point CFFT/\+CIFFT function.  
+
+
+
+
+{\ttfamily \#include $<$arm\+\_\+math.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structarm__cfft__radix2__instance__f32_a2f915a1c29635c1623086aaaa726be8f}{fft\+Len}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structarm__cfft__radix2__instance__f32_a8dbe98d2c924e35e0a3fed2fe948176f}{ifft\+Flag}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structarm__cfft__radix2__instance__f32_af713b4ac5256a19bc965c89fe3005fa3}{bit\+Reverse\+Flag}}
+\item 
+\mbox{\hyperlink{arm__math_8h_a4611b605e45ab401f02cab15c5e38715}{float32\+\_\+t}} $\ast$ \mbox{\hyperlink{structarm__cfft__radix2__instance__f32_adb0c9d47dbfbd90a6f6ed0a05313a974}{p\+Twiddle}}
+\item 
+uint16\+\_\+t $\ast$ \mbox{\hyperlink{structarm__cfft__radix2__instance__f32_a92b8fa0a151cd800436094903a5ca0a4}{p\+Bit\+Rev\+Table}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structarm__cfft__radix2__instance__f32_a411f75b6ed01690293f4f5988030ea42}{twid\+Coef\+Modifier}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structarm__cfft__radix2__instance__f32_ac1688dafa5177f6b1505abbfd0cf8b21}{bit\+Rev\+Factor}}
+\item 
+\mbox{\hyperlink{arm__math_8h_a4611b605e45ab401f02cab15c5e38715}{float32\+\_\+t}} \mbox{\hyperlink{structarm__cfft__radix2__instance__f32_a1d3d289d47443e597d88a40effd14b8f}{onebyfft\+Len}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Instance structure for the floating-\/point CFFT/\+CIFFT function. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02082}{2082}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{structarm__cfft__radix2__instance__f32_af713b4ac5256a19bc965c89fe3005fa3}\label{structarm__cfft__radix2__instance__f32_af713b4ac5256a19bc965c89fe3005fa3}} 
+\index{arm\_cfft\_radix2\_instance\_f32@{arm\_cfft\_radix2\_instance\_f32}!bitReverseFlag@{bitReverseFlag}}
+\index{bitReverseFlag@{bitReverseFlag}!arm\_cfft\_radix2\_instance\_f32@{arm\_cfft\_radix2\_instance\_f32}}
+\doxysubsubsection{\texorpdfstring{bitReverseFlag}{bitReverseFlag}}
+{\footnotesize\ttfamily uint8\+\_\+t arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+f32\+::bit\+Reverse\+Flag}
+
+flag that enables (bit\+Reverse\+Flag=1) or disables (bit\+Reverse\+Flag=0) bit reversal of output. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02085}{2085}} 行定义.
+
+\mbox{\Hypertarget{structarm__cfft__radix2__instance__f32_ac1688dafa5177f6b1505abbfd0cf8b21}\label{structarm__cfft__radix2__instance__f32_ac1688dafa5177f6b1505abbfd0cf8b21}} 
+\index{arm\_cfft\_radix2\_instance\_f32@{arm\_cfft\_radix2\_instance\_f32}!bitRevFactor@{bitRevFactor}}
+\index{bitRevFactor@{bitRevFactor}!arm\_cfft\_radix2\_instance\_f32@{arm\_cfft\_radix2\_instance\_f32}}
+\doxysubsubsection{\texorpdfstring{bitRevFactor}{bitRevFactor}}
+{\footnotesize\ttfamily uint16\+\_\+t arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+f32\+::bit\+Rev\+Factor}
+
+bit reversal modifier that supports different size FFTs with the same bit reversal table. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02089}{2089}} 行定义.
+
+\mbox{\Hypertarget{structarm__cfft__radix2__instance__f32_a2f915a1c29635c1623086aaaa726be8f}\label{structarm__cfft__radix2__instance__f32_a2f915a1c29635c1623086aaaa726be8f}} 
+\index{arm\_cfft\_radix2\_instance\_f32@{arm\_cfft\_radix2\_instance\_f32}!fftLen@{fftLen}}
+\index{fftLen@{fftLen}!arm\_cfft\_radix2\_instance\_f32@{arm\_cfft\_radix2\_instance\_f32}}
+\doxysubsubsection{\texorpdfstring{fftLen}{fftLen}}
+{\footnotesize\ttfamily uint16\+\_\+t arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+f32\+::fft\+Len}
+
+length of the FFT. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02083}{2083}} 行定义.
+
+\mbox{\Hypertarget{structarm__cfft__radix2__instance__f32_a8dbe98d2c924e35e0a3fed2fe948176f}\label{structarm__cfft__radix2__instance__f32_a8dbe98d2c924e35e0a3fed2fe948176f}} 
+\index{arm\_cfft\_radix2\_instance\_f32@{arm\_cfft\_radix2\_instance\_f32}!ifftFlag@{ifftFlag}}
+\index{ifftFlag@{ifftFlag}!arm\_cfft\_radix2\_instance\_f32@{arm\_cfft\_radix2\_instance\_f32}}
+\doxysubsubsection{\texorpdfstring{ifftFlag}{ifftFlag}}
+{\footnotesize\ttfamily uint8\+\_\+t arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+f32\+::ifft\+Flag}
+
+flag that selects forward (ifft\+Flag=0) or inverse (ifft\+Flag=1) transform. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02084}{2084}} 行定义.
+
+\mbox{\Hypertarget{structarm__cfft__radix2__instance__f32_a1d3d289d47443e597d88a40effd14b8f}\label{structarm__cfft__radix2__instance__f32_a1d3d289d47443e597d88a40effd14b8f}} 
+\index{arm\_cfft\_radix2\_instance\_f32@{arm\_cfft\_radix2\_instance\_f32}!onebyfftLen@{onebyfftLen}}
+\index{onebyfftLen@{onebyfftLen}!arm\_cfft\_radix2\_instance\_f32@{arm\_cfft\_radix2\_instance\_f32}}
+\doxysubsubsection{\texorpdfstring{onebyfftLen}{onebyfftLen}}
+{\footnotesize\ttfamily \mbox{\hyperlink{arm__math_8h_a4611b605e45ab401f02cab15c5e38715}{float32\+\_\+t}} arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+f32\+::onebyfft\+Len}
+
+value of 1/fft\+Len. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02090}{2090}} 行定义.
+
+\mbox{\Hypertarget{structarm__cfft__radix2__instance__f32_a92b8fa0a151cd800436094903a5ca0a4}\label{structarm__cfft__radix2__instance__f32_a92b8fa0a151cd800436094903a5ca0a4}} 
+\index{arm\_cfft\_radix2\_instance\_f32@{arm\_cfft\_radix2\_instance\_f32}!pBitRevTable@{pBitRevTable}}
+\index{pBitRevTable@{pBitRevTable}!arm\_cfft\_radix2\_instance\_f32@{arm\_cfft\_radix2\_instance\_f32}}
+\doxysubsubsection{\texorpdfstring{pBitRevTable}{pBitRevTable}}
+{\footnotesize\ttfamily uint16\+\_\+t$\ast$ arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+f32\+::p\+Bit\+Rev\+Table}
+
+points to the bit reversal table. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02087}{2087}} 行定义.
+
+\mbox{\Hypertarget{structarm__cfft__radix2__instance__f32_adb0c9d47dbfbd90a6f6ed0a05313a974}\label{structarm__cfft__radix2__instance__f32_adb0c9d47dbfbd90a6f6ed0a05313a974}} 
+\index{arm\_cfft\_radix2\_instance\_f32@{arm\_cfft\_radix2\_instance\_f32}!pTwiddle@{pTwiddle}}
+\index{pTwiddle@{pTwiddle}!arm\_cfft\_radix2\_instance\_f32@{arm\_cfft\_radix2\_instance\_f32}}
+\doxysubsubsection{\texorpdfstring{pTwiddle}{pTwiddle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{arm__math_8h_a4611b605e45ab401f02cab15c5e38715}{float32\+\_\+t}}$\ast$ arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+f32\+::p\+Twiddle}
+
+points to the Twiddle factor table. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02086}{2086}} 行定义.
+
+\mbox{\Hypertarget{structarm__cfft__radix2__instance__f32_a411f75b6ed01690293f4f5988030ea42}\label{structarm__cfft__radix2__instance__f32_a411f75b6ed01690293f4f5988030ea42}} 
+\index{arm\_cfft\_radix2\_instance\_f32@{arm\_cfft\_radix2\_instance\_f32}!twidCoefModifier@{twidCoefModifier}}
+\index{twidCoefModifier@{twidCoefModifier}!arm\_cfft\_radix2\_instance\_f32@{arm\_cfft\_radix2\_instance\_f32}}
+\doxysubsubsection{\texorpdfstring{twidCoefModifier}{twidCoefModifier}}
+{\footnotesize\ttfamily uint16\+\_\+t arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+f32\+::twid\+Coef\+Modifier}
+
+twiddle coefficient modifier that supports different size FFTs with the same twiddle factor table. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02088}{2088}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+CMSIS/\mbox{\hyperlink{arm__math_8h}{arm\+\_\+math.\+h}}\end{DoxyCompactItemize}

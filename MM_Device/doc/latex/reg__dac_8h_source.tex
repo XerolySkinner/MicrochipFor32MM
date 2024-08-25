@@ -1,0 +1,184 @@
+\hypertarget{reg__dac_8h_source}{}\doxysection{reg\+\_\+dac.\+h}
+\label{reg__dac_8h_source}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_dac.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_dac.h}}
+\mbox{\hyperlink{reg__dac_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00019}00019 \textcolor{comment}{// Define to prevent recursive inclusion}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00021}00021 \textcolor{preprocessor}{\#ifndef \_\_REG\_DAC\_H}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00022}00022 \textcolor{preprocessor}{\#define \_\_REG\_DAC\_H}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00024}00024 \textcolor{comment}{// Files includes}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00026}00026 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00027}00027 \textcolor{preprocessor}{\#include <stdbool.h>}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00028}00028 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{types_8h}{types.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00033}00033 \textcolor{preprocessor}{\#if defined ( \_\_CC\_ARM )}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00034}00034 \textcolor{preprocessor}{\#pragma anon\_unions}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00035}00035 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00047}\mbox{\hyperlink{reg__dac_8h_ad18d0b914c7f68cecbee1a2d23a67d38}{00047}} \textcolor{preprocessor}{\#define DAC\_BASE                        (APB1PERIPH\_BASE + 0x7400)              }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00054}\mbox{\hyperlink{struct_d_a_c___type_def}{00054}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00055}\mbox{\hyperlink{struct_d_a_c___type_def_aac010860679bd3c5665fa5489e657ece}{00055}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_a_c___type_def_aac010860679bd3c5665fa5489e657ece}{CR}};                                                                }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00056}\mbox{\hyperlink{struct_d_a_c___type_def_a6eccd447f58c493f911c5aca6b4cbc51}{00056}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_a_c___type_def_a6eccd447f58c493f911c5aca6b4cbc51}{SWTRIGR}};                                                           }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00057}\mbox{\hyperlink{struct_d_a_c___type_def_a58bb296fb0ad683c229ad5f523518160}{00057}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_a_c___type_def_a58bb296fb0ad683c229ad5f523518160}{DHR12R1}};                                                           }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00058}\mbox{\hyperlink{struct_d_a_c___type_def_a057047f2476020075fbc2e15df3a9783}{00058}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_a_c___type_def_a057047f2476020075fbc2e15df3a9783}{DHR12L1}};                                                           }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00059}\mbox{\hyperlink{struct_d_a_c___type_def_a76683744875b11e7644f72e7ca29476a}{00059}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_a_c___type_def_a76683744875b11e7644f72e7ca29476a}{DHR8R1}};                                                            }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00060}\mbox{\hyperlink{struct_d_a_c___type_def_ae940ddd59d2199713f18730e4c12e83d}{00060}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_a_c___type_def_ae940ddd59d2199713f18730e4c12e83d}{DHR12R2}};                                                           }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00061}\mbox{\hyperlink{struct_d_a_c___type_def_adccdd1fbc45178e509a604c1b4cf127d}{00061}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_a_c___type_def_adccdd1fbc45178e509a604c1b4cf127d}{DHR12L2}};                                                           }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00062}\mbox{\hyperlink{struct_d_a_c___type_def_a2ae43a8c455ebbdfecbcc2fcf57c3cf5}{00062}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_a_c___type_def_a2ae43a8c455ebbdfecbcc2fcf57c3cf5}{DHR8R2}};                                                            }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00063}\mbox{\hyperlink{struct_d_a_c___type_def_a7e13dc7f1ca687d727cd987a135cbeb6}{00063}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_a_c___type_def_a7e13dc7f1ca687d727cd987a135cbeb6}{DHR12RD}};                                                           }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00064}\mbox{\hyperlink{struct_d_a_c___type_def_acfef5e58237f1aa916c2f913622337df}{00064}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_a_c___type_def_acfef5e58237f1aa916c2f913622337df}{DHR12LD}};                                                           }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00065}\mbox{\hyperlink{struct_d_a_c___type_def_ad93e2c6d3e7a0b34faca2ee5e4927432}{00065}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_a_c___type_def_ad93e2c6d3e7a0b34faca2ee5e4927432}{DHR8RD}};                                                            }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00066}\mbox{\hyperlink{struct_d_a_c___type_def_a43466a2e43f978de412b197ed5029098}{00066}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_a_c___type_def_a43466a2e43f978de412b197ed5029098}{DOR1}};                                                              }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00067}\mbox{\hyperlink{struct_d_a_c___type_def_af93b78bcb32586e36551add3cc652515}{00067}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_a_c___type_def_af93b78bcb32586e36551add3cc652515}{DOR2}};                                                              }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00068}00068 \} \mbox{\hyperlink{struct_d_a_c___type_def}{DAC\_TypeDef}};}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00075}\mbox{\hyperlink{reg__dac_8h_a4aa2a4ab86ce00c23035e5cee2e7fc7e}{00075}} \textcolor{preprocessor}{\#define DAC                         ((DAC\_TypeDef*) DAC\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00082}\mbox{\hyperlink{reg__dac_8h_a7663eb8440e12383fc88241acbfc99cf}{00082}} \textcolor{preprocessor}{\#define DAC\_CR\_EN1\_Pos              (0)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00083}\mbox{\hyperlink{reg__dac_8h_abd8cedbb3dda03d56ac0ba92d2d9cefd}{00083}} \textcolor{preprocessor}{\#define DAC\_CR\_EN1                  (0x01U << DAC\_CR\_EN1\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00084}\mbox{\hyperlink{reg__dac_8h_a9f43af44fba93c50bf4765608ec6d902}{00084}} \textcolor{preprocessor}{\#define DAC\_CR\_BOFF1\_Pos            (1)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00085}\mbox{\hyperlink{reg__dac_8h_a0b1e2b83ae1ab889cb1e34a99746c9d8}{00085}} \textcolor{preprocessor}{\#define DAC\_CR\_BOFF1                (0x01U << DAC\_CR\_BOFF1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00086}\mbox{\hyperlink{reg__dac_8h_a6ef4ab719505604c7a41e31c27fd05dd}{00086}} \textcolor{preprocessor}{\#define DAC\_CR\_TEN1\_Pos             (2)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00087}\mbox{\hyperlink{reg__dac_8h_a998aa4fd791ea2f4626df6ddc8fc7109}{00087}} \textcolor{preprocessor}{\#define DAC\_CR\_TEN1                 (0x01U << DAC\_CR\_TEN1\_Pos)              }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00088}\mbox{\hyperlink{reg__dac_8h_adc5baf43a193c631ad3c05eb24b97a7b}{00088}} \textcolor{preprocessor}{\#define DAC\_CR\_TSEL1\_Pos            (3)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00089}\mbox{\hyperlink{reg__dac_8h_af951c1a57a1a19e356df57d908f09c6c}{00089}} \textcolor{preprocessor}{\#define DAC\_CR\_TSEL1                (0x07U << DAC\_CR\_TSEL1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00090}\mbox{\hyperlink{reg__dac_8h_a82cd645673b77b73d1ddc0e8d0817e5b}{00090}} \textcolor{preprocessor}{\#define DAC\_CR\_TSEL1\_TIM1\_TRIG      (0x00U << DAC\_CR\_TSEL1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00091}\mbox{\hyperlink{reg__dac_8h_a983ee70d5c8c0e67dff839fd5933761f}{00091}} \textcolor{preprocessor}{\#define DAC\_CR\_TSEL1\_TIM3\_TRIG      (0x01U << DAC\_CR\_TSEL1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00092}\mbox{\hyperlink{reg__dac_8h_adbef9920d56c222df69bb5f30fddd4b4}{00092}} \textcolor{preprocessor}{\#define DAC\_CR\_TSEL1\_TIM2\_TRIG      (0x04U << DAC\_CR\_TSEL1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00093}\mbox{\hyperlink{reg__dac_8h_ad5c94b86c37eb2a3447fd32e805f2e87}{00093}} \textcolor{preprocessor}{\#define DAC\_CR\_TSEL1\_TIM4\_TRIG      (0x05U << DAC\_CR\_TSEL1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00094}\mbox{\hyperlink{reg__dac_8h_a44a45d4429ff3d518f52a3bb01af4595}{00094}} \textcolor{preprocessor}{\#define DAC\_CR\_TSEL1\_EXTI9          (0x06U << DAC\_CR\_TSEL1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00095}\mbox{\hyperlink{reg__dac_8h_a7ebdb78dfe892329e53e7f054d2240af}{00095}} \textcolor{preprocessor}{\#define DAC\_CR\_TSEL1\_SOFTWARE       (0x07U << DAC\_CR\_TSEL1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00096}\mbox{\hyperlink{reg__dac_8h_a16a0202d6e3295400dc21b2088d333e1}{00096}} \textcolor{preprocessor}{\#define DAC\_CR\_WAVE1\_Pos            (6)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00097}\mbox{\hyperlink{reg__dac_8h_a90491f31219d07175629eecdcdc9271e}{00097}} \textcolor{preprocessor}{\#define DAC\_CR\_WAVE1                (0x03U << DAC\_CR\_WAVE1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00098}\mbox{\hyperlink{reg__dac_8h_a7cd586a125f0f7ffb5784bfb5228e9cb}{00098}} \textcolor{preprocessor}{\#define DAC\_CR\_WAVE1\_NONE           (0x00U << DAC\_CR\_WAVE1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00099}\mbox{\hyperlink{reg__dac_8h_a0bdbd7bb6004048e7eaa6c0d1ec21608}{00099}} \textcolor{preprocessor}{\#define DAC\_CR\_WAVE1\_NOISE          (0x01U << DAC\_CR\_WAVE1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00100}\mbox{\hyperlink{reg__dac_8h_a014195407a7aecbb236be4708aaa70f2}{00100}} \textcolor{preprocessor}{\#define DAC\_CR\_WAVE1\_TRIANGLE       (0x02U << DAC\_CR\_WAVE1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00101}\mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{00101}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP1\_Pos            (8)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00102}\mbox{\hyperlink{reg__dac_8h_a3bcf611b2f0b975513325895bf16e085}{00102}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP1                (0x0FU << DAC\_CR\_MAMP1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00103}\mbox{\hyperlink{reg__dac_8h_a6cc15817842cb7992d449c448684f68d}{00103}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP1\_1              (0x00U << DAC\_CR\_MAMP1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00104}\mbox{\hyperlink{reg__dac_8h_afdc83b4feb742c632ba66f55d102432b}{00104}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP1\_3              (0x01U << DAC\_CR\_MAMP1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00105}\mbox{\hyperlink{reg__dac_8h_ac2f9f59b831361a8c2ac5de8bffbe3e4}{00105}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP1\_7              (0x02U << DAC\_CR\_MAMP1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00106}\mbox{\hyperlink{reg__dac_8h_a8e320c9606c7a570fddd9681b6ed997c}{00106}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP1\_15             (0x03U << DAC\_CR\_MAMP1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00107}\mbox{\hyperlink{reg__dac_8h_a7eed009c4b12947d955eff8295402bfa}{00107}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP1\_31             (0x04U << DAC\_CR\_MAMP1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00108}\mbox{\hyperlink{reg__dac_8h_a05c15d4e386634c82369d71043b7918e}{00108}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP1\_63             (0x05U << DAC\_CR\_MAMP1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00109}\mbox{\hyperlink{reg__dac_8h_a1d5571b796535d153cf5b482eca4ae25}{00109}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP1\_127            (0x06U << DAC\_CR\_MAMP1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00110}\mbox{\hyperlink{reg__dac_8h_acdb2bb69dd8285bcd1c52f2cd0cb9e2d}{00110}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP1\_255            (0x07U << DAC\_CR\_MAMP1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00111}\mbox{\hyperlink{reg__dac_8h_a48cf58532c20342b777faeec4638a8e2}{00111}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP1\_511            (0x08U << DAC\_CR\_MAMP1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00112}\mbox{\hyperlink{reg__dac_8h_a1fb4a60a08e60c92b4f772c0d48be081}{00112}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP1\_1023           (0x09U << DAC\_CR\_MAMP1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00113}\mbox{\hyperlink{reg__dac_8h_a980567f3a4c7502c95b69b5ffabe44ed}{00113}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP1\_2047           (0x0AU << DAC\_CR\_MAMP1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00114}\mbox{\hyperlink{reg__dac_8h_a4402c4b16acfdf0e1708870123af4926}{00114}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP1\_4095           (0x0BU << DAC\_CR\_MAMP1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00115}\mbox{\hyperlink{reg__dac_8h_ac1caf9621895f2a99c4b33a0908247b6}{00115}} \textcolor{preprocessor}{\#define DAC\_CR\_DMAEN1\_Pos           (12)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00116}\mbox{\hyperlink{reg__dac_8h_a995c19d8c8de9ee09057ec6151154e17}{00116}} \textcolor{preprocessor}{\#define DAC\_CR\_DMAEN1               (0x01U << DAC\_CR\_DMAEN1\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00117}\mbox{\hyperlink{reg__dac_8h_af2dbea8c55239069a24139f398785af4}{00117}} \textcolor{preprocessor}{\#define DAC\_CR\_EN2\_Pos              (16)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00118}\mbox{\hyperlink{reg__dac_8h_aa65db2420e02fc6813842f57134d898f}{00118}} \textcolor{preprocessor}{\#define DAC\_CR\_EN2                  (0x01U << DAC\_CR\_EN2\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00119}\mbox{\hyperlink{reg__dac_8h_abb3eb9eaa48220ba7cac6204c4637b75}{00119}} \textcolor{preprocessor}{\#define DAC\_CR\_BOFF2\_Pos            (17)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00120}\mbox{\hyperlink{reg__dac_8h_add6f660a5f15262beca06b9098a559e9}{00120}} \textcolor{preprocessor}{\#define DAC\_CR\_BOFF2                (0x01U << DAC\_CR\_BOFF2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00121}\mbox{\hyperlink{reg__dac_8h_aa2ef8fa2150330a16a2b19f17caa051e}{00121}} \textcolor{preprocessor}{\#define DAC\_CR\_TEN2\_Pos             (18)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00122}\mbox{\hyperlink{reg__dac_8h_ab8fc527f6ddb787123da09d2085b772f}{00122}} \textcolor{preprocessor}{\#define DAC\_CR\_TEN2                 (0x01U << DAC\_CR\_TEN2\_Pos)              }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00123}\mbox{\hyperlink{reg__dac_8h_a80a933188591c4fbcad260c256105277}{00123}} \textcolor{preprocessor}{\#define DAC\_CR\_TSEL2\_Pos            (19)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00124}\mbox{\hyperlink{reg__dac_8h_a73b4d0ccff78f7c3862903e7b0e66302}{00124}} \textcolor{preprocessor}{\#define DAC\_CR\_TSEL2                (0x07U << DAC\_CR\_TSEL2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00125}\mbox{\hyperlink{reg__dac_8h_a2d12f6284b51f734669fd8829fc2a82f}{00125}} \textcolor{preprocessor}{\#define DAC\_CR\_TSEL2\_TIM1\_TRIG      (0x00U << DAC\_CR\_TSEL2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00126}\mbox{\hyperlink{reg__dac_8h_a610faf2ea53f20089fa743deed51fbb9}{00126}} \textcolor{preprocessor}{\#define DAC\_CR\_TSEL2\_TIM3\_TRIG      (0x01U << DAC\_CR\_TSEL2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00127}\mbox{\hyperlink{reg__dac_8h_aadab668d44e27de079ec69a2d05a5a27}{00127}} \textcolor{preprocessor}{\#define DAC\_CR\_TSEL2\_TIM2\_TRIG      (0x04U << DAC\_CR\_TSEL2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00128}\mbox{\hyperlink{reg__dac_8h_a8486a5c30bef4d0d4bc79b72da59a1fb}{00128}} \textcolor{preprocessor}{\#define DAC\_CR\_TSEL2\_TIM4\_TRIG      (0x05U << DAC\_CR\_TSEL2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00129}\mbox{\hyperlink{reg__dac_8h_a971ea99a077cc5197d2231c93baf1f63}{00129}} \textcolor{preprocessor}{\#define DAC\_CR\_TSEL2\_EXTI9          (0x06U << DAC\_CR\_TSEL2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00130}\mbox{\hyperlink{reg__dac_8h_ad183e0fb500d45c7c80b9b853ee51400}{00130}} \textcolor{preprocessor}{\#define DAC\_CR\_TSEL2\_SOFTWARE       (0x07U << DAC\_CR\_TSEL2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00131}\mbox{\hyperlink{reg__dac_8h_a7795c9de47dc6747045ee7e2e6fb8ba9}{00131}} \textcolor{preprocessor}{\#define DAC\_CR\_WAVE2\_Pos            (22)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00132}\mbox{\hyperlink{reg__dac_8h_acf24e48cf288db4a4643057dd09e3a7b}{00132}} \textcolor{preprocessor}{\#define DAC\_CR\_WAVE2                (0x03U << DAC\_CR\_WAVE2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00133}\mbox{\hyperlink{reg__dac_8h_a4a5cb7bb2c8902ca022ef2aa0a85bea6}{00133}} \textcolor{preprocessor}{\#define DAC\_CR\_WAVE2\_NONE           (0x00U << DAC\_CR\_WAVE2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00134}\mbox{\hyperlink{reg__dac_8h_adece7a1a3d6d3b318e1ba0693fffc397}{00134}} \textcolor{preprocessor}{\#define DAC\_CR\_WAVE2\_NOISE          (0x01U << DAC\_CR\_WAVE2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00135}\mbox{\hyperlink{reg__dac_8h_a276e7bfcefb8555803e92b07e60746a0}{00135}} \textcolor{preprocessor}{\#define DAC\_CR\_WAVE2\_TRIANGLE       (0x02U << DAC\_CR\_WAVE2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00136}\mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{00136}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP2\_Pos            (24)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00137}\mbox{\hyperlink{reg__dac_8h_a7cf03fe2359cb0f11c33f793c2e92bdd}{00137}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP2                (0x0FU << DAC\_CR\_MAMP2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00138}\mbox{\hyperlink{reg__dac_8h_a860032e8196838cd36a655c1749139d6}{00138}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP2\_1              (0x00U << DAC\_CR\_MAMP2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00139}\mbox{\hyperlink{reg__dac_8h_aa0fe77a2029873111cbe723a5cba9c57}{00139}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP2\_3              (0x01U << DAC\_CR\_MAMP2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00140}\mbox{\hyperlink{reg__dac_8h_ae506d8258724df4599dadc1943db136f}{00140}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP2\_7              (0x02U << DAC\_CR\_MAMP2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00141}\mbox{\hyperlink{reg__dac_8h_a5d418bc60fa4fc6376e981bb25e19053}{00141}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP2\_15             (0x03U << DAC\_CR\_MAMP2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00142}\mbox{\hyperlink{reg__dac_8h_ab4478cca0c71f0617eaa171d9f29f613}{00142}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP2\_31             (0x04U << DAC\_CR\_MAMP2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00143}\mbox{\hyperlink{reg__dac_8h_ada0cdfe2c2eb590c4a59aaa8b43aae7e}{00143}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP2\_63             (0x05U << DAC\_CR\_MAMP2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00144}\mbox{\hyperlink{reg__dac_8h_a2c681aa98eacb0d6004f39245c659051}{00144}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP2\_127            (0x06U << DAC\_CR\_MAMP2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00145}\mbox{\hyperlink{reg__dac_8h_a1875f9c5918c6384d4342bfb8db47148}{00145}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP2\_255            (0x07U << DAC\_CR\_MAMP2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00146}\mbox{\hyperlink{reg__dac_8h_a8e7a8446e12e6f3a99270b8d6001a355}{00146}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP2\_511            (0x08U << DAC\_CR\_MAMP2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00147}\mbox{\hyperlink{reg__dac_8h_a3d14db05c0b84a38a08ca5975c770631}{00147}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP2\_1023           (0x09U << DAC\_CR\_MAMP2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00148}\mbox{\hyperlink{reg__dac_8h_a2de33684b4b5fccfa88b3d9b6a7c3d35}{00148}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP2\_2047           (0x0AU << DAC\_CR\_MAMP2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00149}\mbox{\hyperlink{reg__dac_8h_ab6aaffaef57d56c451d08a76594bc8ac}{00149}} \textcolor{preprocessor}{\#define DAC\_CR\_MAMP2\_4095           (0x0BU << DAC\_CR\_MAMP2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00150}\mbox{\hyperlink{reg__dac_8h_a264e3d328584463c5164a7cca726cabb}{00150}} \textcolor{preprocessor}{\#define DAC\_CR\_DMAEN2\_Pos           (28)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00151}\mbox{\hyperlink{reg__dac_8h_a6f905c2ac89f976df6c4beffdde58b53}{00151}} \textcolor{preprocessor}{\#define DAC\_CR\_DMAEN2               (0x01U << DAC\_CR\_DMAEN2\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00152}00152 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00156}\mbox{\hyperlink{reg__dac_8h_a32d8b5dafe7a5f4963e5f12656e48ee1}{00156}} \textcolor{preprocessor}{\#define DAC\_SWTRIGR\_SWTRIG1\_Pos     (0)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00157}\mbox{\hyperlink{reg__dac_8h_a970ef02dffaceb35ff1dd7aceb67acdd}{00157}} \textcolor{preprocessor}{\#define DAC\_SWTRIGR\_SWTRIG1         (0x01U << DAC\_SWTRIGR\_SWTRIG1\_Pos)      }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00158}\mbox{\hyperlink{reg__dac_8h_adb85dac71ddd76ce877fad49a47634b5}{00158}} \textcolor{preprocessor}{\#define DAC\_SWTRIGR\_SWTRIG2\_Pos     (1)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00159}\mbox{\hyperlink{reg__dac_8h_af0e53585b505d21f5c457476bd5a18f8}{00159}} \textcolor{preprocessor}{\#define DAC\_SWTRIGR\_SWTRIG2         (0x01U << DAC\_SWTRIGR\_SWTRIG2\_Pos)      }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00160}\mbox{\hyperlink{reg__dac_8h_a1444c7ceda390c29b964ed3d884c0817}{00160}} \textcolor{preprocessor}{\#define DAC\_SWTRIGR\_DACPRE\_Pos      (8)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00161}\mbox{\hyperlink{reg__dac_8h_ac5538a4cedf0045e00b22f4fe2344321}{00161}} \textcolor{preprocessor}{\#define DAC\_SWTRIGR\_DACPRE          (0x7FU << DAC\_SWTRIGR\_DACPRE\_Pos)       }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00162}00162 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00166}\mbox{\hyperlink{reg__dac_8h_ab3250ec13530e0e363f0ab92c149774f}{00166}} \textcolor{preprocessor}{\#define DAC\_DHR12R1\_DACC1DHR\_Pos    (0)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00167}\mbox{\hyperlink{reg__dac_8h_a5295b5cb7f5d71ed2e8a310deb00013d}{00167}} \textcolor{preprocessor}{\#define DAC\_DHR12R1\_DACC1DHR        (0xFFFU << DAC\_DHR12R1\_DACC1DHR\_Pos)    }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00168}00168 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00172}\mbox{\hyperlink{reg__dac_8h_ac1dcdc73fc338b3548cddcf84fb0c951}{00172}} \textcolor{preprocessor}{\#define DAC\_DHR12L1\_DACC1DHR\_Pos    (4)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00173}\mbox{\hyperlink{reg__dac_8h_a0d34667f8f4b753689c8c936c28471c5}{00173}} \textcolor{preprocessor}{\#define DAC\_DHR12L1\_DACC1DHR        (0xFFFU << DAC\_DHR12L1\_DACC1DHR\_Pos)    }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00174}00174 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00178}\mbox{\hyperlink{reg__dac_8h_a6b874c02d121c755a1d4523f2e39134e}{00178}} \textcolor{preprocessor}{\#define DAC\_DHR8R1\_DACC1DHR\_Pos     (0)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00179}\mbox{\hyperlink{reg__dac_8h_ae1fc9f022fe4a08f67c51646177b26cb}{00179}} \textcolor{preprocessor}{\#define DAC\_DHR8R1\_DACC1DHR         (0xFFU << DAC\_DHR8R1\_DACC1DHR\_Pos)      }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00180}00180 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00184}\mbox{\hyperlink{reg__dac_8h_add13752ec5bc912023c608426e47908e}{00184}} \textcolor{preprocessor}{\#define DAC\_DHR12R2\_DACC2DHR\_Pos    (0)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00185}\mbox{\hyperlink{reg__dac_8h_a7506e369b37d55826042b540b10e44c7}{00185}} \textcolor{preprocessor}{\#define DAC\_DHR12R2\_DACC2DHR        (0xFFFU << DAC\_DHR12R2\_DACC2DHR\_Pos)    }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00186}00186 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00190}\mbox{\hyperlink{reg__dac_8h_a8fe559f6278c4abd3b5db6277e82925b}{00190}} \textcolor{preprocessor}{\#define DAC\_DHR12L2\_DACC2DHR\_Pos    (4)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00191}\mbox{\hyperlink{reg__dac_8h_a0f66bd794202221e1a55547673b7abab}{00191}} \textcolor{preprocessor}{\#define DAC\_DHR12L2\_DACC2DHR        (0xFFFU << DAC\_DHR12L2\_DACC2DHR\_Pos)    }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00192}00192 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00196}\mbox{\hyperlink{reg__dac_8h_a4a8082de99f7eef453237a409763718b}{00196}} \textcolor{preprocessor}{\#define DAC\_DHR8R2\_DACC2DHR\_Pos     (0)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00197}\mbox{\hyperlink{reg__dac_8h_a7da94dc053e6637efb9ccb57b7ae481c}{00197}} \textcolor{preprocessor}{\#define DAC\_DHR8R2\_DACC2DHR         (0xFFU << DAC\_DHR8R2\_DACC2DHR\_Pos)      }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00198}00198 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00202}\mbox{\hyperlink{reg__dac_8h_a6d1a7b56cdc34694e1aa032be202e79d}{00202}} \textcolor{preprocessor}{\#define DAC\_DHR12RD\_DACC1DHR\_Pos    (0)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00203}\mbox{\hyperlink{reg__dac_8h_aca45719f3d365c9495bdcf6364ae59f8}{00203}} \textcolor{preprocessor}{\#define DAC\_DHR12RD\_DACC1DHR        (0xFFFU << DAC\_DHR12RD\_DACC1DHR\_Pos)    }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00204}\mbox{\hyperlink{reg__dac_8h_ae522220c8b02ab4bcf82f122a45997d3}{00204}} \textcolor{preprocessor}{\#define DAC\_DHR12RD\_DACC2DHR\_Pos    (16)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00205}\mbox{\hyperlink{reg__dac_8h_a3edd68db1697af93027e05f6b764c540}{00205}} \textcolor{preprocessor}{\#define DAC\_DHR12RD\_DACC2DHR        (0xFFFU << DAC\_DHR12RD\_DACC2DHR\_Pos)    }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00206}00206 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00210}\mbox{\hyperlink{reg__dac_8h_aa367fe7ed3f9b2d5114dcc46ccab7468}{00210}} \textcolor{preprocessor}{\#define DAC\_DHR12LD\_DACC1DHR\_Pos    (4)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00211}\mbox{\hyperlink{reg__dac_8h_a203db656bfef6fedee17b99fb77b1bdd}{00211}} \textcolor{preprocessor}{\#define DAC\_DHR12LD\_DACC1DHR        (0xFFFU << DAC\_DHR12LD\_DACC1DHR\_Pos)    }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00212}\mbox{\hyperlink{reg__dac_8h_ade1db665f01f9d179045057d0e857da0}{00212}} \textcolor{preprocessor}{\#define DAC\_DHR12LD\_DACC2DHR\_Pos    (20)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00213}\mbox{\hyperlink{reg__dac_8h_a8421d613b182aab8d6c58592bcda6c17}{00213}} \textcolor{preprocessor}{\#define DAC\_DHR12LD\_DACC2DHR        (0xFFFU << DAC\_DHR12LD\_DACC2DHR\_Pos)    }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00214}00214 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00218}\mbox{\hyperlink{reg__dac_8h_ac004fb7fdc93225fb835b27e39229a57}{00218}} \textcolor{preprocessor}{\#define DAC\_DHR8RD\_DACC1DHR\_Pos     (0)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00219}\mbox{\hyperlink{reg__dac_8h_a9aee01ad181fa5b541864ed62907d70d}{00219}} \textcolor{preprocessor}{\#define DAC\_DHR8RD\_DACC1DHR         (0xFFU << DAC\_DHR8RD\_DACC1DHR\_Pos)      }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00220}\mbox{\hyperlink{reg__dac_8h_abf849d0278349997f891d987def91224}{00220}} \textcolor{preprocessor}{\#define DAC\_DHR8RD\_DACC2DHR\_Pos     (8)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00221}\mbox{\hyperlink{reg__dac_8h_ae31631eaac76ebecb059918c351ef3c9}{00221}} \textcolor{preprocessor}{\#define DAC\_DHR8RD\_DACC2DHR         (0xFFU << DAC\_DHR8RD\_DACC2DHR\_Pos)      }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00222}00222 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00226}\mbox{\hyperlink{reg__dac_8h_aacef98a0af264fa6b23a187e74d7c82d}{00226}} \textcolor{preprocessor}{\#define DAC\_DOR1\_DACC1DOR\_Pos       (0)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00227}\mbox{\hyperlink{reg__dac_8h_a5b4192938e039dc25a7df8fcc5f3932a}{00227}} \textcolor{preprocessor}{\#define DAC\_DOR1\_DACC1DOR           (0xFFFU << DAC\_DOR1\_DACC1DOR\_Pos)       }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00228}00228 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00232}\mbox{\hyperlink{reg__dac_8h_a17aa70d42a524b2dd911326fa65630f1}{00232}} \textcolor{preprocessor}{\#define DAC\_DOR2\_DACC2DOR\_Pos       (0)}}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00233}\mbox{\hyperlink{reg__dac_8h_acaaa39c1e82279918918b072fd56db04}{00233}} \textcolor{preprocessor}{\#define DAC\_DOR2\_DACC2DOR           (0xFFFU << DAC\_DOR2\_DACC2DOR\_Pos)       }}
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00234}00234 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00235}00235 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00236}00236 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00237}00237 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00238}00238 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00240}00240 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00242}00242 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00244}00244 }
+\DoxyCodeLine{\Hypertarget{reg__dac_8h_source_l00246}00246 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

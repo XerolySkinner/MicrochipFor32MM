@@ -1,0 +1,2626 @@
+\hypertarget{reg__sdio_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/reg\+\_\+sdio.h 文件参考}
+\label{reg__sdio_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_sdio.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_sdio.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}mm32\+\_\+reg.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_s_d_i_o___type_def}{SDIO\+\_\+\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em SDIO Register Structure Definition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a95dd0abbc6767893b4b02935fa846f52}{SDIO\+\_\+\+BASE}}~(0x40018000U)
+\begin{DoxyCompactList}\small\item\em SDIO Base Address Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a8149aa2760fffac16bc75216d5fd9331}{SDIO}}~((\mbox{\hyperlink{struct_s_d_i_o___type_def}{SDIO\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__sdio_8h_a95dd0abbc6767893b4b02935fa846f52}{SDIO\+\_\+\+BASE}})
+\begin{DoxyCompactList}\small\item\em SDIO type pointer Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ab0b68f3fc851ccd84bc5aa602b57f8cb}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+OPMSel\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em SDIO\+\_\+\+MMC\+\_\+\+CTRL Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_acf895995caa68802d72504eec897d34d}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+OPMSel}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_ab0b68f3fc851ccd84bc5aa602b57f8cb}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+OPMSel\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO port operation mode select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_acbc6d6aa48c66d95f69e7f48e96b962a}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+Sel\+SM\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a56af4b1c818fa222ae878a57c02452c4}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+Sel\+SM}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_acbc6d6aa48c66d95f69e7f48e96b962a}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+Sel\+SM\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Select automatic mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_acbc7044b1aed1635316e4720b9bde8fa}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+OUTM\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a4d01892132260ec4db7340971d5c6794}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+OUTM}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_acbc7044b1aed1635316e4720b9bde8fa}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+OUTM\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO port CMD line output driver mode selection Open drain \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_aa1ce75aad9d3008aab5732f174ef58f7}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a7bdf8b5af98a146a821c9dd6b28cfe8b}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP2}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_aa1ce75aad9d3008aab5732f174ef58f7}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO port CLK linespeedselection 1/2 baseclock \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a7f82ee53847237b75c894c3f6033b661}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP4}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_aa1ce75aad9d3008aab5732f174ef58f7}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO port CLK linespeedselection 1/4 baseclock \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a21b6dab7a56ebeff10314311766ad6d2}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP6}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_aa1ce75aad9d3008aab5732f174ef58f7}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO port CLK linespeedselection 1/6 baseclock \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ac2f7941a359b75a4b41388c34a2f5adc}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP8}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_aa1ce75aad9d3008aab5732f174ef58f7}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO port CLK linespeedselection 1/8 baseclock \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_af33cbeda098265b5315163394b66faad}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP10}}~(0x04U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_aa1ce75aad9d3008aab5732f174ef58f7}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO port CLK linespeedselection 1/10 baseclock \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a240361d88468d3dc1b13f20dec1bf71d}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP12}}~(0x05U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_aa1ce75aad9d3008aab5732f174ef58f7}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO port CLK linespeedselection 1/12 baseclock \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ae40ad25fedb5859797a77619ea71e509}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP14}}~(0x06U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_aa1ce75aad9d3008aab5732f174ef58f7}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO port CLK linespeedselection 1/14 baseclock \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a439a29c5c0f35663259881115452cbc5}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP16}}~(0x07U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_aa1ce75aad9d3008aab5732f174ef58f7}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO port CLK linespeedselection 1/16 baseclock \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a266a58a7768e5f47bdf67331a70a9e79}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+Sel\+PTSM\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a4e5460755abf8d99bc0a079bcaac8f0f}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+Sel\+PTSM}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a266a58a7768e5f47bdf67331a70a9e79}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+Sel\+PTSM\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Select\+SD/\+MMC/\+SDIO port transfer high speed mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a7576b0b5cc4b0acdb78c7934530585f9}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+DATWT\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a00629bfe3f9be447b5e5d01bd29caa98}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+DATWT}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a7576b0b5cc4b0acdb78c7934530585f9}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+DATWT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Definethe bus width of SD/\+MMC/\+SDIO port DAT line \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a00d6159fe03f5c7304d4107d78c62bc5}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+MDEN\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a80ca9fa5e8e83c2a385c0c7735ffbac6}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+MDEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a00d6159fe03f5c7304d4107d78c62bc5}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+MDEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SDIO mode enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a9dc3b3a64951b829c522d08096bc7ed6}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+INTEN\+\_\+\+Pos}}~(9)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a7fe7e03a659a68e968d41dbbba989886}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+INTEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a9dc3b3a64951b829c522d08096bc7ed6}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+INTEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SDIO interrupt enale signal \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ab7c34e82ff94d41a0701888a1c3ee36b}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+RDWTEN\+\_\+\+Pos}}~(10)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a6e8391e0b0980a50ec9daad04a57deae}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+RDWTEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_ab7c34e82ff94d41a0701888a1c3ee36b}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+RDWTEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SDIO read wait enable signal ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_acde66c5d9c380a93c0e730ae64d04890}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+AUTODATTR\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a3fa64afa530828d76cd21c4f28f60449}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+AUTODATTR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_acde66c5d9c380a93c0e730ae64d04890}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+AUTODATTR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Set up automatic data transfer \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a710f35f390736dec2cc533b21eec6e3b}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+TRANSFDIR\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ae70571feb8be860e01ca97b07c604208}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+TRANSFDIR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a710f35f390736dec2cc533b21eec6e3b}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+TRANSFDIR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Set the direction of data transfer \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_aee5dd0d23dd172d0e6cd8b7cc409c356}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+AUTOTR\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a0312b0d58e9e381eae95007f3fe50a14}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+AUTOTR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_aee5dd0d23dd172d0e6cd8b7cc409c356}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+AUTOTR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Set up automatic 8-\/bit/command/response transmission. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a0525b135661cab4c7796489c3799bf9e}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+RESPCMDSEL\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a2a325aaf622130489ae4cee2c1dd775d}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+RESPCMDSEL}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a0525b135661cab4c7796489c3799bf9e}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+RESPCMDSEL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive response \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_af78610c8aa46efa8a8e519136ece93be}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+CID\+\_\+\+CSDRD\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ad133903600be9f7a893531f02a8399fe}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+CID\+\_\+\+CSDRD}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_af78610c8aa46efa8a8e519136ece93be}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+CID\+\_\+\+CSDRD\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em CID and CSD reads \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a55bb3be779a63e13469db7a2ef9f279a}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+PCLKG\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a7820d6b38b9221c7945d0f524d8c535b}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+PCLKG}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a55bb3be779a63e13469db7a2ef9f279a}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+PCLKG\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO port CLK line 8 empty clock generated \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a1aaaafc5d0701dd775683ff7300be0a8}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+ENRRESP\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a21ee71418a9c386aa7c6c4c23f2d0a13}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+ENRRESP}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a1aaaafc5d0701dd775683ff7300be0a8}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+ENRRESP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Enable automatic receiving of responses after a command \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a1bd5d6216b9f8839398b2f4234302297}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+AUTOCLKG\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a32847519effe4fa55bdeb390c5ab6f97}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+AUTOCLKG}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a1bd5d6216b9f8839398b2f4234302297}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+AUTOCLKG\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Enable automatic conversion of the 8 empty clock after a response/command or a single block of data \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a3a8f3c67682fad8b301b9dee17ee5053}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+CMDCH\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a890ffee97f63068c5d0558d48bc87093}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+CMDCH}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a3a8f3c67682fad8b301b9dee17ee5053}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+CMDCH\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SDIO mode enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a5637dbdd872da61637b8c37fc740b261}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+CMDAF\+\_\+\+Pos}}~(9)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a1660078d4f0fdde187298f6688e0cb18}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+CMDAF}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a5637dbdd872da61637b8c37fc740b261}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+CMDAF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SDIO CMD12 / IO abort flag ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_afa64576234c034993806a34cf9ffa7c4}{SDIO\+\_\+\+MMC\+\_\+\+BYTECNTL\+\_\+\+CNT}}~(0x\+FFFFU)
+\begin{DoxyCompactList}\small\item\em Data transfer byte count register ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_aec5eea700d28f822eb375d8587b38c7f}{SDIO\+\_\+\+MMC\+\_\+\+TR\+\_\+\+BLOCKCNT\+\_\+\+CNT}}~(0x\+FFFFU)
+\begin{DoxyCompactList}\small\item\em The value of the counter that completes the transfer when multiple blocks are transferred. ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a2f2e2ba2d627e290b4641c7835f8dce5}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+DAT\+\_\+\+CRCE\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_aea1b26f58bf0d4b01f3c2babe72d57b5}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+DAT\+\_\+\+CRCE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a2f2e2ba2d627e290b4641c7835f8dce5}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+DAT\+\_\+\+CRCE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAT CRC error \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a8d6012a05027986698a6e5965da4e85a}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+CMD\+\_\+\+CRCE\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ad26717b0b7dd2025834466e8af26ff12}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+CMD\+\_\+\+CRCE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a8d6012a05027986698a6e5965da4e85a}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+CMD\+\_\+\+CRCE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em CMD CRC error \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a4c8a83fbeeac95567a2a1d8bcaa3b983}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+DAT\+\_\+\+CRCS\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a5a806fe129b5b5e03825e696b1c7bd3f}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+DAT\+\_\+\+CRCS}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a4c8a83fbeeac95567a2a1d8bcaa3b983}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+DAT\+\_\+\+CRCS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAT CRC selection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_af90ba32d34d603320b9fd2d23370ec4d}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+ENRDMB\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a82bd7399203440dded1f88943e718eab}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+ENRDMB}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_af90ba32d34d603320b9fd2d23370ec4d}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+ENRDMB\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Enable reading multiple blocks of data before responding \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a3d542ed11615a4b8348c371bf659c7d8}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+ENCHK\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_af2d196fba31c166a81b025a140f7b584}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+ENCHK}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a3d542ed11615a4b8348c371bf659c7d8}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+ENCHK\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Enable automatic checking \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a90a6bd145d526611444a0a32f6119509}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+DAT\+\_\+\+CRCEN\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a9cfcaf5fca8ccae1c50f6e800c2ce3fc}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+DAT\+\_\+\+CRCEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a90a6bd145d526611444a0a32f6119509}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+DAT\+\_\+\+CRCEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO PORT DAT line CRC circuit enablement \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a30b6798dc7226a1707c42a7b85c4beb3}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+CMD\+\_\+\+CRCEN\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ac2c510037f27e143d444be6472ddd968}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+CMD\+\_\+\+CRCEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a30b6798dc7226a1707c42a7b85c4beb3}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+CMD\+\_\+\+CRCEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO port CMD line CRC circuit enablement ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a786758cb711a5fc47904dcf4e7b6fc29}{SDIO\+\_\+\+CMD\+\_\+\+CRC\+\_\+\+CMD\+\_\+\+CRCV}}~(0x7\+FU)
+\begin{DoxyCompactList}\small\item\em CMD\+\_\+\+CRCV register value ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a3b01143a08cb42a1fd0fc4a15fd39ad0}{SDIO\+\_\+\+DAT\+\_\+\+CRCL\+\_\+\+DAT\+\_\+\+CRCLV}}~(0x\+FFU)
+\begin{DoxyCompactList}\small\item\em CMD\+\_\+\+CRCV low register value ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_af4baa52a3cf8d0f5a3dbcd8b6d8ae7ba}{SDIO\+\_\+\+DAT\+\_\+\+CRCL\+\_\+\+DAT\+\_\+\+CRCHV}}~(0x\+FFU)
+\begin{DoxyCompactList}\small\item\em CMD\+\_\+\+CRCV high register value ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a7040a089a334d17fd1d2f627a49762da}{SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+NTCR\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a9649f11fdbe17ce024b5060cb4d1e824}{SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+NTCR}}~(0x0\+FU $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a7040a089a334d17fd1d2f627a49762da}{SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+NTCR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Ncr timeout count register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a4f1f3c4f6254284b8d8e19e6a44ceab4}{SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+AUTONTEN\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_add7adc9de1f5a3ce43a441b7b8f4f200}{SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+AUTONTEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a4f1f3c4f6254284b8d8e19e6a44ceab4}{SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+AUTONTEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Automatic Ncr timer output enablement \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a560b1703e9674630405d9ead10e1bbb6}{SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+PDATS\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ad5988d3a90f523b41dd470b40bd73365}{SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+PDATS}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a560b1703e9674630405d9ead10e1bbb6}{SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+PDATS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO port DAT line signal \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a20d5cb91df4e37ddbb609ec38f6f533a}{SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+PCMDS\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_acf00835cb117b59caae1af409e783b1f}{SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+PCMDS}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a20d5cb91df4e37ddbb609ec38f6f533a}{SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+PCMDS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO port CMD line signal \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a27137b84f94496feb450e82c357ad4a6}{SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+PCLKS\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_afaba459028ddd6fea6fa4cf1951a9f3c}{SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+PCLKS}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a27137b84f94496feb450e82c357ad4a6}{SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+PCLKS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO port CLK line signal ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a79b96dc6585ece2ffcca589052185b25}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CMDDINT\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ae504700a921ded56de551ba926c310f0}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CMDDINT}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a79b96dc6585ece2ffcca589052185b25}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CMDDINT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em CMD completes interrupt shielding \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a682d506588607d140a1db682a1e2ddb1}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+DATDINT\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a658360e3beb9144a82195c19fa56e789}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+DATDINT}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a682d506588607d140a1db682a1e2ddb1}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+DATDINT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAT completes interrupt shielding \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a31ca6ce1603c12ee53a307fb9668f50d}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+DATEINT\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a9bff646225d617e918ddef8d7efec02e}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+DATEINT}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a31ca6ce1603c12ee53a307fb9668f50d}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+DATEINT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAT CRC error interrupt masking \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a244692d48efdf58d2098c1c858457788}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CMDEINT\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a985861d2f6c0c85cb904bf3fc93f495c}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CMDEINT}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a244692d48efdf58d2098c1c858457788}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CMDEINT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em CMD CRC error interrupt masking \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a011674a5c236f2c9940654a042653461}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+MBDINTM\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a81938f5c9dc535cc681674fb584ee84b}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+MBDINTM}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a011674a5c236f2c9940654a042653461}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+MBDINTM\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Multiple blocks complete interrupt shielding \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a050de2b38c60b200d509b8829e292371}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+MBTINTM\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_aa70b18f9ab31e0ed6779e9fe95e434ef}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+MBTINTM}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a050de2b38c60b200d509b8829e292371}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+MBTINTM\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Multiblock timeout interrupt shielding \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a53b086afc340c21a961151e204ade33a}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CRTINTM\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a64ce623db26d72e943dec25acc58a879}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CRTINTM}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a53b086afc340c21a961151e204ade33a}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CRTINTM\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Cmd and Resp Ncr timeout interrupt shielding \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a9f47a494b76197d147d3560cc117edfc}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CRCINTM\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ad2ea47dc3c540e689f68617f290baf91}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CRCINTM}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a9f47a494b76197d147d3560cc117edfc}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CRCINTM\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em CRC status token error interrupt masking \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a6a7829f4b8d2d584c28dc4a77f3b9d4d}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+D1\+INTM\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a3eaecac1bccdc092069294f3150a086d}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+D1\+INTM}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a6a7829f4b8d2d584c28dc4a77f3b9d4d}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+D1\+INTM\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SDIO Data 1 Line Interrupt Mask ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a41e0d402f5aeaef697e7a2cf6c66c31d}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CMDDMC\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a5d359ca8938ef921f6f3f0b6b10388fb}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CMDDMC}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a41e0d402f5aeaef697e7a2cf6c66c31d}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CMDDMC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em CMD completes interrupt mask bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a122e975ac9b0fdb53a835aac7001a8c0}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+DATDMC\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a221ea805f1cd77b5a8f91fceb69481ec}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+DATDMC}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a122e975ac9b0fdb53a835aac7001a8c0}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+DATDMC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAT completes interrupt mask bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a83f6411957215326529ebccf7cc6ccd9}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+DATEMC\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a74b5f0f6c6299705955927faa0da85cd}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+DATEMC}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a83f6411957215326529ebccf7cc6ccd9}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+DATEMC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAT CRC error interrupt mask bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a35d20d80c455d43f44706a36a1c33093}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CMDEMC\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a2e376f1d8606412d89c393d7db3f7354}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CMDEMC}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a35d20d80c455d43f44706a36a1c33093}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CMDEMC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em CMD CRC error interrupt mask bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a0077ade9a84458314de7ea97d14c5948}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MBDMC\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a40b294ead927eeab16413c03df7332c1}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MBDMC}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a0077ade9a84458314de7ea97d14c5948}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MBDMC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Multi -\/ block transmission completion interrupt mask bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ae52dcb63c95356f8294f6bcf83dace02}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MBTMC\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ad20f77a95d0df11b40e6aa276057f651}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MBTMC}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_ae52dcb63c95356f8294f6bcf83dace02}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MBTMC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Multiblock transmission timeout interrupt mask bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a2e59baafb35aebd766cd090b7d3a2a09}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CRNTMC\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a1a65a9406933aed963050ce49be14b31}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CRNTMC}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a2e59baafb35aebd766cd090b7d3a2a09}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CRNTMC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Command and response Ncr timeout interrupt mask bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_aa3ff5e17e3a490bdf76b95ad72a54dc9}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CRCEMC\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_abc63dd2a3baa397590cc7dfd7a4c5b5a}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CRCEMC}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_aa3ff5e17e3a490bdf76b95ad72a54dc9}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CRCEMC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em CRC status error marks the interrupt mask bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a330ce5d9009f0ee35857da29417d4ef1}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+D1\+MC\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_af369de3e681c598931605cf0f06c0ec0}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+D1\+MC}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a330ce5d9009f0ee35857da29417d4ef1}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+D1\+MC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SDIO Dat\+A1 line interrupt flag/clear bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a99b54f59ca8ac23d50fdf9cac8c14223}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK}}~(0\+XFFU)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a8ec39f48410748b9bc5dcdca40f17aec}{SDIO\+\_\+\+MMC\+\_\+\+CARDSEL\+\_\+\+TSCALE\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em SDIO\+\_\+\+MMC\+\_\+\+CARDSEL Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a6c8b551a210b936ba9d1aee7cbdbd022}{SDIO\+\_\+\+MMC\+\_\+\+CARDSEL\+\_\+\+TSCALE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a8ec39f48410748b9bc5dcdca40f17aec}{SDIO\+\_\+\+MMC\+\_\+\+CARDSEL\+\_\+\+TSCALE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO clock frequency division factor (based on 1MHz \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a00b69eb7c80ca44c2326e514c7e5f6d0}{SDIO\+\_\+\+MMC\+\_\+\+CARDSEL\+\_\+\+ENPCLK\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a47d27b7a755a4758f0798e93c4cb2efe}{SDIO\+\_\+\+MMC\+\_\+\+CARDSEL\+\_\+\+ENPCLK}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a00b69eb7c80ca44c2326e514c7e5f6d0}{SDIO\+\_\+\+MMC\+\_\+\+CARDSEL\+\_\+\+ENPCLK\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Enabling card\textquotesingle{}s SD/\+MMC/\+SDIO port CLK clock \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a7ff914e149608f81b0f4c6eb9792fc8f}{SDIO\+\_\+\+MMC\+\_\+\+CARDSEL\+\_\+\+CTREN\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a9cc74a0c0e7fa28344ffa5554d59a44d}{SDIO\+\_\+\+MMC\+\_\+\+CARDSEL\+\_\+\+CTREN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a7ff914e149608f81b0f4c6eb9792fc8f}{SDIO\+\_\+\+MMC\+\_\+\+CARDSEL\+\_\+\+CTREN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO controller enablement bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a0aedf9620e83b4a40b0aa57e0a8103bc}{SDIO\+\_\+\+MMC\+\_\+\+CARDSEL\+\_\+\+MASK}}~(0\+XFFU)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a6c99c8cbd1d30ac6d26adb06a3449369}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT0\+S\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em SDIO\+\_\+\+MMC\+\_\+\+SIQ Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ad5fd62deedddaaa62ba80b2a0b68a581}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT0S}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a6c99c8cbd1d30ac6d26adb06a3449369}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT0\+S\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO port DAT0 line signal \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a0d88b0b08df3c510eb0799142c91ee3b}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT1\+S\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a19c2138cda4dd875d660e8f06701e2b4}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT1S}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a0d88b0b08df3c510eb0799142c91ee3b}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT1\+S\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO port DAT1 line signal \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a5ccba5315450f045ea3a53b9b8c15583}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT2\+S\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a38197c4a683d4e598014411bf6608444}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT2S}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a5ccba5315450f045ea3a53b9b8c15583}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT2\+S\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO port DAT2 line signal \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_af8e310699da64b8b6e67c01141b7ec5d}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT3\+S\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a458f21c39945e84e5babe82085fbf691}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT3S}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_af8e310699da64b8b6e67c01141b7ec5d}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT3\+S\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO port DAT3 line signal \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a39b2536f2aa279f004fa4dcc632db1c8}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+CRC\+\_\+status\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a49715142020722fa8bbfd360e50efd7c}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+CRC\+\_\+status}}~(0x07U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a39b2536f2aa279f004fa4dcc632db1c8}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+CRC\+\_\+status\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em CRC state \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a4bdd94645d07d17a9d73c592a6a46d75}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PCMDS\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a40f844fbf5e80d9102a00bc66f4cb20a}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PCMDS}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a4bdd94645d07d17a9d73c592a6a46d75}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PCMDS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO port CMD line signal ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a101866161b19a69542ad79344aabfb5a}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+SPMBDTR\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a1a6cfe2b6db86571577ab063fb0bec07}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+SPMBDTR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a101866161b19a69542ad79344aabfb5a}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+SPMBDTR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Set the SD/\+MMC/\+SDIO port to automatically multiblock data transfer bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a06f9c9ef1bb8c7ffa557f9191348e60c}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+SMBDTD\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ad2439a2d9c20de27425fc880e655d210}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+SMBDTD}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a06f9c9ef1bb8c7ffa557f9191348e60c}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+SMBDTD\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a9e2a8298cbff7fd90a23a4b8f52c1de5}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+PAUTOTR\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ac42c49d1471463451d988befcdaa511b}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+PAUTOTR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a9e2a8298cbff7fd90a23a4b8f52c1de5}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+PAUTOTR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Set up SD/\+MMC/\+SDIO port automatic command and multi -\/ block data transfer \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a6d3a8ee0a4edf1d55ac4b0e59621a34a}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+PCLKP\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ad9d9420004caee8149710480f4e5f18b}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+PCLKP}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a6d3a8ee0a4edf1d55ac4b0e59621a34a}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+PCLKP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO port CLK line polarity selection bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_abdecd935d92e8b85639f594ca8f56e73}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+BTSSel\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a9382e50afb9deaa17fa8dcdb32425c01}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+BTSSel}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a39b2536f2aa279f004fa4dcc632db1c8}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+CRC\+\_\+status\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO BUSY Timeout level selects bits \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a903e2043f385b5fd77abfa7ac43f5c00}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+BTSSel\+\_\+2}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a39b2536f2aa279f004fa4dcc632db1c8}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+CRC\+\_\+status\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO BUSY Timeout level selects bits \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a013986d046429202215268bc313b366e}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+NTSSel\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_af09293a7d09faf5ffbb5a0f64371ca41}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+NTSSel}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a013986d046429202215268bc313b366e}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+NTSSel\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SD/\+MMC/\+SDIO NAC timeout level selection bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_abda71efbed1d452f06ca2dc5a993756e}{SDIO\+\_\+\+MMC\+\_\+\+BLOCKCNT\+\_\+\+EN}}~(0x\+FFFFU)
+\begin{DoxyCompactList}\small\item\em Block count register ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a55470846045377186acdfc92a7b9a960}{SDIO\+\_\+\+MMC\+\_\+\+TIMEOUTCNT\+\_\+\+DTCNT}}~(0x\+FFU)
+\begin{DoxyCompactList}\small\item\em Data transfer timeout count register ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ac5309058491ab369995e69399fed8f82}{SDIO\+\_\+\+CMD\+\_\+\+BUF0\+\_\+\+DAT}}~(0x\+FFU)
+\begin{DoxyCompactList}\small\item\em Cmd\+\_\+buf0 byte mapping bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ae11e3da86ec2a5bbe98510c23f2312d2}{SDIO\+\_\+\+CMD\+\_\+\+BUF1\+\_\+\+DAT}}~(0x\+FFU)
+\begin{DoxyCompactList}\small\item\em Cmd\+\_\+buf1 byte mapping bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ae8ae1442c183260aa5053feaa8994810}{SDIO\+\_\+\+CMD\+\_\+\+BUF2\+\_\+\+DAT}}~(0x\+FFU)
+\begin{DoxyCompactList}\small\item\em Cmd\+\_\+buf2 byte mapping bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a9c524f8c9a4017634d7a18f8f9379599}{SDIO\+\_\+\+CMD\+\_\+\+BUF3\+\_\+\+DAT}}~(0x\+FFU)
+\begin{DoxyCompactList}\small\item\em Cmd\+\_\+buf3 byte mapping bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a68dfcf82e38598d023efb4f6a32512bd}{SDIO\+\_\+\+CMD\+\_\+\+BUF4\+\_\+\+DAT}}~(0x\+FFU)
+\begin{DoxyCompactList}\small\item\em Cmd\+\_\+buf4 byte mapping bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ad643f4c268ca5502a172d9b6e00ee670}{SDIO\+\_\+\+CMD\+\_\+\+BUF5\+\_\+\+DAT}}~(0x\+FFU)
+\begin{DoxyCompactList}\small\item\em Cmd\+\_\+buf5 byte mapping bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_aa27ade37faee1189e59ef7350358b698}{SDIO\+\_\+\+CMD\+\_\+\+BUF6\+\_\+\+DAT}}~(0x\+FFU)
+\begin{DoxyCompactList}\small\item\em Cmd\+\_\+buf6 byte mapping bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ae3d58562ee57ab684c62a80989511f45}{SDIO\+\_\+\+CMD\+\_\+\+BUF7\+\_\+\+DAT}}~(0x\+FFU)
+\begin{DoxyCompactList}\small\item\em Cmd\+\_\+buf7 byte mapping bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a426de6a211ea36d8eb6551e0df826751}{SDIO\+\_\+\+CMD\+\_\+\+BUF8\+\_\+\+DAT}}~(0x\+FFU)
+\begin{DoxyCompactList}\small\item\em Cmd\+\_\+buf8 byte mapping bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a05b190bbe32b6afda75c6b0cc3d53f5a}{SDIO\+\_\+\+CMD\+\_\+\+BUF9\+\_\+\+DAT}}~(0x\+FFU)
+\begin{DoxyCompactList}\small\item\em Cmd\+\_\+buf9 byte mapping bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a16ab092c26aa0ce5b3b2f1d0b7ec07de}{SDIO\+\_\+\+CMD\+\_\+\+BUF10\+\_\+\+DAT}}~(0x\+FFU)
+\begin{DoxyCompactList}\small\item\em Cmd\+\_\+buf10 byte mapping bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a99924aa0ae4b2ef6083544f7c869dc89}{SDIO\+\_\+\+CMD\+\_\+\+BUF11\+\_\+\+DAT}}~(0x\+FFU)
+\begin{DoxyCompactList}\small\item\em Cmd\+\_\+buf11 byte mapping bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a8382884adf414f6c097b220f8bac44b0}{SDIO\+\_\+\+CMD\+\_\+\+BUF12\+\_\+\+DAT}}~(0x\+FFU)
+\begin{DoxyCompactList}\small\item\em Cmd\+\_\+buf12 byte mapping bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a92c0e91983a7df576a702e084445387b}{SDIO\+\_\+\+CMD\+\_\+\+BUF13\+\_\+\+DAT}}~(0x\+FFU)
+\begin{DoxyCompactList}\small\item\em Cmd\+\_\+buf13 byte mapping bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a3e01563287e07e69c0c9a7b8509b62ec}{SDIO\+\_\+\+CMD\+\_\+\+BUF14\+\_\+\+DAT}}~(0x\+FFU)
+\begin{DoxyCompactList}\small\item\em Cmd\+\_\+buf14 byte mapping bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_af92fb3a1ce8c47b9f6b4fb561b9b18ab}{SDIO\+\_\+\+CMD\+\_\+\+BUF15\+\_\+\+DAT}}~(0x\+FFU)
+\begin{DoxyCompactList}\small\item\em Cmd\+\_\+buf15 byte mapping bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a3c643f793ac90379ef619a8135e8a0f2}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBF\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a93a24edc7906a3bdd0b73a9346b099da}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBF}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a3c643f793ac90379ef619a8135e8a0f2}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em The data cache is full \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_af78540caf1ef804f91702f8f58b16fa3}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBE\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a78a08b5ef2b04bc386d16b9fd98ff9be}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_af78540caf1ef804f91702f8f58b16fa3}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Data buff is null \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a8dd623f20cc243fbbdccf673cf90e1de}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBML\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ac11d38aabd4ad323f87297a60c701a4e}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBML}}~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a8dd623f20cc243fbbdccf673cf90e1de}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBML\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a191cc58314f5ced9541698c8e3725285}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DMAHEN\+\_\+\+Pos}}~(10)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ac370e4f2a3cd00eca9c8ab949c922f9b}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DMAHEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a191cc58314f5ced9541698c8e3725285}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DMAHEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DMA hardware interface enablement \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a1459e6c72fcc4d86e5dda563ef4a5771}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+SBAD\+\_\+\+Pos}}~(11)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ae9d555553cb714cf46136c5c035db84c}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+SBAD}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a1459e6c72fcc4d86e5dda563ef4a5771}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+SBAD\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Sets the access direction of the buff \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a9f4e888a6327a6cc8d1c2d2e3dcd821f}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DFIFOSM\+\_\+\+Pos}}~(12)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a3231470c0248f45428f31b1a84ca045d}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DFIFOSM}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a9f4e888a6327a6cc8d1c2d2e3dcd821f}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DFIFOSM\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Data FIFO status signal shielding bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a804b759bfa931b9335736825d2ea390d}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DRM\+\_\+\+Pos}}~(14)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a9fa2349835f37997cb0d7eaaca54dc82}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DRM}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a804b759bfa931b9335736825d2ea390d}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DRM\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DMA request masking \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a76e2c84e2d38110b3ba65a53a37ab4b8}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBFEN\+\_\+\+Pos}}~(15)
+\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_ab8bd466b5446bad37e8ab1148f575d0b}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBFEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a76e2c84e2d38110b3ba65a53a37ab4b8}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBFEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Data Buf empty enable bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__sdio_8h_a76826ac950585160973b21ab0c73baba}{SDIO\+\_\+\+DATA\+\_\+\+BUF\+\_\+\+DB}}~(0x\+FFFFFFFFU)
+\begin{DoxyCompactList}\small\item\em Data buffer \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{reg__sdio_8h_a8149aa2760fffac16bc75216d5fd9331}\label{reg__sdio_8h_a8149aa2760fffac16bc75216d5fd9331}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO@{SDIO}}
+\index{SDIO@{SDIO}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO}{SDIO}}
+{\footnotesize\ttfamily \#define SDIO~((\mbox{\hyperlink{struct_s_d_i_o___type_def}{SDIO\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__sdio_8h_a95dd0abbc6767893b4b02935fa846f52}{SDIO\+\_\+\+BASE}})}
+
+
+
+SDIO type pointer Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00095}{95}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a95dd0abbc6767893b4b02935fa846f52}\label{reg__sdio_8h_a95dd0abbc6767893b4b02935fa846f52}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_BASE@{SDIO\_BASE}}
+\index{SDIO\_BASE@{SDIO\_BASE}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_BASE}{SDIO\_BASE}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+BASE~(0x40018000U)}
+
+
+
+SDIO Base Address Definition 
+
+Base Address\+: 0x40018000 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00039}{39}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a78a08b5ef2b04bc386d16b9fd98ff9be}\label{reg__sdio_8h_a78a08b5ef2b04bc386d16b9fd98ff9be}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_BUF\_CTLL\_DBE@{SDIO\_BUF\_CTLL\_DBE}}
+\index{SDIO\_BUF\_CTLL\_DBE@{SDIO\_BUF\_CTLL\_DBE}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_BUF\_CTLL\_DBE}{SDIO\_BUF\_CTLL\_DBE}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBE~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_af78540caf1ef804f91702f8f58b16fa3}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBE\+\_\+\+Pos}})}
+
+
+
+Data buff is null 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00360}{360}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_af78540caf1ef804f91702f8f58b16fa3}\label{reg__sdio_8h_af78540caf1ef804f91702f8f58b16fa3}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_BUF\_CTLL\_DBE\_Pos@{SDIO\_BUF\_CTLL\_DBE\_Pos}}
+\index{SDIO\_BUF\_CTLL\_DBE\_Pos@{SDIO\_BUF\_CTLL\_DBE\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_BUF\_CTLL\_DBE\_Pos}{SDIO\_BUF\_CTLL\_DBE\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBE\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00359}{359}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a93a24edc7906a3bdd0b73a9346b099da}\label{reg__sdio_8h_a93a24edc7906a3bdd0b73a9346b099da}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_BUF\_CTLL\_DBF@{SDIO\_BUF\_CTLL\_DBF}}
+\index{SDIO\_BUF\_CTLL\_DBF@{SDIO\_BUF\_CTLL\_DBF}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_BUF\_CTLL\_DBF}{SDIO\_BUF\_CTLL\_DBF}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBF~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a3c643f793ac90379ef619a8135e8a0f2}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBF\+\_\+\+Pos}})}
+
+
+
+The data cache is full 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00358}{358}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a3c643f793ac90379ef619a8135e8a0f2}\label{reg__sdio_8h_a3c643f793ac90379ef619a8135e8a0f2}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_BUF\_CTLL\_DBF\_Pos@{SDIO\_BUF\_CTLL\_DBF\_Pos}}
+\index{SDIO\_BUF\_CTLL\_DBF\_Pos@{SDIO\_BUF\_CTLL\_DBF\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_BUF\_CTLL\_DBF\_Pos}{SDIO\_BUF\_CTLL\_DBF\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBF\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00357}{357}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ab8bd466b5446bad37e8ab1148f575d0b}\label{reg__sdio_8h_ab8bd466b5446bad37e8ab1148f575d0b}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_BUF\_CTLL\_DBFEN@{SDIO\_BUF\_CTLL\_DBFEN}}
+\index{SDIO\_BUF\_CTLL\_DBFEN@{SDIO\_BUF\_CTLL\_DBFEN}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_BUF\_CTLL\_DBFEN}{SDIO\_BUF\_CTLL\_DBFEN}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBFEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a76e2c84e2d38110b3ba65a53a37ab4b8}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBFEN\+\_\+\+Pos}})}
+
+
+
+Data Buf empty enable bit ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+DATA\+\_\+\+BUF Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00375}{375}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a76e2c84e2d38110b3ba65a53a37ab4b8}\label{reg__sdio_8h_a76e2c84e2d38110b3ba65a53a37ab4b8}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_BUF\_CTLL\_DBFEN\_Pos@{SDIO\_BUF\_CTLL\_DBFEN\_Pos}}
+\index{SDIO\_BUF\_CTLL\_DBFEN\_Pos@{SDIO\_BUF\_CTLL\_DBFEN\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_BUF\_CTLL\_DBFEN\_Pos}{SDIO\_BUF\_CTLL\_DBFEN\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBFEN\+\_\+\+Pos~(15)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00371}{371}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ac11d38aabd4ad323f87297a60c701a4e}\label{reg__sdio_8h_ac11d38aabd4ad323f87297a60c701a4e}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_BUF\_CTLL\_DBML@{SDIO\_BUF\_CTLL\_DBML}}
+\index{SDIO\_BUF\_CTLL\_DBML@{SDIO\_BUF\_CTLL\_DBML}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_BUF\_CTLL\_DBML}{SDIO\_BUF\_CTLL\_DBML}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBML~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a8dd623f20cc243fbbdccf673cf90e1de}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBML\+\_\+\+Pos}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00362}{362}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a8dd623f20cc243fbbdccf673cf90e1de}\label{reg__sdio_8h_a8dd623f20cc243fbbdccf673cf90e1de}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_BUF\_CTLL\_DBML\_Pos@{SDIO\_BUF\_CTLL\_DBML\_Pos}}
+\index{SDIO\_BUF\_CTLL\_DBML\_Pos@{SDIO\_BUF\_CTLL\_DBML\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_BUF\_CTLL\_DBML\_Pos}{SDIO\_BUF\_CTLL\_DBML\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DBML\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00361}{361}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a3231470c0248f45428f31b1a84ca045d}\label{reg__sdio_8h_a3231470c0248f45428f31b1a84ca045d}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_BUF\_CTLL\_DFIFOSM@{SDIO\_BUF\_CTLL\_DFIFOSM}}
+\index{SDIO\_BUF\_CTLL\_DFIFOSM@{SDIO\_BUF\_CTLL\_DFIFOSM}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_BUF\_CTLL\_DFIFOSM}{SDIO\_BUF\_CTLL\_DFIFOSM}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DFIFOSM~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a9f4e888a6327a6cc8d1c2d2e3dcd821f}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DFIFOSM\+\_\+\+Pos}})}
+
+
+
+Data FIFO status signal shielding bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00368}{368}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a9f4e888a6327a6cc8d1c2d2e3dcd821f}\label{reg__sdio_8h_a9f4e888a6327a6cc8d1c2d2e3dcd821f}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_BUF\_CTLL\_DFIFOSM\_Pos@{SDIO\_BUF\_CTLL\_DFIFOSM\_Pos}}
+\index{SDIO\_BUF\_CTLL\_DFIFOSM\_Pos@{SDIO\_BUF\_CTLL\_DFIFOSM\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_BUF\_CTLL\_DFIFOSM\_Pos}{SDIO\_BUF\_CTLL\_DFIFOSM\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DFIFOSM\+\_\+\+Pos~(12)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00367}{367}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ac370e4f2a3cd00eca9c8ab949c922f9b}\label{reg__sdio_8h_ac370e4f2a3cd00eca9c8ab949c922f9b}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_BUF\_CTLL\_DMAHEN@{SDIO\_BUF\_CTLL\_DMAHEN}}
+\index{SDIO\_BUF\_CTLL\_DMAHEN@{SDIO\_BUF\_CTLL\_DMAHEN}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_BUF\_CTLL\_DMAHEN}{SDIO\_BUF\_CTLL\_DMAHEN}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DMAHEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a191cc58314f5ced9541698c8e3725285}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DMAHEN\+\_\+\+Pos}})}
+
+
+
+DMA hardware interface enablement 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00364}{364}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a191cc58314f5ced9541698c8e3725285}\label{reg__sdio_8h_a191cc58314f5ced9541698c8e3725285}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_BUF\_CTLL\_DMAHEN\_Pos@{SDIO\_BUF\_CTLL\_DMAHEN\_Pos}}
+\index{SDIO\_BUF\_CTLL\_DMAHEN\_Pos@{SDIO\_BUF\_CTLL\_DMAHEN\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_BUF\_CTLL\_DMAHEN\_Pos}{SDIO\_BUF\_CTLL\_DMAHEN\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DMAHEN\+\_\+\+Pos~(10)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00363}{363}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a9fa2349835f37997cb0d7eaaca54dc82}\label{reg__sdio_8h_a9fa2349835f37997cb0d7eaaca54dc82}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_BUF\_CTLL\_DRM@{SDIO\_BUF\_CTLL\_DRM}}
+\index{SDIO\_BUF\_CTLL\_DRM@{SDIO\_BUF\_CTLL\_DRM}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_BUF\_CTLL\_DRM}{SDIO\_BUF\_CTLL\_DRM}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DRM~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a804b759bfa931b9335736825d2ea390d}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DRM\+\_\+\+Pos}})}
+
+
+
+DMA request masking 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00370}{370}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a804b759bfa931b9335736825d2ea390d}\label{reg__sdio_8h_a804b759bfa931b9335736825d2ea390d}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_BUF\_CTLL\_DRM\_Pos@{SDIO\_BUF\_CTLL\_DRM\_Pos}}
+\index{SDIO\_BUF\_CTLL\_DRM\_Pos@{SDIO\_BUF\_CTLL\_DRM\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_BUF\_CTLL\_DRM\_Pos}{SDIO\_BUF\_CTLL\_DRM\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+DRM\+\_\+\+Pos~(14)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00369}{369}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ae9d555553cb714cf46136c5c035db84c}\label{reg__sdio_8h_ae9d555553cb714cf46136c5c035db84c}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_BUF\_CTLL\_SBAD@{SDIO\_BUF\_CTLL\_SBAD}}
+\index{SDIO\_BUF\_CTLL\_SBAD@{SDIO\_BUF\_CTLL\_SBAD}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_BUF\_CTLL\_SBAD}{SDIO\_BUF\_CTLL\_SBAD}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+SBAD~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a1459e6c72fcc4d86e5dda563ef4a5771}{SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+SBAD\+\_\+\+Pos}})}
+
+
+
+Sets the access direction of the buff 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00366}{366}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a1459e6c72fcc4d86e5dda563ef4a5771}\label{reg__sdio_8h_a1459e6c72fcc4d86e5dda563ef4a5771}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_BUF\_CTLL\_SBAD\_Pos@{SDIO\_BUF\_CTLL\_SBAD\_Pos}}
+\index{SDIO\_BUF\_CTLL\_SBAD\_Pos@{SDIO\_BUF\_CTLL\_SBAD\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_BUF\_CTLL\_SBAD\_Pos}{SDIO\_BUF\_CTLL\_SBAD\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+BUF\+\_\+\+CTLL\+\_\+\+SBAD\+\_\+\+Pos~(11)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00365}{365}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a5d359ca8938ef921f6f3f0b6b10388fb}\label{reg__sdio_8h_a5d359ca8938ef921f6f3f0b6b10388fb}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CLR\_MMC\_INT\_CMDDMC@{SDIO\_CLR\_MMC\_INT\_CMDDMC}}
+\index{SDIO\_CLR\_MMC\_INT\_CMDDMC@{SDIO\_CLR\_MMC\_INT\_CMDDMC}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CLR\_MMC\_INT\_CMDDMC}{SDIO\_CLR\_MMC\_INT\_CMDDMC}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CMDDMC~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a41e0d402f5aeaef697e7a2cf6c66c31d}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CMDDMC\+\_\+\+Pos}})}
+
+
+
+CMD completes interrupt mask bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00223}{223}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a41e0d402f5aeaef697e7a2cf6c66c31d}\label{reg__sdio_8h_a41e0d402f5aeaef697e7a2cf6c66c31d}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CLR\_MMC\_INT\_CMDDMC\_Pos@{SDIO\_CLR\_MMC\_INT\_CMDDMC\_Pos}}
+\index{SDIO\_CLR\_MMC\_INT\_CMDDMC\_Pos@{SDIO\_CLR\_MMC\_INT\_CMDDMC\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CLR\_MMC\_INT\_CMDDMC\_Pos}{SDIO\_CLR\_MMC\_INT\_CMDDMC\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CMDDMC\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00222}{222}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a2e376f1d8606412d89c393d7db3f7354}\label{reg__sdio_8h_a2e376f1d8606412d89c393d7db3f7354}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CLR\_MMC\_INT\_CMDEMC@{SDIO\_CLR\_MMC\_INT\_CMDEMC}}
+\index{SDIO\_CLR\_MMC\_INT\_CMDEMC@{SDIO\_CLR\_MMC\_INT\_CMDEMC}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CLR\_MMC\_INT\_CMDEMC}{SDIO\_CLR\_MMC\_INT\_CMDEMC}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CMDEMC~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a35d20d80c455d43f44706a36a1c33093}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CMDEMC\+\_\+\+Pos}})}
+
+
+
+CMD CRC error interrupt mask bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00229}{229}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a35d20d80c455d43f44706a36a1c33093}\label{reg__sdio_8h_a35d20d80c455d43f44706a36a1c33093}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CLR\_MMC\_INT\_CMDEMC\_Pos@{SDIO\_CLR\_MMC\_INT\_CMDEMC\_Pos}}
+\index{SDIO\_CLR\_MMC\_INT\_CMDEMC\_Pos@{SDIO\_CLR\_MMC\_INT\_CMDEMC\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CLR\_MMC\_INT\_CMDEMC\_Pos}{SDIO\_CLR\_MMC\_INT\_CMDEMC\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CMDEMC\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00228}{228}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_abc63dd2a3baa397590cc7dfd7a4c5b5a}\label{reg__sdio_8h_abc63dd2a3baa397590cc7dfd7a4c5b5a}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CLR\_MMC\_INT\_CRCEMC@{SDIO\_CLR\_MMC\_INT\_CRCEMC}}
+\index{SDIO\_CLR\_MMC\_INT\_CRCEMC@{SDIO\_CLR\_MMC\_INT\_CRCEMC}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CLR\_MMC\_INT\_CRCEMC}{SDIO\_CLR\_MMC\_INT\_CRCEMC}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CRCEMC~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_aa3ff5e17e3a490bdf76b95ad72a54dc9}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CRCEMC\+\_\+\+Pos}})}
+
+
+
+CRC status error marks the interrupt mask bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00237}{237}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_aa3ff5e17e3a490bdf76b95ad72a54dc9}\label{reg__sdio_8h_aa3ff5e17e3a490bdf76b95ad72a54dc9}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CLR\_MMC\_INT\_CRCEMC\_Pos@{SDIO\_CLR\_MMC\_INT\_CRCEMC\_Pos}}
+\index{SDIO\_CLR\_MMC\_INT\_CRCEMC\_Pos@{SDIO\_CLR\_MMC\_INT\_CRCEMC\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CLR\_MMC\_INT\_CRCEMC\_Pos}{SDIO\_CLR\_MMC\_INT\_CRCEMC\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CRCEMC\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00236}{236}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a1a65a9406933aed963050ce49be14b31}\label{reg__sdio_8h_a1a65a9406933aed963050ce49be14b31}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CLR\_MMC\_INT\_CRNTMC@{SDIO\_CLR\_MMC\_INT\_CRNTMC}}
+\index{SDIO\_CLR\_MMC\_INT\_CRNTMC@{SDIO\_CLR\_MMC\_INT\_CRNTMC}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CLR\_MMC\_INT\_CRNTMC}{SDIO\_CLR\_MMC\_INT\_CRNTMC}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CRNTMC~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a2e59baafb35aebd766cd090b7d3a2a09}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CRNTMC\+\_\+\+Pos}})}
+
+
+
+Command and response Ncr timeout interrupt mask bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00235}{235}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a2e59baafb35aebd766cd090b7d3a2a09}\label{reg__sdio_8h_a2e59baafb35aebd766cd090b7d3a2a09}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CLR\_MMC\_INT\_CRNTMC\_Pos@{SDIO\_CLR\_MMC\_INT\_CRNTMC\_Pos}}
+\index{SDIO\_CLR\_MMC\_INT\_CRNTMC\_Pos@{SDIO\_CLR\_MMC\_INT\_CRNTMC\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CLR\_MMC\_INT\_CRNTMC\_Pos}{SDIO\_CLR\_MMC\_INT\_CRNTMC\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+CRNTMC\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00234}{234}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_af369de3e681c598931605cf0f06c0ec0}\label{reg__sdio_8h_af369de3e681c598931605cf0f06c0ec0}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CLR\_MMC\_INT\_D1MC@{SDIO\_CLR\_MMC\_INT\_D1MC}}
+\index{SDIO\_CLR\_MMC\_INT\_D1MC@{SDIO\_CLR\_MMC\_INT\_D1MC}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CLR\_MMC\_INT\_D1MC}{SDIO\_CLR\_MMC\_INT\_D1MC}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+D1\+MC~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a330ce5d9009f0ee35857da29417d4ef1}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+D1\+MC\+\_\+\+Pos}})}
+
+
+
+SDIO Dat\+A1 line interrupt flag/clear bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00239}{239}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a330ce5d9009f0ee35857da29417d4ef1}\label{reg__sdio_8h_a330ce5d9009f0ee35857da29417d4ef1}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CLR\_MMC\_INT\_D1MC\_Pos@{SDIO\_CLR\_MMC\_INT\_D1MC\_Pos}}
+\index{SDIO\_CLR\_MMC\_INT\_D1MC\_Pos@{SDIO\_CLR\_MMC\_INT\_D1MC\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CLR\_MMC\_INT\_D1MC\_Pos}{SDIO\_CLR\_MMC\_INT\_D1MC\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+D1\+MC\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00238}{238}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a221ea805f1cd77b5a8f91fceb69481ec}\label{reg__sdio_8h_a221ea805f1cd77b5a8f91fceb69481ec}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CLR\_MMC\_INT\_DATDMC@{SDIO\_CLR\_MMC\_INT\_DATDMC}}
+\index{SDIO\_CLR\_MMC\_INT\_DATDMC@{SDIO\_CLR\_MMC\_INT\_DATDMC}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CLR\_MMC\_INT\_DATDMC}{SDIO\_CLR\_MMC\_INT\_DATDMC}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+DATDMC~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a122e975ac9b0fdb53a835aac7001a8c0}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+DATDMC\+\_\+\+Pos}})}
+
+
+
+DAT completes interrupt mask bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00225}{225}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a122e975ac9b0fdb53a835aac7001a8c0}\label{reg__sdio_8h_a122e975ac9b0fdb53a835aac7001a8c0}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CLR\_MMC\_INT\_DATDMC\_Pos@{SDIO\_CLR\_MMC\_INT\_DATDMC\_Pos}}
+\index{SDIO\_CLR\_MMC\_INT\_DATDMC\_Pos@{SDIO\_CLR\_MMC\_INT\_DATDMC\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CLR\_MMC\_INT\_DATDMC\_Pos}{SDIO\_CLR\_MMC\_INT\_DATDMC\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+DATDMC\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00224}{224}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a74b5f0f6c6299705955927faa0da85cd}\label{reg__sdio_8h_a74b5f0f6c6299705955927faa0da85cd}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CLR\_MMC\_INT\_DATEMC@{SDIO\_CLR\_MMC\_INT\_DATEMC}}
+\index{SDIO\_CLR\_MMC\_INT\_DATEMC@{SDIO\_CLR\_MMC\_INT\_DATEMC}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CLR\_MMC\_INT\_DATEMC}{SDIO\_CLR\_MMC\_INT\_DATEMC}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+DATEMC~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a83f6411957215326529ebccf7cc6ccd9}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+DATEMC\+\_\+\+Pos}})}
+
+
+
+DAT CRC error interrupt mask bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00227}{227}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a83f6411957215326529ebccf7cc6ccd9}\label{reg__sdio_8h_a83f6411957215326529ebccf7cc6ccd9}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CLR\_MMC\_INT\_DATEMC\_Pos@{SDIO\_CLR\_MMC\_INT\_DATEMC\_Pos}}
+\index{SDIO\_CLR\_MMC\_INT\_DATEMC\_Pos@{SDIO\_CLR\_MMC\_INT\_DATEMC\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CLR\_MMC\_INT\_DATEMC\_Pos}{SDIO\_CLR\_MMC\_INT\_DATEMC\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+DATEMC\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00226}{226}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a99b54f59ca8ac23d50fdf9cac8c14223}\label{reg__sdio_8h_a99b54f59ca8ac23d50fdf9cac8c14223}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CLR\_MMC\_INT\_MASK@{SDIO\_CLR\_MMC\_INT\_MASK}}
+\index{SDIO\_CLR\_MMC\_INT\_MASK@{SDIO\_CLR\_MMC\_INT\_MASK}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CLR\_MMC\_INT\_MASK}{SDIO\_CLR\_MMC\_INT\_MASK}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK~(0\+XFFU)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00240}{240}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a40b294ead927eeab16413c03df7332c1}\label{reg__sdio_8h_a40b294ead927eeab16413c03df7332c1}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CLR\_MMC\_INT\_MBDMC@{SDIO\_CLR\_MMC\_INT\_MBDMC}}
+\index{SDIO\_CLR\_MMC\_INT\_MBDMC@{SDIO\_CLR\_MMC\_INT\_MBDMC}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CLR\_MMC\_INT\_MBDMC}{SDIO\_CLR\_MMC\_INT\_MBDMC}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MBDMC~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a0077ade9a84458314de7ea97d14c5948}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MBDMC\+\_\+\+Pos}})}
+
+
+
+Multi -\/ block transmission completion interrupt mask bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00231}{231}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a0077ade9a84458314de7ea97d14c5948}\label{reg__sdio_8h_a0077ade9a84458314de7ea97d14c5948}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CLR\_MMC\_INT\_MBDMC\_Pos@{SDIO\_CLR\_MMC\_INT\_MBDMC\_Pos}}
+\index{SDIO\_CLR\_MMC\_INT\_MBDMC\_Pos@{SDIO\_CLR\_MMC\_INT\_MBDMC\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CLR\_MMC\_INT\_MBDMC\_Pos}{SDIO\_CLR\_MMC\_INT\_MBDMC\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MBDMC\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00230}{230}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ad20f77a95d0df11b40e6aa276057f651}\label{reg__sdio_8h_ad20f77a95d0df11b40e6aa276057f651}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CLR\_MMC\_INT\_MBTMC@{SDIO\_CLR\_MMC\_INT\_MBTMC}}
+\index{SDIO\_CLR\_MMC\_INT\_MBTMC@{SDIO\_CLR\_MMC\_INT\_MBTMC}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CLR\_MMC\_INT\_MBTMC}{SDIO\_CLR\_MMC\_INT\_MBTMC}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MBTMC~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_ae52dcb63c95356f8294f6bcf83dace02}{SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MBTMC\+\_\+\+Pos}})}
+
+
+
+Multiblock transmission timeout interrupt mask bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00233}{233}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ae52dcb63c95356f8294f6bcf83dace02}\label{reg__sdio_8h_ae52dcb63c95356f8294f6bcf83dace02}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CLR\_MMC\_INT\_MBTMC\_Pos@{SDIO\_CLR\_MMC\_INT\_MBTMC\_Pos}}
+\index{SDIO\_CLR\_MMC\_INT\_MBTMC\_Pos@{SDIO\_CLR\_MMC\_INT\_MBTMC\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CLR\_MMC\_INT\_MBTMC\_Pos}{SDIO\_CLR\_MMC\_INT\_MBTMC\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MBTMC\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00232}{232}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ac5309058491ab369995e69399fed8f82}\label{reg__sdio_8h_ac5309058491ab369995e69399fed8f82}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CMD\_BUF0\_DAT@{SDIO\_CMD\_BUF0\_DAT}}
+\index{SDIO\_CMD\_BUF0\_DAT@{SDIO\_CMD\_BUF0\_DAT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CMD\_BUF0\_DAT}{SDIO\_CMD\_BUF0\_DAT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CMD\+\_\+\+BUF0\+\_\+\+DAT~(0x\+FFU)}
+
+
+
+Cmd\+\_\+buf0 byte mapping bit ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+CMD\+\_\+\+BUF1 Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00296}{296}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a16ab092c26aa0ce5b3b2f1d0b7ec07de}\label{reg__sdio_8h_a16ab092c26aa0ce5b3b2f1d0b7ec07de}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CMD\_BUF10\_DAT@{SDIO\_CMD\_BUF10\_DAT}}
+\index{SDIO\_CMD\_BUF10\_DAT@{SDIO\_CMD\_BUF10\_DAT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CMD\_BUF10\_DAT}{SDIO\_CMD\_BUF10\_DAT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CMD\+\_\+\+BUF10\+\_\+\+DAT~(0x\+FFU)}
+
+
+
+Cmd\+\_\+buf10 byte mapping bit ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+CMD\+\_\+\+BUF11 Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00336}{336}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a99924aa0ae4b2ef6083544f7c869dc89}\label{reg__sdio_8h_a99924aa0ae4b2ef6083544f7c869dc89}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CMD\_BUF11\_DAT@{SDIO\_CMD\_BUF11\_DAT}}
+\index{SDIO\_CMD\_BUF11\_DAT@{SDIO\_CMD\_BUF11\_DAT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CMD\_BUF11\_DAT}{SDIO\_CMD\_BUF11\_DAT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CMD\+\_\+\+BUF11\+\_\+\+DAT~(0x\+FFU)}
+
+
+
+Cmd\+\_\+buf11 byte mapping bit ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+CMD\+\_\+\+BUF12 Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00340}{340}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a8382884adf414f6c097b220f8bac44b0}\label{reg__sdio_8h_a8382884adf414f6c097b220f8bac44b0}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CMD\_BUF12\_DAT@{SDIO\_CMD\_BUF12\_DAT}}
+\index{SDIO\_CMD\_BUF12\_DAT@{SDIO\_CMD\_BUF12\_DAT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CMD\_BUF12\_DAT}{SDIO\_CMD\_BUF12\_DAT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CMD\+\_\+\+BUF12\+\_\+\+DAT~(0x\+FFU)}
+
+
+
+Cmd\+\_\+buf12 byte mapping bit ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+CMD\+\_\+\+BUF13 Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00344}{344}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a92c0e91983a7df576a702e084445387b}\label{reg__sdio_8h_a92c0e91983a7df576a702e084445387b}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CMD\_BUF13\_DAT@{SDIO\_CMD\_BUF13\_DAT}}
+\index{SDIO\_CMD\_BUF13\_DAT@{SDIO\_CMD\_BUF13\_DAT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CMD\_BUF13\_DAT}{SDIO\_CMD\_BUF13\_DAT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CMD\+\_\+\+BUF13\+\_\+\+DAT~(0x\+FFU)}
+
+
+
+Cmd\+\_\+buf13 byte mapping bit ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+CMD\+\_\+\+BUF14 Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00348}{348}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a3e01563287e07e69c0c9a7b8509b62ec}\label{reg__sdio_8h_a3e01563287e07e69c0c9a7b8509b62ec}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CMD\_BUF14\_DAT@{SDIO\_CMD\_BUF14\_DAT}}
+\index{SDIO\_CMD\_BUF14\_DAT@{SDIO\_CMD\_BUF14\_DAT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CMD\_BUF14\_DAT}{SDIO\_CMD\_BUF14\_DAT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CMD\+\_\+\+BUF14\+\_\+\+DAT~(0x\+FFU)}
+
+
+
+Cmd\+\_\+buf14 byte mapping bit ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+CMD\+\_\+\+BUF15 Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00352}{352}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_af92fb3a1ce8c47b9f6b4fb561b9b18ab}\label{reg__sdio_8h_af92fb3a1ce8c47b9f6b4fb561b9b18ab}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CMD\_BUF15\_DAT@{SDIO\_CMD\_BUF15\_DAT}}
+\index{SDIO\_CMD\_BUF15\_DAT@{SDIO\_CMD\_BUF15\_DAT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CMD\_BUF15\_DAT}{SDIO\_CMD\_BUF15\_DAT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CMD\+\_\+\+BUF15\+\_\+\+DAT~(0x\+FFU)}
+
+
+
+Cmd\+\_\+buf15 byte mapping bit ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+BUF\+\_\+\+CTLL Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00356}{356}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ae11e3da86ec2a5bbe98510c23f2312d2}\label{reg__sdio_8h_ae11e3da86ec2a5bbe98510c23f2312d2}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CMD\_BUF1\_DAT@{SDIO\_CMD\_BUF1\_DAT}}
+\index{SDIO\_CMD\_BUF1\_DAT@{SDIO\_CMD\_BUF1\_DAT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CMD\_BUF1\_DAT}{SDIO\_CMD\_BUF1\_DAT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CMD\+\_\+\+BUF1\+\_\+\+DAT~(0x\+FFU)}
+
+
+
+Cmd\+\_\+buf1 byte mapping bit ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+CMD\+\_\+\+BUF2 Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00300}{300}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ae8ae1442c183260aa5053feaa8994810}\label{reg__sdio_8h_ae8ae1442c183260aa5053feaa8994810}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CMD\_BUF2\_DAT@{SDIO\_CMD\_BUF2\_DAT}}
+\index{SDIO\_CMD\_BUF2\_DAT@{SDIO\_CMD\_BUF2\_DAT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CMD\_BUF2\_DAT}{SDIO\_CMD\_BUF2\_DAT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CMD\+\_\+\+BUF2\+\_\+\+DAT~(0x\+FFU)}
+
+
+
+Cmd\+\_\+buf2 byte mapping bit ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+CMD\+\_\+\+BUF3 Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00304}{304}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a9c524f8c9a4017634d7a18f8f9379599}\label{reg__sdio_8h_a9c524f8c9a4017634d7a18f8f9379599}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CMD\_BUF3\_DAT@{SDIO\_CMD\_BUF3\_DAT}}
+\index{SDIO\_CMD\_BUF3\_DAT@{SDIO\_CMD\_BUF3\_DAT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CMD\_BUF3\_DAT}{SDIO\_CMD\_BUF3\_DAT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CMD\+\_\+\+BUF3\+\_\+\+DAT~(0x\+FFU)}
+
+
+
+Cmd\+\_\+buf3 byte mapping bit ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+CMD\+\_\+\+BUF4 Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00308}{308}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a68dfcf82e38598d023efb4f6a32512bd}\label{reg__sdio_8h_a68dfcf82e38598d023efb4f6a32512bd}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CMD\_BUF4\_DAT@{SDIO\_CMD\_BUF4\_DAT}}
+\index{SDIO\_CMD\_BUF4\_DAT@{SDIO\_CMD\_BUF4\_DAT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CMD\_BUF4\_DAT}{SDIO\_CMD\_BUF4\_DAT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CMD\+\_\+\+BUF4\+\_\+\+DAT~(0x\+FFU)}
+
+
+
+Cmd\+\_\+buf4 byte mapping bit ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+CMD\+\_\+\+BUF5 Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00312}{312}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ad643f4c268ca5502a172d9b6e00ee670}\label{reg__sdio_8h_ad643f4c268ca5502a172d9b6e00ee670}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CMD\_BUF5\_DAT@{SDIO\_CMD\_BUF5\_DAT}}
+\index{SDIO\_CMD\_BUF5\_DAT@{SDIO\_CMD\_BUF5\_DAT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CMD\_BUF5\_DAT}{SDIO\_CMD\_BUF5\_DAT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CMD\+\_\+\+BUF5\+\_\+\+DAT~(0x\+FFU)}
+
+
+
+Cmd\+\_\+buf5 byte mapping bit ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+CMD\+\_\+\+BUF6 Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00316}{316}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_aa27ade37faee1189e59ef7350358b698}\label{reg__sdio_8h_aa27ade37faee1189e59ef7350358b698}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CMD\_BUF6\_DAT@{SDIO\_CMD\_BUF6\_DAT}}
+\index{SDIO\_CMD\_BUF6\_DAT@{SDIO\_CMD\_BUF6\_DAT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CMD\_BUF6\_DAT}{SDIO\_CMD\_BUF6\_DAT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CMD\+\_\+\+BUF6\+\_\+\+DAT~(0x\+FFU)}
+
+
+
+Cmd\+\_\+buf6 byte mapping bit ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+CMD\+\_\+\+BUF7 Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00320}{320}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ae3d58562ee57ab684c62a80989511f45}\label{reg__sdio_8h_ae3d58562ee57ab684c62a80989511f45}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CMD\_BUF7\_DAT@{SDIO\_CMD\_BUF7\_DAT}}
+\index{SDIO\_CMD\_BUF7\_DAT@{SDIO\_CMD\_BUF7\_DAT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CMD\_BUF7\_DAT}{SDIO\_CMD\_BUF7\_DAT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CMD\+\_\+\+BUF7\+\_\+\+DAT~(0x\+FFU)}
+
+
+
+Cmd\+\_\+buf7 byte mapping bit ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+CMD\+\_\+\+BUF8 Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00324}{324}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a426de6a211ea36d8eb6551e0df826751}\label{reg__sdio_8h_a426de6a211ea36d8eb6551e0df826751}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CMD\_BUF8\_DAT@{SDIO\_CMD\_BUF8\_DAT}}
+\index{SDIO\_CMD\_BUF8\_DAT@{SDIO\_CMD\_BUF8\_DAT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CMD\_BUF8\_DAT}{SDIO\_CMD\_BUF8\_DAT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CMD\+\_\+\+BUF8\+\_\+\+DAT~(0x\+FFU)}
+
+
+
+Cmd\+\_\+buf8 byte mapping bit ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+CMD\+\_\+\+BUF9 Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00328}{328}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a05b190bbe32b6afda75c6b0cc3d53f5a}\label{reg__sdio_8h_a05b190bbe32b6afda75c6b0cc3d53f5a}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CMD\_BUF9\_DAT@{SDIO\_CMD\_BUF9\_DAT}}
+\index{SDIO\_CMD\_BUF9\_DAT@{SDIO\_CMD\_BUF9\_DAT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CMD\_BUF9\_DAT}{SDIO\_CMD\_BUF9\_DAT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CMD\+\_\+\+BUF9\+\_\+\+DAT~(0x\+FFU)}
+
+
+
+Cmd\+\_\+buf9 byte mapping bit ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+CMD\+\_\+\+BUF10 Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00332}{332}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a786758cb711a5fc47904dcf4e7b6fc29}\label{reg__sdio_8h_a786758cb711a5fc47904dcf4e7b6fc29}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_CMD\_CRC\_CMD\_CRCV@{SDIO\_CMD\_CRC\_CMD\_CRCV}}
+\index{SDIO\_CMD\_CRC\_CMD\_CRCV@{SDIO\_CMD\_CRC\_CMD\_CRCV}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CMD\_CRC\_CMD\_CRCV}{SDIO\_CMD\_CRC\_CMD\_CRCV}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CMD\+\_\+\+CRC\+\_\+\+CMD\+\_\+\+CRCV~(0x7\+FU)}
+
+
+
+CMD\+\_\+\+CRCV register value ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+DAT\+\_\+\+CRCL Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00179}{179}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_af4baa52a3cf8d0f5a3dbcd8b6d8ae7ba}\label{reg__sdio_8h_af4baa52a3cf8d0f5a3dbcd8b6d8ae7ba}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_DAT\_CRCL\_DAT\_CRCHV@{SDIO\_DAT\_CRCL\_DAT\_CRCHV}}
+\index{SDIO\_DAT\_CRCL\_DAT\_CRCHV@{SDIO\_DAT\_CRCL\_DAT\_CRCHV}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DAT\_CRCL\_DAT\_CRCHV}{SDIO\_DAT\_CRCL\_DAT\_CRCHV}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+DAT\+\_\+\+CRCL\+\_\+\+DAT\+\_\+\+CRCHV~(0x\+FFU)}
+
+
+
+CMD\+\_\+\+CRCV high register value ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+MMC\+\_\+\+PORT Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00187}{187}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a3b01143a08cb42a1fd0fc4a15fd39ad0}\label{reg__sdio_8h_a3b01143a08cb42a1fd0fc4a15fd39ad0}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_DAT\_CRCL\_DAT\_CRCLV@{SDIO\_DAT\_CRCL\_DAT\_CRCLV}}
+\index{SDIO\_DAT\_CRCL\_DAT\_CRCLV@{SDIO\_DAT\_CRCL\_DAT\_CRCLV}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DAT\_CRCL\_DAT\_CRCLV}{SDIO\_DAT\_CRCL\_DAT\_CRCLV}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+DAT\+\_\+\+CRCL\+\_\+\+DAT\+\_\+\+CRCLV~(0x\+FFU)}
+
+
+
+CMD\+\_\+\+CRCV low register value ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+DAT\+\_\+\+CRCH Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00183}{183}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a76826ac950585160973b21ab0c73baba}\label{reg__sdio_8h_a76826ac950585160973b21ab0c73baba}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_DATA\_BUF\_DB@{SDIO\_DATA\_BUF\_DB}}
+\index{SDIO\_DATA\_BUF\_DB@{SDIO\_DATA\_BUF\_DB}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DATA\_BUF\_DB}{SDIO\_DATA\_BUF\_DB}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+DATA\+\_\+\+BUF\+\_\+\+DB~(0x\+FFFFFFFFU)}
+
+
+
+Data buffer 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00376}{376}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_abda71efbed1d452f06ca2dc5a993756e}\label{reg__sdio_8h_abda71efbed1d452f06ca2dc5a993756e}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_BLOCKCNT\_EN@{SDIO\_MMC\_BLOCKCNT\_EN}}
+\index{SDIO\_MMC\_BLOCKCNT\_EN@{SDIO\_MMC\_BLOCKCNT\_EN}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_BLOCKCNT\_EN}{SDIO\_MMC\_BLOCKCNT\_EN}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+BLOCKCNT\+\_\+\+EN~(0x\+FFFFU)}
+
+
+
+Block count register ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+MMC\+\_\+\+TIMEOUTCNT Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00288}{288}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_afa64576234c034993806a34cf9ffa7c4}\label{reg__sdio_8h_afa64576234c034993806a34cf9ffa7c4}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_BYTECNTL\_CNT@{SDIO\_MMC\_BYTECNTL\_CNT}}
+\index{SDIO\_MMC\_BYTECNTL\_CNT@{SDIO\_MMC\_BYTECNTL\_CNT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_BYTECNTL\_CNT}{SDIO\_MMC\_BYTECNTL\_CNT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+BYTECNTL\+\_\+\+CNT~(0x\+FFFFU)}
+
+
+
+Data transfer byte count register ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+MMC\+\_\+\+TR\+\_\+\+BLOCKCNT Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00154}{154}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a9cc74a0c0e7fa28344ffa5554d59a44d}\label{reg__sdio_8h_a9cc74a0c0e7fa28344ffa5554d59a44d}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CARDSEL\_CTREN@{SDIO\_MMC\_CARDSEL\_CTREN}}
+\index{SDIO\_MMC\_CARDSEL\_CTREN@{SDIO\_MMC\_CARDSEL\_CTREN}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CARDSEL\_CTREN}{SDIO\_MMC\_CARDSEL\_CTREN}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CARDSEL\+\_\+\+CTREN~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a7ff914e149608f81b0f4c6eb9792fc8f}{SDIO\+\_\+\+MMC\+\_\+\+CARDSEL\+\_\+\+CTREN\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO controller enablement bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00249}{249}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a7ff914e149608f81b0f4c6eb9792fc8f}\label{reg__sdio_8h_a7ff914e149608f81b0f4c6eb9792fc8f}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CARDSEL\_CTREN\_Pos@{SDIO\_MMC\_CARDSEL\_CTREN\_Pos}}
+\index{SDIO\_MMC\_CARDSEL\_CTREN\_Pos@{SDIO\_MMC\_CARDSEL\_CTREN\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CARDSEL\_CTREN\_Pos}{SDIO\_MMC\_CARDSEL\_CTREN\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CARDSEL\+\_\+\+CTREN\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00248}{248}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a47d27b7a755a4758f0798e93c4cb2efe}\label{reg__sdio_8h_a47d27b7a755a4758f0798e93c4cb2efe}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CARDSEL\_ENPCLK@{SDIO\_MMC\_CARDSEL\_ENPCLK}}
+\index{SDIO\_MMC\_CARDSEL\_ENPCLK@{SDIO\_MMC\_CARDSEL\_ENPCLK}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CARDSEL\_ENPCLK}{SDIO\_MMC\_CARDSEL\_ENPCLK}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CARDSEL\+\_\+\+ENPCLK~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a00b69eb7c80ca44c2326e514c7e5f6d0}{SDIO\+\_\+\+MMC\+\_\+\+CARDSEL\+\_\+\+ENPCLK\+\_\+\+Pos}})}
+
+
+
+Enabling card\textquotesingle{}s SD/\+MMC/\+SDIO port CLK clock 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00247}{247}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a00b69eb7c80ca44c2326e514c7e5f6d0}\label{reg__sdio_8h_a00b69eb7c80ca44c2326e514c7e5f6d0}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CARDSEL\_ENPCLK\_Pos@{SDIO\_MMC\_CARDSEL\_ENPCLK\_Pos}}
+\index{SDIO\_MMC\_CARDSEL\_ENPCLK\_Pos@{SDIO\_MMC\_CARDSEL\_ENPCLK\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CARDSEL\_ENPCLK\_Pos}{SDIO\_MMC\_CARDSEL\_ENPCLK\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CARDSEL\+\_\+\+ENPCLK\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00246}{246}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a0aedf9620e83b4a40b0aa57e0a8103bc}\label{reg__sdio_8h_a0aedf9620e83b4a40b0aa57e0a8103bc}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CARDSEL\_MASK@{SDIO\_MMC\_CARDSEL\_MASK}}
+\index{SDIO\_MMC\_CARDSEL\_MASK@{SDIO\_MMC\_CARDSEL\_MASK}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CARDSEL\_MASK}{SDIO\_MMC\_CARDSEL\_MASK}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CARDSEL\+\_\+\+MASK~(0\+XFFU)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00250}{250}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a6c8b551a210b936ba9d1aee7cbdbd022}\label{reg__sdio_8h_a6c8b551a210b936ba9d1aee7cbdbd022}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CARDSEL\_TSCALE@{SDIO\_MMC\_CARDSEL\_TSCALE}}
+\index{SDIO\_MMC\_CARDSEL\_TSCALE@{SDIO\_MMC\_CARDSEL\_TSCALE}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CARDSEL\_TSCALE}{SDIO\_MMC\_CARDSEL\_TSCALE}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CARDSEL\+\_\+\+TSCALE~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a8ec39f48410748b9bc5dcdca40f17aec}{SDIO\+\_\+\+MMC\+\_\+\+CARDSEL\+\_\+\+TSCALE\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO clock frequency division factor (based on 1MHz 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00245}{245}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a8ec39f48410748b9bc5dcdca40f17aec}\label{reg__sdio_8h_a8ec39f48410748b9bc5dcdca40f17aec}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CARDSEL\_TSCALE\_Pos@{SDIO\_MMC\_CARDSEL\_TSCALE\_Pos}}
+\index{SDIO\_MMC\_CARDSEL\_TSCALE\_Pos@{SDIO\_MMC\_CARDSEL\_TSCALE\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CARDSEL\_TSCALE\_Pos}{SDIO\_MMC\_CARDSEL\_TSCALE\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CARDSEL\+\_\+\+TSCALE\+\_\+\+Pos~(0)}
+
+
+
+SDIO\+\_\+\+MMC\+\_\+\+CARDSEL Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00244}{244}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ad26717b0b7dd2025834466e8af26ff12}\label{reg__sdio_8h_ad26717b0b7dd2025834466e8af26ff12}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CRCCTL\_CMD\_CRCE@{SDIO\_MMC\_CRCCTL\_CMD\_CRCE}}
+\index{SDIO\_MMC\_CRCCTL\_CMD\_CRCE@{SDIO\_MMC\_CRCCTL\_CMD\_CRCE}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CRCCTL\_CMD\_CRCE}{SDIO\_MMC\_CRCCTL\_CMD\_CRCE}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+CMD\+\_\+\+CRCE~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a8d6012a05027986698a6e5965da4e85a}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+CMD\+\_\+\+CRCE\+\_\+\+Pos}})}
+
+
+
+CMD CRC error 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00162}{162}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a8d6012a05027986698a6e5965da4e85a}\label{reg__sdio_8h_a8d6012a05027986698a6e5965da4e85a}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CRCCTL\_CMD\_CRCE\_Pos@{SDIO\_MMC\_CRCCTL\_CMD\_CRCE\_Pos}}
+\index{SDIO\_MMC\_CRCCTL\_CMD\_CRCE\_Pos@{SDIO\_MMC\_CRCCTL\_CMD\_CRCE\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CRCCTL\_CMD\_CRCE\_Pos}{SDIO\_MMC\_CRCCTL\_CMD\_CRCE\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+CMD\+\_\+\+CRCE\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00161}{161}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ac2c510037f27e143d444be6472ddd968}\label{reg__sdio_8h_ac2c510037f27e143d444be6472ddd968}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CRCCTL\_CMD\_CRCEN@{SDIO\_MMC\_CRCCTL\_CMD\_CRCEN}}
+\index{SDIO\_MMC\_CRCCTL\_CMD\_CRCEN@{SDIO\_MMC\_CRCCTL\_CMD\_CRCEN}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CRCCTL\_CMD\_CRCEN}{SDIO\_MMC\_CRCCTL\_CMD\_CRCEN}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+CMD\+\_\+\+CRCEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a30b6798dc7226a1707c42a7b85c4beb3}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+CMD\+\_\+\+CRCEN\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO port CMD line CRC circuit enablement ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+CMD\+\_\+\+CRC Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00175}{175}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a30b6798dc7226a1707c42a7b85c4beb3}\label{reg__sdio_8h_a30b6798dc7226a1707c42a7b85c4beb3}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CRCCTL\_CMD\_CRCEN\_Pos@{SDIO\_MMC\_CRCCTL\_CMD\_CRCEN\_Pos}}
+\index{SDIO\_MMC\_CRCCTL\_CMD\_CRCEN\_Pos@{SDIO\_MMC\_CRCCTL\_CMD\_CRCEN\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CRCCTL\_CMD\_CRCEN\_Pos}{SDIO\_MMC\_CRCCTL\_CMD\_CRCEN\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+CMD\+\_\+\+CRCEN\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00171}{171}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_aea1b26f58bf0d4b01f3c2babe72d57b5}\label{reg__sdio_8h_aea1b26f58bf0d4b01f3c2babe72d57b5}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CRCCTL\_DAT\_CRCE@{SDIO\_MMC\_CRCCTL\_DAT\_CRCE}}
+\index{SDIO\_MMC\_CRCCTL\_DAT\_CRCE@{SDIO\_MMC\_CRCCTL\_DAT\_CRCE}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CRCCTL\_DAT\_CRCE}{SDIO\_MMC\_CRCCTL\_DAT\_CRCE}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+DAT\+\_\+\+CRCE~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a2f2e2ba2d627e290b4641c7835f8dce5}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+DAT\+\_\+\+CRCE\+\_\+\+Pos}})}
+
+
+
+DAT CRC error 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00160}{160}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a2f2e2ba2d627e290b4641c7835f8dce5}\label{reg__sdio_8h_a2f2e2ba2d627e290b4641c7835f8dce5}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CRCCTL\_DAT\_CRCE\_Pos@{SDIO\_MMC\_CRCCTL\_DAT\_CRCE\_Pos}}
+\index{SDIO\_MMC\_CRCCTL\_DAT\_CRCE\_Pos@{SDIO\_MMC\_CRCCTL\_DAT\_CRCE\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CRCCTL\_DAT\_CRCE\_Pos}{SDIO\_MMC\_CRCCTL\_DAT\_CRCE\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+DAT\+\_\+\+CRCE\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00159}{159}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a9cfcaf5fca8ccae1c50f6e800c2ce3fc}\label{reg__sdio_8h_a9cfcaf5fca8ccae1c50f6e800c2ce3fc}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CRCCTL\_DAT\_CRCEN@{SDIO\_MMC\_CRCCTL\_DAT\_CRCEN}}
+\index{SDIO\_MMC\_CRCCTL\_DAT\_CRCEN@{SDIO\_MMC\_CRCCTL\_DAT\_CRCEN}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CRCCTL\_DAT\_CRCEN}{SDIO\_MMC\_CRCCTL\_DAT\_CRCEN}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+DAT\+\_\+\+CRCEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a90a6bd145d526611444a0a32f6119509}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+DAT\+\_\+\+CRCEN\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO PORT DAT line CRC circuit enablement 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00170}{170}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a90a6bd145d526611444a0a32f6119509}\label{reg__sdio_8h_a90a6bd145d526611444a0a32f6119509}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CRCCTL\_DAT\_CRCEN\_Pos@{SDIO\_MMC\_CRCCTL\_DAT\_CRCEN\_Pos}}
+\index{SDIO\_MMC\_CRCCTL\_DAT\_CRCEN\_Pos@{SDIO\_MMC\_CRCCTL\_DAT\_CRCEN\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CRCCTL\_DAT\_CRCEN\_Pos}{SDIO\_MMC\_CRCCTL\_DAT\_CRCEN\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+DAT\+\_\+\+CRCEN\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00169}{169}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a5a806fe129b5b5e03825e696b1c7bd3f}\label{reg__sdio_8h_a5a806fe129b5b5e03825e696b1c7bd3f}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CRCCTL\_DAT\_CRCS@{SDIO\_MMC\_CRCCTL\_DAT\_CRCS}}
+\index{SDIO\_MMC\_CRCCTL\_DAT\_CRCS@{SDIO\_MMC\_CRCCTL\_DAT\_CRCS}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CRCCTL\_DAT\_CRCS}{SDIO\_MMC\_CRCCTL\_DAT\_CRCS}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+DAT\+\_\+\+CRCS~(0x03U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a4c8a83fbeeac95567a2a1d8bcaa3b983}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+DAT\+\_\+\+CRCS\+\_\+\+Pos}})}
+
+
+
+DAT CRC selection 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00164}{164}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a4c8a83fbeeac95567a2a1d8bcaa3b983}\label{reg__sdio_8h_a4c8a83fbeeac95567a2a1d8bcaa3b983}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CRCCTL\_DAT\_CRCS\_Pos@{SDIO\_MMC\_CRCCTL\_DAT\_CRCS\_Pos}}
+\index{SDIO\_MMC\_CRCCTL\_DAT\_CRCS\_Pos@{SDIO\_MMC\_CRCCTL\_DAT\_CRCS\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CRCCTL\_DAT\_CRCS\_Pos}{SDIO\_MMC\_CRCCTL\_DAT\_CRCS\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+DAT\+\_\+\+CRCS\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00163}{163}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_af2d196fba31c166a81b025a140f7b584}\label{reg__sdio_8h_af2d196fba31c166a81b025a140f7b584}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CRCCTL\_ENCHK@{SDIO\_MMC\_CRCCTL\_ENCHK}}
+\index{SDIO\_MMC\_CRCCTL\_ENCHK@{SDIO\_MMC\_CRCCTL\_ENCHK}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CRCCTL\_ENCHK}{SDIO\_MMC\_CRCCTL\_ENCHK}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+ENCHK~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a3d542ed11615a4b8348c371bf659c7d8}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+ENCHK\+\_\+\+Pos}})}
+
+
+
+Enable automatic checking 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00168}{168}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a3d542ed11615a4b8348c371bf659c7d8}\label{reg__sdio_8h_a3d542ed11615a4b8348c371bf659c7d8}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CRCCTL\_ENCHK\_Pos@{SDIO\_MMC\_CRCCTL\_ENCHK\_Pos}}
+\index{SDIO\_MMC\_CRCCTL\_ENCHK\_Pos@{SDIO\_MMC\_CRCCTL\_ENCHK\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CRCCTL\_ENCHK\_Pos}{SDIO\_MMC\_CRCCTL\_ENCHK\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+ENCHK\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00167}{167}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a82bd7399203440dded1f88943e718eab}\label{reg__sdio_8h_a82bd7399203440dded1f88943e718eab}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CRCCTL\_ENRDMB@{SDIO\_MMC\_CRCCTL\_ENRDMB}}
+\index{SDIO\_MMC\_CRCCTL\_ENRDMB@{SDIO\_MMC\_CRCCTL\_ENRDMB}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CRCCTL\_ENRDMB}{SDIO\_MMC\_CRCCTL\_ENRDMB}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+ENRDMB~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_af90ba32d34d603320b9fd2d23370ec4d}{SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+ENRDMB\+\_\+\+Pos}})}
+
+
+
+Enable reading multiple blocks of data before responding 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00166}{166}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_af90ba32d34d603320b9fd2d23370ec4d}\label{reg__sdio_8h_af90ba32d34d603320b9fd2d23370ec4d}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CRCCTL\_ENRDMB\_Pos@{SDIO\_MMC\_CRCCTL\_ENRDMB\_Pos}}
+\index{SDIO\_MMC\_CRCCTL\_ENRDMB\_Pos@{SDIO\_MMC\_CRCCTL\_ENRDMB\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CRCCTL\_ENRDMB\_Pos}{SDIO\_MMC\_CRCCTL\_ENRDMB\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CRCCTL\+\_\+\+ENRDMB\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00165}{165}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_af33cbeda098265b5315163394b66faad}\label{reg__sdio_8h_af33cbeda098265b5315163394b66faad}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_CLKSP10@{SDIO\_MMC\_CTRL\_CLKSP10}}
+\index{SDIO\_MMC\_CTRL\_CLKSP10@{SDIO\_MMC\_CTRL\_CLKSP10}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_CLKSP10}{SDIO\_MMC\_CTRL\_CLKSP10}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP10~(0x04U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_aa1ce75aad9d3008aab5732f174ef58f7}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO port CLK linespeedselection 1/10 baseclock 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00111}{111}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a240361d88468d3dc1b13f20dec1bf71d}\label{reg__sdio_8h_a240361d88468d3dc1b13f20dec1bf71d}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_CLKSP12@{SDIO\_MMC\_CTRL\_CLKSP12}}
+\index{SDIO\_MMC\_CTRL\_CLKSP12@{SDIO\_MMC\_CTRL\_CLKSP12}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_CLKSP12}{SDIO\_MMC\_CTRL\_CLKSP12}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP12~(0x05U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_aa1ce75aad9d3008aab5732f174ef58f7}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO port CLK linespeedselection 1/12 baseclock 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00112}{112}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ae40ad25fedb5859797a77619ea71e509}\label{reg__sdio_8h_ae40ad25fedb5859797a77619ea71e509}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_CLKSP14@{SDIO\_MMC\_CTRL\_CLKSP14}}
+\index{SDIO\_MMC\_CTRL\_CLKSP14@{SDIO\_MMC\_CTRL\_CLKSP14}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_CLKSP14}{SDIO\_MMC\_CTRL\_CLKSP14}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP14~(0x06U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_aa1ce75aad9d3008aab5732f174ef58f7}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO port CLK linespeedselection 1/14 baseclock 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00113}{113}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a439a29c5c0f35663259881115452cbc5}\label{reg__sdio_8h_a439a29c5c0f35663259881115452cbc5}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_CLKSP16@{SDIO\_MMC\_CTRL\_CLKSP16}}
+\index{SDIO\_MMC\_CTRL\_CLKSP16@{SDIO\_MMC\_CTRL\_CLKSP16}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_CLKSP16}{SDIO\_MMC\_CTRL\_CLKSP16}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP16~(0x07U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_aa1ce75aad9d3008aab5732f174ef58f7}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO port CLK linespeedselection 1/16 baseclock 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00114}{114}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a7bdf8b5af98a146a821c9dd6b28cfe8b}\label{reg__sdio_8h_a7bdf8b5af98a146a821c9dd6b28cfe8b}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_CLKSP2@{SDIO\_MMC\_CTRL\_CLKSP2}}
+\index{SDIO\_MMC\_CTRL\_CLKSP2@{SDIO\_MMC\_CTRL\_CLKSP2}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_CLKSP2}{SDIO\_MMC\_CTRL\_CLKSP2}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP2~(0x00U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_aa1ce75aad9d3008aab5732f174ef58f7}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO port CLK linespeedselection 1/2 baseclock 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00107}{107}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a7f82ee53847237b75c894c3f6033b661}\label{reg__sdio_8h_a7f82ee53847237b75c894c3f6033b661}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_CLKSP4@{SDIO\_MMC\_CTRL\_CLKSP4}}
+\index{SDIO\_MMC\_CTRL\_CLKSP4@{SDIO\_MMC\_CTRL\_CLKSP4}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_CLKSP4}{SDIO\_MMC\_CTRL\_CLKSP4}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP4~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_aa1ce75aad9d3008aab5732f174ef58f7}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO port CLK linespeedselection 1/4 baseclock 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00108}{108}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a21b6dab7a56ebeff10314311766ad6d2}\label{reg__sdio_8h_a21b6dab7a56ebeff10314311766ad6d2}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_CLKSP6@{SDIO\_MMC\_CTRL\_CLKSP6}}
+\index{SDIO\_MMC\_CTRL\_CLKSP6@{SDIO\_MMC\_CTRL\_CLKSP6}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_CLKSP6}{SDIO\_MMC\_CTRL\_CLKSP6}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP6~(0x02U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_aa1ce75aad9d3008aab5732f174ef58f7}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO port CLK linespeedselection 1/6 baseclock 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00109}{109}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ac2f7941a359b75a4b41388c34a2f5adc}\label{reg__sdio_8h_ac2f7941a359b75a4b41388c34a2f5adc}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_CLKSP8@{SDIO\_MMC\_CTRL\_CLKSP8}}
+\index{SDIO\_MMC\_CTRL\_CLKSP8@{SDIO\_MMC\_CTRL\_CLKSP8}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_CLKSP8}{SDIO\_MMC\_CTRL\_CLKSP8}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP8~(0x03U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_aa1ce75aad9d3008aab5732f174ef58f7}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO port CLK linespeedselection 1/8 baseclock 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00110}{110}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_aa1ce75aad9d3008aab5732f174ef58f7}\label{reg__sdio_8h_aa1ce75aad9d3008aab5732f174ef58f7}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_CLKSP\_Pos@{SDIO\_MMC\_CTRL\_CLKSP\_Pos}}
+\index{SDIO\_MMC\_CTRL\_CLKSP\_Pos@{SDIO\_MMC\_CTRL\_CLKSP\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_CLKSP\_Pos}{SDIO\_MMC\_CTRL\_CLKSP\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+CLKSP\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00106}{106}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a00629bfe3f9be447b5e5d01bd29caa98}\label{reg__sdio_8h_a00629bfe3f9be447b5e5d01bd29caa98}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_DATWT@{SDIO\_MMC\_CTRL\_DATWT}}
+\index{SDIO\_MMC\_CTRL\_DATWT@{SDIO\_MMC\_CTRL\_DATWT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_DATWT}{SDIO\_MMC\_CTRL\_DATWT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+DATWT~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a7576b0b5cc4b0acdb78c7934530585f9}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+DATWT\+\_\+\+Pos}})}
+
+
+
+Definethe bus width of SD/\+MMC/\+SDIO port DAT line 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00118}{118}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a7576b0b5cc4b0acdb78c7934530585f9}\label{reg__sdio_8h_a7576b0b5cc4b0acdb78c7934530585f9}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_DATWT\_Pos@{SDIO\_MMC\_CTRL\_DATWT\_Pos}}
+\index{SDIO\_MMC\_CTRL\_DATWT\_Pos@{SDIO\_MMC\_CTRL\_DATWT\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_DATWT\_Pos}{SDIO\_MMC\_CTRL\_DATWT\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+DATWT\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00117}{117}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a7fe7e03a659a68e968d41dbbba989886}\label{reg__sdio_8h_a7fe7e03a659a68e968d41dbbba989886}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_INTEN@{SDIO\_MMC\_CTRL\_INTEN}}
+\index{SDIO\_MMC\_CTRL\_INTEN@{SDIO\_MMC\_CTRL\_INTEN}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_INTEN}{SDIO\_MMC\_CTRL\_INTEN}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+INTEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a9dc3b3a64951b829c522d08096bc7ed6}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+INTEN\+\_\+\+Pos}})}
+
+
+
+SDIO interrupt enale signal 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00122}{122}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a9dc3b3a64951b829c522d08096bc7ed6}\label{reg__sdio_8h_a9dc3b3a64951b829c522d08096bc7ed6}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_INTEN\_Pos@{SDIO\_MMC\_CTRL\_INTEN\_Pos}}
+\index{SDIO\_MMC\_CTRL\_INTEN\_Pos@{SDIO\_MMC\_CTRL\_INTEN\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_INTEN\_Pos}{SDIO\_MMC\_CTRL\_INTEN\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+INTEN\+\_\+\+Pos~(9)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00121}{121}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a80ca9fa5e8e83c2a385c0c7735ffbac6}\label{reg__sdio_8h_a80ca9fa5e8e83c2a385c0c7735ffbac6}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_MDEN@{SDIO\_MMC\_CTRL\_MDEN}}
+\index{SDIO\_MMC\_CTRL\_MDEN@{SDIO\_MMC\_CTRL\_MDEN}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_MDEN}{SDIO\_MMC\_CTRL\_MDEN}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+MDEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a00d6159fe03f5c7304d4107d78c62bc5}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+MDEN\+\_\+\+Pos}})}
+
+
+
+SDIO mode enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00120}{120}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a00d6159fe03f5c7304d4107d78c62bc5}\label{reg__sdio_8h_a00d6159fe03f5c7304d4107d78c62bc5}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_MDEN\_Pos@{SDIO\_MMC\_CTRL\_MDEN\_Pos}}
+\index{SDIO\_MMC\_CTRL\_MDEN\_Pos@{SDIO\_MMC\_CTRL\_MDEN\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_MDEN\_Pos}{SDIO\_MMC\_CTRL\_MDEN\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+MDEN\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00119}{119}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_acf895995caa68802d72504eec897d34d}\label{reg__sdio_8h_acf895995caa68802d72504eec897d34d}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_OPMSel@{SDIO\_MMC\_CTRL\_OPMSel}}
+\index{SDIO\_MMC\_CTRL\_OPMSel@{SDIO\_MMC\_CTRL\_OPMSel}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_OPMSel}{SDIO\_MMC\_CTRL\_OPMSel}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+OPMSel~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_ab0b68f3fc851ccd84bc5aa602b57f8cb}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+OPMSel\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO port operation mode select 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00101}{101}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ab0b68f3fc851ccd84bc5aa602b57f8cb}\label{reg__sdio_8h_ab0b68f3fc851ccd84bc5aa602b57f8cb}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_OPMSel\_Pos@{SDIO\_MMC\_CTRL\_OPMSel\_Pos}}
+\index{SDIO\_MMC\_CTRL\_OPMSel\_Pos@{SDIO\_MMC\_CTRL\_OPMSel\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_OPMSel\_Pos}{SDIO\_MMC\_CTRL\_OPMSel\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+OPMSel\+\_\+\+Pos~(0)}
+
+
+
+SDIO\+\_\+\+MMC\+\_\+\+CTRL Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00100}{100}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a4d01892132260ec4db7340971d5c6794}\label{reg__sdio_8h_a4d01892132260ec4db7340971d5c6794}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_OUTM@{SDIO\_MMC\_CTRL\_OUTM}}
+\index{SDIO\_MMC\_CTRL\_OUTM@{SDIO\_MMC\_CTRL\_OUTM}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_OUTM}{SDIO\_MMC\_CTRL\_OUTM}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+OUTM~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_acbc7044b1aed1635316e4720b9bde8fa}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+OUTM\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO port CMD line output driver mode selection Open drain 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00105}{105}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_acbc7044b1aed1635316e4720b9bde8fa}\label{reg__sdio_8h_acbc7044b1aed1635316e4720b9bde8fa}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_OUTM\_Pos@{SDIO\_MMC\_CTRL\_OUTM\_Pos}}
+\index{SDIO\_MMC\_CTRL\_OUTM\_Pos@{SDIO\_MMC\_CTRL\_OUTM\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_OUTM\_Pos}{SDIO\_MMC\_CTRL\_OUTM\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+OUTM\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00104}{104}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a6e8391e0b0980a50ec9daad04a57deae}\label{reg__sdio_8h_a6e8391e0b0980a50ec9daad04a57deae}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_RDWTEN@{SDIO\_MMC\_CTRL\_RDWTEN}}
+\index{SDIO\_MMC\_CTRL\_RDWTEN@{SDIO\_MMC\_CTRL\_RDWTEN}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_RDWTEN}{SDIO\_MMC\_CTRL\_RDWTEN}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+RDWTEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_ab7c34e82ff94d41a0701888a1c3ee36b}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+RDWTEN\+\_\+\+Pos}})}
+
+
+
+SDIO read wait enable signal ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+MMC\+\_\+\+IO Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00127}{127}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ab7c34e82ff94d41a0701888a1c3ee36b}\label{reg__sdio_8h_ab7c34e82ff94d41a0701888a1c3ee36b}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_RDWTEN\_Pos@{SDIO\_MMC\_CTRL\_RDWTEN\_Pos}}
+\index{SDIO\_MMC\_CTRL\_RDWTEN\_Pos@{SDIO\_MMC\_CTRL\_RDWTEN\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_RDWTEN\_Pos}{SDIO\_MMC\_CTRL\_RDWTEN\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+RDWTEN\+\_\+\+Pos~(10)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00123}{123}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a4e5460755abf8d99bc0a079bcaac8f0f}\label{reg__sdio_8h_a4e5460755abf8d99bc0a079bcaac8f0f}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_SelPTSM@{SDIO\_MMC\_CTRL\_SelPTSM}}
+\index{SDIO\_MMC\_CTRL\_SelPTSM@{SDIO\_MMC\_CTRL\_SelPTSM}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_SelPTSM}{SDIO\_MMC\_CTRL\_SelPTSM}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+Sel\+PTSM~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a266a58a7768e5f47bdf67331a70a9e79}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+Sel\+PTSM\+\_\+\+Pos}})}
+
+
+
+Select\+SD/\+MMC/\+SDIO port transfer high speed mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00116}{116}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a266a58a7768e5f47bdf67331a70a9e79}\label{reg__sdio_8h_a266a58a7768e5f47bdf67331a70a9e79}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_SelPTSM\_Pos@{SDIO\_MMC\_CTRL\_SelPTSM\_Pos}}
+\index{SDIO\_MMC\_CTRL\_SelPTSM\_Pos@{SDIO\_MMC\_CTRL\_SelPTSM\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_SelPTSM\_Pos}{SDIO\_MMC\_CTRL\_SelPTSM\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+Sel\+PTSM\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00115}{115}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a56af4b1c818fa222ae878a57c02452c4}\label{reg__sdio_8h_a56af4b1c818fa222ae878a57c02452c4}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_SelSM@{SDIO\_MMC\_CTRL\_SelSM}}
+\index{SDIO\_MMC\_CTRL\_SelSM@{SDIO\_MMC\_CTRL\_SelSM}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_SelSM}{SDIO\_MMC\_CTRL\_SelSM}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+Sel\+SM~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_acbc6d6aa48c66d95f69e7f48e96b962a}{SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+Sel\+SM\+\_\+\+Pos}})}
+
+
+
+Select automatic mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00103}{103}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_acbc6d6aa48c66d95f69e7f48e96b962a}\label{reg__sdio_8h_acbc6d6aa48c66d95f69e7f48e96b962a}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_CTRL\_SelSM\_Pos@{SDIO\_MMC\_CTRL\_SelSM\_Pos}}
+\index{SDIO\_MMC\_CTRL\_SelSM\_Pos@{SDIO\_MMC\_CTRL\_SelSM\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_CTRL\_SelSM\_Pos}{SDIO\_MMC\_CTRL\_SelSM\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+CTRL\+\_\+\+Sel\+SM\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00102}{102}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ae504700a921ded56de551ba926c310f0}\label{reg__sdio_8h_ae504700a921ded56de551ba926c310f0}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_INT\_MASK\_CMDDINT@{SDIO\_MMC\_INT\_MASK\_CMDDINT}}
+\index{SDIO\_MMC\_INT\_MASK\_CMDDINT@{SDIO\_MMC\_INT\_MASK\_CMDDINT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_INT\_MASK\_CMDDINT}{SDIO\_MMC\_INT\_MASK\_CMDDINT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CMDDINT~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a79b96dc6585ece2ffcca589052185b25}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CMDDINT\+\_\+\+Pos}})}
+
+
+
+CMD completes interrupt shielding 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00202}{202}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a79b96dc6585ece2ffcca589052185b25}\label{reg__sdio_8h_a79b96dc6585ece2ffcca589052185b25}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_INT\_MASK\_CMDDINT\_Pos@{SDIO\_MMC\_INT\_MASK\_CMDDINT\_Pos}}
+\index{SDIO\_MMC\_INT\_MASK\_CMDDINT\_Pos@{SDIO\_MMC\_INT\_MASK\_CMDDINT\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_INT\_MASK\_CMDDINT\_Pos}{SDIO\_MMC\_INT\_MASK\_CMDDINT\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CMDDINT\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00201}{201}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a985861d2f6c0c85cb904bf3fc93f495c}\label{reg__sdio_8h_a985861d2f6c0c85cb904bf3fc93f495c}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_INT\_MASK\_CMDEINT@{SDIO\_MMC\_INT\_MASK\_CMDEINT}}
+\index{SDIO\_MMC\_INT\_MASK\_CMDEINT@{SDIO\_MMC\_INT\_MASK\_CMDEINT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_INT\_MASK\_CMDEINT}{SDIO\_MMC\_INT\_MASK\_CMDEINT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CMDEINT~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a244692d48efdf58d2098c1c858457788}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CMDEINT\+\_\+\+Pos}})}
+
+
+
+CMD CRC error interrupt masking 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00208}{208}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a244692d48efdf58d2098c1c858457788}\label{reg__sdio_8h_a244692d48efdf58d2098c1c858457788}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_INT\_MASK\_CMDEINT\_Pos@{SDIO\_MMC\_INT\_MASK\_CMDEINT\_Pos}}
+\index{SDIO\_MMC\_INT\_MASK\_CMDEINT\_Pos@{SDIO\_MMC\_INT\_MASK\_CMDEINT\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_INT\_MASK\_CMDEINT\_Pos}{SDIO\_MMC\_INT\_MASK\_CMDEINT\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CMDEINT\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00207}{207}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ad2ea47dc3c540e689f68617f290baf91}\label{reg__sdio_8h_ad2ea47dc3c540e689f68617f290baf91}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_INT\_MASK\_CRCINTM@{SDIO\_MMC\_INT\_MASK\_CRCINTM}}
+\index{SDIO\_MMC\_INT\_MASK\_CRCINTM@{SDIO\_MMC\_INT\_MASK\_CRCINTM}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_INT\_MASK\_CRCINTM}{SDIO\_MMC\_INT\_MASK\_CRCINTM}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CRCINTM~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a9f47a494b76197d147d3560cc117edfc}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CRCINTM\+\_\+\+Pos}})}
+
+
+
+CRC status token error interrupt masking 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00216}{216}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a9f47a494b76197d147d3560cc117edfc}\label{reg__sdio_8h_a9f47a494b76197d147d3560cc117edfc}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_INT\_MASK\_CRCINTM\_Pos@{SDIO\_MMC\_INT\_MASK\_CRCINTM\_Pos}}
+\index{SDIO\_MMC\_INT\_MASK\_CRCINTM\_Pos@{SDIO\_MMC\_INT\_MASK\_CRCINTM\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_INT\_MASK\_CRCINTM\_Pos}{SDIO\_MMC\_INT\_MASK\_CRCINTM\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CRCINTM\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00215}{215}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a64ce623db26d72e943dec25acc58a879}\label{reg__sdio_8h_a64ce623db26d72e943dec25acc58a879}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_INT\_MASK\_CRTINTM@{SDIO\_MMC\_INT\_MASK\_CRTINTM}}
+\index{SDIO\_MMC\_INT\_MASK\_CRTINTM@{SDIO\_MMC\_INT\_MASK\_CRTINTM}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_INT\_MASK\_CRTINTM}{SDIO\_MMC\_INT\_MASK\_CRTINTM}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CRTINTM~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a53b086afc340c21a961151e204ade33a}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CRTINTM\+\_\+\+Pos}})}
+
+
+
+Cmd and Resp Ncr timeout interrupt shielding 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00214}{214}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a53b086afc340c21a961151e204ade33a}\label{reg__sdio_8h_a53b086afc340c21a961151e204ade33a}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_INT\_MASK\_CRTINTM\_Pos@{SDIO\_MMC\_INT\_MASK\_CRTINTM\_Pos}}
+\index{SDIO\_MMC\_INT\_MASK\_CRTINTM\_Pos@{SDIO\_MMC\_INT\_MASK\_CRTINTM\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_INT\_MASK\_CRTINTM\_Pos}{SDIO\_MMC\_INT\_MASK\_CRTINTM\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+CRTINTM\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00213}{213}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a3eaecac1bccdc092069294f3150a086d}\label{reg__sdio_8h_a3eaecac1bccdc092069294f3150a086d}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_INT\_MASK\_D1INTM@{SDIO\_MMC\_INT\_MASK\_D1INTM}}
+\index{SDIO\_MMC\_INT\_MASK\_D1INTM@{SDIO\_MMC\_INT\_MASK\_D1INTM}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_INT\_MASK\_D1INTM}{SDIO\_MMC\_INT\_MASK\_D1INTM}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+D1\+INTM~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a6a7829f4b8d2d584c28dc4a77f3b9d4d}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+D1\+INTM\+\_\+\+Pos}})}
+
+
+
+SDIO Data 1 Line Interrupt Mask ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+CLR\+\_\+\+MMC\+\_\+\+INT Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00221}{221}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a6a7829f4b8d2d584c28dc4a77f3b9d4d}\label{reg__sdio_8h_a6a7829f4b8d2d584c28dc4a77f3b9d4d}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_INT\_MASK\_D1INTM\_Pos@{SDIO\_MMC\_INT\_MASK\_D1INTM\_Pos}}
+\index{SDIO\_MMC\_INT\_MASK\_D1INTM\_Pos@{SDIO\_MMC\_INT\_MASK\_D1INTM\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_INT\_MASK\_D1INTM\_Pos}{SDIO\_MMC\_INT\_MASK\_D1INTM\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+D1\+INTM\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00217}{217}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a658360e3beb9144a82195c19fa56e789}\label{reg__sdio_8h_a658360e3beb9144a82195c19fa56e789}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_INT\_MASK\_DATDINT@{SDIO\_MMC\_INT\_MASK\_DATDINT}}
+\index{SDIO\_MMC\_INT\_MASK\_DATDINT@{SDIO\_MMC\_INT\_MASK\_DATDINT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_INT\_MASK\_DATDINT}{SDIO\_MMC\_INT\_MASK\_DATDINT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+DATDINT~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a682d506588607d140a1db682a1e2ddb1}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+DATDINT\+\_\+\+Pos}})}
+
+
+
+DAT completes interrupt shielding 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00204}{204}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a682d506588607d140a1db682a1e2ddb1}\label{reg__sdio_8h_a682d506588607d140a1db682a1e2ddb1}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_INT\_MASK\_DATDINT\_Pos@{SDIO\_MMC\_INT\_MASK\_DATDINT\_Pos}}
+\index{SDIO\_MMC\_INT\_MASK\_DATDINT\_Pos@{SDIO\_MMC\_INT\_MASK\_DATDINT\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_INT\_MASK\_DATDINT\_Pos}{SDIO\_MMC\_INT\_MASK\_DATDINT\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+DATDINT\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00203}{203}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a9bff646225d617e918ddef8d7efec02e}\label{reg__sdio_8h_a9bff646225d617e918ddef8d7efec02e}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_INT\_MASK\_DATEINT@{SDIO\_MMC\_INT\_MASK\_DATEINT}}
+\index{SDIO\_MMC\_INT\_MASK\_DATEINT@{SDIO\_MMC\_INT\_MASK\_DATEINT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_INT\_MASK\_DATEINT}{SDIO\_MMC\_INT\_MASK\_DATEINT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+DATEINT~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a31ca6ce1603c12ee53a307fb9668f50d}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+DATEINT\+\_\+\+Pos}})}
+
+
+
+DAT CRC error interrupt masking 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00206}{206}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a31ca6ce1603c12ee53a307fb9668f50d}\label{reg__sdio_8h_a31ca6ce1603c12ee53a307fb9668f50d}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_INT\_MASK\_DATEINT\_Pos@{SDIO\_MMC\_INT\_MASK\_DATEINT\_Pos}}
+\index{SDIO\_MMC\_INT\_MASK\_DATEINT\_Pos@{SDIO\_MMC\_INT\_MASK\_DATEINT\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_INT\_MASK\_DATEINT\_Pos}{SDIO\_MMC\_INT\_MASK\_DATEINT\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+DATEINT\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00205}{205}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a81938f5c9dc535cc681674fb584ee84b}\label{reg__sdio_8h_a81938f5c9dc535cc681674fb584ee84b}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_INT\_MASK\_MBDINTM@{SDIO\_MMC\_INT\_MASK\_MBDINTM}}
+\index{SDIO\_MMC\_INT\_MASK\_MBDINTM@{SDIO\_MMC\_INT\_MASK\_MBDINTM}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_INT\_MASK\_MBDINTM}{SDIO\_MMC\_INT\_MASK\_MBDINTM}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+MBDINTM~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a011674a5c236f2c9940654a042653461}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+MBDINTM\+\_\+\+Pos}})}
+
+
+
+Multiple blocks complete interrupt shielding 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00210}{210}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a011674a5c236f2c9940654a042653461}\label{reg__sdio_8h_a011674a5c236f2c9940654a042653461}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_INT\_MASK\_MBDINTM\_Pos@{SDIO\_MMC\_INT\_MASK\_MBDINTM\_Pos}}
+\index{SDIO\_MMC\_INT\_MASK\_MBDINTM\_Pos@{SDIO\_MMC\_INT\_MASK\_MBDINTM\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_INT\_MASK\_MBDINTM\_Pos}{SDIO\_MMC\_INT\_MASK\_MBDINTM\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+MBDINTM\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00209}{209}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_aa70b18f9ab31e0ed6779e9fe95e434ef}\label{reg__sdio_8h_aa70b18f9ab31e0ed6779e9fe95e434ef}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_INT\_MASK\_MBTINTM@{SDIO\_MMC\_INT\_MASK\_MBTINTM}}
+\index{SDIO\_MMC\_INT\_MASK\_MBTINTM@{SDIO\_MMC\_INT\_MASK\_MBTINTM}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_INT\_MASK\_MBTINTM}{SDIO\_MMC\_INT\_MASK\_MBTINTM}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+MBTINTM~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a050de2b38c60b200d509b8829e292371}{SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+MBTINTM\+\_\+\+Pos}})}
+
+
+
+Multiblock timeout interrupt shielding 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00212}{212}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a050de2b38c60b200d509b8829e292371}\label{reg__sdio_8h_a050de2b38c60b200d509b8829e292371}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_INT\_MASK\_MBTINTM\_Pos@{SDIO\_MMC\_INT\_MASK\_MBTINTM\_Pos}}
+\index{SDIO\_MMC\_INT\_MASK\_MBTINTM\_Pos@{SDIO\_MMC\_INT\_MASK\_MBTINTM\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_INT\_MASK\_MBTINTM\_Pos}{SDIO\_MMC\_INT\_MASK\_MBTINTM\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK\+\_\+\+MBTINTM\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00211}{211}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a32847519effe4fa55bdeb390c5ab6f97}\label{reg__sdio_8h_a32847519effe4fa55bdeb390c5ab6f97}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_AUTOCLKG@{SDIO\_MMC\_IO\_AUTOCLKG}}
+\index{SDIO\_MMC\_IO\_AUTOCLKG@{SDIO\_MMC\_IO\_AUTOCLKG}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_AUTOCLKG}{SDIO\_MMC\_IO\_AUTOCLKG}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+AUTOCLKG~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a1bd5d6216b9f8839398b2f4234302297}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+AUTOCLKG\+\_\+\+Pos}})}
+
+
+
+Enable automatic conversion of the 8 empty clock after a response/command or a single block of data 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00143}{143}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a1bd5d6216b9f8839398b2f4234302297}\label{reg__sdio_8h_a1bd5d6216b9f8839398b2f4234302297}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_AUTOCLKG\_Pos@{SDIO\_MMC\_IO\_AUTOCLKG\_Pos}}
+\index{SDIO\_MMC\_IO\_AUTOCLKG\_Pos@{SDIO\_MMC\_IO\_AUTOCLKG\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_AUTOCLKG\_Pos}{SDIO\_MMC\_IO\_AUTOCLKG\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+AUTOCLKG\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00142}{142}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a3fa64afa530828d76cd21c4f28f60449}\label{reg__sdio_8h_a3fa64afa530828d76cd21c4f28f60449}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_AUTODATTR@{SDIO\_MMC\_IO\_AUTODATTR}}
+\index{SDIO\_MMC\_IO\_AUTODATTR@{SDIO\_MMC\_IO\_AUTODATTR}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_AUTODATTR}{SDIO\_MMC\_IO\_AUTODATTR}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+AUTODATTR~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_acde66c5d9c380a93c0e730ae64d04890}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+AUTODATTR\+\_\+\+Pos}})}
+
+
+
+Set up automatic data transfer 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00129}{129}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_acde66c5d9c380a93c0e730ae64d04890}\label{reg__sdio_8h_acde66c5d9c380a93c0e730ae64d04890}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_AUTODATTR\_Pos@{SDIO\_MMC\_IO\_AUTODATTR\_Pos}}
+\index{SDIO\_MMC\_IO\_AUTODATTR\_Pos@{SDIO\_MMC\_IO\_AUTODATTR\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_AUTODATTR\_Pos}{SDIO\_MMC\_IO\_AUTODATTR\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+AUTODATTR\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00128}{128}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a0312b0d58e9e381eae95007f3fe50a14}\label{reg__sdio_8h_a0312b0d58e9e381eae95007f3fe50a14}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_AUTOTR@{SDIO\_MMC\_IO\_AUTOTR}}
+\index{SDIO\_MMC\_IO\_AUTOTR@{SDIO\_MMC\_IO\_AUTOTR}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_AUTOTR}{SDIO\_MMC\_IO\_AUTOTR}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+AUTOTR~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_aee5dd0d23dd172d0e6cd8b7cc409c356}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+AUTOTR\+\_\+\+Pos}})}
+
+
+
+Set up automatic 8-\/bit/command/response transmission. 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00133}{133}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_aee5dd0d23dd172d0e6cd8b7cc409c356}\label{reg__sdio_8h_aee5dd0d23dd172d0e6cd8b7cc409c356}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_AUTOTR\_Pos@{SDIO\_MMC\_IO\_AUTOTR\_Pos}}
+\index{SDIO\_MMC\_IO\_AUTOTR\_Pos@{SDIO\_MMC\_IO\_AUTOTR\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_AUTOTR\_Pos}{SDIO\_MMC\_IO\_AUTOTR\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+AUTOTR\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00132}{132}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ad133903600be9f7a893531f02a8399fe}\label{reg__sdio_8h_ad133903600be9f7a893531f02a8399fe}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_CID\_CSDRD@{SDIO\_MMC\_IO\_CID\_CSDRD}}
+\index{SDIO\_MMC\_IO\_CID\_CSDRD@{SDIO\_MMC\_IO\_CID\_CSDRD}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_CID\_CSDRD}{SDIO\_MMC\_IO\_CID\_CSDRD}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+CID\+\_\+\+CSDRD~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_af78610c8aa46efa8a8e519136ece93be}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+CID\+\_\+\+CSDRD\+\_\+\+Pos}})}
+
+
+
+CID and CSD reads 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00137}{137}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_af78610c8aa46efa8a8e519136ece93be}\label{reg__sdio_8h_af78610c8aa46efa8a8e519136ece93be}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_CID\_CSDRD\_Pos@{SDIO\_MMC\_IO\_CID\_CSDRD\_Pos}}
+\index{SDIO\_MMC\_IO\_CID\_CSDRD\_Pos@{SDIO\_MMC\_IO\_CID\_CSDRD\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_CID\_CSDRD\_Pos}{SDIO\_MMC\_IO\_CID\_CSDRD\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+CID\+\_\+\+CSDRD\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00136}{136}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a1660078d4f0fdde187298f6688e0cb18}\label{reg__sdio_8h_a1660078d4f0fdde187298f6688e0cb18}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_CMDAF@{SDIO\_MMC\_IO\_CMDAF}}
+\index{SDIO\_MMC\_IO\_CMDAF@{SDIO\_MMC\_IO\_CMDAF}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_CMDAF}{SDIO\_MMC\_IO\_CMDAF}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+CMDAF~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a5637dbdd872da61637b8c37fc740b261}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+CMDAF\+\_\+\+Pos}})}
+
+
+
+SDIO CMD12 / IO abort flag ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+MMC\+\_\+\+BYTECNTL Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00150}{150}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a5637dbdd872da61637b8c37fc740b261}\label{reg__sdio_8h_a5637dbdd872da61637b8c37fc740b261}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_CMDAF\_Pos@{SDIO\_MMC\_IO\_CMDAF\_Pos}}
+\index{SDIO\_MMC\_IO\_CMDAF\_Pos@{SDIO\_MMC\_IO\_CMDAF\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_CMDAF\_Pos}{SDIO\_MMC\_IO\_CMDAF\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+CMDAF\+\_\+\+Pos~(9)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00146}{146}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a890ffee97f63068c5d0558d48bc87093}\label{reg__sdio_8h_a890ffee97f63068c5d0558d48bc87093}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_CMDCH@{SDIO\_MMC\_IO\_CMDCH}}
+\index{SDIO\_MMC\_IO\_CMDCH@{SDIO\_MMC\_IO\_CMDCH}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_CMDCH}{SDIO\_MMC\_IO\_CMDCH}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+CMDCH~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a3a8f3c67682fad8b301b9dee17ee5053}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+CMDCH\+\_\+\+Pos}})}
+
+
+
+SDIO mode enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00145}{145}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a3a8f3c67682fad8b301b9dee17ee5053}\label{reg__sdio_8h_a3a8f3c67682fad8b301b9dee17ee5053}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_CMDCH\_Pos@{SDIO\_MMC\_IO\_CMDCH\_Pos}}
+\index{SDIO\_MMC\_IO\_CMDCH\_Pos@{SDIO\_MMC\_IO\_CMDCH\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_CMDCH\_Pos}{SDIO\_MMC\_IO\_CMDCH\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+CMDCH\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00144}{144}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a21ee71418a9c386aa7c6c4c23f2d0a13}\label{reg__sdio_8h_a21ee71418a9c386aa7c6c4c23f2d0a13}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_ENRRESP@{SDIO\_MMC\_IO\_ENRRESP}}
+\index{SDIO\_MMC\_IO\_ENRRESP@{SDIO\_MMC\_IO\_ENRRESP}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_ENRRESP}{SDIO\_MMC\_IO\_ENRRESP}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+ENRRESP~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a1aaaafc5d0701dd775683ff7300be0a8}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+ENRRESP\+\_\+\+Pos}})}
+
+
+
+Enable automatic receiving of responses after a command 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00141}{141}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a1aaaafc5d0701dd775683ff7300be0a8}\label{reg__sdio_8h_a1aaaafc5d0701dd775683ff7300be0a8}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_ENRRESP\_Pos@{SDIO\_MMC\_IO\_ENRRESP\_Pos}}
+\index{SDIO\_MMC\_IO\_ENRRESP\_Pos@{SDIO\_MMC\_IO\_ENRRESP\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_ENRRESP\_Pos}{SDIO\_MMC\_IO\_ENRRESP\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+ENRRESP\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00140}{140}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a9382e50afb9deaa17fa8dcdb32425c01}\label{reg__sdio_8h_a9382e50afb9deaa17fa8dcdb32425c01}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_MBCTL\_BTSSel@{SDIO\_MMC\_IO\_MBCTL\_BTSSel}}
+\index{SDIO\_MMC\_IO\_MBCTL\_BTSSel@{SDIO\_MMC\_IO\_MBCTL\_BTSSel}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_MBCTL\_BTSSel}{SDIO\_MMC\_IO\_MBCTL\_BTSSel}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+BTSSel~(0x03U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a39b2536f2aa279f004fa4dcc632db1c8}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+CRC\+\_\+status\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO BUSY Timeout level selects bits 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00278}{278}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a903e2043f385b5fd77abfa7ac43f5c00}\label{reg__sdio_8h_a903e2043f385b5fd77abfa7ac43f5c00}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_MBCTL\_BTSSel\_2@{SDIO\_MMC\_IO\_MBCTL\_BTSSel\_2}}
+\index{SDIO\_MMC\_IO\_MBCTL\_BTSSel\_2@{SDIO\_MMC\_IO\_MBCTL\_BTSSel\_2}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_MBCTL\_BTSSel\_2}{SDIO\_MMC\_IO\_MBCTL\_BTSSel\_2}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+BTSSel\+\_\+2~(0x02U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a39b2536f2aa279f004fa4dcc632db1c8}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+CRC\+\_\+status\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO BUSY Timeout level selects bits 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00279}{279}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_abdecd935d92e8b85639f594ca8f56e73}\label{reg__sdio_8h_abdecd935d92e8b85639f594ca8f56e73}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_MBCTL\_BTSSel\_Pos@{SDIO\_MMC\_IO\_MBCTL\_BTSSel\_Pos}}
+\index{SDIO\_MMC\_IO\_MBCTL\_BTSSel\_Pos@{SDIO\_MMC\_IO\_MBCTL\_BTSSel\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_MBCTL\_BTSSel\_Pos}{SDIO\_MMC\_IO\_MBCTL\_BTSSel\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+BTSSel\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00277}{277}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_af09293a7d09faf5ffbb5a0f64371ca41}\label{reg__sdio_8h_af09293a7d09faf5ffbb5a0f64371ca41}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_MBCTL\_NTSSel@{SDIO\_MMC\_IO\_MBCTL\_NTSSel}}
+\index{SDIO\_MMC\_IO\_MBCTL\_NTSSel@{SDIO\_MMC\_IO\_MBCTL\_NTSSel}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_MBCTL\_NTSSel}{SDIO\_MMC\_IO\_MBCTL\_NTSSel}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+NTSSel~(0x03U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a013986d046429202215268bc313b366e}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+NTSSel\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO NAC timeout level selection bit ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+MMC\+\_\+\+BLOCKCNT Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00284}{284}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a013986d046429202215268bc313b366e}\label{reg__sdio_8h_a013986d046429202215268bc313b366e}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_MBCTL\_NTSSel\_Pos@{SDIO\_MMC\_IO\_MBCTL\_NTSSel\_Pos}}
+\index{SDIO\_MMC\_IO\_MBCTL\_NTSSel\_Pos@{SDIO\_MMC\_IO\_MBCTL\_NTSSel\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_MBCTL\_NTSSel\_Pos}{SDIO\_MMC\_IO\_MBCTL\_NTSSel\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+NTSSel\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00280}{280}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ac42c49d1471463451d988befcdaa511b}\label{reg__sdio_8h_ac42c49d1471463451d988befcdaa511b}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_MBCTL\_PAUTOTR@{SDIO\_MMC\_IO\_MBCTL\_PAUTOTR}}
+\index{SDIO\_MMC\_IO\_MBCTL\_PAUTOTR@{SDIO\_MMC\_IO\_MBCTL\_PAUTOTR}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_MBCTL\_PAUTOTR}{SDIO\_MMC\_IO\_MBCTL\_PAUTOTR}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+PAUTOTR~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a9e2a8298cbff7fd90a23a4b8f52c1de5}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+PAUTOTR\+\_\+\+Pos}})}
+
+
+
+Set up SD/\+MMC/\+SDIO port automatic command and multi -\/ block data transfer 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00274}{274}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a9e2a8298cbff7fd90a23a4b8f52c1de5}\label{reg__sdio_8h_a9e2a8298cbff7fd90a23a4b8f52c1de5}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_MBCTL\_PAUTOTR\_Pos@{SDIO\_MMC\_IO\_MBCTL\_PAUTOTR\_Pos}}
+\index{SDIO\_MMC\_IO\_MBCTL\_PAUTOTR\_Pos@{SDIO\_MMC\_IO\_MBCTL\_PAUTOTR\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_MBCTL\_PAUTOTR\_Pos}{SDIO\_MMC\_IO\_MBCTL\_PAUTOTR\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+PAUTOTR\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00273}{273}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ad9d9420004caee8149710480f4e5f18b}\label{reg__sdio_8h_ad9d9420004caee8149710480f4e5f18b}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_MBCTL\_PCLKP@{SDIO\_MMC\_IO\_MBCTL\_PCLKP}}
+\index{SDIO\_MMC\_IO\_MBCTL\_PCLKP@{SDIO\_MMC\_IO\_MBCTL\_PCLKP}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_MBCTL\_PCLKP}{SDIO\_MMC\_IO\_MBCTL\_PCLKP}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+PCLKP~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a6d3a8ee0a4edf1d55ac4b0e59621a34a}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+PCLKP\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO port CLK line polarity selection bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00276}{276}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a6d3a8ee0a4edf1d55ac4b0e59621a34a}\label{reg__sdio_8h_a6d3a8ee0a4edf1d55ac4b0e59621a34a}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_MBCTL\_PCLKP\_Pos@{SDIO\_MMC\_IO\_MBCTL\_PCLKP\_Pos}}
+\index{SDIO\_MMC\_IO\_MBCTL\_PCLKP\_Pos@{SDIO\_MMC\_IO\_MBCTL\_PCLKP\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_MBCTL\_PCLKP\_Pos}{SDIO\_MMC\_IO\_MBCTL\_PCLKP\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+PCLKP\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00275}{275}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ad2439a2d9c20de27425fc880e655d210}\label{reg__sdio_8h_ad2439a2d9c20de27425fc880e655d210}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_MBCTL\_SMBDTD@{SDIO\_MMC\_IO\_MBCTL\_SMBDTD}}
+\index{SDIO\_MMC\_IO\_MBCTL\_SMBDTD@{SDIO\_MMC\_IO\_MBCTL\_SMBDTD}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_MBCTL\_SMBDTD}{SDIO\_MMC\_IO\_MBCTL\_SMBDTD}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+SMBDTD~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a06f9c9ef1bb8c7ffa557f9191348e60c}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+SMBDTD\+\_\+\+Pos}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00272}{272}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a06f9c9ef1bb8c7ffa557f9191348e60c}\label{reg__sdio_8h_a06f9c9ef1bb8c7ffa557f9191348e60c}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_MBCTL\_SMBDTD\_Pos@{SDIO\_MMC\_IO\_MBCTL\_SMBDTD\_Pos}}
+\index{SDIO\_MMC\_IO\_MBCTL\_SMBDTD\_Pos@{SDIO\_MMC\_IO\_MBCTL\_SMBDTD\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_MBCTL\_SMBDTD\_Pos}{SDIO\_MMC\_IO\_MBCTL\_SMBDTD\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+SMBDTD\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00271}{271}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a1a6cfe2b6db86571577ab063fb0bec07}\label{reg__sdio_8h_a1a6cfe2b6db86571577ab063fb0bec07}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_MBCTL\_SPMBDTR@{SDIO\_MMC\_IO\_MBCTL\_SPMBDTR}}
+\index{SDIO\_MMC\_IO\_MBCTL\_SPMBDTR@{SDIO\_MMC\_IO\_MBCTL\_SPMBDTR}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_MBCTL\_SPMBDTR}{SDIO\_MMC\_IO\_MBCTL\_SPMBDTR}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+SPMBDTR~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a101866161b19a69542ad79344aabfb5a}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+SPMBDTR\+\_\+\+Pos}})}
+
+
+
+Set the SD/\+MMC/\+SDIO port to automatically multiblock data transfer bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00270}{270}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a101866161b19a69542ad79344aabfb5a}\label{reg__sdio_8h_a101866161b19a69542ad79344aabfb5a}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_MBCTL\_SPMBDTR\_Pos@{SDIO\_MMC\_IO\_MBCTL\_SPMBDTR\_Pos}}
+\index{SDIO\_MMC\_IO\_MBCTL\_SPMBDTR\_Pos@{SDIO\_MMC\_IO\_MBCTL\_SPMBDTR\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_MBCTL\_SPMBDTR\_Pos}{SDIO\_MMC\_IO\_MBCTL\_SPMBDTR\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL\+\_\+\+SPMBDTR\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00269}{269}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a7820d6b38b9221c7945d0f524d8c535b}\label{reg__sdio_8h_a7820d6b38b9221c7945d0f524d8c535b}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_PCLKG@{SDIO\_MMC\_IO\_PCLKG}}
+\index{SDIO\_MMC\_IO\_PCLKG@{SDIO\_MMC\_IO\_PCLKG}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_PCLKG}{SDIO\_MMC\_IO\_PCLKG}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+PCLKG~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a55bb3be779a63e13469db7a2ef9f279a}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+PCLKG\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO port CLK line 8 empty clock generated 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00139}{139}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a55bb3be779a63e13469db7a2ef9f279a}\label{reg__sdio_8h_a55bb3be779a63e13469db7a2ef9f279a}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_PCLKG\_Pos@{SDIO\_MMC\_IO\_PCLKG\_Pos}}
+\index{SDIO\_MMC\_IO\_PCLKG\_Pos@{SDIO\_MMC\_IO\_PCLKG\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_PCLKG\_Pos}{SDIO\_MMC\_IO\_PCLKG\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+PCLKG\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00138}{138}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a2a325aaf622130489ae4cee2c1dd775d}\label{reg__sdio_8h_a2a325aaf622130489ae4cee2c1dd775d}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_RESPCMDSEL@{SDIO\_MMC\_IO\_RESPCMDSEL}}
+\index{SDIO\_MMC\_IO\_RESPCMDSEL@{SDIO\_MMC\_IO\_RESPCMDSEL}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_RESPCMDSEL}{SDIO\_MMC\_IO\_RESPCMDSEL}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+RESPCMDSEL~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a0525b135661cab4c7796489c3799bf9e}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+RESPCMDSEL\+\_\+\+Pos}})}
+
+
+
+Receive response 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00135}{135}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a0525b135661cab4c7796489c3799bf9e}\label{reg__sdio_8h_a0525b135661cab4c7796489c3799bf9e}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_RESPCMDSEL\_Pos@{SDIO\_MMC\_IO\_RESPCMDSEL\_Pos}}
+\index{SDIO\_MMC\_IO\_RESPCMDSEL\_Pos@{SDIO\_MMC\_IO\_RESPCMDSEL\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_RESPCMDSEL\_Pos}{SDIO\_MMC\_IO\_RESPCMDSEL\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+RESPCMDSEL\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00134}{134}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ae70571feb8be860e01ca97b07c604208}\label{reg__sdio_8h_ae70571feb8be860e01ca97b07c604208}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_TRANSFDIR@{SDIO\_MMC\_IO\_TRANSFDIR}}
+\index{SDIO\_MMC\_IO\_TRANSFDIR@{SDIO\_MMC\_IO\_TRANSFDIR}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_TRANSFDIR}{SDIO\_MMC\_IO\_TRANSFDIR}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+TRANSFDIR~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a710f35f390736dec2cc533b21eec6e3b}{SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+TRANSFDIR\+\_\+\+Pos}})}
+
+
+
+Set the direction of data transfer 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00131}{131}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a710f35f390736dec2cc533b21eec6e3b}\label{reg__sdio_8h_a710f35f390736dec2cc533b21eec6e3b}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_IO\_TRANSFDIR\_Pos@{SDIO\_MMC\_IO\_TRANSFDIR\_Pos}}
+\index{SDIO\_MMC\_IO\_TRANSFDIR\_Pos@{SDIO\_MMC\_IO\_TRANSFDIR\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_IO\_TRANSFDIR\_Pos}{SDIO\_MMC\_IO\_TRANSFDIR\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+TRANSFDIR\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00130}{130}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_add7adc9de1f5a3ce43a441b7b8f4f200}\label{reg__sdio_8h_add7adc9de1f5a3ce43a441b7b8f4f200}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_PORT\_AUTONTEN@{SDIO\_MMC\_PORT\_AUTONTEN}}
+\index{SDIO\_MMC\_PORT\_AUTONTEN@{SDIO\_MMC\_PORT\_AUTONTEN}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_PORT\_AUTONTEN}{SDIO\_MMC\_PORT\_AUTONTEN}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+AUTONTEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a4f1f3c4f6254284b8d8e19e6a44ceab4}{SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+AUTONTEN\+\_\+\+Pos}})}
+
+
+
+Automatic Ncr timer output enablement 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00191}{191}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a4f1f3c4f6254284b8d8e19e6a44ceab4}\label{reg__sdio_8h_a4f1f3c4f6254284b8d8e19e6a44ceab4}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_PORT\_AUTONTEN\_Pos@{SDIO\_MMC\_PORT\_AUTONTEN\_Pos}}
+\index{SDIO\_MMC\_PORT\_AUTONTEN\_Pos@{SDIO\_MMC\_PORT\_AUTONTEN\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_PORT\_AUTONTEN\_Pos}{SDIO\_MMC\_PORT\_AUTONTEN\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+AUTONTEN\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00190}{190}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a9649f11fdbe17ce024b5060cb4d1e824}\label{reg__sdio_8h_a9649f11fdbe17ce024b5060cb4d1e824}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_PORT\_NTCR@{SDIO\_MMC\_PORT\_NTCR}}
+\index{SDIO\_MMC\_PORT\_NTCR@{SDIO\_MMC\_PORT\_NTCR}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_PORT\_NTCR}{SDIO\_MMC\_PORT\_NTCR}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+NTCR~(0x0\+FU $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a7040a089a334d17fd1d2f627a49762da}{SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+NTCR\+\_\+\+Pos}})}
+
+
+
+Ncr timeout count register 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00189}{189}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a7040a089a334d17fd1d2f627a49762da}\label{reg__sdio_8h_a7040a089a334d17fd1d2f627a49762da}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_PORT\_NTCR\_Pos@{SDIO\_MMC\_PORT\_NTCR\_Pos}}
+\index{SDIO\_MMC\_PORT\_NTCR\_Pos@{SDIO\_MMC\_PORT\_NTCR\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_PORT\_NTCR\_Pos}{SDIO\_MMC\_PORT\_NTCR\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+NTCR\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00188}{188}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_afaba459028ddd6fea6fa4cf1951a9f3c}\label{reg__sdio_8h_afaba459028ddd6fea6fa4cf1951a9f3c}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_PORT\_PCLKS@{SDIO\_MMC\_PORT\_PCLKS}}
+\index{SDIO\_MMC\_PORT\_PCLKS@{SDIO\_MMC\_PORT\_PCLKS}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_PORT\_PCLKS}{SDIO\_MMC\_PORT\_PCLKS}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+PCLKS~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a27137b84f94496feb450e82c357ad4a6}{SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+PCLKS\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO port CLK line signal ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+MMC\+\_\+\+INT\+\_\+\+MASK Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00200}{200}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a27137b84f94496feb450e82c357ad4a6}\label{reg__sdio_8h_a27137b84f94496feb450e82c357ad4a6}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_PORT\_PCLKS\_Pos@{SDIO\_MMC\_PORT\_PCLKS\_Pos}}
+\index{SDIO\_MMC\_PORT\_PCLKS\_Pos@{SDIO\_MMC\_PORT\_PCLKS\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_PORT\_PCLKS\_Pos}{SDIO\_MMC\_PORT\_PCLKS\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+PCLKS\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00196}{196}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_acf00835cb117b59caae1af409e783b1f}\label{reg__sdio_8h_acf00835cb117b59caae1af409e783b1f}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_PORT\_PCMDS@{SDIO\_MMC\_PORT\_PCMDS}}
+\index{SDIO\_MMC\_PORT\_PCMDS@{SDIO\_MMC\_PORT\_PCMDS}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_PORT\_PCMDS}{SDIO\_MMC\_PORT\_PCMDS}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+PCMDS~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a20d5cb91df4e37ddbb609ec38f6f533a}{SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+PCMDS\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO port CMD line signal 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00195}{195}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a20d5cb91df4e37ddbb609ec38f6f533a}\label{reg__sdio_8h_a20d5cb91df4e37ddbb609ec38f6f533a}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_PORT\_PCMDS\_Pos@{SDIO\_MMC\_PORT\_PCMDS\_Pos}}
+\index{SDIO\_MMC\_PORT\_PCMDS\_Pos@{SDIO\_MMC\_PORT\_PCMDS\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_PORT\_PCMDS\_Pos}{SDIO\_MMC\_PORT\_PCMDS\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+PCMDS\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00194}{194}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ad5988d3a90f523b41dd470b40bd73365}\label{reg__sdio_8h_ad5988d3a90f523b41dd470b40bd73365}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_PORT\_PDATS@{SDIO\_MMC\_PORT\_PDATS}}
+\index{SDIO\_MMC\_PORT\_PDATS@{SDIO\_MMC\_PORT\_PDATS}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_PORT\_PDATS}{SDIO\_MMC\_PORT\_PDATS}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+PDATS~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a560b1703e9674630405d9ead10e1bbb6}{SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+PDATS\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO port DAT line signal 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00193}{193}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a560b1703e9674630405d9ead10e1bbb6}\label{reg__sdio_8h_a560b1703e9674630405d9ead10e1bbb6}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_PORT\_PDATS\_Pos@{SDIO\_MMC\_PORT\_PDATS\_Pos}}
+\index{SDIO\_MMC\_PORT\_PDATS\_Pos@{SDIO\_MMC\_PORT\_PDATS\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_PORT\_PDATS\_Pos}{SDIO\_MMC\_PORT\_PDATS\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+PORT\+\_\+\+PDATS\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00192}{192}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a49715142020722fa8bbfd360e50efd7c}\label{reg__sdio_8h_a49715142020722fa8bbfd360e50efd7c}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_SIQ\_CRC\_status@{SDIO\_MMC\_SIQ\_CRC\_status}}
+\index{SDIO\_MMC\_SIQ\_CRC\_status@{SDIO\_MMC\_SIQ\_CRC\_status}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_SIQ\_CRC\_status}{SDIO\_MMC\_SIQ\_CRC\_status}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+CRC\+\_\+status~(0x07U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a39b2536f2aa279f004fa4dcc632db1c8}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+CRC\+\_\+status\+\_\+\+Pos}})}
+
+
+
+CRC state 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00263}{263}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a39b2536f2aa279f004fa4dcc632db1c8}\label{reg__sdio_8h_a39b2536f2aa279f004fa4dcc632db1c8}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_SIQ\_CRC\_status\_Pos@{SDIO\_MMC\_SIQ\_CRC\_status\_Pos}}
+\index{SDIO\_MMC\_SIQ\_CRC\_status\_Pos@{SDIO\_MMC\_SIQ\_CRC\_status\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_SIQ\_CRC\_status\_Pos}{SDIO\_MMC\_SIQ\_CRC\_status\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+CRC\+\_\+status\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00262}{262}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a40f844fbf5e80d9102a00bc66f4cb20a}\label{reg__sdio_8h_a40f844fbf5e80d9102a00bc66f4cb20a}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_SIQ\_PCMDS@{SDIO\_MMC\_SIQ\_PCMDS}}
+\index{SDIO\_MMC\_SIQ\_PCMDS@{SDIO\_MMC\_SIQ\_PCMDS}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_SIQ\_PCMDS}{SDIO\_MMC\_SIQ\_PCMDS}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PCMDS~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a4bdd94645d07d17a9d73c592a6a46d75}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PCMDS\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO port CMD line signal ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+MMC\+\_\+\+IO\+\_\+\+MBCTL Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00268}{268}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a4bdd94645d07d17a9d73c592a6a46d75}\label{reg__sdio_8h_a4bdd94645d07d17a9d73c592a6a46d75}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_SIQ\_PCMDS\_Pos@{SDIO\_MMC\_SIQ\_PCMDS\_Pos}}
+\index{SDIO\_MMC\_SIQ\_PCMDS\_Pos@{SDIO\_MMC\_SIQ\_PCMDS\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_SIQ\_PCMDS\_Pos}{SDIO\_MMC\_SIQ\_PCMDS\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PCMDS\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00264}{264}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_ad5fd62deedddaaa62ba80b2a0b68a581}\label{reg__sdio_8h_ad5fd62deedddaaa62ba80b2a0b68a581}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_SIQ\_PDAT0S@{SDIO\_MMC\_SIQ\_PDAT0S}}
+\index{SDIO\_MMC\_SIQ\_PDAT0S@{SDIO\_MMC\_SIQ\_PDAT0S}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_SIQ\_PDAT0S}{SDIO\_MMC\_SIQ\_PDAT0S}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT0S~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a6c99c8cbd1d30ac6d26adb06a3449369}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT0\+S\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO port DAT0 line signal 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00255}{255}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a6c99c8cbd1d30ac6d26adb06a3449369}\label{reg__sdio_8h_a6c99c8cbd1d30ac6d26adb06a3449369}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_SIQ\_PDAT0S\_Pos@{SDIO\_MMC\_SIQ\_PDAT0S\_Pos}}
+\index{SDIO\_MMC\_SIQ\_PDAT0S\_Pos@{SDIO\_MMC\_SIQ\_PDAT0S\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_SIQ\_PDAT0S\_Pos}{SDIO\_MMC\_SIQ\_PDAT0S\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT0\+S\+\_\+\+Pos~(0)}
+
+
+
+SDIO\+\_\+\+MMC\+\_\+\+SIQ Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00254}{254}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a19c2138cda4dd875d660e8f06701e2b4}\label{reg__sdio_8h_a19c2138cda4dd875d660e8f06701e2b4}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_SIQ\_PDAT1S@{SDIO\_MMC\_SIQ\_PDAT1S}}
+\index{SDIO\_MMC\_SIQ\_PDAT1S@{SDIO\_MMC\_SIQ\_PDAT1S}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_SIQ\_PDAT1S}{SDIO\_MMC\_SIQ\_PDAT1S}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT1S~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a0d88b0b08df3c510eb0799142c91ee3b}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT1\+S\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO port DAT1 line signal 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00257}{257}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a0d88b0b08df3c510eb0799142c91ee3b}\label{reg__sdio_8h_a0d88b0b08df3c510eb0799142c91ee3b}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_SIQ\_PDAT1S\_Pos@{SDIO\_MMC\_SIQ\_PDAT1S\_Pos}}
+\index{SDIO\_MMC\_SIQ\_PDAT1S\_Pos@{SDIO\_MMC\_SIQ\_PDAT1S\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_SIQ\_PDAT1S\_Pos}{SDIO\_MMC\_SIQ\_PDAT1S\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT1\+S\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00256}{256}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a38197c4a683d4e598014411bf6608444}\label{reg__sdio_8h_a38197c4a683d4e598014411bf6608444}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_SIQ\_PDAT2S@{SDIO\_MMC\_SIQ\_PDAT2S}}
+\index{SDIO\_MMC\_SIQ\_PDAT2S@{SDIO\_MMC\_SIQ\_PDAT2S}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_SIQ\_PDAT2S}{SDIO\_MMC\_SIQ\_PDAT2S}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT2S~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_a5ccba5315450f045ea3a53b9b8c15583}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT2\+S\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO port DAT2 line signal 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00259}{259}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a5ccba5315450f045ea3a53b9b8c15583}\label{reg__sdio_8h_a5ccba5315450f045ea3a53b9b8c15583}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_SIQ\_PDAT2S\_Pos@{SDIO\_MMC\_SIQ\_PDAT2S\_Pos}}
+\index{SDIO\_MMC\_SIQ\_PDAT2S\_Pos@{SDIO\_MMC\_SIQ\_PDAT2S\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_SIQ\_PDAT2S\_Pos}{SDIO\_MMC\_SIQ\_PDAT2S\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT2\+S\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00258}{258}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a458f21c39945e84e5babe82085fbf691}\label{reg__sdio_8h_a458f21c39945e84e5babe82085fbf691}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_SIQ\_PDAT3S@{SDIO\_MMC\_SIQ\_PDAT3S}}
+\index{SDIO\_MMC\_SIQ\_PDAT3S@{SDIO\_MMC\_SIQ\_PDAT3S}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_SIQ\_PDAT3S}{SDIO\_MMC\_SIQ\_PDAT3S}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT3S~(0x01U $<$$<$ \mbox{\hyperlink{reg__sdio_8h_af8e310699da64b8b6e67c01141b7ec5d}{SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT3\+S\+\_\+\+Pos}})}
+
+
+
+SD/\+MMC/\+SDIO port DAT3 line signal 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00261}{261}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_af8e310699da64b8b6e67c01141b7ec5d}\label{reg__sdio_8h_af8e310699da64b8b6e67c01141b7ec5d}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_SIQ\_PDAT3S\_Pos@{SDIO\_MMC\_SIQ\_PDAT3S\_Pos}}
+\index{SDIO\_MMC\_SIQ\_PDAT3S\_Pos@{SDIO\_MMC\_SIQ\_PDAT3S\_Pos}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_SIQ\_PDAT3S\_Pos}{SDIO\_MMC\_SIQ\_PDAT3S\_Pos}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+SIQ\+\_\+\+PDAT3\+S\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00260}{260}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_a55470846045377186acdfc92a7b9a960}\label{reg__sdio_8h_a55470846045377186acdfc92a7b9a960}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_TIMEOUTCNT\_DTCNT@{SDIO\_MMC\_TIMEOUTCNT\_DTCNT}}
+\index{SDIO\_MMC\_TIMEOUTCNT\_DTCNT@{SDIO\_MMC\_TIMEOUTCNT\_DTCNT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_TIMEOUTCNT\_DTCNT}{SDIO\_MMC\_TIMEOUTCNT\_DTCNT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+TIMEOUTCNT\+\_\+\+DTCNT~(0x\+FFU)}
+
+
+
+Data transfer timeout count register ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+CMD\+\_\+\+BUF0 Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00292}{292}} 行定义.
+
+\mbox{\Hypertarget{reg__sdio_8h_aec5eea700d28f822eb375d8587b38c7f}\label{reg__sdio_8h_aec5eea700d28f822eb375d8587b38c7f}} 
+\index{reg\_sdio.h@{reg\_sdio.h}!SDIO\_MMC\_TR\_BLOCKCNT\_CNT@{SDIO\_MMC\_TR\_BLOCKCNT\_CNT}}
+\index{SDIO\_MMC\_TR\_BLOCKCNT\_CNT@{SDIO\_MMC\_TR\_BLOCKCNT\_CNT}!reg\_sdio.h@{reg\_sdio.h}}
+\doxysubsubsection{\texorpdfstring{SDIO\_MMC\_TR\_BLOCKCNT\_CNT}{SDIO\_MMC\_TR\_BLOCKCNT\_CNT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+MMC\+\_\+\+TR\+\_\+\+BLOCKCNT\+\_\+\+CNT~(0x\+FFFFU)}
+
+
+
+The value of the counter that completes the transfer when multiple blocks are transferred. ///////////////////////////////////////////////////////////////////////////// 
+
+SDIO\+\_\+\+MMC\+\_\+\+CRCCTL Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00158}{158}} 行定义.
+

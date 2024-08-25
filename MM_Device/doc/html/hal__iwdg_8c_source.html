@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>template: C:/Users/XerolySkinner/Desktop/MM_Device/MM32F327x/HAL_Lib/Src/hal_iwdg.c 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">template
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8a23370bd962f2be3cb202251f8a0865.html">MM32F327x</a></li><li class="navelem"><a class="el" href="dir_3b1bed74bcb45e4245a73e66928ea90d.html">HAL_Lib</a></li><li class="navelem"><a class="el" href="dir_7c9ac39f302c264f6f2d20643460873b.html">Src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">hal_iwdg.c</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="hal__iwdg_8c.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Define to prevent recursive inclusion</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="hal__iwdg_8c.html#a32d1afa664bbccea25634f61c169bbd1">   19</a></span><span class="preprocessor">#define _HAL_IWDG_C_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// Files includes</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="hal__iwdg_8h.html">hal_iwdg.h</a>&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="group___i_w_d_g___exported___functions.html#ga7adc5086ce232328863e0f164011a946">   48</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___i_w_d_g___exported___functions.html#ga7adc5086ce232328863e0f164011a946">IWDG_WriteAccessCmd</a>(<a class="code hl_typedef" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> write_access)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_define" href="reg__iwdg_8h.html#ad16b79dd94ee85d261d08a8ee94187e7">IWDG</a>-&gt;KR = write_access;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="group___i_w_d_g___exported___functions.html#ga8182f9cae2e129bd8c966171ada66ce1">   66</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___i_w_d_g___exported___functions.html#ga8182f9cae2e129bd8c966171ada66ce1">IWDG_SetPrescaler</a>(<a class="code hl_typedef" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> prescaler)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>{</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_define" href="reg__iwdg_8h.html#ad16b79dd94ee85d261d08a8ee94187e7">IWDG</a>-&gt;PR = prescaler;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_function" href="group___i_w_d_g___exported___functions.html#ga50830ed9d09b5b7586fee5d5ed2b3c7c">PVU_CheckStatus</a>();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="group___i_w_d_g___exported___functions.html#ga1f05c0eaf5faaf46717d933e6b814e62">   78</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___i_w_d_g___exported___functions.html#ga1f05c0eaf5faaf46717d933e6b814e62">IWDG_SetReload</a>(<a class="code hl_typedef" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> reload)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>{</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <a class="code hl_define" href="reg__iwdg_8h.html#ad16b79dd94ee85d261d08a8ee94187e7">IWDG</a>-&gt;RLR = reload;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_function" href="group___i_w_d_g___exported___functions.html#ga4264f0d0541d333834205640b4c77db7">RVU_CheckStatus</a>();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="group___i_w_d_g___exported___functions.html#ga9c7b08511ad180d326510150bdca99d2">   89</a></span><a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_function" href="group___i_w_d_g___exported___functions.html#ga9c7b08511ad180d326510150bdca99d2">IWDG_GetReload</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>{</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="reg__iwdg_8h.html#ad16b79dd94ee85d261d08a8ee94187e7">IWDG</a>-&gt;RLR;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>}</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="group___i_w_d_g___exported___functions.html#ga7147ebabdc3fef97f532b171a4e70d49">  100</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___i_w_d_g___exported___functions.html#ga7147ebabdc3fef97f532b171a4e70d49">IWDG_ReloadCounter</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>{</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <a class="code hl_define" href="reg__iwdg_8h.html#ad16b79dd94ee85d261d08a8ee94187e7">IWDG</a>-&gt;KR = <a class="code hl_enumvalue" href="group___i_w_d_g___exported___constants.html#gga60a37e18fa1f0988df2b1b6ae740cff2a89b842c73d779e392299d135e6337754">KR_KEY_Reload</a>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="group___i_w_d_g___exported___functions.html#ga479b2921c86f8c67b819f5c4bea6bdb6">  111</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___i_w_d_g___exported___functions.html#ga479b2921c86f8c67b819f5c4bea6bdb6">IWDG_Enable</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>{</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <a class="code hl_define" href="reg__iwdg_8h.html#ad16b79dd94ee85d261d08a8ee94187e7">IWDG</a>-&gt;KR = <a class="code hl_enumvalue" href="group___i_w_d_g___exported___constants.html#gga60a37e18fa1f0988df2b1b6ae740cff2ab0753627104bc2d0e674ef32f6419270">KR_KEY_Enable</a>;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="group___i_w_d_g___exported___functions.html#ga04c382c8e3ccaf3451f1bc2de83bb67b">  124</a></span><a class="code hl_enumeration" href="types_8h.html#a89136caac2e14c55151f527ac02daaff">FlagStatus</a> <a class="code hl_function" href="group___i_w_d_g___exported___functions.html#ga04c382c8e3ccaf3451f1bc2de83bb67b">IWDG_GetFlagStatus</a>(<a class="code hl_typedef" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> flag)</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>{</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keywordflow">return</span> ((<a class="code hl_define" href="reg__iwdg_8h.html#ad16b79dd94ee85d261d08a8ee94187e7">IWDG</a>-&gt;SR &amp; flag) != (<a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)<a class="code hl_enumvalue" href="types_8h.html#a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05">RESET</a>) ? <a class="code hl_enumvalue" href="types_8h.html#a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792">SET</a> : <a class="code hl_enumvalue" href="types_8h.html#a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05">RESET</a>;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="group___i_w_d_g___exported___functions.html#ga50830ed9d09b5b7586fee5d5ed2b3c7c">  134</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___i_w_d_g___exported___functions.html#ga50830ed9d09b5b7586fee5d5ed2b3c7c">PVU_CheckStatus</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>{</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keywordflow">while</span> (<a class="code hl_function" href="group___i_w_d_g___exported___functions.html#ga04c382c8e3ccaf3451f1bc2de83bb67b">IWDG_GetFlagStatus</a>(<a class="code hl_enumvalue" href="group___i_w_d_g___exported___constants.html#gga8125abd1328ebf48fc3c8116deb9b5bda96a831a200a2aba2446cd9c47419d0f0">IWDG_FLAG_PVU</a>) == <a class="code hl_enumvalue" href="types_8h.html#a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792">SET</a>);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>}</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="group___i_w_d_g___exported___functions.html#ga4264f0d0541d333834205640b4c77db7">  144</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___i_w_d_g___exported___functions.html#ga4264f0d0541d333834205640b4c77db7">RVU_CheckStatus</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>{</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordflow">while</span> (<a class="code hl_function" href="group___i_w_d_g___exported___functions.html#ga04c382c8e3ccaf3451f1bc2de83bb67b">IWDG_GetFlagStatus</a>(<a class="code hl_enumvalue" href="group___i_w_d_g___exported___constants.html#gga8125abd1328ebf48fc3c8116deb9b5bdac358b52e35cf4c56f5afadb878ee8b40">IWDG_FLAG_RVU</a>) == <a class="code hl_enumvalue" href="types_8h.html#a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792">SET</a>);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>}</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="group___i_w_d_g___exported___functions.html#ga058a5430b080dce148df62933932b63b">  156</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___i_w_d_g___exported___functions.html#ga058a5430b080dce148df62933932b63b">IWDG_OverflowConfig</a>(<a class="code hl_enumeration" href="group___i_w_d_g___exported___constants.html#ga866e1f07a188267e058b19ea9f77727c">IWDGOverflowConfig_TypeDef</a> overflow_config)</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>{</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <a class="code hl_define" href="reg__iwdg_8h.html#ad16b79dd94ee85d261d08a8ee94187e7">IWDG</a>-&gt;CR &amp;= ~IWDG_CR_IRQSEL;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <a class="code hl_define" href="reg__iwdg_8h.html#ad16b79dd94ee85d261d08a8ee94187e7">IWDG</a>-&gt;CR |= overflow_config;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>}</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="group___i_w_d_g___exported___functions.html#ga37c286f262f5ee78e9c62bfc12e85d85">  167</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___i_w_d_g___exported___functions.html#ga37c286f262f5ee78e9c62bfc12e85d85">IWDG_ClearITPendingBit</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>{</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <a class="code hl_define" href="reg__iwdg_8h.html#ad16b79dd94ee85d261d08a8ee94187e7">IWDG</a>-&gt;CR |= <a class="code hl_define" href="reg__iwdg_8h.html#a7a3b3f7301042464a3346bb52e4721a8">IWDG_CR_IRQCLR</a>;<span class="comment">//write 1 clear interrupt Flag</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>}</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="group___i_w_d_g___exported___functions.html#gac12ba70229372185eb753d209d980e40">  177</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___i_w_d_g___exported___functions.html#gac12ba70229372185eb753d209d980e40">IWDG_ClearIT</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>{</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <a class="code hl_define" href="reg__iwdg_8h.html#ad16b79dd94ee85d261d08a8ee94187e7">IWDG</a>-&gt;CR |= <a class="code hl_define" href="reg__iwdg_8h.html#a7a3b3f7301042464a3346bb52e4721a8">IWDG_CR_IRQCLR</a>;<span class="comment">//write 1 clear interrupt Flag</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>}</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="group___i_w_d_g___exported___functions.html#ga76d561e0d0759a90ce0f077eb2e610f7">  187</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___i_w_d_g___exported___functions.html#ga76d561e0d0759a90ce0f077eb2e610f7">IWDG_EnableIT</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>{</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <a class="code hl_define" href="reg__iwdg_8h.html#ad16b79dd94ee85d261d08a8ee94187e7">IWDG</a>-&gt;CR |= <a class="code hl_define" href="reg__iwdg_8h.html#aa82b7a3d082608a36bf270a2a43c8595">IWDG_CR_IRQSEL</a>;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>}</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="group___i_w_d_g___exported___functions.html#ga01505e58442cbc9df8dedfe62fc81366">  197</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___i_w_d_g___exported___functions.html#ga01505e58442cbc9df8dedfe62fc81366">IWDG_Reset</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>{</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <a class="code hl_define" href="reg__iwdg_8h.html#ad16b79dd94ee85d261d08a8ee94187e7">IWDG</a>-&gt;CR &amp;= ~IWDG_CR_IRQSEL;</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>}</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
+<div class="ttc" id="agroup___i_w_d_g___exported___constants_html_ga866e1f07a188267e058b19ea9f77727c"><div class="ttname"><a href="group___i_w_d_g___exported___constants.html#ga866e1f07a188267e058b19ea9f77727c">IWDGOverflowConfig_TypeDef</a></div><div class="ttdeci">IWDGOverflowConfig_TypeDef</div><div class="ttdoc">IWDG Overflow Configration</div><div class="ttdef"><b>Definition:</b> <a href="hal__iwdg_8h_source.html#l00081">hal_iwdg.h:81</a></div></div>
+<div class="ttc" id="agroup___i_w_d_g___exported___constants_html_gga60a37e18fa1f0988df2b1b6ae740cff2a89b842c73d779e392299d135e6337754"><div class="ttname"><a href="group___i_w_d_g___exported___constants.html#gga60a37e18fa1f0988df2b1b6ae740cff2a89b842c73d779e392299d135e6337754">KR_KEY_Reload</a></div><div class="ttdeci">@ KR_KEY_Reload</div><div class="ttdef"><b>Definition:</b> <a href="hal__iwdg_8h_source.html#l00074">hal_iwdg.h:74</a></div></div>
+<div class="ttc" id="agroup___i_w_d_g___exported___constants_html_gga60a37e18fa1f0988df2b1b6ae740cff2ab0753627104bc2d0e674ef32f6419270"><div class="ttname"><a href="group___i_w_d_g___exported___constants.html#gga60a37e18fa1f0988df2b1b6ae740cff2ab0753627104bc2d0e674ef32f6419270">KR_KEY_Enable</a></div><div class="ttdeci">@ KR_KEY_Enable</div><div class="ttdef"><b>Definition:</b> <a href="hal__iwdg_8h_source.html#l00076">hal_iwdg.h:75</a></div></div>
+<div class="ttc" id="agroup___i_w_d_g___exported___constants_html_gga8125abd1328ebf48fc3c8116deb9b5bda96a831a200a2aba2446cd9c47419d0f0"><div class="ttname"><a href="group___i_w_d_g___exported___constants.html#gga8125abd1328ebf48fc3c8116deb9b5bda96a831a200a2aba2446cd9c47419d0f0">IWDG_FLAG_PVU</a></div><div class="ttdeci">@ IWDG_FLAG_PVU</div><div class="ttdef"><b>Definition:</b> <a href="hal__iwdg_8h_source.html#l00058">hal_iwdg.h:58</a></div></div>
+<div class="ttc" id="agroup___i_w_d_g___exported___constants_html_gga8125abd1328ebf48fc3c8116deb9b5bdac358b52e35cf4c56f5afadb878ee8b40"><div class="ttname"><a href="group___i_w_d_g___exported___constants.html#gga8125abd1328ebf48fc3c8116deb9b5bdac358b52e35cf4c56f5afadb878ee8b40">IWDG_FLAG_RVU</a></div><div class="ttdeci">@ IWDG_FLAG_RVU</div><div class="ttdef"><b>Definition:</b> <a href="hal__iwdg_8h_source.html#l00060">hal_iwdg.h:59</a></div></div>
+<div class="ttc" id="agroup___i_w_d_g___exported___functions_html_ga01505e58442cbc9df8dedfe62fc81366"><div class="ttname"><a href="group___i_w_d_g___exported___functions.html#ga01505e58442cbc9df8dedfe62fc81366">IWDG_Reset</a></div><div class="ttdeci">void IWDG_Reset(void)</div><div class="ttdoc">Disable IWDG interrupt function</div><div class="ttdef"><b>Definition:</b> <a href="hal__iwdg_8c_source.html#l00197">hal_iwdg.c:197</a></div></div>
+<div class="ttc" id="agroup___i_w_d_g___exported___functions_html_ga04c382c8e3ccaf3451f1bc2de83bb67b"><div class="ttname"><a href="group___i_w_d_g___exported___functions.html#ga04c382c8e3ccaf3451f1bc2de83bb67b">IWDG_GetFlagStatus</a></div><div class="ttdeci">FlagStatus IWDG_GetFlagStatus(u16 flag)</div><div class="ttdoc">Checks whether the specified IWDG flag is set or not.</div><div class="ttdef"><b>Definition:</b> <a href="hal__iwdg_8c_source.html#l00124">hal_iwdg.c:124</a></div></div>
+<div class="ttc" id="agroup___i_w_d_g___exported___functions_html_ga058a5430b080dce148df62933932b63b"><div class="ttname"><a href="group___i_w_d_g___exported___functions.html#ga058a5430b080dce148df62933932b63b">IWDG_OverflowConfig</a></div><div class="ttdeci">void IWDG_OverflowConfig(IWDGOverflowConfig_TypeDef overflow_config)</div><div class="ttdoc">IWDG overflow configuration.</div><div class="ttdef"><b>Definition:</b> <a href="hal__iwdg_8c_source.html#l00156">hal_iwdg.c:156</a></div></div>
+<div class="ttc" id="agroup___i_w_d_g___exported___functions_html_ga1f05c0eaf5faaf46717d933e6b814e62"><div class="ttname"><a href="group___i_w_d_g___exported___functions.html#ga1f05c0eaf5faaf46717d933e6b814e62">IWDG_SetReload</a></div><div class="ttdeci">void IWDG_SetReload(u16 reload)</div><div class="ttdoc">Set IWDG reload value.</div><div class="ttdef"><b>Definition:</b> <a href="hal__iwdg_8c_source.html#l00078">hal_iwdg.c:78</a></div></div>
+<div class="ttc" id="agroup___i_w_d_g___exported___functions_html_ga37c286f262f5ee78e9c62bfc12e85d85"><div class="ttname"><a href="group___i_w_d_g___exported___functions.html#ga37c286f262f5ee78e9c62bfc12e85d85">IWDG_ClearITPendingBit</a></div><div class="ttdeci">void IWDG_ClearITPendingBit(void)</div><div class="ttdoc">Clear interrupt flag</div><div class="ttdef"><b>Definition:</b> <a href="hal__iwdg_8c_source.html#l00167">hal_iwdg.c:167</a></div></div>
+<div class="ttc" id="agroup___i_w_d_g___exported___functions_html_ga4264f0d0541d333834205640b4c77db7"><div class="ttname"><a href="group___i_w_d_g___exported___functions.html#ga4264f0d0541d333834205640b4c77db7">RVU_CheckStatus</a></div><div class="ttdeci">void RVU_CheckStatus(void)</div><div class="ttdoc">Checks count relead value has been updated.</div><div class="ttdef"><b>Definition:</b> <a href="hal__iwdg_8c_source.html#l00144">hal_iwdg.c:144</a></div></div>
+<div class="ttc" id="agroup___i_w_d_g___exported___functions_html_ga479b2921c86f8c67b819f5c4bea6bdb6"><div class="ttname"><a href="group___i_w_d_g___exported___functions.html#ga479b2921c86f8c67b819f5c4bea6bdb6">IWDG_Enable</a></div><div class="ttdeci">void IWDG_Enable(void)</div><div class="ttdoc">Enables IWDG (write access to IWDG_PR and IWDG_RLR registers disabled).</div><div class="ttdef"><b>Definition:</b> <a href="hal__iwdg_8c_source.html#l00111">hal_iwdg.c:111</a></div></div>
+<div class="ttc" id="agroup___i_w_d_g___exported___functions_html_ga50830ed9d09b5b7586fee5d5ed2b3c7c"><div class="ttname"><a href="group___i_w_d_g___exported___functions.html#ga50830ed9d09b5b7586fee5d5ed2b3c7c">PVU_CheckStatus</a></div><div class="ttdeci">void PVU_CheckStatus(void)</div><div class="ttdoc">Checks prescaler value has been updated.</div><div class="ttdef"><b>Definition:</b> <a href="hal__iwdg_8c_source.html#l00134">hal_iwdg.c:134</a></div></div>
+<div class="ttc" id="agroup___i_w_d_g___exported___functions_html_ga7147ebabdc3fef97f532b171a4e70d49"><div class="ttname"><a href="group___i_w_d_g___exported___functions.html#ga7147ebabdc3fef97f532b171a4e70d49">IWDG_ReloadCounter</a></div><div class="ttdeci">void IWDG_ReloadCounter(void)</div><div class="ttdoc">Reloads IWDG counter with value defined in the reload register (write access to IWDG_PR and IWDG_RLR ...</div><div class="ttdef"><b>Definition:</b> <a href="hal__iwdg_8c_source.html#l00100">hal_iwdg.c:100</a></div></div>
+<div class="ttc" id="agroup___i_w_d_g___exported___functions_html_ga76d561e0d0759a90ce0f077eb2e610f7"><div class="ttname"><a href="group___i_w_d_g___exported___functions.html#ga76d561e0d0759a90ce0f077eb2e610f7">IWDG_EnableIT</a></div><div class="ttdeci">void IWDG_EnableIT(void)</div><div class="ttdoc">Enable IWDG interrupt function</div><div class="ttdef"><b>Definition:</b> <a href="hal__iwdg_8c_source.html#l00187">hal_iwdg.c:187</a></div></div>
+<div class="ttc" id="agroup___i_w_d_g___exported___functions_html_ga7adc5086ce232328863e0f164011a946"><div class="ttname"><a href="group___i_w_d_g___exported___functions.html#ga7adc5086ce232328863e0f164011a946">IWDG_WriteAccessCmd</a></div><div class="ttdeci">void IWDG_WriteAccessCmd(u16 write_access)</div><div class="ttdoc">Enables or disables write access to IWDG_PR and IWDG_RLR registers.</div><div class="ttdef"><b>Definition:</b> <a href="hal__iwdg_8c_source.html#l00048">hal_iwdg.c:48</a></div></div>
+<div class="ttc" id="agroup___i_w_d_g___exported___functions_html_ga8182f9cae2e129bd8c966171ada66ce1"><div class="ttname"><a href="group___i_w_d_g___exported___functions.html#ga8182f9cae2e129bd8c966171ada66ce1">IWDG_SetPrescaler</a></div><div class="ttdeci">void IWDG_SetPrescaler(u8 prescaler)</div><div class="ttdoc">Sets IWDG Prescaler value.</div><div class="ttdef"><b>Definition:</b> <a href="hal__iwdg_8c_source.html#l00066">hal_iwdg.c:66</a></div></div>
+<div class="ttc" id="agroup___i_w_d_g___exported___functions_html_ga9c7b08511ad180d326510150bdca99d2"><div class="ttname"><a href="group___i_w_d_g___exported___functions.html#ga9c7b08511ad180d326510150bdca99d2">IWDG_GetReload</a></div><div class="ttdeci">u32 IWDG_GetReload(void)</div><div class="ttdoc">Get IWDG reload value.</div><div class="ttdef"><b>Definition:</b> <a href="hal__iwdg_8c_source.html#l00089">hal_iwdg.c:89</a></div></div>
+<div class="ttc" id="agroup___i_w_d_g___exported___functions_html_gac12ba70229372185eb753d209d980e40"><div class="ttname"><a href="group___i_w_d_g___exported___functions.html#gac12ba70229372185eb753d209d980e40">IWDG_ClearIT</a></div><div class="ttdeci">void IWDG_ClearIT(void)</div><div class="ttdoc">Clear interrupt flag</div><div class="ttdef"><b>Definition:</b> <a href="hal__iwdg_8c_source.html#l00177">hal_iwdg.c:177</a></div></div>
+<div class="ttc" id="ahal__iwdg_8h_html"><div class="ttname"><a href="hal__iwdg_8h.html">hal_iwdg.h</a></div><div class="ttdoc">THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE IWDG FIRMWARE LIBRARY.</div></div>
+<div class="ttc" id="areg__iwdg_8h_html_a7a3b3f7301042464a3346bb52e4721a8"><div class="ttname"><a href="reg__iwdg_8h.html#a7a3b3f7301042464a3346bb52e4721a8">IWDG_CR_IRQCLR</a></div><div class="ttdeci">#define IWDG_CR_IRQCLR</div><div class="ttdoc">IWDG interrupt clear</div><div class="ttdef"><b>Definition:</b> <a href="reg__iwdg_8h_source.html#l00108">reg_iwdg.h:108</a></div></div>
+<div class="ttc" id="areg__iwdg_8h_html_aa82b7a3d082608a36bf270a2a43c8595"><div class="ttname"><a href="reg__iwdg_8h.html#aa82b7a3d082608a36bf270a2a43c8595">IWDG_CR_IRQSEL</a></div><div class="ttdeci">#define IWDG_CR_IRQSEL</div><div class="ttdoc">IWDG overflow operation selection</div><div class="ttdef"><b>Definition:</b> <a href="reg__iwdg_8h_source.html#l00106">reg_iwdg.h:106</a></div></div>
+<div class="ttc" id="areg__iwdg_8h_html_ad16b79dd94ee85d261d08a8ee94187e7"><div class="ttname"><a href="reg__iwdg_8h.html#ad16b79dd94ee85d261d08a8ee94187e7">IWDG</a></div><div class="ttdeci">#define IWDG</div><div class="ttdoc">IWDG type pointer Definition</div><div class="ttdef"><b>Definition:</b> <a href="reg__iwdg_8h_source.html#l00061">reg_iwdg.h:61</a></div></div>
+<div class="ttc" id="atypes_8h_html_a10e94b422ef0c20dcdec20d31a1f5049"><div class="ttname"><a href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a></div><div class="ttdeci">unsigned int u32</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00054">types.h:54</a></div></div>
+<div class="ttc" id="atypes_8h_html_a89136caac2e14c55151f527ac02daaff"><div class="ttname"><a href="types_8h.html#a89136caac2e14c55151f527ac02daaff">FlagStatus</a></div><div class="ttdeci">FlagStatus</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00073">types.h:73</a></div></div>
+<div class="ttc" id="atypes_8h_html_a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05"><div class="ttname"><a href="types_8h.html#a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05">RESET</a></div><div class="ttdeci">@ RESET</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00073">types.h:73</a></div></div>
+<div class="ttc" id="atypes_8h_html_a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792"><div class="ttname"><a href="types_8h.html#a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792">SET</a></div><div class="ttdeci">@ SET</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00073">types.h:73</a></div></div>
+<div class="ttc" id="atypes_8h_html_a9e6c91d77e24643b888dbd1a1a590054"><div class="ttname"><a href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a></div><div class="ttdeci">unsigned short u16</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00055">types.h:55</a></div></div>
+<div class="ttc" id="atypes_8h_html_aed742c436da53c1080638ce6ef7d13de"><div class="ttname"><a href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a></div><div class="ttdeci">unsigned char u8</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00056">types.h:56</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

@@ -1,0 +1,383 @@
+\hypertarget{group___i_w_d_g___exported___functions}{}\doxysection{IWDG\+\_\+\+Exported\+\_\+\+Functions}
+\label{group___i_w_d_g___exported___functions}\index{IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga04c382c8e3ccaf3451f1bc2de83bb67b}{IWDG\+\_\+\+Get\+Flag\+Status}} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} flag)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified IWDG flag is set or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga7adc5086ce232328863e0f164011a946}{IWDG\+\_\+\+Write\+Access\+Cmd}} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} write\+\_\+access)
+\begin{DoxyCompactList}\small\item\em Enables or disables write access to IWDG\+\_\+\+PR and IWDG\+\_\+\+RLR registers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga8182f9cae2e129bd8c966171ada66ce1}{IWDG\+\_\+\+Set\+Prescaler}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} prescaler)
+\begin{DoxyCompactList}\small\item\em Sets IWDG Prescaler value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga1f05c0eaf5faaf46717d933e6b814e62}{IWDG\+\_\+\+Set\+Reload}} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} reload)
+\begin{DoxyCompactList}\small\item\em Set IWDG reload value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga9c7b08511ad180d326510150bdca99d2}{IWDG\+\_\+\+Get\+Reload}} (void)
+\begin{DoxyCompactList}\small\item\em Get IWDG reload value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga7147ebabdc3fef97f532b171a4e70d49}{IWDG\+\_\+\+Reload\+Counter}} (void)
+\begin{DoxyCompactList}\small\item\em Reloads IWDG counter with value defined in the reload register (write access to IWDG\+\_\+\+PR and IWDG\+\_\+\+RLR registers disabled). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga479b2921c86f8c67b819f5c4bea6bdb6}{IWDG\+\_\+\+Enable}} (void)
+\begin{DoxyCompactList}\small\item\em Enables IWDG (write access to IWDG\+\_\+\+PR and IWDG\+\_\+\+RLR registers disabled). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga50830ed9d09b5b7586fee5d5ed2b3c7c}{PVU\+\_\+\+Check\+Status}} (void)
+\begin{DoxyCompactList}\small\item\em Checks prescaler value has been updated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga4264f0d0541d333834205640b4c77db7}{RVU\+\_\+\+Check\+Status}} (void)
+\begin{DoxyCompactList}\small\item\em Checks count relead value has been updated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga058a5430b080dce148df62933932b63b}{IWDG\+\_\+\+Overflow\+Config}} (\mbox{\hyperlink{group___i_w_d_g___exported___constants_ga866e1f07a188267e058b19ea9f77727c}{IWDGOverflow\+Config\+\_\+\+Type\+Def}} overflow\+\_\+config)
+\begin{DoxyCompactList}\small\item\em IWDG overflow configuration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga37c286f262f5ee78e9c62bfc12e85d85}{IWDG\+\_\+\+Clear\+ITPending\+Bit}} (void)
+\begin{DoxyCompactList}\small\item\em Clear interrupt flag \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga76d561e0d0759a90ce0f077eb2e610f7}{IWDG\+\_\+\+Enable\+IT}} (void)
+\begin{DoxyCompactList}\small\item\em Enable IWDG interrupt function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_ga01505e58442cbc9df8dedfe62fc81366}{IWDG\+\_\+\+Reset}} (void)
+\begin{DoxyCompactList}\small\item\em Disable IWDG interrupt function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___exported___functions_gac12ba70229372185eb753d209d980e40}{IWDG\+\_\+\+Clear\+IT}} (void)
+\begin{DoxyCompactList}\small\item\em Clear interrupt flag \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+\doxysubsection{函数说明}
+\mbox{\Hypertarget{group___i_w_d_g___exported___functions_gac12ba70229372185eb753d209d980e40}\label{group___i_w_d_g___exported___functions_gac12ba70229372185eb753d209d980e40}} 
+\index{IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}!IWDG\_ClearIT@{IWDG\_ClearIT}}
+\index{IWDG\_ClearIT@{IWDG\_ClearIT}!IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{IWDG\_ClearIT()}{IWDG\_ClearIT()}}
+{\footnotesize\ttfamily void IWDG\+\_\+\+Clear\+IT (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Clear interrupt flag 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__iwdg_8c_source}{hal\+\_\+iwdg.\+c}} 第 \mbox{\hyperlink{hal__iwdg_8c_source_l00177}{177}} 行定义.
+
+\mbox{\Hypertarget{group___i_w_d_g___exported___functions_ga37c286f262f5ee78e9c62bfc12e85d85}\label{group___i_w_d_g___exported___functions_ga37c286f262f5ee78e9c62bfc12e85d85}} 
+\index{IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}!IWDG\_ClearITPendingBit@{IWDG\_ClearITPendingBit}}
+\index{IWDG\_ClearITPendingBit@{IWDG\_ClearITPendingBit}!IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{IWDG\_ClearITPendingBit()}{IWDG\_ClearITPendingBit()}}
+{\footnotesize\ttfamily void IWDG\+\_\+\+Clear\+ITPending\+Bit (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Clear interrupt flag 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__iwdg_8c_source}{hal\+\_\+iwdg.\+c}} 第 \mbox{\hyperlink{hal__iwdg_8c_source_l00167}{167}} 行定义.
+
+\mbox{\Hypertarget{group___i_w_d_g___exported___functions_ga479b2921c86f8c67b819f5c4bea6bdb6}\label{group___i_w_d_g___exported___functions_ga479b2921c86f8c67b819f5c4bea6bdb6}} 
+\index{IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}!IWDG\_Enable@{IWDG\_Enable}}
+\index{IWDG\_Enable@{IWDG\_Enable}!IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{IWDG\_Enable()}{IWDG\_Enable()}}
+{\footnotesize\ttfamily void IWDG\+\_\+\+Enable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Enables IWDG (write access to IWDG\+\_\+\+PR and IWDG\+\_\+\+RLR registers disabled). 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__iwdg_8c_source}{hal\+\_\+iwdg.\+c}} 第 \mbox{\hyperlink{hal__iwdg_8c_source_l00111}{111}} 行定义.
+
+\mbox{\Hypertarget{group___i_w_d_g___exported___functions_ga76d561e0d0759a90ce0f077eb2e610f7}\label{group___i_w_d_g___exported___functions_ga76d561e0d0759a90ce0f077eb2e610f7}} 
+\index{IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}!IWDG\_EnableIT@{IWDG\_EnableIT}}
+\index{IWDG\_EnableIT@{IWDG\_EnableIT}!IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{IWDG\_EnableIT()}{IWDG\_EnableIT()}}
+{\footnotesize\ttfamily void IWDG\+\_\+\+Enable\+IT (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Enable IWDG interrupt function 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__iwdg_8c_source}{hal\+\_\+iwdg.\+c}} 第 \mbox{\hyperlink{hal__iwdg_8c_source_l00187}{187}} 行定义.
+
+\mbox{\Hypertarget{group___i_w_d_g___exported___functions_ga04c382c8e3ccaf3451f1bc2de83bb67b}\label{group___i_w_d_g___exported___functions_ga04c382c8e3ccaf3451f1bc2de83bb67b}} 
+\index{IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}!IWDG\_GetFlagStatus@{IWDG\_GetFlagStatus}}
+\index{IWDG\_GetFlagStatus@{IWDG\_GetFlagStatus}!IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{IWDG\_GetFlagStatus()}{IWDG\_GetFlagStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} IWDG\+\_\+\+Get\+Flag\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}}}]{flag }\end{DoxyParamCaption})}
+
+
+
+Checks whether the specified IWDG flag is set or not. 
+
+
+\begin{DoxyParams}{参数}
+{\em flag} & specifies the flag to check. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item IWDG\+\_\+\+FLAG\+\_\+\+PVU\+: Prescaler Value Update on going \item IWDG\+\_\+\+FLAG\+\_\+\+RVU\+: reload Value Update on going \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em The} & new state of flag (SET or RESET). \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__iwdg_8c_source}{hal\+\_\+iwdg.\+c}} 第 \mbox{\hyperlink{hal__iwdg_8c_source_l00124}{124}} 行定义.
+
+\mbox{\Hypertarget{group___i_w_d_g___exported___functions_ga9c7b08511ad180d326510150bdca99d2}\label{group___i_w_d_g___exported___functions_ga9c7b08511ad180d326510150bdca99d2}} 
+\index{IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}!IWDG\_GetReload@{IWDG\_GetReload}}
+\index{IWDG\_GetReload@{IWDG\_GetReload}!IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{IWDG\_GetReload()}{IWDG\_GetReload()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} IWDG\+\_\+\+Get\+Reload (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get IWDG reload value. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em reload} & specifies the IWDG reload value. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__iwdg_8c_source}{hal\+\_\+iwdg.\+c}} 第 \mbox{\hyperlink{hal__iwdg_8c_source_l00089}{89}} 行定义.
+
+\mbox{\Hypertarget{group___i_w_d_g___exported___functions_ga058a5430b080dce148df62933932b63b}\label{group___i_w_d_g___exported___functions_ga058a5430b080dce148df62933932b63b}} 
+\index{IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}!IWDG\_OverflowConfig@{IWDG\_OverflowConfig}}
+\index{IWDG\_OverflowConfig@{IWDG\_OverflowConfig}!IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{IWDG\_OverflowConfig()}{IWDG\_OverflowConfig()}}
+{\footnotesize\ttfamily void IWDG\+\_\+\+Overflow\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___i_w_d_g___exported___constants_ga866e1f07a188267e058b19ea9f77727c}{IWDGOverflow\+Config\+\_\+\+Type\+Def}}}]{overflow\+\_\+config }\end{DoxyParamCaption})}
+
+
+
+IWDG overflow configuration. 
+
+
+\begin{DoxyParams}{参数}
+{\em overflow\+\_\+config} & \begin{DoxyItemize}
+\item IWDG\+\_\+\+Overflow\+\_\+\+Interrupt\+: Interrupt after overflow. \item IWDG\+\_\+\+Overflow\+\_\+\+Reset\+: Reset after overflow. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__iwdg_8c_source}{hal\+\_\+iwdg.\+c}} 第 \mbox{\hyperlink{hal__iwdg_8c_source_l00156}{156}} 行定义.
+
+\mbox{\Hypertarget{group___i_w_d_g___exported___functions_ga7147ebabdc3fef97f532b171a4e70d49}\label{group___i_w_d_g___exported___functions_ga7147ebabdc3fef97f532b171a4e70d49}} 
+\index{IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}!IWDG\_ReloadCounter@{IWDG\_ReloadCounter}}
+\index{IWDG\_ReloadCounter@{IWDG\_ReloadCounter}!IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{IWDG\_ReloadCounter()}{IWDG\_ReloadCounter()}}
+{\footnotesize\ttfamily void IWDG\+\_\+\+Reload\+Counter (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Reloads IWDG counter with value defined in the reload register (write access to IWDG\+\_\+\+PR and IWDG\+\_\+\+RLR registers disabled). 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__iwdg_8c_source}{hal\+\_\+iwdg.\+c}} 第 \mbox{\hyperlink{hal__iwdg_8c_source_l00100}{100}} 行定义.
+
+\mbox{\Hypertarget{group___i_w_d_g___exported___functions_ga01505e58442cbc9df8dedfe62fc81366}\label{group___i_w_d_g___exported___functions_ga01505e58442cbc9df8dedfe62fc81366}} 
+\index{IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}!IWDG\_Reset@{IWDG\_Reset}}
+\index{IWDG\_Reset@{IWDG\_Reset}!IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{IWDG\_Reset()}{IWDG\_Reset()}}
+{\footnotesize\ttfamily void IWDG\+\_\+\+Reset (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Disable IWDG interrupt function 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__iwdg_8c_source}{hal\+\_\+iwdg.\+c}} 第 \mbox{\hyperlink{hal__iwdg_8c_source_l00197}{197}} 行定义.
+
+\mbox{\Hypertarget{group___i_w_d_g___exported___functions_ga8182f9cae2e129bd8c966171ada66ce1}\label{group___i_w_d_g___exported___functions_ga8182f9cae2e129bd8c966171ada66ce1}} 
+\index{IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}!IWDG\_SetPrescaler@{IWDG\_SetPrescaler}}
+\index{IWDG\_SetPrescaler@{IWDG\_SetPrescaler}!IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{IWDG\_SetPrescaler()}{IWDG\_SetPrescaler()}}
+{\footnotesize\ttfamily void IWDG\+\_\+\+Set\+Prescaler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{prescaler }\end{DoxyParamCaption})}
+
+
+
+Sets IWDG Prescaler value. 
+
+
+\begin{DoxyParams}{参数}
+{\em prescaler} & specifies the IWDG Prescaler value. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item IWDG\+\_\+\+Prescaler\+\_\+4\+: IWDG prescaler set to 4 \item IWDG\+\_\+\+Prescaler\+\_\+8\+: IWDG prescaler set to 8 \item IWDG\+\_\+\+Prescaler\+\_\+16\+: IWDG prescaler set to 16 \item IWDG\+\_\+\+Prescaler\+\_\+32\+: IWDG prescaler set to 32 \item IWDG\+\_\+\+Prescaler\+\_\+64\+: IWDG prescaler set to 64 \item IWDG\+\_\+\+Prescaler\+\_\+128\+: IWDG prescaler set to 128 \item IWDG\+\_\+\+Prescaler\+\_\+256\+: IWDG prescaler set to 256 \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__iwdg_8c_source}{hal\+\_\+iwdg.\+c}} 第 \mbox{\hyperlink{hal__iwdg_8c_source_l00066}{66}} 行定义.
+
+\mbox{\Hypertarget{group___i_w_d_g___exported___functions_ga1f05c0eaf5faaf46717d933e6b814e62}\label{group___i_w_d_g___exported___functions_ga1f05c0eaf5faaf46717d933e6b814e62}} 
+\index{IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}!IWDG\_SetReload@{IWDG\_SetReload}}
+\index{IWDG\_SetReload@{IWDG\_SetReload}!IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{IWDG\_SetReload()}{IWDG\_SetReload()}}
+{\footnotesize\ttfamily void IWDG\+\_\+\+Set\+Reload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}}}]{reload }\end{DoxyParamCaption})}
+
+
+
+Set IWDG reload value. 
+
+
+\begin{DoxyParams}{参数}
+{\em reload} & specifies the IWDG reload value. This parameter must be a number between 0 and 0x0\+FFF. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__iwdg_8c_source}{hal\+\_\+iwdg.\+c}} 第 \mbox{\hyperlink{hal__iwdg_8c_source_l00078}{78}} 行定义.
+
+\mbox{\Hypertarget{group___i_w_d_g___exported___functions_ga7adc5086ce232328863e0f164011a946}\label{group___i_w_d_g___exported___functions_ga7adc5086ce232328863e0f164011a946}} 
+\index{IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}!IWDG\_WriteAccessCmd@{IWDG\_WriteAccessCmd}}
+\index{IWDG\_WriteAccessCmd@{IWDG\_WriteAccessCmd}!IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{IWDG\_WriteAccessCmd()}{IWDG\_WriteAccessCmd()}}
+{\footnotesize\ttfamily void IWDG\+\_\+\+Write\+Access\+Cmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}}}]{write\+\_\+access }\end{DoxyParamCaption})}
+
+
+
+Enables or disables write access to IWDG\+\_\+\+PR and IWDG\+\_\+\+RLR registers. 
+
+
+\begin{DoxyParams}{参数}
+{\em write\+\_\+access} & new state of write access to IWDG\+\_\+\+PR and IWDG\+\_\+\+RLR registers. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item IWDG\+\_\+\+Write\+Access\+\_\+\+Enable\+: Enable write access to IWDG\+\_\+\+PR and IWDG\+\_\+\+RLR registers \item IWDG\+\_\+\+Write\+Access\+\_\+\+Disable\+: Disable write access to IWDG\+\_\+\+PR and IWDG\+\_\+\+RLR registers \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__iwdg_8c_source}{hal\+\_\+iwdg.\+c}} 第 \mbox{\hyperlink{hal__iwdg_8c_source_l00048}{48}} 行定义.
+
+\mbox{\Hypertarget{group___i_w_d_g___exported___functions_ga50830ed9d09b5b7586fee5d5ed2b3c7c}\label{group___i_w_d_g___exported___functions_ga50830ed9d09b5b7586fee5d5ed2b3c7c}} 
+\index{IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}!PVU\_CheckStatus@{PVU\_CheckStatus}}
+\index{PVU\_CheckStatus@{PVU\_CheckStatus}!IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{PVU\_CheckStatus()}{PVU\_CheckStatus()}}
+{\footnotesize\ttfamily void PVU\+\_\+\+Check\+Status (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Checks prescaler value has been updated. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__iwdg_8c_source}{hal\+\_\+iwdg.\+c}} 第 \mbox{\hyperlink{hal__iwdg_8c_source_l00134}{134}} 行定义.
+
+\mbox{\Hypertarget{group___i_w_d_g___exported___functions_ga4264f0d0541d333834205640b4c77db7}\label{group___i_w_d_g___exported___functions_ga4264f0d0541d333834205640b4c77db7}} 
+\index{IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}!RVU\_CheckStatus@{RVU\_CheckStatus}}
+\index{RVU\_CheckStatus@{RVU\_CheckStatus}!IWDG\_Exported\_Functions@{IWDG\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{RVU\_CheckStatus()}{RVU\_CheckStatus()}}
+{\footnotesize\ttfamily void RVU\+\_\+\+Check\+Status (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Checks count relead value has been updated. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__iwdg_8c_source}{hal\+\_\+iwdg.\+c}} 第 \mbox{\hyperlink{hal__iwdg_8c_source_l00144}{144}} 行定义.
+

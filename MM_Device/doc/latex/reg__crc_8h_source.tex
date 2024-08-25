@@ -1,0 +1,66 @@
+\hypertarget{reg__crc_8h_source}{}\doxysection{reg\+\_\+crc.\+h}
+\label{reg__crc_8h_source}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_crc.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_crc.h}}
+\mbox{\hyperlink{reg__crc_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00019}00019 \textcolor{comment}{// Define to prevent recursive inclusion}}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00021}00021 \textcolor{preprocessor}{\#ifndef \_\_REG\_CRC\_H}}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00022}00022 \textcolor{preprocessor}{\#define \_\_REG\_CRC\_H}}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00024}00024 \textcolor{comment}{// Files includes}}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00025}00025 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00026}00026 \textcolor{preprocessor}{\#include <stdbool.h>}}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00027}00027 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{types_8h}{types.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00032}00032 \textcolor{preprocessor}{\#if defined ( \_\_CC\_ARM )}}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00033}00033 \textcolor{preprocessor}{\#pragma anon\_unions}}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00034}00034 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00045}\mbox{\hyperlink{reg__crc_8h_a656a447589e785594cbf2f45c835ad7e}{00045}} \textcolor{preprocessor}{\#define CRC\_BASE                        (AHBPERIPH\_BASE + 0x3000)               }}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00053}\mbox{\hyperlink{struct_c_r_c___type_def}{00053}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00054}\mbox{\hyperlink{struct_c_r_c___type_def_ac6860a63c291ec9395b6872038d6b033}{00054}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}   \mbox{\hyperlink{struct_c_r_c___type_def_ac6860a63c291ec9395b6872038d6b033}{DR}};                                                              }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00055}\mbox{\hyperlink{struct_c_r_c___type_def_ac6feed09bf29fdc2f321336162308270}{00055}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}   \mbox{\hyperlink{struct_c_r_c___type_def_ac6feed09bf29fdc2f321336162308270}{IDR}};                                                             }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00056}\mbox{\hyperlink{struct_c_r_c___type_def_a4d375c9362858415d9de13f8a3ec51d0}{00056}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}   \mbox{\hyperlink{struct_c_r_c___type_def_a4d375c9362858415d9de13f8a3ec51d0}{CR}};                                                              }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00057}\mbox{\hyperlink{struct_c_r_c___type_def_ad0cfdea2e752aa9ca11b1d0a72dc7c3c}{00057}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}   \mbox{\hyperlink{struct_c_r_c___type_def_ad0cfdea2e752aa9ca11b1d0a72dc7c3c}{MIR}};                                                              }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00058}00058 \} \mbox{\hyperlink{struct_c_r_c___type_def}{CRC\_TypeDef}};}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00065}\mbox{\hyperlink{reg__crc_8h_a4381bb54c2dbc34500521165aa7b89b1}{00065}} \textcolor{preprocessor}{\#define CRC                             ((CRC\_TypeDef*) CRC\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00072}\mbox{\hyperlink{reg__crc_8h_ac3308e3e2200cc56f9729ff63d429c1d}{00072}} \textcolor{preprocessor}{\#define CRC\_DR\_DATA\_Pos                 (0)}}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00073}00073 \textcolor{preprocessor}{\#define CRC\_DR\_DATA                     (0xFFFFFFFFU << CRC\_DR\_DATA\_Pos)        }}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00077}\mbox{\hyperlink{reg__crc_8h_a1afd4d83cce2d49c5fe10d9e3f2e8d8a}{00077}} \textcolor{preprocessor}{\#define CRC\_IDR\_DATA\_Pos                (0)}}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00078}\mbox{\hyperlink{reg__crc_8h_aad649f7668eaf1e3d8d3f2d8d6419447}{00078}} \textcolor{preprocessor}{\#define CRC\_IDR\_DATA                    (0xFFU << CRC\_IDR\_DATA\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00083}\mbox{\hyperlink{reg__crc_8h_a7a12ab5306d6320069e08e63cd9a56f1}{00083}} \textcolor{preprocessor}{\#define CRC\_CR\_RESET\_Pos                (0)}}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00084}00084 \textcolor{preprocessor}{\#define CRC\_CR\_RESET                    (0x01U << CRC\_CR\_RESET\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00088}\mbox{\hyperlink{reg__crc_8h_af2791b84330377742dc49355ea5c46c6}{00088}} \textcolor{preprocessor}{\#define CRC\_MIR\_Pos                 (0)}}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00089}\mbox{\hyperlink{reg__crc_8h_a19b09e721ccb14198b2acd6b4270464a}{00089}} \textcolor{preprocessor}{\#define CRC\_MIR                     (0xFFFFFFFFU << CRC\_MIR\_Pos)        }}
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00091}00091 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00093}00093 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00095}00095 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00097}00097 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{reg__crc_8h_source_l00101}00101 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

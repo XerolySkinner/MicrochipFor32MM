@@ -1,0 +1,1266 @@
+\hypertarget{group___i2_c___exported___functions}{}\doxysection{I2\+C\+\_\+\+Exported\+\_\+\+Functions}
+\label{group___i2_c___exported___functions}\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga69380f6129ce1581e41d8e0d1b25c958}{I2\+C\+\_\+\+De\+Init}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c)
+\begin{DoxyCompactList}\small\item\em Deinitializes the i2c peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga3839b536c9800c395f7fd10ef0a8e279}{I2\+C\+\_\+\+Init}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{struct_i2_c___init_type_def}{I2\+C\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Initializes the i2c peripheral according to the specified parameters in the init\+\_\+struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_gad4199a23b333cb40233ff75efbdfa08d}{I2\+C\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{struct_i2_c___init_type_def}{I2\+C\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Fills each init\+\_\+struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga53f9ecacc7f09701757e5addf89983ce}{I2\+C\+\_\+\+Cmd}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified I2C peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga4172649657a39b3f6584bba8dd5f8b9c}{I2\+C\+\_\+\+DMACmd}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified I2C DMA requests. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga700c1f27d4610e7eb12d36ca05cd213e}{I2\+C\+\_\+\+Generate\+START}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Generates i2c communication START condition. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga4de5e078677611c91d8647ca40adf10c}{I2\+C\+\_\+\+Generate\+STOP}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Generates i2c communication STOP condition. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga0f311a119ff4a27677512c83f1f3771b}{I2\+C\+\_\+\+Own\+Address2\+Config}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} addr)
+\begin{DoxyCompactList}\small\item\em Configures the specified I2C own address2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_gadd6c06938cff550c455e4a58e0de9f00}{I2\+C\+\_\+\+Dual\+Address\+Cmd}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified I2C dual addressing mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga5c5f30fdf41a2ab1c753d25ff21fc3a7}{I2\+C\+\_\+\+General\+Call\+Cmd}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified I2C general call feature. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_gafb14f8e75c0e27ec682549d2e87480e8}{I2\+C\+\_\+\+ITConfig}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} it, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified I2C interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga30ae2753e07b8be67fead01cc4a6c3ec}{I2\+C\+\_\+\+Send\+Data}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} dat)
+\begin{DoxyCompactList}\small\item\em Sends a data byte through the i2c peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga163d5ac428611b829ce0d6d89e84657a}{I2\+C\+\_\+\+Read\+Cmd}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c)
+\begin{DoxyCompactList}\small\item\em Returns the most recent received data by the i2c peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga7eceb46187692e92a97a2fda4def7821}{I2\+C\+\_\+\+Send7bit\+Address}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} addr, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} dir)
+\begin{DoxyCompactList}\small\item\em Transmits the address byte to select the slave device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga587a26c383854b1b5ba8b82118c27df7}{I2\+C\+\_\+\+Clear\+Flag}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)
+\begin{DoxyCompactList}\small\item\em Clears the i2c\textquotesingle{}s pending flags. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga0614543157a1767110ebb90296d07a5d}{I2\+C\+\_\+\+Clear\+ITPending\+Bit}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it)
+\begin{DoxyCompactList}\small\item\em Clears the i2c interrupt pending bits. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{group___i2_c___exported___functions_gaa922a0851c796a5a9eb0bab5fac8dc24}{I2\+C\+\_\+\+Receive\+Data}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c)
+\begin{DoxyCompactList}\small\item\em Returns the most recent received data by the i2c peripheral. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{group___i2_c___exported___functions_gad2590a23bf6dd57f8a6916ec36d08eb0}{I2\+C\+\_\+\+Read\+Register}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} reg)
+\begin{DoxyCompactList}\small\item\em Reads the specified I2C register and returns its value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___i2_c___exported___functions_gafd48431b1598a215f09adad5b99f0515}{I2\+C\+\_\+\+Get\+Last\+Event}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c)
+\begin{DoxyCompactList}\small\item\em Returns the last i2c Event. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a8333b96c67f83cba354b3407fcbb6ee8}{Error\+Status}} \mbox{\hyperlink{group___i2_c___exported___functions_ga1cc15c043882bc35b4915cc637210d7e}{I2\+C\+\_\+\+Check\+Event}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} event)
+\begin{DoxyCompactList}\small\item\em Checks whether the last i2c Event is equal to the one passed as parameter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___i2_c___exported___functions_gaba350d5d9381c896f6969ef71c0f27d5}{I2\+C\+\_\+\+Get\+Flag\+Status}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified I2C flag is set or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} \mbox{\hyperlink{group___i2_c___exported___functions_ga33a115ef514621ef398933423e7b649f}{I2\+C\+\_\+\+Get\+ITStatus}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified I2C interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga18e70469f0df86f7937f1c3db840f30a}{I2\+C\+\_\+\+Send\+Slave\+Address}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} addr)
+\begin{DoxyCompactList}\small\item\em Configures slave address. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga7a9f63bdb11d49135f61e50ad551fe76}{I2\+C\+\_\+\+Slave\+Configure}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the I2C slave mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga02502d4b44cb2f4828115ba92a0583cc}{I2\+C\+\_\+\+DMAConfigure}} (\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$i2c, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} dir)
+\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_gac359d2c6c67a2590f8f9b720c0e4ff1b}{SDIO\+\_\+\+De\+Init}} (void)
+\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga778d338c29df4fae9ef69432e6df32ad}{SDIO\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{struct_s_d_i_o___init_type_def}{SDIO\+\_\+\+Init\+Type\+Def}} $\ast$SDIO\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each SDIO\+\_\+\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga6824fe7b29eebad5e26e1e81b39f884d}{SDIO\+\_\+\+Clock\+Set}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} value)
+\begin{DoxyCompactList}\small\item\em Initializes the SDIO data path according to the specified parameters in the SDIO\+\_\+\+Data\+Init\+Struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_gad40764a8e37c0ed5c9141ae338ff0203}{SDIO\+\_\+\+Init}} (\mbox{\hyperlink{struct_s_d_i_o___init_type_def}{SDIO\+\_\+\+Init\+Type\+Def}} $\ast$SDIO\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the SDIO peripheral according to the specified parameters in the SDIO\+\_\+\+Init\+Struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_gaf40594ca2987d8b4fc4dbb9d59ccf3e0}{SDIO\+\_\+\+ITConfig}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+IT, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the SDIO interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga38f1b73fa641efeeb6a96472d989c767}{SDIO\+\_\+\+CRCConfig}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+CRC, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the SDIO CRC. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_gaa843456dbaf1590d8a5b3dc5a075dcf9}{SDIO\+\_\+\+Clock\+\_\+\+Set}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} clkdiv)
+\begin{DoxyCompactList}\small\item\em Port transfer speed mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga6ac7722df2ba23f1a716db8a4b38a49a}{SDIO\+\_\+\+Send\+\_\+\+Cmd}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} cmdindex, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} waitrsp, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} arg)
+\begin{DoxyCompactList}\small\item\em SDIO sends command functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___i2_c___exported___functions_ga9f053c27018521095d7333e7df238764}{SD\+\_\+\+Power\+OFF}} (void)
+\begin{DoxyCompactList}\small\item\em Turn off the SDIO switch. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___i2_c___exported___functions_ga77ff57848ed54cc9dbfcb2cdfd4d3104}{Cmd\+Error}} (void)
+\begin{DoxyCompactList}\small\item\em Check the execution status of CMD0. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___i2_c___exported___functions_gae875982cdc6a453c2793073e8004585e}{Cmd\+Resp2\+Error}} (void)
+\begin{DoxyCompactList}\small\item\em Check the execution status of CMD2. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___i2_c___exported___functions_ga2c77db272852343b90b0b06573a60e88}{Cmd\+Resp3\+Error}} (void)
+\begin{DoxyCompactList}\small\item\em Check the execution status of CMD3. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___i2_c___exported___functions_gacfe36517f07f12f6b5512ca99cf5e6a1}{Cmd\+Resp6\+Error}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} cmd, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} $\ast$prca)
+\begin{DoxyCompactList}\small\item\em Check the execution status of CMD6. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___i2_c___exported___functions_ga6f8858b757aa1b13e112175cddaf62b9}{Cmd\+Resp7\+Error}} (void)
+\begin{DoxyCompactList}\small\item\em Check the execution status of CMD7. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___i2_c___exported___functions_ga384372e7cd037af3dbc92da854508c70}{Cmd\+Resp1\+Error}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} cmd)
+\begin{DoxyCompactList}\small\item\em Check the error status of the R1 response. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga8ed0e660e0b895d3f9cb9a560ad50291}{SDIO\+\_\+\+Send\+\_\+\+Data\+\_\+\+Cfg}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} datatimeout, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} datalen, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} blksize, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} dir)
+\begin{DoxyCompactList}\small\item\em Write data direction block size configuration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga160c7fe3b6f5c5812caa893a47f3e89a}{SDIO\+\_\+\+Clear\+ITPending\+Bit}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Clears the SDIO\textquotesingle{}s interrupt pending bits. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___i2_c___exported___functions_ga2c48bd26d3f6a531cb667bfaf6525520}{SDIO\+\_\+\+Get\+Flag\+Status}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+FLAG)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified SDIO flag is set or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___i2_c___exported___functions_ga186e0c0406b9f6e56e33421f287a613b}{SDIO\+\_\+\+Get\+Time\+Out\+Counter}} (void)
+\begin{DoxyCompactList}\small\item\em Reads the value of the data transfer timeout count \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___i2_c___exported___functions_ga2e0007f7bb12c1b43f7495c6a4a20b50}{SDIO\+\_\+\+Read\+Data}} (void)
+\begin{DoxyCompactList}\small\item\em Read one data word from FIFO. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_gac5a58e2b720a0492c693b60024ee41b0}{SDIO\+\_\+\+Write\+Data}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} tempbuff)
+\begin{DoxyCompactList}\small\item\em Write one data word to FIFO. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga5c83f845a6c1f66883c3bb6254977cda}{SDIO\+\_\+\+DMACmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enable or Dsiable DMA . \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+\doxysubsection{函数说明}
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga77ff57848ed54cc9dbfcb2cdfd4d3104}\label{group___i2_c___exported___functions_ga77ff57848ed54cc9dbfcb2cdfd4d3104}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!CmdError@{CmdError}}
+\index{CmdError@{CmdError}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CmdError()}{CmdError()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} Cmd\+Error (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Check the execution status of CMD0. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em card} & error code. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00242}{242}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga384372e7cd037af3dbc92da854508c70}\label{group___i2_c___exported___functions_ga384372e7cd037af3dbc92da854508c70}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!CmdResp1Error@{CmdResp1Error}}
+\index{CmdResp1Error@{CmdResp1Error}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CmdResp1Error()}{CmdResp1Error()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} Cmd\+Resp1\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{cmd }\end{DoxyParamCaption})}
+
+
+
+Check the error status of the R1 response. 
+
+
+\begin{DoxyParams}{参数}
+{\em cmd} & \+: Current command. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em card} & error code. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00260}{260}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_gae875982cdc6a453c2793073e8004585e}\label{group___i2_c___exported___functions_gae875982cdc6a453c2793073e8004585e}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!CmdResp2Error@{CmdResp2Error}}
+\index{CmdResp2Error@{CmdResp2Error}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CmdResp2Error()}{CmdResp2Error()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} Cmd\+Resp2\+Error (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Check the execution status of CMD2. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em card} & error code. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00290}{290}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga2c77db272852343b90b0b06573a60e88}\label{group___i2_c___exported___functions_ga2c77db272852343b90b0b06573a60e88}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!CmdResp3Error@{CmdResp3Error}}
+\index{CmdResp3Error@{CmdResp3Error}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CmdResp3Error()}{CmdResp3Error()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} Cmd\+Resp3\+Error (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Check the execution status of CMD3. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em card} & error code. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00317}{317}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_gacfe36517f07f12f6b5512ca99cf5e6a1}\label{group___i2_c___exported___functions_gacfe36517f07f12f6b5512ca99cf5e6a1}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!CmdResp6Error@{CmdResp6Error}}
+\index{CmdResp6Error@{CmdResp6Error}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CmdResp6Error()}{CmdResp6Error()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} Cmd\+Resp6\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{cmd,  }\item[{\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} $\ast$}]{prca }\end{DoxyParamCaption})}
+
+
+
+Check the execution status of CMD6. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em card} & error code. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00337}{337}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga6f8858b757aa1b13e112175cddaf62b9}\label{group___i2_c___exported___functions_ga6f8858b757aa1b13e112175cddaf62b9}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!CmdResp7Error@{CmdResp7Error}}
+\index{CmdResp7Error@{CmdResp7Error}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CmdResp7Error()}{CmdResp7Error()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} Cmd\+Resp7\+Error (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Check the execution status of CMD7. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em card} & error code. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00380}{380}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga1cc15c043882bc35b4915cc637210d7e}\label{group___i2_c___exported___functions_ga1cc15c043882bc35b4915cc637210d7e}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_CheckEvent@{I2C\_CheckEvent}}
+\index{I2C\_CheckEvent@{I2C\_CheckEvent}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_CheckEvent()}{I2C\_CheckEvent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a8333b96c67f83cba354b3407fcbb6ee8}{Error\+Status}} I2\+C\+\_\+\+Check\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{event }\end{DoxyParamCaption})}
+
+
+
+Checks whether the last i2c Event is equal to the one passed as parameter. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & select the I2C peripheral. \\
+\hline
+{\em event} & specifies the event to be checked. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item I2\+C\+\_\+\+EVENT\+\_\+\+RX\+\_\+\+UNDER \+: Rx Buffer is empty event \item I2\+C\+\_\+\+EVENT\+\_\+\+RX\+\_\+\+OVER \+: RX Buffer Overrun event \item I2\+C\+\_\+\+EVENTT\+\_\+\+RX\+\_\+\+FULL \+: Rx buffer full event \item I2\+C\+\_\+\+EVENT\+\_\+\+TX\+\_\+\+OVER \+: TX Buffer Overrun event \item I2\+C\+\_\+\+EVENT\+\_\+\+TX\+\_\+\+EMPTY \+: TX\+\_\+\+FIFO empty event \item I2\+C\+\_\+\+EVENT\+\_\+\+RD\+\_\+\+REQ \+: I2C work as slave or master event \item I2\+C\+\_\+\+EVENT\+\_\+\+TX\+\_\+\+ABRT \+: TX error event(\+Master mode) \item I2\+C\+\_\+\+EVENT\+\_\+\+RX\+\_\+\+DONE \+: Master not ack event(slave mode) \item I2\+C\+\_\+\+EVENT\+\_\+\+ACTIVITY \+: I2C activity event \item I2\+C\+\_\+\+EVENT\+\_\+\+STOP\+\_\+\+DET \+: stop condition event \item I2\+C\+\_\+\+EVENT\+\_\+\+START\+\_\+\+DET\+: start condition event \item I2\+C\+\_\+\+EVENT\+\_\+\+GEN\+\_\+\+CALL \+: a general call address and ack event
+\begin{DoxyItemize}
+\item SUCCESS\+: Last event is equal to the I2\+C\+\_\+\+EVENT
+\item ERROR\+: Last event is different from the I2\+C\+\_\+\+EVENT 
+\end{DoxyItemize}\end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00342}{342}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga587a26c383854b1b5ba8b82118c27df7}\label{group___i2_c___exported___functions_ga587a26c383854b1b5ba8b82118c27df7}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_ClearFlag@{I2C\_ClearFlag}}
+\index{I2C\_ClearFlag@{I2C\_ClearFlag}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_ClearFlag()}{I2C\_ClearFlag()}}
+{\footnotesize\ttfamily void I2\+C\+\_\+\+Clear\+Flag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{flag }\end{DoxyParamCaption})}
+
+
+
+Clears the i2c\textquotesingle{}s pending flags. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & select the I2C peripheral. \\
+\hline
+{\em flag} & specifies the flag to clear. This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item I2\+C\+\_\+\+FLAG\+\_\+\+RX\+\_\+\+UNDER \+: Rx Buffer is empty flag \item I2\+C\+\_\+\+FLAG\+\_\+\+RX\+\_\+\+OVER \+: RX Buffer Overrun flag \item I2\+C\+\_\+\+FLAG\+\_\+\+RX\+\_\+\+FULL \+: Rx buffer full flag \item I2\+C\+\_\+\+FLAG\+\_\+\+TX\+\_\+\+OVER \+: TX Buffer Overrun flag \item I2\+C\+\_\+\+FLAG\+\_\+\+TX\+\_\+\+EMPTY \+: TX\+\_\+\+FIFO empty flag \item I2\+C\+\_\+\+FLAG\+\_\+\+RD\+\_\+\+REQ \+: I2C work as slave or master flag \item I2\+C\+\_\+\+FLAG\+\_\+\+TX\+\_\+\+ABRT \+: TX error flag(\+Master mode) \item I2\+C\+\_\+\+FLAG\+\_\+\+RX\+\_\+\+DONE \+: Master not ack flag(slave mode) \item I2\+C\+\_\+\+FLAG\+\_\+\+ACTIVITY \+: I2C activity flag \item I2\+C\+\_\+\+FLAG\+\_\+\+STOP\+\_\+\+DET \+: stop condition flag \item I2\+C\+\_\+\+FLAG\+\_\+\+START\+\_\+\+DET\+: start condition flag \item I2\+C\+\_\+\+FLAG\+\_\+\+GEN\+\_\+\+CALL \+: a general call address and ack flag \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00402}{402}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga0614543157a1767110ebb90296d07a5d}\label{group___i2_c___exported___functions_ga0614543157a1767110ebb90296d07a5d}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_ClearITPendingBit@{I2C\_ClearITPendingBit}}
+\index{I2C\_ClearITPendingBit@{I2C\_ClearITPendingBit}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_ClearITPendingBit()}{I2C\_ClearITPendingBit()}}
+{\footnotesize\ttfamily void I2\+C\+\_\+\+Clear\+ITPending\+Bit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{it }\end{DoxyParamCaption})}
+
+
+
+Clears the i2c interrupt pending bits. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & select the I2C peripheral. \\
+\hline
+{\em it} & specifies the interrupt pending bit to clear. This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item I2\+C\+\_\+\+IT\+\_\+\+RX\+\_\+\+UNDER \+: Rx Buffer is empty interrupt \item I2\+C\+\_\+\+IT\+\_\+\+RX\+\_\+\+OVER \+: RX Buffer Overrun interrupt \item I2\+C\+\_\+\+IT\+\_\+\+RX\+\_\+\+FULL \+: Rx buffer full interrupt \item I2\+C\+\_\+\+IT\+\_\+\+TX\+\_\+\+OVER \+: TX Buffer Overrun interrupt \item I2\+C\+\_\+\+IT\+\_\+\+TX\+\_\+\+EMPTY \+: TX\+\_\+\+FIFO empty interrupt \item I2\+C\+\_\+\+IT\+\_\+\+RD\+\_\+\+REQ \+: I2C work as slave or master interrupt \item I2\+C\+\_\+\+IT\+\_\+\+TX\+\_\+\+ABRT \+: TX error interrupt (Master mode) \item I2\+C\+\_\+\+IT\+\_\+\+RX\+\_\+\+DONE \+: Master not ack interrupt (slave mode) \item I2\+C\+\_\+\+IT\+\_\+\+ACTIVITY \+: I2C activity interrupt \item I2\+C\+\_\+\+IT\+\_\+\+STOP\+\_\+\+DET \+: stop condition interrupt \item I2\+C\+\_\+\+IT\+\_\+\+START\+\_\+\+DET\+: start condition interrupt \item I2\+C\+\_\+\+IT\+\_\+\+GEN\+\_\+\+CALL \+: a general call address and ack interrupt \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00469}{469}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga53f9ecacc7f09701757e5addf89983ce}\label{group___i2_c___exported___functions_ga53f9ecacc7f09701757e5addf89983ce}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_Cmd@{I2C\_Cmd}}
+\index{I2C\_Cmd@{I2C\_Cmd}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_Cmd()}{I2C\_Cmd()}}
+{\footnotesize\ttfamily void I2\+C\+\_\+\+Cmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the specified I2C peripheral. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & select the I2C peripheral. \\
+\hline
+{\em state} & new state of the i2c peripheral. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00132}{132}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga69380f6129ce1581e41d8e0d1b25c958}\label{group___i2_c___exported___functions_ga69380f6129ce1581e41d8e0d1b25c958}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_DeInit@{I2C\_DeInit}}
+\index{I2C\_DeInit@{I2C\_DeInit}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_DeInit()}{I2C\_DeInit()}}
+{\footnotesize\ttfamily void I2\+C\+\_\+\+De\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c }\end{DoxyParamCaption})}
+
+
+
+Deinitializes the i2c peripheral registers to their default reset values. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & where n can be 1 or 2 to select the I2C peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00043}{43}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga4172649657a39b3f6584bba8dd5f8b9c}\label{group___i2_c___exported___functions_ga4172649657a39b3f6584bba8dd5f8b9c}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_DMACmd@{I2C\_DMACmd}}
+\index{I2C\_DMACmd@{I2C\_DMACmd}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_DMACmd()}{I2C\_DMACmd()}}
+{\footnotesize\ttfamily void I2\+C\+\_\+\+DMACmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the specified I2C DMA requests. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & select the I2C peripheral. \\
+\hline
+{\em state} & new state of the I2C DMA transfer. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00143}{143}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga02502d4b44cb2f4828115ba92a0583cc}\label{group___i2_c___exported___functions_ga02502d4b44cb2f4828115ba92a0583cc}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_DMAConfigure@{I2C\_DMAConfigure}}
+\index{I2C\_DMAConfigure@{I2C\_DMAConfigure}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_DMAConfigure()}{I2C\_DMAConfigure()}}
+{\footnotesize\ttfamily void I2\+C\+\_\+\+DMAConfigure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c,  }\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{dir }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_gadd6c06938cff550c455e4a58e0de9f00}\label{group___i2_c___exported___functions_gadd6c06938cff550c455e4a58e0de9f00}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_DualAddressCmd@{I2C\_DualAddressCmd}}
+\index{I2C\_DualAddressCmd@{I2C\_DualAddressCmd}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_DualAddressCmd()}{I2C\_DualAddressCmd()}}
+{\footnotesize\ttfamily void I2\+C\+\_\+\+Dual\+Address\+Cmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the specified I2C dual addressing mode. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & select the I2C peripheral. \\
+\hline
+{\em state} & new state of the I2C dual addressing mode. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00205}{205}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga5c5f30fdf41a2ab1c753d25ff21fc3a7}\label{group___i2_c___exported___functions_ga5c5f30fdf41a2ab1c753d25ff21fc3a7}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_GeneralCallCmd@{I2C\_GeneralCallCmd}}
+\index{I2C\_GeneralCallCmd@{I2C\_GeneralCallCmd}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_GeneralCallCmd()}{I2C\_GeneralCallCmd()}}
+{\footnotesize\ttfamily void I2\+C\+\_\+\+General\+Call\+Cmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the specified I2C general call feature. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & select the I2C peripheral. \\
+\hline
+{\em state} & new state of the I2C General call. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00217}{217}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga700c1f27d4610e7eb12d36ca05cd213e}\label{group___i2_c___exported___functions_ga700c1f27d4610e7eb12d36ca05cd213e}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_GenerateSTART@{I2C\_GenerateSTART}}
+\index{I2C\_GenerateSTART@{I2C\_GenerateSTART}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_GenerateSTART()}{I2C\_GenerateSTART()}}
+{\footnotesize\ttfamily void I2\+C\+\_\+\+Generate\+START (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Generates i2c communication START condition. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & select the I2C peripheral. \\
+\hline
+{\em state} & new state of the I2C START condition generation. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00162}{162}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga4de5e078677611c91d8647ca40adf10c}\label{group___i2_c___exported___functions_ga4de5e078677611c91d8647ca40adf10c}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_GenerateSTOP@{I2C\_GenerateSTOP}}
+\index{I2C\_GenerateSTOP@{I2C\_GenerateSTOP}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_GenerateSTOP()}{I2C\_GenerateSTOP()}}
+{\footnotesize\ttfamily void I2\+C\+\_\+\+Generate\+STOP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Generates i2c communication STOP condition. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & select the I2C peripheral. \\
+\hline
+{\em state} & new state of the I2C STOP condition generation. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00174}{174}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_gaba350d5d9381c896f6969ef71c0f27d5}\label{group___i2_c___exported___functions_gaba350d5d9381c896f6969ef71c0f27d5}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_GetFlagStatus@{I2C\_GetFlagStatus}}
+\index{I2C\_GetFlagStatus@{I2C\_GetFlagStatus}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_GetFlagStatus()}{I2C\_GetFlagStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} I2\+C\+\_\+\+Get\+Flag\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{flag }\end{DoxyParamCaption})}
+
+
+
+Checks whether the specified I2C flag is set or not. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & select the I2C peripheral. \\
+\hline
+{\em flag} & specifies the flag to check. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item I2\+C\+\_\+\+FLAG\+\_\+\+RX\+\_\+\+UNDER \+: Rx Buffer is empty flag \item I2\+C\+\_\+\+FLAG\+\_\+\+RX\+\_\+\+OVER \+: RX Buffer Overrun flag \item I2\+C\+\_\+\+FLAG\+\_\+\+RX\+\_\+\+FULL \+: Rx buffer full flag \item I2\+C\+\_\+\+FLAG\+\_\+\+TX\+\_\+\+OVER \+: TX Buffer Overrun flag \item I2\+C\+\_\+\+FLAG\+\_\+\+TX\+\_\+\+EMPTY \+: TX\+\_\+\+FIFO empty flag \item I2\+C\+\_\+\+FLAG\+\_\+\+RD\+\_\+\+REQ \+: I2C work as slave or master flag \item I2\+C\+\_\+\+FLAG\+\_\+\+TX\+\_\+\+ABRT \+: TX error flag(\+Master mode) \item I2\+C\+\_\+\+FLAG\+\_\+\+RX\+\_\+\+DONE \+: Master not ack flag(slave mode) \item I2\+C\+\_\+\+FLAG\+\_\+\+ACTIVITY \+: I2C activity flag \item I2\+C\+\_\+\+FLAG\+\_\+\+STOP\+\_\+\+DET \+: stop condition flag \item I2\+C\+\_\+\+FLAG\+\_\+\+START\+\_\+\+DET\+: start condition flag \item I2\+C\+\_\+\+FLAG\+\_\+\+GEN\+\_\+\+CALL \+: a general call address and ack flag \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em The} & new state of I2\+C\+\_\+\+FLAG (SET or RESET). \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00371}{371}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga33a115ef514621ef398933423e7b649f}\label{group___i2_c___exported___functions_ga33a115ef514621ef398933423e7b649f}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_GetITStatus@{I2C\_GetITStatus}}
+\index{I2C\_GetITStatus@{I2C\_GetITStatus}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_GetITStatus()}{I2C\_GetITStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} I2\+C\+\_\+\+Get\+ITStatus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{it }\end{DoxyParamCaption})}
+
+
+
+Checks whether the specified I2C interrupt has occurred or not. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & select the I2C peripheral. \\
+\hline
+{\em it} & specifies the interrupt source to check. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item I2\+C\+\_\+\+IT\+\_\+\+RX\+\_\+\+UNDER \+: Rx Buffer is empty interrupt \item I2\+C\+\_\+\+IT\+\_\+\+RX\+\_\+\+OVER \+: RX Buffer Overrun interrupt \item I2\+C\+\_\+\+IT\+\_\+\+RX\+\_\+\+FULL \+: Rx buffer full interrupt \item I2\+C\+\_\+\+IT\+\_\+\+TX\+\_\+\+OVER \+: TX Buffer Overrun interrupt \item I2\+C\+\_\+\+IT\+\_\+\+TX\+\_\+\+EMPTY \+: TX\+\_\+\+FIFO empty interrupt \item I2\+C\+\_\+\+IT\+\_\+\+RD\+\_\+\+REQ \+: I2C work as slave or master interrupt \item I2\+C\+\_\+\+IT\+\_\+\+TX\+\_\+\+ABRT \+: TX error interrupt (Master mode) \item I2\+C\+\_\+\+IT\+\_\+\+RX\+\_\+\+DONE \+: Master not ack interrupt (slave mode) \item I2\+C\+\_\+\+IT\+\_\+\+ACTIVITY \+: I2C activity interrupt \item I2\+C\+\_\+\+IT\+\_\+\+STOP\+\_\+\+DET \+: stop condition interrupt \item I2\+C\+\_\+\+IT\+\_\+\+START\+\_\+\+DET\+: start condition interrupt \item I2\+C\+\_\+\+IT\+\_\+\+GEN\+\_\+\+CALL \+: a general call address and ack interrupt \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em The} & new state of I2\+C\+\_\+\+IT (SET or RESET). \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00445}{445}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_gafd48431b1598a215f09adad5b99f0515}\label{group___i2_c___exported___functions_gafd48431b1598a215f09adad5b99f0515}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_GetLastEvent@{I2C\_GetLastEvent}}
+\index{I2C\_GetLastEvent@{I2C\_GetLastEvent}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_GetLastEvent()}{I2C\_GetLastEvent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} I2\+C\+\_\+\+Get\+Last\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c }\end{DoxyParamCaption})}
+
+
+
+Returns the last i2c Event. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & select the I2C peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em The} & last event \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00316}{316}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga3839b536c9800c395f7fd10ef0a8e279}\label{group___i2_c___exported___functions_ga3839b536c9800c395f7fd10ef0a8e279}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_Init@{I2C\_Init}}
+\index{I2C\_Init@{I2C\_Init}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_Init()}{I2C\_Init()}}
+{\footnotesize\ttfamily void I2\+C\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c,  }\item[{\mbox{\hyperlink{struct_i2_c___init_type_def}{I2\+C\+\_\+\+Init\+Type\+Def}} $\ast$}]{init\+\_\+struct }\end{DoxyParamCaption})}
+
+
+
+Initializes the i2c peripheral according to the specified parameters in the init\+\_\+struct. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & select the I2C peripheral. \\
+\hline
+{\em init\+\_\+struct} & pointer to a \mbox{\hyperlink{struct_i2_c___init_type_def}{I2\+C\+\_\+\+Init\+Type\+Def}} structure that contains the configuration information for the specified I2C peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00066}{66}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_gafb14f8e75c0e27ec682549d2e87480e8}\label{group___i2_c___exported___functions_gafb14f8e75c0e27ec682549d2e87480e8}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_ITConfig@{I2C\_ITConfig}}
+\index{I2C\_ITConfig@{I2C\_ITConfig}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_ITConfig()}{I2C\_ITConfig()}}
+{\footnotesize\ttfamily void I2\+C\+\_\+\+ITConfig (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c,  }\item[{\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}}}]{it,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the specified I2C interrupts. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & select the I2C peripheral. \\
+\hline
+{\em it} & specifies the I2C interrupts sources to be enabled or disabled. This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item I2\+C\+\_\+\+IT\+\_\+\+RX\+\_\+\+UNDER \+: Rx Buffer is empty interrupt mask \item I2\+C\+\_\+\+IT\+\_\+\+RX\+\_\+\+OVER \+: RX Buffer Overrun interrupt mask \item I2\+C\+\_\+\+IT\+\_\+\+RX\+\_\+\+FULL \+: Rx buffer full interrupt mask \item I2\+C\+\_\+\+IT\+\_\+\+TX\+\_\+\+OVER \+: TX Buffer Overrun interrupt mask \item I2\+C\+\_\+\+IT\+\_\+\+TX\+\_\+\+EMPTY \+: TX\+\_\+\+FIFO empty interrupt mask \item I2\+C\+\_\+\+IT\+\_\+\+RD\+\_\+\+REQ \+: I2C work as slave or master interrupt mask \item I2\+C\+\_\+\+IT\+\_\+\+TX\+\_\+\+ABRT \+: TX error interrupt mask(\+Master mode) \item I2\+C\+\_\+\+IT\+\_\+\+RX\+\_\+\+DONE \+: Master not ack interrupt mask(slave mode) \item I2\+C\+\_\+\+IT\+\_\+\+ACTIVITY \+: I2C activity interrupt mask \item I2\+C\+\_\+\+IT\+\_\+\+STOP\+\_\+\+DET \+: stop condition interrupt mask \item I2\+C\+\_\+\+IT\+\_\+\+START\+\_\+\+DET \+: start condition interrupt mask \item I2\+C\+\_\+\+IT\+\_\+\+GEN\+\_\+\+CALL \+: a general call address and ack interrupt mask \end{DoxyItemize}
+\\
+\hline
+{\em state} & new state of the specified I2C interrupts. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00244}{244}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga0f311a119ff4a27677512c83f1f3771b}\label{group___i2_c___exported___functions_ga0f311a119ff4a27677512c83f1f3771b}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_OwnAddress2Config@{I2C\_OwnAddress2Config}}
+\index{I2C\_OwnAddress2Config@{I2C\_OwnAddress2Config}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_OwnAddress2Config()}{I2C\_OwnAddress2Config()}}
+{\footnotesize\ttfamily void I2\+C\+\_\+\+Own\+Address2\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c,  }\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{addr }\end{DoxyParamCaption})}
+
+
+
+Configures the specified I2C own address2. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & select the I2C peripheral. \\
+\hline
+{\em addr} & specifies the 7bit I2C own address2. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00193}{193}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga163d5ac428611b829ce0d6d89e84657a}\label{group___i2_c___exported___functions_ga163d5ac428611b829ce0d6d89e84657a}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_ReadCmd@{I2C\_ReadCmd}}
+\index{I2C\_ReadCmd@{I2C\_ReadCmd}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_ReadCmd()}{I2C\_ReadCmd()}}
+{\footnotesize\ttfamily void I2\+C\+\_\+\+Read\+Cmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c }\end{DoxyParamCaption})}
+
+
+
+Returns the most recent received data by the i2c peripheral. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & select the I2C peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em The} & value of the received data. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00267}{267}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_gad2590a23bf6dd57f8a6916ec36d08eb0}\label{group___i2_c___exported___functions_gad2590a23bf6dd57f8a6916ec36d08eb0}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_ReadRegister@{I2C\_ReadRegister}}
+\index{I2C\_ReadRegister@{I2C\_ReadRegister}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_ReadRegister()}{I2C\_ReadRegister()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} I2\+C\+\_\+\+Read\+Register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c,  }\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{reg }\end{DoxyParamCaption})}
+
+
+
+Reads the specified I2C register and returns its value. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & select the I2C peripheral. \\
+\hline
+{\em reg} & specifies the register to read. This parameter can be one of the following values\+: \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em The} & value of the read register. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00306}{306}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_gaa922a0851c796a5a9eb0bab5fac8dc24}\label{group___i2_c___exported___functions_gaa922a0851c796a5a9eb0bab5fac8dc24}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_ReceiveData@{I2C\_ReceiveData}}
+\index{I2C\_ReceiveData@{I2C\_ReceiveData}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_ReceiveData()}{I2C\_ReceiveData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} I2\+C\+\_\+\+Receive\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c }\end{DoxyParamCaption})}
+
+
+
+Returns the most recent received data by the i2c peripheral. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & select the I2C peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em The} & value of the received data. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00277}{277}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga7eceb46187692e92a97a2fda4def7821}\label{group___i2_c___exported___functions_ga7eceb46187692e92a97a2fda4def7821}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_Send7bitAddress@{I2C\_Send7bitAddress}}
+\index{I2C\_Send7bitAddress@{I2C\_Send7bitAddress}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_Send7bitAddress()}{I2C\_Send7bitAddress()}}
+{\footnotesize\ttfamily void I2\+C\+\_\+\+Send7bit\+Address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c,  }\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{addr,  }\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{dir }\end{DoxyParamCaption})}
+
+
+
+Transmits the address byte to select the slave device. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & select the I2C peripheral. \\
+\hline
+{\em addr} & specifies the slave address which will be transmitted \\
+\hline
+{\em dir} & specifies whether the I2C device will be a Transmitter or a Receiver. This parameter can be one of the following values \begin{DoxyItemize}
+\item I2\+C\+\_\+\+Direction\+\_\+\+Transmitter\+: Transmitter mode \item I2\+C\+\_\+\+Direction\+\_\+\+Receiver\+: Receiver mode \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00294}{294}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga30ae2753e07b8be67fead01cc4a6c3ec}\label{group___i2_c___exported___functions_ga30ae2753e07b8be67fead01cc4a6c3ec}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_SendData@{I2C\_SendData}}
+\index{I2C\_SendData@{I2C\_SendData}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_SendData()}{I2C\_SendData()}}
+{\footnotesize\ttfamily void I2\+C\+\_\+\+Send\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c,  }\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{dat }\end{DoxyParamCaption})}
+
+
+
+Sends a data byte through the i2c peripheral. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & select the I2C peripheral. \\
+\hline
+{\em dat} & Byte to be transmitted.. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00257}{257}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga18e70469f0df86f7937f1c3db840f30a}\label{group___i2_c___exported___functions_ga18e70469f0df86f7937f1c3db840f30a}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_SendSlaveAddress@{I2C\_SendSlaveAddress}}
+\index{I2C\_SendSlaveAddress@{I2C\_SendSlaveAddress}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_SendSlaveAddress()}{I2C\_SendSlaveAddress()}}
+{\footnotesize\ttfamily void I2\+C\+\_\+\+Send\+Slave\+Address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c,  }\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{addr }\end{DoxyParamCaption})}
+
+
+
+Configures slave address. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & select the I2C peripheral. \\
+\hline
+{\em addr} & specifies the slave address which will be transmitted This parameter can be one of the following values \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00506}{506}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga7a9f63bdb11d49135f61e50ad551fe76}\label{group___i2_c___exported___functions_ga7a9f63bdb11d49135f61e50ad551fe76}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_SlaveConfigure@{I2C\_SlaveConfigure}}
+\index{I2C\_SlaveConfigure@{I2C\_SlaveConfigure}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_SlaveConfigure()}{I2C\_SlaveConfigure()}}
+{\footnotesize\ttfamily void I2\+C\+\_\+\+Slave\+Configure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___type_def}{I2\+C\+\_\+\+Type\+Def}} $\ast$}]{i2c,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the I2C slave mode. 
+
+
+\begin{DoxyParams}{参数}
+{\em i2c} & select the I2C peripheral. \\
+\hline
+{\em state} & new state of the specified I2C interrupts. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00518}{518}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_gad4199a23b333cb40233ff75efbdfa08d}\label{group___i2_c___exported___functions_gad4199a23b333cb40233ff75efbdfa08d}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!I2C\_StructInit@{I2C\_StructInit}}
+\index{I2C\_StructInit@{I2C\_StructInit}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2C\_StructInit()}{I2C\_StructInit()}}
+{\footnotesize\ttfamily void I2\+C\+\_\+\+Struct\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i2_c___init_type_def}{I2\+C\+\_\+\+Init\+Type\+Def}} $\ast$}]{init\+\_\+struct }\end{DoxyParamCaption})}
+
+
+
+Fills each init\+\_\+struct member with its default value. 
+
+
+\begin{DoxyParams}{参数}
+{\em init\+\_\+struct} & pointer to an \mbox{\hyperlink{struct_i2_c___init_type_def}{I2\+C\+\_\+\+Init\+Type\+Def}} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8c_source}{hal\+\_\+i2c.\+c}} 第 \mbox{\hyperlink{hal__i2c_8c_source_l00117}{117}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga9f053c27018521095d7333e7df238764}\label{group___i2_c___exported___functions_ga9f053c27018521095d7333e7df238764}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!SD\_PowerOFF@{SD\_PowerOFF}}
+\index{SD\_PowerOFF@{SD\_PowerOFF}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SD\_PowerOFF()}{SD\_PowerOFF()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} SD\+\_\+\+Power\+OFF (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Turn off the SDIO switch. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00180}{180}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga160c7fe3b6f5c5812caa893a47f3e89a}\label{group___i2_c___exported___functions_ga160c7fe3b6f5c5812caa893a47f3e89a}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!SDIO\_ClearITPendingBit@{SDIO\_ClearITPendingBit}}
+\index{SDIO\_ClearITPendingBit@{SDIO\_ClearITPendingBit}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_ClearITPendingBit()}{SDIO\_ClearITPendingBit()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+Clear\+ITPending\+Bit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{SDIO\+\_\+\+IT }\end{DoxyParamCaption})}
+
+
+
+Clears the SDIO\textquotesingle{}s interrupt pending bits. 
+
+
+\begin{DoxyParams}{参数}
+{\em SDIO\+\_\+\+IT} & specifies the interrupt pending bit to clear. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00462}{462}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_gaa843456dbaf1590d8a5b3dc5a075dcf9}\label{group___i2_c___exported___functions_gaa843456dbaf1590d8a5b3dc5a075dcf9}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!SDIO\_Clock\_Set@{SDIO\_Clock\_Set}}
+\index{SDIO\_Clock\_Set@{SDIO\_Clock\_Set}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_Clock\_Set()}{SDIO\_Clock\_Set()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+Clock\+\_\+\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{clkdiv }\end{DoxyParamCaption})}
+
+
+
+Port transfer speed mode. 
+
+
+\begin{DoxyParams}{参数}
+{\em clkdiv} & \+: High/low speed. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00170}{170}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga6824fe7b29eebad5e26e1e81b39f884d}\label{group___i2_c___exported___functions_ga6824fe7b29eebad5e26e1e81b39f884d}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!SDIO\_ClockSet@{SDIO\_ClockSet}}
+\index{SDIO\_ClockSet@{SDIO\_ClockSet}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_ClockSet()}{SDIO\_ClockSet()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+Clock\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{value }\end{DoxyParamCaption})}
+
+
+
+Initializes the SDIO data path according to the specified parameters in the SDIO\+\_\+\+Data\+Init\+Struct. 
+
+
+\begin{DoxyParams}{参数}
+{\em SDIO\+\_\+\+Data\+Init\+Struct} & \+: pointer to a \mbox{\hyperlink{struct_s_d_i_o___data_init_type_def}{SDIO\+\_\+\+Data\+Init\+Type\+Def}} structure that contains the configuration information for the SDIO command. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+The frequency division factor is configured to generate the SDIO clock. 
+\begin{DoxyParams}{参数}
+{\em value} & \+: 1MHz = Fhclk/((mmc\+\_\+cardsel\mbox{[}5 \+: 0\mbox{]} + 1) × 2) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00123}{123}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga38f1b73fa641efeeb6a96472d989c767}\label{group___i2_c___exported___functions_ga38f1b73fa641efeeb6a96472d989c767}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!SDIO\_CRCConfig@{SDIO\_CRCConfig}}
+\index{SDIO\_CRCConfig@{SDIO\_CRCConfig}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CRCConfig()}{SDIO\_CRCConfig()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+CRCConfig (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{SDIO\+\_\+\+CRC,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the SDIO CRC. 
+
+
+\begin{DoxyParams}{参数}
+{\em SDIO\+\_\+\+CRC} & specifies the SDIO CRC sources to be enabled or disabled. state \+: new state of the specified SDIO CRC. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00160}{160}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_gac359d2c6c67a2590f8f9b720c0e4ff1b}\label{group___i2_c___exported___functions_gac359d2c6c67a2590f8f9b720c0e4ff1b}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!SDIO\_DeInit@{SDIO\_DeInit}}
+\index{SDIO\_DeInit@{SDIO\_DeInit}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DeInit()}{SDIO\_DeInit()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+De\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00043}{43}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga5c83f845a6c1f66883c3bb6254977cda}\label{group___i2_c___exported___functions_ga5c83f845a6c1f66883c3bb6254977cda}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!SDIO\_DMACmd@{SDIO\_DMACmd}}
+\index{SDIO\_DMACmd@{SDIO\_DMACmd}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DMACmd()}{SDIO\_DMACmd()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+DMACmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enable or Dsiable DMA . 
+
+
+\begin{DoxyParams}{参数}
+{\em tempbuff} & \+: Write data. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00516}{516}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga2c48bd26d3f6a531cb667bfaf6525520}\label{group___i2_c___exported___functions_ga2c48bd26d3f6a531cb667bfaf6525520}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!SDIO\_GetFlagStatus@{SDIO\_GetFlagStatus}}
+\index{SDIO\_GetFlagStatus@{SDIO\_GetFlagStatus}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_GetFlagStatus()}{SDIO\_GetFlagStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} SDIO\+\_\+\+Get\+Flag\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{SDIO\+\_\+\+FLAG }\end{DoxyParamCaption})}
+
+
+
+Checks whether the specified SDIO flag is set or not. 
+
+
+\begin{DoxyParams}{参数}
+{\em SDIO\+\_\+\+FLAG} & specifies the flag to check. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em The} & new state of SDIO\+\_\+\+FLAG (SET or RESET). \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00471}{471}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga186e0c0406b9f6e56e33421f287a613b}\label{group___i2_c___exported___functions_ga186e0c0406b9f6e56e33421f287a613b}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!SDIO\_GetTimeOutCounter@{SDIO\_GetTimeOutCounter}}
+\index{SDIO\_GetTimeOutCounter@{SDIO\_GetTimeOutCounter}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_GetTimeOutCounter()}{SDIO\_GetTimeOutCounter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Get\+Time\+Out\+Counter (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Reads the value of the data transfer timeout count 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em timeout} & count. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00480}{480}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_gad40764a8e37c0ed5c9141ae338ff0203}\label{group___i2_c___exported___functions_gad40764a8e37c0ed5c9141ae338ff0203}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!SDIO\_Init@{SDIO\_Init}}
+\index{SDIO\_Init@{SDIO\_Init}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_Init()}{SDIO\_Init()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_d_i_o___init_type_def}{SDIO\+\_\+\+Init\+Type\+Def}} $\ast$}]{SDIO\+\_\+\+Init\+Struct }\end{DoxyParamCaption})}
+
+
+
+Initializes the SDIO peripheral according to the specified parameters in the SDIO\+\_\+\+Init\+Struct. 
+
+
+\begin{DoxyParams}{参数}
+{\em SDIO\+\_\+\+Init\+Struct} & \+: pointer to a \mbox{\hyperlink{struct_s_d_i_o___init_type_def}{SDIO\+\_\+\+Init\+Type\+Def}} structure that contains the configuration information for the SDIO peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00136}{136}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_gaf40594ca2987d8b4fc4dbb9d59ccf3e0}\label{group___i2_c___exported___functions_gaf40594ca2987d8b4fc4dbb9d59ccf3e0}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!SDIO\_ITConfig@{SDIO\_ITConfig}}
+\index{SDIO\_ITConfig@{SDIO\_ITConfig}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_ITConfig()}{SDIO\_ITConfig()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+ITConfig (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{SDIO\+\_\+\+IT,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the SDIO interrupts. 
+
+
+\begin{DoxyParams}{参数}
+{\em SDIO\+\_\+\+IT} & specifies the SDIO interrupt sources to be enabled or disabled. state \+: new state of the specified SDIO interrupts. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00150}{150}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga2e0007f7bb12c1b43f7495c6a4a20b50}\label{group___i2_c___exported___functions_ga2e0007f7bb12c1b43f7495c6a4a20b50}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!SDIO\_ReadData@{SDIO\_ReadData}}
+\index{SDIO\_ReadData@{SDIO\_ReadData}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_ReadData()}{SDIO\_ReadData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Read\+Data (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Read one data word from FIFO. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em Data} & received. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00489}{489}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga6ac7722df2ba23f1a716db8a4b38a49a}\label{group___i2_c___exported___functions_ga6ac7722df2ba23f1a716db8a4b38a49a}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!SDIO\_Send\_Cmd@{SDIO\_Send\_Cmd}}
+\index{SDIO\_Send\_Cmd@{SDIO\_Send\_Cmd}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_Send\_Cmd()}{SDIO\_Send\_Cmd()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+Send\+\_\+\+Cmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{cmdindex,  }\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{waitrsp,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{arg }\end{DoxyParamCaption})}
+
+
+
+SDIO sends command functions. 
+
+
+\begin{DoxyParams}{参数}
+{\em cmdindex} & \+: Type the command. waitrsp \+: Expected correspondence. arg \+: parameter. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00208}{208}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga8ed0e660e0b895d3f9cb9a560ad50291}\label{group___i2_c___exported___functions_ga8ed0e660e0b895d3f9cb9a560ad50291}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!SDIO\_Send\_Data\_Cfg@{SDIO\_Send\_Data\_Cfg}}
+\index{SDIO\_Send\_Data\_Cfg@{SDIO\_Send\_Data\_Cfg}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_Send\_Data\_Cfg()}{SDIO\_Send\_Data\_Cfg()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+Send\+\_\+\+Data\+\_\+\+Cfg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{datatimeout,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{datalen,  }\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{blksize,  }\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{dir }\end{DoxyParamCaption})}
+
+
+
+Write data direction block size configuration. 
+
+
+\begin{DoxyParams}{参数}
+{\em datatimeout} & \+: maximum latency. datalen \+: data len blksize \+: block count. dir \+: direction \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00411}{411}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_ga778d338c29df4fae9ef69432e6df32ad}\label{group___i2_c___exported___functions_ga778d338c29df4fae9ef69432e6df32ad}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!SDIO\_StructInit@{SDIO\_StructInit}}
+\index{SDIO\_StructInit@{SDIO\_StructInit}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_StructInit()}{SDIO\_StructInit()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+Struct\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_d_i_o___init_type_def}{SDIO\+\_\+\+Init\+Type\+Def}} $\ast$}]{SDIO\+\_\+\+Init\+Struct }\end{DoxyParamCaption})}
+
+
+
+Fills each SDIO\+\_\+\+Init\+Struct member with its default value. 
+
+
+\begin{DoxyParams}{参数}
+{\em SDIO\+\_\+\+Init\+Struct} & pointer to an \mbox{\hyperlink{struct_s_d_i_o___init_type_def}{SDIO\+\_\+\+Init\+Type\+Def}} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00054}{54}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___functions_gac5a58e2b720a0492c693b60024ee41b0}\label{group___i2_c___exported___functions_gac5a58e2b720a0492c693b60024ee41b0}} 
+\index{I2C\_Exported\_Functions@{I2C\_Exported\_Functions}!SDIO\_WriteData@{SDIO\_WriteData}}
+\index{SDIO\_WriteData@{SDIO\_WriteData}!I2C\_Exported\_Functions@{I2C\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SDIO\_WriteData()}{SDIO\_WriteData()}}
+{\footnotesize\ttfamily void SDIO\+\_\+\+Write\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{tempbuff }\end{DoxyParamCaption})}
+
+
+
+Write one data word to FIFO. 
+
+
+\begin{DoxyParams}{参数}
+{\em tempbuff} & \+: Write data. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8c_source}{hal\+\_\+sdio.\+c}} 第 \mbox{\hyperlink{hal__sdio_8c_source_l00498}{498}} 行定义.
+

@@ -1,0 +1,262 @@
+\hypertarget{hal__i2c_8c_source}{}\doxysection{hal\+\_\+i2c.\+c}
+\label{hal__i2c_8c_source}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_i2c.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_i2c.c}}
+\mbox{\hyperlink{hal__i2c_8c}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00018}00018 \textcolor{comment}{// Define to prevent recursive inclusion}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00019}\mbox{\hyperlink{hal__i2c_8c_a2d982add3815120a215da879561543e7}{00019}} \textcolor{preprocessor}{\#define \_HAL\_I2C\_C\_}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00021}00021 \textcolor{comment}{// Files includes}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00022}00022 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{hal__i2c_8h}{hal\_i2c.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00023}00023 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{hal__rcc_8h}{hal\_rcc.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00043}\mbox{\hyperlink{group___i2_c___exported___functions_ga69380f6129ce1581e41d8e0d1b25c958}{00043}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___i2_c___exported___functions_ga69380f6129ce1581e41d8e0d1b25c958}{I2C\_DeInit}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00044}00044 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00045}00045     \textcolor{keywordflow}{switch} (*(\mbox{\hyperlink{types_8h_afe8851af77f42df60783f067c5d9c213}{vu32}}*)\&i2c) \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00046}00046         \textcolor{keywordflow}{case} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__i2c_8h_ab45d257574da6fe1f091cc45b7eda6cc}{I2C1}}:  \textcolor{comment}{// I2C1\_BASE:}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00047}00047             \mbox{\hyperlink{group___r_c_c___exported___functions_gad9e30971b169c6fee0f090ef9948a17a}{exRCC\_APB1PeriphReset}}(\mbox{\hyperlink{reg__rcc_8h_a40940c44021ae66b8e40660e31f91125}{RCC\_APB1ENR\_I2C1}});}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00048}00048             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00049}00049         \textcolor{keywordflow}{case} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{reg__i2c_8h_afa60ac20c1921ef1002083bb3e1f5d16}{I2C2}}:  \textcolor{comment}{// I2C2\_BASE:}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00050}00050             \mbox{\hyperlink{group___r_c_c___exported___functions_gad9e30971b169c6fee0f090ef9948a17a}{exRCC\_APB1PeriphReset}}(\mbox{\hyperlink{reg__rcc_8h_a702ed4f2180dc904927420d3e2dedaaa}{RCC\_APB1ENR\_I2C2}});}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00051}00051             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00052}00052         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00053}00053             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00054}00054     \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00055}00055 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00066}\mbox{\hyperlink{group___i2_c___exported___functions_ga3839b536c9800c395f7fd10ef0a8e279}{00066}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___i2_c___exported___functions_ga3839b536c9800c395f7fd10ef0a8e279}{I2C\_Init}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c, \mbox{\hyperlink{struct_i2_c___init_type_def}{I2C\_InitTypeDef}}* init\_struct)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00067}00067 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00068}00068     \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} pclk1         = \mbox{\hyperlink{reg__common_8h_aaa8c76e274d0f6dd2cefb5d0b17fbc37}{HSI\_VALUE}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00069}00069     \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} minSclLowTime = 0;}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00070}00070     \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} i2cPeriod     = 0;}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00071}00071     \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} pclk1Period   = 0;}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00074}00074     i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_adcd5795ae2cf11d1dc5d45fd289d27b2}{IC\_ENABLE}} \&= \string~I2C\_ENR\_ENABLE;}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00077}00077     pclk1       = \mbox{\hyperlink{group___r_c_c___exported___functions_ga5837c7297ea0173b6b2661993ba47479}{RCC\_GetPCLK1Freq}}();}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00078}00078     pclk1Period = 1000000000 / pclk1;}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00079}00079     i2cPeriod   = 1000000000 / init\_struct-\/>\mbox{\hyperlink{struct_i2_c___init_type_def_a662c9f2c1d94730213ab952a8be1974a}{I2C\_ClockSpeed}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00081}00081     minSclLowTime = pclk1 / init\_struct-\/>\mbox{\hyperlink{struct_i2_c___init_type_def_a662c9f2c1d94730213ab952a8be1974a}{I2C\_ClockSpeed}} ;}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00082}00082     i2cPeriod = 82 / pclk1Period;}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00084}00084     \textcolor{keywordflow}{if} (init\_struct-\/>\mbox{\hyperlink{struct_i2_c___init_type_def_a662c9f2c1d94730213ab952a8be1974a}{I2C\_ClockSpeed}} <= 100000) \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00085}00085         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_af3038bfad19f110c7ed7dc6c4fcb0eed}{IC\_SS\_SCL\_LCNT}} = (minSclLowTime -\/ 13 -\/ i2cPeriod) / 2;}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00086}00086         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a96ec3be05a303cc3fe135f21699f9859}{IC\_SS\_SCL\_HCNT}} = (minSclLowTime -\/ 13 -\/ i2cPeriod -\/ i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_af3038bfad19f110c7ed7dc6c4fcb0eed}{IC\_SS\_SCL\_LCNT}});}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00087}00087     \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00088}00088     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00089}00089         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a6c17c6b376ae8491ac9ea529c3c9f551}{IC\_FS\_SCL\_LCNT}} = (minSclLowTime -\/ 13 -\/ i2cPeriod ) / 2 + 4;}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00090}00090         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a527274629cbdd07fcd33bdb6e7801ccc}{IC\_FS\_SCL\_HCNT}} = (minSclLowTime -\/ 13 -\/ i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a6c17c6b376ae8491ac9ea529c3c9f551}{IC\_FS\_SCL\_LCNT}} -\/ i2cPeriod);}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00091}00091     \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00093}00093     i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a45f247d7510f336a1d255aceaceb8dbe}{IC\_CON}} \&= \string~(\mbox{\hyperlink{reg__i2c_8h_a0fb64d0a0fe7751e505a3502b529b62c}{I2C\_CR\_EMPINT}}     |   \(\backslash\)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00094}00094                      \mbox{\hyperlink{reg__i2c_8h_a1e9956a6cccc2af3abb7a0ba5a98c75a}{I2C\_CR\_SLAVEDIS}}   |   \(\backslash\)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00095}00095                      \mbox{\hyperlink{reg__i2c_8h_a164d425765ba6e1066cd8e40e688dd46}{I2C\_CR\_REPEN}}      |   \(\backslash\)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00096}00096                      \mbox{\hyperlink{reg__i2c_8h_a3c63521debffe555da0f6c6d41fdf25d}{I2C\_CR\_MASTER10}}   |   \(\backslash\)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00097}00097                      \mbox{\hyperlink{reg__i2c_8h_ad826a8c42641312d0cfd40ef002971ad}{I2C\_CR\_SLAVE10}}    |   \(\backslash\)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00098}00098                      \mbox{\hyperlink{reg__i2c_8h_a09b7050ab9691763d45d8711b05ed2db}{I2C\_CR\_FAST}}       |   \(\backslash\)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00099}00099                      \mbox{\hyperlink{reg__i2c_8h_ae362964681e80c90fc758458c1fabe00}{I2C\_CR\_MASTER}});}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00101}00101     i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a45f247d7510f336a1d255aceaceb8dbe}{IC\_CON}} =  \mbox{\hyperlink{reg__i2c_8h_a0fb64d0a0fe7751e505a3502b529b62c}{I2C\_CR\_EMPINT}}       |   \(\backslash\)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00102}00102                    \mbox{\hyperlink{reg__i2c_8h_a164d425765ba6e1066cd8e40e688dd46}{I2C\_CR\_REPEN}}        |   \(\backslash\)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00103}00103                    ((init\_struct-\/>\mbox{\hyperlink{struct_i2_c___init_type_def_a8d1b8efe5ba677a1185d10d95a9da947}{I2C\_Speed}} == \mbox{\hyperlink{reg__i2c_8h_a09b7050ab9691763d45d8711b05ed2db}{I2C\_CR\_FAST}}) ? \mbox{\hyperlink{reg__i2c_8h_a09b7050ab9691763d45d8711b05ed2db}{I2C\_CR\_FAST}} : \mbox{\hyperlink{reg__i2c_8h_a092985e757b569289989670d4c3119c4}{I2C\_CR\_STD}}) | \(\backslash\)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00104}00104                    ((init\_struct-\/>\mbox{\hyperlink{struct_i2_c___init_type_def_aca395c806c120c0a1658ab303f2ca44c}{I2C\_Mode}})  ? \mbox{\hyperlink{reg__i2c_8h_ae362964681e80c90fc758458c1fabe00}{I2C\_CR\_MASTER}} : 0x00);}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00105}00105     i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a69b3ce915cf336492e0210b342c932e9}{IC\_INTR\_MASK}} \&= \mbox{\hyperlink{group___i2_c___private___defines_gad8f80fc5a90648b382ef6c3080546ba9}{INTR\_MASK}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00106}00106 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00107}00107     i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_af974c21b3bcbaa31ea4290987fc0ffd2}{IC\_RX\_TL}} = 0x00;}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00108}00108     i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_ae5232f2ecae376ecf43fe4b3cb855a9b}{IC\_TX\_TL}} = 0x00;}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00109}00109 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00110}00110 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00117}\mbox{\hyperlink{group___i2_c___exported___functions_gad4199a23b333cb40233ff75efbdfa08d}{00117}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___i2_c___exported___functions_gad4199a23b333cb40233ff75efbdfa08d}{I2C\_StructInit}}(\mbox{\hyperlink{struct_i2_c___init_type_def}{I2C\_InitTypeDef}}* init\_struct)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00118}00118 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00119}00119     init\_struct-\/>\mbox{\hyperlink{struct_i2_c___init_type_def_aca395c806c120c0a1658ab303f2ca44c}{I2C\_Mode}}       = \mbox{\hyperlink{reg__i2c_8h_ae362964681e80c90fc758458c1fabe00}{I2C\_CR\_MASTER}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00120}00120     init\_struct-\/>\mbox{\hyperlink{struct_i2_c___init_type_def_a906b4ba45b97f097aec32f5c57c5f230}{I2C\_OwnAddress}} = \mbox{\hyperlink{group___d_r_v___exported___constants_gab665b5b80f13670806350a6b460dad71}{I2C\_OWN\_ADDRESS}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00121}00121     init\_struct-\/>\mbox{\hyperlink{struct_i2_c___init_type_def_a8d1b8efe5ba677a1185d10d95a9da947}{I2C\_Speed}}      = \mbox{\hyperlink{reg__i2c_8h_a092985e757b569289989670d4c3119c4}{I2C\_CR\_STD}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00122}00122     init\_struct-\/>\mbox{\hyperlink{struct_i2_c___init_type_def_a662c9f2c1d94730213ab952a8be1974a}{I2C\_ClockSpeed}} = 100000;}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00123}00123 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00124}00124 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00132}\mbox{\hyperlink{group___i2_c___exported___functions_ga53f9ecacc7f09701757e5addf89983ce}{00132}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___i2_c___exported___functions_ga53f9ecacc7f09701757e5addf89983ce}{I2C\_Cmd}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00133}00133 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00134}00134     (state) ? (i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_adcd5795ae2cf11d1dc5d45fd289d27b2}{IC\_ENABLE}} |= \mbox{\hyperlink{reg__i2c_8h_a8645cc44a8b4d03a93a65b8520739cf0}{I2C\_ENR\_ENABLE}}) : (i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_adcd5795ae2cf11d1dc5d45fd289d27b2}{IC\_ENABLE}} \&= \string~I2C\_ENR\_ENABLE);}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00135}00135 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00143}\mbox{\hyperlink{group___i2_c___exported___functions_ga4172649657a39b3f6584bba8dd5f8b9c}{00143}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___i2_c___exported___functions_ga4172649657a39b3f6584bba8dd5f8b9c}{I2C\_DMACmd}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00144}00144 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00145}00145     \textcolor{keywordflow}{if} (state) \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00146}00146         \textcolor{keywordflow}{if} (I2C\_DMA\_DIR == \mbox{\hyperlink{group___i2_c___exported___constants_gga5974c0c30dc9fd9b11742391aa0bdfefa7c1896c4205ecb671d8a7875a5e6f8f0}{TDMAE\_SET}})}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00147}00147             i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_ac951cee9028241e18b8a42895cc3196d}{IC\_DMA\_CR}} |= \mbox{\hyperlink{group___i2_c___exported___constants_gga5974c0c30dc9fd9b11742391aa0bdfefa7c1896c4205ecb671d8a7875a5e6f8f0}{TDMAE\_SET}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00148}00148 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00149}00149         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00150}00150             i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_ac951cee9028241e18b8a42895cc3196d}{IC\_DMA\_CR}} |= \mbox{\hyperlink{group___i2_c___exported___constants_gga5974c0c30dc9fd9b11742391aa0bdfefa8c2eb09341398f05204a795f8a08548d}{RDMAE\_SET}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00151}00151     \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00152}00152     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00153}00153         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_ac951cee9028241e18b8a42895cc3196d}{IC\_DMA\_CR}} \&= \string~(\mbox{\hyperlink{reg__i2c_8h_aae0dae4784e4cbb3d9e69ee73f3fd191}{I2C\_DMA\_RXEN}} | \mbox{\hyperlink{reg__i2c_8h_a0857728eb57879d6de49ab2d72451caa}{I2C\_DMA\_TXEN}});}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00154}00154 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00162}\mbox{\hyperlink{group___i2_c___exported___functions_ga700c1f27d4610e7eb12d36ca05cd213e}{00162}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___i2_c___exported___functions_ga700c1f27d4610e7eb12d36ca05cd213e}{I2C\_GenerateSTART}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00163}00163 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00164}00164     (state) ? (i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a45f247d7510f336a1d255aceaceb8dbe}{IC\_CON}} |= \mbox{\hyperlink{reg__i2c_8h_a164d425765ba6e1066cd8e40e688dd46}{I2C\_CR\_REPEN}}) : (i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a45f247d7510f336a1d255aceaceb8dbe}{IC\_CON}} \&= \string~I2C\_CR\_REPEN);}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00165}00165 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00166}00166 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00174}\mbox{\hyperlink{group___i2_c___exported___functions_ga4de5e078677611c91d8647ca40adf10c}{00174}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___i2_c___exported___functions_ga4de5e078677611c91d8647ca40adf10c}{I2C\_GenerateSTOP}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00175}00175 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00176}00176     \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} overTime = 3000;}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00177}00177 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00178}00178     i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_adcd5795ae2cf11d1dc5d45fd289d27b2}{IC\_ENABLE}} |= \mbox{\hyperlink{reg__i2c_8h_a524398b52d5601b6f48702b4e16e5e36}{I2C\_ENR\_ABORT}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00179}00179 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00180}00180     \textcolor{keywordflow}{while} (i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_adcd5795ae2cf11d1dc5d45fd289d27b2}{IC\_ENABLE}} \& \mbox{\hyperlink{reg__i2c_8h_a524398b52d5601b6f48702b4e16e5e36}{I2C\_ENR\_ABORT}}) \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00181}00181         \textcolor{keywordflow}{if} (overTime-\/-\/ == 0)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00182}00182             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00183}00183     \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00184}00184     i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a1f5eb309c0b44ab2bf0416985a378571}{IC\_CLR\_TX\_ABRT}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00185}00185 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00186}00186 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00193}\mbox{\hyperlink{group___i2_c___exported___functions_ga0f311a119ff4a27677512c83f1f3771b}{00193}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___i2_c___exported___functions_ga0f311a119ff4a27677512c83f1f3771b}{I2C\_OwnAddress2Config}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} addr)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00194}00194 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00195}00195     \mbox{\hyperlink{types_8h_a9604563d4bca5bd6bc9a17c9511e599b}{MODIFY\_REG}}(i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_aa958dd33cb1acc2553b2fabd45c915db}{IC\_TAR}}, (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})\mbox{\hyperlink{reg__i2c_8h_a967c184650624ccf22bf6dbe788cc22a}{I2C\_TAR\_ADDR}}, (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})(addr >> 1));}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00196}00196 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00197}00197 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00205}\mbox{\hyperlink{group___i2_c___exported___functions_gadd6c06938cff550c455e4a58e0de9f00}{00205}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___i2_c___exported___functions_gadd6c06938cff550c455e4a58e0de9f00}{I2C\_DualAddressCmd}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00206}00206 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00207}00207     (state) ? (i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_aa958dd33cb1acc2553b2fabd45c915db}{IC\_TAR}} |= \mbox{\hyperlink{group___i2_c___private___defines_ga45abcdf2f0368f8c11e6311c65d02957}{IC\_TAR\_ENDUAL\_Set}}) : (i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_aa958dd33cb1acc2553b2fabd45c915db}{IC\_TAR}} \&= \mbox{\hyperlink{group___i2_c___private___defines_ga345aa255f45a2813fa8e8c43f65cd678}{IC\_TAR\_ENDUAL\_Reset}});}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00208}00208 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00209}00209 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00217}\mbox{\hyperlink{group___i2_c___exported___functions_ga5c5f30fdf41a2ab1c753d25ff21fc3a7}{00217}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___i2_c___exported___functions_ga5c5f30fdf41a2ab1c753d25ff21fc3a7}{I2C\_GeneralCallCmd}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00218}00218 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00219}00219     (state) ? (i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_aa958dd33cb1acc2553b2fabd45c915db}{IC\_TAR}} |= \mbox{\hyperlink{reg__i2c_8h_af529858f9152855bbd3e5ebd84e71106}{I2C\_TAR\_SPECIAL}}) : (i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_aa958dd33cb1acc2553b2fabd45c915db}{IC\_TAR}} \&= \string~I2C\_TAR\_SPECIAL);}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00220}00220 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00221}00221 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00244}\mbox{\hyperlink{group___i2_c___exported___functions_gafb14f8e75c0e27ec682549d2e87480e8}{00244}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___i2_c___exported___functions_gafb14f8e75c0e27ec682549d2e87480e8}{I2C\_ITConfig}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} it, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00245}00245 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00246}00246     \textcolor{keywordflow}{if} (it == \mbox{\hyperlink{group___i2_c__interrupts__definition_ga6ddc602ee5b894256500b751958f79e0}{I2C\_IT\_RX\_FULL}})}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00247}00247         \mbox{\hyperlink{group___i2_c___exported___functions_ga163d5ac428611b829ce0d6d89e84657a}{I2C\_ReadCmd}}(i2c);}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00248}00248     (state) ? \mbox{\hyperlink{types_8h_a62af7cb8bfabd5a9f6ea45582e08843b}{SET\_BIT}}(i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a69b3ce915cf336492e0210b342c932e9}{IC\_INTR\_MASK}}, it) : \mbox{\hyperlink{types_8h_aa6e88ced7a7081f8ff415c9f5bd6b043}{CLEAR\_BIT}}(i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a69b3ce915cf336492e0210b342c932e9}{IC\_INTR\_MASK}}, (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})it);}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00249}00249 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00250}00250 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00257}\mbox{\hyperlink{group___i2_c___exported___functions_ga30ae2753e07b8be67fead01cc4a6c3ec}{00257}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___i2_c___exported___functions_ga30ae2753e07b8be67fead01cc4a6c3ec}{I2C\_SendData}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} dat)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00258}00258 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00259}00259     i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a74c648957aa6a4b514abbae1eead37d1}{IC\_DATA\_CMD}} = dat;}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00260}00260 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00261}00261 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00267}\mbox{\hyperlink{group___i2_c___exported___functions_ga163d5ac428611b829ce0d6d89e84657a}{00267}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___i2_c___exported___functions_ga163d5ac428611b829ce0d6d89e84657a}{I2C\_ReadCmd}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00268}00268 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00269}00269     i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a74c648957aa6a4b514abbae1eead37d1}{IC\_DATA\_CMD}} = \mbox{\hyperlink{reg__i2c_8h_a6a0b84abec34ff1cd6a68bbced4a478a}{I2C\_DR\_CMD}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00270}00270 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00271}00271 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00277}\mbox{\hyperlink{group___i2_c___exported___functions_gaa922a0851c796a5a9eb0bab5fac8dc24}{00277}} \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{group___i2_c___exported___functions_gaa922a0851c796a5a9eb0bab5fac8dc24}{I2C\_ReceiveData}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00278}00278 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00279}00279     I2C\_CMD\_DIR = 0;}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00280}00280     \textcolor{keywordflow}{return} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a74c648957aa6a4b514abbae1eead37d1}{IC\_DATA\_CMD}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00281}00281 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00282}00282 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00294}\mbox{\hyperlink{group___i2_c___exported___functions_ga7eceb46187692e92a97a2fda4def7821}{00294}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___i2_c___exported___functions_ga7eceb46187692e92a97a2fda4def7821}{I2C\_Send7bitAddress}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} addr, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} dir)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00295}00295 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00296}00296     i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_aa958dd33cb1acc2553b2fabd45c915db}{IC\_TAR}} = addr >> 1;}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00297}00297 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00298}00298 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00306}\mbox{\hyperlink{group___i2_c___exported___functions_gad2590a23bf6dd57f8a6916ec36d08eb0}{00306}} \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{group___i2_c___exported___functions_gad2590a23bf6dd57f8a6916ec36d08eb0}{I2C\_ReadRegister}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} reg)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00307}00307 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00308}00308     \textcolor{keywordflow}{return} (*(\mbox{\hyperlink{types_8h_a9e9f2c67df0bbcd2dd7753693525ee07}{vu16}}*)(*((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}*)\&i2c) + reg));}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00309}00309 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00310}00310 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00316}\mbox{\hyperlink{group___i2_c___exported___functions_gafd48431b1598a215f09adad5b99f0515}{00316}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___i2_c___exported___functions_gafd48431b1598a215f09adad5b99f0515}{I2C\_GetLastEvent}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00317}00317 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00318}00318     \textcolor{keywordflow}{return} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a2cc3e0e1408060ff7807b98c0fe2ffba}{IC\_RAW\_INTR\_STAT}} \& \mbox{\hyperlink{group___i2_c___private___defines_ga2be62bf481cd44de9ab604efe5595ff6}{FLAG\_Mask}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00319}00319 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00320}00320 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00342}\mbox{\hyperlink{group___i2_c___exported___functions_ga1cc15c043882bc35b4915cc637210d7e}{00342}} \mbox{\hyperlink{types_8h_a8333b96c67f83cba354b3407fcbb6ee8}{ErrorStatus}} \mbox{\hyperlink{group___i2_c___exported___functions_ga1cc15c043882bc35b4915cc637210d7e}{I2C\_CheckEvent}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} event)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00343}00343 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00344}00344     \textcolor{keywordflow}{if} ((event == \mbox{\hyperlink{group___i2_c___events_ga1508ca4521ccd0ada699d639ac5e94ec}{I2C\_EVENT\_RX\_FULL}}) \&\& (I2C\_CMD\_DIR == 0)) \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00345}00345         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a74c648957aa6a4b514abbae1eead37d1}{IC\_DATA\_CMD}} = \mbox{\hyperlink{reg__i2c_8h_a6a0b84abec34ff1cd6a68bbced4a478a}{I2C\_DR\_CMD}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00346}00346         I2C\_CMD\_DIR       = 1;}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00347}00347     \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00348}00348 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00349}00349     \textcolor{keywordflow}{return} (\mbox{\hyperlink{types_8h_a8333b96c67f83cba354b3407fcbb6ee8}{ErrorStatus}})((i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a2cc3e0e1408060ff7807b98c0fe2ffba}{IC\_RAW\_INTR\_STAT}} \& event) == event);}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00350}00350 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00351}00351 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00371}\mbox{\hyperlink{group___i2_c___exported___functions_gaba350d5d9381c896f6969ef71c0f27d5}{00371}} \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}} \mbox{\hyperlink{group___i2_c___exported___functions_gaba350d5d9381c896f6969ef71c0f27d5}{I2C\_GetFlagStatus}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00372}00372 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00373}00373     \textcolor{keywordflow}{if} (flag \& 0x8000)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00374}00374         \textcolor{keywordflow}{return} ((i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a850e3ebde2ded6b9dce7eb7d1b025905}{IC\_STATUS}} \& flag) ? \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792}{SET}} : \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}});}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00375}00375 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00376}00376     \textcolor{keywordflow}{if} ((flag == \mbox{\hyperlink{group___i2_c__flags__definition_gaeaa914ff4c314c3656804b04ee5267a9}{I2C\_FLAG\_RX\_FULL}}) \&\& (I2C\_CMD\_DIR == 0)) \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00377}00377         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a74c648957aa6a4b514abbae1eead37d1}{IC\_DATA\_CMD}} = \mbox{\hyperlink{reg__i2c_8h_a6a0b84abec34ff1cd6a68bbced4a478a}{I2C\_DR\_CMD}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00378}00378         I2C\_CMD\_DIR       = 1;}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00379}00379     \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00380}00380     \textcolor{keywordflow}{return} (((i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a2cc3e0e1408060ff7807b98c0fe2ffba}{IC\_RAW\_INTR\_STAT}} \& flag)) ? \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792}{SET}} : \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}});}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00381}00381 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00382}00382 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00402}\mbox{\hyperlink{group___i2_c___exported___functions_ga587a26c383854b1b5ba8b82118c27df7}{00402}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___i2_c___exported___functions_ga587a26c383854b1b5ba8b82118c27df7}{I2C\_ClearFlag}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00403}00403 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00404}00404     \textcolor{keywordflow}{if} ((flag \& \mbox{\hyperlink{group___i2_c__flags__definition_ga43d8176cc9ff8eabc011ad1356c99055}{I2C\_FLAG\_RX\_UNDER}}) == \mbox{\hyperlink{group___i2_c__flags__definition_ga43d8176cc9ff8eabc011ad1356c99055}{I2C\_FLAG\_RX\_UNDER}})}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00405}00405         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a675256260de082760a26a691e2c8e3dd}{IC\_CLR\_RX\_UNDER}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00406}00406     \textcolor{keywordflow}{if} ((flag \& \mbox{\hyperlink{group___i2_c__flags__definition_ga2c09b51b0266f5200eef2f2a9286058c}{I2C\_FLAG\_RX\_OVER}}) == \mbox{\hyperlink{group___i2_c__flags__definition_ga2c09b51b0266f5200eef2f2a9286058c}{I2C\_FLAG\_RX\_OVER}})}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00407}00407         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a1176b31d92b1a0d052a58d557e609ed9}{IC\_CLR\_RX\_OVER}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00408}00408     \textcolor{keywordflow}{if} ((flag \& \mbox{\hyperlink{group___i2_c__flags__definition_gafd8e4ac043fa39cd552fdbabc0ef5f33}{I2C\_FLAG\_TX\_OVER}}) == \mbox{\hyperlink{group___i2_c__flags__definition_gafd8e4ac043fa39cd552fdbabc0ef5f33}{I2C\_FLAG\_TX\_OVER}})}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00409}00409         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a7bfac93285163be0d6ffce1f484c7709}{IC\_CLR\_TX\_OVER}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00410}00410     \textcolor{keywordflow}{if} ((flag \& \mbox{\hyperlink{group___i2_c__flags__definition_gab2758af9ee865b408e91258e78efde5c}{I2C\_FLAG\_RD\_REQ}}) == \mbox{\hyperlink{group___i2_c__flags__definition_gab2758af9ee865b408e91258e78efde5c}{I2C\_FLAG\_RD\_REQ}})}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00411}00411         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a473e82b036515a6eb3586db1dcc63984}{IC\_CLR\_RD\_REQ}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00412}00412     \textcolor{keywordflow}{if} ((flag \& \mbox{\hyperlink{group___i2_c__flags__definition_ga9a67b7efeac5b0f3765ee10646eac896}{I2C\_FLAG\_TX\_ABRT}}) == \mbox{\hyperlink{group___i2_c__flags__definition_ga9a67b7efeac5b0f3765ee10646eac896}{I2C\_FLAG\_TX\_ABRT}})}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00413}00413         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a1f5eb309c0b44ab2bf0416985a378571}{IC\_CLR\_TX\_ABRT}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00414}00414     \textcolor{keywordflow}{if} ((flag \& \mbox{\hyperlink{group___i2_c__flags__definition_ga9f5e33e5ff0b2f5b4723a8df6d6a3a44}{I2C\_FLAG\_RX\_DONE}}) == \mbox{\hyperlink{group___i2_c__flags__definition_ga9f5e33e5ff0b2f5b4723a8df6d6a3a44}{I2C\_FLAG\_RX\_DONE}})}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00415}00415         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_ac7f8ca38093be576ba4489234d98c7eb}{IC\_CLR\_RX\_DONE}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00416}00416     \textcolor{keywordflow}{if} ((flag \& \mbox{\hyperlink{group___i2_c__flags__definition_ga7c54715d5e6bb746588b2c5808b07f03}{I2C\_FLAG\_ACTIVITY}}) == \mbox{\hyperlink{group___i2_c__flags__definition_ga7c54715d5e6bb746588b2c5808b07f03}{I2C\_FLAG\_ACTIVITY}})}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00417}00417         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a5fb49f181ce1cdb32fb41d2e831f5c33}{IC\_CLR\_ACTIVITY}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00418}00418     \textcolor{keywordflow}{if} ((flag \& \mbox{\hyperlink{group___i2_c__flags__definition_ga0ef2be784d3d26c7b977292496fe23ea}{I2C\_FLAG\_STOP\_DET}}) == \mbox{\hyperlink{group___i2_c__flags__definition_ga0ef2be784d3d26c7b977292496fe23ea}{I2C\_FLAG\_STOP\_DET}})}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00419}00419         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_ad9fc4807236a0bc474213e04f4938199}{IC\_CLR\_STOP\_DET}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00420}00420     \textcolor{keywordflow}{if} ((flag \& \mbox{\hyperlink{group___i2_c__flags__definition_gaaedf4d993a876a4b788e1b3d0a6ee585}{I2C\_FLAG\_START\_DET}}) == \mbox{\hyperlink{group___i2_c__flags__definition_gaaedf4d993a876a4b788e1b3d0a6ee585}{I2C\_FLAG\_START\_DET}})}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00421}00421         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a88a0dda9fc3f0bbe0d8e90641c088942}{IC\_CLR\_START\_DET}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00422}00422     \textcolor{keywordflow}{if} ((flag \& \mbox{\hyperlink{group___i2_c__flags__definition_ga82f417fd39f8fb79a3c2942d846505ae}{I2C\_FLAG\_GEN\_CALL}}) == \mbox{\hyperlink{group___i2_c__flags__definition_ga82f417fd39f8fb79a3c2942d846505ae}{I2C\_FLAG\_GEN\_CALL}})}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00423}00423         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a4c79b6c6cc9deedbd513eacb0c1ff9a0}{IC\_CLR\_GEN\_CALL}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00424}00424 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00425}00425 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00445}\mbox{\hyperlink{group___i2_c___exported___functions_ga33a115ef514621ef398933423e7b649f}{00445}} \mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} \mbox{\hyperlink{group___i2_c___exported___functions_ga33a115ef514621ef398933423e7b649f}{I2C\_GetITStatus}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00446}00446 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00447}00447     \textcolor{keywordflow}{return} ((i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a2cc3e0e1408060ff7807b98c0fe2ffba}{IC\_RAW\_INTR\_STAT}} \& it) ? \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792}{SET}} : \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}});}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00448}00448 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00449}00449 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00469}\mbox{\hyperlink{group___i2_c___exported___functions_ga0614543157a1767110ebb90296d07a5d}{00469}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___i2_c___exported___functions_ga0614543157a1767110ebb90296d07a5d}{I2C\_ClearITPendingBit}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00470}00470 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00471}00471     \textcolor{keywordflow}{if} ((it \& \mbox{\hyperlink{group___i2_c__interrupts__definition_ga6c58a65f26bd720e7cf0afaddf38aa0b}{I2C\_IT\_RX\_UNDER}}) == \mbox{\hyperlink{group___i2_c__flags__definition_ga43d8176cc9ff8eabc011ad1356c99055}{I2C\_FLAG\_RX\_UNDER}})}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00472}00472         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a675256260de082760a26a691e2c8e3dd}{IC\_CLR\_RX\_UNDER}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00473}00473     \textcolor{keywordflow}{if} ((it \& \mbox{\hyperlink{group___i2_c__interrupts__definition_gaf5dfdab6ae2a894908c53c01b9d2a9c7}{I2C\_IT\_RX\_OVER}}) == \mbox{\hyperlink{group___i2_c__flags__definition_ga2c09b51b0266f5200eef2f2a9286058c}{I2C\_FLAG\_RX\_OVER}})}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00474}00474         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a1176b31d92b1a0d052a58d557e609ed9}{IC\_CLR\_RX\_OVER}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00475}00475     \textcolor{keywordflow}{if} ((it \& \mbox{\hyperlink{group___i2_c__interrupts__definition_gac42c19404da8871dabf36ad4a338adf9}{I2C\_IT\_TX\_OVER}}) == \mbox{\hyperlink{group___i2_c__flags__definition_gafd8e4ac043fa39cd552fdbabc0ef5f33}{I2C\_FLAG\_TX\_OVER}})}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00476}00476         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a7bfac93285163be0d6ffce1f484c7709}{IC\_CLR\_TX\_OVER}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00477}00477     \textcolor{keywordflow}{if} ((it \& \mbox{\hyperlink{group___i2_c__interrupts__definition_ga73b8310caaa6f0eff0dabe9f2551f1ce}{I2C\_IT\_RD\_REQ}}) == \mbox{\hyperlink{group___i2_c__flags__definition_gab2758af9ee865b408e91258e78efde5c}{I2C\_FLAG\_RD\_REQ}})}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00478}00478         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a473e82b036515a6eb3586db1dcc63984}{IC\_CLR\_RD\_REQ}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00479}00479     \textcolor{keywordflow}{if} ((it \& \mbox{\hyperlink{group___i2_c__interrupts__definition_gac3c4db6c1a0689a71f25db8af4442fea}{I2C\_IT\_TX\_ABRT}}) == \mbox{\hyperlink{group___i2_c__flags__definition_ga9a67b7efeac5b0f3765ee10646eac896}{I2C\_FLAG\_TX\_ABRT}})}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00480}00480         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a1f5eb309c0b44ab2bf0416985a378571}{IC\_CLR\_TX\_ABRT}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00481}00481     \textcolor{keywordflow}{if} ((it \& \mbox{\hyperlink{group___i2_c__interrupts__definition_gae9d7bdd4a376ef57689608cedbfd31c4}{I2C\_IT\_RX\_DONE}}) == \mbox{\hyperlink{group___i2_c__flags__definition_ga9f5e33e5ff0b2f5b4723a8df6d6a3a44}{I2C\_FLAG\_RX\_DONE}})}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00482}00482         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_ac7f8ca38093be576ba4489234d98c7eb}{IC\_CLR\_RX\_DONE}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00483}00483     \textcolor{keywordflow}{if} ((it \& \mbox{\hyperlink{group___i2_c__interrupts__definition_ga285cf028cce1c8c3d0cc1ebda6a96c6f}{I2C\_IT\_ACTIVITY}}) == \mbox{\hyperlink{group___i2_c__flags__definition_ga7c54715d5e6bb746588b2c5808b07f03}{I2C\_FLAG\_ACTIVITY}})}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00484}00484         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a5fb49f181ce1cdb32fb41d2e831f5c33}{IC\_CLR\_ACTIVITY}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00485}00485     \textcolor{keywordflow}{if} ((it \& \mbox{\hyperlink{group___i2_c__interrupts__definition_ga9347955603eadb00195d76cf7f575382}{I2C\_IT\_STOP\_DET}}) == \mbox{\hyperlink{group___i2_c__flags__definition_ga0ef2be784d3d26c7b977292496fe23ea}{I2C\_FLAG\_STOP\_DET}})}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00486}00486         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_ad9fc4807236a0bc474213e04f4938199}{IC\_CLR\_STOP\_DET}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00487}00487     \textcolor{keywordflow}{if} ((it \& \mbox{\hyperlink{group___i2_c__interrupts__definition_gac1316d344e3f54beaa9850997223ec79}{I2C\_IT\_START\_DET}}) == \mbox{\hyperlink{group___i2_c__flags__definition_gaaedf4d993a876a4b788e1b3d0a6ee585}{I2C\_FLAG\_START\_DET}})}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00488}00488         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a88a0dda9fc3f0bbe0d8e90641c088942}{IC\_CLR\_START\_DET}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00489}00489     \textcolor{keywordflow}{if} ((it \& \mbox{\hyperlink{group___i2_c__interrupts__definition_gae9b4926d9a0ebca6c4c9897d4a10c596}{I2C\_IT\_GEN\_CALL}}) == \mbox{\hyperlink{group___i2_c__flags__definition_ga82f417fd39f8fb79a3c2942d846505ae}{I2C\_FLAG\_GEN\_CALL}})}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00490}00490         i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a4c79b6c6cc9deedbd513eacb0c1ff9a0}{IC\_CLR\_GEN\_CALL}};}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00491}00491 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00492}00492 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00494}00494 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00495}00495 \textcolor{comment}{//  New Function Interface}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00496}00496 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00498}00498 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00506}\mbox{\hyperlink{group___i2_c___exported___functions_ga18e70469f0df86f7937f1c3db840f30a}{00506}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___i2_c___exported___functions_ga18e70469f0df86f7937f1c3db840f30a}{I2C\_SendSlaveAddress}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} addr)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00507}00507 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00508}00508     \mbox{\hyperlink{types_8h_acfc33c0b3ebd1136ce4cd12cd652273c}{WRITE\_REG}}(i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a24fce63d4e630ae88b1d8058ef6623b8}{IC\_SAR}}, addr >> 1);}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00509}00509 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00510}00510 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00518}\mbox{\hyperlink{group___i2_c___exported___functions_ga7a9f63bdb11d49135f61e50ad551fe76}{00518}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___i2_c___exported___functions_ga7a9f63bdb11d49135f61e50ad551fe76}{I2C\_SlaveConfigure}}(\mbox{\hyperlink{struct_i2_c___type_def}{I2C\_TypeDef}}* i2c, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00519}00519 \{}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00520}00520     (state) ? \mbox{\hyperlink{types_8h_aa6e88ced7a7081f8ff415c9f5bd6b043}{CLEAR\_BIT}}(i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a45f247d7510f336a1d255aceaceb8dbe}{IC\_CON}}, \mbox{\hyperlink{reg__i2c_8h_a1e9956a6cccc2af3abb7a0ba5a98c75a}{I2C\_CR\_SLAVEDIS}}) : \mbox{\hyperlink{types_8h_a62af7cb8bfabd5a9f6ea45582e08843b}{SET\_BIT}}(i2c-\/>\mbox{\hyperlink{struct_i2_c___type_def_a45f247d7510f336a1d255aceaceb8dbe}{IC\_CON}}, \mbox{\hyperlink{reg__i2c_8h_a1e9956a6cccc2af3abb7a0ba5a98c75a}{I2C\_CR\_SLAVEDIS}});}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00521}00521 \}}
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00523}00523 }
+\DoxyCodeLine{\Hypertarget{hal__i2c_8c_source_l00525}00525 }
+
+\end{DoxyCode}

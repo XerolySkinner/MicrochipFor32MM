@@ -1,0 +1,71 @@
+\hypertarget{hal__rtc_8h_source}{}\doxysection{hal\+\_\+rtc.\+h}
+\label{hal__rtc_8h_source}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_rtc.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_rtc.h}}
+\mbox{\hyperlink{hal__rtc_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00019}00019 \textcolor{comment}{// Define to prevent recursive inclusion}}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00020}00020 \textcolor{preprocessor}{\#ifndef \_\_HAL\_RTC\_H}}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00021}00021 \textcolor{preprocessor}{\#define \_\_HAL\_RTC\_H}}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00023}00023 \textcolor{comment}{// Files includes}}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00024}00024 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{types_8h}{types.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00025}00025 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{reg__common_8h}{reg\_common.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00026}00026 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{reg__rtc_8h}{reg\_rtc.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00044}\mbox{\hyperlink{group___r_t_c___exported___types_gadd8fd9fc19696d5fa416bf4a84d4523e}{00044}} \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00045}\mbox{\hyperlink{group___r_t_c___exported___types_ggadd8fd9fc19696d5fa416bf4a84d4523ea61c32974112f289fea00ea3379695d19}{00045}}     \mbox{\hyperlink{group___r_t_c___exported___types_ggadd8fd9fc19696d5fa416bf4a84d4523ea61c32974112f289fea00ea3379695d19}{RTC\_IT\_OW}}  = \mbox{\hyperlink{reg__rtc_8h_aa6e96c573d3a63f0f17960248af3875d}{RTC\_CR\_OWIE}},   }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00046}\mbox{\hyperlink{group___r_t_c___exported___types_ggadd8fd9fc19696d5fa416bf4a84d4523eac44a612ccb88cc0f43260fdeb5975c1e}{00046}}     \mbox{\hyperlink{group___r_t_c___exported___types_ggadd8fd9fc19696d5fa416bf4a84d4523eac44a612ccb88cc0f43260fdeb5975c1e}{RTC\_IT\_ALR}} = \mbox{\hyperlink{reg__rtc_8h_a70861ead98d3c573cafccb97f614e8b0}{RTC\_CR\_ALRIE}},  }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00047}00047     \mbox{\hyperlink{group___r_t_c___exported___types_ggadd8fd9fc19696d5fa416bf4a84d4523ead4ee31294b3442799def4c68321ab9ae}{RTC\_IT\_SEC}} = \mbox{\hyperlink{reg__rtc_8h_abb93da33d18c6332753fd3b155fa8c9d}{RTC\_CR\_SECIE}}   }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00048}\mbox{\hyperlink{group___r_t_c___exported___types_ggadd8fd9fc19696d5fa416bf4a84d4523ead4ee31294b3442799def4c68321ab9ae}{00048}} \} \mbox{\hyperlink{group___r_t_c___exported___types_gadd8fd9fc19696d5fa416bf4a84d4523e}{RTC\_IT\_TypeDef}};}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00053}\mbox{\hyperlink{group___r_t_c___exported___types_gacfbb226cf86a9033b1039fd508aba10b}{00053}} \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00054}\mbox{\hyperlink{group___r_t_c___exported___types_ggacfbb226cf86a9033b1039fd508aba10ba2d658d16a74dbd1cb42efbadc8d90ef2}{00054}}     \mbox{\hyperlink{group___r_t_c___exported___types_ggacfbb226cf86a9033b1039fd508aba10ba2d658d16a74dbd1cb42efbadc8d90ef2}{RTC\_FLAG\_RTOFF}} = \mbox{\hyperlink{reg__rtc_8h_a73ff2a195fe9ecc3993f5df7804eaa08}{RTC\_CSR\_RTOFF}},  }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00055}\mbox{\hyperlink{group___r_t_c___exported___types_ggacfbb226cf86a9033b1039fd508aba10ba156caf4834eeacf81430c958f6f9d4b8}{00055}}     \mbox{\hyperlink{group___r_t_c___exported___types_ggacfbb226cf86a9033b1039fd508aba10ba156caf4834eeacf81430c958f6f9d4b8}{RTC\_FLAG\_RSF}}   = \mbox{\hyperlink{reg__rtc_8h_aed357a7df00864a03513026adc12650c}{RTC\_CSR\_RSF}},    }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00056}\mbox{\hyperlink{group___r_t_c___exported___types_ggacfbb226cf86a9033b1039fd508aba10baafef58a99eeff16210a8cc7e329e4985}{00056}}     \mbox{\hyperlink{group___r_t_c___exported___types_ggacfbb226cf86a9033b1039fd508aba10baafef58a99eeff16210a8cc7e329e4985}{RTC\_FLAG\_OW}}    = \mbox{\hyperlink{reg__rtc_8h_a35afab36891609205a3e11b50094d778}{RTC\_CSR\_OWF}},    }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00057}\mbox{\hyperlink{group___r_t_c___exported___types_ggacfbb226cf86a9033b1039fd508aba10ba851603361ed1165c66e1ba12d4b92158}{00057}}     \mbox{\hyperlink{group___r_t_c___exported___types_ggacfbb226cf86a9033b1039fd508aba10ba851603361ed1165c66e1ba12d4b92158}{RTC\_FLAG\_ALR}}   = \mbox{\hyperlink{reg__rtc_8h_a0f948feed3e8a8d0a105c2f02e9d3e99}{RTC\_CSR\_ALRF}},   }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00058}00058     \mbox{\hyperlink{group___r_t_c___exported___types_ggacfbb226cf86a9033b1039fd508aba10ba06482c700b59d356d0c033c5293be6d4}{RTC\_FLAG\_SEC}}   = \mbox{\hyperlink{reg__rtc_8h_ad172f47174857934034f3605ad7f0779}{RTC\_CSR\_SECF}}    }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00059}\mbox{\hyperlink{group___r_t_c___exported___types_ggacfbb226cf86a9033b1039fd508aba10ba06482c700b59d356d0c033c5293be6d4}{00059}} \} \mbox{\hyperlink{group___r_t_c___exported___types_gacfbb226cf86a9033b1039fd508aba10b}{RTC\_FLAG\_TypeDef}};}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00072}00072 \textcolor{preprocessor}{\#ifdef \_HAL\_RTC\_C\_}}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00074}00074 \textcolor{preprocessor}{\#define GLOBAL}}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00075}00075 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00076}\mbox{\hyperlink{group___r_t_c___exported___variables_ga3de33738fd3c7e77bffbcfaefc3e7645}{00076}} \textcolor{preprocessor}{\#define GLOBAL extern}}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00077}00077 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00079}\mbox{\hyperlink{group___r_t_c___exported___variables_ga9680c2c8532b3df46e61cbb131ac4141}{00079}} \mbox{\hyperlink{group___r_t_c___exported___variables_ga3de33738fd3c7e77bffbcfaefc3e7645}{GLOBAL}}  \textcolor{keywordtype}{bool} \mbox{\hyperlink{group___r_t_c___exported___variables_ga9680c2c8532b3df46e61cbb131ac4141}{accessRTC}};}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00082}00082 \textcolor{preprocessor}{\#undef GLOBAL}}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00089}00089 \textcolor{keywordtype}{void} \mbox{\hyperlink{group___r_t_c___exported___functions_ga23d641300488d94eedfd6c5d90d90551}{RTC\_ITConfig}}(\mbox{\hyperlink{group___r_t_c___exported___types_gadd8fd9fc19696d5fa416bf4a84d4523e}{RTC\_IT\_TypeDef}} it, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state);}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00090}00090 \textcolor{keywordtype}{void} \mbox{\hyperlink{group___r_t_c___exported___functions_ga4de4fa8c17e61489244085990712184b}{RTC\_ClearFlag}}(\mbox{\hyperlink{group___r_t_c___exported___types_gacfbb226cf86a9033b1039fd508aba10b}{RTC\_FLAG\_TypeDef}} flag);}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00091}00091 \textcolor{keywordtype}{void} \mbox{\hyperlink{group___r_t_c___exported___functions_gaf6caf0930546b17a7a9179804bbb39bf}{RTC\_ClearITPendingBit}}(\mbox{\hyperlink{group___r_t_c___exported___types_gadd8fd9fc19696d5fa416bf4a84d4523e}{RTC\_IT\_TypeDef}} it);}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00092}00092 \textcolor{keywordtype}{void} \mbox{\hyperlink{group___r_t_c___exported___functions_ga23612d9da2fe057a0cd72c684e5b438a}{RTC\_EnterConfigMode}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00093}00093 \textcolor{keywordtype}{void} \mbox{\hyperlink{group___r_t_c___exported___functions_gaf9c04b52542faed02a5b4afe78588dba}{RTC\_SetCounter}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} count);}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00094}00094 \textcolor{keywordtype}{void} \mbox{\hyperlink{group___r_t_c___exported___functions_ga88e7133a331f31b6dc1fa2ccbb883766}{RTC\_SetPrescaler}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} prescaler);}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00095}00095 \textcolor{keywordtype}{void} \mbox{\hyperlink{group___r_t_c___exported___functions_gaf3e50510ca3a94fa30a4d7eb7c373e2e}{RTC\_SetAlarm}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} alarm);}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00096}00096 \textcolor{keywordtype}{void} \mbox{\hyperlink{group___r_t_c___exported___functions_ga7585aa6e2dbb497173b2fd03bac0d304}{RTC\_ExitConfigMode}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00097}00097 \textcolor{keywordtype}{void} \mbox{\hyperlink{group___r_t_c___exported___functions_gaa0a406ef860d5231748c5f0d82673036}{RTC\_WaitForLastTask}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00098}00098 \textcolor{keywordtype}{void} \mbox{\hyperlink{group___r_t_c___exported___functions_gaca4346e0dc15dccc15179786b28450db}{RTC\_WaitForSynchro}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00100}00100 \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___r_t_c___exported___functions_gad0ed150c22d59b3728550812c3cf7d02}{RTC\_GetCounter}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00101}00101 \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___r_t_c___exported___functions_gaa436a06e2390cbbd3fb91b94b0411e94}{RTC\_GetDivider}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00102}00102 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00103}00103 \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}} \mbox{\hyperlink{group___r_t_c___exported___functions_ga393ad767b7f13d6c72bf8d5e6b222b5d}{RTC\_GetFlagStatus}}(\mbox{\hyperlink{group___r_t_c___exported___types_gacfbb226cf86a9033b1039fd508aba10b}{RTC\_FLAG\_TypeDef}} flag);}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00104}00104 \mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}}   \mbox{\hyperlink{group___r_t_c___exported___functions_ga04001a828eb2d235855d81d47ccd057c}{RTC\_GetITStatus}}(\mbox{\hyperlink{group___r_t_c___exported___types_gadd8fd9fc19696d5fa416bf4a84d4523e}{RTC\_IT\_TypeDef}} it);}
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00107}00107 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00109}00109 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00111}00111 }
+\DoxyCodeLine{\Hypertarget{hal__rtc_8h_source_l00113}00113 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// \_\_HAL\_RTC\_H }}
+
+\end{DoxyCode}

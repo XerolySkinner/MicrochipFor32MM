@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>template: C:/Users/XerolySkinner/Desktop/MM_Device/MM32F327x/HAL_Lib/Src/hal_fsmc.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">template
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8a23370bd962f2be3cb202251f8a0865.html">MM32F327x</a></li><li class="navelem"><a class="el" href="dir_3b1bed74bcb45e4245a73e66928ea90d.html">HAL_Lib</a></li><li class="navelem"><a class="el" href="dir_7c9ac39f302c264f6f2d20643460873b.html">Src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">hal_fsmc.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>THIS FILE PROVIDES ALL THE FSMC FIRMWARE FUNCTIONS. Interface with SRAM, PSRAM, NOR memories Interrupts and flags management  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="reg__rcc_8h_source.html">reg_rcc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="reg__syscfg_8h_source.html">reg_syscfg.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hal__fsmc_8h_source.html">hal_fsmc.h</a>&quot;</code><br />
+</div>
+<p><a href="hal__fsmc_8c_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a86fc145beb4842c313bf4b7db6eaecbb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal__fsmc_8c.html#a86fc145beb4842c313bf4b7db6eaecbb">_HAL_FSMC_C_</a></td></tr>
+<tr class="separator:a86fc145beb4842c313bf4b7db6eaecbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ga99b09272a4eb324309c4339993f7ffc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_s_m_c___exported___functions.html#ga99b09272a4eb324309c4339993f7ffc9">FSMC_NORSRAMStructInit</a> (<a class="el" href="struct_f_s_m_c___init_type_def.html">FSMC_InitTypeDef</a> *init_struct)</td></tr>
+<tr class="separator:ga99b09272a4eb324309c4339993f7ffc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4408aa26918b6cf7a84f0fa482cc6613"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_s_m_c___exported___functions.html#ga4408aa26918b6cf7a84f0fa482cc6613">FSMC_NORSRAM_BankStructInit</a> (<a class="el" href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html">FSMC_NORSRAM_Bank_InitTypeDef</a> *init_struct)</td></tr>
+<tr class="separator:ga4408aa26918b6cf7a84f0fa482cc6613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2594e3181adfc5140f69d9c5abb5f82c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_s_m_c___exported___functions.html#ga2594e3181adfc5140f69d9c5abb5f82c">FSMC_NORSRAMInit</a> (<a class="el" href="struct_f_s_m_c___init_type_def.html">FSMC_InitTypeDef</a> *init_struct)</td></tr>
+<tr class="separator:ga2594e3181adfc5140f69d9c5abb5f82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43f72d46ad740647528f6cc45684cdd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_s_m_c___exported___functions.html#ga43f72d46ad740647528f6cc45684cdd0">FSMC_NORSRAM_Bank_Init</a> (<a class="el" href="struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def.html">FSMC_NORSRAM_Bank_InitTypeDef</a> *FSMC_Bank_InitStruct, <a class="el" href="group___f_s_m_c___exported___types.html#ga99bd18a2610c2b6bf2454edeeb7e992e">FSMC_NORSRAM_BANK_TypeDef</a> bank)</td></tr>
+<tr class="memdesc:ga43f72d46ad740647528f6cc45684cdd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the FSMC_NORSRAM Timing according to the specified parameters in the FSMC_NORSRAM_TimingTypeDef  <a href="group___f_s_m_c___exported___functions.html#ga43f72d46ad740647528f6cc45684cdd0">更多...</a><br /></td></tr>
+<tr class="separator:ga43f72d46ad740647528f6cc45684cdd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >THIS FILE PROVIDES ALL THE FSMC FIRMWARE FUNCTIONS. Interface with SRAM, PSRAM, NOR memories Interrupts and flags management </p>
+<dl class="section author"><dt>作者</dt><dd>AE TEAM </dd></dl>
+<dl class="section attention"><dt>注意</dt><dd></dd></dl>
+<p>THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.</p>
+<h2><center> COPYRIGHT MINDMOTION </center></h2>
+
+<p class="definition">在文件 <a class="el" href="hal__fsmc_8c_source.html">hal_fsmc.c</a> 中定义.</p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a86fc145beb4842c313bf4b7db6eaecbb" name="a86fc145beb4842c313bf4b7db6eaecbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86fc145beb4842c313bf4b7db6eaecbb">&#9670;&#160;</a></span>_HAL_FSMC_C_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _HAL_FSMC_C_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="hal__fsmc_8c_source.html">hal_fsmc.c</a> 第 <a class="el" href="hal__fsmc_8c_source.html#l00021">21</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

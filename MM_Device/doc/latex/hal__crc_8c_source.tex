@@ -1,0 +1,56 @@
+\hypertarget{hal__crc_8c_source}{}\doxysection{hal\+\_\+crc.\+c}
+\label{hal__crc_8c_source}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_crc.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_crc.c}}
+\mbox{\hyperlink{hal__crc_8c}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00018}00018 \textcolor{comment}{// Define to prevent recursive inclusion}}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00019}\mbox{\hyperlink{hal__crc_8c_a955871fff9150b4161d09dda081533c5}{00019}} \textcolor{preprocessor}{\#define \_HAL\_CRC\_C\_}}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00021}00021 \textcolor{comment}{// Files includes}}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00022}00022 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{hal__crc_8h}{hal\_crc.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00041}\mbox{\hyperlink{group___c_r_c___exported___functions_ga2f19fb9b7798bf3488a466986c1df3b6}{00041}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___c_r_c___exported___functions_ga2f19fb9b7798bf3488a466986c1df3b6}{CRC\_ResetDR}}()}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00042}00042 \{}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00043}00043     \mbox{\hyperlink{reg__crc_8h_a4381bb54c2dbc34500521165aa7b89b1}{CRC}}-\/>CR = \mbox{\hyperlink{reg__crc_8h_a7d57481fb891a0964b40f721354c56d7}{CRC\_CR\_RESET}};}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00044}00044 \}}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00045}00045 \textcolor{comment}{//\#pragma optimize(0)}}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00051}\mbox{\hyperlink{group___c_r_c___exported___functions_gadb2fdf526beaab30aea0a37eb8131452}{00051}} \textcolor{comment}{}\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___c_r_c___exported___functions_gadb2fdf526beaab30aea0a37eb8131452}{CRC\_CalcCRC}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} data)}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00052}00052 \{}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00053}00053     \mbox{\hyperlink{reg__crc_8h_a4381bb54c2dbc34500521165aa7b89b1}{CRC}}-\/>DR = data;}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00054}00054     \textcolor{keywordflow}{return} (\mbox{\hyperlink{reg__crc_8h_a4381bb54c2dbc34500521165aa7b89b1}{CRC}}-\/>DR);}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00055}00055 \}}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00063}\mbox{\hyperlink{group___c_r_c___exported___functions_gab22be1533ba2e396172c29997ef02d88}{00063}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___c_r_c___exported___functions_gab22be1533ba2e396172c29997ef02d88}{CRC\_CalcBlockCRC}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}* buffer, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} length)}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00064}00064 \{}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00065}00065     \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} i;}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00066}00066     \textcolor{keywordflow}{for} (i = 0; i < length; i++) \{}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00067}00067         \mbox{\hyperlink{reg__crc_8h_a4381bb54c2dbc34500521165aa7b89b1}{CRC}}-\/>DR = buffer[i];}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00068}00068     \}}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00069}00069     \textcolor{keywordflow}{return} (\mbox{\hyperlink{reg__crc_8h_a4381bb54c2dbc34500521165aa7b89b1}{CRC}}-\/>DR);}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00070}00070 \}}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00077}\mbox{\hyperlink{group___c_r_c___exported___functions_gaf101a072a332ae38e625409a6152bfb5}{00077}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___c_r_c___exported___functions_gaf101a072a332ae38e625409a6152bfb5}{CRC\_GetCRC}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00078}00078 \{}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00079}00079     \textcolor{keywordflow}{return} (\mbox{\hyperlink{reg__crc_8h_a4381bb54c2dbc34500521165aa7b89b1}{CRC}}-\/>DR);}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00080}00080 \}}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00087}\mbox{\hyperlink{group___c_r_c___exported___functions_gac8c50abbd317c57b71704aa8ffd1fc88}{00087}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___c_r_c___exported___functions_gac8c50abbd317c57b71704aa8ffd1fc88}{CRC\_SetIDRegister}}(\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} id\_value)}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00088}00088 \{}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00089}00089     \mbox{\hyperlink{reg__crc_8h_a4381bb54c2dbc34500521165aa7b89b1}{CRC}}-\/>IDR = id\_value;}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00090}00090 \}}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00091}00091 }
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00097}\mbox{\hyperlink{group___c_r_c___exported___functions_ga016d233487b1abd814914a174a4936f1}{00097}} \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{group___c_r_c___exported___functions_ga016d233487b1abd814914a174a4936f1}{CRC\_GetIDRegister}}()}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00098}00098 \{}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00099}00099     \textcolor{keywordflow}{return} (\mbox{\hyperlink{reg__crc_8h_a4381bb54c2dbc34500521165aa7b89b1}{CRC}}-\/>IDR);}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00100}00100 \}}
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00103}00103 }
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00107}00107 }
+\DoxyCodeLine{\Hypertarget{hal__crc_8c_source_l00108}00108 }
+
+\end{DoxyCode}

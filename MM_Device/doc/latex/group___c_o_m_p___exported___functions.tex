@@ -1,0 +1,338 @@
+\hypertarget{group___c_o_m_p___exported___functions}{}\doxysection{COMP\+\_\+\+Exported\+\_\+\+Functions}
+\label{group___c_o_m_p___exported___functions}\index{COMP\_Exported\_Functions@{COMP\_Exported\_Functions}}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___c_o_m_p___exported___functions_gaae8d8dc87806b9d348874ff9c3ad40d2}{SET\+\_\+\+COMP\+\_\+\+CRV}}~\mbox{\hyperlink{group___c_o_m_p___exported___functions_gabbb0fee5205418bc049a971988f024bb}{COMP\+\_\+\+Set\+Crv}}
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___c_o_m_p___exported___functions_gaeac0cce4de04d8f57d0eaa9eb466b505}{COMP\+\_\+\+De\+Init}} (\mbox{\hyperlink{group___c_o_m_p___exported___constants_gad3edb4f414107c243ae5ce9b6798f371}{COMP\+\_\+\+Selection\+\_\+\+Type\+Def}} selection)
+\begin{DoxyCompactList}\small\item\em Deinitializes COMP peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_o_m_p___exported___functions_ga3f8684e5400ccb16457023baf64a9c65}{COMP\+\_\+\+Init}} (\mbox{\hyperlink{group___c_o_m_p___exported___constants_gad3edb4f414107c243ae5ce9b6798f371}{COMP\+\_\+\+Selection\+\_\+\+Type\+Def}} selection, \mbox{\hyperlink{struct_c_o_m_p___init_type_def}{COMP\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Initializes the COMP peripheral according to the specified \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_o_m_p___exported___functions_gad68ae3c6b134e2bcc8a17ff061bfac14}{COMP\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{struct_c_o_m_p___init_type_def}{COMP\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Fills each init\+\_\+struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_o_m_p___exported___functions_gabb5a3773c4e59c4cde6d6ed454786c43}{COMP\+\_\+\+Cmd}} (\mbox{\hyperlink{group___c_o_m_p___exported___constants_gad3edb4f414107c243ae5ce9b6798f371}{COMP\+\_\+\+Selection\+\_\+\+Type\+Def}} selection, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enable or disable the COMP peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_o_m_p___exported___functions_gad36a4d4e206352e38b5786e033f79540}{COMP\+\_\+\+Switch\+Cmd}} (\mbox{\hyperlink{group___c_o_m_p___exported___constants_gad3edb4f414107c243ae5ce9b6798f371}{COMP\+\_\+\+Selection\+\_\+\+Type\+Def}} selection, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Close or Open the SW1 switch. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_o_m_p___exported___functions_ga1355114fc75dbaffc11b9f70a653055c}{COMP\+\_\+\+Lock\+Config}} (\mbox{\hyperlink{group___c_o_m_p___exported___constants_gad3edb4f414107c243ae5ce9b6798f371}{COMP\+\_\+\+Selection\+\_\+\+Type\+Def}} selection)
+\begin{DoxyCompactList}\small\item\em Lock the selected comparator (COMP1/\+COMP2) configuration. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___c_o_m_p___exported___functions_ga1c638cca553c4f99e2e23ac8ce7e6da2}{COMP\+\_\+\+Get\+Output\+Level}} (\mbox{\hyperlink{group___c_o_m_p___exported___constants_gad3edb4f414107c243ae5ce9b6798f371}{COMP\+\_\+\+Selection\+\_\+\+Type\+Def}} selection)
+\begin{DoxyCompactList}\small\item\em Return the output level (high or low) of the selected comparator. The output level depends on the selected polarity. If the polarity is not inverted\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_o_m_p___exported___functions_gabbb0fee5205418bc049a971988f024bb}{COMP\+\_\+\+Set\+Crv}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} crv\+\_\+select, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} crv\+\_\+level)
+\begin{DoxyCompactList}\small\item\em Select CRV param. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_o_m_p___exported___functions_ga9ec5db83107c9c93888b78902913a5b2}{ex\+COMP\+\_\+\+Crv\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enable or disable the COMP register. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_o_m_p___exported___functions_ga3a46b1e72bb3f05fecfaf79120f5fbec}{ex\+COMP\+\_\+\+Switch\+Crv}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} crv)
+\begin{DoxyCompactList}\small\item\em Select comparator external reference voltage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_o_m_p___exported___functions_gadd8336173a5cb898a34264c365bc8c54}{ex\+COMP\+\_\+\+Crv\+Src}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} src)
+\begin{DoxyCompactList}\small\item\em Select comparator external reference voltage source. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{group___c_o_m_p___exported___functions_gaae8d8dc87806b9d348874ff9c3ad40d2}\label{group___c_o_m_p___exported___functions_gaae8d8dc87806b9d348874ff9c3ad40d2}} 
+\index{COMP\_Exported\_Functions@{COMP\_Exported\_Functions}!SET\_COMP\_CRV@{SET\_COMP\_CRV}}
+\index{SET\_COMP\_CRV@{SET\_COMP\_CRV}!COMP\_Exported\_Functions@{COMP\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SET\_COMP\_CRV}{SET\_COMP\_CRV}}
+{\footnotesize\ttfamily \#define SET\+\_\+\+COMP\+\_\+\+CRV~\mbox{\hyperlink{group___c_o_m_p___exported___functions_gabbb0fee5205418bc049a971988f024bb}{COMP\+\_\+\+Set\+Crv}}}
+
+
+
+在文件 \mbox{\hyperlink{hal__comp_8h_source}{hal\+\_\+comp.\+h}} 第 \mbox{\hyperlink{hal__comp_8h_source_l00217}{217}} 行定义.
+
+
+
+\doxysubsection{函数说明}
+\mbox{\Hypertarget{group___c_o_m_p___exported___functions_gabb5a3773c4e59c4cde6d6ed454786c43}\label{group___c_o_m_p___exported___functions_gabb5a3773c4e59c4cde6d6ed454786c43}} 
+\index{COMP\_Exported\_Functions@{COMP\_Exported\_Functions}!COMP\_Cmd@{COMP\_Cmd}}
+\index{COMP\_Cmd@{COMP\_Cmd}!COMP\_Exported\_Functions@{COMP\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{COMP\_Cmd()}{COMP\_Cmd()}}
+{\footnotesize\ttfamily void COMP\+\_\+\+Cmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___c_o_m_p___exported___constants_gad3edb4f414107c243ae5ce9b6798f371}{COMP\+\_\+\+Selection\+\_\+\+Type\+Def}}}]{selection,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enable or disable the COMP peripheral. 
+
+
+\begin{DoxyParams}{参数}
+{\em selection} & the selected comparator. select the COMP peripheral. \\
+\hline
+{\em New\+State} & new state of the COMP peripheral. This parameter can be\+: ENABLE or DISABLE. When enabled, the comparator compares the non inverting input with the inverting input and the comparison result is available on comparator output. When disabled, the comparator doesn\textquotesingle{}t perform comparison and the output level is low. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__comp_8c_source}{hal\+\_\+comp.\+c}} 第 \mbox{\hyperlink{hal__comp_8c_source_l00111}{111}} 行定义.
+
+\mbox{\Hypertarget{group___c_o_m_p___exported___functions_gaeac0cce4de04d8f57d0eaa9eb466b505}\label{group___c_o_m_p___exported___functions_gaeac0cce4de04d8f57d0eaa9eb466b505}} 
+\index{COMP\_Exported\_Functions@{COMP\_Exported\_Functions}!COMP\_DeInit@{COMP\_DeInit}}
+\index{COMP\_DeInit@{COMP\_DeInit}!COMP\_Exported\_Functions@{COMP\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{COMP\_DeInit()}{COMP\_DeInit()}}
+{\footnotesize\ttfamily void COMP\+\_\+\+De\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___c_o_m_p___exported___constants_gad3edb4f414107c243ae5ce9b6798f371}{COMP\+\_\+\+Selection\+\_\+\+Type\+Def}}}]{selection }\end{DoxyParamCaption})}
+
+
+
+Deinitializes COMP peripheral registers to their default reset values. 
+
+
+\begin{DoxyParams}{参数}
+{\em selection} & the selected comparator. select the COMP peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__comp_8c_source}{hal\+\_\+comp.\+c}} 第 \mbox{\hyperlink{hal__comp_8c_source_l00044}{44}} 行定义.
+
+\mbox{\Hypertarget{group___c_o_m_p___exported___functions_ga1c638cca553c4f99e2e23ac8ce7e6da2}\label{group___c_o_m_p___exported___functions_ga1c638cca553c4f99e2e23ac8ce7e6da2}} 
+\index{COMP\_Exported\_Functions@{COMP\_Exported\_Functions}!COMP\_GetOutputLevel@{COMP\_GetOutputLevel}}
+\index{COMP\_GetOutputLevel@{COMP\_GetOutputLevel}!COMP\_Exported\_Functions@{COMP\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{COMP\_GetOutputLevel()}{COMP\_GetOutputLevel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Get\+Output\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___c_o_m_p___exported___constants_gad3edb4f414107c243ae5ce9b6798f371}{COMP\+\_\+\+Selection\+\_\+\+Type\+Def}}}]{selection }\end{DoxyParamCaption})}
+
+
+
+Return the output level (high or low) of the selected comparator. The output level depends on the selected polarity. If the polarity is not inverted\+: 
+
+
+\begin{DoxyItemize}
+\item Comparator output is low when the non-\/inverting input is at a lower voltage than the inverting input
+\item Comparator output is high when the non-\/inverting input is at a higher voltage than the inverting input If the polarity is inverted\+:
+\item Comparator output is high when the non-\/inverting input is at a lower voltage than the inverting input
+\item Comparator output is low when the non-\/inverting input is at a higher voltage than the inverting input 
+\begin{DoxyParams}{参数}
+{\em comp} & the selected comparator. select the COMP peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em The} & selected comparator output level\+: low or high. \\
+\hline
+\end{DoxyRetVals}
+
+\end{DoxyItemize}
+
+在文件 \mbox{\hyperlink{hal__comp_8c_source}{hal\+\_\+comp.\+c}} 第 \mbox{\hyperlink{hal__comp_8c_source_l00168}{168}} 行定义.
+
+\mbox{\Hypertarget{group___c_o_m_p___exported___functions_ga3f8684e5400ccb16457023baf64a9c65}\label{group___c_o_m_p___exported___functions_ga3f8684e5400ccb16457023baf64a9c65}} 
+\index{COMP\_Exported\_Functions@{COMP\_Exported\_Functions}!COMP\_Init@{COMP\_Init}}
+\index{COMP\_Init@{COMP\_Init}!COMP\_Exported\_Functions@{COMP\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{COMP\_Init()}{COMP\_Init()}}
+{\footnotesize\ttfamily void COMP\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___c_o_m_p___exported___constants_gad3edb4f414107c243ae5ce9b6798f371}{COMP\+\_\+\+Selection\+\_\+\+Type\+Def}}}]{selection,  }\item[{\mbox{\hyperlink{struct_c_o_m_p___init_type_def}{COMP\+\_\+\+Init\+Type\+Def}} $\ast$}]{init\+\_\+struct }\end{DoxyParamCaption})}
+
+
+
+Initializes the COMP peripheral according to the specified 
+
+
+\begin{DoxyParams}{参数}
+{\em selection} & the selected comparator. select the COMP peripheral. \\
+\hline
+{\em init\+\_\+struct} & pointer to an \mbox{\hyperlink{struct_c_o_m_p___init_type_def}{COMP\+\_\+\+Init\+Type\+Def}} structure that contains the configuration information for the specified COMP peripheral.
+\begin{DoxyItemize}
+\item COMP\+\_\+\+Inverting\+Input specifies the inverting input of COMP
+\item COMP\+\_\+\+Non\+Inverting\+Input specifies the non inverting input of COMP
+\item COMP\+\_\+\+Output connect COMP output to selected timer input (Input capture / Output Compare Reference Clear / Break Input)
+\item COMP\+\_\+\+Blanking\+Srce specifies the blanking source of COMP
+\item COMP\+\_\+\+Output\+Pol select output polarity
+\item COMP\+\_\+\+Hysteresis configures COMP hysteresis value
+\item COMP\+\_\+\+Mode configures COMP power mode 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__comp_8c_source}{hal\+\_\+comp.\+c}} 第 \mbox{\hyperlink{hal__comp_8c_source_l00067}{67}} 行定义.
+
+\mbox{\Hypertarget{group___c_o_m_p___exported___functions_ga1355114fc75dbaffc11b9f70a653055c}\label{group___c_o_m_p___exported___functions_ga1355114fc75dbaffc11b9f70a653055c}} 
+\index{COMP\_Exported\_Functions@{COMP\_Exported\_Functions}!COMP\_LockConfig@{COMP\_LockConfig}}
+\index{COMP\_LockConfig@{COMP\_LockConfig}!COMP\_Exported\_Functions@{COMP\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{COMP\_LockConfig()}{COMP\_LockConfig()}}
+{\footnotesize\ttfamily void COMP\+\_\+\+Lock\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___c_o_m_p___exported___constants_gad3edb4f414107c243ae5ce9b6798f371}{COMP\+\_\+\+Selection\+\_\+\+Type\+Def}}}]{selection }\end{DoxyParamCaption})}
+
+
+
+Lock the selected comparator (COMP1/\+COMP2) configuration. 
+
+
+\begin{DoxyParams}{参数}
+{\em selection} & the selected comparator. select the COMP peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__comp_8c_source}{hal\+\_\+comp.\+c}} 第 \mbox{\hyperlink{hal__comp_8c_source_l00181}{181}} 行定义.
+
+\mbox{\Hypertarget{group___c_o_m_p___exported___functions_gabbb0fee5205418bc049a971988f024bb}\label{group___c_o_m_p___exported___functions_gabbb0fee5205418bc049a971988f024bb}} 
+\index{COMP\_Exported\_Functions@{COMP\_Exported\_Functions}!COMP\_SetCrv@{COMP\_SetCrv}}
+\index{COMP\_SetCrv@{COMP\_SetCrv}!COMP\_Exported\_Functions@{COMP\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{COMP\_SetCrv()}{COMP\_SetCrv()}}
+{\footnotesize\ttfamily void COMP\+\_\+\+Set\+Crv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{crv\+\_\+select,  }\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{crv\+\_\+level }\end{DoxyParamCaption})}
+
+
+
+Select CRV param. 
+
+
+\begin{DoxyParams}{参数}
+{\em crv\+\_\+select} & Select source for CRV. \\
+\hline
+{\em crv\+\_\+level} & Set level for CRV. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__comp_8c_source}{hal\+\_\+comp.\+c}} 第 \mbox{\hyperlink{hal__comp_8c_source_l00122}{122}} 行定义.
+
+\mbox{\Hypertarget{group___c_o_m_p___exported___functions_gad68ae3c6b134e2bcc8a17ff061bfac14}\label{group___c_o_m_p___exported___functions_gad68ae3c6b134e2bcc8a17ff061bfac14}} 
+\index{COMP\_Exported\_Functions@{COMP\_Exported\_Functions}!COMP\_StructInit@{COMP\_StructInit}}
+\index{COMP\_StructInit@{COMP\_StructInit}!COMP\_Exported\_Functions@{COMP\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{COMP\_StructInit()}{COMP\_StructInit()}}
+{\footnotesize\ttfamily void COMP\+\_\+\+Struct\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_o_m_p___init_type_def}{COMP\+\_\+\+Init\+Type\+Def}} $\ast$}]{init\+\_\+struct }\end{DoxyParamCaption})}
+
+
+
+Fills each init\+\_\+struct member with its default value. 
+
+
+\begin{DoxyParams}{参数}
+{\em init\+\_\+struct} & pointer to an \mbox{\hyperlink{struct_c_o_m_p___init_type_def}{COMP\+\_\+\+Init\+Type\+Def}} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+\texorpdfstring{$<$}{<} to adjust the speed/consumption.
+
+在文件 \mbox{\hyperlink{hal__comp_8c_source}{hal\+\_\+comp.\+c}} 第 \mbox{\hyperlink{hal__comp_8c_source_l00085}{85}} 行定义.
+
+\mbox{\Hypertarget{group___c_o_m_p___exported___functions_gad36a4d4e206352e38b5786e033f79540}\label{group___c_o_m_p___exported___functions_gad36a4d4e206352e38b5786e033f79540}} 
+\index{COMP\_Exported\_Functions@{COMP\_Exported\_Functions}!COMP\_SwitchCmd@{COMP\_SwitchCmd}}
+\index{COMP\_SwitchCmd@{COMP\_SwitchCmd}!COMP\_Exported\_Functions@{COMP\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{COMP\_SwitchCmd()}{COMP\_SwitchCmd()}}
+{\footnotesize\ttfamily void COMP\+\_\+\+Switch\+Cmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___c_o_m_p___exported___constants_gad3edb4f414107c243ae5ce9b6798f371}{COMP\+\_\+\+Selection\+\_\+\+Type\+Def}}}]{selection,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Close or Open the SW1 switch. 
+
+
+\begin{DoxyParams}{参数}
+{\em selection} & the selected comparator. select the COMP peripheral. \\
+\hline
+{\em state} & new state of the COMP peripheral. This parameter can be\+: ENABLE or DISABLE. When enabled, the comparator compares the non inverting input with the inverting input and the comparison result is available on comparator output. When disabled, the comparator doesn\textquotesingle{}t perform comparison and the output level is low. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__comp_8c_source}{hal\+\_\+comp.\+c}} 第 \mbox{\hyperlink{hal__comp_8c_source_l00144}{144}} 行定义.
+
+\mbox{\Hypertarget{group___c_o_m_p___exported___functions_ga9ec5db83107c9c93888b78902913a5b2}\label{group___c_o_m_p___exported___functions_ga9ec5db83107c9c93888b78902913a5b2}} 
+\index{COMP\_Exported\_Functions@{COMP\_Exported\_Functions}!exCOMP\_CrvCmd@{exCOMP\_CrvCmd}}
+\index{exCOMP\_CrvCmd@{exCOMP\_CrvCmd}!COMP\_Exported\_Functions@{COMP\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{exCOMP\_CrvCmd()}{exCOMP\_CrvCmd()}}
+{\footnotesize\ttfamily void ex\+COMP\+\_\+\+Crv\+Cmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enable or disable the COMP register. 
+
+
+\begin{DoxyParams}{参数}
+{\em state} & new state of the COMP peripheral. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__comp_8c_source}{hal\+\_\+comp.\+c}} 第 \mbox{\hyperlink{hal__comp_8c_source_l00192}{192}} 行定义.
+
+\mbox{\Hypertarget{group___c_o_m_p___exported___functions_gadd8336173a5cb898a34264c365bc8c54}\label{group___c_o_m_p___exported___functions_gadd8336173a5cb898a34264c365bc8c54}} 
+\index{COMP\_Exported\_Functions@{COMP\_Exported\_Functions}!exCOMP\_CrvSrc@{exCOMP\_CrvSrc}}
+\index{exCOMP\_CrvSrc@{exCOMP\_CrvSrc}!COMP\_Exported\_Functions@{COMP\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{exCOMP\_CrvSrc()}{exCOMP\_CrvSrc()}}
+{\footnotesize\ttfamily void ex\+COMP\+\_\+\+Crv\+Src (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{src }\end{DoxyParamCaption})}
+
+
+
+Select comparator external reference voltage source. 
+
+
+\begin{DoxyParams}{参数}
+{\em selection} & the selected external reference voltage source. This parameter can be\+: COMP\+\_\+\+CRV\+\_\+\+SRC\+\_\+\+AVDD or COMP\+\_\+\+CRV\+\_\+\+SRC\+\_\+\+VREF. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__comp_8c_source}{hal\+\_\+comp.\+c}} 第 \mbox{\hyperlink{hal__comp_8c_source_l00213}{213}} 行定义.
+
+\mbox{\Hypertarget{group___c_o_m_p___exported___functions_ga3a46b1e72bb3f05fecfaf79120f5fbec}\label{group___c_o_m_p___exported___functions_ga3a46b1e72bb3f05fecfaf79120f5fbec}} 
+\index{COMP\_Exported\_Functions@{COMP\_Exported\_Functions}!exCOMP\_SwitchCrv@{exCOMP\_SwitchCrv}}
+\index{exCOMP\_SwitchCrv@{exCOMP\_SwitchCrv}!COMP\_Exported\_Functions@{COMP\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{exCOMP\_SwitchCrv()}{exCOMP\_SwitchCrv()}}
+{\footnotesize\ttfamily void ex\+COMP\+\_\+\+Switch\+Crv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{crv }\end{DoxyParamCaption})}
+
+
+
+Select comparator external reference voltage. 
+
+
+\begin{DoxyParams}{参数}
+{\em selection} & the selected external reference voltage. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__comp_8c_source}{hal\+\_\+comp.\+c}} 第 \mbox{\hyperlink{hal__comp_8c_source_l00202}{202}} 行定义.
+

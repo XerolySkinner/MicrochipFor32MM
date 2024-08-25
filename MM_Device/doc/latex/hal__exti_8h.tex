@@ -1,0 +1,172 @@
+\hypertarget{hal__exti_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Inc/hal\+\_\+exti.h 文件参考}
+\label{hal__exti_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_exti.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_exti.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE EXTI FIRMWARE LIBRARY.  
+
+
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}reg\+\_\+common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}reg\+\_\+exti.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_e_x_t_i___init_type_def}{EXTI\+\_\+\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em EXTI Init Structure definition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga7b0c50de49bcaa711c1e310219b97281}{EXTI\+\_\+\+Line\+None}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000000)
+\begin{DoxyCompactList}\small\item\em No interrupt selected \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_gac2a65680200dd5f4f7eab29cd4091a75}{EXTI\+\_\+\+Line0}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000001)
+\begin{DoxyCompactList}\small\item\em External interrupt line 0 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_gae7c6ab2a0880ce3810641ee0585104cd}{EXTI\+\_\+\+Line1}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000002)
+\begin{DoxyCompactList}\small\item\em External interrupt line 1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_gaec4189bb2709c8c15a0339d1b0b9865a}{EXTI\+\_\+\+Line2}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000004)
+\begin{DoxyCompactList}\small\item\em External interrupt line 2 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_gadea3ef6ab7e8bacc686689de8711b98c}{EXTI\+\_\+\+Line3}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000008)
+\begin{DoxyCompactList}\small\item\em External interrupt line 3 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_gab33b1fe19306e9e60f8f8d0928b800be}{EXTI\+\_\+\+Line4}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000010)
+\begin{DoxyCompactList}\small\item\em External interrupt line 4 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga6b4c6292e3abd521cab2bf99d37a15c6}{EXTI\+\_\+\+Line5}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000020)
+\begin{DoxyCompactList}\small\item\em External interrupt line 5 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga97a5145d1d2612dd53bdd9db3d366873}{EXTI\+\_\+\+Line6}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000040)
+\begin{DoxyCompactList}\small\item\em External interrupt line 6 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga3b7155d54a4a98394b599718901ccbe5}{EXTI\+\_\+\+Line7}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000080)
+\begin{DoxyCompactList}\small\item\em External interrupt line 7 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_gacd51e087a088c3315049394cddf79e88}{EXTI\+\_\+\+Line8}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000100)
+\begin{DoxyCompactList}\small\item\em External interrupt line 8 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga340ca6bb77b7a2d7747c78e7d3370360}{EXTI\+\_\+\+Line9}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000200)
+\begin{DoxyCompactList}\small\item\em External interrupt line 9 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_gaefb90b266f5fc1571ed4606bbff1f1d7}{EXTI\+\_\+\+Line10}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000400)
+\begin{DoxyCompactList}\small\item\em External interrupt line 10 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga6157b34c53e9b5cb8ee0d7ac3f5ba292}{EXTI\+\_\+\+Line11}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000800)
+\begin{DoxyCompactList}\small\item\em External interrupt line 11 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_gab73a0a31f1814118955099b9dd3bdfef}{EXTI\+\_\+\+Line12}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0001000)
+\begin{DoxyCompactList}\small\item\em External interrupt line 12 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_gae382388ac34b78917a7bd06562e35c42}{EXTI\+\_\+\+Line13}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0002000)
+\begin{DoxyCompactList}\small\item\em External interrupt line 13 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga7b3821ad1b7a00b49c27075688f48101}{EXTI\+\_\+\+Line14}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0004000)
+\begin{DoxyCompactList}\small\item\em External interrupt line 14 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_gafc5ea85d1fc095a855fde8977a338c4c}{EXTI\+\_\+\+Line15}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0008000)
+\begin{DoxyCompactList}\small\item\em External interrupt line 15 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga21326db7db8ca614c746b7f52dc45ead}{EXTI\+\_\+\+Line16}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0010000)
+\begin{DoxyCompactList}\small\item\em External interrupt line 16 Connected to the PVD Output \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga3e0fc18bc0722adc09605e3093b24c6a}{EXTI\+\_\+\+Line17}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0020000)
+\begin{DoxyCompactList}\small\item\em External interrupt line 17 Connected to the RTC Alarm event \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga6cdf346a3e7a3c8dbb036aca6741207c}{EXTI\+\_\+\+Line18}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0040000)
+\begin{DoxyCompactList}\small\item\em External interrupt line 18 Connected to the USB Wakeup from suspend event \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga49ac0744621f88d432d85838483ad1de}{EXTI\+\_\+\+Line19}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0080000)
+\begin{DoxyCompactList}\small\item\em External interrupt line 19 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga3ebc4564ac4ca4e1613f98d81a707f2a}{EXTI\+\_\+\+Line20}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0100000)
+\begin{DoxyCompactList}\small\item\em External interrupt line 20 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga273edacd18e521e5a702c642c5b824af}{EXTI\+\_\+\+Line21}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0200000)
+\begin{DoxyCompactList}\small\item\em External interrupt line 21 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_gabc65f8a90a3d5595896505ef2c59bec6}{EXTI\+\_\+\+Line22}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0400000)
+\begin{DoxyCompactList}\small\item\em External interrupt line 22 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga4de7c7ee0c60f1821725859a56c40e58}{EXTI\+\_\+\+Line23}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0800000)
+\begin{DoxyCompactList}\small\item\em External interrupt line 23 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_gaccc49b9cd3f258e2a887a5f9b5499551}{EXTI\+\_\+\+Line24}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x1000000)
+\begin{DoxyCompactList}\small\item\em External interrupt line 24 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga66aab57f683213ff74751390162c425d}{EXTI\+\_\+\+Port\+Source\+GPIOA}}~(0x00U)
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga16ab9db3a6cfad6e0204daeea375fadf}{EXTI\+\_\+\+Port\+Source\+GPIOB}}~(0x01U)
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga827bef5afe2be4ac3db7f8f1fc538d6e}{EXTI\+\_\+\+Port\+Source\+GPIOC}}~(0x02U)
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_gaa46454cf1df3cc5c1dfceb460e5345d8}{EXTI\+\_\+\+Port\+Source\+GPIOD}}~(0x03U)
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_gab9d4c8777a3f5c9cc90ae844b1c2bbfa}{EXTI\+\_\+\+Port\+Source\+GPIOE}}~(0x04U)
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga942c607129ec8fa9397417236be932d1}{EXTI\+\_\+\+Port\+Source\+GPIOF}}~(0x05U)
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga85e9f2bccca02c8f63fa5d486bb42393}{EXTI\+\_\+\+Pin\+Source0}}~(0x00U)
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_gadc4c0152b4bd194f872061c03cc9f5d5}{EXTI\+\_\+\+Pin\+Source1}}~(0x01U)
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga6306a0c8e41b63c45387146670e63fbd}{EXTI\+\_\+\+Pin\+Source2}}~(0x02U)
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga3c1315cbd350e6da814124d523657202}{EXTI\+\_\+\+Pin\+Source3}}~(0x03U)
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_gad540175ce80056822bd017d03fe64bb7}{EXTI\+\_\+\+Pin\+Source4}}~(0x04U)
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga95d0ef8a0d250cf48ca1fa7d9787f362}{EXTI\+\_\+\+Pin\+Source5}}~(0x05U)
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_gaa3d69b7d174bf6bffcb9f83c96b0cdad}{EXTI\+\_\+\+Pin\+Source6}}~(0x06U)
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga976aa2587515a7008eeaefd56c202669}{EXTI\+\_\+\+Pin\+Source7}}~(0x07U)
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga8847240d3d4539b3ad228f313500947a}{EXTI\+\_\+\+Pin\+Source8}}~(0x08U)
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga38ab8ede0a3daa3678176804cd1f0965}{EXTI\+\_\+\+Pin\+Source9}}~(0x09U)
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga7480fcdcea08747b4a1fa26fe8593faa}{EXTI\+\_\+\+Pin\+Source10}}~(0x0\+AU)
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga823961e32c95720bbcac6511dce36eca}{EXTI\+\_\+\+Pin\+Source11}}~(0x0\+BU)
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga87dd83e2e115acaed3f9d4770a731c38}{EXTI\+\_\+\+Pin\+Source12}}~(0x0\+CU)
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_ga21c2e799449919491f56b774dcb547e2}{EXTI\+\_\+\+Pin\+Source13}}~(0x0\+DU)
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_gadf2623bff33cc8e7697fdb2641998b22}{EXTI\+\_\+\+Pin\+Source14}}~(0x0\+EU)
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___constants_gace55270207b97b533ac87ab0a7047857}{EXTI\+\_\+\+Pin\+Source15}}~(0x0\+FU)
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___exported___variables_ga3de33738fd3c7e77bffbcfaefc3e7645}{GLOBAL}}~extern
+\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___e_x_t_i___exported___types_gad5e69af98dc0dfdf64417adc1cf57929}{EXTIMode\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___e_x_t_i___exported___types_ggad5e69af98dc0dfdf64417adc1cf57929a8c6ccdd7b1bc4872731306537e8c3b42}{EXTI\+\_\+\+Mode\+\_\+\+Interrupt}} = 0x00
+, \mbox{\hyperlink{group___e_x_t_i___exported___types_ggad5e69af98dc0dfdf64417adc1cf57929aa38ef186929ec74786df79877ea124a7}{EXTI\+\_\+\+Mode\+\_\+\+Event}} = 0x04
+ \}
+\begin{DoxyCompactList}\small\item\em EXTI mode enumeration \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___e_x_t_i___exported___types_ga9da190f5425d1b421a06bced8cc48e9b}{EXTITrigger\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___e_x_t_i___exported___types_gga9da190f5425d1b421a06bced8cc48e9baaa73605adf491dbe97994612e228af5e}{EXTI\+\_\+\+Trigger\+\_\+\+Rising}} = 0x08
+, \mbox{\hyperlink{group___e_x_t_i___exported___types_gga9da190f5425d1b421a06bced8cc48e9bac4a21d397aa4648b8f8cf961f71f3ac5}{EXTI\+\_\+\+Trigger\+\_\+\+Falling}} = 0x0C
+, \mbox{\hyperlink{group___e_x_t_i___exported___types_gga9da190f5425d1b421a06bced8cc48e9bab09db55a2e9118e86d03d69698434ebb}{EXTI\+\_\+\+Trigger\+\_\+\+Rising\+\_\+\+Falling}} = 0x10
+ \}
+\begin{DoxyCompactList}\small\item\em EXTI Trigger enumeration \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___e_x_t_i___exported___functions_ga3a1b7a3ef902bfda17ccb3eb87ee434d}{EXTI\+\_\+\+Get\+Flag\+Status}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} line)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified EXTI line flag is set or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} \mbox{\hyperlink{group___e_x_t_i___exported___functions_ga34a372a08e16385a049540248f402af3}{EXTI\+\_\+\+Get\+ITStatus}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} line)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified EXTI line is asserted or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___e_x_t_i___exported___functions_ga07072e339cb9ecb9cd9d4b94afc9f317}{EXTI\+\_\+\+De\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes the EXTI peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___e_x_t_i___exported___functions_ga7a843bf13cb7f901a57690c0de1760e9}{EXTI\+\_\+\+Init}} (\mbox{\hyperlink{struct_e_x_t_i___init_type_def}{EXTI\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Initializes the EXTI peripheral according to the specified parameters in the init\+\_\+struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___e_x_t_i___exported___functions_ga127d64ed8bbf22bc4320b5a9da5fac41}{EXTI\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{struct_e_x_t_i___init_type_def}{EXTI\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Fills each init\+\_\+struct member with its reset value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___e_x_t_i___exported___functions_gad8487c708c0028186b0eb26e012d03b6}{EXTI\+\_\+\+Generate\+SWInterrupt}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} line)
+\begin{DoxyCompactList}\small\item\em Generates a Software interrupt on selected EXTI line. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___e_x_t_i___exported___functions_gaf9589bccbc0b41cf61894f93d218ebdc}{EXTI\+\_\+\+Clear\+Flag}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} line)
+\begin{DoxyCompactList}\small\item\em Clears the EXTI\textquotesingle{}s line pending flags. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___e_x_t_i___exported___functions_ga846246bcabd3da20d865ca5d6a40652d}{EXTI\+\_\+\+Clear\+ITPending\+Bit}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} line)
+\begin{DoxyCompactList}\small\item\em Clears the EXTI\textquotesingle{}s line pending bits. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___e_x_t_i___exported___functions_ga8cd70060b65a41ce0ff035bf23f0e8a2}{ex\+EXTI\+\_\+\+Line\+Disable}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} line)
+\begin{DoxyCompactList}\small\item\em EXTI Line Disable \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_x_t_i___exported___functions_ga34079e388056a84d3c723388dea9ad2f}{ex\+EXTI\+\_\+\+Get\+All\+Flag\+Status}} (void)
+\begin{DoxyCompactList}\small\item\em Clears the EXTI\textquotesingle{}s line all pending bits. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___e_x_t_i___exported___functions_ga950763c1f71e5bc91de26b247881cac3}{EXTI\+\_\+\+Memory\+Remap\+Config}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} memory\+\_\+remap)
+\item 
+void \mbox{\hyperlink{group___e_x_t_i___exported___functions_ga30d95253b9eda228801f4e562ea81e89}{EXTI\+\_\+\+Line\+Config}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} port\+\_\+source\+\_\+gpio, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} pin\+\_\+source)
+\begin{DoxyCompactList}\small\item\em Selects the GPIO pin used as EXTI Line. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE EXTI FIRMWARE LIBRARY. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{hal__exti_8h_source}{hal\+\_\+exti.\+h}} 中定义.
+

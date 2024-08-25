@@ -1,0 +1,327 @@
+\hypertarget{struct_r_t_c___type_def}{}\doxysection{RTC\+\_\+\+Type\+Def结构体 参考}
+\label{struct_r_t_c___type_def}\index{RTC\_TypeDef@{RTC\_TypeDef}}
+
+
+RTC Registers Structure Definition  
+
+
+
+
+{\ttfamily \#include $<$reg\+\_\+rtc.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_t_c___type_def_a7044d99f2cd7130cf87ef7ca1ab7edfb}{CR}}\\
+\>\>{\em Control Register, offset: 0x00 }\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_t_c___type_def_a809e2357e99b9e6086cc0553a0c29ae8}{CRH}}\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_t_c___type_def_af7d7ba738cadbc691e2c826e7c76664f}{CSR}}\\
+\>\>{\em Control \& Status Register, offset: 0x04 }\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_t_c___type_def_ad48b6784875e5acac285e0a84361719c}{CRL}}\\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_t_c___type_def_a6c07c75383ce9ee732a12b803363773b}{PRLH}}
+\begin{DoxyCompactList}\small\item\em Prescaler Reload Value High, offset\+: 0x08 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_t_c___type_def_a1b826183a0a7d0ff9bd7be749b4b32ba}{PRLL}}
+\begin{DoxyCompactList}\small\item\em Prescaler Reload Value Low, offset\+: 0x0C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_t_c___type_def_a929206afb33eeb015ebbfd52043167e1}{DIVH}}
+\begin{DoxyCompactList}\small\item\em Clock Divider High, offset\+: 0x10 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_t_c___type_def_a1a811076db3012ee72ea830315b7db34}{DIVL}}
+\begin{DoxyCompactList}\small\item\em Clock Divider Low, offset\+: 0x14 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_t_c___type_def_a13625ff0bf63eb8eb391d36a5ba62087}{CNTH}}
+\begin{DoxyCompactList}\small\item\em Counter High, offset\+: 0x18 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_t_c___type_def_accdb4ba757d489c261628c335d01165f}{CNTL}}
+\begin{DoxyCompactList}\small\item\em Counter Low, offset\+: 0x1C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_t_c___type_def_a3064d54d9c4e3d54fab38ca5d43cc0bd}{ALRH}}
+\begin{DoxyCompactList}\small\item\em Alarm High, offset\+: 0x20 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_t_c___type_def_ae36608d7ea9e7ff9e798b9796fd5a8b7}{ALRL}}
+\begin{DoxyCompactList}\small\item\em Alarm Low, offset\+: 0x24 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_t_c___type_def_a9dfcf1c717c2f8de9dd90bb13f036562}{MSRH}}
+\begin{DoxyCompactList}\small\item\em Millisecond alarm high register offset\+: 0x28 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_t_c___type_def_a916e852a5522fbbd79ee86234156c8a2}{MSRL}}
+\begin{DoxyCompactList}\small\item\em Millisecond alarm low register offset\+: 0x2C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_t_c___type_def_a81492fb5396f1d214d34fc7f869c5bbf}{RESERVED0}}
+\begin{DoxyCompactList}\small\item\em Reserved offset\+: 0x30 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_t_c___type_def_a594ecd359c7956ba6e2977b16003adef}{RESERVED1}}
+\begin{DoxyCompactList}\small\item\em Reserved offset\+: 0x34 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_t_c___type_def_aabc6925eeb6cfcc7dd85d87e1782ed94}{RESERVED2}}
+\begin{DoxyCompactList}\small\item\em Reserved offset\+: 0x38 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_t_c___type_def_adbfa8a6e103f9f24ddcee9b07052f884}{LSE\+\_\+\+CFG}}
+\begin{DoxyCompactList}\small\item\em LSE configure register offset\+: 0x3C \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+RTC Registers Structure Definition 
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00056}{56}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{struct_r_t_c___type_def_a0b8692b634bf102c65bdc6906b8bc290}\label{struct_r_t_c___type_def_a0b8692b634bf102c65bdc6906b8bc290}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  RTC\+\_\+\+Type\+Def\+::@201}
+
+\mbox{\Hypertarget{struct_r_t_c___type_def_a7d1c2fa58e29e3de90dba61adbdc2c44}\label{struct_r_t_c___type_def_a7d1c2fa58e29e3de90dba61adbdc2c44}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  RTC\+\_\+\+Type\+Def\+::@203}
+
+\mbox{\Hypertarget{struct_r_t_c___type_def_a3064d54d9c4e3d54fab38ca5d43cc0bd}\label{struct_r_t_c___type_def_a3064d54d9c4e3d54fab38ca5d43cc0bd}} 
+\index{RTC\_TypeDef@{RTC\_TypeDef}!ALRH@{ALRH}}
+\index{ALRH@{ALRH}!RTC\_TypeDef@{RTC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{ALRH}{ALRH}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RTC\+\_\+\+Type\+Def\+::\+ALRH}
+
+
+
+Alarm High, offset\+: 0x20 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00071}{71}} 行定义.
+
+\mbox{\Hypertarget{struct_r_t_c___type_def_ae36608d7ea9e7ff9e798b9796fd5a8b7}\label{struct_r_t_c___type_def_ae36608d7ea9e7ff9e798b9796fd5a8b7}} 
+\index{RTC\_TypeDef@{RTC\_TypeDef}!ALRL@{ALRL}}
+\index{ALRL@{ALRL}!RTC\_TypeDef@{RTC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{ALRL}{ALRL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RTC\+\_\+\+Type\+Def\+::\+ALRL}
+
+
+
+Alarm Low, offset\+: 0x24 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00072}{72}} 行定义.
+
+\mbox{\Hypertarget{struct_r_t_c___type_def_a13625ff0bf63eb8eb391d36a5ba62087}\label{struct_r_t_c___type_def_a13625ff0bf63eb8eb391d36a5ba62087}} 
+\index{RTC\_TypeDef@{RTC\_TypeDef}!CNTH@{CNTH}}
+\index{CNTH@{CNTH}!RTC\_TypeDef@{RTC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CNTH}{CNTH}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RTC\+\_\+\+Type\+Def\+::\+CNTH}
+
+
+
+Counter High, offset\+: 0x18 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00069}{69}} 行定义.
+
+\mbox{\Hypertarget{struct_r_t_c___type_def_accdb4ba757d489c261628c335d01165f}\label{struct_r_t_c___type_def_accdb4ba757d489c261628c335d01165f}} 
+\index{RTC\_TypeDef@{RTC\_TypeDef}!CNTL@{CNTL}}
+\index{CNTL@{CNTL}!RTC\_TypeDef@{RTC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CNTL}{CNTL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RTC\+\_\+\+Type\+Def\+::\+CNTL}
+
+
+
+Counter Low, offset\+: 0x1C 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00070}{70}} 行定义.
+
+\mbox{\Hypertarget{struct_r_t_c___type_def_a7044d99f2cd7130cf87ef7ca1ab7edfb}\label{struct_r_t_c___type_def_a7044d99f2cd7130cf87ef7ca1ab7edfb}} 
+\index{RTC\_TypeDef@{RTC\_TypeDef}!CR@{CR}}
+\index{CR@{CR}!RTC\_TypeDef@{RTC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CR}{CR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RTC\+\_\+\+Type\+Def\+::\+CR}
+
+
+
+Control Register, offset\+: 0x00 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00058}{58}} 行定义.
+
+\mbox{\Hypertarget{struct_r_t_c___type_def_a809e2357e99b9e6086cc0553a0c29ae8}\label{struct_r_t_c___type_def_a809e2357e99b9e6086cc0553a0c29ae8}} 
+\index{RTC\_TypeDef@{RTC\_TypeDef}!CRH@{CRH}}
+\index{CRH@{CRH}!RTC\_TypeDef@{RTC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CRH}{CRH}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RTC\+\_\+\+Type\+Def\+::\+CRH}
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00059}{59}} 行定义.
+
+\mbox{\Hypertarget{struct_r_t_c___type_def_ad48b6784875e5acac285e0a84361719c}\label{struct_r_t_c___type_def_ad48b6784875e5acac285e0a84361719c}} 
+\index{RTC\_TypeDef@{RTC\_TypeDef}!CRL@{CRL}}
+\index{CRL@{CRL}!RTC\_TypeDef@{RTC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CRL}{CRL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RTC\+\_\+\+Type\+Def\+::\+CRL}
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00063}{63}} 行定义.
+
+\mbox{\Hypertarget{struct_r_t_c___type_def_af7d7ba738cadbc691e2c826e7c76664f}\label{struct_r_t_c___type_def_af7d7ba738cadbc691e2c826e7c76664f}} 
+\index{RTC\_TypeDef@{RTC\_TypeDef}!CSR@{CSR}}
+\index{CSR@{CSR}!RTC\_TypeDef@{RTC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CSR}{CSR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RTC\+\_\+\+Type\+Def\+::\+CSR}
+
+
+
+Control \& Status Register, offset\+: 0x04 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00062}{62}} 行定义.
+
+\mbox{\Hypertarget{struct_r_t_c___type_def_a929206afb33eeb015ebbfd52043167e1}\label{struct_r_t_c___type_def_a929206afb33eeb015ebbfd52043167e1}} 
+\index{RTC\_TypeDef@{RTC\_TypeDef}!DIVH@{DIVH}}
+\index{DIVH@{DIVH}!RTC\_TypeDef@{RTC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DIVH}{DIVH}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RTC\+\_\+\+Type\+Def\+::\+DIVH}
+
+
+
+Clock Divider High, offset\+: 0x10 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00067}{67}} 行定义.
+
+\mbox{\Hypertarget{struct_r_t_c___type_def_a1a811076db3012ee72ea830315b7db34}\label{struct_r_t_c___type_def_a1a811076db3012ee72ea830315b7db34}} 
+\index{RTC\_TypeDef@{RTC\_TypeDef}!DIVL@{DIVL}}
+\index{DIVL@{DIVL}!RTC\_TypeDef@{RTC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DIVL}{DIVL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RTC\+\_\+\+Type\+Def\+::\+DIVL}
+
+
+
+Clock Divider Low, offset\+: 0x14 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00068}{68}} 行定义.
+
+\mbox{\Hypertarget{struct_r_t_c___type_def_adbfa8a6e103f9f24ddcee9b07052f884}\label{struct_r_t_c___type_def_adbfa8a6e103f9f24ddcee9b07052f884}} 
+\index{RTC\_TypeDef@{RTC\_TypeDef}!LSE\_CFG@{LSE\_CFG}}
+\index{LSE\_CFG@{LSE\_CFG}!RTC\_TypeDef@{RTC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{LSE\_CFG}{LSE\_CFG}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RTC\+\_\+\+Type\+Def\+::\+LSE\+\_\+\+CFG}
+
+
+
+LSE configure register offset\+: 0x3C 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00078}{78}} 行定义.
+
+\mbox{\Hypertarget{struct_r_t_c___type_def_a9dfcf1c717c2f8de9dd90bb13f036562}\label{struct_r_t_c___type_def_a9dfcf1c717c2f8de9dd90bb13f036562}} 
+\index{RTC\_TypeDef@{RTC\_TypeDef}!MSRH@{MSRH}}
+\index{MSRH@{MSRH}!RTC\_TypeDef@{RTC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MSRH}{MSRH}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RTC\+\_\+\+Type\+Def\+::\+MSRH}
+
+
+
+Millisecond alarm high register offset\+: 0x28 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00073}{73}} 行定义.
+
+\mbox{\Hypertarget{struct_r_t_c___type_def_a916e852a5522fbbd79ee86234156c8a2}\label{struct_r_t_c___type_def_a916e852a5522fbbd79ee86234156c8a2}} 
+\index{RTC\_TypeDef@{RTC\_TypeDef}!MSRL@{MSRL}}
+\index{MSRL@{MSRL}!RTC\_TypeDef@{RTC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MSRL}{MSRL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RTC\+\_\+\+Type\+Def\+::\+MSRL}
+
+
+
+Millisecond alarm low register offset\+: 0x2C 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00074}{74}} 行定义.
+
+\mbox{\Hypertarget{struct_r_t_c___type_def_a6c07c75383ce9ee732a12b803363773b}\label{struct_r_t_c___type_def_a6c07c75383ce9ee732a12b803363773b}} 
+\index{RTC\_TypeDef@{RTC\_TypeDef}!PRLH@{PRLH}}
+\index{PRLH@{PRLH}!RTC\_TypeDef@{RTC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{PRLH}{PRLH}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RTC\+\_\+\+Type\+Def\+::\+PRLH}
+
+
+
+Prescaler Reload Value High, offset\+: 0x08 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00065}{65}} 行定义.
+
+\mbox{\Hypertarget{struct_r_t_c___type_def_a1b826183a0a7d0ff9bd7be749b4b32ba}\label{struct_r_t_c___type_def_a1b826183a0a7d0ff9bd7be749b4b32ba}} 
+\index{RTC\_TypeDef@{RTC\_TypeDef}!PRLL@{PRLL}}
+\index{PRLL@{PRLL}!RTC\_TypeDef@{RTC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{PRLL}{PRLL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RTC\+\_\+\+Type\+Def\+::\+PRLL}
+
+
+
+Prescaler Reload Value Low, offset\+: 0x0C 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00066}{66}} 行定义.
+
+\mbox{\Hypertarget{struct_r_t_c___type_def_a81492fb5396f1d214d34fc7f869c5bbf}\label{struct_r_t_c___type_def_a81492fb5396f1d214d34fc7f869c5bbf}} 
+\index{RTC\_TypeDef@{RTC\_TypeDef}!RESERVED0@{RESERVED0}}
+\index{RESERVED0@{RESERVED0}!RTC\_TypeDef@{RTC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RESERVED0}{RESERVED0}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RTC\+\_\+\+Type\+Def\+::\+RESERVED0}
+
+
+
+Reserved offset\+: 0x30 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00075}{75}} 行定义.
+
+\mbox{\Hypertarget{struct_r_t_c___type_def_a594ecd359c7956ba6e2977b16003adef}\label{struct_r_t_c___type_def_a594ecd359c7956ba6e2977b16003adef}} 
+\index{RTC\_TypeDef@{RTC\_TypeDef}!RESERVED1@{RESERVED1}}
+\index{RESERVED1@{RESERVED1}!RTC\_TypeDef@{RTC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RESERVED1}{RESERVED1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RTC\+\_\+\+Type\+Def\+::\+RESERVED1}
+
+
+
+Reserved offset\+: 0x34 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00076}{76}} 行定义.
+
+\mbox{\Hypertarget{struct_r_t_c___type_def_aabc6925eeb6cfcc7dd85d87e1782ed94}\label{struct_r_t_c___type_def_aabc6925eeb6cfcc7dd85d87e1782ed94}} 
+\index{RTC\_TypeDef@{RTC\_TypeDef}!RESERVED2@{RESERVED2}}
+\index{RESERVED2@{RESERVED2}!RTC\_TypeDef@{RTC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RESERVED2}{RESERVED2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RTC\+\_\+\+Type\+Def\+::\+RESERVED2}
+
+
+
+Reserved offset\+: 0x38 
+
+
+
+在文件 \mbox{\hyperlink{reg__rtc_8h_source}{reg\+\_\+rtc.\+h}} 第 \mbox{\hyperlink{reg__rtc_8h_source_l00077}{77}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/\mbox{\hyperlink{reg__rtc_8h}{reg\+\_\+rtc.\+h}}\end{DoxyCompactItemize}

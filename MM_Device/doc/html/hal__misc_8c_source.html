@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>template: C:/Users/XerolySkinner/Desktop/MM_Device/MM32F327x/HAL_Lib/Src/hal_misc.c 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">template
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8a23370bd962f2be3cb202251f8a0865.html">MM32F327x</a></li><li class="navelem"><a class="el" href="dir_3b1bed74bcb45e4245a73e66928ea90d.html">HAL_Lib</a></li><li class="navelem"><a class="el" href="dir_7c9ac39f302c264f6f2d20643460873b.html">Src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">hal_misc.c</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="hal__misc_8c.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Define to prevent recursive inclusion</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="hal__misc_8c.html#af09bd385a0e569855c79840a363842b2">   19</a></span><span class="preprocessor">#define _HAL_MISC_C_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// Files includes</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="hal__misc_8h.html">hal_misc.h</a>&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="group___n_v_i_c___exported___functions.html#ga0ff8d048327ef07dcf4e65e0b4dfd0c9">   45</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___m_i_s_c___exported___functions.html#ga0ff8d048327ef07dcf4e65e0b4dfd0c9">NVIC_SetVectorTable</a>(<a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> vect_tab, <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> offset)</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_define" href="group___c_m_s_i_s__core__base.html#gaaaf6477c2bde2f00f99e3c2fd1060b01">SCB</a>-&gt;VTOR = vect_tab | (offset &amp; (<a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x1FFFFF80);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="group___n_v_i_c___exported___functions.html#ga0dad12407a6282ef58469ebc37be05d8">   61</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___m_i_s_c___exported___functions.html#ga0dad12407a6282ef58469ebc37be05d8">NVIC_PriorityGroupConfig</a>(<a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> priority_group)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>{</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_define" href="group___c_m_s_i_s__core__base.html#gaaaf6477c2bde2f00f99e3c2fd1060b01">SCB</a>-&gt;AIRCR = <a class="code hl_define" href="group___n_v_i_c___exported___constants.html#gad6905141fba3a2d8d5570db40805dc6a">AIRCR_VECTKEY_MASK</a> | priority_group;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="group___n_v_i_c___exported___functions.html#ga85f4749eb55ea14907b82d72e9db599b">   71</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___m_i_s_c___exported___functions.html#ga85f4749eb55ea14907b82d72e9db599b">NVIC_Init</a>(<a class="code hl_struct" href="struct_n_v_i_c___init_type_def.html">NVIC_InitTypeDef</a>* init_struct)</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>{</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordflow">if</span> (init_struct-&gt;<a class="code hl_variable" href="struct_n_v_i_c___init_type_def.html#acb23fabb995fa4980c768825f12f5815">NVIC_IRQChannelCmd</a> != <a class="code hl_enumvalue" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d">DISABLE</a>) {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> pri = (<a class="code hl_define" href="reg__common_8h.html#a562fa27a50d34fb3e182eb90d1de7457">SCB_AIRCR_PRIGROUP</a> &amp; ~(<a class="code hl_define" href="group___c_m_s_i_s__core__base.html#gaaaf6477c2bde2f00f99e3c2fd1060b01">SCB</a>-&gt;AIRCR &amp; <a class="code hl_define" href="group___c_m_s_i_s___s_c_b.html#ga8be60fff03f48d0d345868060dc6dae7">SCB_AIRCR_PRIGROUP_Msk</a>)) &gt;&gt; <a class="code hl_define" href="group___c_m_s_i_s___s_c_b.html#gaca155deccdeca0f2c76b8100d24196c8">SCB_AIRCR_PRIGROUP_Pos</a>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        pri = (((<a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)init_struct-&gt;<a class="code hl_variable" href="struct_n_v_i_c___init_type_def.html#adc8226d770dbf7513448c12e14f30198">NVIC_IRQChannelPreemptionPriority</a> &lt;&lt; (0x4 - pri)) |</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>               (init_struct-&gt;<a class="code hl_variable" href="struct_n_v_i_c___init_type_def.html#a0d908a33a2250776d6016117a3b874aa">NVIC_IRQChannelSubPriority</a> &amp; (0x0F &gt;&gt; pri)))</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>              &lt;&lt; 0x04;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <a class="code hl_define" href="group___c_m_s_i_s__core__base.html#gac8e97e8ce56ae9f57da1363a937f8a17">NVIC</a>-&gt;IP[init_struct-&gt;<a class="code hl_variable" href="struct_n_v_i_c___init_type_def.html#a2309c52a0c88793d005fd43173129267">NVIC_IRQChannel</a>]           = pri;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <a class="code hl_define" href="group___c_m_s_i_s__core__base.html#gac8e97e8ce56ae9f57da1363a937f8a17">NVIC</a>-&gt;ISER[init_struct-&gt;<a class="code hl_variable" href="struct_n_v_i_c___init_type_def.html#a2309c52a0c88793d005fd43173129267">NVIC_IRQChannel</a> &gt;&gt; 0x05] = 0x01 &lt;&lt; (init_struct-&gt;<a class="code hl_variable" href="struct_n_v_i_c___init_type_def.html#a2309c52a0c88793d005fd43173129267">NVIC_IRQChannel</a> &amp; 0x1F);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <a class="code hl_define" href="group___c_m_s_i_s__core__base.html#gac8e97e8ce56ae9f57da1363a937f8a17">NVIC</a>-&gt;ICER[init_struct-&gt;<a class="code hl_variable" href="struct_n_v_i_c___init_type_def.html#a2309c52a0c88793d005fd43173129267">NVIC_IRQChannel</a> &gt;&gt; 0x05] = 0x01 &lt;&lt; (init_struct-&gt;<a class="code hl_variable" href="struct_n_v_i_c___init_type_def.html#a2309c52a0c88793d005fd43173129267">NVIC_IRQChannel</a> &amp; 0x1F);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="group___n_v_i_c___exported___functions.html#gaa3d46229a100ddcef6eb5fc4c09413b9">   94</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___m_i_s_c___exported___functions.html#gaa3d46229a100ddcef6eb5fc4c09413b9">exNVIC_Init</a>(<a class="code hl_struct" href="structex_n_v_i_c___init___type_def.html">exNVIC_Init_TypeDef</a>* init_struct)</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>{</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> pri;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordflow">if</span> (init_struct-&gt;<a class="code hl_variable" href="structex_n_v_i_c___init___type_def.html#aad8255f065a1f18e5c79354c42032fbf">NVIC_IRQChannelCmd</a> != <a class="code hl_enumvalue" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d">DISABLE</a>) {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        pri = (<a class="code hl_define" href="reg__common_8h.html#a562fa27a50d34fb3e182eb90d1de7457">SCB_AIRCR_PRIGROUP</a> &amp; ~(<a class="code hl_define" href="group___c_m_s_i_s__core__base.html#gaaaf6477c2bde2f00f99e3c2fd1060b01">SCB</a>-&gt;AIRCR &amp; <a class="code hl_define" href="group___c_m_s_i_s___s_c_b.html#ga8be60fff03f48d0d345868060dc6dae7">SCB_AIRCR_PRIGROUP_Msk</a>)) &gt;&gt; <a class="code hl_define" href="group___c_m_s_i_s___s_c_b.html#gaca155deccdeca0f2c76b8100d24196c8">SCB_AIRCR_PRIGROUP_Pos</a>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        pri = (((<a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)init_struct-&gt;<a class="code hl_variable" href="structex_n_v_i_c___init___type_def.html#a24ed61ecef706141a73b5d07a57c78d8">NVIC_IRQChannelPreemptionPriority</a> &lt;&lt; (0x4 - pri)) |</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>               (init_struct-&gt;<a class="code hl_variable" href="structex_n_v_i_c___init___type_def.html#a15ed4013d474adeaee8ecb890f03d08e">NVIC_IRQChannelSubPriority</a> &amp; (0x0F &gt;&gt; pri))) &lt;&lt; 0x04;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <a class="code hl_define" href="group___c_m_s_i_s__core__base.html#gac8e97e8ce56ae9f57da1363a937f8a17">NVIC</a>-&gt;IP[init_struct-&gt;<a class="code hl_variable" href="structex_n_v_i_c___init___type_def.html#aea366177befb4d65be7fe971361efc55">NVIC_IRQChannel</a>] = pri;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <a class="code hl_define" href="group___c_m_s_i_s__core__base.html#gac8e97e8ce56ae9f57da1363a937f8a17">NVIC</a>-&gt;ISER[init_struct-&gt;<a class="code hl_variable" href="structex_n_v_i_c___init___type_def.html#aea366177befb4d65be7fe971361efc55">NVIC_IRQChannel</a> &gt;&gt; 0x05] = 0x01 &lt;&lt; (init_struct-&gt;<a class="code hl_variable" href="structex_n_v_i_c___init___type_def.html#aea366177befb4d65be7fe971361efc55">NVIC_IRQChannel</a> &amp; 0x1F);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <a class="code hl_define" href="group___c_m_s_i_s__core__base.html#gac8e97e8ce56ae9f57da1363a937f8a17">NVIC</a>-&gt;ICER[init_struct-&gt;<a class="code hl_variable" href="structex_n_v_i_c___init___type_def.html#aea366177befb4d65be7fe971361efc55">NVIC_IRQChannel</a> &gt;&gt; 0x05] = 0x01 &lt;&lt; (init_struct-&gt;<a class="code hl_variable" href="structex_n_v_i_c___init___type_def.html#aea366177befb4d65be7fe971361efc55">NVIC_IRQChannel</a> &amp; 0x1F);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>}</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="group___n_v_i_c___exported___functions.html#gac7a5a03af01bfccea39fc6a14ce2f0df">  124</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___m_i_s_c___exported___functions.html#gac7a5a03af01bfccea39fc6a14ce2f0df">NVIC_SystemLPConfig</a>(<a class="code hl_typedef" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> low_power_mode, <a class="code hl_enumeration" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>{</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    (state) ? (<a class="code hl_define" href="group___c_m_s_i_s__core__base.html#gaaaf6477c2bde2f00f99e3c2fd1060b01">SCB</a>-&gt;SCR |= low_power_mode) : (<a class="code hl_define" href="group___c_m_s_i_s__core__base.html#gaaaf6477c2bde2f00f99e3c2fd1060b01">SCB</a>-&gt;SCR &amp;= ~(<a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)low_power_mode);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="group___n_v_i_c___exported___functions.html#ga3294c1ceb4e359c2c1ae188dac061d21">  137</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___m_i_s_c___exported___functions.html#ga3294c1ceb4e359c2c1ae188dac061d21">SysTick_CLKSourceConfig</a>(<a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> systick_clk_source)</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>{</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    (systick_clk_source == <a class="code hl_define" href="group___n_v_i_c___exported___constants.html#ga8a885ce2632ad4c35e229bb7c6e60191">SysTick_CLKSource_HCLK</a>) ? (<a class="code hl_define" href="group___c_m_s_i_s__core__base.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL |= <a class="code hl_define" href="group___n_v_i_c___exported___constants.html#ga8a885ce2632ad4c35e229bb7c6e60191">SysTick_CLKSource_HCLK</a>) \</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    : (<a class="code hl_define" href="group___c_m_s_i_s__core__base.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL &amp;= ~SysTick_CLKSource_HCLK);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>}</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="ttc" id="agroup___c_m_s_i_s___s_c_b_html_ga8be60fff03f48d0d345868060dc6dae7"><div class="ttname"><a href="group___c_m_s_i_s___s_c_b.html#ga8be60fff03f48d0d345868060dc6dae7">SCB_AIRCR_PRIGROUP_Msk</a></div><div class="ttdeci">#define SCB_AIRCR_PRIGROUP_Msk</div><div class="ttdef"><b>Definition:</b> <a href="core__armv8mml_8h_source.html#l00569">core_armv8mml.h:569</a></div></div>
+<div class="ttc" id="agroup___c_m_s_i_s___s_c_b_html_gaca155deccdeca0f2c76b8100d24196c8"><div class="ttname"><a href="group___c_m_s_i_s___s_c_b.html#gaca155deccdeca0f2c76b8100d24196c8">SCB_AIRCR_PRIGROUP_Pos</a></div><div class="ttdeci">#define SCB_AIRCR_PRIGROUP_Pos</div><div class="ttdef"><b>Definition:</b> <a href="core__armv8mml_8h_source.html#l00568">core_armv8mml.h:568</a></div></div>
+<div class="ttc" id="agroup___c_m_s_i_s__core__base_html_gaaaf6477c2bde2f00f99e3c2fd1060b01"><div class="ttname"><a href="group___c_m_s_i_s__core__base.html#gaaaf6477c2bde2f00f99e3c2fd1060b01">SCB</a></div><div class="ttdeci">#define SCB</div><div class="ttdef"><b>Definition:</b> <a href="core__armv8mbl_8h_source.html#l01151">core_armv8mbl.h:1151</a></div></div>
+<div class="ttc" id="agroup___c_m_s_i_s__core__base_html_gac8e97e8ce56ae9f57da1363a937f8a17"><div class="ttname"><a href="group___c_m_s_i_s__core__base.html#gac8e97e8ce56ae9f57da1363a937f8a17">NVIC</a></div><div class="ttdeci">#define NVIC</div><div class="ttdef"><b>Definition:</b> <a href="core__armv8mbl_8h_source.html#l01153">core_armv8mbl.h:1153</a></div></div>
+<div class="ttc" id="agroup___c_m_s_i_s__core__base_html_gacd96c53beeaff8f603fcda425eb295de"><div class="ttname"><a href="group___c_m_s_i_s__core__base.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a></div><div class="ttdeci">#define SysTick</div><div class="ttdef"><b>Definition:</b> <a href="core__armv8mbl_8h_source.html#l01152">core_armv8mbl.h:1152</a></div></div>
+<div class="ttc" id="agroup___m_i_s_c___exported___functions_html_ga0dad12407a6282ef58469ebc37be05d8"><div class="ttname"><a href="group___m_i_s_c___exported___functions.html#ga0dad12407a6282ef58469ebc37be05d8">NVIC_PriorityGroupConfig</a></div><div class="ttdeci">void NVIC_PriorityGroupConfig(u32 priority_group)</div><div class="ttdoc">Set the NVIC interrupt priority group.</div><div class="ttdef"><b>Definition:</b> <a href="hal__misc_8c_source.html#l00061">hal_misc.c:61</a></div></div>
+<div class="ttc" id="agroup___m_i_s_c___exported___functions_html_ga0ff8d048327ef07dcf4e65e0b4dfd0c9"><div class="ttname"><a href="group___m_i_s_c___exported___functions.html#ga0ff8d048327ef07dcf4e65e0b4dfd0c9">NVIC_SetVectorTable</a></div><div class="ttdeci">void NVIC_SetVectorTable(u32 vect_tab, u32 offset)</div><div class="ttdoc">Set the NVIC interrupt vector table.</div><div class="ttdef"><b>Definition:</b> <a href="hal__misc_8c_source.html#l00045">hal_misc.c:45</a></div></div>
+<div class="ttc" id="agroup___m_i_s_c___exported___functions_html_ga3294c1ceb4e359c2c1ae188dac061d21"><div class="ttname"><a href="group___m_i_s_c___exported___functions.html#ga3294c1ceb4e359c2c1ae188dac061d21">SysTick_CLKSourceConfig</a></div><div class="ttdeci">void SysTick_CLKSourceConfig(u32 systick_clk_source)</div><div class="ttdoc">SysTick clock source configuration.</div><div class="ttdef"><b>Definition:</b> <a href="hal__misc_8c_source.html#l00137">hal_misc.c:137</a></div></div>
+<div class="ttc" id="agroup___m_i_s_c___exported___functions_html_ga85f4749eb55ea14907b82d72e9db599b"><div class="ttname"><a href="group___m_i_s_c___exported___functions.html#ga85f4749eb55ea14907b82d72e9db599b">NVIC_Init</a></div><div class="ttdeci">void NVIC_Init(NVIC_InitTypeDef *init_struct)</div><div class="ttdoc">NVIC initialization.</div><div class="ttdef"><b>Definition:</b> <a href="hal__misc_8c_source.html#l00071">hal_misc.c:71</a></div></div>
+<div class="ttc" id="agroup___m_i_s_c___exported___functions_html_gaa3d46229a100ddcef6eb5fc4c09413b9"><div class="ttname"><a href="group___m_i_s_c___exported___functions.html#gaa3d46229a100ddcef6eb5fc4c09413b9">exNVIC_Init</a></div><div class="ttdeci">void exNVIC_Init(exNVIC_Init_TypeDef *init_struct)</div><div class="ttdoc">NVIC initialized extension function.</div><div class="ttdef"><b>Definition:</b> <a href="hal__misc_8c_source.html#l00094">hal_misc.c:94</a></div></div>
+<div class="ttc" id="agroup___m_i_s_c___exported___functions_html_gac7a5a03af01bfccea39fc6a14ce2f0df"><div class="ttname"><a href="group___m_i_s_c___exported___functions.html#gac7a5a03af01bfccea39fc6a14ce2f0df">NVIC_SystemLPConfig</a></div><div class="ttdeci">void NVIC_SystemLPConfig(u8 low_power_mode, FunctionalState state)</div><div class="ttdoc">System low power mode configuration.</div><div class="ttdef"><b>Definition:</b> <a href="hal__misc_8c_source.html#l00124">hal_misc.c:124</a></div></div>
+<div class="ttc" id="agroup___n_v_i_c___exported___constants_html_ga8a885ce2632ad4c35e229bb7c6e60191"><div class="ttname"><a href="group___n_v_i_c___exported___constants.html#ga8a885ce2632ad4c35e229bb7c6e60191">SysTick_CLKSource_HCLK</a></div><div class="ttdeci">#define SysTick_CLKSource_HCLK</div><div class="ttdef"><b>Definition:</b> <a href="hal__misc_8h_source.html#l00086">hal_misc.h:86</a></div></div>
+<div class="ttc" id="agroup___n_v_i_c___exported___constants_html_gad6905141fba3a2d8d5570db40805dc6a"><div class="ttname"><a href="group___n_v_i_c___exported___constants.html#gad6905141fba3a2d8d5570db40805dc6a">AIRCR_VECTKEY_MASK</a></div><div class="ttdeci">#define AIRCR_VECTKEY_MASK</div><div class="ttdef"><b>Definition:</b> <a href="hal__misc_8h_source.html#l00080">hal_misc.h:80</a></div></div>
+<div class="ttc" id="ahal__misc_8h_html"><div class="ttname"><a href="hal__misc_8h.html">hal_misc.h</a></div><div class="ttdoc">THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE NVIC FIRMWARE LIBRARY.</div></div>
+<div class="ttc" id="areg__common_8h_html_a562fa27a50d34fb3e182eb90d1de7457"><div class="ttname"><a href="reg__common_8h.html#a562fa27a50d34fb3e182eb90d1de7457">SCB_AIRCR_PRIGROUP</a></div><div class="ttdeci">#define SCB_AIRCR_PRIGROUP</div><div class="ttdoc">PRIGROUP[2:0] bits (Priority group)</div><div class="ttdef"><b>Definition:</b> <a href="reg__common_8h_source.html#l00517">reg_common.h:517</a></div></div>
+<div class="ttc" id="astruct_n_v_i_c___init_type_def_html"><div class="ttname"><a href="struct_n_v_i_c___init_type_def.html">NVIC_InitTypeDef</a></div><div class="ttdoc">NVIC Init Structure definition</div><div class="ttdef"><b>Definition:</b> <a href="hal__misc_8h_source.html#l00043">hal_misc.h:43</a></div></div>
+<div class="ttc" id="astruct_n_v_i_c___init_type_def_html_a0d908a33a2250776d6016117a3b874aa"><div class="ttname"><a href="struct_n_v_i_c___init_type_def.html#a0d908a33a2250776d6016117a3b874aa">NVIC_InitTypeDef::NVIC_IRQChannelSubPriority</a></div><div class="ttdeci">u8 NVIC_IRQChannelSubPriority</div><div class="ttdef"><b>Definition:</b> <a href="hal__misc_8h_source.html#l00046">hal_misc.h:46</a></div></div>
+<div class="ttc" id="astruct_n_v_i_c___init_type_def_html_a2309c52a0c88793d005fd43173129267"><div class="ttname"><a href="struct_n_v_i_c___init_type_def.html#a2309c52a0c88793d005fd43173129267">NVIC_InitTypeDef::NVIC_IRQChannel</a></div><div class="ttdeci">u8 NVIC_IRQChannel</div><div class="ttdef"><b>Definition:</b> <a href="hal__misc_8h_source.html#l00044">hal_misc.h:44</a></div></div>
+<div class="ttc" id="astruct_n_v_i_c___init_type_def_html_acb23fabb995fa4980c768825f12f5815"><div class="ttname"><a href="struct_n_v_i_c___init_type_def.html#acb23fabb995fa4980c768825f12f5815">NVIC_InitTypeDef::NVIC_IRQChannelCmd</a></div><div class="ttdeci">FunctionalState NVIC_IRQChannelCmd</div><div class="ttdef"><b>Definition:</b> <a href="hal__misc_8h_source.html#l00047">hal_misc.h:47</a></div></div>
+<div class="ttc" id="astruct_n_v_i_c___init_type_def_html_adc8226d770dbf7513448c12e14f30198"><div class="ttname"><a href="struct_n_v_i_c___init_type_def.html#adc8226d770dbf7513448c12e14f30198">NVIC_InitTypeDef::NVIC_IRQChannelPreemptionPriority</a></div><div class="ttdeci">u8 NVIC_IRQChannelPreemptionPriority</div><div class="ttdef"><b>Definition:</b> <a href="hal__misc_8h_source.html#l00045">hal_misc.h:45</a></div></div>
+<div class="ttc" id="astructex_n_v_i_c___init___type_def_html"><div class="ttname"><a href="structex_n_v_i_c___init___type_def.html">exNVIC_Init_TypeDef</a></div><div class="ttdoc">NVIC New Init Structure definition</div><div class="ttdef"><b>Definition:</b> <a href="hal__misc_8h_source.html#l00053">hal_misc.h:53</a></div></div>
+<div class="ttc" id="astructex_n_v_i_c___init___type_def_html_a15ed4013d474adeaee8ecb890f03d08e"><div class="ttname"><a href="structex_n_v_i_c___init___type_def.html#a15ed4013d474adeaee8ecb890f03d08e">exNVIC_Init_TypeDef::NVIC_IRQChannelSubPriority</a></div><div class="ttdeci">u8 NVIC_IRQChannelSubPriority</div><div class="ttdef"><b>Definition:</b> <a href="hal__misc_8h_source.html#l00056">hal_misc.h:56</a></div></div>
+<div class="ttc" id="astructex_n_v_i_c___init___type_def_html_a24ed61ecef706141a73b5d07a57c78d8"><div class="ttname"><a href="structex_n_v_i_c___init___type_def.html#a24ed61ecef706141a73b5d07a57c78d8">exNVIC_Init_TypeDef::NVIC_IRQChannelPreemptionPriority</a></div><div class="ttdeci">u8 NVIC_IRQChannelPreemptionPriority</div><div class="ttdef"><b>Definition:</b> <a href="hal__misc_8h_source.html#l00055">hal_misc.h:55</a></div></div>
+<div class="ttc" id="astructex_n_v_i_c___init___type_def_html_aad8255f065a1f18e5c79354c42032fbf"><div class="ttname"><a href="structex_n_v_i_c___init___type_def.html#aad8255f065a1f18e5c79354c42032fbf">exNVIC_Init_TypeDef::NVIC_IRQChannelCmd</a></div><div class="ttdeci">FunctionalState NVIC_IRQChannelCmd</div><div class="ttdef"><b>Definition:</b> <a href="hal__misc_8h_source.html#l00057">hal_misc.h:57</a></div></div>
+<div class="ttc" id="astructex_n_v_i_c___init___type_def_html_aea366177befb4d65be7fe971361efc55"><div class="ttname"><a href="structex_n_v_i_c___init___type_def.html#aea366177befb4d65be7fe971361efc55">exNVIC_Init_TypeDef::NVIC_IRQChannel</a></div><div class="ttdeci">u8 NVIC_IRQChannel</div><div class="ttdef"><b>Definition:</b> <a href="hal__misc_8h_source.html#l00054">hal_misc.h:54</a></div></div>
+<div class="ttc" id="atypes_8h_html_a10e94b422ef0c20dcdec20d31a1f5049"><div class="ttname"><a href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a></div><div class="ttdeci">unsigned int u32</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00054">types.h:54</a></div></div>
+<div class="ttc" id="atypes_8h_html_ac9a7e9a35d2513ec15c3b537aaa4fba1"><div class="ttname"><a href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a></div><div class="ttdeci">FunctionalState</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00074">types.h:74</a></div></div>
+<div class="ttc" id="atypes_8h_html_ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d"><div class="ttname"><a href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d">DISABLE</a></div><div class="ttdeci">@ DISABLE</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00074">types.h:74</a></div></div>
+<div class="ttc" id="atypes_8h_html_aed742c436da53c1080638ce6ef7d13de"><div class="ttname"><a href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a></div><div class="ttdeci">unsigned char u8</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00056">types.h:56</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

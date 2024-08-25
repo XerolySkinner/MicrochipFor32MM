@@ -1,0 +1,325 @@
+\hypertarget{group___u_a_r_t___exported___types}{}\doxysection{UART\+\_\+\+Exported\+\_\+\+Types}
+\label{group___u_a_r_t___exported___types}\index{UART\_Exported\_Types@{UART\_Exported\_Types}}
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_u_a_r_t___init_type_def}{UART\+\_\+\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em UART Init Structure definition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___u_a_r_t___exported___types_ga2680013e3731f208fc48bbdfff25ca8d}{UART\+\_\+\+Word\+Length\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___u_a_r_t___exported___types_gga2680013e3731f208fc48bbdfff25ca8da4196e3fe5769da982194dee91d00d03c}{UART\+\_\+\+Word\+Length\+\_\+5b}} = 0U
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_gga2680013e3731f208fc48bbdfff25ca8da625b8bc2cef59e1ec43375bb08dd170a}{UART\+\_\+\+Word\+Length\+\_\+6b}} = 1U \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+\+Pos
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_gga2680013e3731f208fc48bbdfff25ca8da97e36de5555a5d75b61cc214ca0c52c1}{UART\+\_\+\+Word\+Length\+\_\+7b}} = 2U \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+\+Pos
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_gga2680013e3731f208fc48bbdfff25ca8da5ae673a003725f9fc07e6abfcd6f7213}{UART\+\_\+\+Word\+Length\+\_\+8b}} = 3U \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} UART\+\_\+\+CCR\+\_\+\+CHAR\+\_\+\+Pos
+ \}
+\begin{DoxyCompactList}\small\item\em UART Word Length Enumerate definition \label{group___u_a_r_t___exported___constants_UART_Word_Length}%
+\Hypertarget{group___u_a_r_t___exported___constants_UART_Word_Length}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___u_a_r_t___exported___types_ga6321b7a7eb58130cd69a001d3fccc861}{UART\+\_\+\+Stop\+\_\+\+Bits\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___u_a_r_t___exported___types_gga6321b7a7eb58130cd69a001d3fccc861aaedac7fd9efece6190fa462208163bc1}{UART\+\_\+\+Stop\+Bits\+\_\+1}} = 0U
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_gga6321b7a7eb58130cd69a001d3fccc861a36fcdab28dabe4a95c0b024a3c0e217e}{UART\+\_\+\+Stop\+Bits\+\_\+2}} = UART\+\_\+\+CCR\+\_\+\+SPB
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_gga6321b7a7eb58130cd69a001d3fccc861ab759349aac5b8cb791c491a94f7e1694}{UART\+\_\+\+Stop\+Bits\+\_\+0\+\_\+5}} = UART\+\_\+\+CCR\+\_\+\+SPB1
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_gga6321b7a7eb58130cd69a001d3fccc861a8c53c8142f577ddbc540c01d4b8fd560}{UART\+\_\+\+Stop\+Bits\+\_\+1\+\_\+5}} = UART\+\_\+\+CCR\+\_\+\+SPB1 $\vert$ UART\+\_\+\+CCR\+\_\+\+SPB0
+ \}
+\begin{DoxyCompactList}\small\item\em UART Stop Bits Enumerate definition \label{group___u_a_r_t___exported___types_UART_Stop_Bits}%
+\Hypertarget{group___u_a_r_t___exported___types_UART_Stop_Bits}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___u_a_r_t___exported___types_gac58d0be24a1a8be355be3e5e6c8ba83f}{UART\+\_\+\+Parity\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___u_a_r_t___exported___types_ggac58d0be24a1a8be355be3e5e6c8ba83fa4b920b61656be3e299a7ced871b74a49}{UART\+\_\+\+Parity\+\_\+\+No}} = 0U
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_ggac58d0be24a1a8be355be3e5e6c8ba83fae5b480b7e3c6dc3a36400292c1825672}{UART\+\_\+\+Parity\+\_\+\+Even}} = UART\+\_\+\+CCR\+\_\+\+PEN $\vert$ UART\+\_\+\+CCR\+\_\+\+PSEL
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_ggac58d0be24a1a8be355be3e5e6c8ba83fae6fecd93cf0c3a2a11d678151ebe43c6}{UART\+\_\+\+Parity\+\_\+\+Odd}} = UART\+\_\+\+CCR\+\_\+\+PEN
+ \}
+\begin{DoxyCompactList}\small\item\em UART Parity Enumerate definition \label{group___u_a_r_t___exported___types_UART_Parity}%
+\Hypertarget{group___u_a_r_t___exported___types_UART_Parity}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___u_a_r_t___exported___types_ga5ade294c2e8895699b615a299e0b91be}{UART\+\_\+\+HW\+\_\+\+FLOWCONTROL\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___u_a_r_t___exported___types_gga5ade294c2e8895699b615a299e0b91bea05be5d5c6287eb3663d43e3f3be59bd5}{UART\+\_\+\+HWFlow\+Control\+\_\+\+None}} = 0U
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_gga5ade294c2e8895699b615a299e0b91beae1d23855f06e337da0579c57b5899679}{UART\+\_\+\+HWFlow\+Control\+\_\+\+RTS\+\_\+\+CTS}} = UART\+\_\+\+GCR\+\_\+\+AUTOFLOW
+ \}
+\begin{DoxyCompactList}\small\item\em UART Hardware Flow Control Enumerate definition \label{group___u_a_r_t___exported___types_UART_Hardware_Flow_Control}%
+\Hypertarget{group___u_a_r_t___exported___types_UART_Hardware_Flow_Control}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___u_a_r_t___exported___types_gadc53a6d028cb756bd4c94708911faf39}{UART\+\_\+\+Wake\+Up\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___u_a_r_t___exported___types_ggadc53a6d028cb756bd4c94708911faf39af3475746107086b17175aa8b5f0be140}{UART\+\_\+\+Wake\+Up\+\_\+\+Idle\+Line}} = 0U
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_ggadc53a6d028cb756bd4c94708911faf39a0204676801445334f50502a7dbf7891c}{UART\+\_\+\+Wake\+Up\+\_\+\+Address\+Mark}} = UART\+\_\+\+CCR\+\_\+\+WAKE
+ \}
+\item 
+enum \mbox{\hyperlink{group___u_a_r_t___exported___types_gad16ebe443cfd456f739f786b9bc4bd3b}{UART\+\_\+9bit\+\_\+\+Polarity\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___u_a_r_t___exported___types_ggad16ebe443cfd456f739f786b9bc4bd3ba2fb439e94fc4a7580a08822883aa15fc}{UART\+\_\+9bit\+\_\+\+Polarity\+\_\+\+Low}} = 0U
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_ggad16ebe443cfd456f739f786b9bc4bd3ba0623a62d44804283338b929244210b04}{UART\+\_\+9bit\+\_\+\+Polarity\+\_\+\+High}} = UART\+\_\+\+CCR\+\_\+\+B8\+POL
+ \}
+\item 
+enum \mbox{\hyperlink{group___u_a_r_t___exported___types_ga30702578d1089661f4c1716c0821bdab}{UART\+\_\+\+Auto\+Baud\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba79228be6c2bedf746d37ef8f48c9339d}{Data\+\_\+\+F8}} = 0
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba6fd6bebf6bf550a77dca841a96f46626}{Data\+\_\+\+FE}}
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdabaa0ebf5871f31a2791cb7da0c76ff170d}{ABRMODE\+\_\+\+FALLING\+\_\+\+TO\+\_\+\+RISINGEDGE1\+BIT}}
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba81f6370ef0a5cc3dabac62dc8158e83c}{ABRMODE\+\_\+\+FALLING\+\_\+\+TO\+\_\+\+RISINGEDGE2\+BIT}}
+, \newline
+\mbox{\hyperlink{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba2101757142d0ae6ff1959ab62e8c02dd}{ABRMODE\+\_\+\+FALLING\+\_\+\+TO\+\_\+\+RISINGEDGE4\+BIT}}
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdabaf2d8f6fb3a8ea367116322fe598c1a3a}{ABRMODE\+\_\+\+FALLING\+\_\+\+TO\+\_\+\+RISINGEDGE8\+BIT}}
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdabaf81db95cdd447e794b786f5af615873e}{ABRMODE\+\_\+\+FALLING\+\_\+\+TO\+\_\+\+FALLINGEDGE2\+BIT}}
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba1a8cc3212308d5312809bd23b487b8fd}{ABRMODE\+\_\+\+FALLING\+\_\+\+TO\+\_\+\+FALLINGEDGE4\+BIT}}
+, \newline
+\mbox{\hyperlink{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba2cbcca4a27360323e9aa9c27b7068660}{ABRMODE\+\_\+\+FALLING\+\_\+\+TO\+\_\+\+FALLINGEDGE8\+BIT}}
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba2f08c57411bc9221d085dc87af7e2020}{ABRMODE\+\_\+\+STARTBIT}}
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba01a931d1a7e01bb40534cc04e7e54694}{ABRMODE\+\_\+\+VALUE0\+X55}}
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdabac9619689e37db695d9334b9eb096856c}{ABRMODE\+\_\+\+VALUE0x7F}}
+, \newline
+\mbox{\hyperlink{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdabab49064378e408152b7aa438d599c7d8b}{ABRMODE\+\_\+\+VALUE0\+X80}}
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba7162efdf0a594a9f49bdcd32c4b11d51}{ABRMODE\+\_\+\+VALUE0\+XF7}}
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba9414b92e90bd8e166d657a2408eca47f}{ABRMODE\+\_\+\+VALUE0\+XF8}} = Data\+\_\+\+F8
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba62294079538c0344b1e28671e68a96e4}{ABRMODE\+\_\+\+VALUE0\+XFE}} = Data\+\_\+\+FE
+, \newline
+\mbox{\hyperlink{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba0db92c1dc67fc85b941c9fafa105402c}{ABRMODE\+\_\+\+VALUE0\+XFF}}
+ \}
+\begin{DoxyCompactList}\small\item\em UART Auto Baud\+Rate definition \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+\doxysubsection{枚举类型说明}
+\mbox{\Hypertarget{group___u_a_r_t___exported___types_gad16ebe443cfd456f739f786b9bc4bd3b}\label{group___u_a_r_t___exported___types_gad16ebe443cfd456f739f786b9bc4bd3b}} 
+\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_9bit\_Polarity\_TypeDef@{UART\_9bit\_Polarity\_TypeDef}}
+\index{UART\_9bit\_Polarity\_TypeDef@{UART\_9bit\_Polarity\_TypeDef}!UART\_Exported\_Types@{UART\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{UART\_9bit\_Polarity\_TypeDef}{UART\_9bit\_Polarity\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___u_a_r_t___exported___types_gad16ebe443cfd456f739f786b9bc4bd3b}{UART\+\_\+9bit\+\_\+\+Polarity\+\_\+\+Type\+Def}}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UART\_9bit\_Polarity\_Low@{UART\_9bit\_Polarity\_Low}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_9bit\_Polarity\_Low@{UART\_9bit\_Polarity\_Low}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_ggad16ebe443cfd456f739f786b9bc4bd3ba2fb439e94fc4a7580a08822883aa15fc}\label{group___u_a_r_t___exported___types_ggad16ebe443cfd456f739f786b9bc4bd3ba2fb439e94fc4a7580a08822883aa15fc}} 
+UART\+\_\+9bit\+\_\+\+Polarity\+\_\+\+Low&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UART\_9bit\_Polarity\_High@{UART\_9bit\_Polarity\_High}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_9bit\_Polarity\_High@{UART\_9bit\_Polarity\_High}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_ggad16ebe443cfd456f739f786b9bc4bd3ba0623a62d44804283338b929244210b04}\label{group___u_a_r_t___exported___types_ggad16ebe443cfd456f739f786b9bc4bd3ba0623a62d44804283338b929244210b04}} 
+UART\+\_\+9bit\+\_\+\+Polarity\+\_\+\+High&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__uart_8h_source}{hal\+\_\+uart.\+h}} 第 \mbox{\hyperlink{hal__uart_8h_source_l00092}{92}} 行定义.
+
+\mbox{\Hypertarget{group___u_a_r_t___exported___types_ga30702578d1089661f4c1716c0821bdab}\label{group___u_a_r_t___exported___types_ga30702578d1089661f4c1716c0821bdab}} 
+\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_AutoBaud\_TypeDef@{UART\_AutoBaud\_TypeDef}}
+\index{UART\_AutoBaud\_TypeDef@{UART\_AutoBaud\_TypeDef}!UART\_Exported\_Types@{UART\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{UART\_AutoBaud\_TypeDef}{UART\_AutoBaud\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___u_a_r_t___exported___types_ga30702578d1089661f4c1716c0821bdab}{UART\+\_\+\+Auto\+Baud\+\_\+\+Type\+Def}}}
+
+
+
+UART Auto Baud\+Rate definition 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Data\_F8@{Data\_F8}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!Data\_F8@{Data\_F8}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba79228be6c2bedf746d37ef8f48c9339d}\label{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba79228be6c2bedf746d37ef8f48c9339d}} 
+Data\+\_\+\+F8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Data\_FE@{Data\_FE}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!Data\_FE@{Data\_FE}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba6fd6bebf6bf550a77dca841a96f46626}\label{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba6fd6bebf6bf550a77dca841a96f46626}} 
+Data\+\_\+\+FE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ABRMODE\_FALLING\_TO\_RISINGEDGE1BIT@{ABRMODE\_FALLING\_TO\_RISINGEDGE1BIT}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!ABRMODE\_FALLING\_TO\_RISINGEDGE1BIT@{ABRMODE\_FALLING\_TO\_RISINGEDGE1BIT}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdabaa0ebf5871f31a2791cb7da0c76ff170d}\label{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdabaa0ebf5871f31a2791cb7da0c76ff170d}} 
+ABRMODE\+\_\+\+FALLING\+\_\+\+TO\+\_\+\+RISINGEDGE1\+BIT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ABRMODE\_FALLING\_TO\_RISINGEDGE2BIT@{ABRMODE\_FALLING\_TO\_RISINGEDGE2BIT}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!ABRMODE\_FALLING\_TO\_RISINGEDGE2BIT@{ABRMODE\_FALLING\_TO\_RISINGEDGE2BIT}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba81f6370ef0a5cc3dabac62dc8158e83c}\label{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba81f6370ef0a5cc3dabac62dc8158e83c}} 
+ABRMODE\+\_\+\+FALLING\+\_\+\+TO\+\_\+\+RISINGEDGE2\+BIT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ABRMODE\_FALLING\_TO\_RISINGEDGE4BIT@{ABRMODE\_FALLING\_TO\_RISINGEDGE4BIT}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!ABRMODE\_FALLING\_TO\_RISINGEDGE4BIT@{ABRMODE\_FALLING\_TO\_RISINGEDGE4BIT}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba2101757142d0ae6ff1959ab62e8c02dd}\label{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba2101757142d0ae6ff1959ab62e8c02dd}} 
+ABRMODE\+\_\+\+FALLING\+\_\+\+TO\+\_\+\+RISINGEDGE4\+BIT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ABRMODE\_FALLING\_TO\_RISINGEDGE8BIT@{ABRMODE\_FALLING\_TO\_RISINGEDGE8BIT}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!ABRMODE\_FALLING\_TO\_RISINGEDGE8BIT@{ABRMODE\_FALLING\_TO\_RISINGEDGE8BIT}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdabaf2d8f6fb3a8ea367116322fe598c1a3a}\label{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdabaf2d8f6fb3a8ea367116322fe598c1a3a}} 
+ABRMODE\+\_\+\+FALLING\+\_\+\+TO\+\_\+\+RISINGEDGE8\+BIT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ABRMODE\_FALLING\_TO\_FALLINGEDGE2BIT@{ABRMODE\_FALLING\_TO\_FALLINGEDGE2BIT}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!ABRMODE\_FALLING\_TO\_FALLINGEDGE2BIT@{ABRMODE\_FALLING\_TO\_FALLINGEDGE2BIT}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdabaf81db95cdd447e794b786f5af615873e}\label{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdabaf81db95cdd447e794b786f5af615873e}} 
+ABRMODE\+\_\+\+FALLING\+\_\+\+TO\+\_\+\+FALLINGEDGE2\+BIT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ABRMODE\_FALLING\_TO\_FALLINGEDGE4BIT@{ABRMODE\_FALLING\_TO\_FALLINGEDGE4BIT}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!ABRMODE\_FALLING\_TO\_FALLINGEDGE4BIT@{ABRMODE\_FALLING\_TO\_FALLINGEDGE4BIT}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba1a8cc3212308d5312809bd23b487b8fd}\label{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba1a8cc3212308d5312809bd23b487b8fd}} 
+ABRMODE\+\_\+\+FALLING\+\_\+\+TO\+\_\+\+FALLINGEDGE4\+BIT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ABRMODE\_FALLING\_TO\_FALLINGEDGE8BIT@{ABRMODE\_FALLING\_TO\_FALLINGEDGE8BIT}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!ABRMODE\_FALLING\_TO\_FALLINGEDGE8BIT@{ABRMODE\_FALLING\_TO\_FALLINGEDGE8BIT}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba2cbcca4a27360323e9aa9c27b7068660}\label{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba2cbcca4a27360323e9aa9c27b7068660}} 
+ABRMODE\+\_\+\+FALLING\+\_\+\+TO\+\_\+\+FALLINGEDGE8\+BIT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ABRMODE\_STARTBIT@{ABRMODE\_STARTBIT}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!ABRMODE\_STARTBIT@{ABRMODE\_STARTBIT}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba2f08c57411bc9221d085dc87af7e2020}\label{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba2f08c57411bc9221d085dc87af7e2020}} 
+ABRMODE\+\_\+\+STARTBIT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ABRMODE\_VALUE0X55@{ABRMODE\_VALUE0X55}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!ABRMODE\_VALUE0X55@{ABRMODE\_VALUE0X55}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba01a931d1a7e01bb40534cc04e7e54694}\label{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba01a931d1a7e01bb40534cc04e7e54694}} 
+ABRMODE\+\_\+\+VALUE0\+X55&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ABRMODE\_VALUE0x7F@{ABRMODE\_VALUE0x7F}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!ABRMODE\_VALUE0x7F@{ABRMODE\_VALUE0x7F}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdabac9619689e37db695d9334b9eb096856c}\label{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdabac9619689e37db695d9334b9eb096856c}} 
+ABRMODE\+\_\+\+VALUE0x7F&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ABRMODE\_VALUE0X80@{ABRMODE\_VALUE0X80}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!ABRMODE\_VALUE0X80@{ABRMODE\_VALUE0X80}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdabab49064378e408152b7aa438d599c7d8b}\label{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdabab49064378e408152b7aa438d599c7d8b}} 
+ABRMODE\+\_\+\+VALUE0\+X80&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ABRMODE\_VALUE0XF7@{ABRMODE\_VALUE0XF7}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!ABRMODE\_VALUE0XF7@{ABRMODE\_VALUE0XF7}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba7162efdf0a594a9f49bdcd32c4b11d51}\label{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba7162efdf0a594a9f49bdcd32c4b11d51}} 
+ABRMODE\+\_\+\+VALUE0\+XF7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ABRMODE\_VALUE0XF8@{ABRMODE\_VALUE0XF8}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!ABRMODE\_VALUE0XF8@{ABRMODE\_VALUE0XF8}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba9414b92e90bd8e166d657a2408eca47f}\label{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba9414b92e90bd8e166d657a2408eca47f}} 
+ABRMODE\+\_\+\+VALUE0\+XF8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ABRMODE\_VALUE0XFE@{ABRMODE\_VALUE0XFE}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!ABRMODE\_VALUE0XFE@{ABRMODE\_VALUE0XFE}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba62294079538c0344b1e28671e68a96e4}\label{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba62294079538c0344b1e28671e68a96e4}} 
+ABRMODE\+\_\+\+VALUE0\+XFE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ABRMODE\_VALUE0XFF@{ABRMODE\_VALUE0XFF}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!ABRMODE\_VALUE0XFF@{ABRMODE\_VALUE0XFF}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba0db92c1dc67fc85b941c9fafa105402c}\label{group___u_a_r_t___exported___types_gga30702578d1089661f4c1716c0821bdaba0db92c1dc67fc85b941c9fafa105402c}} 
+ABRMODE\+\_\+\+VALUE0\+XFF&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__uart_8h_source}{hal\+\_\+uart.\+h}} 第 \mbox{\hyperlink{hal__uart_8h_source_l00100}{100}} 行定义.
+
+\mbox{\Hypertarget{group___u_a_r_t___exported___types_ga5ade294c2e8895699b615a299e0b91be}\label{group___u_a_r_t___exported___types_ga5ade294c2e8895699b615a299e0b91be}} 
+\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_HW\_FLOWCONTROL\_TypeDef@{UART\_HW\_FLOWCONTROL\_TypeDef}}
+\index{UART\_HW\_FLOWCONTROL\_TypeDef@{UART\_HW\_FLOWCONTROL\_TypeDef}!UART\_Exported\_Types@{UART\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{UART\_HW\_FLOWCONTROL\_TypeDef}{UART\_HW\_FLOWCONTROL\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___u_a_r_t___exported___types_ga5ade294c2e8895699b615a299e0b91be}{UART\+\_\+\+HW\+\_\+\+FLOWCONTROL\+\_\+\+Type\+Def}}}
+
+
+
+UART Hardware Flow Control Enumerate definition \label{group___u_a_r_t___exported___types_UART_Hardware_Flow_Control}%
+\Hypertarget{group___u_a_r_t___exported___types_UART_Hardware_Flow_Control}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UART\_HWFlowControl\_None@{UART\_HWFlowControl\_None}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_HWFlowControl\_None@{UART\_HWFlowControl\_None}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga5ade294c2e8895699b615a299e0b91bea05be5d5c6287eb3663d43e3f3be59bd5}\label{group___u_a_r_t___exported___types_gga5ade294c2e8895699b615a299e0b91bea05be5d5c6287eb3663d43e3f3be59bd5}} 
+UART\+\_\+\+HWFlow\+Control\+\_\+\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UART\_HWFlowControl\_RTS\_CTS@{UART\_HWFlowControl\_RTS\_CTS}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_HWFlowControl\_RTS\_CTS@{UART\_HWFlowControl\_RTS\_CTS}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga5ade294c2e8895699b615a299e0b91beae1d23855f06e337da0579c57b5899679}\label{group___u_a_r_t___exported___types_gga5ade294c2e8895699b615a299e0b91beae1d23855f06e337da0579c57b5899679}} 
+UART\+\_\+\+HWFlow\+Control\+\_\+\+RTS\+\_\+\+CTS&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__uart_8h_source}{hal\+\_\+uart.\+h}} 第 \mbox{\hyperlink{hal__uart_8h_source_l00078}{78}} 行定义.
+
+\mbox{\Hypertarget{group___u_a_r_t___exported___types_gac58d0be24a1a8be355be3e5e6c8ba83f}\label{group___u_a_r_t___exported___types_gac58d0be24a1a8be355be3e5e6c8ba83f}} 
+\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_Parity\_TypeDef@{UART\_Parity\_TypeDef}}
+\index{UART\_Parity\_TypeDef@{UART\_Parity\_TypeDef}!UART\_Exported\_Types@{UART\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{UART\_Parity\_TypeDef}{UART\_Parity\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___u_a_r_t___exported___types_gac58d0be24a1a8be355be3e5e6c8ba83f}{UART\+\_\+\+Parity\+\_\+\+Type\+Def}}}
+
+
+
+UART Parity Enumerate definition \label{group___u_a_r_t___exported___types_UART_Parity}%
+\Hypertarget{group___u_a_r_t___exported___types_UART_Parity}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UART\_Parity\_No@{UART\_Parity\_No}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_Parity\_No@{UART\_Parity\_No}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_ggac58d0be24a1a8be355be3e5e6c8ba83fa4b920b61656be3e299a7ced871b74a49}\label{group___u_a_r_t___exported___types_ggac58d0be24a1a8be355be3e5e6c8ba83fa4b920b61656be3e299a7ced871b74a49}} 
+UART\+\_\+\+Parity\+\_\+\+No&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UART\_Parity\_Even@{UART\_Parity\_Even}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_Parity\_Even@{UART\_Parity\_Even}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_ggac58d0be24a1a8be355be3e5e6c8ba83fae5b480b7e3c6dc3a36400292c1825672}\label{group___u_a_r_t___exported___types_ggac58d0be24a1a8be355be3e5e6c8ba83fae5b480b7e3c6dc3a36400292c1825672}} 
+UART\+\_\+\+Parity\+\_\+\+Even&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UART\_Parity\_Odd@{UART\_Parity\_Odd}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_Parity\_Odd@{UART\_Parity\_Odd}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_ggac58d0be24a1a8be355be3e5e6c8ba83fae6fecd93cf0c3a2a11d678151ebe43c6}\label{group___u_a_r_t___exported___types_ggac58d0be24a1a8be355be3e5e6c8ba83fae6fecd93cf0c3a2a11d678151ebe43c6}} 
+UART\+\_\+\+Parity\+\_\+\+Odd&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__uart_8h_source}{hal\+\_\+uart.\+h}} 第 \mbox{\hyperlink{hal__uart_8h_source_l00068}{68}} 行定义.
+
+\mbox{\Hypertarget{group___u_a_r_t___exported___types_ga6321b7a7eb58130cd69a001d3fccc861}\label{group___u_a_r_t___exported___types_ga6321b7a7eb58130cd69a001d3fccc861}} 
+\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_Stop\_Bits\_TypeDef@{UART\_Stop\_Bits\_TypeDef}}
+\index{UART\_Stop\_Bits\_TypeDef@{UART\_Stop\_Bits\_TypeDef}!UART\_Exported\_Types@{UART\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{UART\_Stop\_Bits\_TypeDef}{UART\_Stop\_Bits\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___u_a_r_t___exported___types_ga6321b7a7eb58130cd69a001d3fccc861}{UART\+\_\+\+Stop\+\_\+\+Bits\+\_\+\+Type\+Def}}}
+
+
+
+UART Stop Bits Enumerate definition \label{group___u_a_r_t___exported___types_UART_Stop_Bits}%
+\Hypertarget{group___u_a_r_t___exported___types_UART_Stop_Bits}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UART\_StopBits\_1@{UART\_StopBits\_1}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_StopBits\_1@{UART\_StopBits\_1}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga6321b7a7eb58130cd69a001d3fccc861aaedac7fd9efece6190fa462208163bc1}\label{group___u_a_r_t___exported___types_gga6321b7a7eb58130cd69a001d3fccc861aaedac7fd9efece6190fa462208163bc1}} 
+UART\+\_\+\+Stop\+Bits\+\_\+1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UART\_StopBits\_2@{UART\_StopBits\_2}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_StopBits\_2@{UART\_StopBits\_2}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga6321b7a7eb58130cd69a001d3fccc861a36fcdab28dabe4a95c0b024a3c0e217e}\label{group___u_a_r_t___exported___types_gga6321b7a7eb58130cd69a001d3fccc861a36fcdab28dabe4a95c0b024a3c0e217e}} 
+UART\+\_\+\+Stop\+Bits\+\_\+2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UART\_StopBits\_0\_5@{UART\_StopBits\_0\_5}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_StopBits\_0\_5@{UART\_StopBits\_0\_5}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga6321b7a7eb58130cd69a001d3fccc861ab759349aac5b8cb791c491a94f7e1694}\label{group___u_a_r_t___exported___types_gga6321b7a7eb58130cd69a001d3fccc861ab759349aac5b8cb791c491a94f7e1694}} 
+UART\+\_\+\+Stop\+Bits\+\_\+0\+\_\+5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UART\_StopBits\_1\_5@{UART\_StopBits\_1\_5}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_StopBits\_1\_5@{UART\_StopBits\_1\_5}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga6321b7a7eb58130cd69a001d3fccc861a8c53c8142f577ddbc540c01d4b8fd560}\label{group___u_a_r_t___exported___types_gga6321b7a7eb58130cd69a001d3fccc861a8c53c8142f577ddbc540c01d4b8fd560}} 
+UART\+\_\+\+Stop\+Bits\+\_\+1\+\_\+5&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__uart_8h_source}{hal\+\_\+uart.\+h}} 第 \mbox{\hyperlink{hal__uart_8h_source_l00056}{56}} 行定义.
+
+\mbox{\Hypertarget{group___u_a_r_t___exported___types_gadc53a6d028cb756bd4c94708911faf39}\label{group___u_a_r_t___exported___types_gadc53a6d028cb756bd4c94708911faf39}} 
+\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_WakeUp\_TypeDef@{UART\_WakeUp\_TypeDef}}
+\index{UART\_WakeUp\_TypeDef@{UART\_WakeUp\_TypeDef}!UART\_Exported\_Types@{UART\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{UART\_WakeUp\_TypeDef}{UART\_WakeUp\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___u_a_r_t___exported___types_gadc53a6d028cb756bd4c94708911faf39}{UART\+\_\+\+Wake\+Up\+\_\+\+Type\+Def}}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UART\_WakeUp\_IdleLine@{UART\_WakeUp\_IdleLine}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_WakeUp\_IdleLine@{UART\_WakeUp\_IdleLine}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_ggadc53a6d028cb756bd4c94708911faf39af3475746107086b17175aa8b5f0be140}\label{group___u_a_r_t___exported___types_ggadc53a6d028cb756bd4c94708911faf39af3475746107086b17175aa8b5f0be140}} 
+UART\+\_\+\+Wake\+Up\+\_\+\+Idle\+Line&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UART\_WakeUp\_AddressMark@{UART\_WakeUp\_AddressMark}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_WakeUp\_AddressMark@{UART\_WakeUp\_AddressMark}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_ggadc53a6d028cb756bd4c94708911faf39a0204676801445334f50502a7dbf7891c}\label{group___u_a_r_t___exported___types_ggadc53a6d028cb756bd4c94708911faf39a0204676801445334f50502a7dbf7891c}} 
+UART\+\_\+\+Wake\+Up\+\_\+\+Address\+Mark&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__uart_8h_source}{hal\+\_\+uart.\+h}} 第 \mbox{\hyperlink{hal__uart_8h_source_l00087}{87}} 行定义.
+
+\mbox{\Hypertarget{group___u_a_r_t___exported___types_ga2680013e3731f208fc48bbdfff25ca8d}\label{group___u_a_r_t___exported___types_ga2680013e3731f208fc48bbdfff25ca8d}} 
+\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_WordLength\_TypeDef@{UART\_WordLength\_TypeDef}}
+\index{UART\_WordLength\_TypeDef@{UART\_WordLength\_TypeDef}!UART\_Exported\_Types@{UART\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{UART\_WordLength\_TypeDef}{UART\_WordLength\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___u_a_r_t___exported___types_ga2680013e3731f208fc48bbdfff25ca8d}{UART\+\_\+\+Word\+Length\+\_\+\+Type\+Def}}}
+
+
+
+UART Word Length Enumerate definition \label{group___u_a_r_t___exported___constants_UART_Word_Length}%
+\Hypertarget{group___u_a_r_t___exported___constants_UART_Word_Length}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UART\_WordLength\_5b@{UART\_WordLength\_5b}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_WordLength\_5b@{UART\_WordLength\_5b}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga2680013e3731f208fc48bbdfff25ca8da4196e3fe5769da982194dee91d00d03c}\label{group___u_a_r_t___exported___types_gga2680013e3731f208fc48bbdfff25ca8da4196e3fe5769da982194dee91d00d03c}} 
+UART\+\_\+\+Word\+Length\+\_\+5b&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UART\_WordLength\_6b@{UART\_WordLength\_6b}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_WordLength\_6b@{UART\_WordLength\_6b}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga2680013e3731f208fc48bbdfff25ca8da625b8bc2cef59e1ec43375bb08dd170a}\label{group___u_a_r_t___exported___types_gga2680013e3731f208fc48bbdfff25ca8da625b8bc2cef59e1ec43375bb08dd170a}} 
+UART\+\_\+\+Word\+Length\+\_\+6b&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UART\_WordLength\_7b@{UART\_WordLength\_7b}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_WordLength\_7b@{UART\_WordLength\_7b}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga2680013e3731f208fc48bbdfff25ca8da97e36de5555a5d75b61cc214ca0c52c1}\label{group___u_a_r_t___exported___types_gga2680013e3731f208fc48bbdfff25ca8da97e36de5555a5d75b61cc214ca0c52c1}} 
+UART\+\_\+\+Word\+Length\+\_\+7b&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UART\_WordLength\_8b@{UART\_WordLength\_8b}!UART\_Exported\_Types@{UART\_Exported\_Types}}\index{UART\_Exported\_Types@{UART\_Exported\_Types}!UART\_WordLength\_8b@{UART\_WordLength\_8b}}}\mbox{\Hypertarget{group___u_a_r_t___exported___types_gga2680013e3731f208fc48bbdfff25ca8da5ae673a003725f9fc07e6abfcd6f7213}\label{group___u_a_r_t___exported___types_gga2680013e3731f208fc48bbdfff25ca8da5ae673a003725f9fc07e6abfcd6f7213}} 
+UART\+\_\+\+Word\+Length\+\_\+8b&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__uart_8h_source}{hal\+\_\+uart.\+h}} 第 \mbox{\hyperlink{hal__uart_8h_source_l00045}{45}} 行定义.
+

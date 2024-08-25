@@ -1,0 +1,2219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>template: C:/Users/XerolySkinner/Desktop/MM_Device/MM32F327x/Include/reg_flash.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">template
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8a23370bd962f2be3cb202251f8a0865.html">MM32F327x</a></li><li class="navelem"><a class="el" href="dir_558e241ee7368c5b8b9a34748b15bdf8.html">Include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a>  </div>
+  <div class="headertitle"><div class="title">reg_flash.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY.  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="types_8h_source.html">types.h</a>&quot;</code><br />
+</div>
+<p><a href="reg__flash_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_f_l_a_s_h___type_def.html">FLASH_TypeDef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">FLASH Registers Structure Definition  <a href="struct_f_l_a_s_h___type_def.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_o_b___type_def.html">OB_TypeDef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">OPT Structure Definition  <a href="struct_o_b___type_def.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_r_o_t_e_c_t___type_def.html">PROTECT_TypeDef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">PROTECT BYTES Structure Definition  <a href="struct_p_r_o_t_e_c_t___type_def.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_a_c_h_e___type_def.html">CACHE_TypeDef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CACHE BYTES Structure Definition  <a href="struct_c_a_c_h_e___type_def.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a23a9099a5f8fc9c6e253c0eecb2be8db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a23a9099a5f8fc9c6e253c0eecb2be8db">FLASH_BASE</a>&#160;&#160;&#160;(0x08000000U)</td></tr>
+<tr class="memdesc:a23a9099a5f8fc9c6e253c0eecb2be8db"><td class="mdescLeft">&#160;</td><td class="mdescRight">MM32 MCU Memory/Peripherals mapping  <a href="reg__flash_8h.html#a23a9099a5f8fc9c6e253c0eecb2be8db">更多...</a><br /></td></tr>
+<tr class="separator:a23a9099a5f8fc9c6e253c0eecb2be8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e8f3d2e5868754a7cd88614955aecc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a05e8f3d2e5868754a7cd88614955aecc">SRAM_BASE</a>&#160;&#160;&#160;(0x20000000U)</td></tr>
+<tr class="memdesc:a05e8f3d2e5868754a7cd88614955aecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">SRAM base address in the alias region  <a href="reg__flash_8h.html#a05e8f3d2e5868754a7cd88614955aecc">更多...</a><br /></td></tr>
+<tr class="separator:a05e8f3d2e5868754a7cd88614955aecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2709d0accca252f2dd923e6a40135c52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a2709d0accca252f2dd923e6a40135c52">CACHE_BASE</a>&#160;&#160;&#160;(<a class="el" href="reg__common_8h.html#a25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x6000)</td></tr>
+<tr class="memdesc:a2709d0accca252f2dd923e6a40135c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base Address: 0x40016000 <br  />
+  <a href="reg__flash_8h.html#a2709d0accca252f2dd923e6a40135c52">更多...</a><br /></td></tr>
+<tr class="separator:a2709d0accca252f2dd923e6a40135c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8311d9a635d57a643676ca37bf461dd3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a8311d9a635d57a643676ca37bf461dd3">FLASH_REG_BASE</a>&#160;&#160;&#160;(<a class="el" href="reg__common_8h.html#a92eb5d49730765d2abd0f5b09548f9f5">AHBPERIPH_BASE</a> + 0x2000)</td></tr>
+<tr class="memdesc:a8311d9a635d57a643676ca37bf461dd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">FLASH Base Address Definition  <a href="reg__flash_8h.html#a8311d9a635d57a643676ca37bf461dd3">更多...</a><br /></td></tr>
+<tr class="separator:a8311d9a635d57a643676ca37bf461dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5b5fb155f9ee15dfb6d757da1adc926"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#ab5b5fb155f9ee15dfb6d757da1adc926">OB_BASE</a>&#160;&#160;&#160;(0x1FFFF800U)</td></tr>
+<tr class="memdesc:ab5b5fb155f9ee15dfb6d757da1adc926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flash Option Bytes base address  <a href="reg__flash_8h.html#ab5b5fb155f9ee15dfb6d757da1adc926">更多...</a><br /></td></tr>
+<tr class="separator:ab5b5fb155f9ee15dfb6d757da1adc926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf5081b0cfe00529bf531417058d8ee8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#aaf5081b0cfe00529bf531417058d8ee8">PROTECT_BASE</a>&#160;&#160;&#160;(0x1FFE0000U)</td></tr>
+<tr class="memdesc:aaf5081b0cfe00529bf531417058d8ee8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flash Protect Bytes base address  <a href="reg__flash_8h.html#aaf5081b0cfe00529bf531417058d8ee8">更多...</a><br /></td></tr>
+<tr class="separator:aaf5081b0cfe00529bf531417058d8ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a844ea28ba1e0a5a0e497f16b61ea306b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a844ea28ba1e0a5a0e497f16b61ea306b">FLASH</a>&#160;&#160;&#160;((<a class="el" href="struct_f_l_a_s_h___type_def.html">FLASH_TypeDef</a>*) <a class="el" href="reg__flash_8h.html#a8311d9a635d57a643676ca37bf461dd3">FLASH_REG_BASE</a>)</td></tr>
+<tr class="memdesc:a844ea28ba1e0a5a0e497f16b61ea306b"><td class="mdescLeft">&#160;</td><td class="mdescRight">FLASH type pointer Definition  <a href="reg__flash_8h.html#a844ea28ba1e0a5a0e497f16b61ea306b">更多...</a><br /></td></tr>
+<tr class="separator:a844ea28ba1e0a5a0e497f16b61ea306b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d5f875cdc6d696735f20fa23a895c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#ad2d5f875cdc6d696735f20fa23a895c3">OB</a>&#160;&#160;&#160;((<a class="el" href="struct_o_b___type_def.html">OB_TypeDef</a>*) <a class="el" href="reg__flash_8h.html#ab5b5fb155f9ee15dfb6d757da1adc926">OB_BASE</a>)</td></tr>
+<tr class="memdesc:ad2d5f875cdc6d696735f20fa23a895c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">OPTB type pointer Definition  <a href="reg__flash_8h.html#ad2d5f875cdc6d696735f20fa23a895c3">更多...</a><br /></td></tr>
+<tr class="separator:ad2d5f875cdc6d696735f20fa23a895c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bc09c4fadd88692e00a50fa44ed8555"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a9bc09c4fadd88692e00a50fa44ed8555">PROTECT</a>&#160;&#160;&#160;((<a class="el" href="struct_p_r_o_t_e_c_t___type_def.html">PROTECT_TypeDef</a>*) <a class="el" href="reg__flash_8h.html#aaf5081b0cfe00529bf531417058d8ee8">PROTECT_BASE</a>)</td></tr>
+<tr class="separator:a9bc09c4fadd88692e00a50fa44ed8555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43fd55aa78bd891ebbd6a450f5eecce4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a43fd55aa78bd891ebbd6a450f5eecce4">CACHE</a>&#160;&#160;&#160;((<a class="el" href="struct_c_a_c_h_e___type_def.html">CACHE_TypeDef</a>*) <a class="el" href="reg__flash_8h.html#a2709d0accca252f2dd923e6a40135c52">CACHE_BASE</a>)</td></tr>
+<tr class="memdesc:a43fd55aa78bd891ebbd6a450f5eecce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">CACHE pointer Definition  <a href="reg__flash_8h.html#a43fd55aa78bd891ebbd6a450f5eecce4">更多...</a><br /></td></tr>
+<tr class="separator:a43fd55aa78bd891ebbd6a450f5eecce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd27f57311268ed1ad0ddb1a207ce9a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#acd27f57311268ed1ad0ddb1a207ce9a4">FLASH_ACR_LATENCY_Pos</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memdesc:acd27f57311268ed1ad0ddb1a207ce9a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">FLASH_ACR Register Bit Definition  <a href="reg__flash_8h.html#acd27f57311268ed1ad0ddb1a207ce9a4">更多...</a><br /></td></tr>
+<tr class="separator:acd27f57311268ed1ad0ddb1a207ce9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef5e44cbb084160a6004ca9951ec7318"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#aef5e44cbb084160a6004ca9951ec7318">FLASH_ACR_LATENCY</a>&#160;&#160;&#160;(0x07U &lt;&lt; <a class="el" href="reg__flash_8h.html#acd27f57311268ed1ad0ddb1a207ce9a4">FLASH_ACR_LATENCY_Pos</a>)</td></tr>
+<tr class="memdesc:aef5e44cbb084160a6004ca9951ec7318"><td class="mdescLeft">&#160;</td><td class="mdescRight">LATENCY[2:0] bits (Latency)  <a href="reg__flash_8h.html#aef5e44cbb084160a6004ca9951ec7318">更多...</a><br /></td></tr>
+<tr class="separator:aef5e44cbb084160a6004ca9951ec7318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6560c1d58df18c8740d70591bf7bc1ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a6560c1d58df18c8740d70591bf7bc1ad">FLASH_ACR_LATENCY_0</a>&#160;&#160;&#160;(0x00U &lt;&lt; <a class="el" href="reg__flash_8h.html#acd27f57311268ed1ad0ddb1a207ce9a4">FLASH_ACR_LATENCY_Pos</a>)</td></tr>
+<tr class="memdesc:a6560c1d58df18c8740d70591bf7bc1ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 waiting state  <a href="reg__flash_8h.html#a6560c1d58df18c8740d70591bf7bc1ad">更多...</a><br /></td></tr>
+<tr class="separator:a6560c1d58df18c8740d70591bf7bc1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85155f5d3f34ebe83989513793498c72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a85155f5d3f34ebe83989513793498c72">FLASH_ACR_LATENCY_1</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#acd27f57311268ed1ad0ddb1a207ce9a4">FLASH_ACR_LATENCY_Pos</a>)</td></tr>
+<tr class="memdesc:a85155f5d3f34ebe83989513793498c72"><td class="mdescLeft">&#160;</td><td class="mdescRight">1 waiting state <br  />
+  <a href="reg__flash_8h.html#a85155f5d3f34ebe83989513793498c72">更多...</a><br /></td></tr>
+<tr class="separator:a85155f5d3f34ebe83989513793498c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b5089d0c86db787ebef496c9057918"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a61b5089d0c86db787ebef496c9057918">FLASH_ACR_LATENCY_2</a>&#160;&#160;&#160;(0x02U &lt;&lt; <a class="el" href="reg__flash_8h.html#acd27f57311268ed1ad0ddb1a207ce9a4">FLASH_ACR_LATENCY_Pos</a>)</td></tr>
+<tr class="memdesc:a61b5089d0c86db787ebef496c9057918"><td class="mdescLeft">&#160;</td><td class="mdescRight">2 waiting state  <a href="reg__flash_8h.html#a61b5089d0c86db787ebef496c9057918">更多...</a><br /></td></tr>
+<tr class="separator:a61b5089d0c86db787ebef496c9057918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6fd9ca7da8325ebbe9d651cedc1be0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#ab6fd9ca7da8325ebbe9d651cedc1be0e">FLASH_ACR_LATENCY_3</a>&#160;&#160;&#160;(0x03U &lt;&lt; <a class="el" href="reg__flash_8h.html#acd27f57311268ed1ad0ddb1a207ce9a4">FLASH_ACR_LATENCY_Pos</a>)</td></tr>
+<tr class="memdesc:ab6fd9ca7da8325ebbe9d651cedc1be0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">3 waiting state  <a href="reg__flash_8h.html#ab6fd9ca7da8325ebbe9d651cedc1be0e">更多...</a><br /></td></tr>
+<tr class="separator:ab6fd9ca7da8325ebbe9d651cedc1be0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2b7184353c076341249a7c4e1bbc324"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#ac2b7184353c076341249a7c4e1bbc324">FLASH_ACR_HLFCYA_Pos</a>&#160;&#160;&#160;(3)</td></tr>
+<tr class="separator:ac2b7184353c076341249a7c4e1bbc324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e66d0fa94c019e9c27a3d79e8228cd9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a6e66d0fa94c019e9c27a3d79e8228cd9">FLASH_ACR_HLFCYA</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#ac2b7184353c076341249a7c4e1bbc324">FLASH_ACR_HLFCYA_Pos</a>)</td></tr>
+<tr class="memdesc:a6e66d0fa94c019e9c27a3d79e8228cd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flash Half Cycle Access Enable  <a href="reg__flash_8h.html#a6e66d0fa94c019e9c27a3d79e8228cd9">更多...</a><br /></td></tr>
+<tr class="separator:a6e66d0fa94c019e9c27a3d79e8228cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a288f4e0368a7d8d18e626a54caf995a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a288f4e0368a7d8d18e626a54caf995a9">FLASH_ACR_PRFTBE_Pos</a>&#160;&#160;&#160;(4)</td></tr>
+<tr class="separator:a288f4e0368a7d8d18e626a54caf995a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5285ab198307213dce0629f9b7c6fc86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a5285ab198307213dce0629f9b7c6fc86">FLASH_ACR_PRFTBE</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a288f4e0368a7d8d18e626a54caf995a9">FLASH_ACR_PRFTBE_Pos</a>)</td></tr>
+<tr class="memdesc:a5285ab198307213dce0629f9b7c6fc86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prefetch Buffer Enable  <a href="reg__flash_8h.html#a5285ab198307213dce0629f9b7c6fc86">更多...</a><br /></td></tr>
+<tr class="separator:a5285ab198307213dce0629f9b7c6fc86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8998834e7fc4fa0855cf5e7424b7abea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a8998834e7fc4fa0855cf5e7424b7abea">FLASH_ACR_PRFTBS_Pos</a>&#160;&#160;&#160;(5)</td></tr>
+<tr class="separator:a8998834e7fc4fa0855cf5e7424b7abea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e73d25ffe7e7a258a873e1fbef17445"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a1e73d25ffe7e7a258a873e1fbef17445">FLASH_ACR_PRFTBS</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a8998834e7fc4fa0855cf5e7424b7abea">FLASH_ACR_PRFTBS_Pos</a>)</td></tr>
+<tr class="memdesc:a1e73d25ffe7e7a258a873e1fbef17445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prefetch Buffer Status /////////////////////////////////////////////////////////////////////////////  <a href="reg__flash_8h.html#a1e73d25ffe7e7a258a873e1fbef17445">更多...</a><br /></td></tr>
+<tr class="separator:a1e73d25ffe7e7a258a873e1fbef17445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72dd303c0d32dad568dc108a27ddff67"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a72dd303c0d32dad568dc108a27ddff67">FLASH_KEYR_FKEY_Pos</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="separator:a72dd303c0d32dad568dc108a27ddff67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9db8057ca6bb3aebc554fa40f2de8ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#ad9db8057ca6bb3aebc554fa40f2de8ee">FLASH_KEYR_FKEY</a>&#160;&#160;&#160;(0xFFFFFFFFU &lt;&lt; <a class="el" href="reg__flash_8h.html#a72dd303c0d32dad568dc108a27ddff67">FLASH_KEYR_FKEY_Pos</a>)</td></tr>
+<tr class="memdesc:ad9db8057ca6bb3aebc554fa40f2de8ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">FLASH Key  <a href="reg__flash_8h.html#ad9db8057ca6bb3aebc554fa40f2de8ee">更多...</a><br /></td></tr>
+<tr class="separator:ad9db8057ca6bb3aebc554fa40f2de8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97a955c9fb95aadc41510e8186911f06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a97a955c9fb95aadc41510e8186911f06">FLASH_OPTKEYR_OPTKEY_Pos</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memdesc:a97a955c9fb95aadc41510e8186911f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">FLASH_OPTKEYR Register Bit Definition  <a href="reg__flash_8h.html#a97a955c9fb95aadc41510e8186911f06">更多...</a><br /></td></tr>
+<tr class="separator:a97a955c9fb95aadc41510e8186911f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2984934a116e341420122bcc44019f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#aa2984934a116e341420122bcc44019f1">FLASH_OPTKEYR_OPTKEY</a>&#160;&#160;&#160;(0xFFFFFFFFU &lt;&lt; <a class="el" href="reg__flash_8h.html#a97a955c9fb95aadc41510e8186911f06">FLASH_OPTKEYR_OPTKEY_Pos</a>)</td></tr>
+<tr class="memdesc:aa2984934a116e341420122bcc44019f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Option Byte Key  <a href="reg__flash_8h.html#aa2984934a116e341420122bcc44019f1">更多...</a><br /></td></tr>
+<tr class="separator:aa2984934a116e341420122bcc44019f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8f128bca20566a98420c91e6019aeee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#ad8f128bca20566a98420c91e6019aeee">FLASH_SR_BUSY_Pos</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memdesc:ad8f128bca20566a98420c91e6019aeee"><td class="mdescLeft">&#160;</td><td class="mdescRight">FLASH_SR Register Bit Definition  <a href="reg__flash_8h.html#ad8f128bca20566a98420c91e6019aeee">更多...</a><br /></td></tr>
+<tr class="separator:ad8f128bca20566a98420c91e6019aeee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceacb6d53beb00e92d7d7a7cb41a19d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#aceacb6d53beb00e92d7d7a7cb41a19d2">FLASH_SR_BUSY</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#ad8f128bca20566a98420c91e6019aeee">FLASH_SR_BUSY_Pos</a>)</td></tr>
+<tr class="memdesc:aceacb6d53beb00e92d7d7a7cb41a19d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Busy  <a href="reg__flash_8h.html#aceacb6d53beb00e92d7d7a7cb41a19d2">更多...</a><br /></td></tr>
+<tr class="separator:aceacb6d53beb00e92d7d7a7cb41a19d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade46f1b130b188d41613fc87661a8815"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#ade46f1b130b188d41613fc87661a8815">FLASH_SR_PGERR_Pos</a>&#160;&#160;&#160;(2)</td></tr>
+<tr class="separator:ade46f1b130b188d41613fc87661a8815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60f40ca765714598a62aa216a5ccd8e4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a60f40ca765714598a62aa216a5ccd8e4">FLASH_SR_PGERR</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#ade46f1b130b188d41613fc87661a8815">FLASH_SR_PGERR_Pos</a>)</td></tr>
+<tr class="memdesc:a60f40ca765714598a62aa216a5ccd8e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Programming Error  <a href="reg__flash_8h.html#a60f40ca765714598a62aa216a5ccd8e4">更多...</a><br /></td></tr>
+<tr class="separator:a60f40ca765714598a62aa216a5ccd8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd56872fd365b645d51c217e901958f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#abd56872fd365b645d51c217e901958f6">FLASH_SR_WRPRTERR_Pos</a>&#160;&#160;&#160;(4)</td></tr>
+<tr class="separator:abd56872fd365b645d51c217e901958f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e403606e5ac23cb07701aeebc1f73e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a2e403606e5ac23cb07701aeebc1f73e5">FLASH_SR_WRPRTERR</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#abd56872fd365b645d51c217e901958f6">FLASH_SR_WRPRTERR_Pos</a>)</td></tr>
+<tr class="memdesc:a2e403606e5ac23cb07701aeebc1f73e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write Protection Error  <a href="reg__flash_8h.html#a2e403606e5ac23cb07701aeebc1f73e5">更多...</a><br /></td></tr>
+<tr class="separator:a2e403606e5ac23cb07701aeebc1f73e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2013e875c4c210b820e502feea6c9fb1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a2013e875c4c210b820e502feea6c9fb1">FLASH_SR_EOP_Pos</a>&#160;&#160;&#160;(5)</td></tr>
+<tr class="separator:a2013e875c4c210b820e502feea6c9fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1301c6b487cfefa247c54a576a0c12b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#ae1301c6b487cfefa247c54a576a0c12b">FLASH_SR_EOP</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a2013e875c4c210b820e502feea6c9fb1">FLASH_SR_EOP_Pos</a>)</td></tr>
+<tr class="memdesc:ae1301c6b487cfefa247c54a576a0c12b"><td class="mdescLeft">&#160;</td><td class="mdescRight">End of operation  <a href="reg__flash_8h.html#ae1301c6b487cfefa247c54a576a0c12b">更多...</a><br /></td></tr>
+<tr class="separator:ae1301c6b487cfefa247c54a576a0c12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a5addaa1ee5049b0c99023d91dd4a70"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a0a5addaa1ee5049b0c99023d91dd4a70">FLASH_CR_PG_Pos</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memdesc:a0a5addaa1ee5049b0c99023d91dd4a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">FLASH_CR Register Bit Definition  <a href="reg__flash_8h.html#a0a5addaa1ee5049b0c99023d91dd4a70">更多...</a><br /></td></tr>
+<tr class="separator:a0a5addaa1ee5049b0c99023d91dd4a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47754b39bd7a7c79c251d6376f97f661"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a47754b39bd7a7c79c251d6376f97f661">FLASH_CR_PG</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a0a5addaa1ee5049b0c99023d91dd4a70">FLASH_CR_PG_Pos</a>)</td></tr>
+<tr class="memdesc:a47754b39bd7a7c79c251d6376f97f661"><td class="mdescLeft">&#160;</td><td class="mdescRight">Programming  <a href="reg__flash_8h.html#a47754b39bd7a7c79c251d6376f97f661">更多...</a><br /></td></tr>
+<tr class="separator:a47754b39bd7a7c79c251d6376f97f661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ae43572c697cddd88e48b945828c526"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a4ae43572c697cddd88e48b945828c526">FLASH_CR_PER_Pos</a>&#160;&#160;&#160;(1)</td></tr>
+<tr class="separator:a4ae43572c697cddd88e48b945828c526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad845355ade49d56cf70ad0ff09595a23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#ad845355ade49d56cf70ad0ff09595a23">FLASH_CR_PER</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a4ae43572c697cddd88e48b945828c526">FLASH_CR_PER_Pos</a>)</td></tr>
+<tr class="memdesc:ad845355ade49d56cf70ad0ff09595a23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Page Erase  <a href="reg__flash_8h.html#ad845355ade49d56cf70ad0ff09595a23">更多...</a><br /></td></tr>
+<tr class="separator:ad845355ade49d56cf70ad0ff09595a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0627fa13f9e31a0250d6917e4d2ecbc1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a0627fa13f9e31a0250d6917e4d2ecbc1">FLASH_CR_MER_Pos</a>&#160;&#160;&#160;(2)</td></tr>
+<tr class="separator:a0627fa13f9e31a0250d6917e4d2ecbc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a287aa5a625125301306a02fb69c53a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a4a287aa5a625125301306a02fb69c53a">FLASH_CR_MER</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a0627fa13f9e31a0250d6917e4d2ecbc1">FLASH_CR_MER_Pos</a>)</td></tr>
+<tr class="memdesc:a4a287aa5a625125301306a02fb69c53a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mass Erase  <a href="reg__flash_8h.html#a4a287aa5a625125301306a02fb69c53a">更多...</a><br /></td></tr>
+<tr class="separator:a4a287aa5a625125301306a02fb69c53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f0371da9e5f8f8e95b038107426ce6f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a3f0371da9e5f8f8e95b038107426ce6f">FLASH_CR_OPTPG_Pos</a>&#160;&#160;&#160;(4)</td></tr>
+<tr class="separator:a3f0371da9e5f8f8e95b038107426ce6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6736a5478a87f35a6a0cb66d8784a5ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a6736a5478a87f35a6a0cb66d8784a5ab">FLASH_CR_OPTPG</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a3f0371da9e5f8f8e95b038107426ce6f">FLASH_CR_OPTPG_Pos</a>)</td></tr>
+<tr class="memdesc:a6736a5478a87f35a6a0cb66d8784a5ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Option Byte Programming  <a href="reg__flash_8h.html#a6736a5478a87f35a6a0cb66d8784a5ab">更多...</a><br /></td></tr>
+<tr class="separator:a6736a5478a87f35a6a0cb66d8784a5ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae89abf0177ab4bcf030984073b74a182"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#ae89abf0177ab4bcf030984073b74a182">FLASH_CR_OPTER_Pos</a>&#160;&#160;&#160;(5)</td></tr>
+<tr class="separator:ae89abf0177ab4bcf030984073b74a182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19fbf5dc4339b1ec8630675f03ad6fe0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a19fbf5dc4339b1ec8630675f03ad6fe0">FLASH_CR_OPTER</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#ae89abf0177ab4bcf030984073b74a182">FLASH_CR_OPTER_Pos</a>)</td></tr>
+<tr class="memdesc:a19fbf5dc4339b1ec8630675f03ad6fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Option Byte Erase  <a href="reg__flash_8h.html#a19fbf5dc4339b1ec8630675f03ad6fe0">更多...</a><br /></td></tr>
+<tr class="separator:a19fbf5dc4339b1ec8630675f03ad6fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7925df36a4d15838d8cb457f671e7532"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a7925df36a4d15838d8cb457f671e7532">FLASH_CR_STRT_Pos</a>&#160;&#160;&#160;(6)</td></tr>
+<tr class="separator:a7925df36a4d15838d8cb457f671e7532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe4dd28134f93f52b1d4ec5b36a99864"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#afe4dd28134f93f52b1d4ec5b36a99864">FLASH_CR_STRT</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a7925df36a4d15838d8cb457f671e7532">FLASH_CR_STRT_Pos</a>)</td></tr>
+<tr class="memdesc:afe4dd28134f93f52b1d4ec5b36a99864"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start  <a href="reg__flash_8h.html#afe4dd28134f93f52b1d4ec5b36a99864">更多...</a><br /></td></tr>
+<tr class="separator:afe4dd28134f93f52b1d4ec5b36a99864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa74509adc6db3db66803966b25423cae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#aa74509adc6db3db66803966b25423cae">FLASH_CR_LOCK_Pos</a>&#160;&#160;&#160;(7)</td></tr>
+<tr class="separator:aa74509adc6db3db66803966b25423cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab25f1fa4127fa015361b61a6f3180784"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#ab25f1fa4127fa015361b61a6f3180784">FLASH_CR_LOCK</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#aa74509adc6db3db66803966b25423cae">FLASH_CR_LOCK_Pos</a>)</td></tr>
+<tr class="memdesc:ab25f1fa4127fa015361b61a6f3180784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock  <a href="reg__flash_8h.html#ab25f1fa4127fa015361b61a6f3180784">更多...</a><br /></td></tr>
+<tr class="separator:ab25f1fa4127fa015361b61a6f3180784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6cdcb203f948b1d30cba476001d9074"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#aa6cdcb203f948b1d30cba476001d9074">FLASH_CR_OPTWRE_Pos</a>&#160;&#160;&#160;(9)</td></tr>
+<tr class="separator:aa6cdcb203f948b1d30cba476001d9074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27d44bc9617cc430de9413b385dfe0c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a27d44bc9617cc430de9413b385dfe0c3">FLASH_CR_OPTWRE</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#aa6cdcb203f948b1d30cba476001d9074">FLASH_CR_OPTWRE_Pos</a>)</td></tr>
+<tr class="memdesc:a27d44bc9617cc430de9413b385dfe0c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Option Bytes Write Enable  <a href="reg__flash_8h.html#a27d44bc9617cc430de9413b385dfe0c3">更多...</a><br /></td></tr>
+<tr class="separator:a27d44bc9617cc430de9413b385dfe0c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab075c4eeff509cfe0f34040c29edfb05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#ab075c4eeff509cfe0f34040c29edfb05">FLASH_CR_ERRIE_Pos</a>&#160;&#160;&#160;(10)</td></tr>
+<tr class="separator:ab075c4eeff509cfe0f34040c29edfb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a930897cecdaa9dbef8c640b84acbd8c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a930897cecdaa9dbef8c640b84acbd8c2">FLASH_CR_ERRIE</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#ab075c4eeff509cfe0f34040c29edfb05">FLASH_CR_ERRIE_Pos</a>)</td></tr>
+<tr class="memdesc:a930897cecdaa9dbef8c640b84acbd8c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error Interrupt Enable  <a href="reg__flash_8h.html#a930897cecdaa9dbef8c640b84acbd8c2">更多...</a><br /></td></tr>
+<tr class="separator:a930897cecdaa9dbef8c640b84acbd8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e162a7fa45cb85ba0df0942a2519478"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a4e162a7fa45cb85ba0df0942a2519478">FLASH_CR_EOPIE_Pos</a>&#160;&#160;&#160;(12)</td></tr>
+<tr class="separator:a4e162a7fa45cb85ba0df0942a2519478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9e69856f654ec430a42791a34799db0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#ab9e69856f654ec430a42791a34799db0">FLASH_CR_EOPIE</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a4e162a7fa45cb85ba0df0942a2519478">FLASH_CR_EOPIE_Pos</a>)</td></tr>
+<tr class="memdesc:ab9e69856f654ec430a42791a34799db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">End of operation interrupt enable  <a href="reg__flash_8h.html#ab9e69856f654ec430a42791a34799db0">更多...</a><br /></td></tr>
+<tr class="separator:ab9e69856f654ec430a42791a34799db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a157edb20903a57b2d5ebd0efa66f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a17a157edb20903a57b2d5ebd0efa66f2">FLASH_AR_FAR_Pos</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memdesc:a17a157edb20903a57b2d5ebd0efa66f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">FLASH_AR Register Bit Definition  <a href="reg__flash_8h.html#a17a157edb20903a57b2d5ebd0efa66f2">更多...</a><br /></td></tr>
+<tr class="separator:a17a157edb20903a57b2d5ebd0efa66f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafc00fde8118ce03602d00d34a80fec4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#aafc00fde8118ce03602d00d34a80fec4">FLASH_AR_FAR</a>&#160;&#160;&#160;(0xFFFFFFFFU &lt;&lt; <a class="el" href="reg__flash_8h.html#a17a157edb20903a57b2d5ebd0efa66f2">FLASH_AR_FAR_Pos</a>)</td></tr>
+<tr class="memdesc:aafc00fde8118ce03602d00d34a80fec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flash Address  <a href="reg__flash_8h.html#aafc00fde8118ce03602d00d34a80fec4">更多...</a><br /></td></tr>
+<tr class="separator:aafc00fde8118ce03602d00d34a80fec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97bfb7f45709e6f143c64857b5150565"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a97bfb7f45709e6f143c64857b5150565">FLASH_OBR_OPTERR_Pos</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memdesc:a97bfb7f45709e6f143c64857b5150565"><td class="mdescLeft">&#160;</td><td class="mdescRight">FLASH_OBR Register Bit Definition  <a href="reg__flash_8h.html#a97bfb7f45709e6f143c64857b5150565">更多...</a><br /></td></tr>
+<tr class="separator:a97bfb7f45709e6f143c64857b5150565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab52c27d6657bd72f1860fa25a1faf8e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#ab52c27d6657bd72f1860fa25a1faf8e3">FLASH_OBR_OPTERR</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a97bfb7f45709e6f143c64857b5150565">FLASH_OBR_OPTERR_Pos</a>)</td></tr>
+<tr class="memdesc:ab52c27d6657bd72f1860fa25a1faf8e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Option Byte Error  <a href="reg__flash_8h.html#ab52c27d6657bd72f1860fa25a1faf8e3">更多...</a><br /></td></tr>
+<tr class="separator:ab52c27d6657bd72f1860fa25a1faf8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb5e11b3eae03c7d2b36686737a71c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a7cb5e11b3eae03c7d2b36686737a71c3">FLASH_OBR_RDPRT_Pos</a>&#160;&#160;&#160;(1)</td></tr>
+<tr class="separator:a7cb5e11b3eae03c7d2b36686737a71c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a052763d6c2daf0a422577a6c8a0be977"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a052763d6c2daf0a422577a6c8a0be977">FLASH_OBR_RDPRT</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a7cb5e11b3eae03c7d2b36686737a71c3">FLASH_OBR_RDPRT_Pos</a>)</td></tr>
+<tr class="memdesc:a052763d6c2daf0a422577a6c8a0be977"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read protection level status  <a href="reg__flash_8h.html#a052763d6c2daf0a422577a6c8a0be977">更多...</a><br /></td></tr>
+<tr class="separator:a052763d6c2daf0a422577a6c8a0be977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefde313300f0e954d27f87e6256274b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#aefde313300f0e954d27f87e6256274b4">FLASH_OBR_USER_Pos</a>&#160;&#160;&#160;(2)</td></tr>
+<tr class="separator:aefde313300f0e954d27f87e6256274b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1585552c59923cb1e1979cdfdc77b991"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a1585552c59923cb1e1979cdfdc77b991">FLASH_OBR_USER</a>&#160;&#160;&#160;(0xFFU &lt;&lt; <a class="el" href="reg__flash_8h.html#aefde313300f0e954d27f87e6256274b4">FLASH_OBR_USER_Pos</a>)</td></tr>
+<tr class="memdesc:a1585552c59923cb1e1979cdfdc77b991"><td class="mdescLeft">&#160;</td><td class="mdescRight">User Option Bytes  <a href="reg__flash_8h.html#a1585552c59923cb1e1979cdfdc77b991">更多...</a><br /></td></tr>
+<tr class="separator:a1585552c59923cb1e1979cdfdc77b991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a18df54a9254985b1ee69c5666e68b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a5a18df54a9254985b1ee69c5666e68b6">FLASH_OBR_WDG_SW</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#aefde313300f0e954d27f87e6256274b4">FLASH_OBR_USER_Pos</a>)</td></tr>
+<tr class="memdesc:a5a18df54a9254985b1ee69c5666e68b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">WDG_SW  <a href="reg__flash_8h.html#a5a18df54a9254985b1ee69c5666e68b6">更多...</a><br /></td></tr>
+<tr class="separator:a5a18df54a9254985b1ee69c5666e68b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04297fb424e7aa9a3dd834cceecc3f0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a04297fb424e7aa9a3dd834cceecc3f0b">FLASH_OBR_RST_STOP</a>&#160;&#160;&#160;(0x02U &lt;&lt; <a class="el" href="reg__flash_8h.html#aefde313300f0e954d27f87e6256274b4">FLASH_OBR_USER_Pos</a>)</td></tr>
+<tr class="memdesc:a04297fb424e7aa9a3dd834cceecc3f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">nRST_STOP  <a href="reg__flash_8h.html#a04297fb424e7aa9a3dd834cceecc3f0b">更多...</a><br /></td></tr>
+<tr class="separator:a04297fb424e7aa9a3dd834cceecc3f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5700f8b280578cb6eff3a3f784cf93a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a5700f8b280578cb6eff3a3f784cf93a7">FLASH_OBR_RST_STDBY</a>&#160;&#160;&#160;(0x04U &lt;&lt; <a class="el" href="reg__flash_8h.html#aefde313300f0e954d27f87e6256274b4">FLASH_OBR_USER_Pos</a>)</td></tr>
+<tr class="memdesc:a5700f8b280578cb6eff3a3f784cf93a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">nRST_STDBY  <a href="reg__flash_8h.html#a5700f8b280578cb6eff3a3f784cf93a7">更多...</a><br /></td></tr>
+<tr class="separator:a5700f8b280578cb6eff3a3f784cf93a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2aeecbeab5b5d2655a854a738a8e5fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#ac2aeecbeab5b5d2655a854a738a8e5fa">FLASH_OBR_Data0_Pos</a>&#160;&#160;&#160;(10)</td></tr>
+<tr class="separator:ac2aeecbeab5b5d2655a854a738a8e5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91bc14334e9930bc6f3ebf9ea77e17b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a91bc14334e9930bc6f3ebf9ea77e17b6">FLASH_OBR_Data0</a>&#160;&#160;&#160;(0xFFU &lt;&lt; <a class="el" href="reg__flash_8h.html#ac2aeecbeab5b5d2655a854a738a8e5fa">FLASH_OBR_Data0_Pos</a>)</td></tr>
+<tr class="memdesc:a91bc14334e9930bc6f3ebf9ea77e17b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">User data storage option byte  <a href="reg__flash_8h.html#a91bc14334e9930bc6f3ebf9ea77e17b6">更多...</a><br /></td></tr>
+<tr class="separator:a91bc14334e9930bc6f3ebf9ea77e17b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e703fc3c42fdd5db65ba81a49d0a68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a05e703fc3c42fdd5db65ba81a49d0a68">FLASH_OBR_Data1_Pos</a>&#160;&#160;&#160;(18)</td></tr>
+<tr class="separator:a05e703fc3c42fdd5db65ba81a49d0a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5123395ca5fc5b3e6790acafa77a1bf8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a5123395ca5fc5b3e6790acafa77a1bf8">FLASH_OBR_Data1</a>&#160;&#160;&#160;(0xFFU &lt;&lt; <a class="el" href="reg__flash_8h.html#a05e703fc3c42fdd5db65ba81a49d0a68">FLASH_OBR_Data1_Pos</a>)</td></tr>
+<tr class="memdesc:a5123395ca5fc5b3e6790acafa77a1bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">User data storage option byte  <a href="reg__flash_8h.html#a5123395ca5fc5b3e6790acafa77a1bf8">更多...</a><br /></td></tr>
+<tr class="separator:a5123395ca5fc5b3e6790acafa77a1bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2cba593e56feed77b6c08f544fd327b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#aa2cba593e56feed77b6c08f544fd327b">FLASH_WRPR_WRP_Pos</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memdesc:aa2cba593e56feed77b6c08f544fd327b"><td class="mdescLeft">&#160;</td><td class="mdescRight">FLASH_WRPR Register Bit Definition  <a href="reg__flash_8h.html#aa2cba593e56feed77b6c08f544fd327b">更多...</a><br /></td></tr>
+<tr class="separator:aa2cba593e56feed77b6c08f544fd327b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3842e780ec47c1127de0ed4a93821d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a1d3842e780ec47c1127de0ed4a93821d">FLASH_WRPR_WRP</a>&#160;&#160;&#160;(0xFFFFFFFFU &lt;&lt; <a class="el" href="reg__flash_8h.html#aa2cba593e56feed77b6c08f544fd327b">FLASH_WRPR_WRP_Pos</a>)</td></tr>
+<tr class="memdesc:a1d3842e780ec47c1127de0ed4a93821d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write Protect  <a href="reg__flash_8h.html#a1d3842e780ec47c1127de0ed4a93821d">更多...</a><br /></td></tr>
+<tr class="separator:a1d3842e780ec47c1127de0ed4a93821d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafee84206c1bbdb951f99ed2d9ffd861"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#aafee84206c1bbdb951f99ed2d9ffd861">CACHE_CCR_EN_Pos</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memdesc:aafee84206c1bbdb951f99ed2d9ffd861"><td class="mdescLeft">&#160;</td><td class="mdescRight">CACHE_CCR Register Bit Definition  <a href="reg__flash_8h.html#aafee84206c1bbdb951f99ed2d9ffd861">更多...</a><br /></td></tr>
+<tr class="separator:aafee84206c1bbdb951f99ed2d9ffd861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af74174131bfcab4a10f1b1d8c6f178c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#af74174131bfcab4a10f1b1d8c6f178c6">CACHE_CCR_EN</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#aafee84206c1bbdb951f99ed2d9ffd861">CACHE_CCR_EN_Pos</a>)</td></tr>
+<tr class="memdesc:af74174131bfcab4a10f1b1d8c6f178c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache Enable  <a href="reg__flash_8h.html#af74174131bfcab4a10f1b1d8c6f178c6">更多...</a><br /></td></tr>
+<tr class="separator:af74174131bfcab4a10f1b1d8c6f178c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ee99127c28fd0ce8a2c13848a471bce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a1ee99127c28fd0ce8a2c13848a471bce">CACHE_CCR_INV_Pos</a>&#160;&#160;&#160;(1)</td></tr>
+<tr class="separator:a1ee99127c28fd0ce8a2c13848a471bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9a34c0dff592cdc3ed48b47eedaaa0f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#ae9a34c0dff592cdc3ed48b47eedaaa0f">CACHE_CCR_INV</a>&#160;&#160;&#160;(0x01U &lt;&lt; CACHE_CCR_INV_REQ_Pos)</td></tr>
+<tr class="memdesc:ae9a34c0dff592cdc3ed48b47eedaaa0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manually invalidate the request  <a href="reg__flash_8h.html#ae9a34c0dff592cdc3ed48b47eedaaa0f">更多...</a><br /></td></tr>
+<tr class="separator:ae9a34c0dff592cdc3ed48b47eedaaa0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceef6cd150c79c0420eec0fa14fca4dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#aceef6cd150c79c0420eec0fa14fca4dc">CACHE_CCR_POW_Pos</a>&#160;&#160;&#160;(2)</td></tr>
+<tr class="separator:aceef6cd150c79c0420eec0fa14fca4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a036b5453ddf4e87b004f2ac23583565b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a036b5453ddf4e87b004f2ac23583565b">CACHE_CCR_POW</a>&#160;&#160;&#160;(0x01U &lt;&lt; CACHE_CCR_POW_REQ_Pos)</td></tr>
+<tr class="memdesc:a036b5453ddf4e87b004f2ac23583565b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manual SRAM power request  <a href="reg__flash_8h.html#a036b5453ddf4e87b004f2ac23583565b">更多...</a><br /></td></tr>
+<tr class="separator:a036b5453ddf4e87b004f2ac23583565b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55e73987f56f96a7a85e94ae29233524"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a55e73987f56f96a7a85e94ae29233524">CACHE_CCR_MAN_POW_Pos</a>&#160;&#160;&#160;(3)</td></tr>
+<tr class="separator:a55e73987f56f96a7a85e94ae29233524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b60d6ed4df7e5572dffef0940539167"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a2b60d6ed4df7e5572dffef0940539167">CACHE_CCR_MAN_POW</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a55e73987f56f96a7a85e94ae29233524">CACHE_CCR_MAN_POW_Pos</a>)</td></tr>
+<tr class="memdesc:a2b60d6ed4df7e5572dffef0940539167"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set manual or automatic SRAM power request  <a href="reg__flash_8h.html#a2b60d6ed4df7e5572dffef0940539167">更多...</a><br /></td></tr>
+<tr class="separator:a2b60d6ed4df7e5572dffef0940539167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a4ffa7a0e2a0260a5c1846d6e484374"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a7a4ffa7a0e2a0260a5c1846d6e484374">CACHE_CCR_MAN_INV_Pos</a>&#160;&#160;&#160;(4)</td></tr>
+<tr class="separator:a7a4ffa7a0e2a0260a5c1846d6e484374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c15ebf8c4c62bbfba17e54a9a92cfca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a8c15ebf8c4c62bbfba17e54a9a92cfca">CACHE_CCR_MAN_INV</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a7a4ffa7a0e2a0260a5c1846d6e484374">CACHE_CCR_MAN_INV_Pos</a>)</td></tr>
+<tr class="memdesc:a8c15ebf8c4c62bbfba17e54a9a92cfca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manually or automatically disable it  <a href="reg__flash_8h.html#a8c15ebf8c4c62bbfba17e54a9a92cfca">更多...</a><br /></td></tr>
+<tr class="separator:a8c15ebf8c4c62bbfba17e54a9a92cfca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02299952071052fe8c4116b4f1c778e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a02299952071052fe8c4116b4f1c778e7">CACHE_CCR_PREFETCH_Pos</a>&#160;&#160;&#160;(5)</td></tr>
+<tr class="separator:a02299952071052fe8c4116b4f1c778e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3399de5a87326a632eedb1f60002269"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#ab3399de5a87326a632eedb1f60002269">CACHE_CCR_PREFETCH</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a02299952071052fe8c4116b4f1c778e7">CACHE_CCR_PREFETCH_Pos</a>)</td></tr>
+<tr class="memdesc:ab3399de5a87326a632eedb1f60002269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prefetch function  <a href="reg__flash_8h.html#ab3399de5a87326a632eedb1f60002269">更多...</a><br /></td></tr>
+<tr class="separator:ab3399de5a87326a632eedb1f60002269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c8511c63a7bcdc444c7863f665442ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a5c8511c63a7bcdc444c7863f665442ef">CACHE_CCR_STATISTIC_Pos</a>&#160;&#160;&#160;(6)</td></tr>
+<tr class="separator:a5c8511c63a7bcdc444c7863f665442ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a875a3e3578c6921daa1a95fdffb81"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#ae7a875a3e3578c6921daa1a95fdffb81">CACHE_CCR_STATISTIC</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a5c8511c63a7bcdc444c7863f665442ef">CACHE_CCR_STATISTIC_Pos</a>)</td></tr>
+<tr class="memdesc:ae7a875a3e3578c6921daa1a95fdffb81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Statistics enable /////////////////////////////////////////////////////////////////////////////  <a href="reg__flash_8h.html#ae7a875a3e3578c6921daa1a95fdffb81">更多...</a><br /></td></tr>
+<tr class="separator:ae7a875a3e3578c6921daa1a95fdffb81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2a2d8df49def319ddb6ea64665184e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#af2a2d8df49def319ddb6ea64665184e8">CACHE_SR_CS_Pos</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="separator:af2a2d8df49def319ddb6ea64665184e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d298738e8e728ca3f42ae8083087bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a87d298738e8e728ca3f42ae8083087bc">CACHE_SR_CS0</a>&#160;&#160;&#160;(0x00U &lt;&lt; CACHE_CCR_CS_Pos)</td></tr>
+<tr class="memdesc:a87d298738e8e728ca3f42ae8083087bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache is disabled  <a href="reg__flash_8h.html#a87d298738e8e728ca3f42ae8083087bc">更多...</a><br /></td></tr>
+<tr class="separator:a87d298738e8e728ca3f42ae8083087bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6d29f5e0bc1e24255f741719442970a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#aa6d29f5e0bc1e24255f741719442970a">CACHE_SR_CS1</a>&#160;&#160;&#160;(0x01U &lt;&lt; CACHE_CCR_CS_Pos)</td></tr>
+<tr class="memdesc:aa6d29f5e0bc1e24255f741719442970a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache is being enabled  <a href="reg__flash_8h.html#aa6d29f5e0bc1e24255f741719442970a">更多...</a><br /></td></tr>
+<tr class="separator:aa6d29f5e0bc1e24255f741719442970a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaba60630059ae216546278c6d9428f7b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#aaba60630059ae216546278c6d9428f7b">CACHE_SR_CS2</a>&#160;&#160;&#160;(0x02U &lt;&lt; CACHE_CCR_CS_Pos)</td></tr>
+<tr class="memdesc:aaba60630059ae216546278c6d9428f7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache is enabled  <a href="reg__flash_8h.html#aaba60630059ae216546278c6d9428f7b">更多...</a><br /></td></tr>
+<tr class="separator:aaba60630059ae216546278c6d9428f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b3e3a681c70ba70ca4d4a3b0e09a6d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a1b3e3a681c70ba70ca4d4a3b0e09a6d8">CACHE_SR_CS3</a>&#160;&#160;&#160;(0x03U &lt;&lt; CACHE_CCR_CS_Pos)</td></tr>
+<tr class="memdesc:a1b3e3a681c70ba70ca4d4a3b0e09a6d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache is being disabled  <a href="reg__flash_8h.html#a1b3e3a681c70ba70ca4d4a3b0e09a6d8">更多...</a><br /></td></tr>
+<tr class="separator:a1b3e3a681c70ba70ca4d4a3b0e09a6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed977af8a79d4c0101c0a591b8aa3f2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#aed977af8a79d4c0101c0a591b8aa3f2c">CACHE_SR_INV_Pos</a>&#160;&#160;&#160;(2)</td></tr>
+<tr class="separator:aed977af8a79d4c0101c0a591b8aa3f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a616d8fa111ce881a59a33d75facf4f1f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a616d8fa111ce881a59a33d75facf4f1f">CACHE_SR_INV</a>&#160;&#160;&#160;(0x01U &lt;&lt; CACHE_CCR_INV_REQ_Pos)</td></tr>
+<tr class="memdesc:a616d8fa111ce881a59a33d75facf4f1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidation status  <a href="reg__flash_8h.html#a616d8fa111ce881a59a33d75facf4f1f">更多...</a><br /></td></tr>
+<tr class="separator:a616d8fa111ce881a59a33d75facf4f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fc512cb2911832a499ee991acd3e236"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a2fc512cb2911832a499ee991acd3e236">CACHE_SR_POW_Pos</a>&#160;&#160;&#160;(4)</td></tr>
+<tr class="separator:a2fc512cb2911832a499ee991acd3e236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0017ad445983fb15d510ab2bfe4fbf7b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a0017ad445983fb15d510ab2bfe4fbf7b">CACHE_SR_POW</a>&#160;&#160;&#160;(0x01U &lt;&lt; CACHE_CCR_POW_REQ_Pos)</td></tr>
+<tr class="memdesc:a0017ad445983fb15d510ab2bfe4fbf7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">SRAM power response /////////////////////////////////////////////////////////////////////////////  <a href="reg__flash_8h.html#a0017ad445983fb15d510ab2bfe4fbf7b">更多...</a><br /></td></tr>
+<tr class="separator:a0017ad445983fb15d510ab2bfe4fbf7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeebcbca702a3f602a7bbdda0a1e1eeea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#aeebcbca702a3f602a7bbdda0a1e1eeea">CACHE_IMR_MAN_INV_Pos</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="separator:aeebcbca702a3f602a7bbdda0a1e1eeea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb811104aaf7f03481ecd0f5674efef6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#acb811104aaf7f03481ecd0f5674efef6">CACHE_IMR_MAN_INV</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#aeebcbca702a3f602a7bbdda0a1e1eeea">CACHE_IMR_MAN_INV_Pos</a>)</td></tr>
+<tr class="memdesc:acb811104aaf7f03481ecd0f5674efef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mask the interrupt request of manual invalidation error  <a href="reg__flash_8h.html#acb811104aaf7f03481ecd0f5674efef6">更多...</a><br /></td></tr>
+<tr class="separator:acb811104aaf7f03481ecd0f5674efef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1f433019d0a005e90a915d5f5a45eb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#ac1f433019d0a005e90a915d5f5a45eb0">CACHE_IMR_POW_Pos</a>&#160;&#160;&#160;(1)</td></tr>
+<tr class="separator:ac1f433019d0a005e90a915d5f5a45eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4017efbac34a14fa2515bb2720c814dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a4017efbac34a14fa2515bb2720c814dc">CACHE_IMR_POW</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#ac1f433019d0a005e90a915d5f5a45eb0">CACHE_IMR_POW_Pos</a>)</td></tr>
+<tr class="memdesc:a4017efbac34a14fa2515bb2720c814dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mask the interrupt request of power supply error /////////////////////////////////////////////////////////////////////////////  <a href="reg__flash_8h.html#a4017efbac34a14fa2515bb2720c814dc">更多...</a><br /></td></tr>
+<tr class="separator:a4017efbac34a14fa2515bb2720c814dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2770af913e399b61128f469e17c73c5f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a2770af913e399b61128f469e17c73c5f">CACHE_ISR_MAN_INV_Pos</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="separator:a2770af913e399b61128f469e17c73c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad40e62d55a6edaabdbb53a2871f124"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a7ad40e62d55a6edaabdbb53a2871f124">CACHE_ISR_MAN_INV</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a2770af913e399b61128f469e17c73c5f">CACHE_ISR_MAN_INV_Pos</a>)</td></tr>
+<tr class="memdesc:a7ad40e62d55a6edaabdbb53a2871f124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manual invalidation of error flags  <a href="reg__flash_8h.html#a7ad40e62d55a6edaabdbb53a2871f124">更多...</a><br /></td></tr>
+<tr class="separator:a7ad40e62d55a6edaabdbb53a2871f124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a267738d44e84dcca68647394f0403ac7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a267738d44e84dcca68647394f0403ac7">CACHE_ISR_POW_Pos</a>&#160;&#160;&#160;(1)</td></tr>
+<tr class="separator:a267738d44e84dcca68647394f0403ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abffe616c3dde1a2afd1291ce32a33f3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#abffe616c3dde1a2afd1291ce32a33f3e">CACHE_ISR_POW</a>&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a267738d44e84dcca68647394f0403ac7">CACHE_ISR_POW_Pos</a>)</td></tr>
+<tr class="memdesc:abffe616c3dde1a2afd1291ce32a33f3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">SRAM power error flags /////////////////////////////////////////////////////////////////////////////  <a href="reg__flash_8h.html#abffe616c3dde1a2afd1291ce32a33f3e">更多...</a><br /></td></tr>
+<tr class="separator:abffe616c3dde1a2afd1291ce32a33f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3fb8507fd5822230bf8651caf5a606f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#ab3fb8507fd5822230bf8651caf5a606f">CACHE_CSHR</a>&#160;&#160;&#160;(0xFFFFU )</td></tr>
+<tr class="memdesc:ab3fb8507fd5822230bf8651caf5a606f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache Hits /////////////////////////////////////////////////////////////////////////////  <a href="reg__flash_8h.html#ab3fb8507fd5822230bf8651caf5a606f">更多...</a><br /></td></tr>
+<tr class="separator:ab3fb8507fd5822230bf8651caf5a606f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb3e54ff04f1bc11de01bbfc065b5d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reg__flash_8h.html#a2fb3e54ff04f1bc11de01bbfc065b5d7">CACHE_CSMR</a>&#160;&#160;&#160;(0xFFFFU )</td></tr>
+<tr class="memdesc:a2fb3e54ff04f1bc11de01bbfc065b5d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache Lost times  <a href="reg__flash_8h.html#a2fb3e54ff04f1bc11de01bbfc065b5d7">更多...</a><br /></td></tr>
+<tr class="separator:a2fb3e54ff04f1bc11de01bbfc065b5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY. </p>
+<dl class="section author"><dt>作者</dt><dd>AE TEAM </dd></dl>
+<dl class="section attention"><dt>注意</dt><dd></dd></dl>
+<p>THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.</p>
+<h2><center> COPYRIGHT MINDMOTION </center></h2>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 中定义.</p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a43fd55aa78bd891ebbd6a450f5eecce4" name="a43fd55aa78bd891ebbd6a450f5eecce4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43fd55aa78bd891ebbd6a450f5eecce4">&#9670;&#160;</a></span>CACHE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE&#160;&#160;&#160;((<a class="el" href="struct_c_a_c_h_e___type_def.html">CACHE_TypeDef</a>*) <a class="el" href="reg__flash_8h.html#a2709d0accca252f2dd923e6a40135c52">CACHE_BASE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CACHE pointer Definition </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00126">126</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2709d0accca252f2dd923e6a40135c52" name="a2709d0accca252f2dd923e6a40135c52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2709d0accca252f2dd923e6a40135c52">&#9670;&#160;</a></span>CACHE_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_BASE&#160;&#160;&#160;(<a class="el" href="reg__common_8h.html#a25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x6000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Base Address: 0x40016000 <br  />
+ </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00044">44</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af74174131bfcab4a10f1b1d8c6f178c6" name="af74174131bfcab4a10f1b1d8c6f178c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af74174131bfcab4a10f1b1d8c6f178c6">&#9670;&#160;</a></span>CACHE_CCR_EN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_CCR_EN&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#aafee84206c1bbdb951f99ed2d9ffd861">CACHE_CCR_EN_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cache Enable </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00228">228</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aafee84206c1bbdb951f99ed2d9ffd861" name="aafee84206c1bbdb951f99ed2d9ffd861"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafee84206c1bbdb951f99ed2d9ffd861">&#9670;&#160;</a></span>CACHE_CCR_EN_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_CCR_EN_Pos&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CACHE_CCR Register Bit Definition </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00227">227</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae9a34c0dff592cdc3ed48b47eedaaa0f" name="ae9a34c0dff592cdc3ed48b47eedaaa0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9a34c0dff592cdc3ed48b47eedaaa0f">&#9670;&#160;</a></span>CACHE_CCR_INV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_CCR_INV&#160;&#160;&#160;(0x01U &lt;&lt; CACHE_CCR_INV_REQ_Pos)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Manually invalidate the request </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00230">230</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1ee99127c28fd0ce8a2c13848a471bce" name="a1ee99127c28fd0ce8a2c13848a471bce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ee99127c28fd0ce8a2c13848a471bce">&#9670;&#160;</a></span>CACHE_CCR_INV_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_CCR_INV_Pos&#160;&#160;&#160;(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00229">229</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8c15ebf8c4c62bbfba17e54a9a92cfca" name="a8c15ebf8c4c62bbfba17e54a9a92cfca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c15ebf8c4c62bbfba17e54a9a92cfca">&#9670;&#160;</a></span>CACHE_CCR_MAN_INV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_CCR_MAN_INV&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a7a4ffa7a0e2a0260a5c1846d6e484374">CACHE_CCR_MAN_INV_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Manually or automatically disable it </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00236">236</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7a4ffa7a0e2a0260a5c1846d6e484374" name="a7a4ffa7a0e2a0260a5c1846d6e484374"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a4ffa7a0e2a0260a5c1846d6e484374">&#9670;&#160;</a></span>CACHE_CCR_MAN_INV_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_CCR_MAN_INV_Pos&#160;&#160;&#160;(4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00235">235</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2b60d6ed4df7e5572dffef0940539167" name="a2b60d6ed4df7e5572dffef0940539167"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b60d6ed4df7e5572dffef0940539167">&#9670;&#160;</a></span>CACHE_CCR_MAN_POW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_CCR_MAN_POW&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a55e73987f56f96a7a85e94ae29233524">CACHE_CCR_MAN_POW_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set manual or automatic SRAM power request </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00234">234</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a55e73987f56f96a7a85e94ae29233524" name="a55e73987f56f96a7a85e94ae29233524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55e73987f56f96a7a85e94ae29233524">&#9670;&#160;</a></span>CACHE_CCR_MAN_POW_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_CCR_MAN_POW_Pos&#160;&#160;&#160;(3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00233">233</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a036b5453ddf4e87b004f2ac23583565b" name="a036b5453ddf4e87b004f2ac23583565b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a036b5453ddf4e87b004f2ac23583565b">&#9670;&#160;</a></span>CACHE_CCR_POW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_CCR_POW&#160;&#160;&#160;(0x01U &lt;&lt; CACHE_CCR_POW_REQ_Pos)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Manual SRAM power request </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00232">232</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aceef6cd150c79c0420eec0fa14fca4dc" name="aceef6cd150c79c0420eec0fa14fca4dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceef6cd150c79c0420eec0fa14fca4dc">&#9670;&#160;</a></span>CACHE_CCR_POW_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_CCR_POW_Pos&#160;&#160;&#160;(2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00231">231</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab3399de5a87326a632eedb1f60002269" name="ab3399de5a87326a632eedb1f60002269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3399de5a87326a632eedb1f60002269">&#9670;&#160;</a></span>CACHE_CCR_PREFETCH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_CCR_PREFETCH&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a02299952071052fe8c4116b4f1c778e7">CACHE_CCR_PREFETCH_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prefetch function </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00238">238</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a02299952071052fe8c4116b4f1c778e7" name="a02299952071052fe8c4116b4f1c778e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02299952071052fe8c4116b4f1c778e7">&#9670;&#160;</a></span>CACHE_CCR_PREFETCH_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_CCR_PREFETCH_Pos&#160;&#160;&#160;(5)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00237">237</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae7a875a3e3578c6921daa1a95fdffb81" name="ae7a875a3e3578c6921daa1a95fdffb81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7a875a3e3578c6921daa1a95fdffb81">&#9670;&#160;</a></span>CACHE_CCR_STATISTIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_CCR_STATISTIC&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a5c8511c63a7bcdc444c7863f665442ef">CACHE_CCR_STATISTIC_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Statistics enable ///////////////////////////////////////////////////////////////////////////// </p>
+<p >CACHE_SR Register Bit Definition </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00243">243</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5c8511c63a7bcdc444c7863f665442ef" name="a5c8511c63a7bcdc444c7863f665442ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c8511c63a7bcdc444c7863f665442ef">&#9670;&#160;</a></span>CACHE_CCR_STATISTIC_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_CCR_STATISTIC_Pos&#160;&#160;&#160;(6)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00239">239</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab3fb8507fd5822230bf8651caf5a606f" name="ab3fb8507fd5822230bf8651caf5a606f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3fb8507fd5822230bf8651caf5a606f">&#9670;&#160;</a></span>CACHE_CSHR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_CSHR&#160;&#160;&#160;(0xFFFFU )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cache Hits ///////////////////////////////////////////////////////////////////////////// </p>
+<p >CACHE_CSHR Register Bit Definition </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00273">273</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2fb3e54ff04f1bc11de01bbfc065b5d7" name="a2fb3e54ff04f1bc11de01bbfc065b5d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fb3e54ff04f1bc11de01bbfc065b5d7">&#9670;&#160;</a></span>CACHE_CSMR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_CSMR&#160;&#160;&#160;(0xFFFFU )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cache Lost times </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00274">274</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acb811104aaf7f03481ecd0f5674efef6" name="acb811104aaf7f03481ecd0f5674efef6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb811104aaf7f03481ecd0f5674efef6">&#9670;&#160;</a></span>CACHE_IMR_MAN_INV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_IMR_MAN_INV&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#aeebcbca702a3f602a7bbdda0a1e1eeea">CACHE_IMR_MAN_INV_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mask the interrupt request of manual invalidation error </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00257">257</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aeebcbca702a3f602a7bbdda0a1e1eeea" name="aeebcbca702a3f602a7bbdda0a1e1eeea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeebcbca702a3f602a7bbdda0a1e1eeea">&#9670;&#160;</a></span>CACHE_IMR_MAN_INV_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_IMR_MAN_INV_Pos&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00256">256</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4017efbac34a14fa2515bb2720c814dc" name="a4017efbac34a14fa2515bb2720c814dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4017efbac34a14fa2515bb2720c814dc">&#9670;&#160;</a></span>CACHE_IMR_POW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_IMR_POW&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#ac1f433019d0a005e90a915d5f5a45eb0">CACHE_IMR_POW_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mask the interrupt request of power supply error ///////////////////////////////////////////////////////////////////////////// </p>
+<p >CACHE_ISR Register Bit Definition </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00262">262</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac1f433019d0a005e90a915d5f5a45eb0" name="ac1f433019d0a005e90a915d5f5a45eb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1f433019d0a005e90a915d5f5a45eb0">&#9670;&#160;</a></span>CACHE_IMR_POW_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_IMR_POW_Pos&#160;&#160;&#160;(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00258">258</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7ad40e62d55a6edaabdbb53a2871f124" name="a7ad40e62d55a6edaabdbb53a2871f124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ad40e62d55a6edaabdbb53a2871f124">&#9670;&#160;</a></span>CACHE_ISR_MAN_INV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_ISR_MAN_INV&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a2770af913e399b61128f469e17c73c5f">CACHE_ISR_MAN_INV_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Manual invalidation of error flags </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00264">264</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2770af913e399b61128f469e17c73c5f" name="a2770af913e399b61128f469e17c73c5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2770af913e399b61128f469e17c73c5f">&#9670;&#160;</a></span>CACHE_ISR_MAN_INV_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_ISR_MAN_INV_Pos&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00263">263</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abffe616c3dde1a2afd1291ce32a33f3e" name="abffe616c3dde1a2afd1291ce32a33f3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abffe616c3dde1a2afd1291ce32a33f3e">&#9670;&#160;</a></span>CACHE_ISR_POW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_ISR_POW&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a267738d44e84dcca68647394f0403ac7">CACHE_ISR_POW_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SRAM power error flags ///////////////////////////////////////////////////////////////////////////// </p>
+<p >CACHE_CSHR Register Bit Definition </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00269">269</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a267738d44e84dcca68647394f0403ac7" name="a267738d44e84dcca68647394f0403ac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a267738d44e84dcca68647394f0403ac7">&#9670;&#160;</a></span>CACHE_ISR_POW_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_ISR_POW_Pos&#160;&#160;&#160;(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00265">265</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a87d298738e8e728ca3f42ae8083087bc" name="a87d298738e8e728ca3f42ae8083087bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87d298738e8e728ca3f42ae8083087bc">&#9670;&#160;</a></span>CACHE_SR_CS0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_SR_CS0&#160;&#160;&#160;(0x00U &lt;&lt; CACHE_CCR_CS_Pos)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cache is disabled </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00245">245</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa6d29f5e0bc1e24255f741719442970a" name="aa6d29f5e0bc1e24255f741719442970a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6d29f5e0bc1e24255f741719442970a">&#9670;&#160;</a></span>CACHE_SR_CS1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_SR_CS1&#160;&#160;&#160;(0x01U &lt;&lt; CACHE_CCR_CS_Pos)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cache is being enabled </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00246">246</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aaba60630059ae216546278c6d9428f7b" name="aaba60630059ae216546278c6d9428f7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaba60630059ae216546278c6d9428f7b">&#9670;&#160;</a></span>CACHE_SR_CS2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_SR_CS2&#160;&#160;&#160;(0x02U &lt;&lt; CACHE_CCR_CS_Pos)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cache is enabled </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00247">247</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1b3e3a681c70ba70ca4d4a3b0e09a6d8" name="a1b3e3a681c70ba70ca4d4a3b0e09a6d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b3e3a681c70ba70ca4d4a3b0e09a6d8">&#9670;&#160;</a></span>CACHE_SR_CS3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_SR_CS3&#160;&#160;&#160;(0x03U &lt;&lt; CACHE_CCR_CS_Pos)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cache is being disabled </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00248">248</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af2a2d8df49def319ddb6ea64665184e8" name="af2a2d8df49def319ddb6ea64665184e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2a2d8df49def319ddb6ea64665184e8">&#9670;&#160;</a></span>CACHE_SR_CS_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_SR_CS_Pos&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00244">244</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a616d8fa111ce881a59a33d75facf4f1f" name="a616d8fa111ce881a59a33d75facf4f1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a616d8fa111ce881a59a33d75facf4f1f">&#9670;&#160;</a></span>CACHE_SR_INV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_SR_INV&#160;&#160;&#160;(0x01U &lt;&lt; CACHE_CCR_INV_REQ_Pos)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Invalidation status </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00250">250</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aed977af8a79d4c0101c0a591b8aa3f2c" name="aed977af8a79d4c0101c0a591b8aa3f2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed977af8a79d4c0101c0a591b8aa3f2c">&#9670;&#160;</a></span>CACHE_SR_INV_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_SR_INV_Pos&#160;&#160;&#160;(2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00249">249</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0017ad445983fb15d510ab2bfe4fbf7b" name="a0017ad445983fb15d510ab2bfe4fbf7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0017ad445983fb15d510ab2bfe4fbf7b">&#9670;&#160;</a></span>CACHE_SR_POW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_SR_POW&#160;&#160;&#160;(0x01U &lt;&lt; CACHE_CCR_POW_REQ_Pos)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SRAM power response ///////////////////////////////////////////////////////////////////////////// </p>
+<p >CACHE_IMR Register Bit Definition </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00255">255</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2fc512cb2911832a499ee991acd3e236" name="a2fc512cb2911832a499ee991acd3e236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fc512cb2911832a499ee991acd3e236">&#9670;&#160;</a></span>CACHE_SR_POW_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CACHE_SR_POW_Pos&#160;&#160;&#160;(4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00251">251</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a844ea28ba1e0a5a0e497f16b61ea306b" name="a844ea28ba1e0a5a0e497f16b61ea306b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a844ea28ba1e0a5a0e497f16b61ea306b">&#9670;&#160;</a></span>FLASH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH&#160;&#160;&#160;((<a class="el" href="struct_f_l_a_s_h___type_def.html">FLASH_TypeDef</a>*) <a class="el" href="reg__flash_8h.html#a8311d9a635d57a643676ca37bf461dd3">FLASH_REG_BASE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FLASH type pointer Definition </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00117">117</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6e66d0fa94c019e9c27a3d79e8228cd9" name="a6e66d0fa94c019e9c27a3d79e8228cd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e66d0fa94c019e9c27a3d79e8228cd9">&#9670;&#160;</a></span>FLASH_ACR_HLFCYA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_ACR_HLFCYA&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#ac2b7184353c076341249a7c4e1bbc324">FLASH_ACR_HLFCYA_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flash Half Cycle Access Enable </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00137">137</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac2b7184353c076341249a7c4e1bbc324" name="ac2b7184353c076341249a7c4e1bbc324"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2b7184353c076341249a7c4e1bbc324">&#9670;&#160;</a></span>FLASH_ACR_HLFCYA_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_ACR_HLFCYA_Pos&#160;&#160;&#160;(3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00136">136</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aef5e44cbb084160a6004ca9951ec7318" name="aef5e44cbb084160a6004ca9951ec7318"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef5e44cbb084160a6004ca9951ec7318">&#9670;&#160;</a></span>FLASH_ACR_LATENCY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_ACR_LATENCY&#160;&#160;&#160;(0x07U &lt;&lt; <a class="el" href="reg__flash_8h.html#acd27f57311268ed1ad0ddb1a207ce9a4">FLASH_ACR_LATENCY_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>LATENCY[2:0] bits (Latency) </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00131">131</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6560c1d58df18c8740d70591bf7bc1ad" name="a6560c1d58df18c8740d70591bf7bc1ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6560c1d58df18c8740d70591bf7bc1ad">&#9670;&#160;</a></span>FLASH_ACR_LATENCY_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_ACR_LATENCY_0&#160;&#160;&#160;(0x00U &lt;&lt; <a class="el" href="reg__flash_8h.html#acd27f57311268ed1ad0ddb1a207ce9a4">FLASH_ACR_LATENCY_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>0 waiting state </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00132">132</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a85155f5d3f34ebe83989513793498c72" name="a85155f5d3f34ebe83989513793498c72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85155f5d3f34ebe83989513793498c72">&#9670;&#160;</a></span>FLASH_ACR_LATENCY_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_ACR_LATENCY_1&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#acd27f57311268ed1ad0ddb1a207ce9a4">FLASH_ACR_LATENCY_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>1 waiting state <br  />
+ </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00133">133</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a61b5089d0c86db787ebef496c9057918" name="a61b5089d0c86db787ebef496c9057918"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b5089d0c86db787ebef496c9057918">&#9670;&#160;</a></span>FLASH_ACR_LATENCY_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_ACR_LATENCY_2&#160;&#160;&#160;(0x02U &lt;&lt; <a class="el" href="reg__flash_8h.html#acd27f57311268ed1ad0ddb1a207ce9a4">FLASH_ACR_LATENCY_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>2 waiting state </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00134">134</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab6fd9ca7da8325ebbe9d651cedc1be0e" name="ab6fd9ca7da8325ebbe9d651cedc1be0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6fd9ca7da8325ebbe9d651cedc1be0e">&#9670;&#160;</a></span>FLASH_ACR_LATENCY_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_ACR_LATENCY_3&#160;&#160;&#160;(0x03U &lt;&lt; <a class="el" href="reg__flash_8h.html#acd27f57311268ed1ad0ddb1a207ce9a4">FLASH_ACR_LATENCY_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>3 waiting state </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00135">135</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acd27f57311268ed1ad0ddb1a207ce9a4" name="acd27f57311268ed1ad0ddb1a207ce9a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd27f57311268ed1ad0ddb1a207ce9a4">&#9670;&#160;</a></span>FLASH_ACR_LATENCY_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_ACR_LATENCY_Pos&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FLASH_ACR Register Bit Definition </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00130">130</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5285ab198307213dce0629f9b7c6fc86" name="a5285ab198307213dce0629f9b7c6fc86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5285ab198307213dce0629f9b7c6fc86">&#9670;&#160;</a></span>FLASH_ACR_PRFTBE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_ACR_PRFTBE&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a288f4e0368a7d8d18e626a54caf995a9">FLASH_ACR_PRFTBE_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prefetch Buffer Enable </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00139">139</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a288f4e0368a7d8d18e626a54caf995a9" name="a288f4e0368a7d8d18e626a54caf995a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a288f4e0368a7d8d18e626a54caf995a9">&#9670;&#160;</a></span>FLASH_ACR_PRFTBE_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_ACR_PRFTBE_Pos&#160;&#160;&#160;(4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00138">138</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1e73d25ffe7e7a258a873e1fbef17445" name="a1e73d25ffe7e7a258a873e1fbef17445"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e73d25ffe7e7a258a873e1fbef17445">&#9670;&#160;</a></span>FLASH_ACR_PRFTBS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_ACR_PRFTBS&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a8998834e7fc4fa0855cf5e7424b7abea">FLASH_ACR_PRFTBS_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prefetch Buffer Status ///////////////////////////////////////////////////////////////////////////// </p>
+<p >FLASH_KEYR Register Bit Definition </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00144">144</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8998834e7fc4fa0855cf5e7424b7abea" name="a8998834e7fc4fa0855cf5e7424b7abea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8998834e7fc4fa0855cf5e7424b7abea">&#9670;&#160;</a></span>FLASH_ACR_PRFTBS_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_ACR_PRFTBS_Pos&#160;&#160;&#160;(5)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00140">140</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aafc00fde8118ce03602d00d34a80fec4" name="aafc00fde8118ce03602d00d34a80fec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafc00fde8118ce03602d00d34a80fec4">&#9670;&#160;</a></span>FLASH_AR_FAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_AR_FAR&#160;&#160;&#160;(0xFFFFFFFFU &lt;&lt; <a class="el" href="reg__flash_8h.html#a17a157edb20903a57b2d5ebd0efa66f2">FLASH_AR_FAR_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flash Address </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00194">194</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a17a157edb20903a57b2d5ebd0efa66f2" name="a17a157edb20903a57b2d5ebd0efa66f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17a157edb20903a57b2d5ebd0efa66f2">&#9670;&#160;</a></span>FLASH_AR_FAR_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_AR_FAR_Pos&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FLASH_AR Register Bit Definition </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00193">193</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a23a9099a5f8fc9c6e253c0eecb2be8db" name="a23a9099a5f8fc9c6e253c0eecb2be8db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23a9099a5f8fc9c6e253c0eecb2be8db">&#9670;&#160;</a></span>FLASH_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_BASE&#160;&#160;&#160;(0x08000000U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MM32 MCU Memory/Peripherals mapping </p>
+<p >FLASH base address in the alias region </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00041">41</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab9e69856f654ec430a42791a34799db0" name="ab9e69856f654ec430a42791a34799db0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9e69856f654ec430a42791a34799db0">&#9670;&#160;</a></span>FLASH_CR_EOPIE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_CR_EOPIE&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a4e162a7fa45cb85ba0df0942a2519478">FLASH_CR_EOPIE_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>End of operation interrupt enable </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00188">188</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4e162a7fa45cb85ba0df0942a2519478" name="a4e162a7fa45cb85ba0df0942a2519478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e162a7fa45cb85ba0df0942a2519478">&#9670;&#160;</a></span>FLASH_CR_EOPIE_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_CR_EOPIE_Pos&#160;&#160;&#160;(12)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00187">187</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a930897cecdaa9dbef8c640b84acbd8c2" name="a930897cecdaa9dbef8c640b84acbd8c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a930897cecdaa9dbef8c640b84acbd8c2">&#9670;&#160;</a></span>FLASH_CR_ERRIE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_CR_ERRIE&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#ab075c4eeff509cfe0f34040c29edfb05">FLASH_CR_ERRIE_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Error Interrupt Enable </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00186">186</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab075c4eeff509cfe0f34040c29edfb05" name="ab075c4eeff509cfe0f34040c29edfb05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab075c4eeff509cfe0f34040c29edfb05">&#9670;&#160;</a></span>FLASH_CR_ERRIE_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_CR_ERRIE_Pos&#160;&#160;&#160;(10)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00185">185</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab25f1fa4127fa015361b61a6f3180784" name="ab25f1fa4127fa015361b61a6f3180784"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab25f1fa4127fa015361b61a6f3180784">&#9670;&#160;</a></span>FLASH_CR_LOCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_CR_LOCK&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#aa74509adc6db3db66803966b25423cae">FLASH_CR_LOCK_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lock </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00182">182</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa74509adc6db3db66803966b25423cae" name="aa74509adc6db3db66803966b25423cae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa74509adc6db3db66803966b25423cae">&#9670;&#160;</a></span>FLASH_CR_LOCK_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_CR_LOCK_Pos&#160;&#160;&#160;(7)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00181">181</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4a287aa5a625125301306a02fb69c53a" name="a4a287aa5a625125301306a02fb69c53a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a287aa5a625125301306a02fb69c53a">&#9670;&#160;</a></span>FLASH_CR_MER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_CR_MER&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a0627fa13f9e31a0250d6917e4d2ecbc1">FLASH_CR_MER_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mass Erase </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00174">174</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0627fa13f9e31a0250d6917e4d2ecbc1" name="a0627fa13f9e31a0250d6917e4d2ecbc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0627fa13f9e31a0250d6917e4d2ecbc1">&#9670;&#160;</a></span>FLASH_CR_MER_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_CR_MER_Pos&#160;&#160;&#160;(2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00173">173</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a19fbf5dc4339b1ec8630675f03ad6fe0" name="a19fbf5dc4339b1ec8630675f03ad6fe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19fbf5dc4339b1ec8630675f03ad6fe0">&#9670;&#160;</a></span>FLASH_CR_OPTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_CR_OPTER&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#ae89abf0177ab4bcf030984073b74a182">FLASH_CR_OPTER_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Option Byte Erase </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00178">178</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae89abf0177ab4bcf030984073b74a182" name="ae89abf0177ab4bcf030984073b74a182"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae89abf0177ab4bcf030984073b74a182">&#9670;&#160;</a></span>FLASH_CR_OPTER_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_CR_OPTER_Pos&#160;&#160;&#160;(5)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00177">177</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6736a5478a87f35a6a0cb66d8784a5ab" name="a6736a5478a87f35a6a0cb66d8784a5ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6736a5478a87f35a6a0cb66d8784a5ab">&#9670;&#160;</a></span>FLASH_CR_OPTPG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_CR_OPTPG&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a3f0371da9e5f8f8e95b038107426ce6f">FLASH_CR_OPTPG_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Option Byte Programming </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00176">176</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3f0371da9e5f8f8e95b038107426ce6f" name="a3f0371da9e5f8f8e95b038107426ce6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f0371da9e5f8f8e95b038107426ce6f">&#9670;&#160;</a></span>FLASH_CR_OPTPG_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_CR_OPTPG_Pos&#160;&#160;&#160;(4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00175">175</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a27d44bc9617cc430de9413b385dfe0c3" name="a27d44bc9617cc430de9413b385dfe0c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27d44bc9617cc430de9413b385dfe0c3">&#9670;&#160;</a></span>FLASH_CR_OPTWRE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_CR_OPTWRE&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#aa6cdcb203f948b1d30cba476001d9074">FLASH_CR_OPTWRE_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Option Bytes Write Enable </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00184">184</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa6cdcb203f948b1d30cba476001d9074" name="aa6cdcb203f948b1d30cba476001d9074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6cdcb203f948b1d30cba476001d9074">&#9670;&#160;</a></span>FLASH_CR_OPTWRE_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_CR_OPTWRE_Pos&#160;&#160;&#160;(9)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00183">183</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad845355ade49d56cf70ad0ff09595a23" name="ad845355ade49d56cf70ad0ff09595a23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad845355ade49d56cf70ad0ff09595a23">&#9670;&#160;</a></span>FLASH_CR_PER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_CR_PER&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a4ae43572c697cddd88e48b945828c526">FLASH_CR_PER_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Page Erase </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00172">172</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4ae43572c697cddd88e48b945828c526" name="a4ae43572c697cddd88e48b945828c526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ae43572c697cddd88e48b945828c526">&#9670;&#160;</a></span>FLASH_CR_PER_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_CR_PER_Pos&#160;&#160;&#160;(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00171">171</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a47754b39bd7a7c79c251d6376f97f661" name="a47754b39bd7a7c79c251d6376f97f661"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47754b39bd7a7c79c251d6376f97f661">&#9670;&#160;</a></span>FLASH_CR_PG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_CR_PG&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a0a5addaa1ee5049b0c99023d91dd4a70">FLASH_CR_PG_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Programming </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00170">170</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0a5addaa1ee5049b0c99023d91dd4a70" name="a0a5addaa1ee5049b0c99023d91dd4a70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a5addaa1ee5049b0c99023d91dd4a70">&#9670;&#160;</a></span>FLASH_CR_PG_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_CR_PG_Pos&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FLASH_CR Register Bit Definition </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00169">169</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afe4dd28134f93f52b1d4ec5b36a99864" name="afe4dd28134f93f52b1d4ec5b36a99864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe4dd28134f93f52b1d4ec5b36a99864">&#9670;&#160;</a></span>FLASH_CR_STRT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_CR_STRT&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a7925df36a4d15838d8cb457f671e7532">FLASH_CR_STRT_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00180">180</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7925df36a4d15838d8cb457f671e7532" name="a7925df36a4d15838d8cb457f671e7532"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7925df36a4d15838d8cb457f671e7532">&#9670;&#160;</a></span>FLASH_CR_STRT_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_CR_STRT_Pos&#160;&#160;&#160;(6)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00179">179</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad9db8057ca6bb3aebc554fa40f2de8ee" name="ad9db8057ca6bb3aebc554fa40f2de8ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9db8057ca6bb3aebc554fa40f2de8ee">&#9670;&#160;</a></span>FLASH_KEYR_FKEY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_KEYR_FKEY&#160;&#160;&#160;(0xFFFFFFFFU &lt;&lt; <a class="el" href="reg__flash_8h.html#a72dd303c0d32dad568dc108a27ddff67">FLASH_KEYR_FKEY_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FLASH Key </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00146">146</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a72dd303c0d32dad568dc108a27ddff67" name="a72dd303c0d32dad568dc108a27ddff67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72dd303c0d32dad568dc108a27ddff67">&#9670;&#160;</a></span>FLASH_KEYR_FKEY_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_KEYR_FKEY_Pos&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00145">145</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a91bc14334e9930bc6f3ebf9ea77e17b6" name="a91bc14334e9930bc6f3ebf9ea77e17b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91bc14334e9930bc6f3ebf9ea77e17b6">&#9670;&#160;</a></span>FLASH_OBR_Data0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_OBR_Data0&#160;&#160;&#160;(0xFFU &lt;&lt; <a class="el" href="reg__flash_8h.html#ac2aeecbeab5b5d2655a854a738a8e5fa">FLASH_OBR_Data0_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>User data storage option byte </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00212">212</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac2aeecbeab5b5d2655a854a738a8e5fa" name="ac2aeecbeab5b5d2655a854a738a8e5fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2aeecbeab5b5d2655a854a738a8e5fa">&#9670;&#160;</a></span>FLASH_OBR_Data0_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_OBR_Data0_Pos&#160;&#160;&#160;(10)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00211">211</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5123395ca5fc5b3e6790acafa77a1bf8" name="a5123395ca5fc5b3e6790acafa77a1bf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5123395ca5fc5b3e6790acafa77a1bf8">&#9670;&#160;</a></span>FLASH_OBR_Data1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_OBR_Data1&#160;&#160;&#160;(0xFFU &lt;&lt; <a class="el" href="reg__flash_8h.html#a05e703fc3c42fdd5db65ba81a49d0a68">FLASH_OBR_Data1_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>User data storage option byte </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00214">214</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a05e703fc3c42fdd5db65ba81a49d0a68" name="a05e703fc3c42fdd5db65ba81a49d0a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05e703fc3c42fdd5db65ba81a49d0a68">&#9670;&#160;</a></span>FLASH_OBR_Data1_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_OBR_Data1_Pos&#160;&#160;&#160;(18)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00213">213</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab52c27d6657bd72f1860fa25a1faf8e3" name="ab52c27d6657bd72f1860fa25a1faf8e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab52c27d6657bd72f1860fa25a1faf8e3">&#9670;&#160;</a></span>FLASH_OBR_OPTERR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_OBR_OPTERR&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a97bfb7f45709e6f143c64857b5150565">FLASH_OBR_OPTERR_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Option Byte Error </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00200">200</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a97bfb7f45709e6f143c64857b5150565" name="a97bfb7f45709e6f143c64857b5150565"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97bfb7f45709e6f143c64857b5150565">&#9670;&#160;</a></span>FLASH_OBR_OPTERR_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_OBR_OPTERR_Pos&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FLASH_OBR Register Bit Definition </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00199">199</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a052763d6c2daf0a422577a6c8a0be977" name="a052763d6c2daf0a422577a6c8a0be977"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a052763d6c2daf0a422577a6c8a0be977">&#9670;&#160;</a></span>FLASH_OBR_RDPRT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_OBR_RDPRT&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a7cb5e11b3eae03c7d2b36686737a71c3">FLASH_OBR_RDPRT_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read protection level status </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00202">202</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7cb5e11b3eae03c7d2b36686737a71c3" name="a7cb5e11b3eae03c7d2b36686737a71c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cb5e11b3eae03c7d2b36686737a71c3">&#9670;&#160;</a></span>FLASH_OBR_RDPRT_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_OBR_RDPRT_Pos&#160;&#160;&#160;(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00201">201</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5700f8b280578cb6eff3a3f784cf93a7" name="a5700f8b280578cb6eff3a3f784cf93a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5700f8b280578cb6eff3a3f784cf93a7">&#9670;&#160;</a></span>FLASH_OBR_RST_STDBY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_OBR_RST_STDBY&#160;&#160;&#160;(0x04U &lt;&lt; <a class="el" href="reg__flash_8h.html#aefde313300f0e954d27f87e6256274b4">FLASH_OBR_USER_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>nRST_STDBY </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00208">208</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a04297fb424e7aa9a3dd834cceecc3f0b" name="a04297fb424e7aa9a3dd834cceecc3f0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04297fb424e7aa9a3dd834cceecc3f0b">&#9670;&#160;</a></span>FLASH_OBR_RST_STOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_OBR_RST_STOP&#160;&#160;&#160;(0x02U &lt;&lt; <a class="el" href="reg__flash_8h.html#aefde313300f0e954d27f87e6256274b4">FLASH_OBR_USER_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>nRST_STOP </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00207">207</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1585552c59923cb1e1979cdfdc77b991" name="a1585552c59923cb1e1979cdfdc77b991"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1585552c59923cb1e1979cdfdc77b991">&#9670;&#160;</a></span>FLASH_OBR_USER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_OBR_USER&#160;&#160;&#160;(0xFFU &lt;&lt; <a class="el" href="reg__flash_8h.html#aefde313300f0e954d27f87e6256274b4">FLASH_OBR_USER_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>User Option Bytes </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00204">204</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aefde313300f0e954d27f87e6256274b4" name="aefde313300f0e954d27f87e6256274b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefde313300f0e954d27f87e6256274b4">&#9670;&#160;</a></span>FLASH_OBR_USER_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_OBR_USER_Pos&#160;&#160;&#160;(2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00203">203</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5a18df54a9254985b1ee69c5666e68b6" name="a5a18df54a9254985b1ee69c5666e68b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a18df54a9254985b1ee69c5666e68b6">&#9670;&#160;</a></span>FLASH_OBR_WDG_SW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_OBR_WDG_SW&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#aefde313300f0e954d27f87e6256274b4">FLASH_OBR_USER_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>WDG_SW </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00206">206</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa2984934a116e341420122bcc44019f1" name="aa2984934a116e341420122bcc44019f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2984934a116e341420122bcc44019f1">&#9670;&#160;</a></span>FLASH_OPTKEYR_OPTKEY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_OPTKEYR_OPTKEY&#160;&#160;&#160;(0xFFFFFFFFU &lt;&lt; <a class="el" href="reg__flash_8h.html#a97a955c9fb95aadc41510e8186911f06">FLASH_OPTKEYR_OPTKEY_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Option Byte Key </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00152">152</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a97a955c9fb95aadc41510e8186911f06" name="a97a955c9fb95aadc41510e8186911f06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97a955c9fb95aadc41510e8186911f06">&#9670;&#160;</a></span>FLASH_OPTKEYR_OPTKEY_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_OPTKEYR_OPTKEY_Pos&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FLASH_OPTKEYR Register Bit Definition </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00151">151</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8311d9a635d57a643676ca37bf461dd3" name="a8311d9a635d57a643676ca37bf461dd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8311d9a635d57a643676ca37bf461dd3">&#9670;&#160;</a></span>FLASH_REG_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_REG_BASE&#160;&#160;&#160;(<a class="el" href="reg__common_8h.html#a92eb5d49730765d2abd0f5b09548f9f5">AHBPERIPH_BASE</a> + 0x2000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FLASH Base Address Definition </p>
+<p >Base Address: 0x40022000 /////////////////////////////////////////////////////////////////////////////</p>
+<p >OPTB Base Address Definition </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00052">52</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aceacb6d53beb00e92d7d7a7cb41a19d2" name="aceacb6d53beb00e92d7d7a7cb41a19d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceacb6d53beb00e92d7d7a7cb41a19d2">&#9670;&#160;</a></span>FLASH_SR_BUSY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_SR_BUSY&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#ad8f128bca20566a98420c91e6019aeee">FLASH_SR_BUSY_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Busy </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00158">158</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad8f128bca20566a98420c91e6019aeee" name="ad8f128bca20566a98420c91e6019aeee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8f128bca20566a98420c91e6019aeee">&#9670;&#160;</a></span>FLASH_SR_BUSY_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_SR_BUSY_Pos&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FLASH_SR Register Bit Definition </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00157">157</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae1301c6b487cfefa247c54a576a0c12b" name="ae1301c6b487cfefa247c54a576a0c12b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1301c6b487cfefa247c54a576a0c12b">&#9670;&#160;</a></span>FLASH_SR_EOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_SR_EOP&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#a2013e875c4c210b820e502feea6c9fb1">FLASH_SR_EOP_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>End of operation </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00164">164</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2013e875c4c210b820e502feea6c9fb1" name="a2013e875c4c210b820e502feea6c9fb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2013e875c4c210b820e502feea6c9fb1">&#9670;&#160;</a></span>FLASH_SR_EOP_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_SR_EOP_Pos&#160;&#160;&#160;(5)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00163">163</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a60f40ca765714598a62aa216a5ccd8e4" name="a60f40ca765714598a62aa216a5ccd8e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60f40ca765714598a62aa216a5ccd8e4">&#9670;&#160;</a></span>FLASH_SR_PGERR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_SR_PGERR&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#ade46f1b130b188d41613fc87661a8815">FLASH_SR_PGERR_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Programming Error </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00160">160</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ade46f1b130b188d41613fc87661a8815" name="ade46f1b130b188d41613fc87661a8815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade46f1b130b188d41613fc87661a8815">&#9670;&#160;</a></span>FLASH_SR_PGERR_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_SR_PGERR_Pos&#160;&#160;&#160;(2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00159">159</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2e403606e5ac23cb07701aeebc1f73e5" name="a2e403606e5ac23cb07701aeebc1f73e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e403606e5ac23cb07701aeebc1f73e5">&#9670;&#160;</a></span>FLASH_SR_WRPRTERR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_SR_WRPRTERR&#160;&#160;&#160;(0x01U &lt;&lt; <a class="el" href="reg__flash_8h.html#abd56872fd365b645d51c217e901958f6">FLASH_SR_WRPRTERR_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write Protection Error </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00162">162</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abd56872fd365b645d51c217e901958f6" name="abd56872fd365b645d51c217e901958f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd56872fd365b645d51c217e901958f6">&#9670;&#160;</a></span>FLASH_SR_WRPRTERR_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_SR_WRPRTERR_Pos&#160;&#160;&#160;(4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00161">161</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1d3842e780ec47c1127de0ed4a93821d" name="a1d3842e780ec47c1127de0ed4a93821d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d3842e780ec47c1127de0ed4a93821d">&#9670;&#160;</a></span>FLASH_WRPR_WRP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_WRPR_WRP&#160;&#160;&#160;(0xFFFFFFFFU &lt;&lt; <a class="el" href="reg__flash_8h.html#aa2cba593e56feed77b6c08f544fd327b">FLASH_WRPR_WRP_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write Protect </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00220">220</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa2cba593e56feed77b6c08f544fd327b" name="aa2cba593e56feed77b6c08f544fd327b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2cba593e56feed77b6c08f544fd327b">&#9670;&#160;</a></span>FLASH_WRPR_WRP_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_WRPR_WRP_Pos&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FLASH_WRPR Register Bit Definition </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00219">219</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad2d5f875cdc6d696735f20fa23a895c3" name="ad2d5f875cdc6d696735f20fa23a895c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2d5f875cdc6d696735f20fa23a895c3">&#9670;&#160;</a></span>OB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OB&#160;&#160;&#160;((<a class="el" href="struct_o_b___type_def.html">OB_TypeDef</a>*) <a class="el" href="reg__flash_8h.html#ab5b5fb155f9ee15dfb6d757da1adc926">OB_BASE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OPTB type pointer Definition </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00121">121</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab5b5fb155f9ee15dfb6d757da1adc926" name="ab5b5fb155f9ee15dfb6d757da1adc926"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5b5fb155f9ee15dfb6d757da1adc926">&#9670;&#160;</a></span>OB_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OB_BASE&#160;&#160;&#160;(0x1FFFF800U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flash Option Bytes base address </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00053">53</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9bc09c4fadd88692e00a50fa44ed8555" name="a9bc09c4fadd88692e00a50fa44ed8555"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bc09c4fadd88692e00a50fa44ed8555">&#9670;&#160;</a></span>PROTECT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PROTECT&#160;&#160;&#160;((<a class="el" href="struct_p_r_o_t_e_c_t___type_def.html">PROTECT_TypeDef</a>*) <a class="el" href="reg__flash_8h.html#aaf5081b0cfe00529bf531417058d8ee8">PROTECT_BASE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00122">122</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aaf5081b0cfe00529bf531417058d8ee8" name="aaf5081b0cfe00529bf531417058d8ee8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf5081b0cfe00529bf531417058d8ee8">&#9670;&#160;</a></span>PROTECT_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PROTECT_BASE&#160;&#160;&#160;(0x1FFE0000U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flash Protect Bytes base address </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00054">54</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a05e8f3d2e5868754a7cd88614955aecc" name="a05e8f3d2e5868754a7cd88614955aecc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05e8f3d2e5868754a7cd88614955aecc">&#9670;&#160;</a></span>SRAM_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SRAM_BASE&#160;&#160;&#160;(0x20000000U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SRAM base address in the alias region </p>
+
+<p class="definition">在文件 <a class="el" href="reg__flash_8h_source.html">reg_flash.h</a> 第 <a class="el" href="reg__flash_8h_source.html#l00042">42</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

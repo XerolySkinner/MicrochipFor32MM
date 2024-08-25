@@ -1,0 +1,77 @@
+\hypertarget{hal__dma_8c}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Src/hal\+\_\+dma.c 文件参考}
+\label{hal__dma_8c}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_dma.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_dma.c}}
+
+
+THIS FILE PROVIDES ALL THE DMA FIRMWARE FUNCTIONS.  
+
+
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}hal\+\_\+dma.\+h\char`\"{}}\newline
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{hal__dma_8c_af979b509fd0a5203a49a0e32f93ffdd1}{\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+C\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___d_m_a___exported___functions_gad9064d614f5726e1cb1f07b01e2ac986}{DMA\+\_\+\+De\+Init}} (\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}} $\ast$channel)
+\begin{DoxyCompactList}\small\item\em Deinitializes the DMA Channeln registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_m_a___exported___functions_ga2fe865d362d325860cfab64bc35573cb}{DMA\+\_\+\+Init}} (\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}} $\ast$channel, \mbox{\hyperlink{struct_d_m_a___init_type_def}{DMA\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Initializes the DMA Channeln according to the specified parameters in the init\+\_\+struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_m_a___exported___functions_ga6422b8fddfb7e502d2cab4ca0372d559}{DMA\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{struct_d_m_a___init_type_def}{DMA\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Fills each init\+\_\+struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_m_a___exported___functions_ga8656c8384255d6b66bcec2d94cd45a8a}{DMA\+\_\+\+Cmd}} (\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}} $\ast$channel, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified DMA Channeln. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_m_a___exported___functions_gaa8141363778bc8cdbb78ea1162e9f91a}{DMA\+\_\+\+ITConfig}} (\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}} $\ast$channel, \mbox{\hyperlink{group___d_m_a___exported___types_ga5f3ae6751b36995ad9109f0c841090c2}{DMA\+\_\+\+Interrupt\+\_\+\+EN\+\_\+\+Type\+Def}} it, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified DMA Channeln interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_m_a___exported___functions_ga78da8420e10dcc1a3894b2b26e673180}{DMA\+\_\+\+Set\+Curr\+Data\+Counter}} (\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}} $\ast$channel, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} length)
+\begin{DoxyCompactList}\small\item\em Sets the number of data units in the select the DMA Channel . \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{group___d_m_a___exported___functions_ga04f1f4d9b5586f063830548319b695c7}{DMA\+\_\+\+Get\+Curr\+Data\+Counter}} (\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}} $\ast$channel)
+\begin{DoxyCompactList}\small\item\em Returns the number of remaining data units in the current DMA Channeln transfer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___d_m_a___exported___functions_gaf6d9ae29e00784628b05c646e9cebbfc}{DMA\+\_\+\+Get\+Flag\+Status}} (\mbox{\hyperlink{group___d_m_a___exported___types_ga331aff17c5d867376992bc04f6b7992a}{DMA\+\_\+\+Flags\+\_\+\+Type\+Def}} flag)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified DMA Channeln flag is set or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_m_a___exported___functions_gaf628272d78ddcab1a50ccacfd2de75bf}{DMA\+\_\+\+Clear\+Flag}} (\mbox{\hyperlink{group___d_m_a___exported___types_ga331aff17c5d867376992bc04f6b7992a}{DMA\+\_\+\+Flags\+\_\+\+Type\+Def}} flag)
+\begin{DoxyCompactList}\small\item\em Clears the DMA Channeln\textquotesingle{}s pending flags. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} \mbox{\hyperlink{group___d_m_a___exported___functions_ga58ae2d7a2fc5672705bf8cbe0f346e29}{DMA\+\_\+\+Get\+ITStatus}} (\mbox{\hyperlink{group___d_m_a___exported___types_gadcf797af4958e7bb1f4c4377289c22c6}{DMA\+\_\+\+Interrupts\+\_\+\+Type\+Def}} it)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified DMA Channeln interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_m_a___exported___functions_ga5c17f354aef502e0fd12c82abf34d109}{DMA\+\_\+\+Clear\+ITPending\+Bit}} (\mbox{\hyperlink{group___d_m_a___exported___types_gadcf797af4958e7bb1f4c4377289c22c6}{DMA\+\_\+\+Interrupts\+\_\+\+Type\+Def}} it)
+\begin{DoxyCompactList}\small\item\em Clears the DMA Channeln\textquotesingle{}s interrupt pending bits. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_m_a___exported___functions_gafcaa7be7bb70ac344b4da2963f8990b6}{ex\+DMA\+\_\+\+Set\+Peripheral\+Address}} (\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}} $\ast$channel, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} address)
+\begin{DoxyCompactList}\small\item\em Set the DMA Channeln\textquotesingle{}s Peripheral address. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_m_a___exported___functions_ga3973b9ed32d715c31e50ca1451d22780}{ex\+DMA\+\_\+\+Set\+Transmit\+Len}} (\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}} $\ast$channel, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} length)
+\begin{DoxyCompactList}\small\item\em Set the DMA Channeln\textquotesingle{}s Peripheral address. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_m_a___exported___functions_ga4ec9d02c7cb49b8fa7e46b3ad48b0a06}{ex\+DMA\+\_\+\+Set\+Memory\+Address}} (\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}} $\ast$channel, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} address)
+\begin{DoxyCompactList}\small\item\em Set the DMA Channeln\textquotesingle{}s Peripheral address. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_m_a___exported___functions_gacf514f0f3e1157d94b00d6d8f98b6625}{ex\+DMA\+\_\+\+Clear\+ITPending\+Bit}} (\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}} $\ast$channel, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it)
+\begin{DoxyCompactList}\small\item\em Clears the DMA Channeln\textquotesingle{}s interrupt pending bits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE PROVIDES ALL THE DMA FIRMWARE FUNCTIONS. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{hal__dma_8c_source}{hal\+\_\+dma.\+c}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{hal__dma_8c_af979b509fd0a5203a49a0e32f93ffdd1}\label{hal__dma_8c_af979b509fd0a5203a49a0e32f93ffdd1}} 
+\index{hal\_dma.c@{hal\_dma.c}!\_HAL\_DMA\_C\_@{\_HAL\_DMA\_C\_}}
+\index{\_HAL\_DMA\_C\_@{\_HAL\_DMA\_C\_}!hal\_dma.c@{hal\_dma.c}}
+\doxysubsubsection{\texorpdfstring{\_HAL\_DMA\_C\_}{\_HAL\_DMA\_C\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+HAL\+\_\+\+DMA\+\_\+\+C\+\_\+}
+
+
+
+在文件 \mbox{\hyperlink{hal__dma_8c_source}{hal\+\_\+dma.\+c}} 第 \mbox{\hyperlink{hal__dma_8c_source_l00024}{24}} 行定义.
+

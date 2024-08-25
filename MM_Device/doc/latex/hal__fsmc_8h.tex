@@ -1,0 +1,125 @@
+\hypertarget{hal__fsmc_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Inc/hal\+\_\+fsmc.h 文件参考}
+\label{hal__fsmc_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_fsmc.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_fsmc.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SDIO FIRMWARE LIBRARY.  
+
+
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}reg\+\_\+common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}reg\+\_\+fsmc.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def}{FSMC\+\_\+\+NORSRAM\+\_\+\+Bank\+\_\+\+Init\+Type\+Def}}
+\item 
+struct \mbox{\hyperlink{struct_f_s_m_c___init_type_def}{FSMC\+\_\+\+Init\+Type\+Def}}
+\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_ga7f8af59af780df8068c73f99ebe98e4b}{FSMC\+\_\+\+Timing\+Reg\+Select\+\_\+0}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\begin{DoxyCompactList}\small\item\em FSMC\+\_\+interrupts\+\_\+define \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_gaa526b31f718d47362b0353a815162593}{FSMC\+\_\+\+Timing\+Reg\+Select\+\_\+1}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000100)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_ga16c79c66250fea570edfddcd1afd80c8}{FSMC\+\_\+\+Timing\+Reg\+Select\+\_\+2}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000200)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_gadd0bd90615fa8200bc721a834be2296c}{FSMC\+\_\+\+Mem\+Size\+\_\+\+None}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_ga97602fa58abfc6be84234a988495ee14}{FSMC\+\_\+\+Mem\+Size\+\_\+64\+KB}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000001)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_gace1d6bc99b68494ea5120ee5d2031a07}{FSMC\+\_\+\+Mem\+Size\+\_\+128\+KB}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000002)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_gaeb43fe37592e3aab6907a584a8b45f64}{FSMC\+\_\+\+Mem\+Size\+\_\+256\+KB}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000002)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_ga882e00998030f25678e8523f6f800797}{FSMC\+\_\+\+Mem\+Size\+\_\+512\+KB}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000004)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_ga1887ddc6ae27ef82ddd670a926d820b1}{FSMC\+\_\+\+Mem\+Size\+\_\+1\+MB}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000005)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_ga110a4284639d1427a976cf747830701c}{FSMC\+\_\+\+Mem\+Size\+\_\+2\+MB}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000006)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_ga79878c25c00d9e030a292ca0f569e0f8}{FSMC\+\_\+\+Mem\+Size\+\_\+4\+MB}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000007)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_ga76514e85b7a0b396aa6ca851ccb59c57}{FSMC\+\_\+\+Mem\+Size\+\_\+8\+MB}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_ga87d62de8c8d40275eec0fbe7ea065305}{FSMC\+\_\+\+Mem\+Size\+\_\+16\+MB}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000009)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_ga4a599db9a6f68638dcc9035c07b0e9cd}{FSMC\+\_\+\+Mem\+Size\+\_\+32\+MB}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000000A)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_ga5b954760145bc8e04129ee399efb72f1}{FSMC\+\_\+\+Mem\+Size\+\_\+64\+MB}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000000B)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_ga6858523bbffe17b54b846d3f07a29da3}{FSMC\+\_\+\+Mem\+Size\+\_\+128\+MB}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000000C)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_gaa12cadf18327eac4e077c51b1db17fa9}{FSMC\+\_\+\+Mem\+Size\+\_\+256\+MB}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000000D)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_gab03f685c5f69faf7f42b7bd3418350e5}{FSMC\+\_\+\+Mem\+Size\+\_\+512\+MB}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000000E)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_ga8a7f5efa43dadebbb34866f301479e73}{FSMC\+\_\+\+Mem\+Size\+\_\+1\+GB}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000000F)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_gaad4126a8487157b523e73904a7686492}{FSMC\+\_\+\+Mem\+Size\+\_\+2\+GB}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000010)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_gab17c45dceb9187b5c7c4f171c4afd065}{FSMC\+\_\+\+Mem\+Size\+\_\+4\+GB}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000011)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_gabe0f6a5befc2d7267d4eb580d412d5d6}{FSMC\+\_\+\+Mem\+Type\+\_\+\+SDRAM}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0$<$$<$5)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_ga38c486cc00707b7772eb205fee9fbac6}{FSMC\+\_\+\+Mem\+Type\+\_\+\+Nor\+SRAM}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x1$<$$<$5)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_gafbb133a5380fb6191896832c65330706}{FSMC\+\_\+\+Mem\+Type\+\_\+\+FLASH}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x2$<$$<$5)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_ga2971dfe628b2f1cf1a3e8d127801ff2a}{FSMC\+\_\+\+Mem\+Type\+\_\+\+RESERVED}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x3$<$$<$5)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_ga9034fea13f3d8432e1d61cec4fe3840f}{FSMC\+\_\+\+Mode\+\_\+6800}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x40000000)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_gaf2f2ea3455cc2ef0c3ec4d2c04e80fb0}{FSMC\+\_\+\+Mode\+\_\+8080}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x20000000)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_gacf43401396c600535a4ca7001aea0e5b}{FSMC\+\_\+\+Mode\+\_\+\+Nor\+Flash}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_gaae23df1b8fe5ede25662ea9f22439014}{FSMC\+\_\+\+Addr\+Data\+MUX}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___exported___types_ga9ef899479d3b98c4208b18ded67bc6c6}{FSMC\+\_\+\+Addr\+Data\+De\+MUX}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x10000000)
+\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___f_s_m_c___exported___types_gac7e350865ac6d8b44cfded181628e1bb}{FSMC\+\_\+\+NORSRAM\+\_\+\+Data\+Width\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___f_s_m_c___exported___types_ggac7e350865ac6d8b44cfded181628e1bba20d1d7d1a0afa5acb4057ebb25477b3b}{FSMC\+\_\+\+Data\+Width\+\_\+16bits}} = (0x0000)
+, \mbox{\hyperlink{group___f_s_m_c___exported___types_ggac7e350865ac6d8b44cfded181628e1bba79480b3f4dfe2376da8c11bc9901c5f6}{FSMC\+\_\+\+Data\+Width\+\_\+32bits}} = (0x0001)
+, \mbox{\hyperlink{group___f_s_m_c___exported___types_ggac7e350865ac6d8b44cfded181628e1bba1bd17967893a58c6d097515b9450b76e}{FSMC\+\_\+\+Data\+Width\+\_\+64bits}} = (0x0002)
+, \mbox{\hyperlink{group___f_s_m_c___exported___types_ggac7e350865ac6d8b44cfded181628e1bba2cd17faf19f57be0d4a879309585fbf6}{FSMC\+\_\+\+Data\+Width\+\_\+128bits}} = (0x0003)
+, \newline
+\mbox{\hyperlink{group___f_s_m_c___exported___types_ggac7e350865ac6d8b44cfded181628e1bbaee88f750697f6d53751f712b91d5ce9e}{FSMC\+\_\+\+Data\+Width\+\_\+8bits}} = (0x0004)
+ \}
+\item 
+enum \mbox{\hyperlink{group___f_s_m_c___exported___types_ga99bd18a2610c2b6bf2454edeeb7e992e}{FSMC\+\_\+\+NORSRAM\+\_\+\+BANK\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___f_s_m_c___exported___types_gga99bd18a2610c2b6bf2454edeeb7e992ea6ee9c39fd28179c00823121a913bbb1d}{FSMC\+\_\+\+NORSRAM\+\_\+\+BANK0}} = 0
+, \mbox{\hyperlink{group___f_s_m_c___exported___types_gga99bd18a2610c2b6bf2454edeeb7e992ea42f8b89bbd085c1794ea5e3c53c1f7d8}{FSMC\+\_\+\+NORSRAM\+\_\+\+BANK1}} = 1
+, \mbox{\hyperlink{group___f_s_m_c___exported___types_gga99bd18a2610c2b6bf2454edeeb7e992ea5f3a18df99a2974b1a6ae0ca114b6321}{FSMC\+\_\+\+NORSRAM\+\_\+\+BANK2}} = 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___f_s_m_c___exported___types_ga99b09272a4eb324309c4339993f7ffc9}{FSMC\+\_\+\+NORSRAMStruct\+Init}} (\mbox{\hyperlink{struct_f_s_m_c___init_type_def}{FSMC\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\item 
+void \mbox{\hyperlink{group___f_s_m_c___exported___types_ga4408aa26918b6cf7a84f0fa482cc6613}{FSMC\+\_\+\+NORSRAM\+\_\+\+Bank\+Struct\+Init}} (\mbox{\hyperlink{struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def}{FSMC\+\_\+\+NORSRAM\+\_\+\+Bank\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\item 
+void \mbox{\hyperlink{group___f_s_m_c___exported___types_ga2594e3181adfc5140f69d9c5abb5f82c}{FSMC\+\_\+\+NORSRAMInit}} (\mbox{\hyperlink{struct_f_s_m_c___init_type_def}{FSMC\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\item 
+void \mbox{\hyperlink{group___f_s_m_c___exported___types_ga43f72d46ad740647528f6cc45684cdd0}{FSMC\+\_\+\+NORSRAM\+\_\+\+Bank\+\_\+\+Init}} (\mbox{\hyperlink{struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def}{FSMC\+\_\+\+NORSRAM\+\_\+\+Bank\+\_\+\+Init\+Type\+Def}} $\ast$FSMC\+\_\+\+Bank\+\_\+\+Init\+Struct, \mbox{\hyperlink{group___f_s_m_c___exported___types_ga99bd18a2610c2b6bf2454edeeb7e992e}{FSMC\+\_\+\+NORSRAM\+\_\+\+BANK\+\_\+\+Type\+Def}} bank)
+\begin{DoxyCompactList}\small\item\em Initialize the FSMC\+\_\+\+NORSRAM Timing according to the specified parameters in the FSMC\+\_\+\+NORSRAM\+\_\+\+Timing\+Type\+Def \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SDIO FIRMWARE LIBRARY. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{hal__fsmc_8h_source}{hal\+\_\+fsmc.\+h}} 中定义.
+

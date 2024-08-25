@@ -1,0 +1,929 @@
+\hypertarget{hal__eth_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Inc/hal\+\_\+eth.h 文件参考}
+\label{hal__eth_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_eth.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_eth.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE \mbox{\hyperlink{hal__eth_8h}{HAL\+\_\+eth.\+h}} EXAMPLES. ////////////////////////////////////////////////////////////////////////////  
+
+
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mm32\+\_\+device.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}HAL\+\_\+eth\+\_\+conf.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_e_t_h___init_type_def}{ETH\+\_\+\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em ETH Init Structure Definition \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}}
+\item 
+struct \mbox{\hyperlink{struct_frame_type_def}{Frame\+Type\+Def}}
+\item 
+struct \mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos}{ETH\+\_\+\+DMA\+\_\+\+Rx\+\_\+\+Frame\+\_\+infos}}
+\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga15e493eedd0128d55c89df6d7c2c6c47}{ETH\+\_\+\+MAX\+\_\+\+PACKET\+\_\+\+SIZE}}~1524
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gac4a56adcba1f0d66470313c99ff440e6}{ETH\+\_\+\+HEADER}}~14
+\begin{DoxyCompactList}\small\item\em MAC Dest Addr 6 byte + MAC Src Addr 6 byte + Lenth/\+Type 2 byte \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga0f490fd4c55b46ca0c9da26cdfd52ff9}{ETH\+\_\+\+EXTRA}}~2
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga04830f6ce829978038a6219a05883df2}{VLAN\+\_\+\+TAG}}~4
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga3e5fa81aac04a5959fb32b9a69786287}{ETH\+\_\+\+PAYLOAD\+\_\+\+MIN}}~46
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga662a262c47dd1612c286d5781ea51b83}{ETH\+\_\+\+PAYLOAD\+\_\+\+MAX}}~1500
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga09553e569664fd298646602806b777f5}{JUMBO\+\_\+\+FRAME\+\_\+\+PAYLOAD}}~9000
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga0cdaf687f7a7f2dba570d5a722990786}{ETH\+\_\+\+RX\+\_\+\+BUF\+\_\+\+SIZE}}~\mbox{\hyperlink{group___e_t_h___exported___types_ga15e493eedd0128d55c89df6d7c2c6c47}{ETH\+\_\+\+MAX\+\_\+\+PACKET\+\_\+\+SIZE}}
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaaa0b3ad847eab9771a0cb19930b75780}{ETH\+\_\+\+RX\+\_\+\+BUF\+\_\+\+NUM}}~4
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaf83956dfc1b135c3c92ac409758b6cf4}{ETH\+\_\+\+TX\+\_\+\+BUF\+\_\+\+SIZE}}~\mbox{\hyperlink{group___e_t_h___exported___types_ga15e493eedd0128d55c89df6d7c2c6c47}{ETH\+\_\+\+MAX\+\_\+\+PACKET\+\_\+\+SIZE}}
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaaddb6f956f679ca4d09c131c4fbfc95b}{ETH\+\_\+\+TX\+\_\+\+BUF\+\_\+\+NUM}}~4
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga6b2e1b171e2cc2bffd3fa63eb9d965ed}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+FL\+\_\+\+Pos}}~16
+\begin{DoxyCompactList}\small\item\em Ethernet DMA Received Frame Length Position \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga54fa60e8e2a491b4fcad024ac0da2ae8}{ETH\+\_\+\+WAKEUP\+\_\+\+REGISTER\+\_\+\+LENGTH}}~8
+\begin{DoxyCompactList}\small\item\em ETHERNET Remote Wake-\/up frame register length \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga3e4abc6fc9835f3e62d99ba0fec31be2}{ETH\+\_\+\+DMA\+\_\+\+RX\+\_\+\+OVERFLOW\+\_\+\+MISSEDFRAMES\+\_\+\+COUNTERSHIFT}}~17
+\begin{DoxyCompactList}\small\item\em ETHERNET Missed frames counter Shift \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaee1b98699ea79c04464030d612fde1bf}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+COLLISION\+\_\+\+COUNTSHIFT}}~3
+\begin{DoxyCompactList}\small\item\em ETHERNET DMA Tx descriptors Collision Count Shift \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga49b0949fc07b045cacee395017dab053}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+BUFFER2\+\_\+\+SIZESHIFT}}~11
+\begin{DoxyCompactList}\small\item\em ETHERNET DMA Tx descriptors Buffer2 Size Shift \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaf45ff5e1c5b283f86634116f68298334}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+FRAME\+\_\+\+LENGTHSHIFT}}~16
+\begin{DoxyCompactList}\small\item\em ETHERNET DMA Rx descriptors Frame Length Shift \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gab22d481c68f3e6485b853cff224ed208}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+BUFFER2\+\_\+\+SIZESHIFT}}~11
+\begin{DoxyCompactList}\small\item\em ETHERNET DMA Rx descriptors Buffer2 Size Shift \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga86fb9fb94bfcabd7360fc2307131f853}{ETH\+\_\+\+ERROR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga2fb2e6248630a20832d42340e122c81c}{ETH\+\_\+\+SUCCESS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})1)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga3de33738fd3c7e77bffbcfaefc3e7645}{GLOBAL}}~extern
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga529ab2aa5f663db8cf2350013f3529bf}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+OWN}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x80000000)
+\begin{DoxyCompactList}\small\item\em OWN bit\+: descriptor is owned by DMA engine \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga1652857d74cf8bc2f710d48745b7eca6}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+ES}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00008000)
+\begin{DoxyCompactList}\small\item\em Error summary\+: OR of the following bits\+: UE $\vert$$\vert$ ED $\vert$$\vert$ EC $\vert$$\vert$ LCO $\vert$$\vert$ NC $\vert$$\vert$ LCA $\vert$$\vert$ FF $\vert$$\vert$ JT \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga924c18892a39499ccd361e6af612cbaa}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+JT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00004000)
+\begin{DoxyCompactList}\small\item\em Jabber Timeout \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga04f7e9debfdde4e67aa061a7e80bfb8d}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+FF}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00002000)
+\begin{DoxyCompactList}\small\item\em Frame Flushed\+: DMA/\+MTL flushed the frame due to SW flush \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga46c86ecec23ad58013567e573e8e5cb0}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+LCA}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000800)
+\begin{DoxyCompactList}\small\item\em Loss of Carrier\+: carrier lost during transmission \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga3311b87e692f02c65b413c5f977f1fac}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+NC}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000400)
+\begin{DoxyCompactList}\small\item\em No Carrier\+: no carrier signal from the transceiver \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga156a0a5cf82fc92daa895507d2f434b0}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+LCO}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000200)
+\begin{DoxyCompactList}\small\item\em Late Collision\+: transmission aborted due to collision \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaafc5659795ad653e2f0219a2e6ac68cb}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+EC}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000100)
+\begin{DoxyCompactList}\small\item\em Excessive Collision\+: transmission aborted after 16 collisions \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga67fba90b83f05a8d4c88a25b29cf9f6d}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+VF}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000080)
+\begin{DoxyCompactList}\small\item\em VLAN Frame \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga92667edcc2af4a01d7b8807f7f0f324b}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+CC}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000078)
+\begin{DoxyCompactList}\small\item\em Collision Count \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga6363d09f6c1f1f9d82dc4223c56c6fa2}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+ED}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000004)
+\begin{DoxyCompactList}\small\item\em Excessive Deferral \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga1bda3af17d39faeeaa586aa0d340aa9f}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+UF}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000002)
+\begin{DoxyCompactList}\small\item\em Underflow Error\+: late data arrival from the memory \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga37f3e67bb3d9a3c0700f910ce74be102}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+DB}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000001)
+\begin{DoxyCompactList}\small\item\em Deferred Bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga9129192343adcc3e4267a9e1271c3b43}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+IC}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x80000000)
+\begin{DoxyCompactList}\small\item\em Interrupt on Completion \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga6e966f1c7c8cd802898de65f65870e73}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+LS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x40000000)
+\begin{DoxyCompactList}\small\item\em Last Segment \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga94cc5f8e7fabd1fa5b775edd721a9fe7}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+FS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x20000000)
+\begin{DoxyCompactList}\small\item\em First Segment \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga823f1bd31558d6e1e67e44760c22c346}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+DC}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x04000000)
+\begin{DoxyCompactList}\small\item\em Disable CRC \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga578d197fac5ea00187a32eed1e2f47df}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+TER}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x02000000)
+\begin{DoxyCompactList}\small\item\em Transmit end of ring \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga19cf075aaebda75d09335cfb684a67b7}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+TCH}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01000000)
+\begin{DoxyCompactList}\small\item\em Second Address Chained \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gac1291610f5046d37236931979a012d5d}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+DP}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00800000)
+\begin{DoxyCompactList}\small\item\em Disable Padding \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gae4823b491f2fa9a321c261e0cc5246d9}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+TBS2}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x003\+FF800)
+\begin{DoxyCompactList}\small\item\em Transmit Buffer 2 Size \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gad0644a81a5759203715242b16e3ce0ea}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+TBS1}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x000007\+FF)
+\begin{DoxyCompactList}\small\item\em Transmit Buffer 1 Size \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaecc8242b477c74be3d8567625ac198b7}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+B1\+AP}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x\+FFFFFFFF)
+\begin{DoxyCompactList}\small\item\em Buffer 1 Address Pointer \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaf4a54b6847ffce7d2163f794614d191c}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+B2\+AP}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x\+FFFFFFFF)
+\begin{DoxyCompactList}\small\item\em Buffer 2 Address Pointer \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaf2627c4265e1bc60866fdddaa1a7577e}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+OWN}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x80000000)
+\begin{DoxyCompactList}\small\item\em OWN bit\+: descriptor is owned by DMA engine \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga686daa97a8d7f77db48d5b46ab3b3590}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+AFM}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x40000000)
+\begin{DoxyCompactList}\small\item\em DA Filter Fail for the rx frame \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga4b42d08faf710524a70bb5f149503107}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+FL}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x3\+FFF0000)
+\begin{DoxyCompactList}\small\item\em Receive descriptor frame length \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga33e408854b408b336754c71db0cac42a}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+ES}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00008000)
+\begin{DoxyCompactList}\small\item\em Error summary\+: OR of the following bits\+: DE $\vert$$\vert$ OE $\vert$$\vert$ IPC $\vert$$\vert$ LC $\vert$$\vert$ RWT $\vert$$\vert$ RE $\vert$$\vert$ CE \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga20c0293b9ffa01060ae35c164cb4a9c1}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+DE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00004000)
+\begin{DoxyCompactList}\small\item\em Descriptor error\+: no more descriptors for receive frame \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga6c7b049fe4ae701aa87f1961f1352c35}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+SAF}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00002000)
+\begin{DoxyCompactList}\small\item\em SA Filter Fail for the received frame \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga30915defe3be089b3546ac18250af145}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+LE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00001000)
+\begin{DoxyCompactList}\small\item\em Frame size not matching with length field \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga70da0ad001c829c6d2a5d7f02bddaeda}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+OE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000800)
+\begin{DoxyCompactList}\small\item\em Overflow Error\+: Frame was damaged due to buffer overflow \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga9b4276d55a9316c122a90918cc26ef8c}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+VLAN}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000400)
+\begin{DoxyCompactList}\small\item\em VLAN Tag\+: received frame is a VLAN frame \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gad6863fe9acbdaa97b3d56b8fadd13973}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+FS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000200)
+\begin{DoxyCompactList}\small\item\em First descriptor of the frame \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaff0d41b035d18e94e559a63830ab4c7b}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+LS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000100)
+\begin{DoxyCompactList}\small\item\em Last descriptor of the frame \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga48669256032b1068be004c96926122a6}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+IPV4\+HCE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000080)
+\begin{DoxyCompactList}\small\item\em IPC Checksum Error\+: Rx Ipv4 header checksum error \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaa304fc37f6c7b21a9823d67a101ec276}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+LC}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000040)
+\begin{DoxyCompactList}\small\item\em Late collision occurred during reception \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga14dde1acd705ff8120f5c1e9770bd57b}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+FT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000020)
+\begin{DoxyCompactList}\small\item\em Frame type -\/ Ethernet, otherwise 802.\+3 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga519b998f40c560d812e8c9777ee142ff}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+RWT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000010)
+\begin{DoxyCompactList}\small\item\em Receive Watchdog Timeout\+: watchdog timer expired during reception \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga7704fabb81f4f08689c96762ff6815e7}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+RE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)
+\begin{DoxyCompactList}\small\item\em Receive error\+: error reported by MII interface \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga19ca75d7d1d4d1e3726e534ae6b16659}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+DBE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000004)
+\begin{DoxyCompactList}\small\item\em Dribble bit error\+: frame contains non int multiple of 8 bits \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga0a4cbe029b32e1d694b88449e0e30296}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+CE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000002)
+\begin{DoxyCompactList}\small\item\em CRC error \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga1c857667c1b1a80f8378937264fb25e2}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+MAMPCE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000001)
+\begin{DoxyCompactList}\small\item\em Rx MAC Address/\+Payload Checksum Error\+: Rx MAC address matched/ Rx Payload Checksum Error \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gad6adcaea584145ecbf2f9704eac8abe3}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+DIC}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x80000000)
+\begin{DoxyCompactList}\small\item\em Disable Interrupt on Completion \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga202e9c322b416c4b6df9c6ac8f599608}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+RER}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x02000000)
+\begin{DoxyCompactList}\small\item\em Receive End of Ring \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga9422b9c48a221bd062241794e6ae283e}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+RCH}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01000000)
+\begin{DoxyCompactList}\small\item\em Second Address Chained \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga4d21e08907f6aa58b4bd24de9d651e67}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+RBS2}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x003\+FF800)
+\begin{DoxyCompactList}\small\item\em Receive Buffer2 Size \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga9576627ee1cf3546fe70446cf3b90d39}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+RBS1}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x000007\+FF)
+\begin{DoxyCompactList}\small\item\em Receive Buffer1 Size \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga4ecc2c8cb8c8a007be346848193397dd}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+B1\+AP}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x\+FFFFFFFF)
+\begin{DoxyCompactList}\small\item\em Buffer 1 Address Pointer \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga488b7a450cd737727e0fb6b7c6abef74}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+B2\+AP}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x\+FFFFFFFF)
+\begin{DoxyCompactList}\small\item\em Buffer 2 Address Pointer \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gad4209bedcbf6681ab30f6aed5a8d5e4d}{PHY\+\_\+\+READ\+\_\+\+TIMEOUT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0004\+FFFF)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga5e8a8fbc8ac723efcfd780032540f29b}{PHY\+\_\+\+WRITE\+\_\+\+TIMEOUT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0004\+FFFF)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga8abe1a40c71e68881ec669d59f513fdb}{PHY\+\_\+\+BCR}}~0
+\begin{DoxyCompactList}\small\item\em Transceiver Basic Control Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga4b8f2c29a9e74412395e1b1809666838}{PHY\+\_\+\+BSR}}~1
+\begin{DoxyCompactList}\small\item\em Transceiver Basic Status Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga31fd873ee8cc1543b11be2a1dc5bb8ec}{PHY\+\_\+\+Reset}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x8000)
+\begin{DoxyCompactList}\small\item\em PHY Reset \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga10d25051705141f40e1e3fe3c68ffa72}{PHY\+\_\+\+Loopback}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x4000)
+\begin{DoxyCompactList}\small\item\em Select loop-\/back mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga5729771244f68779fc694ba819cd60a5}{PHY\+\_\+\+FULLDUPLEX\+\_\+100M}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x2100)
+\begin{DoxyCompactList}\small\item\em Set the full-\/duplex mode at 100 Mb/s \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga1ac901a4ad405241d90a5c10104b8986}{PHY\+\_\+\+HALFDUPLEX\+\_\+100M}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x2000)
+\begin{DoxyCompactList}\small\item\em Set the half-\/duplex mode at 100 Mb/s \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga6b6254fd3dacbf1578a9d8058cd86373}{PHY\+\_\+\+FULLDUPLEX\+\_\+10M}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0100)
+\begin{DoxyCompactList}\small\item\em Set the full-\/duplex mode at 10 Mb/s \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga4fa7ca6faf60ee074576ebb6103f8dd4}{PHY\+\_\+\+HALFDUPLEX\+\_\+10M}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)
+\begin{DoxyCompactList}\small\item\em Set the half-\/duplex mode at 10 Mb/s \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gab97f2bd1e4c6b8d26c8b1521bd1a5499}{PHY\+\_\+\+Auto\+Negotiation}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x1000)
+\begin{DoxyCompactList}\small\item\em Enable auto-\/negotiation function \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga671303f10b22b882c6e4b66064200c1b}{PHY\+\_\+\+Restart\+\_\+\+Auto\+Negotiation}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0200)
+\begin{DoxyCompactList}\small\item\em Restart auto-\/negotiation function \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga27c74d90f62f168e8fc7ec837e59c11a}{PHY\+\_\+\+Powerdown}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0800)
+\begin{DoxyCompactList}\small\item\em Select the power down mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga84f47d67c2d87d7584bbad0f7db010c0}{PHY\+\_\+\+Isolate}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0400)
+\begin{DoxyCompactList}\small\item\em Isolate PHY from MII \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga9eaba7d5afc626b2f4855c400a426350}{PHY\+\_\+\+Auto\+Nego\+\_\+\+Complete}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0020)
+\begin{DoxyCompactList}\small\item\em Auto-\/\+Negotiation process completed \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaf2b045e39c1ae1b3f5de8d4d21a9e60c}{PHY\+\_\+\+Linked\+\_\+\+Status}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0004)
+\begin{DoxyCompactList}\small\item\em Valid link established \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga9ee31390b260b89c732d362d3059d9b7}{PHY\+\_\+\+Jabber\+\_\+detection}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0002)
+\begin{DoxyCompactList}\small\item\em Jabber condition detected \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga8dfcaadec110d690ff16d23b02a6dbcf}{ETH\+\_\+\+Auto\+Negotiation\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000001)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gac84e086970dd8bc1d7d50133444db5fa}{ETH\+\_\+\+Auto\+Negotiation\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga8aade1584ef553ac512150acf53a7655}{ETH\+\_\+\+Watchdog\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaad27ca9ba95939670c55a0e1ea2b57fa}{ETH\+\_\+\+Watchdog\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00800000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga3ceaa43b6fb25a9d18ad8ce42e31121f}{ETH\+\_\+\+Jabber\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaba12fe905558f5fe8b724ecd742c0bac}{ETH\+\_\+\+Jabber\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00400000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gabe3e9f6ae1300e8a0b6aaf735844951c}{ETH\+\_\+\+Inter\+Frame\+Gap\+\_\+96\+Bit}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\begin{DoxyCompactList}\small\item\em minimum IFG between frames during transmission is 96Bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga188471366fe84d580c9000d9500bef84}{ETH\+\_\+\+Inter\+Frame\+Gap\+\_\+88\+Bit}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00020000)
+\begin{DoxyCompactList}\small\item\em minimum IFG between frames during transmission is 88Bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga7c92e8bfd2f1a9dbfda1b59d789d872f}{ETH\+\_\+\+Inter\+Frame\+Gap\+\_\+80\+Bit}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00040000)
+\begin{DoxyCompactList}\small\item\em minimum IFG between frames during transmission is 80Bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga4d2164c621b0bc70b8263ea8ad6d946f}{ETH\+\_\+\+Inter\+Frame\+Gap\+\_\+72\+Bit}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00060000)
+\begin{DoxyCompactList}\small\item\em minimum IFG between frames during transmission is 72Bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga659db4f938e7128e8b62e6837d23e766}{ETH\+\_\+\+Inter\+Frame\+Gap\+\_\+64\+Bit}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00080000)
+\begin{DoxyCompactList}\small\item\em minimum IFG between frames during transmission is 64Bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga49f2612078e92f876a62240a210fd12b}{ETH\+\_\+\+Inter\+Frame\+Gap\+\_\+56\+Bit}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x000\+A0000)
+\begin{DoxyCompactList}\small\item\em minimum IFG between frames during transmission is 56Bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gad92e177af5b58f5bd189b358b3604401}{ETH\+\_\+\+Inter\+Frame\+Gap\+\_\+48\+Bit}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x000\+C0000)
+\begin{DoxyCompactList}\small\item\em minimum IFG between frames during transmission is 48Bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga7e3cb1d67145b4f4c04135fc4d0d633c}{ETH\+\_\+\+Inter\+Frame\+Gap\+\_\+40\+Bit}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x000\+E0000)
+\begin{DoxyCompactList}\small\item\em minimum IFG between frames during transmission is 40Bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gac7a692a0de12981405370c4878777494}{ETH\+\_\+\+Carrier\+Sense\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gac9fc6526a8765cef067ec032ca56d549}{ETH\+\_\+\+Carrier\+Sense\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00010000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gadd1ba7c20f3291c3b88df8030db1252c}{ETH\+\_\+\+Speed\+\_\+10M}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga5ac634c8472bc609683e269b7808c5f0}{ETH\+\_\+\+Speed\+\_\+100M}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00004000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga55a1be555c3123d27d10ddd31928c64b}{ETH\+\_\+\+Receive\+Own\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga68b531f9d5a704e0e6ba256d135fceea}{ETH\+\_\+\+Receive\+Own\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00002000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga98a339cbca831836cfecd395ba8aee48}{ETH\+\_\+\+Loopback\+Mode\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00001000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga10d7d136a17281b5cabe9f32b7105ea6}{ETH\+\_\+\+Loopback\+Mode\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga36d01299e98e267aa69c5cd043907a82}{ETH\+\_\+\+Mode\+\_\+\+Full\+Duplex}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000800)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaf82c68899d89304d8638e2239342b343}{ETH\+\_\+\+Mode\+\_\+\+Half\+Duplex}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga8ccef3ab0b689125c440288722fb515b}{ETH\+\_\+\+Checksum\+Offload\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000400)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga5f8946a32d3d3db678a246d39ce6c78d}{ETH\+\_\+\+Checksum\+Offload\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga0d1dc27b3ea1a7340ce91733db9cb5ea}{ETH\+\_\+\+Retry\+Transmission\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga8cfe8aa3869178938174e6b069ad3cc8}{ETH\+\_\+\+Retry\+Transmission\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000200)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gad26681bb4975f05f77c55b91cbb14c4a}{ETH\+\_\+\+Automatic\+Pad\+CRCStrip\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000080)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gade619eb408c23e8ed12bc9144db5a140}{ETH\+\_\+\+Automatic\+Pad\+CRCStrip\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gae461d682c7aa58cd858043f457779aa9}{ETH\+\_\+\+Back\+Off\+Limit\+\_\+10}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gae27d8f0c7bdd6f5e5499bd2086b53a1e}{ETH\+\_\+\+Back\+Off\+Limit\+\_\+8}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000020)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga2967f2fc2d89682aa45ed6e7a29cb050}{ETH\+\_\+\+Back\+Off\+Limit\+\_\+4}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000040)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga4adc6f165f2182f74f7a141d3502da60}{ETH\+\_\+\+Back\+Off\+Limit\+\_\+1}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000060)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gae6cb70425a1028a7ea621e61bd0976ae}{ETH\+\_\+\+Deferral\+Check\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000010)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga8de75830e2cf391c18064deb8bf57f09}{ETH\+\_\+\+Deferral\+Check\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga85541a17c351ac554d809f9d595269f3}{ETH\+\_\+\+Receive\+All\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x80000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gac6b5bd518b78adc926a982630b6002e6}{ETH\+\_\+\+Receive\+All\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga7f19983231137a1ff811e93586923de1}{ETH\+\_\+\+Source\+Addr\+Filter\+\_\+\+Normal\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000200)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga3c925fda2f922112ef5e94b815e3d68c}{ETH\+\_\+\+Source\+Addr\+Filter\+\_\+\+Inverse\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000300)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga392a0b7baafde8a4ca2b68896d93dbad}{ETH\+\_\+\+Source\+Addr\+Filter\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga0c387b3fb02412c594211012871bf86a}{ETH\+\_\+\+Pass\+Control\+Frames\+\_\+\+Block\+All}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000040)
+\begin{DoxyCompactList}\small\item\em MAC filters all control frames from reaching the application \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaefc0839910f9916889f1342659e77054}{ETH\+\_\+\+Pass\+Control\+Frames\+\_\+\+Forward\+All}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000080)
+\begin{DoxyCompactList}\small\item\em MAC forwards all control frames to application even if they fail the Address Filter \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaf80acd7ac941e9f8b1e03d15ca835dbb}{ETH\+\_\+\+Pass\+Control\+Frames\+\_\+\+Forward\+Passed\+Addr\+Filter}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x000000\+C0)
+\begin{DoxyCompactList}\small\item\em MAC forwards control frames that pass the Address Filter. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga423a3eb93f12af197e50725770aa1bf2}{ETH\+\_\+\+Broadcast\+Frames\+Reception\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga4ddb00adde2ed86fe0844e56d2b302fa}{ETH\+\_\+\+Broadcast\+Frames\+Reception\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000020)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga19b8673c642f08c129008ea5544c4fbf}{ETH\+\_\+\+Destination\+Addr\+Filter\+\_\+\+Normal}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga5984a3842043b6abfa5a1ccdbf151b59}{ETH\+\_\+\+Destination\+Addr\+Filter\+\_\+\+Inverse}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga836eb7eb6142a8e261c1cdd8a91e5623}{ETH\+\_\+\+Promiscuous\+Mode\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000001)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga18e9c873cdbb7a44b954df49ce9b760b}{ETH\+\_\+\+Promiscuous\+Mode\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga86ac4bfeb0fede635f3dee6b1434ab8e}{ETH\+\_\+\+Multicast\+Frames\+Filter\+\_\+\+Perfect\+Hash\+Table}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000404)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga2d103fb0f775cfa1ee35fdae3f36919e}{ETH\+\_\+\+Multicast\+Frames\+Filter\+\_\+\+Hash\+Table}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000004)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga6dcd4bb57280ce41f4f6bf3b673e85a4}{ETH\+\_\+\+Multicast\+Frames\+Filter\+\_\+\+Perfect}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gab4d78d0ff0af526281f47c5280d3511d}{ETH\+\_\+\+Multicast\+Frames\+Filter\+\_\+\+None}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000010)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga3cc3d5474352b1f53c8991f03816fc14}{ETH\+\_\+\+Unicast\+Frames\+Filter\+\_\+\+Perfect\+Hash\+Table}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000402)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga687868ed7030ba32def6d794c72b5b0e}{ETH\+\_\+\+Unicast\+Frames\+Filter\+\_\+\+Hash\+Table}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000002)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga5d3d063e0b68e9870356369336c406b0}{ETH\+\_\+\+Unicast\+Frames\+Filter\+\_\+\+Perfect}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga0e996e2903a25c47cf5b6a863ef9dbb8}{ETH\+\_\+\+Zero\+Quanta\+Pause\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga2d37ec67c2ee527d99539cd61e4035c9}{ETH\+\_\+\+Zero\+Quanta\+Pause\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000080)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gad2d38e843ac046b3fde35e7cc7598b11}{ETH\+\_\+\+Pause\+Low\+Threshold\+\_\+\+Minus4}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\begin{DoxyCompactList}\small\item\em Pause time minus 4 slot times \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaf5d3c872d237ac7aeff9aac31f034775}{ETH\+\_\+\+Pause\+Low\+Threshold\+\_\+\+Minus28}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000010)
+\begin{DoxyCompactList}\small\item\em Pause time minus 28 slot times \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga3483fe27e3602c86047ccd62e1ed620a}{ETH\+\_\+\+Pause\+Low\+Threshold\+\_\+\+Minus144}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000020)
+\begin{DoxyCompactList}\small\item\em Pause time minus 144 slot times \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga7c98f6cf5070b676f6be8939ba33552b}{ETH\+\_\+\+Pause\+Low\+Threshold\+\_\+\+Minus256}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000030)
+\begin{DoxyCompactList}\small\item\em Pause time minus 256 slot times \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga25e74dd2abac3cb2a8410e8b47fb422d}{ETH\+\_\+\+Unicast\+Pause\+Frame\+Detect\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaa49e8ee113f95573a0de62fc0480a7a4}{ETH\+\_\+\+Unicast\+Pause\+Frame\+Detect\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga24bc77a0d1b687e551bcd25da83d5422}{ETH\+\_\+\+Receive\+Flow\+Control\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000004)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga02ed2b0e4287a59ce5287f2b4035f36e}{ETH\+\_\+\+Receive\+Flow\+Control\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga04b4b6d7b870f66b59c1b169fe3cfee6}{ETH\+\_\+\+Transmit\+Flow\+Control\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000002)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaac6a60ec3dd3738c06289b7304e45427}{ETH\+\_\+\+Transmit\+Flow\+Control\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga5c342cd4fe88060172b53addecb5949d}{ETH\+\_\+\+VLANTag\+Comparison\+\_\+12\+Bit}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00010000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga914241210abde49274cf90ff8a4b1c76}{ETH\+\_\+\+VLANTag\+Comparison\+\_\+16\+Bit}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga9ceba96f664a996b508bae603bbb23ec}{ETH\+\_\+\+MAC\+\_\+\+FLAG\+\_\+\+TST}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000200)
+\begin{DoxyCompactList}\small\item\em Time stamp trigger flag (on MAC) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga391627e5ea96ac207c8f0f08e8453e18}{ETH\+\_\+\+MAC\+\_\+\+FLAG\+\_\+\+MMCT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000040)
+\begin{DoxyCompactList}\small\item\em MMC transmit flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaef01d6ff28d95503966be99b651cadf8}{ETH\+\_\+\+MAC\+\_\+\+FLAG\+\_\+\+MMCR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000020)
+\begin{DoxyCompactList}\small\item\em MMC receive flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga1bc5b290a03f0e45b02ed6c8013ff75d}{ETH\+\_\+\+MAC\+\_\+\+FLAG\+\_\+\+MMC}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000010)
+\begin{DoxyCompactList}\small\item\em MMC flag (on MAC) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga305aebac3b7988a826aed53322a421e1}{ETH\+\_\+\+MAC\+\_\+\+FLAG\+\_\+\+PMT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)
+\begin{DoxyCompactList}\small\item\em PMT flag (on MAC) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gae747f4863656732f01dfb27a417ed9dc}{ETH\+\_\+\+MAC\+\_\+\+IT\+\_\+\+TST}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000200)
+\begin{DoxyCompactList}\small\item\em Time stamp trigger interrupt (on MAC) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaf11c6b06631f9121bc9ed30d004cdc91}{ETH\+\_\+\+MAC\+\_\+\+IT\+\_\+\+MMCT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000040)
+\begin{DoxyCompactList}\small\item\em MMC transmit interrupt \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga1d4feb2dc269e9d7af2d3f45fb3d60b6}{ETH\+\_\+\+MAC\+\_\+\+IT\+\_\+\+MMCR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000020)
+\begin{DoxyCompactList}\small\item\em MMC receive interrupt \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga07cc79025e61f2c73a915fda12215b5d}{ETH\+\_\+\+MAC\+\_\+\+IT\+\_\+\+MMC}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000010)
+\begin{DoxyCompactList}\small\item\em MMC interrupt (on MAC) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gac48273819c2d2006d0d61949ffe57787}{ETH\+\_\+\+MAC\+\_\+\+IT\+\_\+\+PMT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)
+\begin{DoxyCompactList}\small\item\em PMT interrupt (on MAC) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga1afa1cde1eb10b54b0f6229ca2cd64c2}{ETH\+\_\+\+MAC\+\_\+\+Address0}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga19eba5a4d343962f5ab286d7b245e8f6}{ETH\+\_\+\+MAC\+\_\+\+Address1}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga38031c4ccc9df337aaf8bafc1f0b36fa}{ETH\+\_\+\+MAC\+\_\+\+Address2}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000010)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gad4240acb4ce0e6f48f73cc247bc71d42}{ETH\+\_\+\+MAC\+\_\+\+Address3}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000018)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga8b68520709c95daf6e7a183b01d431e5}{ETH\+\_\+\+MAC\+\_\+\+Address\+Filter\+\_\+\+SA}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga808b76888a704f9c7b14ca73a99a2a48}{ETH\+\_\+\+MAC\+\_\+\+Address\+Filter\+\_\+\+DA}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga459ae6194d26332a39fb5b112296b566}{ETH\+\_\+\+MAC\+\_\+\+Address\+Mask\+\_\+\+Byte6}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x20000000)
+\begin{DoxyCompactList}\small\item\em Mask MAC Address high reg bits \mbox{[}15\+:8\mbox{]} \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga899bb4578481fc1c4749ddefcd3291e8}{ETH\+\_\+\+MAC\+\_\+\+Address\+Mask\+\_\+\+Byte5}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x10000000)
+\begin{DoxyCompactList}\small\item\em Mask MAC Address high reg bits \mbox{[}7\+:0\mbox{]} \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga48e222e8cdfd2fa26b563ff84dabeceb}{ETH\+\_\+\+MAC\+\_\+\+Address\+Mask\+\_\+\+Byte4}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x08000000)
+\begin{DoxyCompactList}\small\item\em Mask MAC Address low reg bits \mbox{[}31\+:24\mbox{]} \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gad66f18746a96e87077a9da14d1982d37}{ETH\+\_\+\+MAC\+\_\+\+Address\+Mask\+\_\+\+Byte3}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x04000000)
+\begin{DoxyCompactList}\small\item\em Mask MAC Address low reg bits \mbox{[}23\+:16\mbox{]} \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gafe092bfc877578e789b6c3ea96676588}{ETH\+\_\+\+MAC\+\_\+\+Address\+Mask\+\_\+\+Byte2}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x02000000)
+\begin{DoxyCompactList}\small\item\em Mask MAC Address low reg bits \mbox{[}15\+:8\mbox{]} \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gab9f039832422f5338ca17291d97cf3bd}{ETH\+\_\+\+MAC\+\_\+\+Address\+Mask\+\_\+\+Byte1}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01000000)
+\begin{DoxyCompactList}\small\item\em Mask MAC Address low reg bits \mbox{[}70\mbox{]} \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga6cec9a6360daca2c73b03dcf6aeb0bdd}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+Last\+Segment}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x40000000)
+\begin{DoxyCompactList}\small\item\em Last Segment \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga717b2c69bf048990282e8f2f01b2d60f}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+First\+Segment}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x20000000)
+\begin{DoxyCompactList}\small\item\em First Segment \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaf695c450ab72f3419bceb2f8d5f9dd78}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+Checksum\+By\+Pass}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\begin{DoxyCompactList}\small\item\em Checksum engine bypass \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaffe4b5870f8257af157b55403affdedb}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+Checksum\+IPV4\+Header}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00400000)
+\begin{DoxyCompactList}\small\item\em IPv4 header checksum insertion \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gafe92cf5a9ce80e53efd7519005545e98}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+Checksum\+TCPUDPICMPSegment}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00800000)
+\begin{DoxyCompactList}\small\item\em TCP/\+UDP/\+ICMP checksum insertion. Pseudo header checksum is assumed to be present \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga411966ced69bb50a82faf565abb4393d}{ETH\+\_\+\+DMA\+\_\+\+TDES\+\_\+\+Checksum\+TCPUDPICMPFull}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00\+C00000)
+\begin{DoxyCompactList}\small\item\em TCP/\+UDP/\+ICMP checksum fully in hardware including pseudo header \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga441128c08e9227ff36e7b7a7b29166f4}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+Buffer1}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\begin{DoxyCompactList}\small\item\em DMA Rx Desc Buffer1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga7c9a5ba7536fa5527989df19603c6ff6}{ETH\+\_\+\+DMA\+\_\+\+RDES\+\_\+\+Buffer2}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000001)
+\begin{DoxyCompactList}\small\item\em DMA Rx Desc Buffer2 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gae21d399e629407049e96d6bee5e04371}{ETH\+\_\+\+Drop\+TCPIPChecksum\+Error\+Frame\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gad33a5f9dbeffafe9c63ec33fc081dd31}{ETH\+\_\+\+Drop\+TCPIPChecksum\+Error\+Frame\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x04000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga727f58780535be5c44028c33ea4af4a3}{ETH\+\_\+\+Receive\+Store\+Forward\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x02000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gac3567f89749e1d0a372d6e2b3db797ac}{ETH\+\_\+\+Receive\+Store\+Forward\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga0a5a1ce5d64fca7b2681d8913cbe20dd}{ETH\+\_\+\+Flush\+Received\+Frame\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga864b6204f36074eca23920e9b557cfae}{ETH\+\_\+\+Flush\+Received\+Frame\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gac4e039b50eb9413c0fc3f5159ee730cf}{ETH\+\_\+\+Transmit\+Store\+Forward\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00200000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gac5c48006bf32fa05c1d3be9b9a5c1e2f}{ETH\+\_\+\+Transmit\+Store\+Forward\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga5f394ff8540711f2a155c3e9e2091b6f}{ETH\+\_\+\+Transmit\+Threshold\+Control\+\_\+64\+Bytes}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\begin{DoxyCompactList}\small\item\em threshold level of the MTL Transmit FIFO is 64 Bytes \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga7f2321cde4e82fa854adcf64f888bc54}{ETH\+\_\+\+Transmit\+Threshold\+Control\+\_\+128\+Bytes}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00004000)
+\begin{DoxyCompactList}\small\item\em threshold level of the MTL Transmit FIFO is 128 Bytes \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga19d1a5b9b72998225c890e140ed4b359}{ETH\+\_\+\+Transmit\+Threshold\+Control\+\_\+192\+Bytes}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00008000)
+\begin{DoxyCompactList}\small\item\em threshold level of the MTL Transmit FIFO is 192 Bytes \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaa87d77cf11eca1f3e92c39ee2f963213}{ETH\+\_\+\+Transmit\+Threshold\+Control\+\_\+256\+Bytes}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000\+C000)
+\begin{DoxyCompactList}\small\item\em threshold level of the MTL Transmit FIFO is 256 Bytes \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga82b6ea587756cb9e7efd6fc340249ed1}{ETH\+\_\+\+Transmit\+Threshold\+Control\+\_\+40\+Bytes}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00010000)
+\begin{DoxyCompactList}\small\item\em threshold level of the MTL Transmit FIFO is 40 Bytes \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga1dfc5649875d921ff553dcdd568ccfae}{ETH\+\_\+\+Transmit\+Threshold\+Control\+\_\+32\+Bytes}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00014000)
+\begin{DoxyCompactList}\small\item\em threshold level of the MTL Transmit FIFO is 32 Bytes \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga9b851c48a5991c5d806107c5a6bb9060}{ETH\+\_\+\+Transmit\+Threshold\+Control\+\_\+24\+Bytes}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00018000)
+\begin{DoxyCompactList}\small\item\em threshold level of the MTL Transmit FIFO is 24 Bytes \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga8ed62604abd9e32a2324e7fd46f6d170}{ETH\+\_\+\+Transmit\+Threshold\+Control\+\_\+16\+Bytes}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0001\+C000)
+\begin{DoxyCompactList}\small\item\em threshold level of the MTL Transmit FIFO is 16 Bytes \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga226dd19cf59517263330918de5a9062f}{ETH\+\_\+\+Forward\+Error\+Frames\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000080)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga2c2d4ee2e78cd6c53679edc087fa6bee}{ETH\+\_\+\+Forward\+Error\+Frames\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga9d9a43d7b89347ed995025f8edb0ad56}{ETH\+\_\+\+Forward\+Undersized\+Good\+Frames\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000040)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga4bafcb985b29483df8cd90fe6b495aab}{ETH\+\_\+\+Forward\+Undersized\+Good\+Frames\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga09a4769ecda03227926996079ae0facc}{ETH\+\_\+\+Receive\+Threshold\+Control\+\_\+64\+Bytes}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\begin{DoxyCompactList}\small\item\em threshold level of the MTL Receive FIFO is 64 Bytes \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga8602a6c9305e5c75bccc0f69759f1523}{ETH\+\_\+\+Receive\+Threshold\+Control\+\_\+32\+Bytes}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)
+\begin{DoxyCompactList}\small\item\em threshold level of the MTL Receive FIFO is 32 Bytes \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaefc7534991ca9c626dfbee8b63cf0041}{ETH\+\_\+\+Receive\+Threshold\+Control\+\_\+96\+Bytes}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000010)
+\begin{DoxyCompactList}\small\item\em threshold level of the MTL Receive FIFO is 96 Bytes \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga78b909bbf1a931e76220bc7b25f62afc}{ETH\+\_\+\+Receive\+Threshold\+Control\+\_\+128\+Bytes}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000018)
+\begin{DoxyCompactList}\small\item\em threshold level of the MTL Receive FIFO is 128 Bytes \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga35fb07ae8970a70148cfa4a13aafe0ae}{ETH\+\_\+\+Second\+Frame\+Operate\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000004)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga48f7e805dacac166a889911fb8d94b30}{ETH\+\_\+\+Second\+Frame\+Operate\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga30001f3ebb97462818a23fe8cb0a48f8}{ETH\+\_\+\+Address\+Aligned\+Beats\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x02000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga00f0c8f611e4a9d8f8220cdb03fefc47}{ETH\+\_\+\+Address\+Aligned\+Beats\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaa4e41d22810db5b9f2aa65953ec90166}{ETH\+\_\+\+Fixed\+Burst\+\_\+\+Enable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00010000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gac139cc571592747a61d7eb4348a10379}{ETH\+\_\+\+Fixed\+Burst\+\_\+\+Disable}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga2a1dfd92e42ad94307a4120dbd145d88}{ETH\+\_\+\+Rx\+DMABurst\+Length\+\_\+1\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00020000)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Rx\+DMA transaction is 1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gabb881098b45497433515e24dc1e6988e}{ETH\+\_\+\+Rx\+DMABurst\+Length\+\_\+2\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00040000)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Rx\+DMA transaction is 2 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga6304df25ce2b05cc765dbb8d23f37107}{ETH\+\_\+\+Rx\+DMABurst\+Length\+\_\+4\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00080000)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Rx\+DMA transaction is 4 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gae92661d313ad2be6072fdb407da91f09}{ETH\+\_\+\+Rx\+DMABurst\+Length\+\_\+8\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00100000)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Rx\+DMA transaction is 8 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga0fa879807b72fe63038043dfa49735c5}{ETH\+\_\+\+Rx\+DMABurst\+Length\+\_\+16\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00200000)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Rx\+DMA transaction is 16 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gad1e2397de66340ee6571d3128659d75f}{ETH\+\_\+\+Rx\+DMABurst\+Length\+\_\+32\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00400000)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Rx\+DMA transaction is 32 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaea41a69890e4996e0f85d3223c6f5745}{ETH\+\_\+\+Rx\+DMABurst\+Length\+\_\+4x\+PBL\+\_\+4\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01020000)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Rx\+DMA transaction is 4 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga3d8322447931906f33b26a39ce19c6df}{ETH\+\_\+\+Rx\+DMABurst\+Length\+\_\+4x\+PBL\+\_\+8\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01040000)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Rx\+DMA transaction is 8 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga642b68e56a3fd58731767e4043a76155}{ETH\+\_\+\+Rx\+DMABurst\+Length\+\_\+4x\+PBL\+\_\+16\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01080000)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Rx\+DMA transaction is 16 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gace47e8e317b1a2aa4a03b24498d262ff}{ETH\+\_\+\+Rx\+DMABurst\+Length\+\_\+4x\+PBL\+\_\+32\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01100000)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Rx\+DMA transaction is 32 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga046ebb88a74f4010f3dc0708ed62b735}{ETH\+\_\+\+Rx\+DMABurst\+Length\+\_\+4x\+PBL\+\_\+64\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01200000)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Rx\+DMA transaction is 64 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga7f92d950353454239564a6bcbd628a27}{ETH\+\_\+\+Rx\+DMABurst\+Length\+\_\+4x\+PBL\+\_\+128\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01400000)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Rx\+DMA transaction is 128 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaf70abbaa8ca4e7e54af0229fd7d8cd7f}{ETH\+\_\+\+Tx\+DMABurst\+Length\+\_\+1\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000100)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Tx\+DMA (or both) transaction is 1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga3c695110aa51229d423e72dfe63006c0}{ETH\+\_\+\+Tx\+DMABurst\+Length\+\_\+2\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000200)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Tx\+DMA (or both) transaction is 2 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga4291114cc250a8c1c610dfdcd56c96ad}{ETH\+\_\+\+Tx\+DMABurst\+Length\+\_\+4\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000400)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Tx\+DMA (or both) transaction is 4 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaefce73600f0bdc57fe3b4567d6518a6e}{ETH\+\_\+\+Tx\+DMABurst\+Length\+\_\+8\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000800)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Tx\+DMA (or both) transaction is 8 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga5927dbd937fac189931085d89046d69d}{ETH\+\_\+\+Tx\+DMABurst\+Length\+\_\+16\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00001000)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Tx\+DMA (or both) transaction is 16 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaf1e41e3f7454e8ec674c2b0993922465}{ETH\+\_\+\+Tx\+DMABurst\+Length\+\_\+32\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00002000)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Tx\+DMA (or both) transaction is 32 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaee09dd13439ec8aee75863791c296b9c}{ETH\+\_\+\+Tx\+DMABurst\+Length\+\_\+4x\+PBL\+\_\+4\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01000100)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Tx\+DMA (or both) transaction is 4 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gae9ec32f7159d14fd8c807ca2391f81d1}{ETH\+\_\+\+Tx\+DMABurst\+Length\+\_\+4x\+PBL\+\_\+8\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01000200)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Tx\+DMA (or both) transaction is 8 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga9d420b152dcdcc37d280ca8cf44a6be9}{ETH\+\_\+\+Tx\+DMABurst\+Length\+\_\+4x\+PBL\+\_\+16\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01000400)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Tx\+DMA (or both) transaction is 16 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga2115134f4144bd9297b80c14197fa3ed}{ETH\+\_\+\+Tx\+DMABurst\+Length\+\_\+4x\+PBL\+\_\+32\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01000800)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Tx\+DMA (or both) transaction is 32 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga77ce418573d41066a8bf82531a8c5617}{ETH\+\_\+\+Tx\+DMABurst\+Length\+\_\+4x\+PBL\+\_\+64\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01001000)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Tx\+DMA (or both) transaction is 64 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gabbb5404fe4859ae592b3ba3981aad9a8}{ETH\+\_\+\+Tx\+DMABurst\+Length\+\_\+4x\+PBL\+\_\+128\+Beat}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01002000)
+\begin{DoxyCompactList}\small\item\em maximum number of beats to be transferred in one Tx\+DMA (or both) transaction is 128 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gabe97ab71c0044dd7e08c36e852604689}{ETH\+\_\+\+DMAArbitration\+\_\+\+Round\+Robin\+\_\+\+Rx\+Tx\+\_\+1\+\_\+1}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaffd4401c8d937447e8d6166aa51ddcad}{ETH\+\_\+\+DMAArbitration\+\_\+\+Round\+Robin\+\_\+\+Rx\+Tx\+\_\+2\+\_\+1}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00004000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gab218113d58e1c738a3bdbb7b8a629916}{ETH\+\_\+\+DMAArbitration\+\_\+\+Round\+Robin\+\_\+\+Rx\+Tx\+\_\+3\+\_\+1}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00008000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaf97001a277344e3abe2bb5330ca38aec}{ETH\+\_\+\+DMAArbitration\+\_\+\+Round\+Robin\+\_\+\+Rx\+Tx\+\_\+4\+\_\+1}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000\+C000)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gab1fa5cc0791697045febaebd6e533651}{ETH\+\_\+\+DMAArbitration\+\_\+\+Rx\+Prior\+Tx}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000002)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gab0da4783e98c8442d45fac8a069cd81f}{ETH\+\_\+\+DMA\+\_\+\+FLAG\+\_\+\+TST}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x20000000)
+\begin{DoxyCompactList}\small\item\em Time-\/stamp trigger interrupt (on DMA) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga550d49049e3c3f8d5125e6891481654b}{ETH\+\_\+\+DMA\+\_\+\+FLAG\+\_\+\+PMT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x10000000)
+\begin{DoxyCompactList}\small\item\em PMT interrupt (on DMA) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaa08ed1c1d8d43c9da119b55d5f19a696}{ETH\+\_\+\+DMA\+\_\+\+FLAG\+\_\+\+MMC}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x08000000)
+\begin{DoxyCompactList}\small\item\em MMC interrupt (on DMA) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga1826265bf8632658aed0c015ec77111e}{ETH\+\_\+\+DMA\+\_\+\+FLAG\+\_\+\+Data\+Transfer\+Error}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00800000)
+\begin{DoxyCompactList}\small\item\em Error bits 0-\/Rx DMA, 1-\/Tx DMA \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gac99a8bbb5276ca3d85f082b74f129449}{ETH\+\_\+\+DMA\+\_\+\+FLAG\+\_\+\+Read\+Write\+Error}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01000000)
+\begin{DoxyCompactList}\small\item\em Error bits 0-\/write trnsf, 1-\/read transfr \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaa79b90a04ea7a0c0d104900758c36822}{ETH\+\_\+\+DMA\+\_\+\+FLAG\+\_\+\+Access\+Error}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x02000000)
+\begin{DoxyCompactList}\small\item\em Error bits 0-\/data buffer, 1-\/desc. access \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gabe6bcc1cdfc99ebd2e5faf29bd43ee6e}{ETH\+\_\+\+DMA\+\_\+\+FLAG\+\_\+\+NIS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00010000)
+\begin{DoxyCompactList}\small\item\em Normal interrupt summary flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaa4d34ac665edc98c8f82751a30284a15}{ETH\+\_\+\+DMA\+\_\+\+FLAG\+\_\+\+AIS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00008000)
+\begin{DoxyCompactList}\small\item\em Abnormal interrupt summary flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga5361eb29c84916bfb191712e3a5fdee0}{ETH\+\_\+\+DMA\+\_\+\+FLAG\+\_\+\+ER}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00004000)
+\begin{DoxyCompactList}\small\item\em Early receive flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga0087468700fb50a8bb4ac52399961c50}{ETH\+\_\+\+DMA\+\_\+\+FLAG\+\_\+\+FBE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00002000)
+\begin{DoxyCompactList}\small\item\em Fatal bus error flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga01563cc3039117dedc13c227cd8f36b6}{ETH\+\_\+\+DMA\+\_\+\+FLAG\+\_\+\+ET}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000400)
+\begin{DoxyCompactList}\small\item\em Early transmit flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gadba59662721925c266dc9931db7f6923}{ETH\+\_\+\+DMA\+\_\+\+FLAG\+\_\+\+RWT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000200)
+\begin{DoxyCompactList}\small\item\em Receive watchdog timeout flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga7d169eda588b75dd9991062467fabbef}{ETH\+\_\+\+DMA\+\_\+\+FLAG\+\_\+\+RPS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000100)
+\begin{DoxyCompactList}\small\item\em Receive process stopped flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga9ef3488b49b792522f19ae258b42070c}{ETH\+\_\+\+DMA\+\_\+\+FLAG\+\_\+\+RBU}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000080)
+\begin{DoxyCompactList}\small\item\em Receive buffer unavailable flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gac0dc6f85688f9ad34108b0f17782cf99}{ETH\+\_\+\+DMA\+\_\+\+FLAG\+\_\+R}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000040)
+\begin{DoxyCompactList}\small\item\em Receive flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gac1bbe815d944882945f3277652275788}{ETH\+\_\+\+DMA\+\_\+\+FLAG\+\_\+\+TU}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000020)
+\begin{DoxyCompactList}\small\item\em Underflow flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga9c155f1385c61e848191e5cbe025c5f5}{ETH\+\_\+\+DMA\+\_\+\+FLAG\+\_\+\+RO}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000010)
+\begin{DoxyCompactList}\small\item\em Overflow flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga9512485acf51f2c26f5fe72bfced669d}{ETH\+\_\+\+DMA\+\_\+\+FLAG\+\_\+\+TJT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)
+\begin{DoxyCompactList}\small\item\em Transmit jabber timeout flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga91192fe93bbb90400066b260c54b9a0f}{ETH\+\_\+\+DMA\+\_\+\+FLAG\+\_\+\+TBU}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000004)
+\begin{DoxyCompactList}\small\item\em Transmit buffer unavailable flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga2d09f9e6b6d05bcd5d46446a02414f76}{ETH\+\_\+\+DMA\+\_\+\+FLAG\+\_\+\+TPS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000002)
+\begin{DoxyCompactList}\small\item\em Transmit process stopped flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga27d755f99004121608588fe328e0e283}{ETH\+\_\+\+DMA\+\_\+\+FLAG\+\_\+T}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000001)
+\begin{DoxyCompactList}\small\item\em Transmit flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga7dcc35e033c6e53b921740533559db4e}{ETH\+\_\+\+DMA\+\_\+\+IT\+\_\+\+TST}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x20000000)
+\begin{DoxyCompactList}\small\item\em Time-\/stamp trigger interrupt (on DMA) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga7111d83585134dc260ed08ccd72128bd}{ETH\+\_\+\+DMA\+\_\+\+IT\+\_\+\+PMT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x10000000)
+\begin{DoxyCompactList}\small\item\em PMT interrupt (on DMA) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaf5360979eb7a3ce577d07c9a67cb2b16}{ETH\+\_\+\+DMA\+\_\+\+IT\+\_\+\+MMC}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x08000000)
+\begin{DoxyCompactList}\small\item\em MMC interrupt (on DMA) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga2718ee2b32543a6617deec57c773ec02}{ETH\+\_\+\+DMA\+\_\+\+IT\+\_\+\+NIS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00010000)
+\begin{DoxyCompactList}\small\item\em Normal interrupt summary \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga4a980bccac172c49ce9ba9de0f926035}{ETH\+\_\+\+DMA\+\_\+\+IT\+\_\+\+AIS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00008000)
+\begin{DoxyCompactList}\small\item\em Abnormal interrupt summary \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gafe2667f6598ad1b2d2b30de260c17b7e}{ETH\+\_\+\+DMA\+\_\+\+IT\+\_\+\+ER}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00004000)
+\begin{DoxyCompactList}\small\item\em Early receive interrupt \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga8a133cf4e70a84e9647d1daabd8ac91d}{ETH\+\_\+\+DMA\+\_\+\+IT\+\_\+\+FBE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00002000)
+\begin{DoxyCompactList}\small\item\em Fatal bus error interrupt \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga37e1ba0e7837e3eca9232bd0d2d9b1af}{ETH\+\_\+\+DMA\+\_\+\+IT\+\_\+\+ET}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000400)
+\begin{DoxyCompactList}\small\item\em Early transmit interrupt \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga8cd204f7821d429810cc68ea66ebd6b6}{ETH\+\_\+\+DMA\+\_\+\+IT\+\_\+\+RWT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000200)
+\begin{DoxyCompactList}\small\item\em Receive watchdog timeout interrupt \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga6e210d8ddd2d93a07a523f3e11c3dcf2}{ETH\+\_\+\+DMA\+\_\+\+IT\+\_\+\+RPS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000100)
+\begin{DoxyCompactList}\small\item\em Receive process stopped interrupt \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga965bdc6e5634f8e51b8a2f184b82e9bc}{ETH\+\_\+\+DMA\+\_\+\+IT\+\_\+\+RBU}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000080)
+\begin{DoxyCompactList}\small\item\em Receive buffer unavailable interrupt \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga1e28b6a79dc99f02b06d669a7b593b5b}{ETH\+\_\+\+DMA\+\_\+\+IT\+\_\+R}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000040)
+\begin{DoxyCompactList}\small\item\em Receive interrupt \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gae21e5975c2df907273c7bafd8a21db32}{ETH\+\_\+\+DMA\+\_\+\+IT\+\_\+\+TU}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000020)
+\begin{DoxyCompactList}\small\item\em Underflow interrupt \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga3e9eac5dd19d5ffdcd819c9d88d9f015}{ETH\+\_\+\+DMA\+\_\+\+IT\+\_\+\+RO}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000010)
+\begin{DoxyCompactList}\small\item\em Overflow interrupt \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga60f7b5832d9cd28a568ff7ece9c3bb12}{ETH\+\_\+\+DMA\+\_\+\+IT\+\_\+\+TJT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)
+\begin{DoxyCompactList}\small\item\em Transmit jabber timeout interrupt \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaa939e3a0b0eaef34f1cca1d22d465b94}{ETH\+\_\+\+DMA\+\_\+\+IT\+\_\+\+TBU}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000004)
+\begin{DoxyCompactList}\small\item\em Transmit buffer unavailable interrupt \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga1d68474474c494bac2d403bffee3b50e}{ETH\+\_\+\+DMA\+\_\+\+IT\+\_\+\+TPS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000002)
+\begin{DoxyCompactList}\small\item\em Transmit process stopped interrupt \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gab6809574b689752d141e87d39681793d}{ETH\+\_\+\+DMA\+\_\+\+IT\+\_\+T}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000001)
+\begin{DoxyCompactList}\small\item\em Transmit interrupt \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga65f7b920aeb3291d17a318654e046891}{ETH\+\_\+\+DMA\+\_\+\+Transmit\+Process\+\_\+\+Stopped}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\begin{DoxyCompactList}\small\item\em Stopped -\/ Reset or Stop Tx Command issued \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga580828fae2f1d41b43f7652f58b33047}{ETH\+\_\+\+DMA\+\_\+\+Transmit\+Process\+\_\+\+Fetching}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00100000)
+\begin{DoxyCompactList}\small\item\em Running -\/ fetching the Tx descriptor \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga2be4f4b5699b197f63b972f9406328c7}{ETH\+\_\+\+DMA\+\_\+\+Transmit\+Process\+\_\+\+Waiting}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00200000)
+\begin{DoxyCompactList}\small\item\em Running -\/ waiting for status \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaa3d68c6f48c780675f496ba2e3b305b0}{ETH\+\_\+\+DMA\+\_\+\+Transmit\+Process\+\_\+\+Reading}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00300000)
+\begin{DoxyCompactList}\small\item\em Running -\/ reading the data from host memory \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gacda2b07d0f3c788782b0db7dc5873c28}{ETH\+\_\+\+DMA\+\_\+\+Transmit\+Process\+\_\+\+Suspended}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00600000)
+\begin{DoxyCompactList}\small\item\em Suspended -\/ Tx Descriptor unavailable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga40fb317069f525d7fd3037508cce1400}{ETH\+\_\+\+DMA\+\_\+\+Transmit\+Process\+\_\+\+Closing}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00700000)
+\begin{DoxyCompactList}\small\item\em Running -\/ closing Rx descriptor \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaad1d19909ac9142c8118eec61c527966}{ETH\+\_\+\+DMA\+\_\+\+Receive\+Process\+\_\+\+Stopped}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\begin{DoxyCompactList}\small\item\em Stopped -\/ Reset or Stop Rx Command issued \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga5dfe26081e3352b8bc0d3202ce6fa890}{ETH\+\_\+\+DMA\+\_\+\+Receive\+Process\+\_\+\+Fetching}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00020000)
+\begin{DoxyCompactList}\small\item\em Running -\/ fetching the Rx descriptor \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga182b703130b42cefb3f3b67091bb26e6}{ETH\+\_\+\+DMA\+\_\+\+Receive\+Process\+\_\+\+Waiting}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00060000)
+\begin{DoxyCompactList}\small\item\em Running -\/ waiting for packet \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga0435d67a6dc2b7979a7086aba837fa8d}{ETH\+\_\+\+DMA\+\_\+\+Receive\+Process\+\_\+\+Suspended}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00080000)
+\begin{DoxyCompactList}\small\item\em Suspended -\/ Rx Descriptor unavailable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga3e02aba7ad762dbc52d9baa8392549bb}{ETH\+\_\+\+DMA\+\_\+\+Receive\+Process\+\_\+\+Closing}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x000\+A0000)
+\begin{DoxyCompactList}\small\item\em Running -\/ closing descriptor \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga4add7a7251284ec2483c2c25213c0f48}{ETH\+\_\+\+DMA\+\_\+\+Receive\+Process\+\_\+\+Queuing}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x000\+E0000)
+\begin{DoxyCompactList}\small\item\em Running -\/ queuing the receive frame into host memory \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaf273bfe5769b4d11e8047cc5d8b4be70}{ETH\+\_\+\+DMA\+\_\+\+Overflow\+\_\+\+Rx\+FIFOCounter}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x10000000)
+\begin{DoxyCompactList}\small\item\em Overflow bit for FIFO overflow counter \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga57219336a877721b921aa542cea5c4f7}{ETH\+\_\+\+DMA\+\_\+\+Overflow\+\_\+\+Missed\+Frame\+Counter}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00010000)
+\begin{DoxyCompactList}\small\item\em Overflow bit for missed frame counter \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga44dfa1fa106ce8bac00e30de56e9a271}{ETH\+\_\+\+PMT\+\_\+\+FLAG\+\_\+\+WUFFRPR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x80000000)
+\begin{DoxyCompactList}\small\item\em Wake-\/\+Up Frame Filter Register Pointer Reset \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga203efd0ebae6ffed45a0db85f93bba64}{ETH\+\_\+\+PMT\+\_\+\+FLAG\+\_\+\+WUFR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000040)
+\begin{DoxyCompactList}\small\item\em Wake-\/\+Up Frame Received \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga4fa8d73bfa09353c16ed3d492bce5881}{ETH\+\_\+\+PMT\+\_\+\+FLAG\+\_\+\+MPR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000020)
+\begin{DoxyCompactList}\small\item\em Magic Packet Received \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga522b23ed67cf9a36bdf791ffb90484d5}{ETH\+\_\+\+MMC\+\_\+\+IT\+\_\+\+TGF}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00200000)
+\begin{DoxyCompactList}\small\item\em When Tx good frame counter reaches half the maximum value \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga9f16a73c81a931155b551540985f8a9b}{ETH\+\_\+\+MMC\+\_\+\+IT\+\_\+\+TGFMSC}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00008000)
+\begin{DoxyCompactList}\small\item\em When Tx good multi col counter reaches half the maximum value \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga3f16234849dbbed99ca181090bdebc40}{ETH\+\_\+\+MMC\+\_\+\+IT\+\_\+\+TGFSC}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00004000)
+\begin{DoxyCompactList}\small\item\em When Tx good single col counter reaches half the maximum value \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gad138e39c016fa2c65f6715b13e777701}{ETH\+\_\+\+MMC\+\_\+\+IT\+\_\+\+RGUF}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x10020000)
+\begin{DoxyCompactList}\small\item\em When Rx good unicast frames counter reaches half the maximum value \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gac0d7611374525cd681a8f561ea17b4df}{ETH\+\_\+\+MMC\+\_\+\+IT\+\_\+\+RFAE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x10000040)
+\begin{DoxyCompactList}\small\item\em When Rx alignment error counter reaches half the maximum value \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaf24d8fb160c973fa847003161ec72747}{ETH\+\_\+\+MMC\+\_\+\+IT\+\_\+\+RFCE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x10000020)
+\begin{DoxyCompactList}\small\item\em When Rx crc error counter reaches half the maximum value \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga340605767fdf406c393f046be44a1e09}{ETH\+\_\+\+MMCCR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000100)
+\begin{DoxyCompactList}\small\item\em MMC CR register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaa49af339607e5c30c69d55f4941fd775}{ETH\+\_\+\+MMCRIR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000104)
+\begin{DoxyCompactList}\small\item\em MMC RIR register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gab53a2a3649b1b96533c3bb8f2dfca221}{ETH\+\_\+\+MMCTIR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000108)
+\begin{DoxyCompactList}\small\item\em MMC TIR register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga42e63a205698925c20f69be3d711ae59}{ETH\+\_\+\+MMCRIMR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000010C)
+\begin{DoxyCompactList}\small\item\em MMC RIMR register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gad0e2ddcc50c96772130c9717aa1ec496}{ETH\+\_\+\+MMCTIMR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000110)
+\begin{DoxyCompactList}\small\item\em MMC TIMR register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga355a8ef08cc4a431601016a076ae9562}{ETH\+\_\+\+MMCTGFSCCR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000014C)
+\begin{DoxyCompactList}\small\item\em MMC TGFSCCR register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gad2324378454cb5afc2709afc6849067d}{ETH\+\_\+\+MMCTGFMSCCR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000150)
+\begin{DoxyCompactList}\small\item\em MMC TGFMSCCR register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga1de87b7bf29865be1068300dd2946caf}{ETH\+\_\+\+MMCTGFCR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000168)
+\begin{DoxyCompactList}\small\item\em MMC TGFCR register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gacb9b04ab9c5957905a2db7314d6907b8}{ETH\+\_\+\+MMCRFCECR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000194)
+\begin{DoxyCompactList}\small\item\em MMC RFCECR register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga99f6ddc380fffdfe66e6659f7c4ba325}{ETH\+\_\+\+MMCRFAECR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000198)
+\begin{DoxyCompactList}\small\item\em MMC RFAECR register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gadd605f380a482a06a59498eea4cad15f}{ETH\+\_\+\+MMCRGUFCR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x000001\+C4)
+\begin{DoxyCompactList}\small\item\em MMC RGUFCR register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga6cb8cd84527c178f21f78c420c1b1ccd}{ETH\+\_\+\+PTP\+\_\+\+Fine\+Update}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000001)
+\begin{DoxyCompactList}\small\item\em Fine Update method \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga49710f6e2cabb5cbc276ce63455bf56a}{ETH\+\_\+\+PTP\+\_\+\+Coarse\+Update}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\begin{DoxyCompactList}\small\item\em Coarse Update method \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga87e5fbe42cc7df51afef3ceae495f4e2}{ETH\+\_\+\+PTP\+\_\+\+FLAG\+\_\+\+TSARU}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000020)
+\begin{DoxyCompactList}\small\item\em Addend Register Update \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga1411beaf3a7d95f91591552eac7f694d}{ETH\+\_\+\+PTP\+\_\+\+FLAG\+\_\+\+TSITE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000010)
+\begin{DoxyCompactList}\small\item\em Time Stamp Interrupt Trigger \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaac817618dd4dd2b0983c7267db3b28c4}{ETH\+\_\+\+PTP\+\_\+\+FLAG\+\_\+\+TSSTU}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)
+\begin{DoxyCompactList}\small\item\em Time Stamp Update \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gac3f3e2d473636fb6d783bc13e6bc1831}{ETH\+\_\+\+PTP\+\_\+\+FLAG\+\_\+\+TSSTI}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000004)
+\begin{DoxyCompactList}\small\item\em Time Stamp Initialize \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga4a6da23b240c5c4f26d44442dc00daa7}{ETH\+\_\+\+PTP\+\_\+\+FLAG\+\_\+\+TSTTR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x10000002)
+\begin{DoxyCompactList}\small\item\em Time stamp target time reached \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaa1ec64197d9ba8898a9abe6cf66a7336}{ETH\+\_\+\+PTP\+\_\+\+FLAG\+\_\+\+TSSO}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x10000001)
+\begin{DoxyCompactList}\small\item\em Time stamp seconds overflow \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga83d10e1e46222408bd26df52ed3e4364}{ETH\+\_\+\+PTP\+\_\+\+Positive\+Time}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\begin{DoxyCompactList}\small\item\em Positive time value \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gab48f040ce4ee122815400f73695881d2}{ETH\+\_\+\+PTP\+\_\+\+Negative\+Time}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x80000000)
+\begin{DoxyCompactList}\small\item\em Negative time value \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga0eb7b62e8c9457b2b12ef0a8b113e0e8}{ETH\+\_\+\+PTPTSCR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000700)
+\begin{DoxyCompactList}\small\item\em PTP TSCR register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga25a65e067a532bde53c20f0e987f8687}{ETH\+\_\+\+PTPSSIR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000704)
+\begin{DoxyCompactList}\small\item\em PTP SSIR register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gae0ed4f71663c05da49598d842226c310}{ETH\+\_\+\+PTPTSHR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000708)
+\begin{DoxyCompactList}\small\item\em PTP TSHR register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga8673e03287f87d08e002dfa84948e787}{ETH\+\_\+\+PTPTSLR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000070C)
+\begin{DoxyCompactList}\small\item\em PTP TSLR register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga00acdca007299c6501aed74042ff7029}{ETH\+\_\+\+PTPTSHUR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000710)
+\begin{DoxyCompactList}\small\item\em PTP TSHUR register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga67e138740dfce8004fa6129089094bb8}{ETH\+\_\+\+PTPTSLUR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000714)
+\begin{DoxyCompactList}\small\item\em PTP TSLUR register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga68db517872e09cb56424146326a1962a}{ETH\+\_\+\+PTPTSAR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000718)
+\begin{DoxyCompactList}\small\item\em PTP TSAR register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gae67868e9926f1c0546f5d58a34736e99}{ETH\+\_\+\+PTPTTHR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000071C)
+\begin{DoxyCompactList}\small\item\em PTP TTHR register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga1bbad3e622a49b4a17da1bd122ca86f0}{ETH\+\_\+\+PTPTTLR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000720)
+\begin{DoxyCompactList}\small\item\em PTP TTLR register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gac18e638cd706c16c9829a28bb5896e5e}{ETH\+\_\+\+PTPTSSR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000728)
+\begin{DoxyCompactList}\small\item\em PTP TSSR register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga6756a22e2f46c05ce6d45f0b454ee0fc}{ETH\+\_\+\+PTP\+\_\+\+Ordinary\+Clock}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\begin{DoxyCompactList}\small\item\em Ordinary Clock \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gad639f450c8404404eab7a313e73ad0c9}{ETH\+\_\+\+PTP\+\_\+\+Boundary\+Clock}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00010000)
+\begin{DoxyCompactList}\small\item\em Boundary Clock \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga38a0fabd9c172a338a671f47d7b345fa}{ETH\+\_\+\+PTP\+\_\+\+End\+To\+End\+Transparent\+Clock}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00020000)
+\begin{DoxyCompactList}\small\item\em End To End Transparent Clock \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga06ab092df11c8c88af229dc234db290e}{ETH\+\_\+\+PTP\+\_\+\+Peer\+To\+Peer\+Transparent\+Clock}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00030000)
+\begin{DoxyCompactList}\small\item\em Peer To Peer Transparent Clock \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gafad03857c1e9a6ae24909ce8eb2df3df}{ETH\+\_\+\+PTP\+\_\+\+Snapshot\+Master\+Message}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00008000)
+\begin{DoxyCompactList}\small\item\em Time stamp snapshot for message relevant to master enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gaebe7e81966e25b7a02872d8c4ab12444}{ETH\+\_\+\+PTP\+\_\+\+Snapshot\+Event\+Message}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00004000)
+\begin{DoxyCompactList}\small\item\em Time stamp snapshot for event message enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga3e227da6a455f15c29c1f926a5d75d66}{ETH\+\_\+\+PTP\+\_\+\+Snapshot\+IPV4\+Frames}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00002000)
+\begin{DoxyCompactList}\small\item\em Time stamp snapshot for IPv4 frames enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga26bc1732891d9b261c0e53d90340ee2f}{ETH\+\_\+\+PTP\+\_\+\+Snapshot\+IPV6\+Frames}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00001000)
+\begin{DoxyCompactList}\small\item\em Time stamp snapshot for IPv6 frames enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga55b6e0ced542e40ae5891cde0f09a78b}{ETH\+\_\+\+PTP\+\_\+\+Snapshot\+PTPOver\+Ethernet\+Frames}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000800)
+\begin{DoxyCompactList}\small\item\em Time stamp snapshot for PTP over ethernet frames enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gafb935388cd2ee88e314d2f485a38cc6c}{ETH\+\_\+\+PTP\+\_\+\+Snapshot\+All\+Received\+Frames}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000100)
+\begin{DoxyCompactList}\small\item\em Time stamp snapshot for all received frames enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga85a9d7b17b05b08c64528e5b43b08ef4}{ETH\+\_\+\+MAC\+\_\+\+ADDR\+\_\+\+HBASE}}~(\mbox{\hyperlink{reg__eth_8h_ad965a7b1106ece575ed3da10c45c65cc}{ETH\+\_\+\+BASE}} + 0x40)
+\begin{DoxyCompactList}\small\item\em ETHERNET MAC address high offset \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga5dc2dd58c5508a16cd61414a1c740529}{ETH\+\_\+\+MAC\+\_\+\+ADDR\+\_\+\+LBASE}}~(\mbox{\hyperlink{reg__eth_8h_ad965a7b1106ece575ed3da10c45c65cc}{ETH\+\_\+\+BASE}} + 0x44)
+\begin{DoxyCompactList}\small\item\em ETHERNET MAC address low offset \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga0d72ec6a764572a2fa52f6c2d0648b5b}{MACMIIAR\+\_\+\+CR\+\_\+\+MASK}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x\+FFFFFFE3)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga6415e52119d875b78a80ee4186233643}{MACCR\+\_\+\+CLEAR\+\_\+\+MASK}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x\+FF20810F)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_ga0fc15b5e25134974f3a371c17882e36d}{MACFCR\+\_\+\+CLEAR\+\_\+\+MASK}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000\+FF41)
+\item 
+\#define \mbox{\hyperlink{group___e_t_h___exported___types_gad1b188dfe2cdaea68fb36806a0b94b95}{DMAOMR\+\_\+\+CLEAR\+\_\+\+MASK}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x\+F8\+DE3\+F23)
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga0d96b5b1d88725ebdac89e28b786ec84}{ETH\+\_\+\+De\+Init}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gac54a402a9f6ef39d58dda12b8a3d4c28}{ETH\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{struct_e_t_h___init_type_def}{ETH\+\_\+\+Init\+Type\+Def}} $\ast$ptr)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gac48f5f162f903cbc373ce40d5c431db8}{ETH\+\_\+\+Init}} (\mbox{\hyperlink{struct_e_t_h___init_type_def}{ETH\+\_\+\+Init\+Type\+Def}} $\ast$ptr, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} phy\+\_\+addr)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga91dc3e4848316fd9bc5f14ed44451e4c}{ETH\+\_\+\+Start}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga357c1a92a470453dd39ee1fbb18549c2}{ETH\+\_\+\+Stop}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga9d948f6ed00271299b8bd7a22b82d790}{ETH\+\_\+\+MACTransmission\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga677304f7761589df6ad033080363f020}{ETH\+\_\+\+MACReception\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___e_t_h___exported___types_ga5ed03ee5131dbd95a3c54f5a41044c14}{ETH\+\_\+\+Get\+Flow\+Control\+Busy\+Status}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga77e9c30c78e2e8e8c863c62f71431fb3}{ETH\+\_\+\+Initiate\+Pause\+Control\+Frame}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gadfa25887fa512afff494d46a1ce49782}{ETH\+\_\+\+Back\+Pressure\+Activation\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga9f183f75ac5536a44ed9f569957abab3}{ETH\+\_\+\+MACAddress\+Config}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} reg\+\_\+addr, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} $\ast$mac\+\_\+addr)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gae61d9905b8b5ad78c0e53bcdc99c691b}{ETH\+\_\+\+Get\+MACAddress}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} reg\+\_\+addr, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} $\ast$mac\+\_\+addr)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga1c001e7b425251c3e2034250634bdd49}{ETH\+\_\+\+MACAddress\+Perfect\+Filter\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} reg\+\_\+addr, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga0538170a844bf22c69d718e4f6e27a1b}{ETH\+\_\+\+MACAddress\+Filter\+Config}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} reg\+\_\+addr, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gaa4c25a36bf8b19fab584ee0399f2258e}{ETH\+\_\+\+MACAddress\+Mask\+Bytes\+Filter\+Config}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} reg\+\_\+addr, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} mask\+\_\+byte)
+\item 
+\mbox{\hyperlink{struct_frame_type_def}{Frame\+Type\+Def}} \mbox{\hyperlink{group___e_t_h___exported___types_ga32da1044684ecb01ed759fbceb603d03}{ETH\+\_\+\+Get\+\_\+\+Received\+\_\+\+Frame}} (void)
+\item 
+\mbox{\hyperlink{struct_frame_type_def}{Frame\+Type\+Def}} \mbox{\hyperlink{group___e_t_h___exported___types_gad81f857bbc1cf82415ffb0aa58667a5b}{ETH\+\_\+\+Get\+\_\+\+Received\+\_\+\+Frame\+\_\+interrupt}} (void)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gaf98d220821472850da356956425ce5c9}{ETH\+\_\+\+Prepare\+\_\+\+Transmit\+\_\+\+Descriptors}} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} len)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga3d586c3291acae6cdf6b9cdd51b15bea}{ETH\+\_\+\+DMARx\+Desc\+Chain\+Init}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} $\ast$buf, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} cnt)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga6a0dc2593e3181df90750ec63aa97eb6}{ETH\+\_\+\+Check\+Frame\+Received}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga0a898109c1b814effc3218b816b7b9e0}{ETH\+\_\+\+DMATx\+Desc\+Chain\+Init}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} $\ast$buf, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} cnt)
+\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___e_t_h___exported___types_ga4ba3c7ed9c0ed95674fd28905d6c76bf}{ETH\+\_\+\+Get\+DMATx\+Desc\+Flag\+Status}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gae984f019d7751d4957bf6ff3d41168d2}{ETH\+\_\+\+Get\+DMATx\+Desc\+Collision\+Count}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga1793eeacea8865863d49d718b93ab18a}{ETH\+\_\+\+Set\+DMATx\+Desc\+Own\+Bit}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga49395c02284a930bec9196c52b0b1633}{ETH\+\_\+\+DMATx\+Desc\+Transmit\+ITConfig}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga392222e52c9219837df739594a35f6c5}{ETH\+\_\+\+DMATx\+Desc\+Frame\+Segment\+Config}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} val)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gaf6a0af2257e0abeba47de54add9d3d38}{ETH\+\_\+\+DMATx\+Desc\+Checksum\+Insertion\+Config}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} val)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga823957a4dc7c93d83060e534c2a38a3e}{ETH\+\_\+\+DMATx\+Desc\+CRCCmd}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gafb39af5b4b32c7d117433e6324467dfb}{ETH\+\_\+\+DMATx\+Desc\+Second\+Address\+Chained\+Cmd}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gab4d79c04a4edbc4721d3295905e96c70}{ETH\+\_\+\+DMATx\+Desc\+Short\+Frame\+Padding\+Cmd}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga7a4320cb1cce11b6dc9d70dd7ec006cd}{ETH\+\_\+\+DMATx\+Desc\+Buffer\+Size\+Config}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} buf1\+\_\+size, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} buf2\+\_\+size)
+\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___e_t_h___exported___types_gad84f5cb887f2a26eec9e73b7efc5ce48}{ETH\+\_\+\+Get\+DMARx\+Desc\+Flag\+Status}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga93137d99a8d6fad58221c8e8cb1c948b}{ETH\+\_\+\+Set\+DMARx\+Desc\+Own\+Bit}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gaa706748af8275b2d93c43960b747f38e}{ETH\+\_\+\+Get\+DMARx\+Desc\+Frame\+Length}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gad6cae545376b4f9fa1db5755a014be3f}{ETH\+\_\+\+DMARx\+Desc\+Receive\+ITConfig}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gaa67743cfc12787eb97ec2fe7c08ca86f}{ETH\+\_\+\+Get\+DMARx\+Desc\+Buffer\+Size}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} buf)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga765d129e2375108daa94bf0031f0c4d3}{ETH\+\_\+\+Get\+Rx\+Pkt\+Size}} (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ptr\+\_\+desc)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gac5b991b83a1a26f4d3fdfcb44a9e2961}{ETH\+\_\+\+Software\+Reset}} (void)
+\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___e_t_h___exported___types_ga92fe59489331817a185f80d4ffdebc6a}{ETH\+\_\+\+Get\+Software\+Reset\+Status}} (void)
+\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___e_t_h___exported___types_ga7dab5819120f80db4fa99fecb84006eb}{ETH\+\_\+\+Get\+DMAFlag\+Status}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga48da821b79f04dab1a0c47b979676aeb}{ETH\+\_\+\+DMAClear\+Flag}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga5a91e77822eef95867a541a301a4cb93}{ETH\+\_\+\+DMAITConfig}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+\mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} \mbox{\hyperlink{group___e_t_h___exported___types_ga62f0618f34823bc1a4c41786973997f2}{ETH\+\_\+\+Get\+DMAITStatus}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga03bd042e399230d6f8d7f9155d6b57fe}{ETH\+\_\+\+DMAClear\+ITPending\+Bit}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga71fa89afbbf80e3fea7552166d290a80}{ETH\+\_\+\+Get\+Transmit\+Process\+State}} (void)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gacefed0f80e333cea4e88ebf417c4844f}{ETH\+\_\+\+Get\+Receive\+Process\+State}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga886f872a0046bbb3f9f08890bb10a7d6}{ETH\+\_\+\+Flush\+Transmit\+FIFO}} (void)
+\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___e_t_h___exported___types_gaf6c37cbdce7cf962d8de25ac635e37c9}{ETH\+\_\+\+Get\+Flush\+Transmit\+FIFOStatus}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga3078e7bc9e79d3b09d4e76c55c2db7fa}{ETH\+\_\+\+DMATransmission\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga8e05697da368b53b0346769850f0eac9}{ETH\+\_\+\+DMAReception\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___e_t_h___exported___types_gaf6b44c63ca8293301d461bc6c9d55e56}{ETH\+\_\+\+Get\+DMAOverflow\+Status}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} val)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gadb1e5e7222fab956d9277d84760b34cc}{ETH\+\_\+\+Get\+Rx\+Overflow\+Missed\+Frame\+Counter}} (void)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga44d76c8743a17b6ec41c3856859afec2}{ETH\+\_\+\+Get\+Buffer\+Unavailable\+Missed\+Frame\+Counter}} (void)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga55e2fd40116ae98a5f65f77a0ad8be76}{ETH\+\_\+\+Get\+Current\+Tx\+Desc\+Start\+Address}} (void)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga9de31600819c649378016d7440e85cc6}{ETH\+\_\+\+Get\+Current\+Rx\+Desc\+Start\+Address}} (void)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga95649bf5ab9e52638e59b8316580b33d}{ETH\+\_\+\+Get\+Current\+Tx\+Buffer\+Address}} (void)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gafb40ac65a86624dc294f5ff83faf5994}{ETH\+\_\+\+Get\+Current\+Rx\+Buffer\+Address}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gae933a3ddae920fc22a764bdf4af0b3a5}{ETH\+\_\+\+Resume\+DMATransmission}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gaf2149971fef6d9478acb91a0592ed7af}{ETH\+\_\+\+Resume\+DMAReception}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga03cc6b16dcc36a247608c59870a51a05}{ETH\+\_\+\+Set\+Receive\+Watchdog\+Timer}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} val)
+\item 
+\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{group___e_t_h___exported___types_gad885ad03ba3496c9c2711e7a39225762}{ETH\+\_\+\+Read\+PHYRegister}} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} addr, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} reg)
+\item 
+\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{group___e_t_h___exported___types_ga4bcaddc18a6a27f45f7ddbd5313224ba}{ETH\+\_\+\+Write\+PHYRegister}} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} addr, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} reg, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} val)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga4d29bede54c69b0304afc50ce58f3dfb}{ETH\+\_\+\+PHYLoop\+Back\+Cmd}} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} addr, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gad19ac0436076c96431e887c3684b0712}{ETH\+\_\+\+Reset\+Wake\+Up\+Frame\+Filter\+Register\+Pointer}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga74262f8956e42da4376ad4078502bf30}{ETH\+\_\+\+Set\+Wake\+Up\+Frame\+Filter\+Register}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} $\ast$buf)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gae48f02d1bcee46f99d1ea49c2ff9aba8}{ETH\+\_\+\+Global\+Unicast\+Wake\+Up\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___e_t_h___exported___types_ga7148c6f5ee9b946e50831c0676e00188}{ETH\+\_\+\+Get\+PMTFlag\+Status}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga4001aea745a9816c038bb3ec83a2fd00}{ETH\+\_\+\+Wake\+Up\+Frame\+Detection\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga867d3cc0ddf06ebe98c3abe83f182604}{ETH\+\_\+\+Magic\+Packet\+Detection\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga614f8683bd5797e8a7b40f19478e7cf5}{ETH\+\_\+\+Power\+Down\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga6317136f5ca8aff711630b595e5639b3}{ETH\+\_\+\+MMCCounter\+Full\+Preset}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gaefaef524644df31d09c8c6d68829414f}{ETH\+\_\+\+MMCCounter\+Half\+Preset}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga9c61c8a5b5bfa8f1621ec692941dcbc1}{ETH\+\_\+\+MMCCounter\+Freeze\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga97785440d18126ece27ac75b32149989}{ETH\+\_\+\+MMCReset\+On\+Read\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga20132209f423a151fe614707c9b8b651}{ETH\+\_\+\+MMCCounter\+Rollover\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_ga414106bd2efd86e44ea8469ef3229843}{ETH\+\_\+\+MMCCounters\+Reset}} (void)
+\item 
+void \mbox{\hyperlink{group___e_t_h___exported___types_gaaa90ae5d6854f5c8c0e4664bb24bc149}{ETH\+\_\+\+MMCITConfig}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} sta)
+\item 
+\mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} \mbox{\hyperlink{group___e_t_h___exported___types_gad36d923315142ae01fe9bcd4f9728016}{ETH\+\_\+\+Get\+MMCITStatus}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gae7cd3f7055068e12fcd7346ea1bea8fd}{ETH\+\_\+\+Get\+MMCRegister}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} reg)
+\end{DoxyCompactItemize}
+\doxysubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group___a_d_c___exported___variables_ga3de33738fd3c7e77bffbcfaefc3e7645}{GLOBAL}} \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ \mbox{\hyperlink{group___e_t_h___exported___types_gab76959f6e0f1234bd24ed0b0e16c421f}{DMATx\+Desc\+To\+Set}}
+\item 
+\mbox{\hyperlink{group___a_d_c___exported___variables_ga3de33738fd3c7e77bffbcfaefc3e7645}{GLOBAL}} \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\+\_\+\+DMADESCType\+Def}} $\ast$ \mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARx\+Desc\+To\+Get}}
+\item 
+\mbox{\hyperlink{group___a_d_c___exported___variables_ga3de33738fd3c7e77bffbcfaefc3e7645}{GLOBAL}} \mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos}{ETH\+\_\+\+DMA\+\_\+\+Rx\+\_\+\+Frame\+\_\+infos}} \mbox{\hyperlink{group___e_t_h___exported___types_gaafc5b5d557dd7af7a2e7bd7f4c4c217e}{RX\+\_\+\+Frame\+\_\+\+Descriptor}}
+\item 
+\mbox{\hyperlink{group___a_d_c___exported___variables_ga3de33738fd3c7e77bffbcfaefc3e7645}{GLOBAL}} \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos}{ETH\+\_\+\+DMA\+\_\+\+Rx\+\_\+\+Frame\+\_\+infos}} $\ast$ \mbox{\hyperlink{group___e_t_h___exported___types_ga20a38d3009faae57fabfacd32b4af097}{DMA\+\_\+\+RX\+\_\+\+FRAME\+\_\+infos}}
+\item 
+\mbox{\hyperlink{group___a_d_c___exported___variables_ga3de33738fd3c7e77bffbcfaefc3e7645}{GLOBAL}} \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gab906623966ca277892a524f7c013fa12}{Frame\+\_\+\+Rx\+\_\+index}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE \mbox{\hyperlink{hal__eth_8h}{HAL\+\_\+eth.\+h}} EXAMPLES. //////////////////////////////////////////////////////////////////////////// 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{hal__eth_8h_source}{hal\+\_\+eth.\+h}} 中定义.
+

@@ -1,0 +1,304 @@
+\hypertarget{struct_c_o_m_p___init_type_def}{}\doxysection{COMP\+\_\+\+Init\+Type\+Def结构体 参考}
+\label{struct_c_o_m_p___init_type_def}\index{COMP\_InitTypeDef@{COMP\_InitTypeDef}}
+
+
+COMP Init structure definition  
+
+
+
+
+{\ttfamily \#include $<$hal\+\_\+comp.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___init_type_def_aed0160c575ce41db40fd76e8fcafddd3}{COMP\_InvertingInput}}\\
+\>\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___init_type_def_adad4ccd9c2bb20b49079043ae3822c76}{Invert}}\\
+\>\>{\em Selects the inverting input of the comparator. }\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___init_type_def_ae222b8042c72dbd6cc1338dc18ba404f}{COMP\_NonInvertingInput}}\\
+\>\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___init_type_def_a2c121820409f6a8ec007034abf317e3c}{NonInvert}}\\
+\>\>{\em Selects the non inverting input of the comparator. }\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___init_type_def_aef661def2f01e46ed3dcfb61c414b0a0}{COMP\_Output}}\\
+\>\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___init_type_def_a19bd18bf958dd36acd5fd7e652af3169}{Output}}\\
+\>\>{\em Selects the output redirection of the comparator. }\\
+\>\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___init_type_def_a35552bc1dae7b302739fe96fbb006037}{BlankingSrce}}\\
+\>\>{\em Selects the output blanking source of the comparator. }\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___init_type_def_a5c1a88442165957167c211e0c630293c}{COMP\_OutputPol}}\\
+\>\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___init_type_def_a66e79d4411e0d438c167def1264a262e}{OutputPol}}\\
+\>\>{\em Selects the output polarity of the comparator. }\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___init_type_def_ae2a9ec7486ecf69d7fad2cfd32418076}{COMP\_Hysteresis}}\\
+\>\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___init_type_def_a3d45a494f709ac8f14bbd7b34e3faee2}{Hysteresis}}\\
+\>\>{\em Selects the hysteresis voltage of the comparator. }\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___init_type_def_ae4a55fb4c32efd15957ef29178bd6245}{COMP\_Mode}}\\
+\>\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___init_type_def_a47c14a6e83a7a6492d56908f618ea0e6}{Mode}}\\
+\>\>{\em Selects the operating mode of the comparator and allows }\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___init_type_def_a02555565ed5d2bb6b38752940c0dc8ea}{COMP\_Filter}}\\
+\>\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___init_type_def_ad0ae84381ed4e3abb50ec3202e34fd42}{OFLT}}\\
+\>\>{\em to adjust the speed/consumption. }\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+COMP Init structure definition 
+
+在文件 \mbox{\hyperlink{hal__comp_8h_source}{hal\+\_\+comp.\+h}} 第 \mbox{\hyperlink{hal__comp_8h_source_l00125}{125}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{struct_c_o_m_p___init_type_def_aceeed6ba8bef11c27142d5b6c9ba9dd6}\label{struct_c_o_m_p___init_type_def_aceeed6ba8bef11c27142d5b6c9ba9dd6}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  COMP\+\_\+\+Init\+Type\+Def\+::@51}
+
+\mbox{\Hypertarget{struct_c_o_m_p___init_type_def_aba3a67e1acf2cdffdab469faac608b11}\label{struct_c_o_m_p___init_type_def_aba3a67e1acf2cdffdab469faac608b11}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  COMP\+\_\+\+Init\+Type\+Def\+::@53}
+
+\mbox{\Hypertarget{struct_c_o_m_p___init_type_def_a42beac2edecf6fe20f3d4e1daa2ffde2}\label{struct_c_o_m_p___init_type_def_a42beac2edecf6fe20f3d4e1daa2ffde2}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  COMP\+\_\+\+Init\+Type\+Def\+::@55}
+
+\mbox{\Hypertarget{struct_c_o_m_p___init_type_def_ac667dc8acc9f2ca14236e3ce92b7a89e}\label{struct_c_o_m_p___init_type_def_ac667dc8acc9f2ca14236e3ce92b7a89e}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  COMP\+\_\+\+Init\+Type\+Def\+::@57}
+
+\mbox{\Hypertarget{struct_c_o_m_p___init_type_def_aaf0805ba0a14177a3bdc2831f3c17796}\label{struct_c_o_m_p___init_type_def_aaf0805ba0a14177a3bdc2831f3c17796}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  COMP\+\_\+\+Init\+Type\+Def\+::@59}
+
+\mbox{\Hypertarget{struct_c_o_m_p___init_type_def_ad0eeb7bfcda3e02f615d45a2c8561ce2}\label{struct_c_o_m_p___init_type_def_ad0eeb7bfcda3e02f615d45a2c8561ce2}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  COMP\+\_\+\+Init\+Type\+Def\+::@61}
+
+\mbox{\Hypertarget{struct_c_o_m_p___init_type_def_a822e39bc249fd2d8e96eaf4ebae5dead}\label{struct_c_o_m_p___init_type_def_a822e39bc249fd2d8e96eaf4ebae5dead}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  COMP\+\_\+\+Init\+Type\+Def\+::@63}
+
+\mbox{\Hypertarget{struct_c_o_m_p___init_type_def_a35552bc1dae7b302739fe96fbb006037}\label{struct_c_o_m_p___init_type_def_a35552bc1dae7b302739fe96fbb006037}} 
+\index{COMP\_InitTypeDef@{COMP\_InitTypeDef}!BlankingSrce@{BlankingSrce}}
+\index{BlankingSrce@{BlankingSrce}!COMP\_InitTypeDef@{COMP\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{BlankingSrce}{BlankingSrce}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Init\+Type\+Def\+::\+Blanking\+Srce}
+
+
+
+Selects the output blanking source of the comparator. 
+
+
+
+在文件 \mbox{\hyperlink{hal__comp_8h_source}{hal\+\_\+comp.\+h}} 第 \mbox{\hyperlink{hal__comp_8h_source_l00137}{137}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___init_type_def_a02555565ed5d2bb6b38752940c0dc8ea}\label{struct_c_o_m_p___init_type_def_a02555565ed5d2bb6b38752940c0dc8ea}} 
+\index{COMP\_InitTypeDef@{COMP\_InitTypeDef}!COMP\_Filter@{COMP\_Filter}}
+\index{COMP\_Filter@{COMP\_Filter}!COMP\_InitTypeDef@{COMP\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{COMP\_Filter}{COMP\_Filter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Init\+Type\+Def\+::\+COMP\+\_\+\+Filter}
+
+
+
+在文件 \mbox{\hyperlink{hal__comp_8h_source}{hal\+\_\+comp.\+h}} 第 \mbox{\hyperlink{hal__comp_8h_source_l00152}{152}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___init_type_def_ae2a9ec7486ecf69d7fad2cfd32418076}\label{struct_c_o_m_p___init_type_def_ae2a9ec7486ecf69d7fad2cfd32418076}} 
+\index{COMP\_InitTypeDef@{COMP\_InitTypeDef}!COMP\_Hysteresis@{COMP\_Hysteresis}}
+\index{COMP\_Hysteresis@{COMP\_Hysteresis}!COMP\_InitTypeDef@{COMP\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{COMP\_Hysteresis}{COMP\_Hysteresis}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Init\+Type\+Def\+::\+COMP\+\_\+\+Hysteresis}
+
+
+
+在文件 \mbox{\hyperlink{hal__comp_8h_source}{hal\+\_\+comp.\+h}} 第 \mbox{\hyperlink{hal__comp_8h_source_l00144}{144}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___init_type_def_aed0160c575ce41db40fd76e8fcafddd3}\label{struct_c_o_m_p___init_type_def_aed0160c575ce41db40fd76e8fcafddd3}} 
+\index{COMP\_InitTypeDef@{COMP\_InitTypeDef}!COMP\_InvertingInput@{COMP\_InvertingInput}}
+\index{COMP\_InvertingInput@{COMP\_InvertingInput}!COMP\_InitTypeDef@{COMP\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{COMP\_InvertingInput}{COMP\_InvertingInput}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Init\+Type\+Def\+::\+COMP\+\_\+\+Inverting\+Input}
+
+
+
+在文件 \mbox{\hyperlink{hal__comp_8h_source}{hal\+\_\+comp.\+h}} 第 \mbox{\hyperlink{hal__comp_8h_source_l00127}{127}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___init_type_def_ae4a55fb4c32efd15957ef29178bd6245}\label{struct_c_o_m_p___init_type_def_ae4a55fb4c32efd15957ef29178bd6245}} 
+\index{COMP\_InitTypeDef@{COMP\_InitTypeDef}!COMP\_Mode@{COMP\_Mode}}
+\index{COMP\_Mode@{COMP\_Mode}!COMP\_InitTypeDef@{COMP\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{COMP\_Mode}{COMP\_Mode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Init\+Type\+Def\+::\+COMP\+\_\+\+Mode}
+
+
+
+在文件 \mbox{\hyperlink{hal__comp_8h_source}{hal\+\_\+comp.\+h}} 第 \mbox{\hyperlink{hal__comp_8h_source_l00148}{148}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___init_type_def_ae222b8042c72dbd6cc1338dc18ba404f}\label{struct_c_o_m_p___init_type_def_ae222b8042c72dbd6cc1338dc18ba404f}} 
+\index{COMP\_InitTypeDef@{COMP\_InitTypeDef}!COMP\_NonInvertingInput@{COMP\_NonInvertingInput}}
+\index{COMP\_NonInvertingInput@{COMP\_NonInvertingInput}!COMP\_InitTypeDef@{COMP\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{COMP\_NonInvertingInput}{COMP\_NonInvertingInput}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Init\+Type\+Def\+::\+COMP\+\_\+\+Non\+Inverting\+Input}
+
+
+
+在文件 \mbox{\hyperlink{hal__comp_8h_source}{hal\+\_\+comp.\+h}} 第 \mbox{\hyperlink{hal__comp_8h_source_l00131}{131}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___init_type_def_aef661def2f01e46ed3dcfb61c414b0a0}\label{struct_c_o_m_p___init_type_def_aef661def2f01e46ed3dcfb61c414b0a0}} 
+\index{COMP\_InitTypeDef@{COMP\_InitTypeDef}!COMP\_Output@{COMP\_Output}}
+\index{COMP\_Output@{COMP\_Output}!COMP\_InitTypeDef@{COMP\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{COMP\_Output}{COMP\_Output}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Init\+Type\+Def\+::\+COMP\+\_\+\+Output}
+
+
+
+在文件 \mbox{\hyperlink{hal__comp_8h_source}{hal\+\_\+comp.\+h}} 第 \mbox{\hyperlink{hal__comp_8h_source_l00135}{135}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___init_type_def_a5c1a88442165957167c211e0c630293c}\label{struct_c_o_m_p___init_type_def_a5c1a88442165957167c211e0c630293c}} 
+\index{COMP\_InitTypeDef@{COMP\_InitTypeDef}!COMP\_OutputPol@{COMP\_OutputPol}}
+\index{COMP\_OutputPol@{COMP\_OutputPol}!COMP\_InitTypeDef@{COMP\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{COMP\_OutputPol}{COMP\_OutputPol}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Init\+Type\+Def\+::\+COMP\+\_\+\+Output\+Pol}
+
+
+
+在文件 \mbox{\hyperlink{hal__comp_8h_source}{hal\+\_\+comp.\+h}} 第 \mbox{\hyperlink{hal__comp_8h_source_l00140}{140}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___init_type_def_a3d45a494f709ac8f14bbd7b34e3faee2}\label{struct_c_o_m_p___init_type_def_a3d45a494f709ac8f14bbd7b34e3faee2}} 
+\index{COMP\_InitTypeDef@{COMP\_InitTypeDef}!Hysteresis@{Hysteresis}}
+\index{Hysteresis@{Hysteresis}!COMP\_InitTypeDef@{COMP\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{Hysteresis}{Hysteresis}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Init\+Type\+Def\+::\+Hysteresis}
+
+
+
+Selects the hysteresis voltage of the comparator. 
+
+
+
+在文件 \mbox{\hyperlink{hal__comp_8h_source}{hal\+\_\+comp.\+h}} 第 \mbox{\hyperlink{hal__comp_8h_source_l00145}{145}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___init_type_def_adad4ccd9c2bb20b49079043ae3822c76}\label{struct_c_o_m_p___init_type_def_adad4ccd9c2bb20b49079043ae3822c76}} 
+\index{COMP\_InitTypeDef@{COMP\_InitTypeDef}!Invert@{Invert}}
+\index{Invert@{Invert}!COMP\_InitTypeDef@{COMP\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{Invert}{Invert}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Init\+Type\+Def\+::\+Invert}
+
+
+
+Selects the inverting input of the comparator. 
+
+
+
+在文件 \mbox{\hyperlink{hal__comp_8h_source}{hal\+\_\+comp.\+h}} 第 \mbox{\hyperlink{hal__comp_8h_source_l00128}{128}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___init_type_def_a47c14a6e83a7a6492d56908f618ea0e6}\label{struct_c_o_m_p___init_type_def_a47c14a6e83a7a6492d56908f618ea0e6}} 
+\index{COMP\_InitTypeDef@{COMP\_InitTypeDef}!Mode@{Mode}}
+\index{Mode@{Mode}!COMP\_InitTypeDef@{COMP\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{Mode}{Mode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Init\+Type\+Def\+::\+Mode}
+
+
+
+Selects the operating mode of the comparator and allows 
+
+
+
+在文件 \mbox{\hyperlink{hal__comp_8h_source}{hal\+\_\+comp.\+h}} 第 \mbox{\hyperlink{hal__comp_8h_source_l00149}{149}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___init_type_def_a2c121820409f6a8ec007034abf317e3c}\label{struct_c_o_m_p___init_type_def_a2c121820409f6a8ec007034abf317e3c}} 
+\index{COMP\_InitTypeDef@{COMP\_InitTypeDef}!NonInvert@{NonInvert}}
+\index{NonInvert@{NonInvert}!COMP\_InitTypeDef@{COMP\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{NonInvert}{NonInvert}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Init\+Type\+Def\+::\+Non\+Invert}
+
+
+
+Selects the non inverting input of the comparator. 
+
+
+
+在文件 \mbox{\hyperlink{hal__comp_8h_source}{hal\+\_\+comp.\+h}} 第 \mbox{\hyperlink{hal__comp_8h_source_l00132}{132}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___init_type_def_ad0ae84381ed4e3abb50ec3202e34fd42}\label{struct_c_o_m_p___init_type_def_ad0ae84381ed4e3abb50ec3202e34fd42}} 
+\index{COMP\_InitTypeDef@{COMP\_InitTypeDef}!OFLT@{OFLT}}
+\index{OFLT@{OFLT}!COMP\_InitTypeDef@{COMP\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{OFLT}{OFLT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Init\+Type\+Def\+::\+OFLT}
+
+
+
+to adjust the speed/consumption. 
+
+
+
+在文件 \mbox{\hyperlink{hal__comp_8h_source}{hal\+\_\+comp.\+h}} 第 \mbox{\hyperlink{hal__comp_8h_source_l00153}{153}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___init_type_def_a19bd18bf958dd36acd5fd7e652af3169}\label{struct_c_o_m_p___init_type_def_a19bd18bf958dd36acd5fd7e652af3169}} 
+\index{COMP\_InitTypeDef@{COMP\_InitTypeDef}!Output@{Output}}
+\index{Output@{Output}!COMP\_InitTypeDef@{COMP\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{Output}{Output}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Init\+Type\+Def\+::\+Output}
+
+
+
+Selects the output redirection of the comparator. 
+
+
+
+在文件 \mbox{\hyperlink{hal__comp_8h_source}{hal\+\_\+comp.\+h}} 第 \mbox{\hyperlink{hal__comp_8h_source_l00136}{136}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___init_type_def_a66e79d4411e0d438c167def1264a262e}\label{struct_c_o_m_p___init_type_def_a66e79d4411e0d438c167def1264a262e}} 
+\index{COMP\_InitTypeDef@{COMP\_InitTypeDef}!OutputPol@{OutputPol}}
+\index{OutputPol@{OutputPol}!COMP\_InitTypeDef@{COMP\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{OutputPol}{OutputPol}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Init\+Type\+Def\+::\+Output\+Pol}
+
+
+
+Selects the output polarity of the comparator. 
+
+
+
+在文件 \mbox{\hyperlink{hal__comp_8h_source}{hal\+\_\+comp.\+h}} 第 \mbox{\hyperlink{hal__comp_8h_source_l00141}{141}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Inc/\mbox{\hyperlink{hal__comp_8h}{hal\+\_\+comp.\+h}}\end{DoxyCompactItemize}

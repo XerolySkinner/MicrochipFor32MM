@@ -1,0 +1,1429 @@
+\hypertarget{group___g_p_i_o___exported___types}{}\doxysection{GPIO\+\_\+\+Exported\+\_\+\+Types}
+\label{group___g_p_i_o___exported___types}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsection*{模块}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group___s_d_i_o}{ָinstruction set}}
+\item 
+\mbox{\hyperlink{group___following}{commands are SD Card Specific commands.}}
+\item 
+\mbox{\hyperlink{group___s_d}{support define.}}
+\item 
+\mbox{\hyperlink{group___mask}{for errors Card Status R1 (\+OCR Register)}}
+\item 
+\mbox{\hyperlink{group___masks}{for R6 Response}}
+\item 
+\mbox{\hyperlink{group___i2_c___exported___functions}{I2\+C\+\_\+\+Exported\+\_\+\+Functions}}
+\end{DoxyCompactItemize}
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_g_p_i_o___init_type_def}{GPIO\+\_\+\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em GPIO Init structure definition \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_s_d___c_s_d}{SD\+\_\+\+CSD}}
+\begin{DoxyCompactList}\small\item\em SD card CSD register data \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_s_d___c_i_d}{SD\+\_\+\+CID}}
+\begin{DoxyCompactList}\small\item\em SD card CID register data \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_s_d___card_info}{SD\+\_\+\+Card\+Info}}
+\begin{DoxyCompactList}\small\item\em SD message ,include CSD,CID data \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_s_d_i_o___init_type_def}{SDIO\+\_\+\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em SDIO init \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_s_d_i_o___cmd_init_type_def}{SDIO\+\_\+\+Cmd\+Init\+Type\+Def}}
+\item 
+struct \mbox{\hyperlink{struct_s_d_i_o___data_init_type_def}{SDIO\+\_\+\+Data\+Init\+Type\+Def}}
+\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga8ff1f3960378e05ec3c949940e1c49d0}{SDIO\+\_\+\+FLAG\+\_\+\+CCRCFAIL}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000001)
+\begin{DoxyCompactList}\small\item\em Output Maximum frequency selection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga6de936ea11cbc79444d519268ad9f9bd}{SDIO\+\_\+\+FLAG\+\_\+\+DCRCFAIL}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000002)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga7389f64ff6cfa4f459bf852b5faede30}{SDIO\+\_\+\+FLAG\+\_\+\+CTIMEOUT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000004)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga2d2fd219dd9fea522862195ab9568345}{SDIO\+\_\+\+FLAG\+\_\+\+DTIMEOUT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gabd18f8e5d5387a38dccbe1bf28ae5dbc}{SDIO\+\_\+\+FLAG\+\_\+\+TXUNDERR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000010)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gad49d60039e40d31b734cfacf90caa84f}{SDIO\+\_\+\+FLAG\+\_\+\+RXOVERR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000020)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga083531db75a1e4c05c47578763d53af1}{SDIO\+\_\+\+FLAG\+\_\+\+CMDREND}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000040)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gac81f3837aac17a6aed7310a8ea460f17}{SDIO\+\_\+\+FLAG\+\_\+\+CMDSENT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000080)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gaaacb2f6207c149e05f8bdd70e5d49926}{SDIO\+\_\+\+FLAG\+\_\+\+DATAEND}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000100)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gae83f7cb3fa1183898131f3de47c2333e}{SDIO\+\_\+\+FLAG\+\_\+\+STBITERR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000200)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga5452d8033567821709bd7d5f06547b70}{SDIO\+\_\+\+FLAG\+\_\+\+DBCKEND}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000400)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gad12a9b2bd30e7b907cbabfd92fc645b3}{SDIO\+\_\+\+FLAG\+\_\+\+CMDACT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000800)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gad5d075c98012586b169ec131aab2eeb5}{SDIO\+\_\+\+FLAG\+\_\+\+TXACT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00001000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gacc935dd830338970890a05922dff8ab7}{SDIO\+\_\+\+FLAG\+\_\+\+RXACT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00002000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gae9277461d3c8984dc31af318e2df1959}{SDIO\+\_\+\+FLAG\+\_\+\+TXFIFOHE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00004000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga8c5942ae3df21efad2d7c61a46015758}{SDIO\+\_\+\+FLAG\+\_\+\+RXFIFOHF}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00008000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gad3ca936300ef251639a4cfbe2f63b6b8}{SDIO\+\_\+\+FLAG\+\_\+\+TXFIFOF}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00010000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gaf92cb783f000b8d946fe8ace81b51df2}{SDIO\+\_\+\+FLAG\+\_\+\+RXFIFOF}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00020000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gac41ef05773abad79b4b0c443a77733db}{SDIO\+\_\+\+FLAG\+\_\+\+TXFIFOE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00040000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga59ea7e2dc22df742053c5e525b98599d}{SDIO\+\_\+\+FLAG\+\_\+\+RXFIFOE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00080000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga9c6620d6b16b6af19d3e14f40e688631}{SDIO\+\_\+\+FLAG\+\_\+\+TXDAVL}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00100000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga7558b354658171bb6aa1b6f1e16d8e21}{SDIO\+\_\+\+FLAG\+\_\+\+RXDAVL}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00200000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gae888ec1c9885c35a5f8e01bcffe324a1}{SDIO\+\_\+\+FLAG\+\_\+\+SDIOIT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00400000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga3c8d09a405944948e7a1c5493d49aff1}{SDIO\+\_\+\+FLAG\+\_\+\+CEATAEND}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00800000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gaab8ed7f9a9d82da979eb76222f04db7f}{SD\+\_\+\+POLLING\+\_\+\+MODE}}~0
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gad3f9516a5e6764baf2083f76f4bc0eea}{SD\+\_\+\+DMA\+\_\+\+MODE}}~1
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}~0
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gab07b969cd21592c74e8ad5d929e97055}{SDIO\+\_\+\+STATIC\+\_\+\+FLAGS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x000005\+FF)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga451e336c7bc16567a28475fcb75c9828}{SDIO\+\_\+\+CMD0\+TIMEOUT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00010000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga382d18d77d13eec35d8378641681998e}{SDIO\+\_\+\+DATATIMEOUT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x\+FFFFFFFF)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga159336f05115165cc73502767aab0518}{SDIO\+\_\+\+FIFO\+\_\+\+Address}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x40018080)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga0c04dbb0a43806365bea64893961079e}{SD\+\_\+\+VOLTAGE\+\_\+\+WINDOW\+\_\+\+SD}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x80100000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gad5a86eaeba6869b6b2139b92ddfb3a1f}{SD\+\_\+\+HIGH\+\_\+\+CAPACITY}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x40000000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga3cb5fdbf46102857a99b044415873f14}{SD\+\_\+\+STD\+\_\+\+CAPACITY}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gac37389a0323f1a04aec2b59c905f0f6a}{SD\+\_\+\+CHECK\+\_\+\+PATTERN}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x000001\+AA)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gac3500603f00e9b96f513b8464e4b3270}{SD\+\_\+\+VOLTAGE\+\_\+\+WINDOW\+\_\+\+MMC}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x80\+FF8000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga8166660dfea1f2a865e30a8f86269b7f}{SD\+\_\+\+MAX\+\_\+\+VOLT\+\_\+\+TRIAL}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000\+FFFF)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gaa989d106109048a2fb453928325d1f7d}{SD\+\_\+\+ALLZERO}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga6877313126588b7f2ce96f9b4d9a59b1}{SD\+\_\+\+WIDE\+\_\+\+BUS\+\_\+\+SUPPORT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00040000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gadfcb6043212373c69f3f740732f5d2b2}{SD\+\_\+\+SINGLE\+\_\+\+BUS\+\_\+\+SUPPORT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00010000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga0560d0e5f15b8c676bd1c53bf0ac381f}{SD\+\_\+\+CARD\+\_\+\+LOCKED}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x02000000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gad109f64b893f8dc28265271dd74c3027}{SD\+\_\+\+CARD\+\_\+\+PROGRAMMING}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000007)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga289ac705245cf4d150b07b44aecbac54}{SD\+\_\+\+CARD\+\_\+\+RECEIVING}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000006)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga9ca34cf6f4e38835347bc2dc29f9469e}{SD\+\_\+\+DATATIMEOUT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x\+FFFFFFFF)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga37de3e6a7edfd787d09efddc589120ae}{SD\+\_\+0\+TO7\+BITS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x000000\+FF)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga2057731e114d40de0d0d6d2ff74f1501}{SD\+\_\+8\+TO15\+BITS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000\+FF00)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga177a89af799d66f7782e6e8dd4e1438f}{SD\+\_\+16\+TO23\+BITS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00\+FF0000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga3d61f23b4fcf1efb4a16b26bd1f54550}{SD\+\_\+24\+TO31\+BITS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x\+FF000000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga3be502d718368f47d02b554e863f30b1}{SD\+\_\+\+MAX\+\_\+\+DATA\+\_\+\+LENGTH}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01\+FFFFFF)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga96eec3ea095e393f51ab2686d928908c}{SD\+\_\+\+HALFFIFO}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga95cd045964036c67c40103ab6aa504b7}{SD\+\_\+\+HALFFIFOBYTES}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000020)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gac93a99c6a0f8999f37e690d6955872ac}{SD\+\_\+\+CCCC\+\_\+\+LOCK\+\_\+\+UNLOCK}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000080)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gad8cbc04a4adf7c5588ddeb8e29f391f2}{SD\+\_\+\+CCCC\+\_\+\+WRITE\+\_\+\+PROT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000040)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gaf8f161db032555d848d233e6883e1ddf}{SD\+\_\+\+CCCC\+\_\+\+ERASE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000020)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gafe1c9bdbdccf901be62203bf5547147e}{SDIO\+\_\+\+SEND\+\_\+\+IF\+\_\+\+COND}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga308b8ef0e79ba451644dda923bb3ac41}{SDIO\+\_\+\+Response\+\_\+\+No}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga1f61768f90641648fd5c12e8d2f7e508}{SDIO\+\_\+\+Response\+\_\+\+Short}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga1a11a8750612b344214f846784046bb0}{SDIO\+\_\+\+Response\+\_\+\+Long}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x03)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gaa86e90ddc3426b242a5230b3360c620d}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+1b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga7209d9d52635b66df85712c6fcd668ea}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+2b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000001)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga59cbaecfdebd63177d1208c268626f0a}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+4b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000002)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga14f91159c8c4faf49a335ed9b6a94d0b}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+8b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000003)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga52a7bdab9a75edd94d9c1152e8b078e2}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+16b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000004)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gad0f89aa989c0cedf8d69eb28548413ca}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+32b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000005)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga981c219228ae8df11a501e15843338d4}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+64b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000006)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gaba545c3a5e0f3296341d89a647cb9751}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+128b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000007)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gaa099d7706f98a4fa6eb88277dc6680cf}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+256b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gaa619848f7700962c5b7065f43e286e0b}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+512b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000009)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga7dad3c1c33e63a00eb6301b0a1135baf}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+1024b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000000A)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga41eb937621c7ffcf2688c6bc0ea31464}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+2048b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000000B)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga360411488abdbaf9eee9b99fca793f79}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+4096b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000000C)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gaf61913f3eff52c0f728db9ffbdaca7d2}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+8192b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000000D)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gae80bc49dbed677f7087d523c31fe10ae}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+16384b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000000E)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gaef8af0ffa4ea04b3362338d268cc0935}{SDIO\+\_\+\+Transfer\+Dir\+\_\+\+To\+Card}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga55a6d9613d3e2e7762296b45d0d13222}{SDIO\+\_\+\+Transfer\+Dir\+\_\+\+To\+SDIO}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000002)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga266294e1ffd7a4b45e62bff753ca44b2}{SDIO\+\_\+\+Wait\+\_\+\+No}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga3914bbe26a656c8e151272ccdc12c71c}{SDIO\+\_\+\+Wait\+\_\+\+IT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000100)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga2a4104023a7f8403ddd159ec3bbb8592}{SDIO\+\_\+\+Wait\+\_\+\+Pend}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000200)
+\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___g_p_i_o___exported___types_ga062ad92b67b4a1f301c161022cf3ba8e}{GPIOSpeed\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___g_p_i_o___exported___types_gga062ad92b67b4a1f301c161022cf3ba8ea9c47db10456202ac05134b12738ce581}{GPIO\+\_\+\+Speed\+\_\+50\+MHz}} = 1
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_gga062ad92b67b4a1f301c161022cf3ba8eac592eaa5f1bb7114d64d2376cbfc31f1}{GPIO\+\_\+\+Speed\+\_\+20\+MHz}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_gga062ad92b67b4a1f301c161022cf3ba8ea8c567e4b0186e3708cd7020c13da6439}{GPIO\+\_\+\+Speed\+\_\+10\+MHz}}
+ \}
+\begin{DoxyCompactList}\small\item\em Output Maximum frequency selection \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___g_p_i_o___exported___types_ga1347339e1c84a196fabbb31205eec5d4}{GPIOMode\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4a3b9a166bf59b96c68c5c0c59811b80fc}{GPIO\+\_\+\+Mode\+\_\+\+AIN}} = 0x00
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4ab945d0227191c1738bb70ee36108af54}{GPIO\+\_\+\+Mode\+\_\+\+FLOATING}} = 0x04
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4ad5b7c382c280d0b14786aa7e0af783dc}{GPIO\+\_\+\+Mode\+\_\+\+IPD}} = 0x28
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4adc5187fa416ea708ee4cb445ef2c59e7}{GPIO\+\_\+\+Mode\+\_\+\+IPU}} = 0x48
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4a629b05b1e9adee098eaf648b044dde0b}{GPIO\+\_\+\+Mode\+\_\+\+Out\+\_\+\+OD}} = 0x14
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4a0eee8242abb8f2f8a97bbdf0f1dc59b2}{GPIO\+\_\+\+Mode\+\_\+\+Out\+\_\+\+PP}} = 0x10
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4ac34bf80d30de7b34444c9cbdb20695b5}{GPIO\+\_\+\+Mode\+\_\+\+AF\+\_\+\+OD}} = 0x1C
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4a5c7a69abc1bf31a8d24e896ed94bded9}{GPIO\+\_\+\+Mode\+\_\+\+AF\+\_\+\+PP}} = 0x18
+ \}
+\begin{DoxyCompactList}\small\item\em Configuration Mode enumeration \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___g_p_i_o___exported___types_ga176130b21c0e719121470a6042d4cf19}{Bit\+Action}} \{ \mbox{\hyperlink{group___g_p_i_o___exported___types_gga176130b21c0e719121470a6042d4cf19ae2c026f2b44a949f82a65f3385edef09}{Bit\+\_\+\+RESET}} = 0
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_gga176130b21c0e719121470a6042d4cf19a3c477841a6ceec13fe47ef322432b992}{Bit\+\_\+\+SET}}
+ \}
+\begin{DoxyCompactList}\small\item\em Bit\+\_\+\+SET and Bit\+\_\+\+RESET enumeration \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \{ \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca6dfaca7c6ace1889e0294f4ec3ec535c}{SD\+\_\+\+CMD\+\_\+\+CRC\+\_\+\+FAIL}} = 1
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cad99fcef385ca3270d3bce97ed972ff1c}{SD\+\_\+\+DATA\+\_\+\+CRC\+\_\+\+FAIL}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cae1c1b2d0962bd3f40490b15aed01c8ff}{SD\+\_\+\+CMD\+\_\+\+RSP\+\_\+\+TIMEOUT}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cac5f321853ccd7c8aaa571afab467dddd}{SD\+\_\+\+DATA\+\_\+\+TIMEOUT}}
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca7b3c2c028697b45c7e4ab738dfb32732}{SD\+\_\+\+TX\+\_\+\+UNDERRUN}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca8536106ed9ebb00c16d0f42d78f31e37}{SD\+\_\+\+RX\+\_\+\+OVERRUN}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cacc0291fc528b2bb330ca1487a8a3f3cd}{SD\+\_\+\+START\+\_\+\+BIT\+\_\+\+ERR}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca2435ce658dcb58fc0970c9750fecbf10}{SD\+\_\+\+CMD\+\_\+\+OUT\+\_\+\+OF\+\_\+\+RANGE}}
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cac862cc999fa6648eeb631ea82a07a51e}{SD\+\_\+\+ADDR\+\_\+\+MISALIGNED}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cadd08e6cdc391423ee7c1ba246faf42c3}{SD\+\_\+\+BLOCK\+\_\+\+LEN\+\_\+\+ERR}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cae83866c46e2c68646ce05ff3707b042e}{SD\+\_\+\+ERASE\+\_\+\+SEQ\+\_\+\+ERR}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cac52c7addfcb59055f5701898c3484d06}{SD\+\_\+\+BAD\+\_\+\+ERASE\+\_\+\+PARAM}}
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca4e295d82b6481694f927367f35aa182d}{SD\+\_\+\+WRITE\+\_\+\+PROT\+\_\+\+VIOLATION}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca093949ff310e17d6596e686804cd0e1e}{SD\+\_\+\+LOCK\+\_\+\+UNLOCK\+\_\+\+FAILED}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca01a35bd6664353a1af3b9ac093acdf94}{SD\+\_\+\+COM\+\_\+\+CRC\+\_\+\+FAILED}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca7fefea39264d07dd179b12be8bf2e51c}{SD\+\_\+\+ILLEGAL\+\_\+\+CMD}}
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca283091b73f40d5c229c2c3f3d0f4cb74}{SD\+\_\+\+CARD\+\_\+\+ECC\+\_\+\+FAILED}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca2c6401e2495de3d9fd3b41c273fda150}{SD\+\_\+\+CC\+\_\+\+ERROR}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca46c693b1502d9e2137ead7857cfe5f9b}{SD\+\_\+\+GENERAL\+\_\+\+UNKNOWN\+\_\+\+ERROR}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8caadb3266a9761e9e3d82c1b2512ef6668}{SD\+\_\+\+STREAM\+\_\+\+READ\+\_\+\+UNDERRUN}}
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca3847c922ab4b7f94469768c63084af6b}{SD\+\_\+\+STREAM\+\_\+\+WRITE\+\_\+\+OVERRUN}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cadc80e2b4a985f211d85fae68e15fd136}{SD\+\_\+\+CID\+\_\+\+CSD\+\_\+\+OVERWRITE}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca07b0cc4f75330bdc7efb59f3b3492a3f}{SD\+\_\+\+WP\+\_\+\+ERASE\+\_\+\+SKIP}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca4db59f403f83442543a1f1bef242efbd}{SD\+\_\+\+CARD\+\_\+\+ECC\+\_\+\+DISABLED}}
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca59f8949439bd7871cb2cf3238c6282c5}{SD\+\_\+\+ERASE\+\_\+\+RESET}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cafbcf7369094d1a0fa1932c552ab45382}{SD\+\_\+\+AKE\+\_\+\+SEQ\+\_\+\+ERROR}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca97d498fc349b05a8945156a9f3ccdff5}{SD\+\_\+\+INVALID\+\_\+\+VOLTRANGE}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca82b0b9ba6052f6f2bd0bee7e79cf8ef3}{SD\+\_\+\+ADDR\+\_\+\+OUT\+\_\+\+OF\+\_\+\+RANGE}}
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca9566932cb0ad8fe80d5610da9d11fb55}{SD\+\_\+\+SWITCH\+\_\+\+ERROR}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca9e97f8897dab543749255331f57ae1a7}{SD\+\_\+\+SDIO\+\_\+\+DISABLED}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cae4e66b4e0f2a5f5a49b3c785d9905e8b}{SD\+\_\+\+SDIO\+\_\+\+FUNCTION\+\_\+\+BUSY}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8caab75aa11f151a11569079c41d019ef3c}{SD\+\_\+\+SDIO\+\_\+\+FUNCTION\+\_\+\+FAILED}}
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca544f7094c7417e8e3be527d83c65d024}{SD\+\_\+\+SDIO\+\_\+\+UNKNOWN\+\_\+\+FUNCTION}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca3edc8995af0f0ca919abd400d01d235d}{SD\+\_\+\+INTERNAL\+\_\+\+ERROR}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cad2334607a2604507143ebbd5fcc82876}{SD\+\_\+\+NOT\+\_\+\+CONFIGURED}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca48c30b9e7fbd21a2e3dc134b9d0c8bff}{SD\+\_\+\+REQUEST\+\_\+\+PENDING}}
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cada6e80166445f5ee6b7e808a4e7aff23}{SD\+\_\+\+REQUEST\+\_\+\+NOT\+\_\+\+APPLICABLE}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca1111de40fd22949b14d492954755a70c}{SD\+\_\+\+INVALID\+\_\+\+PARAMETER}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca788dcef7dd77feb8a8ba97d84813a8fb}{SD\+\_\+\+UNSUPPORTED\+\_\+\+FEATURE}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca280d7d545d73078027a223ff35a2b696}{SD\+\_\+\+UNSUPPORTED\+\_\+\+HW}}
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca0002d0c8feceb0fb4cd7d9fc96066c3d}{SD\+\_\+\+ERROR}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cae7d9e30a15fd1bc4b2cd8f10208e76a6}{SD\+\_\+\+OK}} = 0
+ \}
+\begin{DoxyCompactList}\small\item\em SDIO Various error enumeration definitions \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___g_p_i_o___exported___types_gacdc2533a9bff7dc10def0945f5915398}{SDCard\+State}} \{ \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a7105d3ddde877b8d09471eb482fb5520}{SD\+\_\+\+CARD\+\_\+\+READY}} = ((u32)0x00000001)
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a18689e3260641d154376eba9a1e3da47}{SD\+\_\+\+CARD\+\_\+\+IDENTIFICATION}} = ((u32)0x00000002)
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a6e24b45fe387177e2383bac672525f1a}{SD\+\_\+\+CARD\+\_\+\+STANDBY}} = ((u32)0x00000003)
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a090f585cfc114861ad07114914a3ad1d}{SD\+\_\+\+CARD\+\_\+\+TRANSFER}} = ((u32)0x00000004)
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a23dec93b22009b39f7b7311f22a7c396}{SD\+\_\+\+CARD\+\_\+\+SENDING}} = ((u32)0x00000005)
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a467165b416761a4858546d616c8dac12}{SD\+\_\+\+CARD\+\_\+\+RECEIVING}} = ((u32)0x00000006)
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398aa72e3de9b7ac3217b05862ec2412c6cc}{SD\+\_\+\+CARD\+\_\+\+PROGRAMMING}} = ((u32)0x00000007)
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398ac5dd213f085b94ecd3735f15d6a257ec}{SD\+\_\+\+CARD\+\_\+\+DISCONNECTED}} = ((u32)0x00000008)
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398aed9c89d9fc0101e995ae957f132af14c}{SD\+\_\+\+CARD\+\_\+\+ERROR}} = ((u32)0x000000\+FF)
+ \}
+\begin{DoxyCompactList}\small\item\em SD state \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_s_d___card_info}{SD\+\_\+\+Card\+Info}} \mbox{\hyperlink{group___g_p_i_o___exported___types_gad9b4efaae93cd75532b18c0528a4ca3d}{SDCard\+Info}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga070d2ce7b6bb7e5c05602aa8c308d0c4}\label{group___g_p_i_o___exported___types_ga070d2ce7b6bb7e5c05602aa8c308d0c4}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!NULL@{NULL}}
+\index{NULL@{NULL}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{NULL}{NULL}}
+{\footnotesize\ttfamily \#define NULL~0}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00348}{348}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga37de3e6a7edfd787d09efddc589120ae}\label{group___g_p_i_o___exported___types_ga37de3e6a7edfd787d09efddc589120ae}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_0TO7BITS@{SD\_0TO7BITS}}
+\index{SD\_0TO7BITS@{SD\_0TO7BITS}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_0TO7BITS}{SD\_0TO7BITS}}
+{\footnotesize\ttfamily \#define SD\+\_\+0\+TO7\+BITS~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x000000\+FF)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00401}{401}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga177a89af799d66f7782e6e8dd4e1438f}\label{group___g_p_i_o___exported___types_ga177a89af799d66f7782e6e8dd4e1438f}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_16TO23BITS@{SD\_16TO23BITS}}
+\index{SD\_16TO23BITS@{SD\_16TO23BITS}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_16TO23BITS}{SD\_16TO23BITS}}
+{\footnotesize\ttfamily \#define SD\+\_\+16\+TO23\+BITS~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00\+FF0000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00403}{403}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga3d61f23b4fcf1efb4a16b26bd1f54550}\label{group___g_p_i_o___exported___types_ga3d61f23b4fcf1efb4a16b26bd1f54550}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_24TO31BITS@{SD\_24TO31BITS}}
+\index{SD\_24TO31BITS@{SD\_24TO31BITS}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_24TO31BITS}{SD\_24TO31BITS}}
+{\footnotesize\ttfamily \#define SD\+\_\+24\+TO31\+BITS~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x\+FF000000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00404}{404}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga2057731e114d40de0d0d6d2ff74f1501}\label{group___g_p_i_o___exported___types_ga2057731e114d40de0d0d6d2ff74f1501}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_8TO15BITS@{SD\_8TO15BITS}}
+\index{SD\_8TO15BITS@{SD\_8TO15BITS}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_8TO15BITS}{SD\_8TO15BITS}}
+{\footnotesize\ttfamily \#define SD\+\_\+8\+TO15\+BITS~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000\+FF00)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00402}{402}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gaa989d106109048a2fb453928325d1f7d}\label{group___g_p_i_o___exported___types_gaa989d106109048a2fb453928325d1f7d}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_ALLZERO@{SD\_ALLZERO}}
+\index{SD\_ALLZERO@{SD\_ALLZERO}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_ALLZERO}{SD\_ALLZERO}}
+{\footnotesize\ttfamily \#define SD\+\_\+\+ALLZERO~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00393}{393}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga0560d0e5f15b8c676bd1c53bf0ac381f}\label{group___g_p_i_o___exported___types_ga0560d0e5f15b8c676bd1c53bf0ac381f}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CARD\_LOCKED@{SD\_CARD\_LOCKED}}
+\index{SD\_CARD\_LOCKED@{SD\_CARD\_LOCKED}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_CARD\_LOCKED}{SD\_CARD\_LOCKED}}
+{\footnotesize\ttfamily \#define SD\+\_\+\+CARD\+\_\+\+LOCKED~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x02000000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00397}{397}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gad109f64b893f8dc28265271dd74c3027}\label{group___g_p_i_o___exported___types_gad109f64b893f8dc28265271dd74c3027}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CARD\_PROGRAMMING@{SD\_CARD\_PROGRAMMING}}
+\index{SD\_CARD\_PROGRAMMING@{SD\_CARD\_PROGRAMMING}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_CARD\_PROGRAMMING}{SD\_CARD\_PROGRAMMING}}
+{\footnotesize\ttfamily \#define SD\+\_\+\+CARD\+\_\+\+PROGRAMMING~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000007)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00398}{398}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga289ac705245cf4d150b07b44aecbac54}\label{group___g_p_i_o___exported___types_ga289ac705245cf4d150b07b44aecbac54}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CARD\_RECEIVING@{SD\_CARD\_RECEIVING}}
+\index{SD\_CARD\_RECEIVING@{SD\_CARD\_RECEIVING}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_CARD\_RECEIVING}{SD\_CARD\_RECEIVING}}
+{\footnotesize\ttfamily \#define SD\+\_\+\+CARD\+\_\+\+RECEIVING~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000006)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00399}{399}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gaf8f161db032555d848d233e6883e1ddf}\label{group___g_p_i_o___exported___types_gaf8f161db032555d848d233e6883e1ddf}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CCCC\_ERASE@{SD\_CCCC\_ERASE}}
+\index{SD\_CCCC\_ERASE@{SD\_CCCC\_ERASE}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_CCCC\_ERASE}{SD\_CCCC\_ERASE}}
+{\footnotesize\ttfamily \#define SD\+\_\+\+CCCC\+\_\+\+ERASE~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000020)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00412}{412}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gac93a99c6a0f8999f37e690d6955872ac}\label{group___g_p_i_o___exported___types_gac93a99c6a0f8999f37e690d6955872ac}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CCCC\_LOCK\_UNLOCK@{SD\_CCCC\_LOCK\_UNLOCK}}
+\index{SD\_CCCC\_LOCK\_UNLOCK@{SD\_CCCC\_LOCK\_UNLOCK}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_CCCC\_LOCK\_UNLOCK}{SD\_CCCC\_LOCK\_UNLOCK}}
+{\footnotesize\ttfamily \#define SD\+\_\+\+CCCC\+\_\+\+LOCK\+\_\+\+UNLOCK~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000080)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00410}{410}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gad8cbc04a4adf7c5588ddeb8e29f391f2}\label{group___g_p_i_o___exported___types_gad8cbc04a4adf7c5588ddeb8e29f391f2}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CCCC\_WRITE\_PROT@{SD\_CCCC\_WRITE\_PROT}}
+\index{SD\_CCCC\_WRITE\_PROT@{SD\_CCCC\_WRITE\_PROT}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_CCCC\_WRITE\_PROT}{SD\_CCCC\_WRITE\_PROT}}
+{\footnotesize\ttfamily \#define SD\+\_\+\+CCCC\+\_\+\+WRITE\+\_\+\+PROT~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000040)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00411}{411}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gac37389a0323f1a04aec2b59c905f0f6a}\label{group___g_p_i_o___exported___types_gac37389a0323f1a04aec2b59c905f0f6a}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CHECK\_PATTERN@{SD\_CHECK\_PATTERN}}
+\index{SD\_CHECK\_PATTERN@{SD\_CHECK\_PATTERN}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_CHECK\_PATTERN}{SD\_CHECK\_PATTERN}}
+{\footnotesize\ttfamily \#define SD\+\_\+\+CHECK\+\_\+\+PATTERN~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x000001\+AA)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00389}{389}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga9ca34cf6f4e38835347bc2dc29f9469e}\label{group___g_p_i_o___exported___types_ga9ca34cf6f4e38835347bc2dc29f9469e}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_DATATIMEOUT@{SD\_DATATIMEOUT}}
+\index{SD\_DATATIMEOUT@{SD\_DATATIMEOUT}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_DATATIMEOUT}{SD\_DATATIMEOUT}}
+{\footnotesize\ttfamily \#define SD\+\_\+\+DATATIMEOUT~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x\+FFFFFFFF)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00400}{400}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gad3f9516a5e6764baf2083f76f4bc0eea}\label{group___g_p_i_o___exported___types_gad3f9516a5e6764baf2083f76f4bc0eea}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_DMA\_MODE@{SD\_DMA\_MODE}}
+\index{SD\_DMA\_MODE@{SD\_DMA\_MODE}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_DMA\_MODE}{SD\_DMA\_MODE}}
+{\footnotesize\ttfamily \#define SD\+\_\+\+DMA\+\_\+\+MODE~1}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00077}{77}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga96eec3ea095e393f51ab2686d928908c}\label{group___g_p_i_o___exported___types_ga96eec3ea095e393f51ab2686d928908c}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_HALFFIFO@{SD\_HALFFIFO}}
+\index{SD\_HALFFIFO@{SD\_HALFFIFO}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_HALFFIFO}{SD\_HALFFIFO}}
+{\footnotesize\ttfamily \#define SD\+\_\+\+HALFFIFO~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00407}{407}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga95cd045964036c67c40103ab6aa504b7}\label{group___g_p_i_o___exported___types_ga95cd045964036c67c40103ab6aa504b7}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_HALFFIFOBYTES@{SD\_HALFFIFOBYTES}}
+\index{SD\_HALFFIFOBYTES@{SD\_HALFFIFOBYTES}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_HALFFIFOBYTES}{SD\_HALFFIFOBYTES}}
+{\footnotesize\ttfamily \#define SD\+\_\+\+HALFFIFOBYTES~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000020)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00408}{408}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gad5a86eaeba6869b6b2139b92ddfb3a1f}\label{group___g_p_i_o___exported___types_gad5a86eaeba6869b6b2139b92ddfb3a1f}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_HIGH\_CAPACITY@{SD\_HIGH\_CAPACITY}}
+\index{SD\_HIGH\_CAPACITY@{SD\_HIGH\_CAPACITY}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_HIGH\_CAPACITY}{SD\_HIGH\_CAPACITY}}
+{\footnotesize\ttfamily \#define SD\+\_\+\+HIGH\+\_\+\+CAPACITY~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x40000000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00387}{387}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga3be502d718368f47d02b554e863f30b1}\label{group___g_p_i_o___exported___types_ga3be502d718368f47d02b554e863f30b1}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_MAX\_DATA\_LENGTH@{SD\_MAX\_DATA\_LENGTH}}
+\index{SD\_MAX\_DATA\_LENGTH@{SD\_MAX\_DATA\_LENGTH}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_MAX\_DATA\_LENGTH}{SD\_MAX\_DATA\_LENGTH}}
+{\footnotesize\ttfamily \#define SD\+\_\+\+MAX\+\_\+\+DATA\+\_\+\+LENGTH~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01\+FFFFFF)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00405}{405}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga8166660dfea1f2a865e30a8f86269b7f}\label{group___g_p_i_o___exported___types_ga8166660dfea1f2a865e30a8f86269b7f}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_MAX\_VOLT\_TRIAL@{SD\_MAX\_VOLT\_TRIAL}}
+\index{SD\_MAX\_VOLT\_TRIAL@{SD\_MAX\_VOLT\_TRIAL}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_MAX\_VOLT\_TRIAL}{SD\_MAX\_VOLT\_TRIAL}}
+{\footnotesize\ttfamily \#define SD\+\_\+\+MAX\+\_\+\+VOLT\+\_\+\+TRIAL~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000\+FFFF)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00392}{392}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gaab8ed7f9a9d82da979eb76222f04db7f}\label{group___g_p_i_o___exported___types_gaab8ed7f9a9d82da979eb76222f04db7f}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_POLLING\_MODE@{SD\_POLLING\_MODE}}
+\index{SD\_POLLING\_MODE@{SD\_POLLING\_MODE}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_POLLING\_MODE}{SD\_POLLING\_MODE}}
+{\footnotesize\ttfamily \#define SD\+\_\+\+POLLING\+\_\+\+MODE~0}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00076}{76}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gadfcb6043212373c69f3f740732f5d2b2}\label{group___g_p_i_o___exported___types_gadfcb6043212373c69f3f740732f5d2b2}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_SINGLE\_BUS\_SUPPORT@{SD\_SINGLE\_BUS\_SUPPORT}}
+\index{SD\_SINGLE\_BUS\_SUPPORT@{SD\_SINGLE\_BUS\_SUPPORT}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_SINGLE\_BUS\_SUPPORT}{SD\_SINGLE\_BUS\_SUPPORT}}
+{\footnotesize\ttfamily \#define SD\+\_\+\+SINGLE\+\_\+\+BUS\+\_\+\+SUPPORT~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00010000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00396}{396}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga3cb5fdbf46102857a99b044415873f14}\label{group___g_p_i_o___exported___types_ga3cb5fdbf46102857a99b044415873f14}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_STD\_CAPACITY@{SD\_STD\_CAPACITY}}
+\index{SD\_STD\_CAPACITY@{SD\_STD\_CAPACITY}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_STD\_CAPACITY}{SD\_STD\_CAPACITY}}
+{\footnotesize\ttfamily \#define SD\+\_\+\+STD\+\_\+\+CAPACITY~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00388}{388}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gac3500603f00e9b96f513b8464e4b3270}\label{group___g_p_i_o___exported___types_gac3500603f00e9b96f513b8464e4b3270}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_VOLTAGE\_WINDOW\_MMC@{SD\_VOLTAGE\_WINDOW\_MMC}}
+\index{SD\_VOLTAGE\_WINDOW\_MMC@{SD\_VOLTAGE\_WINDOW\_MMC}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_VOLTAGE\_WINDOW\_MMC}{SD\_VOLTAGE\_WINDOW\_MMC}}
+{\footnotesize\ttfamily \#define SD\+\_\+\+VOLTAGE\+\_\+\+WINDOW\+\_\+\+MMC~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x80\+FF8000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00390}{390}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga0c04dbb0a43806365bea64893961079e}\label{group___g_p_i_o___exported___types_ga0c04dbb0a43806365bea64893961079e}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_VOLTAGE\_WINDOW\_SD@{SD\_VOLTAGE\_WINDOW\_SD}}
+\index{SD\_VOLTAGE\_WINDOW\_SD@{SD\_VOLTAGE\_WINDOW\_SD}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_VOLTAGE\_WINDOW\_SD}{SD\_VOLTAGE\_WINDOW\_SD}}
+{\footnotesize\ttfamily \#define SD\+\_\+\+VOLTAGE\+\_\+\+WINDOW\+\_\+\+SD~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x80100000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00386}{386}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga6877313126588b7f2ce96f9b4d9a59b1}\label{group___g_p_i_o___exported___types_ga6877313126588b7f2ce96f9b4d9a59b1}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_WIDE\_BUS\_SUPPORT@{SD\_WIDE\_BUS\_SUPPORT}}
+\index{SD\_WIDE\_BUS\_SUPPORT@{SD\_WIDE\_BUS\_SUPPORT}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_WIDE\_BUS\_SUPPORT}{SD\_WIDE\_BUS\_SUPPORT}}
+{\footnotesize\ttfamily \#define SD\+\_\+\+WIDE\+\_\+\+BUS\+\_\+\+SUPPORT~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00040000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00395}{395}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga451e336c7bc16567a28475fcb75c9828}\label{group___g_p_i_o___exported___types_ga451e336c7bc16567a28475fcb75c9828}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_CMD0TIMEOUT@{SDIO\_CMD0TIMEOUT}}
+\index{SDIO\_CMD0TIMEOUT@{SDIO\_CMD0TIMEOUT}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_CMD0TIMEOUT}{SDIO\_CMD0TIMEOUT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+CMD0\+TIMEOUT~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00010000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00351}{351}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga7dad3c1c33e63a00eb6301b0a1135baf}\label{group___g_p_i_o___exported___types_ga7dad3c1c33e63a00eb6301b0a1135baf}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_DataBlockSize\_1024b@{SDIO\_DataBlockSize\_1024b}}
+\index{SDIO\_DataBlockSize\_1024b@{SDIO\_DataBlockSize\_1024b}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DataBlockSize\_1024b}{SDIO\_DataBlockSize\_1024b}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Data\+Block\+Size\+\_\+1024b~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000000A)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00431}{431}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gaba545c3a5e0f3296341d89a647cb9751}\label{group___g_p_i_o___exported___types_gaba545c3a5e0f3296341d89a647cb9751}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_DataBlockSize\_128b@{SDIO\_DataBlockSize\_128b}}
+\index{SDIO\_DataBlockSize\_128b@{SDIO\_DataBlockSize\_128b}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DataBlockSize\_128b}{SDIO\_DataBlockSize\_128b}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Data\+Block\+Size\+\_\+128b~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000007)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00428}{428}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gae80bc49dbed677f7087d523c31fe10ae}\label{group___g_p_i_o___exported___types_gae80bc49dbed677f7087d523c31fe10ae}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_DataBlockSize\_16384b@{SDIO\_DataBlockSize\_16384b}}
+\index{SDIO\_DataBlockSize\_16384b@{SDIO\_DataBlockSize\_16384b}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DataBlockSize\_16384b}{SDIO\_DataBlockSize\_16384b}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Data\+Block\+Size\+\_\+16384b~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000000E)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00435}{435}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga52a7bdab9a75edd94d9c1152e8b078e2}\label{group___g_p_i_o___exported___types_ga52a7bdab9a75edd94d9c1152e8b078e2}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_DataBlockSize\_16b@{SDIO\_DataBlockSize\_16b}}
+\index{SDIO\_DataBlockSize\_16b@{SDIO\_DataBlockSize\_16b}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DataBlockSize\_16b}{SDIO\_DataBlockSize\_16b}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Data\+Block\+Size\+\_\+16b~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000004)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00425}{425}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gaa86e90ddc3426b242a5230b3360c620d}\label{group___g_p_i_o___exported___types_gaa86e90ddc3426b242a5230b3360c620d}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_DataBlockSize\_1b@{SDIO\_DataBlockSize\_1b}}
+\index{SDIO\_DataBlockSize\_1b@{SDIO\_DataBlockSize\_1b}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DataBlockSize\_1b}{SDIO\_DataBlockSize\_1b}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Data\+Block\+Size\+\_\+1b~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00421}{421}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga41eb937621c7ffcf2688c6bc0ea31464}\label{group___g_p_i_o___exported___types_ga41eb937621c7ffcf2688c6bc0ea31464}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_DataBlockSize\_2048b@{SDIO\_DataBlockSize\_2048b}}
+\index{SDIO\_DataBlockSize\_2048b@{SDIO\_DataBlockSize\_2048b}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DataBlockSize\_2048b}{SDIO\_DataBlockSize\_2048b}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Data\+Block\+Size\+\_\+2048b~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000000B)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00432}{432}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gaa099d7706f98a4fa6eb88277dc6680cf}\label{group___g_p_i_o___exported___types_gaa099d7706f98a4fa6eb88277dc6680cf}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_DataBlockSize\_256b@{SDIO\_DataBlockSize\_256b}}
+\index{SDIO\_DataBlockSize\_256b@{SDIO\_DataBlockSize\_256b}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DataBlockSize\_256b}{SDIO\_DataBlockSize\_256b}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Data\+Block\+Size\+\_\+256b~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00429}{429}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga7209d9d52635b66df85712c6fcd668ea}\label{group___g_p_i_o___exported___types_ga7209d9d52635b66df85712c6fcd668ea}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_DataBlockSize\_2b@{SDIO\_DataBlockSize\_2b}}
+\index{SDIO\_DataBlockSize\_2b@{SDIO\_DataBlockSize\_2b}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DataBlockSize\_2b}{SDIO\_DataBlockSize\_2b}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Data\+Block\+Size\+\_\+2b~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000001)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00422}{422}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gad0f89aa989c0cedf8d69eb28548413ca}\label{group___g_p_i_o___exported___types_gad0f89aa989c0cedf8d69eb28548413ca}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_DataBlockSize\_32b@{SDIO\_DataBlockSize\_32b}}
+\index{SDIO\_DataBlockSize\_32b@{SDIO\_DataBlockSize\_32b}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DataBlockSize\_32b}{SDIO\_DataBlockSize\_32b}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Data\+Block\+Size\+\_\+32b~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000005)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00426}{426}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga360411488abdbaf9eee9b99fca793f79}\label{group___g_p_i_o___exported___types_ga360411488abdbaf9eee9b99fca793f79}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_DataBlockSize\_4096b@{SDIO\_DataBlockSize\_4096b}}
+\index{SDIO\_DataBlockSize\_4096b@{SDIO\_DataBlockSize\_4096b}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DataBlockSize\_4096b}{SDIO\_DataBlockSize\_4096b}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Data\+Block\+Size\+\_\+4096b~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000000C)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00433}{433}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga59cbaecfdebd63177d1208c268626f0a}\label{group___g_p_i_o___exported___types_ga59cbaecfdebd63177d1208c268626f0a}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_DataBlockSize\_4b@{SDIO\_DataBlockSize\_4b}}
+\index{SDIO\_DataBlockSize\_4b@{SDIO\_DataBlockSize\_4b}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DataBlockSize\_4b}{SDIO\_DataBlockSize\_4b}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Data\+Block\+Size\+\_\+4b~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000002)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00423}{423}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gaa619848f7700962c5b7065f43e286e0b}\label{group___g_p_i_o___exported___types_gaa619848f7700962c5b7065f43e286e0b}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_DataBlockSize\_512b@{SDIO\_DataBlockSize\_512b}}
+\index{SDIO\_DataBlockSize\_512b@{SDIO\_DataBlockSize\_512b}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DataBlockSize\_512b}{SDIO\_DataBlockSize\_512b}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Data\+Block\+Size\+\_\+512b~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000009)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00430}{430}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga981c219228ae8df11a501e15843338d4}\label{group___g_p_i_o___exported___types_ga981c219228ae8df11a501e15843338d4}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_DataBlockSize\_64b@{SDIO\_DataBlockSize\_64b}}
+\index{SDIO\_DataBlockSize\_64b@{SDIO\_DataBlockSize\_64b}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DataBlockSize\_64b}{SDIO\_DataBlockSize\_64b}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Data\+Block\+Size\+\_\+64b~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000006)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00427}{427}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gaf61913f3eff52c0f728db9ffbdaca7d2}\label{group___g_p_i_o___exported___types_gaf61913f3eff52c0f728db9ffbdaca7d2}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_DataBlockSize\_8192b@{SDIO\_DataBlockSize\_8192b}}
+\index{SDIO\_DataBlockSize\_8192b@{SDIO\_DataBlockSize\_8192b}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DataBlockSize\_8192b}{SDIO\_DataBlockSize\_8192b}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Data\+Block\+Size\+\_\+8192b~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000000D)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00434}{434}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga14f91159c8c4faf49a335ed9b6a94d0b}\label{group___g_p_i_o___exported___types_ga14f91159c8c4faf49a335ed9b6a94d0b}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_DataBlockSize\_8b@{SDIO\_DataBlockSize\_8b}}
+\index{SDIO\_DataBlockSize\_8b@{SDIO\_DataBlockSize\_8b}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DataBlockSize\_8b}{SDIO\_DataBlockSize\_8b}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Data\+Block\+Size\+\_\+8b~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000003)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00424}{424}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga382d18d77d13eec35d8378641681998e}\label{group___g_p_i_o___exported___types_ga382d18d77d13eec35d8378641681998e}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_DATATIMEOUT@{SDIO\_DATATIMEOUT}}
+\index{SDIO\_DATATIMEOUT@{SDIO\_DATATIMEOUT}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_DATATIMEOUT}{SDIO\_DATATIMEOUT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+DATATIMEOUT~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x\+FFFFFFFF)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00352}{352}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga159336f05115165cc73502767aab0518}\label{group___g_p_i_o___exported___types_ga159336f05115165cc73502767aab0518}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FIFO\_Address@{SDIO\_FIFO\_Address}}
+\index{SDIO\_FIFO\_Address@{SDIO\_FIFO\_Address}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FIFO\_Address}{SDIO\_FIFO\_Address}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FIFO\+\_\+\+Address~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x40018080)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00353}{353}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga8ff1f3960378e05ec3c949940e1c49d0}\label{group___g_p_i_o___exported___types_ga8ff1f3960378e05ec3c949940e1c49d0}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_CCRCFAIL@{SDIO\_FLAG\_CCRCFAIL}}
+\index{SDIO\_FLAG\_CCRCFAIL@{SDIO\_FLAG\_CCRCFAIL}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_CCRCFAIL}{SDIO\_FLAG\_CCRCFAIL}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+CCRCFAIL~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000001)}
+
+
+
+Output Maximum frequency selection 
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00047}{47}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga3c8d09a405944948e7a1c5493d49aff1}\label{group___g_p_i_o___exported___types_ga3c8d09a405944948e7a1c5493d49aff1}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_CEATAEND@{SDIO\_FLAG\_CEATAEND}}
+\index{SDIO\_FLAG\_CEATAEND@{SDIO\_FLAG\_CEATAEND}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_CEATAEND}{SDIO\_FLAG\_CEATAEND}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+CEATAEND~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00800000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00070}{70}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gad12a9b2bd30e7b907cbabfd92fc645b3}\label{group___g_p_i_o___exported___types_gad12a9b2bd30e7b907cbabfd92fc645b3}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_CMDACT@{SDIO\_FLAG\_CMDACT}}
+\index{SDIO\_FLAG\_CMDACT@{SDIO\_FLAG\_CMDACT}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_CMDACT}{SDIO\_FLAG\_CMDACT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+CMDACT~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000800)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00058}{58}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga083531db75a1e4c05c47578763d53af1}\label{group___g_p_i_o___exported___types_ga083531db75a1e4c05c47578763d53af1}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_CMDREND@{SDIO\_FLAG\_CMDREND}}
+\index{SDIO\_FLAG\_CMDREND@{SDIO\_FLAG\_CMDREND}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_CMDREND}{SDIO\_FLAG\_CMDREND}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+CMDREND~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000040)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00053}{53}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gac81f3837aac17a6aed7310a8ea460f17}\label{group___g_p_i_o___exported___types_gac81f3837aac17a6aed7310a8ea460f17}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_CMDSENT@{SDIO\_FLAG\_CMDSENT}}
+\index{SDIO\_FLAG\_CMDSENT@{SDIO\_FLAG\_CMDSENT}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_CMDSENT}{SDIO\_FLAG\_CMDSENT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+CMDSENT~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000080)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00054}{54}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga7389f64ff6cfa4f459bf852b5faede30}\label{group___g_p_i_o___exported___types_ga7389f64ff6cfa4f459bf852b5faede30}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_CTIMEOUT@{SDIO\_FLAG\_CTIMEOUT}}
+\index{SDIO\_FLAG\_CTIMEOUT@{SDIO\_FLAG\_CTIMEOUT}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_CTIMEOUT}{SDIO\_FLAG\_CTIMEOUT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+CTIMEOUT~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000004)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00049}{49}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gaaacb2f6207c149e05f8bdd70e5d49926}\label{group___g_p_i_o___exported___types_gaaacb2f6207c149e05f8bdd70e5d49926}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_DATAEND@{SDIO\_FLAG\_DATAEND}}
+\index{SDIO\_FLAG\_DATAEND@{SDIO\_FLAG\_DATAEND}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_DATAEND}{SDIO\_FLAG\_DATAEND}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+DATAEND~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000100)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00055}{55}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga5452d8033567821709bd7d5f06547b70}\label{group___g_p_i_o___exported___types_ga5452d8033567821709bd7d5f06547b70}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_DBCKEND@{SDIO\_FLAG\_DBCKEND}}
+\index{SDIO\_FLAG\_DBCKEND@{SDIO\_FLAG\_DBCKEND}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_DBCKEND}{SDIO\_FLAG\_DBCKEND}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+DBCKEND~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000400)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00057}{57}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga6de936ea11cbc79444d519268ad9f9bd}\label{group___g_p_i_o___exported___types_ga6de936ea11cbc79444d519268ad9f9bd}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_DCRCFAIL@{SDIO\_FLAG\_DCRCFAIL}}
+\index{SDIO\_FLAG\_DCRCFAIL@{SDIO\_FLAG\_DCRCFAIL}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_DCRCFAIL}{SDIO\_FLAG\_DCRCFAIL}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+DCRCFAIL~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000002)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00048}{48}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga2d2fd219dd9fea522862195ab9568345}\label{group___g_p_i_o___exported___types_ga2d2fd219dd9fea522862195ab9568345}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_DTIMEOUT@{SDIO\_FLAG\_DTIMEOUT}}
+\index{SDIO\_FLAG\_DTIMEOUT@{SDIO\_FLAG\_DTIMEOUT}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_DTIMEOUT}{SDIO\_FLAG\_DTIMEOUT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+DTIMEOUT~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00050}{50}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gacc935dd830338970890a05922dff8ab7}\label{group___g_p_i_o___exported___types_gacc935dd830338970890a05922dff8ab7}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_RXACT@{SDIO\_FLAG\_RXACT}}
+\index{SDIO\_FLAG\_RXACT@{SDIO\_FLAG\_RXACT}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_RXACT}{SDIO\_FLAG\_RXACT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+RXACT~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00002000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00060}{60}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga7558b354658171bb6aa1b6f1e16d8e21}\label{group___g_p_i_o___exported___types_ga7558b354658171bb6aa1b6f1e16d8e21}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_RXDAVL@{SDIO\_FLAG\_RXDAVL}}
+\index{SDIO\_FLAG\_RXDAVL@{SDIO\_FLAG\_RXDAVL}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_RXDAVL}{SDIO\_FLAG\_RXDAVL}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+RXDAVL~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00200000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00068}{68}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga59ea7e2dc22df742053c5e525b98599d}\label{group___g_p_i_o___exported___types_ga59ea7e2dc22df742053c5e525b98599d}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_RXFIFOE@{SDIO\_FLAG\_RXFIFOE}}
+\index{SDIO\_FLAG\_RXFIFOE@{SDIO\_FLAG\_RXFIFOE}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_RXFIFOE}{SDIO\_FLAG\_RXFIFOE}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+RXFIFOE~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00080000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00066}{66}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gaf92cb783f000b8d946fe8ace81b51df2}\label{group___g_p_i_o___exported___types_gaf92cb783f000b8d946fe8ace81b51df2}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_RXFIFOF@{SDIO\_FLAG\_RXFIFOF}}
+\index{SDIO\_FLAG\_RXFIFOF@{SDIO\_FLAG\_RXFIFOF}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_RXFIFOF}{SDIO\_FLAG\_RXFIFOF}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+RXFIFOF~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00020000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00064}{64}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga8c5942ae3df21efad2d7c61a46015758}\label{group___g_p_i_o___exported___types_ga8c5942ae3df21efad2d7c61a46015758}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_RXFIFOHF@{SDIO\_FLAG\_RXFIFOHF}}
+\index{SDIO\_FLAG\_RXFIFOHF@{SDIO\_FLAG\_RXFIFOHF}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_RXFIFOHF}{SDIO\_FLAG\_RXFIFOHF}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+RXFIFOHF~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00008000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00062}{62}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gad49d60039e40d31b734cfacf90caa84f}\label{group___g_p_i_o___exported___types_gad49d60039e40d31b734cfacf90caa84f}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_RXOVERR@{SDIO\_FLAG\_RXOVERR}}
+\index{SDIO\_FLAG\_RXOVERR@{SDIO\_FLAG\_RXOVERR}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_RXOVERR}{SDIO\_FLAG\_RXOVERR}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+RXOVERR~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000020)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00052}{52}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gae888ec1c9885c35a5f8e01bcffe324a1}\label{group___g_p_i_o___exported___types_gae888ec1c9885c35a5f8e01bcffe324a1}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_SDIOIT@{SDIO\_FLAG\_SDIOIT}}
+\index{SDIO\_FLAG\_SDIOIT@{SDIO\_FLAG\_SDIOIT}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_SDIOIT}{SDIO\_FLAG\_SDIOIT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+SDIOIT~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00400000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00069}{69}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gae83f7cb3fa1183898131f3de47c2333e}\label{group___g_p_i_o___exported___types_gae83f7cb3fa1183898131f3de47c2333e}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_STBITERR@{SDIO\_FLAG\_STBITERR}}
+\index{SDIO\_FLAG\_STBITERR@{SDIO\_FLAG\_STBITERR}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_STBITERR}{SDIO\_FLAG\_STBITERR}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+STBITERR~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000200)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00056}{56}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gad5d075c98012586b169ec131aab2eeb5}\label{group___g_p_i_o___exported___types_gad5d075c98012586b169ec131aab2eeb5}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_TXACT@{SDIO\_FLAG\_TXACT}}
+\index{SDIO\_FLAG\_TXACT@{SDIO\_FLAG\_TXACT}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_TXACT}{SDIO\_FLAG\_TXACT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+TXACT~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00001000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00059}{59}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga9c6620d6b16b6af19d3e14f40e688631}\label{group___g_p_i_o___exported___types_ga9c6620d6b16b6af19d3e14f40e688631}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_TXDAVL@{SDIO\_FLAG\_TXDAVL}}
+\index{SDIO\_FLAG\_TXDAVL@{SDIO\_FLAG\_TXDAVL}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_TXDAVL}{SDIO\_FLAG\_TXDAVL}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+TXDAVL~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00100000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00067}{67}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gac41ef05773abad79b4b0c443a77733db}\label{group___g_p_i_o___exported___types_gac41ef05773abad79b4b0c443a77733db}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_TXFIFOE@{SDIO\_FLAG\_TXFIFOE}}
+\index{SDIO\_FLAG\_TXFIFOE@{SDIO\_FLAG\_TXFIFOE}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_TXFIFOE}{SDIO\_FLAG\_TXFIFOE}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+TXFIFOE~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00040000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00065}{65}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gad3ca936300ef251639a4cfbe2f63b6b8}\label{group___g_p_i_o___exported___types_gad3ca936300ef251639a4cfbe2f63b6b8}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_TXFIFOF@{SDIO\_FLAG\_TXFIFOF}}
+\index{SDIO\_FLAG\_TXFIFOF@{SDIO\_FLAG\_TXFIFOF}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_TXFIFOF}{SDIO\_FLAG\_TXFIFOF}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+TXFIFOF~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00010000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00063}{63}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gae9277461d3c8984dc31af318e2df1959}\label{group___g_p_i_o___exported___types_gae9277461d3c8984dc31af318e2df1959}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_TXFIFOHE@{SDIO\_FLAG\_TXFIFOHE}}
+\index{SDIO\_FLAG\_TXFIFOHE@{SDIO\_FLAG\_TXFIFOHE}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_TXFIFOHE}{SDIO\_FLAG\_TXFIFOHE}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+TXFIFOHE~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00004000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00061}{61}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gabd18f8e5d5387a38dccbe1bf28ae5dbc}\label{group___g_p_i_o___exported___types_gabd18f8e5d5387a38dccbe1bf28ae5dbc}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_FLAG\_TXUNDERR@{SDIO\_FLAG\_TXUNDERR}}
+\index{SDIO\_FLAG\_TXUNDERR@{SDIO\_FLAG\_TXUNDERR}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_FLAG\_TXUNDERR}{SDIO\_FLAG\_TXUNDERR}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+FLAG\+\_\+\+TXUNDERR~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000010)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00051}{51}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga1a11a8750612b344214f846784046bb0}\label{group___g_p_i_o___exported___types_ga1a11a8750612b344214f846784046bb0}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_Response\_Long@{SDIO\_Response\_Long}}
+\index{SDIO\_Response\_Long@{SDIO\_Response\_Long}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_Response\_Long}{SDIO\_Response\_Long}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Response\+\_\+\+Long~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x03)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00419}{419}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga308b8ef0e79ba451644dda923bb3ac41}\label{group___g_p_i_o___exported___types_ga308b8ef0e79ba451644dda923bb3ac41}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_Response\_No@{SDIO\_Response\_No}}
+\index{SDIO\_Response\_No@{SDIO\_Response\_No}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_Response\_No}{SDIO\_Response\_No}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Response\+\_\+\+No~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00417}{417}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga1f61768f90641648fd5c12e8d2f7e508}\label{group___g_p_i_o___exported___types_ga1f61768f90641648fd5c12e8d2f7e508}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_Response\_Short@{SDIO\_Response\_Short}}
+\index{SDIO\_Response\_Short@{SDIO\_Response\_Short}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_Response\_Short}{SDIO\_Response\_Short}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Response\+\_\+\+Short~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00418}{418}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gafe1c9bdbdccf901be62203bf5547147e}\label{group___g_p_i_o___exported___types_gafe1c9bdbdccf901be62203bf5547147e}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_SEND\_IF\_COND@{SDIO\_SEND\_IF\_COND}}
+\index{SDIO\_SEND\_IF\_COND@{SDIO\_SEND\_IF\_COND}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_SEND\_IF\_COND}{SDIO\_SEND\_IF\_COND}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+SEND\+\_\+\+IF\+\_\+\+COND~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00415}{415}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gab07b969cd21592c74e8ad5d929e97055}\label{group___g_p_i_o___exported___types_gab07b969cd21592c74e8ad5d929e97055}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_STATIC\_FLAGS@{SDIO\_STATIC\_FLAGS}}
+\index{SDIO\_STATIC\_FLAGS@{SDIO\_STATIC\_FLAGS}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_STATIC\_FLAGS}{SDIO\_STATIC\_FLAGS}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+STATIC\+\_\+\+FLAGS~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x000005\+FF)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00350}{350}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gaef8af0ffa4ea04b3362338d268cc0935}\label{group___g_p_i_o___exported___types_gaef8af0ffa4ea04b3362338d268cc0935}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_TransferDir\_ToCard@{SDIO\_TransferDir\_ToCard}}
+\index{SDIO\_TransferDir\_ToCard@{SDIO\_TransferDir\_ToCard}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_TransferDir\_ToCard}{SDIO\_TransferDir\_ToCard}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Transfer\+Dir\+\_\+\+To\+Card~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00455}{455}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga55a6d9613d3e2e7762296b45d0d13222}\label{group___g_p_i_o___exported___types_ga55a6d9613d3e2e7762296b45d0d13222}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_TransferDir\_ToSDIO@{SDIO\_TransferDir\_ToSDIO}}
+\index{SDIO\_TransferDir\_ToSDIO@{SDIO\_TransferDir\_ToSDIO}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_TransferDir\_ToSDIO}{SDIO\_TransferDir\_ToSDIO}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Transfer\+Dir\+\_\+\+To\+SDIO~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000002)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00456}{456}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga3914bbe26a656c8e151272ccdc12c71c}\label{group___g_p_i_o___exported___types_ga3914bbe26a656c8e151272ccdc12c71c}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_Wait\_IT@{SDIO\_Wait\_IT}}
+\index{SDIO\_Wait\_IT@{SDIO\_Wait\_IT}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_Wait\_IT}{SDIO\_Wait\_IT}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Wait\+\_\+\+IT~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000100)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00459}{459}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga266294e1ffd7a4b45e62bff753ca44b2}\label{group___g_p_i_o___exported___types_ga266294e1ffd7a4b45e62bff753ca44b2}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_Wait\_No@{SDIO\_Wait\_No}}
+\index{SDIO\_Wait\_No@{SDIO\_Wait\_No}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_Wait\_No}{SDIO\_Wait\_No}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Wait\+\_\+\+No~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00458}{458}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga2a4104023a7f8403ddd159ec3bbb8592}\label{group___g_p_i_o___exported___types_ga2a4104023a7f8403ddd159ec3bbb8592}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDIO\_Wait\_Pend@{SDIO\_Wait\_Pend}}
+\index{SDIO\_Wait\_Pend@{SDIO\_Wait\_Pend}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDIO\_Wait\_Pend}{SDIO\_Wait\_Pend}}
+{\footnotesize\ttfamily \#define SDIO\+\_\+\+Wait\+\_\+\+Pend~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000200)}
+
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00460}{460}} 行定义.
+
+
+
+\doxysubsection{枚举类型说明}
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga176130b21c0e719121470a6042d4cf19}\label{group___g_p_i_o___exported___types_ga176130b21c0e719121470a6042d4cf19}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!BitAction@{BitAction}}
+\index{BitAction@{BitAction}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{BitAction}{BitAction}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___g_p_i_o___exported___types_ga176130b21c0e719121470a6042d4cf19}{Bit\+Action}}}
+
+
+
+Bit\+\_\+\+SET and Bit\+\_\+\+RESET enumeration 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Bit\_RESET@{Bit\_RESET}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!Bit\_RESET@{Bit\_RESET}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_gga176130b21c0e719121470a6042d4cf19ae2c026f2b44a949f82a65f3385edef09}\label{group___g_p_i_o___exported___types_gga176130b21c0e719121470a6042d4cf19ae2c026f2b44a949f82a65f3385edef09}} 
+Bit\+\_\+\+RESET&bit reset \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Bit\_SET@{Bit\_SET}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!Bit\_SET@{Bit\_SET}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_gga176130b21c0e719121470a6042d4cf19a3c477841a6ceec13fe47ef322432b992}\label{group___g_p_i_o___exported___types_gga176130b21c0e719121470a6042d4cf19a3c477841a6ceec13fe47ef322432b992}} 
+Bit\+\_\+\+SET&bit set \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__gpio_8h_source}{hal\+\_\+gpio.\+h}} 第 \mbox{\hyperlink{hal__gpio_8h_source_l00067}{67}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga1347339e1c84a196fabbb31205eec5d4}\label{group___g_p_i_o___exported___types_ga1347339e1c84a196fabbb31205eec5d4}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!GPIOMode\_TypeDef@{GPIOMode\_TypeDef}}
+\index{GPIOMode\_TypeDef@{GPIOMode\_TypeDef}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{GPIOMode\_TypeDef}{GPIOMode\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___g_p_i_o___exported___types_ga1347339e1c84a196fabbb31205eec5d4}{GPIOMode\+\_\+\+Type\+Def}}}
+
+
+
+Configuration Mode enumeration 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GPIO\_Mode\_AIN@{GPIO\_Mode\_AIN}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!GPIO\_Mode\_AIN@{GPIO\_Mode\_AIN}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4a3b9a166bf59b96c68c5c0c59811b80fc}\label{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4a3b9a166bf59b96c68c5c0c59811b80fc}} 
+GPIO\+\_\+\+Mode\+\_\+\+AIN&Analog input \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GPIO\_Mode\_FLOATING@{GPIO\_Mode\_FLOATING}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!GPIO\_Mode\_FLOATING@{GPIO\_Mode\_FLOATING}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4ab945d0227191c1738bb70ee36108af54}\label{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4ab945d0227191c1738bb70ee36108af54}} 
+GPIO\+\_\+\+Mode\+\_\+\+FLOATING&Floating input \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GPIO\_Mode\_IPD@{GPIO\_Mode\_IPD}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!GPIO\_Mode\_IPD@{GPIO\_Mode\_IPD}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4ad5b7c382c280d0b14786aa7e0af783dc}\label{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4ad5b7c382c280d0b14786aa7e0af783dc}} 
+GPIO\+\_\+\+Mode\+\_\+\+IPD&Pull down input \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GPIO\_Mode\_IPU@{GPIO\_Mode\_IPU}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!GPIO\_Mode\_IPU@{GPIO\_Mode\_IPU}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4adc5187fa416ea708ee4cb445ef2c59e7}\label{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4adc5187fa416ea708ee4cb445ef2c59e7}} 
+GPIO\+\_\+\+Mode\+\_\+\+IPU&Pull up input \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GPIO\_Mode\_Out\_OD@{GPIO\_Mode\_Out\_OD}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!GPIO\_Mode\_Out\_OD@{GPIO\_Mode\_Out\_OD}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4a629b05b1e9adee098eaf648b044dde0b}\label{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4a629b05b1e9adee098eaf648b044dde0b}} 
+GPIO\+\_\+\+Mode\+\_\+\+Out\+\_\+\+OD&Universal open drain output \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GPIO\_Mode\_Out\_PP@{GPIO\_Mode\_Out\_PP}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!GPIO\_Mode\_Out\_PP@{GPIO\_Mode\_Out\_PP}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4a0eee8242abb8f2f8a97bbdf0f1dc59b2}\label{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4a0eee8242abb8f2f8a97bbdf0f1dc59b2}} 
+GPIO\+\_\+\+Mode\+\_\+\+Out\+\_\+\+PP&Universal push-\/pull output \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GPIO\_Mode\_AF\_OD@{GPIO\_Mode\_AF\_OD}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!GPIO\_Mode\_AF\_OD@{GPIO\_Mode\_AF\_OD}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4ac34bf80d30de7b34444c9cbdb20695b5}\label{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4ac34bf80d30de7b34444c9cbdb20695b5}} 
+GPIO\+\_\+\+Mode\+\_\+\+AF\+\_\+\+OD&Multiplex open drain output \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GPIO\_Mode\_AF\_PP@{GPIO\_Mode\_AF\_PP}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!GPIO\_Mode\_AF\_PP@{GPIO\_Mode\_AF\_PP}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4a5c7a69abc1bf31a8d24e896ed94bded9}\label{group___g_p_i_o___exported___types_gga1347339e1c84a196fabbb31205eec5d4a5c7a69abc1bf31a8d24e896ed94bded9}} 
+GPIO\+\_\+\+Mode\+\_\+\+AF\+\_\+\+PP&Multiplexed push-\/pull output \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__gpio_8h_source}{hal\+\_\+gpio.\+h}} 第 \mbox{\hyperlink{hal__gpio_8h_source_l00053}{53}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_ga062ad92b67b4a1f301c161022cf3ba8e}\label{group___g_p_i_o___exported___types_ga062ad92b67b4a1f301c161022cf3ba8e}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!GPIOSpeed\_TypeDef@{GPIOSpeed\_TypeDef}}
+\index{GPIOSpeed\_TypeDef@{GPIOSpeed\_TypeDef}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{GPIOSpeed\_TypeDef}{GPIOSpeed\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___g_p_i_o___exported___types_ga062ad92b67b4a1f301c161022cf3ba8e}{GPIOSpeed\+\_\+\+Type\+Def}}}
+
+
+
+Output Maximum frequency selection 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GPIO\_Speed\_50MHz@{GPIO\_Speed\_50MHz}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!GPIO\_Speed\_50MHz@{GPIO\_Speed\_50MHz}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_gga062ad92b67b4a1f301c161022cf3ba8ea9c47db10456202ac05134b12738ce581}\label{group___g_p_i_o___exported___types_gga062ad92b67b4a1f301c161022cf3ba8ea9c47db10456202ac05134b12738ce581}} 
+GPIO\+\_\+\+Speed\+\_\+50\+MHz&Maximum speed is 50MHz \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GPIO\_Speed\_20MHz@{GPIO\_Speed\_20MHz}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!GPIO\_Speed\_20MHz@{GPIO\_Speed\_20MHz}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_gga062ad92b67b4a1f301c161022cf3ba8eac592eaa5f1bb7114d64d2376cbfc31f1}\label{group___g_p_i_o___exported___types_gga062ad92b67b4a1f301c161022cf3ba8eac592eaa5f1bb7114d64d2376cbfc31f1}} 
+GPIO\+\_\+\+Speed\+\_\+20\+MHz&Maximum speed is 20MHz \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GPIO\_Speed\_10MHz@{GPIO\_Speed\_10MHz}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!GPIO\_Speed\_10MHz@{GPIO\_Speed\_10MHz}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_gga062ad92b67b4a1f301c161022cf3ba8ea8c567e4b0186e3708cd7020c13da6439}\label{group___g_p_i_o___exported___types_gga062ad92b67b4a1f301c161022cf3ba8ea8c567e4b0186e3708cd7020c13da6439}} 
+GPIO\+\_\+\+Speed\+\_\+10\+MHz&Maximum speed is 10MHz \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__gpio_8h_source}{hal\+\_\+gpio.\+h}} 第 \mbox{\hyperlink{hal__gpio_8h_source_l00043}{43}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}\label{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_Error@{SD\_Error}}
+\index{SD\_Error@{SD\_Error}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SD\_Error}{SD\_Error}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}}}
+
+
+
+SDIO Various error enumeration definitions 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_CMD\_CRC\_FAIL@{SD\_CMD\_CRC\_FAIL}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CMD\_CRC\_FAIL@{SD\_CMD\_CRC\_FAIL}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca6dfaca7c6ace1889e0294f4ec3ec535c}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca6dfaca7c6ace1889e0294f4ec3ec535c}} 
+SD\+\_\+\+CMD\+\_\+\+CRC\+\_\+\+FAIL&Command response received (but CRC check failed) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_DATA\_CRC\_FAIL@{SD\_DATA\_CRC\_FAIL}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_DATA\_CRC\_FAIL@{SD\_DATA\_CRC\_FAIL}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cad99fcef385ca3270d3bce97ed972ff1c}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cad99fcef385ca3270d3bce97ed972ff1c}} 
+SD\+\_\+\+DATA\+\_\+\+CRC\+\_\+\+FAIL&Data bock sent/received (CRC check Failed) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_CMD\_RSP\_TIMEOUT@{SD\_CMD\_RSP\_TIMEOUT}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CMD\_RSP\_TIMEOUT@{SD\_CMD\_RSP\_TIMEOUT}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cae1c1b2d0962bd3f40490b15aed01c8ff}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cae1c1b2d0962bd3f40490b15aed01c8ff}} 
+SD\+\_\+\+CMD\+\_\+\+RSP\+\_\+\+TIMEOUT&Command response timeout \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_DATA\_TIMEOUT@{SD\_DATA\_TIMEOUT}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_DATA\_TIMEOUT@{SD\_DATA\_TIMEOUT}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cac5f321853ccd7c8aaa571afab467dddd}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cac5f321853ccd7c8aaa571afab467dddd}} 
+SD\+\_\+\+DATA\+\_\+\+TIMEOUT&Data time out \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_TX\_UNDERRUN@{SD\_TX\_UNDERRUN}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_TX\_UNDERRUN@{SD\_TX\_UNDERRUN}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca7b3c2c028697b45c7e4ab738dfb32732}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca7b3c2c028697b45c7e4ab738dfb32732}} 
+SD\+\_\+\+TX\+\_\+\+UNDERRUN&Transmit FIFO under-\/run \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_RX\_OVERRUN@{SD\_RX\_OVERRUN}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_RX\_OVERRUN@{SD\_RX\_OVERRUN}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca8536106ed9ebb00c16d0f42d78f31e37}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca8536106ed9ebb00c16d0f42d78f31e37}} 
+SD\+\_\+\+RX\+\_\+\+OVERRUN&Receive FIFO over-\/run \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_START\_BIT\_ERR@{SD\_START\_BIT\_ERR}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_START\_BIT\_ERR@{SD\_START\_BIT\_ERR}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cacc0291fc528b2bb330ca1487a8a3f3cd}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cacc0291fc528b2bb330ca1487a8a3f3cd}} 
+SD\+\_\+\+START\+\_\+\+BIT\+\_\+\+ERR&Start bit not detected on all data signals in widE bus mode \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_CMD\_OUT\_OF\_RANGE@{SD\_CMD\_OUT\_OF\_RANGE}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CMD\_OUT\_OF\_RANGE@{SD\_CMD\_OUT\_OF\_RANGE}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca2435ce658dcb58fc0970c9750fecbf10}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca2435ce658dcb58fc0970c9750fecbf10}} 
+SD\+\_\+\+CMD\+\_\+\+OUT\+\_\+\+OF\+\_\+\+RANGE&CMD\textquotesingle{}s argument was out of range. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_ADDR\_MISALIGNED@{SD\_ADDR\_MISALIGNED}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_ADDR\_MISALIGNED@{SD\_ADDR\_MISALIGNED}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cac862cc999fa6648eeb631ea82a07a51e}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cac862cc999fa6648eeb631ea82a07a51e}} 
+SD\+\_\+\+ADDR\+\_\+\+MISALIGNED&Misaligned address \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_BLOCK\_LEN\_ERR@{SD\_BLOCK\_LEN\_ERR}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_BLOCK\_LEN\_ERR@{SD\_BLOCK\_LEN\_ERR}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cadd08e6cdc391423ee7c1ba246faf42c3}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cadd08e6cdc391423ee7c1ba246faf42c3}} 
+SD\+\_\+\+BLOCK\+\_\+\+LEN\+\_\+\+ERR&Transferred block length is not allowed for the card or the number of transferred bytes does not match the block length \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_ERASE\_SEQ\_ERR@{SD\_ERASE\_SEQ\_ERR}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_ERASE\_SEQ\_ERR@{SD\_ERASE\_SEQ\_ERR}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cae83866c46e2c68646ce05ff3707b042e}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cae83866c46e2c68646ce05ff3707b042e}} 
+SD\+\_\+\+ERASE\+\_\+\+SEQ\+\_\+\+ERR&An error in the sequence of erase command occurs. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_BAD\_ERASE\_PARAM@{SD\_BAD\_ERASE\_PARAM}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_BAD\_ERASE\_PARAM@{SD\_BAD\_ERASE\_PARAM}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cac52c7addfcb59055f5701898c3484d06}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cac52c7addfcb59055f5701898c3484d06}} 
+SD\+\_\+\+BAD\+\_\+\+ERASE\+\_\+\+PARAM&An Invalid selection for erase groups \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_WRITE\_PROT\_VIOLATION@{SD\_WRITE\_PROT\_VIOLATION}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_WRITE\_PROT\_VIOLATION@{SD\_WRITE\_PROT\_VIOLATION}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca4e295d82b6481694f927367f35aa182d}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca4e295d82b6481694f927367f35aa182d}} 
+SD\+\_\+\+WRITE\+\_\+\+PROT\+\_\+\+VIOLATION&Attempt to program a write protect block \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_LOCK\_UNLOCK\_FAILED@{SD\_LOCK\_UNLOCK\_FAILED}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_LOCK\_UNLOCK\_FAILED@{SD\_LOCK\_UNLOCK\_FAILED}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca093949ff310e17d6596e686804cd0e1e}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca093949ff310e17d6596e686804cd0e1e}} 
+SD\+\_\+\+LOCK\+\_\+\+UNLOCK\+\_\+\+FAILED&Sequence or password error has been detected in unlock command or if there was an attempt to access a locked card \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_COM\_CRC\_FAILED@{SD\_COM\_CRC\_FAILED}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_COM\_CRC\_FAILED@{SD\_COM\_CRC\_FAILED}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca01a35bd6664353a1af3b9ac093acdf94}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca01a35bd6664353a1af3b9ac093acdf94}} 
+SD\+\_\+\+COM\+\_\+\+CRC\+\_\+\+FAILED&CRC check of the previous command failed \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_ILLEGAL\_CMD@{SD\_ILLEGAL\_CMD}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_ILLEGAL\_CMD@{SD\_ILLEGAL\_CMD}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca7fefea39264d07dd179b12be8bf2e51c}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca7fefea39264d07dd179b12be8bf2e51c}} 
+SD\+\_\+\+ILLEGAL\+\_\+\+CMD&Command is not legal for the card state \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_CARD\_ECC\_FAILED@{SD\_CARD\_ECC\_FAILED}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CARD\_ECC\_FAILED@{SD\_CARD\_ECC\_FAILED}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca283091b73f40d5c229c2c3f3d0f4cb74}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca283091b73f40d5c229c2c3f3d0f4cb74}} 
+SD\+\_\+\+CARD\+\_\+\+ECC\+\_\+\+FAILED&Card internal ECC was applied but failed to correct the data \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_CC\_ERROR@{SD\_CC\_ERROR}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CC\_ERROR@{SD\_CC\_ERROR}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca2c6401e2495de3d9fd3b41c273fda150}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca2c6401e2495de3d9fd3b41c273fda150}} 
+SD\+\_\+\+CC\+\_\+\+ERROR&Internal card controller error \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_GENERAL\_UNKNOWN\_ERROR@{SD\_GENERAL\_UNKNOWN\_ERROR}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_GENERAL\_UNKNOWN\_ERROR@{SD\_GENERAL\_UNKNOWN\_ERROR}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca46c693b1502d9e2137ead7857cfe5f9b}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca46c693b1502d9e2137ead7857cfe5f9b}} 
+SD\+\_\+\+GENERAL\+\_\+\+UNKNOWN\+\_\+\+ERROR&General or Unknown error \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_STREAM\_READ\_UNDERRUN@{SD\_STREAM\_READ\_UNDERRUN}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_STREAM\_READ\_UNDERRUN@{SD\_STREAM\_READ\_UNDERRUN}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8caadb3266a9761e9e3d82c1b2512ef6668}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8caadb3266a9761e9e3d82c1b2512ef6668}} 
+SD\+\_\+\+STREAM\+\_\+\+READ\+\_\+\+UNDERRUN&The card could not sustain data transfer in stream read operation. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_STREAM\_WRITE\_OVERRUN@{SD\_STREAM\_WRITE\_OVERRUN}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_STREAM\_WRITE\_OVERRUN@{SD\_STREAM\_WRITE\_OVERRUN}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca3847c922ab4b7f94469768c63084af6b}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca3847c922ab4b7f94469768c63084af6b}} 
+SD\+\_\+\+STREAM\+\_\+\+WRITE\+\_\+\+OVERRUN&The card could not sustain data programming in stream mode \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_CID\_CSD\_OVERWRITE@{SD\_CID\_CSD\_OVERWRITE}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CID\_CSD\_OVERWRITE@{SD\_CID\_CSD\_OVERWRITE}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cadc80e2b4a985f211d85fae68e15fd136}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cadc80e2b4a985f211d85fae68e15fd136}} 
+SD\+\_\+\+CID\+\_\+\+CSD\+\_\+\+OVERWRITE&CID/\+CSD overwrite error \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_WP\_ERASE\_SKIP@{SD\_WP\_ERASE\_SKIP}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_WP\_ERASE\_SKIP@{SD\_WP\_ERASE\_SKIP}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca07b0cc4f75330bdc7efb59f3b3492a3f}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca07b0cc4f75330bdc7efb59f3b3492a3f}} 
+SD\+\_\+\+WP\+\_\+\+ERASE\+\_\+\+SKIP&only partial address space was erased \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_CARD\_ECC\_DISABLED@{SD\_CARD\_ECC\_DISABLED}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CARD\_ECC\_DISABLED@{SD\_CARD\_ECC\_DISABLED}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca4db59f403f83442543a1f1bef242efbd}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca4db59f403f83442543a1f1bef242efbd}} 
+SD\+\_\+\+CARD\+\_\+\+ECC\+\_\+\+DISABLED&Command has been executed without using internal ECC \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_ERASE\_RESET@{SD\_ERASE\_RESET}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_ERASE\_RESET@{SD\_ERASE\_RESET}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca59f8949439bd7871cb2cf3238c6282c5}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca59f8949439bd7871cb2cf3238c6282c5}} 
+SD\+\_\+\+ERASE\+\_\+\+RESET&Erase sequence was cleared before executing because an out of erase sequence command was received \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_AKE\_SEQ\_ERROR@{SD\_AKE\_SEQ\_ERROR}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_AKE\_SEQ\_ERROR@{SD\_AKE\_SEQ\_ERROR}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cafbcf7369094d1a0fa1932c552ab45382}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cafbcf7369094d1a0fa1932c552ab45382}} 
+SD\+\_\+\+AKE\+\_\+\+SEQ\+\_\+\+ERROR&Error in sequence of authentication. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_INVALID\_VOLTRANGE@{SD\_INVALID\_VOLTRANGE}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_INVALID\_VOLTRANGE@{SD\_INVALID\_VOLTRANGE}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca97d498fc349b05a8945156a9f3ccdff5}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca97d498fc349b05a8945156a9f3ccdff5}} 
+SD\+\_\+\+INVALID\+\_\+\+VOLTRANGE&SD invalid voltage range, \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_ADDR\_OUT\_OF\_RANGE@{SD\_ADDR\_OUT\_OF\_RANGE}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_ADDR\_OUT\_OF\_RANGE@{SD\_ADDR\_OUT\_OF\_RANGE}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca82b0b9ba6052f6f2bd0bee7e79cf8ef3}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca82b0b9ba6052f6f2bd0bee7e79cf8ef3}} 
+SD\+\_\+\+ADDR\+\_\+\+OUT\+\_\+\+OF\+\_\+\+RANGE&SD addresses are out of range, \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_SWITCH\_ERROR@{SD\_SWITCH\_ERROR}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_SWITCH\_ERROR@{SD\_SWITCH\_ERROR}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca9566932cb0ad8fe80d5610da9d11fb55}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca9566932cb0ad8fe80d5610da9d11fb55}} 
+SD\+\_\+\+SWITCH\+\_\+\+ERROR&SD switch error, \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_SDIO\_DISABLED@{SD\_SDIO\_DISABLED}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_SDIO\_DISABLED@{SD\_SDIO\_DISABLED}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca9e97f8897dab543749255331f57ae1a7}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca9e97f8897dab543749255331f57ae1a7}} 
+SD\+\_\+\+SDIO\+\_\+\+DISABLED&SD SDIO disability, \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_SDIO\_FUNCTION\_BUSY@{SD\_SDIO\_FUNCTION\_BUSY}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_SDIO\_FUNCTION\_BUSY@{SD\_SDIO\_FUNCTION\_BUSY}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cae4e66b4e0f2a5f5a49b3c785d9905e8b}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cae4e66b4e0f2a5f5a49b3c785d9905e8b}} 
+SD\+\_\+\+SDIO\+\_\+\+FUNCTION\+\_\+\+BUSY&SD SDIO function busy, \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_SDIO\_FUNCTION\_FAILED@{SD\_SDIO\_FUNCTION\_FAILED}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_SDIO\_FUNCTION\_FAILED@{SD\_SDIO\_FUNCTION\_FAILED}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8caab75aa11f151a11569079c41d019ef3c}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8caab75aa11f151a11569079c41d019ef3c}} 
+SD\+\_\+\+SDIO\+\_\+\+FUNCTION\+\_\+\+FAILED&SD SDIO failed, \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_SDIO\_UNKNOWN\_FUNCTION@{SD\_SDIO\_UNKNOWN\_FUNCTION}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_SDIO\_UNKNOWN\_FUNCTION@{SD\_SDIO\_UNKNOWN\_FUNCTION}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca544f7094c7417e8e3be527d83c65d024}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca544f7094c7417e8e3be527d83c65d024}} 
+SD\+\_\+\+SDIO\+\_\+\+UNKNOWN\+\_\+\+FUNCTION&SDIO unknown function, \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_INTERNAL\_ERROR@{SD\_INTERNAL\_ERROR}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_INTERNAL\_ERROR@{SD\_INTERNAL\_ERROR}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca3edc8995af0f0ca919abd400d01d235d}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca3edc8995af0f0ca919abd400d01d235d}} 
+SD\+\_\+\+INTERNAL\+\_\+\+ERROR&SD internal error, \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_NOT\_CONFIGURED@{SD\_NOT\_CONFIGURED}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_NOT\_CONFIGURED@{SD\_NOT\_CONFIGURED}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cad2334607a2604507143ebbd5fcc82876}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cad2334607a2604507143ebbd5fcc82876}} 
+SD\+\_\+\+NOT\+\_\+\+CONFIGURED&SD is not configured, \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_REQUEST\_PENDING@{SD\_REQUEST\_PENDING}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_REQUEST\_PENDING@{SD\_REQUEST\_PENDING}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca48c30b9e7fbd21a2e3dc134b9d0c8bff}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca48c30b9e7fbd21a2e3dc134b9d0c8bff}} 
+SD\+\_\+\+REQUEST\+\_\+\+PENDING&The SD request waits, \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_REQUEST\_NOT\_APPLICABLE@{SD\_REQUEST\_NOT\_APPLICABLE}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_REQUEST\_NOT\_APPLICABLE@{SD\_REQUEST\_NOT\_APPLICABLE}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cada6e80166445f5ee6b7e808a4e7aff23}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cada6e80166445f5ee6b7e808a4e7aff23}} 
+SD\+\_\+\+REQUEST\+\_\+\+NOT\+\_\+\+APPLICABLE&The SD requirement does not apply, \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_INVALID\_PARAMETER@{SD\_INVALID\_PARAMETER}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_INVALID\_PARAMETER@{SD\_INVALID\_PARAMETER}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca1111de40fd22949b14d492954755a70c}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca1111de40fd22949b14d492954755a70c}} 
+SD\+\_\+\+INVALID\+\_\+\+PARAMETER&Invalid SD parameter, \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_UNSUPPORTED\_FEATURE@{SD\_UNSUPPORTED\_FEATURE}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_UNSUPPORTED\_FEATURE@{SD\_UNSUPPORTED\_FEATURE}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca788dcef7dd77feb8a8ba97d84813a8fb}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca788dcef7dd77feb8a8ba97d84813a8fb}} 
+SD\+\_\+\+UNSUPPORTED\+\_\+\+FEATURE&Features not supported by SD, \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_UNSUPPORTED\_HW@{SD\_UNSUPPORTED\_HW}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_UNSUPPORTED\_HW@{SD\_UNSUPPORTED\_HW}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca280d7d545d73078027a223ff35a2b696}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca280d7d545d73078027a223ff35a2b696}} 
+SD\+\_\+\+UNSUPPORTED\+\_\+\+HW&HW not supported by SD, \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_ERROR@{SD\_ERROR}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_ERROR@{SD\_ERROR}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca0002d0c8feceb0fb4cd7d9fc96066c3d}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca0002d0c8feceb0fb4cd7d9fc96066c3d}} 
+SD\+\_\+\+ERROR&SD error \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_OK@{SD\_OK}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_OK@{SD\_OK}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cae7d9e30a15fd1bc4b2cd8f10208e76a6}\label{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cae7d9e30a15fd1bc4b2cd8f10208e76a6}} 
+SD\+\_\+\+OK&SD OK \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00083}{83}} 行定义.
+
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gacdc2533a9bff7dc10def0945f5915398}\label{group___g_p_i_o___exported___types_gacdc2533a9bff7dc10def0945f5915398}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDCardState@{SDCardState}}
+\index{SDCardState@{SDCardState}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDCardState}{SDCardState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___g_p_i_o___exported___types_gacdc2533a9bff7dc10def0945f5915398}{SDCard\+State}}}
+
+
+
+SD state 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_CARD\_READY@{SD\_CARD\_READY}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CARD\_READY@{SD\_CARD\_READY}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a7105d3ddde877b8d09471eb482fb5520}\label{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a7105d3ddde877b8d09471eb482fb5520}} 
+SD\+\_\+\+CARD\+\_\+\+READY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_CARD\_IDENTIFICATION@{SD\_CARD\_IDENTIFICATION}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CARD\_IDENTIFICATION@{SD\_CARD\_IDENTIFICATION}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a18689e3260641d154376eba9a1e3da47}\label{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a18689e3260641d154376eba9a1e3da47}} 
+SD\+\_\+\+CARD\+\_\+\+IDENTIFICATION&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_CARD\_STANDBY@{SD\_CARD\_STANDBY}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CARD\_STANDBY@{SD\_CARD\_STANDBY}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a6e24b45fe387177e2383bac672525f1a}\label{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a6e24b45fe387177e2383bac672525f1a}} 
+SD\+\_\+\+CARD\+\_\+\+STANDBY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_CARD\_TRANSFER@{SD\_CARD\_TRANSFER}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CARD\_TRANSFER@{SD\_CARD\_TRANSFER}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a090f585cfc114861ad07114914a3ad1d}\label{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a090f585cfc114861ad07114914a3ad1d}} 
+SD\+\_\+\+CARD\+\_\+\+TRANSFER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_CARD\_SENDING@{SD\_CARD\_SENDING}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CARD\_SENDING@{SD\_CARD\_SENDING}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a23dec93b22009b39f7b7311f22a7c396}\label{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a23dec93b22009b39f7b7311f22a7c396}} 
+SD\+\_\+\+CARD\+\_\+\+SENDING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_CARD\_RECEIVING@{SD\_CARD\_RECEIVING}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CARD\_RECEIVING@{SD\_CARD\_RECEIVING}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a467165b416761a4858546d616c8dac12}\label{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a467165b416761a4858546d616c8dac12}} 
+SD\+\_\+\+CARD\+\_\+\+RECEIVING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_CARD\_PROGRAMMING@{SD\_CARD\_PROGRAMMING}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CARD\_PROGRAMMING@{SD\_CARD\_PROGRAMMING}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398aa72e3de9b7ac3217b05862ec2412c6cc}\label{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398aa72e3de9b7ac3217b05862ec2412c6cc}} 
+SD\+\_\+\+CARD\+\_\+\+PROGRAMMING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_CARD\_DISCONNECTED@{SD\_CARD\_DISCONNECTED}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CARD\_DISCONNECTED@{SD\_CARD\_DISCONNECTED}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398ac5dd213f085b94ecd3735f15d6a257ec}\label{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398ac5dd213f085b94ecd3735f15d6a257ec}} 
+SD\+\_\+\+CARD\+\_\+\+DISCONNECTED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD\_CARD\_ERROR@{SD\_CARD\_ERROR}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SD\_CARD\_ERROR@{SD\_CARD\_ERROR}}}\mbox{\Hypertarget{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398aed9c89d9fc0101e995ae957f132af14c}\label{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398aed9c89d9fc0101e995ae957f132af14c}} 
+SD\+\_\+\+CARD\+\_\+\+ERROR&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__sdio_8h_source}{hal\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{hal__sdio_8h_source_l00188}{188}} 行定义.
+
+
+
+\doxysubsection{变量说明}
+\mbox{\Hypertarget{group___g_p_i_o___exported___types_gad9b4efaae93cd75532b18c0528a4ca3d}\label{group___g_p_i_o___exported___types_gad9b4efaae93cd75532b18c0528a4ca3d}} 
+\index{GPIO\_Exported\_Types@{GPIO\_Exported\_Types}!SDCardInfo@{SDCardInfo}}
+\index{SDCardInfo@{SDCardInfo}!GPIO\_Exported\_Types@{GPIO\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SDCardInfo}{SDCardInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_d___card_info}{SD\+\_\+\+Card\+Info}} SDCard\+Info\hspace{0.3cm}{\ttfamily [extern]}}
+

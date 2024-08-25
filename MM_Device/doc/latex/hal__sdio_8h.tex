@@ -1,0 +1,481 @@
+\hypertarget{hal__sdio_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Inc/hal\+\_\+sdio.h 文件参考}
+\label{hal__sdio_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_sdio.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_sdio.h}}
+{\ttfamily \#include \char`\"{}mm32\+\_\+reg.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_s_d___c_s_d}{SD\+\_\+\+CSD}}
+\begin{DoxyCompactList}\small\item\em SD card CSD register data \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_s_d___c_i_d}{SD\+\_\+\+CID}}
+\begin{DoxyCompactList}\small\item\em SD card CID register data \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_s_d___card_info}{SD\+\_\+\+Card\+Info}}
+\begin{DoxyCompactList}\small\item\em SD message ,include CSD,CID data \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_s_d_i_o___init_type_def}{SDIO\+\_\+\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em SDIO init \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_s_d_i_o___cmd_init_type_def}{SDIO\+\_\+\+Cmd\+Init\+Type\+Def}}
+\item 
+struct \mbox{\hyperlink{struct_s_d_i_o___data_init_type_def}{SDIO\+\_\+\+Data\+Init\+Type\+Def}}
+\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga8ff1f3960378e05ec3c949940e1c49d0}{SDIO\+\_\+\+FLAG\+\_\+\+CCRCFAIL}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000001)
+\begin{DoxyCompactList}\small\item\em Output Maximum frequency selection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga6de936ea11cbc79444d519268ad9f9bd}{SDIO\+\_\+\+FLAG\+\_\+\+DCRCFAIL}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000002)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga7389f64ff6cfa4f459bf852b5faede30}{SDIO\+\_\+\+FLAG\+\_\+\+CTIMEOUT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000004)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga2d2fd219dd9fea522862195ab9568345}{SDIO\+\_\+\+FLAG\+\_\+\+DTIMEOUT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gabd18f8e5d5387a38dccbe1bf28ae5dbc}{SDIO\+\_\+\+FLAG\+\_\+\+TXUNDERR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000010)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gad49d60039e40d31b734cfacf90caa84f}{SDIO\+\_\+\+FLAG\+\_\+\+RXOVERR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000020)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga083531db75a1e4c05c47578763d53af1}{SDIO\+\_\+\+FLAG\+\_\+\+CMDREND}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000040)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gac81f3837aac17a6aed7310a8ea460f17}{SDIO\+\_\+\+FLAG\+\_\+\+CMDSENT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000080)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gaaacb2f6207c149e05f8bdd70e5d49926}{SDIO\+\_\+\+FLAG\+\_\+\+DATAEND}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000100)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gae83f7cb3fa1183898131f3de47c2333e}{SDIO\+\_\+\+FLAG\+\_\+\+STBITERR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000200)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga5452d8033567821709bd7d5f06547b70}{SDIO\+\_\+\+FLAG\+\_\+\+DBCKEND}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000400)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gad12a9b2bd30e7b907cbabfd92fc645b3}{SDIO\+\_\+\+FLAG\+\_\+\+CMDACT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000800)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gad5d075c98012586b169ec131aab2eeb5}{SDIO\+\_\+\+FLAG\+\_\+\+TXACT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00001000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gacc935dd830338970890a05922dff8ab7}{SDIO\+\_\+\+FLAG\+\_\+\+RXACT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00002000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gae9277461d3c8984dc31af318e2df1959}{SDIO\+\_\+\+FLAG\+\_\+\+TXFIFOHE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00004000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga8c5942ae3df21efad2d7c61a46015758}{SDIO\+\_\+\+FLAG\+\_\+\+RXFIFOHF}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00008000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gad3ca936300ef251639a4cfbe2f63b6b8}{SDIO\+\_\+\+FLAG\+\_\+\+TXFIFOF}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00010000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gaf92cb783f000b8d946fe8ace81b51df2}{SDIO\+\_\+\+FLAG\+\_\+\+RXFIFOF}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00020000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gac41ef05773abad79b4b0c443a77733db}{SDIO\+\_\+\+FLAG\+\_\+\+TXFIFOE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00040000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga59ea7e2dc22df742053c5e525b98599d}{SDIO\+\_\+\+FLAG\+\_\+\+RXFIFOE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00080000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga9c6620d6b16b6af19d3e14f40e688631}{SDIO\+\_\+\+FLAG\+\_\+\+TXDAVL}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00100000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga7558b354658171bb6aa1b6f1e16d8e21}{SDIO\+\_\+\+FLAG\+\_\+\+RXDAVL}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00200000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gae888ec1c9885c35a5f8e01bcffe324a1}{SDIO\+\_\+\+FLAG\+\_\+\+SDIOIT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00400000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga3c8d09a405944948e7a1c5493d49aff1}{SDIO\+\_\+\+FLAG\+\_\+\+CEATAEND}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00800000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gaab8ed7f9a9d82da979eb76222f04db7f}{SD\+\_\+\+POLLING\+\_\+\+MODE}}~0
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gad3f9516a5e6764baf2083f76f4bc0eea}{SD\+\_\+\+DMA\+\_\+\+MODE}}~1
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_ga9d34df51b7f169e0be94fea97d0c1639}{SD\+\_\+\+CMD\+\_\+\+GO\+\_\+\+IDLE\+\_\+\+STATE}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})0)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_ga74eabc4acadc80ad0242d52942c8d76a}{SD\+\_\+\+CMD\+\_\+\+SEND\+\_\+\+OP\+\_\+\+COND}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})1)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_ga3d9d3a1da54a30d81e1d2a9c6a2d9b4f}{SD\+\_\+\+CMD\+\_\+\+ALL\+\_\+\+SEND\+\_\+\+CID}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})2)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_gaa7e0f4e84001656eac62b41179376a25}{SD\+\_\+\+CMD\+\_\+\+SET\+\_\+\+REL\+\_\+\+ADDR}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})3)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_ga89e890726a09716bb1a5c6ef6d0d3d90}{SD\+\_\+\+CMD\+\_\+\+SET\+\_\+\+DSR}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})4)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_ga5f4e5909200ef9eb61ac2252f4099360}{SD\+\_\+\+CMD\+\_\+\+SDIO\+\_\+\+SEN\+\_\+\+OP\+\_\+\+COND}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})5)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_ga88fb9fd3b2c9fea10b79da9a569d4471}{SD\+\_\+\+CMD\+\_\+\+HS\+\_\+\+SWITCH}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})6)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_gaf049767ff08cf35fcddef8f413964050}{SD\+\_\+\+CMD\+\_\+\+SEL\+\_\+\+DESEL\+\_\+\+CARD}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})7)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_gaeea3a373a0065cab0080a56395bc5a19}{SD\+\_\+\+CMD\+\_\+\+HS\+\_\+\+SEND\+\_\+\+EXT\+\_\+\+CSD}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})8)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_gaffe6f096eefb62711d4ba298c4598e2e}{SD\+\_\+\+CMD\+\_\+\+SEND\+\_\+\+CSD}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})9)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_gad0df99cd4f523813b603109db94f07c6}{SD\+\_\+\+CMD\+\_\+\+SEND\+\_\+\+CID}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})10)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_gacf2a1a56e95b0b5ebeca09a38c9538e7}{SD\+\_\+\+CMD\+\_\+\+READ\+\_\+\+DAT\+\_\+\+UNTIL\+\_\+\+STOP}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})11)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_ga45a924a12fc702bebac386ed429a60ff}{SD\+\_\+\+CMD\+\_\+\+STOP\+\_\+\+TRANSMISSION}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})12)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_ga4d58ed74fb20e34fb557fa97c1935fe3}{SD\+\_\+\+CMD\+\_\+\+SEND\+\_\+\+STATUS}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})13)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_ga4dbc2cc034c8f582602063be358ad160}{SD\+\_\+\+CMD\+\_\+\+HS\+\_\+\+BUSTEST\+\_\+\+READ}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})14)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_gab8adaf3188d195b83ba32a9e72863072}{SD\+\_\+\+CMD\+\_\+\+GO\+\_\+\+INACTIVE\+\_\+\+STATE}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})15)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_ga77edc6b67b0921f4473adc7b95039de3}{SD\+\_\+\+CMD\+\_\+\+SET\+\_\+\+BLOCKLEN}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})16)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_ga8a0361bd4864fe9368ba54bc9b2bda24}{SD\+\_\+\+CMD\+\_\+\+READ\+\_\+\+SINGLE\+\_\+\+BLOCK}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})17)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_gafedc6b182681752a4299dffdd1ce74da}{SD\+\_\+\+CMD\+\_\+\+READ\+\_\+\+MULT\+\_\+\+BLOCK}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})18)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_ga2bc9f60a2cc409365a49862d8551349e}{SD\+\_\+\+CMD\+\_\+\+HS\+\_\+\+BUSTEST\+\_\+\+WRITE}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})19)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_ga6478634540db1fa3fcd044315d1238b5}{SD\+\_\+\+CMD\+\_\+\+WRITE\+\_\+\+DAT\+\_\+\+UNTIL\+\_\+\+STOP}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})20)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_ga5dd52de3e95163402a5cd995620d4d01}{SD\+\_\+\+CMD\+\_\+\+SET\+\_\+\+BLOCK\+\_\+\+COUNT}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})23)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_ga20a1c8427ec19835fe2782ec8febd5ca}{SD\+\_\+\+CMD\+\_\+\+WRITE\+\_\+\+SINGLE\+\_\+\+BLOCK}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})24)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_gafe82a884b2692654c9862bb25b8706ce}{SD\+\_\+\+CMD\+\_\+\+WRITE\+\_\+\+MULT\+\_\+\+BLOCK}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})25)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_gae4c3d35575ecc87fb571f2bfb80f3847}{SD\+\_\+\+CMD\+\_\+\+PROG\+\_\+\+CID}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})26)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_gaf911e3c602583e43e3bc16def5feebfc}{SD\+\_\+\+CMD\+\_\+\+PROG\+\_\+\+CSD}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})27)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_ga7a35e2c3f9d6237bf7a3577225d077d8}{SD\+\_\+\+CMD\+\_\+\+SET\+\_\+\+WRITE\+\_\+\+PROT}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})28)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_gac1c159cda7e89dfc085ac66e90790a56}{SD\+\_\+\+CMD\+\_\+\+CLR\+\_\+\+WRITE\+\_\+\+PROT}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})29)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_gabeb680262be8cc173543ae8b1874c83d}{SD\+\_\+\+CMD\+\_\+\+SEND\+\_\+\+WRITE\+\_\+\+PROT}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})30)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_ga34496e2b57973936b853bb1d20dc277d}{SD\+\_\+\+CMD\+\_\+\+SD\+\_\+\+ERASE\+\_\+\+GRP\+\_\+\+START}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})32)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_gae3118ae546ea7ba60735b866552047ac}{SD\+\_\+\+CMD\+\_\+\+SD\+\_\+\+ERASE\+\_\+\+GRP\+\_\+\+END}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})33)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_gae91f1c058f4b0aace233e0e4866fa1d3}{SD\+\_\+\+CMD\+\_\+\+ERASE\+\_\+\+GRP\+\_\+\+START}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})35)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_gabd1685e886f2b4cdeed5813d430a9bf3}{SD\+\_\+\+CMD\+\_\+\+ERASE\+\_\+\+GRP\+\_\+\+END}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})36)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_ga16f4d3918ba7fb538f8d1f3fb8bb0bd1}{SD\+\_\+\+CMD\+\_\+\+ERASE}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})38)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_gac8319cdb71748237d00c937f0fa47fda}{SD\+\_\+\+CMD\+\_\+\+FAST\+\_\+\+IO}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})39)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_gac71656d887c8fad884e95ec525a0a8af}{SD\+\_\+\+CMD\+\_\+\+GO\+\_\+\+IRQ\+\_\+\+STATE}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})40)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_gac89f6043b27673973f4a2b7e106a5f63}{SD\+\_\+\+CMD\+\_\+\+LOCK\+\_\+\+UNLOCK}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})42)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_ga389f949c4ceace711f57dd00f71a8760}{SD\+\_\+\+CMD\+\_\+\+APP\+\_\+\+CMD}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})55)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_ga201db10c31dd8f6e30d99ca58dd291e6}{SD\+\_\+\+CMD\+\_\+\+GEN\+\_\+\+CMD}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})56)
+\item 
+\#define \mbox{\hyperlink{group___s_d_i_o_gab88d7dbeaf38955b1c7d2806f6b446c2}{SD\+\_\+\+CMD\+\_\+\+NO\+\_\+\+CMD}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})64)
+\item 
+\#define \mbox{\hyperlink{group___following_ga1b28ab176d0d05d7f971809aeb07b758}{SD\+\_\+\+CMD\+\_\+\+APP\+\_\+\+SD\+\_\+\+SET\+\_\+\+BUSWIDTH}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})6)
+\item 
+\#define \mbox{\hyperlink{group___following_ga2984265566ee729869324cf5b842a601}{SD\+\_\+\+CMD\+\_\+\+SD\+\_\+\+APP\+\_\+\+STAUS}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})13)
+\item 
+\#define \mbox{\hyperlink{group___following_gae38cb2fd8f0e7cb42c76e3b11055c424}{SD\+\_\+\+CMD\+\_\+\+SD\+\_\+\+APP\+\_\+\+SEND\+\_\+\+NUM\+\_\+\+WRITE\+\_\+\+BLOCKS}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})22)
+\item 
+\#define \mbox{\hyperlink{group___following_ga980954ae3a961028fd59f67a1a30a7de}{SD\+\_\+\+CMD\+\_\+\+SD\+\_\+\+APP\+\_\+\+OP\+\_\+\+COND}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})41)
+\item 
+\#define \mbox{\hyperlink{group___following_ga713f0d9a7c99b7becea80f232c024b59}{SD\+\_\+\+CMD\+\_\+\+SD\+\_\+\+APP\+\_\+\+SET\+\_\+\+CLR\+\_\+\+CARD\+\_\+\+DETECT}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})42)
+\item 
+\#define \mbox{\hyperlink{group___following_ga11c23db52041ccaca4a2dbcafca62c88}{SD\+\_\+\+CMD\+\_\+\+SD\+\_\+\+APP\+\_\+\+SEND\+\_\+\+SCR}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})51)
+\item 
+\#define \mbox{\hyperlink{group___following_ga09d3d2d61d003d6bf75c3fb128e86dbb}{SD\+\_\+\+CMD\+\_\+\+SDIO\+\_\+\+RW\+\_\+\+DIRECT}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})52)
+\item 
+\#define \mbox{\hyperlink{group___following_gaf40f42039cf756a3805800b48e2790ed}{SD\+\_\+\+CMD\+\_\+\+SDIO\+\_\+\+RW\+\_\+\+EXTENDED}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})53)
+\item 
+\#define \mbox{\hyperlink{group___following_ga4f8828be53bb69d6436c03c9c2f427c6}{SD\+\_\+\+CMD\+\_\+\+SD\+\_\+\+APP\+\_\+\+GET\+\_\+\+MKB}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})43)
+\item 
+\#define \mbox{\hyperlink{group___following_gaf2e3bf3ef0ee9a3cbb20d43700521ea7}{SD\+\_\+\+CMD\+\_\+\+SD\+\_\+\+APP\+\_\+\+GET\+\_\+\+MID}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})44)
+\item 
+\#define \mbox{\hyperlink{group___following_ga120a1adc8c10961c831b197f0fd51f76}{SD\+\_\+\+CMD\+\_\+\+SD\+\_\+\+APP\+\_\+\+SET\+\_\+\+CER\+\_\+\+RN1}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})45)
+\item 
+\#define \mbox{\hyperlink{group___following_gab8fbec70c55b91b2227dd592b7257eae}{SD\+\_\+\+CMD\+\_\+\+SD\+\_\+\+APP\+\_\+\+GET\+\_\+\+CER\+\_\+\+RN2}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})46)
+\item 
+\#define \mbox{\hyperlink{group___following_ga6775fd69fe0e739c7464951bd6aacdf1}{SD\+\_\+\+CMD\+\_\+\+SD\+\_\+\+APP\+\_\+\+SET\+\_\+\+CER\+\_\+\+RES2}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})47)
+\item 
+\#define \mbox{\hyperlink{group___following_ga0f39072d4c981331dfc1956c09d8a72c}{SD\+\_\+\+CMD\+\_\+\+SD\+\_\+\+APP\+\_\+\+GET\+\_\+\+CER\+\_\+\+RES1}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})48)
+\item 
+\#define \mbox{\hyperlink{group___following_ga7f4041b0d212f2d5d3f725b0beb97f0e}{SD\+\_\+\+CMD\+\_\+\+SD\+\_\+\+APP\+\_\+\+SECURE\+\_\+\+READ\+\_\+\+MULTIPLE\+\_\+\+BLOCK}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})18)
+\item 
+\#define \mbox{\hyperlink{group___following_ga97cfaea6d5d8646eda4e40b5e0bcbf94}{SD\+\_\+\+CMD\+\_\+\+SD\+\_\+\+APP\+\_\+\+SECURE\+\_\+\+WRITE\+\_\+\+MULTIPLE\+\_\+\+BLOCK}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})25)
+\item 
+\#define \mbox{\hyperlink{group___following_ga60d30f8255fe89e8d1c4aaabb4f3a60f}{SD\+\_\+\+CMD\+\_\+\+SD\+\_\+\+APP\+\_\+\+SECURE\+\_\+\+ERASE}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})38)
+\item 
+\#define \mbox{\hyperlink{group___following_ga15e57ba63b8da2bf43d0205efd532b89}{SD\+\_\+\+CMD\+\_\+\+SD\+\_\+\+APP\+\_\+\+CHANGE\+\_\+\+SECURE\+\_\+\+AREA}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})49)
+\item 
+\#define \mbox{\hyperlink{group___following_ga025052e51318ae13855774c1acf04ee2}{SD\+\_\+\+CMD\+\_\+\+SD\+\_\+\+APP\+\_\+\+SECURE\+\_\+\+WRITE\+\_\+\+MKB}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})48)
+\item 
+\#define \mbox{\hyperlink{group___s_d_gaa713e311ddfaf2265d1ba673543a32b2}{SDIO\+\_\+\+STD\+\_\+\+CAPACITY\+\_\+\+SD\+\_\+\+CARD\+\_\+\+V1\+\_\+1}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___s_d_ga9e67ed9afb202bc0d2993e17ce940b0d}{SDIO\+\_\+\+STD\+\_\+\+CAPACITY\+\_\+\+SD\+\_\+\+CARD\+\_\+\+V2\+\_\+0}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000001)
+\item 
+\#define \mbox{\hyperlink{group___s_d_gac99ee44931ecbf64e04623c442c00916}{SDIO\+\_\+\+HIGH\+\_\+\+CAPACITY\+\_\+\+SD\+\_\+\+CARD}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000002)
+\item 
+\#define \mbox{\hyperlink{group___s_d_ga857bc50f4f97f7f5f525da94db9b2774}{SDIO\+\_\+\+MULTIMEDIA\+\_\+\+CARD}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000003)
+\item 
+\#define \mbox{\hyperlink{group___s_d_ga2a0f3bb0a673de7c62c071865307a36e}{SDIO\+\_\+\+SECURE\+\_\+\+DIGITAL\+\_\+\+IO\+\_\+\+CARD}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000004)
+\item 
+\#define \mbox{\hyperlink{group___s_d_ga202a3247319d79b72bd2968761b75144}{SDIO\+\_\+\+HIGH\+\_\+\+SPEED\+\_\+\+MULTIMEDIA\+\_\+\+CARD}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000005)
+\item 
+\#define \mbox{\hyperlink{group___s_d_ga63b1da6dd1a51131f3b53f1fbfb41ae3}{SDIO\+\_\+\+SECURE\+\_\+\+DIGITAL\+\_\+\+IO\+\_\+\+COMBO\+\_\+\+CARD}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000006)
+\item 
+\#define \mbox{\hyperlink{group___s_d_ga1551b2950a3d0c5fa148957b4f169d0d}{SDIO\+\_\+\+HIGH\+\_\+\+CAPACITY\+\_\+\+MMC\+\_\+\+CARD}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000007)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}~0
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gab07b969cd21592c74e8ad5d929e97055}{SDIO\+\_\+\+STATIC\+\_\+\+FLAGS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x000005\+FF)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga451e336c7bc16567a28475fcb75c9828}{SDIO\+\_\+\+CMD0\+TIMEOUT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00010000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga382d18d77d13eec35d8378641681998e}{SDIO\+\_\+\+DATATIMEOUT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x\+FFFFFFFF)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga159336f05115165cc73502767aab0518}{SDIO\+\_\+\+FIFO\+\_\+\+Address}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x40018080)
+\item 
+\#define \mbox{\hyperlink{group___mask_ga69314e11291e427652a4f6a3a5b1c439}{SD\+\_\+\+OCR\+\_\+\+ADDR\+\_\+\+OUT\+\_\+\+OF\+\_\+\+RANGE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x80000000)
+\item 
+\#define \mbox{\hyperlink{group___mask_ga540633bf8f3289c628063e2c1bd5f9ab}{SD\+\_\+\+OCR\+\_\+\+ADDR\+\_\+\+MISALIGNED}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x40000000)
+\item 
+\#define \mbox{\hyperlink{group___mask_gad528da3ef5cf61ecf6d500a9b527c3e9}{SD\+\_\+\+OCR\+\_\+\+BLOCK\+\_\+\+LEN\+\_\+\+ERR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x20000000)
+\item 
+\#define \mbox{\hyperlink{group___mask_ga749b810615490fcf173d5355a6f42075}{SD\+\_\+\+OCR\+\_\+\+ERASE\+\_\+\+SEQ\+\_\+\+ERR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x10000000)
+\item 
+\#define \mbox{\hyperlink{group___mask_gadbeb08085e7282275fd5684b5d59d5aa}{SD\+\_\+\+OCR\+\_\+\+BAD\+\_\+\+ERASE\+\_\+\+PARAM}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x08000000)
+\item 
+\#define \mbox{\hyperlink{group___mask_gabe0162775c8357aa31263ec2225bd123}{SD\+\_\+\+OCR\+\_\+\+WRITE\+\_\+\+PROT\+\_\+\+VIOLATION}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x04000000)
+\item 
+\#define \mbox{\hyperlink{group___mask_gac9a82e52cc83dd23035bc0fdd9a88cf4}{SD\+\_\+\+OCR\+\_\+\+LOCK\+\_\+\+UNLOCK\+\_\+\+FAILED}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01000000)
+\item 
+\#define \mbox{\hyperlink{group___mask_ga75c4da9e9ca6b935c3afb213dda9c7d0}{SD\+\_\+\+OCR\+\_\+\+COM\+\_\+\+CRC\+\_\+\+FAILED}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00800000)
+\item 
+\#define \mbox{\hyperlink{group___mask_gaacbea47f6b504f11a696e9164d4eb7cd}{SD\+\_\+\+OCR\+\_\+\+ILLEGAL\+\_\+\+CMD}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00400000)
+\item 
+\#define \mbox{\hyperlink{group___mask_ga1631f9e745f1f6c1ded6fba841a05a3d}{SD\+\_\+\+OCR\+\_\+\+CARD\+\_\+\+ECC\+\_\+\+FAILED}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00200000)
+\item 
+\#define \mbox{\hyperlink{group___mask_ga3530c6edf8d326b2d72a8a7fb488957b}{SD\+\_\+\+OCR\+\_\+\+CC\+\_\+\+ERROR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00100000)
+\item 
+\#define \mbox{\hyperlink{group___mask_ga11edb9b3be6266ffb00b9a507e3b9fff}{SD\+\_\+\+OCR\+\_\+\+GENERAL\+\_\+\+UNKNOWN\+\_\+\+ERROR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00080000)
+\item 
+\#define \mbox{\hyperlink{group___mask_ga26270305d70e7d17a8bde14c15378bfd}{SD\+\_\+\+OCR\+\_\+\+STREAM\+\_\+\+READ\+\_\+\+UNDERRUN}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00040000)
+\item 
+\#define \mbox{\hyperlink{group___mask_ga3b9973ae82de6ca9acb76444a9204407}{SD\+\_\+\+OCR\+\_\+\+STREAM\+\_\+\+WRITE\+\_\+\+OVERRUN}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00020000)
+\item 
+\#define \mbox{\hyperlink{group___mask_ga5a2a4ac30f0b473c87f283c9b25508c7}{SD\+\_\+\+OCR\+\_\+\+CID\+\_\+\+CSD\+\_\+\+OVERWRIETE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00010000)
+\item 
+\#define \mbox{\hyperlink{group___mask_gafe54250dcb2461950611828b409b8c42}{SD\+\_\+\+OCR\+\_\+\+WP\+\_\+\+ERASE\+\_\+\+SKIP}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00008000)
+\item 
+\#define \mbox{\hyperlink{group___mask_ga4e3e8df5237733fa61ced5304d6e25b8}{SD\+\_\+\+OCR\+\_\+\+CARD\+\_\+\+ECC\+\_\+\+DISABLED}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00004000)
+\item 
+\#define \mbox{\hyperlink{group___mask_ga67cbe1781e4db67d3b2fe422ba63de09}{SD\+\_\+\+OCR\+\_\+\+ERASE\+\_\+\+RESET}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00002000)
+\item 
+\#define \mbox{\hyperlink{group___mask_ga2b6aa7c64b853586d3eecfd251d7709f}{SD\+\_\+\+OCR\+\_\+\+AKE\+\_\+\+SEQ\+\_\+\+ERROR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)
+\item 
+\#define \mbox{\hyperlink{group___mask_gace772bc4b0b2fdf6488e308afe8f29d1}{SD\+\_\+\+OCR\+\_\+\+ERRORBITS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x\+FDFFE008)
+\item 
+\#define \mbox{\hyperlink{group___masks_ga77d65e0cdecf792a2928b61cc85ed687}{SD\+\_\+\+R6\+\_\+\+GENERAL\+\_\+\+UNKNOWN\+\_\+\+ERROR}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00002000)
+\item 
+\#define \mbox{\hyperlink{group___masks_ga4f58bfcb28f68b87113fea12b172a247}{SD\+\_\+\+R6\+\_\+\+ILLEGAL\+\_\+\+CMD}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00004000)
+\item 
+\#define \mbox{\hyperlink{group___masks_gad4677c73c4e8e7e1ec2161554cfdfeeb}{SD\+\_\+\+R6\+\_\+\+COM\+\_\+\+CRC\+\_\+\+FAILED}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00008000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga0c04dbb0a43806365bea64893961079e}{SD\+\_\+\+VOLTAGE\+\_\+\+WINDOW\+\_\+\+SD}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x80100000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gad5a86eaeba6869b6b2139b92ddfb3a1f}{SD\+\_\+\+HIGH\+\_\+\+CAPACITY}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x40000000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga3cb5fdbf46102857a99b044415873f14}{SD\+\_\+\+STD\+\_\+\+CAPACITY}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gac37389a0323f1a04aec2b59c905f0f6a}{SD\+\_\+\+CHECK\+\_\+\+PATTERN}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x000001\+AA)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gac3500603f00e9b96f513b8464e4b3270}{SD\+\_\+\+VOLTAGE\+\_\+\+WINDOW\+\_\+\+MMC}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x80\+FF8000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga8166660dfea1f2a865e30a8f86269b7f}{SD\+\_\+\+MAX\+\_\+\+VOLT\+\_\+\+TRIAL}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000\+FFFF)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gaa989d106109048a2fb453928325d1f7d}{SD\+\_\+\+ALLZERO}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga6877313126588b7f2ce96f9b4d9a59b1}{SD\+\_\+\+WIDE\+\_\+\+BUS\+\_\+\+SUPPORT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00040000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gadfcb6043212373c69f3f740732f5d2b2}{SD\+\_\+\+SINGLE\+\_\+\+BUS\+\_\+\+SUPPORT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00010000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga0560d0e5f15b8c676bd1c53bf0ac381f}{SD\+\_\+\+CARD\+\_\+\+LOCKED}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x02000000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gad109f64b893f8dc28265271dd74c3027}{SD\+\_\+\+CARD\+\_\+\+PROGRAMMING}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000007)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga289ac705245cf4d150b07b44aecbac54}{SD\+\_\+\+CARD\+\_\+\+RECEIVING}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000006)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga9ca34cf6f4e38835347bc2dc29f9469e}{SD\+\_\+\+DATATIMEOUT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x\+FFFFFFFF)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga37de3e6a7edfd787d09efddc589120ae}{SD\+\_\+0\+TO7\+BITS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x000000\+FF)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga2057731e114d40de0d0d6d2ff74f1501}{SD\+\_\+8\+TO15\+BITS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000\+FF00)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga177a89af799d66f7782e6e8dd4e1438f}{SD\+\_\+16\+TO23\+BITS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00\+FF0000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga3d61f23b4fcf1efb4a16b26bd1f54550}{SD\+\_\+24\+TO31\+BITS}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x\+FF000000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga3be502d718368f47d02b554e863f30b1}{SD\+\_\+\+MAX\+\_\+\+DATA\+\_\+\+LENGTH}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01\+FFFFFF)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga96eec3ea095e393f51ab2686d928908c}{SD\+\_\+\+HALFFIFO}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga95cd045964036c67c40103ab6aa504b7}{SD\+\_\+\+HALFFIFOBYTES}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000020)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gac93a99c6a0f8999f37e690d6955872ac}{SD\+\_\+\+CCCC\+\_\+\+LOCK\+\_\+\+UNLOCK}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000080)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gad8cbc04a4adf7c5588ddeb8e29f391f2}{SD\+\_\+\+CCCC\+\_\+\+WRITE\+\_\+\+PROT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000040)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gaf8f161db032555d848d233e6883e1ddf}{SD\+\_\+\+CCCC\+\_\+\+ERASE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000020)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gafe1c9bdbdccf901be62203bf5547147e}{SDIO\+\_\+\+SEND\+\_\+\+IF\+\_\+\+COND}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga308b8ef0e79ba451644dda923bb3ac41}{SDIO\+\_\+\+Response\+\_\+\+No}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga1f61768f90641648fd5c12e8d2f7e508}{SDIO\+\_\+\+Response\+\_\+\+Short}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga1a11a8750612b344214f846784046bb0}{SDIO\+\_\+\+Response\+\_\+\+Long}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x03)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gaa86e90ddc3426b242a5230b3360c620d}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+1b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga7209d9d52635b66df85712c6fcd668ea}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+2b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000001)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga59cbaecfdebd63177d1208c268626f0a}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+4b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000002)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga14f91159c8c4faf49a335ed9b6a94d0b}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+8b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000003)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga52a7bdab9a75edd94d9c1152e8b078e2}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+16b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000004)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gad0f89aa989c0cedf8d69eb28548413ca}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+32b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000005)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga981c219228ae8df11a501e15843338d4}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+64b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000006)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gaba545c3a5e0f3296341d89a647cb9751}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+128b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000007)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gaa099d7706f98a4fa6eb88277dc6680cf}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+256b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gaa619848f7700962c5b7065f43e286e0b}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+512b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000009)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga7dad3c1c33e63a00eb6301b0a1135baf}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+1024b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000000A)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga41eb937621c7ffcf2688c6bc0ea31464}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+2048b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000000B)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga360411488abdbaf9eee9b99fca793f79}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+4096b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000000C)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gaf61913f3eff52c0f728db9ffbdaca7d2}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+8192b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000000D)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gae80bc49dbed677f7087d523c31fe10ae}{SDIO\+\_\+\+Data\+Block\+Size\+\_\+16384b}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000000E)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_gaef8af0ffa4ea04b3362338d268cc0935}{SDIO\+\_\+\+Transfer\+Dir\+\_\+\+To\+Card}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga55a6d9613d3e2e7762296b45d0d13222}{SDIO\+\_\+\+Transfer\+Dir\+\_\+\+To\+SDIO}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000002)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga266294e1ffd7a4b45e62bff753ca44b2}{SDIO\+\_\+\+Wait\+\_\+\+No}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga3914bbe26a656c8e151272ccdc12c71c}{SDIO\+\_\+\+Wait\+\_\+\+IT}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000100)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___exported___types_ga2a4104023a7f8403ddd159ec3bbb8592}{SDIO\+\_\+\+Wait\+\_\+\+Pend}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000200)
+\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \{ \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca6dfaca7c6ace1889e0294f4ec3ec535c}{SD\+\_\+\+CMD\+\_\+\+CRC\+\_\+\+FAIL}} = 1
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cad99fcef385ca3270d3bce97ed972ff1c}{SD\+\_\+\+DATA\+\_\+\+CRC\+\_\+\+FAIL}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cae1c1b2d0962bd3f40490b15aed01c8ff}{SD\+\_\+\+CMD\+\_\+\+RSP\+\_\+\+TIMEOUT}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cac5f321853ccd7c8aaa571afab467dddd}{SD\+\_\+\+DATA\+\_\+\+TIMEOUT}}
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca7b3c2c028697b45c7e4ab738dfb32732}{SD\+\_\+\+TX\+\_\+\+UNDERRUN}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca8536106ed9ebb00c16d0f42d78f31e37}{SD\+\_\+\+RX\+\_\+\+OVERRUN}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cacc0291fc528b2bb330ca1487a8a3f3cd}{SD\+\_\+\+START\+\_\+\+BIT\+\_\+\+ERR}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca2435ce658dcb58fc0970c9750fecbf10}{SD\+\_\+\+CMD\+\_\+\+OUT\+\_\+\+OF\+\_\+\+RANGE}}
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cac862cc999fa6648eeb631ea82a07a51e}{SD\+\_\+\+ADDR\+\_\+\+MISALIGNED}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cadd08e6cdc391423ee7c1ba246faf42c3}{SD\+\_\+\+BLOCK\+\_\+\+LEN\+\_\+\+ERR}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cae83866c46e2c68646ce05ff3707b042e}{SD\+\_\+\+ERASE\+\_\+\+SEQ\+\_\+\+ERR}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cac52c7addfcb59055f5701898c3484d06}{SD\+\_\+\+BAD\+\_\+\+ERASE\+\_\+\+PARAM}}
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca4e295d82b6481694f927367f35aa182d}{SD\+\_\+\+WRITE\+\_\+\+PROT\+\_\+\+VIOLATION}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca093949ff310e17d6596e686804cd0e1e}{SD\+\_\+\+LOCK\+\_\+\+UNLOCK\+\_\+\+FAILED}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca01a35bd6664353a1af3b9ac093acdf94}{SD\+\_\+\+COM\+\_\+\+CRC\+\_\+\+FAILED}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca7fefea39264d07dd179b12be8bf2e51c}{SD\+\_\+\+ILLEGAL\+\_\+\+CMD}}
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca283091b73f40d5c229c2c3f3d0f4cb74}{SD\+\_\+\+CARD\+\_\+\+ECC\+\_\+\+FAILED}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca2c6401e2495de3d9fd3b41c273fda150}{SD\+\_\+\+CC\+\_\+\+ERROR}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca46c693b1502d9e2137ead7857cfe5f9b}{SD\+\_\+\+GENERAL\+\_\+\+UNKNOWN\+\_\+\+ERROR}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8caadb3266a9761e9e3d82c1b2512ef6668}{SD\+\_\+\+STREAM\+\_\+\+READ\+\_\+\+UNDERRUN}}
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca3847c922ab4b7f94469768c63084af6b}{SD\+\_\+\+STREAM\+\_\+\+WRITE\+\_\+\+OVERRUN}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cadc80e2b4a985f211d85fae68e15fd136}{SD\+\_\+\+CID\+\_\+\+CSD\+\_\+\+OVERWRITE}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca07b0cc4f75330bdc7efb59f3b3492a3f}{SD\+\_\+\+WP\+\_\+\+ERASE\+\_\+\+SKIP}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca4db59f403f83442543a1f1bef242efbd}{SD\+\_\+\+CARD\+\_\+\+ECC\+\_\+\+DISABLED}}
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca59f8949439bd7871cb2cf3238c6282c5}{SD\+\_\+\+ERASE\+\_\+\+RESET}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cafbcf7369094d1a0fa1932c552ab45382}{SD\+\_\+\+AKE\+\_\+\+SEQ\+\_\+\+ERROR}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca97d498fc349b05a8945156a9f3ccdff5}{SD\+\_\+\+INVALID\+\_\+\+VOLTRANGE}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca82b0b9ba6052f6f2bd0bee7e79cf8ef3}{SD\+\_\+\+ADDR\+\_\+\+OUT\+\_\+\+OF\+\_\+\+RANGE}}
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca9566932cb0ad8fe80d5610da9d11fb55}{SD\+\_\+\+SWITCH\+\_\+\+ERROR}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca9e97f8897dab543749255331f57ae1a7}{SD\+\_\+\+SDIO\+\_\+\+DISABLED}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cae4e66b4e0f2a5f5a49b3c785d9905e8b}{SD\+\_\+\+SDIO\+\_\+\+FUNCTION\+\_\+\+BUSY}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8caab75aa11f151a11569079c41d019ef3c}{SD\+\_\+\+SDIO\+\_\+\+FUNCTION\+\_\+\+FAILED}}
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca544f7094c7417e8e3be527d83c65d024}{SD\+\_\+\+SDIO\+\_\+\+UNKNOWN\+\_\+\+FUNCTION}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca3edc8995af0f0ca919abd400d01d235d}{SD\+\_\+\+INTERNAL\+\_\+\+ERROR}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cad2334607a2604507143ebbd5fcc82876}{SD\+\_\+\+NOT\+\_\+\+CONFIGURED}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca48c30b9e7fbd21a2e3dc134b9d0c8bff}{SD\+\_\+\+REQUEST\+\_\+\+PENDING}}
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cada6e80166445f5ee6b7e808a4e7aff23}{SD\+\_\+\+REQUEST\+\_\+\+NOT\+\_\+\+APPLICABLE}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca1111de40fd22949b14d492954755a70c}{SD\+\_\+\+INVALID\+\_\+\+PARAMETER}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca788dcef7dd77feb8a8ba97d84813a8fb}{SD\+\_\+\+UNSUPPORTED\+\_\+\+FEATURE}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca280d7d545d73078027a223ff35a2b696}{SD\+\_\+\+UNSUPPORTED\+\_\+\+HW}}
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8ca0002d0c8feceb0fb4cd7d9fc96066c3d}{SD\+\_\+\+ERROR}}
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacff91fa68daa1d1ee967b5b3fb3dbd8cae7d9e30a15fd1bc4b2cd8f10208e76a6}{SD\+\_\+\+OK}} = 0
+ \}
+\begin{DoxyCompactList}\small\item\em SDIO Various error enumeration definitions \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___g_p_i_o___exported___types_gacdc2533a9bff7dc10def0945f5915398}{SDCard\+State}} \{ \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a7105d3ddde877b8d09471eb482fb5520}{SD\+\_\+\+CARD\+\_\+\+READY}} = ((u32)0x00000001)
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a18689e3260641d154376eba9a1e3da47}{SD\+\_\+\+CARD\+\_\+\+IDENTIFICATION}} = ((u32)0x00000002)
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a6e24b45fe387177e2383bac672525f1a}{SD\+\_\+\+CARD\+\_\+\+STANDBY}} = ((u32)0x00000003)
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a090f585cfc114861ad07114914a3ad1d}{SD\+\_\+\+CARD\+\_\+\+TRANSFER}} = ((u32)0x00000004)
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a23dec93b22009b39f7b7311f22a7c396}{SD\+\_\+\+CARD\+\_\+\+SENDING}} = ((u32)0x00000005)
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398a467165b416761a4858546d616c8dac12}{SD\+\_\+\+CARD\+\_\+\+RECEIVING}} = ((u32)0x00000006)
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398aa72e3de9b7ac3217b05862ec2412c6cc}{SD\+\_\+\+CARD\+\_\+\+PROGRAMMING}} = ((u32)0x00000007)
+, \mbox{\hyperlink{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398ac5dd213f085b94ecd3735f15d6a257ec}{SD\+\_\+\+CARD\+\_\+\+DISCONNECTED}} = ((u32)0x00000008)
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___exported___types_ggacdc2533a9bff7dc10def0945f5915398aed9c89d9fc0101e995ae957f132af14c}{SD\+\_\+\+CARD\+\_\+\+ERROR}} = ((u32)0x000000\+FF)
+ \}
+\begin{DoxyCompactList}\small\item\em SD state \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_gac359d2c6c67a2590f8f9b720c0e4ff1b}{SDIO\+\_\+\+De\+Init}} (void)
+\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga778d338c29df4fae9ef69432e6df32ad}{SDIO\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{struct_s_d_i_o___init_type_def}{SDIO\+\_\+\+Init\+Type\+Def}} $\ast$SDIO\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each SDIO\+\_\+\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga6824fe7b29eebad5e26e1e81b39f884d}{SDIO\+\_\+\+Clock\+Set}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} value)
+\begin{DoxyCompactList}\small\item\em Initializes the SDIO data path according to the specified parameters in the SDIO\+\_\+\+Data\+Init\+Struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_gad40764a8e37c0ed5c9141ae338ff0203}{SDIO\+\_\+\+Init}} (\mbox{\hyperlink{struct_s_d_i_o___init_type_def}{SDIO\+\_\+\+Init\+Type\+Def}} $\ast$SDIO\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the SDIO peripheral according to the specified parameters in the SDIO\+\_\+\+Init\+Struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_gaf40594ca2987d8b4fc4dbb9d59ccf3e0}{SDIO\+\_\+\+ITConfig}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+IT, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the SDIO interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga38f1b73fa641efeeb6a96472d989c767}{SDIO\+\_\+\+CRCConfig}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+CRC, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the SDIO CRC. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_gaa843456dbaf1590d8a5b3dc5a075dcf9}{SDIO\+\_\+\+Clock\+\_\+\+Set}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} clkdiv)
+\begin{DoxyCompactList}\small\item\em Port transfer speed mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga6ac7722df2ba23f1a716db8a4b38a49a}{SDIO\+\_\+\+Send\+\_\+\+Cmd}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} cmdindex, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} waitrsp, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} arg)
+\begin{DoxyCompactList}\small\item\em SDIO sends command functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___i2_c___exported___functions_ga9f053c27018521095d7333e7df238764}{SD\+\_\+\+Power\+OFF}} (void)
+\begin{DoxyCompactList}\small\item\em Turn off the SDIO switch. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___i2_c___exported___functions_ga77ff57848ed54cc9dbfcb2cdfd4d3104}{Cmd\+Error}} (void)
+\begin{DoxyCompactList}\small\item\em Check the execution status of CMD0. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___i2_c___exported___functions_gae875982cdc6a453c2793073e8004585e}{Cmd\+Resp2\+Error}} (void)
+\begin{DoxyCompactList}\small\item\em Check the execution status of CMD2. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___i2_c___exported___functions_ga2c77db272852343b90b0b06573a60e88}{Cmd\+Resp3\+Error}} (void)
+\begin{DoxyCompactList}\small\item\em Check the execution status of CMD3. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___i2_c___exported___functions_gacfe36517f07f12f6b5512ca99cf5e6a1}{Cmd\+Resp6\+Error}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} cmd, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} $\ast$prca)
+\begin{DoxyCompactList}\small\item\em Check the execution status of CMD6. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___i2_c___exported___functions_ga6f8858b757aa1b13e112175cddaf62b9}{Cmd\+Resp7\+Error}} (void)
+\begin{DoxyCompactList}\small\item\em Check the execution status of CMD7. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___g_p_i_o___exported___types_gacff91fa68daa1d1ee967b5b3fb3dbd8c}{SD\+\_\+\+Error}} \mbox{\hyperlink{group___i2_c___exported___functions_ga384372e7cd037af3dbc92da854508c70}{Cmd\+Resp1\+Error}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} cmd)
+\begin{DoxyCompactList}\small\item\em Check the error status of the R1 response. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga8ed0e660e0b895d3f9cb9a560ad50291}{SDIO\+\_\+\+Send\+\_\+\+Data\+\_\+\+Cfg}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} datatimeout, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} datalen, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} blksize, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} dir)
+\begin{DoxyCompactList}\small\item\em Write data direction block size configuration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga160c7fe3b6f5c5812caa893a47f3e89a}{SDIO\+\_\+\+Clear\+ITPending\+Bit}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Clears the SDIO\textquotesingle{}s interrupt pending bits. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___i2_c___exported___functions_ga2c48bd26d3f6a531cb667bfaf6525520}{SDIO\+\_\+\+Get\+Flag\+Status}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+FLAG)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified SDIO flag is set or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___i2_c___exported___functions_ga186e0c0406b9f6e56e33421f287a613b}{SDIO\+\_\+\+Get\+Time\+Out\+Counter}} (void)
+\begin{DoxyCompactList}\small\item\em Reads the value of the data transfer timeout count \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___i2_c___exported___functions_ga2e0007f7bb12c1b43f7495c6a4a20b50}{SDIO\+\_\+\+Read\+Data}} (void)
+\begin{DoxyCompactList}\small\item\em Read one data word from FIFO. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_gac5a58e2b720a0492c693b60024ee41b0}{SDIO\+\_\+\+Write\+Data}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} tempbuff)
+\begin{DoxyCompactList}\small\item\em Write one data word to FIFO. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i2_c___exported___functions_ga5c83f845a6c1f66883c3bb6254977cda}{SDIO\+\_\+\+DMACmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enable or Dsiable DMA . \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_s_d___card_info}{SD\+\_\+\+Card\+Info}} \mbox{\hyperlink{group___g_p_i_o___exported___types_gad9b4efaae93cd75532b18c0528a4ca3d}{SDCard\+Info}}
+\end{DoxyCompactItemize}

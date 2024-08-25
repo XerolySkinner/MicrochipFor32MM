@@ -1,0 +1,25 @@
+\hypertarget{hal__dbg_8c_source}{}\doxysection{hal\+\_\+dbg.\+c}
+\label{hal__dbg_8c_source}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_dbg.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_dbg.c}}
+\mbox{\hyperlink{hal__dbg_8c}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{hal__dbg_8c_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{hal__dbg_8c_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{hal__dbg_8c_source_l00018}00018 \textcolor{comment}{// Define to prevent recursive inclusion}}
+\DoxyCodeLine{\Hypertarget{hal__dbg_8c_source_l00019}\mbox{\hyperlink{hal__dbg_8c_ac738fa9c34ce9116e3fb6bc988471a43}{00019}} \textcolor{preprocessor}{\#define \_HAL\_DBG\_C}}
+\DoxyCodeLine{\Hypertarget{hal__dbg_8c_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{hal__dbg_8c_source_l00021}00021 \textcolor{comment}{// Files includes}}
+\DoxyCodeLine{\Hypertarget{hal__dbg_8c_source_l00022}00022 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{types_8h}{types.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{hal__dbg_8c_source_l00023}00023 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{hal__dbg_8h}{hal\_dbg.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{hal__dbg_8c_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{hal__dbg_8c_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{hal__dbg_8c_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{hal__dbg_8c_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{hal__dbg_8c_source_l00044}\mbox{\hyperlink{group___d_b_g___exported___functions_gaf1e0a240cfefc296959ef90cff04157e}{00044}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___d_b_g___exported___functions_gaf1e0a240cfefc296959ef90cff04157e}{DBGMCU\_Configure}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} periph, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__dbg_8c_source_l00045}00045 \{}
+\DoxyCodeLine{\Hypertarget{hal__dbg_8c_source_l00046}00046     (state) ? (\mbox{\hyperlink{reg__dbg_8h_a92ec6d9ec2251fda7d4ce09748cd74b4}{DBGMCU}}-\/>CR |= periph) : (\mbox{\hyperlink{reg__dbg_8h_a92ec6d9ec2251fda7d4ce09748cd74b4}{DBGMCU}}-\/>CR \&= \string~periph);}
+\DoxyCodeLine{\Hypertarget{hal__dbg_8c_source_l00047}00047 \}}
+\DoxyCodeLine{\Hypertarget{hal__dbg_8c_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{hal__dbg_8c_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{hal__dbg_8c_source_l00052}00052 }
+
+\end{DoxyCode}

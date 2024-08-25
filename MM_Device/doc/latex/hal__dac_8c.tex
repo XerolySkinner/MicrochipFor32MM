@@ -1,0 +1,71 @@
+\hypertarget{hal__dac_8c}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Src/hal\+\_\+dac.c 文件参考}
+\label{hal__dac_8c}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_dac.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_dac.c}}
+
+
+THIS FILE PROVIDES ALL THE DAC FIRMWARE FUNCTIONS.  
+
+
+{\ttfamily \#include \char`\"{}hal\+\_\+dac.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}hal\+\_\+rcc.\+h\char`\"{}}\newline
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{hal__dac_8c_ac75ebf9944d52d6b1a5093c26658491a}{\+\_\+\+HAL\+\_\+\+DAC\+\_\+\+C\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___d_a_c___exported___functions_ga1fae225204e1e049d6795319e99ba8bc}{DAC\+\_\+\+De\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes the DAC peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_a_c___exported___functions_ga7a75e485cf9a0d9871e7053a1409a660}{DAC\+\_\+\+Init}} (\mbox{\hyperlink{group___d_a_c___exported___types_ga7e0c8ae673fea8abf7818ce324874723}{em\+DACCH\+\_\+\+Type\+Def}} channel, \mbox{\hyperlink{struct_d_a_c___init_type_def}{DAC\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Initializes the DAC peripheral according to the specified parameters in the DAC\+\_\+\+Init\+Struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_a_c___exported___functions_ga815b774d9fd13579d1b72d7053ddac89}{DAC\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{struct_d_a_c___init_type_def}{DAC\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Fills each DAC\+\_\+\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_a_c___exported___functions_gaaf50d963be6d15e10eb708e0049d41b5}{DAC\+\_\+\+Cmd}} (\mbox{\hyperlink{group___d_a_c___exported___types_ga7e0c8ae673fea8abf7818ce324874723}{em\+DACCH\+\_\+\+Type\+Def}} channel, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified DAC channel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_a_c___exported___functions_gadf8eb57a5bbb79e539a68753659e4090}{DAC\+\_\+\+DMACmd}} (\mbox{\hyperlink{group___d_a_c___exported___types_ga7e0c8ae673fea8abf7818ce324874723}{em\+DACCH\+\_\+\+Type\+Def}} channel, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified DAC channel DMA request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_a_c___exported___functions_ga5d50788a766eedb4670991d71216fbdc}{DAC\+\_\+\+Software\+Trigger\+Cmd}} (\mbox{\hyperlink{group___d_a_c___exported___types_ga7e0c8ae673fea8abf7818ce324874723}{em\+DACCH\+\_\+\+Type\+Def}} channel, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the selected DAC channel software trigger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_a_c___exported___functions_ga8486bbe020f5197a267aefd2dc8c49e9}{DAC\+\_\+\+Dual\+Software\+Trigger\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables simultaneously the two DAC channels software triggers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_a_c___exported___functions_ga5744c10fec5184741d2bbd51c6a169b3}{DAC\+\_\+\+Wave\+Generation\+Cmd}} (\mbox{\hyperlink{group___d_a_c___exported___types_ga7e0c8ae673fea8abf7818ce324874723}{em\+DACCH\+\_\+\+Type\+Def}} channel, \mbox{\hyperlink{group___d_a_c___exported___types_ga1faa3be447f7db2a4f6dee23d48171a1}{em\+DACWAVE\+\_\+\+Type\+Def}} wave, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the selected DAC channel wave generation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_a_c___exported___functions_gae39627896f1e8a7598c7d75cff57d5b4}{DAC\+\_\+\+Set\+Channel1\+Data}} (\mbox{\hyperlink{group___d_a_c___exported___types_gac4883f249cc6e92a0ae887895598df89}{em\+DACALIGN\+\_\+\+Type\+Def}} alignement, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} data)
+\begin{DoxyCompactList}\small\item\em Set the specified data holding register value for DAC channel1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_a_c___exported___functions_gae936b3825fbbe0add60eb061648cd3af}{DAC\+\_\+\+Set\+Channel2\+Data}} (\mbox{\hyperlink{group___d_a_c___exported___types_gac4883f249cc6e92a0ae887895598df89}{em\+DACALIGN\+\_\+\+Type\+Def}} alignement, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} data)
+\begin{DoxyCompactList}\small\item\em Set the specified data holding register value for DAC channel2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_a_c___exported___functions_gaba1e91fef1c2775acbae9d975c668041}{DAC\+\_\+\+Set\+Dual\+Channel\+Data}} (\mbox{\hyperlink{group___d_a_c___exported___types_gac4883f249cc6e92a0ae887895598df89}{em\+DACALIGN\+\_\+\+Type\+Def}} alignement, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} data2, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} data1)
+\begin{DoxyCompactList}\small\item\em Set the specified data holding register value for dual channel DAC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{group___d_a_c___exported___functions_ga89fd33164cd7b9b647ede7cd0f8b5941}{DAC\+\_\+\+Get\+Data\+Output\+Value}} (\mbox{\hyperlink{group___d_a_c___exported___types_ga7e0c8ae673fea8abf7818ce324874723}{em\+DACCH\+\_\+\+Type\+Def}} channel)
+\begin{DoxyCompactList}\small\item\em Returns the last data output value of the selected DAC cahnnel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE PROVIDES ALL THE DAC FIRMWARE FUNCTIONS. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{hal__dac_8c_source}{hal\+\_\+dac.\+c}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{hal__dac_8c_ac75ebf9944d52d6b1a5093c26658491a}\label{hal__dac_8c_ac75ebf9944d52d6b1a5093c26658491a}} 
+\index{hal\_dac.c@{hal\_dac.c}!\_HAL\_DAC\_C\_@{\_HAL\_DAC\_C\_}}
+\index{\_HAL\_DAC\_C\_@{\_HAL\_DAC\_C\_}!hal\_dac.c@{hal\_dac.c}}
+\doxysubsubsection{\texorpdfstring{\_HAL\_DAC\_C\_}{\_HAL\_DAC\_C\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+HAL\+\_\+\+DAC\+\_\+\+C\+\_\+}
+
+
+
+在文件 \mbox{\hyperlink{hal__dac_8c_source}{hal\+\_\+dac.\+c}} 第 \mbox{\hyperlink{hal__dac_8c_source_l00019}{19}} 行定义.
+

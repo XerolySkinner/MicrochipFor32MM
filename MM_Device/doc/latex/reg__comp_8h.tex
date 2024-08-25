@@ -1,0 +1,1690 @@
+\hypertarget{reg__comp_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/reg\+\_\+comp.h 文件参考}
+\label{reg__comp_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_comp.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_comp.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_o_m_p___type_def}{COMP\+\_\+\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em Comparators Register Structure Definition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{reg__comp_8h_aa9f5d2999c6918e385d7a526c4f6b1d3}{COMP\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a25b99d6065f1c8f751e78f43ade652cb}{APB2\+PERIPH\+\_\+\+BASE}} + 0x4000)
+\begin{DoxyCompactList}\small\item\em COMP Base Address Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a076912543697dbe4c46b79e8e44ad2fb}{COMP}}~((\mbox{\hyperlink{struct_c_o_m_p___type_def}{COMP\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__comp_8h_aa9f5d2999c6918e385d7a526c4f6b1d3}{COMP\+\_\+\+BASE}})
+\begin{DoxyCompactList}\small\item\em COMP type pointer Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a498f8c6f080f53a4bd0cbd3f4cdf2958}{COMP\+\_\+\+CSR\+\_\+\+EN\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em COMP\+\_\+\+CSR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a6feb7a7d13ffb5a2811aa35c8abed1ed}{COMP\+\_\+\+CSR\+\_\+\+EN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a498f8c6f080f53a4bd0cbd3f4cdf2958}{COMP\+\_\+\+CSR\+\_\+\+EN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a95c778b1623c98a0ee3224f77778eaee}{COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a881160b873bd1d13a7a6460efbf1ba72}{COMP\+\_\+\+CSR\+\_\+\+MODE}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a95c778b1623c98a0ee3224f77778eaee}{COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a25ce3990789222d13a2f93b133747195}{COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+LOWESTPOWER}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a95c778b1623c98a0ee3224f77778eaee}{COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator lowest power mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_ac511854578324b91e9785b79342b159d}{COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+LOWPOWER}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a95c778b1623c98a0ee3224f77778eaee}{COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator low power mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a2e0b130148eed0ff956647415338fb27}{COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+MEDIUMRATE}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a95c778b1623c98a0ee3224f77778eaee}{COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator medium rate mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_acbe54e9ef6314d3306be24e55bb03940}{COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+HIGHRATE}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a95c778b1623c98a0ee3224f77778eaee}{COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator high rate mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_aefd6c4cab80b398a40650cc9beaa05da}{COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a33b67cb6f1105bfff36ec312a416138a}{COMP\+\_\+\+CSR\+\_\+\+INM}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_aefd6c4cab80b398a40650cc9beaa05da}{COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator inverting input selection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a0fbc524823f2fdafccb620df2823a0aa}{COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+0}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_aefd6c4cab80b398a40650cc9beaa05da}{COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em INM0 as COMP inverting input \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a88dd0ee91abcd0c3e9bd668999e99bae}{COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_aefd6c4cab80b398a40650cc9beaa05da}{COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em INM1 as COMP inverting input \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a5ca7609136c6f515ccb15df27ff0d288}{COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+2}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__comp_8h_aefd6c4cab80b398a40650cc9beaa05da}{COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em INM2 as COMP inverting input \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a96b57989efd8aa2ca25f13f54078b9f0}{COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+3}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_aefd6c4cab80b398a40650cc9beaa05da}{COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em INM3 as COMP inverting input \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a228353e524f3ed06bdb3a9e93a3345aa}{COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a0eac6adbdca70aeea3e28ecfed561824}{COMP\+\_\+\+CSR\+\_\+\+INP}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a228353e524f3ed06bdb3a9e93a3345aa}{COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator non-\/inverting input selection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a2045e358c5c2c3e9901d218b76bf9544}{COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+INP0}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a228353e524f3ed06bdb3a9e93a3345aa}{COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em INP0 as COMP non-\/inverting input \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a5b74bd78d643c273727db59fdddbe558}{COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+INP1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a228353e524f3ed06bdb3a9e93a3345aa}{COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em INP1 as COMP non-\/inverting input \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a6010b10f67b3720db622e4b066d1170f}{COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+INP2}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a228353e524f3ed06bdb3a9e93a3345aa}{COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em INP2 as COMP non-\/inverting input \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_afca76f50ef70a99773a31bffcd8f34de}{COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+INP3}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a228353e524f3ed06bdb3a9e93a3345aa}{COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em INP3 as COMP non-\/inverting input \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+Pos}}~(10)
+\item 
+\#define \mbox{\hyperlink{reg__comp_8h_af2b4659e7c1951210a2857a301b82f72}{COMP\+\_\+\+CSR\+\_\+\+OUT}}~(0x0\+FU $<$$<$ \mbox{\hyperlink{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator output selection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_ab0853e7d22daacd9afca97fbdee023a4}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM1\+\_\+\+BRAKE}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Timer1 brake input \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a64719a223c627689308a19afa0273497}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM8\+\_\+\+BRAKE}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Timer8 brake input \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_abf318332c4fc0199ddabb9a129d9e211}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM1\+\_\+\+OCREFCLR}}~(0x06U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Timer1 ocrefclear input \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a98d6964003360baad0f6257f2438113e}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM1\+\_\+\+CAPTURE1}}~(0x07U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Timer1 input capture 1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a61bc1316d52a1ee311a4c90e121deed5}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM2\+\_\+\+CAPTURE4}}~(0x08U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Timer2 input capture 4 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a8bed44e97308d2a07972cd56d513b5dd}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM2\+\_\+\+OCREFCLR}}~(0x09U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Timer2 ocrefclear input \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a4662aa361e6dca6e85045531e7dfe3a4}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM3\+\_\+\+CAPTURE1}}~(0x0\+AU $<$$<$ \mbox{\hyperlink{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Timer3 input capture 1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_aec7fe9a0d8b0209ee03bc6262fb079ae}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM3\+\_\+\+OCREFCLR}}~(0x0\+BU $<$$<$ \mbox{\hyperlink{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Timer3 ocrefclear input \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a68f00cbec25bf7ba628ddc50684b4fcf}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM8\+\_\+\+OCREFCLR}}~(0x0\+FU $<$$<$ \mbox{\hyperlink{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Timer8 ocrefclear input \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_afcb2a0b29a8f499894c46125d15b02eb}{COMP\+\_\+\+CSR\+\_\+\+POL\+\_\+\+Pos}}~(15)
+\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a779101ba19f64f50bcd2dc2cb2df665a}{COMP\+\_\+\+CSR\+\_\+\+POL}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_afcb2a0b29a8f499894c46125d15b02eb}{COMP\+\_\+\+CSR\+\_\+\+POL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator output polarity \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a4ca1d8272428fd1386b9a971b687a589}{COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+\+Pos}}~(16)
+\item 
+\#define \mbox{\hyperlink{reg__comp_8h_afe57b321ccbc7cbef7ab5dba15ec851f}{COMP\+\_\+\+CSR\+\_\+\+HYST}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a4ca1d8272428fd1386b9a971b687a589}{COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator hysteresis \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a921b78b44b1638adb97b4a3fea45e77a}{COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+0}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a4ca1d8272428fd1386b9a971b687a589}{COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Hysteresis Voltage\+: 0mV \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a2902565b63e379c195aafdac4f0b1603}{COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+15}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a4ca1d8272428fd1386b9a971b687a589}{COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Hysteresis Voltage\+: 15mV \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a71b1d05cb078848fee5a453829aec585}{COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+30}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a4ca1d8272428fd1386b9a971b687a589}{COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Hysteresis Voltage\+: 30mV \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a48fb16def552a8f1d3721e5c5bcc352d}{COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+90}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a4ca1d8272428fd1386b9a971b687a589}{COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Hysteresis Voltage\+: 90mV \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a7b69d030b00e87017fe10e25d99d9397}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+\+Pos}}~(18)
+\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a20bb581c539a0f361f50c50e37f319ad}{COMP\+\_\+\+CSR\+\_\+\+OFLT}}~(0x07U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7b69d030b00e87017fe10e25d99d9397}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator output filter \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a298dd3892325a32d74a2c708708cc49c}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+0}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7b69d030b00e87017fe10e25d99d9397}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 0 clock cycle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_adb8661186a10a74ddb89a3786b0f702e}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7b69d030b00e87017fe10e25d99d9397}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 2 clock cycle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a12819b74773d3428bfe119a083d341de}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+2}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7b69d030b00e87017fe10e25d99d9397}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 4 clock cycle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a9c6a0c7d4165628ec653ebb92d30a181}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+3}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7b69d030b00e87017fe10e25d99d9397}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 8 clock cycle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a532d7389875b706eba88a35a2af2d312}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+4}}~(0x04U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7b69d030b00e87017fe10e25d99d9397}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 16 clock cycle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a6f14240f4c80d15fe8837f4b909c8025}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+5}}~(0x05U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7b69d030b00e87017fe10e25d99d9397}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 32 clock cycle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a7e54f4e3844ade67f578badae23fccdf}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+6}}~(0x06U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7b69d030b00e87017fe10e25d99d9397}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 64 clock cycle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a0b3e57ea29e5f11b9bb49a61a212e0d5}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+7}}~(0x07U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7b69d030b00e87017fe10e25d99d9397}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 128 clock cycle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a2920def2d91945439453d4127493b5a7}{COMP\+\_\+\+CSR\+\_\+\+STA\+\_\+\+Pos}}~(30)
+\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a9c1f2c955f4c137673d5c820444c0c3b}{COMP\+\_\+\+CSR\+\_\+\+STA}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a2920def2d91945439453d4127493b5a7}{COMP\+\_\+\+CSR\+\_\+\+STA\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator output status \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_ae38ed1b1eb108ae669a872817a81e22c}{COMP\+\_\+\+CSR\+\_\+\+LOCK\+\_\+\+Pos}}~(31)
+\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a7a926a0b464f05c1f53a783275878832}{COMP\+\_\+\+CSR\+\_\+\+LOCK}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_ae38ed1b1eb108ae669a872817a81e22c}{COMP\+\_\+\+CSR\+\_\+\+LOCK\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator lock \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em COMP\+\_\+\+CRV Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_acde012fd35100ffae61c3e8c32880e73}{COMP\+\_\+\+CRV\+\_\+\+MASK}}~(0x0\+FU $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator external reference voltage select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_aa97a5644962d05f0a917f4454fe1001b}{COMP\+\_\+\+CRV\+\_\+1\+\_\+20}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator external reference voltage select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a31ec621fd926a16bd9629368b42429e8}{COMP\+\_\+\+CRV\+\_\+2\+\_\+20}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator external reference voltage select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a98f66e892716dd963073379d153622c7}{COMP\+\_\+\+CRV\+\_\+3\+\_\+20}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator external reference voltage select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a9dc0d397b28acb6b0ff0c6dd0749aea7}{COMP\+\_\+\+CRV\+\_\+4\+\_\+20}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator external reference voltage select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a13a7706dfef8f491cacd7c76a8f2ba50}{COMP\+\_\+\+CRV\+\_\+5\+\_\+20}}~(0x04U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator external reference voltage select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_ace103a17b0c7259d51dc79186b88ef25}{COMP\+\_\+\+CRV\+\_\+6\+\_\+20}}~(0x05U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator external reference voltage select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a6ae9f400639fd7d5d6c3760ec3dadce6}{COMP\+\_\+\+CRV\+\_\+7\+\_\+20}}~(0x06U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator external reference voltage select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a04a6fc851484aeedcffcd67134669507}{COMP\+\_\+\+CRV\+\_\+8\+\_\+20}}~(0x07U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator external reference voltage select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a9054414fb3a5d5066b50bf7f5e31ecd5}{COMP\+\_\+\+CRV\+\_\+9\+\_\+20}}~(0x08U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator external reference voltage select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a905af938d8e33dc2cf73f184c1dc6c8d}{COMP\+\_\+\+CRV\+\_\+10\+\_\+20}}~(0x09U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator external reference voltage select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a8c733cf005c9b7ba7957c5b1c13898d0}{COMP\+\_\+\+CRV\+\_\+11\+\_\+20}}~(0x0\+AU $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator external reference voltage select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_abf1d95e9e1dfb9a8edd89bd6bd03abc9}{COMP\+\_\+\+CRV\+\_\+12\+\_\+20}}~(0x0\+BU $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator external reference voltage select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a1bf8ba7ac4b8ce4a26ebe094969ec5f5}{COMP\+\_\+\+CRV\+\_\+13\+\_\+20}}~(0x0\+CU $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator external reference voltage select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_af7b5ec03be6448df4e8bb7b531def2c1}{COMP\+\_\+\+CRV\+\_\+14\+\_\+20}}~(0x0\+DU $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator external reference voltage select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a8018e0fcf73365cfb8f85e84907afa42}{COMP\+\_\+\+CRV\+\_\+15\+\_\+20}}~(0x0\+EU $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator external reference voltage select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_aa81a6b8208133262d6d256c4d6d92078}{COMP\+\_\+\+CRV\+\_\+16\+\_\+20}}~(0x0\+FU $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator external reference voltage select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a55a5b9eda28d7b2530f4daa5876c2e3c}{COMP\+\_\+\+CRV\+\_\+\+EN\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a8eeaceb3ac796ea173c95d3964cb00cf}{COMP\+\_\+\+CRV\+\_\+\+EN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a55a5b9eda28d7b2530f4daa5876c2e3c}{COMP\+\_\+\+CRV\+\_\+\+EN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator external reference voltage enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a90725796b88d16ca54300330fc203c3d}{COMP\+\_\+\+CRV\+\_\+\+EN\+\_\+\+DISABLE}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a55a5b9eda28d7b2530f4daa5876c2e3c}{COMP\+\_\+\+CRV\+\_\+\+EN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Disable comparator external reference voltage \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_abc3955323687208b089160cf251030e2}{COMP\+\_\+\+CRV\+\_\+\+EN\+\_\+\+ENABLE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a55a5b9eda28d7b2530f4daa5876c2e3c}{COMP\+\_\+\+CRV\+\_\+\+EN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Enable comparator external reference voltage \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a7c48217e78495ea9ce554cbb1a1dbbe1}{COMP\+\_\+\+CRV\+\_\+\+SRC\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a34b573cfa8296c0e42c1f09e39a98784}{COMP\+\_\+\+CRV\+\_\+\+SRC}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7c48217e78495ea9ce554cbb1a1dbbe1}{COMP\+\_\+\+CRV\+\_\+\+SRC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator external reference voltage source select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_ab967d08bdc1c8ed29874034eddd3f99b}{COMP\+\_\+\+CRV\+\_\+\+SRC\+\_\+\+VREF}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7c48217e78495ea9ce554cbb1a1dbbe1}{COMP\+\_\+\+CRV\+\_\+\+SRC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Select VREF \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a89343663aff99ac0237ef8b747fc2276}{COMP\+\_\+\+CRV\+\_\+\+SRC\+\_\+\+AVDD}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7c48217e78495ea9ce554cbb1a1dbbe1}{COMP\+\_\+\+CRV\+\_\+\+SRC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Select AVDD \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a025c45c087afc2373cb7643d542394ba}{COMP\+\_\+\+POLL\+\_\+\+EN\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em COMP\+\_\+\+POL Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_aa975186d178fa9a56a7993b4242db68e}{COMP\+\_\+\+POLL\+\_\+\+EN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a025c45c087afc2373cb7643d542394ba}{COMP\+\_\+\+POLL\+\_\+\+EN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator polling enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_ada77b63fd53677a238a3741aceb8ab0f}{COMP\+\_\+\+POLL\+\_\+\+EN\+\_\+\+DISABLE}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a025c45c087afc2373cb7643d542394ba}{COMP\+\_\+\+POLL\+\_\+\+EN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Disable comparator polling mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a184043897ac472c62db1055f996351df}{COMP\+\_\+\+POLL\+\_\+\+EN\+\_\+\+ENABLE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a025c45c087afc2373cb7643d542394ba}{COMP\+\_\+\+POLL\+\_\+\+EN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Enable comparator polling mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_ab5ee8c4ce1305ab2459f9c44c1bd9166}{COMP\+\_\+\+POLL\+\_\+\+CH\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a1d0c78842575ce6c884cc54c78b05567}{COMP\+\_\+\+POLL\+\_\+\+CH}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_ab5ee8c4ce1305ab2459f9c44c1bd9166}{COMP\+\_\+\+POLL\+\_\+\+CH\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Comparator polling channel \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_ae161c2a025afe5b76caf0cf33dfd18e7}{COMP\+\_\+\+POLL\+\_\+\+CH\+\_\+1\+\_\+2}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_ab5ee8c4ce1305ab2459f9c44c1bd9166}{COMP\+\_\+\+POLL\+\_\+\+CH\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Polling channel 1/2 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a2c3bcd979c88ff989c9a380b2143a7cb}{COMP\+\_\+\+POLL\+\_\+\+CH\+\_\+1\+\_\+2\+\_\+3}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_ab5ee8c4ce1305ab2459f9c44c1bd9166}{COMP\+\_\+\+POLL\+\_\+\+CH\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Polling channel 1/2/3 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a4cd2f8b646bd16455acb390a8945a306}{COMP\+\_\+\+POLL\+\_\+\+FIXN\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__comp_8h_ab2dd27174cfa8cc49413c4001d85e58e}{COMP\+\_\+\+POLL\+\_\+\+FIXN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a4cd2f8b646bd16455acb390a8945a306}{COMP\+\_\+\+POLL\+\_\+\+FIXN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Polling inverting input fix \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a8a5bd544edfe483d03bd9123f60ea648}{COMP\+\_\+\+POLL\+\_\+\+FIXN\+\_\+\+NOTFIXED}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a4cd2f8b646bd16455acb390a8945a306}{COMP\+\_\+\+POLL\+\_\+\+FIXN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Polling channel inverting input is not fixed \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a4b1f234e822c53de5967de8b212f2fc4}{COMP\+\_\+\+POLL\+\_\+\+FIXN\+\_\+\+FIXED}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a4cd2f8b646bd16455acb390a8945a306}{COMP\+\_\+\+POLL\+\_\+\+FIXN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Polling channel inverting input fixed \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_adbefe75ed1f229606d0b769925878778}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a9831b529fc21028dc460f3c3b1f84941}{COMP\+\_\+\+POLL\+\_\+\+PERIOD}}~(0x07U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adbefe75ed1f229606d0b769925878778}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em polling wait cycle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a7b084e0485d7dc01ce71130367cda3ff}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+1}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adbefe75ed1f229606d0b769925878778}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 1 clock cycle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a57089e14ccbef2ff28b62e6f9272bf57}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+2}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adbefe75ed1f229606d0b769925878778}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 2 clock cycle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_aadfbe260084d451e4ba19cf42665440c}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+4}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adbefe75ed1f229606d0b769925878778}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 4 clock cycle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a2470040f3dd3d7720069376e1db416bc}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+8}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adbefe75ed1f229606d0b769925878778}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 8 clock cycle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a716d82d67523f858dd0b9ea5e3d31dac}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+16}}~(0x04U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adbefe75ed1f229606d0b769925878778}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 16 clock cycle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a9bc0b951e48797eadf656565259064df}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+32}}~(0x05U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adbefe75ed1f229606d0b769925878778}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 32 clock cycle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a14705584334ece6ef68b23e42f2ce844}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+64}}~(0x06U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adbefe75ed1f229606d0b769925878778}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 64 clock cycle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a4f3e488d974f6ece8990b0780ba3c4f7}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+128}}~(0x07U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adbefe75ed1f229606d0b769925878778}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 128 clock cycle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a4f939cea5a47fbd26981d1bb8e148372}{COMP\+\_\+\+POLL\+\_\+\+POUT\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a9d3aae859034a877dae352942d5cd591}{COMP\+\_\+\+POLL\+\_\+\+POUT}}~(0x07U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a4f939cea5a47fbd26981d1bb8e148372}{COMP\+\_\+\+POLL\+\_\+\+POUT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Polling output \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_a2ff01397f672c3948f74be34cef60bbe}{COMP\+\_\+\+POLL\+\_\+\+POUT\+\_\+\+Low}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a4f939cea5a47fbd26981d1bb8e148372}{COMP\+\_\+\+POLL\+\_\+\+POUT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Non-\/inverting input is lower than inverting input \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__comp_8h_ae5dc390a97eea7924da51519cd65f40c}{COMP\+\_\+\+POLL\+\_\+\+POUT\+\_\+\+High}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a4f939cea5a47fbd26981d1bb8e148372}{COMP\+\_\+\+POLL\+\_\+\+POUT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Non-\/inverting input is higher than inverting input \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{reg__comp_8h_a076912543697dbe4c46b79e8e44ad2fb}\label{reg__comp_8h_a076912543697dbe4c46b79e8e44ad2fb}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP@{COMP}}
+\index{COMP@{COMP}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP}{COMP}}
+{\footnotesize\ttfamily \#define COMP~((\mbox{\hyperlink{struct_c_o_m_p___type_def}{COMP\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__comp_8h_aa9f5d2999c6918e385d7a526c4f6b1d3}{COMP\+\_\+\+BASE}})}
+
+
+
+COMP type pointer Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00085}{85}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_aa9f5d2999c6918e385d7a526c4f6b1d3}\label{reg__comp_8h_aa9f5d2999c6918e385d7a526c4f6b1d3}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_BASE@{COMP\_BASE}}
+\index{COMP\_BASE@{COMP\_BASE}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_BASE}{COMP\_BASE}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a25b99d6065f1c8f751e78f43ade652cb}{APB2\+PERIPH\+\_\+\+BASE}} + 0x4000)}
+
+
+
+COMP Base Address Definition 
+
+Base Address\+: 0x40014000 
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00046}{46}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a905af938d8e33dc2cf73f184c1dc6c8d}\label{reg__comp_8h_a905af938d8e33dc2cf73f184c1dc6c8d}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_10\_20@{COMP\_CRV\_10\_20}}
+\index{COMP\_CRV\_10\_20@{COMP\_CRV\_10\_20}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_10\_20}{COMP\_CRV\_10\_20}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+10\+\_\+20~(0x09U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})}
+
+
+
+Comparator external reference voltage select 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00169}{169}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a8c733cf005c9b7ba7957c5b1c13898d0}\label{reg__comp_8h_a8c733cf005c9b7ba7957c5b1c13898d0}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_11\_20@{COMP\_CRV\_11\_20}}
+\index{COMP\_CRV\_11\_20@{COMP\_CRV\_11\_20}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_11\_20}{COMP\_CRV\_11\_20}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+11\+\_\+20~(0x0\+AU $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})}
+
+
+
+Comparator external reference voltage select 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00170}{170}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_abf1d95e9e1dfb9a8edd89bd6bd03abc9}\label{reg__comp_8h_abf1d95e9e1dfb9a8edd89bd6bd03abc9}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_12\_20@{COMP\_CRV\_12\_20}}
+\index{COMP\_CRV\_12\_20@{COMP\_CRV\_12\_20}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_12\_20}{COMP\_CRV\_12\_20}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+12\+\_\+20~(0x0\+BU $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})}
+
+
+
+Comparator external reference voltage select 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00171}{171}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a1bf8ba7ac4b8ce4a26ebe094969ec5f5}\label{reg__comp_8h_a1bf8ba7ac4b8ce4a26ebe094969ec5f5}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_13\_20@{COMP\_CRV\_13\_20}}
+\index{COMP\_CRV\_13\_20@{COMP\_CRV\_13\_20}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_13\_20}{COMP\_CRV\_13\_20}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+13\+\_\+20~(0x0\+CU $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})}
+
+
+
+Comparator external reference voltage select 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00172}{172}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_af7b5ec03be6448df4e8bb7b531def2c1}\label{reg__comp_8h_af7b5ec03be6448df4e8bb7b531def2c1}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_14\_20@{COMP\_CRV\_14\_20}}
+\index{COMP\_CRV\_14\_20@{COMP\_CRV\_14\_20}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_14\_20}{COMP\_CRV\_14\_20}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+14\+\_\+20~(0x0\+DU $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})}
+
+
+
+Comparator external reference voltage select 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00173}{173}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a8018e0fcf73365cfb8f85e84907afa42}\label{reg__comp_8h_a8018e0fcf73365cfb8f85e84907afa42}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_15\_20@{COMP\_CRV\_15\_20}}
+\index{COMP\_CRV\_15\_20@{COMP\_CRV\_15\_20}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_15\_20}{COMP\_CRV\_15\_20}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+15\+\_\+20~(0x0\+EU $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})}
+
+
+
+Comparator external reference voltage select 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00174}{174}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_aa81a6b8208133262d6d256c4d6d92078}\label{reg__comp_8h_aa81a6b8208133262d6d256c4d6d92078}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_16\_20@{COMP\_CRV\_16\_20}}
+\index{COMP\_CRV\_16\_20@{COMP\_CRV\_16\_20}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_16\_20}{COMP\_CRV\_16\_20}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+16\+\_\+20~(0x0\+FU $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})}
+
+
+
+Comparator external reference voltage select 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00175}{175}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_aa97a5644962d05f0a917f4454fe1001b}\label{reg__comp_8h_aa97a5644962d05f0a917f4454fe1001b}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_1\_20@{COMP\_CRV\_1\_20}}
+\index{COMP\_CRV\_1\_20@{COMP\_CRV\_1\_20}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_1\_20}{COMP\_CRV\_1\_20}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+1\+\_\+20~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})}
+
+
+
+Comparator external reference voltage select 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00160}{160}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a31ec621fd926a16bd9629368b42429e8}\label{reg__comp_8h_a31ec621fd926a16bd9629368b42429e8}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_2\_20@{COMP\_CRV\_2\_20}}
+\index{COMP\_CRV\_2\_20@{COMP\_CRV\_2\_20}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_2\_20}{COMP\_CRV\_2\_20}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+2\+\_\+20~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})}
+
+
+
+Comparator external reference voltage select 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00161}{161}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a98f66e892716dd963073379d153622c7}\label{reg__comp_8h_a98f66e892716dd963073379d153622c7}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_3\_20@{COMP\_CRV\_3\_20}}
+\index{COMP\_CRV\_3\_20@{COMP\_CRV\_3\_20}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_3\_20}{COMP\_CRV\_3\_20}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+3\+\_\+20~(0x02U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})}
+
+
+
+Comparator external reference voltage select 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00162}{162}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a9dc0d397b28acb6b0ff0c6dd0749aea7}\label{reg__comp_8h_a9dc0d397b28acb6b0ff0c6dd0749aea7}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_4\_20@{COMP\_CRV\_4\_20}}
+\index{COMP\_CRV\_4\_20@{COMP\_CRV\_4\_20}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_4\_20}{COMP\_CRV\_4\_20}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+4\+\_\+20~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})}
+
+
+
+Comparator external reference voltage select 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00163}{163}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a13a7706dfef8f491cacd7c76a8f2ba50}\label{reg__comp_8h_a13a7706dfef8f491cacd7c76a8f2ba50}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_5\_20@{COMP\_CRV\_5\_20}}
+\index{COMP\_CRV\_5\_20@{COMP\_CRV\_5\_20}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_5\_20}{COMP\_CRV\_5\_20}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+5\+\_\+20~(0x04U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})}
+
+
+
+Comparator external reference voltage select 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00164}{164}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_ace103a17b0c7259d51dc79186b88ef25}\label{reg__comp_8h_ace103a17b0c7259d51dc79186b88ef25}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_6\_20@{COMP\_CRV\_6\_20}}
+\index{COMP\_CRV\_6\_20@{COMP\_CRV\_6\_20}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_6\_20}{COMP\_CRV\_6\_20}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+6\+\_\+20~(0x05U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})}
+
+
+
+Comparator external reference voltage select 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00165}{165}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a6ae9f400639fd7d5d6c3760ec3dadce6}\label{reg__comp_8h_a6ae9f400639fd7d5d6c3760ec3dadce6}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_7\_20@{COMP\_CRV\_7\_20}}
+\index{COMP\_CRV\_7\_20@{COMP\_CRV\_7\_20}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_7\_20}{COMP\_CRV\_7\_20}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+7\+\_\+20~(0x06U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})}
+
+
+
+Comparator external reference voltage select 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00166}{166}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a04a6fc851484aeedcffcd67134669507}\label{reg__comp_8h_a04a6fc851484aeedcffcd67134669507}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_8\_20@{COMP\_CRV\_8\_20}}
+\index{COMP\_CRV\_8\_20@{COMP\_CRV\_8\_20}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_8\_20}{COMP\_CRV\_8\_20}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+8\+\_\+20~(0x07U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})}
+
+
+
+Comparator external reference voltage select 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00167}{167}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a9054414fb3a5d5066b50bf7f5e31ecd5}\label{reg__comp_8h_a9054414fb3a5d5066b50bf7f5e31ecd5}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_9\_20@{COMP\_CRV\_9\_20}}
+\index{COMP\_CRV\_9\_20@{COMP\_CRV\_9\_20}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_9\_20}{COMP\_CRV\_9\_20}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+9\+\_\+20~(0x08U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})}
+
+
+
+Comparator external reference voltage select 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00168}{168}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a8eeaceb3ac796ea173c95d3964cb00cf}\label{reg__comp_8h_a8eeaceb3ac796ea173c95d3964cb00cf}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_EN@{COMP\_CRV\_EN}}
+\index{COMP\_CRV\_EN@{COMP\_CRV\_EN}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_EN}{COMP\_CRV\_EN}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+\+EN~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a55a5b9eda28d7b2530f4daa5876c2e3c}{COMP\+\_\+\+CRV\+\_\+\+EN\+\_\+\+Pos}})}
+
+
+
+Comparator external reference voltage enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00178}{178}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a90725796b88d16ca54300330fc203c3d}\label{reg__comp_8h_a90725796b88d16ca54300330fc203c3d}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_EN\_DISABLE@{COMP\_CRV\_EN\_DISABLE}}
+\index{COMP\_CRV\_EN\_DISABLE@{COMP\_CRV\_EN\_DISABLE}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_EN\_DISABLE}{COMP\_CRV\_EN\_DISABLE}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+\+EN\+\_\+\+DISABLE~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a55a5b9eda28d7b2530f4daa5876c2e3c}{COMP\+\_\+\+CRV\+\_\+\+EN\+\_\+\+Pos}})}
+
+
+
+Disable comparator external reference voltage 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00179}{179}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_abc3955323687208b089160cf251030e2}\label{reg__comp_8h_abc3955323687208b089160cf251030e2}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_EN\_ENABLE@{COMP\_CRV\_EN\_ENABLE}}
+\index{COMP\_CRV\_EN\_ENABLE@{COMP\_CRV\_EN\_ENABLE}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_EN\_ENABLE}{COMP\_CRV\_EN\_ENABLE}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+\+EN\+\_\+\+ENABLE~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a55a5b9eda28d7b2530f4daa5876c2e3c}{COMP\+\_\+\+CRV\+\_\+\+EN\+\_\+\+Pos}})}
+
+
+
+Enable comparator external reference voltage 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00180}{180}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a55a5b9eda28d7b2530f4daa5876c2e3c}\label{reg__comp_8h_a55a5b9eda28d7b2530f4daa5876c2e3c}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_EN\_Pos@{COMP\_CRV\_EN\_Pos}}
+\index{COMP\_CRV\_EN\_Pos@{COMP\_CRV\_EN\_Pos}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_EN\_Pos}{COMP\_CRV\_EN\_Pos}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+\+EN\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00177}{177}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_acde012fd35100ffae61c3e8c32880e73}\label{reg__comp_8h_acde012fd35100ffae61c3e8c32880e73}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_MASK@{COMP\_CRV\_MASK}}
+\index{COMP\_CRV\_MASK@{COMP\_CRV\_MASK}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_MASK}{COMP\_CRV\_MASK}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+\+MASK~(0x0\+FU $<$$<$ \mbox{\hyperlink{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}{COMP\+\_\+\+CRV\+\_\+\+Pos}})}
+
+
+
+Comparator external reference voltage select 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00159}{159}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}\label{reg__comp_8h_a749fb6a7f6b003937f11c2abe543d1bc}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_Pos@{COMP\_CRV\_Pos}}
+\index{COMP\_CRV\_Pos@{COMP\_CRV\_Pos}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_Pos}{COMP\_CRV\_Pos}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+\+Pos~(0)}
+
+
+
+COMP\+\_\+\+CRV Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00158}{158}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a34b573cfa8296c0e42c1f09e39a98784}\label{reg__comp_8h_a34b573cfa8296c0e42c1f09e39a98784}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_SRC@{COMP\_CRV\_SRC}}
+\index{COMP\_CRV\_SRC@{COMP\_CRV\_SRC}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_SRC}{COMP\_CRV\_SRC}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+\+SRC~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7c48217e78495ea9ce554cbb1a1dbbe1}{COMP\+\_\+\+CRV\+\_\+\+SRC\+\_\+\+Pos}})}
+
+
+
+Comparator external reference voltage source select 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00182}{182}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a89343663aff99ac0237ef8b747fc2276}\label{reg__comp_8h_a89343663aff99ac0237ef8b747fc2276}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_SRC\_AVDD@{COMP\_CRV\_SRC\_AVDD}}
+\index{COMP\_CRV\_SRC\_AVDD@{COMP\_CRV\_SRC\_AVDD}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_SRC\_AVDD}{COMP\_CRV\_SRC\_AVDD}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+\+SRC\+\_\+\+AVDD~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7c48217e78495ea9ce554cbb1a1dbbe1}{COMP\+\_\+\+CRV\+\_\+\+SRC\+\_\+\+Pos}})}
+
+
+
+Select AVDD 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00184}{184}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a7c48217e78495ea9ce554cbb1a1dbbe1}\label{reg__comp_8h_a7c48217e78495ea9ce554cbb1a1dbbe1}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_SRC\_Pos@{COMP\_CRV\_SRC\_Pos}}
+\index{COMP\_CRV\_SRC\_Pos@{COMP\_CRV\_SRC\_Pos}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_SRC\_Pos}{COMP\_CRV\_SRC\_Pos}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+\+SRC\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00181}{181}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_ab967d08bdc1c8ed29874034eddd3f99b}\label{reg__comp_8h_ab967d08bdc1c8ed29874034eddd3f99b}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CRV\_SRC\_VREF@{COMP\_CRV\_SRC\_VREF}}
+\index{COMP\_CRV\_SRC\_VREF@{COMP\_CRV\_SRC\_VREF}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV\_SRC\_VREF}{COMP\_CRV\_SRC\_VREF}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CRV\+\_\+\+SRC\+\_\+\+VREF~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7c48217e78495ea9ce554cbb1a1dbbe1}{COMP\+\_\+\+CRV\+\_\+\+SRC\+\_\+\+Pos}})}
+
+
+
+Select VREF 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00183}{183}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a6feb7a7d13ffb5a2811aa35c8abed1ed}\label{reg__comp_8h_a6feb7a7d13ffb5a2811aa35c8abed1ed}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_EN@{COMP\_CSR\_EN}}
+\index{COMP\_CSR\_EN@{COMP\_CSR\_EN}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_EN}{COMP\_CSR\_EN}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+EN~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a498f8c6f080f53a4bd0cbd3f4cdf2958}{COMP\+\_\+\+CSR\+\_\+\+EN\+\_\+\+Pos}})}
+
+
+
+Comparator enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00095}{95}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a498f8c6f080f53a4bd0cbd3f4cdf2958}\label{reg__comp_8h_a498f8c6f080f53a4bd0cbd3f4cdf2958}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_EN\_Pos@{COMP\_CSR\_EN\_Pos}}
+\index{COMP\_CSR\_EN\_Pos@{COMP\_CSR\_EN\_Pos}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_EN\_Pos}{COMP\_CSR\_EN\_Pos}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+EN\+\_\+\+Pos~(0)}
+
+
+
+COMP\+\_\+\+CSR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00094}{94}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_afe57b321ccbc7cbef7ab5dba15ec851f}\label{reg__comp_8h_afe57b321ccbc7cbef7ab5dba15ec851f}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_HYST@{COMP\_CSR\_HYST}}
+\index{COMP\_CSR\_HYST@{COMP\_CSR\_HYST}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_HYST}{COMP\_CSR\_HYST}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+HYST~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a4ca1d8272428fd1386b9a971b687a589}{COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+\+Pos}})}
+
+
+
+Comparator hysteresis 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00132}{132}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a921b78b44b1638adb97b4a3fea45e77a}\label{reg__comp_8h_a921b78b44b1638adb97b4a3fea45e77a}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_HYST\_0@{COMP\_CSR\_HYST\_0}}
+\index{COMP\_CSR\_HYST\_0@{COMP\_CSR\_HYST\_0}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_HYST\_0}{COMP\_CSR\_HYST\_0}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+0~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a4ca1d8272428fd1386b9a971b687a589}{COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+\+Pos}})}
+
+
+
+Hysteresis Voltage\+: 0mV 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00133}{133}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a2902565b63e379c195aafdac4f0b1603}\label{reg__comp_8h_a2902565b63e379c195aafdac4f0b1603}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_HYST\_15@{COMP\_CSR\_HYST\_15}}
+\index{COMP\_CSR\_HYST\_15@{COMP\_CSR\_HYST\_15}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_HYST\_15}{COMP\_CSR\_HYST\_15}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+15~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a4ca1d8272428fd1386b9a971b687a589}{COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+\+Pos}})}
+
+
+
+Hysteresis Voltage\+: 15mV 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00134}{134}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a71b1d05cb078848fee5a453829aec585}\label{reg__comp_8h_a71b1d05cb078848fee5a453829aec585}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_HYST\_30@{COMP\_CSR\_HYST\_30}}
+\index{COMP\_CSR\_HYST\_30@{COMP\_CSR\_HYST\_30}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_HYST\_30}{COMP\_CSR\_HYST\_30}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+30~(0x02U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a4ca1d8272428fd1386b9a971b687a589}{COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+\+Pos}})}
+
+
+
+Hysteresis Voltage\+: 30mV 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00135}{135}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a48fb16def552a8f1d3721e5c5bcc352d}\label{reg__comp_8h_a48fb16def552a8f1d3721e5c5bcc352d}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_HYST\_90@{COMP\_CSR\_HYST\_90}}
+\index{COMP\_CSR\_HYST\_90@{COMP\_CSR\_HYST\_90}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_HYST\_90}{COMP\_CSR\_HYST\_90}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+90~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a4ca1d8272428fd1386b9a971b687a589}{COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+\+Pos}})}
+
+
+
+Hysteresis Voltage\+: 90mV 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00136}{136}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a4ca1d8272428fd1386b9a971b687a589}\label{reg__comp_8h_a4ca1d8272428fd1386b9a971b687a589}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_HYST\_Pos@{COMP\_CSR\_HYST\_Pos}}
+\index{COMP\_CSR\_HYST\_Pos@{COMP\_CSR\_HYST\_Pos}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_HYST\_Pos}{COMP\_CSR\_HYST\_Pos}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+\+Pos~(16)}
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00131}{131}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a33b67cb6f1105bfff36ec312a416138a}\label{reg__comp_8h_a33b67cb6f1105bfff36ec312a416138a}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_INM@{COMP\_CSR\_INM}}
+\index{COMP\_CSR\_INM@{COMP\_CSR\_INM}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_INM}{COMP\_CSR\_INM}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+INM~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_aefd6c4cab80b398a40650cc9beaa05da}{COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+\+Pos}})}
+
+
+
+Comparator inverting input selection 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00104}{104}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a0fbc524823f2fdafccb620df2823a0aa}\label{reg__comp_8h_a0fbc524823f2fdafccb620df2823a0aa}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_INM\_0@{COMP\_CSR\_INM\_0}}
+\index{COMP\_CSR\_INM\_0@{COMP\_CSR\_INM\_0}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_INM\_0}{COMP\_CSR\_INM\_0}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+0~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_aefd6c4cab80b398a40650cc9beaa05da}{COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+\+Pos}})}
+
+
+
+INM0 as COMP inverting input 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00105}{105}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a88dd0ee91abcd0c3e9bd668999e99bae}\label{reg__comp_8h_a88dd0ee91abcd0c3e9bd668999e99bae}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_INM\_1@{COMP\_CSR\_INM\_1}}
+\index{COMP\_CSR\_INM\_1@{COMP\_CSR\_INM\_1}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_INM\_1}{COMP\_CSR\_INM\_1}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+1~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_aefd6c4cab80b398a40650cc9beaa05da}{COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+\+Pos}})}
+
+
+
+INM1 as COMP inverting input 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00106}{106}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a5ca7609136c6f515ccb15df27ff0d288}\label{reg__comp_8h_a5ca7609136c6f515ccb15df27ff0d288}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_INM\_2@{COMP\_CSR\_INM\_2}}
+\index{COMP\_CSR\_INM\_2@{COMP\_CSR\_INM\_2}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_INM\_2}{COMP\_CSR\_INM\_2}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+2~(0x02U $<$$<$ \mbox{\hyperlink{reg__comp_8h_aefd6c4cab80b398a40650cc9beaa05da}{COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+\+Pos}})}
+
+
+
+INM2 as COMP inverting input 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00107}{107}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a96b57989efd8aa2ca25f13f54078b9f0}\label{reg__comp_8h_a96b57989efd8aa2ca25f13f54078b9f0}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_INM\_3@{COMP\_CSR\_INM\_3}}
+\index{COMP\_CSR\_INM\_3@{COMP\_CSR\_INM\_3}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_INM\_3}{COMP\_CSR\_INM\_3}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+3~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_aefd6c4cab80b398a40650cc9beaa05da}{COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+\+Pos}})}
+
+
+
+INM3 as COMP inverting input 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00108}{108}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_aefd6c4cab80b398a40650cc9beaa05da}\label{reg__comp_8h_aefd6c4cab80b398a40650cc9beaa05da}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_INM\_Pos@{COMP\_CSR\_INM\_Pos}}
+\index{COMP\_CSR\_INM\_Pos@{COMP\_CSR\_INM\_Pos}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_INM\_Pos}{COMP\_CSR\_INM\_Pos}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00103}{103}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a0eac6adbdca70aeea3e28ecfed561824}\label{reg__comp_8h_a0eac6adbdca70aeea3e28ecfed561824}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_INP@{COMP\_CSR\_INP}}
+\index{COMP\_CSR\_INP@{COMP\_CSR\_INP}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_INP}{COMP\_CSR\_INP}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+INP~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a228353e524f3ed06bdb3a9e93a3345aa}{COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+Pos}})}
+
+
+
+Comparator non-\/inverting input selection 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00111}{111}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a2045e358c5c2c3e9901d218b76bf9544}\label{reg__comp_8h_a2045e358c5c2c3e9901d218b76bf9544}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_INP\_INP0@{COMP\_CSR\_INP\_INP0}}
+\index{COMP\_CSR\_INP\_INP0@{COMP\_CSR\_INP\_INP0}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_INP\_INP0}{COMP\_CSR\_INP\_INP0}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+INP0~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a228353e524f3ed06bdb3a9e93a3345aa}{COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+Pos}})}
+
+
+
+INP0 as COMP non-\/inverting input 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00112}{112}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a5b74bd78d643c273727db59fdddbe558}\label{reg__comp_8h_a5b74bd78d643c273727db59fdddbe558}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_INP\_INP1@{COMP\_CSR\_INP\_INP1}}
+\index{COMP\_CSR\_INP\_INP1@{COMP\_CSR\_INP\_INP1}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_INP\_INP1}{COMP\_CSR\_INP\_INP1}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+INP1~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a228353e524f3ed06bdb3a9e93a3345aa}{COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+Pos}})}
+
+
+
+INP1 as COMP non-\/inverting input 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00113}{113}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a6010b10f67b3720db622e4b066d1170f}\label{reg__comp_8h_a6010b10f67b3720db622e4b066d1170f}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_INP\_INP2@{COMP\_CSR\_INP\_INP2}}
+\index{COMP\_CSR\_INP\_INP2@{COMP\_CSR\_INP\_INP2}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_INP\_INP2}{COMP\_CSR\_INP\_INP2}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+INP2~(0x02U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a228353e524f3ed06bdb3a9e93a3345aa}{COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+Pos}})}
+
+
+
+INP2 as COMP non-\/inverting input 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00114}{114}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_afca76f50ef70a99773a31bffcd8f34de}\label{reg__comp_8h_afca76f50ef70a99773a31bffcd8f34de}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_INP\_INP3@{COMP\_CSR\_INP\_INP3}}
+\index{COMP\_CSR\_INP\_INP3@{COMP\_CSR\_INP\_INP3}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_INP\_INP3}{COMP\_CSR\_INP\_INP3}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+INP3~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a228353e524f3ed06bdb3a9e93a3345aa}{COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+Pos}})}
+
+
+
+INP3 as COMP non-\/inverting input 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00115}{115}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a228353e524f3ed06bdb3a9e93a3345aa}\label{reg__comp_8h_a228353e524f3ed06bdb3a9e93a3345aa}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_INP\_Pos@{COMP\_CSR\_INP\_Pos}}
+\index{COMP\_CSR\_INP\_Pos@{COMP\_CSR\_INP\_Pos}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_INP\_Pos}{COMP\_CSR\_INP\_Pos}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00110}{110}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a7a926a0b464f05c1f53a783275878832}\label{reg__comp_8h_a7a926a0b464f05c1f53a783275878832}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_LOCK@{COMP\_CSR\_LOCK}}
+\index{COMP\_CSR\_LOCK@{COMP\_CSR\_LOCK}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_LOCK}{COMP\_CSR\_LOCK}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+LOCK~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_ae38ed1b1eb108ae669a872817a81e22c}{COMP\+\_\+\+CSR\+\_\+\+LOCK\+\_\+\+Pos}})}
+
+
+
+Comparator lock 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00152}{152}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_ae38ed1b1eb108ae669a872817a81e22c}\label{reg__comp_8h_ae38ed1b1eb108ae669a872817a81e22c}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_LOCK\_Pos@{COMP\_CSR\_LOCK\_Pos}}
+\index{COMP\_CSR\_LOCK\_Pos@{COMP\_CSR\_LOCK\_Pos}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_LOCK\_Pos}{COMP\_CSR\_LOCK\_Pos}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+LOCK\+\_\+\+Pos~(31)}
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00151}{151}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a881160b873bd1d13a7a6460efbf1ba72}\label{reg__comp_8h_a881160b873bd1d13a7a6460efbf1ba72}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_MODE@{COMP\_CSR\_MODE}}
+\index{COMP\_CSR\_MODE@{COMP\_CSR\_MODE}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_MODE}{COMP\_CSR\_MODE}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+MODE~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a95c778b1623c98a0ee3224f77778eaee}{COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+Pos}})}
+
+
+
+Comparator mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00097}{97}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_acbe54e9ef6314d3306be24e55bb03940}\label{reg__comp_8h_acbe54e9ef6314d3306be24e55bb03940}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_MODE\_HIGHRATE@{COMP\_CSR\_MODE\_HIGHRATE}}
+\index{COMP\_CSR\_MODE\_HIGHRATE@{COMP\_CSR\_MODE\_HIGHRATE}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_MODE\_HIGHRATE}{COMP\_CSR\_MODE\_HIGHRATE}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+HIGHRATE~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a95c778b1623c98a0ee3224f77778eaee}{COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+Pos}})}
+
+
+
+Comparator high rate mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00101}{101}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a25ce3990789222d13a2f93b133747195}\label{reg__comp_8h_a25ce3990789222d13a2f93b133747195}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_MODE\_LOWESTPOWER@{COMP\_CSR\_MODE\_LOWESTPOWER}}
+\index{COMP\_CSR\_MODE\_LOWESTPOWER@{COMP\_CSR\_MODE\_LOWESTPOWER}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_MODE\_LOWESTPOWER}{COMP\_CSR\_MODE\_LOWESTPOWER}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+LOWESTPOWER~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a95c778b1623c98a0ee3224f77778eaee}{COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+Pos}})}
+
+
+
+Comparator lowest power mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00098}{98}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_ac511854578324b91e9785b79342b159d}\label{reg__comp_8h_ac511854578324b91e9785b79342b159d}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_MODE\_LOWPOWER@{COMP\_CSR\_MODE\_LOWPOWER}}
+\index{COMP\_CSR\_MODE\_LOWPOWER@{COMP\_CSR\_MODE\_LOWPOWER}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_MODE\_LOWPOWER}{COMP\_CSR\_MODE\_LOWPOWER}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+LOWPOWER~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a95c778b1623c98a0ee3224f77778eaee}{COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+Pos}})}
+
+
+
+Comparator low power mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00099}{99}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a2e0b130148eed0ff956647415338fb27}\label{reg__comp_8h_a2e0b130148eed0ff956647415338fb27}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_MODE\_MEDIUMRATE@{COMP\_CSR\_MODE\_MEDIUMRATE}}
+\index{COMP\_CSR\_MODE\_MEDIUMRATE@{COMP\_CSR\_MODE\_MEDIUMRATE}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_MODE\_MEDIUMRATE}{COMP\_CSR\_MODE\_MEDIUMRATE}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+MEDIUMRATE~(0x02U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a95c778b1623c98a0ee3224f77778eaee}{COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+Pos}})}
+
+
+
+Comparator medium rate mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00100}{100}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a95c778b1623c98a0ee3224f77778eaee}\label{reg__comp_8h_a95c778b1623c98a0ee3224f77778eaee}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_MODE\_Pos@{COMP\_CSR\_MODE\_Pos}}
+\index{COMP\_CSR\_MODE\_Pos@{COMP\_CSR\_MODE\_Pos}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_MODE\_Pos}{COMP\_CSR\_MODE\_Pos}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00096}{96}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a20bb581c539a0f361f50c50e37f319ad}\label{reg__comp_8h_a20bb581c539a0f361f50c50e37f319ad}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_OFLT@{COMP\_CSR\_OFLT}}
+\index{COMP\_CSR\_OFLT@{COMP\_CSR\_OFLT}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_OFLT}{COMP\_CSR\_OFLT}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+OFLT~(0x07U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7b69d030b00e87017fe10e25d99d9397}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+\+Pos}})}
+
+
+
+Comparator output filter 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00139}{139}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a298dd3892325a32d74a2c708708cc49c}\label{reg__comp_8h_a298dd3892325a32d74a2c708708cc49c}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_OFLT\_0@{COMP\_CSR\_OFLT\_0}}
+\index{COMP\_CSR\_OFLT\_0@{COMP\_CSR\_OFLT\_0}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_OFLT\_0}{COMP\_CSR\_OFLT\_0}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+0~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7b69d030b00e87017fe10e25d99d9397}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+\+Pos}})}
+
+
+
+0 clock cycle 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00140}{140}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_adb8661186a10a74ddb89a3786b0f702e}\label{reg__comp_8h_adb8661186a10a74ddb89a3786b0f702e}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_OFLT\_1@{COMP\_CSR\_OFLT\_1}}
+\index{COMP\_CSR\_OFLT\_1@{COMP\_CSR\_OFLT\_1}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_OFLT\_1}{COMP\_CSR\_OFLT\_1}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+1~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7b69d030b00e87017fe10e25d99d9397}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+\+Pos}})}
+
+
+
+2 clock cycle 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00141}{141}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a12819b74773d3428bfe119a083d341de}\label{reg__comp_8h_a12819b74773d3428bfe119a083d341de}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_OFLT\_2@{COMP\_CSR\_OFLT\_2}}
+\index{COMP\_CSR\_OFLT\_2@{COMP\_CSR\_OFLT\_2}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_OFLT\_2}{COMP\_CSR\_OFLT\_2}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+2~(0x02U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7b69d030b00e87017fe10e25d99d9397}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+\+Pos}})}
+
+
+
+4 clock cycle 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00142}{142}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a9c6a0c7d4165628ec653ebb92d30a181}\label{reg__comp_8h_a9c6a0c7d4165628ec653ebb92d30a181}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_OFLT\_3@{COMP\_CSR\_OFLT\_3}}
+\index{COMP\_CSR\_OFLT\_3@{COMP\_CSR\_OFLT\_3}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_OFLT\_3}{COMP\_CSR\_OFLT\_3}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+3~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7b69d030b00e87017fe10e25d99d9397}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+\+Pos}})}
+
+
+
+8 clock cycle 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00143}{143}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a532d7389875b706eba88a35a2af2d312}\label{reg__comp_8h_a532d7389875b706eba88a35a2af2d312}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_OFLT\_4@{COMP\_CSR\_OFLT\_4}}
+\index{COMP\_CSR\_OFLT\_4@{COMP\_CSR\_OFLT\_4}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_OFLT\_4}{COMP\_CSR\_OFLT\_4}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+4~(0x04U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7b69d030b00e87017fe10e25d99d9397}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+\+Pos}})}
+
+
+
+16 clock cycle 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00144}{144}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a6f14240f4c80d15fe8837f4b909c8025}\label{reg__comp_8h_a6f14240f4c80d15fe8837f4b909c8025}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_OFLT\_5@{COMP\_CSR\_OFLT\_5}}
+\index{COMP\_CSR\_OFLT\_5@{COMP\_CSR\_OFLT\_5}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_OFLT\_5}{COMP\_CSR\_OFLT\_5}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+5~(0x05U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7b69d030b00e87017fe10e25d99d9397}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+\+Pos}})}
+
+
+
+32 clock cycle 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00145}{145}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a7e54f4e3844ade67f578badae23fccdf}\label{reg__comp_8h_a7e54f4e3844ade67f578badae23fccdf}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_OFLT\_6@{COMP\_CSR\_OFLT\_6}}
+\index{COMP\_CSR\_OFLT\_6@{COMP\_CSR\_OFLT\_6}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_OFLT\_6}{COMP\_CSR\_OFLT\_6}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+6~(0x06U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7b69d030b00e87017fe10e25d99d9397}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+\+Pos}})}
+
+
+
+64 clock cycle 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00146}{146}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a0b3e57ea29e5f11b9bb49a61a212e0d5}\label{reg__comp_8h_a0b3e57ea29e5f11b9bb49a61a212e0d5}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_OFLT\_7@{COMP\_CSR\_OFLT\_7}}
+\index{COMP\_CSR\_OFLT\_7@{COMP\_CSR\_OFLT\_7}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_OFLT\_7}{COMP\_CSR\_OFLT\_7}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+7~(0x07U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a7b69d030b00e87017fe10e25d99d9397}{COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+\+Pos}})}
+
+
+
+128 clock cycle 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00147}{147}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a7b69d030b00e87017fe10e25d99d9397}\label{reg__comp_8h_a7b69d030b00e87017fe10e25d99d9397}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_OFLT\_Pos@{COMP\_CSR\_OFLT\_Pos}}
+\index{COMP\_CSR\_OFLT\_Pos@{COMP\_CSR\_OFLT\_Pos}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_OFLT\_Pos}{COMP\_CSR\_OFLT\_Pos}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+\+Pos~(18)}
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00138}{138}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_af2b4659e7c1951210a2857a301b82f72}\label{reg__comp_8h_af2b4659e7c1951210a2857a301b82f72}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_OUT@{COMP\_CSR\_OUT}}
+\index{COMP\_CSR\_OUT@{COMP\_CSR\_OUT}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_OUT}{COMP\_CSR\_OUT}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+OUT~(0x0\+FU $<$$<$ \mbox{\hyperlink{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+Pos}})}
+
+
+
+Comparator output selection 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00118}{118}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}\label{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_OUT\_Pos@{COMP\_CSR\_OUT\_Pos}}
+\index{COMP\_CSR\_OUT\_Pos@{COMP\_CSR\_OUT\_Pos}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_OUT\_Pos}{COMP\_CSR\_OUT\_Pos}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+Pos~(10)}
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00117}{117}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_ab0853e7d22daacd9afca97fbdee023a4}\label{reg__comp_8h_ab0853e7d22daacd9afca97fbdee023a4}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_OUT\_TIM1\_BRAKE@{COMP\_CSR\_OUT\_TIM1\_BRAKE}}
+\index{COMP\_CSR\_OUT\_TIM1\_BRAKE@{COMP\_CSR\_OUT\_TIM1\_BRAKE}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_OUT\_TIM1\_BRAKE}{COMP\_CSR\_OUT\_TIM1\_BRAKE}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM1\+\_\+\+BRAKE~(0x02U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+Pos}})}
+
+
+
+Timer1 brake input 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00119}{119}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a98d6964003360baad0f6257f2438113e}\label{reg__comp_8h_a98d6964003360baad0f6257f2438113e}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_OUT\_TIM1\_CAPTURE1@{COMP\_CSR\_OUT\_TIM1\_CAPTURE1}}
+\index{COMP\_CSR\_OUT\_TIM1\_CAPTURE1@{COMP\_CSR\_OUT\_TIM1\_CAPTURE1}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_OUT\_TIM1\_CAPTURE1}{COMP\_CSR\_OUT\_TIM1\_CAPTURE1}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM1\+\_\+\+CAPTURE1~(0x07U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+Pos}})}
+
+
+
+Timer1 input capture 1 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00122}{122}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_abf318332c4fc0199ddabb9a129d9e211}\label{reg__comp_8h_abf318332c4fc0199ddabb9a129d9e211}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_OUT\_TIM1\_OCREFCLR@{COMP\_CSR\_OUT\_TIM1\_OCREFCLR}}
+\index{COMP\_CSR\_OUT\_TIM1\_OCREFCLR@{COMP\_CSR\_OUT\_TIM1\_OCREFCLR}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_OUT\_TIM1\_OCREFCLR}{COMP\_CSR\_OUT\_TIM1\_OCREFCLR}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM1\+\_\+\+OCREFCLR~(0x06U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+Pos}})}
+
+
+
+Timer1 ocrefclear input 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00121}{121}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a61bc1316d52a1ee311a4c90e121deed5}\label{reg__comp_8h_a61bc1316d52a1ee311a4c90e121deed5}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_OUT\_TIM2\_CAPTURE4@{COMP\_CSR\_OUT\_TIM2\_CAPTURE4}}
+\index{COMP\_CSR\_OUT\_TIM2\_CAPTURE4@{COMP\_CSR\_OUT\_TIM2\_CAPTURE4}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_OUT\_TIM2\_CAPTURE4}{COMP\_CSR\_OUT\_TIM2\_CAPTURE4}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM2\+\_\+\+CAPTURE4~(0x08U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+Pos}})}
+
+
+
+Timer2 input capture 4 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00123}{123}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a8bed44e97308d2a07972cd56d513b5dd}\label{reg__comp_8h_a8bed44e97308d2a07972cd56d513b5dd}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_OUT\_TIM2\_OCREFCLR@{COMP\_CSR\_OUT\_TIM2\_OCREFCLR}}
+\index{COMP\_CSR\_OUT\_TIM2\_OCREFCLR@{COMP\_CSR\_OUT\_TIM2\_OCREFCLR}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_OUT\_TIM2\_OCREFCLR}{COMP\_CSR\_OUT\_TIM2\_OCREFCLR}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM2\+\_\+\+OCREFCLR~(0x09U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+Pos}})}
+
+
+
+Timer2 ocrefclear input 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00124}{124}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a4662aa361e6dca6e85045531e7dfe3a4}\label{reg__comp_8h_a4662aa361e6dca6e85045531e7dfe3a4}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_OUT\_TIM3\_CAPTURE1@{COMP\_CSR\_OUT\_TIM3\_CAPTURE1}}
+\index{COMP\_CSR\_OUT\_TIM3\_CAPTURE1@{COMP\_CSR\_OUT\_TIM3\_CAPTURE1}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_OUT\_TIM3\_CAPTURE1}{COMP\_CSR\_OUT\_TIM3\_CAPTURE1}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM3\+\_\+\+CAPTURE1~(0x0\+AU $<$$<$ \mbox{\hyperlink{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+Pos}})}
+
+
+
+Timer3 input capture 1 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00125}{125}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_aec7fe9a0d8b0209ee03bc6262fb079ae}\label{reg__comp_8h_aec7fe9a0d8b0209ee03bc6262fb079ae}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_OUT\_TIM3\_OCREFCLR@{COMP\_CSR\_OUT\_TIM3\_OCREFCLR}}
+\index{COMP\_CSR\_OUT\_TIM3\_OCREFCLR@{COMP\_CSR\_OUT\_TIM3\_OCREFCLR}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_OUT\_TIM3\_OCREFCLR}{COMP\_CSR\_OUT\_TIM3\_OCREFCLR}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM3\+\_\+\+OCREFCLR~(0x0\+BU $<$$<$ \mbox{\hyperlink{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+Pos}})}
+
+
+
+Timer3 ocrefclear input 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00126}{126}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a64719a223c627689308a19afa0273497}\label{reg__comp_8h_a64719a223c627689308a19afa0273497}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_OUT\_TIM8\_BRAKE@{COMP\_CSR\_OUT\_TIM8\_BRAKE}}
+\index{COMP\_CSR\_OUT\_TIM8\_BRAKE@{COMP\_CSR\_OUT\_TIM8\_BRAKE}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_OUT\_TIM8\_BRAKE}{COMP\_CSR\_OUT\_TIM8\_BRAKE}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM8\+\_\+\+BRAKE~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+Pos}})}
+
+
+
+Timer8 brake input 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00120}{120}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a68f00cbec25bf7ba628ddc50684b4fcf}\label{reg__comp_8h_a68f00cbec25bf7ba628ddc50684b4fcf}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_OUT\_TIM8\_OCREFCLR@{COMP\_CSR\_OUT\_TIM8\_OCREFCLR}}
+\index{COMP\_CSR\_OUT\_TIM8\_OCREFCLR@{COMP\_CSR\_OUT\_TIM8\_OCREFCLR}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_OUT\_TIM8\_OCREFCLR}{COMP\_CSR\_OUT\_TIM8\_OCREFCLR}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM8\+\_\+\+OCREFCLR~(0x0\+FU $<$$<$ \mbox{\hyperlink{reg__comp_8h_adee3e7131d3ea11a5fe7c5cef3ab2e27}{COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+Pos}})}
+
+
+
+Timer8 ocrefclear input 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00127}{127}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a779101ba19f64f50bcd2dc2cb2df665a}\label{reg__comp_8h_a779101ba19f64f50bcd2dc2cb2df665a}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_POL@{COMP\_CSR\_POL}}
+\index{COMP\_CSR\_POL@{COMP\_CSR\_POL}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_POL}{COMP\_CSR\_POL}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+POL~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_afcb2a0b29a8f499894c46125d15b02eb}{COMP\+\_\+\+CSR\+\_\+\+POL\+\_\+\+Pos}})}
+
+
+
+Comparator output polarity 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00130}{130}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_afcb2a0b29a8f499894c46125d15b02eb}\label{reg__comp_8h_afcb2a0b29a8f499894c46125d15b02eb}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_POL\_Pos@{COMP\_CSR\_POL\_Pos}}
+\index{COMP\_CSR\_POL\_Pos@{COMP\_CSR\_POL\_Pos}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_POL\_Pos}{COMP\_CSR\_POL\_Pos}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+POL\+\_\+\+Pos~(15)}
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00129}{129}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a9c1f2c955f4c137673d5c820444c0c3b}\label{reg__comp_8h_a9c1f2c955f4c137673d5c820444c0c3b}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_STA@{COMP\_CSR\_STA}}
+\index{COMP\_CSR\_STA@{COMP\_CSR\_STA}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_STA}{COMP\_CSR\_STA}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+STA~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a2920def2d91945439453d4127493b5a7}{COMP\+\_\+\+CSR\+\_\+\+STA\+\_\+\+Pos}})}
+
+
+
+Comparator output status 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00150}{150}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a2920def2d91945439453d4127493b5a7}\label{reg__comp_8h_a2920def2d91945439453d4127493b5a7}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_CSR\_STA\_Pos@{COMP\_CSR\_STA\_Pos}}
+\index{COMP\_CSR\_STA\_Pos@{COMP\_CSR\_STA\_Pos}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_CSR\_STA\_Pos}{COMP\_CSR\_STA\_Pos}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+CSR\+\_\+\+STA\+\_\+\+Pos~(30)}
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00149}{149}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a1d0c78842575ce6c884cc54c78b05567}\label{reg__comp_8h_a1d0c78842575ce6c884cc54c78b05567}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_CH@{COMP\_POLL\_CH}}
+\index{COMP\_POLL\_CH@{COMP\_POLL\_CH}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_CH}{COMP\_POLL\_CH}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+CH~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_ab5ee8c4ce1305ab2459f9c44c1bd9166}{COMP\+\_\+\+POLL\+\_\+\+CH\+\_\+\+Pos}})}
+
+
+
+Comparator polling channel 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00194}{194}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_ae161c2a025afe5b76caf0cf33dfd18e7}\label{reg__comp_8h_ae161c2a025afe5b76caf0cf33dfd18e7}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_CH\_1\_2@{COMP\_POLL\_CH\_1\_2}}
+\index{COMP\_POLL\_CH\_1\_2@{COMP\_POLL\_CH\_1\_2}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_CH\_1\_2}{COMP\_POLL\_CH\_1\_2}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+CH\+\_\+1\+\_\+2~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_ab5ee8c4ce1305ab2459f9c44c1bd9166}{COMP\+\_\+\+POLL\+\_\+\+CH\+\_\+\+Pos}})}
+
+
+
+Polling channel 1/2 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00195}{195}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a2c3bcd979c88ff989c9a380b2143a7cb}\label{reg__comp_8h_a2c3bcd979c88ff989c9a380b2143a7cb}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_CH\_1\_2\_3@{COMP\_POLL\_CH\_1\_2\_3}}
+\index{COMP\_POLL\_CH\_1\_2\_3@{COMP\_POLL\_CH\_1\_2\_3}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_CH\_1\_2\_3}{COMP\_POLL\_CH\_1\_2\_3}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+CH\+\_\+1\+\_\+2\+\_\+3~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_ab5ee8c4ce1305ab2459f9c44c1bd9166}{COMP\+\_\+\+POLL\+\_\+\+CH\+\_\+\+Pos}})}
+
+
+
+Polling channel 1/2/3 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00196}{196}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_ab5ee8c4ce1305ab2459f9c44c1bd9166}\label{reg__comp_8h_ab5ee8c4ce1305ab2459f9c44c1bd9166}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_CH\_Pos@{COMP\_POLL\_CH\_Pos}}
+\index{COMP\_POLL\_CH\_Pos@{COMP\_POLL\_CH\_Pos}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_CH\_Pos}{COMP\_POLL\_CH\_Pos}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+CH\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00193}{193}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_aa975186d178fa9a56a7993b4242db68e}\label{reg__comp_8h_aa975186d178fa9a56a7993b4242db68e}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_EN@{COMP\_POLL\_EN}}
+\index{COMP\_POLL\_EN@{COMP\_POLL\_EN}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_EN}{COMP\_POLL\_EN}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+EN~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a025c45c087afc2373cb7643d542394ba}{COMP\+\_\+\+POLL\+\_\+\+EN\+\_\+\+Pos}})}
+
+
+
+Comparator polling enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00190}{190}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_ada77b63fd53677a238a3741aceb8ab0f}\label{reg__comp_8h_ada77b63fd53677a238a3741aceb8ab0f}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_EN\_DISABLE@{COMP\_POLL\_EN\_DISABLE}}
+\index{COMP\_POLL\_EN\_DISABLE@{COMP\_POLL\_EN\_DISABLE}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_EN\_DISABLE}{COMP\_POLL\_EN\_DISABLE}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+EN\+\_\+\+DISABLE~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a025c45c087afc2373cb7643d542394ba}{COMP\+\_\+\+POLL\+\_\+\+EN\+\_\+\+Pos}})}
+
+
+
+Disable comparator polling mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00191}{191}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a184043897ac472c62db1055f996351df}\label{reg__comp_8h_a184043897ac472c62db1055f996351df}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_EN\_ENABLE@{COMP\_POLL\_EN\_ENABLE}}
+\index{COMP\_POLL\_EN\_ENABLE@{COMP\_POLL\_EN\_ENABLE}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_EN\_ENABLE}{COMP\_POLL\_EN\_ENABLE}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+EN\+\_\+\+ENABLE~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a025c45c087afc2373cb7643d542394ba}{COMP\+\_\+\+POLL\+\_\+\+EN\+\_\+\+Pos}})}
+
+
+
+Enable comparator polling mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00192}{192}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a025c45c087afc2373cb7643d542394ba}\label{reg__comp_8h_a025c45c087afc2373cb7643d542394ba}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_EN\_Pos@{COMP\_POLL\_EN\_Pos}}
+\index{COMP\_POLL\_EN\_Pos@{COMP\_POLL\_EN\_Pos}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_EN\_Pos}{COMP\_POLL\_EN\_Pos}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+EN\+\_\+\+Pos~(0)}
+
+
+
+COMP\+\_\+\+POL Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00189}{189}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_ab2dd27174cfa8cc49413c4001d85e58e}\label{reg__comp_8h_ab2dd27174cfa8cc49413c4001d85e58e}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_FIXN@{COMP\_POLL\_FIXN}}
+\index{COMP\_POLL\_FIXN@{COMP\_POLL\_FIXN}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_FIXN}{COMP\_POLL\_FIXN}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+FIXN~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a4cd2f8b646bd16455acb390a8945a306}{COMP\+\_\+\+POLL\+\_\+\+FIXN\+\_\+\+Pos}})}
+
+
+
+Polling inverting input fix 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00198}{198}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a4b1f234e822c53de5967de8b212f2fc4}\label{reg__comp_8h_a4b1f234e822c53de5967de8b212f2fc4}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_FIXN\_FIXED@{COMP\_POLL\_FIXN\_FIXED}}
+\index{COMP\_POLL\_FIXN\_FIXED@{COMP\_POLL\_FIXN\_FIXED}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_FIXN\_FIXED}{COMP\_POLL\_FIXN\_FIXED}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+FIXN\+\_\+\+FIXED~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a4cd2f8b646bd16455acb390a8945a306}{COMP\+\_\+\+POLL\+\_\+\+FIXN\+\_\+\+Pos}})}
+
+
+
+Polling channel inverting input fixed 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00200}{200}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a8a5bd544edfe483d03bd9123f60ea648}\label{reg__comp_8h_a8a5bd544edfe483d03bd9123f60ea648}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_FIXN\_NOTFIXED@{COMP\_POLL\_FIXN\_NOTFIXED}}
+\index{COMP\_POLL\_FIXN\_NOTFIXED@{COMP\_POLL\_FIXN\_NOTFIXED}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_FIXN\_NOTFIXED}{COMP\_POLL\_FIXN\_NOTFIXED}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+FIXN\+\_\+\+NOTFIXED~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a4cd2f8b646bd16455acb390a8945a306}{COMP\+\_\+\+POLL\+\_\+\+FIXN\+\_\+\+Pos}})}
+
+
+
+Polling channel inverting input is not fixed 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00199}{199}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a4cd2f8b646bd16455acb390a8945a306}\label{reg__comp_8h_a4cd2f8b646bd16455acb390a8945a306}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_FIXN\_Pos@{COMP\_POLL\_FIXN\_Pos}}
+\index{COMP\_POLL\_FIXN\_Pos@{COMP\_POLL\_FIXN\_Pos}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_FIXN\_Pos}{COMP\_POLL\_FIXN\_Pos}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+FIXN\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00197}{197}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a9831b529fc21028dc460f3c3b1f84941}\label{reg__comp_8h_a9831b529fc21028dc460f3c3b1f84941}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_PERIOD@{COMP\_POLL\_PERIOD}}
+\index{COMP\_POLL\_PERIOD@{COMP\_POLL\_PERIOD}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_PERIOD}{COMP\_POLL\_PERIOD}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+PERIOD~(0x07U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adbefe75ed1f229606d0b769925878778}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+\+Pos}})}
+
+
+
+polling wait cycle 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00202}{202}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a7b084e0485d7dc01ce71130367cda3ff}\label{reg__comp_8h_a7b084e0485d7dc01ce71130367cda3ff}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_PERIOD\_1@{COMP\_POLL\_PERIOD\_1}}
+\index{COMP\_POLL\_PERIOD\_1@{COMP\_POLL\_PERIOD\_1}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_PERIOD\_1}{COMP\_POLL\_PERIOD\_1}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+1~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adbefe75ed1f229606d0b769925878778}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+\+Pos}})}
+
+
+
+1 clock cycle 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00203}{203}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a4f3e488d974f6ece8990b0780ba3c4f7}\label{reg__comp_8h_a4f3e488d974f6ece8990b0780ba3c4f7}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_PERIOD\_128@{COMP\_POLL\_PERIOD\_128}}
+\index{COMP\_POLL\_PERIOD\_128@{COMP\_POLL\_PERIOD\_128}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_PERIOD\_128}{COMP\_POLL\_PERIOD\_128}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+128~(0x07U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adbefe75ed1f229606d0b769925878778}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+\+Pos}})}
+
+
+
+128 clock cycle 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00210}{210}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a716d82d67523f858dd0b9ea5e3d31dac}\label{reg__comp_8h_a716d82d67523f858dd0b9ea5e3d31dac}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_PERIOD\_16@{COMP\_POLL\_PERIOD\_16}}
+\index{COMP\_POLL\_PERIOD\_16@{COMP\_POLL\_PERIOD\_16}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_PERIOD\_16}{COMP\_POLL\_PERIOD\_16}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+16~(0x04U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adbefe75ed1f229606d0b769925878778}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+\+Pos}})}
+
+
+
+16 clock cycle 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00207}{207}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a57089e14ccbef2ff28b62e6f9272bf57}\label{reg__comp_8h_a57089e14ccbef2ff28b62e6f9272bf57}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_PERIOD\_2@{COMP\_POLL\_PERIOD\_2}}
+\index{COMP\_POLL\_PERIOD\_2@{COMP\_POLL\_PERIOD\_2}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_PERIOD\_2}{COMP\_POLL\_PERIOD\_2}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+2~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adbefe75ed1f229606d0b769925878778}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+\+Pos}})}
+
+
+
+2 clock cycle 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00204}{204}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a9bc0b951e48797eadf656565259064df}\label{reg__comp_8h_a9bc0b951e48797eadf656565259064df}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_PERIOD\_32@{COMP\_POLL\_PERIOD\_32}}
+\index{COMP\_POLL\_PERIOD\_32@{COMP\_POLL\_PERIOD\_32}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_PERIOD\_32}{COMP\_POLL\_PERIOD\_32}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+32~(0x05U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adbefe75ed1f229606d0b769925878778}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+\+Pos}})}
+
+
+
+32 clock cycle 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00208}{208}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_aadfbe260084d451e4ba19cf42665440c}\label{reg__comp_8h_aadfbe260084d451e4ba19cf42665440c}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_PERIOD\_4@{COMP\_POLL\_PERIOD\_4}}
+\index{COMP\_POLL\_PERIOD\_4@{COMP\_POLL\_PERIOD\_4}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_PERIOD\_4}{COMP\_POLL\_PERIOD\_4}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+4~(0x02U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adbefe75ed1f229606d0b769925878778}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+\+Pos}})}
+
+
+
+4 clock cycle 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00205}{205}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a14705584334ece6ef68b23e42f2ce844}\label{reg__comp_8h_a14705584334ece6ef68b23e42f2ce844}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_PERIOD\_64@{COMP\_POLL\_PERIOD\_64}}
+\index{COMP\_POLL\_PERIOD\_64@{COMP\_POLL\_PERIOD\_64}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_PERIOD\_64}{COMP\_POLL\_PERIOD\_64}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+64~(0x06U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adbefe75ed1f229606d0b769925878778}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+\+Pos}})}
+
+
+
+64 clock cycle 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00209}{209}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a2470040f3dd3d7720069376e1db416bc}\label{reg__comp_8h_a2470040f3dd3d7720069376e1db416bc}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_PERIOD\_8@{COMP\_POLL\_PERIOD\_8}}
+\index{COMP\_POLL\_PERIOD\_8@{COMP\_POLL\_PERIOD\_8}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_PERIOD\_8}{COMP\_POLL\_PERIOD\_8}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+8~(0x03U $<$$<$ \mbox{\hyperlink{reg__comp_8h_adbefe75ed1f229606d0b769925878778}{COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+\+Pos}})}
+
+
+
+8 clock cycle 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00206}{206}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_adbefe75ed1f229606d0b769925878778}\label{reg__comp_8h_adbefe75ed1f229606d0b769925878778}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_PERIOD\_Pos@{COMP\_POLL\_PERIOD\_Pos}}
+\index{COMP\_POLL\_PERIOD\_Pos@{COMP\_POLL\_PERIOD\_Pos}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_PERIOD\_Pos}{COMP\_POLL\_PERIOD\_Pos}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+PERIOD\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00201}{201}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a9d3aae859034a877dae352942d5cd591}\label{reg__comp_8h_a9d3aae859034a877dae352942d5cd591}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_POUT@{COMP\_POLL\_POUT}}
+\index{COMP\_POLL\_POUT@{COMP\_POLL\_POUT}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_POUT}{COMP\_POLL\_POUT}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+POUT~(0x07U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a4f939cea5a47fbd26981d1bb8e148372}{COMP\+\_\+\+POLL\+\_\+\+POUT\+\_\+\+Pos}})}
+
+
+
+Polling output 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00212}{212}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_ae5dc390a97eea7924da51519cd65f40c}\label{reg__comp_8h_ae5dc390a97eea7924da51519cd65f40c}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_POUT\_High@{COMP\_POLL\_POUT\_High}}
+\index{COMP\_POLL\_POUT\_High@{COMP\_POLL\_POUT\_High}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_POUT\_High}{COMP\_POLL\_POUT\_High}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+POUT\+\_\+\+High~(0x01U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a4f939cea5a47fbd26981d1bb8e148372}{COMP\+\_\+\+POLL\+\_\+\+POUT\+\_\+\+Pos}})}
+
+
+
+Non-\/inverting input is higher than inverting input 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00214}{214}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a2ff01397f672c3948f74be34cef60bbe}\label{reg__comp_8h_a2ff01397f672c3948f74be34cef60bbe}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_POUT\_Low@{COMP\_POLL\_POUT\_Low}}
+\index{COMP\_POLL\_POUT\_Low@{COMP\_POLL\_POUT\_Low}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_POUT\_Low}{COMP\_POLL\_POUT\_Low}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+POUT\+\_\+\+Low~(0x00U $<$$<$ \mbox{\hyperlink{reg__comp_8h_a4f939cea5a47fbd26981d1bb8e148372}{COMP\+\_\+\+POLL\+\_\+\+POUT\+\_\+\+Pos}})}
+
+
+
+Non-\/inverting input is lower than inverting input 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00213}{213}} 行定义.
+
+\mbox{\Hypertarget{reg__comp_8h_a4f939cea5a47fbd26981d1bb8e148372}\label{reg__comp_8h_a4f939cea5a47fbd26981d1bb8e148372}} 
+\index{reg\_comp.h@{reg\_comp.h}!COMP\_POLL\_POUT\_Pos@{COMP\_POLL\_POUT\_Pos}}
+\index{COMP\_POLL\_POUT\_Pos@{COMP\_POLL\_POUT\_Pos}!reg\_comp.h@{reg\_comp.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_POLL\_POUT\_Pos}{COMP\_POLL\_POUT\_Pos}}
+{\footnotesize\ttfamily \#define COMP\+\_\+\+POLL\+\_\+\+POUT\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00211}{211}} 行定义.
+

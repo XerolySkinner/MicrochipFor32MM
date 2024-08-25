@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>template: C:/Users/XerolySkinner/Desktop/MM_Device/MM32F327x/HAL_Lib/Inc/hal_rtc.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">template
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8a23370bd962f2be3cb202251f8a0865.html">MM32F327x</a></li><li class="navelem"><a class="el" href="dir_3b1bed74bcb45e4245a73e66928ea90d.html">HAL_Lib</a></li><li class="navelem"><a class="el" href="dir_d0c94a65a7731bb943335e05fa4de4c7.html">Inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">hal_rtc.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="hal__rtc_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// Define to prevent recursive inclusion</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#ifndef __HAL_RTC_H</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#define __HAL_RTC_H</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Files includes</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">types.h</a>&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="reg__common_8h.html">reg_common.h</a>&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="reg__rtc_8h.html">reg_rtc.h</a>&quot;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="group___r_t_c___exported___types.html#gadd8fd9fc19696d5fa416bf4a84d4523e">   44</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="group___r_t_c___exported___types.html#ggadd8fd9fc19696d5fa416bf4a84d4523ea61c32974112f289fea00ea3379695d19">   45</a></span>    <a class="code hl_enumvalue" href="group___r_t_c___exported___types.html#ggadd8fd9fc19696d5fa416bf4a84d4523ea61c32974112f289fea00ea3379695d19">RTC_IT_OW</a>  = <a class="code hl_define" href="reg__rtc_8h.html#aa6e96c573d3a63f0f17960248af3875d">RTC_CR_OWIE</a>,   </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="group___r_t_c___exported___types.html#ggadd8fd9fc19696d5fa416bf4a84d4523eac44a612ccb88cc0f43260fdeb5975c1e">   46</a></span>    <a class="code hl_enumvalue" href="group___r_t_c___exported___types.html#ggadd8fd9fc19696d5fa416bf4a84d4523eac44a612ccb88cc0f43260fdeb5975c1e">RTC_IT_ALR</a> = <a class="code hl_define" href="reg__rtc_8h.html#a70861ead98d3c573cafccb97f614e8b0">RTC_CR_ALRIE</a>,  </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_enumvalue" href="group___r_t_c___exported___types.html#ggadd8fd9fc19696d5fa416bf4a84d4523ead4ee31294b3442799def4c68321ab9ae">RTC_IT_SEC</a> = <a class="code hl_define" href="reg__rtc_8h.html#abb93da33d18c6332753fd3b155fa8c9d">RTC_CR_SECIE</a>   </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="group___r_t_c___exported___types.html#ggadd8fd9fc19696d5fa416bf4a84d4523ead4ee31294b3442799def4c68321ab9ae">   48</a></span>} <a class="code hl_enumeration" href="group___r_t_c___exported___types.html#gadd8fd9fc19696d5fa416bf4a84d4523e">RTC_IT_TypeDef</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="group___r_t_c___exported___types.html#gacfbb226cf86a9033b1039fd508aba10b">   53</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="group___r_t_c___exported___types.html#ggacfbb226cf86a9033b1039fd508aba10ba2d658d16a74dbd1cb42efbadc8d90ef2">   54</a></span>    <a class="code hl_enumvalue" href="group___r_t_c___exported___types.html#ggacfbb226cf86a9033b1039fd508aba10ba2d658d16a74dbd1cb42efbadc8d90ef2">RTC_FLAG_RTOFF</a> = <a class="code hl_define" href="reg__rtc_8h.html#a73ff2a195fe9ecc3993f5df7804eaa08">RTC_CSR_RTOFF</a>,  </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="group___r_t_c___exported___types.html#ggacfbb226cf86a9033b1039fd508aba10ba156caf4834eeacf81430c958f6f9d4b8">   55</a></span>    <a class="code hl_enumvalue" href="group___r_t_c___exported___types.html#ggacfbb226cf86a9033b1039fd508aba10ba156caf4834eeacf81430c958f6f9d4b8">RTC_FLAG_RSF</a>   = <a class="code hl_define" href="reg__rtc_8h.html#aed357a7df00864a03513026adc12650c">RTC_CSR_RSF</a>,    </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="group___r_t_c___exported___types.html#ggacfbb226cf86a9033b1039fd508aba10baafef58a99eeff16210a8cc7e329e4985">   56</a></span>    <a class="code hl_enumvalue" href="group___r_t_c___exported___types.html#ggacfbb226cf86a9033b1039fd508aba10baafef58a99eeff16210a8cc7e329e4985">RTC_FLAG_OW</a>    = <a class="code hl_define" href="reg__rtc_8h.html#a35afab36891609205a3e11b50094d778">RTC_CSR_OWF</a>,    </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="group___r_t_c___exported___types.html#ggacfbb226cf86a9033b1039fd508aba10ba851603361ed1165c66e1ba12d4b92158">   57</a></span>    <a class="code hl_enumvalue" href="group___r_t_c___exported___types.html#ggacfbb226cf86a9033b1039fd508aba10ba851603361ed1165c66e1ba12d4b92158">RTC_FLAG_ALR</a>   = <a class="code hl_define" href="reg__rtc_8h.html#a0f948feed3e8a8d0a105c2f02e9d3e99">RTC_CSR_ALRF</a>,   </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_enumvalue" href="group___r_t_c___exported___types.html#ggacfbb226cf86a9033b1039fd508aba10ba06482c700b59d356d0c033c5293be6d4">RTC_FLAG_SEC</a>   = <a class="code hl_define" href="reg__rtc_8h.html#ad172f47174857934034f3605ad7f0779">RTC_CSR_SECF</a>    </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="group___r_t_c___exported___types.html#ggacfbb226cf86a9033b1039fd508aba10ba06482c700b59d356d0c033c5293be6d4">   59</a></span>} <a class="code hl_enumeration" href="group___r_t_c___exported___types.html#gacfbb226cf86a9033b1039fd508aba10b">RTC_FLAG_TypeDef</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#ifdef _HAL_RTC_C_</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#define GLOBAL</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="group___r_t_c___exported___variables.html#ga3de33738fd3c7e77bffbcfaefc3e7645">   76</a></span><span class="preprocessor">#define GLOBAL extern</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="group___r_t_c___exported___variables.html#ga9680c2c8532b3df46e61cbb131ac4141">   79</a></span><a class="code hl_define" href="group___r_t_c___exported___variables.html#ga3de33738fd3c7e77bffbcfaefc3e7645">GLOBAL</a>  <span class="keywordtype">bool</span> <a class="code hl_variable" href="group___r_t_c___exported___variables.html#ga9680c2c8532b3df46e61cbb131ac4141">accessRTC</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#undef GLOBAL</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___r_t_c___exported___functions.html#ga23d641300488d94eedfd6c5d90d90551">RTC_ITConfig</a>(<a class="code hl_enumeration" href="group___r_t_c___exported___types.html#gadd8fd9fc19696d5fa416bf4a84d4523e">RTC_IT_TypeDef</a> it, <a class="code hl_enumeration" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___r_t_c___exported___functions.html#ga4de4fa8c17e61489244085990712184b">RTC_ClearFlag</a>(<a class="code hl_enumeration" href="group___r_t_c___exported___types.html#gacfbb226cf86a9033b1039fd508aba10b">RTC_FLAG_TypeDef</a> flag);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___r_t_c___exported___functions.html#gaf6caf0930546b17a7a9179804bbb39bf">RTC_ClearITPendingBit</a>(<a class="code hl_enumeration" href="group___r_t_c___exported___types.html#gadd8fd9fc19696d5fa416bf4a84d4523e">RTC_IT_TypeDef</a> it);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___r_t_c___exported___functions.html#ga23612d9da2fe057a0cd72c684e5b438a">RTC_EnterConfigMode</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___r_t_c___exported___functions.html#gaf9c04b52542faed02a5b4afe78588dba">RTC_SetCounter</a>(<a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> count);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___r_t_c___exported___functions.html#ga88e7133a331f31b6dc1fa2ccbb883766">RTC_SetPrescaler</a>(<a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> prescaler);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___r_t_c___exported___functions.html#gaf3e50510ca3a94fa30a4d7eb7c373e2e">RTC_SetAlarm</a>(<a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> alarm);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___r_t_c___exported___functions.html#ga7585aa6e2dbb497173b2fd03bac0d304">RTC_ExitConfigMode</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___r_t_c___exported___functions.html#gaa0a406ef860d5231748c5f0d82673036">RTC_WaitForLastTask</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___r_t_c___exported___functions.html#gaca4346e0dc15dccc15179786b28450db">RTC_WaitForSynchro</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_function" href="group___r_t_c___exported___functions.html#gad0ed150c22d59b3728550812c3cf7d02">RTC_GetCounter</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_function" href="group___r_t_c___exported___functions.html#gaa436a06e2390cbbd3fb91b94b0411e94">RTC_GetDivider</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><a class="code hl_enumeration" href="types_8h.html#a89136caac2e14c55151f527ac02daaff">FlagStatus</a> <a class="code hl_function" href="group___r_t_c___exported___functions.html#ga393ad767b7f13d6c72bf8d5e6b222b5d">RTC_GetFlagStatus</a>(<a class="code hl_enumeration" href="group___r_t_c___exported___types.html#gacfbb226cf86a9033b1039fd508aba10b">RTC_FLAG_TypeDef</a> flag);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><a class="code hl_typedef" href="types_8h.html#a39d4411201fb731279ad5a409b2b80d7">ITStatus</a>   <a class="code hl_function" href="group___r_t_c___exported___functions.html#ga04001a828eb2d235855d81d47ccd057c">RTC_GetITStatus</a>(<a class="code hl_enumeration" href="group___r_t_c___exported___types.html#gadd8fd9fc19696d5fa416bf4a84d4523e">RTC_IT_TypeDef</a> it);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="preprocessor">#endif </span><span class="comment">// __HAL_RTC_H </span></div>
+<div class="ttc" id="agroup___r_t_c___exported___functions_html_ga04001a828eb2d235855d81d47ccd057c"><div class="ttname"><a href="group___r_t_c___exported___functions.html#ga04001a828eb2d235855d81d47ccd057c">RTC_GetITStatus</a></div><div class="ttdeci">ITStatus RTC_GetITStatus(RTC_IT_TypeDef it)</div><div class="ttdoc">Checks whether the specified RTC interrupt has occurred or not.</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8c_source.html#l00208">hal_rtc.c:208</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___functions_html_ga23612d9da2fe057a0cd72c684e5b438a"><div class="ttname"><a href="group___r_t_c___exported___functions.html#ga23612d9da2fe057a0cd72c684e5b438a">RTC_EnterConfigMode</a></div><div class="ttdeci">void RTC_EnterConfigMode(void)</div><div class="ttdoc">Enters the RTC configuration mode.</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8c_source.html#l00060">hal_rtc.c:60</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___functions_html_ga23d641300488d94eedfd6c5d90d90551"><div class="ttname"><a href="group___r_t_c___exported___functions.html#ga23d641300488d94eedfd6c5d90d90551">RTC_ITConfig</a></div><div class="ttdeci">void RTC_ITConfig(RTC_IT_TypeDef it, FunctionalState state)</div><div class="ttdoc">Enables or disables the specified RTC interrupts.</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8c_source.html#l00049">hal_rtc.c:49</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___functions_html_ga393ad767b7f13d6c72bf8d5e6b222b5d"><div class="ttname"><a href="group___r_t_c___exported___functions.html#ga393ad767b7f13d6c72bf8d5e6b222b5d">RTC_GetFlagStatus</a></div><div class="ttdeci">FlagStatus RTC_GetFlagStatus(RTC_FLAG_TypeDef flag)</div><div class="ttdoc">Checks whether the specified RTC flag is set or not.</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8c_source.html#l00178">hal_rtc.c:178</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___functions_html_ga4de4fa8c17e61489244085990712184b"><div class="ttname"><a href="group___r_t_c___exported___functions.html#ga4de4fa8c17e61489244085990712184b">RTC_ClearFlag</a></div><div class="ttdeci">void RTC_ClearFlag(RTC_FLAG_TypeDef flag)</div><div class="ttdoc">Clears the RTC's pending flags.</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8c_source.html#l00194">hal_rtc.c:194</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___functions_html_ga7585aa6e2dbb497173b2fd03bac0d304"><div class="ttname"><a href="group___r_t_c___exported___functions.html#ga7585aa6e2dbb497173b2fd03bac0d304">RTC_ExitConfigMode</a></div><div class="ttdeci">void RTC_ExitConfigMode(void)</div><div class="ttdoc">Exits from the RTC configuration mode.</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8c_source.html#l00071">hal_rtc.c:71</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___functions_html_ga88e7133a331f31b6dc1fa2ccbb883766"><div class="ttname"><a href="group___r_t_c___exported___functions.html#ga88e7133a331f31b6dc1fa2ccbb883766">RTC_SetPrescaler</a></div><div class="ttdeci">void RTC_SetPrescaler(u32 prescaler)</div><div class="ttdoc">Sets the RTC prescaler value.</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8c_source.html#l00108">hal_rtc.c:108</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___functions_html_gaa0a406ef860d5231748c5f0d82673036"><div class="ttname"><a href="group___r_t_c___exported___functions.html#gaa0a406ef860d5231748c5f0d82673036">RTC_WaitForLastTask</a></div><div class="ttdeci">void RTC_WaitForLastTask(void)</div><div class="ttdoc">Waits until last write operation on RTC registers has finished.</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8c_source.html#l00148">hal_rtc.c:148</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___functions_html_gaa436a06e2390cbbd3fb91b94b0411e94"><div class="ttname"><a href="group___r_t_c___exported___functions.html#gaa436a06e2390cbbd3fb91b94b0411e94">RTC_GetDivider</a></div><div class="ttdeci">u32 RTC_GetDivider(void)</div><div class="ttdoc">Gets the RTC divider value.</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8c_source.html#l00136">hal_rtc.c:136</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___functions_html_gaca4346e0dc15dccc15179786b28450db"><div class="ttname"><a href="group___r_t_c___exported___functions.html#gaca4346e0dc15dccc15179786b28450db">RTC_WaitForSynchro</a></div><div class="ttdeci">void RTC_WaitForSynchro(void)</div><div class="ttdoc">Waits until the RTC registers (RTC_CNT, RTC_ALR and RTC_PRL) are synchronized with RTC APB clock.</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8c_source.html#l00161">hal_rtc.c:161</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___functions_html_gad0ed150c22d59b3728550812c3cf7d02"><div class="ttname"><a href="group___r_t_c___exported___functions.html#gad0ed150c22d59b3728550812c3cf7d02">RTC_GetCounter</a></div><div class="ttdeci">u32 RTC_GetCounter(void)</div><div class="ttdoc">Gets the RTC counter value.</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8c_source.html#l00083">hal_rtc.c:83</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___functions_html_gaf3e50510ca3a94fa30a4d7eb7c373e2e"><div class="ttname"><a href="group___r_t_c___exported___functions.html#gaf3e50510ca3a94fa30a4d7eb7c373e2e">RTC_SetAlarm</a></div><div class="ttdeci">void RTC_SetAlarm(u32 alarm)</div><div class="ttdoc">Sets the RTC alarm value.</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8c_source.html#l00122">hal_rtc.c:122</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___functions_html_gaf6caf0930546b17a7a9179804bbb39bf"><div class="ttname"><a href="group___r_t_c___exported___functions.html#gaf6caf0930546b17a7a9179804bbb39bf">RTC_ClearITPendingBit</a></div><div class="ttdeci">void RTC_ClearITPendingBit(RTC_IT_TypeDef it)</div><div class="ttdoc">Clears the RTC's interrupt pending bits.</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8c_source.html#l00222">hal_rtc.c:222</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___functions_html_gaf9c04b52542faed02a5b4afe78588dba"><div class="ttname"><a href="group___r_t_c___exported___functions.html#gaf9c04b52542faed02a5b4afe78588dba">RTC_SetCounter</a></div><div class="ttdeci">void RTC_SetCounter(u32 count)</div><div class="ttdoc">Sets the RTC counter value.</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8c_source.html#l00094">hal_rtc.c:94</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___types_html_gacfbb226cf86a9033b1039fd508aba10b"><div class="ttname"><a href="group___r_t_c___exported___types.html#gacfbb226cf86a9033b1039fd508aba10b">RTC_FLAG_TypeDef</a></div><div class="ttdeci">RTC_FLAG_TypeDef</div><div class="ttdoc">RTC_interrupts_flags</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8h_source.html#l00053">hal_rtc.h:53</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___types_html_gadd8fd9fc19696d5fa416bf4a84d4523e"><div class="ttname"><a href="group___r_t_c___exported___types.html#gadd8fd9fc19696d5fa416bf4a84d4523e">RTC_IT_TypeDef</a></div><div class="ttdeci">RTC_IT_TypeDef</div><div class="ttdoc">RTC_interrupts_define</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8h_source.html#l00044">hal_rtc.h:44</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___types_html_ggacfbb226cf86a9033b1039fd508aba10ba06482c700b59d356d0c033c5293be6d4"><div class="ttname"><a href="group___r_t_c___exported___types.html#ggacfbb226cf86a9033b1039fd508aba10ba06482c700b59d356d0c033c5293be6d4">RTC_FLAG_SEC</a></div><div class="ttdeci">@ RTC_FLAG_SEC</div><div class="ttdoc">Second flag</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8h_source.html#l00059">hal_rtc.h:58</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___types_html_ggacfbb226cf86a9033b1039fd508aba10ba156caf4834eeacf81430c958f6f9d4b8"><div class="ttname"><a href="group___r_t_c___exported___types.html#ggacfbb226cf86a9033b1039fd508aba10ba156caf4834eeacf81430c958f6f9d4b8">RTC_FLAG_RSF</a></div><div class="ttdeci">@ RTC_FLAG_RSF</div><div class="ttdoc">Registers Synchronized flag</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8h_source.html#l00055">hal_rtc.h:55</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___types_html_ggacfbb226cf86a9033b1039fd508aba10ba2d658d16a74dbd1cb42efbadc8d90ef2"><div class="ttname"><a href="group___r_t_c___exported___types.html#ggacfbb226cf86a9033b1039fd508aba10ba2d658d16a74dbd1cb42efbadc8d90ef2">RTC_FLAG_RTOFF</a></div><div class="ttdeci">@ RTC_FLAG_RTOFF</div><div class="ttdoc">RTC Operation OFF flag</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8h_source.html#l00054">hal_rtc.h:54</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___types_html_ggacfbb226cf86a9033b1039fd508aba10ba851603361ed1165c66e1ba12d4b92158"><div class="ttname"><a href="group___r_t_c___exported___types.html#ggacfbb226cf86a9033b1039fd508aba10ba851603361ed1165c66e1ba12d4b92158">RTC_FLAG_ALR</a></div><div class="ttdeci">@ RTC_FLAG_ALR</div><div class="ttdoc">Alarm flag</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8h_source.html#l00057">hal_rtc.h:57</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___types_html_ggacfbb226cf86a9033b1039fd508aba10baafef58a99eeff16210a8cc7e329e4985"><div class="ttname"><a href="group___r_t_c___exported___types.html#ggacfbb226cf86a9033b1039fd508aba10baafef58a99eeff16210a8cc7e329e4985">RTC_FLAG_OW</a></div><div class="ttdeci">@ RTC_FLAG_OW</div><div class="ttdoc">Overflow flag</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8h_source.html#l00056">hal_rtc.h:56</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___types_html_ggadd8fd9fc19696d5fa416bf4a84d4523ea61c32974112f289fea00ea3379695d19"><div class="ttname"><a href="group___r_t_c___exported___types.html#ggadd8fd9fc19696d5fa416bf4a84d4523ea61c32974112f289fea00ea3379695d19">RTC_IT_OW</a></div><div class="ttdeci">@ RTC_IT_OW</div><div class="ttdoc">Overflow interrupt</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8h_source.html#l00045">hal_rtc.h:45</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___types_html_ggadd8fd9fc19696d5fa416bf4a84d4523eac44a612ccb88cc0f43260fdeb5975c1e"><div class="ttname"><a href="group___r_t_c___exported___types.html#ggadd8fd9fc19696d5fa416bf4a84d4523eac44a612ccb88cc0f43260fdeb5975c1e">RTC_IT_ALR</a></div><div class="ttdeci">@ RTC_IT_ALR</div><div class="ttdoc">Alarm interrupt</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8h_source.html#l00046">hal_rtc.h:46</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___types_html_ggadd8fd9fc19696d5fa416bf4a84d4523ead4ee31294b3442799def4c68321ab9ae"><div class="ttname"><a href="group___r_t_c___exported___types.html#ggadd8fd9fc19696d5fa416bf4a84d4523ead4ee31294b3442799def4c68321ab9ae">RTC_IT_SEC</a></div><div class="ttdeci">@ RTC_IT_SEC</div><div class="ttdoc">Second interrupt</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8h_source.html#l00048">hal_rtc.h:47</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___variables_html_ga3de33738fd3c7e77bffbcfaefc3e7645"><div class="ttname"><a href="group___r_t_c___exported___variables.html#ga3de33738fd3c7e77bffbcfaefc3e7645">GLOBAL</a></div><div class="ttdeci">#define GLOBAL</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8h_source.html#l00076">hal_rtc.h:76</a></div></div>
+<div class="ttc" id="agroup___r_t_c___exported___variables_html_ga9680c2c8532b3df46e61cbb131ac4141"><div class="ttname"><a href="group___r_t_c___exported___variables.html#ga9680c2c8532b3df46e61cbb131ac4141">accessRTC</a></div><div class="ttdeci">GLOBAL bool accessRTC</div><div class="ttdef"><b>Definition:</b> <a href="hal__rtc_8h_source.html#l00079">hal_rtc.h:79</a></div></div>
+<div class="ttc" id="areg__common_8h_html"><div class="ttname"><a href="reg__common_8h.html">reg_common.h</a></div><div class="ttdoc">THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY.</div></div>
+<div class="ttc" id="areg__rtc_8h_html"><div class="ttname"><a href="reg__rtc_8h.html">reg_rtc.h</a></div><div class="ttdoc">THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY.</div></div>
+<div class="ttc" id="areg__rtc_8h_html_a0f948feed3e8a8d0a105c2f02e9d3e99"><div class="ttname"><a href="reg__rtc_8h.html#a0f948feed3e8a8d0a105c2f02e9d3e99">RTC_CSR_ALRF</a></div><div class="ttdeci">#define RTC_CSR_ALRF</div><div class="ttdoc">Alarm Flag</div><div class="ttdef"><b>Definition:</b> <a href="reg__rtc_8h_source.html#l00105">reg_rtc.h:105</a></div></div>
+<div class="ttc" id="areg__rtc_8h_html_a35afab36891609205a3e11b50094d778"><div class="ttname"><a href="reg__rtc_8h.html#a35afab36891609205a3e11b50094d778">RTC_CSR_OWF</a></div><div class="ttdeci">#define RTC_CSR_OWF</div><div class="ttdoc">OverfloW Flag</div><div class="ttdef"><b>Definition:</b> <a href="reg__rtc_8h_source.html#l00107">reg_rtc.h:107</a></div></div>
+<div class="ttc" id="areg__rtc_8h_html_a70861ead98d3c573cafccb97f614e8b0"><div class="ttname"><a href="reg__rtc_8h.html#a70861ead98d3c573cafccb97f614e8b0">RTC_CR_ALRIE</a></div><div class="ttdeci">#define RTC_CR_ALRIE</div><div class="ttdoc">Alarm Interrupt Enable</div><div class="ttdef"><b>Definition:</b> <a href="reg__rtc_8h_source.html#l00095">reg_rtc.h:95</a></div></div>
+<div class="ttc" id="areg__rtc_8h_html_a73ff2a195fe9ecc3993f5df7804eaa08"><div class="ttname"><a href="reg__rtc_8h.html#a73ff2a195fe9ecc3993f5df7804eaa08">RTC_CSR_RTOFF</a></div><div class="ttdeci">#define RTC_CSR_RTOFF</div><div class="ttdoc">RTC operation OFF</div><div class="ttdef"><b>Definition:</b> <a href="reg__rtc_8h_source.html#l00113">reg_rtc.h:113</a></div></div>
+<div class="ttc" id="areg__rtc_8h_html_aa6e96c573d3a63f0f17960248af3875d"><div class="ttname"><a href="reg__rtc_8h.html#aa6e96c573d3a63f0f17960248af3875d">RTC_CR_OWIE</a></div><div class="ttdeci">#define RTC_CR_OWIE</div><div class="ttdoc">OverfloW Interrupt Enable</div><div class="ttdef"><b>Definition:</b> <a href="reg__rtc_8h_source.html#l00097">reg_rtc.h:97</a></div></div>
+<div class="ttc" id="areg__rtc_8h_html_abb93da33d18c6332753fd3b155fa8c9d"><div class="ttname"><a href="reg__rtc_8h.html#abb93da33d18c6332753fd3b155fa8c9d">RTC_CR_SECIE</a></div><div class="ttdeci">#define RTC_CR_SECIE</div><div class="ttdoc">Second Interrupt Enable</div><div class="ttdef"><b>Definition:</b> <a href="reg__rtc_8h_source.html#l00093">reg_rtc.h:93</a></div></div>
+<div class="ttc" id="areg__rtc_8h_html_ad172f47174857934034f3605ad7f0779"><div class="ttname"><a href="reg__rtc_8h.html#ad172f47174857934034f3605ad7f0779">RTC_CSR_SECF</a></div><div class="ttdeci">#define RTC_CSR_SECF</div><div class="ttdoc">Second Flag</div><div class="ttdef"><b>Definition:</b> <a href="reg__rtc_8h_source.html#l00103">reg_rtc.h:103</a></div></div>
+<div class="ttc" id="areg__rtc_8h_html_aed357a7df00864a03513026adc12650c"><div class="ttname"><a href="reg__rtc_8h.html#aed357a7df00864a03513026adc12650c">RTC_CSR_RSF</a></div><div class="ttdeci">#define RTC_CSR_RSF</div><div class="ttdoc">Registers Synchronized Flag</div><div class="ttdef"><b>Definition:</b> <a href="reg__rtc_8h_source.html#l00109">reg_rtc.h:109</a></div></div>
+<div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">THIS FILE PROVIDES ALL THE TYPE FIRMWARE FUNCTIONS.</div></div>
+<div class="ttc" id="atypes_8h_html_a10e94b422ef0c20dcdec20d31a1f5049"><div class="ttname"><a href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a></div><div class="ttdeci">unsigned int u32</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00054">types.h:54</a></div></div>
+<div class="ttc" id="atypes_8h_html_a39d4411201fb731279ad5a409b2b80d7"><div class="ttname"><a href="types_8h.html#a39d4411201fb731279ad5a409b2b80d7">ITStatus</a></div><div class="ttdeci">enum FlagStatus ITStatus</div></div>
+<div class="ttc" id="atypes_8h_html_a89136caac2e14c55151f527ac02daaff"><div class="ttname"><a href="types_8h.html#a89136caac2e14c55151f527ac02daaff">FlagStatus</a></div><div class="ttdeci">FlagStatus</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00073">types.h:73</a></div></div>
+<div class="ttc" id="atypes_8h_html_ac9a7e9a35d2513ec15c3b537aaa4fba1"><div class="ttname"><a href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a></div><div class="ttdeci">FunctionalState</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00074">types.h:74</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

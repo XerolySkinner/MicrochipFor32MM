@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>template: C:/Users/XerolySkinner/Desktop/MM_Device/MM32F327x/Include/reg_crs.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">template
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8a23370bd962f2be3cb202251f8a0865.html">MM32F327x</a></li><li class="navelem"><a class="el" href="dir_558e241ee7368c5b8b9a34748b15bdf8.html">Include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">reg_crs.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="reg__crs_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// Define to prevent recursive inclusion</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#ifndef __REG_CRS_H</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#define __REG_CRS_H</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Files includes</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">types.h</a>&quot;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#if defined ( __CC_ARM )</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#pragma anon_unions</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a53cd25310ec0663a7395042bd860fedc">   47</a></span><span class="preprocessor">#define CRS_BASE                        (APB1PERIPH_BASE + 0x6C00)              </span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="struct_c_r_s___type_def.html">   54</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="struct_c_r_s___type_def.html#ab61bee0e4a478fe9fa4a42900d8bb89b">   55</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_c_r_s___type_def.html#ab61bee0e4a478fe9fa4a42900d8bb89b">CR</a>;                                                                </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="struct_c_r_s___type_def.html#af2899a9243e86ad37d4ddc8fcccbe718">   56</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_c_r_s___type_def.html#af2899a9243e86ad37d4ddc8fcccbe718">CFGR</a>;                                                              </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="struct_c_r_s___type_def.html#a93af5b20b28db90c9e3c1e3e6c6346c9">   57</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_c_r_s___type_def.html#a93af5b20b28db90c9e3c1e3e6c6346c9">ISR</a>;                                                               </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="struct_c_r_s___type_def.html#a20ae0dc3788a9448bfe4d89d70c1e4e1">   58</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_c_r_s___type_def.html#a20ae0dc3788a9448bfe4d89d70c1e4e1">ICR</a>;                                                               </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>} <a class="code hl_struct" href="struct_c_r_s___type_def.html">CRS_TypeDef</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#ad151b2f8dbc243ac0ce1fad0c4306328">   66</a></span><span class="preprocessor">#define CRS                         ((CRS_TypeDef*) CRS_BASE)</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a0fe0aa3809ebf66e37089884266eec47">   73</a></span><span class="preprocessor">#define CRS_CR_OKIE_Pos             (0)</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a7693a62cacfca8ab9699a22e94fe938f">   74</a></span><span class="preprocessor">#define CRS_CR_OKIE                 (0x01U &lt;&lt; CRS_CR_OKIE_Pos)              </span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a08e3f6522b576ee3ce450ec58e37caf3">   75</a></span><span class="preprocessor">#define CRS_CR_WARNIE_Pos           (1)</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#aade9041f148c18e199ed7cf5c4228dba">   76</a></span><span class="preprocessor">#define CRS_CR_WARNIE               (0x01U &lt;&lt; CRS_CR_WARNIE_Pos)            </span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#afe82fc749bd2c929d741dd3f19c6c833">   77</a></span><span class="preprocessor">#define CRS_CR_ERRIE_Pos            (2)</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#ac616bbfe903ec7cc2be289db5fba0fe5">   78</a></span><span class="preprocessor">#define CRS_CR_ERRIE                (0x01U &lt;&lt; CRS_CR_ERRIE_Pos)             </span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#af003e149a5929f9003a0436cb792b9ba">   79</a></span><span class="preprocessor">#define CRS_CR_EXPTIE_Pos           (3)</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#af122171aeba18f537d001ef840cb428c">   80</a></span><span class="preprocessor">#define CRS_CR_EXPTIE               (0x01U &lt;&lt; CRS_CR_EXPTIE_Pos)            </span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a8104505d704f81461ebe96b2042b6cc4">   81</a></span><span class="preprocessor">#define CRS_CR_CNTEN_Pos            (5)</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#af64de8225612fa55f0a771dd47a4f282">   82</a></span><span class="preprocessor">#define CRS_CR_CNTEN                (0x01U &lt;&lt; CRS_CR_CNTEN_Pos)             </span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#adc58c855511f7dee3f38862400350951">   83</a></span><span class="preprocessor">#define CRS_CR_AUTOTRIMEN_Pos       (6)</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#afa48432b942f1896e05a2eff91178edd">   84</a></span><span class="preprocessor">#define CRS_CR_AUTOTRIMEN           (0x01U &lt;&lt; CRS_CR_AUTOTRIMEN_Pos)        </span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a0a1aaab3255d1a601461b0af51ee2b71">   85</a></span><span class="preprocessor">#define CRS_CR_SWSYNC_Pos           (7)</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a53d79706214ba4ee9310e4b678d67e44">   86</a></span><span class="preprocessor">#define CRS_CR_SWSYNC               (0x01U &lt;&lt; CRS_CR_SWSYNC_Pos)            </span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a8403e00f9da8b5d82edf71bad235fdfe">   87</a></span><span class="preprocessor">#define CRS_CR_TRIM_Pos             (8)</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a755d695431db14c1b3b15a48ede61c13">   88</a></span><span class="preprocessor">#define CRS_CR_TRIM                 (0x3FFU &lt;&lt; CRS_CR_TRIM_Pos)              </span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a391a7b80ee20474bda366e0f915a4923">   93</a></span><span class="preprocessor">#define CRS_CFGR_RELOAD_Pos         (0)</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a7e54b011ada0eeb4b6ed9cdd24d517f9">   94</a></span><span class="preprocessor">#define CRS_CFGR_RELOAD             (0xFFFFU &lt;&lt; CRS_CFGR_RELOAD_Pos)        </span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a5e716be61ad7e9eec068b4dff4a96a7b">   95</a></span><span class="preprocessor">#define CRS_CFGR_FELIM_Pos          (16)</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a48c70ae21b6a35ed520a2b30df2c4852">   96</a></span><span class="preprocessor">#define CRS_CFGR_FELIM              (0xFFU &lt;&lt; CRS_CFGR_FELIM_Pos)           </span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a4e7965c47b6e5d024044760ffe816e7e">   97</a></span><span class="preprocessor">#define CRS_CFGR_DIV_Pos            (24)</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a098a67ef20794332d0308c761fb47a0f">   98</a></span><span class="preprocessor">#define CRS_CFGR_DIV                (0x07U &lt;&lt; CRS_CFGR_DIV_Pos)             </span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a460d617d51a570ac67bdd340d8e134cb">   99</a></span><span class="preprocessor">#define CRS_CFGR_SRC_Pos            (28)</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#aed7df5ce417054248a351c81eba62f26">  100</a></span><span class="preprocessor">#define CRS_CFGR_SRC                (0x03U &lt;&lt; CRS_CFGR_SRC_Pos)             </span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#aaca87c760933eeb6f50243ef87473baa">  101</a></span><span class="preprocessor">#define CRS_CFGR_SRC_MCO            (0x00U &lt;&lt; CRS_CFGR_SRC_Pos)</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a8afdbae0491f899a8ff30055fccc0b30">  102</a></span><span class="preprocessor">#define CRS_CFGR_SRC_USBSOF         (0x02U &lt;&lt; CRS_CFGR_SRC_Pos)</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a23d63b667d8bd57e2612a27444d0d2d1">  103</a></span><span class="preprocessor">#define CRS_CFGR_POL_Pos            (31)</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a34b1b16b28f551ef51f08f7372385ad5">  104</a></span><span class="preprocessor">#define CRS_CFGR_POL                (0x01U &lt;&lt; CRS_CFGR_POL_Pos)             </span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#afbaa9dcfcade7b3c6e7598b3870db9eb">  109</a></span><span class="preprocessor">#define CRS_ISR_OKIF_Pos            (0)</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a4f8a2b5888a0bac6ede515ec2eb125d7">  110</a></span><span class="preprocessor">#define CRS_ISR_OKIF                (0x01U &lt;&lt; CRS_ISR_OKIF_Pos)             </span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#ae0da8b092f26c78938de23c0dea143b9">  111</a></span><span class="preprocessor">#define CRS_ISR_WARNIF_Pos          (1)</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a87e76b7dee2efca11a6ec0b578fe6531">  112</a></span><span class="preprocessor">#define CRS_ISR_WARNIF              (0x01U &lt;&lt; CRS_ISR_WARNIF_Pos)           </span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#ac51bb5861aa3290d200a5c3edd122904">  113</a></span><span class="preprocessor">#define CRS_ISR_ERRIF_Pos           (2)</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a9e5871b1ea8f8602415a766bb9356329">  114</a></span><span class="preprocessor">#define CRS_ISR_ERRIF               (0x01U &lt;&lt; CRS_ISR_ERRIF_Pos)            </span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a060dc6a61fcb74cef01cea42fb48dc23">  115</a></span><span class="preprocessor">#define CRS_ISR_EXPTIF_Pos          (3)</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#ac11c44aaef0968554c0e6795864c2f5f">  116</a></span><span class="preprocessor">#define CRS_ISR_EXPTIF              (0x01U &lt;&lt; CRS_ISR_EXPTIF_Pos)           </span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a0bb4fe6aefd586988a62a5837baa26ea">  117</a></span><span class="preprocessor">#define CRS_ISR_ERR_Pos             (8)</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#ae9826e0b009afd0d8b1ed51b44d4a4ee">  118</a></span><span class="preprocessor">#define CRS_ISR_ERR                 (0x01U &lt;&lt; CRS_ISR_ERR_Pos)              </span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a1ab20c62ea8ea4943f71da58aba7ba43">  119</a></span><span class="preprocessor">#define CRS_ISR_MISS_Pos            (9)</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a79febd04bfdf302df013d199ce1bbff4">  120</a></span><span class="preprocessor">#define CRS_ISR_MISS                (0x01U &lt;&lt; CRS_ISR_MISS_Pos)             </span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#ac7bc2e7aa3cd36c7c76255488ccc26fe">  121</a></span><span class="preprocessor">#define CRS_ISR_OVERFLOW_Pos        (10)</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a938cebb3399bb229e30fdec64ff06d75">  122</a></span><span class="preprocessor">#define CRS_ISR_OVERFLOW            (0x01U &lt;&lt; CRS_ISR_OVERFLOW_Pos)         </span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#afbcb80aba05f7db27d4b5436f6b4b4ba">  123</a></span><span class="preprocessor">#define CRS_ISR_FEDIR_Pos           (15)</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a91196b059d8ff52c4f28bc964c8a446a">  124</a></span><span class="preprocessor">#define CRS_ISR_FEDIR               (0x01U &lt;&lt; CRS_ISR_FEDIR_Pos)            </span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a4a4fbc555cf26b952581829f83c57764">  125</a></span><span class="preprocessor">#define CRS_ISR_FECAP_Pos           (16)</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#af0b8a9757678f28814b1a0c1baca63e2">  126</a></span><span class="preprocessor">#define CRS_ISR_FECAP               (0xFFFFU &lt;&lt; CRS_ISR_FECAP_Pos)          </span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a4f12e85fa8a9989ec220086c6c6caaa6">  131</a></span><span class="preprocessor">#define CRS_ICR_OK_Pos              (0)</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a8d91af50cd99c0d6e7b3bc28fabf1bff">  132</a></span><span class="preprocessor">#define CRS_ICR_OK                  (0x01U &lt;&lt; CRS_ICR_OK_Pos)               </span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a5a84038704cfa2a772713387d20b9c43">  133</a></span><span class="preprocessor">#define CRS_ICR_WARN_Pos            (1)</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#aa70486f4c09b204cd1f0331d150d48aa">  134</a></span><span class="preprocessor">#define CRS_ICR_WARN                (0x01U &lt;&lt; CRS_ICR_WARN_Pos)             </span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#af7041f3114d8a56c81fc27e0e46adfba">  135</a></span><span class="preprocessor">#define CRS_ICR_ERR_Pos             (2)</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a19b06e76ac148cedc3367ee3a91f4011">  136</a></span><span class="preprocessor">#define CRS_ICR_ERR                 (0x01U &lt;&lt; CRS_ICR_ERR_Pos)              </span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#a9f21860b6afcaa1fcd8ca23213a11626">  137</a></span><span class="preprocessor">#define CRS_ICR_EXPT_Pos            (3)</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="reg__crs_8h.html#ac01d1ca905f12bd849a17d02a502c9d2">  138</a></span><span class="preprocessor">#define CRS_ICR_EXPT                (0x01U &lt;&lt; CRS_ICR_EXPT_Pos)             </span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="acore__armv8mbl_8h_html_aec43007d9998a0a0e01faede4133d6be"><div class="ttname"><a href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a></div><div class="ttdeci">#define __IO</div><div class="ttdef"><b>Definition:</b> <a href="core__armv8mbl_8h_source.html#l00194">core_armv8mbl.h:194</a></div></div>
+<div class="ttc" id="astruct_c_r_s___type_def_html"><div class="ttname"><a href="struct_c_r_s___type_def.html">CRS_TypeDef</a></div><div class="ttdoc">CRS Register Structure Definition</div><div class="ttdef"><b>Definition:</b> <a href="reg__crs_8h_source.html#l00054">reg_crs.h:54</a></div></div>
+<div class="ttc" id="astruct_c_r_s___type_def_html_a20ae0dc3788a9448bfe4d89d70c1e4e1"><div class="ttname"><a href="struct_c_r_s___type_def.html#a20ae0dc3788a9448bfe4d89d70c1e4e1">CRS_TypeDef::ICR</a></div><div class="ttdeci">__IO u32 ICR</div><div class="ttdoc">Interrupt Flag Clear Register offset: 0x0C</div><div class="ttdef"><b>Definition:</b> <a href="reg__crs_8h_source.html#l00058">reg_crs.h:58</a></div></div>
+<div class="ttc" id="astruct_c_r_s___type_def_html_a93af5b20b28db90c9e3c1e3e6c6346c9"><div class="ttname"><a href="struct_c_r_s___type_def.html#a93af5b20b28db90c9e3c1e3e6c6346c9">CRS_TypeDef::ISR</a></div><div class="ttdeci">__IO u32 ISR</div><div class="ttdoc">Interrupt and Status Register offset: 0x08</div><div class="ttdef"><b>Definition:</b> <a href="reg__crs_8h_source.html#l00057">reg_crs.h:57</a></div></div>
+<div class="ttc" id="astruct_c_r_s___type_def_html_ab61bee0e4a478fe9fa4a42900d8bb89b"><div class="ttname"><a href="struct_c_r_s___type_def.html#ab61bee0e4a478fe9fa4a42900d8bb89b">CRS_TypeDef::CR</a></div><div class="ttdeci">__IO u32 CR</div><div class="ttdoc">Control Register offset: 0x00</div><div class="ttdef"><b>Definition:</b> <a href="reg__crs_8h_source.html#l00055">reg_crs.h:55</a></div></div>
+<div class="ttc" id="astruct_c_r_s___type_def_html_af2899a9243e86ad37d4ddc8fcccbe718"><div class="ttname"><a href="struct_c_r_s___type_def.html#af2899a9243e86ad37d4ddc8fcccbe718">CRS_TypeDef::CFGR</a></div><div class="ttdeci">__IO u32 CFGR</div><div class="ttdoc">Configuration Register offset: 0x04</div><div class="ttdef"><b>Definition:</b> <a href="reg__crs_8h_source.html#l00056">reg_crs.h:56</a></div></div>
+<div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">THIS FILE PROVIDES ALL THE TYPE FIRMWARE FUNCTIONS.</div></div>
+<div class="ttc" id="atypes_8h_html_a10e94b422ef0c20dcdec20d31a1f5049"><div class="ttname"><a href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a></div><div class="ttdeci">unsigned int u32</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00054">types.h:54</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

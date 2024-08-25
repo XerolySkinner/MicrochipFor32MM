@@ -1,0 +1,2136 @@
+\hypertarget{reg__spi_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/reg\+\_\+spi.h 文件参考}
+\label{reg__spi_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_spi.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_spi.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}}
+\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ac3e357b4c25106ed375fb1affab6bb86}{SPI2\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x3800)
+\begin{DoxyCompactList}\small\item\em SPI Base Address Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a50cd8b47929f18b05efbd0f41253bf8d}{SPI1\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a25b99d6065f1c8f751e78f43ade652cb}{APB2\+PERIPH\+\_\+\+BASE}} + 0x3000)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x400013000 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ae634fe8faa6922690e90fbec2fc86162}{SPI3\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x3\+C00)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x40003\+C000 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a2a3f5b5b5ac58a5e6544c26613a91853}{USENCOMBINEREGISTER}}
+\begin{DoxyCompactList}\small\item\em SPI Register Structure Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_af2c3d8ce359dcfbb2261e07ed42af72b}{SPI2}}~((\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__spi_8h_ac3e357b4c25106ed375fb1affab6bb86}{SPI2\+\_\+\+BASE}})
+\begin{DoxyCompactList}\small\item\em SPI type pointer Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ad483be344a28ac800be8f03654a9612f}{SPI1}}~((\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__spi_8h_a50cd8b47929f18b05efbd0f41253bf8d}{SPI1\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ab2339cbf25502bf562b19208b1b257fc}{SPI3}}~((\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__spi_8h_ae634fe8faa6922690e90fbec2fc86162}{SPI3\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ac913f5c93e50153b7b289fee6e817ac5}{SPI\+\_\+\+TDR\+\_\+\+TXREG\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em SPI\+\_\+\+TDR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a788f755221b7441605e3cee4dfe107e7}{SPI\+\_\+\+TDR\+\_\+\+TXREG}}~(0x\+FFFFFFFFU $<$$<$ \mbox{\hyperlink{reg__spi_8h_ac913f5c93e50153b7b289fee6e817ac5}{SPI\+\_\+\+TDR\+\_\+\+TXREG\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmit data register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a268dcc3d382c3338ff8ea0429e411db2}{SPI\+\_\+\+RDR\+\_\+\+RXREG\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em SPI\+\_\+\+RDR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a4b90064622b6f216c4202ec8db43f762}{SPI\+\_\+\+RDR\+\_\+\+RXREG}}~(0x\+FFFFFFFFU $<$$<$ \mbox{\hyperlink{reg__spi_8h_a268dcc3d382c3338ff8ea0429e411db2}{SPI\+\_\+\+RDR\+\_\+\+RXREG\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive data register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ae83ac075cc16c51c3f16c026c767d69c}{SPI\+\_\+\+SR\+\_\+\+TXEPT\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em SPI\+\_\+\+SR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a0a901c53867bc84741928a8cb766e28a}{SPI\+\_\+\+SR\+\_\+\+TXEPT}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_ae83ac075cc16c51c3f16c026c767d69c}{SPI\+\_\+\+SR\+\_\+\+TXEPT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmitter empty bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ad32847e0cc5c1c382222777755362c44}{SPI\+\_\+\+SR\+\_\+\+RXAVL\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ab9d651c76c08c379b34fdee2421970c2}{SPI\+\_\+\+SR\+\_\+\+RXAVL}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_ad32847e0cc5c1c382222777755362c44}{SPI\+\_\+\+SR\+\_\+\+RXAVL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive available byte data message \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a5d5fdf349d4a854b15fe56e7667590e2}{SPI\+\_\+\+SR\+\_\+\+TXFULL\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a09aef2729326f91d8e79cb3a3ec514aa}{SPI\+\_\+\+SR\+\_\+\+TXFULL}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a5d5fdf349d4a854b15fe56e7667590e2}{SPI\+\_\+\+SR\+\_\+\+TXFULL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmitter FIFO full status bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a239d222b17ccc8ad8b905462af1aee9d}{SPI\+\_\+\+SR\+\_\+\+RXAVL\+\_\+4\+BYTE\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a2c72b29e619bbc07ec374c396ba666ce}{SPI\+\_\+\+SR\+\_\+\+RXAVL\+\_\+4\+BYTE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a239d222b17ccc8ad8b905462af1aee9d}{SPI\+\_\+\+SR\+\_\+\+RXAVL\+\_\+4\+BYTE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive available 4 byte data message \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a5663aaeed6bd98e7107452008d9e930f}{SPI\+\_\+\+SR\+\_\+\+TXFADDR\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a18bddf6b56e37cea9b5eb2a4b43a4e43}{SPI\+\_\+\+SR\+\_\+\+TXFADDR}}~(0x0\+FU $<$$<$ \mbox{\hyperlink{reg__spi_8h_a5663aaeed6bd98e7107452008d9e930f}{SPI\+\_\+\+SR\+\_\+\+TXFADDR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmit FIFO address \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a71fde550ec94af3b5b97333a09bd0cf5}{SPI\+\_\+\+SR\+\_\+\+RXFADDR\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a6c73a11ea92f386ca9a94c56d37a91b6}{SPI\+\_\+\+SR\+\_\+\+RXFADDR}}~(0x0\+FU $<$$<$ \mbox{\hyperlink{reg__spi_8h_a71fde550ec94af3b5b97333a09bd0cf5}{SPI\+\_\+\+SR\+\_\+\+RXFADDR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive FIFO address \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a192c2bdf368f31078b1bcaf11b2b9493}{SPI\+\_\+\+SR\+\_\+\+BUSY\+\_\+\+Pos}}~(12)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a30c846781e397b48de4e75b5b78c11f3}{SPI\+\_\+\+SR\+\_\+\+BUSY}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a192c2bdf368f31078b1bcaf11b2b9493}{SPI\+\_\+\+SR\+\_\+\+BUSY\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Data transfer flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ae5b742da8b06539f6119d020885a6e0c}{SPI\+\_\+\+SR\+\_\+\+CHSIDE\+\_\+\+Pos}}~(13)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a81bd052f0b2e819ddd6bb16c2292a2de}{SPI\+\_\+\+SR\+\_\+\+CHSIDE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_ae5b742da8b06539f6119d020885a6e0c}{SPI\+\_\+\+SR\+\_\+\+CHSIDE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em transmission channel ~\newline
+ ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_aae267dedf4ee65d12fdd620df0db7f12}{SPI\+\_\+\+ISR\+\_\+\+TX\+\_\+\+INTF\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a807a25bbf28514112854b61b9e5862bb}{SPI\+\_\+\+ISR\+\_\+\+TX\+\_\+\+INTF}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_aae267dedf4ee65d12fdd620df0db7f12}{SPI\+\_\+\+ISR\+\_\+\+TX\+\_\+\+INTF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmit FIFO available interrupt flag bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a967bf22f2fbcf0c20a487a2e426009a9}{SPI\+\_\+\+ISR\+\_\+\+RX\+\_\+\+INTF\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a968121c0ed77e1a1f44b0fc7bec6f86d}{SPI\+\_\+\+ISR\+\_\+\+RX\+\_\+\+INTF}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a967bf22f2fbcf0c20a487a2e426009a9}{SPI\+\_\+\+ISR\+\_\+\+RX\+\_\+\+INTF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive data available interrupt flag bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_aa46f0b480f8b731b19cc2374e9940bdf}{SPI\+\_\+\+ISR\+\_\+\+UNDERRUN\+\_\+\+INTF\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a0db35f013eadfebe8ffadd01a5618c80}{SPI\+\_\+\+ISR\+\_\+\+UNDERRUN\+\_\+\+INTF}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_aa46f0b480f8b731b19cc2374e9940bdf}{SPI\+\_\+\+ISR\+\_\+\+UNDERRUN\+\_\+\+INTF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SPI underrun interrupt flag bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a12630b3d8a69bdb3ff3e9db0a4787c07}{SPI\+\_\+\+ISR\+\_\+\+RXOERR\+\_\+\+INTF\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a03dff9734a11732851882cd88e4b2b9e}{SPI\+\_\+\+ISR\+\_\+\+RXOERR\+\_\+\+INTF}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a12630b3d8a69bdb3ff3e9db0a4787c07}{SPI\+\_\+\+ISR\+\_\+\+RXOERR\+\_\+\+INTF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive overrun error interrupt flag bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a591942bdf36dd2e6771a94da91c236e3}{SPI\+\_\+\+ISR\+\_\+\+RXMATCH\+\_\+\+INTF\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a9192d2dec61474b6f9945f2eb9a85944}{SPI\+\_\+\+ISR\+\_\+\+RXMATCH\+\_\+\+INTF}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a591942bdf36dd2e6771a94da91c236e3}{SPI\+\_\+\+ISR\+\_\+\+RXMATCH\+\_\+\+INTF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive data match the RXDNR number, the receive process will be completed and generate the interrupt \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a0adee02fcf7258492d577c4b1df04c2f}{SPI\+\_\+\+ISR\+\_\+\+RXFULL\+\_\+\+INTF\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a2de6c17651e77354b5170f267b00cae5}{SPI\+\_\+\+ISR\+\_\+\+RXFULL\+\_\+\+INTF}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a0adee02fcf7258492d577c4b1df04c2f}{SPI\+\_\+\+ISR\+\_\+\+RXFULL\+\_\+\+INTF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em RX FIFO full interrupt flag bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_aa6e9c64b379b3e1a256c4e245c2d91b7}{SPI\+\_\+\+ISR\+\_\+\+TXEPT\+\_\+\+INTF\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a6289424975c33830fdb153361684a0ad}{SPI\+\_\+\+ISR\+\_\+\+TXEPT\+\_\+\+INTF}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_aa6e9c64b379b3e1a256c4e245c2d91b7}{SPI\+\_\+\+ISR\+\_\+\+TXEPT\+\_\+\+INTF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmitter empty interrupt flag bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ab8f9a69bd918e24dd5c0d5cb5749d75d}{SPI\+\_\+\+ISR\+\_\+\+FRE\+\_\+\+INTF\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a2e0ce7f8b7b102138c16ac7d5add6691}{SPI\+\_\+\+ISR\+\_\+\+FRE\+\_\+\+INTF}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_ab8f9a69bd918e24dd5c0d5cb5749d75d}{SPI\+\_\+\+ISR\+\_\+\+FRE\+\_\+\+INTF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em I2S frame transmission error flag bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_af7b26d3b5941df45a343814afe527247}{SPI\+\_\+\+IER\+\_\+\+TX\+\_\+\+IEN\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a544047259700633cb174bf6dc14ac740}{SPI\+\_\+\+IER\+\_\+\+TX\+\_\+\+IEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_af7b26d3b5941df45a343814afe527247}{SPI\+\_\+\+IER\+\_\+\+TX\+\_\+\+IEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmit FIFO empty interrupt enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a99ba0b23913c86e76e5ab70bcf21813f}{SPI\+\_\+\+IER\+\_\+\+RX\+\_\+\+IEN\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a62c11ed171a7cd3395279db5fdc742d6}{SPI\+\_\+\+IER\+\_\+\+RX\+\_\+\+IEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a99ba0b23913c86e76e5ab70bcf21813f}{SPI\+\_\+\+IER\+\_\+\+RX\+\_\+\+IEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive FIFO interrupt enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a0a3dbf760f787b3c510df002509fb81e}{SPI\+\_\+\+IER\+\_\+\+UNDERRUN\+\_\+\+IEN\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ac0bcf918ebbaca3ce9f2853e1211023b}{SPI\+\_\+\+IER\+\_\+\+UNDERRUN\+\_\+\+IEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a0a3dbf760f787b3c510df002509fb81e}{SPI\+\_\+\+IER\+\_\+\+UNDERRUN\+\_\+\+IEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmitter underrun interrupt enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a49a97873e7ab5c25a2c3228da9f6b875}{SPI\+\_\+\+IER\+\_\+\+RXOERR\+\_\+\+IEN\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_aa6762bc89f98177628a1488e5d90d6f4}{SPI\+\_\+\+IER\+\_\+\+RXOERR\+\_\+\+IEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a49a97873e7ab5c25a2c3228da9f6b875}{SPI\+\_\+\+IER\+\_\+\+RXOERR\+\_\+\+IEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Overrun error interrupt enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a883f347b1d62d9e986b237905b652aa5}{SPI\+\_\+\+IER\+\_\+\+RXMATCH\+\_\+\+IEN\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ac348d18f34414f0f18005d3d79363cde}{SPI\+\_\+\+IER\+\_\+\+RXMATCH\+\_\+\+IEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a883f347b1d62d9e986b237905b652aa5}{SPI\+\_\+\+IER\+\_\+\+RXMATCH\+\_\+\+IEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive data complete interrupt enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a45f700d2932a006c5a20c3a81ede0309}{SPI\+\_\+\+IER\+\_\+\+RXFULL\+\_\+\+IEN\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a90d164628a59280cf2348f9f9428b6de}{SPI\+\_\+\+IER\+\_\+\+RXFULL\+\_\+\+IEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a45f700d2932a006c5a20c3a81ede0309}{SPI\+\_\+\+IER\+\_\+\+RXFULL\+\_\+\+IEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive FIFO full interrupt enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a059389d54902e5dff846129fca27fbc7}{SPI\+\_\+\+IER\+\_\+\+TXEPT\+\_\+\+IEN\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a21b38f2b93e42b6f4a27e804334ccd32}{SPI\+\_\+\+IER\+\_\+\+TXEPT\+\_\+\+IEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a059389d54902e5dff846129fca27fbc7}{SPI\+\_\+\+IER\+\_\+\+TXEPT\+\_\+\+IEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmit empty interrupt enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a1aab5e4f551bcba84502fbf55f5c7628}{SPI\+\_\+\+IER\+\_\+\+FRE\+\_\+\+IEN\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ac64082fb20ad482a84ca113e62e2139f}{SPI\+\_\+\+IER\+\_\+\+FRE\+\_\+\+IEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a1aab5e4f551bcba84502fbf55f5c7628}{SPI\+\_\+\+IER\+\_\+\+FRE\+\_\+\+IEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em I2S frame transmission interrupt enable bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a1bdd40d808e4f4824d3e4db53655068d}{SPI\+\_\+\+ICR\+\_\+\+TX\+\_\+\+ICLR\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a21d56c2ab46c87e3ded564564001387a}{SPI\+\_\+\+ICR\+\_\+\+TX\+\_\+\+ICLR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a1bdd40d808e4f4824d3e4db53655068d}{SPI\+\_\+\+ICR\+\_\+\+TX\+\_\+\+ICLR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmitter FIFO empty interrupt clear bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a9658213822259559cf1e9a468a2a9b03}{SPI\+\_\+\+ICR\+\_\+\+RX\+\_\+\+ICLR\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ad52d262ecbace6c238ab91a3a552e5c4}{SPI\+\_\+\+ICR\+\_\+\+RX\+\_\+\+ICLR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a9658213822259559cf1e9a468a2a9b03}{SPI\+\_\+\+ICR\+\_\+\+RX\+\_\+\+ICLR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive interrupt clear bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a23fd0ac1014d238bf7074e0c6790b769}{SPI\+\_\+\+ICR\+\_\+\+UNDERRUN\+\_\+\+ICLR\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ad225c1bafc75d0de43f6ec7e2ad46f29}{SPI\+\_\+\+ICR\+\_\+\+UNDERRUN\+\_\+\+ICLR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a23fd0ac1014d238bf7074e0c6790b769}{SPI\+\_\+\+ICR\+\_\+\+UNDERRUN\+\_\+\+ICLR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmitter underrun interrupt clear bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a2f79f38e036aecdfee1d152a6823623f}{SPI\+\_\+\+ICR\+\_\+\+RXOERR\+\_\+\+ICLR\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_af2200be3ef12f6b2de784586768a254f}{SPI\+\_\+\+ICR\+\_\+\+RXOERR\+\_\+\+ICLR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a2f79f38e036aecdfee1d152a6823623f}{SPI\+\_\+\+ICR\+\_\+\+RXOERR\+\_\+\+ICLR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Overrun error interrupt clear bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a5689d98fd87cbbeb100f78a1cb5efba6}{SPI\+\_\+\+ICR\+\_\+\+RXMATCH\+\_\+\+ICLR\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a53d99fb4eda6a6089866400b0d7b32a6}{SPI\+\_\+\+ICR\+\_\+\+RXMATCH\+\_\+\+ICLR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a5689d98fd87cbbeb100f78a1cb5efba6}{SPI\+\_\+\+ICR\+\_\+\+RXMATCH\+\_\+\+ICLR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive completed interrupt clear bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ae28afe3b5485274a5d0253ce15abee9d}{SPI\+\_\+\+ICR\+\_\+\+RXFULL\+\_\+\+ICLR\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_aa3297a93917b81a94a9a2b508fbe1d05}{SPI\+\_\+\+ICR\+\_\+\+RXFULL\+\_\+\+ICLR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_ae28afe3b5485274a5d0253ce15abee9d}{SPI\+\_\+\+ICR\+\_\+\+RXFULL\+\_\+\+ICLR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receiver buffer full interrupt clear bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a167986da14c32e940bea74b9f37c6d5c}{SPI\+\_\+\+ICR\+\_\+\+TXEPT\+\_\+\+ICLR\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a6d6b38eb9dadcf779b896d3dd52ec979}{SPI\+\_\+\+ICR\+\_\+\+TXEPT\+\_\+\+ICLR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a167986da14c32e940bea74b9f37c6d5c}{SPI\+\_\+\+ICR\+\_\+\+TXEPT\+\_\+\+ICLR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmitter empty interrupt clear bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ac2758ab98611fdb41ab73c7e3b4293c0}{SPI\+\_\+\+ICR\+\_\+\+FRE\+\_\+\+ICLR\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a8c9fa747eb142c7b8714ce33062f4d59}{SPI\+\_\+\+ICR\+\_\+\+FRE\+\_\+\+ICLR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_ac2758ab98611fdb41ab73c7e3b4293c0}{SPI\+\_\+\+ICR\+\_\+\+FRE\+\_\+\+ICLR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em I2S frame transmission interrupt clear bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_afd3e4fb94b8f43d5199067737eaf47c8}{SPI\+\_\+\+GCR\+\_\+\+SPIEN\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a69b6336e8f288f548abf56eb573a5bc2}{SPI\+\_\+\+GCR\+\_\+\+SPIEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_afd3e4fb94b8f43d5199067737eaf47c8}{SPI\+\_\+\+GCR\+\_\+\+SPIEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SPI select bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_aaa65f700c67fd32781a08a1ae2160c91}{SPI\+\_\+\+GCR\+\_\+\+IEN\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a66f7dcc452b30ccf63e006fc9ab1efea}{SPI\+\_\+\+GCR\+\_\+\+IEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_aaa65f700c67fd32781a08a1ae2160c91}{SPI\+\_\+\+GCR\+\_\+\+IEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SPI interrupt enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a0a080a94c24593e70452466611b9d538}{SPI\+\_\+\+GCR\+\_\+\+MODE\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_acb43c00e4885c01427166f5a55cf5b82}{SPI\+\_\+\+GCR\+\_\+\+MODE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a0a080a94c24593e70452466611b9d538}{SPI\+\_\+\+GCR\+\_\+\+MODE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Master mode bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_af147abe1e81d6efe57a08ac783064a41}{SPI\+\_\+\+GCR\+\_\+\+TXEN\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a2ab02a957999ef636757646ca67a0b75}{SPI\+\_\+\+GCR\+\_\+\+TXEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_af147abe1e81d6efe57a08ac783064a41}{SPI\+\_\+\+GCR\+\_\+\+TXEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmit enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a5f0ac63bcf9c3b853ed0dbbf506d9180}{SPI\+\_\+\+GCR\+\_\+\+RXEN\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ac075a1bf2cc56c6707a89b6a07311a4c}{SPI\+\_\+\+GCR\+\_\+\+RXEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a5f0ac63bcf9c3b853ed0dbbf506d9180}{SPI\+\_\+\+GCR\+\_\+\+RXEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a32e524ca0ec76015ad8f3a2af3864037}{SPI\+\_\+\+GCR\+\_\+\+RXTLF\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a494a5e4e75e1ad0dcdd71fbca2eb4787}{SPI\+\_\+\+GCR\+\_\+\+RXTLF}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a32e524ca0ec76015ad8f3a2af3864037}{SPI\+\_\+\+GCR\+\_\+\+RXTLF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em RX FIFO trigger level bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a979a315194e409452d4232a60dccd7b5}{SPI\+\_\+\+GCR\+\_\+\+RXTLF\+\_\+\+One}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a32e524ca0ec76015ad8f3a2af3864037}{SPI\+\_\+\+GCR\+\_\+\+RXTLF\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a5c44e2f8bc757b48c8ac1201eac1f2e8}{SPI\+\_\+\+GCR\+\_\+\+RXTLF\+\_\+\+Half}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a32e524ca0ec76015ad8f3a2af3864037}{SPI\+\_\+\+GCR\+\_\+\+RXTLF\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a885408fa834a9da56d4d27a4dea5607b}{SPI\+\_\+\+GCR\+\_\+\+TXTLF\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a59e1b637bc348dcb113a9d9828676553}{SPI\+\_\+\+GCR\+\_\+\+TXTLF}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a885408fa834a9da56d4d27a4dea5607b}{SPI\+\_\+\+GCR\+\_\+\+TXTLF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em TX FIFO trigger level bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_abcef663a3596b2ca18d0ca41eda1ac36}{SPI\+\_\+\+GCR\+\_\+\+TXTLF\+\_\+\+One}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a885408fa834a9da56d4d27a4dea5607b}{SPI\+\_\+\+GCR\+\_\+\+TXTLF\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a708027e5c62fe2930ed8966b0ab721c0}{SPI\+\_\+\+GCR\+\_\+\+TXTLF\+\_\+\+Half}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a885408fa834a9da56d4d27a4dea5607b}{SPI\+\_\+\+GCR\+\_\+\+TXTLF\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_aec180f54d022e320f1fc932c044151c3}{SPI\+\_\+\+GCR\+\_\+\+DMAEN\+\_\+\+Pos}}~(9)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a6b12c8c836087cae9f37384f032bc481}{SPI\+\_\+\+GCR\+\_\+\+DMAEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_aec180f54d022e320f1fc932c044151c3}{SPI\+\_\+\+GCR\+\_\+\+DMAEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DMA access mode enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a18a2ba7c8ca72e570466343c246d3f88}{SPI\+\_\+\+GCR\+\_\+\+NSS\+\_\+\+Pos}}~(10)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a27ff629a9e5f5f2f683047725e9d4400}{SPI\+\_\+\+GCR\+\_\+\+NSS}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a18a2ba7c8ca72e570466343c246d3f88}{SPI\+\_\+\+GCR\+\_\+\+NSS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em NSS select signal that from software or hardware \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_afafdc4f5c01f858a02cb454a3c49da1d}{SPI\+\_\+\+GCR\+\_\+\+DWSEL\+\_\+\+Pos}}~(11)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a5ca0604dac6a812e4b909acba32a6c8e}{SPI\+\_\+\+GCR\+\_\+\+DWSEL}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_afafdc4f5c01f858a02cb454a3c49da1d}{SPI\+\_\+\+GCR\+\_\+\+DWSEL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Valid byte or double-\/word data select signal \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a8e8a925f4f55f0eccc8918069283617f}{SPI\+\_\+\+GCR\+\_\+\+NSSTOG\+\_\+\+Pos}}~(12)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_aa7d7f9e30a8a20cedf6714c3cb1bbd31}{SPI\+\_\+\+GCR\+\_\+\+NSSTOG}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a8e8a925f4f55f0eccc8918069283617f}{SPI\+\_\+\+GCR\+\_\+\+NSSTOG\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Slave select toggle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a24b1c2b59147041472092ffff5c51873}{SPI\+\_\+\+GCR\+\_\+\+PAD\+\_\+\+SEL\+\_\+\+Pos}}~(13)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a429a12c2deb37a8c77969505b2517347}{SPI\+\_\+\+GCR\+\_\+\+PAD\+\_\+\+SEL}}~(0x1\+FU $<$$<$ \mbox{\hyperlink{reg__spi_8h_a24b1c2b59147041472092ffff5c51873}{SPI\+\_\+\+GCR\+\_\+\+PAD\+\_\+\+SEL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Bus mapping transformation ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a495ff77f6ae5b2cae211f787ee598a21}{SPI\+\_\+\+CCR\+\_\+\+CPHA\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a59d0f0367b45ebb2a0d695fe4dd43fb6}{SPI\+\_\+\+CCR\+\_\+\+CPHA}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a495ff77f6ae5b2cae211f787ee598a21}{SPI\+\_\+\+CCR\+\_\+\+CPHA\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Clock phase select bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a6e4905259d8306c25ad553862ab19f04}{SPI\+\_\+\+CCR\+\_\+\+CPOL\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a52624b36f7fd13dae80b7e15ce296a01}{SPI\+\_\+\+CCR\+\_\+\+CPOL}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a6e4905259d8306c25ad553862ab19f04}{SPI\+\_\+\+CCR\+\_\+\+CPOL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Clock polarity select bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a3cd04568bbcd00bd090ec1e262cb4bc2}{SPI\+\_\+\+CCR\+\_\+\+LSBFE\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ad96d82e750a5d6a5f29387c615e096e4}{SPI\+\_\+\+CCR\+\_\+\+LSBFE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a3cd04568bbcd00bd090ec1e262cb4bc2}{SPI\+\_\+\+CCR\+\_\+\+LSBFE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em LSI first enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ab1cdf69324105b0f76ed06926681a376}{SPI\+\_\+\+CCR\+\_\+\+SPILEN\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a28c956d2e4ef44bc6fa243d413a9579b}{SPI\+\_\+\+CCR\+\_\+\+SPILEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_ab1cdf69324105b0f76ed06926681a376}{SPI\+\_\+\+CCR\+\_\+\+SPILEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SPI character length bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a4ed51fe7362763d7c9f42bfcf66a42c5}{SPI\+\_\+\+CCR\+\_\+\+RXEDGE\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ab2c31ca485a471dfd4a1fc5959bca390}{SPI\+\_\+\+CCR\+\_\+\+RXEDGE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a4ed51fe7362763d7c9f42bfcf66a42c5}{SPI\+\_\+\+CCR\+\_\+\+RXEDGE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Receive data edge select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a9787289f850bca35248daf1f48bdd89b}{SPI\+\_\+\+CCR\+\_\+\+TXEDGE\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a2f8aa3ac1d89c87cebfa953f6d7a29f6}{SPI\+\_\+\+CCR\+\_\+\+TXEDGE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a9787289f850bca35248daf1f48bdd89b}{SPI\+\_\+\+CCR\+\_\+\+TXEDGE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transmit data edge select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a92a7e41368e0393687f47913e42d7e08}{SPI\+\_\+\+CCR\+\_\+\+CPHASEL\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_acbe0d14ac3c0339a1e080fff279415bb}{SPI\+\_\+\+CCR\+\_\+\+CPHASEL}}~(0x01U $<$$<$ SPI\+\_\+\+CCR\+\_\+\+CPHASEL)
+\begin{DoxyCompactList}\small\item\em CPHA polarity select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ac1f11171c8f8cf2533eb60d0a0f49919}{SPI\+\_\+\+CCR\+\_\+\+HISPD\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_aa71f21b2247f88194403cad40340020e}{SPI\+\_\+\+CCR\+\_\+\+HISPD}}~(0x01U $<$$<$ SPI\+\_\+\+CCR\+\_\+\+HISPD)
+\begin{DoxyCompactList}\small\item\em High speed slave mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a37ad833a82643e3c7f87c7ace6b3616c}{SPI\+\_\+\+BRR\+\_\+\+DIVF\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em SPI\+\_\+\+BRR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a568b8292f05b344779b326b3b4477718}{SPI\+\_\+\+BRR\+\_\+\+DIVF}}~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__spi_8h_a37ad833a82643e3c7f87c7ace6b3616c}{SPI\+\_\+\+BRR\+\_\+\+DIVF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SPI baud rate control register for baud rate \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a8ade4d5548770797cbbec78044c0678f}{SPI\+\_\+\+RDNR\+\_\+\+RDN\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em SPI\+\_\+\+RDNR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a22058f479f13da36b12bdcfc6082ec54}{SPI\+\_\+\+RDNR\+\_\+\+RDN}}~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__spi_8h_a8ade4d5548770797cbbec78044c0678f}{SPI\+\_\+\+RDNR\+\_\+\+RDN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em The register is used to hold a count of to be received bytes in next receive process \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a8c6fa1f43affee94d2c9e63137e16ddf}{SPI\+\_\+\+NSSR\+\_\+\+NSS\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em SPI\+\_\+\+NSSR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a74cb0af5599a82051ebbd621c058078d}{SPI\+\_\+\+NSSR\+\_\+\+NSS}}~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__spi_8h_a8c6fa1f43affee94d2c9e63137e16ddf}{SPI\+\_\+\+NSSR\+\_\+\+NSS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Chip select output signal in Master mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_afe42750af98b7aa4fb50f41fbeb4e0ef}{SPI\+\_\+\+ECR\+\_\+\+EXTLEN\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em SPI\+\_\+\+ECR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ab748f1cd492bf3d915dabe63170ff2e2}{SPI\+\_\+\+ECR\+\_\+\+EXTLEN}}~(0x1\+FU $<$$<$ \mbox{\hyperlink{reg__spi_8h_afe42750af98b7aa4fb50f41fbeb4e0ef}{SPI\+\_\+\+ECR\+\_\+\+EXTLEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em control SPI data length \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a6cd1ac4e83d8de8e32a407d1a7971389}{I2\+SCFGR\+\_\+\+CLEAR\+\_\+\+Mask}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x\+FE00\+F388)
+\begin{DoxyCompactList}\small\item\em I2\+S\+\_\+\+CFGR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_abba1cfce5e3f5fc2d4412ec3aa24ca0c}{I2\+S\+\_\+\+CFGR\+\_\+\+CHLEN\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ab93268968a40e3b4b303b62219023c08}{I2\+S\+\_\+\+CFGR\+\_\+\+CHLEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_abba1cfce5e3f5fc2d4412ec3aa24ca0c}{I2\+S\+\_\+\+CFGR\+\_\+\+CHLEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Vocal tract length \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ad4ea1018a137b4829c77beec9d4539cf}{I2\+S\+\_\+\+CFGR\+\_\+\+DATLEN\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a112418c27213f4df4c0ad7fc4aca9dce}{I2\+S\+\_\+\+CFGR\+\_\+\+DATLEN\+\_\+16}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__spi_8h_ad4ea1018a137b4829c77beec9d4539cf}{I2\+S\+\_\+\+CFGR\+\_\+\+DATLEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Audio data width 16 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_ada21f49074bb5fd2dbb115c6b827329b}{I2\+S\+\_\+\+CFGR\+\_\+\+DATLEN\+\_\+24}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_ad4ea1018a137b4829c77beec9d4539cf}{I2\+S\+\_\+\+CFGR\+\_\+\+DATLEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Audio data width 24 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a167a08fa133a62b0ef88bc05f0262a18}{I2\+S\+\_\+\+CFGR\+\_\+\+DATLEN\+\_\+32}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__spi_8h_ad4ea1018a137b4829c77beec9d4539cf}{I2\+S\+\_\+\+CFGR\+\_\+\+DATLEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Audio data width 32 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a9882d5b8170ff889980bb76a0ac44356}{I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SSTD\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a047d97e93bca92106292e018f5c3a46c}{I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SSTD\+\_\+\+PCM}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a9882d5b8170ff889980bb76a0ac44356}{I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SSTD\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em I2S selection PCM standard \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_aa2c43c8499dfc8369ec1016bcd48856b}{I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SSTD\+\_\+\+MSB\+\_\+R}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a9882d5b8170ff889980bb76a0ac44356}{I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SSTD\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em I2S selection Right alignment (MSB) standard \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a059176ef2721cd651f158f4fa2b732ac}{I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SSTD\+\_\+\+MSB\+\_\+L}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a9882d5b8170ff889980bb76a0ac44356}{I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SSTD\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em I2S selection Left aligned (MSB) standard \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a195e13ade394169ceaa4d4d59e62176d}{I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SSTD\+\_\+\+Philips}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a9882d5b8170ff889980bb76a0ac44356}{I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SSTD\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em I2S selection Philips standard \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_af8e51a62341db267ee6da57a69278cda}{I2\+S\+\_\+\+CFGR\+\_\+\+PCMSYNC\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a3af0624f4f8df02920f98532b40bd9ff}{I2\+S\+\_\+\+CFGR\+\_\+\+PCMSYNC}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_af8e51a62341db267ee6da57a69278cda}{I2\+S\+\_\+\+CFGR\+\_\+\+PCMSYNC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em PCM frame synchronization mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a617941a59246119569c5d5cbb0ca5415}{I2\+S\+\_\+\+CFGR\+\_\+\+SPI\+\_\+\+I2\+S\+\_\+\+Pos}}~(10)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a3dbac7eb45b45852f816a7968260a1d3}{I2\+S\+\_\+\+CFGR\+\_\+\+SPI\+\_\+\+I2S}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a617941a59246119569c5d5cbb0ca5415}{I2\+S\+\_\+\+CFGR\+\_\+\+SPI\+\_\+\+I2\+S\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SPI/\+I2S module function selection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a00725cba1de49ee418098559925a3ab1}{I2\+S\+\_\+\+CFGR\+\_\+\+MCKOE\+\_\+\+Pos}}~(11)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a5b28428202001420294a3d7cabc96401}{I2\+S\+\_\+\+CFGR\+\_\+\+MCKOE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a00725cba1de49ee418098559925a3ab1}{I2\+S\+\_\+\+CFGR\+\_\+\+MCKOE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em I2S master clock output enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a6ded706cfe040c9f3f05a5eb2a6cfb4f}{I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SDIV\+\_\+\+Pos}}~(16)
+\item 
+\#define \mbox{\hyperlink{reg__spi_8h_a04386007371bf92bfbc9e81a2568cb99}{I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SDIV}}~(0x1\+FFU $<$$<$ \mbox{\hyperlink{reg__spi_8h_a6ded706cfe040c9f3f05a5eb2a6cfb4f}{I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SDIV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em The frequency division \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{reg__spi_8h_ab93268968a40e3b4b303b62219023c08}\label{reg__spi_8h_ab93268968a40e3b4b303b62219023c08}} 
+\index{reg\_spi.h@{reg\_spi.h}!I2S\_CFGR\_CHLEN@{I2S\_CFGR\_CHLEN}}
+\index{I2S\_CFGR\_CHLEN@{I2S\_CFGR\_CHLEN}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{I2S\_CFGR\_CHLEN}{I2S\_CFGR\_CHLEN}}
+{\footnotesize\ttfamily \#define I2\+S\+\_\+\+CFGR\+\_\+\+CHLEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_abba1cfce5e3f5fc2d4412ec3aa24ca0c}{I2\+S\+\_\+\+CFGR\+\_\+\+CHLEN\+\_\+\+Pos}})}
+
+
+
+Vocal tract length 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00328}{328}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_abba1cfce5e3f5fc2d4412ec3aa24ca0c}\label{reg__spi_8h_abba1cfce5e3f5fc2d4412ec3aa24ca0c}} 
+\index{reg\_spi.h@{reg\_spi.h}!I2S\_CFGR\_CHLEN\_Pos@{I2S\_CFGR\_CHLEN\_Pos}}
+\index{I2S\_CFGR\_CHLEN\_Pos@{I2S\_CFGR\_CHLEN\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{I2S\_CFGR\_CHLEN\_Pos}{I2S\_CFGR\_CHLEN\_Pos}}
+{\footnotesize\ttfamily \#define I2\+S\+\_\+\+CFGR\+\_\+\+CHLEN\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00327}{327}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a112418c27213f4df4c0ad7fc4aca9dce}\label{reg__spi_8h_a112418c27213f4df4c0ad7fc4aca9dce}} 
+\index{reg\_spi.h@{reg\_spi.h}!I2S\_CFGR\_DATLEN\_16@{I2S\_CFGR\_DATLEN\_16}}
+\index{I2S\_CFGR\_DATLEN\_16@{I2S\_CFGR\_DATLEN\_16}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{I2S\_CFGR\_DATLEN\_16}{I2S\_CFGR\_DATLEN\_16}}
+{\footnotesize\ttfamily \#define I2\+S\+\_\+\+CFGR\+\_\+\+DATLEN\+\_\+16~(0x00U $<$$<$ \mbox{\hyperlink{reg__spi_8h_ad4ea1018a137b4829c77beec9d4539cf}{I2\+S\+\_\+\+CFGR\+\_\+\+DATLEN\+\_\+\+Pos}})}
+
+
+
+Audio data width 16 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00330}{330}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ada21f49074bb5fd2dbb115c6b827329b}\label{reg__spi_8h_ada21f49074bb5fd2dbb115c6b827329b}} 
+\index{reg\_spi.h@{reg\_spi.h}!I2S\_CFGR\_DATLEN\_24@{I2S\_CFGR\_DATLEN\_24}}
+\index{I2S\_CFGR\_DATLEN\_24@{I2S\_CFGR\_DATLEN\_24}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{I2S\_CFGR\_DATLEN\_24}{I2S\_CFGR\_DATLEN\_24}}
+{\footnotesize\ttfamily \#define I2\+S\+\_\+\+CFGR\+\_\+\+DATLEN\+\_\+24~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_ad4ea1018a137b4829c77beec9d4539cf}{I2\+S\+\_\+\+CFGR\+\_\+\+DATLEN\+\_\+\+Pos}})}
+
+
+
+Audio data width 24 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00331}{331}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a167a08fa133a62b0ef88bc05f0262a18}\label{reg__spi_8h_a167a08fa133a62b0ef88bc05f0262a18}} 
+\index{reg\_spi.h@{reg\_spi.h}!I2S\_CFGR\_DATLEN\_32@{I2S\_CFGR\_DATLEN\_32}}
+\index{I2S\_CFGR\_DATLEN\_32@{I2S\_CFGR\_DATLEN\_32}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{I2S\_CFGR\_DATLEN\_32}{I2S\_CFGR\_DATLEN\_32}}
+{\footnotesize\ttfamily \#define I2\+S\+\_\+\+CFGR\+\_\+\+DATLEN\+\_\+32~(0x02U $<$$<$ \mbox{\hyperlink{reg__spi_8h_ad4ea1018a137b4829c77beec9d4539cf}{I2\+S\+\_\+\+CFGR\+\_\+\+DATLEN\+\_\+\+Pos}})}
+
+
+
+Audio data width 32 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00332}{332}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ad4ea1018a137b4829c77beec9d4539cf}\label{reg__spi_8h_ad4ea1018a137b4829c77beec9d4539cf}} 
+\index{reg\_spi.h@{reg\_spi.h}!I2S\_CFGR\_DATLEN\_Pos@{I2S\_CFGR\_DATLEN\_Pos}}
+\index{I2S\_CFGR\_DATLEN\_Pos@{I2S\_CFGR\_DATLEN\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{I2S\_CFGR\_DATLEN\_Pos}{I2S\_CFGR\_DATLEN\_Pos}}
+{\footnotesize\ttfamily \#define I2\+S\+\_\+\+CFGR\+\_\+\+DATLEN\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00329}{329}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a04386007371bf92bfbc9e81a2568cb99}\label{reg__spi_8h_a04386007371bf92bfbc9e81a2568cb99}} 
+\index{reg\_spi.h@{reg\_spi.h}!I2S\_CFGR\_I2SDIV@{I2S\_CFGR\_I2SDIV}}
+\index{I2S\_CFGR\_I2SDIV@{I2S\_CFGR\_I2SDIV}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{I2S\_CFGR\_I2SDIV}{I2S\_CFGR\_I2SDIV}}
+{\footnotesize\ttfamily \#define I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SDIV~(0x1\+FFU $<$$<$ \mbox{\hyperlink{reg__spi_8h_a6ded706cfe040c9f3f05a5eb2a6cfb4f}{I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SDIV\+\_\+\+Pos}})}
+
+
+
+The frequency division 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00347}{347}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a6ded706cfe040c9f3f05a5eb2a6cfb4f}\label{reg__spi_8h_a6ded706cfe040c9f3f05a5eb2a6cfb4f}} 
+\index{reg\_spi.h@{reg\_spi.h}!I2S\_CFGR\_I2SDIV\_Pos@{I2S\_CFGR\_I2SDIV\_Pos}}
+\index{I2S\_CFGR\_I2SDIV\_Pos@{I2S\_CFGR\_I2SDIV\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{I2S\_CFGR\_I2SDIV\_Pos}{I2S\_CFGR\_I2SDIV\_Pos}}
+{\footnotesize\ttfamily \#define I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SDIV\+\_\+\+Pos~(16)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00346}{346}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a059176ef2721cd651f158f4fa2b732ac}\label{reg__spi_8h_a059176ef2721cd651f158f4fa2b732ac}} 
+\index{reg\_spi.h@{reg\_spi.h}!I2S\_CFGR\_I2SSTD\_MSB\_L@{I2S\_CFGR\_I2SSTD\_MSB\_L}}
+\index{I2S\_CFGR\_I2SSTD\_MSB\_L@{I2S\_CFGR\_I2SSTD\_MSB\_L}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{I2S\_CFGR\_I2SSTD\_MSB\_L}{I2S\_CFGR\_I2SSTD\_MSB\_L}}
+{\footnotesize\ttfamily \#define I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SSTD\+\_\+\+MSB\+\_\+L~(0x02U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a9882d5b8170ff889980bb76a0ac44356}{I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SSTD\+\_\+\+Pos}})}
+
+
+
+I2S selection Left aligned (MSB) standard 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00337}{337}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_aa2c43c8499dfc8369ec1016bcd48856b}\label{reg__spi_8h_aa2c43c8499dfc8369ec1016bcd48856b}} 
+\index{reg\_spi.h@{reg\_spi.h}!I2S\_CFGR\_I2SSTD\_MSB\_R@{I2S\_CFGR\_I2SSTD\_MSB\_R}}
+\index{I2S\_CFGR\_I2SSTD\_MSB\_R@{I2S\_CFGR\_I2SSTD\_MSB\_R}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{I2S\_CFGR\_I2SSTD\_MSB\_R}{I2S\_CFGR\_I2SSTD\_MSB\_R}}
+{\footnotesize\ttfamily \#define I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SSTD\+\_\+\+MSB\+\_\+R~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a9882d5b8170ff889980bb76a0ac44356}{I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SSTD\+\_\+\+Pos}})}
+
+
+
+I2S selection Right alignment (MSB) standard 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00336}{336}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a047d97e93bca92106292e018f5c3a46c}\label{reg__spi_8h_a047d97e93bca92106292e018f5c3a46c}} 
+\index{reg\_spi.h@{reg\_spi.h}!I2S\_CFGR\_I2SSTD\_PCM@{I2S\_CFGR\_I2SSTD\_PCM}}
+\index{I2S\_CFGR\_I2SSTD\_PCM@{I2S\_CFGR\_I2SSTD\_PCM}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{I2S\_CFGR\_I2SSTD\_PCM}{I2S\_CFGR\_I2SSTD\_PCM}}
+{\footnotesize\ttfamily \#define I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SSTD\+\_\+\+PCM~(0x00U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a9882d5b8170ff889980bb76a0ac44356}{I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SSTD\+\_\+\+Pos}})}
+
+
+
+I2S selection PCM standard 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00335}{335}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a195e13ade394169ceaa4d4d59e62176d}\label{reg__spi_8h_a195e13ade394169ceaa4d4d59e62176d}} 
+\index{reg\_spi.h@{reg\_spi.h}!I2S\_CFGR\_I2SSTD\_Philips@{I2S\_CFGR\_I2SSTD\_Philips}}
+\index{I2S\_CFGR\_I2SSTD\_Philips@{I2S\_CFGR\_I2SSTD\_Philips}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{I2S\_CFGR\_I2SSTD\_Philips}{I2S\_CFGR\_I2SSTD\_Philips}}
+{\footnotesize\ttfamily \#define I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SSTD\+\_\+\+Philips~(0x03U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a9882d5b8170ff889980bb76a0ac44356}{I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SSTD\+\_\+\+Pos}})}
+
+
+
+I2S selection Philips standard 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00338}{338}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a9882d5b8170ff889980bb76a0ac44356}\label{reg__spi_8h_a9882d5b8170ff889980bb76a0ac44356}} 
+\index{reg\_spi.h@{reg\_spi.h}!I2S\_CFGR\_I2SSTD\_Pos@{I2S\_CFGR\_I2SSTD\_Pos}}
+\index{I2S\_CFGR\_I2SSTD\_Pos@{I2S\_CFGR\_I2SSTD\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{I2S\_CFGR\_I2SSTD\_Pos}{I2S\_CFGR\_I2SSTD\_Pos}}
+{\footnotesize\ttfamily \#define I2\+S\+\_\+\+CFGR\+\_\+\+I2\+SSTD\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00334}{334}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a5b28428202001420294a3d7cabc96401}\label{reg__spi_8h_a5b28428202001420294a3d7cabc96401}} 
+\index{reg\_spi.h@{reg\_spi.h}!I2S\_CFGR\_MCKOE@{I2S\_CFGR\_MCKOE}}
+\index{I2S\_CFGR\_MCKOE@{I2S\_CFGR\_MCKOE}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{I2S\_CFGR\_MCKOE}{I2S\_CFGR\_MCKOE}}
+{\footnotesize\ttfamily \#define I2\+S\+\_\+\+CFGR\+\_\+\+MCKOE~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a00725cba1de49ee418098559925a3ab1}{I2\+S\+\_\+\+CFGR\+\_\+\+MCKOE\+\_\+\+Pos}})}
+
+
+
+I2S master clock output enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00345}{345}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a00725cba1de49ee418098559925a3ab1}\label{reg__spi_8h_a00725cba1de49ee418098559925a3ab1}} 
+\index{reg\_spi.h@{reg\_spi.h}!I2S\_CFGR\_MCKOE\_Pos@{I2S\_CFGR\_MCKOE\_Pos}}
+\index{I2S\_CFGR\_MCKOE\_Pos@{I2S\_CFGR\_MCKOE\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{I2S\_CFGR\_MCKOE\_Pos}{I2S\_CFGR\_MCKOE\_Pos}}
+{\footnotesize\ttfamily \#define I2\+S\+\_\+\+CFGR\+\_\+\+MCKOE\+\_\+\+Pos~(11)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00344}{344}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a3af0624f4f8df02920f98532b40bd9ff}\label{reg__spi_8h_a3af0624f4f8df02920f98532b40bd9ff}} 
+\index{reg\_spi.h@{reg\_spi.h}!I2S\_CFGR\_PCMSYNC@{I2S\_CFGR\_PCMSYNC}}
+\index{I2S\_CFGR\_PCMSYNC@{I2S\_CFGR\_PCMSYNC}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{I2S\_CFGR\_PCMSYNC}{I2S\_CFGR\_PCMSYNC}}
+{\footnotesize\ttfamily \#define I2\+S\+\_\+\+CFGR\+\_\+\+PCMSYNC~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_af8e51a62341db267ee6da57a69278cda}{I2\+S\+\_\+\+CFGR\+\_\+\+PCMSYNC\+\_\+\+Pos}})}
+
+
+
+PCM frame synchronization mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00341}{341}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_af8e51a62341db267ee6da57a69278cda}\label{reg__spi_8h_af8e51a62341db267ee6da57a69278cda}} 
+\index{reg\_spi.h@{reg\_spi.h}!I2S\_CFGR\_PCMSYNC\_Pos@{I2S\_CFGR\_PCMSYNC\_Pos}}
+\index{I2S\_CFGR\_PCMSYNC\_Pos@{I2S\_CFGR\_PCMSYNC\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{I2S\_CFGR\_PCMSYNC\_Pos}{I2S\_CFGR\_PCMSYNC\_Pos}}
+{\footnotesize\ttfamily \#define I2\+S\+\_\+\+CFGR\+\_\+\+PCMSYNC\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00340}{340}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a3dbac7eb45b45852f816a7968260a1d3}\label{reg__spi_8h_a3dbac7eb45b45852f816a7968260a1d3}} 
+\index{reg\_spi.h@{reg\_spi.h}!I2S\_CFGR\_SPI\_I2S@{I2S\_CFGR\_SPI\_I2S}}
+\index{I2S\_CFGR\_SPI\_I2S@{I2S\_CFGR\_SPI\_I2S}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{I2S\_CFGR\_SPI\_I2S}{I2S\_CFGR\_SPI\_I2S}}
+{\footnotesize\ttfamily \#define I2\+S\+\_\+\+CFGR\+\_\+\+SPI\+\_\+\+I2S~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a617941a59246119569c5d5cbb0ca5415}{I2\+S\+\_\+\+CFGR\+\_\+\+SPI\+\_\+\+I2\+S\+\_\+\+Pos}})}
+
+
+
+SPI/\+I2S module function selection 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00343}{343}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a617941a59246119569c5d5cbb0ca5415}\label{reg__spi_8h_a617941a59246119569c5d5cbb0ca5415}} 
+\index{reg\_spi.h@{reg\_spi.h}!I2S\_CFGR\_SPI\_I2S\_Pos@{I2S\_CFGR\_SPI\_I2S\_Pos}}
+\index{I2S\_CFGR\_SPI\_I2S\_Pos@{I2S\_CFGR\_SPI\_I2S\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{I2S\_CFGR\_SPI\_I2S\_Pos}{I2S\_CFGR\_SPI\_I2S\_Pos}}
+{\footnotesize\ttfamily \#define I2\+S\+\_\+\+CFGR\+\_\+\+SPI\+\_\+\+I2\+S\+\_\+\+Pos~(10)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00342}{342}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a6cd1ac4e83d8de8e32a407d1a7971389}\label{reg__spi_8h_a6cd1ac4e83d8de8e32a407d1a7971389}} 
+\index{reg\_spi.h@{reg\_spi.h}!I2SCFGR\_CLEAR\_Mask@{I2SCFGR\_CLEAR\_Mask}}
+\index{I2SCFGR\_CLEAR\_Mask@{I2SCFGR\_CLEAR\_Mask}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{I2SCFGR\_CLEAR\_Mask}{I2SCFGR\_CLEAR\_Mask}}
+{\footnotesize\ttfamily \#define I2\+SCFGR\+\_\+\+CLEAR\+\_\+\+Mask~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x\+FE00\+F388)}
+
+
+
+I2\+S\+\_\+\+CFGR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00326}{326}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ad483be344a28ac800be8f03654a9612f}\label{reg__spi_8h_ad483be344a28ac800be8f03654a9612f}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI1@{SPI1}}
+\index{SPI1@{SPI1}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI1}{SPI1}}
+{\footnotesize\ttfamily \#define SPI1~((\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__spi_8h_a50cd8b47929f18b05efbd0f41253bf8d}{SPI1\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00152}{152}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a50cd8b47929f18b05efbd0f41253bf8d}\label{reg__spi_8h_a50cd8b47929f18b05efbd0f41253bf8d}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI1\_BASE@{SPI1\_BASE}}
+\index{SPI1\_BASE@{SPI1\_BASE}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI1\_BASE}{SPI1\_BASE}}
+{\footnotesize\ttfamily \#define SPI1\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a25b99d6065f1c8f751e78f43ade652cb}{APB2\+PERIPH\+\_\+\+BASE}} + 0x3000)}
+
+
+
+Base Address\+: 0x400013000 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00048}{48}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_af2c3d8ce359dcfbb2261e07ed42af72b}\label{reg__spi_8h_af2c3d8ce359dcfbb2261e07ed42af72b}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI2@{SPI2}}
+\index{SPI2@{SPI2}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI2}{SPI2}}
+{\footnotesize\ttfamily \#define SPI2~((\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__spi_8h_ac3e357b4c25106ed375fb1affab6bb86}{SPI2\+\_\+\+BASE}})}
+
+
+
+SPI type pointer Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00151}{151}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ac3e357b4c25106ed375fb1affab6bb86}\label{reg__spi_8h_ac3e357b4c25106ed375fb1affab6bb86}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI2\_BASE@{SPI2\_BASE}}
+\index{SPI2\_BASE@{SPI2\_BASE}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI2\_BASE}{SPI2\_BASE}}
+{\footnotesize\ttfamily \#define SPI2\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x3800)}
+
+
+
+SPI Base Address Definition 
+
+Base Address\+: 0x40003800 
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00047}{47}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ab2339cbf25502bf562b19208b1b257fc}\label{reg__spi_8h_ab2339cbf25502bf562b19208b1b257fc}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI3@{SPI3}}
+\index{SPI3@{SPI3}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI3}{SPI3}}
+{\footnotesize\ttfamily \#define SPI3~((\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__spi_8h_ae634fe8faa6922690e90fbec2fc86162}{SPI3\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00153}{153}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ae634fe8faa6922690e90fbec2fc86162}\label{reg__spi_8h_ae634fe8faa6922690e90fbec2fc86162}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI3\_BASE@{SPI3\_BASE}}
+\index{SPI3\_BASE@{SPI3\_BASE}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI3\_BASE}{SPI3\_BASE}}
+{\footnotesize\ttfamily \#define SPI3\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x3\+C00)}
+
+
+
+Base Address\+: 0x40003\+C000 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00049}{49}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a568b8292f05b344779b326b3b4477718}\label{reg__spi_8h_a568b8292f05b344779b326b3b4477718}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_BRR\_DIVF@{SPI\_BRR\_DIVF}}
+\index{SPI\_BRR\_DIVF@{SPI\_BRR\_DIVF}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_BRR\_DIVF}{SPI\_BRR\_DIVF}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+BRR\+\_\+\+DIVF~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__spi_8h_a37ad833a82643e3c7f87c7ace6b3616c}{SPI\+\_\+\+BRR\+\_\+\+DIVF\+\_\+\+Pos}})}
+
+
+
+SPI baud rate control register for baud rate 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00302}{302}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a37ad833a82643e3c7f87c7ace6b3616c}\label{reg__spi_8h_a37ad833a82643e3c7f87c7ace6b3616c}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_BRR\_DIVF\_Pos@{SPI\_BRR\_DIVF\_Pos}}
+\index{SPI\_BRR\_DIVF\_Pos@{SPI\_BRR\_DIVF\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_BRR\_DIVF\_Pos}{SPI\_BRR\_DIVF\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+BRR\+\_\+\+DIVF\+\_\+\+Pos~(0)}
+
+
+
+SPI\+\_\+\+BRR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00301}{301}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a59d0f0367b45ebb2a0d695fe4dd43fb6}\label{reg__spi_8h_a59d0f0367b45ebb2a0d695fe4dd43fb6}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_CCR\_CPHA@{SPI\_CCR\_CPHA}}
+\index{SPI\_CCR\_CPHA@{SPI\_CCR\_CPHA}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_CCR\_CPHA}{SPI\_CCR\_CPHA}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+CCR\+\_\+\+CPHA~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a495ff77f6ae5b2cae211f787ee598a21}{SPI\+\_\+\+CCR\+\_\+\+CPHA\+\_\+\+Pos}})}
+
+
+
+Clock phase select bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00280}{280}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a495ff77f6ae5b2cae211f787ee598a21}\label{reg__spi_8h_a495ff77f6ae5b2cae211f787ee598a21}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_CCR\_CPHA\_Pos@{SPI\_CCR\_CPHA\_Pos}}
+\index{SPI\_CCR\_CPHA\_Pos@{SPI\_CCR\_CPHA\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_CCR\_CPHA\_Pos}{SPI\_CCR\_CPHA\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+CCR\+\_\+\+CPHA\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00279}{279}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_acbe0d14ac3c0339a1e080fff279415bb}\label{reg__spi_8h_acbe0d14ac3c0339a1e080fff279415bb}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_CCR\_CPHASEL@{SPI\_CCR\_CPHASEL}}
+\index{SPI\_CCR\_CPHASEL@{SPI\_CCR\_CPHASEL}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_CCR\_CPHASEL}{SPI\_CCR\_CPHASEL}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+CCR\+\_\+\+CPHASEL~(0x01U $<$$<$ SPI\+\_\+\+CCR\+\_\+\+CPHASEL)}
+
+
+
+CPHA polarity select 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00293}{293}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a92a7e41368e0393687f47913e42d7e08}\label{reg__spi_8h_a92a7e41368e0393687f47913e42d7e08}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_CCR\_CPHASEL\_Pos@{SPI\_CCR\_CPHASEL\_Pos}}
+\index{SPI\_CCR\_CPHASEL\_Pos@{SPI\_CCR\_CPHASEL\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_CCR\_CPHASEL\_Pos}{SPI\_CCR\_CPHASEL\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+CCR\+\_\+\+CPHASEL\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00292}{292}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a52624b36f7fd13dae80b7e15ce296a01}\label{reg__spi_8h_a52624b36f7fd13dae80b7e15ce296a01}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_CCR\_CPOL@{SPI\_CCR\_CPOL}}
+\index{SPI\_CCR\_CPOL@{SPI\_CCR\_CPOL}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_CCR\_CPOL}{SPI\_CCR\_CPOL}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+CCR\+\_\+\+CPOL~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a6e4905259d8306c25ad553862ab19f04}{SPI\+\_\+\+CCR\+\_\+\+CPOL\+\_\+\+Pos}})}
+
+
+
+Clock polarity select bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00282}{282}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a6e4905259d8306c25ad553862ab19f04}\label{reg__spi_8h_a6e4905259d8306c25ad553862ab19f04}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_CCR\_CPOL\_Pos@{SPI\_CCR\_CPOL\_Pos}}
+\index{SPI\_CCR\_CPOL\_Pos@{SPI\_CCR\_CPOL\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_CCR\_CPOL\_Pos}{SPI\_CCR\_CPOL\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+CCR\+\_\+\+CPOL\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00281}{281}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_aa71f21b2247f88194403cad40340020e}\label{reg__spi_8h_aa71f21b2247f88194403cad40340020e}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_CCR\_HISPD@{SPI\_CCR\_HISPD}}
+\index{SPI\_CCR\_HISPD@{SPI\_CCR\_HISPD}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_CCR\_HISPD}{SPI\_CCR\_HISPD}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+CCR\+\_\+\+HISPD~(0x01U $<$$<$ SPI\+\_\+\+CCR\+\_\+\+HISPD)}
+
+
+
+High speed slave mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00296}{296}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ac1f11171c8f8cf2533eb60d0a0f49919}\label{reg__spi_8h_ac1f11171c8f8cf2533eb60d0a0f49919}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_CCR\_HISPD\_Pos@{SPI\_CCR\_HISPD\_Pos}}
+\index{SPI\_CCR\_HISPD\_Pos@{SPI\_CCR\_HISPD\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_CCR\_HISPD\_Pos}{SPI\_CCR\_HISPD\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+CCR\+\_\+\+HISPD\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00295}{295}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ad96d82e750a5d6a5f29387c615e096e4}\label{reg__spi_8h_ad96d82e750a5d6a5f29387c615e096e4}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_CCR\_LSBFE@{SPI\_CCR\_LSBFE}}
+\index{SPI\_CCR\_LSBFE@{SPI\_CCR\_LSBFE}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_CCR\_LSBFE}{SPI\_CCR\_LSBFE}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+CCR\+\_\+\+LSBFE~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a3cd04568bbcd00bd090ec1e262cb4bc2}{SPI\+\_\+\+CCR\+\_\+\+LSBFE\+\_\+\+Pos}})}
+
+
+
+LSI first enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00284}{284}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a3cd04568bbcd00bd090ec1e262cb4bc2}\label{reg__spi_8h_a3cd04568bbcd00bd090ec1e262cb4bc2}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_CCR\_LSBFE\_Pos@{SPI\_CCR\_LSBFE\_Pos}}
+\index{SPI\_CCR\_LSBFE\_Pos@{SPI\_CCR\_LSBFE\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_CCR\_LSBFE\_Pos}{SPI\_CCR\_LSBFE\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+CCR\+\_\+\+LSBFE\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00283}{283}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ab2c31ca485a471dfd4a1fc5959bca390}\label{reg__spi_8h_ab2c31ca485a471dfd4a1fc5959bca390}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_CCR\_RXEDGE@{SPI\_CCR\_RXEDGE}}
+\index{SPI\_CCR\_RXEDGE@{SPI\_CCR\_RXEDGE}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_CCR\_RXEDGE}{SPI\_CCR\_RXEDGE}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+CCR\+\_\+\+RXEDGE~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a4ed51fe7362763d7c9f42bfcf66a42c5}{SPI\+\_\+\+CCR\+\_\+\+RXEDGE\+\_\+\+Pos}})}
+
+
+
+Receive data edge select 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00288}{288}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a4ed51fe7362763d7c9f42bfcf66a42c5}\label{reg__spi_8h_a4ed51fe7362763d7c9f42bfcf66a42c5}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_CCR\_RXEDGE\_Pos@{SPI\_CCR\_RXEDGE\_Pos}}
+\index{SPI\_CCR\_RXEDGE\_Pos@{SPI\_CCR\_RXEDGE\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_CCR\_RXEDGE\_Pos}{SPI\_CCR\_RXEDGE\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+CCR\+\_\+\+RXEDGE\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00287}{287}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a28c956d2e4ef44bc6fa243d413a9579b}\label{reg__spi_8h_a28c956d2e4ef44bc6fa243d413a9579b}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_CCR\_SPILEN@{SPI\_CCR\_SPILEN}}
+\index{SPI\_CCR\_SPILEN@{SPI\_CCR\_SPILEN}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_CCR\_SPILEN}{SPI\_CCR\_SPILEN}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+CCR\+\_\+\+SPILEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_ab1cdf69324105b0f76ed06926681a376}{SPI\+\_\+\+CCR\+\_\+\+SPILEN\+\_\+\+Pos}})}
+
+
+
+SPI character length bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00286}{286}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ab1cdf69324105b0f76ed06926681a376}\label{reg__spi_8h_ab1cdf69324105b0f76ed06926681a376}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_CCR\_SPILEN\_Pos@{SPI\_CCR\_SPILEN\_Pos}}
+\index{SPI\_CCR\_SPILEN\_Pos@{SPI\_CCR\_SPILEN\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_CCR\_SPILEN\_Pos}{SPI\_CCR\_SPILEN\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+CCR\+\_\+\+SPILEN\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00285}{285}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a2f8aa3ac1d89c87cebfa953f6d7a29f6}\label{reg__spi_8h_a2f8aa3ac1d89c87cebfa953f6d7a29f6}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_CCR\_TXEDGE@{SPI\_CCR\_TXEDGE}}
+\index{SPI\_CCR\_TXEDGE@{SPI\_CCR\_TXEDGE}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_CCR\_TXEDGE}{SPI\_CCR\_TXEDGE}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+CCR\+\_\+\+TXEDGE~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a9787289f850bca35248daf1f48bdd89b}{SPI\+\_\+\+CCR\+\_\+\+TXEDGE\+\_\+\+Pos}})}
+
+
+
+Transmit data edge select 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00290}{290}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a9787289f850bca35248daf1f48bdd89b}\label{reg__spi_8h_a9787289f850bca35248daf1f48bdd89b}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_CCR\_TXEDGE\_Pos@{SPI\_CCR\_TXEDGE\_Pos}}
+\index{SPI\_CCR\_TXEDGE\_Pos@{SPI\_CCR\_TXEDGE\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_CCR\_TXEDGE\_Pos}{SPI\_CCR\_TXEDGE\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+CCR\+\_\+\+TXEDGE\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00289}{289}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ab748f1cd492bf3d915dabe63170ff2e2}\label{reg__spi_8h_ab748f1cd492bf3d915dabe63170ff2e2}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ECR\_EXTLEN@{SPI\_ECR\_EXTLEN}}
+\index{SPI\_ECR\_EXTLEN@{SPI\_ECR\_EXTLEN}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ECR\_EXTLEN}{SPI\_ECR\_EXTLEN}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ECR\+\_\+\+EXTLEN~(0x1\+FU $<$$<$ \mbox{\hyperlink{reg__spi_8h_afe42750af98b7aa4fb50f41fbeb4e0ef}{SPI\+\_\+\+ECR\+\_\+\+EXTLEN\+\_\+\+Pos}})}
+
+
+
+control SPI data length 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00320}{320}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_afe42750af98b7aa4fb50f41fbeb4e0ef}\label{reg__spi_8h_afe42750af98b7aa4fb50f41fbeb4e0ef}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ECR\_EXTLEN\_Pos@{SPI\_ECR\_EXTLEN\_Pos}}
+\index{SPI\_ECR\_EXTLEN\_Pos@{SPI\_ECR\_EXTLEN\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ECR\_EXTLEN\_Pos}{SPI\_ECR\_EXTLEN\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ECR\+\_\+\+EXTLEN\+\_\+\+Pos~(0)}
+
+
+
+SPI\+\_\+\+ECR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00319}{319}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a6b12c8c836087cae9f37384f032bc481}\label{reg__spi_8h_a6b12c8c836087cae9f37384f032bc481}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_DMAEN@{SPI\_GCR\_DMAEN}}
+\index{SPI\_GCR\_DMAEN@{SPI\_GCR\_DMAEN}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_DMAEN}{SPI\_GCR\_DMAEN}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+DMAEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_aec180f54d022e320f1fc932c044151c3}{SPI\+\_\+\+GCR\+\_\+\+DMAEN\+\_\+\+Pos}})}
+
+
+
+DMA access mode enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00266}{266}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_aec180f54d022e320f1fc932c044151c3}\label{reg__spi_8h_aec180f54d022e320f1fc932c044151c3}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_DMAEN\_Pos@{SPI\_GCR\_DMAEN\_Pos}}
+\index{SPI\_GCR\_DMAEN\_Pos@{SPI\_GCR\_DMAEN\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_DMAEN\_Pos}{SPI\_GCR\_DMAEN\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+DMAEN\+\_\+\+Pos~(9)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00265}{265}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a5ca0604dac6a812e4b909acba32a6c8e}\label{reg__spi_8h_a5ca0604dac6a812e4b909acba32a6c8e}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_DWSEL@{SPI\_GCR\_DWSEL}}
+\index{SPI\_GCR\_DWSEL@{SPI\_GCR\_DWSEL}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_DWSEL}{SPI\_GCR\_DWSEL}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+DWSEL~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_afafdc4f5c01f858a02cb454a3c49da1d}{SPI\+\_\+\+GCR\+\_\+\+DWSEL\+\_\+\+Pos}})}
+
+
+
+Valid byte or double-\/word data select signal 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00270}{270}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_afafdc4f5c01f858a02cb454a3c49da1d}\label{reg__spi_8h_afafdc4f5c01f858a02cb454a3c49da1d}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_DWSEL\_Pos@{SPI\_GCR\_DWSEL\_Pos}}
+\index{SPI\_GCR\_DWSEL\_Pos@{SPI\_GCR\_DWSEL\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_DWSEL\_Pos}{SPI\_GCR\_DWSEL\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+DWSEL\+\_\+\+Pos~(11)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00269}{269}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a66f7dcc452b30ccf63e006fc9ab1efea}\label{reg__spi_8h_a66f7dcc452b30ccf63e006fc9ab1efea}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_IEN@{SPI\_GCR\_IEN}}
+\index{SPI\_GCR\_IEN@{SPI\_GCR\_IEN}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_IEN}{SPI\_GCR\_IEN}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+IEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_aaa65f700c67fd32781a08a1ae2160c91}{SPI\+\_\+\+GCR\+\_\+\+IEN\+\_\+\+Pos}})}
+
+
+
+SPI interrupt enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00248}{248}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_aaa65f700c67fd32781a08a1ae2160c91}\label{reg__spi_8h_aaa65f700c67fd32781a08a1ae2160c91}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_IEN\_Pos@{SPI\_GCR\_IEN\_Pos}}
+\index{SPI\_GCR\_IEN\_Pos@{SPI\_GCR\_IEN\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_IEN\_Pos}{SPI\_GCR\_IEN\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+IEN\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00247}{247}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_acb43c00e4885c01427166f5a55cf5b82}\label{reg__spi_8h_acb43c00e4885c01427166f5a55cf5b82}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_MODE@{SPI\_GCR\_MODE}}
+\index{SPI\_GCR\_MODE@{SPI\_GCR\_MODE}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_MODE}{SPI\_GCR\_MODE}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+MODE~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a0a080a94c24593e70452466611b9d538}{SPI\+\_\+\+GCR\+\_\+\+MODE\+\_\+\+Pos}})}
+
+
+
+Master mode bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00250}{250}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a0a080a94c24593e70452466611b9d538}\label{reg__spi_8h_a0a080a94c24593e70452466611b9d538}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_MODE\_Pos@{SPI\_GCR\_MODE\_Pos}}
+\index{SPI\_GCR\_MODE\_Pos@{SPI\_GCR\_MODE\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_MODE\_Pos}{SPI\_GCR\_MODE\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+MODE\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00249}{249}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a27ff629a9e5f5f2f683047725e9d4400}\label{reg__spi_8h_a27ff629a9e5f5f2f683047725e9d4400}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_NSS@{SPI\_GCR\_NSS}}
+\index{SPI\_GCR\_NSS@{SPI\_GCR\_NSS}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_NSS}{SPI\_GCR\_NSS}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+NSS~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a18a2ba7c8ca72e570466343c246d3f88}{SPI\+\_\+\+GCR\+\_\+\+NSS\+\_\+\+Pos}})}
+
+
+
+NSS select signal that from software or hardware 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00268}{268}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a18a2ba7c8ca72e570466343c246d3f88}\label{reg__spi_8h_a18a2ba7c8ca72e570466343c246d3f88}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_NSS\_Pos@{SPI\_GCR\_NSS\_Pos}}
+\index{SPI\_GCR\_NSS\_Pos@{SPI\_GCR\_NSS\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_NSS\_Pos}{SPI\_GCR\_NSS\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+NSS\+\_\+\+Pos~(10)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00267}{267}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_aa7d7f9e30a8a20cedf6714c3cb1bbd31}\label{reg__spi_8h_aa7d7f9e30a8a20cedf6714c3cb1bbd31}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_NSSTOG@{SPI\_GCR\_NSSTOG}}
+\index{SPI\_GCR\_NSSTOG@{SPI\_GCR\_NSSTOG}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_NSSTOG}{SPI\_GCR\_NSSTOG}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+NSSTOG~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a8e8a925f4f55f0eccc8918069283617f}{SPI\+\_\+\+GCR\+\_\+\+NSSTOG\+\_\+\+Pos}})}
+
+
+
+Slave select toggle 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00273}{273}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a8e8a925f4f55f0eccc8918069283617f}\label{reg__spi_8h_a8e8a925f4f55f0eccc8918069283617f}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_NSSTOG\_Pos@{SPI\_GCR\_NSSTOG\_Pos}}
+\index{SPI\_GCR\_NSSTOG\_Pos@{SPI\_GCR\_NSSTOG\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_NSSTOG\_Pos}{SPI\_GCR\_NSSTOG\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+NSSTOG\+\_\+\+Pos~(12)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00272}{272}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a429a12c2deb37a8c77969505b2517347}\label{reg__spi_8h_a429a12c2deb37a8c77969505b2517347}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_PAD\_SEL@{SPI\_GCR\_PAD\_SEL}}
+\index{SPI\_GCR\_PAD\_SEL@{SPI\_GCR\_PAD\_SEL}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_PAD\_SEL}{SPI\_GCR\_PAD\_SEL}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+PAD\+\_\+\+SEL~(0x1\+FU $<$$<$ \mbox{\hyperlink{reg__spi_8h_a24b1c2b59147041472092ffff5c51873}{SPI\+\_\+\+GCR\+\_\+\+PAD\+\_\+\+SEL\+\_\+\+Pos}})}
+
+
+
+Bus mapping transformation ///////////////////////////////////////////////////////////////////////////// 
+
+SPI\+\_\+\+CCR Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00278}{278}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a24b1c2b59147041472092ffff5c51873}\label{reg__spi_8h_a24b1c2b59147041472092ffff5c51873}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_PAD\_SEL\_Pos@{SPI\_GCR\_PAD\_SEL\_Pos}}
+\index{SPI\_GCR\_PAD\_SEL\_Pos@{SPI\_GCR\_PAD\_SEL\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_PAD\_SEL\_Pos}{SPI\_GCR\_PAD\_SEL\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+PAD\+\_\+\+SEL\+\_\+\+Pos~(13)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00274}{274}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ac075a1bf2cc56c6707a89b6a07311a4c}\label{reg__spi_8h_ac075a1bf2cc56c6707a89b6a07311a4c}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_RXEN@{SPI\_GCR\_RXEN}}
+\index{SPI\_GCR\_RXEN@{SPI\_GCR\_RXEN}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_RXEN}{SPI\_GCR\_RXEN}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+RXEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a5f0ac63bcf9c3b853ed0dbbf506d9180}{SPI\+\_\+\+GCR\+\_\+\+RXEN\+\_\+\+Pos}})}
+
+
+
+Receive enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00254}{254}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a5f0ac63bcf9c3b853ed0dbbf506d9180}\label{reg__spi_8h_a5f0ac63bcf9c3b853ed0dbbf506d9180}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_RXEN\_Pos@{SPI\_GCR\_RXEN\_Pos}}
+\index{SPI\_GCR\_RXEN\_Pos@{SPI\_GCR\_RXEN\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_RXEN\_Pos}{SPI\_GCR\_RXEN\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+RXEN\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00253}{253}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a494a5e4e75e1ad0dcdd71fbca2eb4787}\label{reg__spi_8h_a494a5e4e75e1ad0dcdd71fbca2eb4787}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_RXTLF@{SPI\_GCR\_RXTLF}}
+\index{SPI\_GCR\_RXTLF@{SPI\_GCR\_RXTLF}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_RXTLF}{SPI\_GCR\_RXTLF}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+RXTLF~(0x03U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a32e524ca0ec76015ad8f3a2af3864037}{SPI\+\_\+\+GCR\+\_\+\+RXTLF\+\_\+\+Pos}})}
+
+
+
+RX FIFO trigger level bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00257}{257}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a5c44e2f8bc757b48c8ac1201eac1f2e8}\label{reg__spi_8h_a5c44e2f8bc757b48c8ac1201eac1f2e8}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_RXTLF\_Half@{SPI\_GCR\_RXTLF\_Half}}
+\index{SPI\_GCR\_RXTLF\_Half@{SPI\_GCR\_RXTLF\_Half}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_RXTLF\_Half}{SPI\_GCR\_RXTLF\_Half}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+RXTLF\+\_\+\+Half~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a32e524ca0ec76015ad8f3a2af3864037}{SPI\+\_\+\+GCR\+\_\+\+RXTLF\+\_\+\+Pos}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00259}{259}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a979a315194e409452d4232a60dccd7b5}\label{reg__spi_8h_a979a315194e409452d4232a60dccd7b5}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_RXTLF\_One@{SPI\_GCR\_RXTLF\_One}}
+\index{SPI\_GCR\_RXTLF\_One@{SPI\_GCR\_RXTLF\_One}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_RXTLF\_One}{SPI\_GCR\_RXTLF\_One}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+RXTLF\+\_\+\+One~(0x00U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a32e524ca0ec76015ad8f3a2af3864037}{SPI\+\_\+\+GCR\+\_\+\+RXTLF\+\_\+\+Pos}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00258}{258}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a32e524ca0ec76015ad8f3a2af3864037}\label{reg__spi_8h_a32e524ca0ec76015ad8f3a2af3864037}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_RXTLF\_Pos@{SPI\_GCR\_RXTLF\_Pos}}
+\index{SPI\_GCR\_RXTLF\_Pos@{SPI\_GCR\_RXTLF\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_RXTLF\_Pos}{SPI\_GCR\_RXTLF\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+RXTLF\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00256}{256}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a69b6336e8f288f548abf56eb573a5bc2}\label{reg__spi_8h_a69b6336e8f288f548abf56eb573a5bc2}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_SPIEN@{SPI\_GCR\_SPIEN}}
+\index{SPI\_GCR\_SPIEN@{SPI\_GCR\_SPIEN}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_SPIEN}{SPI\_GCR\_SPIEN}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+SPIEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_afd3e4fb94b8f43d5199067737eaf47c8}{SPI\+\_\+\+GCR\+\_\+\+SPIEN\+\_\+\+Pos}})}
+
+
+
+SPI select bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00246}{246}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_afd3e4fb94b8f43d5199067737eaf47c8}\label{reg__spi_8h_afd3e4fb94b8f43d5199067737eaf47c8}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_SPIEN\_Pos@{SPI\_GCR\_SPIEN\_Pos}}
+\index{SPI\_GCR\_SPIEN\_Pos@{SPI\_GCR\_SPIEN\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_SPIEN\_Pos}{SPI\_GCR\_SPIEN\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+SPIEN\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00245}{245}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a2ab02a957999ef636757646ca67a0b75}\label{reg__spi_8h_a2ab02a957999ef636757646ca67a0b75}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_TXEN@{SPI\_GCR\_TXEN}}
+\index{SPI\_GCR\_TXEN@{SPI\_GCR\_TXEN}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_TXEN}{SPI\_GCR\_TXEN}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+TXEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_af147abe1e81d6efe57a08ac783064a41}{SPI\+\_\+\+GCR\+\_\+\+TXEN\+\_\+\+Pos}})}
+
+
+
+Transmit enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00252}{252}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_af147abe1e81d6efe57a08ac783064a41}\label{reg__spi_8h_af147abe1e81d6efe57a08ac783064a41}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_TXEN\_Pos@{SPI\_GCR\_TXEN\_Pos}}
+\index{SPI\_GCR\_TXEN\_Pos@{SPI\_GCR\_TXEN\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_TXEN\_Pos}{SPI\_GCR\_TXEN\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+TXEN\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00251}{251}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a59e1b637bc348dcb113a9d9828676553}\label{reg__spi_8h_a59e1b637bc348dcb113a9d9828676553}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_TXTLF@{SPI\_GCR\_TXTLF}}
+\index{SPI\_GCR\_TXTLF@{SPI\_GCR\_TXTLF}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_TXTLF}{SPI\_GCR\_TXTLF}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+TXTLF~(0x03U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a885408fa834a9da56d4d27a4dea5607b}{SPI\+\_\+\+GCR\+\_\+\+TXTLF\+\_\+\+Pos}})}
+
+
+
+TX FIFO trigger level bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00262}{262}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a708027e5c62fe2930ed8966b0ab721c0}\label{reg__spi_8h_a708027e5c62fe2930ed8966b0ab721c0}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_TXTLF\_Half@{SPI\_GCR\_TXTLF\_Half}}
+\index{SPI\_GCR\_TXTLF\_Half@{SPI\_GCR\_TXTLF\_Half}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_TXTLF\_Half}{SPI\_GCR\_TXTLF\_Half}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+TXTLF\+\_\+\+Half~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a885408fa834a9da56d4d27a4dea5607b}{SPI\+\_\+\+GCR\+\_\+\+TXTLF\+\_\+\+Pos}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00264}{264}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_abcef663a3596b2ca18d0ca41eda1ac36}\label{reg__spi_8h_abcef663a3596b2ca18d0ca41eda1ac36}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_TXTLF\_One@{SPI\_GCR\_TXTLF\_One}}
+\index{SPI\_GCR\_TXTLF\_One@{SPI\_GCR\_TXTLF\_One}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_TXTLF\_One}{SPI\_GCR\_TXTLF\_One}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+TXTLF\+\_\+\+One~(0x00U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a885408fa834a9da56d4d27a4dea5607b}{SPI\+\_\+\+GCR\+\_\+\+TXTLF\+\_\+\+Pos}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00263}{263}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a885408fa834a9da56d4d27a4dea5607b}\label{reg__spi_8h_a885408fa834a9da56d4d27a4dea5607b}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_GCR\_TXTLF\_Pos@{SPI\_GCR\_TXTLF\_Pos}}
+\index{SPI\_GCR\_TXTLF\_Pos@{SPI\_GCR\_TXTLF\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_GCR\_TXTLF\_Pos}{SPI\_GCR\_TXTLF\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+GCR\+\_\+\+TXTLF\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00261}{261}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a8c9fa747eb142c7b8714ce33062f4d59}\label{reg__spi_8h_a8c9fa747eb142c7b8714ce33062f4d59}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ICR\_FRE\_ICLR@{SPI\_ICR\_FRE\_ICLR}}
+\index{SPI\_ICR\_FRE\_ICLR@{SPI\_ICR\_FRE\_ICLR}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ICR\_FRE\_ICLR}{SPI\_ICR\_FRE\_ICLR}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ICR\+\_\+\+FRE\+\_\+\+ICLR~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_ac2758ab98611fdb41ab73c7e3b4293c0}{SPI\+\_\+\+ICR\+\_\+\+FRE\+\_\+\+ICLR\+\_\+\+Pos}})}
+
+
+
+I2S frame transmission interrupt clear bit ///////////////////////////////////////////////////////////////////////////// 
+
+SPI\+\_\+\+GCR Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00244}{244}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ac2758ab98611fdb41ab73c7e3b4293c0}\label{reg__spi_8h_ac2758ab98611fdb41ab73c7e3b4293c0}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ICR\_FRE\_ICLR\_Pos@{SPI\_ICR\_FRE\_ICLR\_Pos}}
+\index{SPI\_ICR\_FRE\_ICLR\_Pos@{SPI\_ICR\_FRE\_ICLR\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ICR\_FRE\_ICLR\_Pos}{SPI\_ICR\_FRE\_ICLR\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ICR\+\_\+\+FRE\+\_\+\+ICLR\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00240}{240}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ad52d262ecbace6c238ab91a3a552e5c4}\label{reg__spi_8h_ad52d262ecbace6c238ab91a3a552e5c4}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ICR\_RX\_ICLR@{SPI\_ICR\_RX\_ICLR}}
+\index{SPI\_ICR\_RX\_ICLR@{SPI\_ICR\_RX\_ICLR}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ICR\_RX\_ICLR}{SPI\_ICR\_RX\_ICLR}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ICR\+\_\+\+RX\+\_\+\+ICLR~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a9658213822259559cf1e9a468a2a9b03}{SPI\+\_\+\+ICR\+\_\+\+RX\+\_\+\+ICLR\+\_\+\+Pos}})}
+
+
+
+Receive interrupt clear bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00229}{229}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a9658213822259559cf1e9a468a2a9b03}\label{reg__spi_8h_a9658213822259559cf1e9a468a2a9b03}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ICR\_RX\_ICLR\_Pos@{SPI\_ICR\_RX\_ICLR\_Pos}}
+\index{SPI\_ICR\_RX\_ICLR\_Pos@{SPI\_ICR\_RX\_ICLR\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ICR\_RX\_ICLR\_Pos}{SPI\_ICR\_RX\_ICLR\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ICR\+\_\+\+RX\+\_\+\+ICLR\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00228}{228}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_aa3297a93917b81a94a9a2b508fbe1d05}\label{reg__spi_8h_aa3297a93917b81a94a9a2b508fbe1d05}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ICR\_RXFULL\_ICLR@{SPI\_ICR\_RXFULL\_ICLR}}
+\index{SPI\_ICR\_RXFULL\_ICLR@{SPI\_ICR\_RXFULL\_ICLR}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ICR\_RXFULL\_ICLR}{SPI\_ICR\_RXFULL\_ICLR}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ICR\+\_\+\+RXFULL\+\_\+\+ICLR~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_ae28afe3b5485274a5d0253ce15abee9d}{SPI\+\_\+\+ICR\+\_\+\+RXFULL\+\_\+\+ICLR\+\_\+\+Pos}})}
+
+
+
+Receiver buffer full interrupt clear bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00237}{237}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ae28afe3b5485274a5d0253ce15abee9d}\label{reg__spi_8h_ae28afe3b5485274a5d0253ce15abee9d}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ICR\_RXFULL\_ICLR\_Pos@{SPI\_ICR\_RXFULL\_ICLR\_Pos}}
+\index{SPI\_ICR\_RXFULL\_ICLR\_Pos@{SPI\_ICR\_RXFULL\_ICLR\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ICR\_RXFULL\_ICLR\_Pos}{SPI\_ICR\_RXFULL\_ICLR\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ICR\+\_\+\+RXFULL\+\_\+\+ICLR\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00236}{236}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a53d99fb4eda6a6089866400b0d7b32a6}\label{reg__spi_8h_a53d99fb4eda6a6089866400b0d7b32a6}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ICR\_RXMATCH\_ICLR@{SPI\_ICR\_RXMATCH\_ICLR}}
+\index{SPI\_ICR\_RXMATCH\_ICLR@{SPI\_ICR\_RXMATCH\_ICLR}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ICR\_RXMATCH\_ICLR}{SPI\_ICR\_RXMATCH\_ICLR}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ICR\+\_\+\+RXMATCH\+\_\+\+ICLR~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a5689d98fd87cbbeb100f78a1cb5efba6}{SPI\+\_\+\+ICR\+\_\+\+RXMATCH\+\_\+\+ICLR\+\_\+\+Pos}})}
+
+
+
+Receive completed interrupt clear bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00235}{235}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a5689d98fd87cbbeb100f78a1cb5efba6}\label{reg__spi_8h_a5689d98fd87cbbeb100f78a1cb5efba6}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ICR\_RXMATCH\_ICLR\_Pos@{SPI\_ICR\_RXMATCH\_ICLR\_Pos}}
+\index{SPI\_ICR\_RXMATCH\_ICLR\_Pos@{SPI\_ICR\_RXMATCH\_ICLR\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ICR\_RXMATCH\_ICLR\_Pos}{SPI\_ICR\_RXMATCH\_ICLR\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ICR\+\_\+\+RXMATCH\+\_\+\+ICLR\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00234}{234}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_af2200be3ef12f6b2de784586768a254f}\label{reg__spi_8h_af2200be3ef12f6b2de784586768a254f}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ICR\_RXOERR\_ICLR@{SPI\_ICR\_RXOERR\_ICLR}}
+\index{SPI\_ICR\_RXOERR\_ICLR@{SPI\_ICR\_RXOERR\_ICLR}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ICR\_RXOERR\_ICLR}{SPI\_ICR\_RXOERR\_ICLR}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ICR\+\_\+\+RXOERR\+\_\+\+ICLR~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a2f79f38e036aecdfee1d152a6823623f}{SPI\+\_\+\+ICR\+\_\+\+RXOERR\+\_\+\+ICLR\+\_\+\+Pos}})}
+
+
+
+Overrun error interrupt clear bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00233}{233}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a2f79f38e036aecdfee1d152a6823623f}\label{reg__spi_8h_a2f79f38e036aecdfee1d152a6823623f}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ICR\_RXOERR\_ICLR\_Pos@{SPI\_ICR\_RXOERR\_ICLR\_Pos}}
+\index{SPI\_ICR\_RXOERR\_ICLR\_Pos@{SPI\_ICR\_RXOERR\_ICLR\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ICR\_RXOERR\_ICLR\_Pos}{SPI\_ICR\_RXOERR\_ICLR\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ICR\+\_\+\+RXOERR\+\_\+\+ICLR\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00232}{232}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a21d56c2ab46c87e3ded564564001387a}\label{reg__spi_8h_a21d56c2ab46c87e3ded564564001387a}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ICR\_TX\_ICLR@{SPI\_ICR\_TX\_ICLR}}
+\index{SPI\_ICR\_TX\_ICLR@{SPI\_ICR\_TX\_ICLR}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ICR\_TX\_ICLR}{SPI\_ICR\_TX\_ICLR}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ICR\+\_\+\+TX\+\_\+\+ICLR~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a1bdd40d808e4f4824d3e4db53655068d}{SPI\+\_\+\+ICR\+\_\+\+TX\+\_\+\+ICLR\+\_\+\+Pos}})}
+
+
+
+Transmitter FIFO empty interrupt clear bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00227}{227}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a1bdd40d808e4f4824d3e4db53655068d}\label{reg__spi_8h_a1bdd40d808e4f4824d3e4db53655068d}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ICR\_TX\_ICLR\_Pos@{SPI\_ICR\_TX\_ICLR\_Pos}}
+\index{SPI\_ICR\_TX\_ICLR\_Pos@{SPI\_ICR\_TX\_ICLR\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ICR\_TX\_ICLR\_Pos}{SPI\_ICR\_TX\_ICLR\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ICR\+\_\+\+TX\+\_\+\+ICLR\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00226}{226}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a6d6b38eb9dadcf779b896d3dd52ec979}\label{reg__spi_8h_a6d6b38eb9dadcf779b896d3dd52ec979}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ICR\_TXEPT\_ICLR@{SPI\_ICR\_TXEPT\_ICLR}}
+\index{SPI\_ICR\_TXEPT\_ICLR@{SPI\_ICR\_TXEPT\_ICLR}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ICR\_TXEPT\_ICLR}{SPI\_ICR\_TXEPT\_ICLR}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ICR\+\_\+\+TXEPT\+\_\+\+ICLR~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a167986da14c32e940bea74b9f37c6d5c}{SPI\+\_\+\+ICR\+\_\+\+TXEPT\+\_\+\+ICLR\+\_\+\+Pos}})}
+
+
+
+Transmitter empty interrupt clear bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00239}{239}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a167986da14c32e940bea74b9f37c6d5c}\label{reg__spi_8h_a167986da14c32e940bea74b9f37c6d5c}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ICR\_TXEPT\_ICLR\_Pos@{SPI\_ICR\_TXEPT\_ICLR\_Pos}}
+\index{SPI\_ICR\_TXEPT\_ICLR\_Pos@{SPI\_ICR\_TXEPT\_ICLR\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ICR\_TXEPT\_ICLR\_Pos}{SPI\_ICR\_TXEPT\_ICLR\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ICR\+\_\+\+TXEPT\+\_\+\+ICLR\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00238}{238}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ad225c1bafc75d0de43f6ec7e2ad46f29}\label{reg__spi_8h_ad225c1bafc75d0de43f6ec7e2ad46f29}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ICR\_UNDERRUN\_ICLR@{SPI\_ICR\_UNDERRUN\_ICLR}}
+\index{SPI\_ICR\_UNDERRUN\_ICLR@{SPI\_ICR\_UNDERRUN\_ICLR}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ICR\_UNDERRUN\_ICLR}{SPI\_ICR\_UNDERRUN\_ICLR}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ICR\+\_\+\+UNDERRUN\+\_\+\+ICLR~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a23fd0ac1014d238bf7074e0c6790b769}{SPI\+\_\+\+ICR\+\_\+\+UNDERRUN\+\_\+\+ICLR\+\_\+\+Pos}})}
+
+
+
+Transmitter underrun interrupt clear bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00231}{231}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a23fd0ac1014d238bf7074e0c6790b769}\label{reg__spi_8h_a23fd0ac1014d238bf7074e0c6790b769}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ICR\_UNDERRUN\_ICLR\_Pos@{SPI\_ICR\_UNDERRUN\_ICLR\_Pos}}
+\index{SPI\_ICR\_UNDERRUN\_ICLR\_Pos@{SPI\_ICR\_UNDERRUN\_ICLR\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ICR\_UNDERRUN\_ICLR\_Pos}{SPI\_ICR\_UNDERRUN\_ICLR\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ICR\+\_\+\+UNDERRUN\+\_\+\+ICLR\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00230}{230}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ac64082fb20ad482a84ca113e62e2139f}\label{reg__spi_8h_ac64082fb20ad482a84ca113e62e2139f}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_IER\_FRE\_IEN@{SPI\_IER\_FRE\_IEN}}
+\index{SPI\_IER\_FRE\_IEN@{SPI\_IER\_FRE\_IEN}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_IER\_FRE\_IEN}{SPI\_IER\_FRE\_IEN}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+IER\+\_\+\+FRE\+\_\+\+IEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a1aab5e4f551bcba84502fbf55f5c7628}{SPI\+\_\+\+IER\+\_\+\+FRE\+\_\+\+IEN\+\_\+\+Pos}})}
+
+
+
+I2S frame transmission interrupt enable bit ///////////////////////////////////////////////////////////////////////////// 
+
+SPI\+\_\+\+ICR Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00225}{225}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a1aab5e4f551bcba84502fbf55f5c7628}\label{reg__spi_8h_a1aab5e4f551bcba84502fbf55f5c7628}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_IER\_FRE\_IEN\_Pos@{SPI\_IER\_FRE\_IEN\_Pos}}
+\index{SPI\_IER\_FRE\_IEN\_Pos@{SPI\_IER\_FRE\_IEN\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_IER\_FRE\_IEN\_Pos}{SPI\_IER\_FRE\_IEN\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+IER\+\_\+\+FRE\+\_\+\+IEN\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00221}{221}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a62c11ed171a7cd3395279db5fdc742d6}\label{reg__spi_8h_a62c11ed171a7cd3395279db5fdc742d6}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_IER\_RX\_IEN@{SPI\_IER\_RX\_IEN}}
+\index{SPI\_IER\_RX\_IEN@{SPI\_IER\_RX\_IEN}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_IER\_RX\_IEN}{SPI\_IER\_RX\_IEN}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+IER\+\_\+\+RX\+\_\+\+IEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a99ba0b23913c86e76e5ab70bcf21813f}{SPI\+\_\+\+IER\+\_\+\+RX\+\_\+\+IEN\+\_\+\+Pos}})}
+
+
+
+Receive FIFO interrupt enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00210}{210}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a99ba0b23913c86e76e5ab70bcf21813f}\label{reg__spi_8h_a99ba0b23913c86e76e5ab70bcf21813f}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_IER\_RX\_IEN\_Pos@{SPI\_IER\_RX\_IEN\_Pos}}
+\index{SPI\_IER\_RX\_IEN\_Pos@{SPI\_IER\_RX\_IEN\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_IER\_RX\_IEN\_Pos}{SPI\_IER\_RX\_IEN\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+IER\+\_\+\+RX\+\_\+\+IEN\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00209}{209}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a90d164628a59280cf2348f9f9428b6de}\label{reg__spi_8h_a90d164628a59280cf2348f9f9428b6de}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_IER\_RXFULL\_IEN@{SPI\_IER\_RXFULL\_IEN}}
+\index{SPI\_IER\_RXFULL\_IEN@{SPI\_IER\_RXFULL\_IEN}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_IER\_RXFULL\_IEN}{SPI\_IER\_RXFULL\_IEN}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+IER\+\_\+\+RXFULL\+\_\+\+IEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a45f700d2932a006c5a20c3a81ede0309}{SPI\+\_\+\+IER\+\_\+\+RXFULL\+\_\+\+IEN\+\_\+\+Pos}})}
+
+
+
+Receive FIFO full interrupt enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00218}{218}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a45f700d2932a006c5a20c3a81ede0309}\label{reg__spi_8h_a45f700d2932a006c5a20c3a81ede0309}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_IER\_RXFULL\_IEN\_Pos@{SPI\_IER\_RXFULL\_IEN\_Pos}}
+\index{SPI\_IER\_RXFULL\_IEN\_Pos@{SPI\_IER\_RXFULL\_IEN\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_IER\_RXFULL\_IEN\_Pos}{SPI\_IER\_RXFULL\_IEN\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+IER\+\_\+\+RXFULL\+\_\+\+IEN\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00217}{217}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ac348d18f34414f0f18005d3d79363cde}\label{reg__spi_8h_ac348d18f34414f0f18005d3d79363cde}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_IER\_RXMATCH\_IEN@{SPI\_IER\_RXMATCH\_IEN}}
+\index{SPI\_IER\_RXMATCH\_IEN@{SPI\_IER\_RXMATCH\_IEN}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_IER\_RXMATCH\_IEN}{SPI\_IER\_RXMATCH\_IEN}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+IER\+\_\+\+RXMATCH\+\_\+\+IEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a883f347b1d62d9e986b237905b652aa5}{SPI\+\_\+\+IER\+\_\+\+RXMATCH\+\_\+\+IEN\+\_\+\+Pos}})}
+
+
+
+Receive data complete interrupt enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00216}{216}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a883f347b1d62d9e986b237905b652aa5}\label{reg__spi_8h_a883f347b1d62d9e986b237905b652aa5}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_IER\_RXMATCH\_IEN\_Pos@{SPI\_IER\_RXMATCH\_IEN\_Pos}}
+\index{SPI\_IER\_RXMATCH\_IEN\_Pos@{SPI\_IER\_RXMATCH\_IEN\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_IER\_RXMATCH\_IEN\_Pos}{SPI\_IER\_RXMATCH\_IEN\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+IER\+\_\+\+RXMATCH\+\_\+\+IEN\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00215}{215}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_aa6762bc89f98177628a1488e5d90d6f4}\label{reg__spi_8h_aa6762bc89f98177628a1488e5d90d6f4}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_IER\_RXOERR\_IEN@{SPI\_IER\_RXOERR\_IEN}}
+\index{SPI\_IER\_RXOERR\_IEN@{SPI\_IER\_RXOERR\_IEN}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_IER\_RXOERR\_IEN}{SPI\_IER\_RXOERR\_IEN}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+IER\+\_\+\+RXOERR\+\_\+\+IEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a49a97873e7ab5c25a2c3228da9f6b875}{SPI\+\_\+\+IER\+\_\+\+RXOERR\+\_\+\+IEN\+\_\+\+Pos}})}
+
+
+
+Overrun error interrupt enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00214}{214}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a49a97873e7ab5c25a2c3228da9f6b875}\label{reg__spi_8h_a49a97873e7ab5c25a2c3228da9f6b875}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_IER\_RXOERR\_IEN\_Pos@{SPI\_IER\_RXOERR\_IEN\_Pos}}
+\index{SPI\_IER\_RXOERR\_IEN\_Pos@{SPI\_IER\_RXOERR\_IEN\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_IER\_RXOERR\_IEN\_Pos}{SPI\_IER\_RXOERR\_IEN\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+IER\+\_\+\+RXOERR\+\_\+\+IEN\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00213}{213}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a544047259700633cb174bf6dc14ac740}\label{reg__spi_8h_a544047259700633cb174bf6dc14ac740}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_IER\_TX\_IEN@{SPI\_IER\_TX\_IEN}}
+\index{SPI\_IER\_TX\_IEN@{SPI\_IER\_TX\_IEN}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_IER\_TX\_IEN}{SPI\_IER\_TX\_IEN}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+IER\+\_\+\+TX\+\_\+\+IEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_af7b26d3b5941df45a343814afe527247}{SPI\+\_\+\+IER\+\_\+\+TX\+\_\+\+IEN\+\_\+\+Pos}})}
+
+
+
+Transmit FIFO empty interrupt enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00208}{208}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_af7b26d3b5941df45a343814afe527247}\label{reg__spi_8h_af7b26d3b5941df45a343814afe527247}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_IER\_TX\_IEN\_Pos@{SPI\_IER\_TX\_IEN\_Pos}}
+\index{SPI\_IER\_TX\_IEN\_Pos@{SPI\_IER\_TX\_IEN\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_IER\_TX\_IEN\_Pos}{SPI\_IER\_TX\_IEN\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+IER\+\_\+\+TX\+\_\+\+IEN\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00207}{207}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a21b38f2b93e42b6f4a27e804334ccd32}\label{reg__spi_8h_a21b38f2b93e42b6f4a27e804334ccd32}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_IER\_TXEPT\_IEN@{SPI\_IER\_TXEPT\_IEN}}
+\index{SPI\_IER\_TXEPT\_IEN@{SPI\_IER\_TXEPT\_IEN}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_IER\_TXEPT\_IEN}{SPI\_IER\_TXEPT\_IEN}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+IER\+\_\+\+TXEPT\+\_\+\+IEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a059389d54902e5dff846129fca27fbc7}{SPI\+\_\+\+IER\+\_\+\+TXEPT\+\_\+\+IEN\+\_\+\+Pos}})}
+
+
+
+Transmit empty interrupt enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00220}{220}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a059389d54902e5dff846129fca27fbc7}\label{reg__spi_8h_a059389d54902e5dff846129fca27fbc7}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_IER\_TXEPT\_IEN\_Pos@{SPI\_IER\_TXEPT\_IEN\_Pos}}
+\index{SPI\_IER\_TXEPT\_IEN\_Pos@{SPI\_IER\_TXEPT\_IEN\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_IER\_TXEPT\_IEN\_Pos}{SPI\_IER\_TXEPT\_IEN\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+IER\+\_\+\+TXEPT\+\_\+\+IEN\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00219}{219}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ac0bcf918ebbaca3ce9f2853e1211023b}\label{reg__spi_8h_ac0bcf918ebbaca3ce9f2853e1211023b}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_IER\_UNDERRUN\_IEN@{SPI\_IER\_UNDERRUN\_IEN}}
+\index{SPI\_IER\_UNDERRUN\_IEN@{SPI\_IER\_UNDERRUN\_IEN}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_IER\_UNDERRUN\_IEN}{SPI\_IER\_UNDERRUN\_IEN}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+IER\+\_\+\+UNDERRUN\+\_\+\+IEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a0a3dbf760f787b3c510df002509fb81e}{SPI\+\_\+\+IER\+\_\+\+UNDERRUN\+\_\+\+IEN\+\_\+\+Pos}})}
+
+
+
+Transmitter underrun interrupt enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00212}{212}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a0a3dbf760f787b3c510df002509fb81e}\label{reg__spi_8h_a0a3dbf760f787b3c510df002509fb81e}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_IER\_UNDERRUN\_IEN\_Pos@{SPI\_IER\_UNDERRUN\_IEN\_Pos}}
+\index{SPI\_IER\_UNDERRUN\_IEN\_Pos@{SPI\_IER\_UNDERRUN\_IEN\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_IER\_UNDERRUN\_IEN\_Pos}{SPI\_IER\_UNDERRUN\_IEN\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+IER\+\_\+\+UNDERRUN\+\_\+\+IEN\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00211}{211}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a2e0ce7f8b7b102138c16ac7d5add6691}\label{reg__spi_8h_a2e0ce7f8b7b102138c16ac7d5add6691}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ISR\_FRE\_INTF@{SPI\_ISR\_FRE\_INTF}}
+\index{SPI\_ISR\_FRE\_INTF@{SPI\_ISR\_FRE\_INTF}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ISR\_FRE\_INTF}{SPI\_ISR\_FRE\_INTF}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ISR\+\_\+\+FRE\+\_\+\+INTF~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_ab8f9a69bd918e24dd5c0d5cb5749d75d}{SPI\+\_\+\+ISR\+\_\+\+FRE\+\_\+\+INTF\+\_\+\+Pos}})}
+
+
+
+I2S frame transmission error flag bit ///////////////////////////////////////////////////////////////////////////// 
+
+SPI\+\_\+\+IER Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00206}{206}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ab8f9a69bd918e24dd5c0d5cb5749d75d}\label{reg__spi_8h_ab8f9a69bd918e24dd5c0d5cb5749d75d}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ISR\_FRE\_INTF\_Pos@{SPI\_ISR\_FRE\_INTF\_Pos}}
+\index{SPI\_ISR\_FRE\_INTF\_Pos@{SPI\_ISR\_FRE\_INTF\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ISR\_FRE\_INTF\_Pos}{SPI\_ISR\_FRE\_INTF\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ISR\+\_\+\+FRE\+\_\+\+INTF\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00202}{202}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a968121c0ed77e1a1f44b0fc7bec6f86d}\label{reg__spi_8h_a968121c0ed77e1a1f44b0fc7bec6f86d}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ISR\_RX\_INTF@{SPI\_ISR\_RX\_INTF}}
+\index{SPI\_ISR\_RX\_INTF@{SPI\_ISR\_RX\_INTF}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ISR\_RX\_INTF}{SPI\_ISR\_RX\_INTF}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ISR\+\_\+\+RX\+\_\+\+INTF~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a967bf22f2fbcf0c20a487a2e426009a9}{SPI\+\_\+\+ISR\+\_\+\+RX\+\_\+\+INTF\+\_\+\+Pos}})}
+
+
+
+Receive data available interrupt flag bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00191}{191}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a967bf22f2fbcf0c20a487a2e426009a9}\label{reg__spi_8h_a967bf22f2fbcf0c20a487a2e426009a9}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ISR\_RX\_INTF\_Pos@{SPI\_ISR\_RX\_INTF\_Pos}}
+\index{SPI\_ISR\_RX\_INTF\_Pos@{SPI\_ISR\_RX\_INTF\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ISR\_RX\_INTF\_Pos}{SPI\_ISR\_RX\_INTF\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ISR\+\_\+\+RX\+\_\+\+INTF\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00190}{190}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a2de6c17651e77354b5170f267b00cae5}\label{reg__spi_8h_a2de6c17651e77354b5170f267b00cae5}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ISR\_RXFULL\_INTF@{SPI\_ISR\_RXFULL\_INTF}}
+\index{SPI\_ISR\_RXFULL\_INTF@{SPI\_ISR\_RXFULL\_INTF}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ISR\_RXFULL\_INTF}{SPI\_ISR\_RXFULL\_INTF}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ISR\+\_\+\+RXFULL\+\_\+\+INTF~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a0adee02fcf7258492d577c4b1df04c2f}{SPI\+\_\+\+ISR\+\_\+\+RXFULL\+\_\+\+INTF\+\_\+\+Pos}})}
+
+
+
+RX FIFO full interrupt flag bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00199}{199}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a0adee02fcf7258492d577c4b1df04c2f}\label{reg__spi_8h_a0adee02fcf7258492d577c4b1df04c2f}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ISR\_RXFULL\_INTF\_Pos@{SPI\_ISR\_RXFULL\_INTF\_Pos}}
+\index{SPI\_ISR\_RXFULL\_INTF\_Pos@{SPI\_ISR\_RXFULL\_INTF\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ISR\_RXFULL\_INTF\_Pos}{SPI\_ISR\_RXFULL\_INTF\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ISR\+\_\+\+RXFULL\+\_\+\+INTF\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00198}{198}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a9192d2dec61474b6f9945f2eb9a85944}\label{reg__spi_8h_a9192d2dec61474b6f9945f2eb9a85944}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ISR\_RXMATCH\_INTF@{SPI\_ISR\_RXMATCH\_INTF}}
+\index{SPI\_ISR\_RXMATCH\_INTF@{SPI\_ISR\_RXMATCH\_INTF}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ISR\_RXMATCH\_INTF}{SPI\_ISR\_RXMATCH\_INTF}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ISR\+\_\+\+RXMATCH\+\_\+\+INTF~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a591942bdf36dd2e6771a94da91c236e3}{SPI\+\_\+\+ISR\+\_\+\+RXMATCH\+\_\+\+INTF\+\_\+\+Pos}})}
+
+
+
+Receive data match the RXDNR number, the receive process will be completed and generate the interrupt 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00197}{197}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a591942bdf36dd2e6771a94da91c236e3}\label{reg__spi_8h_a591942bdf36dd2e6771a94da91c236e3}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ISR\_RXMATCH\_INTF\_Pos@{SPI\_ISR\_RXMATCH\_INTF\_Pos}}
+\index{SPI\_ISR\_RXMATCH\_INTF\_Pos@{SPI\_ISR\_RXMATCH\_INTF\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ISR\_RXMATCH\_INTF\_Pos}{SPI\_ISR\_RXMATCH\_INTF\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ISR\+\_\+\+RXMATCH\+\_\+\+INTF\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00196}{196}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a03dff9734a11732851882cd88e4b2b9e}\label{reg__spi_8h_a03dff9734a11732851882cd88e4b2b9e}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ISR\_RXOERR\_INTF@{SPI\_ISR\_RXOERR\_INTF}}
+\index{SPI\_ISR\_RXOERR\_INTF@{SPI\_ISR\_RXOERR\_INTF}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ISR\_RXOERR\_INTF}{SPI\_ISR\_RXOERR\_INTF}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ISR\+\_\+\+RXOERR\+\_\+\+INTF~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a12630b3d8a69bdb3ff3e9db0a4787c07}{SPI\+\_\+\+ISR\+\_\+\+RXOERR\+\_\+\+INTF\+\_\+\+Pos}})}
+
+
+
+Receive overrun error interrupt flag bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00195}{195}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a12630b3d8a69bdb3ff3e9db0a4787c07}\label{reg__spi_8h_a12630b3d8a69bdb3ff3e9db0a4787c07}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ISR\_RXOERR\_INTF\_Pos@{SPI\_ISR\_RXOERR\_INTF\_Pos}}
+\index{SPI\_ISR\_RXOERR\_INTF\_Pos@{SPI\_ISR\_RXOERR\_INTF\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ISR\_RXOERR\_INTF\_Pos}{SPI\_ISR\_RXOERR\_INTF\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ISR\+\_\+\+RXOERR\+\_\+\+INTF\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00194}{194}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a807a25bbf28514112854b61b9e5862bb}\label{reg__spi_8h_a807a25bbf28514112854b61b9e5862bb}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ISR\_TX\_INTF@{SPI\_ISR\_TX\_INTF}}
+\index{SPI\_ISR\_TX\_INTF@{SPI\_ISR\_TX\_INTF}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ISR\_TX\_INTF}{SPI\_ISR\_TX\_INTF}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ISR\+\_\+\+TX\+\_\+\+INTF~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_aae267dedf4ee65d12fdd620df0db7f12}{SPI\+\_\+\+ISR\+\_\+\+TX\+\_\+\+INTF\+\_\+\+Pos}})}
+
+
+
+Transmit FIFO available interrupt flag bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00189}{189}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_aae267dedf4ee65d12fdd620df0db7f12}\label{reg__spi_8h_aae267dedf4ee65d12fdd620df0db7f12}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ISR\_TX\_INTF\_Pos@{SPI\_ISR\_TX\_INTF\_Pos}}
+\index{SPI\_ISR\_TX\_INTF\_Pos@{SPI\_ISR\_TX\_INTF\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ISR\_TX\_INTF\_Pos}{SPI\_ISR\_TX\_INTF\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ISR\+\_\+\+TX\+\_\+\+INTF\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00188}{188}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a6289424975c33830fdb153361684a0ad}\label{reg__spi_8h_a6289424975c33830fdb153361684a0ad}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ISR\_TXEPT\_INTF@{SPI\_ISR\_TXEPT\_INTF}}
+\index{SPI\_ISR\_TXEPT\_INTF@{SPI\_ISR\_TXEPT\_INTF}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ISR\_TXEPT\_INTF}{SPI\_ISR\_TXEPT\_INTF}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ISR\+\_\+\+TXEPT\+\_\+\+INTF~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_aa6e9c64b379b3e1a256c4e245c2d91b7}{SPI\+\_\+\+ISR\+\_\+\+TXEPT\+\_\+\+INTF\+\_\+\+Pos}})}
+
+
+
+Transmitter empty interrupt flag bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00201}{201}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_aa6e9c64b379b3e1a256c4e245c2d91b7}\label{reg__spi_8h_aa6e9c64b379b3e1a256c4e245c2d91b7}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ISR\_TXEPT\_INTF\_Pos@{SPI\_ISR\_TXEPT\_INTF\_Pos}}
+\index{SPI\_ISR\_TXEPT\_INTF\_Pos@{SPI\_ISR\_TXEPT\_INTF\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ISR\_TXEPT\_INTF\_Pos}{SPI\_ISR\_TXEPT\_INTF\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ISR\+\_\+\+TXEPT\+\_\+\+INTF\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00200}{200}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a0db35f013eadfebe8ffadd01a5618c80}\label{reg__spi_8h_a0db35f013eadfebe8ffadd01a5618c80}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ISR\_UNDERRUN\_INTF@{SPI\_ISR\_UNDERRUN\_INTF}}
+\index{SPI\_ISR\_UNDERRUN\_INTF@{SPI\_ISR\_UNDERRUN\_INTF}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ISR\_UNDERRUN\_INTF}{SPI\_ISR\_UNDERRUN\_INTF}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ISR\+\_\+\+UNDERRUN\+\_\+\+INTF~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_aa46f0b480f8b731b19cc2374e9940bdf}{SPI\+\_\+\+ISR\+\_\+\+UNDERRUN\+\_\+\+INTF\+\_\+\+Pos}})}
+
+
+
+SPI underrun interrupt flag bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00193}{193}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_aa46f0b480f8b731b19cc2374e9940bdf}\label{reg__spi_8h_aa46f0b480f8b731b19cc2374e9940bdf}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_ISR\_UNDERRUN\_INTF\_Pos@{SPI\_ISR\_UNDERRUN\_INTF\_Pos}}
+\index{SPI\_ISR\_UNDERRUN\_INTF\_Pos@{SPI\_ISR\_UNDERRUN\_INTF\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_ISR\_UNDERRUN\_INTF\_Pos}{SPI\_ISR\_UNDERRUN\_INTF\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+ISR\+\_\+\+UNDERRUN\+\_\+\+INTF\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00192}{192}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a74cb0af5599a82051ebbd621c058078d}\label{reg__spi_8h_a74cb0af5599a82051ebbd621c058078d}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_NSSR\_NSS@{SPI\_NSSR\_NSS}}
+\index{SPI\_NSSR\_NSS@{SPI\_NSSR\_NSS}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_NSSR\_NSS}{SPI\_NSSR\_NSS}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+NSSR\+\_\+\+NSS~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__spi_8h_a8c6fa1f43affee94d2c9e63137e16ddf}{SPI\+\_\+\+NSSR\+\_\+\+NSS\+\_\+\+Pos}})}
+
+
+
+Chip select output signal in Master mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00314}{314}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a8c6fa1f43affee94d2c9e63137e16ddf}\label{reg__spi_8h_a8c6fa1f43affee94d2c9e63137e16ddf}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_NSSR\_NSS\_Pos@{SPI\_NSSR\_NSS\_Pos}}
+\index{SPI\_NSSR\_NSS\_Pos@{SPI\_NSSR\_NSS\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_NSSR\_NSS\_Pos}{SPI\_NSSR\_NSS\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+NSSR\+\_\+\+NSS\+\_\+\+Pos~(0)}
+
+
+
+SPI\+\_\+\+NSSR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00313}{313}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a22058f479f13da36b12bdcfc6082ec54}\label{reg__spi_8h_a22058f479f13da36b12bdcfc6082ec54}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_RDNR\_RDN@{SPI\_RDNR\_RDN}}
+\index{SPI\_RDNR\_RDN@{SPI\_RDNR\_RDN}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_RDNR\_RDN}{SPI\_RDNR\_RDN}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+RDNR\+\_\+\+RDN~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__spi_8h_a8ade4d5548770797cbbec78044c0678f}{SPI\+\_\+\+RDNR\+\_\+\+RDN\+\_\+\+Pos}})}
+
+
+
+The register is used to hold a count of to be received bytes in next receive process 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00308}{308}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a8ade4d5548770797cbbec78044c0678f}\label{reg__spi_8h_a8ade4d5548770797cbbec78044c0678f}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_RDNR\_RDN\_Pos@{SPI\_RDNR\_RDN\_Pos}}
+\index{SPI\_RDNR\_RDN\_Pos@{SPI\_RDNR\_RDN\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_RDNR\_RDN\_Pos}{SPI\_RDNR\_RDN\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+RDNR\+\_\+\+RDN\+\_\+\+Pos~(0)}
+
+
+
+SPI\+\_\+\+RDNR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00307}{307}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a4b90064622b6f216c4202ec8db43f762}\label{reg__spi_8h_a4b90064622b6f216c4202ec8db43f762}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_RDR\_RXREG@{SPI\_RDR\_RXREG}}
+\index{SPI\_RDR\_RXREG@{SPI\_RDR\_RXREG}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_RDR\_RXREG}{SPI\_RDR\_RXREG}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+RDR\+\_\+\+RXREG~(0x\+FFFFFFFFU $<$$<$ \mbox{\hyperlink{reg__spi_8h_a268dcc3d382c3338ff8ea0429e411db2}{SPI\+\_\+\+RDR\+\_\+\+RXREG\+\_\+\+Pos}})}
+
+
+
+Receive data register 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00164}{164}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a268dcc3d382c3338ff8ea0429e411db2}\label{reg__spi_8h_a268dcc3d382c3338ff8ea0429e411db2}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_RDR\_RXREG\_Pos@{SPI\_RDR\_RXREG\_Pos}}
+\index{SPI\_RDR\_RXREG\_Pos@{SPI\_RDR\_RXREG\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_RDR\_RXREG\_Pos}{SPI\_RDR\_RXREG\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+RDR\+\_\+\+RXREG\+\_\+\+Pos~(0)}
+
+
+
+SPI\+\_\+\+RDR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00163}{163}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a30c846781e397b48de4e75b5b78c11f3}\label{reg__spi_8h_a30c846781e397b48de4e75b5b78c11f3}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_SR\_BUSY@{SPI\_SR\_BUSY}}
+\index{SPI\_SR\_BUSY@{SPI\_SR\_BUSY}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_SR\_BUSY}{SPI\_SR\_BUSY}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+SR\+\_\+\+BUSY~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a192c2bdf368f31078b1bcaf11b2b9493}{SPI\+\_\+\+SR\+\_\+\+BUSY\+\_\+\+Pos}})}
+
+
+
+Data transfer flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00182}{182}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a192c2bdf368f31078b1bcaf11b2b9493}\label{reg__spi_8h_a192c2bdf368f31078b1bcaf11b2b9493}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_SR\_BUSY\_Pos@{SPI\_SR\_BUSY\_Pos}}
+\index{SPI\_SR\_BUSY\_Pos@{SPI\_SR\_BUSY\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_SR\_BUSY\_Pos}{SPI\_SR\_BUSY\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+SR\+\_\+\+BUSY\+\_\+\+Pos~(12)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00181}{181}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a81bd052f0b2e819ddd6bb16c2292a2de}\label{reg__spi_8h_a81bd052f0b2e819ddd6bb16c2292a2de}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_SR\_CHSIDE@{SPI\_SR\_CHSIDE}}
+\index{SPI\_SR\_CHSIDE@{SPI\_SR\_CHSIDE}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_SR\_CHSIDE}{SPI\_SR\_CHSIDE}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+SR\+\_\+\+CHSIDE~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_ae5b742da8b06539f6119d020885a6e0c}{SPI\+\_\+\+SR\+\_\+\+CHSIDE\+\_\+\+Pos}})}
+
+
+
+transmission channel ~\newline
+ ///////////////////////////////////////////////////////////////////////////// 
+
+SPI\+\_\+\+ISR Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00187}{187}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ae5b742da8b06539f6119d020885a6e0c}\label{reg__spi_8h_ae5b742da8b06539f6119d020885a6e0c}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_SR\_CHSIDE\_Pos@{SPI\_SR\_CHSIDE\_Pos}}
+\index{SPI\_SR\_CHSIDE\_Pos@{SPI\_SR\_CHSIDE\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_SR\_CHSIDE\_Pos}{SPI\_SR\_CHSIDE\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+SR\+\_\+\+CHSIDE\+\_\+\+Pos~(13)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00183}{183}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ab9d651c76c08c379b34fdee2421970c2}\label{reg__spi_8h_ab9d651c76c08c379b34fdee2421970c2}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_SR\_RXAVL@{SPI\_SR\_RXAVL}}
+\index{SPI\_SR\_RXAVL@{SPI\_SR\_RXAVL}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_SR\_RXAVL}{SPI\_SR\_RXAVL}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+SR\+\_\+\+RXAVL~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_ad32847e0cc5c1c382222777755362c44}{SPI\+\_\+\+SR\+\_\+\+RXAVL\+\_\+\+Pos}})}
+
+
+
+Receive available byte data message 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00172}{172}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a2c72b29e619bbc07ec374c396ba666ce}\label{reg__spi_8h_a2c72b29e619bbc07ec374c396ba666ce}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_SR\_RXAVL\_4BYTE@{SPI\_SR\_RXAVL\_4BYTE}}
+\index{SPI\_SR\_RXAVL\_4BYTE@{SPI\_SR\_RXAVL\_4BYTE}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_SR\_RXAVL\_4BYTE}{SPI\_SR\_RXAVL\_4BYTE}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+SR\+\_\+\+RXAVL\+\_\+4\+BYTE~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a239d222b17ccc8ad8b905462af1aee9d}{SPI\+\_\+\+SR\+\_\+\+RXAVL\+\_\+4\+BYTE\+\_\+\+Pos}})}
+
+
+
+Receive available 4 byte data message 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00176}{176}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a239d222b17ccc8ad8b905462af1aee9d}\label{reg__spi_8h_a239d222b17ccc8ad8b905462af1aee9d}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_SR\_RXAVL\_4BYTE\_Pos@{SPI\_SR\_RXAVL\_4BYTE\_Pos}}
+\index{SPI\_SR\_RXAVL\_4BYTE\_Pos@{SPI\_SR\_RXAVL\_4BYTE\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_SR\_RXAVL\_4BYTE\_Pos}{SPI\_SR\_RXAVL\_4BYTE\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+SR\+\_\+\+RXAVL\+\_\+4\+BYTE\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00175}{175}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ad32847e0cc5c1c382222777755362c44}\label{reg__spi_8h_ad32847e0cc5c1c382222777755362c44}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_SR\_RXAVL\_Pos@{SPI\_SR\_RXAVL\_Pos}}
+\index{SPI\_SR\_RXAVL\_Pos@{SPI\_SR\_RXAVL\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_SR\_RXAVL\_Pos}{SPI\_SR\_RXAVL\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+SR\+\_\+\+RXAVL\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00171}{171}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a6c73a11ea92f386ca9a94c56d37a91b6}\label{reg__spi_8h_a6c73a11ea92f386ca9a94c56d37a91b6}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_SR\_RXFADDR@{SPI\_SR\_RXFADDR}}
+\index{SPI\_SR\_RXFADDR@{SPI\_SR\_RXFADDR}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_SR\_RXFADDR}{SPI\_SR\_RXFADDR}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+SR\+\_\+\+RXFADDR~(0x0\+FU $<$$<$ \mbox{\hyperlink{reg__spi_8h_a71fde550ec94af3b5b97333a09bd0cf5}{SPI\+\_\+\+SR\+\_\+\+RXFADDR\+\_\+\+Pos}})}
+
+
+
+Receive FIFO address 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00180}{180}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a71fde550ec94af3b5b97333a09bd0cf5}\label{reg__spi_8h_a71fde550ec94af3b5b97333a09bd0cf5}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_SR\_RXFADDR\_Pos@{SPI\_SR\_RXFADDR\_Pos}}
+\index{SPI\_SR\_RXFADDR\_Pos@{SPI\_SR\_RXFADDR\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_SR\_RXFADDR\_Pos}{SPI\_SR\_RXFADDR\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+SR\+\_\+\+RXFADDR\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00179}{179}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a0a901c53867bc84741928a8cb766e28a}\label{reg__spi_8h_a0a901c53867bc84741928a8cb766e28a}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_SR\_TXEPT@{SPI\_SR\_TXEPT}}
+\index{SPI\_SR\_TXEPT@{SPI\_SR\_TXEPT}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_SR\_TXEPT}{SPI\_SR\_TXEPT}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+SR\+\_\+\+TXEPT~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_ae83ac075cc16c51c3f16c026c767d69c}{SPI\+\_\+\+SR\+\_\+\+TXEPT\+\_\+\+Pos}})}
+
+
+
+Transmitter empty bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00170}{170}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ae83ac075cc16c51c3f16c026c767d69c}\label{reg__spi_8h_ae83ac075cc16c51c3f16c026c767d69c}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_SR\_TXEPT\_Pos@{SPI\_SR\_TXEPT\_Pos}}
+\index{SPI\_SR\_TXEPT\_Pos@{SPI\_SR\_TXEPT\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_SR\_TXEPT\_Pos}{SPI\_SR\_TXEPT\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+SR\+\_\+\+TXEPT\+\_\+\+Pos~(0)}
+
+
+
+SPI\+\_\+\+SR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00169}{169}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a18bddf6b56e37cea9b5eb2a4b43a4e43}\label{reg__spi_8h_a18bddf6b56e37cea9b5eb2a4b43a4e43}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_SR\_TXFADDR@{SPI\_SR\_TXFADDR}}
+\index{SPI\_SR\_TXFADDR@{SPI\_SR\_TXFADDR}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_SR\_TXFADDR}{SPI\_SR\_TXFADDR}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+SR\+\_\+\+TXFADDR~(0x0\+FU $<$$<$ \mbox{\hyperlink{reg__spi_8h_a5663aaeed6bd98e7107452008d9e930f}{SPI\+\_\+\+SR\+\_\+\+TXFADDR\+\_\+\+Pos}})}
+
+
+
+Transmit FIFO address 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00178}{178}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a5663aaeed6bd98e7107452008d9e930f}\label{reg__spi_8h_a5663aaeed6bd98e7107452008d9e930f}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_SR\_TXFADDR\_Pos@{SPI\_SR\_TXFADDR\_Pos}}
+\index{SPI\_SR\_TXFADDR\_Pos@{SPI\_SR\_TXFADDR\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_SR\_TXFADDR\_Pos}{SPI\_SR\_TXFADDR\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+SR\+\_\+\+TXFADDR\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00177}{177}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a09aef2729326f91d8e79cb3a3ec514aa}\label{reg__spi_8h_a09aef2729326f91d8e79cb3a3ec514aa}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_SR\_TXFULL@{SPI\_SR\_TXFULL}}
+\index{SPI\_SR\_TXFULL@{SPI\_SR\_TXFULL}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_SR\_TXFULL}{SPI\_SR\_TXFULL}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+SR\+\_\+\+TXFULL~(0x01U $<$$<$ \mbox{\hyperlink{reg__spi_8h_a5d5fdf349d4a854b15fe56e7667590e2}{SPI\+\_\+\+SR\+\_\+\+TXFULL\+\_\+\+Pos}})}
+
+
+
+Transmitter FIFO full status bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00174}{174}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a5d5fdf349d4a854b15fe56e7667590e2}\label{reg__spi_8h_a5d5fdf349d4a854b15fe56e7667590e2}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_SR\_TXFULL\_Pos@{SPI\_SR\_TXFULL\_Pos}}
+\index{SPI\_SR\_TXFULL\_Pos@{SPI\_SR\_TXFULL\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_SR\_TXFULL\_Pos}{SPI\_SR\_TXFULL\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+SR\+\_\+\+TXFULL\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00173}{173}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a788f755221b7441605e3cee4dfe107e7}\label{reg__spi_8h_a788f755221b7441605e3cee4dfe107e7}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_TDR\_TXREG@{SPI\_TDR\_TXREG}}
+\index{SPI\_TDR\_TXREG@{SPI\_TDR\_TXREG}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_TDR\_TXREG}{SPI\_TDR\_TXREG}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+TDR\+\_\+\+TXREG~(0x\+FFFFFFFFU $<$$<$ \mbox{\hyperlink{reg__spi_8h_ac913f5c93e50153b7b289fee6e817ac5}{SPI\+\_\+\+TDR\+\_\+\+TXREG\+\_\+\+Pos}})}
+
+
+
+Transmit data register 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00158}{158}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_ac913f5c93e50153b7b289fee6e817ac5}\label{reg__spi_8h_ac913f5c93e50153b7b289fee6e817ac5}} 
+\index{reg\_spi.h@{reg\_spi.h}!SPI\_TDR\_TXREG\_Pos@{SPI\_TDR\_TXREG\_Pos}}
+\index{SPI\_TDR\_TXREG\_Pos@{SPI\_TDR\_TXREG\_Pos}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{SPI\_TDR\_TXREG\_Pos}{SPI\_TDR\_TXREG\_Pos}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+TDR\+\_\+\+TXREG\+\_\+\+Pos~(0)}
+
+
+
+SPI\+\_\+\+TDR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00157}{157}} 行定义.
+
+\mbox{\Hypertarget{reg__spi_8h_a2a3f5b5b5ac58a5e6544c26613a91853}\label{reg__spi_8h_a2a3f5b5b5ac58a5e6544c26613a91853}} 
+\index{reg\_spi.h@{reg\_spi.h}!USENCOMBINEREGISTER@{USENCOMBINEREGISTER}}
+\index{USENCOMBINEREGISTER@{USENCOMBINEREGISTER}!reg\_spi.h@{reg\_spi.h}}
+\doxysubsubsection{\texorpdfstring{USENCOMBINEREGISTER}{USENCOMBINEREGISTER}}
+{\footnotesize\ttfamily \#define USENCOMBINEREGISTER}
+
+
+
+SPI Register Structure Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00060}{60}} 行定义.
+

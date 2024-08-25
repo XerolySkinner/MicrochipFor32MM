@@ -1,0 +1,65 @@
+\hypertarget{structarm__fir__instance__f32}{}\doxysection{arm\+\_\+fir\+\_\+instance\+\_\+f32结构体 参考}
+\label{structarm__fir__instance__f32}\index{arm\_fir\_instance\_f32@{arm\_fir\_instance\_f32}}
+
+
+Instance structure for the floating-\/point FIR filter.  
+
+
+
+
+{\ttfamily \#include $<$arm\+\_\+math.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structarm__fir__instance__f32_a20cf98c92b5323799b7881c9ff4d2f7c}{num\+Taps}}
+\item 
+\mbox{\hyperlink{arm__math_8h_a4611b605e45ab401f02cab15c5e38715}{float32\+\_\+t}} $\ast$ \mbox{\hyperlink{structarm__fir__instance__f32_a7afcf4022e8560db9b8fd28b0d090a15}{p\+State}}
+\item 
+\mbox{\hyperlink{arm__math_8h_a4611b605e45ab401f02cab15c5e38715}{float32\+\_\+t}} $\ast$ \mbox{\hyperlink{structarm__fir__instance__f32_a1c9cfca901d5902afeb640f2831488f4}{p\+Coeffs}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Instance structure for the floating-\/point FIR filter. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l01108}{1108}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{structarm__fir__instance__f32_a20cf98c92b5323799b7881c9ff4d2f7c}\label{structarm__fir__instance__f32_a20cf98c92b5323799b7881c9ff4d2f7c}} 
+\index{arm\_fir\_instance\_f32@{arm\_fir\_instance\_f32}!numTaps@{numTaps}}
+\index{numTaps@{numTaps}!arm\_fir\_instance\_f32@{arm\_fir\_instance\_f32}}
+\doxysubsubsection{\texorpdfstring{numTaps}{numTaps}}
+{\footnotesize\ttfamily uint16\+\_\+t arm\+\_\+fir\+\_\+instance\+\_\+f32\+::num\+Taps}
+
+number of filter coefficients in the filter. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l01109}{1109}} 行定义.
+
+\mbox{\Hypertarget{structarm__fir__instance__f32_a1c9cfca901d5902afeb640f2831488f4}\label{structarm__fir__instance__f32_a1c9cfca901d5902afeb640f2831488f4}} 
+\index{arm\_fir\_instance\_f32@{arm\_fir\_instance\_f32}!pCoeffs@{pCoeffs}}
+\index{pCoeffs@{pCoeffs}!arm\_fir\_instance\_f32@{arm\_fir\_instance\_f32}}
+\doxysubsubsection{\texorpdfstring{pCoeffs}{pCoeffs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{arm__math_8h_a4611b605e45ab401f02cab15c5e38715}{float32\+\_\+t}}$\ast$ arm\+\_\+fir\+\_\+instance\+\_\+f32\+::p\+Coeffs}
+
+points to the coefficient array. The array is of length num\+Taps. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l01111}{1111}} 行定义.
+
+\mbox{\Hypertarget{structarm__fir__instance__f32_a7afcf4022e8560db9b8fd28b0d090a15}\label{structarm__fir__instance__f32_a7afcf4022e8560db9b8fd28b0d090a15}} 
+\index{arm\_fir\_instance\_f32@{arm\_fir\_instance\_f32}!pState@{pState}}
+\index{pState@{pState}!arm\_fir\_instance\_f32@{arm\_fir\_instance\_f32}}
+\doxysubsubsection{\texorpdfstring{pState}{pState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{arm__math_8h_a4611b605e45ab401f02cab15c5e38715}{float32\+\_\+t}}$\ast$ arm\+\_\+fir\+\_\+instance\+\_\+f32\+::p\+State}
+
+points to the state variable array. The array is of length num\+Taps+block\+Size-\/1. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l01110}{1110}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+CMSIS/\mbox{\hyperlink{arm__math_8h}{arm\+\_\+math.\+h}}\end{DoxyCompactItemize}

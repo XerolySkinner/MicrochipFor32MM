@@ -1,0 +1,43 @@
+\hypertarget{hal__eth__conf_8h_source}{}\doxysection{hal\+\_\+eth\+\_\+conf.\+h}
+\label{hal__eth__conf_8h_source}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_eth\_conf.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_eth\_conf.h}}
+\mbox{\hyperlink{hal__eth__conf_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00018}00018 \textcolor{preprocessor}{\#ifndef \_\_HAL\_ETH\_CONF\_H}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00019}00019 \textcolor{preprocessor}{\#define \_\_HAL\_ETH\_CONF\_H}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00034}00034 \textcolor{comment}{// \#define USE\_ENHANCED\_DMA\_DESCRIPTORS}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00035}00035 \textcolor{comment}{// \#define CUSTOM\_DRIVER\_BUFFERS\_CONFIG}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00036}\mbox{\hyperlink{group___e_t_h___exported___types_ga343df7083b82c3610a571f528d1ad54a}{00036}} \textcolor{preprocessor}{\#define DP83848}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00038}00038 \textcolor{preprocessor}{\#ifdef CUSTOM\_DRIVER\_BUFFERS\_CONFIG}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00039}00039 \textcolor{preprocessor}{\#define ETH\_RX\_BUF\_SIZE     ETH\_MAX\_PACKET\_SIZE}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00040}00040 \textcolor{preprocessor}{\#define ETH\_TX\_BUF\_SIZE     ETH\_MAX\_PACKET\_SIZE}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00041}00041 \textcolor{preprocessor}{\#define ETH\_RX\_BUF\_NUM      4}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00042}00042 \textcolor{preprocessor}{\#define ETH\_TX\_BUF\_NUM      4}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00043}00043 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00046}00046 \textcolor{preprocessor}{\#if defined(DP83848)}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00047}\mbox{\hyperlink{group___e_t_h___exported___types_ga32b55e84d27cf298a77f54b133cd1acc}{00047}} \textcolor{preprocessor}{\#define PHY\_SR                  ((u16)0x10)}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00048}\mbox{\hyperlink{group___e_t_h___exported___types_ga03db05156ae666c516c8787c500b3290}{00048}} \textcolor{preprocessor}{\#define PHY\_SR\_LINKSTATUS       ((u16)0x0001)}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00049}\mbox{\hyperlink{group___e_t_h___exported___types_ga74c081bc55e9ff96bf229f44e96c6155}{00049}} \textcolor{preprocessor}{\#define PHY\_SPEED\_STATUS        ((u16)0x0002)}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00050}\mbox{\hyperlink{group___e_t_h___exported___types_gab928f45585242fde1a8d81a2d9ed22d0}{00050}} \textcolor{preprocessor}{\#define PHY\_DUPLEX\_STATUS       ((u16)0x0004)}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00052}\mbox{\hyperlink{group___e_t_h___exported___types_gac4d8c2e6c2509a9bdaf214b24deafea7}{00052}} \textcolor{preprocessor}{\#define PHY\_MICR                ((u16)0x11)}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00053}\mbox{\hyperlink{group___e_t_h___exported___types_gab0314b8559d5895194b435ae93aee9c9}{00053}} \textcolor{preprocessor}{\#define PHY\_MICR\_INT\_EN         ((u16)0x0002)}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00054}\mbox{\hyperlink{group___e_t_h___exported___types_gaca1bf9e00caba70caa1f1a9e56cbee5c}{00054}} \textcolor{preprocessor}{\#define PHY\_MICR\_INT\_OE         ((u16)0x0001)}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00056}\mbox{\hyperlink{group___e_t_h___exported___types_ga81d36e97e4a9da33f2a7e142b01964f6}{00056}} \textcolor{preprocessor}{\#define PHY\_MISR                ((u16)0x12)}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00057}\mbox{\hyperlink{group___e_t_h___exported___types_gaaf06885683edcd946ad960f59e8a6f9a}{00057}} \textcolor{preprocessor}{\#define PHY\_MISR\_LINK\_INT\_EN    ((u16)0x0020)}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00058}\mbox{\hyperlink{group___e_t_h___exported___types_ga4a6cbf61f5e1a134d8983ef29fd2d386}{00058}} \textcolor{preprocessor}{\#define PHY\_LINK\_STATUS         ((u16)0x2000)}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00059}00059 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{hal__eth__conf_8h_source_l00067}00067 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\_\_HAL\_ETH\_CONF\_H}}
+
+\end{DoxyCode}

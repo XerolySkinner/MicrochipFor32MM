@@ -1,0 +1,236 @@
+\hypertarget{group___i2_c___exported___constants}{}\doxysection{I2\+C\+\_\+\+Exported\+\_\+\+Constants}
+\label{group___i2_c___exported___constants}\index{I2C\_Exported\_Constants@{I2C\_Exported\_Constants}}
+\doxysubsection*{模块}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group___i2_c___private___defines}{I2\+C\+\_\+\+Private\+\_\+\+Defines}}
+\item 
+\mbox{\hyperlink{group___i2_c__modes}{I2\+C\+\_\+modes}}
+\item 
+\mbox{\hyperlink{group___i2_c__interrupts__definition}{I2\+C\+\_\+interrupts\+\_\+definition}}
+\item 
+\mbox{\hyperlink{group___i2_c__flags__definition}{I2\+C\+\_\+flags\+\_\+definition}}
+\item 
+\mbox{\hyperlink{group___i2_c___events}{I2\+C\+\_\+\+Events}}
+\item 
+\mbox{\hyperlink{group___i2_c___statusflags__definition}{I2\+C\+\_\+\+Statusflags\+\_\+definition}}
+\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___i2_c___exported___constants_ga58153d37691b40d0e479239b0f93608d}{IC\+\_\+\+SLAVE\+\_\+\+ENABLE}}~(0x0000$<$$<$6)
+\item 
+\#define \mbox{\hyperlink{group___i2_c___exported___constants_ga2be6778cf2203d8b2a97897fdbc140c9}{IC\+\_\+7\+BITADDR\+\_\+\+MASTER}}~(0x0000$<$$<$4)
+\item 
+\#define \mbox{\hyperlink{group___i2_c___exported___constants_ga8593aa6cde6721d790409dfccc7d6c66}{IC\+\_\+7\+BITADDR\+\_\+\+SLAVE}}~(0x0000$<$$<$3)
+\item 
+\#define \mbox{\hyperlink{group___i2_c___exported___constants_ga40fc28395fe79faf056def68a8cc4d28}{I2\+C\+\_\+\+Speed\+\_\+\+STANDARD}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0002)
+\item 
+\#define \mbox{\hyperlink{group___i2_c___exported___constants_gacb323f011665375a7175c818a588ad7f}{I2\+C\+\_\+\+Speed\+\_\+\+FAST}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0004)
+\item 
+\#define \mbox{\hyperlink{group___i2_c___exported___constants_ga3cad6cd1bdf7017f946d1b0f7e1abd01}{I2\+C\+\_\+\+Mode\+\_\+\+MASTER}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0001)
+\item 
+\#define \mbox{\hyperlink{group___i2_c___exported___constants_ga1c3bc13326c1871c2e061e01783235ab}{I2\+C\+\_\+\+Mode\+\_\+\+SLAVE}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)
+\item 
+\#define \mbox{\hyperlink{group___i2_c___exported___constants_ga9c953a6c538020e644127ee080608021}{CMD\+\_\+\+READ}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0100)
+\item 
+\#define \mbox{\hyperlink{group___i2_c___exported___constants_ga7391deb9c3a262ded3e186e94eb884e2}{CMD\+\_\+\+WRITE}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)
+\item 
+\#define \mbox{\hyperlink{group___i2_c___exported___constants_ga8bc3b0555ca31b6f8423bc2ada45d1ac}{I2\+C\+\_\+\+Mode\+\_\+\+I2C}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)
+\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___i2_c___exported___constants_ga5974c0c30dc9fd9b11742391aa0bdfef}{I2\+C\+\_\+\+DMA\+\_\+\+Dir\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___i2_c___exported___constants_gga5974c0c30dc9fd9b11742391aa0bdfefa8c2eb09341398f05204a795f8a08548d}{RDMAE\+\_\+\+SET}} = 1
+, \mbox{\hyperlink{group___i2_c___exported___constants_gga5974c0c30dc9fd9b11742391aa0bdfefa7c1896c4205ecb671d8a7875a5e6f8f0}{TDMAE\+\_\+\+SET}}
+ \}
+\begin{DoxyCompactList}\small\item\em I2C DMA Direction \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___i2_c___exported___constants_gab956ea238546863d1aff22918972d1eb}{I2\+C\+\_\+\+Trans\+\_\+\+Dir\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___i2_c___exported___constants_ggab956ea238546863d1aff22918972d1eba85ed1df0ec8457ab5298f45ceb9ee0ef}{I2\+C\+\_\+\+Direction\+\_\+\+Transmitter}}
+, \mbox{\hyperlink{group___i2_c___exported___constants_ggab956ea238546863d1aff22918972d1eba006d83e645bf8f7e68e649b1a02d1b39}{I2\+C\+\_\+\+Direction\+\_\+\+Receiver}}
+ \}
+\begin{DoxyCompactList}\small\item\em I2C Transfer Direction \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___i2_c___exported___constants_gac832711bd020175a67006d64584f89f7}{I2\+C\+\_\+\+ACKaddr\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___i2_c___exported___constants_ggac832711bd020175a67006d64584f89f7af6611361034759e01e7c6087fb6093a6}{I2\+C\+\_\+\+Acknowledged\+Address\+\_\+7bit}} = 0x4000
+, \mbox{\hyperlink{group___i2_c___exported___constants_ggac832711bd020175a67006d64584f89f7accd755bb9daa64affc1b4952478a6054}{I2\+C\+\_\+\+Acknowledged\+Address\+\_\+10bit}} = 0x\+C000
+ \}
+\begin{DoxyCompactList}\small\item\em I2C Acknowledged Address \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{group___i2_c___exported___constants_ga9c953a6c538020e644127ee080608021}\label{group___i2_c___exported___constants_ga9c953a6c538020e644127ee080608021}} 
+\index{I2C\_Exported\_Constants@{I2C\_Exported\_Constants}!CMD\_READ@{CMD\_READ}}
+\index{CMD\_READ@{CMD\_READ}!I2C\_Exported\_Constants@{I2C\_Exported\_Constants}}
+\doxysubsubsection{\texorpdfstring{CMD\_READ}{CMD\_READ}}
+{\footnotesize\ttfamily \#define CMD\+\_\+\+READ~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0100)}
+
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8h_source}{hal\+\_\+i2c.\+h}} 第 \mbox{\hyperlink{hal__i2c_8h_source_l00188}{188}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___constants_ga7391deb9c3a262ded3e186e94eb884e2}\label{group___i2_c___exported___constants_ga7391deb9c3a262ded3e186e94eb884e2}} 
+\index{I2C\_Exported\_Constants@{I2C\_Exported\_Constants}!CMD\_WRITE@{CMD\_WRITE}}
+\index{CMD\_WRITE@{CMD\_WRITE}!I2C\_Exported\_Constants@{I2C\_Exported\_Constants}}
+\doxysubsubsection{\texorpdfstring{CMD\_WRITE}{CMD\_WRITE}}
+{\footnotesize\ttfamily \#define CMD\+\_\+\+WRITE~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8h_source}{hal\+\_\+i2c.\+h}} 第 \mbox{\hyperlink{hal__i2c_8h_source_l00189}{189}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___constants_ga8bc3b0555ca31b6f8423bc2ada45d1ac}\label{group___i2_c___exported___constants_ga8bc3b0555ca31b6f8423bc2ada45d1ac}} 
+\index{I2C\_Exported\_Constants@{I2C\_Exported\_Constants}!I2C\_Mode\_I2C@{I2C\_Mode\_I2C}}
+\index{I2C\_Mode\_I2C@{I2C\_Mode\_I2C}!I2C\_Exported\_Constants@{I2C\_Exported\_Constants}}
+\doxysubsubsection{\texorpdfstring{I2C\_Mode\_I2C}{I2C\_Mode\_I2C}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+Mode\+\_\+\+I2C~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8h_source}{hal\+\_\+i2c.\+h}} 第 \mbox{\hyperlink{hal__i2c_8h_source_l00190}{190}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___constants_ga3cad6cd1bdf7017f946d1b0f7e1abd01}\label{group___i2_c___exported___constants_ga3cad6cd1bdf7017f946d1b0f7e1abd01}} 
+\index{I2C\_Exported\_Constants@{I2C\_Exported\_Constants}!I2C\_Mode\_MASTER@{I2C\_Mode\_MASTER}}
+\index{I2C\_Mode\_MASTER@{I2C\_Mode\_MASTER}!I2C\_Exported\_Constants@{I2C\_Exported\_Constants}}
+\doxysubsubsection{\texorpdfstring{I2C\_Mode\_MASTER}{I2C\_Mode\_MASTER}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+Mode\+\_\+\+MASTER~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0001)}
+
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8h_source}{hal\+\_\+i2c.\+h}} 第 \mbox{\hyperlink{hal__i2c_8h_source_l00186}{186}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___constants_ga1c3bc13326c1871c2e061e01783235ab}\label{group___i2_c___exported___constants_ga1c3bc13326c1871c2e061e01783235ab}} 
+\index{I2C\_Exported\_Constants@{I2C\_Exported\_Constants}!I2C\_Mode\_SLAVE@{I2C\_Mode\_SLAVE}}
+\index{I2C\_Mode\_SLAVE@{I2C\_Mode\_SLAVE}!I2C\_Exported\_Constants@{I2C\_Exported\_Constants}}
+\doxysubsubsection{\texorpdfstring{I2C\_Mode\_SLAVE}{I2C\_Mode\_SLAVE}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+Mode\+\_\+\+SLAVE~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)}
+
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8h_source}{hal\+\_\+i2c.\+h}} 第 \mbox{\hyperlink{hal__i2c_8h_source_l00187}{187}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___constants_gacb323f011665375a7175c818a588ad7f}\label{group___i2_c___exported___constants_gacb323f011665375a7175c818a588ad7f}} 
+\index{I2C\_Exported\_Constants@{I2C\_Exported\_Constants}!I2C\_Speed\_FAST@{I2C\_Speed\_FAST}}
+\index{I2C\_Speed\_FAST@{I2C\_Speed\_FAST}!I2C\_Exported\_Constants@{I2C\_Exported\_Constants}}
+\doxysubsubsection{\texorpdfstring{I2C\_Speed\_FAST}{I2C\_Speed\_FAST}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+Speed\+\_\+\+FAST~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0004)}
+
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8h_source}{hal\+\_\+i2c.\+h}} 第 \mbox{\hyperlink{hal__i2c_8h_source_l00185}{185}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___constants_ga40fc28395fe79faf056def68a8cc4d28}\label{group___i2_c___exported___constants_ga40fc28395fe79faf056def68a8cc4d28}} 
+\index{I2C\_Exported\_Constants@{I2C\_Exported\_Constants}!I2C\_Speed\_STANDARD@{I2C\_Speed\_STANDARD}}
+\index{I2C\_Speed\_STANDARD@{I2C\_Speed\_STANDARD}!I2C\_Exported\_Constants@{I2C\_Exported\_Constants}}
+\doxysubsubsection{\texorpdfstring{I2C\_Speed\_STANDARD}{I2C\_Speed\_STANDARD}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+Speed\+\_\+\+STANDARD~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0002)}
+
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8h_source}{hal\+\_\+i2c.\+h}} 第 \mbox{\hyperlink{hal__i2c_8h_source_l00184}{184}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___constants_ga2be6778cf2203d8b2a97897fdbc140c9}\label{group___i2_c___exported___constants_ga2be6778cf2203d8b2a97897fdbc140c9}} 
+\index{I2C\_Exported\_Constants@{I2C\_Exported\_Constants}!IC\_7BITADDR\_MASTER@{IC\_7BITADDR\_MASTER}}
+\index{IC\_7BITADDR\_MASTER@{IC\_7BITADDR\_MASTER}!I2C\_Exported\_Constants@{I2C\_Exported\_Constants}}
+\doxysubsubsection{\texorpdfstring{IC\_7BITADDR\_MASTER}{IC\_7BITADDR\_MASTER}}
+{\footnotesize\ttfamily \#define IC\+\_\+7\+BITADDR\+\_\+\+MASTER~(0x0000$<$$<$4)}
+
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8h_source}{hal\+\_\+i2c.\+h}} 第 \mbox{\hyperlink{hal__i2c_8h_source_l00182}{182}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___constants_ga8593aa6cde6721d790409dfccc7d6c66}\label{group___i2_c___exported___constants_ga8593aa6cde6721d790409dfccc7d6c66}} 
+\index{I2C\_Exported\_Constants@{I2C\_Exported\_Constants}!IC\_7BITADDR\_SLAVE@{IC\_7BITADDR\_SLAVE}}
+\index{IC\_7BITADDR\_SLAVE@{IC\_7BITADDR\_SLAVE}!I2C\_Exported\_Constants@{I2C\_Exported\_Constants}}
+\doxysubsubsection{\texorpdfstring{IC\_7BITADDR\_SLAVE}{IC\_7BITADDR\_SLAVE}}
+{\footnotesize\ttfamily \#define IC\+\_\+7\+BITADDR\+\_\+\+SLAVE~(0x0000$<$$<$3)}
+
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8h_source}{hal\+\_\+i2c.\+h}} 第 \mbox{\hyperlink{hal__i2c_8h_source_l00183}{183}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___constants_ga58153d37691b40d0e479239b0f93608d}\label{group___i2_c___exported___constants_ga58153d37691b40d0e479239b0f93608d}} 
+\index{I2C\_Exported\_Constants@{I2C\_Exported\_Constants}!IC\_SLAVE\_ENABLE@{IC\_SLAVE\_ENABLE}}
+\index{IC\_SLAVE\_ENABLE@{IC\_SLAVE\_ENABLE}!I2C\_Exported\_Constants@{I2C\_Exported\_Constants}}
+\doxysubsubsection{\texorpdfstring{IC\_SLAVE\_ENABLE}{IC\_SLAVE\_ENABLE}}
+{\footnotesize\ttfamily \#define IC\+\_\+\+SLAVE\+\_\+\+ENABLE~(0x0000$<$$<$6)}
+
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8h_source}{hal\+\_\+i2c.\+h}} 第 \mbox{\hyperlink{hal__i2c_8h_source_l00181}{181}} 行定义.
+
+
+
+\doxysubsection{枚举类型说明}
+\mbox{\Hypertarget{group___i2_c___exported___constants_gac832711bd020175a67006d64584f89f7}\label{group___i2_c___exported___constants_gac832711bd020175a67006d64584f89f7}} 
+\index{I2C\_Exported\_Constants@{I2C\_Exported\_Constants}!I2C\_ACKaddr\_TypeDef@{I2C\_ACKaddr\_TypeDef}}
+\index{I2C\_ACKaddr\_TypeDef@{I2C\_ACKaddr\_TypeDef}!I2C\_Exported\_Constants@{I2C\_Exported\_Constants}}
+\doxysubsubsection{\texorpdfstring{I2C\_ACKaddr\_TypeDef}{I2C\_ACKaddr\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___i2_c___exported___constants_gac832711bd020175a67006d64584f89f7}{I2\+C\+\_\+\+ACKaddr\+\_\+\+Type\+Def}}}
+
+
+
+I2C Acknowledged Address 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C\_AcknowledgedAddress\_7bit@{I2C\_AcknowledgedAddress\_7bit}!I2C\_Exported\_Constants@{I2C\_Exported\_Constants}}\index{I2C\_Exported\_Constants@{I2C\_Exported\_Constants}!I2C\_AcknowledgedAddress\_7bit@{I2C\_AcknowledgedAddress\_7bit}}}\mbox{\Hypertarget{group___i2_c___exported___constants_ggac832711bd020175a67006d64584f89f7af6611361034759e01e7c6087fb6093a6}\label{group___i2_c___exported___constants_ggac832711bd020175a67006d64584f89f7af6611361034759e01e7c6087fb6093a6}} 
+I2\+C\+\_\+\+Acknowledged\+Address\+\_\+7bit&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C\_AcknowledgedAddress\_10bit@{I2C\_AcknowledgedAddress\_10bit}!I2C\_Exported\_Constants@{I2C\_Exported\_Constants}}\index{I2C\_Exported\_Constants@{I2C\_Exported\_Constants}!I2C\_AcknowledgedAddress\_10bit@{I2C\_AcknowledgedAddress\_10bit}}}\mbox{\Hypertarget{group___i2_c___exported___constants_ggac832711bd020175a67006d64584f89f7accd755bb9daa64affc1b4952478a6054}\label{group___i2_c___exported___constants_ggac832711bd020175a67006d64584f89f7accd755bb9daa64affc1b4952478a6054}} 
+I2\+C\+\_\+\+Acknowledged\+Address\+\_\+10bit&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8h_source}{hal\+\_\+i2c.\+h}} 第 \mbox{\hyperlink{hal__i2c_8h_source_l00094}{94}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___constants_ga5974c0c30dc9fd9b11742391aa0bdfef}\label{group___i2_c___exported___constants_ga5974c0c30dc9fd9b11742391aa0bdfef}} 
+\index{I2C\_Exported\_Constants@{I2C\_Exported\_Constants}!I2C\_DMA\_Dir\_TypeDef@{I2C\_DMA\_Dir\_TypeDef}}
+\index{I2C\_DMA\_Dir\_TypeDef@{I2C\_DMA\_Dir\_TypeDef}!I2C\_Exported\_Constants@{I2C\_Exported\_Constants}}
+\doxysubsubsection{\texorpdfstring{I2C\_DMA\_Dir\_TypeDef}{I2C\_DMA\_Dir\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___i2_c___exported___constants_ga5974c0c30dc9fd9b11742391aa0bdfef}{I2\+C\+\_\+\+DMA\+\_\+\+Dir\+\_\+\+Type\+Def}}}
+
+
+
+I2C DMA Direction 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RDMAE\_SET@{RDMAE\_SET}!I2C\_Exported\_Constants@{I2C\_Exported\_Constants}}\index{I2C\_Exported\_Constants@{I2C\_Exported\_Constants}!RDMAE\_SET@{RDMAE\_SET}}}\mbox{\Hypertarget{group___i2_c___exported___constants_gga5974c0c30dc9fd9b11742391aa0bdfefa8c2eb09341398f05204a795f8a08548d}\label{group___i2_c___exported___constants_gga5974c0c30dc9fd9b11742391aa0bdfefa8c2eb09341398f05204a795f8a08548d}} 
+RDMAE\+\_\+\+SET&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TDMAE\_SET@{TDMAE\_SET}!I2C\_Exported\_Constants@{I2C\_Exported\_Constants}}\index{I2C\_Exported\_Constants@{I2C\_Exported\_Constants}!TDMAE\_SET@{TDMAE\_SET}}}\mbox{\Hypertarget{group___i2_c___exported___constants_gga5974c0c30dc9fd9b11742391aa0bdfefa7c1896c4205ecb671d8a7875a5e6f8f0}\label{group___i2_c___exported___constants_gga5974c0c30dc9fd9b11742391aa0bdfefa7c1896c4205ecb671d8a7875a5e6f8f0}} 
+TDMAE\+\_\+\+SET&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8h_source}{hal\+\_\+i2c.\+h}} 第 \mbox{\hyperlink{hal__i2c_8h_source_l00079}{79}} 行定义.
+
+\mbox{\Hypertarget{group___i2_c___exported___constants_gab956ea238546863d1aff22918972d1eb}\label{group___i2_c___exported___constants_gab956ea238546863d1aff22918972d1eb}} 
+\index{I2C\_Exported\_Constants@{I2C\_Exported\_Constants}!I2C\_Trans\_Dir\_TypeDef@{I2C\_Trans\_Dir\_TypeDef}}
+\index{I2C\_Trans\_Dir\_TypeDef@{I2C\_Trans\_Dir\_TypeDef}!I2C\_Exported\_Constants@{I2C\_Exported\_Constants}}
+\doxysubsubsection{\texorpdfstring{I2C\_Trans\_Dir\_TypeDef}{I2C\_Trans\_Dir\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___i2_c___exported___constants_gab956ea238546863d1aff22918972d1eb}{I2\+C\+\_\+\+Trans\+\_\+\+Dir\+\_\+\+Type\+Def}}}
+
+
+
+I2C Transfer Direction 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C\_Direction\_Transmitter@{I2C\_Direction\_Transmitter}!I2C\_Exported\_Constants@{I2C\_Exported\_Constants}}\index{I2C\_Exported\_Constants@{I2C\_Exported\_Constants}!I2C\_Direction\_Transmitter@{I2C\_Direction\_Transmitter}}}\mbox{\Hypertarget{group___i2_c___exported___constants_ggab956ea238546863d1aff22918972d1eba85ed1df0ec8457ab5298f45ceb9ee0ef}\label{group___i2_c___exported___constants_ggab956ea238546863d1aff22918972d1eba85ed1df0ec8457ab5298f45ceb9ee0ef}} 
+I2\+C\+\_\+\+Direction\+\_\+\+Transmitter&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C\_Direction\_Receiver@{I2C\_Direction\_Receiver}!I2C\_Exported\_Constants@{I2C\_Exported\_Constants}}\index{I2C\_Exported\_Constants@{I2C\_Exported\_Constants}!I2C\_Direction\_Receiver@{I2C\_Direction\_Receiver}}}\mbox{\Hypertarget{group___i2_c___exported___constants_ggab956ea238546863d1aff22918972d1eba006d83e645bf8f7e68e649b1a02d1b39}\label{group___i2_c___exported___constants_ggab956ea238546863d1aff22918972d1eba006d83e645bf8f7e68e649b1a02d1b39}} 
+I2\+C\+\_\+\+Direction\+\_\+\+Receiver&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__i2c_8h_source}{hal\+\_\+i2c.\+h}} 第 \mbox{\hyperlink{hal__i2c_8h_source_l00086}{86}} 行定义.
+

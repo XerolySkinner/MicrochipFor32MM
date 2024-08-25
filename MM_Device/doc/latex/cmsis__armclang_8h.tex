@@ -1,0 +1,202 @@
+\hypertarget{cmsis__armclang_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+CMSIS/cmsis\+\_\+armclang.h 文件参考}
+\label{cmsis__armclang_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/CMSIS/cmsis\_armclang.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/CMSIS/cmsis\_armclang.h}}
+
+
+CMSIS compiler ARMCLANG (ARM compiler V6) header file  
+
+
+{\ttfamily \#include $<$arm\+\_\+compat.\+h$>$}\newline
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{cmsis__armclang_8h_a1378040bcf22428955c6e3ce9c2053cd}{\+\_\+\+\_\+\+ASM}}~\+\_\+\+\_\+asm
+\item 
+\#define \mbox{\hyperlink{cmsis__armclang_8h_ade2d8d7118f8ff49547f60aa0c3382bb}{\+\_\+\+\_\+\+INLINE}}~\+\_\+\+\_\+inline
+\item 
+\#define \mbox{\hyperlink{cmsis__armclang_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+STATIC\+\_\+\+INLINE}}~static \+\_\+\+\_\+inline
+\item 
+\#define \mbox{\hyperlink{cmsis__armclang_8h_a153a4a31b276a9758959580538720a51}{\+\_\+\+\_\+\+NO\+\_\+\+RETURN}}~\mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gae84a2733711339c5eefeb0d899506b96}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}((noreturn))
+\item 
+\#define \mbox{\hyperlink{cmsis__armclang_8h_a3e40e4c553fc11588f7a4c2a19e789e0}{\+\_\+\+\_\+\+USED}}~\mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gae84a2733711339c5eefeb0d899506b96}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}((used))
+\item 
+\#define \mbox{\hyperlink{cmsis__armclang_8h_ac607bf387b29162be6a9b77fc7999539}{\+\_\+\+\_\+\+WEAK}}~\mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gae84a2733711339c5eefeb0d899506b96}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}((weak))
+\item 
+\#define \mbox{\hyperlink{cmsis__armclang_8h_ac8a13aacd0453758fdfd01a57a2a6a3d}{\+\_\+\+\_\+\+UNALIGNED\+\_\+\+UINT32}}(x)~(((struct T\+\_\+\+UINT32 $\ast$)(x))-\/$>$v)
+\item 
+\#define \mbox{\hyperlink{cmsis__armclang_8h_aa65ef8f7a5e8b7a6ea6c1d48b4c78e55}{\+\_\+\+\_\+\+ALIGNED}}(x)~\mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gae84a2733711339c5eefeb0d899506b96}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}((aligned(x)))
+\item 
+\#define \mbox{\hyperlink{cmsis__armclang_8h_abe8996d3d985ee1529475443cc635bf1}{\+\_\+\+\_\+\+PACKED}}~\mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gae84a2733711339c5eefeb0d899506b96}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}((packed, aligned(1)))
+\item 
+\#define \mbox{\hyperlink{cmsis__armclang_8h_a4dbb70fab85207c27b581ecb6532b314}{\+\_\+\+\_\+\+PACKED\+\_\+\+STRUCT}}~struct \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gae84a2733711339c5eefeb0d899506b96}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}((packed, aligned(1)))
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gabc17e391c13c71702366c67cba39c276}{\+\_\+\+\_\+\+CMSIS\+\_\+\+GCC\+\_\+\+OUT\+\_\+\+REG}}(r)~\char`\"{}=r\char`\"{} (r)
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_ga9d94dee7402367961d2cf0accc00fd97}{\+\_\+\+\_\+\+CMSIS\+\_\+\+GCC\+\_\+\+USE\+\_\+\+REG}}(r)~\char`\"{}r\char`\"{} (r)
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gabd585ddc865fb9b7f2493af1eee1a572}{\+\_\+\+\_\+\+NOP}}~\+\_\+\+\_\+builtin\+\_\+arm\+\_\+nop
+\begin{DoxyCompactList}\small\item\em No Operation \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gad23bf2b78a9a4524157c9de0d30b7448}{\+\_\+\+\_\+\+WFI}}~\+\_\+\+\_\+builtin\+\_\+arm\+\_\+wfi
+\begin{DoxyCompactList}\small\item\em Wait For Interrupt \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gaac6cc7dd4325d9cb40d3290fa5244b3d}{\+\_\+\+\_\+\+WFE}}~\+\_\+\+\_\+builtin\+\_\+arm\+\_\+wfe
+\begin{DoxyCompactList}\small\item\em Wait For Event \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gaab4f296d0022b4b10dc0976eb22052f9}{\+\_\+\+\_\+\+SEV}}~\+\_\+\+\_\+builtin\+\_\+arm\+\_\+sev
+\begin{DoxyCompactList}\small\item\em Send Event \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gaad233022e850a009fc6f7602be1182f6}{\+\_\+\+\_\+\+ISB}}()~\+\_\+\+\_\+builtin\+\_\+arm\+\_\+isb(0xF);
+\begin{DoxyCompactList}\small\item\em Instruction Synchronization Barrier \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_ga067d257a2b34565410acefb5afef2203}{\+\_\+\+\_\+\+DSB}}()~\+\_\+\+\_\+builtin\+\_\+arm\+\_\+dsb(0xF);
+\begin{DoxyCompactList}\small\item\em Data Synchronization Barrier \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_ga671101179b5943990785f36f8c1e2269}{\+\_\+\+\_\+\+DMB}}()~\+\_\+\+\_\+builtin\+\_\+arm\+\_\+dmb(0xF);
+\begin{DoxyCompactList}\small\item\em Data Memory Barrier \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_ga14f54807872c0f5e05604c4924abfdae}{\+\_\+\+\_\+\+REV}}~\+\_\+\+\_\+builtin\+\_\+bswap32
+\begin{DoxyCompactList}\small\item\em Reverse byte order (32 bit) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_ga4e3acd41e7667cdf65ffcd8c76a8613f}{\+\_\+\+\_\+\+REV16}}~\+\_\+\+\_\+builtin\+\_\+bswap16                /$\ast$ To\+Do ARMCLANG\+: check if \+\_\+\+\_\+builtin\+\_\+bswap16 could be used $\ast$/
+\begin{DoxyCompactList}\small\item\em Reverse byte order (16 bit) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_ga15ea6bd3c507d3e81c3b3a1258e46397}{\+\_\+\+\_\+\+BKPT}}(value)~\mbox{\hyperlink{cmsis__armcc_8h_a1378040bcf22428955c6e3ce9c2053cd}{\+\_\+\+\_\+\+ASM}} volatile (\char`\"{}bkpt \char`\"{}\#value)
+\begin{DoxyCompactList}\small\item\em Breakpoint \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_ga5d5bb1527e042be4a9fa5a33f65cc248}{\+\_\+\+\_\+\+CLZ}}~\+\_\+\+\_\+builtin\+\_\+clz
+\begin{DoxyCompactList}\small\item\em Count leading zeros \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{cmsis__armclang_8h_ade51b179ed6f69a6bacfab38b7b359b1}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}} ((packed)) T\+\_\+\+UINT32
+\item 
+\mbox{\hyperlink{group___c_m_s_i_s___core___reg_acc_functions_ga09941b2c60a456845060fe2192f35269}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}} ((always\+\_\+inline)) \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+STATIC\+\_\+\+INLINE}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s___core___reg_acc_functions_ga5fe64567d5bf0a81c118374e9a3a4598}{\+\_\+\+\_\+get\+\_\+\+CONTROL}}(void)
+\begin{DoxyCompactList}\small\item\em Enable IRQ Interrupts \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gab926fe7178a379c3a7c0410b06fcb661}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}} ((always\+\_\+inline)) \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+STATIC\+\_\+\+INLINE}} uint32\+\_\+t \+\_\+\+\_\+\+RBIT(uint32\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Reverse bit order of value \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gadb2bb33809b6f35ba4d176cbec7c7b75}{op2}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+CMSIS compiler ARMCLANG (ARM compiler V6) header file 
+
+\begin{DoxyVersion}{版本}
+V5.\+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{日期}
+02. February 2017 
+\end{DoxyDate}
+
+
+在文件 \mbox{\hyperlink{cmsis__armclang_8h_source}{cmsis\+\_\+armclang.\+h}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{cmsis__armclang_8h_aa65ef8f7a5e8b7a6ea6c1d48b4c78e55}\label{cmsis__armclang_8h_aa65ef8f7a5e8b7a6ea6c1d48b4c78e55}} 
+\index{cmsis\_armclang.h@{cmsis\_armclang.h}!\_\_ALIGNED@{\_\_ALIGNED}}
+\index{\_\_ALIGNED@{\_\_ALIGNED}!cmsis\_armclang.h@{cmsis\_armclang.h}}
+\doxysubsubsection{\texorpdfstring{\_\_ALIGNED}{\_\_ALIGNED}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+ALIGNED(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gae84a2733711339c5eefeb0d899506b96}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}((aligned(x)))}
+
+
+
+在文件 \mbox{\hyperlink{cmsis__armclang_8h_source}{cmsis\+\_\+armclang.\+h}} 第 \mbox{\hyperlink{cmsis__armclang_8h_source_l00061}{61}} 行定义.
+
+\mbox{\Hypertarget{cmsis__armclang_8h_a1378040bcf22428955c6e3ce9c2053cd}\label{cmsis__armclang_8h_a1378040bcf22428955c6e3ce9c2053cd}} 
+\index{cmsis\_armclang.h@{cmsis\_armclang.h}!\_\_ASM@{\_\_ASM}}
+\index{\_\_ASM@{\_\_ASM}!cmsis\_armclang.h@{cmsis\_armclang.h}}
+\doxysubsubsection{\texorpdfstring{\_\_ASM}{\_\_ASM}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+ASM~\+\_\+\+\_\+asm}
+
+
+
+在文件 \mbox{\hyperlink{cmsis__armclang_8h_source}{cmsis\+\_\+armclang.\+h}} 第 \mbox{\hyperlink{cmsis__armclang_8h_source_l00034}{34}} 行定义.
+
+\mbox{\Hypertarget{cmsis__armclang_8h_ade2d8d7118f8ff49547f60aa0c3382bb}\label{cmsis__armclang_8h_ade2d8d7118f8ff49547f60aa0c3382bb}} 
+\index{cmsis\_armclang.h@{cmsis\_armclang.h}!\_\_INLINE@{\_\_INLINE}}
+\index{\_\_INLINE@{\_\_INLINE}!cmsis\_armclang.h@{cmsis\_armclang.h}}
+\doxysubsubsection{\texorpdfstring{\_\_INLINE}{\_\_INLINE}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+INLINE~\+\_\+\+\_\+inline}
+
+
+
+在文件 \mbox{\hyperlink{cmsis__armclang_8h_source}{cmsis\+\_\+armclang.\+h}} 第 \mbox{\hyperlink{cmsis__armclang_8h_source_l00037}{37}} 行定义.
+
+\mbox{\Hypertarget{cmsis__armclang_8h_a153a4a31b276a9758959580538720a51}\label{cmsis__armclang_8h_a153a4a31b276a9758959580538720a51}} 
+\index{cmsis\_armclang.h@{cmsis\_armclang.h}!\_\_NO\_RETURN@{\_\_NO\_RETURN}}
+\index{\_\_NO\_RETURN@{\_\_NO\_RETURN}!cmsis\_armclang.h@{cmsis\_armclang.h}}
+\doxysubsubsection{\texorpdfstring{\_\_NO\_RETURN}{\_\_NO\_RETURN}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+NO\+\_\+\+RETURN~\mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gae84a2733711339c5eefeb0d899506b96}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}((noreturn))}
+
+
+
+在文件 \mbox{\hyperlink{cmsis__armclang_8h_source}{cmsis\+\_\+armclang.\+h}} 第 \mbox{\hyperlink{cmsis__armclang_8h_source_l00043}{43}} 行定义.
+
+\mbox{\Hypertarget{cmsis__armclang_8h_abe8996d3d985ee1529475443cc635bf1}\label{cmsis__armclang_8h_abe8996d3d985ee1529475443cc635bf1}} 
+\index{cmsis\_armclang.h@{cmsis\_armclang.h}!\_\_PACKED@{\_\_PACKED}}
+\index{\_\_PACKED@{\_\_PACKED}!cmsis\_armclang.h@{cmsis\_armclang.h}}
+\doxysubsubsection{\texorpdfstring{\_\_PACKED}{\_\_PACKED}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+PACKED~\mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gae84a2733711339c5eefeb0d899506b96}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}((packed, aligned(1)))}
+
+
+
+在文件 \mbox{\hyperlink{cmsis__armclang_8h_source}{cmsis\+\_\+armclang.\+h}} 第 \mbox{\hyperlink{cmsis__armclang_8h_source_l00064}{64}} 行定义.
+
+\mbox{\Hypertarget{cmsis__armclang_8h_a4dbb70fab85207c27b581ecb6532b314}\label{cmsis__armclang_8h_a4dbb70fab85207c27b581ecb6532b314}} 
+\index{cmsis\_armclang.h@{cmsis\_armclang.h}!\_\_PACKED\_STRUCT@{\_\_PACKED\_STRUCT}}
+\index{\_\_PACKED\_STRUCT@{\_\_PACKED\_STRUCT}!cmsis\_armclang.h@{cmsis\_armclang.h}}
+\doxysubsubsection{\texorpdfstring{\_\_PACKED\_STRUCT}{\_\_PACKED\_STRUCT}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+PACKED\+\_\+\+STRUCT~struct \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gae84a2733711339c5eefeb0d899506b96}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}((packed, aligned(1)))}
+
+
+
+在文件 \mbox{\hyperlink{cmsis__armclang_8h_source}{cmsis\+\_\+armclang.\+h}} 第 \mbox{\hyperlink{cmsis__armclang_8h_source_l00067}{67}} 行定义.
+
+\mbox{\Hypertarget{cmsis__armclang_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}\label{cmsis__armclang_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}} 
+\index{cmsis\_armclang.h@{cmsis\_armclang.h}!\_\_STATIC\_INLINE@{\_\_STATIC\_INLINE}}
+\index{\_\_STATIC\_INLINE@{\_\_STATIC\_INLINE}!cmsis\_armclang.h@{cmsis\_armclang.h}}
+\doxysubsubsection{\texorpdfstring{\_\_STATIC\_INLINE}{\_\_STATIC\_INLINE}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+STATIC\+\_\+\+INLINE~static \+\_\+\+\_\+inline}
+
+
+
+在文件 \mbox{\hyperlink{cmsis__armclang_8h_source}{cmsis\+\_\+armclang.\+h}} 第 \mbox{\hyperlink{cmsis__armclang_8h_source_l00040}{40}} 行定义.
+
+\mbox{\Hypertarget{cmsis__armclang_8h_ac8a13aacd0453758fdfd01a57a2a6a3d}\label{cmsis__armclang_8h_ac8a13aacd0453758fdfd01a57a2a6a3d}} 
+\index{cmsis\_armclang.h@{cmsis\_armclang.h}!\_\_UNALIGNED\_UINT32@{\_\_UNALIGNED\_UINT32}}
+\index{\_\_UNALIGNED\_UINT32@{\_\_UNALIGNED\_UINT32}!cmsis\_armclang.h@{cmsis\_armclang.h}}
+\doxysubsubsection{\texorpdfstring{\_\_UNALIGNED\_UINT32}{\_\_UNALIGNED\_UINT32}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+UNALIGNED\+\_\+\+UINT32(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((struct T\+\_\+\+UINT32 $\ast$)(x))-\/$>$v)}
+
+
+
+在文件 \mbox{\hyperlink{cmsis__armclang_8h_source}{cmsis\+\_\+armclang.\+h}} 第 \mbox{\hyperlink{cmsis__armclang_8h_source_l00058}{58}} 行定义.
+
+\mbox{\Hypertarget{cmsis__armclang_8h_a3e40e4c553fc11588f7a4c2a19e789e0}\label{cmsis__armclang_8h_a3e40e4c553fc11588f7a4c2a19e789e0}} 
+\index{cmsis\_armclang.h@{cmsis\_armclang.h}!\_\_USED@{\_\_USED}}
+\index{\_\_USED@{\_\_USED}!cmsis\_armclang.h@{cmsis\_armclang.h}}
+\doxysubsubsection{\texorpdfstring{\_\_USED}{\_\_USED}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+USED~\mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gae84a2733711339c5eefeb0d899506b96}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}((used))}
+
+
+
+在文件 \mbox{\hyperlink{cmsis__armclang_8h_source}{cmsis\+\_\+armclang.\+h}} 第 \mbox{\hyperlink{cmsis__armclang_8h_source_l00046}{46}} 行定义.
+
+\mbox{\Hypertarget{cmsis__armclang_8h_ac607bf387b29162be6a9b77fc7999539}\label{cmsis__armclang_8h_ac607bf387b29162be6a9b77fc7999539}} 
+\index{cmsis\_armclang.h@{cmsis\_armclang.h}!\_\_WEAK@{\_\_WEAK}}
+\index{\_\_WEAK@{\_\_WEAK}!cmsis\_armclang.h@{cmsis\_armclang.h}}
+\doxysubsubsection{\texorpdfstring{\_\_WEAK}{\_\_WEAK}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+WEAK~\mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gae84a2733711339c5eefeb0d899506b96}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}((weak))}
+
+
+
+在文件 \mbox{\hyperlink{cmsis__armclang_8h_source}{cmsis\+\_\+armclang.\+h}} 第 \mbox{\hyperlink{cmsis__armclang_8h_source_l00049}{49}} 行定义.
+
+
+
+\doxysubsection{函数说明}
+\mbox{\Hypertarget{cmsis__armclang_8h_ade51b179ed6f69a6bacfab38b7b359b1}\label{cmsis__armclang_8h_ade51b179ed6f69a6bacfab38b7b359b1}} 
+\index{cmsis\_armclang.h@{cmsis\_armclang.h}!\_\_attribute\_\_@{\_\_attribute\_\_}}
+\index{\_\_attribute\_\_@{\_\_attribute\_\_}!cmsis\_armclang.h@{cmsis\_armclang.h}}
+\doxysubsubsection{\texorpdfstring{\_\_attribute\_\_()}{\_\_attribute\_\_()}}
+{\footnotesize\ttfamily struct \+\_\+\+\_\+attribute\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{(packed)}]{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{cmsis__armclang_8h_source}{cmsis\+\_\+armclang.\+h}} 第 \mbox{\hyperlink{cmsis__armclang_8h_source_l00001}{1}} 行定义.
+

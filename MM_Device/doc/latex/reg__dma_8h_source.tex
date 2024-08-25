@@ -1,0 +1,283 @@
+\hypertarget{reg__dma_8h_source}{}\doxysection{reg\+\_\+dma.\+h}
+\label{reg__dma_8h_source}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_dma.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_dma.h}}
+\mbox{\hyperlink{reg__dma_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00019}00019 \textcolor{comment}{// Define to prevent recursive inclusion}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00021}00021 \textcolor{preprocessor}{\#ifndef \_\_REG\_DMA\_H}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00022}00022 \textcolor{preprocessor}{\#define \_\_REG\_DMA\_H}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00024}00024 \textcolor{comment}{// Files includes}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00026}00026 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00027}00027 \textcolor{preprocessor}{\#include <stdbool.h>}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00028}00028 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{types_8h}{types.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00033}00033 \textcolor{preprocessor}{\#if defined ( \_\_CC\_ARM )}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00034}00034 \textcolor{preprocessor}{\#pragma anon\_unions}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00035}00035 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00047}\mbox{\hyperlink{reg__dma_8h_ab2d8a917a0e4ea99a22ac6ebf279bc72}{00047}} \textcolor{preprocessor}{\#define DMA1\_BASE                       (AHBPERIPH\_BASE + 0x0000)               }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00048}\mbox{\hyperlink{reg__dma_8h_a888dbc1608243badeb3554ffedc7364c}{00048}} \textcolor{preprocessor}{\#define DMA1\_Channel1\_BASE              (AHBPERIPH\_BASE + 0x0008)               }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00049}\mbox{\hyperlink{reg__dma_8h_a38a70090eef3687e83fa6ac0c6d22267}{00049}} \textcolor{preprocessor}{\#define DMA1\_Channel2\_BASE              (AHBPERIPH\_BASE + 0x001C)               }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00050}\mbox{\hyperlink{reg__dma_8h_a70b3d9f36ca9ce95b4e421c11154fe5d}{00050}} \textcolor{preprocessor}{\#define DMA1\_Channel3\_BASE              (AHBPERIPH\_BASE + 0x0030)               }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00051}\mbox{\hyperlink{reg__dma_8h_a1adc93cd0baf0897202c71110e045692}{00051}} \textcolor{preprocessor}{\#define DMA1\_Channel4\_BASE              (AHBPERIPH\_BASE + 0x0044)               }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00052}\mbox{\hyperlink{reg__dma_8h_ac041a71cd6c1973964f847a68aa14478}{00052}} \textcolor{preprocessor}{\#define DMA1\_Channel5\_BASE              (AHBPERIPH\_BASE + 0x0058)               }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00054}\mbox{\hyperlink{reg__dma_8h_a896c2c7585dd8bc3969cf8561f689d2d}{00054}} \textcolor{preprocessor}{\#define DMA1\_Channel6\_BASE              (AHBPERIPH\_BASE + 0x006C)               }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00055}\mbox{\hyperlink{reg__dma_8h_aeee0d1f77d0db1db533016a09351166c}{00055}} \textcolor{preprocessor}{\#define DMA1\_Channel7\_BASE              (AHBPERIPH\_BASE + 0x0080)               }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00056}\mbox{\hyperlink{reg__dma_8h_ab72a9ae145053ee13d1d491fb5c1df64}{00056}} \textcolor{preprocessor}{\#define DMA2\_BASE                       (AHBPERIPH\_BASE + 0x0400)               }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00057}\mbox{\hyperlink{reg__dma_8h_ad3bd6c4201d12f5d474518c1b02f8e3b}{00057}} \textcolor{preprocessor}{\#define DMA2\_Channel1\_BASE              (AHBPERIPH\_BASE + 0x0408)               }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00058}\mbox{\hyperlink{reg__dma_8h_a22f39f23c879c699b88e04a629f69d1c}{00058}} \textcolor{preprocessor}{\#define DMA2\_Channel2\_BASE              (AHBPERIPH\_BASE + 0x041C)               }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00059}\mbox{\hyperlink{reg__dma_8h_a6f2369b8bc155fb55a28891987605c2c}{00059}} \textcolor{preprocessor}{\#define DMA2\_Channel3\_BASE              (AHBPERIPH\_BASE + 0x0430)               }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00060}\mbox{\hyperlink{reg__dma_8h_a01b063266473f290a55047654fbbfbee}{00060}} \textcolor{preprocessor}{\#define DMA2\_Channel4\_BASE              (AHBPERIPH\_BASE + 0x0444)               }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00061}\mbox{\hyperlink{reg__dma_8h_a1eea983a5d68bf36f4d19fbb07955ca1}{00061}} \textcolor{preprocessor}{\#define DMA2\_Channel5\_BASE              (AHBPERIPH\_BASE + 0x0458)               }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00066}\mbox{\hyperlink{struct_d_m_a___channel___type_def}{00066}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00067}\mbox{\hyperlink{struct_d_m_a___channel___type_def_a076feff4f22f33a2f0c7b4632effcd4e}{00067}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_m_a___channel___type_def_a076feff4f22f33a2f0c7b4632effcd4e}{CCR}};                                                               }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00068}\mbox{\hyperlink{struct_d_m_a___channel___type_def_af20aafba719cfc7cc9d0151573120cd4}{00068}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_m_a___channel___type_def_af20aafba719cfc7cc9d0151573120cd4}{CNDTR}};                                                             }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00069}\mbox{\hyperlink{struct_d_m_a___channel___type_def_ab1b70c782004460fc21753797f6d268d}{00069}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_m_a___channel___type_def_ab1b70c782004460fc21753797f6d268d}{CPAR}};                                                              }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00070}\mbox{\hyperlink{struct_d_m_a___channel___type_def_a0a4ed4114b0a47bc91fd842a66fc8685}{00070}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_m_a___channel___type_def_a0a4ed4114b0a47bc91fd842a66fc8685}{CMAR}};                                                              }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00071}00071 \} \mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\_Channel\_TypeDef}};}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00073}\mbox{\hyperlink{struct_d_m_a___type_def}{00073}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00074}\mbox{\hyperlink{struct_d_m_a___type_def_a72e929a341c19db677baa95f677895cd}{00074}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_m_a___type_def_a72e929a341c19db677baa95f677895cd}{ISR}};                                                               }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00075}\mbox{\hyperlink{struct_d_m_a___type_def_aeb329f248d5c9fd2fe3640dd9f0ae142}{00075}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_m_a___type_def_aeb329f248d5c9fd2fe3640dd9f0ae142}{IFCR}};                                                              }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00076}\mbox{\hyperlink{struct_d_m_a___type_def_a9c6fbcec10b9af90232a37cf8b2d29fc}{00076}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_m_a___type_def_a9c6fbcec10b9af90232a37cf8b2d29fc}{CCRx}};                                                              }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00077}\mbox{\hyperlink{struct_d_m_a___type_def_a226662260fb8b9a534392f946cd4d78f}{00077}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_m_a___type_def_a226662260fb8b9a534392f946cd4d78f}{CNDTRx}};                                                            }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00078}\mbox{\hyperlink{struct_d_m_a___type_def_a2d6d568d658de394feab9240c7a2bb26}{00078}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_m_a___type_def_a2d6d568d658de394feab9240c7a2bb26}{CPARx}};                                                             }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00079}\mbox{\hyperlink{struct_d_m_a___type_def_ada55094ca494114db8c49d330efef038}{00079}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_m_a___type_def_ada55094ca494114db8c49d330efef038}{CMARx}};                                                             }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00080}00080 \} \mbox{\hyperlink{struct_d_m_a___type_def}{DMA\_TypeDef}};}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00087}\mbox{\hyperlink{reg__dma_8h_acc16d2a5937f7585320a98f7f6b578f9}{00087}} \textcolor{preprocessor}{\#define DMA1                            ((DMA\_TypeDef*) DMA1\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00088}\mbox{\hyperlink{reg__dma_8h_a15bf87ecd3d2d13b1fdd937523d91062}{00088}} \textcolor{preprocessor}{\#define DMA1\_ch1                        ((DMA\_Channel\_TypeDef*) DMA1\_Channel1\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00089}\mbox{\hyperlink{reg__dma_8h_a080049aca6fb32245ff8def5505df1b6}{00089}} \textcolor{preprocessor}{\#define DMA1\_ch2                        ((DMA\_Channel\_TypeDef*) DMA1\_Channel2\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00090}\mbox{\hyperlink{reg__dma_8h_a5efe535fa81d529624077c6f4897ffbc}{00090}} \textcolor{preprocessor}{\#define DMA1\_ch3                        ((DMA\_Channel\_TypeDef*) DMA1\_Channel3\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00091}\mbox{\hyperlink{reg__dma_8h_a5448f905fc9ab94c5aa46bf9d6d0a12c}{00091}} \textcolor{preprocessor}{\#define DMA1\_ch4                        ((DMA\_Channel\_TypeDef*) DMA1\_Channel4\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00092}\mbox{\hyperlink{reg__dma_8h_a1a1ece853cf8562e7c37690ed117ef50}{00092}} \textcolor{preprocessor}{\#define DMA1\_ch5                        ((DMA\_Channel\_TypeDef*) DMA1\_Channel5\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00093}00093 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00094}\mbox{\hyperlink{reg__dma_8h_ac83c5be824be1c02716e2522e80ddf7a}{00094}} \textcolor{preprocessor}{\#define DMA1\_Channel1                   ((DMA\_Channel\_TypeDef*) DMA1\_Channel1\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00095}\mbox{\hyperlink{reg__dma_8h_a23d7631dd10c645e06971b2543ba2949}{00095}} \textcolor{preprocessor}{\#define DMA1\_Channel2                   ((DMA\_Channel\_TypeDef*) DMA1\_Channel2\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00096}\mbox{\hyperlink{reg__dma_8h_acf7b6093a37b306d7f1f50b2f200f0d0}{00096}} \textcolor{preprocessor}{\#define DMA1\_Channel3                   ((DMA\_Channel\_TypeDef*) DMA1\_Channel3\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00097}\mbox{\hyperlink{reg__dma_8h_ad2c42743316bf64da557130061b1f56a}{00097}} \textcolor{preprocessor}{\#define DMA1\_Channel4                   ((DMA\_Channel\_TypeDef*) DMA1\_Channel4\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00098}\mbox{\hyperlink{reg__dma_8h_a06ff98ddef3c962795d2e2444004abff}{00098}} \textcolor{preprocessor}{\#define DMA1\_Channel5                   ((DMA\_Channel\_TypeDef*) DMA1\_Channel5\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00101}\mbox{\hyperlink{reg__dma_8h_abbf3c70538f48712fe05ccbb959cc548}{00101}} \textcolor{preprocessor}{\#define DMA1\_ch6                        ((DMA\_Channel\_TypeDef*) DMA1\_Channel6\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00102}\mbox{\hyperlink{reg__dma_8h_a66e8343ef1dbaaa8fb4c2396e54b79ea}{00102}} \textcolor{preprocessor}{\#define DMA1\_ch7                        ((DMA\_Channel\_TypeDef*) DMA1\_Channel7\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00103}00103 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00104}\mbox{\hyperlink{reg__dma_8h_ac013c4376e4797831b5ddd2a09519df8}{00104}} \textcolor{preprocessor}{\#define DMA1\_Channel6                   ((DMA\_Channel\_TypeDef*) DMA1\_Channel6\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00105}\mbox{\hyperlink{reg__dma_8h_a4f9c23b3d1add93ed206b5c9afa5cda3}{00105}} \textcolor{preprocessor}{\#define DMA1\_Channel7                   ((DMA\_Channel\_TypeDef*) DMA1\_Channel7\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00106}00106 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00107}\mbox{\hyperlink{reg__dma_8h_a506520140eec1708bc7570c49bdf972d}{00107}} \textcolor{preprocessor}{\#define DMA2                            ((DMA\_TypeDef*) DMA2\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00108}\mbox{\hyperlink{reg__dma_8h_a7457f5f395681e33e594d6909f64cd4d}{00108}} \textcolor{preprocessor}{\#define DMA2\_ch1                        ((DMA\_Channel\_TypeDef*) DMA2\_Channel1\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00109}\mbox{\hyperlink{reg__dma_8h_aa5f9845a402cdfe524f13c559b027c29}{00109}} \textcolor{preprocessor}{\#define DMA2\_ch2                        ((DMA\_Channel\_TypeDef*) DMA2\_Channel2\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00110}\mbox{\hyperlink{reg__dma_8h_add6bc19cbd80a0431e52edfb0d072291}{00110}} \textcolor{preprocessor}{\#define DMA2\_ch3                        ((DMA\_Channel\_TypeDef*) DMA2\_Channel3\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00111}\mbox{\hyperlink{reg__dma_8h_a83d21c03d7a6fdc92f4dcdd80bc2ef17}{00111}} \textcolor{preprocessor}{\#define DMA2\_ch4                        ((DMA\_Channel\_TypeDef*) DMA2\_Channel4\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00112}\mbox{\hyperlink{reg__dma_8h_a80c38f0eee0b0fdb84914f161ebfb37c}{00112}} \textcolor{preprocessor}{\#define DMA2\_ch5                        ((DMA\_Channel\_TypeDef*) DMA2\_Channel5\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00113}\mbox{\hyperlink{reg__dma_8h_ad86c75e1ff89e03e15570f47962865c8}{00113}} \textcolor{preprocessor}{\#define DMA2\_Channel1                   ((DMA\_Channel\_TypeDef*) DMA2\_Channel1\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00114}\mbox{\hyperlink{reg__dma_8h_a316024020799373b9d8e35c316c74f24}{00114}} \textcolor{preprocessor}{\#define DMA2\_Channel2                   ((DMA\_Channel\_TypeDef*) DMA2\_Channel2\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00115}\mbox{\hyperlink{reg__dma_8h_a6dca52a79587e0ca9a5d669048b4c7eb}{00115}} \textcolor{preprocessor}{\#define DMA2\_Channel3                   ((DMA\_Channel\_TypeDef*) DMA2\_Channel3\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00116}\mbox{\hyperlink{reg__dma_8h_a612b396657695191ad740b0b59bc9f12}{00116}} \textcolor{preprocessor}{\#define DMA2\_Channel4                   ((DMA\_Channel\_TypeDef*) DMA2\_Channel4\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00117}\mbox{\hyperlink{reg__dma_8h_a521c13b7d0f82a6897d47995da392750}{00117}} \textcolor{preprocessor}{\#define DMA2\_Channel5                   ((DMA\_Channel\_TypeDef*) DMA2\_Channel5\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00118}00118 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00119}00119 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00123}\mbox{\hyperlink{reg__dma_8h_a087ec211a08c8241dad366d1785cda52}{00123}} \textcolor{preprocessor}{\#define DMA\_ISR\_GIF1\_Pos                (0)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00124}\mbox{\hyperlink{reg__dma_8h_a3475228c998897d0f408a4c5da066186}{00124}} \textcolor{preprocessor}{\#define DMA\_ISR\_GIF1                    (0x01U << DMA\_ISR\_GIF1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00125}\mbox{\hyperlink{reg__dma_8h_ac085bfd33abd74b8fea8fdb2c0d50281}{00125}} \textcolor{preprocessor}{\#define DMA\_ISR\_TCIF1\_Pos               (1)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00126}\mbox{\hyperlink{reg__dma_8h_a1a1522414af27c7fff2cc27edac1d680}{00126}} \textcolor{preprocessor}{\#define DMA\_ISR\_TCIF1                   (0x01U << DMA\_ISR\_TCIF1\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00127}\mbox{\hyperlink{reg__dma_8h_adca211fa8d7b7129ebee6385bfe3c74b}{00127}} \textcolor{preprocessor}{\#define DMA\_ISR\_HTIF1\_Pos               (2)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00128}\mbox{\hyperlink{reg__dma_8h_a5f83359698adf05854b55705f78d8a5c}{00128}} \textcolor{preprocessor}{\#define DMA\_ISR\_HTIF1                   (0x01U << DMA\_ISR\_HTIF1\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00129}\mbox{\hyperlink{reg__dma_8h_a0b01017e80e2ef95bf33e48cd5f1c464}{00129}} \textcolor{preprocessor}{\#define DMA\_ISR\_TEIF1\_Pos               (3)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00130}\mbox{\hyperlink{reg__dma_8h_a26bfd55e965445ae253a5c5fa8f1769a}{00130}} \textcolor{preprocessor}{\#define DMA\_ISR\_TEIF1                   (0x01U << DMA\_ISR\_TEIF1\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00131}\mbox{\hyperlink{reg__dma_8h_a0012c596aa1189cfe65548fe251335ed}{00131}} \textcolor{preprocessor}{\#define DMA\_ISR\_GIF2\_Pos                (4)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00132}\mbox{\hyperlink{reg__dma_8h_a44fa823dbb15b829621961efc60d6a95}{00132}} \textcolor{preprocessor}{\#define DMA\_ISR\_GIF2                    (0x01U << DMA\_ISR\_GIF2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00133}\mbox{\hyperlink{reg__dma_8h_ab069ba1399d2868037f766a08dbe1e4a}{00133}} \textcolor{preprocessor}{\#define DMA\_ISR\_TCIF2\_Pos               (5)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00134}\mbox{\hyperlink{reg__dma_8h_a631741eb4843eda3578808a3d8b527b2}{00134}} \textcolor{preprocessor}{\#define DMA\_ISR\_TCIF2                   (0x01U << DMA\_ISR\_TCIF2\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00135}\mbox{\hyperlink{reg__dma_8h_ad85456b2273dd7dfbb08fe92ac61b1e4}{00135}} \textcolor{preprocessor}{\#define DMA\_ISR\_HTIF2\_Pos               (6)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00136}\mbox{\hyperlink{reg__dma_8h_a8ee1947aef188f437f37d3ff444f8646}{00136}} \textcolor{preprocessor}{\#define DMA\_ISR\_HTIF2                   (0x01U << DMA\_ISR\_HTIF2\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00137}\mbox{\hyperlink{reg__dma_8h_a0cdbf8d2aa171d79890a087f1c43dbd6}{00137}} \textcolor{preprocessor}{\#define DMA\_ISR\_TEIF2\_Pos               (7)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00138}\mbox{\hyperlink{reg__dma_8h_a5bcd07efcadd5fef598edec1cca70e38}{00138}} \textcolor{preprocessor}{\#define DMA\_ISR\_TEIF2                   (0x01U << DMA\_ISR\_TEIF2\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00139}\mbox{\hyperlink{reg__dma_8h_a54fef9be564548137ad7c2445b20c335}{00139}} \textcolor{preprocessor}{\#define DMA\_ISR\_GIF3\_Pos                (8)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00140}\mbox{\hyperlink{reg__dma_8h_acb0bd8fb0e580688c5cf617b618bbc17}{00140}} \textcolor{preprocessor}{\#define DMA\_ISR\_GIF3                    (0x01U << DMA\_ISR\_GIF3\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00141}\mbox{\hyperlink{reg__dma_8h_af1479bcdda36f67b6337b034b920fc6d}{00141}} \textcolor{preprocessor}{\#define DMA\_ISR\_TCIF3\_Pos               (9)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00142}\mbox{\hyperlink{reg__dma_8h_a28664595df654d9d8052fb6f9cc48495}{00142}} \textcolor{preprocessor}{\#define DMA\_ISR\_TCIF3                   (0x01U << DMA\_ISR\_TCIF3\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00143}\mbox{\hyperlink{reg__dma_8h_a126264bff9e43ab1e8f833762fe83c1d}{00143}} \textcolor{preprocessor}{\#define DMA\_ISR\_HTIF3\_Pos               (10)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00144}\mbox{\hyperlink{reg__dma_8h_a53bb9a00737c52faffaaa91ff08b34a1}{00144}} \textcolor{preprocessor}{\#define DMA\_ISR\_HTIF3                   (0x01U << DMA\_ISR\_HTIF3\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00145}\mbox{\hyperlink{reg__dma_8h_a248a455a5f3c5fee0cc45ab365d7b516}{00145}} \textcolor{preprocessor}{\#define DMA\_ISR\_TEIF3\_Pos               (11)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00146}\mbox{\hyperlink{reg__dma_8h_aa624379143a2535d7a60d87d59834d10}{00146}} \textcolor{preprocessor}{\#define DMA\_ISR\_TEIF3                   (0x01U << DMA\_ISR\_TEIF3\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00147}\mbox{\hyperlink{reg__dma_8h_a3a333a9204a12b733075b76fe405e073}{00147}} \textcolor{preprocessor}{\#define DMA\_ISR\_GIF4\_Pos                (12)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00148}\mbox{\hyperlink{reg__dma_8h_af4f69823d44810c353af1f0a89eaf180}{00148}} \textcolor{preprocessor}{\#define DMA\_ISR\_GIF4                    (0x01U << DMA\_ISR\_GIF4\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00149}\mbox{\hyperlink{reg__dma_8h_a29c55dfd31b2060f1fb68338588a859e}{00149}} \textcolor{preprocessor}{\#define DMA\_ISR\_TCIF4\_Pos               (13)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00150}\mbox{\hyperlink{reg__dma_8h_ad7d4e46949a35cf037a303bd65a0c87a}{00150}} \textcolor{preprocessor}{\#define DMA\_ISR\_TCIF4                   (0x01U << DMA\_ISR\_TCIF4\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00151}\mbox{\hyperlink{reg__dma_8h_a2fa14ca3e688cfacb5f01b8e236b2dc8}{00151}} \textcolor{preprocessor}{\#define DMA\_ISR\_HTIF4\_Pos               (14)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00152}\mbox{\hyperlink{reg__dma_8h_a684cf326c770f1ab21c604a5f62907ad}{00152}} \textcolor{preprocessor}{\#define DMA\_ISR\_HTIF4                   (0x01U << DMA\_ISR\_HTIF4\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00153}\mbox{\hyperlink{reg__dma_8h_a4d5a506abd056cdecd143aa6b453a3c0}{00153}} \textcolor{preprocessor}{\#define DMA\_ISR\_TEIF4\_Pos               (15)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00154}\mbox{\hyperlink{reg__dma_8h_a12fcc1471918f3e7b293b2d825177253}{00154}} \textcolor{preprocessor}{\#define DMA\_ISR\_TEIF4                   (0x01U << DMA\_ISR\_TEIF4\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00155}\mbox{\hyperlink{reg__dma_8h_aaf2a17e91ebc38899d49756cb90bf4ad}{00155}} \textcolor{preprocessor}{\#define DMA\_ISR\_GIF5\_Pos                (16)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00156}\mbox{\hyperlink{reg__dma_8h_a83d4d9cba635d1e33e3477b773379cfd}{00156}} \textcolor{preprocessor}{\#define DMA\_ISR\_GIF5                    (0x01U << DMA\_ISR\_GIF5\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00157}\mbox{\hyperlink{reg__dma_8h_aa3df7a4b5b5522c858efb983e147e521}{00157}} \textcolor{preprocessor}{\#define DMA\_ISR\_TCIF5\_Pos               (17)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00158}\mbox{\hyperlink{reg__dma_8h_a5ea57d09f13edbd6ad8afe9465e0fa70}{00158}} \textcolor{preprocessor}{\#define DMA\_ISR\_TCIF5                   (0x01U << DMA\_ISR\_TCIF5\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00159}\mbox{\hyperlink{reg__dma_8h_a9052b436400d7e915f8f5bfff90f90e1}{00159}} \textcolor{preprocessor}{\#define DMA\_ISR\_HTIF5\_Pos               (18)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00160}\mbox{\hyperlink{reg__dma_8h_a3d1f2b8c82b1e20b4311af8ca9576736}{00160}} \textcolor{preprocessor}{\#define DMA\_ISR\_HTIF5                   (0x01U << DMA\_ISR\_HTIF5\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00161}\mbox{\hyperlink{reg__dma_8h_a6c21cfd99b9042aae0c09646f194400d}{00161}} \textcolor{preprocessor}{\#define DMA\_ISR\_TEIF5\_Pos               (19)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00162}\mbox{\hyperlink{reg__dma_8h_a42f9b12c4c80cbb7cd0f94f139c73de3}{00162}} \textcolor{preprocessor}{\#define DMA\_ISR\_TEIF5                   (0x01U << DMA\_ISR\_TEIF5\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00163}00163 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00164}\mbox{\hyperlink{reg__dma_8h_adf4eabd1be5d69031f89e738b5c74b67}{00164}} \textcolor{preprocessor}{\#define DMA\_ISR\_GIF6\_Pos                (20)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00165}\mbox{\hyperlink{reg__dma_8h_ac55f4836aa8e6cfc9bdcadfabf65b5d8}{00165}} \textcolor{preprocessor}{\#define DMA\_ISR\_GIF6                    (0x01U << DMA\_ISR\_GIF6\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00166}\mbox{\hyperlink{reg__dma_8h_a51a0e94ffea3d92ae1dc0eb5747cecc1}{00166}} \textcolor{preprocessor}{\#define DMA\_ISR\_TCIF6\_Pos               (21)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00167}\mbox{\hyperlink{reg__dma_8h_a2d76395cf6c6ef50e05c96d7ae723058}{00167}} \textcolor{preprocessor}{\#define DMA\_ISR\_TCIF6                   (0x01U << DMA\_ISR\_TCIF6\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00168}\mbox{\hyperlink{reg__dma_8h_ae04cbdca367113e9af5ded68c90e8523}{00168}} \textcolor{preprocessor}{\#define DMA\_ISR\_HTIF6\_Pos               (22)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00169}\mbox{\hyperlink{reg__dma_8h_a41b6d9787aeff76a51581d9488b4604f}{00169}} \textcolor{preprocessor}{\#define DMA\_ISR\_HTIF6                   (0x01U << DMA\_ISR\_HTIF6\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00170}\mbox{\hyperlink{reg__dma_8h_a963d5205894b028565a3845600f4ffd6}{00170}} \textcolor{preprocessor}{\#define DMA\_ISR\_TEIF6\_Pos               (23)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00171}\mbox{\hyperlink{reg__dma_8h_ae47d914969922381708ae06c1c71123a}{00171}} \textcolor{preprocessor}{\#define DMA\_ISR\_TEIF6                   (0x01U << DMA\_ISR\_TEIF6\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00172}\mbox{\hyperlink{reg__dma_8h_a6e8c37f4c5e50c523965acdd6fb68407}{00172}} \textcolor{preprocessor}{\#define DMA\_ISR\_GIF7\_Pos                (24)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00173}\mbox{\hyperlink{reg__dma_8h_a86f178e879b2d8ceeea351e4750272dd}{00173}} \textcolor{preprocessor}{\#define DMA\_ISR\_GIF7                    (0x01U << DMA\_ISR\_GIF7\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00174}\mbox{\hyperlink{reg__dma_8h_af045c89aa989b77cd4a81d5995a35350}{00174}} \textcolor{preprocessor}{\#define DMA\_ISR\_TCIF7\_Pos               (25)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00175}\mbox{\hyperlink{reg__dma_8h_a4528af54928542c09502c01827418732}{00175}} \textcolor{preprocessor}{\#define DMA\_ISR\_TCIF7                   (0x01U << DMA\_ISR\_TCIF7\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00176}\mbox{\hyperlink{reg__dma_8h_a797a964a31272c1fcab6b10f248f01b2}{00176}} \textcolor{preprocessor}{\#define DMA\_ISR\_HTIF7\_Pos               (26)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00177}\mbox{\hyperlink{reg__dma_8h_a769016c2b0bf22ff3ad6967b3dc0e2bb}{00177}} \textcolor{preprocessor}{\#define DMA\_ISR\_HTIF7                   (0x01U << DMA\_ISR\_HTIF7\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00178}\mbox{\hyperlink{reg__dma_8h_a206b3332efbd7d8fdd094e791de94812}{00178}} \textcolor{preprocessor}{\#define DMA\_ISR\_TEIF7\_Pos               (27)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00179}\mbox{\hyperlink{reg__dma_8h_af8333b3c78b7d0a07bd4b1e91e902b31}{00179}} \textcolor{preprocessor}{\#define DMA\_ISR\_TEIF7                   (0x01U << DMA\_ISR\_TEIF7\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00180}00180 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00184}\mbox{\hyperlink{reg__dma_8h_a384a232196033f388924f3f598f63777}{00184}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CGIF1\_Pos              (0)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00185}\mbox{\hyperlink{reg__dma_8h_a75ad797334d9fb70750ace14b16e0122}{00185}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CGIF1                  (0x01U << DMA\_IFCR\_CGIF1\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00186}\mbox{\hyperlink{reg__dma_8h_a4602952d83692098965c92eb075ba8f2}{00186}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTCIF1\_Pos             (1)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00187}\mbox{\hyperlink{reg__dma_8h_a60085fa798cf77f80365839e7d88c8f1}{00187}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTCIF1                 (0x01U << DMA\_IFCR\_CTCIF1\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00188}\mbox{\hyperlink{reg__dma_8h_a429ea8f924228f3c9c769a1dd10fccd2}{00188}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CHTIF1\_Pos             (2)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00189}\mbox{\hyperlink{reg__dma_8h_a66e9aa2475130fbf63db304ceea019eb}{00189}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CHTIF1                 (0x01U << DMA\_IFCR\_CHTIF1\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00190}\mbox{\hyperlink{reg__dma_8h_ae398bd469325b42df8d631c2c7648c03}{00190}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTEIF1\_Pos             (3)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00191}\mbox{\hyperlink{reg__dma_8h_a989699cace2fa87efa867b825c1deb29}{00191}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTEIF1                 (0x01U << DMA\_IFCR\_CTEIF1\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00192}\mbox{\hyperlink{reg__dma_8h_a1a87eeb6e68e40c01607eb3055b2c802}{00192}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CGIF2\_Pos              (4)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00193}\mbox{\hyperlink{reg__dma_8h_ab907e446bbf1e1400dc5fdbd929d0e5f}{00193}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CGIF2                  (0x01U << DMA\_IFCR\_CGIF2\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00194}\mbox{\hyperlink{reg__dma_8h_acfd856f903bc2bb83b5e33bdcfbb72a8}{00194}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTCIF2\_Pos             (5)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00195}\mbox{\hyperlink{reg__dma_8h_a8505b947a04834750e164dc320dfae09}{00195}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTCIF2                 (0x01U << DMA\_IFCR\_CTCIF2\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00196}\mbox{\hyperlink{reg__dma_8h_a5ae42f9ec920fc45409fca256fc1c094}{00196}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CHTIF2\_Pos             (6)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00197}\mbox{\hyperlink{reg__dma_8h_a3e769c78024a22b4d1f528ce03ccc760}{00197}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CHTIF2                 (0x01U << DMA\_IFCR\_CHTIF2\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00198}\mbox{\hyperlink{reg__dma_8h_a2c81071e0ad5e28ca23e87a3bef63f78}{00198}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTEIF2\_Pos             (7)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00199}\mbox{\hyperlink{reg__dma_8h_a4abb0afb7dbe362c150bf80c4c751a67}{00199}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTEIF2                 (0x01U << DMA\_IFCR\_CTEIF2\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00200}\mbox{\hyperlink{reg__dma_8h_ae8abc8c7851622f66870e25e698befa2}{00200}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CGIF3\_Pos              (8)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00201}\mbox{\hyperlink{reg__dma_8h_a0d98e88c334091e20e931372646a6b0d}{00201}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CGIF3                  (0x01U << DMA\_IFCR\_CGIF3\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00202}\mbox{\hyperlink{reg__dma_8h_afa340e56f4bfd8bf669b3cb636940a21}{00202}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTCIF3\_Pos             (9)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00203}\mbox{\hyperlink{reg__dma_8h_accb4c0c5e0f2e01dec12ba366b83cb4d}{00203}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTCIF3                 (0x01U << DMA\_IFCR\_CTCIF3\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00204}\mbox{\hyperlink{reg__dma_8h_aa9188b1e168f052779be66773b2132d6}{00204}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CHTIF3\_Pos             (10)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00205}\mbox{\hyperlink{reg__dma_8h_a2dea86ca2ec8aa945b840f2c1866e1f6}{00205}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CHTIF3                 (0x01U << DMA\_IFCR\_CHTIF3\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00206}\mbox{\hyperlink{reg__dma_8h_a57eb58cc21d13c4e954049cffe43853a}{00206}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTEIF3\_Pos             (11)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00207}\mbox{\hyperlink{reg__dma_8h_a59bad79f1ae37b69b048834808e8d067}{00207}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTEIF3                 (0x01U << DMA\_IFCR\_CTEIF3\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00208}\mbox{\hyperlink{reg__dma_8h_aad4c91830b4d46fcd53d414a91735273}{00208}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CGIF4\_Pos              (12)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00209}\mbox{\hyperlink{reg__dma_8h_a73d22139e4567c89e2afcb4aef71104c}{00209}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CGIF4                  (0x01U << DMA\_IFCR\_CGIF4\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00210}\mbox{\hyperlink{reg__dma_8h_a44f092ea2c52ba0b5137c06702776f95}{00210}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTCIF4\_Pos             (13)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00211}\mbox{\hyperlink{reg__dma_8h_a34b431fd4e034f8333e44594712f75eb}{00211}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTCIF4                 (0x01U << DMA\_IFCR\_CTCIF4\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00212}\mbox{\hyperlink{reg__dma_8h_a8a8373c904a0574577398d22fe2d1872}{00212}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CHTIF4\_Pos             (14)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00213}\mbox{\hyperlink{reg__dma_8h_a950664b81ec2d4d843f89ef102107d7b}{00213}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CHTIF4                 (0x01U << DMA\_IFCR\_CHTIF4\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00214}\mbox{\hyperlink{reg__dma_8h_a30cfe132853ae9bea3b745104f6c6bf7}{00214}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTEIF4\_Pos             (15)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00215}\mbox{\hyperlink{reg__dma_8h_a6fdda8f7f2507c1d3988c7310a35d46c}{00215}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTEIF4                 (0x01U << DMA\_IFCR\_CTEIF4\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00216}\mbox{\hyperlink{reg__dma_8h_a3885a548a01240f4b093215c9940ef70}{00216}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CGIF5\_Pos              (16)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00217}\mbox{\hyperlink{reg__dma_8h_a943245d2a8300854d53fd07bb957a6fc}{00217}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CGIF5                  (0x01U << DMA\_IFCR\_CGIF5\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00218}\mbox{\hyperlink{reg__dma_8h_acccd6618430fcc0515973f1335ea1cd7}{00218}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTCIF5\_Pos             (17)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00219}\mbox{\hyperlink{reg__dma_8h_aae4c7d1d10beb535aec39de9a8bdc327}{00219}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTCIF5                 (0x01U << DMA\_IFCR\_CTCIF5\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00220}\mbox{\hyperlink{reg__dma_8h_ac4ff720ba13ea5f68b85d13cf881798a}{00220}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CHTIF5\_Pos             (18)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00221}\mbox{\hyperlink{reg__dma_8h_a3c23c727a4dbbc45a356c8418299275d}{00221}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CHTIF5                 (0x01U << DMA\_IFCR\_CHTIF5\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00222}\mbox{\hyperlink{reg__dma_8h_a9f212a62195d09ebbdfcdf2811a3798a}{00222}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTEIF5\_Pos             (19)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00223}\mbox{\hyperlink{reg__dma_8h_a6ec6326d337a773b4ced9d8a680c05a9}{00223}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTEIF5                 (0x01U << DMA\_IFCR\_CTEIF5\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00224}00224 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00225}\mbox{\hyperlink{reg__dma_8h_a65947a2b4d94e4d611a087a9a9d26069}{00225}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CGIF6\_Pos              (20)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00226}\mbox{\hyperlink{reg__dma_8h_a7fc61098c5cf9a7d53ddcb155e34c984}{00226}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CGIF6                  (0x01U << DMA\_IFCR\_CGIF6\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00227}\mbox{\hyperlink{reg__dma_8h_a94e93900522ede13863a0419ebedc67e}{00227}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTCIF6\_Pos             (21)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00228}\mbox{\hyperlink{reg__dma_8h_ac3dca486df2f235aac8f3975f5f4ab75}{00228}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTCIF6                 (0x01U << DMA\_IFCR\_CTCIF6\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00229}\mbox{\hyperlink{reg__dma_8h_a93f0d87ce3ac10330dc041aba3a26476}{00229}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CHTIF6\_Pos             (22)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00230}\mbox{\hyperlink{reg__dma_8h_ae67273db02ffd8f2bfe0a5c93e9282a4}{00230}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CHTIF6                 (0x01U << DMA\_IFCR\_CHTIF6\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00231}\mbox{\hyperlink{reg__dma_8h_a55707c4ab09e3bb7905a7ccd9e15cb02}{00231}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTEIF6\_Pos             (23)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00232}\mbox{\hyperlink{reg__dma_8h_a1e523c5cbf5594ffe8540c317bce6933}{00232}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTEIF6                 (0x01U << DMA\_IFCR\_CTEIF6\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00233}\mbox{\hyperlink{reg__dma_8h_a191c8a88496206410e22515c1dc8f726}{00233}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CGIF7\_Pos              (24)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00234}\mbox{\hyperlink{reg__dma_8h_aad9f01dfeb289156448f5a5a0ad54099}{00234}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CGIF7                  (0x01U << DMA\_IFCR\_CGIF7\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00235}\mbox{\hyperlink{reg__dma_8h_a00709a6aa2ad9e2a2bd93ecaea62a47b}{00235}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTCIF7\_Pos             (25)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00236}\mbox{\hyperlink{reg__dma_8h_ac26181e8c2bd1fddc1e774cb7b621e5b}{00236}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTCIF7                 (0x01U << DMA\_IFCR\_CTCIF7\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00237}\mbox{\hyperlink{reg__dma_8h_a03149a3b9b879b9f8ad6ba03021df818}{00237}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CHTIF7\_Pos             (26)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00238}\mbox{\hyperlink{reg__dma_8h_aa7378f7a26730bfd5c950b7c7efb9272}{00238}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CHTIF7                 (0x01U << DMA\_IFCR\_CHTIF7\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00239}\mbox{\hyperlink{reg__dma_8h_a61cdda5706c58ca9294f1457576c3d87}{00239}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTEIF7\_Pos             (27)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00240}\mbox{\hyperlink{reg__dma_8h_a4076bf1ed67fb39d4a0175e5943d5f2d}{00240}} \textcolor{preprocessor}{\#define DMA\_IFCR\_CTEIF7                 (0x01U << DMA\_IFCR\_CTEIF7\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00241}00241 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00245}\mbox{\hyperlink{reg__dma_8h_a7f4112f52d39f2b8046af889c49c504c}{00245}} \textcolor{preprocessor}{\#define DMA\_CCR\_EN\_Pos                  (0)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00246}\mbox{\hyperlink{reg__dma_8h_ababa3817d21a78079be76bc26b2c10f2}{00246}} \textcolor{preprocessor}{\#define DMA\_CCR\_EN                      (0x01U << DMA\_CCR\_EN\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00247}\mbox{\hyperlink{reg__dma_8h_abe3b07726862ce6f3a0007de1553330a}{00247}} \textcolor{preprocessor}{\#define DMA\_CCR\_TCIE\_Pos                (1)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00248}\mbox{\hyperlink{reg__dma_8h_aaba9cd82cab0cca23de038e946f81c6a}{00248}} \textcolor{preprocessor}{\#define DMA\_CCR\_TCIE                    (0x01U << DMA\_CCR\_TCIE\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00249}\mbox{\hyperlink{reg__dma_8h_a5675e39ff8c23a18657c52281efc4c7e}{00249}} \textcolor{preprocessor}{\#define DMA\_CCR\_HTIE\_Pos                (2)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00250}\mbox{\hyperlink{reg__dma_8h_a0f0fae31377ab1d33e36cead97b1811b}{00250}} \textcolor{preprocessor}{\#define DMA\_CCR\_HTIE                    (0x01U << DMA\_CCR\_HTIE\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00251}\mbox{\hyperlink{reg__dma_8h_ab2744612a297431a80718a67c7c79f19}{00251}} \textcolor{preprocessor}{\#define DMA\_CCR\_TEIE\_Pos                (3)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00252}\mbox{\hyperlink{reg__dma_8h_a3dd2204c9046500140e3c720fb5a415f}{00252}} \textcolor{preprocessor}{\#define DMA\_CCR\_TEIE                    (0x01U << DMA\_CCR\_TEIE\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00253}\mbox{\hyperlink{reg__dma_8h_a9fcc441150b42892a6ae5a4ae784d85e}{00253}} \textcolor{preprocessor}{\#define DMA\_CCR\_DIR\_Pos                 (4)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00254}\mbox{\hyperlink{reg__dma_8h_a8f1ece172cf3c3e696b86d401d7345a2}{00254}} \textcolor{preprocessor}{\#define DMA\_CCR\_DIR                     (0x01U << DMA\_CCR\_DIR\_Pos)              }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00255}\mbox{\hyperlink{reg__dma_8h_a66a4138896fef96641f9ad5eb269f4c4}{00255}} \textcolor{preprocessor}{\#define DMA\_CCR\_CIRC\_Pos                (5)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00256}\mbox{\hyperlink{reg__dma_8h_a445471396e741418bcd6f63404f4052c}{00256}} \textcolor{preprocessor}{\#define DMA\_CCR\_CIRC                    (0x01U << DMA\_CCR\_CIRC\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00257}\mbox{\hyperlink{reg__dma_8h_a165bb032ce1148af49048daec69508e9}{00257}} \textcolor{preprocessor}{\#define DMA\_CCR\_PINC\_Pos                (6)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00258}\mbox{\hyperlink{reg__dma_8h_a028cb96357bd24868a74ee1134a35b7e}{00258}} \textcolor{preprocessor}{\#define DMA\_CCR\_PINC                    (0x01U << DMA\_CCR\_PINC\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00259}\mbox{\hyperlink{reg__dma_8h_af2f07a706a1a1b3b351151aff8b48be2}{00259}} \textcolor{preprocessor}{\#define DMA\_CCR\_MINC\_Pos                (7)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00260}\mbox{\hyperlink{reg__dma_8h_aa189138f534283d876f654ec9474987e}{00260}} \textcolor{preprocessor}{\#define DMA\_CCR\_MINC                    (0x01U << DMA\_CCR\_MINC\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00261}00261 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00262}\mbox{\hyperlink{reg__dma_8h_a73550e263e014a80ba68b9d44d335a83}{00262}} \textcolor{preprocessor}{\#define DMA\_CCR\_PSIZE\_Pos               (8)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00263}\mbox{\hyperlink{reg__dma_8h_a1a8d824b9bff520523fccfbe57b07516}{00263}} \textcolor{preprocessor}{\#define DMA\_CCR\_PSIZE                   (0x03U << DMA\_CCR\_PSIZE\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00264}\mbox{\hyperlink{reg__dma_8h_a4b3726c7d0fd3b00e33637f163c79128}{00264}} \textcolor{preprocessor}{\#define DMA\_CCR\_PSIZE\_0                 (0x01U << DMA\_CCR\_PSIZE\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00265}\mbox{\hyperlink{reg__dma_8h_a8e8d8786f16dda2bef035ba2df15b69d}{00265}} \textcolor{preprocessor}{\#define DMA\_CCR\_PSIZE\_1                 (0x02U << DMA\_CCR\_PSIZE\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00266}00266 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00267}\mbox{\hyperlink{reg__dma_8h_a73b3d2706a5edb3f39e1f8f8ad0b4fd2}{00267}} \textcolor{preprocessor}{\#define DMA\_CCR\_PSIZE\_BYTE              (0x00U << DMA\_CCR\_PSIZE\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00268}\mbox{\hyperlink{reg__dma_8h_adde96e7cfeb08e5e48862a338cfe9791}{00268}} \textcolor{preprocessor}{\#define DMA\_CCR\_PSIZE\_HALFWORD          (0x01U << DMA\_CCR\_PSIZE\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00269}\mbox{\hyperlink{reg__dma_8h_a6f4a3508ff43c686c4e36d67451cd83c}{00269}} \textcolor{preprocessor}{\#define DMA\_CCR\_PSIZE\_WORD              (0x02U << DMA\_CCR\_PSIZE\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00270}00270 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00271}\mbox{\hyperlink{reg__dma_8h_afd0ff14a5994586ebdeba33fde4a2c36}{00271}} \textcolor{preprocessor}{\#define DMA\_CCR\_MSIZE\_Pos               (10)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00272}\mbox{\hyperlink{reg__dma_8h_a492495253fe3f05ea83dd3c3dbb5dddf}{00272}} \textcolor{preprocessor}{\#define DMA\_CCR\_MSIZE                   (0x03U << DMA\_CCR\_MSIZE\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00273}\mbox{\hyperlink{reg__dma_8h_a600d3f8200fc42ea6e1c7c8abbd327ad}{00273}} \textcolor{preprocessor}{\#define DMA\_CCR\_MSIZE\_0                 (0x01U << DMA\_CCR\_MSIZE\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00274}\mbox{\hyperlink{reg__dma_8h_a60b9958fbde96f69160ca7edf92d4c27}{00274}} \textcolor{preprocessor}{\#define DMA\_CCR\_MSIZE\_1                 (0x02U << DMA\_CCR\_MSIZE\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00275}00275 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00276}\mbox{\hyperlink{reg__dma_8h_a94de8f4521db8129abfeccf891a27664}{00276}} \textcolor{preprocessor}{\#define DMA\_CCR\_MSIZE\_BYTE              (0x00U << DMA\_CCR\_MSIZE\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00277}\mbox{\hyperlink{reg__dma_8h_add20224aea8e355592857fedf247b539}{00277}} \textcolor{preprocessor}{\#define DMA\_CCR\_MSIZE\_HALFWORD          (0x01U << DMA\_CCR\_MSIZE\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00278}\mbox{\hyperlink{reg__dma_8h_a40f4a8974d742eac2e5cd949936cc828}{00278}} \textcolor{preprocessor}{\#define DMA\_CCR\_MSIZE\_WORD              (0x02U << DMA\_CCR\_MSIZE\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00279}00279 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00280}\mbox{\hyperlink{reg__dma_8h_a6f49ebf3f4035ea2357b791da026846b}{00280}} \textcolor{preprocessor}{\#define DMA\_CCR\_PL\_Pos                  (12)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00281}\mbox{\hyperlink{reg__dma_8h_a97726688157629243aa59bb60e33c284}{00281}} \textcolor{preprocessor}{\#define DMA\_CCR\_PL                      (0x03U << DMA\_CCR\_PL\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00282}\mbox{\hyperlink{reg__dma_8h_aa935d7f115297c5e9e10a62efd065247}{00282}} \textcolor{preprocessor}{\#define DMA\_CCR\_PL\_0                    (0x01U << DMA\_CCR\_PL\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00283}\mbox{\hyperlink{reg__dma_8h_a82819927445c9617409bb08e09dc4cd8}{00283}} \textcolor{preprocessor}{\#define DMA\_CCR\_PL\_1                    (0x02U << DMA\_CCR\_PL\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00284}00284 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00285}\mbox{\hyperlink{reg__dma_8h_a4214a6b9559c3b9f5bc0a5fb4381ca72}{00285}} \textcolor{preprocessor}{\#define DMA\_CCR\_PL\_Low                  (0x00U << DMA\_CCR\_PL\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00286}\mbox{\hyperlink{reg__dma_8h_af4eb1e57780745ac59f18b1265c7aaaf}{00286}} \textcolor{preprocessor}{\#define DMA\_CCR\_PL\_Medium               (0x01U << DMA\_CCR\_PL\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00287}\mbox{\hyperlink{reg__dma_8h_a5d40b6e1c73110b2bfb00e914951c33f}{00287}} \textcolor{preprocessor}{\#define DMA\_CCR\_PL\_High                 (0x02U << DMA\_CCR\_PL\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00288}\mbox{\hyperlink{reg__dma_8h_a43ced3955edbc9cef993e2e9c0878a97}{00288}} \textcolor{preprocessor}{\#define DMA\_CCR\_PL\_VeryHigh             (0x03U << DMA\_CCR\_PL\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00289}\mbox{\hyperlink{reg__dma_8h_a3a61a27bfdc367d330e26069cdac75d0}{00289}} \textcolor{preprocessor}{\#define DMA\_CCR\_M2M\_Pos                 (14)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00290}\mbox{\hyperlink{reg__dma_8h_a4a26aed2c9ee1cfe3e98b871cb8fb195}{00290}} \textcolor{preprocessor}{\#define DMA\_CCR\_M2M                     (0x01U << DMA\_CCR\_M2M\_Pos)              }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00291}00291 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00292}\mbox{\hyperlink{reg__dma_8h_adca138b69c0aad49c1d224b24bfe44e0}{00292}} \textcolor{preprocessor}{\#define DMA\_CCR\_ARE\_Pos                 (15)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00293}\mbox{\hyperlink{reg__dma_8h_a26505fc5780607068fea8643a373b546}{00293}} \textcolor{preprocessor}{\#define DMA\_CCR\_ARE                     (0x01U << DMA\_CCR\_ARE\_Pos)              }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00294}00294 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00298}\mbox{\hyperlink{reg__dma_8h_a96337334b23e814de339a9697b8cfe52}{00298}} \textcolor{preprocessor}{\#define DMA\_CNDTR\_NDT\_Pos               (0)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00299}\mbox{\hyperlink{reg__dma_8h_ad42c0abbace3b816e7669e27b3676d2a}{00299}} \textcolor{preprocessor}{\#define DMA\_CNDTR\_NDT                   (0xFFFFU << DMA\_CNDTR\_NDT\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00300}00300 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00304}\mbox{\hyperlink{reg__dma_8h_aedbe38bfd0952b6490a0517143030eb0}{00304}} \textcolor{preprocessor}{\#define DMA\_CPAR\_PA\_Pos                 (0)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00305}\mbox{\hyperlink{reg__dma_8h_aa3f5ad05ab0a37eb49692c4d77730eb1}{00305}} \textcolor{preprocessor}{\#define DMA\_CPAR\_PA                     (0xFFFFFFFFU << DMA\_CPAR\_PA\_Pos)        }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00306}00306 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00310}\mbox{\hyperlink{reg__dma_8h_af8680eed5bbb2c59ececcacbdb9cdd5b}{00310}} \textcolor{preprocessor}{\#define DMA\_CMAR\_MA\_Pos                 (0)}}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00311}\mbox{\hyperlink{reg__dma_8h_aacd9100e19b17a0641359cd158ea0cb7}{00311}} \textcolor{preprocessor}{\#define DMA\_CMAR\_MA                     (0xFFFFFFFFU << DMA\_CMAR\_MA\_Pos)        }}
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00312}00312 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00313}00313 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00314}00314 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00315}00315 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00316}00316 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00318}00318 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00320}00320 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00322}00322 }
+\DoxyCodeLine{\Hypertarget{reg__dma_8h_source_l00324}00324 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

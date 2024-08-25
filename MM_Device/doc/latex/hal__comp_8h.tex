@@ -1,0 +1,133 @@
+\hypertarget{hal__comp_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Inc/hal\+\_\+comp.h 文件参考}
+\label{hal__comp_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_comp.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_comp.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE COMP FIRMWARE LIBRARY.  
+
+
+{\ttfamily \#include \char`\"{}reg\+\_\+common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}reg\+\_\+comp.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_o_m_p___init_type_def}{COMP\+\_\+\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em COMP Init structure definition \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c_o_m_p___p_o_l_l___init_type_def}{COMP\+\_\+\+POLL\+\_\+\+Init\+Type\+Def}}
+\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___c_o_m_p___exported___constants_ga6733a870415f94cd20666253bc3f3a5c}{COMP\+\_\+\+Blanking\+Srce\+\_\+\+None}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000000)
+\item 
+\#define \mbox{\hyperlink{group___c_o_m_p___exported___constants_ga3ef62be6fc5615b430e06bc236529b1e}{COMP\+\_\+\+CSR\+\_\+\+CLEAR\+\_\+\+MASK}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000003)
+\item 
+\#define \mbox{\hyperlink{group___c_o_m_p___exported___constants_gaf5f8e85b84fac241ce1cb1c485ebc066}{COMP\+\_\+\+CSR\+\_\+\+COMPSW1}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000002)
+\item 
+\#define \mbox{\hyperlink{group___c_o_m_p___exported___variables_ga3de33738fd3c7e77bffbcfaefc3e7645}{GLOBAL}}~extern
+\item 
+\#define \mbox{\hyperlink{group___c_o_m_p___exported___functions_gaae8d8dc87806b9d348874ff9c3ad40d2}{SET\+\_\+\+COMP\+\_\+\+CRV}}~\mbox{\hyperlink{group___c_o_m_p___exported___functions_gabbb0fee5205418bc049a971988f024bb}{COMP\+\_\+\+Set\+Crv}}
+\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___c_o_m_p___exported___types_ga2574ca105e32baeca23e390f411e2d87}{EM\+\_\+\+COMP\+\_\+\+Inverting\+Input}} \{ \newline
+\mbox{\hyperlink{group___c_o_m_p___exported___types_gga2574ca105e32baeca23e390f411e2d87a1de9f4c52432142d59d086244cdde6a2}{COMP\+\_\+\+Inverting\+Input\+\_\+\+IO0}} = COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+0
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_gga2574ca105e32baeca23e390f411e2d87a6ecd3d9ba70ec8e3db43d68a78a84beb}{COMP\+\_\+\+Inverting\+Input\+\_\+\+IO1}} = COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+1
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_gga2574ca105e32baeca23e390f411e2d87a9f832f090b42fec2a410a48e1f35b89a}{COMP\+\_\+\+Inverting\+Input\+\_\+\+IO2}} = COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+2
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_gga2574ca105e32baeca23e390f411e2d87ac2a3c5bc00860b672e70133df5833bb7}{COMP\+\_\+\+Inverting\+Input\+\_\+\+CRV}} = COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+3
+, \newline
+\mbox{\hyperlink{group___c_o_m_p___exported___types_gga2574ca105e32baeca23e390f411e2d87a80ec11fee1c39d1225647107b53bf1c4}{COMP\+\_\+\+Inverting\+Input\+\_\+\+IO3}} = COMP\+\_\+\+CSR\+\_\+\+INM\+\_\+3
+ \}
+\begin{DoxyCompactList}\small\item\em COMP\+\_\+\+Inverting\+Input \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___c_o_m_p___exported___types_gaa564a93e7bde7cf907cb8e5835aca0c4}{EM\+\_\+\+COMP\+\_\+\+Non\+Inverting\+Input}} \{ \mbox{\hyperlink{group___c_o_m_p___exported___types_ggaa564a93e7bde7cf907cb8e5835aca0c4af0df974e7b0abfe87d9621aa954c581d}{COMP\+\_\+\+Non\+Inverting\+Input\+\_\+\+IO0}} = COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+INP0
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_ggaa564a93e7bde7cf907cb8e5835aca0c4a85480d185d82334a1cf449a1e8a9e701}{COMP\+\_\+\+Non\+Inverting\+Input\+\_\+\+IO1}} = COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+INP1
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_ggaa564a93e7bde7cf907cb8e5835aca0c4ae184734dc5a7b2ed05106bad4f33e661}{COMP\+\_\+\+Non\+Inverting\+Input\+\_\+\+IO2}} = COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+INP2
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_ggaa564a93e7bde7cf907cb8e5835aca0c4af3be12b31b7f92671766dae5cc3fcc99}{COMP\+\_\+\+Non\+Inverting\+Input\+\_\+\+IO3}} = COMP\+\_\+\+CSR\+\_\+\+INP\+\_\+\+INP3
+ \}
+\begin{DoxyCompactList}\small\item\em COMP\+\_\+\+Non\+Inverting\+Input \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___c_o_m_p___exported___types_gaf34e0904319c24bacceb2754749ba88c}{EM\+\_\+\+COMP\+\_\+\+Output}} \{ \newline
+\mbox{\hyperlink{group___c_o_m_p___exported___types_ggaf34e0904319c24bacceb2754749ba88ca254d42a3f5a5af0f45eaeeef1f92288c}{COMP\+\_\+\+Output\+\_\+\+None}} = 0x00000000
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_ggaf34e0904319c24bacceb2754749ba88ca27da3cdca7f6529036d6b6c717b4ecc9}{COMP\+\_\+\+Output\+\_\+\+TIM1\+BKIN}} = COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM1\+\_\+\+BRAKE
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_ggaf34e0904319c24bacceb2754749ba88ca161225b2230352585d91e17b5981f268}{COMP\+\_\+\+Output\+\_\+\+TIM1\+OCREFCLR}} = COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM1\+\_\+\+OCREFCLR
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_ggaf34e0904319c24bacceb2754749ba88caefdb65a1f6a6e799899c66d392e82e63}{COMP\+\_\+\+Output\+\_\+\+TIM1\+IC1}} = COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM1\+\_\+\+CAPTURE1
+, \newline
+\mbox{\hyperlink{group___c_o_m_p___exported___types_ggaf34e0904319c24bacceb2754749ba88cafa231b25e87ac66b4174dab891ba9241}{COMP\+\_\+\+Output\+\_\+\+TIM2\+IC4}} = COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM2\+\_\+\+CAPTURE4
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_ggaf34e0904319c24bacceb2754749ba88ca549b7f64fa0527139d4674042480ca7c}{COMP\+\_\+\+Output\+\_\+\+TIM2\+OCREFCLR}} = COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM2\+\_\+\+OCREFCLR
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_ggaf34e0904319c24bacceb2754749ba88ca12a3d7821b5cc6fe56e5b657cf6315ad}{COMP\+\_\+\+Output\+\_\+\+TIM3\+IC1}} = COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM3\+\_\+\+CAPTURE1
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_ggaf34e0904319c24bacceb2754749ba88ca11e675222381b4af3c998b9c8c27d436}{COMP\+\_\+\+Output\+\_\+\+TIM3\+OCREFCLR}} = COMP\+\_\+\+CSR\+\_\+\+OUT\+\_\+\+TIM3\+\_\+\+OCREFCLR
+ \}
+\begin{DoxyCompactList}\small\item\em COMP\+\_\+\+Output \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___c_o_m_p___exported___types_gaabfcffa4339392b213d5108d0433b11c}{EM\+\_\+\+COMP\+\_\+\+Output\+Pol}} \{ \mbox{\hyperlink{group___c_o_m_p___exported___types_ggaabfcffa4339392b213d5108d0433b11ca90f964693c2f1f2624894a42298d0019}{COMP\+\_\+\+Non\+Inverted}} = 0x00000000
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_ggaabfcffa4339392b213d5108d0433b11ca46650dd391453e2bfc422c77a7da59ae}{COMP\+\_\+\+Output\+Pol\+\_\+\+Non\+Inverted}} = 0x00000000
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_ggaabfcffa4339392b213d5108d0433b11caf6e8b1886272ab5794bb3e2c6b30e371}{COMP\+\_\+\+Inverted}} = 0x00008000
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_ggaabfcffa4339392b213d5108d0433b11ca63b0c92f18ec13e2bb656f3ea7c7068b}{COMP\+\_\+\+Output\+Pol\+\_\+\+Inverted}} = 0x00008000
+ \}
+\begin{DoxyCompactList}\small\item\em COMP\+\_\+\+Output\+Poloarity \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___c_o_m_p___exported___types_ga15c614625bc47aebe82b3fd5fa8ec6eb}{EM\+\_\+\+COMP\+\_\+\+Hysteresis}} \{ \mbox{\hyperlink{group___c_o_m_p___exported___types_gga15c614625bc47aebe82b3fd5fa8ec6eba2eacb8e19db2b89f3ccbdf31959dbb53}{COMP\+\_\+\+Hysteresis\+\_\+\+No}} = COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+0
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_gga15c614625bc47aebe82b3fd5fa8ec6ebad6e9e2d02daf7c950493dfef5bb42a5d}{COMP\+\_\+\+Hysteresis\+\_\+\+Low}} = COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+15
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_gga15c614625bc47aebe82b3fd5fa8ec6eba35764ec3587f71165b486a43acb889e1}{COMP\+\_\+\+Hysteresis\+\_\+\+Medium}} = COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+30
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_gga15c614625bc47aebe82b3fd5fa8ec6ebada189292b31397cc4de6c043c87cbb5a}{COMP\+\_\+\+Hysteresis\+\_\+\+High}} = COMP\+\_\+\+CSR\+\_\+\+HYST\+\_\+90
+ \}
+\begin{DoxyCompactList}\small\item\em COMP\+\_\+\+Hysteresis \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___c_o_m_p___exported___types_gab26ef2c4cd3ad573695286eaac96be9c}{EM\+\_\+\+COMP\+\_\+\+FILT}} \{ \newline
+\mbox{\hyperlink{group___c_o_m_p___exported___types_ggab26ef2c4cd3ad573695286eaac96be9ca6da6dcb6e2910362739026730aba636e}{COMP\+\_\+\+Filter\+\_\+0\+\_\+\+Period}} = COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+0
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_ggab26ef2c4cd3ad573695286eaac96be9caf8b5963213023ff8804733ce4f799e4a}{COMP\+\_\+\+Filter\+\_\+2\+\_\+\+Period}} = COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+1
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_ggab26ef2c4cd3ad573695286eaac96be9cad7944712ff37e25eb695625f6381f8e5}{COMP\+\_\+\+Filter\+\_\+4\+\_\+\+Period}} = COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+2
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_ggab26ef2c4cd3ad573695286eaac96be9ca2d646093085ba01837e63ba3da67e3a5}{COMP\+\_\+\+Filter\+\_\+8\+\_\+\+Period}} = COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+3
+, \newline
+\mbox{\hyperlink{group___c_o_m_p___exported___types_ggab26ef2c4cd3ad573695286eaac96be9cae1c62379f93d7f45109b16765c92ba9c}{COMP\+\_\+\+Filter\+\_\+16\+\_\+\+Period}} = COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+4
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_ggab26ef2c4cd3ad573695286eaac96be9caa3d9698f497796633acf29ccf13d8992}{COMP\+\_\+\+Filter\+\_\+32\+\_\+\+Period}} = COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+5
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_ggab26ef2c4cd3ad573695286eaac96be9cad9157bf6bc5e4feb39de3773ac77dd2b}{COMP\+\_\+\+Filter\+\_\+64\+\_\+\+Period}} = COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+6
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_ggab26ef2c4cd3ad573695286eaac96be9ca6809f6188a1c92fd5d6c4c1a1185015d}{COMP\+\_\+\+Filter\+\_\+128\+\_\+\+Period}} = COMP\+\_\+\+CSR\+\_\+\+OFLT\+\_\+7
+ \}
+\item 
+enum \mbox{\hyperlink{group___c_o_m_p___exported___types_gaad529e8f022d23a618603b9264e83002}{EM\+\_\+\+COMP\+\_\+\+Mode}} \{ \mbox{\hyperlink{group___c_o_m_p___exported___types_ggaad529e8f022d23a618603b9264e83002ae3b82495bab5f55b85343e4606def36a}{COMP\+\_\+\+Mode\+\_\+\+High\+Speed}} = COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+HIGHRATE
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_ggaad529e8f022d23a618603b9264e83002aa28640e93a86b156842a46a25db09a3d}{COMP\+\_\+\+Mode\+\_\+\+Medium\+Speed}} = COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+MEDIUMRATE
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_ggaad529e8f022d23a618603b9264e83002abb88c6c514082416eca40fee31bab0c0}{COMP\+\_\+\+Mode\+\_\+\+Low\+Power}} = COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+LOWPOWER
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_ggaad529e8f022d23a618603b9264e83002a9b41f89570499bde7a357d8ffbbeae01}{COMP\+\_\+\+Mode\+\_\+\+Ultra\+Low\+Power}} = COMP\+\_\+\+CSR\+\_\+\+MODE\+\_\+\+LOWESTPOWER
+ \}
+\begin{DoxyCompactList}\small\item\em COMP\+\_\+\+Mode \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___c_o_m_p___exported___types_ga805c888c901b80df7ae08b53671700e2}{EM\+\_\+\+COMP\+\_\+\+Output\+Level}} \{ \mbox{\hyperlink{group___c_o_m_p___exported___types_gga805c888c901b80df7ae08b53671700e2ab0cdd7dff7c8352db217d401e7e61692}{COMP\+\_\+\+Output\+Level\+\_\+\+High}} = COMP\+\_\+\+CSR\+\_\+\+OUT
+, \mbox{\hyperlink{group___c_o_m_p___exported___types_gga805c888c901b80df7ae08b53671700e2a2c7b2574f78285bfeac832ea715aaab5}{COMP\+\_\+\+Output\+Level\+\_\+\+Low}} = 0x00000000
+ \}
+\begin{DoxyCompactList}\small\item\em COMP\+\_\+\+Output\+Level \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___c_o_m_p___exported___constants_gad3edb4f414107c243ae5ce9b6798f371}{COMP\+\_\+\+Selection\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___c_o_m_p___exported___constants_ggad3edb4f414107c243ae5ce9b6798f371a157fc740ff7ff2c0247ac5961f66009c}{COMP1}} = (0x00000C)
+, \mbox{\hyperlink{group___c_o_m_p___exported___constants_ggad3edb4f414107c243ae5ce9b6798f371a56bb8c406fa7684dc34ffe1a6d389565}{COMP2}} = (0x000010)
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___c_o_m_p___exported___functions_gaeac0cce4de04d8f57d0eaa9eb466b505}{COMP\+\_\+\+De\+Init}} (\mbox{\hyperlink{group___c_o_m_p___exported___constants_gad3edb4f414107c243ae5ce9b6798f371}{COMP\+\_\+\+Selection\+\_\+\+Type\+Def}} selection)
+\begin{DoxyCompactList}\small\item\em Deinitializes COMP peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_o_m_p___exported___functions_ga3f8684e5400ccb16457023baf64a9c65}{COMP\+\_\+\+Init}} (\mbox{\hyperlink{group___c_o_m_p___exported___constants_gad3edb4f414107c243ae5ce9b6798f371}{COMP\+\_\+\+Selection\+\_\+\+Type\+Def}} selection, \mbox{\hyperlink{struct_c_o_m_p___init_type_def}{COMP\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Initializes the COMP peripheral according to the specified \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_o_m_p___exported___functions_gad68ae3c6b134e2bcc8a17ff061bfac14}{COMP\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{struct_c_o_m_p___init_type_def}{COMP\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Fills each init\+\_\+struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_o_m_p___exported___functions_gabb5a3773c4e59c4cde6d6ed454786c43}{COMP\+\_\+\+Cmd}} (\mbox{\hyperlink{group___c_o_m_p___exported___constants_gad3edb4f414107c243ae5ce9b6798f371}{COMP\+\_\+\+Selection\+\_\+\+Type\+Def}} selection, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enable or disable the COMP peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_o_m_p___exported___functions_gad36a4d4e206352e38b5786e033f79540}{COMP\+\_\+\+Switch\+Cmd}} (\mbox{\hyperlink{group___c_o_m_p___exported___constants_gad3edb4f414107c243ae5ce9b6798f371}{COMP\+\_\+\+Selection\+\_\+\+Type\+Def}} selection, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Close or Open the SW1 switch. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_o_m_p___exported___functions_ga1355114fc75dbaffc11b9f70a653055c}{COMP\+\_\+\+Lock\+Config}} (\mbox{\hyperlink{group___c_o_m_p___exported___constants_gad3edb4f414107c243ae5ce9b6798f371}{COMP\+\_\+\+Selection\+\_\+\+Type\+Def}} selection)
+\begin{DoxyCompactList}\small\item\em Lock the selected comparator (COMP1/\+COMP2) configuration. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___c_o_m_p___exported___functions_ga1c638cca553c4f99e2e23ac8ce7e6da2}{COMP\+\_\+\+Get\+Output\+Level}} (\mbox{\hyperlink{group___c_o_m_p___exported___constants_gad3edb4f414107c243ae5ce9b6798f371}{COMP\+\_\+\+Selection\+\_\+\+Type\+Def}} selection)
+\begin{DoxyCompactList}\small\item\em Return the output level (high or low) of the selected comparator. The output level depends on the selected polarity. If the polarity is not inverted\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_o_m_p___exported___functions_gabbb0fee5205418bc049a971988f024bb}{COMP\+\_\+\+Set\+Crv}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} crv\+\_\+select, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} crv\+\_\+level)
+\begin{DoxyCompactList}\small\item\em Select CRV param. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE COMP FIRMWARE LIBRARY. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{hal__comp_8h_source}{hal\+\_\+comp.\+h}} 中定义.
+

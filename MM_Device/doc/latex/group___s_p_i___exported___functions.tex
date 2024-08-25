@@ -1,0 +1,741 @@
+\hypertarget{group___s_p_i___exported___functions}{}\doxysection{SPI\+\_\+\+Exported\+\_\+\+Functions}
+\label{group___s_p_i___exported___functions}\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga9be82ef17067af5f9b6fe2c0759bd140}{SPI\+\_\+\+De\+Init}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi)
+\begin{DoxyCompactList}\small\item\em Deinitializes the spi peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga0e75e11f3492279dac8b27691019b941}{SPI\+\_\+\+Init}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{struct_s_p_i___init_type_def}{SPI\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Initializes the spi peripheral according to the specified parameters in the init\+\_\+struct . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga6b3460985df43e97a0cc3a4ee3190ca1}{SPI\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{struct_s_p_i___init_type_def}{SPI\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Fills each init\+\_\+struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga47aa73c577d17d8e3c9e6885025483b8}{SPI\+\_\+\+Cmd}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified SPI peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga97b8bda80d3514d14719e16d4c6051f8}{SPI\+\_\+\+ITConfig}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} interrupt, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified SPI interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_gad7a116cb656e01210a3a6e33ecba1b39}{SPI\+\_\+\+DMACmd}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the SPI DMA interface. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_gae7da7314157aa58f717c1153cf3ee6bf}{SPI\+\_\+\+Fifo\+Trigger}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_ga4d295b8d484ea3d570e04e9dea7281a0}{SPI\+\_\+\+TLF\+\_\+\+Type\+Def}} fifo\+\_\+trigger\+\_\+value, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em configure tn Fifo trigger level bit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga14e64a94b3b2c45f62f9624864a27d25}{SPI\+\_\+\+Send\+Data}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} data)
+\begin{DoxyCompactList}\small\item\em Transmits a Data through the spi peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga9290348ae577c26f956d227290355397}{SPI\+\_\+\+CSInternal\+Selected}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Slave chip csn single by selected \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga3ff538de08a3bec7fea37e5224311c99}{SPI\+\_\+\+NSSInternal\+Software\+Config}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_gab933301dd92b8210b299aeac7744b41e}{SPI\+\_\+\+NSS\+\_\+\+Type\+Def}} nss)
+\begin{DoxyCompactList}\small\item\em Configures the NSS pin control mode for the selected SPI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_gac0451ff3327029f8e060729d5b0d61cd}{SPI\+\_\+\+Bi\+Directional\+Line\+Config}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_gac78f6a965850892d9f27db6c2eaa3798}{SPI\+\_\+\+Direction\+\_\+\+Type\+Def}} direction)
+\begin{DoxyCompactList}\small\item\em Selects the data transfer direction in bi-\/directional mode for the specified SPI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_gadd1c05b6b56b3805712748bee2b4c190}{SPI\+\_\+\+Clear\+ITPending\+Bit}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_gab3f320b40f3ccc9ca49baf7e21064c79}{SPI\+\_\+\+IT\+\_\+\+Type\+Def}} interrupt)
+\begin{DoxyCompactList}\small\item\em Clears the spi interrupt pending bit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga62be4362af90330815eee28030dcad02}{SPI\+\_\+\+Rx\+Bytes}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} number)
+\begin{DoxyCompactList}\small\item\em SPI Hole a count Received bytes in next receive process. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga55fa09f8cfeb8d73ce4e0652a611556b}{SPI\+\_\+\+Slave\+Adjust}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_ga610e4a1e831ff4149c714998eba68fc8}{SPI\+\_\+\+Slave\+Adjust\+\_\+\+Type\+Def}} adjust\+\_\+value)
+\begin{DoxyCompactList}\small\item\em slave mode tx data transmit phase adjust set. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group___s_p_i___exported___functions_ga2126b440a24574e9bdc9e680187e1f82}{SPI\+\_\+\+Data\+Size\+Config}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} data\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Configures the data size for the selected SPI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga0601080e7eab0c71bb1744e269249268}{SPI\+\_\+\+Data\+Size\+Type\+Config}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_gaa972b0f6f8a36bba9ad030fe993e6d11}{SPI\+\_\+\+Data\+Size\+\_\+\+Type\+Def}} SPI\+\_\+\+Data\+Size)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___s_p_i___exported___functions_gabadb78e9bc0490e2db24fa593c0a6a52}{SPI\+\_\+\+Receive\+Data}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi)
+\begin{DoxyCompactList}\small\item\em Returns the most recent received data by the spi peripheral. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___s_p_i___exported___functions_ga626bd032401d802fded68faeebeed19c}{SPI\+\_\+\+Get\+Flag\+Status}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_ga4f662a71fef63be8d3a0c7aa23199f71}{SPI\+\_\+\+FLAG\+\_\+\+Type\+Def}} flag)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified SPI flag is set or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} \mbox{\hyperlink{group___s_p_i___exported___functions_ga07f8aca4af44f2ca7162bffe4a309beb}{SPI\+\_\+\+Get\+ITStatus}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_gab3f320b40f3ccc9ca49baf7e21064c79}{SPI\+\_\+\+IT\+\_\+\+Type\+Def}} interrupt)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified SPI interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga3d9915c16271da583039c7a6c3c8bd4b}{ex\+SPI\+\_\+\+ITCmd}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables all SPI interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga13a17696bf005a63d7af5c3e30a5355d}{ex\+SPI\+\_\+\+ITConfig}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_gab3f320b40f3ccc9ca49baf7e21064c79}{SPI\+\_\+\+IT\+\_\+\+Type\+Def}} interrupt, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified SPI interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga9cd72fbbe7ca802fa85cbfbd391c359d}{ex\+SPI\+\_\+\+DMACmd}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the SPI DMA request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_gad28bd275f9cdd1f0e425e95aef654fc2}{ex\+SPI\+\_\+\+CSInternal\+Selected}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Set or reset Slave chip csn signal output \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_gaf7878fe8a984eed9a6fbd58e262664a3}{ex\+SPI\+\_\+\+Data\+Edge\+Adjust}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_gaf4c1d143caf5b6990e3675b5bd4422c3}{SPI\+\_\+\+Data\+Edge\+Adjust\+\_\+\+Type\+Def}} adjust\+\_\+value)
+\begin{DoxyCompactList}\small\item\em tx data and rx data phase adjust. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga18c931f51bd3dcfeaec8cf73c3a241e2}{I2\+S\+\_\+\+Cmd}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Set or reset i2s \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga9d5e943831a24c29523a55e231eaaaf4}{I2\+S\+\_\+\+Init}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{struct_i2_s___init_type_def}{I2\+S\+\_\+\+Init\+Type\+Def}} $\ast$I2\+S\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em i2s Config \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+\doxysubsection{函数说明}
+\mbox{\Hypertarget{group___s_p_i___exported___functions_gad28bd275f9cdd1f0e425e95aef654fc2}\label{group___s_p_i___exported___functions_gad28bd275f9cdd1f0e425e95aef654fc2}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!exSPI\_CSInternalSelected@{exSPI\_CSInternalSelected}}
+\index{exSPI\_CSInternalSelected@{exSPI\_CSInternalSelected}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{exSPI\_CSInternalSelected()}{exSPI\_CSInternalSelected()}}
+{\footnotesize\ttfamily void ex\+SPI\+\_\+\+CSInternal\+Selected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Set or reset Slave chip csn signal output 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2. \\
+\hline
+{\em state} & new state of Slave chip csn signal output. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00508}{508}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_gaf7878fe8a984eed9a6fbd58e262664a3}\label{group___s_p_i___exported___functions_gaf7878fe8a984eed9a6fbd58e262664a3}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!exSPI\_DataEdgeAdjust@{exSPI\_DataEdgeAdjust}}
+\index{exSPI\_DataEdgeAdjust@{exSPI\_DataEdgeAdjust}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{exSPI\_DataEdgeAdjust()}{exSPI\_DataEdgeAdjust()}}
+{\footnotesize\ttfamily void ex\+SPI\+\_\+\+Data\+Edge\+Adjust (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{group___s_p_i___exported___types_gaf4c1d143caf5b6990e3675b5bd4422c3}{SPI\+\_\+\+Data\+Edge\+Adjust\+\_\+\+Type\+Def}}}]{adjust\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+tx data and rx data phase adjust. 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2. \\
+\hline
+{\em adjust\+\_\+value} & choose adjust mode. This parament can be \+: SPI\+\_\+\+Data\+Edge\+Adjust\+\_\+\+LOW, SPI\+\_\+\+Data\+Edge\+Adjust\+\_\+\+FAST \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00524}{524}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_ga9cd72fbbe7ca802fa85cbfbd391c359d}\label{group___s_p_i___exported___functions_ga9cd72fbbe7ca802fa85cbfbd391c359d}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!exSPI\_DMACmd@{exSPI\_DMACmd}}
+\index{exSPI\_DMACmd@{exSPI\_DMACmd}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{exSPI\_DMACmd()}{exSPI\_DMACmd()}}
+{\footnotesize\ttfamily void ex\+SPI\+\_\+\+DMACmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the SPI DMA request. 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2. \\
+\hline
+{\em state} & new state of the DMA Request. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00495}{495}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_ga3d9915c16271da583039c7a6c3c8bd4b}\label{group___s_p_i___exported___functions_ga3d9915c16271da583039c7a6c3c8bd4b}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!exSPI\_ITCmd@{exSPI\_ITCmd}}
+\index{exSPI\_ITCmd@{exSPI\_ITCmd}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{exSPI\_ITCmd()}{exSPI\_ITCmd()}}
+{\footnotesize\ttfamily void ex\+SPI\+\_\+\+ITCmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enables or disables all SPI interrupts. 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2. \\
+\hline
+{\em state} & new state of all spi interrupts. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00459}{459}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_ga13a17696bf005a63d7af5c3e30a5355d}\label{group___s_p_i___exported___functions_ga13a17696bf005a63d7af5c3e30a5355d}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!exSPI\_ITConfig@{exSPI\_ITConfig}}
+\index{exSPI\_ITConfig@{exSPI\_ITConfig}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{exSPI\_ITConfig()}{exSPI\_ITConfig()}}
+{\footnotesize\ttfamily void ex\+SPI\+\_\+\+ITConfig (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{group___s_p_i___exported___types_gab3f320b40f3ccc9ca49baf7e21064c79}{SPI\+\_\+\+IT\+\_\+\+Type\+Def}}}]{interrupt,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the specified SPI interrupts. 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2. \\
+\hline
+{\em interrupt} & specifies the SPI interrupt sources to be enabled or disabled. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item SPI\+\_\+\+IT\+\_\+\+TXEPT\+: Transmitter empty interrupt \item SPI\+\_\+\+IT\+\_\+\+RXFULL\+: RX FIFO full interrupt \item SPI\+\_\+\+IT\+\_\+\+RXMATCH\+: Receive data match the RXDNR number interrupt \item SPI\+\_\+\+IT\+\_\+\+RXOERR\+: Receive overrun error interrupt \item SPI\+\_\+\+IT\+\_\+\+UNDERRUN\+: underrun interrupt \item SPI\+\_\+\+IT\+\_\+\+RX\+: Receive data available interrupt \item SPI\+\_\+\+IT\+\_\+\+TX\+: Transmit FIFO available interrupt \end{DoxyItemize}
+\\
+\hline
+{\em state} & new state of the specified spi interrupts. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00482}{482}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_ga18c931f51bd3dcfeaec8cf73c3a241e2}\label{group___s_p_i___exported___functions_ga18c931f51bd3dcfeaec8cf73c3a241e2}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!I2S\_Cmd@{I2S\_Cmd}}
+\index{I2S\_Cmd@{I2S\_Cmd}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2S\_Cmd()}{I2S\_Cmd()}}
+{\footnotesize\ttfamily void I2\+S\+\_\+\+Cmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Set or reset i2s 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2, SPI3. \\
+\hline
+{\em state} & new state of Slave chip csn signal output. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00544}{544}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_ga9d5e943831a24c29523a55e231eaaaf4}\label{group___s_p_i___exported___functions_ga9d5e943831a24c29523a55e231eaaaf4}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!I2S\_Init@{I2S\_Init}}
+\index{I2S\_Init@{I2S\_Init}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{I2S\_Init()}{I2S\_Init()}}
+{\footnotesize\ttfamily void I2\+S\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{struct_i2_s___init_type_def}{I2\+S\+\_\+\+Init\+Type\+Def}} $\ast$}]{I2\+S\+\_\+\+Init\+Struct }\end{DoxyParamCaption})}
+
+
+
+i2s Config 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2, SPI3. \\
+\hline
+{\em state} & new state of Slave chip csn signal output. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00557}{557}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_gac0451ff3327029f8e060729d5b0d61cd}\label{group___s_p_i___exported___functions_gac0451ff3327029f8e060729d5b0d61cd}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!SPI\_BiDirectionalLineConfig@{SPI\_BiDirectionalLineConfig}}
+\index{SPI\_BiDirectionalLineConfig@{SPI\_BiDirectionalLineConfig}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SPI\_BiDirectionalLineConfig()}{SPI\_BiDirectionalLineConfig()}}
+{\footnotesize\ttfamily void SPI\+\_\+\+Bi\+Directional\+Line\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{group___s_p_i___exported___types_gac78f6a965850892d9f27db6c2eaa3798}{SPI\+\_\+\+Direction\+\_\+\+Type\+Def}}}]{direction }\end{DoxyParamCaption})}
+
+
+
+Selects the data transfer direction in bi-\/directional mode for the specified SPI. 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2. \\
+\hline
+{\em direction} & specifies the data transfer direction in bi-\/directional mode. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item SPI\+\_\+\+Direction\+\_\+\+Tx\+: Selects Tx transmission direction \item SPI\+\_\+\+Direction\+\_\+\+Rx\+: Selects Rx receive direction \item SPI\+\_\+\+Disable\+\_\+\+Tx\+: Selects Rx receive direction \item SPI\+\_\+\+Disable\+\_\+\+Rx\+: Selects Rx receive direction \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00324}{324}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_gadd1c05b6b56b3805712748bee2b4c190}\label{group___s_p_i___exported___functions_gadd1c05b6b56b3805712748bee2b4c190}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!SPI\_ClearITPendingBit@{SPI\_ClearITPendingBit}}
+\index{SPI\_ClearITPendingBit@{SPI\_ClearITPendingBit}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SPI\_ClearITPendingBit()}{SPI\_ClearITPendingBit()}}
+{\footnotesize\ttfamily void SPI\+\_\+\+Clear\+ITPending\+Bit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{group___s_p_i___exported___types_gab3f320b40f3ccc9ca49baf7e21064c79}{SPI\+\_\+\+IT\+\_\+\+Type\+Def}}}]{interrupt }\end{DoxyParamCaption})}
+
+
+
+Clears the spi interrupt pending bit. 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2. \\
+\hline
+{\em interrupt} & specifies the SPI interrupt pending bit to clear. \begin{DoxyItemize}
+\item SPI\+\_\+\+IT\+\_\+\+TX\+: Tx buffer empty interrupt \item SPI\+\_\+\+IT\+\_\+\+RX\+: Rx buffer interrupt \item SPI\+\_\+\+IT\+\_\+\+UNDERRUN\+: under Error interrupt in slave mode \item SPI\+\_\+\+IT\+\_\+\+RXOVER\+: RX OVER Error interrupt \item SPI\+\_\+\+IT\+\_\+\+RXMATCH\+: spectials rx data numbers interrupt \item SPI\+\_\+\+IT\+\_\+\+RXFULL\+: Rx buffer full interrupt \item SPI\+\_\+\+IT\+\_\+\+TXEPT\+: Tx buffer and tx shifter empty interrupt This function clears only ERR intetrrupt pending bit. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00413}{413}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_ga47aa73c577d17d8e3c9e6885025483b8}\label{group___s_p_i___exported___functions_ga47aa73c577d17d8e3c9e6885025483b8}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!SPI\_Cmd@{SPI\_Cmd}}
+\index{SPI\_Cmd@{SPI\_Cmd}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SPI\_Cmd()}{SPI\_Cmd()}}
+{\footnotesize\ttfamily void SPI\+\_\+\+Cmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the specified SPI peripheral. 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2. \\
+\hline
+{\em state} & new state of the spi peripheral. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00129}{129}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_ga9290348ae577c26f956d227290355397}\label{group___s_p_i___exported___functions_ga9290348ae577c26f956d227290355397}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!SPI\_CSInternalSelected@{SPI\_CSInternalSelected}}
+\index{SPI\_CSInternalSelected@{SPI\_CSInternalSelected}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SPI\_CSInternalSelected()}{SPI\_CSInternalSelected()}}
+{\footnotesize\ttfamily void SPI\+\_\+\+CSInternal\+Selected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Slave chip csn single by selected 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2. \\
+\hline
+{\em state} & new state of the selected SPI CS pin request. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00261}{261}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_ga2126b440a24574e9bdc9e680187e1f82}\label{group___s_p_i___exported___functions_ga2126b440a24574e9bdc9e680187e1f82}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!SPI\_DataSizeConfig@{SPI\_DataSizeConfig}}
+\index{SPI\_DataSizeConfig@{SPI\_DataSizeConfig}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SPI\_DataSizeConfig()}{SPI\_DataSizeConfig()}}
+{\footnotesize\ttfamily bool SPI\+\_\+\+Data\+Size\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{data\+\_\+size }\end{DoxyParamCaption})}
+
+
+
+Configures the data size for the selected SPI. 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2. \\
+\hline
+{\em data\+\_\+size} & specifies the SPI data size. This parameter can be one of the following values\+: 0 to 31, 0 = 32b, 1 = 1b, 2 = 2b \begin{DoxyItemize}
+\item Data\+Size \+: 0 to 31 \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00293}{293}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_ga0601080e7eab0c71bb1744e269249268}\label{group___s_p_i___exported___functions_ga0601080e7eab0c71bb1744e269249268}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!SPI\_DataSizeTypeConfig@{SPI\_DataSizeTypeConfig}}
+\index{SPI\_DataSizeTypeConfig@{SPI\_DataSizeTypeConfig}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SPI\_DataSizeTypeConfig()}{SPI\_DataSizeTypeConfig()}}
+{\footnotesize\ttfamily void SPI\+\_\+\+Data\+Size\+Type\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{group___s_p_i___exported___types_gaa972b0f6f8a36bba9ad030fe993e6d11}{SPI\+\_\+\+Data\+Size\+\_\+\+Type\+Def}}}]{SPI\+\_\+\+Data\+Size }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00303}{303}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_ga9be82ef17067af5f9b6fe2c0759bd140}\label{group___s_p_i___exported___functions_ga9be82ef17067af5f9b6fe2c0759bd140}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!SPI\_DeInit@{SPI\_DeInit}}
+\index{SPI\_DeInit@{SPI\_DeInit}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SPI\_DeInit()}{SPI\_DeInit()}}
+{\footnotesize\ttfamily void SPI\+\_\+\+De\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi }\end{DoxyParamCaption})}
+
+
+
+Deinitializes the spi peripheral registers to their default reset values. 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00045}{45}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_gad7a116cb656e01210a3a6e33ecba1b39}\label{group___s_p_i___exported___functions_gad7a116cb656e01210a3a6e33ecba1b39}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!SPI\_DMACmd@{SPI\_DMACmd}}
+\index{SPI\_DMACmd@{SPI\_DMACmd}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SPI\_DMACmd()}{SPI\_DMACmd()}}
+{\footnotesize\ttfamily void SPI\+\_\+\+DMACmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the SPI DMA interface. 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2. \\
+\hline
+{\em state} & new state of the DMA Request sources. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00172}{172}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_gae7da7314157aa58f717c1153cf3ee6bf}\label{group___s_p_i___exported___functions_gae7da7314157aa58f717c1153cf3ee6bf}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!SPI\_FifoTrigger@{SPI\_FifoTrigger}}
+\index{SPI\_FifoTrigger@{SPI\_FifoTrigger}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SPI\_FifoTrigger()}{SPI\_FifoTrigger()}}
+{\footnotesize\ttfamily void SPI\+\_\+\+Fifo\+Trigger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{group___s_p_i___exported___types_ga4d295b8d484ea3d570e04e9dea7281a0}{SPI\+\_\+\+TLF\+\_\+\+Type\+Def}}}]{fifo\+\_\+trigger\+\_\+value,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+configure tn Fifo trigger level bit. 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2. \\
+\hline
+{\em fifo\+\_\+trigger\+\_\+value} & specifies the Fifo trigger level This parameter can be any combination of the following values\+: SPI\+\_\+\+TXTLF \+: SPI TX FIFO Trigger value set SPI\+\_\+\+RXTLF \+: SPI RX FIFO Trigger value set \\
+\hline
+{\em state} & new state of the selected SPI transfer request. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00189}{189}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_ga626bd032401d802fded68faeebeed19c}\label{group___s_p_i___exported___functions_ga626bd032401d802fded68faeebeed19c}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!SPI\_GetFlagStatus@{SPI\_GetFlagStatus}}
+\index{SPI\_GetFlagStatus@{SPI\_GetFlagStatus}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SPI\_GetFlagStatus()}{SPI\_GetFlagStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} SPI\+\_\+\+Get\+Flag\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{group___s_p_i___exported___types_ga4f662a71fef63be8d3a0c7aa23199f71}{SPI\+\_\+\+FLAG\+\_\+\+Type\+Def}}}]{flag }\end{DoxyParamCaption})}
+
+
+
+Checks whether the specified SPI flag is set or not. 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2. \\
+\hline
+{\em flag} & specifies the SPI flag to check. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item SPI\+\_\+\+FLAG\+\_\+\+RXAVL\+: Rx buffer has bytes flag \item SPI\+\_\+\+FLAG\+\_\+\+TXEPT\+: Tx buffer and tx shifter empty flag \item SPI\+\_\+\+FLAG\+\_\+\+TXFULL\+: Tx buffer full flag \item SPI\+\_\+\+FLAG\+\_\+\+RXAVL\+\_\+4\+BYTE\+: Receive available 4 byte data message flag. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em The} & new state of SPI\+\_\+\+FLAG (SET or RESET). \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00357}{357}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_ga07f8aca4af44f2ca7162bffe4a309beb}\label{group___s_p_i___exported___functions_ga07f8aca4af44f2ca7162bffe4a309beb}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!SPI\_GetITStatus@{SPI\_GetITStatus}}
+\index{SPI\_GetITStatus@{SPI\_GetITStatus}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SPI\_GetITStatus()}{SPI\_GetITStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} SPI\+\_\+\+Get\+ITStatus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{group___s_p_i___exported___types_gab3f320b40f3ccc9ca49baf7e21064c79}{SPI\+\_\+\+IT\+\_\+\+Type\+Def}}}]{interrupt }\end{DoxyParamCaption})}
+
+
+
+Checks whether the specified SPI interrupt has occurred or not. 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2. \\
+\hline
+{\em interrupt} & specifies the SPI interrupt source to check. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item SPI\+\_\+\+IT\+\_\+\+TX\+: Tx buffer empty interrupt \item SPI\+\_\+\+IT\+\_\+\+RX\+: Rx buffer interrupt \item SPI\+\_\+\+IT\+\_\+\+UNDERRUN\+: under Error interrupt in slave mode \item SPI\+\_\+\+IT\+\_\+\+RXOVER\+: RX OVER Error interrupt \item SPI\+\_\+\+IT\+\_\+\+RXMATCH\+: spectials rx data numbers interrupt \item SPI\+\_\+\+IT\+\_\+\+RXFULL\+: Rx buffer full interrupt \item SPI\+\_\+\+IT\+\_\+\+TXEPT\+: Tx buffer and tx shifter empty interrupt \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em The} & new state of SPI\+\_\+\+IT (SET or RESET). \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00392}{392}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_ga0e75e11f3492279dac8b27691019b941}\label{group___s_p_i___exported___functions_ga0e75e11f3492279dac8b27691019b941}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!SPI\_Init@{SPI\_Init}}
+\index{SPI\_Init@{SPI\_Init}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SPI\_Init()}{SPI\_Init()}}
+{\footnotesize\ttfamily void SPI\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{struct_s_p_i___init_type_def}{SPI\+\_\+\+Init\+Type\+Def}} $\ast$}]{init\+\_\+struct }\end{DoxyParamCaption})}
+
+
+
+Initializes the spi peripheral according to the specified parameters in the init\+\_\+struct . 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2. \\
+\hline
+{\em init\+\_\+struct} & pointer to a \mbox{\hyperlink{struct_s_p_i___init_type_def}{SPI\+\_\+\+Init\+Type\+Def}} structure that contains the configuration information for the specified SPI peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00076}{76}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_ga97b8bda80d3514d14719e16d4c6051f8}\label{group___s_p_i___exported___functions_ga97b8bda80d3514d14719e16d4c6051f8}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!SPI\_ITConfig@{SPI\_ITConfig}}
+\index{SPI\_ITConfig@{SPI\_ITConfig}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SPI\_ITConfig()}{SPI\_ITConfig()}}
+{\footnotesize\ttfamily void SPI\+\_\+\+ITConfig (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{interrupt,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the specified SPI interrupts. 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+:SPI1, SPI2. \\
+\hline
+{\em interrupt} & specifies the SPI interrupt sources to be enabled or disabled. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item SPI\+\_\+\+IT\+\_\+\+TXEPT\+: Transmitter empty interrupt \item SPI\+\_\+\+IT\+\_\+\+RXFULL\+: RX FIFO full interrupt \item SPI\+\_\+\+IT\+\_\+\+RXMATCH\+: Receive data match the RXDNR number interrupt \item SPI\+\_\+\+IT\+\_\+\+RXOERR\+: Receive overrun error interrupt \item SPI\+\_\+\+IT\+\_\+\+UNDERRUN\+: underrun interrupt \item SPI\+\_\+\+IT\+\_\+\+RX\+: Receive data available interrupt \item SPI\+\_\+\+IT\+\_\+\+TX\+: Transmit FIFO available interrupt \end{DoxyItemize}
+\\
+\hline
+{\em state} & new state of the specified spi interrupts. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00152}{152}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_ga3ff538de08a3bec7fea37e5224311c99}\label{group___s_p_i___exported___functions_ga3ff538de08a3bec7fea37e5224311c99}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!SPI\_NSSInternalSoftwareConfig@{SPI\_NSSInternalSoftwareConfig}}
+\index{SPI\_NSSInternalSoftwareConfig@{SPI\_NSSInternalSoftwareConfig}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SPI\_NSSInternalSoftwareConfig()}{SPI\_NSSInternalSoftwareConfig()}}
+{\footnotesize\ttfamily void SPI\+\_\+\+NSSInternal\+Software\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{group___s_p_i___exported___types_gab933301dd92b8210b299aeac7744b41e}{SPI\+\_\+\+NSS\+\_\+\+Type\+Def}}}]{nss }\end{DoxyParamCaption})}
+
+
+
+Configures the NSS pin control mode for the selected SPI. 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2. \\
+\hline
+{\em nss} & specifies the SPI NSS internal state. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item SPI\+\_\+\+NSS\+\_\+\+Soft\+: NSS pin control by software \item SPI\+\_\+\+NSS\+\_\+\+Hard\+: NSS pin control by hardware \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00277}{277}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_gabadb78e9bc0490e2db24fa593c0a6a52}\label{group___s_p_i___exported___functions_gabadb78e9bc0490e2db24fa593c0a6a52}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!SPI\_ReceiveData@{SPI\_ReceiveData}}
+\index{SPI\_ReceiveData@{SPI\_ReceiveData}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SPI\_ReceiveData()}{SPI\_ReceiveData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Receive\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi }\end{DoxyParamCaption})}
+
+
+
+Returns the most recent received data by the spi peripheral. 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em The} & value of the received data. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00228}{228}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_ga62be4362af90330815eee28030dcad02}\label{group___s_p_i___exported___functions_ga62be4362af90330815eee28030dcad02}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!SPI\_RxBytes@{SPI\_RxBytes}}
+\index{SPI\_RxBytes@{SPI\_RxBytes}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SPI\_RxBytes()}{SPI\_RxBytes()}}
+{\footnotesize\ttfamily void SPI\+\_\+\+Rx\+Bytes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}}}]{number }\end{DoxyParamCaption})}
+
+
+
+SPI Hole a count Received bytes in next receive process. 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2. \\
+\hline
+{\em number} & specifies the SPI receive Number. This parament can be 1-\/65535. This function can use only in SPI master single receive mode. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00428}{428}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_ga14e64a94b3b2c45f62f9624864a27d25}\label{group___s_p_i___exported___functions_ga14e64a94b3b2c45f62f9624864a27d25}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!SPI\_SendData@{SPI\_SendData}}
+\index{SPI\_SendData@{SPI\_SendData}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SPI\_SendData()}{SPI\_SendData()}}
+{\footnotesize\ttfamily void SPI\+\_\+\+Send\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{data }\end{DoxyParamCaption})}
+
+
+
+Transmits a Data through the spi peripheral. 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2. \\
+\hline
+{\em data} & \+: Data to be transmitted. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00202}{202}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_ga55fa09f8cfeb8d73ce4e0652a611556b}\label{group___s_p_i___exported___functions_ga55fa09f8cfeb8d73ce4e0652a611556b}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!SPI\_SlaveAdjust@{SPI\_SlaveAdjust}}
+\index{SPI\_SlaveAdjust@{SPI\_SlaveAdjust}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SPI\_SlaveAdjust()}{SPI\_SlaveAdjust()}}
+{\footnotesize\ttfamily void SPI\+\_\+\+Slave\+Adjust (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$}]{spi,  }\item[{\mbox{\hyperlink{group___s_p_i___exported___types_ga610e4a1e831ff4149c714998eba68fc8}{SPI\+\_\+\+Slave\+Adjust\+\_\+\+Type\+Def}}}]{adjust\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+slave mode tx data transmit phase adjust set. 
+
+
+\begin{DoxyParams}{参数}
+{\em spi} & Select the SPI peripheral. This parameter can be one of the following values\+: SPI1, SPI2. \\
+\hline
+{\em adjust\+\_\+value} & slave mode tx data transmit phase adjust enum. This parament can be \+: SPI\+\_\+\+Slave\+Adjust\+\_\+\+FAST\+: fast speed use SPI\+\_\+\+Slave\+Adjust\+\_\+\+LOW\+: low speed use This function can use only in SPI master single receive mode. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00445}{445}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___functions_ga6b3460985df43e97a0cc3a4ee3190ca1}\label{group___s_p_i___exported___functions_ga6b3460985df43e97a0cc3a4ee3190ca1}} 
+\index{SPI\_Exported\_Functions@{SPI\_Exported\_Functions}!SPI\_StructInit@{SPI\_StructInit}}
+\index{SPI\_StructInit@{SPI\_StructInit}!SPI\_Exported\_Functions@{SPI\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SPI\_StructInit()}{SPI\_StructInit()}}
+{\footnotesize\ttfamily void SPI\+\_\+\+Struct\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___init_type_def}{SPI\+\_\+\+Init\+Type\+Def}} $\ast$}]{init\+\_\+struct }\end{DoxyParamCaption})}
+
+
+
+Fills each init\+\_\+struct member with its default value. 
+
+
+\begin{DoxyParams}{参数}
+{\em init\+\_\+struct} & pointer to a \mbox{\hyperlink{struct_s_p_i___init_type_def}{SPI\+\_\+\+Init\+Type\+Def}} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00108}{108}} 行定义.
+

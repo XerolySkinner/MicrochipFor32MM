@@ -1,0 +1,278 @@
+\hypertarget{struct_c_o_m_p___type_def}{}\doxysection{COMP\+\_\+\+Type\+Def结构体 参考}
+\label{struct_c_o_m_p___type_def}\index{COMP\_TypeDef@{COMP\_TypeDef}}
+
+
+Comparators Register Structure Definition  
+
+
+
+
+{\ttfamily \#include $<$reg\+\_\+comp.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___type_def_a906be5681b7db6e55adfee1f714b038f}{RESERVED1}}
+\begin{DoxyCompactList}\small\item\em offset\+: 0x00 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___type_def_ace58156b45cb2ae2a13d6eb05e3efd3c}{RESERVED2}}
+\begin{DoxyCompactList}\small\item\em offset\+: 0x04 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___type_def_a77f64a841d884ee180755d046d3ba0ba}{RESERVED3}}
+\begin{DoxyCompactList}\small\item\em offset\+: 0x08 \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___type_def_ad41213faf794b1c6849910b2f9765f07}{CSR1}}\\
+\>\>{\em COMP1 Control Status Register offset: 0x0C }\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___type_def_a0762925796ebf489feb3cf45e47b8131}{COMP1\_CSR}}\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___type_def_a667a54bcd3bb5f87cb9c1dcb98c39619}{CSR2}}\\
+\>\>{\em COMP2 Control Status Register offset: 0x10 }\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___type_def_a3603525186dab04f5617d004aba45e3c}{COMP2\_CSR}}\\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___type_def_abdbfd135b23338f5f9bebcf3a94b9934}{RESERVED4}}
+\begin{DoxyCompactList}\small\item\em offset\+: 0x14 \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___type_def_ac08b21c6668789c46f495f0f9f43a74c}{CRV}}\\
+\>\>{\em COMP external reference voltage register offset: 0x18 }\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___type_def_a9a1f33915624704ea38646a4c53aa0c6}{COMP\_CRV}}\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___type_def_ae165b36ef5a14b4c6e6f5f2899ee7b17}{POLL1}}\\
+\>\>{\em COMP1 polling register offset: 0x1C }\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___type_def_a03e11684fdd29e8ac8713e08745f50e1}{COMP1\_POLL}}\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___type_def_a2dbe33886d3873edbc920ab834ad1ad1}{POLL2}}\\
+\>\>{\em COMP2 polling register offset: 0x20 }\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_c_o_m_p___type_def_acced4a0f2f51cada5ae3504130dbcc32}{COMP2\_POLL}}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Comparators Register Structure Definition 
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00051}{51}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{struct_c_o_m_p___type_def_a2c05c0b7d0347394c01526e7b32c0f25}\label{struct_c_o_m_p___type_def_a2c05c0b7d0347394c01526e7b32c0f25}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  COMP\+\_\+\+Type\+Def\+::@121}
+
+\mbox{\Hypertarget{struct_c_o_m_p___type_def_ad0df4f30b5c80daaf5ceeedd9d5c44e6}\label{struct_c_o_m_p___type_def_ad0df4f30b5c80daaf5ceeedd9d5c44e6}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  COMP\+\_\+\+Type\+Def\+::@123}
+
+\mbox{\Hypertarget{struct_c_o_m_p___type_def_ad36abb1e945b09f5b6c0ec3ed790419e}\label{struct_c_o_m_p___type_def_ad36abb1e945b09f5b6c0ec3ed790419e}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  COMP\+\_\+\+Type\+Def\+::@125}
+
+\mbox{\Hypertarget{struct_c_o_m_p___type_def_a8268ae3e3f98dd4c6fc64413c554f4fe}\label{struct_c_o_m_p___type_def_a8268ae3e3f98dd4c6fc64413c554f4fe}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  COMP\+\_\+\+Type\+Def\+::@127}
+
+\mbox{\Hypertarget{struct_c_o_m_p___type_def_a2a8a7557266cf9dac2627c1abe299ab1}\label{struct_c_o_m_p___type_def_a2a8a7557266cf9dac2627c1abe299ab1}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  COMP\+\_\+\+Type\+Def\+::@129}
+
+\mbox{\Hypertarget{struct_c_o_m_p___type_def_a0762925796ebf489feb3cf45e47b8131}\label{struct_c_o_m_p___type_def_a0762925796ebf489feb3cf45e47b8131}} 
+\index{COMP\_TypeDef@{COMP\_TypeDef}!COMP1\_CSR@{COMP1\_CSR}}
+\index{COMP1\_CSR@{COMP1\_CSR}!COMP\_TypeDef@{COMP\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{COMP1\_CSR}{COMP1\_CSR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Type\+Def\+::\+COMP1\+\_\+\+CSR}
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00060}{60}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___type_def_a03e11684fdd29e8ac8713e08745f50e1}\label{struct_c_o_m_p___type_def_a03e11684fdd29e8ac8713e08745f50e1}} 
+\index{COMP\_TypeDef@{COMP\_TypeDef}!COMP1\_POLL@{COMP1\_POLL}}
+\index{COMP1\_POLL@{COMP1\_POLL}!COMP\_TypeDef@{COMP\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{COMP1\_POLL}{COMP1\_POLL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Type\+Def\+::\+COMP1\+\_\+\+POLL}
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00073}{73}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___type_def_a3603525186dab04f5617d004aba45e3c}\label{struct_c_o_m_p___type_def_a3603525186dab04f5617d004aba45e3c}} 
+\index{COMP\_TypeDef@{COMP\_TypeDef}!COMP2\_CSR@{COMP2\_CSR}}
+\index{COMP2\_CSR@{COMP2\_CSR}!COMP\_TypeDef@{COMP\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{COMP2\_CSR}{COMP2\_CSR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Type\+Def\+::\+COMP2\+\_\+\+CSR}
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00064}{64}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___type_def_acced4a0f2f51cada5ae3504130dbcc32}\label{struct_c_o_m_p___type_def_acced4a0f2f51cada5ae3504130dbcc32}} 
+\index{COMP\_TypeDef@{COMP\_TypeDef}!COMP2\_POLL@{COMP2\_POLL}}
+\index{COMP2\_POLL@{COMP2\_POLL}!COMP\_TypeDef@{COMP\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{COMP2\_POLL}{COMP2\_POLL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Type\+Def\+::\+COMP2\+\_\+\+POLL}
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00077}{77}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___type_def_a9a1f33915624704ea38646a4c53aa0c6}\label{struct_c_o_m_p___type_def_a9a1f33915624704ea38646a4c53aa0c6}} 
+\index{COMP\_TypeDef@{COMP\_TypeDef}!COMP\_CRV@{COMP\_CRV}}
+\index{COMP\_CRV@{COMP\_CRV}!COMP\_TypeDef@{COMP\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{COMP\_CRV}{COMP\_CRV}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Type\+Def\+::\+COMP\+\_\+\+CRV}
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00069}{69}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___type_def_ac08b21c6668789c46f495f0f9f43a74c}\label{struct_c_o_m_p___type_def_ac08b21c6668789c46f495f0f9f43a74c}} 
+\index{COMP\_TypeDef@{COMP\_TypeDef}!CRV@{CRV}}
+\index{CRV@{CRV}!COMP\_TypeDef@{COMP\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CRV}{CRV}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Type\+Def\+::\+CRV}
+
+
+
+COMP external reference voltage register offset\+: 0x18 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00068}{68}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___type_def_ad41213faf794b1c6849910b2f9765f07}\label{struct_c_o_m_p___type_def_ad41213faf794b1c6849910b2f9765f07}} 
+\index{COMP\_TypeDef@{COMP\_TypeDef}!CSR1@{CSR1}}
+\index{CSR1@{CSR1}!COMP\_TypeDef@{COMP\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CSR1}{CSR1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Type\+Def\+::\+CSR1}
+
+
+
+COMP1 Control Status Register offset\+: 0x0C 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00059}{59}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___type_def_a667a54bcd3bb5f87cb9c1dcb98c39619}\label{struct_c_o_m_p___type_def_a667a54bcd3bb5f87cb9c1dcb98c39619}} 
+\index{COMP\_TypeDef@{COMP\_TypeDef}!CSR2@{CSR2}}
+\index{CSR2@{CSR2}!COMP\_TypeDef@{COMP\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CSR2}{CSR2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Type\+Def\+::\+CSR2}
+
+
+
+COMP2 Control Status Register offset\+: 0x10 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00063}{63}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___type_def_ae165b36ef5a14b4c6e6f5f2899ee7b17}\label{struct_c_o_m_p___type_def_ae165b36ef5a14b4c6e6f5f2899ee7b17}} 
+\index{COMP\_TypeDef@{COMP\_TypeDef}!POLL1@{POLL1}}
+\index{POLL1@{POLL1}!COMP\_TypeDef@{COMP\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{POLL1}{POLL1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Type\+Def\+::\+POLL1}
+
+
+
+COMP1 polling register offset\+: 0x1C 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00072}{72}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___type_def_a2dbe33886d3873edbc920ab834ad1ad1}\label{struct_c_o_m_p___type_def_a2dbe33886d3873edbc920ab834ad1ad1}} 
+\index{COMP\_TypeDef@{COMP\_TypeDef}!POLL2@{POLL2}}
+\index{POLL2@{POLL2}!COMP\_TypeDef@{COMP\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{POLL2}{POLL2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Type\+Def\+::\+POLL2}
+
+
+
+COMP2 polling register offset\+: 0x20 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00076}{76}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___type_def_a906be5681b7db6e55adfee1f714b038f}\label{struct_c_o_m_p___type_def_a906be5681b7db6e55adfee1f714b038f}} 
+\index{COMP\_TypeDef@{COMP\_TypeDef}!RESERVED1@{RESERVED1}}
+\index{RESERVED1@{RESERVED1}!COMP\_TypeDef@{COMP\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RESERVED1}{RESERVED1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Type\+Def\+::\+RESERVED1}
+
+
+
+offset\+: 0x00 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00055}{55}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___type_def_ace58156b45cb2ae2a13d6eb05e3efd3c}\label{struct_c_o_m_p___type_def_ace58156b45cb2ae2a13d6eb05e3efd3c}} 
+\index{COMP\_TypeDef@{COMP\_TypeDef}!RESERVED2@{RESERVED2}}
+\index{RESERVED2@{RESERVED2}!COMP\_TypeDef@{COMP\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RESERVED2}{RESERVED2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Type\+Def\+::\+RESERVED2}
+
+
+
+offset\+: 0x04 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00056}{56}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___type_def_a77f64a841d884ee180755d046d3ba0ba}\label{struct_c_o_m_p___type_def_a77f64a841d884ee180755d046d3ba0ba}} 
+\index{COMP\_TypeDef@{COMP\_TypeDef}!RESERVED3@{RESERVED3}}
+\index{RESERVED3@{RESERVED3}!COMP\_TypeDef@{COMP\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RESERVED3}{RESERVED3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Type\+Def\+::\+RESERVED3}
+
+
+
+offset\+: 0x08 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00057}{57}} 行定义.
+
+\mbox{\Hypertarget{struct_c_o_m_p___type_def_abdbfd135b23338f5f9bebcf3a94b9934}\label{struct_c_o_m_p___type_def_abdbfd135b23338f5f9bebcf3a94b9934}} 
+\index{COMP\_TypeDef@{COMP\_TypeDef}!RESERVED4@{RESERVED4}}
+\index{RESERVED4@{RESERVED4}!COMP\_TypeDef@{COMP\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RESERVED4}{RESERVED4}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} COMP\+\_\+\+Type\+Def\+::\+RESERVED4}
+
+
+
+offset\+: 0x14 
+
+
+
+在文件 \mbox{\hyperlink{reg__comp_8h_source}{reg\+\_\+comp.\+h}} 第 \mbox{\hyperlink{reg__comp_8h_source_l00066}{66}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/\mbox{\hyperlink{reg__comp_8h}{reg\+\_\+comp.\+h}}\end{DoxyCompactItemize}

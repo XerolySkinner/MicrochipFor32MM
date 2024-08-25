@@ -1,0 +1,838 @@
+\hypertarget{reg__crs_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/reg\+\_\+crs.h 文件参考}
+\label{reg__crs_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_crs.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_crs.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_r_s___type_def}{CRS\+\_\+\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em CRS Register Structure Definition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a53cd25310ec0663a7395042bd860fedc}{CRS\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x6\+C00)
+\begin{DoxyCompactList}\small\item\em CRS Base Address Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_ad151b2f8dbc243ac0ce1fad0c4306328}{CRS}}~((\mbox{\hyperlink{struct_c_r_s___type_def}{CRS\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__crs_8h_a53cd25310ec0663a7395042bd860fedc}{CRS\+\_\+\+BASE}})
+\begin{DoxyCompactList}\small\item\em CRS type pointer Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a0fe0aa3809ebf66e37089884266eec47}{CRS\+\_\+\+CR\+\_\+\+OKIE\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em CRS\+\_\+\+CR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a7693a62cacfca8ab9699a22e94fe938f}{CRS\+\_\+\+CR\+\_\+\+OKIE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a0fe0aa3809ebf66e37089884266eec47}{CRS\+\_\+\+CR\+\_\+\+OKIE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SYNC event OK interrupt enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a08e3f6522b576ee3ce450ec58e37caf3}{CRS\+\_\+\+CR\+\_\+\+WARNIE\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_aade9041f148c18e199ed7cf5c4228dba}{CRS\+\_\+\+CR\+\_\+\+WARNIE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a08e3f6522b576ee3ce450ec58e37caf3}{CRS\+\_\+\+CR\+\_\+\+WARNIE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SYNC warning interrupt enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_afe82fc749bd2c929d741dd3f19c6c833}{CRS\+\_\+\+CR\+\_\+\+ERRIE\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_ac616bbfe903ec7cc2be289db5fba0fe5}{CRS\+\_\+\+CR\+\_\+\+ERRIE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_afe82fc749bd2c929d741dd3f19c6c833}{CRS\+\_\+\+CR\+\_\+\+ERRIE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Synchronization or trimming error interrupt enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_af003e149a5929f9003a0436cb792b9ba}{CRS\+\_\+\+CR\+\_\+\+EXPTIE\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_af122171aeba18f537d001ef840cb428c}{CRS\+\_\+\+CR\+\_\+\+EXPTIE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_af003e149a5929f9003a0436cb792b9ba}{CRS\+\_\+\+CR\+\_\+\+EXPTIE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Expected SYNC interrupt enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a8104505d704f81461ebe96b2042b6cc4}{CRS\+\_\+\+CR\+\_\+\+CNTEN\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_af64de8225612fa55f0a771dd47a4f282}{CRS\+\_\+\+CR\+\_\+\+CNTEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a8104505d704f81461ebe96b2042b6cc4}{CRS\+\_\+\+CR\+\_\+\+CNTEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Frequency error counter enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_adc58c855511f7dee3f38862400350951}{CRS\+\_\+\+CR\+\_\+\+AUTOTRIMEN\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_afa48432b942f1896e05a2eff91178edd}{CRS\+\_\+\+CR\+\_\+\+AUTOTRIMEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_adc58c855511f7dee3f38862400350951}{CRS\+\_\+\+CR\+\_\+\+AUTOTRIMEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Automatic trimming enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a0a1aaab3255d1a601461b0af51ee2b71}{CRS\+\_\+\+CR\+\_\+\+SWSYNC\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a53d79706214ba4ee9310e4b678d67e44}{CRS\+\_\+\+CR\+\_\+\+SWSYNC}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a0a1aaab3255d1a601461b0af51ee2b71}{CRS\+\_\+\+CR\+\_\+\+SWSYNC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Generate software SYNC event \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a8403e00f9da8b5d82edf71bad235fdfe}{CRS\+\_\+\+CR\+\_\+\+TRIM\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a755d695431db14c1b3b15a48ede61c13}{CRS\+\_\+\+CR\+\_\+\+TRIM}}~(0x3\+FFU $<$$<$ \mbox{\hyperlink{reg__crs_8h_a8403e00f9da8b5d82edf71bad235fdfe}{CRS\+\_\+\+CR\+\_\+\+TRIM\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em HSI 48 oscillator smooth trimming \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a391a7b80ee20474bda366e0f915a4923}{CRS\+\_\+\+CFGR\+\_\+\+RELOAD\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em CRS\+\_\+\+CFGR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a7e54b011ada0eeb4b6ed9cdd24d517f9}{CRS\+\_\+\+CFGR\+\_\+\+RELOAD}}~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__crs_8h_a391a7b80ee20474bda366e0f915a4923}{CRS\+\_\+\+CFGR\+\_\+\+RELOAD\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Counter reload value \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a5e716be61ad7e9eec068b4dff4a96a7b}{CRS\+\_\+\+CFGR\+\_\+\+FELIM\+\_\+\+Pos}}~(16)
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a48c70ae21b6a35ed520a2b30df2c4852}{CRS\+\_\+\+CFGR\+\_\+\+FELIM}}~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__crs_8h_a5e716be61ad7e9eec068b4dff4a96a7b}{CRS\+\_\+\+CFGR\+\_\+\+FELIM\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Frequency error limit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a4e7965c47b6e5d024044760ffe816e7e}{CRS\+\_\+\+CFGR\+\_\+\+DIV\+\_\+\+Pos}}~(24)
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a098a67ef20794332d0308c761fb47a0f}{CRS\+\_\+\+CFGR\+\_\+\+DIV}}~(0x07U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a4e7965c47b6e5d024044760ffe816e7e}{CRS\+\_\+\+CFGR\+\_\+\+DIV\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SYNC divider \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a460d617d51a570ac67bdd340d8e134cb}{CRS\+\_\+\+CFGR\+\_\+\+SRC\+\_\+\+Pos}}~(28)
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_aed7df5ce417054248a351c81eba62f26}{CRS\+\_\+\+CFGR\+\_\+\+SRC}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a460d617d51a570ac67bdd340d8e134cb}{CRS\+\_\+\+CFGR\+\_\+\+SRC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SYNC signal source selection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_aaca87c760933eeb6f50243ef87473baa}{CRS\+\_\+\+CFGR\+\_\+\+SRC\+\_\+\+MCO}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a460d617d51a570ac67bdd340d8e134cb}{CRS\+\_\+\+CFGR\+\_\+\+SRC\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a8afdbae0491f899a8ff30055fccc0b30}{CRS\+\_\+\+CFGR\+\_\+\+SRC\+\_\+\+USBSOF}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a460d617d51a570ac67bdd340d8e134cb}{CRS\+\_\+\+CFGR\+\_\+\+SRC\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a23d63b667d8bd57e2612a27444d0d2d1}{CRS\+\_\+\+CFGR\+\_\+\+POL\+\_\+\+Pos}}~(31)
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a34b1b16b28f551ef51f08f7372385ad5}{CRS\+\_\+\+CFGR\+\_\+\+POL}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a23d63b667d8bd57e2612a27444d0d2d1}{CRS\+\_\+\+CFGR\+\_\+\+POL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SYNC polarity selection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_afbaa9dcfcade7b3c6e7598b3870db9eb}{CRS\+\_\+\+ISR\+\_\+\+OKIF\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em CRS\+\_\+\+ISR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a4f8a2b5888a0bac6ede515ec2eb125d7}{CRS\+\_\+\+ISR\+\_\+\+OKIF}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_afbaa9dcfcade7b3c6e7598b3870db9eb}{CRS\+\_\+\+ISR\+\_\+\+OKIF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SYNC event OK flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_ae0da8b092f26c78938de23c0dea143b9}{CRS\+\_\+\+ISR\+\_\+\+WARNIF\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a87e76b7dee2efca11a6ec0b578fe6531}{CRS\+\_\+\+ISR\+\_\+\+WARNIF}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_ae0da8b092f26c78938de23c0dea143b9}{CRS\+\_\+\+ISR\+\_\+\+WARNIF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SYNC warning flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_ac51bb5861aa3290d200a5c3edd122904}{CRS\+\_\+\+ISR\+\_\+\+ERRIF\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a9e5871b1ea8f8602415a766bb9356329}{CRS\+\_\+\+ISR\+\_\+\+ERRIF}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_ac51bb5861aa3290d200a5c3edd122904}{CRS\+\_\+\+ISR\+\_\+\+ERRIF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Error flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a060dc6a61fcb74cef01cea42fb48dc23}{CRS\+\_\+\+ISR\+\_\+\+EXPTIF\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_ac11c44aaef0968554c0e6795864c2f5f}{CRS\+\_\+\+ISR\+\_\+\+EXPTIF}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a060dc6a61fcb74cef01cea42fb48dc23}{CRS\+\_\+\+ISR\+\_\+\+EXPTIF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Expected SYNC flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a0bb4fe6aefd586988a62a5837baa26ea}{CRS\+\_\+\+ISR\+\_\+\+ERR\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_ae9826e0b009afd0d8b1ed51b44d4a4ee}{CRS\+\_\+\+ISR\+\_\+\+ERR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a0bb4fe6aefd586988a62a5837baa26ea}{CRS\+\_\+\+ISR\+\_\+\+ERR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SYNC error \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a1ab20c62ea8ea4943f71da58aba7ba43}{CRS\+\_\+\+ISR\+\_\+\+MISS\+\_\+\+Pos}}~(9)
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a79febd04bfdf302df013d199ce1bbff4}{CRS\+\_\+\+ISR\+\_\+\+MISS}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a1ab20c62ea8ea4943f71da58aba7ba43}{CRS\+\_\+\+ISR\+\_\+\+MISS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SYNC missed \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_ac7bc2e7aa3cd36c7c76255488ccc26fe}{CRS\+\_\+\+ISR\+\_\+\+OVERFLOW\+\_\+\+Pos}}~(10)
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a938cebb3399bb229e30fdec64ff06d75}{CRS\+\_\+\+ISR\+\_\+\+OVERFLOW}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_ac7bc2e7aa3cd36c7c76255488ccc26fe}{CRS\+\_\+\+ISR\+\_\+\+OVERFLOW\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Trimming overflow or underflow \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_afbcb80aba05f7db27d4b5436f6b4b4ba}{CRS\+\_\+\+ISR\+\_\+\+FEDIR\+\_\+\+Pos}}~(15)
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a91196b059d8ff52c4f28bc964c8a446a}{CRS\+\_\+\+ISR\+\_\+\+FEDIR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_afbcb80aba05f7db27d4b5436f6b4b4ba}{CRS\+\_\+\+ISR\+\_\+\+FEDIR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Frequency error direction \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a4a4fbc555cf26b952581829f83c57764}{CRS\+\_\+\+ISR\+\_\+\+FECAP\+\_\+\+Pos}}~(16)
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_af0b8a9757678f28814b1a0c1baca63e2}{CRS\+\_\+\+ISR\+\_\+\+FECAP}}~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__crs_8h_a4a4fbc555cf26b952581829f83c57764}{CRS\+\_\+\+ISR\+\_\+\+FECAP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Frequency error capture \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a4f12e85fa8a9989ec220086c6c6caaa6}{CRS\+\_\+\+ICR\+\_\+\+OK\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em CRS\+\_\+\+ICR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a8d91af50cd99c0d6e7b3bc28fabf1bff}{CRS\+\_\+\+ICR\+\_\+\+OK}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a4f12e85fa8a9989ec220086c6c6caaa6}{CRS\+\_\+\+ICR\+\_\+\+OK\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SYNC event OK clear flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a5a84038704cfa2a772713387d20b9c43}{CRS\+\_\+\+ICR\+\_\+\+WARN\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_aa70486f4c09b204cd1f0331d150d48aa}{CRS\+\_\+\+ICR\+\_\+\+WARN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a5a84038704cfa2a772713387d20b9c43}{CRS\+\_\+\+ICR\+\_\+\+WARN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SYNC warning clear flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_af7041f3114d8a56c81fc27e0e46adfba}{CRS\+\_\+\+ICR\+\_\+\+ERR\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a19b06e76ac148cedc3367ee3a91f4011}{CRS\+\_\+\+ICR\+\_\+\+ERR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_af7041f3114d8a56c81fc27e0e46adfba}{CRS\+\_\+\+ICR\+\_\+\+ERR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Error clear flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crs_8h_a9f21860b6afcaa1fcd8ca23213a11626}{CRS\+\_\+\+ICR\+\_\+\+EXPT\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__crs_8h_ac01d1ca905f12bd849a17d02a502c9d2}{CRS\+\_\+\+ICR\+\_\+\+EXPT}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a9f21860b6afcaa1fcd8ca23213a11626}{CRS\+\_\+\+ICR\+\_\+\+EXPT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Expected SYNC clear flag \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{reg__crs_8h_ad151b2f8dbc243ac0ce1fad0c4306328}\label{reg__crs_8h_ad151b2f8dbc243ac0ce1fad0c4306328}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS@{CRS}}
+\index{CRS@{CRS}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS}{CRS}}
+{\footnotesize\ttfamily \#define CRS~((\mbox{\hyperlink{struct_c_r_s___type_def}{CRS\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__crs_8h_a53cd25310ec0663a7395042bd860fedc}{CRS\+\_\+\+BASE}})}
+
+
+
+CRS type pointer Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00066}{66}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a53cd25310ec0663a7395042bd860fedc}\label{reg__crs_8h_a53cd25310ec0663a7395042bd860fedc}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_BASE@{CRS\_BASE}}
+\index{CRS\_BASE@{CRS\_BASE}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_BASE}{CRS\_BASE}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x6\+C00)}
+
+
+
+CRS Base Address Definition 
+
+Base Address\+: 0x40006\+C00 
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00047}{47}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a098a67ef20794332d0308c761fb47a0f}\label{reg__crs_8h_a098a67ef20794332d0308c761fb47a0f}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CFGR\_DIV@{CRS\_CFGR\_DIV}}
+\index{CRS\_CFGR\_DIV@{CRS\_CFGR\_DIV}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CFGR\_DIV}{CRS\_CFGR\_DIV}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CFGR\+\_\+\+DIV~(0x07U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a4e7965c47b6e5d024044760ffe816e7e}{CRS\+\_\+\+CFGR\+\_\+\+DIV\+\_\+\+Pos}})}
+
+
+
+SYNC divider 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00098}{98}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a4e7965c47b6e5d024044760ffe816e7e}\label{reg__crs_8h_a4e7965c47b6e5d024044760ffe816e7e}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CFGR\_DIV\_Pos@{CRS\_CFGR\_DIV\_Pos}}
+\index{CRS\_CFGR\_DIV\_Pos@{CRS\_CFGR\_DIV\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CFGR\_DIV\_Pos}{CRS\_CFGR\_DIV\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CFGR\+\_\+\+DIV\+\_\+\+Pos~(24)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00097}{97}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a48c70ae21b6a35ed520a2b30df2c4852}\label{reg__crs_8h_a48c70ae21b6a35ed520a2b30df2c4852}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CFGR\_FELIM@{CRS\_CFGR\_FELIM}}
+\index{CRS\_CFGR\_FELIM@{CRS\_CFGR\_FELIM}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CFGR\_FELIM}{CRS\_CFGR\_FELIM}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CFGR\+\_\+\+FELIM~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__crs_8h_a5e716be61ad7e9eec068b4dff4a96a7b}{CRS\+\_\+\+CFGR\+\_\+\+FELIM\+\_\+\+Pos}})}
+
+
+
+Frequency error limit 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00096}{96}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a5e716be61ad7e9eec068b4dff4a96a7b}\label{reg__crs_8h_a5e716be61ad7e9eec068b4dff4a96a7b}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CFGR\_FELIM\_Pos@{CRS\_CFGR\_FELIM\_Pos}}
+\index{CRS\_CFGR\_FELIM\_Pos@{CRS\_CFGR\_FELIM\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CFGR\_FELIM\_Pos}{CRS\_CFGR\_FELIM\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CFGR\+\_\+\+FELIM\+\_\+\+Pos~(16)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00095}{95}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a34b1b16b28f551ef51f08f7372385ad5}\label{reg__crs_8h_a34b1b16b28f551ef51f08f7372385ad5}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CFGR\_POL@{CRS\_CFGR\_POL}}
+\index{CRS\_CFGR\_POL@{CRS\_CFGR\_POL}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CFGR\_POL}{CRS\_CFGR\_POL}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CFGR\+\_\+\+POL~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a23d63b667d8bd57e2612a27444d0d2d1}{CRS\+\_\+\+CFGR\+\_\+\+POL\+\_\+\+Pos}})}
+
+
+
+SYNC polarity selection 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00104}{104}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a23d63b667d8bd57e2612a27444d0d2d1}\label{reg__crs_8h_a23d63b667d8bd57e2612a27444d0d2d1}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CFGR\_POL\_Pos@{CRS\_CFGR\_POL\_Pos}}
+\index{CRS\_CFGR\_POL\_Pos@{CRS\_CFGR\_POL\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CFGR\_POL\_Pos}{CRS\_CFGR\_POL\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CFGR\+\_\+\+POL\+\_\+\+Pos~(31)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00103}{103}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a7e54b011ada0eeb4b6ed9cdd24d517f9}\label{reg__crs_8h_a7e54b011ada0eeb4b6ed9cdd24d517f9}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CFGR\_RELOAD@{CRS\_CFGR\_RELOAD}}
+\index{CRS\_CFGR\_RELOAD@{CRS\_CFGR\_RELOAD}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CFGR\_RELOAD}{CRS\_CFGR\_RELOAD}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CFGR\+\_\+\+RELOAD~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__crs_8h_a391a7b80ee20474bda366e0f915a4923}{CRS\+\_\+\+CFGR\+\_\+\+RELOAD\+\_\+\+Pos}})}
+
+
+
+Counter reload value 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00094}{94}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a391a7b80ee20474bda366e0f915a4923}\label{reg__crs_8h_a391a7b80ee20474bda366e0f915a4923}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CFGR\_RELOAD\_Pos@{CRS\_CFGR\_RELOAD\_Pos}}
+\index{CRS\_CFGR\_RELOAD\_Pos@{CRS\_CFGR\_RELOAD\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CFGR\_RELOAD\_Pos}{CRS\_CFGR\_RELOAD\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CFGR\+\_\+\+RELOAD\+\_\+\+Pos~(0)}
+
+
+
+CRS\+\_\+\+CFGR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00093}{93}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_aed7df5ce417054248a351c81eba62f26}\label{reg__crs_8h_aed7df5ce417054248a351c81eba62f26}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CFGR\_SRC@{CRS\_CFGR\_SRC}}
+\index{CRS\_CFGR\_SRC@{CRS\_CFGR\_SRC}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CFGR\_SRC}{CRS\_CFGR\_SRC}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CFGR\+\_\+\+SRC~(0x03U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a460d617d51a570ac67bdd340d8e134cb}{CRS\+\_\+\+CFGR\+\_\+\+SRC\+\_\+\+Pos}})}
+
+
+
+SYNC signal source selection 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00100}{100}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_aaca87c760933eeb6f50243ef87473baa}\label{reg__crs_8h_aaca87c760933eeb6f50243ef87473baa}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CFGR\_SRC\_MCO@{CRS\_CFGR\_SRC\_MCO}}
+\index{CRS\_CFGR\_SRC\_MCO@{CRS\_CFGR\_SRC\_MCO}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CFGR\_SRC\_MCO}{CRS\_CFGR\_SRC\_MCO}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CFGR\+\_\+\+SRC\+\_\+\+MCO~(0x00U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a460d617d51a570ac67bdd340d8e134cb}{CRS\+\_\+\+CFGR\+\_\+\+SRC\+\_\+\+Pos}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00101}{101}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a460d617d51a570ac67bdd340d8e134cb}\label{reg__crs_8h_a460d617d51a570ac67bdd340d8e134cb}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CFGR\_SRC\_Pos@{CRS\_CFGR\_SRC\_Pos}}
+\index{CRS\_CFGR\_SRC\_Pos@{CRS\_CFGR\_SRC\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CFGR\_SRC\_Pos}{CRS\_CFGR\_SRC\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CFGR\+\_\+\+SRC\+\_\+\+Pos~(28)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00099}{99}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a8afdbae0491f899a8ff30055fccc0b30}\label{reg__crs_8h_a8afdbae0491f899a8ff30055fccc0b30}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CFGR\_SRC\_USBSOF@{CRS\_CFGR\_SRC\_USBSOF}}
+\index{CRS\_CFGR\_SRC\_USBSOF@{CRS\_CFGR\_SRC\_USBSOF}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CFGR\_SRC\_USBSOF}{CRS\_CFGR\_SRC\_USBSOF}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CFGR\+\_\+\+SRC\+\_\+\+USBSOF~(0x02U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a460d617d51a570ac67bdd340d8e134cb}{CRS\+\_\+\+CFGR\+\_\+\+SRC\+\_\+\+Pos}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00102}{102}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_afa48432b942f1896e05a2eff91178edd}\label{reg__crs_8h_afa48432b942f1896e05a2eff91178edd}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CR\_AUTOTRIMEN@{CRS\_CR\_AUTOTRIMEN}}
+\index{CRS\_CR\_AUTOTRIMEN@{CRS\_CR\_AUTOTRIMEN}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CR\_AUTOTRIMEN}{CRS\_CR\_AUTOTRIMEN}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CR\+\_\+\+AUTOTRIMEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_adc58c855511f7dee3f38862400350951}{CRS\+\_\+\+CR\+\_\+\+AUTOTRIMEN\+\_\+\+Pos}})}
+
+
+
+Automatic trimming enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00084}{84}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_adc58c855511f7dee3f38862400350951}\label{reg__crs_8h_adc58c855511f7dee3f38862400350951}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CR\_AUTOTRIMEN\_Pos@{CRS\_CR\_AUTOTRIMEN\_Pos}}
+\index{CRS\_CR\_AUTOTRIMEN\_Pos@{CRS\_CR\_AUTOTRIMEN\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CR\_AUTOTRIMEN\_Pos}{CRS\_CR\_AUTOTRIMEN\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CR\+\_\+\+AUTOTRIMEN\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00083}{83}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_af64de8225612fa55f0a771dd47a4f282}\label{reg__crs_8h_af64de8225612fa55f0a771dd47a4f282}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CR\_CNTEN@{CRS\_CR\_CNTEN}}
+\index{CRS\_CR\_CNTEN@{CRS\_CR\_CNTEN}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CR\_CNTEN}{CRS\_CR\_CNTEN}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CR\+\_\+\+CNTEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a8104505d704f81461ebe96b2042b6cc4}{CRS\+\_\+\+CR\+\_\+\+CNTEN\+\_\+\+Pos}})}
+
+
+
+Frequency error counter enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00082}{82}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a8104505d704f81461ebe96b2042b6cc4}\label{reg__crs_8h_a8104505d704f81461ebe96b2042b6cc4}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CR\_CNTEN\_Pos@{CRS\_CR\_CNTEN\_Pos}}
+\index{CRS\_CR\_CNTEN\_Pos@{CRS\_CR\_CNTEN\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CR\_CNTEN\_Pos}{CRS\_CR\_CNTEN\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CR\+\_\+\+CNTEN\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00081}{81}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_ac616bbfe903ec7cc2be289db5fba0fe5}\label{reg__crs_8h_ac616bbfe903ec7cc2be289db5fba0fe5}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CR\_ERRIE@{CRS\_CR\_ERRIE}}
+\index{CRS\_CR\_ERRIE@{CRS\_CR\_ERRIE}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CR\_ERRIE}{CRS\_CR\_ERRIE}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CR\+\_\+\+ERRIE~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_afe82fc749bd2c929d741dd3f19c6c833}{CRS\+\_\+\+CR\+\_\+\+ERRIE\+\_\+\+Pos}})}
+
+
+
+Synchronization or trimming error interrupt enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00078}{78}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_afe82fc749bd2c929d741dd3f19c6c833}\label{reg__crs_8h_afe82fc749bd2c929d741dd3f19c6c833}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CR\_ERRIE\_Pos@{CRS\_CR\_ERRIE\_Pos}}
+\index{CRS\_CR\_ERRIE\_Pos@{CRS\_CR\_ERRIE\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CR\_ERRIE\_Pos}{CRS\_CR\_ERRIE\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CR\+\_\+\+ERRIE\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00077}{77}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_af122171aeba18f537d001ef840cb428c}\label{reg__crs_8h_af122171aeba18f537d001ef840cb428c}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CR\_EXPTIE@{CRS\_CR\_EXPTIE}}
+\index{CRS\_CR\_EXPTIE@{CRS\_CR\_EXPTIE}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CR\_EXPTIE}{CRS\_CR\_EXPTIE}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CR\+\_\+\+EXPTIE~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_af003e149a5929f9003a0436cb792b9ba}{CRS\+\_\+\+CR\+\_\+\+EXPTIE\+\_\+\+Pos}})}
+
+
+
+Expected SYNC interrupt enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00080}{80}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_af003e149a5929f9003a0436cb792b9ba}\label{reg__crs_8h_af003e149a5929f9003a0436cb792b9ba}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CR\_EXPTIE\_Pos@{CRS\_CR\_EXPTIE\_Pos}}
+\index{CRS\_CR\_EXPTIE\_Pos@{CRS\_CR\_EXPTIE\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CR\_EXPTIE\_Pos}{CRS\_CR\_EXPTIE\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CR\+\_\+\+EXPTIE\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00079}{79}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a7693a62cacfca8ab9699a22e94fe938f}\label{reg__crs_8h_a7693a62cacfca8ab9699a22e94fe938f}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CR\_OKIE@{CRS\_CR\_OKIE}}
+\index{CRS\_CR\_OKIE@{CRS\_CR\_OKIE}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CR\_OKIE}{CRS\_CR\_OKIE}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CR\+\_\+\+OKIE~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a0fe0aa3809ebf66e37089884266eec47}{CRS\+\_\+\+CR\+\_\+\+OKIE\+\_\+\+Pos}})}
+
+
+
+SYNC event OK interrupt enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00074}{74}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a0fe0aa3809ebf66e37089884266eec47}\label{reg__crs_8h_a0fe0aa3809ebf66e37089884266eec47}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CR\_OKIE\_Pos@{CRS\_CR\_OKIE\_Pos}}
+\index{CRS\_CR\_OKIE\_Pos@{CRS\_CR\_OKIE\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CR\_OKIE\_Pos}{CRS\_CR\_OKIE\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CR\+\_\+\+OKIE\+\_\+\+Pos~(0)}
+
+
+
+CRS\+\_\+\+CR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00073}{73}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a53d79706214ba4ee9310e4b678d67e44}\label{reg__crs_8h_a53d79706214ba4ee9310e4b678d67e44}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CR\_SWSYNC@{CRS\_CR\_SWSYNC}}
+\index{CRS\_CR\_SWSYNC@{CRS\_CR\_SWSYNC}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CR\_SWSYNC}{CRS\_CR\_SWSYNC}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CR\+\_\+\+SWSYNC~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a0a1aaab3255d1a601461b0af51ee2b71}{CRS\+\_\+\+CR\+\_\+\+SWSYNC\+\_\+\+Pos}})}
+
+
+
+Generate software SYNC event 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00086}{86}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a0a1aaab3255d1a601461b0af51ee2b71}\label{reg__crs_8h_a0a1aaab3255d1a601461b0af51ee2b71}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CR\_SWSYNC\_Pos@{CRS\_CR\_SWSYNC\_Pos}}
+\index{CRS\_CR\_SWSYNC\_Pos@{CRS\_CR\_SWSYNC\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CR\_SWSYNC\_Pos}{CRS\_CR\_SWSYNC\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CR\+\_\+\+SWSYNC\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00085}{85}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a755d695431db14c1b3b15a48ede61c13}\label{reg__crs_8h_a755d695431db14c1b3b15a48ede61c13}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CR\_TRIM@{CRS\_CR\_TRIM}}
+\index{CRS\_CR\_TRIM@{CRS\_CR\_TRIM}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CR\_TRIM}{CRS\_CR\_TRIM}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CR\+\_\+\+TRIM~(0x3\+FFU $<$$<$ \mbox{\hyperlink{reg__crs_8h_a8403e00f9da8b5d82edf71bad235fdfe}{CRS\+\_\+\+CR\+\_\+\+TRIM\+\_\+\+Pos}})}
+
+
+
+HSI 48 oscillator smooth trimming 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00088}{88}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a8403e00f9da8b5d82edf71bad235fdfe}\label{reg__crs_8h_a8403e00f9da8b5d82edf71bad235fdfe}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CR\_TRIM\_Pos@{CRS\_CR\_TRIM\_Pos}}
+\index{CRS\_CR\_TRIM\_Pos@{CRS\_CR\_TRIM\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CR\_TRIM\_Pos}{CRS\_CR\_TRIM\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CR\+\_\+\+TRIM\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00087}{87}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_aade9041f148c18e199ed7cf5c4228dba}\label{reg__crs_8h_aade9041f148c18e199ed7cf5c4228dba}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CR\_WARNIE@{CRS\_CR\_WARNIE}}
+\index{CRS\_CR\_WARNIE@{CRS\_CR\_WARNIE}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CR\_WARNIE}{CRS\_CR\_WARNIE}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CR\+\_\+\+WARNIE~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a08e3f6522b576ee3ce450ec58e37caf3}{CRS\+\_\+\+CR\+\_\+\+WARNIE\+\_\+\+Pos}})}
+
+
+
+SYNC warning interrupt enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00076}{76}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a08e3f6522b576ee3ce450ec58e37caf3}\label{reg__crs_8h_a08e3f6522b576ee3ce450ec58e37caf3}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_CR\_WARNIE\_Pos@{CRS\_CR\_WARNIE\_Pos}}
+\index{CRS\_CR\_WARNIE\_Pos@{CRS\_CR\_WARNIE\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_CR\_WARNIE\_Pos}{CRS\_CR\_WARNIE\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+CR\+\_\+\+WARNIE\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00075}{75}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a19b06e76ac148cedc3367ee3a91f4011}\label{reg__crs_8h_a19b06e76ac148cedc3367ee3a91f4011}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ICR\_ERR@{CRS\_ICR\_ERR}}
+\index{CRS\_ICR\_ERR@{CRS\_ICR\_ERR}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ICR\_ERR}{CRS\_ICR\_ERR}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ICR\+\_\+\+ERR~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_af7041f3114d8a56c81fc27e0e46adfba}{CRS\+\_\+\+ICR\+\_\+\+ERR\+\_\+\+Pos}})}
+
+
+
+Error clear flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00136}{136}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_af7041f3114d8a56c81fc27e0e46adfba}\label{reg__crs_8h_af7041f3114d8a56c81fc27e0e46adfba}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ICR\_ERR\_Pos@{CRS\_ICR\_ERR\_Pos}}
+\index{CRS\_ICR\_ERR\_Pos@{CRS\_ICR\_ERR\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ICR\_ERR\_Pos}{CRS\_ICR\_ERR\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ICR\+\_\+\+ERR\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00135}{135}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_ac01d1ca905f12bd849a17d02a502c9d2}\label{reg__crs_8h_ac01d1ca905f12bd849a17d02a502c9d2}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ICR\_EXPT@{CRS\_ICR\_EXPT}}
+\index{CRS\_ICR\_EXPT@{CRS\_ICR\_EXPT}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ICR\_EXPT}{CRS\_ICR\_EXPT}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ICR\+\_\+\+EXPT~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a9f21860b6afcaa1fcd8ca23213a11626}{CRS\+\_\+\+ICR\+\_\+\+EXPT\+\_\+\+Pos}})}
+
+
+
+Expected SYNC clear flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00138}{138}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a9f21860b6afcaa1fcd8ca23213a11626}\label{reg__crs_8h_a9f21860b6afcaa1fcd8ca23213a11626}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ICR\_EXPT\_Pos@{CRS\_ICR\_EXPT\_Pos}}
+\index{CRS\_ICR\_EXPT\_Pos@{CRS\_ICR\_EXPT\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ICR\_EXPT\_Pos}{CRS\_ICR\_EXPT\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ICR\+\_\+\+EXPT\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00137}{137}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a8d91af50cd99c0d6e7b3bc28fabf1bff}\label{reg__crs_8h_a8d91af50cd99c0d6e7b3bc28fabf1bff}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ICR\_OK@{CRS\_ICR\_OK}}
+\index{CRS\_ICR\_OK@{CRS\_ICR\_OK}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ICR\_OK}{CRS\_ICR\_OK}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ICR\+\_\+\+OK~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a4f12e85fa8a9989ec220086c6c6caaa6}{CRS\+\_\+\+ICR\+\_\+\+OK\+\_\+\+Pos}})}
+
+
+
+SYNC event OK clear flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00132}{132}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a4f12e85fa8a9989ec220086c6c6caaa6}\label{reg__crs_8h_a4f12e85fa8a9989ec220086c6c6caaa6}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ICR\_OK\_Pos@{CRS\_ICR\_OK\_Pos}}
+\index{CRS\_ICR\_OK\_Pos@{CRS\_ICR\_OK\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ICR\_OK\_Pos}{CRS\_ICR\_OK\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ICR\+\_\+\+OK\+\_\+\+Pos~(0)}
+
+
+
+CRS\+\_\+\+ICR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00131}{131}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_aa70486f4c09b204cd1f0331d150d48aa}\label{reg__crs_8h_aa70486f4c09b204cd1f0331d150d48aa}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ICR\_WARN@{CRS\_ICR\_WARN}}
+\index{CRS\_ICR\_WARN@{CRS\_ICR\_WARN}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ICR\_WARN}{CRS\_ICR\_WARN}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ICR\+\_\+\+WARN~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a5a84038704cfa2a772713387d20b9c43}{CRS\+\_\+\+ICR\+\_\+\+WARN\+\_\+\+Pos}})}
+
+
+
+SYNC warning clear flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00134}{134}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a5a84038704cfa2a772713387d20b9c43}\label{reg__crs_8h_a5a84038704cfa2a772713387d20b9c43}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ICR\_WARN\_Pos@{CRS\_ICR\_WARN\_Pos}}
+\index{CRS\_ICR\_WARN\_Pos@{CRS\_ICR\_WARN\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ICR\_WARN\_Pos}{CRS\_ICR\_WARN\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ICR\+\_\+\+WARN\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00133}{133}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_ae9826e0b009afd0d8b1ed51b44d4a4ee}\label{reg__crs_8h_ae9826e0b009afd0d8b1ed51b44d4a4ee}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ISR\_ERR@{CRS\_ISR\_ERR}}
+\index{CRS\_ISR\_ERR@{CRS\_ISR\_ERR}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ISR\_ERR}{CRS\_ISR\_ERR}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ISR\+\_\+\+ERR~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a0bb4fe6aefd586988a62a5837baa26ea}{CRS\+\_\+\+ISR\+\_\+\+ERR\+\_\+\+Pos}})}
+
+
+
+SYNC error 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00118}{118}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a0bb4fe6aefd586988a62a5837baa26ea}\label{reg__crs_8h_a0bb4fe6aefd586988a62a5837baa26ea}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ISR\_ERR\_Pos@{CRS\_ISR\_ERR\_Pos}}
+\index{CRS\_ISR\_ERR\_Pos@{CRS\_ISR\_ERR\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ISR\_ERR\_Pos}{CRS\_ISR\_ERR\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ISR\+\_\+\+ERR\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00117}{117}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a9e5871b1ea8f8602415a766bb9356329}\label{reg__crs_8h_a9e5871b1ea8f8602415a766bb9356329}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ISR\_ERRIF@{CRS\_ISR\_ERRIF}}
+\index{CRS\_ISR\_ERRIF@{CRS\_ISR\_ERRIF}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ISR\_ERRIF}{CRS\_ISR\_ERRIF}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ISR\+\_\+\+ERRIF~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_ac51bb5861aa3290d200a5c3edd122904}{CRS\+\_\+\+ISR\+\_\+\+ERRIF\+\_\+\+Pos}})}
+
+
+
+Error flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00114}{114}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_ac51bb5861aa3290d200a5c3edd122904}\label{reg__crs_8h_ac51bb5861aa3290d200a5c3edd122904}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ISR\_ERRIF\_Pos@{CRS\_ISR\_ERRIF\_Pos}}
+\index{CRS\_ISR\_ERRIF\_Pos@{CRS\_ISR\_ERRIF\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ISR\_ERRIF\_Pos}{CRS\_ISR\_ERRIF\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ISR\+\_\+\+ERRIF\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00113}{113}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_ac11c44aaef0968554c0e6795864c2f5f}\label{reg__crs_8h_ac11c44aaef0968554c0e6795864c2f5f}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ISR\_EXPTIF@{CRS\_ISR\_EXPTIF}}
+\index{CRS\_ISR\_EXPTIF@{CRS\_ISR\_EXPTIF}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ISR\_EXPTIF}{CRS\_ISR\_EXPTIF}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ISR\+\_\+\+EXPTIF~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a060dc6a61fcb74cef01cea42fb48dc23}{CRS\+\_\+\+ISR\+\_\+\+EXPTIF\+\_\+\+Pos}})}
+
+
+
+Expected SYNC flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00116}{116}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a060dc6a61fcb74cef01cea42fb48dc23}\label{reg__crs_8h_a060dc6a61fcb74cef01cea42fb48dc23}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ISR\_EXPTIF\_Pos@{CRS\_ISR\_EXPTIF\_Pos}}
+\index{CRS\_ISR\_EXPTIF\_Pos@{CRS\_ISR\_EXPTIF\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ISR\_EXPTIF\_Pos}{CRS\_ISR\_EXPTIF\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ISR\+\_\+\+EXPTIF\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00115}{115}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_af0b8a9757678f28814b1a0c1baca63e2}\label{reg__crs_8h_af0b8a9757678f28814b1a0c1baca63e2}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ISR\_FECAP@{CRS\_ISR\_FECAP}}
+\index{CRS\_ISR\_FECAP@{CRS\_ISR\_FECAP}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ISR\_FECAP}{CRS\_ISR\_FECAP}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ISR\+\_\+\+FECAP~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__crs_8h_a4a4fbc555cf26b952581829f83c57764}{CRS\+\_\+\+ISR\+\_\+\+FECAP\+\_\+\+Pos}})}
+
+
+
+Frequency error capture 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00126}{126}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a4a4fbc555cf26b952581829f83c57764}\label{reg__crs_8h_a4a4fbc555cf26b952581829f83c57764}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ISR\_FECAP\_Pos@{CRS\_ISR\_FECAP\_Pos}}
+\index{CRS\_ISR\_FECAP\_Pos@{CRS\_ISR\_FECAP\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ISR\_FECAP\_Pos}{CRS\_ISR\_FECAP\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ISR\+\_\+\+FECAP\+\_\+\+Pos~(16)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00125}{125}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a91196b059d8ff52c4f28bc964c8a446a}\label{reg__crs_8h_a91196b059d8ff52c4f28bc964c8a446a}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ISR\_FEDIR@{CRS\_ISR\_FEDIR}}
+\index{CRS\_ISR\_FEDIR@{CRS\_ISR\_FEDIR}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ISR\_FEDIR}{CRS\_ISR\_FEDIR}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ISR\+\_\+\+FEDIR~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_afbcb80aba05f7db27d4b5436f6b4b4ba}{CRS\+\_\+\+ISR\+\_\+\+FEDIR\+\_\+\+Pos}})}
+
+
+
+Frequency error direction 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00124}{124}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_afbcb80aba05f7db27d4b5436f6b4b4ba}\label{reg__crs_8h_afbcb80aba05f7db27d4b5436f6b4b4ba}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ISR\_FEDIR\_Pos@{CRS\_ISR\_FEDIR\_Pos}}
+\index{CRS\_ISR\_FEDIR\_Pos@{CRS\_ISR\_FEDIR\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ISR\_FEDIR\_Pos}{CRS\_ISR\_FEDIR\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ISR\+\_\+\+FEDIR\+\_\+\+Pos~(15)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00123}{123}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a79febd04bfdf302df013d199ce1bbff4}\label{reg__crs_8h_a79febd04bfdf302df013d199ce1bbff4}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ISR\_MISS@{CRS\_ISR\_MISS}}
+\index{CRS\_ISR\_MISS@{CRS\_ISR\_MISS}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ISR\_MISS}{CRS\_ISR\_MISS}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ISR\+\_\+\+MISS~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_a1ab20c62ea8ea4943f71da58aba7ba43}{CRS\+\_\+\+ISR\+\_\+\+MISS\+\_\+\+Pos}})}
+
+
+
+SYNC missed 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00120}{120}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a1ab20c62ea8ea4943f71da58aba7ba43}\label{reg__crs_8h_a1ab20c62ea8ea4943f71da58aba7ba43}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ISR\_MISS\_Pos@{CRS\_ISR\_MISS\_Pos}}
+\index{CRS\_ISR\_MISS\_Pos@{CRS\_ISR\_MISS\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ISR\_MISS\_Pos}{CRS\_ISR\_MISS\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ISR\+\_\+\+MISS\+\_\+\+Pos~(9)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00119}{119}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a4f8a2b5888a0bac6ede515ec2eb125d7}\label{reg__crs_8h_a4f8a2b5888a0bac6ede515ec2eb125d7}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ISR\_OKIF@{CRS\_ISR\_OKIF}}
+\index{CRS\_ISR\_OKIF@{CRS\_ISR\_OKIF}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ISR\_OKIF}{CRS\_ISR\_OKIF}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ISR\+\_\+\+OKIF~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_afbaa9dcfcade7b3c6e7598b3870db9eb}{CRS\+\_\+\+ISR\+\_\+\+OKIF\+\_\+\+Pos}})}
+
+
+
+SYNC event OK flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00110}{110}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_afbaa9dcfcade7b3c6e7598b3870db9eb}\label{reg__crs_8h_afbaa9dcfcade7b3c6e7598b3870db9eb}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ISR\_OKIF\_Pos@{CRS\_ISR\_OKIF\_Pos}}
+\index{CRS\_ISR\_OKIF\_Pos@{CRS\_ISR\_OKIF\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ISR\_OKIF\_Pos}{CRS\_ISR\_OKIF\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ISR\+\_\+\+OKIF\+\_\+\+Pos~(0)}
+
+
+
+CRS\+\_\+\+ISR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00109}{109}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a938cebb3399bb229e30fdec64ff06d75}\label{reg__crs_8h_a938cebb3399bb229e30fdec64ff06d75}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ISR\_OVERFLOW@{CRS\_ISR\_OVERFLOW}}
+\index{CRS\_ISR\_OVERFLOW@{CRS\_ISR\_OVERFLOW}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ISR\_OVERFLOW}{CRS\_ISR\_OVERFLOW}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ISR\+\_\+\+OVERFLOW~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_ac7bc2e7aa3cd36c7c76255488ccc26fe}{CRS\+\_\+\+ISR\+\_\+\+OVERFLOW\+\_\+\+Pos}})}
+
+
+
+Trimming overflow or underflow 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00122}{122}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_ac7bc2e7aa3cd36c7c76255488ccc26fe}\label{reg__crs_8h_ac7bc2e7aa3cd36c7c76255488ccc26fe}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ISR\_OVERFLOW\_Pos@{CRS\_ISR\_OVERFLOW\_Pos}}
+\index{CRS\_ISR\_OVERFLOW\_Pos@{CRS\_ISR\_OVERFLOW\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ISR\_OVERFLOW\_Pos}{CRS\_ISR\_OVERFLOW\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ISR\+\_\+\+OVERFLOW\+\_\+\+Pos~(10)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00121}{121}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_a87e76b7dee2efca11a6ec0b578fe6531}\label{reg__crs_8h_a87e76b7dee2efca11a6ec0b578fe6531}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ISR\_WARNIF@{CRS\_ISR\_WARNIF}}
+\index{CRS\_ISR\_WARNIF@{CRS\_ISR\_WARNIF}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ISR\_WARNIF}{CRS\_ISR\_WARNIF}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ISR\+\_\+\+WARNIF~(0x01U $<$$<$ \mbox{\hyperlink{reg__crs_8h_ae0da8b092f26c78938de23c0dea143b9}{CRS\+\_\+\+ISR\+\_\+\+WARNIF\+\_\+\+Pos}})}
+
+
+
+SYNC warning flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00112}{112}} 行定义.
+
+\mbox{\Hypertarget{reg__crs_8h_ae0da8b092f26c78938de23c0dea143b9}\label{reg__crs_8h_ae0da8b092f26c78938de23c0dea143b9}} 
+\index{reg\_crs.h@{reg\_crs.h}!CRS\_ISR\_WARNIF\_Pos@{CRS\_ISR\_WARNIF\_Pos}}
+\index{CRS\_ISR\_WARNIF\_Pos@{CRS\_ISR\_WARNIF\_Pos}!reg\_crs.h@{reg\_crs.h}}
+\doxysubsubsection{\texorpdfstring{CRS\_ISR\_WARNIF\_Pos}{CRS\_ISR\_WARNIF\_Pos}}
+{\footnotesize\ttfamily \#define CRS\+\_\+\+ISR\+\_\+\+WARNIF\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crs_8h_source}{reg\+\_\+crs.\+h}} 第 \mbox{\hyperlink{reg__crs_8h_source_l00111}{111}} 行定义.
+

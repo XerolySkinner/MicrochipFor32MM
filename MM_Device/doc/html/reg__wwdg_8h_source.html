@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>template: C:/Users/XerolySkinner/Desktop/MM_Device/MM32F327x/Include/reg_wwdg.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">template
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8a23370bd962f2be3cb202251f8a0865.html">MM32F327x</a></li><li class="navelem"><a class="el" href="dir_558e241ee7368c5b8b9a34748b15bdf8.html">Include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">reg_wwdg.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="reg__wwdg_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// Define to prevent recursive inclusion</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#ifndef __REG_WWDG_H</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#define __REG_WWDG_H</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Files includes</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">types.h</a>&quot;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#if defined ( __CC_ARM )</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#pragma anon_unions</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="reg__wwdg_8h.html#a9a5bf4728ab93dea5b569f5b972cbe62">   50</a></span><span class="preprocessor">#define WWDG_BASE                       (APB1PERIPH_BASE + 0x2C00)              </span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#undef USENCOMBINEREGISTER</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#undef USENNEWREGISTER</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#undef USENOLDREGISTER</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="reg__wwdg_8h.html#a2a3f5b5b5ac58a5e6544c26613a91853">   60</a></span><span class="preprocessor">#define USENCOMBINEREGISTER</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#ifdef USENCOMBINEREGISTER</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="struct_w_w_d_g___type_def.html">   62</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="struct_w_w_d_g___type_def.html#a6627a8c0cf7e2a9ce0e7b33fe72766ab">   63</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_w_w_d_g___type_def.html#a6627a8c0cf7e2a9ce0e7b33fe72766ab">CR</a>;                                                                </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">union </span>{</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="struct_w_w_d_g___type_def.html#aad5fe9731ef9f52dceb1e79404674748">   65</a></span>        <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_w_w_d_g___type_def.html#aad5fe9731ef9f52dceb1e79404674748">CFGR</a>;                                                          </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="struct_w_w_d_g___type_def.html#addf1e35228425af4ebb11d9be9aaabbf">   66</a></span>        <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_w_w_d_g___type_def.html#addf1e35228425af4ebb11d9be9aaabbf">CFR</a>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    };</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="struct_w_w_d_g___type_def.html#a2ce79c529e8b9dc94f6e2c9b7407b26d">   68</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_w_w_d_g___type_def.html#a2ce79c529e8b9dc94f6e2c9b7407b26d">SR</a>;                                                                </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>} <a class="code hl_struct" href="struct_w_w_d_g___type_def.html">WWDG_TypeDef</a>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#ifdef USENNEWREGISTER</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> CR;                                                                </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> CFGR;                                                              </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> SR;                                                                </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>} <a class="code hl_struct" href="struct_w_w_d_g___type_def.html">WWDG_TypeDef</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#ifdef USENOLDREGISTER</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> CR;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> CFR;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> SR;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>} <a class="code hl_struct" href="struct_w_w_d_g___type_def.html">WWDG_TypeDef</a>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="reg__wwdg_8h.html#a9821fd01757986612ddb8982e2fe27f1">   90</a></span><span class="preprocessor">#define WWDG                            ((WWDG_TypeDef*) WWDG_BASE)</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="reg__wwdg_8h.html#adcefe5650c3412d1ca2d9c0147741406">   97</a></span><span class="preprocessor">#define WWDG_CR_CNT_Pos                 (0)</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="reg__wwdg_8h.html#ad6d2a9fdcf8116fc3ad5ae03a6b995b7">   98</a></span><span class="preprocessor">#define WWDG_CR_CNT                     (0x7FU &lt;&lt; WWDG_CR_CNT_Pos)              </span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="reg__wwdg_8h.html#a51b9fed94bc5fdbc67446173e1b3676c">   99</a></span><span class="preprocessor">#define WWDG_CR_WDGA_Pos                (7)</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="reg__wwdg_8h.html#ab647e9997b8b8e67de72af1aaea3f52f">  100</a></span><span class="preprocessor">#define WWDG_CR_WDGA                    (0x01U &lt;&lt; WWDG_CR_WDGA_Pos)             </span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="reg__wwdg_8h.html#a417b2e7567dddaf7c6bd62be33af544c">  105</a></span><span class="preprocessor">#define WWDG_CFGR_WINDOW_Pos            (0)</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="reg__wwdg_8h.html#a9edcab760275a33ffbece4edf0c154ba">  106</a></span><span class="preprocessor">#define WWDG_CFGR_WINDOW                (0x7FU &lt;&lt; WWDG_CFGR_WINDOW_Pos)         </span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="reg__wwdg_8h.html#a769805cf123907189fca808459083659">  107</a></span><span class="preprocessor">#define WWDG_CFGR_WDGTB_Pos             (7)</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="reg__wwdg_8h.html#ae6d10a33820d33e1ce879945fc1ff041">  108</a></span><span class="preprocessor">#define WWDG_CFGR_WDGTB                 (0x03U &lt;&lt; WWDG_CFGR_WDGTB_Pos)          </span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="reg__wwdg_8h.html#aeff578fbb676001377e532d08083be1c">  109</a></span><span class="preprocessor">#define WWDG_CFGR_WDGTB_1               (0x00U &lt;&lt; WWDG_CFGR_WDGTB_Pos)          </span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="reg__wwdg_8h.html#abafe02e22258c74e4d0d293184b72bbd">  110</a></span><span class="preprocessor">#define WWDG_CFGR_WDGTB_2               (0x01U &lt;&lt; WWDG_CFGR_WDGTB_Pos)          </span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="reg__wwdg_8h.html#a524da00a43650edca9f22a013d5132c4">  111</a></span><span class="preprocessor">#define WWDG_CFGR_WDGTB_4               (0x02U &lt;&lt; WWDG_CFGR_WDGTB_Pos)          </span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="reg__wwdg_8h.html#a0970f789c9297136444c3c3d2090491a">  112</a></span><span class="preprocessor">#define WWDG_CFGR_WDGTB_8               (0x03U &lt;&lt; WWDG_CFGR_WDGTB_Pos)          </span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="reg__wwdg_8h.html#af9186d89af6ae2c5cfb35869e21ea3c3">  113</a></span><span class="preprocessor">#define WWDG_CFGR_EWI_Pos               (9)</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="reg__wwdg_8h.html#a7619aa91f93700621c265d4b4e2c39d7">  114</a></span><span class="preprocessor">#define WWDG_CFGR_EWI                   (0x01U &lt;&lt; WWDG_CFGR_EWI_Pos)            </span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="reg__wwdg_8h.html#ac4c37d2819f82d4cec6c8c9a9250ee43">  119</a></span><span class="preprocessor">#define WWDG_SR_EWIF_Pos                (0)</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="reg__wwdg_8h.html#a96cf9ddd91b6079c5aceef6f3e857b69">  120</a></span><span class="preprocessor">#define WWDG_SR_EWIF                    (0x01U &lt;&lt; WWDG_SR_EWIF_Pos)             </span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="acore__armv8mbl_8h_html_aec43007d9998a0a0e01faede4133d6be"><div class="ttname"><a href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a></div><div class="ttdeci">#define __IO</div><div class="ttdef"><b>Definition:</b> <a href="core__armv8mbl_8h_source.html#l00194">core_armv8mbl.h:194</a></div></div>
+<div class="ttc" id="astruct_w_w_d_g___type_def_html"><div class="ttname"><a href="struct_w_w_d_g___type_def.html">WWDG_TypeDef</a></div><div class="ttdef"><b>Definition:</b> <a href="reg__wwdg_8h_source.html#l00062">reg_wwdg.h:62</a></div></div>
+<div class="ttc" id="astruct_w_w_d_g___type_def_html_a2ce79c529e8b9dc94f6e2c9b7407b26d"><div class="ttname"><a href="struct_w_w_d_g___type_def.html#a2ce79c529e8b9dc94f6e2c9b7407b26d">WWDG_TypeDef::SR</a></div><div class="ttdeci">__IO u32 SR</div><div class="ttdoc">Status register offset: 0x08</div><div class="ttdef"><b>Definition:</b> <a href="reg__wwdg_8h_source.html#l00068">reg_wwdg.h:68</a></div></div>
+<div class="ttc" id="astruct_w_w_d_g___type_def_html_a6627a8c0cf7e2a9ce0e7b33fe72766ab"><div class="ttname"><a href="struct_w_w_d_g___type_def.html#a6627a8c0cf7e2a9ce0e7b33fe72766ab">WWDG_TypeDef::CR</a></div><div class="ttdeci">__IO u32 CR</div><div class="ttdoc">Control register offset: 0x00</div><div class="ttdef"><b>Definition:</b> <a href="reg__wwdg_8h_source.html#l00063">reg_wwdg.h:63</a></div></div>
+<div class="ttc" id="astruct_w_w_d_g___type_def_html_aad5fe9731ef9f52dceb1e79404674748"><div class="ttname"><a href="struct_w_w_d_g___type_def.html#aad5fe9731ef9f52dceb1e79404674748">WWDG_TypeDef::CFGR</a></div><div class="ttdeci">__IO u32 CFGR</div><div class="ttdoc">Configuration register offset: 0x04</div><div class="ttdef"><b>Definition:</b> <a href="reg__wwdg_8h_source.html#l00065">reg_wwdg.h:65</a></div></div>
+<div class="ttc" id="astruct_w_w_d_g___type_def_html_addf1e35228425af4ebb11d9be9aaabbf"><div class="ttname"><a href="struct_w_w_d_g___type_def.html#addf1e35228425af4ebb11d9be9aaabbf">WWDG_TypeDef::CFR</a></div><div class="ttdeci">__IO u32 CFR</div><div class="ttdef"><b>Definition:</b> <a href="reg__wwdg_8h_source.html#l00066">reg_wwdg.h:66</a></div></div>
+<div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">THIS FILE PROVIDES ALL THE TYPE FIRMWARE FUNCTIONS.</div></div>
+<div class="ttc" id="atypes_8h_html_a10e94b422ef0c20dcdec20d31a1f5049"><div class="ttname"><a href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a></div><div class="ttdeci">unsigned int u32</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00054">types.h:54</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

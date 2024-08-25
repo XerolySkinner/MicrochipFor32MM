@@ -1,0 +1,460 @@
+\hypertarget{reg__dbg_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/reg\+\_\+dbg.h 文件参考}
+\label{reg__dbg_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_dbg.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_dbg.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_d_b_g_m_c_u___type_def}{DBGMCU\+\_\+\+Type\+Def}}
+\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_ae737bb7cafe397bbb545a0e6848e1957}{DBG\+\_\+\+BASE}}~(0x40007080\+UL)
+\begin{DoxyCompactList}\small\item\em DBG Base Address Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_a92ec6d9ec2251fda7d4ce09748cd74b4}{DBGMCU}}~((\mbox{\hyperlink{struct_d_b_g_m_c_u___type_def}{DBGMCU\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dbg_8h_ae737bb7cafe397bbb545a0e6848e1957}{DBG\+\_\+\+BASE}})
+\begin{DoxyCompactList}\small\item\em DBGMCU type pointer Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_ad05a229877e557798dfbabe7188d7a54}{DBGMCU\+\_\+\+IDCODE\+\_\+\+DEV\+\_\+\+ID\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em DBGMCU\+\_\+\+IDCODE Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_afd961fcddc40341a817a9ec85b7c80ac}{DBGMCU\+\_\+\+IDCODE\+\_\+\+DEV\+\_\+\+ID}}~(0x\+FFFFFFFFU $<$$<$ \mbox{\hyperlink{reg__dbg_8h_ad05a229877e557798dfbabe7188d7a54}{DBGMCU\+\_\+\+IDCODE\+\_\+\+DEV\+\_\+\+ID\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Device identifier \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_a6b8b373e1d75728b0ea551a4e9275b6f}{DBGMCU\+\_\+\+CR\+\_\+\+SLEEP\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em DBGMCU\+\_\+\+CR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_a7edfbfde9817d581a66b041ceced8a28}{DBGMCU\+\_\+\+CR\+\_\+\+SLEEP}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a6b8b373e1d75728b0ea551a4e9275b6f}{DBGMCU\+\_\+\+CR\+\_\+\+SLEEP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Debug Sleep mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_aba1288bf5b59908d4c3a83b23fd4eec9}{DBGMCU\+\_\+\+CR\+\_\+\+STOP\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_ac6bdad2ebae84094bc8880c8e5cbadef}{DBGMCU\+\_\+\+CR\+\_\+\+STOP}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_aba1288bf5b59908d4c3a83b23fd4eec9}{DBGMCU\+\_\+\+CR\+\_\+\+STOP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Debug Stop mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_a03a067ec69c267ccafd6dbd135d7554d}{DBGMCU\+\_\+\+CR\+\_\+\+STANDBY\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_adac0d02a3885d2696156e9b6ad0ca775}{DBGMCU\+\_\+\+CR\+\_\+\+STANDBY}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a03a067ec69c267ccafd6dbd135d7554d}{DBGMCU\+\_\+\+CR\+\_\+\+STANDBY\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Debug Standby mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_a2be1af4b18b8c9ce4001dd363e6626e7}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+IOEN\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_a9034b6eb9d4dceadffc6a1d1959056c9}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+IOEN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a2be1af4b18b8c9ce4001dd363e6626e7}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+IOEN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Trace pin assignment \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_a20dddffa934315ca4a5902cbf45f4d93}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_ad641a08b344645d47a0789ffa25d7079}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+\+Msk}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a20dddffa934315ca4a5902cbf45f4d93}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em TRACE\+\_\+\+MODE\mbox{[}1\+:0\mbox{]} bits (Trace Pin Assignment Control) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_a2d41a4027853783633d929a43f8d6d85}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+0}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a20dddffa934315ca4a5902cbf45f4d93}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Bit 0 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_a7ba3a830051b53d43d850768242c503e}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+1}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a20dddffa934315ca4a5902cbf45f4d93}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Bit 1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_a8bd7f8662da7691fef8c6dde96ffb0ff}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+\+ASYNC}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a20dddffa934315ca4a5902cbf45f4d93}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Tracking pin uses asynchronous mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_a2126b84899e746a1e9eac8ecb98acf11}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+\+SYNC1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a20dddffa934315ca4a5902cbf45f4d93}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em The trace pin uses synchronous mode, and the data length is 1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_a65858c6cd568ae284a13572276a53068}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+\+SYNC2}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a20dddffa934315ca4a5902cbf45f4d93}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em The trace pin uses synchronous mode, and the data length is 2 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_a38ee4ae807d68c37fc374d0025b498a0}{DBGMCU\+\_\+\+CR\+\_\+\+IWDG\+\_\+\+STOP\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_ae97ff694e642772c086d85fcd6b70a91}{DBGMCU\+\_\+\+CR\+\_\+\+IWDG\+\_\+\+STOP}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a38ee4ae807d68c37fc374d0025b498a0}{DBGMCU\+\_\+\+CR\+\_\+\+IWDG\+\_\+\+STOP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Debug independent watchdog stopped when core is halted \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_a41c903f57091845352ed84df7b7473e7}{DBGMCU\+\_\+\+CR\+\_\+\+WWDG\+\_\+\+STOP\+\_\+\+Pos}}~(9)
+\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_ae1a0b27b5e542b867f070a3ac3a3f81e}{DBGMCU\+\_\+\+CR\+\_\+\+WWDG\+\_\+\+STOP}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a41c903f57091845352ed84df7b7473e7}{DBGMCU\+\_\+\+CR\+\_\+\+WWDG\+\_\+\+STOP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Debug window watchdog stopped when core is halted \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_a7d5d015fdc3ffcd86943707f73dfd808}{DBGMCU\+\_\+\+CR\+\_\+\+TIM\+\_\+\+STOP\+\_\+\+Pos}}~(10)
+\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_a6154c7f46c21394d3c147d3daf49a866}{DBGMCU\+\_\+\+CR\+\_\+\+TIM1\+\_\+\+STOP}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a7d5d015fdc3ffcd86943707f73dfd808}{DBGMCU\+\_\+\+CR\+\_\+\+TIM\+\_\+\+STOP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em TIM1 counter stopped when core is halted \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_a87acb8c2c89dc8d72b6c653f77f46960}{DBGMCU\+\_\+\+CR\+\_\+\+TIM2\+\_\+\+STOP}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a7d5d015fdc3ffcd86943707f73dfd808}{DBGMCU\+\_\+\+CR\+\_\+\+TIM\+\_\+\+STOP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em TIM2 counter stopped when core is halted \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_a369bd7e54a2bd8f504b6f31398d2675d}{DBGMCU\+\_\+\+CR\+\_\+\+TIM3\+\_\+\+STOP}}~(0x04U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a7d5d015fdc3ffcd86943707f73dfd808}{DBGMCU\+\_\+\+CR\+\_\+\+TIM\+\_\+\+STOP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em TIM3 counter stopped when core is halted \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dbg_8h_a45723865ceffd522e098ec8ab24e9875}{DBGMCU\+\_\+\+CR\+\_\+\+TIM4\+\_\+\+STOP}}~(0x08U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a7d5d015fdc3ffcd86943707f73dfd808}{DBGMCU\+\_\+\+CR\+\_\+\+TIM\+\_\+\+STOP\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em TIM4 counter stopped when core is halted \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{reg__dbg_8h_ae737bb7cafe397bbb545a0e6848e1957}\label{reg__dbg_8h_ae737bb7cafe397bbb545a0e6848e1957}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBG\_BASE@{DBG\_BASE}}
+\index{DBG\_BASE@{DBG\_BASE}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBG\_BASE}{DBG\_BASE}}
+{\footnotesize\ttfamily \#define DBG\+\_\+\+BASE~(0x40007080\+UL)}
+
+
+
+DBG Base Address Definition 
+
+Base Address\+: 0x40007080 /////////////////////////////////////////////////////////////////////////////
+
+DEBUG Registers Structure Definition 
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00051}{51}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_a92ec6d9ec2251fda7d4ce09748cd74b4}\label{reg__dbg_8h_a92ec6d9ec2251fda7d4ce09748cd74b4}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU@{DBGMCU}}
+\index{DBGMCU@{DBGMCU}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU}{DBGMCU}}
+{\footnotesize\ttfamily \#define DBGMCU~((\mbox{\hyperlink{struct_d_b_g_m_c_u___type_def}{DBGMCU\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dbg_8h_ae737bb7cafe397bbb545a0e6848e1957}{DBG\+\_\+\+BASE}})}
+
+
+
+DBGMCU type pointer Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00062}{62}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_ae97ff694e642772c086d85fcd6b70a91}\label{reg__dbg_8h_ae97ff694e642772c086d85fcd6b70a91}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_IWDG\_STOP@{DBGMCU\_CR\_IWDG\_STOP}}
+\index{DBGMCU\_CR\_IWDG\_STOP@{DBGMCU\_CR\_IWDG\_STOP}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_IWDG\_STOP}{DBGMCU\_CR\_IWDG\_STOP}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+IWDG\+\_\+\+STOP~(0x01U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a38ee4ae807d68c37fc374d0025b498a0}{DBGMCU\+\_\+\+CR\+\_\+\+IWDG\+\_\+\+STOP\+\_\+\+Pos}})}
+
+
+
+Debug independent watchdog stopped when core is halted 
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00092}{92}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_a38ee4ae807d68c37fc374d0025b498a0}\label{reg__dbg_8h_a38ee4ae807d68c37fc374d0025b498a0}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_IWDG\_STOP\_Pos@{DBGMCU\_CR\_IWDG\_STOP\_Pos}}
+\index{DBGMCU\_CR\_IWDG\_STOP\_Pos@{DBGMCU\_CR\_IWDG\_STOP\_Pos}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_IWDG\_STOP\_Pos}{DBGMCU\_CR\_IWDG\_STOP\_Pos}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+IWDG\+\_\+\+STOP\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00091}{91}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_a7edfbfde9817d581a66b041ceced8a28}\label{reg__dbg_8h_a7edfbfde9817d581a66b041ceced8a28}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_SLEEP@{DBGMCU\_CR\_SLEEP}}
+\index{DBGMCU\_CR\_SLEEP@{DBGMCU\_CR\_SLEEP}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_SLEEP}{DBGMCU\_CR\_SLEEP}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+SLEEP~(0x01U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a6b8b373e1d75728b0ea551a4e9275b6f}{DBGMCU\+\_\+\+CR\+\_\+\+SLEEP\+\_\+\+Pos}})}
+
+
+
+Debug Sleep mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00076}{76}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_a6b8b373e1d75728b0ea551a4e9275b6f}\label{reg__dbg_8h_a6b8b373e1d75728b0ea551a4e9275b6f}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_SLEEP\_Pos@{DBGMCU\_CR\_SLEEP\_Pos}}
+\index{DBGMCU\_CR\_SLEEP\_Pos@{DBGMCU\_CR\_SLEEP\_Pos}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_SLEEP\_Pos}{DBGMCU\_CR\_SLEEP\_Pos}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+SLEEP\+\_\+\+Pos~(0)}
+
+
+
+DBGMCU\+\_\+\+CR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00075}{75}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_adac0d02a3885d2696156e9b6ad0ca775}\label{reg__dbg_8h_adac0d02a3885d2696156e9b6ad0ca775}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_STANDBY@{DBGMCU\_CR\_STANDBY}}
+\index{DBGMCU\_CR\_STANDBY@{DBGMCU\_CR\_STANDBY}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_STANDBY}{DBGMCU\_CR\_STANDBY}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+STANDBY~(0x01U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a03a067ec69c267ccafd6dbd135d7554d}{DBGMCU\+\_\+\+CR\+\_\+\+STANDBY\+\_\+\+Pos}})}
+
+
+
+Debug Standby mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00080}{80}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_a03a067ec69c267ccafd6dbd135d7554d}\label{reg__dbg_8h_a03a067ec69c267ccafd6dbd135d7554d}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_STANDBY\_Pos@{DBGMCU\_CR\_STANDBY\_Pos}}
+\index{DBGMCU\_CR\_STANDBY\_Pos@{DBGMCU\_CR\_STANDBY\_Pos}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_STANDBY\_Pos}{DBGMCU\_CR\_STANDBY\_Pos}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+STANDBY\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00079}{79}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_ac6bdad2ebae84094bc8880c8e5cbadef}\label{reg__dbg_8h_ac6bdad2ebae84094bc8880c8e5cbadef}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_STOP@{DBGMCU\_CR\_STOP}}
+\index{DBGMCU\_CR\_STOP@{DBGMCU\_CR\_STOP}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_STOP}{DBGMCU\_CR\_STOP}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+STOP~(0x01U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_aba1288bf5b59908d4c3a83b23fd4eec9}{DBGMCU\+\_\+\+CR\+\_\+\+STOP\+\_\+\+Pos}})}
+
+
+
+Debug Stop mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00078}{78}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_aba1288bf5b59908d4c3a83b23fd4eec9}\label{reg__dbg_8h_aba1288bf5b59908d4c3a83b23fd4eec9}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_STOP\_Pos@{DBGMCU\_CR\_STOP\_Pos}}
+\index{DBGMCU\_CR\_STOP\_Pos@{DBGMCU\_CR\_STOP\_Pos}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_STOP\_Pos}{DBGMCU\_CR\_STOP\_Pos}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+STOP\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00077}{77}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_a6154c7f46c21394d3c147d3daf49a866}\label{reg__dbg_8h_a6154c7f46c21394d3c147d3daf49a866}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_TIM1\_STOP@{DBGMCU\_CR\_TIM1\_STOP}}
+\index{DBGMCU\_CR\_TIM1\_STOP@{DBGMCU\_CR\_TIM1\_STOP}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_TIM1\_STOP}{DBGMCU\_CR\_TIM1\_STOP}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+TIM1\+\_\+\+STOP~(0x01U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a7d5d015fdc3ffcd86943707f73dfd808}{DBGMCU\+\_\+\+CR\+\_\+\+TIM\+\_\+\+STOP\+\_\+\+Pos}})}
+
+
+
+TIM1 counter stopped when core is halted 
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00096}{96}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_a87acb8c2c89dc8d72b6c653f77f46960}\label{reg__dbg_8h_a87acb8c2c89dc8d72b6c653f77f46960}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_TIM2\_STOP@{DBGMCU\_CR\_TIM2\_STOP}}
+\index{DBGMCU\_CR\_TIM2\_STOP@{DBGMCU\_CR\_TIM2\_STOP}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_TIM2\_STOP}{DBGMCU\_CR\_TIM2\_STOP}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+TIM2\+\_\+\+STOP~(0x02U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a7d5d015fdc3ffcd86943707f73dfd808}{DBGMCU\+\_\+\+CR\+\_\+\+TIM\+\_\+\+STOP\+\_\+\+Pos}})}
+
+
+
+TIM2 counter stopped when core is halted 
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00097}{97}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_a369bd7e54a2bd8f504b6f31398d2675d}\label{reg__dbg_8h_a369bd7e54a2bd8f504b6f31398d2675d}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_TIM3\_STOP@{DBGMCU\_CR\_TIM3\_STOP}}
+\index{DBGMCU\_CR\_TIM3\_STOP@{DBGMCU\_CR\_TIM3\_STOP}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_TIM3\_STOP}{DBGMCU\_CR\_TIM3\_STOP}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+TIM3\+\_\+\+STOP~(0x04U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a7d5d015fdc3ffcd86943707f73dfd808}{DBGMCU\+\_\+\+CR\+\_\+\+TIM\+\_\+\+STOP\+\_\+\+Pos}})}
+
+
+
+TIM3 counter stopped when core is halted 
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00098}{98}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_a45723865ceffd522e098ec8ab24e9875}\label{reg__dbg_8h_a45723865ceffd522e098ec8ab24e9875}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_TIM4\_STOP@{DBGMCU\_CR\_TIM4\_STOP}}
+\index{DBGMCU\_CR\_TIM4\_STOP@{DBGMCU\_CR\_TIM4\_STOP}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_TIM4\_STOP}{DBGMCU\_CR\_TIM4\_STOP}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+TIM4\+\_\+\+STOP~(0x08U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a7d5d015fdc3ffcd86943707f73dfd808}{DBGMCU\+\_\+\+CR\+\_\+\+TIM\+\_\+\+STOP\+\_\+\+Pos}})}
+
+
+
+TIM4 counter stopped when core is halted 
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00099}{99}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_a7d5d015fdc3ffcd86943707f73dfd808}\label{reg__dbg_8h_a7d5d015fdc3ffcd86943707f73dfd808}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_TIM\_STOP\_Pos@{DBGMCU\_CR\_TIM\_STOP\_Pos}}
+\index{DBGMCU\_CR\_TIM\_STOP\_Pos@{DBGMCU\_CR\_TIM\_STOP\_Pos}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_TIM\_STOP\_Pos}{DBGMCU\_CR\_TIM\_STOP\_Pos}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+TIM\+\_\+\+STOP\+\_\+\+Pos~(10)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00095}{95}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_a9034b6eb9d4dceadffc6a1d1959056c9}\label{reg__dbg_8h_a9034b6eb9d4dceadffc6a1d1959056c9}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_TRACE\_IOEN@{DBGMCU\_CR\_TRACE\_IOEN}}
+\index{DBGMCU\_CR\_TRACE\_IOEN@{DBGMCU\_CR\_TRACE\_IOEN}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_TRACE\_IOEN}{DBGMCU\_CR\_TRACE\_IOEN}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+IOEN~(0x01U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a2be1af4b18b8c9ce4001dd363e6626e7}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+IOEN\+\_\+\+Pos}})}
+
+
+
+Trace pin assignment 
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00082}{82}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_a2be1af4b18b8c9ce4001dd363e6626e7}\label{reg__dbg_8h_a2be1af4b18b8c9ce4001dd363e6626e7}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_TRACE\_IOEN\_Pos@{DBGMCU\_CR\_TRACE\_IOEN\_Pos}}
+\index{DBGMCU\_CR\_TRACE\_IOEN\_Pos@{DBGMCU\_CR\_TRACE\_IOEN\_Pos}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_TRACE\_IOEN\_Pos}{DBGMCU\_CR\_TRACE\_IOEN\_Pos}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+IOEN\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00081}{81}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_a2d41a4027853783633d929a43f8d6d85}\label{reg__dbg_8h_a2d41a4027853783633d929a43f8d6d85}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_TRACE\_MODE\_0@{DBGMCU\_CR\_TRACE\_MODE\_0}}
+\index{DBGMCU\_CR\_TRACE\_MODE\_0@{DBGMCU\_CR\_TRACE\_MODE\_0}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_TRACE\_MODE\_0}{DBGMCU\_CR\_TRACE\_MODE\_0}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+0~(0x01U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a20dddffa934315ca4a5902cbf45f4d93}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+\+Pos}})}
+
+
+
+Bit 0 
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00085}{85}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_a7ba3a830051b53d43d850768242c503e}\label{reg__dbg_8h_a7ba3a830051b53d43d850768242c503e}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_TRACE\_MODE\_1@{DBGMCU\_CR\_TRACE\_MODE\_1}}
+\index{DBGMCU\_CR\_TRACE\_MODE\_1@{DBGMCU\_CR\_TRACE\_MODE\_1}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_TRACE\_MODE\_1}{DBGMCU\_CR\_TRACE\_MODE\_1}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+1~(0x02U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a20dddffa934315ca4a5902cbf45f4d93}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+\+Pos}})}
+
+
+
+Bit 1 
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00086}{86}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_a8bd7f8662da7691fef8c6dde96ffb0ff}\label{reg__dbg_8h_a8bd7f8662da7691fef8c6dde96ffb0ff}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_TRACE\_MODE\_ASYNC@{DBGMCU\_CR\_TRACE\_MODE\_ASYNC}}
+\index{DBGMCU\_CR\_TRACE\_MODE\_ASYNC@{DBGMCU\_CR\_TRACE\_MODE\_ASYNC}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_TRACE\_MODE\_ASYNC}{DBGMCU\_CR\_TRACE\_MODE\_ASYNC}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+\+ASYNC~(0x00U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a20dddffa934315ca4a5902cbf45f4d93}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+\+Pos}})}
+
+
+
+Tracking pin uses asynchronous mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00087}{87}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_ad641a08b344645d47a0789ffa25d7079}\label{reg__dbg_8h_ad641a08b344645d47a0789ffa25d7079}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_TRACE\_MODE\_Msk@{DBGMCU\_CR\_TRACE\_MODE\_Msk}}
+\index{DBGMCU\_CR\_TRACE\_MODE\_Msk@{DBGMCU\_CR\_TRACE\_MODE\_Msk}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_TRACE\_MODE\_Msk}{DBGMCU\_CR\_TRACE\_MODE\_Msk}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+\+Msk~(0x03U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a20dddffa934315ca4a5902cbf45f4d93}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+\+Pos}})}
+
+
+
+TRACE\+\_\+\+MODE\mbox{[}1\+:0\mbox{]} bits (Trace Pin Assignment Control) 
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00084}{84}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_a20dddffa934315ca4a5902cbf45f4d93}\label{reg__dbg_8h_a20dddffa934315ca4a5902cbf45f4d93}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_TRACE\_MODE\_Pos@{DBGMCU\_CR\_TRACE\_MODE\_Pos}}
+\index{DBGMCU\_CR\_TRACE\_MODE\_Pos@{DBGMCU\_CR\_TRACE\_MODE\_Pos}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_TRACE\_MODE\_Pos}{DBGMCU\_CR\_TRACE\_MODE\_Pos}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00083}{83}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_a2126b84899e746a1e9eac8ecb98acf11}\label{reg__dbg_8h_a2126b84899e746a1e9eac8ecb98acf11}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_TRACE\_MODE\_SYNC1@{DBGMCU\_CR\_TRACE\_MODE\_SYNC1}}
+\index{DBGMCU\_CR\_TRACE\_MODE\_SYNC1@{DBGMCU\_CR\_TRACE\_MODE\_SYNC1}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_TRACE\_MODE\_SYNC1}{DBGMCU\_CR\_TRACE\_MODE\_SYNC1}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+\+SYNC1~(0x01U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a20dddffa934315ca4a5902cbf45f4d93}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+\+Pos}})}
+
+
+
+The trace pin uses synchronous mode, and the data length is 1 
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00088}{88}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_a65858c6cd568ae284a13572276a53068}\label{reg__dbg_8h_a65858c6cd568ae284a13572276a53068}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_TRACE\_MODE\_SYNC2@{DBGMCU\_CR\_TRACE\_MODE\_SYNC2}}
+\index{DBGMCU\_CR\_TRACE\_MODE\_SYNC2@{DBGMCU\_CR\_TRACE\_MODE\_SYNC2}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_TRACE\_MODE\_SYNC2}{DBGMCU\_CR\_TRACE\_MODE\_SYNC2}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+\+SYNC2~(0x02U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a20dddffa934315ca4a5902cbf45f4d93}{DBGMCU\+\_\+\+CR\+\_\+\+TRACE\+\_\+\+MODE\+\_\+\+Pos}})}
+
+
+
+The trace pin uses synchronous mode, and the data length is 2 
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00089}{89}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_ae1a0b27b5e542b867f070a3ac3a3f81e}\label{reg__dbg_8h_ae1a0b27b5e542b867f070a3ac3a3f81e}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_WWDG\_STOP@{DBGMCU\_CR\_WWDG\_STOP}}
+\index{DBGMCU\_CR\_WWDG\_STOP@{DBGMCU\_CR\_WWDG\_STOP}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_WWDG\_STOP}{DBGMCU\_CR\_WWDG\_STOP}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+WWDG\+\_\+\+STOP~(0x01U $<$$<$ \mbox{\hyperlink{reg__dbg_8h_a41c903f57091845352ed84df7b7473e7}{DBGMCU\+\_\+\+CR\+\_\+\+WWDG\+\_\+\+STOP\+\_\+\+Pos}})}
+
+
+
+Debug window watchdog stopped when core is halted 
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00094}{94}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_a41c903f57091845352ed84df7b7473e7}\label{reg__dbg_8h_a41c903f57091845352ed84df7b7473e7}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_CR\_WWDG\_STOP\_Pos@{DBGMCU\_CR\_WWDG\_STOP\_Pos}}
+\index{DBGMCU\_CR\_WWDG\_STOP\_Pos@{DBGMCU\_CR\_WWDG\_STOP\_Pos}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_CR\_WWDG\_STOP\_Pos}{DBGMCU\_CR\_WWDG\_STOP\_Pos}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+CR\+\_\+\+WWDG\+\_\+\+STOP\+\_\+\+Pos~(9)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00093}{93}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_afd961fcddc40341a817a9ec85b7c80ac}\label{reg__dbg_8h_afd961fcddc40341a817a9ec85b7c80ac}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_IDCODE\_DEV\_ID@{DBGMCU\_IDCODE\_DEV\_ID}}
+\index{DBGMCU\_IDCODE\_DEV\_ID@{DBGMCU\_IDCODE\_DEV\_ID}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_IDCODE\_DEV\_ID}{DBGMCU\_IDCODE\_DEV\_ID}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+IDCODE\+\_\+\+DEV\+\_\+\+ID~(0x\+FFFFFFFFU $<$$<$ \mbox{\hyperlink{reg__dbg_8h_ad05a229877e557798dfbabe7188d7a54}{DBGMCU\+\_\+\+IDCODE\+\_\+\+DEV\+\_\+\+ID\+\_\+\+Pos}})}
+
+
+
+Device identifier 
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00070}{70}} 行定义.
+
+\mbox{\Hypertarget{reg__dbg_8h_ad05a229877e557798dfbabe7188d7a54}\label{reg__dbg_8h_ad05a229877e557798dfbabe7188d7a54}} 
+\index{reg\_dbg.h@{reg\_dbg.h}!DBGMCU\_IDCODE\_DEV\_ID\_Pos@{DBGMCU\_IDCODE\_DEV\_ID\_Pos}}
+\index{DBGMCU\_IDCODE\_DEV\_ID\_Pos@{DBGMCU\_IDCODE\_DEV\_ID\_Pos}!reg\_dbg.h@{reg\_dbg.h}}
+\doxysubsubsection{\texorpdfstring{DBGMCU\_IDCODE\_DEV\_ID\_Pos}{DBGMCU\_IDCODE\_DEV\_ID\_Pos}}
+{\footnotesize\ttfamily \#define DBGMCU\+\_\+\+IDCODE\+\_\+\+DEV\+\_\+\+ID\+\_\+\+Pos~(0)}
+
+
+
+DBGMCU\+\_\+\+IDCODE Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dbg_8h_source}{reg\+\_\+dbg.\+h}} 第 \mbox{\hyperlink{reg__dbg_8h_source_l00069}{69}} 行定义.
+

@@ -1,0 +1,190 @@
+\hypertarget{reg__crc_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/reg\+\_\+crc.h 文件参考}
+\label{reg__crc_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_crc.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_crc.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_r_c___type_def}{CRC\+\_\+\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em CRC Register Structure Definition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{reg__crc_8h_a656a447589e785594cbf2f45c835ad7e}{CRC\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x3000)
+\begin{DoxyCompactList}\small\item\em CRC Base Address Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crc_8h_a4381bb54c2dbc34500521165aa7b89b1}{CRC}}~((\mbox{\hyperlink{struct_c_r_c___type_def}{CRC\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__crc_8h_a656a447589e785594cbf2f45c835ad7e}{CRC\+\_\+\+BASE}})
+\begin{DoxyCompactList}\small\item\em CRC type pointer Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crc_8h_ac3308e3e2200cc56f9729ff63d429c1d}{CRC\+\_\+\+DR\+\_\+\+DATA\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em CRC\+\_\+\+DR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crc_8h_a6f74aa545240a6f5bc55fd1d6e3457dd}{CRC\+\_\+\+DR\+\_\+\+DATA}}~(0x\+FFFFFFFFU $<$$<$ \mbox{\hyperlink{reg__crc_8h_ac3308e3e2200cc56f9729ff63d429c1d}{CRC\+\_\+\+DR\+\_\+\+DATA\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Data register bits ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crc_8h_a1afd4d83cce2d49c5fe10d9e3f2e8d8a}{CRC\+\_\+\+IDR\+\_\+\+DATA\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__crc_8h_aad649f7668eaf1e3d8d3f2d8d6419447}{CRC\+\_\+\+IDR\+\_\+\+DATA}}~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__crc_8h_a1afd4d83cce2d49c5fe10d9e3f2e8d8a}{CRC\+\_\+\+IDR\+\_\+\+DATA\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em General-\/purpose 8-\/bit data register bits \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crc_8h_a7a12ab5306d6320069e08e63cd9a56f1}{CRC\+\_\+\+CR\+\_\+\+RESET\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em CRC\+\_\+\+CTRL Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crc_8h_a7d57481fb891a0964b40f721354c56d7}{CRC\+\_\+\+CR\+\_\+\+RESET}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__crc_8h_a7a12ab5306d6320069e08e63cd9a56f1}{CRC\+\_\+\+CR\+\_\+\+RESET\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em RESET bit ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__crc_8h_af2791b84330377742dc49355ea5c46c6}{CRC\+\_\+\+MIR\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__crc_8h_a19b09e721ccb14198b2acd6b4270464a}{CRC\+\_\+\+MIR}}~(0x\+FFFFFFFFU $<$$<$ \mbox{\hyperlink{reg__crc_8h_af2791b84330377742dc49355ea5c46c6}{CRC\+\_\+\+MIR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Middle data register \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{reg__crc_8h_source}{reg\+\_\+crc.\+h}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{reg__crc_8h_a4381bb54c2dbc34500521165aa7b89b1}\label{reg__crc_8h_a4381bb54c2dbc34500521165aa7b89b1}} 
+\index{reg\_crc.h@{reg\_crc.h}!CRC@{CRC}}
+\index{CRC@{CRC}!reg\_crc.h@{reg\_crc.h}}
+\doxysubsubsection{\texorpdfstring{CRC}{CRC}}
+{\footnotesize\ttfamily \#define CRC~((\mbox{\hyperlink{struct_c_r_c___type_def}{CRC\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__crc_8h_a656a447589e785594cbf2f45c835ad7e}{CRC\+\_\+\+BASE}})}
+
+
+
+CRC type pointer Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__crc_8h_source}{reg\+\_\+crc.\+h}} 第 \mbox{\hyperlink{reg__crc_8h_source_l00065}{65}} 行定义.
+
+\mbox{\Hypertarget{reg__crc_8h_a656a447589e785594cbf2f45c835ad7e}\label{reg__crc_8h_a656a447589e785594cbf2f45c835ad7e}} 
+\index{reg\_crc.h@{reg\_crc.h}!CRC\_BASE@{CRC\_BASE}}
+\index{CRC\_BASE@{CRC\_BASE}!reg\_crc.h@{reg\_crc.h}}
+\doxysubsubsection{\texorpdfstring{CRC\_BASE}{CRC\_BASE}}
+{\footnotesize\ttfamily \#define CRC\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x3000)}
+
+
+
+CRC Base Address Definition 
+
+Base Address\+: 0x40023000 
+
+在文件 \mbox{\hyperlink{reg__crc_8h_source}{reg\+\_\+crc.\+h}} 第 \mbox{\hyperlink{reg__crc_8h_source_l00045}{45}} 行定义.
+
+\mbox{\Hypertarget{reg__crc_8h_a7d57481fb891a0964b40f721354c56d7}\label{reg__crc_8h_a7d57481fb891a0964b40f721354c56d7}} 
+\index{reg\_crc.h@{reg\_crc.h}!CRC\_CR\_RESET@{CRC\_CR\_RESET}}
+\index{CRC\_CR\_RESET@{CRC\_CR\_RESET}!reg\_crc.h@{reg\_crc.h}}
+\doxysubsubsection{\texorpdfstring{CRC\_CR\_RESET}{CRC\_CR\_RESET}}
+{\footnotesize\ttfamily \#define CRC\+\_\+\+CR\+\_\+\+RESET~(0x01U $<$$<$ \mbox{\hyperlink{reg__crc_8h_a7a12ab5306d6320069e08e63cd9a56f1}{CRC\+\_\+\+CR\+\_\+\+RESET\+\_\+\+Pos}})}
+
+
+
+RESET bit ///////////////////////////////////////////////////////////////////////////// 
+
+CRC\+\_\+\+MIR Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__crc_8h_source}{reg\+\_\+crc.\+h}} 第 \mbox{\hyperlink{reg__crc_8h_source_l00087}{87}} 行定义.
+
+\mbox{\Hypertarget{reg__crc_8h_a7a12ab5306d6320069e08e63cd9a56f1}\label{reg__crc_8h_a7a12ab5306d6320069e08e63cd9a56f1}} 
+\index{reg\_crc.h@{reg\_crc.h}!CRC\_CR\_RESET\_Pos@{CRC\_CR\_RESET\_Pos}}
+\index{CRC\_CR\_RESET\_Pos@{CRC\_CR\_RESET\_Pos}!reg\_crc.h@{reg\_crc.h}}
+\doxysubsubsection{\texorpdfstring{CRC\_CR\_RESET\_Pos}{CRC\_CR\_RESET\_Pos}}
+{\footnotesize\ttfamily \#define CRC\+\_\+\+CR\+\_\+\+RESET\+\_\+\+Pos~(0)}
+
+
+
+CRC\+\_\+\+CTRL Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__crc_8h_source}{reg\+\_\+crc.\+h}} 第 \mbox{\hyperlink{reg__crc_8h_source_l00083}{83}} 行定义.
+
+\mbox{\Hypertarget{reg__crc_8h_a6f74aa545240a6f5bc55fd1d6e3457dd}\label{reg__crc_8h_a6f74aa545240a6f5bc55fd1d6e3457dd}} 
+\index{reg\_crc.h@{reg\_crc.h}!CRC\_DR\_DATA@{CRC\_DR\_DATA}}
+\index{CRC\_DR\_DATA@{CRC\_DR\_DATA}!reg\_crc.h@{reg\_crc.h}}
+\doxysubsubsection{\texorpdfstring{CRC\_DR\_DATA}{CRC\_DR\_DATA}}
+{\footnotesize\ttfamily \#define CRC\+\_\+\+DR\+\_\+\+DATA~(0x\+FFFFFFFFU $<$$<$ \mbox{\hyperlink{reg__crc_8h_ac3308e3e2200cc56f9729ff63d429c1d}{CRC\+\_\+\+DR\+\_\+\+DATA\+\_\+\+Pos}})}
+
+
+
+Data register bits ///////////////////////////////////////////////////////////////////////////// 
+
+CRC\+\_\+\+IDR Register Bit Definition 
+
+在文件 \mbox{\hyperlink{reg__crc_8h_source}{reg\+\_\+crc.\+h}} 第 \mbox{\hyperlink{reg__crc_8h_source_l00076}{76}} 行定义.
+
+\mbox{\Hypertarget{reg__crc_8h_ac3308e3e2200cc56f9729ff63d429c1d}\label{reg__crc_8h_ac3308e3e2200cc56f9729ff63d429c1d}} 
+\index{reg\_crc.h@{reg\_crc.h}!CRC\_DR\_DATA\_Pos@{CRC\_DR\_DATA\_Pos}}
+\index{CRC\_DR\_DATA\_Pos@{CRC\_DR\_DATA\_Pos}!reg\_crc.h@{reg\_crc.h}}
+\doxysubsubsection{\texorpdfstring{CRC\_DR\_DATA\_Pos}{CRC\_DR\_DATA\_Pos}}
+{\footnotesize\ttfamily \#define CRC\+\_\+\+DR\+\_\+\+DATA\+\_\+\+Pos~(0)}
+
+
+
+CRC\+\_\+\+DR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__crc_8h_source}{reg\+\_\+crc.\+h}} 第 \mbox{\hyperlink{reg__crc_8h_source_l00072}{72}} 行定义.
+
+\mbox{\Hypertarget{reg__crc_8h_aad649f7668eaf1e3d8d3f2d8d6419447}\label{reg__crc_8h_aad649f7668eaf1e3d8d3f2d8d6419447}} 
+\index{reg\_crc.h@{reg\_crc.h}!CRC\_IDR\_DATA@{CRC\_IDR\_DATA}}
+\index{CRC\_IDR\_DATA@{CRC\_IDR\_DATA}!reg\_crc.h@{reg\_crc.h}}
+\doxysubsubsection{\texorpdfstring{CRC\_IDR\_DATA}{CRC\_IDR\_DATA}}
+{\footnotesize\ttfamily \#define CRC\+\_\+\+IDR\+\_\+\+DATA~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__crc_8h_a1afd4d83cce2d49c5fe10d9e3f2e8d8a}{CRC\+\_\+\+IDR\+\_\+\+DATA\+\_\+\+Pos}})}
+
+
+
+General-\/purpose 8-\/bit data register bits 
+
+
+
+在文件 \mbox{\hyperlink{reg__crc_8h_source}{reg\+\_\+crc.\+h}} 第 \mbox{\hyperlink{reg__crc_8h_source_l00078}{78}} 行定义.
+
+\mbox{\Hypertarget{reg__crc_8h_a1afd4d83cce2d49c5fe10d9e3f2e8d8a}\label{reg__crc_8h_a1afd4d83cce2d49c5fe10d9e3f2e8d8a}} 
+\index{reg\_crc.h@{reg\_crc.h}!CRC\_IDR\_DATA\_Pos@{CRC\_IDR\_DATA\_Pos}}
+\index{CRC\_IDR\_DATA\_Pos@{CRC\_IDR\_DATA\_Pos}!reg\_crc.h@{reg\_crc.h}}
+\doxysubsubsection{\texorpdfstring{CRC\_IDR\_DATA\_Pos}{CRC\_IDR\_DATA\_Pos}}
+{\footnotesize\ttfamily \#define CRC\+\_\+\+IDR\+\_\+\+DATA\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crc_8h_source}{reg\+\_\+crc.\+h}} 第 \mbox{\hyperlink{reg__crc_8h_source_l00077}{77}} 行定义.
+
+\mbox{\Hypertarget{reg__crc_8h_a19b09e721ccb14198b2acd6b4270464a}\label{reg__crc_8h_a19b09e721ccb14198b2acd6b4270464a}} 
+\index{reg\_crc.h@{reg\_crc.h}!CRC\_MIR@{CRC\_MIR}}
+\index{CRC\_MIR@{CRC\_MIR}!reg\_crc.h@{reg\_crc.h}}
+\doxysubsubsection{\texorpdfstring{CRC\_MIR}{CRC\_MIR}}
+{\footnotesize\ttfamily \#define CRC\+\_\+\+MIR~(0x\+FFFFFFFFU $<$$<$ \mbox{\hyperlink{reg__crc_8h_af2791b84330377742dc49355ea5c46c6}{CRC\+\_\+\+MIR\+\_\+\+Pos}})}
+
+
+
+Middle data register 
+
+
+
+在文件 \mbox{\hyperlink{reg__crc_8h_source}{reg\+\_\+crc.\+h}} 第 \mbox{\hyperlink{reg__crc_8h_source_l00089}{89}} 行定义.
+
+\mbox{\Hypertarget{reg__crc_8h_af2791b84330377742dc49355ea5c46c6}\label{reg__crc_8h_af2791b84330377742dc49355ea5c46c6}} 
+\index{reg\_crc.h@{reg\_crc.h}!CRC\_MIR\_Pos@{CRC\_MIR\_Pos}}
+\index{CRC\_MIR\_Pos@{CRC\_MIR\_Pos}!reg\_crc.h@{reg\_crc.h}}
+\doxysubsubsection{\texorpdfstring{CRC\_MIR\_Pos}{CRC\_MIR\_Pos}}
+{\footnotesize\ttfamily \#define CRC\+\_\+\+MIR\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__crc_8h_source}{reg\+\_\+crc.\+h}} 第 \mbox{\hyperlink{reg__crc_8h_source_l00088}{88}} 行定义.
+

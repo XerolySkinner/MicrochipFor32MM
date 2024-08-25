@@ -1,0 +1,820 @@
+\hypertarget{hal__eth_8c_source}{}\doxysection{hal\+\_\+eth.\+c}
+\label{hal__eth_8c_source}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_eth.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_eth.c}}
+\mbox{\hyperlink{hal__eth_8c}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00018}\mbox{\hyperlink{hal__eth_8c_ac2cbca14a697dadfa2f89721e71f712c}{00018}} \textcolor{preprocessor}{\#define \_HAL\_ETH\_C\_}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00019}00019 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{hal__rcc_8h}{hal\_rcc.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00020}00020 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{hal__eth_8h}{hal\_eth.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00021}00021 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{reg__eth_8h}{reg\_eth.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00024}\mbox{\hyperlink{group___e_t_h___exported___types_ga0d96b5b1d88725ebdac89e28b786ec84}{00024}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga0d96b5b1d88725ebdac89e28b786ec84}{ETH\_DeInit}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00025}00025 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00026}00026     \mbox{\hyperlink{group___r_c_c___exported___functions_ga2284d4bad95f741f57168435ee90956d}{RCC\_AHBPeriphResetCmd}}(\mbox{\hyperlink{reg__rcc_8h_a5905284b3a01a09d67ecfafacd51afe2}{RCC\_AHBENR\_ETHMAC}}, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf}{ENABLE}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00027}00027     \mbox{\hyperlink{group___r_c_c___exported___functions_ga2284d4bad95f741f57168435ee90956d}{RCC\_AHBPeriphResetCmd}}(\mbox{\hyperlink{reg__rcc_8h_a5905284b3a01a09d67ecfafacd51afe2}{RCC\_AHBENR\_ETHMAC}}, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d}{DISABLE}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00028}00028 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00030}\mbox{\hyperlink{group___e_t_h___exported___types_gac54a402a9f6ef39d58dda12b8a3d4c28}{00030}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_gac54a402a9f6ef39d58dda12b8a3d4c28}{ETH\_StructInit}}(\mbox{\hyperlink{struct_e_t_h___init_type_def}{ETH\_InitTypeDef}}* ptr)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00031}00031 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00032}00032     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_ab65434167528cf86f4223f6904788eb6}{ETH\_AutoNegotiation}}         = \mbox{\hyperlink{group___e_t_h___exported___types_ga8dfcaadec110d690ff16d23b02a6dbcf}{ETH\_AutoNegotiation\_Enable}};              }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00033}00033     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a5c4785f65be793a3fe93bc306f4d224b}{ETH\_Watchdog}}                = \mbox{\hyperlink{group___e_t_h___exported___types_ga8aade1584ef553ac512150acf53a7655}{ETH\_Watchdog\_Enable}};                     }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00034}00034     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a3f6dcaf46bf2f5619d74ee71f0f16a12}{ETH\_Jabber}}                  = \mbox{\hyperlink{group___e_t_h___exported___types_ga3ceaa43b6fb25a9d18ad8ce42e31121f}{ETH\_Jabber\_Enable}};                       }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00035}00035     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a2f4e8d08ec272e5de00194e9ab83f94e}{ETH\_InterFrameGap}}           = \mbox{\hyperlink{group___e_t_h___exported___types_gabe3e9f6ae1300e8a0b6aaf735844951c}{ETH\_InterFrameGap\_96Bit}};                 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00036}00036     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_ab093c7209a07479031d29a45cd0d7e1d}{ETH\_CarrierSense}}            = \mbox{\hyperlink{group___e_t_h___exported___types_gac7a692a0de12981405370c4878777494}{ETH\_CarrierSense\_Enable}};                 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00037}00037     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_aa5fbf283ccf19c782d105850f4109eba}{ETH\_Speed}}                   = \mbox{\hyperlink{group___e_t_h___exported___types_ga5ac634c8472bc609683e269b7808c5f0}{ETH\_Speed\_100M}};                          }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00038}00038     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a87c51027c6899b148a203faf34afe88c}{ETH\_ReceiveOwn}}              = \mbox{\hyperlink{group___e_t_h___exported___types_ga55a1be555c3123d27d10ddd31928c64b}{ETH\_ReceiveOwn\_Enable}};                   }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00039}00039     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a0b2e06967608dbe66a6a45130305bfa9}{ETH\_LoopbackMode}}            = \mbox{\hyperlink{group___e_t_h___exported___types_ga10d7d136a17281b5cabe9f32b7105ea6}{ETH\_LoopbackMode\_Disable}};                }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00040}00040     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_af9d155850c4df45b6a97064a3a53bcf8}{ETH\_Mode}}                    = \mbox{\hyperlink{group___e_t_h___exported___types_ga36d01299e98e267aa69c5cd043907a82}{ETH\_Mode\_FullDuplex}};                     }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00041}00041     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_ad5f759367a95d3f6fcf8b487b79aa4c7}{ETH\_ChecksumOffload}}         = \mbox{\hyperlink{group___e_t_h___exported___types_ga5f8946a32d3d3db678a246d39ce6c78d}{ETH\_ChecksumOffload\_Disable}};             }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00042}00042     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_aecd5d2a40ead2d1d91d5ba1e46abc4d6}{ETH\_RetryTransmission}}       = \mbox{\hyperlink{group___e_t_h___exported___types_ga0d1dc27b3ea1a7340ce91733db9cb5ea}{ETH\_RetryTransmission\_Enable}};            }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00043}00043     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_abfc6083e67fbd248216816e590900ab9}{ETH\_AutomaticPadCRCStrip}}    = \mbox{\hyperlink{group___e_t_h___exported___types_gade619eb408c23e8ed12bc9144db5a140}{ETH\_AutomaticPadCRCStrip\_Disable}};        }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00044}00044     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_ab41c1b359cae4266306d32aaeeacb0fe}{ETH\_BackOffLimit}}            = \mbox{\hyperlink{group___e_t_h___exported___types_gae461d682c7aa58cd858043f457779aa9}{ETH\_BackOffLimit\_10}};                     }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00045}00045     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a51ecc9d18ee9a20f332ec23a4613ca5f}{ETH\_DeferralCheck}}           = \mbox{\hyperlink{group___e_t_h___exported___types_ga8de75830e2cf391c18064deb8bf57f09}{ETH\_DeferralCheck\_Disable}};               }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00046}00046     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_ad9c6ea497d12bce89eb5e3c67fdafc22}{ETH\_ReceiveAll}}              = \mbox{\hyperlink{group___e_t_h___exported___types_gac6b5bd518b78adc926a982630b6002e6}{ETH\_ReceiveAll\_Disable}};                  }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00047}00047     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_aea4882867ff82866ead2253e542904a7}{ETH\_SourceAddrFilter}}        = \mbox{\hyperlink{group___e_t_h___exported___types_ga392a0b7baafde8a4ca2b68896d93dbad}{ETH\_SourceAddrFilter\_Disable}};            }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00048}00048     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a90e85f7e955436f2f114793f7cd4a644}{ETH\_PassControlFrames}}       = \mbox{\hyperlink{group___e_t_h___exported___types_ga0c387b3fb02412c594211012871bf86a}{ETH\_PassControlFrames\_BlockAll}};          }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00049}00049     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_aefb8d033311f8c0c89da8c93287afacc}{ETH\_BroadcastFramesReception}} = \mbox{\hyperlink{group___e_t_h___exported___types_ga4ddb00adde2ed86fe0844e56d2b302fa}{ETH\_BroadcastFramesReception\_Disable}};   }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00050}00050     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a8385a5b39baf798d3df4c85fd54c431b}{ETH\_DestinationAddrFilter}}   = \mbox{\hyperlink{group___e_t_h___exported___types_ga19b8673c642f08c129008ea5544c4fbf}{ETH\_DestinationAddrFilter\_Normal}};        }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00051}00051     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_ad55f19fb8b4fb3c7dddfc3f1255bf0f2}{ETH\_PromiscuousMode}}         = \mbox{\hyperlink{group___e_t_h___exported___types_ga18e9c873cdbb7a44b954df49ce9b760b}{ETH\_PromiscuousMode\_Disable}};             }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00052}00052     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a8a6d66ded2f9f84852badb734b27e352}{ETH\_MulticastFramesFilter}}   = \mbox{\hyperlink{group___e_t_h___exported___types_ga6dcd4bb57280ce41f4f6bf3b673e85a4}{ETH\_MulticastFramesFilter\_Perfect}};       }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00053}00053     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a9ea5650877067b6cb3a5fdc421f458e1}{ETH\_UnicastFramesFilter}}     = \mbox{\hyperlink{group___e_t_h___exported___types_ga5d3d063e0b68e9870356369336c406b0}{ETH\_UnicastFramesFilter\_Perfect}};         }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00054}00054     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_af3596bc471e0706293e264b5bf6e2169}{ETH\_HashTableHigh}}           = 0x0;                                     }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00055}00055     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a41d2eb42e8a9f254e26854f91460417e}{ETH\_HashTableLow}}            = 0x0;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00056}00056     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a55ff43553f40972692fd468d47dce7af}{ETH\_PauseTime}}               = 0x0;                                     }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00057}00057     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a053189da46e5af3c1c435504f3d620ca}{ETH\_ZeroQuantaPause}}         = \mbox{\hyperlink{group___e_t_h___exported___types_ga0e996e2903a25c47cf5b6a863ef9dbb8}{ETH\_ZeroQuantaPause\_Enable}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00058}00058     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a1698e93ff57b5567bd1ef5f5f68e5f4d}{ETH\_PauseLowThreshold}}       = \mbox{\hyperlink{group___e_t_h___exported___types_gad2d38e843ac046b3fde35e7cc7598b11}{ETH\_PauseLowThreshold\_Minus4}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00059}00059     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a8e2684e9595ca4086973038e5da8fe30}{ETH\_UnicastPauseFrameDetect}} = \mbox{\hyperlink{group___e_t_h___exported___types_gaa49e8ee113f95573a0de62fc0480a7a4}{ETH\_UnicastPauseFrameDetect\_Disable}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00060}00060     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a3bd731f09a09f23f7b428153865bb11d}{ETH\_ReceiveFlowControl}}      = \mbox{\hyperlink{group___e_t_h___exported___types_ga02ed2b0e4287a59ce5287f2b4035f36e}{ETH\_ReceiveFlowControl\_Disable}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00061}00061     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_ac118e5c6100c07162fc0a8b9b77ec9d5}{ETH\_TransmitFlowControl}}     = \mbox{\hyperlink{group___e_t_h___exported___types_gaac6a60ec3dd3738c06289b7304e45427}{ETH\_TransmitFlowControl\_Disable}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00062}00062     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_ae4d8e53b264463df9a6463fe188c9b3c}{ETH\_VLANTagComparison}}       = \mbox{\hyperlink{group___e_t_h___exported___types_ga914241210abde49274cf90ff8a4b1c76}{ETH\_VLANTagComparison\_16Bit}};             }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00063}00063     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a5516e64767eb77cf37d75ce96059b901}{ETH\_VLANTagIdentifier}}       = 0x0;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00065}00065     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_aec779894ce0184711f498a3fc6f266f8}{ETH\_DropTCPIPChecksumErrorFrame}} = \mbox{\hyperlink{group___e_t_h___exported___types_gad33a5f9dbeffafe9c63ec33fc081dd31}{ETH\_DropTCPIPChecksumErrorFrame\_Disable}}; }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00066}00066     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a525b67297276b0b623481bd4037891e7}{ETH\_ReceiveStoreForward}}     = \mbox{\hyperlink{group___e_t_h___exported___types_ga727f58780535be5c44028c33ea4af4a3}{ETH\_ReceiveStoreForward\_Enable}};          }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00067}00067     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_adbd6d8e30513fc21863d1f646948fe85}{ETH\_FlushReceivedFrame}}      = \mbox{\hyperlink{group___e_t_h___exported___types_ga0a5a1ce5d64fca7b2681d8913cbe20dd}{ETH\_FlushReceivedFrame\_Enable}};           }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00068}00068     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a2c03bea91542e69c05f21006d618b151}{ETH\_TransmitStoreForward}}    = \mbox{\hyperlink{group___e_t_h___exported___types_gac4e039b50eb9413c0fc3f5159ee730cf}{ETH\_TransmitStoreForward\_Enable}};         }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00069}00069     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_afe4849d418fdb062d6e629b207219112}{ETH\_TransmitThresholdControl}} = \mbox{\hyperlink{group___e_t_h___exported___types_ga09a4769ecda03227926996079ae0facc}{ETH\_ReceiveThresholdControl\_64Bytes}};    }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00070}00070     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a0e0bf6f0ebf55d307ee3565c514790b0}{ETH\_ForwardErrorFrames}}      = \mbox{\hyperlink{group___e_t_h___exported___types_ga2c2d4ee2e78cd6c53679edc087fa6bee}{ETH\_ForwardErrorFrames\_Disable}};          }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00071}00071     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a7c47077ce0d8fb45ab24cfb245e73808}{ETH\_ForwardUndersizedGoodFrames}} = \mbox{\hyperlink{group___e_t_h___exported___types_ga4bafcb985b29483df8cd90fe6b495aab}{ETH\_ForwardUndersizedGoodFrames\_Disable}}; }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00072}00072     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a74a3c66f505a83ba39e86bf4755cc61b}{ETH\_ReceiveThresholdControl}} = \mbox{\hyperlink{group___e_t_h___exported___types_ga09a4769ecda03227926996079ae0facc}{ETH\_ReceiveThresholdControl\_64Bytes}};     }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00073}00073     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_aa7343b33d238b02d7d0193eee0113290}{ETH\_SecondFrameOperate}}      = \mbox{\hyperlink{group___e_t_h___exported___types_ga48f7e805dacac166a889911fb8d94b30}{ETH\_SecondFrameOperate\_Disable}};          }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00074}00074     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a96b1be5a687a9291893f1d84dbda5e1b}{ETH\_AddressAlignedBeats}}     = \mbox{\hyperlink{group___e_t_h___exported___types_ga30001f3ebb97462818a23fe8cb0a48f8}{ETH\_AddressAlignedBeats\_Enable}};          }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00075}00075     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_aef95599731889f6e73cd550fd69f5679}{ETH\_FixedBurst}}              = \mbox{\hyperlink{group___e_t_h___exported___types_gaa4e41d22810db5b9f2aa65953ec90166}{ETH\_FixedBurst\_Enable}};                   }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00076}00076     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_aa0b77c856fda6b2a2e2d1d2ae69a71db}{ETH\_RxDMABurstLength}}        = \mbox{\hyperlink{group___e_t_h___exported___types_gad1e2397de66340ee6571d3128659d75f}{ETH\_RxDMABurstLength\_32Beat}};             }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00077}00077     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a40dcc287f5f6ad67155aefd0ca87799f}{ETH\_TxDMABurstLength}}        = \mbox{\hyperlink{group___e_t_h___exported___types_gaf1e41e3f7454e8ec674c2b0993922465}{ETH\_TxDMABurstLength\_32Beat}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00078}00078     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_aaad8a7c7b86471c4bf4cf20467068028}{ETH\_DescriptorSkipLength}}    = 0x0;                                     }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00079}00079     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a6c03be91dc20ab7d1c5dad3520a01b8d}{ETH\_DMAArbitration}}          = \mbox{\hyperlink{group___e_t_h___exported___types_gabe97ab71c0044dd7e08c36e852604689}{ETH\_DMAArbitration\_RoundRobin\_RxTx\_1\_1}};  }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00080}00080 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00082}\mbox{\hyperlink{group___e_t_h___exported___types_gac48f5f162f903cbc373ce40d5c431db8}{00082}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gac48f5f162f903cbc373ce40d5c431db8}{ETH\_Init}}(\mbox{\hyperlink{struct_e_t_h___init_type_def}{ETH\_InitTypeDef}}* ptr, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} phy\_addr)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00083}00083 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00084}00084     \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} hclk = \mbox{\hyperlink{group___r_c_c___exported___functions_ga0b703bee35b03b826d2f3af5d2c89aae}{RCC\_GetHCLKFreq}}();}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00085}00085     \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} reg = \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACMIIAR \& \mbox{\hyperlink{group___e_t_h___exported___types_ga0d72ec6a764572a2fa52f6c2d0648b5b}{MACMIIAR\_CR\_MASK}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00086}00086     \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} temp\_val = 0;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00087}00087     hclk = 100000000;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00089}00089     \textcolor{keywordflow}{if} (hclk >= 20000000 \&\& hclk < 35000000) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00090}00090         reg |= \mbox{\hyperlink{reg__eth_8h_a49474ccdc05637adbc870989373c6535}{ETH\_MACMIIAR\_CR\_Div16}};                                           }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00091}00091     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00092}00092     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (hclk >= 35000000 \&\& hclk < 60000000) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00093}00093         reg |= \mbox{\hyperlink{reg__eth_8h_a69a9da5dbeb77d96a729afc82d4f246d}{ETH\_MACMIIAR\_CR\_Div26}};                                           }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00094}00094     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00095}00095     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (hclk >= 60000000 \&\& hclk < 100000000) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00096}00096         reg |= \mbox{\hyperlink{reg__eth_8h_a1fc1c108e8e7faa35839b3f72b5570d7}{ETH\_MACMIIAR\_CR\_Div42}};                                           }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00097}00097     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00098}00098     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (hclk >= 100000000 \&\& hclk < 150000000) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00099}00099         reg |= \mbox{\hyperlink{reg__eth_8h_a0002142eea07988f854915782bd691c9}{ETH\_MACMIIAR\_CR\_Div62}};                                           }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00100}00100     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00101}00101     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00102}00102         reg |= \mbox{\hyperlink{reg__eth_8h_a372d485677cd2e3a995dab470abe66b8}{ETH\_MACMIIAR\_CR\_Div102}};                                          }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00103}00103     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00104}00104 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00105}00105     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACMIIAR = reg;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00106}00106 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00108}00108     \mbox{\hyperlink{group___e_t_h___exported___types_ga4bcaddc18a6a27f45f7ddbd5313224ba}{ETH\_WritePHYRegister}}(phy\_addr, \mbox{\hyperlink{group___e_t_h___exported___types_ga8abe1a40c71e68881ec669d59f513fdb}{PHY\_BCR}}, \mbox{\hyperlink{group___e_t_h___exported___types_ga31fd873ee8cc1543b11be2a1dc5bb8ec}{PHY\_Reset}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00109}00109     \textcolor{keywordflow}{if} (ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_ab65434167528cf86f4223f6904788eb6}{ETH\_AutoNegotiation}} != \mbox{\hyperlink{group___e_t_h___exported___types_gac84e086970dd8bc1d7d50133444db5fa}{ETH\_AutoNegotiation\_Disable}}) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00110}00110         \textcolor{comment}{// Wait for linked status}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00111}00111         \textcolor{keywordflow}{while} (!(\mbox{\hyperlink{group___e_t_h___exported___types_gad885ad03ba3496c9c2711e7a39225762}{ETH\_ReadPHYRegister}}(phy\_addr, \mbox{\hyperlink{group___e_t_h___exported___types_ga4b8f2c29a9e74412395e1b1809666838}{PHY\_BSR}}) \& \mbox{\hyperlink{group___e_t_h___exported___types_gaf2b045e39c1ae1b3f5de8d4d21a9e60c}{PHY\_Linked\_Status}}));}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00112}00112         \mbox{\hyperlink{group___e_t_h___exported___types_ga4bcaddc18a6a27f45f7ddbd5313224ba}{ETH\_WritePHYRegister}}(phy\_addr, \mbox{\hyperlink{group___e_t_h___exported___types_ga8abe1a40c71e68881ec669d59f513fdb}{PHY\_BCR}}, \mbox{\hyperlink{group___e_t_h___exported___types_gab97f2bd1e4c6b8d26c8b1521bd1a5499}{PHY\_AutoNegotiation}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00113}00113         \textcolor{comment}{// Enable Auto-\/Negitation}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00114}00114         \textcolor{keywordflow}{while} (!(\mbox{\hyperlink{group___e_t_h___exported___types_gad885ad03ba3496c9c2711e7a39225762}{ETH\_ReadPHYRegister}}(phy\_addr, \mbox{\hyperlink{group___e_t_h___exported___types_ga4b8f2c29a9e74412395e1b1809666838}{PHY\_BSR}}) \& \mbox{\hyperlink{group___e_t_h___exported___types_ga9eaba7d5afc626b2f4855c400a426350}{PHY\_AutoNego\_Complete}})) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00115}00115 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00116}00116         \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00117}00117         \textcolor{comment}{// Read the result of the Auto-\/Negitation}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00118}00118         temp\_val = \mbox{\hyperlink{group___e_t_h___exported___types_gad885ad03ba3496c9c2711e7a39225762}{ETH\_ReadPHYRegister}}(phy\_addr, 31);}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00119}00119 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00120}00120         \textcolor{keywordflow}{if} ((temp\_val \& 0x1C) == 0x4) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00121}00121             ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_aa5fbf283ccf19c782d105850f4109eba}{ETH\_Speed}} = \mbox{\hyperlink{group___e_t_h___exported___types_gadd1ba7c20f3291c3b88df8030db1252c}{ETH\_Speed\_10M}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00122}00122             ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_af9d155850c4df45b6a97064a3a53bcf8}{ETH\_Mode}} = \mbox{\hyperlink{group___e_t_h___exported___types_gaf82c68899d89304d8638e2239342b343}{ETH\_Mode\_HalfDuplex}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00123}00123             \mbox{\hyperlink{reg__syscfg_8h_a3c833fe1c486cb62250ccbca32899cb8}{SYSCFG}}-\/>CFGR2 \&= \string~(1 << 21);}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00124}00124         \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00125}00125         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}((temp\_val \& 0x1C) == 0x14) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00126}00126             ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_aa5fbf283ccf19c782d105850f4109eba}{ETH\_Speed}} = \mbox{\hyperlink{group___e_t_h___exported___types_gadd1ba7c20f3291c3b88df8030db1252c}{ETH\_Speed\_10M}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00127}00127             ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_af9d155850c4df45b6a97064a3a53bcf8}{ETH\_Mode}} = \mbox{\hyperlink{group___e_t_h___exported___types_ga36d01299e98e267aa69c5cd043907a82}{ETH\_Mode\_FullDuplex}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00128}00128             \mbox{\hyperlink{reg__syscfg_8h_a3c833fe1c486cb62250ccbca32899cb8}{SYSCFG}}-\/>CFGR2 |= 1 << 21;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00129}00129         \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00130}00130         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}((temp\_val \& 0x1C) == 0x8) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00131}00131             ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_aa5fbf283ccf19c782d105850f4109eba}{ETH\_Speed}} = \mbox{\hyperlink{group___e_t_h___exported___types_ga5ac634c8472bc609683e269b7808c5f0}{ETH\_Speed\_100M}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00132}00132             ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_af9d155850c4df45b6a97064a3a53bcf8}{ETH\_Mode}} = \mbox{\hyperlink{group___e_t_h___exported___types_gaf82c68899d89304d8638e2239342b343}{ETH\_Mode\_HalfDuplex}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00133}00133             \mbox{\hyperlink{reg__syscfg_8h_a3c833fe1c486cb62250ccbca32899cb8}{SYSCFG}}-\/>CFGR2 \&= \string~(1 << 21);}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00134}00134         \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00135}00135         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}((temp\_val \& 0x1C) == 0x18) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00136}00136             ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_aa5fbf283ccf19c782d105850f4109eba}{ETH\_Speed}} = \mbox{\hyperlink{group___e_t_h___exported___types_ga5ac634c8472bc609683e269b7808c5f0}{ETH\_Speed\_100M}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00137}00137             ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_af9d155850c4df45b6a97064a3a53bcf8}{ETH\_Mode}} = \mbox{\hyperlink{group___e_t_h___exported___types_ga36d01299e98e267aa69c5cd043907a82}{ETH\_Mode\_FullDuplex}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00138}00138             \mbox{\hyperlink{reg__syscfg_8h_a3c833fe1c486cb62250ccbca32899cb8}{SYSCFG}}-\/>CFGR2 |= 1 << 21;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00139}00139         \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00140}00140     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00141}00141     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00142}00142         \mbox{\hyperlink{group___e_t_h___exported___types_ga4bcaddc18a6a27f45f7ddbd5313224ba}{ETH\_WritePHYRegister}}(phy\_addr, \mbox{\hyperlink{group___e_t_h___exported___types_ga8abe1a40c71e68881ec669d59f513fdb}{PHY\_BCR}}, ((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})(ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_af9d155850c4df45b6a97064a3a53bcf8}{ETH\_Mode}} >> 3) |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00143}00143                              (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})(ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_aa5fbf283ccf19c782d105850f4109eba}{ETH\_Speed}} >> 1)));}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00144}00144         \textcolor{keywordflow}{if}(ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_aa5fbf283ccf19c782d105850f4109eba}{ETH\_Speed}} == \mbox{\hyperlink{group___e_t_h___exported___types_gadd1ba7c20f3291c3b88df8030db1252c}{ETH\_Speed\_10M}}) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00145}00145             \mbox{\hyperlink{reg__syscfg_8h_a3c833fe1c486cb62250ccbca32899cb8}{SYSCFG}}-\/>CFGR2 \&= \string~(1 << 21);}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00146}00146         \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00147}00147         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00148}00148             \mbox{\hyperlink{reg__syscfg_8h_a3c833fe1c486cb62250ccbca32899cb8}{SYSCFG}}-\/>CFGR2 |= 1 << 21;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00149}00149         \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00150}00150     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00151}00151 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00153}00153     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACCR = \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACCR \& \mbox{\hyperlink{group___e_t_h___exported___types_ga6415e52119d875b78a80ee4186233643}{MACCR\_CLEAR\_MASK}} |   (ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a5c4785f65be793a3fe93bc306f4d224b}{ETH\_Watchdog}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00154}00154                  ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a3f6dcaf46bf2f5619d74ee71f0f16a12}{ETH\_Jabber}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00155}00155                  ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a2f4e8d08ec272e5de00194e9ab83f94e}{ETH\_InterFrameGap}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00156}00156                  ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_ab093c7209a07479031d29a45cd0d7e1d}{ETH\_CarrierSense}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00157}00157                  ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_aa5fbf283ccf19c782d105850f4109eba}{ETH\_Speed}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00158}00158                  ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a87c51027c6899b148a203faf34afe88c}{ETH\_ReceiveOwn}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00159}00159                  ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a0b2e06967608dbe66a6a45130305bfa9}{ETH\_LoopbackMode}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00160}00160                  ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_af9d155850c4df45b6a97064a3a53bcf8}{ETH\_Mode}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00161}00161                  ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_ad5f759367a95d3f6fcf8b487b79aa4c7}{ETH\_ChecksumOffload}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00162}00162                  ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_aecd5d2a40ead2d1d91d5ba1e46abc4d6}{ETH\_RetryTransmission}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00163}00163                  ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_abfc6083e67fbd248216816e590900ab9}{ETH\_AutomaticPadCRCStrip}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00164}00164                  ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a51ecc9d18ee9a20f332ec23a4613ca5f}{ETH\_DeferralCheck}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00165}00165 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00166}00166     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACFFR =   ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_ad9c6ea497d12bce89eb5e3c67fdafc22}{ETH\_ReceiveAll}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00167}00167                     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_aea4882867ff82866ead2253e542904a7}{ETH\_SourceAddrFilter}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00168}00168                     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a90e85f7e955436f2f114793f7cd4a644}{ETH\_PassControlFrames}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00169}00169                     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_aefb8d033311f8c0c89da8c93287afacc}{ETH\_BroadcastFramesReception}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00170}00170                     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a8385a5b39baf798d3df4c85fd54c431b}{ETH\_DestinationAddrFilter}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00171}00171                     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_ad55f19fb8b4fb3c7dddfc3f1255bf0f2}{ETH\_PromiscuousMode}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00172}00172                     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a8a6d66ded2f9f84852badb734b27e352}{ETH\_MulticastFramesFilter}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00173}00173                     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a9ea5650877067b6cb3a5fdc421f458e1}{ETH\_UnicastFramesFilter}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00174}00174 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00175}00175     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACHTHR = ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_af3596bc471e0706293e264b5bf6e2169}{ETH\_HashTableHigh}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00176}00176     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACHTLR = ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a41d2eb42e8a9f254e26854f91460417e}{ETH\_HashTableLow}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00177}00177 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00178}00178     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACFCR = \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACFCR \& \mbox{\hyperlink{group___e_t_h___exported___types_ga0fc15b5e25134974f3a371c17882e36d}{MACFCR\_CLEAR\_MASK}} | ((ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a55ff43553f40972692fd468d47dce7af}{ETH\_PauseTime}} << \mbox{\hyperlink{reg__eth_8h_a5ae35995a0ce92670739ba359d77affc}{ETH\_MACFCR\_PT\_Pos}}) |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00179}00179                   ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a053189da46e5af3c1c435504f3d620ca}{ETH\_ZeroQuantaPause}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00180}00180                   ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a1698e93ff57b5567bd1ef5f5f68e5f4d}{ETH\_PauseLowThreshold}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00181}00181                   ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a8e2684e9595ca4086973038e5da8fe30}{ETH\_UnicastPauseFrameDetect}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00182}00182                   ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a3bd731f09a09f23f7b428153865bb11d}{ETH\_ReceiveFlowControl}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00183}00183                   ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_ac118e5c6100c07162fc0a8b9b77ec9d5}{ETH\_TransmitFlowControl}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00184}00184 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00185}00185     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACVLANTR = ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_ae4d8e53b264463df9a6463fe188c9b3c}{ETH\_VLANTagComparison}} | ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a5516e64767eb77cf37d75ce96059b901}{ETH\_VLANTagIdentifier}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00186}00186 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00187}00187     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMAOMR = 0x00200004;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00188}00188     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMAIER = 0x0001A040;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00189}00189     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMABMR = ( ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a96b1be5a687a9291893f1d84dbda5e1b}{ETH\_AddressAlignedBeats}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00190}00190                     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_aef95599731889f6e73cd550fd69f5679}{ETH\_FixedBurst}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00191}00191                     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_aa0b77c856fda6b2a2e2d1d2ae69a71db}{ETH\_RxDMABurstLength}} |                                 \textcolor{comment}{// !! if 4xPBL is selected for Tx or Rx it is applied for the other}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00192}00192                     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a40dcc287f5f6ad67155aefd0ca87799f}{ETH\_TxDMABurstLength}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00193}00193                     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_aaad8a7c7b86471c4bf4cf20467068028}{ETH\_DescriptorSkipLength}} << 2 |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00194}00194                     ptr-\/>\mbox{\hyperlink{struct_e_t_h___init_type_def_a6c03be91dc20ab7d1c5dad3520a01b8d}{ETH\_DMAArbitration}});\textcolor{comment}{// |}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00195}00195 \textcolor{comment}{//                    ETH\_DMABMR\_USP);                                            // Enable use of separate PBL for Rx and Tx}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00196}00196 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00197}00197     \textcolor{keywordflow}{return} \mbox{\hyperlink{group___e_t_h___exported___types_ga2fb2e6248630a20832d42340e122c81c}{ETH\_SUCCESS}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00198}00198 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00199}00199 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00200}\mbox{\hyperlink{group___e_t_h___exported___types_ga91dc3e4848316fd9bc5f14ed44451e4c}{00200}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga91dc3e4848316fd9bc5f14ed44451e4c}{ETH\_Start}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00201}00201 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00202}00202     \mbox{\hyperlink{group___e_t_h___exported___types_ga9d948f6ed00271299b8bd7a22b82d790}{ETH\_MACTransmissionCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf}{ENABLE}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00203}00203     \mbox{\hyperlink{group___e_t_h___exported___types_ga677304f7761589df6ad033080363f020}{ETH\_MACReceptionCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf}{ENABLE}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00204}00204     \mbox{\hyperlink{group___e_t_h___exported___types_ga886f872a0046bbb3f9f08890bb10a7d6}{ETH\_FlushTransmitFIFO}}();}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00205}00205     \mbox{\hyperlink{group___e_t_h___exported___types_ga3078e7bc9e79d3b09d4e76c55c2db7fa}{ETH\_DMATransmissionCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf}{ENABLE}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00206}00206     \mbox{\hyperlink{group___e_t_h___exported___types_ga8e05697da368b53b0346769850f0eac9}{ETH\_DMAReceptionCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf}{ENABLE}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00207}00207 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00208}00208 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00209}\mbox{\hyperlink{group___e_t_h___exported___types_ga357c1a92a470453dd39ee1fbb18549c2}{00209}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga357c1a92a470453dd39ee1fbb18549c2}{ETH\_Stop}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00210}00210 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00211}00211     \mbox{\hyperlink{group___e_t_h___exported___types_ga3078e7bc9e79d3b09d4e76c55c2db7fa}{ETH\_DMATransmissionCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d}{DISABLE}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00212}00212     \mbox{\hyperlink{group___e_t_h___exported___types_ga8e05697da368b53b0346769850f0eac9}{ETH\_DMAReceptionCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d}{DISABLE}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00213}00213     \mbox{\hyperlink{group___e_t_h___exported___types_ga677304f7761589df6ad033080363f020}{ETH\_MACReceptionCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d}{DISABLE}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00214}00214     \mbox{\hyperlink{group___e_t_h___exported___types_ga886f872a0046bbb3f9f08890bb10a7d6}{ETH\_FlushTransmitFIFO}}();}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00215}00215     \mbox{\hyperlink{group___e_t_h___exported___types_ga9d948f6ed00271299b8bd7a22b82d790}{ETH\_MACTransmissionCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d}{DISABLE}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00216}00216 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00217}00217 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00218}\mbox{\hyperlink{group___e_t_h___exported___types_ga9d948f6ed00271299b8bd7a22b82d790}{00218}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga9d948f6ed00271299b8bd7a22b82d790}{ETH\_MACTransmissionCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} sta)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00219}00219 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00220}00220     sta ? (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACCR |= \mbox{\hyperlink{reg__eth_8h_a87c3818396ef51cad8be1f4c68fff164}{ETH\_MACCR\_TE}}) : (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACCR \&= \string~\mbox{\hyperlink{reg__eth_8h_a87c3818396ef51cad8be1f4c68fff164}{ETH\_MACCR\_TE}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00221}00221 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00222}00222 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00223}\mbox{\hyperlink{group___e_t_h___exported___types_ga677304f7761589df6ad033080363f020}{00223}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga677304f7761589df6ad033080363f020}{ETH\_MACReceptionCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} sta)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00224}00224 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00225}00225     sta ? (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACCR |= \mbox{\hyperlink{reg__eth_8h_a77984e7a5202bdc300bccc9cc90fad3e}{ETH\_MACCR\_RE}}) : (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACCR \&= \string~\mbox{\hyperlink{reg__eth_8h_a77984e7a5202bdc300bccc9cc90fad3e}{ETH\_MACCR\_RE}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00226}00226 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00227}00227 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00228}\mbox{\hyperlink{group___e_t_h___exported___types_ga5ed03ee5131dbd95a3c54f5a41044c14}{00228}} \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}} \mbox{\hyperlink{group___e_t_h___exported___types_ga5ed03ee5131dbd95a3c54f5a41044c14}{ETH\_GetFlowControlBusyStatus}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00229}00229 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00230}00230     \textcolor{keywordflow}{return} (\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}})(\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACFCR \& \mbox{\hyperlink{reg__eth_8h_a7dccd98a15d90caf17bcaa6ae13d60a3}{ETH\_MACFCR\_FCBBPA}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00231}00231 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00232}00232 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00233}\mbox{\hyperlink{group___e_t_h___exported___types_ga77e9c30c78e2e8e8c863c62f71431fb3}{00233}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga77e9c30c78e2e8e8c863c62f71431fb3}{ETH\_InitiatePauseControlFrame}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00234}00234 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00235}00235     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACFCR |= \mbox{\hyperlink{reg__eth_8h_a7dccd98a15d90caf17bcaa6ae13d60a3}{ETH\_MACFCR\_FCBBPA}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00236}00236 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00237}00237 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00238}\mbox{\hyperlink{group___e_t_h___exported___types_gadfa25887fa512afff494d46a1ce49782}{00238}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_gadfa25887fa512afff494d46a1ce49782}{ETH\_BackPressureActivationCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} sta)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00239}00239 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00240}00240     sta ? (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACFCR |= \mbox{\hyperlink{reg__eth_8h_a7dccd98a15d90caf17bcaa6ae13d60a3}{ETH\_MACFCR\_FCBBPA}}) : (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACFCR \&= \string~\mbox{\hyperlink{reg__eth_8h_a7dccd98a15d90caf17bcaa6ae13d60a3}{ETH\_MACFCR\_FCBBPA}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00241}00241 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00242}00242 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00243}\mbox{\hyperlink{group___e_t_h___exported___types_ga9f183f75ac5536a44ed9f569957abab3}{00243}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga9f183f75ac5536a44ed9f569957abab3}{ETH\_MACAddressConfig}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} reg\_addr, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}* mac\_addr)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00244}00244 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00245}00245     *(\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}*)(\mbox{\hyperlink{group___e_t_h___exported___types_ga85a9d7b17b05b08c64528e5b43b08ef4}{ETH\_MAC\_ADDR\_HBASE}} + reg\_addr) =}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00246}00246         (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})mac\_addr[5] << 8 |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00247}00247         (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})mac\_addr[4];}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00248}00248 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00249}00249     *(\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}*)(\mbox{\hyperlink{group___e_t_h___exported___types_ga5dc2dd58c5508a16cd61414a1c740529}{ETH\_MAC\_ADDR\_LBASE}} + reg\_addr) =}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00250}00250         (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})mac\_addr[3] << 24 |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00251}00251         (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})mac\_addr[2] << 16 |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00252}00252         (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})mac\_addr[1] << 8 |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00253}00253         (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})mac\_addr[0];}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00254}00254 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00255}00255 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00256}\mbox{\hyperlink{group___e_t_h___exported___types_gae61d9905b8b5ad78c0e53bcdc99c691b}{00256}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_gae61d9905b8b5ad78c0e53bcdc99c691b}{ETH\_GetMACAddress}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} reg\_addr, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}* mac\_addr)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00257}00257 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00258}00258     mac\_addr[5] = *(\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}*)(\mbox{\hyperlink{group___e_t_h___exported___types_ga85a9d7b17b05b08c64528e5b43b08ef4}{ETH\_MAC\_ADDR\_HBASE}} + reg\_addr) >> 8 \& 0xFF;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00259}00259     mac\_addr[4] = *(\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}*)(\mbox{\hyperlink{group___e_t_h___exported___types_ga85a9d7b17b05b08c64528e5b43b08ef4}{ETH\_MAC\_ADDR\_HBASE}} + reg\_addr) \& 0xFF;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00260}00260     mac\_addr[3] = *(\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}*)(\mbox{\hyperlink{group___e_t_h___exported___types_ga5dc2dd58c5508a16cd61414a1c740529}{ETH\_MAC\_ADDR\_LBASE}} + reg\_addr) >> 24 \& 0xFF;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00261}00261     mac\_addr[2] = *(\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}*)(\mbox{\hyperlink{group___e_t_h___exported___types_ga5dc2dd58c5508a16cd61414a1c740529}{ETH\_MAC\_ADDR\_LBASE}} + reg\_addr) >> 16 \& 0xFF;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00262}00262     mac\_addr[1] = *(\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}*)(\mbox{\hyperlink{group___e_t_h___exported___types_ga5dc2dd58c5508a16cd61414a1c740529}{ETH\_MAC\_ADDR\_LBASE}} + reg\_addr) >> 8 \& 0xFF;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00263}00263     mac\_addr[0] = *(\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}*)(\mbox{\hyperlink{group___e_t_h___exported___types_ga5dc2dd58c5508a16cd61414a1c740529}{ETH\_MAC\_ADDR\_LBASE}} + reg\_addr) \& 0xFF;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00264}00264 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00265}00265 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00266}\mbox{\hyperlink{group___e_t_h___exported___types_ga1c001e7b425251c3e2034250634bdd49}{00266}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga1c001e7b425251c3e2034250634bdd49}{ETH\_MACAddressPerfectFilterCmd}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} reg\_addr, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} sta)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00267}00267 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00268}00268     sta ?   ((*(\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}*)(\mbox{\hyperlink{group___e_t_h___exported___types_ga85a9d7b17b05b08c64528e5b43b08ef4}{ETH\_MAC\_ADDR\_HBASE}} + reg\_addr)) |= \mbox{\hyperlink{reg__eth_8h_a9f88c5ead1109f1e0abac07bcb2e44ea}{ETH\_MACA1HR\_AE}}) :}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00269}00269     ((*(\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}*)(\mbox{\hyperlink{group___e_t_h___exported___types_ga85a9d7b17b05b08c64528e5b43b08ef4}{ETH\_MAC\_ADDR\_HBASE}} + reg\_addr)) \&= \string~\mbox{\hyperlink{reg__eth_8h_a9f88c5ead1109f1e0abac07bcb2e44ea}{ETH\_MACA1HR\_AE}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00270}00270 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00271}00271 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00272}\mbox{\hyperlink{group___e_t_h___exported___types_ga0538170a844bf22c69d718e4f6e27a1b}{00272}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga0538170a844bf22c69d718e4f6e27a1b}{ETH\_MACAddressFilterConfig}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} reg\_addr, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} sta)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00273}00273 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00274}00274     sta ?   ((*(\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}*)(\mbox{\hyperlink{group___e_t_h___exported___types_ga85a9d7b17b05b08c64528e5b43b08ef4}{ETH\_MAC\_ADDR\_HBASE}} + reg\_addr)) |= \mbox{\hyperlink{reg__eth_8h_ac3840a96465b73115d34360abf3704c5}{ETH\_MACA1HR\_SA}}) :}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00275}00275     ((*(\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}*)(\mbox{\hyperlink{group___e_t_h___exported___types_ga85a9d7b17b05b08c64528e5b43b08ef4}{ETH\_MAC\_ADDR\_HBASE}} + reg\_addr)) |= \mbox{\hyperlink{reg__eth_8h_ac3840a96465b73115d34360abf3704c5}{ETH\_MACA1HR\_SA}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00276}00276 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00277}00277 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00278}\mbox{\hyperlink{group___e_t_h___exported___types_gaa4c25a36bf8b19fab584ee0399f2258e}{00278}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_gaa4c25a36bf8b19fab584ee0399f2258e}{ETH\_MACAddressMaskBytesFilterConfig}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} reg\_addr, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} mask\_byte)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00279}00279 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00280}00280     (*(\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}*)(\mbox{\hyperlink{group___e_t_h___exported___types_ga85a9d7b17b05b08c64528e5b43b08ef4}{ETH\_MAC\_ADDR\_HBASE}} + reg\_addr)) \&= \string~\mbox{\hyperlink{reg__eth_8h_a7bf2fe1242cce62c3fe1cc49ce513b6a}{ETH\_MACA1HR\_MBC}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00281}00281 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00282}00282     (*(\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}*)(\mbox{\hyperlink{group___e_t_h___exported___types_ga85a9d7b17b05b08c64528e5b43b08ef4}{ETH\_MAC\_ADDR\_HBASE}} + reg\_addr)) |= mask\_byte;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00283}00283 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00284}00284 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00285}\mbox{\hyperlink{group___e_t_h___exported___types_ga32da1044684ecb01ed759fbceb603d03}{00285}} \mbox{\hyperlink{struct_frame_type_def}{FrameTypeDef}} \mbox{\hyperlink{group___e_t_h___exported___types_ga32da1044684ecb01ed759fbceb603d03}{ETH\_Get\_Received\_Frame}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00286}00286 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00287}00287     \mbox{\hyperlink{struct_frame_type_def}{FrameTypeDef}} frame;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00288}00288 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00289}00289     frame.\mbox{\hyperlink{struct_frame_type_def_aff5e0946d80aa86e4dfce539f136e45d}{len}} = ((\mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& \mbox{\hyperlink{group___e_t_h___exported___types_ga4b42d08faf710524a70bb5f149503107}{ETH\_DMA\_RDES\_FL}}) >> \mbox{\hyperlink{group___e_t_h___exported___types_ga6b2e1b171e2cc2bffd3fa63eb9d965ed}{ETH\_DMA\_RDES\_FL\_Pos}}) -\/ 4;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00290}00290     frame.\mbox{\hyperlink{struct_frame_type_def_a472d6ecdd96ee55ab510e56bf71c303b}{buf}} = (\mbox{\hyperlink{group___e_t_h___exported___types_ga20a38d3009faae57fabfacd32b4af097}{DMA\_RX\_FRAME\_infos}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos_a1047ae4d14e2abf4b403f164463f9cd8}{ptrFS\_Rx\_Desc}})-\/>BUF1ADDR;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00291}00291     frame.\mbox{\hyperlink{struct_frame_type_def_aaabbdffeedce1b95b8ed8710326eaf5b}{ptrDesc}} = \mbox{\hyperlink{group___e_t_h___exported___types_ga20a38d3009faae57fabfacd32b4af097}{DMA\_RX\_FRAME\_infos}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos_a1047ae4d14e2abf4b403f164463f9cd8}{ptrFS\_Rx\_Desc}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00292}00292 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00293}00293 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00294}00294     \mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}} = (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}*)(\mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a943426455c55feb0480eb069b62c7938}{BUF2NDADDR}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00295}00295 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00296}00296     \textcolor{keywordflow}{return} frame;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00297}00297 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00298}00298 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00299}\mbox{\hyperlink{group___e_t_h___exported___types_gad81f857bbc1cf82415ffb0aa58667a5b}{00299}} \mbox{\hyperlink{struct_frame_type_def}{FrameTypeDef}} \mbox{\hyperlink{group___e_t_h___exported___types_gad81f857bbc1cf82415ffb0aa58667a5b}{ETH\_Get\_Received\_Frame\_interrupt}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00300}00300 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00301}00301     \mbox{\hyperlink{struct_frame_type_def}{FrameTypeDef}} frame = \{0\};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00302}00302     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} desc\_cnt = 0;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00303}00303 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00304}00304     \textcolor{keywordflow}{while}(!(\mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& \mbox{\hyperlink{group___e_t_h___exported___types_gaf2627c4265e1bc60866fdddaa1a7577e}{ETH\_DMA\_RDES\_OWN}}) \&\& desc\_cnt < \mbox{\hyperlink{group___e_t_h___exported___types_gaaa0b3ad847eab9771a0cb19930b75780}{ETH\_RX\_BUF\_NUM}}) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00305}00305         desc\_cnt++;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00306}00306 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00307}00307         \textcolor{keywordflow}{if} ( (\mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& \mbox{\hyperlink{group___e_t_h___exported___types_gad6863fe9acbdaa97b3d56b8fadd13973}{ETH\_DMA\_RDES\_FS}}) \&\&}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00308}00308                 !(\mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& \mbox{\hyperlink{group___e_t_h___exported___types_gaff0d41b035d18e94e559a63830ab4c7b}{ETH\_DMA\_RDES\_LS}})) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00309}00309             \mbox{\hyperlink{group___e_t_h___exported___types_ga20a38d3009faae57fabfacd32b4af097}{DMA\_RX\_FRAME\_infos}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos_a1047ae4d14e2abf4b403f164463f9cd8}{ptrFS\_Rx\_Desc}} = \mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00310}00310             \mbox{\hyperlink{group___e_t_h___exported___types_ga20a38d3009faae57fabfacd32b4af097}{DMA\_RX\_FRAME\_infos}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos_aff6515816e3ed3f2b0d4240cf9c6eb87}{cnt}} = 1;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00311}00311             \mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}} = (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}*)(\mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a943426455c55feb0480eb069b62c7938}{BUF2NDADDR}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00312}00312 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00313}00313         \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00314}00314         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( (\mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& \mbox{\hyperlink{group___e_t_h___exported___types_gad6863fe9acbdaa97b3d56b8fadd13973}{ETH\_DMA\_RDES\_FS}}) \&\&}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00315}00315                   (\mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& \mbox{\hyperlink{group___e_t_h___exported___types_gaff0d41b035d18e94e559a63830ab4c7b}{ETH\_DMA\_RDES\_LS}})) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00316}00316             \mbox{\hyperlink{group___e_t_h___exported___types_ga20a38d3009faae57fabfacd32b4af097}{DMA\_RX\_FRAME\_infos}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos_aff6515816e3ed3f2b0d4240cf9c6eb87}{cnt}}++;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00317}00317             \mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}} = (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}*)(\mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a943426455c55feb0480eb069b62c7938}{BUF2NDADDR}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00318}00318         \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00319}00319         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00320}00320             \mbox{\hyperlink{group___e_t_h___exported___types_ga20a38d3009faae57fabfacd32b4af097}{DMA\_RX\_FRAME\_infos}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos_a8c89529f470d83b9a0f9841044c4d7bb}{ptrLS\_Rx\_Desc}} = \mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00321}00321             \mbox{\hyperlink{group___e_t_h___exported___types_ga20a38d3009faae57fabfacd32b4af097}{DMA\_RX\_FRAME\_infos}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos_aff6515816e3ed3f2b0d4240cf9c6eb87}{cnt}}++;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00322}00322 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00323}00323             \textcolor{keywordflow}{if} (\mbox{\hyperlink{group___e_t_h___exported___types_ga20a38d3009faae57fabfacd32b4af097}{DMA\_RX\_FRAME\_infos}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos_aff6515816e3ed3f2b0d4240cf9c6eb87}{cnt}} == 1)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00324}00324                 \mbox{\hyperlink{group___e_t_h___exported___types_ga20a38d3009faae57fabfacd32b4af097}{DMA\_RX\_FRAME\_infos}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos_a1047ae4d14e2abf4b403f164463f9cd8}{ptrFS\_Rx\_Desc}} = \mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00325}00325 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00326}00326             frame.\mbox{\hyperlink{struct_frame_type_def_aff5e0946d80aa86e4dfce539f136e45d}{len}} = ((\mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& \mbox{\hyperlink{group___e_t_h___exported___types_ga4b42d08faf710524a70bb5f149503107}{ETH\_DMA\_RDES\_FL}}) >> \mbox{\hyperlink{group___e_t_h___exported___types_ga6b2e1b171e2cc2bffd3fa63eb9d965ed}{ETH\_DMA\_RDES\_FL\_Pos}}) -\/ 4;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00327}00327 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00328}00328             frame.\mbox{\hyperlink{struct_frame_type_def_a472d6ecdd96ee55ab510e56bf71c303b}{buf}} = (\mbox{\hyperlink{group___e_t_h___exported___types_ga20a38d3009faae57fabfacd32b4af097}{DMA\_RX\_FRAME\_infos}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos_aff6515816e3ed3f2b0d4240cf9c6eb87}{cnt}} > 1) ?}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00329}00329                         (\mbox{\hyperlink{group___e_t_h___exported___types_ga20a38d3009faae57fabfacd32b4af097}{DMA\_RX\_FRAME\_infos}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos_a1047ae4d14e2abf4b403f164463f9cd8}{ptrFS\_Rx\_Desc}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_af7cfc1d20fec7dc9ac7a5c8eca6f5cf3}{BUF1ADDR}}) :}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00330}00330                         (\mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_af7cfc1d20fec7dc9ac7a5c8eca6f5cf3}{BUF1ADDR}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00331}00331 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00332}00332             frame.\mbox{\hyperlink{struct_frame_type_def_aaabbdffeedce1b95b8ed8710326eaf5b}{ptrDesc}} = \mbox{\hyperlink{group___e_t_h___exported___types_ga20a38d3009faae57fabfacd32b4af097}{DMA\_RX\_FRAME\_infos}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos_a1047ae4d14e2abf4b403f164463f9cd8}{ptrFS\_Rx\_Desc}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00333}00333 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00334}00334             \mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}} = (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}*)(\mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a943426455c55feb0480eb069b62c7938}{BUF2NDADDR}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00335}00335 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00336}00336             \textcolor{keywordflow}{return} frame;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00337}00337         \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00338}00338     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00339}00339 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00340}00340     \textcolor{keywordflow}{return} frame;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00341}00341 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00342}00342 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00343}\mbox{\hyperlink{group___e_t_h___exported___types_gaf98d220821472850da356956425ce5c9}{00343}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gaf98d220821472850da356956425ce5c9}{ETH\_Prepare\_Transmit\_Descriptors}}(\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} len)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00344}00344 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00345}00345     \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} cnt = 0, i = 0;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00346}00346     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}* temp\_desc = \mbox{\hyperlink{group___e_t_h___exported___types_gab76959f6e0f1234bd24ed0b0e16c421f}{DMATxDescToSet}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00347}00347 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00348}00348     \textcolor{keywordflow}{if} (\mbox{\hyperlink{group___e_t_h___exported___types_gab76959f6e0f1234bd24ed0b0e16c421f}{DMATxDescToSet}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& \mbox{\hyperlink{group___e_t_h___exported___types_ga529ab2aa5f663db8cf2350013f3529bf}{ETH\_DMA\_TDES\_OWN}})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00349}00349         \textcolor{keywordflow}{return} \mbox{\hyperlink{group___e_t_h___exported___types_ga86fb9fb94bfcabd7360fc2307131f853}{ETH\_ERROR}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00350}00350 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00351}00351     \textcolor{keywordflow}{if}(len > \mbox{\hyperlink{group___e_t_h___exported___types_gaf83956dfc1b135c3c92ac409758b6cf4}{ETH\_TX\_BUF\_SIZE}}) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00352}00352         cnt = len / \mbox{\hyperlink{group___e_t_h___exported___types_gaf83956dfc1b135c3c92ac409758b6cf4}{ETH\_TX\_BUF\_SIZE}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00353}00353 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00354}00354         \textcolor{keywordflow}{if} (len \% \mbox{\hyperlink{group___e_t_h___exported___types_gaf83956dfc1b135c3c92ac409758b6cf4}{ETH\_TX\_BUF\_SIZE}})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00355}00355             cnt++;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00356}00356     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00357}00357     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00358}00358         cnt = 1;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00359}00359     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00360}00360 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00361}00361     \textcolor{keywordflow}{if} (cnt == 1) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00362}00362         temp\_desc-\/>BL \&= \string~(\mbox{\hyperlink{group___e_t_h___exported___types_ga94cc5f8e7fabd1fa5b775edd721a9fe7}{ETH\_DMA\_TDES\_FS}} | \mbox{\hyperlink{group___e_t_h___exported___types_ga6e966f1c7c8cd802898de65f65870e73}{ETH\_DMA\_TDES\_LS}} | \mbox{\hyperlink{group___e_t_h___exported___types_gad0644a81a5759203715242b16e3ce0ea}{ETH\_DMA\_TDES\_TBS1}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00363}00363 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00364}00364         temp\_desc-\/>BL |=    \mbox{\hyperlink{group___e_t_h___exported___types_ga94cc5f8e7fabd1fa5b775edd721a9fe7}{ETH\_DMA\_TDES\_FS}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00365}00365                             \mbox{\hyperlink{group___e_t_h___exported___types_ga6e966f1c7c8cd802898de65f65870e73}{ETH\_DMA\_TDES\_LS}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00366}00366                             (len \& \mbox{\hyperlink{group___e_t_h___exported___types_gad0644a81a5759203715242b16e3ce0ea}{ETH\_DMA\_TDES\_TBS1}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00367}00367 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00368}00368         temp\_desc-\/>CS |= \mbox{\hyperlink{group___e_t_h___exported___types_ga529ab2aa5f663db8cf2350013f3529bf}{ETH\_DMA\_TDES\_OWN}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00369}00369         temp\_desc = (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}*)(temp\_desc-\/>BUF2NDADDR);}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00370}00370     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00371}00371     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00372}00372         \textcolor{keywordflow}{for} (i = 0; i < cnt; i++) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00373}00373             temp\_desc-\/>BL \&= \string~(\mbox{\hyperlink{group___e_t_h___exported___types_ga94cc5f8e7fabd1fa5b775edd721a9fe7}{ETH\_DMA\_TDES\_FS}} | \mbox{\hyperlink{group___e_t_h___exported___types_ga6e966f1c7c8cd802898de65f65870e73}{ETH\_DMA\_TDES\_LS}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00374}00374 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00375}00375             \textcolor{keywordflow}{if} (i == 0)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00376}00376                 temp\_desc-\/>BL |= \mbox{\hyperlink{group___e_t_h___exported___types_ga94cc5f8e7fabd1fa5b775edd721a9fe7}{ETH\_DMA\_TDES\_FS}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00377}00377 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00378}00378             temp\_desc-\/>BL = \mbox{\hyperlink{group___e_t_h___exported___types_gaf83956dfc1b135c3c92ac409758b6cf4}{ETH\_TX\_BUF\_SIZE}} \& \mbox{\hyperlink{group___e_t_h___exported___types_gad0644a81a5759203715242b16e3ce0ea}{ETH\_DMA\_TDES\_TBS1}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00379}00379 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00380}00380             \textcolor{keywordflow}{if} (i == (cnt -\/ 1)) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00381}00381                 temp\_desc-\/>BL \&= \string~ETH\_DMA\_TDES\_TBS1;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00382}00382                 temp\_desc-\/>BL |=    \mbox{\hyperlink{group___e_t_h___exported___types_ga6e966f1c7c8cd802898de65f65870e73}{ETH\_DMA\_TDES\_LS}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00383}00383                                     ((len -\/ (cnt -\/ 1) * \mbox{\hyperlink{group___e_t_h___exported___types_gaf83956dfc1b135c3c92ac409758b6cf4}{ETH\_TX\_BUF\_SIZE}}) \& \mbox{\hyperlink{group___e_t_h___exported___types_gad0644a81a5759203715242b16e3ce0ea}{ETH\_DMA\_TDES\_TBS1}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00384}00384             \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00385}00385 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00386}00386             temp\_desc-\/>CS |= \mbox{\hyperlink{group___e_t_h___exported___types_ga529ab2aa5f663db8cf2350013f3529bf}{ETH\_DMA\_TDES\_OWN}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00387}00387             temp\_desc = (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}*)(temp\_desc-\/>BUF2NDADDR);}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00388}00388         \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00389}00389     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00390}00390 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00391}00391     \mbox{\hyperlink{group___e_t_h___exported___types_gab76959f6e0f1234bd24ed0b0e16c421f}{DMATxDescToSet}} = temp\_desc;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00392}00392 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00393}00393     \textcolor{keywordflow}{if} (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMASR \& \mbox{\hyperlink{reg__eth_8h_a26668ea80a2d794d72c0a441aa73d0d7}{ETH\_DMASR\_TBUS}}) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00394}00394         \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMASR = \mbox{\hyperlink{reg__eth_8h_a26668ea80a2d794d72c0a441aa73d0d7}{ETH\_DMASR\_TBUS}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00395}00395         \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMATPDR = 0;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00396}00396     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00397}00397 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00398}00398     \textcolor{keywordflow}{return} \mbox{\hyperlink{group___e_t_h___exported___types_ga2fb2e6248630a20832d42340e122c81c}{ETH\_SUCCESS}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00399}00399 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00400}00400 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00401}\mbox{\hyperlink{group___e_t_h___exported___types_ga3d586c3291acae6cdf6b9cdd51b15bea}{00401}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga3d586c3291acae6cdf6b9cdd51b15bea}{ETH\_DMARxDescChainInit}}(\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}* ptr\_desc, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}* buf, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} cnt)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00402}00402 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00403}00403     \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} i = 0;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00404}00404     \mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}* temp\_desc;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00405}00405 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00406}00406     \mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}} = ptr\_desc;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00407}00407 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00408}00408     \textcolor{keywordflow}{for} (i = 0; i < cnt; i++) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00409}00409         temp\_desc = ptr\_desc + i;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00410}00410         temp\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} = \mbox{\hyperlink{group___e_t_h___exported___types_gaf2627c4265e1bc60866fdddaa1a7577e}{ETH\_DMA\_RDES\_OWN}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00411}00411         temp\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a01121509822be0fe6b7fee061e98a9af}{BL}} = \mbox{\hyperlink{group___e_t_h___exported___types_ga9422b9c48a221bd062241794e6ae283e}{ETH\_DMA\_RDES\_RCH}} | \mbox{\hyperlink{group___e_t_h___exported___types_ga0cdaf687f7a7f2dba570d5a722990786}{ETH\_RX\_BUF\_SIZE}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00412}00412         temp\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_af7cfc1d20fec7dc9ac7a5c8eca6f5cf3}{BUF1ADDR}} = (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\&buf[i * \mbox{\hyperlink{group___e_t_h___exported___types_ga0cdaf687f7a7f2dba570d5a722990786}{ETH\_RX\_BUF\_SIZE}}];}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00413}00413 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00414}00414         \textcolor{keywordflow}{if} (i < cnt -\/ 1) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00415}00415             temp\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a943426455c55feb0480eb069b62c7938}{BUF2NDADDR}} = (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})(ptr\_desc + i + 1);}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00416}00416         \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00417}00417         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00418}00418             temp\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a943426455c55feb0480eb069b62c7938}{BUF2NDADDR}} = (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})(ptr\_desc);}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00419}00419         \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00420}00420     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00421}00421 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00422}00422     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMARDLAR = (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})ptr\_desc;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00423}00423 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00424}00424     \mbox{\hyperlink{group___e_t_h___exported___types_ga20a38d3009faae57fabfacd32b4af097}{DMA\_RX\_FRAME\_infos}} = \&\mbox{\hyperlink{group___e_t_h___exported___types_gaafc5b5d557dd7af7a2e7bd7f4c4c217e}{RX\_Frame\_Descriptor}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00425}00425 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00426}00426 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00427}\mbox{\hyperlink{group___e_t_h___exported___types_ga6a0dc2593e3181df90750ec63aa97eb6}{00427}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga6a0dc2593e3181df90750ec63aa97eb6}{ETH\_CheckFrameReceived}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00428}00428 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00429}00429     \textcolor{keywordflow}{if}(!(\mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& \mbox{\hyperlink{group___e_t_h___exported___types_gaf2627c4265e1bc60866fdddaa1a7577e}{ETH\_DMA\_RDES\_OWN}}) \&\&}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00430}00430             (\mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& \mbox{\hyperlink{group___e_t_h___exported___types_gaff0d41b035d18e94e559a63830ab4c7b}{ETH\_DMA\_RDES\_LS}})) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00431}00431 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00432}00432         \mbox{\hyperlink{group___e_t_h___exported___types_ga20a38d3009faae57fabfacd32b4af097}{DMA\_RX\_FRAME\_infos}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos_aff6515816e3ed3f2b0d4240cf9c6eb87}{cnt}}++;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00433}00433 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00434}00434         \textcolor{keywordflow}{if} (\mbox{\hyperlink{group___e_t_h___exported___types_ga20a38d3009faae57fabfacd32b4af097}{DMA\_RX\_FRAME\_infos}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos_aff6515816e3ed3f2b0d4240cf9c6eb87}{cnt}} == 1) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00435}00435             \mbox{\hyperlink{group___e_t_h___exported___types_ga20a38d3009faae57fabfacd32b4af097}{DMA\_RX\_FRAME\_infos}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos_a1047ae4d14e2abf4b403f164463f9cd8}{ptrFS\_Rx\_Desc}} = \mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00436}00436         \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00437}00437         \mbox{\hyperlink{group___e_t_h___exported___types_ga20a38d3009faae57fabfacd32b4af097}{DMA\_RX\_FRAME\_infos}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos_a8c89529f470d83b9a0f9841044c4d7bb}{ptrLS\_Rx\_Desc}} = \mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00438}00438         \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00439}00439     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00440}00440     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( !(\mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& \mbox{\hyperlink{group___e_t_h___exported___types_gaf2627c4265e1bc60866fdddaa1a7577e}{ETH\_DMA\_RDES\_OWN}}) \&\&}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00441}00441               !(\mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& \mbox{\hyperlink{group___e_t_h___exported___types_gaff0d41b035d18e94e559a63830ab4c7b}{ETH\_DMA\_RDES\_LS}})  \&\&}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00442}00442               (\mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& \mbox{\hyperlink{group___e_t_h___exported___types_gad6863fe9acbdaa97b3d56b8fadd13973}{ETH\_DMA\_RDES\_FS}})) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00443}00443         \mbox{\hyperlink{group___e_t_h___exported___types_ga20a38d3009faae57fabfacd32b4af097}{DMA\_RX\_FRAME\_infos}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos_a1047ae4d14e2abf4b403f164463f9cd8}{ptrFS\_Rx\_Desc}} = \mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00444}00444         \mbox{\hyperlink{group___e_t_h___exported___types_ga20a38d3009faae57fabfacd32b4af097}{DMA\_RX\_FRAME\_infos}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos_a8c89529f470d83b9a0f9841044c4d7bb}{ptrLS\_Rx\_Desc}} = (\textcolor{keywordtype}{void}*)0;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00445}00445         \mbox{\hyperlink{group___e_t_h___exported___types_ga20a38d3009faae57fabfacd32b4af097}{DMA\_RX\_FRAME\_infos}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos_aff6515816e3ed3f2b0d4240cf9c6eb87}{cnt}} = 1;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00446}00446     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00447}00447     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( !(\mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& \mbox{\hyperlink{group___e_t_h___exported___types_gaf2627c4265e1bc60866fdddaa1a7577e}{ETH\_DMA\_RDES\_OWN}}) \&\&}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00448}00448               !(\mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& \mbox{\hyperlink{group___e_t_h___exported___types_gaff0d41b035d18e94e559a63830ab4c7b}{ETH\_DMA\_RDES\_LS}})  \&\&}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00449}00449               !(\mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& \mbox{\hyperlink{group___e_t_h___exported___types_gad6863fe9acbdaa97b3d56b8fadd13973}{ETH\_DMA\_RDES\_FS}})) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00450}00450         \mbox{\hyperlink{group___e_t_h___exported___types_ga20a38d3009faae57fabfacd32b4af097}{DMA\_RX\_FRAME\_infos}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a___rx___frame__infos_aff6515816e3ed3f2b0d4240cf9c6eb87}{cnt}}++;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00451}00451         \mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}} = (\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}*)(\mbox{\hyperlink{group___e_t_h___exported___types_ga9fa72417b8b199a5e25d6a9b34b66a7a}{DMARxDescToGet}}-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a943426455c55feb0480eb069b62c7938}{BUF2NDADDR}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00452}00452     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00453}00453 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00454}00454     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00455}00455 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00456}00456 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00457}\mbox{\hyperlink{group___e_t_h___exported___types_ga0a898109c1b814effc3218b816b7b9e0}{00457}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga0a898109c1b814effc3218b816b7b9e0}{ETH\_DMATxDescChainInit}}(\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}* ptr\_desc, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}* buf, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} cnt)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00458}00458 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00459}00459     \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} i = 0;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00460}00460     \mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}* temp\_desc;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00461}00461 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00462}00462     \mbox{\hyperlink{group___e_t_h___exported___types_gab76959f6e0f1234bd24ed0b0e16c421f}{DMATxDescToSet}} = ptr\_desc;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00463}00463 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00464}00464     \textcolor{keywordflow}{for} (i = 0; i < cnt; i++) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00465}00465         temp\_desc = ptr\_desc + i;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00466}00466         temp\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a01121509822be0fe6b7fee061e98a9af}{BL}} = \mbox{\hyperlink{group___e_t_h___exported___types_ga19cf075aaebda75d09335cfb684a67b7}{ETH\_DMA\_TDES\_TCH}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00467}00467         temp\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_af7cfc1d20fec7dc9ac7a5c8eca6f5cf3}{BUF1ADDR}} = (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})(\&buf[i * \mbox{\hyperlink{group___e_t_h___exported___types_gaf83956dfc1b135c3c92ac409758b6cf4}{ETH\_TX\_BUF\_SIZE}}]);}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00468}00468 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00469}00469         \textcolor{keywordflow}{if} (i < cnt -\/ 1) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00470}00470             temp\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a943426455c55feb0480eb069b62c7938}{BUF2NDADDR}} = (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})(ptr\_desc + i + 1);}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00471}00471         \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00472}00472         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00473}00473             temp\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a943426455c55feb0480eb069b62c7938}{BUF2NDADDR}} = (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})(ptr\_desc);}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00474}00474         \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00475}00475     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00476}00476 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00477}00477     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMATDLAR = (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})ptr\_desc;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00478}00478 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00479}00479 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00480}\mbox{\hyperlink{group___e_t_h___exported___types_ga4ba3c7ed9c0ed95674fd28905d6c76bf}{00480}} \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}} \mbox{\hyperlink{group___e_t_h___exported___types_ga4ba3c7ed9c0ed95674fd28905d6c76bf}{ETH\_GetDMATxDescFlagStatus}}(\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}* ptr\_desc, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00481}00481 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00482}00482     \textcolor{keywordflow}{return} (\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}})(ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& flag);}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00483}00483 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00484}00484 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00485}\mbox{\hyperlink{group___e_t_h___exported___types_gae984f019d7751d4957bf6ff3d41168d2}{00485}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gae984f019d7751d4957bf6ff3d41168d2}{ETH\_GetDMATxDescCollisionCount}}(\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}* ptr\_desc)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00486}00486 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00487}00487     \textcolor{keywordflow}{return} (ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& \mbox{\hyperlink{group___e_t_h___exported___types_ga92667edcc2af4a01d7b8807f7f0f324b}{ETH\_DMA\_TDES\_CC}}) >> \mbox{\hyperlink{group___e_t_h___exported___types_gaee1b98699ea79c04464030d612fde1bf}{ETH\_DMA\_TDES\_COLLISION\_COUNTSHIFT}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00488}00488 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00489}00489 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00490}\mbox{\hyperlink{group___e_t_h___exported___types_ga1793eeacea8865863d49d718b93ab18a}{00490}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga1793eeacea8865863d49d718b93ab18a}{ETH\_SetDMATxDescOwnBit}}(\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}* ptr\_desc)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00491}00491 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00492}00492     ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} |= \mbox{\hyperlink{group___e_t_h___exported___types_ga529ab2aa5f663db8cf2350013f3529bf}{ETH\_DMA\_TDES\_OWN}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00493}00493 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00494}00494 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00495}\mbox{\hyperlink{group___e_t_h___exported___types_ga49395c02284a930bec9196c52b0b1633}{00495}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga49395c02284a930bec9196c52b0b1633}{ETH\_DMATxDescTransmitITConfig}}(\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}* ptr\_desc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} sta)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00496}00496 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00497}00497     sta ? (ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a01121509822be0fe6b7fee061e98a9af}{BL}} |= \mbox{\hyperlink{group___e_t_h___exported___types_ga9129192343adcc3e4267a9e1271c3b43}{ETH\_DMA\_TDES\_IC}}) : (ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a01121509822be0fe6b7fee061e98a9af}{BL}} \&= \string~\mbox{\hyperlink{group___e_t_h___exported___types_ga9129192343adcc3e4267a9e1271c3b43}{ETH\_DMA\_TDES\_IC}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00498}00498 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00499}00499 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00500}\mbox{\hyperlink{group___e_t_h___exported___types_ga392222e52c9219837df739594a35f6c5}{00500}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga392222e52c9219837df739594a35f6c5}{ETH\_DMATxDescFrameSegmentConfig}}(\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}* ptr\_desc, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} val)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00501}00501 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00502}00502     ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} |= val;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00503}00503 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00504}00504 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00505}\mbox{\hyperlink{group___e_t_h___exported___types_gaf6a0af2257e0abeba47de54add9d3d38}{00505}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_gaf6a0af2257e0abeba47de54add9d3d38}{ETH\_DMATxDescChecksumInsertionConfig}}(\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}* ptr\_desc, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} val)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00506}00506 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00507}00507     ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} |= val;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00508}00508 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00509}00509 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00510}\mbox{\hyperlink{group___e_t_h___exported___types_ga823957a4dc7c93d83060e534c2a38a3e}{00510}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga823957a4dc7c93d83060e534c2a38a3e}{ETH\_DMATxDescCRCCmd}}(\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}* ptr\_desc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} sta)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00511}00511 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00512}00512     sta ? (ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a01121509822be0fe6b7fee061e98a9af}{BL}} \&= \string~ETH\_DMA\_TDES\_DC) : (ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a01121509822be0fe6b7fee061e98a9af}{BL}} |= \mbox{\hyperlink{group___e_t_h___exported___types_ga823f1bd31558d6e1e67e44760c22c346}{ETH\_DMA\_TDES\_DC}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00513}00513 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00514}00514 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00515}\mbox{\hyperlink{group___e_t_h___exported___types_gafb39af5b4b32c7d117433e6324467dfb}{00515}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_gafb39af5b4b32c7d117433e6324467dfb}{ETH\_DMATxDescSecondAddressChainedCmd}}(\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}* ptr\_desc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} sta)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00516}00516 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00517}00517     sta ? (ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a01121509822be0fe6b7fee061e98a9af}{BL}} |= \mbox{\hyperlink{group___e_t_h___exported___types_ga19cf075aaebda75d09335cfb684a67b7}{ETH\_DMA\_TDES\_TCH}}) : (ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a01121509822be0fe6b7fee061e98a9af}{BL}} \&= \string~\mbox{\hyperlink{group___e_t_h___exported___types_ga19cf075aaebda75d09335cfb684a67b7}{ETH\_DMA\_TDES\_TCH}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00518}00518 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00519}00519 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00520}\mbox{\hyperlink{group___e_t_h___exported___types_gab4d79c04a4edbc4721d3295905e96c70}{00520}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_gab4d79c04a4edbc4721d3295905e96c70}{ETH\_DMATxDescShortFramePaddingCmd}}(\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}* ptr\_desc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} sta)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00521}00521 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00522}00522     sta ? (ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a01121509822be0fe6b7fee061e98a9af}{BL}} \&= \string~ETH\_DMA\_TDES\_DP) : (ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a01121509822be0fe6b7fee061e98a9af}{BL}} |= \mbox{\hyperlink{group___e_t_h___exported___types_gac1291610f5046d37236931979a012d5d}{ETH\_DMA\_TDES\_DP}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00523}00523 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00524}00524 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00525}\mbox{\hyperlink{group___e_t_h___exported___types_ga7a4320cb1cce11b6dc9d70dd7ec006cd}{00525}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga7a4320cb1cce11b6dc9d70dd7ec006cd}{ETH\_DMATxDescBufferSizeConfig}}(\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}* ptr\_desc, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} buf1\_size, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} buf2\_size)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00526}00526 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00527}00527     ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a01121509822be0fe6b7fee061e98a9af}{BL}} |= buf1\_size | (buf2\_size << \mbox{\hyperlink{group___e_t_h___exported___types_ga49b0949fc07b045cacee395017dab053}{ETH\_DMA\_TDES\_BUFFER2\_SIZESHIFT}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00528}00528 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00529}00529 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00530}\mbox{\hyperlink{group___e_t_h___exported___types_gad84f5cb887f2a26eec9e73b7efc5ce48}{00530}} \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}} \mbox{\hyperlink{group___e_t_h___exported___types_gad84f5cb887f2a26eec9e73b7efc5ce48}{ETH\_GetDMARxDescFlagStatus}}(\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}* ptr\_desc, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00531}00531 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00532}00532     \textcolor{keywordflow}{return} (\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}})(ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& flag);}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00533}00533 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00534}00534 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00535}\mbox{\hyperlink{group___e_t_h___exported___types_ga93137d99a8d6fad58221c8e8cb1c948b}{00535}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga93137d99a8d6fad58221c8e8cb1c948b}{ETH\_SetDMARxDescOwnBit}}(\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}* ptr\_desc)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00536}00536 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00537}00537     ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} |= \mbox{\hyperlink{group___e_t_h___exported___types_gaf2627c4265e1bc60866fdddaa1a7577e}{ETH\_DMA\_RDES\_OWN}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00538}00538 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00539}00539 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00540}\mbox{\hyperlink{group___e_t_h___exported___types_gaa706748af8275b2d93c43960b747f38e}{00540}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gaa706748af8275b2d93c43960b747f38e}{ETH\_GetDMARxDescFrameLength}}(\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}* ptr\_desc)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00541}00541 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00542}00542     \textcolor{keywordflow}{return} (ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& \mbox{\hyperlink{group___e_t_h___exported___types_ga4b42d08faf710524a70bb5f149503107}{ETH\_DMA\_RDES\_FL}}) >> \mbox{\hyperlink{group___e_t_h___exported___types_gaf45ff5e1c5b283f86634116f68298334}{ETH\_DMA\_RDES\_FRAME\_LENGTHSHIFT}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00543}00543 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00544}00544 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00545}\mbox{\hyperlink{group___e_t_h___exported___types_gad6cae545376b4f9fa1db5755a014be3f}{00545}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_gad6cae545376b4f9fa1db5755a014be3f}{ETH\_DMARxDescReceiveITConfig}}(\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}* ptr\_desc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} sta)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00546}00546 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00547}00547     sta ? (ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \&= \string~ETH\_DMA\_RDES\_DIC) : (ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} |= \mbox{\hyperlink{group___e_t_h___exported___types_gad6adcaea584145ecbf2f9704eac8abe3}{ETH\_DMA\_RDES\_DIC}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00548}00548 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00549}00549 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00550}\mbox{\hyperlink{group___e_t_h___exported___types_gaa67743cfc12787eb97ec2fe7c08ca86f}{00550}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gaa67743cfc12787eb97ec2fe7c08ca86f}{ETH\_GetDMARxDescBufferSize}}(\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}* ptr\_desc, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} buf)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00551}00551 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00552}00552     \textcolor{keywordflow}{return} (buf != \mbox{\hyperlink{group___e_t_h___exported___types_ga441128c08e9227ff36e7b7a7b29166f4}{ETH\_DMA\_RDES\_Buffer1}} ?}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00553}00553             ((ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a01121509822be0fe6b7fee061e98a9af}{BL}} \& \mbox{\hyperlink{group___e_t_h___exported___types_ga4d21e08907f6aa58b4bd24de9d651e67}{ETH\_DMA\_RDES\_RBS2}}) >> \mbox{\hyperlink{group___e_t_h___exported___types_gab22d481c68f3e6485b853cff224ed208}{ETH\_DMA\_RDES\_BUFFER2\_SIZESHIFT}}) :}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00554}00554             (ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a01121509822be0fe6b7fee061e98a9af}{BL}} \& \mbox{\hyperlink{group___e_t_h___exported___types_ga9576627ee1cf3546fe70446cf3b90d39}{ETH\_DMA\_RDES\_RBS1}}));}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00555}00555 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00556}00556 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00557}\mbox{\hyperlink{group___e_t_h___exported___types_ga765d129e2375108daa94bf0031f0c4d3}{00557}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga765d129e2375108daa94bf0031f0c4d3}{ETH\_GetRxPktSize}}(\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def}{ETH\_DMADESCTypeDef}}* ptr\_desc)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00558}00558 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00559}00559     \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} len = 0;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00560}00560 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00561}00561     \textcolor{keywordflow}{if} (    !(ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& \mbox{\hyperlink{group___e_t_h___exported___types_gaf2627c4265e1bc60866fdddaa1a7577e}{ETH\_DMA\_RDES\_OWN}}) \&\&}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00562}00562             !(ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& \mbox{\hyperlink{group___e_t_h___exported___types_ga33e408854b408b336754c71db0cac42a}{ETH\_DMA\_RDES\_ES}}) \&\&}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00563}00563             (ptr\_desc-\/>\mbox{\hyperlink{struct_e_t_h___d_m_a_d_e_s_c_type_def_a0981b2995f6d5eff7c51537e4a612c2b}{CS}} \& \mbox{\hyperlink{group___e_t_h___exported___types_gaff0d41b035d18e94e559a63830ab4c7b}{ETH\_DMA\_RDES\_LS}})) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00564}00564         len = \mbox{\hyperlink{group___e_t_h___exported___types_gaa706748af8275b2d93c43960b747f38e}{ETH\_GetDMARxDescFrameLength}}(ptr\_desc);}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00565}00565     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00566}00566 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00567}00567     \textcolor{keywordflow}{return} len;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00568}00568 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00569}00569 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00571}\mbox{\hyperlink{group___e_t_h___exported___types_gac5b991b83a1a26f4d3fdfcb44a9e2961}{00571}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_gac5b991b83a1a26f4d3fdfcb44a9e2961}{ETH\_SoftwareReset}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00572}00572 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00573}00573     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMABMR |= \mbox{\hyperlink{reg__eth_8h_a2e8dfe321aeaecaa87e290f4d6e710dc}{ETH\_DMABMR\_SR}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00574}00574 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00575}00575 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00576}\mbox{\hyperlink{group___e_t_h___exported___types_ga92fe59489331817a185f80d4ffdebc6a}{00576}} \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}} \mbox{\hyperlink{group___e_t_h___exported___types_ga92fe59489331817a185f80d4ffdebc6a}{ETH\_GetSoftwareResetStatus}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00577}00577 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00578}00578     \textcolor{keywordflow}{return} (\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}})(\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMABMR \& \mbox{\hyperlink{reg__eth_8h_a2e8dfe321aeaecaa87e290f4d6e710dc}{ETH\_DMABMR\_SR}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00579}00579 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00580}00580 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00581}\mbox{\hyperlink{group___e_t_h___exported___types_ga7dab5819120f80db4fa99fecb84006eb}{00581}} \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}} \mbox{\hyperlink{group___e_t_h___exported___types_ga7dab5819120f80db4fa99fecb84006eb}{ETH\_GetDMAFlagStatus}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00582}00582 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00583}00583     \textcolor{keywordflow}{return} (\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}})(\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMASR \& flag);}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00584}00584 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00585}00585 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00586}\mbox{\hyperlink{group___e_t_h___exported___types_ga48da821b79f04dab1a0c47b979676aeb}{00586}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga48da821b79f04dab1a0c47b979676aeb}{ETH\_DMAClearFlag}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00587}00587 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00588}00588     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMASR = flag;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00589}00589 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00590}00590 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00591}\mbox{\hyperlink{group___e_t_h___exported___types_ga5a91e77822eef95867a541a301a4cb93}{00591}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga5a91e77822eef95867a541a301a4cb93}{ETH\_DMAITConfig}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} sta)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00592}00592 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00593}00593     sta ? (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMAIER |= it) : (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMAIER \&= \string~it);}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00594}00594 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00595}00595 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00596}\mbox{\hyperlink{group___e_t_h___exported___types_ga62f0618f34823bc1a4c41786973997f2}{00596}} \mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} \mbox{\hyperlink{group___e_t_h___exported___types_ga62f0618f34823bc1a4c41786973997f2}{ETH\_GetDMAITStatus}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00597}00597 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00598}00598     \textcolor{keywordflow}{return} (\mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}})(\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMASR \& it);}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00599}00599 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00600}00600 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00601}\mbox{\hyperlink{group___e_t_h___exported___types_ga03bd042e399230d6f8d7f9155d6b57fe}{00601}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga03bd042e399230d6f8d7f9155d6b57fe}{ETH\_DMAClearITPendingBit}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00602}00602 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00603}00603     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMASR = it;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00604}00604 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00605}00605 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00606}\mbox{\hyperlink{group___e_t_h___exported___types_ga71fa89afbbf80e3fea7552166d290a80}{00606}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga71fa89afbbf80e3fea7552166d290a80}{ETH\_GetTransmitProcessState}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00607}00607 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00608}00608     \textcolor{keywordflow}{return} \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMASR \& \mbox{\hyperlink{reg__eth_8h_a9aa47191609cba66df647cb7e8e10974}{ETH\_DMASR\_TS}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00609}00609 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00610}00610 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00611}\mbox{\hyperlink{group___e_t_h___exported___types_gacefed0f80e333cea4e88ebf417c4844f}{00611}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gacefed0f80e333cea4e88ebf417c4844f}{ETH\_GetReceiveProcessState}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00612}00612 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00613}00613     \textcolor{keywordflow}{return} \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMASR \& \mbox{\hyperlink{reg__eth_8h_a40f33df77007eab0110e1ffef365a2df}{ETH\_DMASR\_RS}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00614}00614 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00615}00615 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00616}\mbox{\hyperlink{group___e_t_h___exported___types_ga886f872a0046bbb3f9f08890bb10a7d6}{00616}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga886f872a0046bbb3f9f08890bb10a7d6}{ETH\_FlushTransmitFIFO}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00617}00617 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00618}00618     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMAOMR |= \mbox{\hyperlink{reg__eth_8h_a6ba6031456a00e99638005b7af823a49}{ETH\_DMAOMR\_FTF}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00619}00619 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00620}00620 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00621}\mbox{\hyperlink{group___e_t_h___exported___types_gaf6c37cbdce7cf962d8de25ac635e37c9}{00621}} \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}} \mbox{\hyperlink{group___e_t_h___exported___types_gaf6c37cbdce7cf962d8de25ac635e37c9}{ETH\_GetFlushTransmitFIFOStatus}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00622}00622 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00623}00623     \textcolor{keywordflow}{return} (\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}})(\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMAOMR \& \mbox{\hyperlink{reg__eth_8h_a6ba6031456a00e99638005b7af823a49}{ETH\_DMAOMR\_FTF}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00624}00624 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00625}00625 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00626}\mbox{\hyperlink{group___e_t_h___exported___types_ga3078e7bc9e79d3b09d4e76c55c2db7fa}{00626}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga3078e7bc9e79d3b09d4e76c55c2db7fa}{ETH\_DMATransmissionCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} sta)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00627}00627 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00628}00628     sta ? (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMAOMR |= \mbox{\hyperlink{reg__eth_8h_a5f15d70215b151c4c151b7b8475939ce}{ETH\_DMAOMR\_ST}}) : (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMAOMR \&= \string~\mbox{\hyperlink{reg__eth_8h_a5f15d70215b151c4c151b7b8475939ce}{ETH\_DMAOMR\_ST}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00629}00629 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00630}00630 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00631}\mbox{\hyperlink{group___e_t_h___exported___types_ga8e05697da368b53b0346769850f0eac9}{00631}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga8e05697da368b53b0346769850f0eac9}{ETH\_DMAReceptionCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} sta)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00632}00632 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00633}00633     sta ? (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMAOMR |= \mbox{\hyperlink{reg__eth_8h_af08aaa0c916bb56d2e4e71fdf0f034da}{ETH\_DMAOMR\_SR}}) : (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMAOMR \&= \string~\mbox{\hyperlink{reg__eth_8h_af08aaa0c916bb56d2e4e71fdf0f034da}{ETH\_DMAOMR\_SR}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00634}00634 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00635}00635 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00636}\mbox{\hyperlink{group___e_t_h___exported___types_gaf6b44c63ca8293301d461bc6c9d55e56}{00636}} \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}} \mbox{\hyperlink{group___e_t_h___exported___types_gaf6b44c63ca8293301d461bc6c9d55e56}{ETH\_GetDMAOverflowStatus}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} val)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00637}00637 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00638}00638     \textcolor{keywordflow}{return} (\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}})(\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMAMFBOCR \& val);}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00639}00639 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00640}00640 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00641}\mbox{\hyperlink{group___e_t_h___exported___types_gadb1e5e7222fab956d9277d84760b34cc}{00641}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gadb1e5e7222fab956d9277d84760b34cc}{ETH\_GetRxOverflowMissedFrameCounter}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00642}00642 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00643}00643     \textcolor{keywordflow}{return} (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMAMFBOCR \& \mbox{\hyperlink{reg__eth_8h_a9595307f4b9d38f6e0991fa54c4bae8f}{ETH\_DMAMFBOCR\_MFA}}) >>}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00644}00644            \mbox{\hyperlink{group___e_t_h___exported___types_ga3e4abc6fc9835f3e62d99ba0fec31be2}{ETH\_DMA\_RX\_OVERFLOW\_MISSEDFRAMES\_COUNTERSHIFT}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00645}00645 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00646}00646 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00647}\mbox{\hyperlink{group___e_t_h___exported___types_ga44d76c8743a17b6ec41c3856859afec2}{00647}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga44d76c8743a17b6ec41c3856859afec2}{ETH\_GetBufferUnavailableMissedFrameCounter}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00648}00648 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00649}00649     \textcolor{keywordflow}{return} \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMAMFBOCR \& \mbox{\hyperlink{reg__eth_8h_a81aa193a52d5b3757a008b84eb0c6182}{ETH\_DMAMFBOCR\_MFC}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00650}00650 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00651}00651 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00652}\mbox{\hyperlink{group___e_t_h___exported___types_ga55e2fd40116ae98a5f65f77a0ad8be76}{00652}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga55e2fd40116ae98a5f65f77a0ad8be76}{ETH\_GetCurrentTxDescStartAddress}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00653}00653 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00654}00654     \textcolor{keywordflow}{return} \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMACHTDR;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00655}00655 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00656}00656 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00657}\mbox{\hyperlink{group___e_t_h___exported___types_ga9de31600819c649378016d7440e85cc6}{00657}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga9de31600819c649378016d7440e85cc6}{ETH\_GetCurrentRxDescStartAddress}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00658}00658 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00659}00659     \textcolor{keywordflow}{return} \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMACHRDR;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00660}00660 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00661}00661 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00662}\mbox{\hyperlink{group___e_t_h___exported___types_ga95649bf5ab9e52638e59b8316580b33d}{00662}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga95649bf5ab9e52638e59b8316580b33d}{ETH\_GetCurrentTxBufferAddress}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00663}00663 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00664}00664     \textcolor{keywordflow}{return} \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMACHTBAR;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00665}00665 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00666}00666 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00667}\mbox{\hyperlink{group___e_t_h___exported___types_gafb40ac65a86624dc294f5ff83faf5994}{00667}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gafb40ac65a86624dc294f5ff83faf5994}{ETH\_GetCurrentRxBufferAddress}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00668}00668 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00669}00669     \textcolor{keywordflow}{return} \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMACHRBAR;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00670}00670 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00671}00671 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00672}\mbox{\hyperlink{group___e_t_h___exported___types_gae933a3ddae920fc22a764bdf4af0b3a5}{00672}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_gae933a3ddae920fc22a764bdf4af0b3a5}{ETH\_ResumeDMATransmission}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00673}00673 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00674}00674     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMATPDR = 0;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00675}00675 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00676}00676 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00677}\mbox{\hyperlink{group___e_t_h___exported___types_gaf2149971fef6d9478acb91a0592ed7af}{00677}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_gaf2149971fef6d9478acb91a0592ed7af}{ETH\_ResumeDMAReception}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00678}00678 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00679}00679     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMARPDR = 0;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00680}00680 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00681}00681 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00682}\mbox{\hyperlink{group___e_t_h___exported___types_ga03cc6b16dcc36a247608c59870a51a05}{00682}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga03cc6b16dcc36a247608c59870a51a05}{ETH\_SetReceiveWatchdogTimer}}(\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} val)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00683}00683 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00684}00684     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>DMARSWTR = val;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00685}00685 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00686}00686 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00688}\mbox{\hyperlink{group___e_t_h___exported___types_gad885ad03ba3496c9c2711e7a39225762}{00688}} \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{group___e_t_h___exported___types_gad885ad03ba3496c9c2711e7a39225762}{ETH\_ReadPHYRegister}}(\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} addr, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} reg)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00689}00689 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00690}00690     \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} dat;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00691}00691     \textcolor{comment}{// Set phy address and reg address, clear write flag}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00692}00692     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACMIIAR = (((\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACMIIAR \& \string~MACMIIAR\_CR\_MASK) |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00693}00693                       (addr << \mbox{\hyperlink{reg__eth_8h_acf67cfdb4230e5d14ee041303582b91d}{ETH\_MACMIIAR\_PA\_Pos}} \& \mbox{\hyperlink{reg__eth_8h_a712f44a77db4edfaf961e469153e34a4}{ETH\_MACMIIAR\_PA}}) |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00694}00694                       (reg  << \mbox{\hyperlink{reg__eth_8h_a50e38f04aa760a4f72b6d012cfb34f71}{ETH\_MACMIIAR\_MR\_Pos}} \& \mbox{\hyperlink{reg__eth_8h_aa2ab5db007b55dca29e98ba3b31f7e66}{ETH\_MACMIIAR\_MR}})) \&}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00695}00695                      (\string~ETH\_MACMIIAR\_MW)) | \mbox{\hyperlink{reg__eth_8h_a4e3bd36fdbb97a3ec5b541997bf952aa}{ETH\_MACMIIAR\_MB}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00696}00696 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00697}00697     \textcolor{comment}{// Check busy flag}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00698}00698     \textcolor{keywordflow}{while}(\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACMIIAR \& \mbox{\hyperlink{reg__eth_8h_a4e3bd36fdbb97a3ec5b541997bf952aa}{ETH\_MACMIIAR\_MB}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00699}00699     dat = (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACMIIDR;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00700}00700     \textcolor{keywordflow}{if}(dat == 0xFFFF) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00701}00701         dat = 0;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00702}00702     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00703}00703     \textcolor{keywordflow}{return} dat;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00704}00704 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00705}00705 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00706}\mbox{\hyperlink{group___e_t_h___exported___types_ga4bcaddc18a6a27f45f7ddbd5313224ba}{00706}} \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{group___e_t_h___exported___types_ga4bcaddc18a6a27f45f7ddbd5313224ba}{ETH\_WritePHYRegister}}(\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} addr, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} reg, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} val)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00707}00707 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00708}00708     \textcolor{comment}{// Load data}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00709}00709     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACMIIDR = val;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00710}00710 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00711}00711     \textcolor{comment}{// Set phy address, reg address and write flag}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00712}00712     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACMIIAR = (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACMIIAR \& \string~MACMIIAR\_CR\_MASK) |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00713}00713                     (addr << \mbox{\hyperlink{reg__eth_8h_acf67cfdb4230e5d14ee041303582b91d}{ETH\_MACMIIAR\_PA\_Pos}} \& \mbox{\hyperlink{reg__eth_8h_a712f44a77db4edfaf961e469153e34a4}{ETH\_MACMIIAR\_PA}}) |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00714}00714                     (reg  << \mbox{\hyperlink{reg__eth_8h_a50e38f04aa760a4f72b6d012cfb34f71}{ETH\_MACMIIAR\_MR\_Pos}} \& \mbox{\hyperlink{reg__eth_8h_aa2ab5db007b55dca29e98ba3b31f7e66}{ETH\_MACMIIAR\_MR}}) |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00715}00715                     \mbox{\hyperlink{reg__eth_8h_affdb940b35822107a5959cdd1ab06482}{ETH\_MACMIIAR\_MW}} |}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00716}00716                     \mbox{\hyperlink{reg__eth_8h_a4e3bd36fdbb97a3ec5b541997bf952aa}{ETH\_MACMIIAR\_MB}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00717}00717 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00718}00718     \textcolor{comment}{// Check busy flag}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00719}00719     \textcolor{keywordflow}{while}(\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACMIIAR \& \mbox{\hyperlink{reg__eth_8h_a4e3bd36fdbb97a3ec5b541997bf952aa}{ETH\_MACMIIAR\_MB}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00720}00720 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00721}00721     \textcolor{keywordflow}{return} \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACMIIDR;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00722}00722 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00723}00723 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00724}\mbox{\hyperlink{group___e_t_h___exported___types_ga4d29bede54c69b0304afc50ce58f3dfb}{00724}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_ga4d29bede54c69b0304afc50ce58f3dfb}{ETH\_PHYLoopBackCmd}}(\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} addr, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} sta)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00725}00725 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00726}00726     \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} temp\_val = \mbox{\hyperlink{group___e_t_h___exported___types_gad885ad03ba3496c9c2711e7a39225762}{ETH\_ReadPHYRegister}}(addr, \mbox{\hyperlink{group___e_t_h___exported___types_ga8abe1a40c71e68881ec669d59f513fdb}{PHY\_BCR}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00727}00727 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00728}00728     sta ? (temp\_val |= \mbox{\hyperlink{group___e_t_h___exported___types_ga10d25051705141f40e1e3fe3c68ffa72}{PHY\_Loopback}}) : (temp\_val \&= \string~\mbox{\hyperlink{group___e_t_h___exported___types_ga10d25051705141f40e1e3fe3c68ffa72}{PHY\_Loopback}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00729}00729 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00730}00730     \textcolor{keywordflow}{if}(\mbox{\hyperlink{group___e_t_h___exported___types_ga4bcaddc18a6a27f45f7ddbd5313224ba}{ETH\_WritePHYRegister}}(addr, \mbox{\hyperlink{group___e_t_h___exported___types_ga8abe1a40c71e68881ec669d59f513fdb}{PHY\_BCR}}, temp\_val))}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00731}00731         \textcolor{keywordflow}{return} \mbox{\hyperlink{group___e_t_h___exported___types_ga2fb2e6248630a20832d42340e122c81c}{ETH\_SUCCESS}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00732}00732 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00733}00733     \textcolor{keywordflow}{return} \mbox{\hyperlink{group___e_t_h___exported___types_ga86fb9fb94bfcabd7360fc2307131f853}{ETH\_ERROR}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00734}00734 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00735}00735 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00737}00737 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00738}\mbox{\hyperlink{group___e_t_h___exported___types_gad19ac0436076c96431e887c3684b0712}{00738}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_gad19ac0436076c96431e887c3684b0712}{ETH\_ResetWakeUpFrameFilterRegisterPointer}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00739}00739 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00740}00740     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACPMTCSR |= \mbox{\hyperlink{reg__eth_8h_aeaa7046c581aa1b663c819352930cdd8}{ETH\_MACPMTCSR\_WFFRPR}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00741}00741 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00742}00742 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00743}\mbox{\hyperlink{group___e_t_h___exported___types_ga74262f8956e42da4376ad4078502bf30}{00743}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga74262f8956e42da4376ad4078502bf30}{ETH\_SetWakeUpFrameFilterRegister}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}* buf)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00744}00744 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00745}00745     \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} i = 0;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00746}00746 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00747}00747     \textcolor{keywordflow}{for} (i = 0; i < \mbox{\hyperlink{group___e_t_h___exported___types_ga54fa60e8e2a491b4fcad024ac0da2ae8}{ETH\_WAKEUP\_REGISTER\_LENGTH}}; i++) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00748}00748         \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACRWUFFR = buf[i];}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00749}00749     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00750}00750 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00751}00751 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00752}\mbox{\hyperlink{group___e_t_h___exported___types_gae48f02d1bcee46f99d1ea49c2ff9aba8}{00752}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_gae48f02d1bcee46f99d1ea49c2ff9aba8}{ETH\_GlobalUnicastWakeUpCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} sta)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00753}00753 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00754}00754     sta ?   (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACPMTCSR |= \mbox{\hyperlink{reg__eth_8h_a3c2d01faf67db27fb0b2cfeaf94242b4}{ETH\_MACPMTCSR\_GU}}) : (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACPMTCSR \&= \string~\mbox{\hyperlink{reg__eth_8h_a3c2d01faf67db27fb0b2cfeaf94242b4}{ETH\_MACPMTCSR\_GU}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00755}00755 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00756}00756 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00757}\mbox{\hyperlink{group___e_t_h___exported___types_ga7148c6f5ee9b946e50831c0676e00188}{00757}} \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}} \mbox{\hyperlink{group___e_t_h___exported___types_ga7148c6f5ee9b946e50831c0676e00188}{ETH\_GetPMTFlagStatus}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00758}00758 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00759}00759     \textcolor{keywordflow}{return} (\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}})(\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACPMTCSR \& flag);}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00760}00760 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00761}00761 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00762}\mbox{\hyperlink{group___e_t_h___exported___types_ga4001aea745a9816c038bb3ec83a2fd00}{00762}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga4001aea745a9816c038bb3ec83a2fd00}{ETH\_WakeUpFrameDetectionCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} sta)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00763}00763 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00764}00764     sta ? (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACPMTCSR |= \mbox{\hyperlink{reg__eth_8h_a998f1f5665f94008e39dfabb489faf8e}{ETH\_MACPMTCSR\_WFE}}) : (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACPMTCSR \&= \string~\mbox{\hyperlink{reg__eth_8h_a998f1f5665f94008e39dfabb489faf8e}{ETH\_MACPMTCSR\_WFE}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00765}00765 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00766}00766 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00767}\mbox{\hyperlink{group___e_t_h___exported___types_ga867d3cc0ddf06ebe98c3abe83f182604}{00767}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga867d3cc0ddf06ebe98c3abe83f182604}{ETH\_MagicPacketDetectionCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} sta)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00768}00768 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00769}00769     sta ? (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACPMTCSR |= \mbox{\hyperlink{reg__eth_8h_a81540e67436a755a7692b32a33871f63}{ETH\_MACPMTCSR\_MPE}}) : (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACPMTCSR \&= \string~\mbox{\hyperlink{reg__eth_8h_a81540e67436a755a7692b32a33871f63}{ETH\_MACPMTCSR\_MPE}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00770}00770 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00771}00771 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00772}\mbox{\hyperlink{group___e_t_h___exported___types_ga614f8683bd5797e8a7b40f19478e7cf5}{00772}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga614f8683bd5797e8a7b40f19478e7cf5}{ETH\_PowerDownCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} sta)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00773}00773 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00774}00774     sta ? (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACPMTCSR |= \mbox{\hyperlink{reg__eth_8h_ab454be372dc141b6e515c4389cd18a12}{ETH\_MACPMTCSR\_PD}}) : (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MACPMTCSR \&= \string~\mbox{\hyperlink{reg__eth_8h_ab454be372dc141b6e515c4389cd18a12}{ETH\_MACPMTCSR\_PD}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00775}00775 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00776}00776 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00778}00778 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00779}\mbox{\hyperlink{group___e_t_h___exported___types_ga6317136f5ca8aff711630b595e5639b3}{00779}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga6317136f5ca8aff711630b595e5639b3}{ETH\_MMCCounterFullPreset}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00780}00780 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00781}00781     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MMCCR |= \mbox{\hyperlink{reg__eth_8h_a0eb309947d400951235c17953254fbf8}{ETH\_MMCCR\_MCFHP}} | \mbox{\hyperlink{reg__eth_8h_a2a6eeda6ffcafe7d8ba531ccaa3abf90}{ETH\_MMCCR\_MCP}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00782}00782 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00783}00783 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00784}\mbox{\hyperlink{group___e_t_h___exported___types_gaefaef524644df31d09c8c6d68829414f}{00784}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_gaefaef524644df31d09c8c6d68829414f}{ETH\_MMCCounterHalfPreset}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00785}00785 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00786}00786     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MMCCR \&= \string~ETH\_MMCCR\_MCFHP;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00787}00787 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00788}00788     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MMCCR |= \mbox{\hyperlink{reg__eth_8h_a2a6eeda6ffcafe7d8ba531ccaa3abf90}{ETH\_MMCCR\_MCP}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00789}00789 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00790}00790 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00791}\mbox{\hyperlink{group___e_t_h___exported___types_ga9c61c8a5b5bfa8f1621ec692941dcbc1}{00791}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga9c61c8a5b5bfa8f1621ec692941dcbc1}{ETH\_MMCCounterFreezeCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} sta)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00792}00792 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00793}00793     sta ? (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MMCCR |= \mbox{\hyperlink{reg__eth_8h_a17ab5fbe6c5189b3f98095f9adb1eeeb}{ETH\_MMCCR\_MCF}}) : (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MMCCR \&= \string~\mbox{\hyperlink{reg__eth_8h_a17ab5fbe6c5189b3f98095f9adb1eeeb}{ETH\_MMCCR\_MCF}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00794}00794 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00795}00795 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00796}\mbox{\hyperlink{group___e_t_h___exported___types_ga97785440d18126ece27ac75b32149989}{00796}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga97785440d18126ece27ac75b32149989}{ETH\_MMCResetOnReadCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} sta)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00797}00797 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00798}00798     sta ? (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MMCCR |= \mbox{\hyperlink{reg__eth_8h_a243ae6b3acbbd295be6f76a84657a48d}{ETH\_MMCCR\_ROR}}) : (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MMCCR \&= \string~\mbox{\hyperlink{reg__eth_8h_a243ae6b3acbbd295be6f76a84657a48d}{ETH\_MMCCR\_ROR}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00799}00799 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00800}00800 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00801}\mbox{\hyperlink{group___e_t_h___exported___types_ga20132209f423a151fe614707c9b8b651}{00801}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga20132209f423a151fe614707c9b8b651}{ETH\_MMCCounterRolloverCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} sta)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00802}00802 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00803}00803     sta ? (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MMCCR \&= \string~ETH\_MMCCR\_CSR) : (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MMCCR |= \mbox{\hyperlink{reg__eth_8h_a948b685211ced94ef5d4b8d2c94df78a}{ETH\_MMCCR\_CSR}});}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00804}00804 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00805}00805 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00806}\mbox{\hyperlink{group___e_t_h___exported___types_ga414106bd2efd86e44ea8469ef3229843}{00806}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_ga414106bd2efd86e44ea8469ef3229843}{ETH\_MMCCountersReset}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00807}00807 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00808}00808     \mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MMCCR |= \mbox{\hyperlink{reg__eth_8h_a7cb520c80fc0b2f00304bb7f8f7c5d4e}{ETH\_MMCCR\_CR}};}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00809}00809 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00810}00810 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00811}\mbox{\hyperlink{group___e_t_h___exported___types_gaaa90ae5d6854f5c8c0e4664bb24bc149}{00811}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___e_t_h___exported___types_gaaa90ae5d6854f5c8c0e4664bb24bc149}{ETH\_MMCITConfig}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} sta)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00812}00812 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00813}00813     \textcolor{keywordflow}{if} (it \& 0x10000000) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00814}00814         it \&= 0xEFFFFFFF;}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00815}00815 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00816}00816         sta ? (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MMCRIMR \&= \string~it) : (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MMCRIMR |= it);}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00817}00817     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00818}00818     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00819}00819         sta ? (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MMCTIMR \&= \string~it) : (\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MMCTIMR |= it);}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00820}00820     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00821}00821 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00822}00822 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00823}\mbox{\hyperlink{group___e_t_h___exported___types_gad36d923315142ae01fe9bcd4f9728016}{00823}} \mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} \mbox{\hyperlink{group___e_t_h___exported___types_gad36d923315142ae01fe9bcd4f9728016}{ETH\_GetMMCITStatus}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00824}00824 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00825}00825     \textcolor{keywordflow}{if} (it \& 0x10000000) \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00826}00826         \textcolor{keywordflow}{return} (\mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}})((\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MMCRIR \& it) \&\& !(\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MMCRIMR \& it));}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00827}00827     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00828}00828     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00829}00829         \textcolor{keywordflow}{return} (\mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}})((\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MMCTIR \& it) \&\& !(\mbox{\hyperlink{reg__eth_8h_a3a3f60de4318afbd0b3318e7a416aadc}{ETH}}-\/>MMCTIMR \& it));}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00830}00830     \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00831}00831 \}}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00832}00832 }
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00833}\mbox{\hyperlink{group___e_t_h___exported___types_gae7cd3f7055068e12fcd7346ea1bea8fd}{00833}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___e_t_h___exported___types_gae7cd3f7055068e12fcd7346ea1bea8fd}{ETH\_GetMMCRegister}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} reg)}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00834}00834 \{}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00835}00835     \textcolor{keywordflow}{return} *(\mbox{\hyperlink{types_8h_afe8851af77f42df60783f067c5d9c213}{vu32}}*)(\mbox{\hyperlink{reg__eth_8h_ad965a7b1106ece575ed3da10c45c65cc}{ETH\_BASE}} + reg);}
+\DoxyCodeLine{\Hypertarget{hal__eth_8c_source_l00836}00836 \}}
+
+\end{DoxyCode}

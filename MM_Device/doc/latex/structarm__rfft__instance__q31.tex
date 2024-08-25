@@ -1,0 +1,113 @@
+\hypertarget{structarm__rfft__instance__q31}{}\doxysection{arm\+\_\+rfft\+\_\+instance\+\_\+q31结构体 参考}
+\label{structarm__rfft__instance__q31}\index{arm\_rfft\_instance\_q31@{arm\_rfft\_instance\_q31}}
+
+
+Instance structure for the Q31 RFFT/\+RIFFT function.  
+
+
+
+
+{\ttfamily \#include $<$arm\+\_\+math.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structarm__rfft__instance__q31_af777b0cadd5abaf064323692c2e6693b}{fft\+Len\+Real}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structarm__rfft__instance__q31_af5c2615e6cde15524df38fa57ea32d94}{ifft\+FlagR}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structarm__rfft__instance__q31_a3cb90cdc928a88b0203917dcb3dc1b71}{bit\+Reverse\+FlagR}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structarm__rfft__instance__q31_a6fc90252b579f7c29e01bd279334fc43}{twid\+Coef\+RModifier}}
+\item 
+\mbox{\hyperlink{arm__math_8h_adc89a3547f5324b7b3b95adec3806bc0}{q31\+\_\+t}} $\ast$ \mbox{\hyperlink{structarm__rfft__instance__q31_a2a0c944e66bab92fcbe19d1c29153250}{p\+Twiddle\+AReal}}
+\item 
+\mbox{\hyperlink{arm__math_8h_adc89a3547f5324b7b3b95adec3806bc0}{q31\+\_\+t}} $\ast$ \mbox{\hyperlink{structarm__rfft__instance__q31_ae5070be4c2e0327e618f5e1f4c5b9d80}{p\+Twiddle\+BReal}}
+\item 
+const \mbox{\hyperlink{structarm__cfft__instance__q31}{arm\+\_\+cfft\+\_\+instance\+\_\+q31}} $\ast$ \mbox{\hyperlink{structarm__rfft__instance__q31_a8fe10d425b59e096c23aa4bb5caa1974}{p\+Cfft}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Instance structure for the Q31 RFFT/\+RIFFT function. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02206}{2206}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{structarm__rfft__instance__q31_a3cb90cdc928a88b0203917dcb3dc1b71}\label{structarm__rfft__instance__q31_a3cb90cdc928a88b0203917dcb3dc1b71}} 
+\index{arm\_rfft\_instance\_q31@{arm\_rfft\_instance\_q31}!bitReverseFlagR@{bitReverseFlagR}}
+\index{bitReverseFlagR@{bitReverseFlagR}!arm\_rfft\_instance\_q31@{arm\_rfft\_instance\_q31}}
+\doxysubsubsection{\texorpdfstring{bitReverseFlagR}{bitReverseFlagR}}
+{\footnotesize\ttfamily uint8\+\_\+t arm\+\_\+rfft\+\_\+instance\+\_\+q31\+::bit\+Reverse\+FlagR}
+
+flag that enables (bit\+Reverse\+FlagR=1) or disables (bit\+Reverse\+FlagR=0) bit reversal of output. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02209}{2209}} 行定义.
+
+\mbox{\Hypertarget{structarm__rfft__instance__q31_af777b0cadd5abaf064323692c2e6693b}\label{structarm__rfft__instance__q31_af777b0cadd5abaf064323692c2e6693b}} 
+\index{arm\_rfft\_instance\_q31@{arm\_rfft\_instance\_q31}!fftLenReal@{fftLenReal}}
+\index{fftLenReal@{fftLenReal}!arm\_rfft\_instance\_q31@{arm\_rfft\_instance\_q31}}
+\doxysubsubsection{\texorpdfstring{fftLenReal}{fftLenReal}}
+{\footnotesize\ttfamily uint32\+\_\+t arm\+\_\+rfft\+\_\+instance\+\_\+q31\+::fft\+Len\+Real}
+
+length of the real FFT. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02207}{2207}} 行定义.
+
+\mbox{\Hypertarget{structarm__rfft__instance__q31_af5c2615e6cde15524df38fa57ea32d94}\label{structarm__rfft__instance__q31_af5c2615e6cde15524df38fa57ea32d94}} 
+\index{arm\_rfft\_instance\_q31@{arm\_rfft\_instance\_q31}!ifftFlagR@{ifftFlagR}}
+\index{ifftFlagR@{ifftFlagR}!arm\_rfft\_instance\_q31@{arm\_rfft\_instance\_q31}}
+\doxysubsubsection{\texorpdfstring{ifftFlagR}{ifftFlagR}}
+{\footnotesize\ttfamily uint8\+\_\+t arm\+\_\+rfft\+\_\+instance\+\_\+q31\+::ifft\+FlagR}
+
+flag that selects forward (ifft\+FlagR=0) or inverse (ifft\+FlagR=1) transform. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02208}{2208}} 行定义.
+
+\mbox{\Hypertarget{structarm__rfft__instance__q31_a8fe10d425b59e096c23aa4bb5caa1974}\label{structarm__rfft__instance__q31_a8fe10d425b59e096c23aa4bb5caa1974}} 
+\index{arm\_rfft\_instance\_q31@{arm\_rfft\_instance\_q31}!pCfft@{pCfft}}
+\index{pCfft@{pCfft}!arm\_rfft\_instance\_q31@{arm\_rfft\_instance\_q31}}
+\doxysubsubsection{\texorpdfstring{pCfft}{pCfft}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structarm__cfft__instance__q31}{arm\+\_\+cfft\+\_\+instance\+\_\+q31}}$\ast$ arm\+\_\+rfft\+\_\+instance\+\_\+q31\+::p\+Cfft}
+
+points to the complex FFT instance. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02213}{2213}} 行定义.
+
+\mbox{\Hypertarget{structarm__rfft__instance__q31_a2a0c944e66bab92fcbe19d1c29153250}\label{structarm__rfft__instance__q31_a2a0c944e66bab92fcbe19d1c29153250}} 
+\index{arm\_rfft\_instance\_q31@{arm\_rfft\_instance\_q31}!pTwiddleAReal@{pTwiddleAReal}}
+\index{pTwiddleAReal@{pTwiddleAReal}!arm\_rfft\_instance\_q31@{arm\_rfft\_instance\_q31}}
+\doxysubsubsection{\texorpdfstring{pTwiddleAReal}{pTwiddleAReal}}
+{\footnotesize\ttfamily \mbox{\hyperlink{arm__math_8h_adc89a3547f5324b7b3b95adec3806bc0}{q31\+\_\+t}}$\ast$ arm\+\_\+rfft\+\_\+instance\+\_\+q31\+::p\+Twiddle\+AReal}
+
+points to the real twiddle factor table. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02211}{2211}} 行定义.
+
+\mbox{\Hypertarget{structarm__rfft__instance__q31_ae5070be4c2e0327e618f5e1f4c5b9d80}\label{structarm__rfft__instance__q31_ae5070be4c2e0327e618f5e1f4c5b9d80}} 
+\index{arm\_rfft\_instance\_q31@{arm\_rfft\_instance\_q31}!pTwiddleBReal@{pTwiddleBReal}}
+\index{pTwiddleBReal@{pTwiddleBReal}!arm\_rfft\_instance\_q31@{arm\_rfft\_instance\_q31}}
+\doxysubsubsection{\texorpdfstring{pTwiddleBReal}{pTwiddleBReal}}
+{\footnotesize\ttfamily \mbox{\hyperlink{arm__math_8h_adc89a3547f5324b7b3b95adec3806bc0}{q31\+\_\+t}}$\ast$ arm\+\_\+rfft\+\_\+instance\+\_\+q31\+::p\+Twiddle\+BReal}
+
+points to the imag twiddle factor table. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02212}{2212}} 行定义.
+
+\mbox{\Hypertarget{structarm__rfft__instance__q31_a6fc90252b579f7c29e01bd279334fc43}\label{structarm__rfft__instance__q31_a6fc90252b579f7c29e01bd279334fc43}} 
+\index{arm\_rfft\_instance\_q31@{arm\_rfft\_instance\_q31}!twidCoefRModifier@{twidCoefRModifier}}
+\index{twidCoefRModifier@{twidCoefRModifier}!arm\_rfft\_instance\_q31@{arm\_rfft\_instance\_q31}}
+\doxysubsubsection{\texorpdfstring{twidCoefRModifier}{twidCoefRModifier}}
+{\footnotesize\ttfamily uint32\+\_\+t arm\+\_\+rfft\+\_\+instance\+\_\+q31\+::twid\+Coef\+RModifier}
+
+twiddle coefficient modifier that supports different size FFTs with the same twiddle factor table. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l02210}{2210}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+CMSIS/\mbox{\hyperlink{arm__math_8h}{arm\+\_\+math.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,285 @@
+\hypertarget{struct_u_a_r_t___type_def}{}\doxysection{UART\+\_\+\+Type\+Def结构体 参考}
+\label{struct_u_a_r_t___type_def}\index{UART\_TypeDef@{UART\_TypeDef}}
+
+
+UART Register Structure Definition  
+
+
+
+
+{\ttfamily \#include $<$reg\+\_\+uart.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_a64fabd90a53a550231eaa032a2780e34}{TDR}}
+\begin{DoxyCompactList}\small\item\em Transmit Data Register, offset\+: 0x00 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_aefe730fc9fc7c74736f1bfe36af287df}{RDR}}
+\begin{DoxyCompactList}\small\item\em Receive Data Register, offset\+: 0x04 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_ad80c153406f60414081363264ef8c167}{CSR}}
+\begin{DoxyCompactList}\small\item\em Current Status Register, offset\+: 0x08 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_a36a0dcf0c5552425873b96ae3fa98f00}{ISR}}
+\begin{DoxyCompactList}\small\item\em Interrupt Status Register, offset\+: 0x0C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_aebbac5bee364dd061c1bf39b14117c6c}{IER}}
+\begin{DoxyCompactList}\small\item\em Interrupt Enable Register, offset\+: 0x10 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_aa8891e045a3b963358e505629cd993c3}{ICR}}
+\begin{DoxyCompactList}\small\item\em Interrupt Clear Register, offset\+: 0x14 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_a929e154e4ae4bb1798674799911a8c78}{GCR}}
+\begin{DoxyCompactList}\small\item\em Global Control Register, offset\+: 0x18 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_a2a3aadd9ad4f6e705799e44b123a2974}{CCR}}
+\begin{DoxyCompactList}\small\item\em Config Control Register, offset\+: 0x1C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_a22d0506ea3779574f0a660152c03891e}{BRR}}
+\begin{DoxyCompactList}\small\item\em Baud Rate Register, offset\+: 0x20 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_acac2adf1170968e11130d048e9e081b3}{FRA}}
+\begin{DoxyCompactList}\small\item\em Fraction Register, offset\+: 0x24 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_aad19418513a4165cb1e0d4b806073b01}{RXAR}}
+\begin{DoxyCompactList}\small\item\em Receive Address Register, offset\+: 0x28 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_aaaa745c3867e72c391694a03a7583f44}{RXMR}}
+\begin{DoxyCompactList}\small\item\em Receive Address Mask Register, offset\+: 0x2C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_ab0513240c4113be625acd46e8b90508c}{SCR}}
+\begin{DoxyCompactList}\small\item\em Smart Card Register, offset\+: 0x30 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_a6d3a878203ea84b98702a3225faeb4da}{IDLR}}
+\begin{DoxyCompactList}\small\item\em Data length register offset\+: 0x34 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_ad8aa12dcef2bb4a0fc68c87c60122b0c}{ABRCR}}
+\begin{DoxyCompactList}\small\item\em automatic Baud rate control delivery offset\+: 0x38 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_a92460a52559396f4b4c58d464f63a998}{IRDA}}
+\begin{DoxyCompactList}\small\item\em Infrared function control register, offset\+: 0x3C \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+UART Register Structure Definition 
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00067}{67}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{struct_u_a_r_t___type_def_ad8aa12dcef2bb4a0fc68c87c60122b0c}\label{struct_u_a_r_t___type_def_ad8aa12dcef2bb4a0fc68c87c60122b0c}} 
+\index{UART\_TypeDef@{UART\_TypeDef}!ABRCR@{ABRCR}}
+\index{ABRCR@{ABRCR}!UART\_TypeDef@{UART\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{ABRCR}{ABRCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} UART\+\_\+\+Type\+Def\+::\+ABRCR}
+
+
+
+automatic Baud rate control delivery offset\+: 0x38 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00084}{84}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___type_def_a22d0506ea3779574f0a660152c03891e}\label{struct_u_a_r_t___type_def_a22d0506ea3779574f0a660152c03891e}} 
+\index{UART\_TypeDef@{UART\_TypeDef}!BRR@{BRR}}
+\index{BRR@{BRR}!UART\_TypeDef@{UART\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{BRR}{BRR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} UART\+\_\+\+Type\+Def\+::\+BRR}
+
+
+
+Baud Rate Register, offset\+: 0x20 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00076}{76}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___type_def_a2a3aadd9ad4f6e705799e44b123a2974}\label{struct_u_a_r_t___type_def_a2a3aadd9ad4f6e705799e44b123a2974}} 
+\index{UART\_TypeDef@{UART\_TypeDef}!CCR@{CCR}}
+\index{CCR@{CCR}!UART\_TypeDef@{UART\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CCR}{CCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} UART\+\_\+\+Type\+Def\+::\+CCR}
+
+
+
+Config Control Register, offset\+: 0x1C 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00075}{75}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___type_def_ad80c153406f60414081363264ef8c167}\label{struct_u_a_r_t___type_def_ad80c153406f60414081363264ef8c167}} 
+\index{UART\_TypeDef@{UART\_TypeDef}!CSR@{CSR}}
+\index{CSR@{CSR}!UART\_TypeDef@{UART\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CSR}{CSR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} UART\+\_\+\+Type\+Def\+::\+CSR}
+
+
+
+Current Status Register, offset\+: 0x08 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00070}{70}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___type_def_acac2adf1170968e11130d048e9e081b3}\label{struct_u_a_r_t___type_def_acac2adf1170968e11130d048e9e081b3}} 
+\index{UART\_TypeDef@{UART\_TypeDef}!FRA@{FRA}}
+\index{FRA@{FRA}!UART\_TypeDef@{UART\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{FRA}{FRA}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} UART\+\_\+\+Type\+Def\+::\+FRA}
+
+
+
+Fraction Register, offset\+: 0x24 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00077}{77}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___type_def_a929e154e4ae4bb1798674799911a8c78}\label{struct_u_a_r_t___type_def_a929e154e4ae4bb1798674799911a8c78}} 
+\index{UART\_TypeDef@{UART\_TypeDef}!GCR@{GCR}}
+\index{GCR@{GCR}!UART\_TypeDef@{UART\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{GCR}{GCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} UART\+\_\+\+Type\+Def\+::\+GCR}
+
+
+
+Global Control Register, offset\+: 0x18 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00074}{74}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___type_def_aa8891e045a3b963358e505629cd993c3}\label{struct_u_a_r_t___type_def_aa8891e045a3b963358e505629cd993c3}} 
+\index{UART\_TypeDef@{UART\_TypeDef}!ICR@{ICR}}
+\index{ICR@{ICR}!UART\_TypeDef@{UART\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{ICR}{ICR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} UART\+\_\+\+Type\+Def\+::\+ICR}
+
+
+
+Interrupt Clear Register, offset\+: 0x14 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00073}{73}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___type_def_a6d3a878203ea84b98702a3225faeb4da}\label{struct_u_a_r_t___type_def_a6d3a878203ea84b98702a3225faeb4da}} 
+\index{UART\_TypeDef@{UART\_TypeDef}!IDLR@{IDLR}}
+\index{IDLR@{IDLR}!UART\_TypeDef@{UART\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{IDLR}{IDLR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} UART\+\_\+\+Type\+Def\+::\+IDLR}
+
+
+
+Data length register offset\+: 0x34 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00083}{83}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___type_def_aebbac5bee364dd061c1bf39b14117c6c}\label{struct_u_a_r_t___type_def_aebbac5bee364dd061c1bf39b14117c6c}} 
+\index{UART\_TypeDef@{UART\_TypeDef}!IER@{IER}}
+\index{IER@{IER}!UART\_TypeDef@{UART\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{IER}{IER}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} UART\+\_\+\+Type\+Def\+::\+IER}
+
+
+
+Interrupt Enable Register, offset\+: 0x10 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00072}{72}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___type_def_a92460a52559396f4b4c58d464f63a998}\label{struct_u_a_r_t___type_def_a92460a52559396f4b4c58d464f63a998}} 
+\index{UART\_TypeDef@{UART\_TypeDef}!IRDA@{IRDA}}
+\index{IRDA@{IRDA}!UART\_TypeDef@{UART\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{IRDA}{IRDA}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} UART\+\_\+\+Type\+Def\+::\+IRDA}
+
+
+
+Infrared function control register, offset\+: 0x3C 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00085}{85}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___type_def_a36a0dcf0c5552425873b96ae3fa98f00}\label{struct_u_a_r_t___type_def_a36a0dcf0c5552425873b96ae3fa98f00}} 
+\index{UART\_TypeDef@{UART\_TypeDef}!ISR@{ISR}}
+\index{ISR@{ISR}!UART\_TypeDef@{UART\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{ISR}{ISR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} UART\+\_\+\+Type\+Def\+::\+ISR}
+
+
+
+Interrupt Status Register, offset\+: 0x0C 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00071}{71}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___type_def_aefe730fc9fc7c74736f1bfe36af287df}\label{struct_u_a_r_t___type_def_aefe730fc9fc7c74736f1bfe36af287df}} 
+\index{UART\_TypeDef@{UART\_TypeDef}!RDR@{RDR}}
+\index{RDR@{RDR}!UART\_TypeDef@{UART\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RDR}{RDR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} UART\+\_\+\+Type\+Def\+::\+RDR}
+
+
+
+Receive Data Register, offset\+: 0x04 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00069}{69}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___type_def_aad19418513a4165cb1e0d4b806073b01}\label{struct_u_a_r_t___type_def_aad19418513a4165cb1e0d4b806073b01}} 
+\index{UART\_TypeDef@{UART\_TypeDef}!RXAR@{RXAR}}
+\index{RXAR@{RXAR}!UART\_TypeDef@{UART\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RXAR}{RXAR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} UART\+\_\+\+Type\+Def\+::\+RXAR}
+
+
+
+Receive Address Register, offset\+: 0x28 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00079}{79}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___type_def_aaaa745c3867e72c391694a03a7583f44}\label{struct_u_a_r_t___type_def_aaaa745c3867e72c391694a03a7583f44}} 
+\index{UART\_TypeDef@{UART\_TypeDef}!RXMR@{RXMR}}
+\index{RXMR@{RXMR}!UART\_TypeDef@{UART\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RXMR}{RXMR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} UART\+\_\+\+Type\+Def\+::\+RXMR}
+
+
+
+Receive Address Mask Register, offset\+: 0x2C 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00080}{80}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___type_def_ab0513240c4113be625acd46e8b90508c}\label{struct_u_a_r_t___type_def_ab0513240c4113be625acd46e8b90508c}} 
+\index{UART\_TypeDef@{UART\_TypeDef}!SCR@{SCR}}
+\index{SCR@{SCR}!UART\_TypeDef@{UART\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{SCR}{SCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} UART\+\_\+\+Type\+Def\+::\+SCR}
+
+
+
+Smart Card Register, offset\+: 0x30 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00081}{81}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___type_def_a64fabd90a53a550231eaa032a2780e34}\label{struct_u_a_r_t___type_def_a64fabd90a53a550231eaa032a2780e34}} 
+\index{UART\_TypeDef@{UART\_TypeDef}!TDR@{TDR}}
+\index{TDR@{TDR}!UART\_TypeDef@{UART\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{TDR}{TDR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} UART\+\_\+\+Type\+Def\+::\+TDR}
+
+
+
+Transmit Data Register, offset\+: 0x00 
+
+
+
+在文件 \mbox{\hyperlink{reg__uart_8h_source}{reg\+\_\+uart.\+h}} 第 \mbox{\hyperlink{reg__uart_8h_source_l00068}{68}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/\mbox{\hyperlink{reg__uart_8h}{reg\+\_\+uart.\+h}}\end{DoxyCompactItemize}

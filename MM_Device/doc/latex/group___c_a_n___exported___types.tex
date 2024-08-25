@@ -1,0 +1,410 @@
+\hypertarget{group___c_a_n___exported___types}{}\doxysection{CAN\+\_\+\+Exported\+\_\+\+Types}
+\label{group___c_a_n___exported___types}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}}
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_a_n___basic___init_type_def}{CAN\+\_\+\+Basic\+\_\+\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em CAN\+\_\+\+Basic init structure definition \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c_a_n___peli___init_type_def}{CAN\+\_\+\+Peli\+\_\+\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em CAN\+\_\+\+Peli init structure definition \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c_a_n___basic___filter_init_type_def}{CAN\+\_\+\+Basic\+\_\+\+Filter\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em CAN\+\_\+\+Basic filter init structure definition \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c_a_n___peli___filter_init_type_def}{CAN\+\_\+\+Peli\+\_\+\+Filter\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em CAN\+\_\+\+Peli filter init structure definition \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_can_basic_tx_msg}{Can\+Basic\+Tx\+Msg}}
+\begin{DoxyCompactList}\small\item\em CAN\+\_\+\+Basic Tx message structure definition \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_can_basic_rx_msg}{Can\+Basic\+Rx\+Msg}}
+\begin{DoxyCompactList}\small\item\em CAN\+\_\+\+Basic Rx message structure definition \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_can_peli_tx_msg}{Can\+Peli\+Tx\+Msg}}
+\begin{DoxyCompactList}\small\item\em CAN\+\_\+\+Peli\+\_\+\+Tx message structure definition \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_can_peli_rx_msg}{Can\+Peli\+Rx\+Msg}}
+\begin{DoxyCompactList}\small\item\em CAN Rx message structure definition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___c_a_n___exported___types_ga76ff5f27f0f50e29caced85c95dc7e42}{em\+CAN\+\_\+\+INIT\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___c_a_n___exported___types_gga76ff5f27f0f50e29caced85c95dc7e42a401fdbbed04ac836277c5c1e4a2107fd}{CANINITFAILED}} = 0x00000000
+, \mbox{\hyperlink{group___c_a_n___exported___types_gga76ff5f27f0f50e29caced85c95dc7e42a8d2a672f7f6879708685581a40ef7269}{CANINITOK}} = 0x00000001
+ \}
+\begin{DoxyCompactList}\small\item\em CAN\+\_\+\+Initialization \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___c_a_n___exported___types_ga7c425f22a3ec4d9fe6cb2c1f0e029d2b}{em\+CAN\+\_\+\+SLEEP\+\_\+conts\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___c_a_n___exported___types_gga7c425f22a3ec4d9fe6cb2c1f0e029d2ba9087de29e8fef46fef47705500541df5}{CANSLEEPFAILED}} = 0x00000000
+, \mbox{\hyperlink{group___c_a_n___exported___types_gga7c425f22a3ec4d9fe6cb2c1f0e029d2baacd5e9a5d4e8c9a41392eb66e65fdba9}{CANSLEEPOK}} = 0x00000001
+ \}
+\begin{DoxyCompactList}\small\item\em CAN\+\_\+sleep\+\_\+constants \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___c_a_n___exported___types_ga87ebb9c9031b305a6757b619bf75ead7}{em\+CAN\+\_\+\+WAKE\+\_\+conts\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___c_a_n___exported___types_gga87ebb9c9031b305a6757b619bf75ead7a64efc2e4f4dd69745f02cfdce098a811}{CANWAKEUPFAILED}} = 0x00000000
+, \mbox{\hyperlink{group___c_a_n___exported___types_gga87ebb9c9031b305a6757b619bf75ead7ae13abdbbeed6b6041fd080f9ac6ac753}{CANWAKEUPOK}} = 0x00000001
+ \}
+\begin{DoxyCompactList}\small\item\em CAN\+\_\+wake\+\_\+up\+\_\+constants \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___c_a_n___exported___types_ga8e6f656620bde69f6be108a76ead942c}{em\+CAN\+\_\+\+CAN\+\_\+\+Mode\+\_\+\+Typedef}} \{ \newline
+\mbox{\hyperlink{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942ca6510406a98592a09ce9b90326e56f919}{CAN\+\_\+\+BASICMode}} = 0x00000000
+, \mbox{\hyperlink{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942cadfde167d6b1bf44dbbfcbfbdd45ca106}{CAN\+\_\+\+PELIMode}} = 0x00000080
+, \mbox{\hyperlink{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942ca244a34dce7a58dec0aceb98d7b2af5ca}{CAN\+\_\+\+Work\+Mode}} = 0x00000080
+, \mbox{\hyperlink{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942ca65be219c34474f91929751811cdefbc2}{CAN\+\_\+\+Reset\+Mode}} = 0x00000001
+, \newline
+\mbox{\hyperlink{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942caa204304bd64f1cc361f6df07e3d6dc14}{CAN\+\_\+\+Listen\+Only\+Mode}} = 0x00000002
+, \mbox{\hyperlink{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942ca08d54d3b3528b3c148c012f9ae34360f}{CAN\+\_\+\+Seft\+Test\+Mode}} = 0x00000004
+, \mbox{\hyperlink{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942caa55dfbbdfd6fba0464b611564e48115f}{CAN\+\_\+\+Filter\+Mode\+\_\+\+Singal}} = 0x00000008
+, \mbox{\hyperlink{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942ca6ba5f673066bac3039c29483a5cec327}{CAN\+\_\+\+Filter\+Mode\+\_\+\+Double}} = 0x000000f7
+, \newline
+\mbox{\hyperlink{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942ca3dd1eed5a4138788d81fdedb4579253a}{CAN\+\_\+\+Sleep\+Mode}} = 0x00000010
+ \}
+\begin{DoxyCompactList}\small\item\em CAN\+\_\+\+Mode \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___c_a_n___exported___types_ga0cda9ae4e92e7504195a6ee56ff0c1b8}{em\+CAN\+\_\+\+BASIC\+\_\+\+Int\+En\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___c_a_n___exported___types_gga0cda9ae4e92e7504195a6ee56ff0c1b8a48a9b6e0cfeec33fcdc736d46a5c93c3}{CAN\+\_\+\+IT\+\_\+\+RIE}} = CAN\+\_\+\+CR\+\_\+\+RIE
+, \mbox{\hyperlink{group___c_a_n___exported___types_gga0cda9ae4e92e7504195a6ee56ff0c1b8ac90b6cd5a12bfb74a284d34c94df42d9}{CAN\+\_\+\+IT\+\_\+\+TIE}} = CAN\+\_\+\+CR\+\_\+\+TIE
+, \mbox{\hyperlink{group___c_a_n___exported___types_gga0cda9ae4e92e7504195a6ee56ff0c1b8ad840d1fe23dd2301bab85aefbfdf8e6d}{CAN\+\_\+\+IT\+\_\+\+EIE}} = CAN\+\_\+\+CR\+\_\+\+EIE
+, \mbox{\hyperlink{group___c_a_n___exported___types_gga0cda9ae4e92e7504195a6ee56ff0c1b8a13c0c567bd646538e8f715d1ad79eb9f}{CAN\+\_\+\+IT\+\_\+\+OIE}} = CAN\+\_\+\+CR\+\_\+\+OIE
+ \}
+\begin{DoxyCompactList}\small\item\em BASIC\+\_\+\+CAN\+\_\+interrupt \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___c_a_n___exported___types_ga2ea3c988b79e8ec922124df1696d1ab0}{em\+CAN\+\_\+\+PELI\+\_\+\+Int\+En\+\_\+\+Typedef}} \{ \newline
+\mbox{\hyperlink{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0aba02af4a22dd3676438727e61c88b6b3}{CAN\+\_\+\+IT\+\_\+\+RI}} = CAN\+\_\+\+IR\+\_\+\+RI
+, \mbox{\hyperlink{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0ae158bb4ea3265537dde31ace54a843e3}{CAN\+\_\+\+IT\+\_\+\+TI}} = CAN\+\_\+\+IR\+\_\+\+TI
+, \mbox{\hyperlink{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0aebf06ad5d45b8347b6f8d882f1513fe1}{CAN\+\_\+\+IT\+\_\+\+EI}} = CAN\+\_\+\+IR\+\_\+\+EI
+, \mbox{\hyperlink{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0a85869105c9800f198d62bfa81a3f6c70}{CAN\+\_\+\+IT\+\_\+\+DOI}} = CAN\+\_\+\+IR\+\_\+\+DOI
+, \newline
+\mbox{\hyperlink{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0a7183f5f1664ffbc01b036555ace356f9}{CAN\+\_\+\+IT\+\_\+\+WUI}} = 0x00001010
+, \mbox{\hyperlink{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0a9a7d97f83f87c276e3f90364376d99a1}{CAN\+\_\+\+IT\+\_\+\+EPI}} = CAN\+\_\+\+IR\+\_\+\+EPI
+, \mbox{\hyperlink{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0af142d793bcbd81b2fa59e500779a7586}{CAN\+\_\+\+IT\+\_\+\+ALI}} = CAN\+\_\+\+IR\+\_\+\+ALI
+, \mbox{\hyperlink{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0a806b59ab4bf31d34343658b476e7716b}{CAN\+\_\+\+IT\+\_\+\+BEI}} = CAN\+\_\+\+IR\+\_\+\+BEI
+, \newline
+\mbox{\hyperlink{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0a9a7e04d52b9b30c7eea69c1cb40a6703}{CAN\+\_\+\+IT\+\_\+\+ALL}} = 0x\+FFFF
+ \}
+\begin{DoxyCompactList}\small\item\em PELI\+\_\+\+CAN\+\_\+interrupt \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___c_a_n___exported___types_gaa33a1daf97589256e99e315a7463ff23}{em\+CAN\+\_\+\+Status\+\_\+\+Typedef}} \{ \newline
+\mbox{\hyperlink{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23a67c750bdc5385d6b9095f1f67fac381b}{CAN\+\_\+\+STATUS\+\_\+\+RBS}} = CAN\+\_\+\+SR\+\_\+\+RBS
+, \mbox{\hyperlink{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23ab310d6b53623c43f301a142da09d5348}{CAN\+\_\+\+STATUS\+\_\+\+DOS}} = CAN\+\_\+\+SR\+\_\+\+DOS
+, \mbox{\hyperlink{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23a3365465c50c6e95c85b8f986294d6fd2}{CAN\+\_\+\+STATUS\+\_\+\+TBS}} = CAN\+\_\+\+SR\+\_\+\+TBS
+, \mbox{\hyperlink{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23a674452d5d165c2da52e87dece34d6c92}{CAN\+\_\+\+STATUS\+\_\+\+TCS}} = CAN\+\_\+\+SR\+\_\+\+TCS
+, \newline
+\mbox{\hyperlink{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23a349938f16f63e8f6196011af1b0557c5}{CAN\+\_\+\+STATUS\+\_\+\+RS}} = CAN\+\_\+\+SR\+\_\+\+RS
+, \mbox{\hyperlink{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23a87b28983fbbe18016a4e85e22532510b}{CAN\+\_\+\+STATUS\+\_\+\+TS}} = CAN\+\_\+\+SR\+\_\+\+TS
+, \mbox{\hyperlink{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23a652b6af1ee084cdeb829c86b810398df}{CAN\+\_\+\+STATUS\+\_\+\+ES}} = CAN\+\_\+\+SR\+\_\+\+ES
+, \mbox{\hyperlink{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23adca8a58da84b4dd099bd4ed797f5b12e}{CAN\+\_\+\+STATUS\+\_\+\+BS}} = CAN\+\_\+\+SR\+\_\+\+BS
+ \}
+\begin{DoxyCompactList}\small\item\em CAN\+\_\+\+Status \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___c_a_n___exported___types_ga4906ec9e5a1707cda2710fe83abe0e6b}{em\+CAN\+\_\+\+Command\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___c_a_n___exported___types_gga4906ec9e5a1707cda2710fe83abe0e6ba6ff86e26e915928be16312b8ffccbccb}{CAN\+\_\+\+TR}} = CAN\+\_\+\+CMR\+\_\+\+TR
+, \mbox{\hyperlink{group___c_a_n___exported___types_gga4906ec9e5a1707cda2710fe83abe0e6ba793c52786fcb117329eee3a5b60fd78e}{CAN\+\_\+\+AT}} = CAN\+\_\+\+CMR\+\_\+\+AT
+, \mbox{\hyperlink{group___c_a_n___exported___types_gga4906ec9e5a1707cda2710fe83abe0e6ba3fcd1129f5d6e40bc3d9bd8a4dc9e873}{CAN\+\_\+\+RRB}} = CAN\+\_\+\+CMR\+\_\+\+RRB
+, \mbox{\hyperlink{group___c_a_n___exported___types_gga4906ec9e5a1707cda2710fe83abe0e6ba2f73def61c007ad7e778ef937fea7316}{CAN\+\_\+\+CDO}} = CAN\+\_\+\+CMR\+\_\+\+CDO
+ \}
+\begin{DoxyCompactList}\small\item\em CAN\+\_\+\+Command\+\_\+register \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___c_a_n___exported___types_ga4e70ade1ffbd9f5baeeebf14308cc530}{Trans\+Frame}} \{ \mbox{\hyperlink{group___c_a_n___exported___types_gga4e70ade1ffbd9f5baeeebf14308cc530abf0bbfbe9ed733098f9120b37ebb876c}{Data\+Frame}} = 0
+, \mbox{\hyperlink{group___c_a_n___exported___types_gga4e70ade1ffbd9f5baeeebf14308cc530a7cfb916a18e4912db47c123058ac73e1}{Remote\+Frame}} = !\+Data\+Frame
+ \}
+\begin{DoxyCompactList}\small\item\em CAN\+\_\+\+Peli transmit frame definition \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+\doxysubsection{枚举类型说明}
+\mbox{\Hypertarget{group___c_a_n___exported___types_ga0cda9ae4e92e7504195a6ee56ff0c1b8}\label{group___c_a_n___exported___types_ga0cda9ae4e92e7504195a6ee56ff0c1b8}} 
+\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!emCAN\_BASIC\_IntEn\_Typedef@{emCAN\_BASIC\_IntEn\_Typedef}}
+\index{emCAN\_BASIC\_IntEn\_Typedef@{emCAN\_BASIC\_IntEn\_Typedef}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{emCAN\_BASIC\_IntEn\_Typedef}{emCAN\_BASIC\_IntEn\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___c_a_n___exported___types_ga0cda9ae4e92e7504195a6ee56ff0c1b8}{em\+CAN\+\_\+\+BASIC\+\_\+\+Int\+En\+\_\+\+Typedef}}}
+
+
+
+BASIC\+\_\+\+CAN\+\_\+interrupt 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_IT\_RIE@{CAN\_IT\_RIE}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_IT\_RIE@{CAN\_IT\_RIE}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga0cda9ae4e92e7504195a6ee56ff0c1b8a48a9b6e0cfeec33fcdc736d46a5c93c3}\label{group___c_a_n___exported___types_gga0cda9ae4e92e7504195a6ee56ff0c1b8a48a9b6e0cfeec33fcdc736d46a5c93c3}} 
+CAN\+\_\+\+IT\+\_\+\+RIE&Overflow interrupt enable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_IT\_TIE@{CAN\_IT\_TIE}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_IT\_TIE@{CAN\_IT\_TIE}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga0cda9ae4e92e7504195a6ee56ff0c1b8ac90b6cd5a12bfb74a284d34c94df42d9}\label{group___c_a_n___exported___types_gga0cda9ae4e92e7504195a6ee56ff0c1b8ac90b6cd5a12bfb74a284d34c94df42d9}} 
+CAN\+\_\+\+IT\+\_\+\+TIE&Transmit interrupt enable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_IT\_EIE@{CAN\_IT\_EIE}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_IT\_EIE@{CAN\_IT\_EIE}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga0cda9ae4e92e7504195a6ee56ff0c1b8ad840d1fe23dd2301bab85aefbfdf8e6d}\label{group___c_a_n___exported___types_gga0cda9ae4e92e7504195a6ee56ff0c1b8ad840d1fe23dd2301bab85aefbfdf8e6d}} 
+CAN\+\_\+\+IT\+\_\+\+EIE&Error interrupt enable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_IT\_OIE@{CAN\_IT\_OIE}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_IT\_OIE@{CAN\_IT\_OIE}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga0cda9ae4e92e7504195a6ee56ff0c1b8a13c0c567bd646538e8f715d1ad79eb9f}\label{group___c_a_n___exported___types_gga0cda9ae4e92e7504195a6ee56ff0c1b8a13c0c567bd646538e8f715d1ad79eb9f}} 
+CAN\+\_\+\+IT\+\_\+\+OIE&Receive interrupt enable \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00084}{84}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___types_ga8e6f656620bde69f6be108a76ead942c}\label{group___c_a_n___exported___types_ga8e6f656620bde69f6be108a76ead942c}} 
+\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!emCAN\_CAN\_Mode\_Typedef@{emCAN\_CAN\_Mode\_Typedef}}
+\index{emCAN\_CAN\_Mode\_Typedef@{emCAN\_CAN\_Mode\_Typedef}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{emCAN\_CAN\_Mode\_Typedef}{emCAN\_CAN\_Mode\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___c_a_n___exported___types_ga8e6f656620bde69f6be108a76ead942c}{em\+CAN\+\_\+\+CAN\+\_\+\+Mode\+\_\+\+Typedef}}}
+
+
+
+CAN\+\_\+\+Mode 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_BASICMode@{CAN\_BASICMode}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_BASICMode@{CAN\_BASICMode}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942ca6510406a98592a09ce9b90326e56f919}\label{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942ca6510406a98592a09ce9b90326e56f919}} 
+CAN\+\_\+\+BASICMode&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_PELIMode@{CAN\_PELIMode}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_PELIMode@{CAN\_PELIMode}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942cadfde167d6b1bf44dbbfcbfbdd45ca106}\label{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942cadfde167d6b1bf44dbbfcbfbdd45ca106}} 
+CAN\+\_\+\+PELIMode&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_WorkMode@{CAN\_WorkMode}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_WorkMode@{CAN\_WorkMode}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942ca244a34dce7a58dec0aceb98d7b2af5ca}\label{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942ca244a34dce7a58dec0aceb98d7b2af5ca}} 
+CAN\+\_\+\+Work\+Mode&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_ResetMode@{CAN\_ResetMode}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_ResetMode@{CAN\_ResetMode}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942ca65be219c34474f91929751811cdefbc2}\label{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942ca65be219c34474f91929751811cdefbc2}} 
+CAN\+\_\+\+Reset\+Mode&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_ListenOnlyMode@{CAN\_ListenOnlyMode}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_ListenOnlyMode@{CAN\_ListenOnlyMode}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942caa204304bd64f1cc361f6df07e3d6dc14}\label{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942caa204304bd64f1cc361f6df07e3d6dc14}} 
+CAN\+\_\+\+Listen\+Only\+Mode&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_SeftTestMode@{CAN\_SeftTestMode}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_SeftTestMode@{CAN\_SeftTestMode}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942ca08d54d3b3528b3c148c012f9ae34360f}\label{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942ca08d54d3b3528b3c148c012f9ae34360f}} 
+CAN\+\_\+\+Seft\+Test\+Mode&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_FilterMode\_Singal@{CAN\_FilterMode\_Singal}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_FilterMode\_Singal@{CAN\_FilterMode\_Singal}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942caa55dfbbdfd6fba0464b611564e48115f}\label{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942caa55dfbbdfd6fba0464b611564e48115f}} 
+CAN\+\_\+\+Filter\+Mode\+\_\+\+Singal&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_FilterMode\_Double@{CAN\_FilterMode\_Double}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_FilterMode\_Double@{CAN\_FilterMode\_Double}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942ca6ba5f673066bac3039c29483a5cec327}\label{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942ca6ba5f673066bac3039c29483a5cec327}} 
+CAN\+\_\+\+Filter\+Mode\+\_\+\+Double&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_SleepMode@{CAN\_SleepMode}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_SleepMode@{CAN\_SleepMode}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942ca3dd1eed5a4138788d81fdedb4579253a}\label{group___c_a_n___exported___types_gga8e6f656620bde69f6be108a76ead942ca3dd1eed5a4138788d81fdedb4579253a}} 
+CAN\+\_\+\+Sleep\+Mode&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00069}{69}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___types_ga4906ec9e5a1707cda2710fe83abe0e6b}\label{group___c_a_n___exported___types_ga4906ec9e5a1707cda2710fe83abe0e6b}} 
+\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!emCAN\_Command\_Typedef@{emCAN\_Command\_Typedef}}
+\index{emCAN\_Command\_Typedef@{emCAN\_Command\_Typedef}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{emCAN\_Command\_Typedef}{emCAN\_Command\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___c_a_n___exported___types_ga4906ec9e5a1707cda2710fe83abe0e6b}{em\+CAN\+\_\+\+Command\+\_\+\+Typedef}}}
+
+
+
+CAN\+\_\+\+Command\+\_\+register 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_TR@{CAN\_TR}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_TR@{CAN\_TR}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga4906ec9e5a1707cda2710fe83abe0e6ba6ff86e26e915928be16312b8ffccbccb}\label{group___c_a_n___exported___types_gga4906ec9e5a1707cda2710fe83abe0e6ba6ff86e26e915928be16312b8ffccbccb}} 
+CAN\+\_\+\+TR&Transmission request \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_AT@{CAN\_AT}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_AT@{CAN\_AT}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga4906ec9e5a1707cda2710fe83abe0e6ba793c52786fcb117329eee3a5b60fd78e}\label{group___c_a_n___exported___types_gga4906ec9e5a1707cda2710fe83abe0e6ba793c52786fcb117329eee3a5b60fd78e}} 
+CAN\+\_\+\+AT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_RRB@{CAN\_RRB}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_RRB@{CAN\_RRB}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga4906ec9e5a1707cda2710fe83abe0e6ba3fcd1129f5d6e40bc3d9bd8a4dc9e873}\label{group___c_a_n___exported___types_gga4906ec9e5a1707cda2710fe83abe0e6ba3fcd1129f5d6e40bc3d9bd8a4dc9e873}} 
+CAN\+\_\+\+RRB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_CDO@{CAN\_CDO}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_CDO@{CAN\_CDO}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga4906ec9e5a1707cda2710fe83abe0e6ba2f73def61c007ad7e778ef937fea7316}\label{group___c_a_n___exported___types_gga4906ec9e5a1707cda2710fe83abe0e6ba2f73def61c007ad7e778ef937fea7316}} 
+CAN\+\_\+\+CDO&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00124}{124}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___types_ga76ff5f27f0f50e29caced85c95dc7e42}\label{group___c_a_n___exported___types_ga76ff5f27f0f50e29caced85c95dc7e42}} 
+\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!emCAN\_INIT\_Typedef@{emCAN\_INIT\_Typedef}}
+\index{emCAN\_INIT\_Typedef@{emCAN\_INIT\_Typedef}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{emCAN\_INIT\_Typedef}{emCAN\_INIT\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___c_a_n___exported___types_ga76ff5f27f0f50e29caced85c95dc7e42}{em\+CAN\+\_\+\+INIT\+\_\+\+Typedef}}}
+
+
+
+CAN\+\_\+\+Initialization 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CANINITFAILED@{CANINITFAILED}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CANINITFAILED@{CANINITFAILED}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga76ff5f27f0f50e29caced85c95dc7e42a401fdbbed04ac836277c5c1e4a2107fd}\label{group___c_a_n___exported___types_gga76ff5f27f0f50e29caced85c95dc7e42a401fdbbed04ac836277c5c1e4a2107fd}} 
+CANINITFAILED&CAN initialization failed \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CANINITOK@{CANINITOK}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CANINITOK@{CANINITOK}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga76ff5f27f0f50e29caced85c95dc7e42a8d2a672f7f6879708685581a40ef7269}\label{group___c_a_n___exported___types_gga76ff5f27f0f50e29caced85c95dc7e42a8d2a672f7f6879708685581a40ef7269}} 
+CANINITOK&CAN initialization ok \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00045}{45}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___types_ga2ea3c988b79e8ec922124df1696d1ab0}\label{group___c_a_n___exported___types_ga2ea3c988b79e8ec922124df1696d1ab0}} 
+\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!emCAN\_PELI\_IntEn\_Typedef@{emCAN\_PELI\_IntEn\_Typedef}}
+\index{emCAN\_PELI\_IntEn\_Typedef@{emCAN\_PELI\_IntEn\_Typedef}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{emCAN\_PELI\_IntEn\_Typedef}{emCAN\_PELI\_IntEn\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___c_a_n___exported___types_ga2ea3c988b79e8ec922124df1696d1ab0}{em\+CAN\+\_\+\+PELI\+\_\+\+Int\+En\+\_\+\+Typedef}}}
+
+
+
+PELI\+\_\+\+CAN\+\_\+interrupt 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_IT\_RI@{CAN\_IT\_RI}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_IT\_RI@{CAN\_IT\_RI}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0aba02af4a22dd3676438727e61c88b6b3}\label{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0aba02af4a22dd3676438727e61c88b6b3}} 
+CAN\+\_\+\+IT\+\_\+\+RI&Overflow interrupt enable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_IT\_TI@{CAN\_IT\_TI}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_IT\_TI@{CAN\_IT\_TI}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0ae158bb4ea3265537dde31ace54a843e3}\label{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0ae158bb4ea3265537dde31ace54a843e3}} 
+CAN\+\_\+\+IT\+\_\+\+TI&Transmit interrupt enable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_IT\_EI@{CAN\_IT\_EI}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_IT\_EI@{CAN\_IT\_EI}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0aebf06ad5d45b8347b6f8d882f1513fe1}\label{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0aebf06ad5d45b8347b6f8d882f1513fe1}} 
+CAN\+\_\+\+IT\+\_\+\+EI&Error interrupt enable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_IT\_DOI@{CAN\_IT\_DOI}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_IT\_DOI@{CAN\_IT\_DOI}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0a85869105c9800f198d62bfa81a3f6c70}\label{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0a85869105c9800f198d62bfa81a3f6c70}} 
+CAN\+\_\+\+IT\+\_\+\+DOI&Receive interrupt enable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_IT\_WUI@{CAN\_IT\_WUI}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_IT\_WUI@{CAN\_IT\_WUI}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0a7183f5f1664ffbc01b036555ace356f9}\label{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0a7183f5f1664ffbc01b036555ace356f9}} 
+CAN\+\_\+\+IT\+\_\+\+WUI&Receive interrupt enable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_IT\_EPI@{CAN\_IT\_EPI}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_IT\_EPI@{CAN\_IT\_EPI}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0a9a7d97f83f87c276e3f90364376d99a1}\label{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0a9a7d97f83f87c276e3f90364376d99a1}} 
+CAN\+\_\+\+IT\+\_\+\+EPI&Receive interrupt enable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_IT\_ALI@{CAN\_IT\_ALI}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_IT\_ALI@{CAN\_IT\_ALI}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0af142d793bcbd81b2fa59e500779a7586}\label{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0af142d793bcbd81b2fa59e500779a7586}} 
+CAN\+\_\+\+IT\+\_\+\+ALI&Receive interrupt enable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_IT\_BEI@{CAN\_IT\_BEI}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_IT\_BEI@{CAN\_IT\_BEI}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0a806b59ab4bf31d34343658b476e7716b}\label{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0a806b59ab4bf31d34343658b476e7716b}} 
+CAN\+\_\+\+IT\+\_\+\+BEI&Receive interrupt enable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_IT\_ALL@{CAN\_IT\_ALL}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_IT\_ALL@{CAN\_IT\_ALL}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0a9a7e04d52b9b30c7eea69c1cb40a6703}\label{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0a9a7e04d52b9b30c7eea69c1cb40a6703}} 
+CAN\+\_\+\+IT\+\_\+\+ALL&Receive interrupt enable \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00094}{94}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___types_ga7c425f22a3ec4d9fe6cb2c1f0e029d2b}\label{group___c_a_n___exported___types_ga7c425f22a3ec4d9fe6cb2c1f0e029d2b}} 
+\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!emCAN\_SLEEP\_conts\_Typedef@{emCAN\_SLEEP\_conts\_Typedef}}
+\index{emCAN\_SLEEP\_conts\_Typedef@{emCAN\_SLEEP\_conts\_Typedef}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{emCAN\_SLEEP\_conts\_Typedef}{emCAN\_SLEEP\_conts\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___c_a_n___exported___types_ga7c425f22a3ec4d9fe6cb2c1f0e029d2b}{em\+CAN\+\_\+\+SLEEP\+\_\+conts\+\_\+\+Typedef}}}
+
+
+
+CAN\+\_\+sleep\+\_\+constants 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CANSLEEPFAILED@{CANSLEEPFAILED}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CANSLEEPFAILED@{CANSLEEPFAILED}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga7c425f22a3ec4d9fe6cb2c1f0e029d2ba9087de29e8fef46fef47705500541df5}\label{group___c_a_n___exported___types_gga7c425f22a3ec4d9fe6cb2c1f0e029d2ba9087de29e8fef46fef47705500541df5}} 
+CANSLEEPFAILED&CAN did not enter the sleep mode \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CANSLEEPOK@{CANSLEEPOK}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CANSLEEPOK@{CANSLEEPOK}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga7c425f22a3ec4d9fe6cb2c1f0e029d2baacd5e9a5d4e8c9a41392eb66e65fdba9}\label{group___c_a_n___exported___types_gga7c425f22a3ec4d9fe6cb2c1f0e029d2baacd5e9a5d4e8c9a41392eb66e65fdba9}} 
+CANSLEEPOK&CAN entered the sleep mode \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00053}{53}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___types_gaa33a1daf97589256e99e315a7463ff23}\label{group___c_a_n___exported___types_gaa33a1daf97589256e99e315a7463ff23}} 
+\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!emCAN\_Status\_Typedef@{emCAN\_Status\_Typedef}}
+\index{emCAN\_Status\_Typedef@{emCAN\_Status\_Typedef}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{emCAN\_Status\_Typedef}{emCAN\_Status\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___c_a_n___exported___types_gaa33a1daf97589256e99e315a7463ff23}{em\+CAN\+\_\+\+Status\+\_\+\+Typedef}}}
+
+
+
+CAN\+\_\+\+Status 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_STATUS\_RBS@{CAN\_STATUS\_RBS}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_STATUS\_RBS@{CAN\_STATUS\_RBS}}}\mbox{\Hypertarget{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23a67c750bdc5385d6b9095f1f67fac381b}\label{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23a67c750bdc5385d6b9095f1f67fac381b}} 
+CAN\+\_\+\+STATUS\+\_\+\+RBS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_STATUS\_DOS@{CAN\_STATUS\_DOS}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_STATUS\_DOS@{CAN\_STATUS\_DOS}}}\mbox{\Hypertarget{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23ab310d6b53623c43f301a142da09d5348}\label{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23ab310d6b53623c43f301a142da09d5348}} 
+CAN\+\_\+\+STATUS\+\_\+\+DOS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_STATUS\_TBS@{CAN\_STATUS\_TBS}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_STATUS\_TBS@{CAN\_STATUS\_TBS}}}\mbox{\Hypertarget{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23a3365465c50c6e95c85b8f986294d6fd2}\label{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23a3365465c50c6e95c85b8f986294d6fd2}} 
+CAN\+\_\+\+STATUS\+\_\+\+TBS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_STATUS\_TCS@{CAN\_STATUS\_TCS}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_STATUS\_TCS@{CAN\_STATUS\_TCS}}}\mbox{\Hypertarget{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23a674452d5d165c2da52e87dece34d6c92}\label{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23a674452d5d165c2da52e87dece34d6c92}} 
+CAN\+\_\+\+STATUS\+\_\+\+TCS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_STATUS\_RS@{CAN\_STATUS\_RS}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_STATUS\_RS@{CAN\_STATUS\_RS}}}\mbox{\Hypertarget{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23a349938f16f63e8f6196011af1b0557c5}\label{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23a349938f16f63e8f6196011af1b0557c5}} 
+CAN\+\_\+\+STATUS\+\_\+\+RS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_STATUS\_TS@{CAN\_STATUS\_TS}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_STATUS\_TS@{CAN\_STATUS\_TS}}}\mbox{\Hypertarget{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23a87b28983fbbe18016a4e85e22532510b}\label{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23a87b28983fbbe18016a4e85e22532510b}} 
+CAN\+\_\+\+STATUS\+\_\+\+TS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_STATUS\_ES@{CAN\_STATUS\_ES}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_STATUS\_ES@{CAN\_STATUS\_ES}}}\mbox{\Hypertarget{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23a652b6af1ee084cdeb829c86b810398df}\label{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23a652b6af1ee084cdeb829c86b810398df}} 
+CAN\+\_\+\+STATUS\+\_\+\+ES&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAN\_STATUS\_BS@{CAN\_STATUS\_BS}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CAN\_STATUS\_BS@{CAN\_STATUS\_BS}}}\mbox{\Hypertarget{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23adca8a58da84b4dd099bd4ed797f5b12e}\label{group___c_a_n___exported___types_ggaa33a1daf97589256e99e315a7463ff23adca8a58da84b4dd099bd4ed797f5b12e}} 
+CAN\+\_\+\+STATUS\+\_\+\+BS&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00110}{110}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___types_ga87ebb9c9031b305a6757b619bf75ead7}\label{group___c_a_n___exported___types_ga87ebb9c9031b305a6757b619bf75ead7}} 
+\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!emCAN\_WAKE\_conts\_Typedef@{emCAN\_WAKE\_conts\_Typedef}}
+\index{emCAN\_WAKE\_conts\_Typedef@{emCAN\_WAKE\_conts\_Typedef}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{emCAN\_WAKE\_conts\_Typedef}{emCAN\_WAKE\_conts\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___c_a_n___exported___types_ga87ebb9c9031b305a6757b619bf75ead7}{em\+CAN\+\_\+\+WAKE\+\_\+conts\+\_\+\+Typedef}}}
+
+
+
+CAN\+\_\+wake\+\_\+up\+\_\+constants 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CANWAKEUPFAILED@{CANWAKEUPFAILED}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CANWAKEUPFAILED@{CANWAKEUPFAILED}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga87ebb9c9031b305a6757b619bf75ead7a64efc2e4f4dd69745f02cfdce098a811}\label{group___c_a_n___exported___types_gga87ebb9c9031b305a6757b619bf75ead7a64efc2e4f4dd69745f02cfdce098a811}} 
+CANWAKEUPFAILED&CAN did not leave the sleep mode \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CANWAKEUPOK@{CANWAKEUPOK}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!CANWAKEUPOK@{CANWAKEUPOK}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga87ebb9c9031b305a6757b619bf75ead7ae13abdbbeed6b6041fd080f9ac6ac753}\label{group___c_a_n___exported___types_gga87ebb9c9031b305a6757b619bf75ead7ae13abdbbeed6b6041fd080f9ac6ac753}} 
+CANWAKEUPOK&CAN leaved the sleep mode \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00061}{61}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___types_ga4e70ade1ffbd9f5baeeebf14308cc530}\label{group___c_a_n___exported___types_ga4e70ade1ffbd9f5baeeebf14308cc530}} 
+\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!TransFrame@{TransFrame}}
+\index{TransFrame@{TransFrame}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TransFrame}{TransFrame}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___c_a_n___exported___types_ga4e70ade1ffbd9f5baeeebf14308cc530}{Trans\+Frame}}}
+
+
+
+CAN\+\_\+\+Peli transmit frame definition 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DataFrame@{DataFrame}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!DataFrame@{DataFrame}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga4e70ade1ffbd9f5baeeebf14308cc530abf0bbfbe9ed733098f9120b37ebb876c}\label{group___c_a_n___exported___types_gga4e70ade1ffbd9f5baeeebf14308cc530abf0bbfbe9ed733098f9120b37ebb876c}} 
+Data\+Frame&Data Frame \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RemoteFrame@{RemoteFrame}!CAN\_Exported\_Types@{CAN\_Exported\_Types}}\index{CAN\_Exported\_Types@{CAN\_Exported\_Types}!RemoteFrame@{RemoteFrame}}}\mbox{\Hypertarget{group___c_a_n___exported___types_gga4e70ade1ffbd9f5baeeebf14308cc530a7cfb916a18e4912db47c123058ac73e1}\label{group___c_a_n___exported___types_gga4e70ade1ffbd9f5baeeebf14308cc530a7cfb916a18e4912db47c123058ac73e1}} 
+Remote\+Frame&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00134}{134}} 行定义.
+

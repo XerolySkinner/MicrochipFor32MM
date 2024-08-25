@@ -1,0 +1,179 @@
+\hypertarget{group___m_i_s_c___exported___functions}{}\doxysection{MISC\+\_\+\+Exported\+\_\+\+Functions}
+\label{group___m_i_s_c___exported___functions}\index{MISC\_Exported\_Functions@{MISC\_Exported\_Functions}}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___m_i_s_c___exported___functions_ga0ff8d048327ef07dcf4e65e0b4dfd0c9}{NVIC\+\_\+\+Set\+Vector\+Table}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} vect\+\_\+tab, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} offset)
+\begin{DoxyCompactList}\small\item\em Set the NVIC interrupt vector table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___m_i_s_c___exported___functions_ga0dad12407a6282ef58469ebc37be05d8}{NVIC\+\_\+\+Priority\+Group\+Config}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} priority\+\_\+group)
+\begin{DoxyCompactList}\small\item\em Set the NVIC interrupt priority group. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___m_i_s_c___exported___functions_ga85f4749eb55ea14907b82d72e9db599b}{NVIC\+\_\+\+Init}} (\mbox{\hyperlink{struct_n_v_i_c___init_type_def}{NVIC\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em NVIC initialization. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___m_i_s_c___exported___functions_gaa3d46229a100ddcef6eb5fc4c09413b9}{ex\+NVIC\+\_\+\+Init}} (\mbox{\hyperlink{structex_n_v_i_c___init___type_def}{ex\+NVIC\+\_\+\+Init\+\_\+\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em NVIC initialized extension function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___m_i_s_c___exported___functions_gac7a5a03af01bfccea39fc6a14ce2f0df}{NVIC\+\_\+\+System\+LPConfig}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} low\+\_\+power\+\_\+mode, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em System low power mode configuration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___m_i_s_c___exported___functions_ga3294c1ceb4e359c2c1ae188dac061d21}{Sys\+Tick\+\_\+\+CLKSource\+Config}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} systick\+\_\+clk\+\_\+source)
+\begin{DoxyCompactList}\small\item\em Sys\+Tick clock source configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+\doxysubsection{函数说明}
+\mbox{\Hypertarget{group___m_i_s_c___exported___functions_gaa3d46229a100ddcef6eb5fc4c09413b9}\label{group___m_i_s_c___exported___functions_gaa3d46229a100ddcef6eb5fc4c09413b9}} 
+\index{MISC\_Exported\_Functions@{MISC\_Exported\_Functions}!exNVIC\_Init@{exNVIC\_Init}}
+\index{exNVIC\_Init@{exNVIC\_Init}!MISC\_Exported\_Functions@{MISC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{exNVIC\_Init()}{exNVIC\_Init()}}
+{\footnotesize\ttfamily void ex\+NVIC\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structex_n_v_i_c___init___type_def}{ex\+NVIC\+\_\+\+Init\+\_\+\+Type\+Def}} $\ast$}]{init\+\_\+struct }\end{DoxyParamCaption})}
+
+
+
+NVIC initialized extension function. 
+
+
+\begin{DoxyParams}{参数}
+{\em init\+\_\+struct} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__misc_8c_source}{hal\+\_\+misc.\+c}} 第 \mbox{\hyperlink{hal__misc_8c_source_l00094}{94}} 行定义.
+
+\mbox{\Hypertarget{group___m_i_s_c___exported___functions_ga85f4749eb55ea14907b82d72e9db599b}\label{group___m_i_s_c___exported___functions_ga85f4749eb55ea14907b82d72e9db599b}} 
+\index{MISC\_Exported\_Functions@{MISC\_Exported\_Functions}!NVIC\_Init@{NVIC\_Init}}
+\index{NVIC\_Init@{NVIC\_Init}!MISC\_Exported\_Functions@{MISC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{NVIC\_Init()}{NVIC\_Init()}}
+{\footnotesize\ttfamily void NVIC\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_n_v_i_c___init_type_def}{NVIC\+\_\+\+Init\+Type\+Def}} $\ast$}]{init\+\_\+struct }\end{DoxyParamCaption})}
+
+
+
+NVIC initialization. 
+
+
+\begin{DoxyParams}{参数}
+{\em init\+\_\+struct} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__misc_8c_source}{hal\+\_\+misc.\+c}} 第 \mbox{\hyperlink{hal__misc_8c_source_l00071}{71}} 行定义.
+
+\mbox{\Hypertarget{group___m_i_s_c___exported___functions_ga0dad12407a6282ef58469ebc37be05d8}\label{group___m_i_s_c___exported___functions_ga0dad12407a6282ef58469ebc37be05d8}} 
+\index{MISC\_Exported\_Functions@{MISC\_Exported\_Functions}!NVIC\_PriorityGroupConfig@{NVIC\_PriorityGroupConfig}}
+\index{NVIC\_PriorityGroupConfig@{NVIC\_PriorityGroupConfig}!MISC\_Exported\_Functions@{MISC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{NVIC\_PriorityGroupConfig()}{NVIC\_PriorityGroupConfig()}}
+{\footnotesize\ttfamily void NVIC\+\_\+\+Priority\+Group\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{priority\+\_\+group }\end{DoxyParamCaption})}
+
+
+
+Set the NVIC interrupt priority group. 
+
+
+\begin{DoxyParams}{参数}
+{\em priority\+\_\+group} & This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item NVIC\+\_\+\+Priority\+Group\+\_\+0 \item NVIC\+\_\+\+Priority\+Group\+\_\+1 \item NVIC\+\_\+\+Priority\+Group\+\_\+2 \item NVIC\+\_\+\+Priority\+Group\+\_\+3 \item NVIC\+\_\+\+Priority\+Group\+\_\+4 \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__misc_8c_source}{hal\+\_\+misc.\+c}} 第 \mbox{\hyperlink{hal__misc_8c_source_l00061}{61}} 行定义.
+
+\mbox{\Hypertarget{group___m_i_s_c___exported___functions_ga0ff8d048327ef07dcf4e65e0b4dfd0c9}\label{group___m_i_s_c___exported___functions_ga0ff8d048327ef07dcf4e65e0b4dfd0c9}} 
+\index{MISC\_Exported\_Functions@{MISC\_Exported\_Functions}!NVIC\_SetVectorTable@{NVIC\_SetVectorTable}}
+\index{NVIC\_SetVectorTable@{NVIC\_SetVectorTable}!MISC\_Exported\_Functions@{MISC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{NVIC\_SetVectorTable()}{NVIC\_SetVectorTable()}}
+{\footnotesize\ttfamily void NVIC\+\_\+\+Set\+Vector\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{vect\+\_\+tab,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{offset }\end{DoxyParamCaption})}
+
+
+
+Set the NVIC interrupt vector table. 
+
+
+\begin{DoxyParams}{参数}
+{\em vect\+\_\+tab} & This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item NVIC\+\_\+\+Vect\+Tab\+\_\+\+RAM \item NVIC\+\_\+\+Vect\+Tab\+\_\+\+FLASH \end{DoxyItemize}
+\\
+\hline
+{\em offset} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__misc_8c_source}{hal\+\_\+misc.\+c}} 第 \mbox{\hyperlink{hal__misc_8c_source_l00045}{45}} 行定义.
+
+\mbox{\Hypertarget{group___m_i_s_c___exported___functions_gac7a5a03af01bfccea39fc6a14ce2f0df}\label{group___m_i_s_c___exported___functions_gac7a5a03af01bfccea39fc6a14ce2f0df}} 
+\index{MISC\_Exported\_Functions@{MISC\_Exported\_Functions}!NVIC\_SystemLPConfig@{NVIC\_SystemLPConfig}}
+\index{NVIC\_SystemLPConfig@{NVIC\_SystemLPConfig}!MISC\_Exported\_Functions@{MISC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{NVIC\_SystemLPConfig()}{NVIC\_SystemLPConfig()}}
+{\footnotesize\ttfamily void NVIC\+\_\+\+System\+LPConfig (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{low\+\_\+power\+\_\+mode,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+System low power mode configuration. 
+
+
+\begin{DoxyParams}{参数}
+{\em low\+\_\+power\+\_\+mode} & This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item NVIC\+\_\+\+LP\+\_\+\+SEVONPEND \item NVIC\+\_\+\+LP\+\_\+\+SLEEPDEEP \item NVIC\+\_\+\+LP\+\_\+\+SLEEPONEXIT \end{DoxyItemize}
+\\
+\hline
+{\em state} & new state of the low power mode. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__misc_8c_source}{hal\+\_\+misc.\+c}} 第 \mbox{\hyperlink{hal__misc_8c_source_l00124}{124}} 行定义.
+
+\mbox{\Hypertarget{group___m_i_s_c___exported___functions_ga3294c1ceb4e359c2c1ae188dac061d21}\label{group___m_i_s_c___exported___functions_ga3294c1ceb4e359c2c1ae188dac061d21}} 
+\index{MISC\_Exported\_Functions@{MISC\_Exported\_Functions}!SysTick\_CLKSourceConfig@{SysTick\_CLKSourceConfig}}
+\index{SysTick\_CLKSourceConfig@{SysTick\_CLKSourceConfig}!MISC\_Exported\_Functions@{MISC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{SysTick\_CLKSourceConfig()}{SysTick\_CLKSourceConfig()}}
+{\footnotesize\ttfamily void Sys\+Tick\+\_\+\+CLKSource\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{systick\+\_\+clk\+\_\+source }\end{DoxyParamCaption})}
+
+
+
+Sys\+Tick clock source configuration. 
+
+
+\begin{DoxyParams}{参数}
+{\em systick\+\_\+clk\+\_\+source} & This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item Sys\+Tick\+\_\+\+CLKSource\+\_\+\+EXTCLK \item Sys\+Tick\+\_\+\+CLKSource\+\_\+\+HCLK \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__misc_8c_source}{hal\+\_\+misc.\+c}} 第 \mbox{\hyperlink{hal__misc_8c_source_l00137}{137}} 行定义.
+

@@ -1,0 +1,868 @@
+\hypertarget{group___c_a_n___exported___functions}{}\doxysection{CAN\+\_\+\+Exported\+\_\+\+Functions}
+\label{group___c_a_n___exported___functions}\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___c_a_n___exported___functions_gaafef68b2261957aa6dd0b5f55e512818}{CAN\+\_\+\+Mode\+\_\+\+Cmd}} (\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$can, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} mode)
+\begin{DoxyCompactList}\small\item\em Select the can work as peli mode or basic mode \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_a_n___exported___functions_ga60654b4a4e226a7b0f93db2b27fa5ad4}{CAN\+\_\+\+Reset\+Mode\+\_\+\+Cmd}} (\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$can, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Select the Reset mode or not \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_a_n___exported___functions_ga7c70557a3044c6dc2da2b7aecf680c7d}{CAN\+\_\+\+Clear\+Data\+Overflow}} (\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$can)
+\begin{DoxyCompactList}\small\item\em Clear the data overflow. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_a_n___exported___functions_ga7361c6ee14a25ae2e5e94251f7009d61}{CAN\+\_\+\+Clear\+ITPending\+Bit}} (\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$can)
+\begin{DoxyCompactList}\small\item\em Clears the CAN\textquotesingle{}s IT pending. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_a_n___exported___functions_ga07b16b3064b0edaa871057693334f265}{CAN\+\_\+\+De\+Init}} (\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$can)
+\begin{DoxyCompactList}\small\item\em Deinitializes the CAN peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_a_n___exported___functions_gae86e675a70a9a9b24dc0284783ccf5d8}{CAN\+\_\+\+Filter\+Init}} (\mbox{\hyperlink{struct_c_a_n___basic___filter_init_type_def}{CAN\+\_\+\+Basic\+\_\+\+Filter\+Init\+Type\+Def}} $\ast$basic\+\_\+filter\+\_\+init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Configures the CAN\+\_\+\+Basic reception filter according to the specified parameters in the basic\+\_\+filter\+\_\+init\+\_\+struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_a_n___exported___functions_ga46e273d5be24e945f54b5bc17fa6c98d}{CAN\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{struct_c_a_n___basic___init_type_def}{CAN\+\_\+\+Basic\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Fills each init\+\_\+struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_a_n___exported___functions_ga6613fd850a9b35857e2e86f279daac24}{CAN\+\_\+\+ITConfig}} (\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$can, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified CAN interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_a_n___exported___functions_ga18419242c961b6f7956e6343b63c4d0b}{CAN\+\_\+\+Cancel\+Transmit}} (\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$can)
+\begin{DoxyCompactList}\small\item\em Cancels a transmit request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_a_n___exported___functions_ga8e05b439371f64f3b0dafc784fdb9ab4}{CAN\+\_\+\+FIFORelease}} (\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$can)
+\begin{DoxyCompactList}\small\item\em Releases the specified receive FIFO. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_a_n___exported___functions_ga2c5fe79594fe679986a07aae3e5ec642}{CAN\+\_\+\+Receive}} (\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$can, \mbox{\hyperlink{struct_can_basic_rx_msg}{Can\+Basic\+Rx\+Msg}} $\ast$basic\+\_\+receive\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Receives a correct CAN frame. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{group___c_a_n___exported___functions_ga4f99e4f39b10a760f5f9ce6a08099f3c}{CAN\+\_\+\+Transmit}} (\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$can, \mbox{\hyperlink{struct_can_basic_tx_msg}{Can\+Basic\+Tx\+Msg}} $\ast$basic\+\_\+transmit\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Initiates and transmits a CAN frame message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{group___c_a_n___exported___functions_ga33a9f752ef95c0e8082eaaa291896a74}{CAN\+\_\+\+Init}} (\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$can, \mbox{\hyperlink{struct_c_a_n___basic___init_type_def}{CAN\+\_\+\+Basic\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Initializes the CAN peripheral according to the specified parameters in the CAN\+\_\+\+Init\+Struct. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{group___c_a_n___exported___functions_ga065f4a3be483af9267cd0a0e774d16da}{CAN\+\_\+\+Sleep}} (\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$can)
+\begin{DoxyCompactList}\small\item\em Select the Sleep mode or not in Basic workmode \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{group___c_a_n___exported___functions_ga67a1b86103fbc3b587ae4369964f7377}{CAN\+\_\+\+Wake\+Up}} (\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$can)
+\begin{DoxyCompactList}\small\item\em Wakes the CAN up. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___c_a_n___exported___functions_gabb899c7fb05e056302beee00d4bb7428}{CAN\+\_\+\+Get\+Flag\+Status}} (\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$can, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified CAN flag is set or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} \mbox{\hyperlink{group___c_a_n___exported___functions_ga70bfd125b26b22aae264ad244241b15a}{CAN\+\_\+\+Get\+ITStatus}} (\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$can, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified CAN interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_a_n___exported___functions_ga28a0442cdedce9c2c5dbd875a5750b71}{CAN\+\_\+\+Peli\+\_\+\+Sleep\+Mode\+\_\+\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Select the Sleep mode or not in Peli workmode \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_a_n___exported___functions_ga23e7cc0ff7bcdd640257b3ad99b83572}{CAN\+\_\+\+Peli\+\_\+\+Init}} (\mbox{\hyperlink{struct_c_a_n___peli___init_type_def}{CAN\+\_\+\+Peli\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Initializes the CAN\+\_\+\+Peli peripheral according to the specified parameters in the init\+\_\+struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_a_n___exported___functions_ga655adb6d55a3219eb67ca5991ea3383e}{CAN\+\_\+\+Peli\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{struct_c_a_n___peli___init_type_def}{CAN\+\_\+\+Peli\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Fills each CAN1\+\_\+\+PELI\+\_\+\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_a_n___exported___functions_ga884a68edb7e26e118481dd0ca84c861a}{CAN\+\_\+\+Peli\+\_\+\+Filter\+Init}} (\mbox{\hyperlink{struct_c_a_n___peli___filter_init_type_def}{CAN\+\_\+\+Peli\+\_\+\+Filter\+Init\+Type\+Def}} $\ast$peli\+\_\+filter\+\_\+init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Configures the CAN\+\_\+\+Peli reception filter according to the specified parameters in the peli\+\_\+filter\+\_\+init\+\_\+struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_a_n___exported___functions_ga96bb0890d301f8dc729e368f54dcf4f3}{CAN\+\_\+\+Peli\+\_\+\+Filter\+Struct\+Init}} (\mbox{\hyperlink{struct_c_a_n___peli___filter_init_type_def}{CAN\+\_\+\+Peli\+\_\+\+Filter\+Init\+Type\+Def}} $\ast$peli\+\_\+filter\+\_\+init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Fills each peli\+\_\+filter\+\_\+init\+\_\+struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_a_n___exported___functions_gad014a44ce4fd8d13b684f289ee2fda45}{CAN\+\_\+\+Peli\+\_\+\+Transmit}} (\mbox{\hyperlink{struct_can_peli_tx_msg}{Can\+Peli\+Tx\+Msg}} $\ast$peli\+\_\+transmit\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Initiates and transmits a CAN frame message. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_a_n___exported___functions_ga63d024f638c405e4f9699f3ba106ef83}{CAN\+\_\+\+Peli\+\_\+\+Transmit\+Repeat}} (\mbox{\hyperlink{struct_can_peli_tx_msg}{Can\+Peli\+Tx\+Msg}} $\ast$peli\+\_\+transmit\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Initiates and transmits a CAN frame message. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_a_n___exported___functions_gadbb3f922b23e078b0f0e4e02cb4c30d5}{CAN\+\_\+\+Peli\+\_\+\+Receive}} (\mbox{\hyperlink{struct_can_peli_rx_msg}{Can\+Peli\+Rx\+Msg}} $\ast$peli\+\_\+receive\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Receives a correct CAN frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_a_n___exported___functions_ga441b0874c3b38969bf0d09bce115dd49}{CAN\+\_\+\+Peli\+\_\+\+ITConfig}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified CAN interrupts in peli workmode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_a_n___exported___functions_gad16d6178e65b2967767d074a54c3d085}{CAN\+\_\+\+Auto\+Cfg\+\_\+\+Baud\+Param}} (\mbox{\hyperlink{struct_c_a_n___peli___init_type_def}{CAN\+\_\+\+Peli\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} src\+\_\+clk, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} baud)
+\begin{DoxyCompactList}\small\item\em Config \mbox{\hyperlink{struct_c_a_n___peli___init_type_def}{CAN\+\_\+\+Peli\+\_\+\+Init\+Type\+Def}} baud parameter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___c_a_n___exported___functions_ga2adc0224dc11995953398d0258d89fe1}{CAN\+\_\+\+Peli\+\_\+\+Get\+Rx\+FIFOInfo}} (void)
+\begin{DoxyCompactList}\small\item\em Get available current informatoin in receive FIFO only in Peli workmode. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{group___c_a_n___exported___functions_ga153d9e1f7fad6e12c7c6ee68f6e9d843}{CAN\+\_\+\+Peli\+\_\+\+Get\+Last\+Error\+Code}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the CAN\textquotesingle{}s last error code (LEC). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{group___c_a_n___exported___functions_ga3b7368bdbd969d0c3a7b1441c80adf5a}{CAN\+\_\+\+Peli\+\_\+\+Get\+Receive\+Error\+Counter}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the CAN Receive Error Counter (REC). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{group___c_a_n___exported___functions_ga2376d5ce461eb94d19468c38189de820}{CAN\+\_\+\+Peli\+\_\+\+Get\+LSBTransmit\+Error\+Counter}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the LSB of the 9-\/bit can Transmit Error Counter(\+TEC). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} \mbox{\hyperlink{group___c_a_n___exported___functions_gaff21383dece05c76bee43075bd982252}{CAN\+\_\+\+Peli\+\_\+\+Get\+ITStatus}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified CAN interrupt has occurred or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+\doxysubsection{函数说明}
+\mbox{\Hypertarget{group___c_a_n___exported___functions_gad16d6178e65b2967767d074a54c3d085}\label{group___c_a_n___exported___functions_gad16d6178e65b2967767d074a54c3d085}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_AutoCfg\_BaudParam@{CAN\_AutoCfg\_BaudParam}}
+\index{CAN\_AutoCfg\_BaudParam@{CAN\_AutoCfg\_BaudParam}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_AutoCfg\_BaudParam()}{CAN\_AutoCfg\_BaudParam()}}
+{\footnotesize\ttfamily void CAN\+\_\+\+Auto\+Cfg\+\_\+\+Baud\+Param (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n___peli___init_type_def}{CAN\+\_\+\+Peli\+\_\+\+Init\+Type\+Def}} $\ast$}]{init\+\_\+struct,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{src\+\_\+clk,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{baud }\end{DoxyParamCaption})}
+
+
+
+Config \mbox{\hyperlink{struct_c_a_n___peli___init_type_def}{CAN\+\_\+\+Peli\+\_\+\+Init\+Type\+Def}} baud parameter. 
+
+
+\begin{DoxyParams}{参数}
+{\em \mbox{\hyperlink{struct_c_a_n___peli___init_type_def}{CAN\+\_\+\+Peli\+\_\+\+Init\+Type\+Def}}} & CAN struct. \\
+\hline
+{\em src\+\_\+clk} & CAN module clock. \\
+\hline
+{\em baud} & specified baud. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em The} & current state of it (SET or RESET). \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00662}{662}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga18419242c961b6f7956e6343b63c4d0b}\label{group___c_a_n___exported___functions_ga18419242c961b6f7956e6343b63c4d0b}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_CancelTransmit@{CAN\_CancelTransmit}}
+\index{CAN\_CancelTransmit@{CAN\_CancelTransmit}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_CancelTransmit()}{CAN\_CancelTransmit()}}
+{\footnotesize\ttfamily void CAN\+\_\+\+Cancel\+Transmit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$}]{can }\end{DoxyParamCaption})}
+
+
+
+Cancels a transmit request. 
+
+
+\begin{DoxyParams}{参数}
+{\em can} & select the CAN peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00176}{176}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga7c70557a3044c6dc2da2b7aecf680c7d}\label{group___c_a_n___exported___functions_ga7c70557a3044c6dc2da2b7aecf680c7d}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_ClearDataOverflow@{CAN\_ClearDataOverflow}}
+\index{CAN\_ClearDataOverflow@{CAN\_ClearDataOverflow}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_ClearDataOverflow()}{CAN\_ClearDataOverflow()}}
+{\footnotesize\ttfamily void CAN\+\_\+\+Clear\+Data\+Overflow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$}]{can }\end{DoxyParamCaption})}
+
+
+
+Clear the data overflow. 
+
+
+\begin{DoxyParams}{参数}
+{\em can} & where x can be 1 or 2 to to select the CAN peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00309}{309}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga7361c6ee14a25ae2e5e94251f7009d61}\label{group___c_a_n___exported___functions_ga7361c6ee14a25ae2e5e94251f7009d61}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_ClearITPendingBit@{CAN\_ClearITPendingBit}}
+\index{CAN\_ClearITPendingBit@{CAN\_ClearITPendingBit}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_ClearITPendingBit()}{CAN\_ClearITPendingBit()}}
+{\footnotesize\ttfamily void CAN\+\_\+\+Clear\+ITPending\+Bit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$}]{can }\end{DoxyParamCaption})}
+
+
+
+Clears the CAN\textquotesingle{}s IT pending. 
+
+
+\begin{DoxyParams}{参数}
+{\em can} & where x can be 1 or 2 to to select the CAN peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00319}{319}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga07b16b3064b0edaa871057693334f265}\label{group___c_a_n___exported___functions_ga07b16b3064b0edaa871057693334f265}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_DeInit@{CAN\_DeInit}}
+\index{CAN\_DeInit@{CAN\_DeInit}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_DeInit()}{CAN\_DeInit()}}
+{\footnotesize\ttfamily void CAN\+\_\+\+De\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$}]{can }\end{DoxyParamCaption})}
+
+
+
+Deinitializes the CAN peripheral registers to their default reset values. 
+
+
+\begin{DoxyParams}{参数}
+{\em can} & select the CAN peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00044}{44}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga8e05b439371f64f3b0dafc784fdb9ab4}\label{group___c_a_n___exported___functions_ga8e05b439371f64f3b0dafc784fdb9ab4}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_FIFORelease@{CAN\_FIFORelease}}
+\index{CAN\_FIFORelease@{CAN\_FIFORelease}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_FIFORelease()}{CAN\_FIFORelease()}}
+{\footnotesize\ttfamily void CAN\+\_\+\+FIFORelease (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$}]{can }\end{DoxyParamCaption})}
+
+
+
+Releases the specified receive FIFO. 
+
+
+\begin{DoxyParams}{参数}
+{\em can} & select the CAN peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00187}{187}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_gae86e675a70a9a9b24dc0284783ccf5d8}\label{group___c_a_n___exported___functions_gae86e675a70a9a9b24dc0284783ccf5d8}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_FilterInit@{CAN\_FilterInit}}
+\index{CAN\_FilterInit@{CAN\_FilterInit}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_FilterInit()}{CAN\_FilterInit()}}
+{\footnotesize\ttfamily void CAN\+\_\+\+Filter\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n___basic___filter_init_type_def}{CAN\+\_\+\+Basic\+\_\+\+Filter\+Init\+Type\+Def}} $\ast$}]{basic\+\_\+filter\+\_\+init\+\_\+struct }\end{DoxyParamCaption})}
+
+
+
+Configures the CAN\+\_\+\+Basic reception filter according to the specified parameters in the basic\+\_\+filter\+\_\+init\+\_\+struct. 
+
+
+\begin{DoxyParams}{参数}
+{\em basic\+\_\+filter\+\_\+init\+\_\+struct} & pointer to a \mbox{\hyperlink{struct_c_a_n___basic___filter_init_type_def}{CAN\+\_\+\+Basic\+\_\+\+Filter\+Init\+Type\+Def}} structure that contains the configuration information. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00089}{89}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_gabb899c7fb05e056302beee00d4bb7428}\label{group___c_a_n___exported___functions_gabb899c7fb05e056302beee00d4bb7428}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_GetFlagStatus@{CAN\_GetFlagStatus}}
+\index{CAN\_GetFlagStatus@{CAN\_GetFlagStatus}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_GetFlagStatus()}{CAN\_GetFlagStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} CAN\+\_\+\+Get\+Flag\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$}]{can,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{flag }\end{DoxyParamCaption})}
+
+
+
+Checks whether the specified CAN flag is set or not. 
+
+
+\begin{DoxyParams}{参数}
+{\em can} & select the CAN peripheral. \\
+\hline
+{\em flag} & specifies the flag to check. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item CAN\+\_\+\+STATUS\+\_\+\+RBS\+: Receive buffer status \item CAN\+\_\+\+STATUS\+\_\+\+DOS\+: Data overflow status \item CAN\+\_\+\+STATUS\+\_\+\+TBS\+: Transmit buffer status \item CAN\+\_\+\+STATUS\+\_\+\+TCS\+: Transmit complete status \item CAN\+\_\+\+STATUS\+\_\+\+RS\+: Receiving status \item CAN\+\_\+\+STATUS\+\_\+\+TS\+: Transmiting status \item CAN\+\_\+\+STATUS\+\_\+\+ES\+: Error status \item CAN\+\_\+\+STATUS\+\_\+\+BS\+: bus status, close or open \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em The} & new state of CAN\+\_\+\+FLAG (SET or RESET). \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00259}{259}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga70bfd125b26b22aae264ad244241b15a}\label{group___c_a_n___exported___functions_ga70bfd125b26b22aae264ad244241b15a}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_GetITStatus@{CAN\_GetITStatus}}
+\index{CAN\_GetITStatus@{CAN\_GetITStatus}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_GetITStatus()}{CAN\_GetITStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} CAN\+\_\+\+Get\+ITStatus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$}]{can,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{it }\end{DoxyParamCaption})}
+
+
+
+Checks whether the specified CAN interrupt has occurred or not. 
+
+
+\begin{DoxyParams}{参数}
+{\em can} & where x can be 1 to select the CAN peripheral. \\
+\hline
+{\em it} & specifies the CAN interrupt source to check. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item CAN\+\_\+\+IT\+\_\+\+RI\+: Receive FIFO not empty Interrupt \item CAN\+\_\+\+IT\+\_\+\+TI\+: Transmit Interrupt \item CAN\+\_\+\+IT\+\_\+\+EI\+: ERROR Interrupt \item CAN\+\_\+\+IT\+\_\+\+DOI\+: Data voerflow Interrupt \item CAN\+\_\+\+IT\+\_\+\+WUI\+: Wakeup Interrupt \item CAN\+\_\+\+IT\+\_\+\+ALL\+: use it can enble all Interrupt \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em The} & current state of it (SET or RESET). \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00277}{277}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga33a9f752ef95c0e8082eaaa291896a74}\label{group___c_a_n___exported___functions_ga33a9f752ef95c0e8082eaaa291896a74}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_Init@{CAN\_Init}}
+\index{CAN\_Init@{CAN\_Init}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_Init()}{CAN\_Init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} CAN\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$}]{can,  }\item[{\mbox{\hyperlink{struct_c_a_n___basic___init_type_def}{CAN\+\_\+\+Basic\+\_\+\+Init\+Type\+Def}} $\ast$}]{init\+\_\+struct }\end{DoxyParamCaption})}
+
+
+
+Initializes the CAN peripheral according to the specified parameters in the CAN\+\_\+\+Init\+Struct. 
+
+
+\begin{DoxyParams}{参数}
+{\em can} & select the CAN peripheral. \\
+\hline
+{\em CAN\+\_\+\+Init\+Struct} & pointer to a CAN\+\_\+\+Init\+Type\+Def structure that contains the configuration information for the CAN peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em Constant} & indicates initialization succeed which will be CANINITFAILED or CANINITOK. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00058}{58}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga6613fd850a9b35857e2e86f279daac24}\label{group___c_a_n___exported___functions_ga6613fd850a9b35857e2e86f279daac24}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_ITConfig@{CAN\_ITConfig}}
+\index{CAN\_ITConfig@{CAN\_ITConfig}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_ITConfig()}{CAN\_ITConfig()}}
+{\footnotesize\ttfamily void CAN\+\_\+\+ITConfig (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$}]{can,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{it,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the specified CAN interrupts. 
+
+
+\begin{DoxyParams}{参数}
+{\em can} & select the CAN peripheral. \\
+\hline
+{\em it} & specifies the CAN interrupt sources to be enabled or disabled. This parameter can be\+: CAN\+\_\+\+IT\+\_\+\+OIE, CAN\+\_\+\+IT\+\_\+\+EIE, CAN\+\_\+\+IT\+\_\+\+TIE, CAN\+\_\+\+IT\+\_\+\+RIE. \\
+\hline
+{\em state} & new state of the CAN interrupts. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00139}{139}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_gaafef68b2261957aa6dd0b5f55e512818}\label{group___c_a_n___exported___functions_gaafef68b2261957aa6dd0b5f55e512818}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_Mode\_Cmd@{CAN\_Mode\_Cmd}}
+\index{CAN\_Mode\_Cmd@{CAN\_Mode\_Cmd}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_Mode\_Cmd()}{CAN\_Mode\_Cmd()}}
+{\footnotesize\ttfamily void CAN\+\_\+\+Mode\+\_\+\+Cmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$}]{can,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{mode }\end{DoxyParamCaption})}
+
+
+
+Select the can work as peli mode or basic mode 
+
+
+\begin{DoxyParams}{参数}
+{\em can} & where x can be 1 or 2 to to select the CAN peripheral. \\
+\hline
+{\em CAN\+\_\+\+MODE} & specifies the work mode\+:CAN\+\_\+\+BASICMode,CAN\+\_\+\+PELIMode \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00288}{288}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga884a68edb7e26e118481dd0ca84c861a}\label{group___c_a_n___exported___functions_ga884a68edb7e26e118481dd0ca84c861a}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_Peli\_FilterInit@{CAN\_Peli\_FilterInit}}
+\index{CAN\_Peli\_FilterInit@{CAN\_Peli\_FilterInit}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_Peli\_FilterInit()}{CAN\_Peli\_FilterInit()}}
+{\footnotesize\ttfamily void CAN\+\_\+\+Peli\+\_\+\+Filter\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n___peli___filter_init_type_def}{CAN\+\_\+\+Peli\+\_\+\+Filter\+Init\+Type\+Def}} $\ast$}]{peli\+\_\+filter\+\_\+init\+\_\+struct }\end{DoxyParamCaption})}
+
+
+
+Configures the CAN\+\_\+\+Peli reception filter according to the specified parameters in the peli\+\_\+filter\+\_\+init\+\_\+struct. 
+
+
+\begin{DoxyParams}{参数}
+{\em peli\+\_\+filter\+\_\+init\+\_\+struct} & pointer to a \mbox{\hyperlink{struct_c_a_n___peli___filter_init_type_def}{CAN\+\_\+\+Peli\+\_\+\+Filter\+Init\+Type\+Def}} structure that contains the configuration information. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00391}{391}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga96bb0890d301f8dc729e368f54dcf4f3}\label{group___c_a_n___exported___functions_ga96bb0890d301f8dc729e368f54dcf4f3}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_Peli\_FilterStructInit@{CAN\_Peli\_FilterStructInit}}
+\index{CAN\_Peli\_FilterStructInit@{CAN\_Peli\_FilterStructInit}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_Peli\_FilterStructInit()}{CAN\_Peli\_FilterStructInit()}}
+{\footnotesize\ttfamily void CAN\+\_\+\+Peli\+\_\+\+Filter\+Struct\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n___peli___filter_init_type_def}{CAN\+\_\+\+Peli\+\_\+\+Filter\+Init\+Type\+Def}} $\ast$}]{peli\+\_\+filter\+\_\+init\+\_\+struct }\end{DoxyParamCaption})}
+
+
+
+Fills each peli\+\_\+filter\+\_\+init\+\_\+struct member with its default value. 
+
+
+\begin{DoxyParams}{参数}
+{\em peli\+\_\+filter\+\_\+init\+\_\+struct} & pointer to a CAN\+\_\+\+Init\+Type\+Def structure which ill be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00413}{413}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_gaff21383dece05c76bee43075bd982252}\label{group___c_a_n___exported___functions_gaff21383dece05c76bee43075bd982252}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_Peli\_GetITStatus@{CAN\_Peli\_GetITStatus}}
+\index{CAN\_Peli\_GetITStatus@{CAN\_Peli\_GetITStatus}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_Peli\_GetITStatus()}{CAN\_Peli\_GetITStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} CAN\+\_\+\+Peli\+\_\+\+Get\+ITStatus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{it }\end{DoxyParamCaption})}
+
+
+
+Checks whether the specified CAN interrupt has occurred or not. 
+
+
+\begin{DoxyParams}{参数}
+{\em it} & specifies the CAN interrupt source to check. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item CAN\+\_\+\+IT\+\_\+\+RI\+: Receive FIFO not empty Interrupt \item CAN\+\_\+\+IT\+\_\+\+TI\+: Transmit Interrupt \item CAN\+\_\+\+IT\+\_\+\+EI\+: ERROR Interrupt \item CAN\+\_\+\+IT\+\_\+\+DOI\+: Data voerflow Interrupt \item CAN\+\_\+\+IT\+\_\+\+WUI\+: Wakeup Interrupt \item \mbox{\hyperlink{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0a9a7d97f83f87c276e3f90364376d99a1}{CAN\+\_\+\+IT\+\_\+\+EPI(only Peli)}}\+: passive error Interrupt \item \mbox{\hyperlink{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0af142d793bcbd81b2fa59e500779a7586}{CAN\+\_\+\+IT\+\_\+\+ALI(only Peli)}}\+: arbiter lose Interrupt \item \mbox{\hyperlink{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0a806b59ab4bf31d34343658b476e7716b}{CAN\+\_\+\+IT\+\_\+\+BEI(only Peli)}}\+: bus error Interrupt \item CAN\+\_\+\+IT\+\_\+\+ALL\+: use it can enble all Interrupt \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em The} & current state of it (SET or RESET). \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00650}{650}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga153d9e1f7fad6e12c7c6ee68f6e9d843}\label{group___c_a_n___exported___functions_ga153d9e1f7fad6e12c7c6ee68f6e9d843}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_Peli\_GetLastErrorCode@{CAN\_Peli\_GetLastErrorCode}}
+\index{CAN\_Peli\_GetLastErrorCode@{CAN\_Peli\_GetLastErrorCode}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_Peli\_GetLastErrorCode()}{CAN\_Peli\_GetLastErrorCode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} CAN\+\_\+\+Peli\+\_\+\+Get\+Last\+Error\+Code (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Returns the CAN\textquotesingle{}s last error code (LEC). 
+
+
+\begin{DoxyRetVals}{返回值}
+{\em Error} & code\+:
+\begin{DoxyItemize}
+\item CAN\+\_\+\+ERRORCODE\+\_\+\+No\+Err\+: No Error
+\item CAN\+\_\+\+ERRORCODE\+\_\+\+Stuff\+Err\+: Stuff Error
+\item CAN\+\_\+\+ERRORCODE\+\_\+\+Form\+Err\+: Form Error
+\item CAN\+\_\+\+ERRORCODE\+\_\+\+ACKErr \+: Acknowledgment Error
+\item CAN\+\_\+\+ERRORCODE\+\_\+\+Bit\+Recessive\+Err\+: Bit Recessive Error
+\item CAN\+\_\+\+ERRORCODE\+\_\+\+Bit\+Dominant\+Err\+: Bit Dominant Error
+\item CAN\+\_\+\+ERRORCODE\+\_\+\+CRCErr\+: CRC Error
+\item CAN\+\_\+\+ERRORCODE\+\_\+\+Software\+Set\+Err\+: Software Set Error 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00580}{580}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga2376d5ce461eb94d19468c38189de820}\label{group___c_a_n___exported___functions_ga2376d5ce461eb94d19468c38189de820}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_Peli\_GetLSBTransmitErrorCounter@{CAN\_Peli\_GetLSBTransmitErrorCounter}}
+\index{CAN\_Peli\_GetLSBTransmitErrorCounter@{CAN\_Peli\_GetLSBTransmitErrorCounter}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_Peli\_GetLSBTransmitErrorCounter()}{CAN\_Peli\_GetLSBTransmitErrorCounter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} CAN\+\_\+\+Peli\+\_\+\+Get\+LSBTransmit\+Error\+Counter (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Returns the LSB of the 9-\/bit can Transmit Error Counter(\+TEC). 
+
+
+\begin{DoxyRetVals}{返回值}
+{\em LSB} & of the 8-\/bit CAN Transmit Error Counter. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00606}{606}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga3b7368bdbd969d0c3a7b1441c80adf5a}\label{group___c_a_n___exported___functions_ga3b7368bdbd969d0c3a7b1441c80adf5a}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_Peli\_GetReceiveErrorCounter@{CAN\_Peli\_GetReceiveErrorCounter}}
+\index{CAN\_Peli\_GetReceiveErrorCounter@{CAN\_Peli\_GetReceiveErrorCounter}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_Peli\_GetReceiveErrorCounter()}{CAN\_Peli\_GetReceiveErrorCounter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} CAN\+\_\+\+Peli\+\_\+\+Get\+Receive\+Error\+Counter (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Returns the CAN Receive Error Counter (REC). 
+
+\begin{DoxyNote}{注解}
+In case of an error during reception, this counter is incremented by 1 or by 8 depending on the error condition as defined by the CAN standard. After every successful reception, the counter is decremented by 1 or reset to 120 if its value was higher than 128. When the counter value exceeds 127, the CAN controller enters the error passive state. 
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{返回值}
+{\em CAN} & Receive Error Counter. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00596}{596}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga2adc0224dc11995953398d0258d89fe1}\label{group___c_a_n___exported___functions_ga2adc0224dc11995953398d0258d89fe1}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_Peli\_GetRxFIFOInfo@{CAN\_Peli\_GetRxFIFOInfo}}
+\index{CAN\_Peli\_GetRxFIFOInfo@{CAN\_Peli\_GetRxFIFOInfo}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_Peli\_GetRxFIFOInfo()}{CAN\_Peli\_GetRxFIFOInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} CAN\+\_\+\+Peli\+\_\+\+Get\+Rx\+FIFOInfo (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get available current informatoin in receive FIFO only in Peli workmode. 
+
+
+\begin{DoxyRetVals}{返回值}
+{\em The} & value in reg RMC \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00563}{563}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga23e7cc0ff7bcdd640257b3ad99b83572}\label{group___c_a_n___exported___functions_ga23e7cc0ff7bcdd640257b3ad99b83572}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_Peli\_Init@{CAN\_Peli\_Init}}
+\index{CAN\_Peli\_Init@{CAN\_Peli\_Init}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_Peli\_Init()}{CAN\_Peli\_Init()}}
+{\footnotesize\ttfamily void CAN\+\_\+\+Peli\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n___peli___init_type_def}{CAN\+\_\+\+Peli\+\_\+\+Init\+Type\+Def}} $\ast$}]{init\+\_\+struct }\end{DoxyParamCaption})}
+
+
+
+Initializes the CAN\+\_\+\+Peli peripheral according to the specified parameters in the init\+\_\+struct. 
+
+
+\begin{DoxyParams}{参数}
+{\em init\+\_\+struct} & pointer to a \mbox{\hyperlink{struct_c_a_n___peli___init_type_def}{CAN\+\_\+\+Peli\+\_\+\+Init\+Type\+Def}} structure that contains the configuration information for the CAN peripheral in the peli workmode. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00365}{365}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga441b0874c3b38969bf0d09bce115dd49}\label{group___c_a_n___exported___functions_ga441b0874c3b38969bf0d09bce115dd49}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_Peli\_ITConfig@{CAN\_Peli\_ITConfig}}
+\index{CAN\_Peli\_ITConfig@{CAN\_Peli\_ITConfig}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_Peli\_ITConfig()}{CAN\_Peli\_ITConfig()}}
+{\footnotesize\ttfamily void CAN\+\_\+\+Peli\+\_\+\+ITConfig (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{it,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the specified CAN interrupts in peli workmode. 
+
+
+\begin{DoxyParams}{参数}
+{\em it} & specifies the CAN interrupt sources to be enabled or disabled. This parameter can be\+: \begin{DoxyItemize}
+\item CAN\+\_\+\+IT\+\_\+\+RI\+: Receive FIFO not empty Interrupt \item CAN\+\_\+\+IT\+\_\+\+TI\+: Transmit Interrupt \item CAN\+\_\+\+IT\+\_\+\+EI\+: ERROR Interrupt \item CAN\+\_\+\+IT\+\_\+\+DOI\+: Data voerflow Interrupt \item CAN\+\_\+\+IT\+\_\+\+WUI\+: Wakeup Interrupt \item \mbox{\hyperlink{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0a9a7d97f83f87c276e3f90364376d99a1}{CAN\+\_\+\+IT\+\_\+\+EPI(only Peli)}}\+: passive error Interrupt \item \mbox{\hyperlink{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0af142d793bcbd81b2fa59e500779a7586}{CAN\+\_\+\+IT\+\_\+\+ALI(only Peli)}}\+: arbiter lose Interrupt \item \mbox{\hyperlink{group___c_a_n___exported___types_gga2ea3c988b79e8ec922124df1696d1ab0a806b59ab4bf31d34343658b476e7716b}{CAN\+\_\+\+IT\+\_\+\+BEI(only Peli)}}\+: bus error Interrupt \item CAN\+\_\+\+IT\+\_\+\+ALL\+: use it can enble all Interrupt \end{DoxyItemize}
+\\
+\hline
+{\em state} & new state of the CAN interrupts. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00630}{630}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_gadbb3f922b23e078b0f0e4e02cb4c30d5}\label{group___c_a_n___exported___functions_gadbb3f922b23e078b0f0e4e02cb4c30d5}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_Peli\_Receive@{CAN\_Peli\_Receive}}
+\index{CAN\_Peli\_Receive@{CAN\_Peli\_Receive}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_Peli\_Receive()}{CAN\_Peli\_Receive()}}
+{\footnotesize\ttfamily void CAN\+\_\+\+Peli\+\_\+\+Receive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_can_peli_rx_msg}{Can\+Peli\+Rx\+Msg}} $\ast$}]{peli\+\_\+receive\+\_\+message }\end{DoxyParamCaption})}
+
+
+
+Receives a correct CAN frame. 
+
+
+\begin{DoxyParams}{参数}
+{\em Rx\+Message} & pointer to a structure receive frame which contains CAN Id,CAN DLC, CAN data and FMI number. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00520}{520}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga28a0442cdedce9c2c5dbd875a5750b71}\label{group___c_a_n___exported___functions_ga28a0442cdedce9c2c5dbd875a5750b71}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_Peli\_SleepMode\_Cmd@{CAN\_Peli\_SleepMode\_Cmd}}
+\index{CAN\_Peli\_SleepMode\_Cmd@{CAN\_Peli\_SleepMode\_Cmd}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_Peli\_SleepMode\_Cmd()}{CAN\_Peli\_SleepMode\_Cmd()}}
+{\footnotesize\ttfamily void CAN\+\_\+\+Peli\+\_\+\+Sleep\+Mode\+\_\+\+Cmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Select the Sleep mode or not in Peli workmode 
+
+
+\begin{DoxyParams}{参数}
+{\em state} & to go into the Sleep mode or go out \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00331}{331}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga655adb6d55a3219eb67ca5991ea3383e}\label{group___c_a_n___exported___functions_ga655adb6d55a3219eb67ca5991ea3383e}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_Peli\_StructInit@{CAN\_Peli\_StructInit}}
+\index{CAN\_Peli\_StructInit@{CAN\_Peli\_StructInit}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_Peli\_StructInit()}{CAN\_Peli\_StructInit()}}
+{\footnotesize\ttfamily void CAN\+\_\+\+Peli\+\_\+\+Struct\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n___peli___init_type_def}{CAN\+\_\+\+Peli\+\_\+\+Init\+Type\+Def}} $\ast$}]{init\+\_\+struct }\end{DoxyParamCaption})}
+
+
+
+Fills each CAN1\+\_\+\+PELI\+\_\+\+Init\+Struct member with its default value. 
+
+
+\begin{DoxyParams}{参数}
+{\em init\+\_\+struct} & \+: pointer to a \mbox{\hyperlink{struct_c_a_n___peli___init_type_def}{CAN\+\_\+\+Peli\+\_\+\+Init\+Type\+Def}} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00342}{342}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_gad014a44ce4fd8d13b684f289ee2fda45}\label{group___c_a_n___exported___functions_gad014a44ce4fd8d13b684f289ee2fda45}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_Peli\_Transmit@{CAN\_Peli\_Transmit}}
+\index{CAN\_Peli\_Transmit@{CAN\_Peli\_Transmit}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_Peli\_Transmit()}{CAN\_Peli\_Transmit()}}
+{\footnotesize\ttfamily void CAN\+\_\+\+Peli\+\_\+\+Transmit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_can_peli_tx_msg}{Can\+Peli\+Tx\+Msg}} $\ast$}]{peli\+\_\+transmit\+\_\+message }\end{DoxyParamCaption})}
+
+
+
+Initiates and transmits a CAN frame message. 
+
+
+\begin{DoxyParams}{参数}
+{\em Tx\+Message} & pointer to a structure which contains CAN Id, CAN DLC and CAN data. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00432}{432}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga63d024f638c405e4f9699f3ba106ef83}\label{group___c_a_n___exported___functions_ga63d024f638c405e4f9699f3ba106ef83}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_Peli\_TransmitRepeat@{CAN\_Peli\_TransmitRepeat}}
+\index{CAN\_Peli\_TransmitRepeat@{CAN\_Peli\_TransmitRepeat}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_Peli\_TransmitRepeat()}{CAN\_Peli\_TransmitRepeat()}}
+{\footnotesize\ttfamily void CAN\+\_\+\+Peli\+\_\+\+Transmit\+Repeat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_can_peli_tx_msg}{Can\+Peli\+Tx\+Msg}} $\ast$}]{peli\+\_\+transmit\+\_\+message }\end{DoxyParamCaption})}
+
+
+
+Initiates and transmits a CAN frame message. 
+
+
+\begin{DoxyParams}{参数}
+{\em Tx\+Message} & pointer to a structure which contains CAN Id, CAN DLC and CAN data. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00476}{476}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga2c5fe79594fe679986a07aae3e5ec642}\label{group___c_a_n___exported___functions_ga2c5fe79594fe679986a07aae3e5ec642}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_Receive@{CAN\_Receive}}
+\index{CAN\_Receive@{CAN\_Receive}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_Receive()}{CAN\_Receive()}}
+{\footnotesize\ttfamily void CAN\+\_\+\+Receive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$}]{can,  }\item[{\mbox{\hyperlink{struct_can_basic_rx_msg}{Can\+Basic\+Rx\+Msg}} $\ast$}]{basic\+\_\+receive\+\_\+message }\end{DoxyParamCaption})}
+
+
+
+Receives a correct CAN frame. 
+
+
+\begin{DoxyParams}{参数}
+{\em can} & select the CAN peripheral. \\
+\hline
+{\em Rx\+Message} & pointer to a structure receive frame which contains CAN Id,CAN DLC, CAN data and FMI number. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00200}{200}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga60654b4a4e226a7b0f93db2b27fa5ad4}\label{group___c_a_n___exported___functions_ga60654b4a4e226a7b0f93db2b27fa5ad4}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_ResetMode\_Cmd@{CAN\_ResetMode\_Cmd}}
+\index{CAN\_ResetMode\_Cmd@{CAN\_ResetMode\_Cmd}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_ResetMode\_Cmd()}{CAN\_ResetMode\_Cmd()}}
+{\footnotesize\ttfamily void CAN\+\_\+\+Reset\+Mode\+\_\+\+Cmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$}]{can,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Select the Reset mode or not 
+
+
+\begin{DoxyParams}{参数}
+{\em can} & where x can be 1 or 2 to to select the CAN peripheral. \\
+\hline
+{\em state} & to go into the Reset mode or go out \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00299}{299}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga065f4a3be483af9267cd0a0e774d16da}\label{group___c_a_n___exported___functions_ga065f4a3be483af9267cd0a0e774d16da}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_Sleep@{CAN\_Sleep}}
+\index{CAN\_Sleep@{CAN\_Sleep}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_Sleep()}{CAN\_Sleep()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} CAN\+\_\+\+Sleep (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$}]{can }\end{DoxyParamCaption})}
+
+
+
+Select the Sleep mode or not in Basic workmode 
+
+
+\begin{DoxyParams}{参数}
+{\em state} & to go into the Sleep mode or go out \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00225}{225}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga46e273d5be24e945f54b5bc17fa6c98d}\label{group___c_a_n___exported___functions_ga46e273d5be24e945f54b5bc17fa6c98d}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_StructInit@{CAN\_StructInit}}
+\index{CAN\_StructInit@{CAN\_StructInit}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_StructInit()}{CAN\_StructInit()}}
+{\footnotesize\ttfamily void CAN\+\_\+\+Struct\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n___basic___init_type_def}{CAN\+\_\+\+Basic\+\_\+\+Init\+Type\+Def}} $\ast$}]{init\+\_\+struct }\end{DoxyParamCaption})}
+
+
+
+Fills each init\+\_\+struct member with its default value. 
+
+
+\begin{DoxyParams}{参数}
+{\em init\+\_\+struct} & \+: pointer to a \mbox{\hyperlink{struct_c_a_n___basic___init_type_def}{CAN\+\_\+\+Basic\+\_\+\+Init\+Type\+Def}} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00101}{101}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga4f99e4f39b10a760f5f9ce6a08099f3c}\label{group___c_a_n___exported___functions_ga4f99e4f39b10a760f5f9ce6a08099f3c}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_Transmit@{CAN\_Transmit}}
+\index{CAN\_Transmit@{CAN\_Transmit}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_Transmit()}{CAN\_Transmit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} CAN\+\_\+\+Transmit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$}]{can,  }\item[{\mbox{\hyperlink{struct_can_basic_tx_msg}{Can\+Basic\+Tx\+Msg}} $\ast$}]{basic\+\_\+transmit\+\_\+message }\end{DoxyParamCaption})}
+
+
+
+Initiates and transmits a CAN frame message. 
+
+
+\begin{DoxyParams}{参数}
+{\em can\+:select} & the CAN peripheral. \\
+\hline
+{\em Tx\+Message} & pointer to a structure which contains CAN Id, CAN DLC and CAN data. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em CANTXOK} & if the CAN driver transmits the message \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00151}{151}} 行定义.
+
+\mbox{\Hypertarget{group___c_a_n___exported___functions_ga67a1b86103fbc3b587ae4369964f7377}\label{group___c_a_n___exported___functions_ga67a1b86103fbc3b587ae4369964f7377}} 
+\index{CAN\_Exported\_Functions@{CAN\_Exported\_Functions}!CAN\_WakeUp@{CAN\_WakeUp}}
+\index{CAN\_WakeUp@{CAN\_WakeUp}!CAN\_Exported\_Functions@{CAN\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{CAN\_WakeUp()}{CAN\_WakeUp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} CAN\+\_\+\+Wake\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$}]{can }\end{DoxyParamCaption})}
+
+
+
+Wakes the CAN up. 
+
+
+\begin{DoxyParams}{参数}
+{\em can} & where x can be 1 to select the CAN peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em CANWAKEUPOK} & if sleep mode left, CANWAKEUPFAILED in an other case. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__can_8c_source}{hal\+\_\+can.\+c}} 第 \mbox{\hyperlink{hal__can_8c_source_l00237}{237}} 行定义.
+

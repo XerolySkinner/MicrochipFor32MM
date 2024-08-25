@@ -1,0 +1,165 @@
+\hypertarget{reg__pwr_8h_source}{}\doxysection{reg\+\_\+pwr.\+h}
+\label{reg__pwr_8h_source}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_pwr.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_pwr.h}}
+\mbox{\hyperlink{reg__pwr_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00019}00019 \textcolor{comment}{// Define to prevent recursive inclusion}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00021}00021 \textcolor{preprocessor}{\#ifndef \_\_REG\_PWR\_H}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00022}00022 \textcolor{preprocessor}{\#define \_\_REG\_PWR\_H}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00024}00024 \textcolor{comment}{// Files includes}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00026}00026 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00027}00027 \textcolor{preprocessor}{\#include <stdbool.h>}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00028}00028 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{types_8h}{types.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00033}00033 \textcolor{preprocessor}{\#if defined ( \_\_CC\_ARM )}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00034}00034 \textcolor{preprocessor}{\#pragma anon\_unions}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00035}00035 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00047}\mbox{\hyperlink{reg__pwr_8h_ac691ec23dace8b7a649a25acb110217a}{00047}} \textcolor{preprocessor}{\#define PWR\_BASE                        (APB1PERIPH\_BASE + 0x7000)              }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00056}\mbox{\hyperlink{struct_p_w_r___type_def}{00056}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00057}00057     \textcolor{keyword}{union }\{}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00058}\mbox{\hyperlink{struct_p_w_r___type_def_a7b10b98198000b7d97b026324120f5c5}{00058}}         \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_p_w_r___type_def_a7b10b98198000b7d97b026324120f5c5}{CR}};                                                            }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00059}\mbox{\hyperlink{struct_p_w_r___type_def_ac63e91454996da5a39884c42f96346f5}{00059}}         \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_p_w_r___type_def_ac63e91454996da5a39884c42f96346f5}{CR1}};}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00060}00060     \};}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00061}00061     \textcolor{keyword}{union }\{}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00062}\mbox{\hyperlink{struct_p_w_r___type_def_aef20e6a6f11aaf09270309852c79ce4d}{00062}}         \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_p_w_r___type_def_aef20e6a6f11aaf09270309852c79ce4d}{CSR}};                                                               }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00063}\mbox{\hyperlink{struct_p_w_r___type_def_a224c31d1a35717fd9f06e51753537ae9}{00063}}         \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_p_w_r___type_def_a224c31d1a35717fd9f06e51753537ae9}{CSR1}};}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00064}00064     \};}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00065}\mbox{\hyperlink{struct_p_w_r___type_def_acd78ed8a93d8e7c966917431e260840c}{00065}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_p_w_r___type_def_acd78ed8a93d8e7c966917431e260840c}{CR2}};                                                               }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00066}\mbox{\hyperlink{struct_p_w_r___type_def_a7f19ff25a8b4f2e4c84af8530783e99f}{00066}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_p_w_r___type_def_a7f19ff25a8b4f2e4c84af8530783e99f}{CR3}};                                                               }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00067}\mbox{\hyperlink{struct_p_w_r___type_def_a9ec28d5d2fb168dfa40cd7b29da7a19d}{00067}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_p_w_r___type_def_a9ec28d5d2fb168dfa40cd7b29da7a19d}{CR4}};                                                               }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00068}\mbox{\hyperlink{struct_p_w_r___type_def_ad2d0fb32c153753341a245a3c41dcf1b}{00068}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_p_w_r___type_def_ad2d0fb32c153753341a245a3c41dcf1b}{CR5}};                                                               }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00069}\mbox{\hyperlink{struct_p_w_r___type_def_a4ece18c3d17dc3afecf9d210dade0c6d}{00069}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_p_w_r___type_def_a4ece18c3d17dc3afecf9d210dade0c6d}{CR6}};                                                               }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00070}\mbox{\hyperlink{struct_p_w_r___type_def_a91f4cc6d5ee29f659652674d0ad87ed2}{00070}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_p_w_r___type_def_a91f4cc6d5ee29f659652674d0ad87ed2}{SR}};                                                                }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00071}\mbox{\hyperlink{struct_p_w_r___type_def_affb79a2338d598efa2eb6f41b35d4f4a}{00071}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_p_w_r___type_def_affb79a2338d598efa2eb6f41b35d4f4a}{SCR}};                                                               }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00072}\mbox{\hyperlink{struct_p_w_r___type_def_a9ee5d5159e34bb89c0a4650a30a289fc}{00072}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_p_w_r___type_def_a9ee5d5159e34bb89c0a4650a30a289fc}{CFGR}};                                                              }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00073}00073 \} \mbox{\hyperlink{struct_p_w_r___type_def}{PWR\_TypeDef}};}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00078}\mbox{\hyperlink{reg__pwr_8h_a04651c526497822a859942b928e57f8e}{00078}} \textcolor{preprocessor}{\#define PWR                             ((PWR\_TypeDef*) PWR\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00085}\mbox{\hyperlink{reg__pwr_8h_af570e08262b40964ad0407f57efbf1b1}{00085}} \textcolor{preprocessor}{\#define PWR\_CR\_LDPS\_Pos                 (0)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00086}\mbox{\hyperlink{reg__pwr_8h_a9e3698fe3e13232fecda6c1d9b3544f3}{00086}} \textcolor{preprocessor}{\#define PWR\_CR\_LDPS                     (0x01U  << PWR\_CR\_LDPS\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00088}\mbox{\hyperlink{reg__pwr_8h_af1038bf2ac726320cfe05865bda0a07e}{00088}} \textcolor{preprocessor}{\#define PWR\_CR\_PDDS\_Pos                 (1)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00089}\mbox{\hyperlink{reg__pwr_8h_a8c8075e98772470804c9e3fe74984115}{00089}} \textcolor{preprocessor}{\#define PWR\_CR\_PDDS                     (0x01U  << PWR\_CR\_PDDS\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00090}\mbox{\hyperlink{reg__pwr_8h_a657c1dc4aa1d976d5cb8870ad7791a09}{00090}} \textcolor{preprocessor}{\#define PWR\_CR\_CSBF\_Pos                 (3)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00091}\mbox{\hyperlink{reg__pwr_8h_ab44484cacc35c80cf82eb011d6cbe13a}{00091}} \textcolor{preprocessor}{\#define PWR\_CR\_CSBF                     (0x01U  << PWR\_CR\_CSBF\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00092}\mbox{\hyperlink{reg__pwr_8h_a01aef09ef39c6fa907ffd2195e2091a7}{00092}} \textcolor{preprocessor}{\#define PWR\_CR\_LPR\_Pos                  (13)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00093}\mbox{\hyperlink{reg__pwr_8h_a998601e1a4538a5f8fd8746b5d2ead9c}{00093}} \textcolor{preprocessor}{\#define PWR\_CR\_LPR                      (0x01U  << PWR\_CR\_LPR\_Pos)              }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00094}\mbox{\hyperlink{reg__pwr_8h_a2f4f27bd20dad692917746ce1f184d28}{00094}} \textcolor{preprocessor}{\#define PWR\_CR\_VOS\_Pos                  (14)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00095}\mbox{\hyperlink{reg__pwr_8h_a50175d84c0cc39a949eb63d9c1d74987}{00095}} \textcolor{preprocessor}{\#define PWR\_CR\_VOS0                     (0x00U  << PWR\_CR\_VOS\_Pos)              }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00096}\mbox{\hyperlink{reg__pwr_8h_a813351f0fa7d4b299c9b70f28c1ae833}{00096}} \textcolor{preprocessor}{\#define PWR\_CR\_VOS1                     (0x01U  << PWR\_CR\_VOS\_Pos)              }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00097}\mbox{\hyperlink{reg__pwr_8h_a2742113b52a11eec5f6b6b74b27c174b}{00097}} \textcolor{preprocessor}{\#define PWR\_CR\_VOS2                     (0x02U  << PWR\_CR\_VOS\_Pos)              }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00098}\mbox{\hyperlink{reg__pwr_8h_af31a76eef42aa4cbda1891c382c4cf14}{00098}} \textcolor{preprocessor}{\#define PWR\_CR\_VOS3                     (0x03U  << PWR\_CR\_VOS\_Pos)              }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00103}\mbox{\hyperlink{reg__pwr_8h_a28df9eb1abdd9d2f29b3f471f9aa096f}{00103}} \textcolor{preprocessor}{\#define PWR\_CSR\_SBF\_Pos                 (1)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00104}\mbox{\hyperlink{reg__pwr_8h_ab4fd42f153660593cad6f4fe22ff76bb}{00104}} \textcolor{preprocessor}{\#define PWR\_CSR\_SBF                     (0x01U  << PWR\_CSR\_SBF\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00105}\mbox{\hyperlink{reg__pwr_8h_ad2938c00bca7b4425b8289498e781b48}{00105}} \textcolor{preprocessor}{\#define PWR\_CSR\_VOSRDY\_Pos              (14)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00106}00106 \textcolor{preprocessor}{\#define PWR\_CSR\_VOSRDY                  (0x01U  << PWR\_CR\_VOSRDY\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00110}\mbox{\hyperlink{reg__pwr_8h_a6264c20ff5427804a41fbb356d1b5559}{00110}} \textcolor{preprocessor}{\#define PWR\_CR2\_EWUP1\_Pos                (0)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00111}\mbox{\hyperlink{reg__pwr_8h_a84ebdf0893ad3ea77bb259030b20f3a6}{00111}} \textcolor{preprocessor}{\#define PWR\_CR2\_EWUP1                    (0x01U << PWR\_CR2\_EWUP1\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00112}\mbox{\hyperlink{reg__pwr_8h_a2faaaf296e93e13dabba54c038d9b4b0}{00112}} \textcolor{preprocessor}{\#define PWR\_CR2\_EWUP2\_Pos                (1)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00113}\mbox{\hyperlink{reg__pwr_8h_a662c86173ae993757a306eae7b01f3a7}{00113}} \textcolor{preprocessor}{\#define PWR\_CR2\_EWUP2                    (0x01U << PWR\_CR2\_EWUP2\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00114}\mbox{\hyperlink{reg__pwr_8h_a2ac523ed1f2f9113e1b2f8c587caf408}{00114}} \textcolor{preprocessor}{\#define PWR\_CR2\_EWUP3\_Pos                (2)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00115}\mbox{\hyperlink{reg__pwr_8h_a59733d030c06004683567c878c778670}{00115}} \textcolor{preprocessor}{\#define PWR\_CR2\_EWUP3                    (0x01U << PWR\_CR2\_EWUP3\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00116}\mbox{\hyperlink{reg__pwr_8h_a30754d23cbcfa502367cc8b7c6d68b07}{00116}} \textcolor{preprocessor}{\#define PWR\_CR2\_EWUP4\_Pos                (3)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00117}\mbox{\hyperlink{reg__pwr_8h_a03f91052c81ef5c05409f396bd83b52d}{00117}} \textcolor{preprocessor}{\#define PWR\_CR2\_EWUP4                    (0x01U << PWR\_CR2\_EWUP4\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00118}\mbox{\hyperlink{reg__pwr_8h_a25c86a1483ae190f80f4a4af0098dacc}{00118}} \textcolor{preprocessor}{\#define PWR\_CR2\_EWUP5\_Pos                (4)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00119}\mbox{\hyperlink{reg__pwr_8h_a662f8ed6f4f18b814e2db96d2297640a}{00119}} \textcolor{preprocessor}{\#define PWR\_CR2\_EWUP5                    (0x01U << PWR\_CR2\_EWUP5\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00120}\mbox{\hyperlink{reg__pwr_8h_a201e2b8a3a7611e108577dc72b9c373d}{00120}} \textcolor{preprocessor}{\#define PWR\_CR2\_EWUP6\_Pos                (5)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00121}\mbox{\hyperlink{reg__pwr_8h_ac49996100f7054fffbde6c2f5191dda1}{00121}} \textcolor{preprocessor}{\#define PWR\_CR2\_EWUP6                    (0x01U << PWR\_CR2\_EWUP6\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00122}\mbox{\hyperlink{reg__pwr_8h_a82a844107506d54f473043dcea0c1fd3}{00122}} \textcolor{preprocessor}{\#define PWR\_CR2\_ENWU\_Pos                 (15)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00123}00123 \textcolor{preprocessor}{\#define PWR\_CR2\_ENWU                     (0x01U << PWR\_CR2\_ENWU\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00127}\mbox{\hyperlink{reg__pwr_8h_a0ef7f277f3e14eb11dda75e7aa4200e2}{00127}} \textcolor{preprocessor}{\#define PWR\_CR3\_WP1\_Pos                (0)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00128}\mbox{\hyperlink{reg__pwr_8h_aab388d90ae5c4614930bf999ffab994a}{00128}} \textcolor{preprocessor}{\#define PWR\_CR3\_WP1                    (0x01U << PWR\_CR3\_WP1\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00129}\mbox{\hyperlink{reg__pwr_8h_afeff6d3feeed32c40c7883f19441db57}{00129}} \textcolor{preprocessor}{\#define PWR\_CR3\_WP2\_Pos                (1)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00130}\mbox{\hyperlink{reg__pwr_8h_acbe347f2e479e90c12c6b6394e53a1e2}{00130}} \textcolor{preprocessor}{\#define PWR\_CR3\_WP2                    (0x01U << PWR\_CR3\_WP2\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00131}\mbox{\hyperlink{reg__pwr_8h_a0c4f0f273ad1550f9b8f6dd9252cd911}{00131}} \textcolor{preprocessor}{\#define PWR\_CR3\_WP3\_Pos                (2)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00132}\mbox{\hyperlink{reg__pwr_8h_a57055569462c0a4d020222fca075f297}{00132}} \textcolor{preprocessor}{\#define PWR\_CR3\_WP3                    (0x01U << PWR\_CR3\_WP3\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00133}\mbox{\hyperlink{reg__pwr_8h_a593b53bd54da9d8eb967f5b8fbcdb442}{00133}} \textcolor{preprocessor}{\#define PWR\_CR3\_WP4\_Pos                (3)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00134}\mbox{\hyperlink{reg__pwr_8h_ae4342151a54769f0e895c1ab9870c42d}{00134}} \textcolor{preprocessor}{\#define PWR\_CR3\_WP4                    (0x01U << PWR\_CR3\_WP4\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00135}\mbox{\hyperlink{reg__pwr_8h_a6c4ac2dd4b904a34e383aad7ca65ef68}{00135}} \textcolor{preprocessor}{\#define PWR\_CR3\_WP5\_Pos                (4)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00136}\mbox{\hyperlink{reg__pwr_8h_a1727c45edea523c0c46adb873a9eac3d}{00136}} \textcolor{preprocessor}{\#define PWR\_CR3\_WP5                    (0x01U << PWR\_CR3\_WP5\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00137}\mbox{\hyperlink{reg__pwr_8h_aa4cd4987fa37d3434518fb9895853c44}{00137}} \textcolor{preprocessor}{\#define PWR\_CR3\_WP6\_Pos                (5)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00138}00138 \textcolor{preprocessor}{\#define PWR\_CR3\_WP6                    (0x01U << PWR\_CR3\_WP6\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00142}\mbox{\hyperlink{reg__pwr_8h_aecbe9be16d7a9fd030527333b629919e}{00142}} \textcolor{preprocessor}{\#define PWR\_CR4\_FILTSEL0\_Pos           (0)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00143}\mbox{\hyperlink{reg__pwr_8h_afd80d1d70442b8e6644a2467a483f124}{00143}} \textcolor{preprocessor}{\#define PWR\_CR4\_FILTSEL0               (0x01U << PWR\_CR4\_FILTSEL0\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00144}\mbox{\hyperlink{reg__pwr_8h_a804e586c5b5f53dc18d403f1a1df57a0}{00144}} \textcolor{preprocessor}{\#define PWR\_CR4\_FILTE0\_Pos             (2)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00145}\mbox{\hyperlink{reg__pwr_8h_a668d90b4d8539b66cf788abc946fca49}{00145}} \textcolor{preprocessor}{\#define PWR\_CR4\_FILTE0                 (0x01U << PWR\_CR4\_FILTE0\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00146}\mbox{\hyperlink{reg__pwr_8h_a6db6ae09826bd4e4b84adf037ff3eae8}{00146}} \textcolor{preprocessor}{\#define PWR\_CR4\_FILTF0\_Pos             (4)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00147}\mbox{\hyperlink{reg__pwr_8h_a3bf14847f072899ae3935cc0ffbef881}{00147}} \textcolor{preprocessor}{\#define PWR\_CR4\_FILTF0                 (0x01U << PWR\_CR4\_FILTF0\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00148}\mbox{\hyperlink{reg__pwr_8h_a615f5315800b7bf893899b6afb7682aa}{00148}} \textcolor{preprocessor}{\#define PWR\_CR4\_FILTCNT0\_Pos           (8)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00149}00149 \textcolor{preprocessor}{\#define PWR\_CR4\_FILTCNT0               (0xFFU << PWR\_CR4\_FILTCNT0\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00153}\mbox{\hyperlink{reg__pwr_8h_a2d3760c6d0bf038bdcc4b23fe5ccdbc2}{00153}} \textcolor{preprocessor}{\#define PWR\_CR5\_FILTSEL1\_Pos           (0)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00154}\mbox{\hyperlink{reg__pwr_8h_a952e1bd0359b771fced357413ba37c1e}{00154}} \textcolor{preprocessor}{\#define PWR\_CR5\_FILTSEL1               (0x01U << PWR\_CR5\_FILTSEL1\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00155}\mbox{\hyperlink{reg__pwr_8h_ad7592b9c4ce9baa703f8833b2886e900}{00155}} \textcolor{preprocessor}{\#define PWR\_CR5\_FILTE1\_Pos             (2)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00156}\mbox{\hyperlink{reg__pwr_8h_aeeb7e815f27245d7c30aed914f30d12b}{00156}} \textcolor{preprocessor}{\#define PWR\_CR5\_FILTE1                 (0x01U << PWR\_CR5\_FILTE1\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00157}\mbox{\hyperlink{reg__pwr_8h_a11522c253f8557a2c771c491ce58cfe3}{00157}} \textcolor{preprocessor}{\#define PWR\_CR5\_FILTF1\_Pos             (4)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00158}\mbox{\hyperlink{reg__pwr_8h_ab2f42f722b351f5aa4dd372e020be8fe}{00158}} \textcolor{preprocessor}{\#define PWR\_CR5\_FILTF1                 (0x01U << PWR\_CR5\_FILTF1\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00159}\mbox{\hyperlink{reg__pwr_8h_a946c62453a7b8c7e62c69611e6ac79a8}{00159}} \textcolor{preprocessor}{\#define PWR\_CR5\_FILTCNT1\_Pos           (8)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00160}00160 \textcolor{preprocessor}{\#define PWR\_CR5\_FILTCNT1               (0xFFU << PWR\_CR5\_FILTCNT1\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00164}\mbox{\hyperlink{reg__pwr_8h_a57366eb1cea6b14bfa5f27e4801ae64f}{00164}} \textcolor{preprocessor}{\#define PWR\_CR6\_STDBY\_FS\_W\_Pos          (0)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00165}\mbox{\hyperlink{reg__pwr_8h_ac69ee4f4cc4fbd04c85694c60b3ec0a9}{00165}} \textcolor{preprocessor}{\#define PWR\_CR6\_STDBY\_FS\_W1             (0x00U << PWR\_CR6\_STDBY\_FS\_W\_Pos)       }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00166}\mbox{\hyperlink{reg__pwr_8h_aa6309fa0cbd34cbd11270a2959cc18ff}{00166}} \textcolor{preprocessor}{\#define PWR\_CR6\_STDBY\_FS\_W2             (0x01U << PWR\_CR6\_STDBY\_FS\_W\_Pos)       }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00167}\mbox{\hyperlink{reg__pwr_8h_ab61fdc78dc89b29a988c7964a1f93843}{00167}} \textcolor{preprocessor}{\#define PWR\_CR6\_STDBY\_FS\_W3             (0x02U << PWR\_CR6\_STDBY\_FS\_W\_Pos)       }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00168}\mbox{\hyperlink{reg__pwr_8h_a64823ef4a3cfbcb6399a0d303c8d1cc7}{00168}} \textcolor{preprocessor}{\#define PWR\_CR6\_STDBY\_FS\_W4             (0x03U << PWR\_CR6\_STDBY\_FS\_W\_Pos)       }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00169}\mbox{\hyperlink{reg__pwr_8h_a2097a6e1adb8f7ebdac7601dcfa1b139}{00169}} \textcolor{preprocessor}{\#define PWR\_CR6\_STDBY\_FS\_W5             (0x04U << PWR\_CR6\_STDBY\_FS\_W\_Pos)       }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00170}\mbox{\hyperlink{reg__pwr_8h_acc8ad5eddda19f708a5a57e9ae33288c}{00170}} \textcolor{preprocessor}{\#define PWR\_CR6\_STDBY\_FS\_W6             (0x05U << PWR\_CR6\_STDBY\_FS\_W\_Pos)       }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00171}\mbox{\hyperlink{reg__pwr_8h_a40fd8e63602f5e27c16a257beb8bffc0}{00171}} \textcolor{preprocessor}{\#define PWR\_CR6\_STDBY\_FS\_W7             (0x06U << PWR\_CR6\_STDBY\_FS\_W\_Pos)       }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00172}00172 \textcolor{preprocessor}{\#define PWR\_CR6\_STDBY\_FS\_W8             (0x07U << PWR\_CR6\_STDBY\_FS\_W\_Pos)       }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00176}\mbox{\hyperlink{reg__pwr_8h_ac16378ce303a2a74fa18fb8b365c6ae8}{00176}} \textcolor{preprocessor}{\#define PWR\_SR\_WUF1\_Pos                (0)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00177}\mbox{\hyperlink{reg__pwr_8h_a51881b1e53eacd5a8f5db201284cafb0}{00177}} \textcolor{preprocessor}{\#define PWR\_SR\_WUF1                    (0x01U << PWR\_SR\_WUF1\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00178}\mbox{\hyperlink{reg__pwr_8h_a8e5a9fe65a53844f4361d7420b086f26}{00178}} \textcolor{preprocessor}{\#define PWR\_SR\_WUF2\_Pos                (1)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00179}\mbox{\hyperlink{reg__pwr_8h_a57a218695e2fff80e839d951ce93d489}{00179}} \textcolor{preprocessor}{\#define PWR\_SR\_WUF2                    (0x01U << PWR\_SR\_WUF2\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00180}\mbox{\hyperlink{reg__pwr_8h_ab236ad703b8be46d703de01ca05d2cb9}{00180}} \textcolor{preprocessor}{\#define PWR\_SR\_WUF3\_Pos                (2)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00181}\mbox{\hyperlink{reg__pwr_8h_a610bb38545916091ed32fbb0a2e47bbe}{00181}} \textcolor{preprocessor}{\#define PWR\_SR\_WUF3                    (0x01U << PWR\_SR\_WUF3\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00182}\mbox{\hyperlink{reg__pwr_8h_a480639b650fd0459656a6cbc842b3856}{00182}} \textcolor{preprocessor}{\#define PWR\_SR\_WUF4\_Pos                (3)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00183}\mbox{\hyperlink{reg__pwr_8h_ab2800d3cf02b9fee2013737ec5d2b756}{00183}} \textcolor{preprocessor}{\#define PWR\_SR\_WUF4                    (0x01U << PWR\_SR\_WUF4\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00184}\mbox{\hyperlink{reg__pwr_8h_a45f619eac1c04b307c444347613b670f}{00184}} \textcolor{preprocessor}{\#define PWR\_SR\_WUF5\_Pos                (4)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00185}\mbox{\hyperlink{reg__pwr_8h_a4353635b760d64678316965e91bc8713}{00185}} \textcolor{preprocessor}{\#define PWR\_SR\_WUF5                    (0x01U << PWR\_SR\_WUF5\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00186}\mbox{\hyperlink{reg__pwr_8h_af689cde198c4bad8a32e1c289c634b13}{00186}} \textcolor{preprocessor}{\#define PWR\_SR\_WUF6\_Pos                (5)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00187}00187 \textcolor{preprocessor}{\#define PWR\_SR\_WUF6                    (0x01U << PWR\_SR\_WUF6\_Pos)               }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00191}\mbox{\hyperlink{reg__pwr_8h_ae6909ba44c7142a50c39b58cb72ef464}{00191}} \textcolor{preprocessor}{\#define PWR\_SCR\_CWUF1\_Pos              (0)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00192}\mbox{\hyperlink{reg__pwr_8h_a2a12f5af4994abe5b34cf7eae3dacf70}{00192}} \textcolor{preprocessor}{\#define PWR\_SCR\_CWUF1                  (0x01U << PWR\_SCR\_CWUF1\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00193}\mbox{\hyperlink{reg__pwr_8h_ad97b48b66e135768b645abbf6ca4a0c8}{00193}} \textcolor{preprocessor}{\#define PWR\_SCR\_CWUF2\_Pos              (1)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00194}\mbox{\hyperlink{reg__pwr_8h_a4128b0b9a09d2443ce0e4eef81177a8d}{00194}} \textcolor{preprocessor}{\#define PWR\_SCR\_CWUF2                  (0x01U << PWR\_SCR\_CWUF2\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00195}\mbox{\hyperlink{reg__pwr_8h_a80713e25e31ad64073d8ab9c9cd9248f}{00195}} \textcolor{preprocessor}{\#define PWR\_SCR\_CWUF3\_Pos              (2)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00196}\mbox{\hyperlink{reg__pwr_8h_a2b435bfeeeb80cd6e640fa6f9210649a}{00196}} \textcolor{preprocessor}{\#define PWR\_SCR\_CWUF3                  (0x01U << PWR\_SCR\_CWUF3\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00197}\mbox{\hyperlink{reg__pwr_8h_a4f2eb15c4662edb69ebd5fa8f3c72a9f}{00197}} \textcolor{preprocessor}{\#define PWR\_SCR\_CWUF4\_Pos              (3)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00198}\mbox{\hyperlink{reg__pwr_8h_a032b297a06e80628d63eb25dd1388268}{00198}} \textcolor{preprocessor}{\#define PWR\_SCR\_CWUF4                  (0x01U << PWR\_SCR\_CWUF4\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00199}\mbox{\hyperlink{reg__pwr_8h_ac7fb9168e8f2c434d78a033dd6a20f65}{00199}} \textcolor{preprocessor}{\#define PWR\_SCR\_CWUF5\_Pos              (4)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00200}\mbox{\hyperlink{reg__pwr_8h_af1cc08299b937e0c1c87e24aa153c005}{00200}} \textcolor{preprocessor}{\#define PWR\_SCR\_CWUF5                  (0x01U << PWR\_SCR\_CWUF5\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00201}\mbox{\hyperlink{reg__pwr_8h_a58dbe22d1770be0eb39c2abc14dc0f1e}{00201}} \textcolor{preprocessor}{\#define PWR\_SCR\_CWUF6\_Pos              (5)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00202}00202 \textcolor{preprocessor}{\#define PWR\_SCR\_CWUF6                  (0x01U << PWR\_SCR\_CWUF6\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00206}\mbox{\hyperlink{reg__pwr_8h_a6cc513c0edcb01c80914ad417ceb56e8}{00206}} \textcolor{preprocessor}{\#define PWR\_CFGR\_LSICALSEL\_Pos         (0)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00207}\mbox{\hyperlink{reg__pwr_8h_a043bf41fe9c68b2ee7eb6acabaab11f5}{00207}} \textcolor{preprocessor}{\#define PWR\_CFGR\_LSICALSEL             (0x1FU << PWR\_CFGR\_LSICALSEL\_Pos)        }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00208}\mbox{\hyperlink{reg__pwr_8h_a6ab0a03f81c3698e99dc540097c6cdf5}{00208}} \textcolor{preprocessor}{\#define PWR\_CFGR\_LSICAL\_Pos            (5)}}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00209}\mbox{\hyperlink{reg__pwr_8h_a6dc6c961ef597bc43c10052e5f3d77d5}{00209}} \textcolor{preprocessor}{\#define PWR\_CFGR\_LSICAL                (0x1FU << PWR\_CFGR\_LSICAL\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00210}00210 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00212}00212 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00214}00214 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00216}00216 }
+\DoxyCodeLine{\Hypertarget{reg__pwr_8h_source_l00218}00218 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

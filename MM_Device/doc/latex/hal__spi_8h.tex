@@ -1,0 +1,287 @@
+\hypertarget{hal__spi_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Inc/hal\+\_\+spi.h 文件参考}
+\label{hal__spi_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_spi.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_spi.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SPI FIRMWARE LIBRARY.  
+
+
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}reg\+\_\+spi.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_s_p_i___init_type_def}{SPI\+\_\+\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em SPI Init structure definition \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_i2_s___init_type_def}{I2\+S\+\_\+\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em I2S Init structure definition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___register___mask_gae3cd1513951cecdd97421206616a3c27}{GCR\+\_\+\+Mask}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0\+FFF)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___register___mask_ga2907eac6d84a4c863322d1b3266e6bde}{CCR\+\_\+\+Mask}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x003F)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___register___mask_ga016cab2f270678dabb1de54634ad584d}{BRR\+\_\+\+Mask}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x\+FFFF)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___register___mask_ga7f70fd0ae2e74eb18622557f45d297f9}{ECR\+\_\+\+Mask}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x001F)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga4ecb2103e676b1386cc191146bc4a9c4}{SPI\+\_\+\+Data\+Width\+\_\+1b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0001)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_gad0df2b972860987f27fb42ab920e4e6d}{SPI\+\_\+\+Data\+Width\+\_\+2b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0002)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga88b07eda71ff6654c97600730b9afd09}{SPI\+\_\+\+Data\+Width\+\_\+3b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0003)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga676c20b6cedb1f95420534d816f5a0b7}{SPI\+\_\+\+Data\+Width\+\_\+4b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0004)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga420bc059b1828dee6f70fb33e0c2e1d1}{SPI\+\_\+\+Data\+Width\+\_\+5b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0005)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga31d5a78c2db6debf064bffef9f236b6d}{SPI\+\_\+\+Data\+Width\+\_\+6b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0006)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga1d023d775b9d1f70f1f2e0f0d897d95c}{SPI\+\_\+\+Data\+Width\+\_\+7b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0007)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga5d088087dcc01b806a28516f5ad7e6f8}{SPI\+\_\+\+Data\+Width\+\_\+8b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0008)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_gaa8a024b2097c82fc968091269cf936f8}{SPI\+\_\+\+Data\+Width\+\_\+9b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0009)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga0e9ec19e7b00ff3fd159877b66f89cc0}{SPI\+\_\+\+Data\+Width\+\_\+10b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x000a)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_gad0c577fcf18e42f6cd4ea0f643425ec1}{SPI\+\_\+\+Data\+Width\+\_\+11b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x000b)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga4f69baecfb2ce9f0f63d14e11e17d4f7}{SPI\+\_\+\+Data\+Width\+\_\+12b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x000c)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_gabab1d4cfc99d9e97e45579bf18aeceb3}{SPI\+\_\+\+Data\+Width\+\_\+13b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x000d)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga94c26bf33487800b71e837820982ff51}{SPI\+\_\+\+Data\+Width\+\_\+14b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x000e)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_gabaaed7c2e8370574f295dceed9d7d8f4}{SPI\+\_\+\+Data\+Width\+\_\+15b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x000f)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga372d88b5b3fd96168a1a5b3f52c17959}{SPI\+\_\+\+Data\+Width\+\_\+16b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0010)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga168ac5ea6b651eac27e6b9f64824b5de}{SPI\+\_\+\+Data\+Width\+\_\+17b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0011)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga3033ec8a6272cc473344211c47efd06a}{SPI\+\_\+\+Data\+Width\+\_\+18b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0012)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga47cef0858f1b029460d38e893cfaac88}{SPI\+\_\+\+Data\+Width\+\_\+19b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0013)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga456efa89cfd4f07456f5f28df3269c0c}{SPI\+\_\+\+Data\+Width\+\_\+20b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0014)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga473ba718764354ac689d2dce033f387a}{SPI\+\_\+\+Data\+Width\+\_\+21b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0015)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_gab8a7f3862fdae35abdaaf87f0f4cb33a}{SPI\+\_\+\+Data\+Width\+\_\+22b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0016)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_gae427a59906cd38cdfa39b0f2a2de5a77}{SPI\+\_\+\+Data\+Width\+\_\+23b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0017)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga1aa9bbecdbec8f7c6bcec53d9607989f}{SPI\+\_\+\+Data\+Width\+\_\+24b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0018)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_gad4eb26dca54d3d5ad11e78d7b3d9e0dc}{SPI\+\_\+\+Data\+Width\+\_\+25b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0019)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga2f21e863da83d985a226dd0f4bfdd115}{SPI\+\_\+\+Data\+Width\+\_\+26b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x001a)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga1489ddfec0251b3d8068e70dd1ff9881}{SPI\+\_\+\+Data\+Width\+\_\+27b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x001b)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga52550f80a20de0222a5fe395918e4004}{SPI\+\_\+\+Data\+Width\+\_\+28b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x001c)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga97fc9a230607002d6d9dc234e6ee28f3}{SPI\+\_\+\+Data\+Width\+\_\+29b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x001d)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga5775f7dfacb29e77218b6b19815dc633}{SPI\+\_\+\+Data\+Width\+\_\+30b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x001e)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga79e0775b86459952f1471aad11b9a7fa}{SPI\+\_\+\+Data\+Width\+\_\+31b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x001f)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___constants_ga088abe4390453969b22a5bbf9f25163e}{SPI\+\_\+\+Data\+Width\+\_\+32b}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i___exported___variables_ga3de33738fd3c7e77bffbcfaefc3e7645}{GLOBAL}}~extern
+\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_ga86cf6253be51ccc45f53b908cb42ba14}{SPI\+\_\+\+Mode\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_gga86cf6253be51ccc45f53b908cb42ba14abc31e0f5c5fa48a51a30c291d04e0821}{SPI\+\_\+\+Mode\+\_\+\+Slave}} = 0x0000
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga86cf6253be51ccc45f53b908cb42ba14a27907a819fe089bc6a9ea1dae15bf7ab}{SPI\+\_\+\+Mode\+\_\+\+Master}} = SPI\+\_\+\+GCR\+\_\+\+MODE
+ \}
+\begin{DoxyCompactList}\small\item\em SPI mode enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_gaa972b0f6f8a36bba9ad030fe993e6d11}{SPI\+\_\+\+Data\+Size\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_ggaa972b0f6f8a36bba9ad030fe993e6d11a8bb39470175b8c975c7260bce15a1f7b}{SPI\+\_\+\+Data\+Size\+\_\+8b}} = 0x0000
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggaa972b0f6f8a36bba9ad030fe993e6d11aa35b2b56d823f59978eeb3963376007a}{SPI\+\_\+\+Data\+Size\+\_\+32b}} = SPI\+\_\+\+GCR\+\_\+\+DWSEL
+ \}
+\begin{DoxyCompactList}\small\item\em SPI data size enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_ga41477365be2d18a10d6a339d231e4fdd}{SPI\+\_\+\+CPOL\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_gga41477365be2d18a10d6a339d231e4fdda7a59bd7fc76c62dc0bf6e57956dcae4f}{SPI\+\_\+\+CPOL\+\_\+\+Low}} = 0x0000
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga41477365be2d18a10d6a339d231e4fdda4bc1f087b8d02c4858efe1163a58d24a}{SPI\+\_\+\+CPOL\+\_\+\+High}} = SPI\+\_\+\+CCR\+\_\+\+CPOL
+ \}
+\begin{DoxyCompactList}\small\item\em SPI clock polarity enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_ga78bd5e9d735e57d303e04e563a37cde4}{SPI\+\_\+\+CPHA\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_gga78bd5e9d735e57d303e04e563a37cde4a430fd63456418eb9e90d3c314f2dc658}{SPI\+\_\+\+CPHA\+\_\+2\+Edge}} = 0x0000
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga78bd5e9d735e57d303e04e563a37cde4a404d29e5c96e7790ceda4be6156334e4}{SPI\+\_\+\+CPHA\+\_\+1\+Edge}} = SPI\+\_\+\+CCR\+\_\+\+CPHA
+ \}
+\begin{DoxyCompactList}\small\item\em SPI clock phase enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_gab933301dd92b8210b299aeac7744b41e}{SPI\+\_\+\+NSS\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_ggab933301dd92b8210b299aeac7744b41ea9157cc888d2b13c6fb5716ac5f46e558}{SPI\+\_\+\+NSS\+\_\+\+Soft}} = 0x0000
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggab933301dd92b8210b299aeac7744b41ea708e21b749ef6c03f5707bd9c0b486f1}{SPI\+\_\+\+NSS\+\_\+\+Hard}} = SPI\+\_\+\+GCR\+\_\+\+NSS
+ \}
+\begin{DoxyCompactList}\small\item\em SPI nss control mode enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_gafd08e5cb7cff2cd9cd8de72b8246961c}{SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961cae3fa031ff038fcb3c491d28779b1e26b}{SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+2}} = 0x0002
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961ca7cf658ad85d48091d3c1fcc050a6efb1}{SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+4}} = 0x0004
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961ca276c22abb80cac9f2a074339393e7979}{SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+8}} = 0x0008
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961cae2e2d51474cb5863a083c4c8134ed2a3}{SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+16}} = 0x0010
+, \newline
+\mbox{\hyperlink{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961ca9434623cfd2ea9d3a1147b815a56d412}{SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+32}} = 0x0020
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961cacc4485daac112a6e27bc03dd41894e1b}{SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+64}} = 0x0040
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961caeb9ded1982accafea3e4729621788872}{SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+128}} = 0x0080
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961ca6aad64e4c3a18db5825cbd2612305bd5}{SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+256}} = 0x0100
+ \}
+\begin{DoxyCompactList}\small\item\em SPI baud rate prescaler enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_gadf3ac7d60a4329fdb2bd4058843775a9}{SPI\+\_\+\+First\+Bit\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_ggadf3ac7d60a4329fdb2bd4058843775a9a1e265070c51e612b1abe2140aa0a301a}{SPI\+\_\+\+First\+Bit\+\_\+\+MSB}} = 0x0000
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggadf3ac7d60a4329fdb2bd4058843775a9a83f89ca551c11568a1a1c6c147e845ec}{SPI\+\_\+\+First\+Bit\+\_\+\+LSB}} = SPI\+\_\+\+CCR\+\_\+\+LSBFE
+ \}
+\begin{DoxyCompactList}\small\item\em SPI first bit enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_ga4d295b8d484ea3d570e04e9dea7281a0}{SPI\+\_\+\+TLF\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_gga4d295b8d484ea3d570e04e9dea7281a0a64404ccca374aa6a617e5b22832b02e5}{SPI\+\_\+\+RXTLF}} = SPI\+\_\+\+GCR\+\_\+\+RXTLF\+\_\+\+Half
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga4d295b8d484ea3d570e04e9dea7281a0a84cfb6bcdfe6a9c358f549bf3756ca98}{SPI\+\_\+\+TXTLF}} = SPI\+\_\+\+GCR\+\_\+\+TXTLF\+\_\+\+Half
+ \}
+\begin{DoxyCompactList}\small\item\em SPI FIFO trigger level enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_gac78f6a965850892d9f27db6c2eaa3798}{SPI\+\_\+\+Direction\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_ggac78f6a965850892d9f27db6c2eaa3798aa57c1c9ca239962a5eac67cbeeaee765}{SPI\+\_\+\+Direction\+\_\+\+Rx}}
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggac78f6a965850892d9f27db6c2eaa3798af591654a87615fa3315518b709e066c2}{SPI\+\_\+\+Direction\+\_\+\+Tx}}
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggac78f6a965850892d9f27db6c2eaa3798a488e5e861ae55c78bb6c88b655b7c45b}{SPI\+\_\+\+Disable\+\_\+\+Rx}}
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggac78f6a965850892d9f27db6c2eaa3798a639b7652a7559b8afc84089797fdc9b2}{SPI\+\_\+\+Disable\+\_\+\+Tx}}
+ \}
+\begin{DoxyCompactList}\small\item\em SPI bit derection enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_ga4f662a71fef63be8d3a0c7aa23199f71}{SPI\+\_\+\+FLAG\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_gga4f662a71fef63be8d3a0c7aa23199f71a0b31d185ff9b1b929ebffc506e1d210e}{SPI\+\_\+\+FLAG\+\_\+\+RXAVL}} = SPI\+\_\+\+SR\+\_\+\+RXAVL
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga4f662a71fef63be8d3a0c7aa23199f71a855b417d7dee6429efaf4ce0082e1d94}{SPI\+\_\+\+FLAG\+\_\+\+TXEPT}} = SPI\+\_\+\+SR\+\_\+\+TXEPT
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga4f662a71fef63be8d3a0c7aa23199f71aef59da99e022660544e60c927d224cb5}{SPI\+\_\+\+FLAG\+\_\+\+TXFULL}} = SPI\+\_\+\+SR\+\_\+\+TXFULL
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga4f662a71fef63be8d3a0c7aa23199f71ab91fd44e2ee72096726bb8a5d4acab6c}{SPI\+\_\+\+FLAG\+\_\+\+RXAVL\+\_\+4\+BYTE}} = SPI\+\_\+\+SR\+\_\+\+RXAVL\+\_\+4\+BYTE
+ \}
+\begin{DoxyCompactList}\small\item\em SPI flag enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_ga610e4a1e831ff4149c714998eba68fc8}{SPI\+\_\+\+Slave\+Adjust\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_gga610e4a1e831ff4149c714998eba68fc8a56a3afe68fd6fcb9090bb8d9b1f4effd}{SPI\+\_\+\+Slave\+Adjust\+\_\+\+LOW}}
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga610e4a1e831ff4149c714998eba68fc8a63aae1a51c5ee5b94365d470e80dc3a1}{SPI\+\_\+\+Slave\+Adjust\+\_\+\+FAST}}
+ \}
+\begin{DoxyCompactList}\small\item\em SPI slave mode data edge adjust enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_gaf4c1d143caf5b6990e3675b5bd4422c3}{SPI\+\_\+\+Data\+Edge\+Adjust\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_ggaf4c1d143caf5b6990e3675b5bd4422c3ab408a45ea27ba16c21394be9e5719008}{SPI\+\_\+\+Data\+Edge\+Adjust\+\_\+\+LOW}}
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggaf4c1d143caf5b6990e3675b5bd4422c3a0b956ee1dc91835f2c25a9900c4f0039}{SPI\+\_\+\+Data\+Edge\+Adjust\+\_\+\+FAST}}
+ \}
+\begin{DoxyCompactList}\small\item\em SPI data edge adjust enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_gab3f320b40f3ccc9ca49baf7e21064c79}{SPI\+\_\+\+IT\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79a756453548b97393cf648b02631d4a6f3}{SPI\+\_\+\+IT\+\_\+\+TXEPT}} = 0x40
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79acbeeab2ad8390fb717339b2283319bbf}{SPI\+\_\+\+IT\+\_\+\+RXFULL}} = 0x20
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79ae95a2f291ecc1c35e92069bd15c9d1fc}{SPI\+\_\+\+IT\+\_\+\+RXMATCH}} = 0x10
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79ad35284dad117925811bd6b0cb31e38ec}{SPI\+\_\+\+IT\+\_\+\+RXOERR}} = 0x08
+, \newline
+\mbox{\hyperlink{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79a1b656da3e624cd5ca63de35d8ff1d377}{SPI\+\_\+\+IT\+\_\+\+UNDERRUN}} = 0x04
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79ac8160606fd4282926391e7e376cd10c0}{SPI\+\_\+\+IT\+\_\+\+RX}} = 0x02
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79a4d2c9709b259ebf393ef6742d68876ed}{SPI\+\_\+\+IT\+\_\+\+TX}} = 0x01
+ \}
+\begin{DoxyCompactList}\small\item\em SPI interruput enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_ga72d7858a69929ec18e22b1dab7ad9c00}{SPI\+\_\+\+I2\+S\+\_\+\+STANDARD\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___s_p_i___exported___types_gga72d7858a69929ec18e22b1dab7ad9c00ae30e5204bb41a8feb3a5d41a20b2be9b}{I2\+S\+\_\+\+Standard\+\_\+\+Phillips}} = 0x0000
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga72d7858a69929ec18e22b1dab7ad9c00ac3a80911118d8983119efc646ccfa26a}{I2\+S\+\_\+\+Standard\+\_\+\+MSB}} = 0x0010
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga72d7858a69929ec18e22b1dab7ad9c00ad1e0ec682bd771bd6abd339934b03cdf}{I2\+S\+\_\+\+Standard\+\_\+\+LSB}} = 0x0020
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga72d7858a69929ec18e22b1dab7ad9c00a66b65d354520fef6ee2f9fee3d6ed968}{I2\+S\+\_\+\+Standard\+\_\+\+PCMShort}} = 0x0030
+, \newline
+\mbox{\hyperlink{group___s_p_i___exported___types_gga72d7858a69929ec18e22b1dab7ad9c00a6bb9046cfbdb01ef34aea693f8a608ea}{I2\+S\+\_\+\+Standard\+\_\+\+PCMLong}} = 0x00\+B0
+ \}
+\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_ga813ed2f89f68173ea42f0a62d3696b2c}{SPI\+\_\+\+I2\+S\+\_\+\+DATAFORMAT\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_gga813ed2f89f68173ea42f0a62d3696b2cad9978a21f7e476a37a0646cc3975db62}{I2\+S\+\_\+\+Data\+Format\+\_\+16b}} = 0x0000
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga813ed2f89f68173ea42f0a62d3696b2cabec251a3842ac72ce4d382f75a264839}{I2\+S\+\_\+\+Data\+Format\+\_\+16bextended}} = 0x0001
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga813ed2f89f68173ea42f0a62d3696b2cae4e841e86302d85c1034affc5a83091a}{I2\+S\+\_\+\+Data\+Format\+\_\+24b}} = 0x0003
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga813ed2f89f68173ea42f0a62d3696b2cadefa15c8f2c4191d0febf4ed35b8cf0b}{I2\+S\+\_\+\+Data\+Format\+\_\+32b}} = 0x0005
+ \}
+\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_gae1f59e0a62e91b5ab3b001ba775aa190}{SPI\+\_\+\+I2\+S\+\_\+\+AUDIO\+\_\+\+FREQ\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190ac898e98601b195dae819a45963b87524}{I2\+S\+\_\+\+Audio\+Freq\+\_\+192k}} = (192000)
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a53ac6d793703b11c615d95f407b00091}{I2\+S\+\_\+\+Audio\+Freq\+\_\+96k}} = (96000)
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190ab67f020f3b1e4b5c9b46b37d91a9826a}{I2\+S\+\_\+\+Audio\+Freq\+\_\+48k}} = (48000)
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a58f110c538ebe32e625beb5a16dce0e1}{I2\+S\+\_\+\+Audio\+Freq\+\_\+44k}} = (44100)
+, \newline
+\mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190ab15372e94dc72b4e7474aa81c4f81a0c}{I2\+S\+\_\+\+Audio\+Freq\+\_\+32k}} = (32000)
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190ab5e9cd54b6ef99501d6ba865abc10860}{I2\+S\+\_\+\+Audio\+Freq\+\_\+24k}} = (24000)
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a3c109f4e5b2e11032b9adca9baeff721}{I2\+S\+\_\+\+Audio\+Freq\+\_\+22k}} = (22050)
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a3d320069edab4b644562c1f72c3cc825}{I2\+S\+\_\+\+Audio\+Freq\+\_\+16k}} = (16000)
+, \newline
+\mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a35fb3d96f6d95c0f8c14a9933146a601}{I2\+S\+\_\+\+Audio\+Freq\+\_\+11k}} = (11025)
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a122b73608f07a92dc4ef5c3a96fe0458}{I2\+S\+\_\+\+Audio\+Freq\+\_\+12k}} = (12000)
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a82f4bb79783cc9c98189aa2cf805e974}{I2\+S\+\_\+\+Audio\+Freq\+\_\+8k}} = (8000)
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a0a12b2a4ebd1efe55cbdb8738f7cbd79}{I2\+S\+\_\+\+Audio\+Freq\+\_\+4k}} = (4000)
+, \newline
+\mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190af0e0bf91e113b72e25a403d2de7edba3}{I2\+S\+\_\+\+Audio\+Freq\+\_\+\+Default}} = (2)
+ \}
+\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_gab14de94faff5d7c41c6fa17ea894c27c}{SPI\+\_\+\+I2\+S\+\_\+\+TRANS\+\_\+\+MODE\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_ggab14de94faff5d7c41c6fa17ea894c27ca06867ac9dcc699769111eb1d0224b956}{I2\+S\+\_\+\+Mode\+\_\+\+Slave\+Tx}} = 0x0000
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggab14de94faff5d7c41c6fa17ea894c27ca92503d73ea281d3bc284ccb08b21688e}{I2\+S\+\_\+\+Mode\+\_\+\+Slave\+Rx}} = 0x0100
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggab14de94faff5d7c41c6fa17ea894c27ca41a59a0077e9d8f3305f7f7e5c2e7935}{I2\+S\+\_\+\+Mode\+\_\+\+Master\+Tx}} = 0x0200
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggab14de94faff5d7c41c6fa17ea894c27ca84050b2ba1de6cc861849fc83599d990}{I2\+S\+\_\+\+Mode\+\_\+\+Master\+Rx}} = 0x0300
+ \}
+\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_ga20d46b6a5a42b8780655b8b9fb64c9b0}{SPI\+\_\+\+I2\+S\+\_\+\+MCLK\+\_\+\+OUTPUT\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_gga20d46b6a5a42b8780655b8b9fb64c9b0a0c7f256c4140bffc11d4b6fa7650a1a5}{I2\+S\+\_\+\+MCLKOutput\+\_\+\+Enable}} = 0x0800
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga20d46b6a5a42b8780655b8b9fb64c9b0abbf5487bea5c83f7a9e90a9c13d6fa08}{I2\+S\+\_\+\+MCLKOutput\+\_\+\+Disable}} = 0x0000
+ \}
+\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_ga7c56f150fcc8bbea997bdcc83c24bee0}{SPI\+\_\+\+I2\+S\+\_\+\+CPOL\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_gga7c56f150fcc8bbea997bdcc83c24bee0aa57269ff2652b1068bce3e08dc809182}{I2\+S\+\_\+\+CPOL\+\_\+\+Low}} = 0x0000
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga7c56f150fcc8bbea997bdcc83c24bee0ac179e6c174605174bc67743f6ed5c44b}{I2\+S\+\_\+\+CPOL\+\_\+\+High}} = SPI\+\_\+\+CCR\+\_\+\+CPOL
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga9be82ef17067af5f9b6fe2c0759bd140}{SPI\+\_\+\+De\+Init}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi)
+\begin{DoxyCompactList}\small\item\em Deinitializes the spi peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga0e75e11f3492279dac8b27691019b941}{SPI\+\_\+\+Init}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{struct_s_p_i___init_type_def}{SPI\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Initializes the spi peripheral according to the specified parameters in the init\+\_\+struct . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga6b3460985df43e97a0cc3a4ee3190ca1}{SPI\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{struct_s_p_i___init_type_def}{SPI\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Fills each init\+\_\+struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga47aa73c577d17d8e3c9e6885025483b8}{SPI\+\_\+\+Cmd}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified SPI peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga97b8bda80d3514d14719e16d4c6051f8}{SPI\+\_\+\+ITConfig}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} interrupt, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified SPI interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_gad7a116cb656e01210a3a6e33ecba1b39}{SPI\+\_\+\+DMACmd}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the SPI DMA interface. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_gae7da7314157aa58f717c1153cf3ee6bf}{SPI\+\_\+\+Fifo\+Trigger}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_ga4d295b8d484ea3d570e04e9dea7281a0}{SPI\+\_\+\+TLF\+\_\+\+Type\+Def}} fifo\+\_\+trigger\+\_\+value, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em configure tn Fifo trigger level bit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga14e64a94b3b2c45f62f9624864a27d25}{SPI\+\_\+\+Send\+Data}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} data)
+\begin{DoxyCompactList}\small\item\em Transmits a Data through the spi peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga9290348ae577c26f956d227290355397}{SPI\+\_\+\+CSInternal\+Selected}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Slave chip csn single by selected \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga3ff538de08a3bec7fea37e5224311c99}{SPI\+\_\+\+NSSInternal\+Software\+Config}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_gab933301dd92b8210b299aeac7744b41e}{SPI\+\_\+\+NSS\+\_\+\+Type\+Def}} nss)
+\begin{DoxyCompactList}\small\item\em Configures the NSS pin control mode for the selected SPI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_gac0451ff3327029f8e060729d5b0d61cd}{SPI\+\_\+\+Bi\+Directional\+Line\+Config}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_gac78f6a965850892d9f27db6c2eaa3798}{SPI\+\_\+\+Direction\+\_\+\+Type\+Def}} direction)
+\begin{DoxyCompactList}\small\item\em Selects the data transfer direction in bi-\/directional mode for the specified SPI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_gadd1c05b6b56b3805712748bee2b4c190}{SPI\+\_\+\+Clear\+ITPending\+Bit}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_gab3f320b40f3ccc9ca49baf7e21064c79}{SPI\+\_\+\+IT\+\_\+\+Type\+Def}} interrupt)
+\begin{DoxyCompactList}\small\item\em Clears the spi interrupt pending bit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga62be4362af90330815eee28030dcad02}{SPI\+\_\+\+Rx\+Bytes}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} number)
+\begin{DoxyCompactList}\small\item\em SPI Hole a count Received bytes in next receive process. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga55fa09f8cfeb8d73ce4e0652a611556b}{SPI\+\_\+\+Slave\+Adjust}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_ga610e4a1e831ff4149c714998eba68fc8}{SPI\+\_\+\+Slave\+Adjust\+\_\+\+Type\+Def}} adjust\+\_\+value)
+\begin{DoxyCompactList}\small\item\em slave mode tx data transmit phase adjust set. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group___s_p_i___exported___functions_ga2126b440a24574e9bdc9e680187e1f82}{SPI\+\_\+\+Data\+Size\+Config}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} data\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Configures the data size for the selected SPI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga0601080e7eab0c71bb1744e269249268}{SPI\+\_\+\+Data\+Size\+Type\+Config}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_gaa972b0f6f8a36bba9ad030fe993e6d11}{SPI\+\_\+\+Data\+Size\+\_\+\+Type\+Def}} SPI\+\_\+\+Data\+Size)
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___s_p_i___exported___functions_gabadb78e9bc0490e2db24fa593c0a6a52}{SPI\+\_\+\+Receive\+Data}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi)
+\begin{DoxyCompactList}\small\item\em Returns the most recent received data by the spi peripheral. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___s_p_i___exported___functions_ga626bd032401d802fded68faeebeed19c}{SPI\+\_\+\+Get\+Flag\+Status}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_ga4f662a71fef63be8d3a0c7aa23199f71}{SPI\+\_\+\+FLAG\+\_\+\+Type\+Def}} flag)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified SPI flag is set or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} \mbox{\hyperlink{group___s_p_i___exported___functions_ga07f8aca4af44f2ca7162bffe4a309beb}{SPI\+\_\+\+Get\+ITStatus}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_gab3f320b40f3ccc9ca49baf7e21064c79}{SPI\+\_\+\+IT\+\_\+\+Type\+Def}} interrupt)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified SPI interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga3d9915c16271da583039c7a6c3c8bd4b}{ex\+SPI\+\_\+\+ITCmd}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables all SPI interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga13a17696bf005a63d7af5c3e30a5355d}{ex\+SPI\+\_\+\+ITConfig}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_gab3f320b40f3ccc9ca49baf7e21064c79}{SPI\+\_\+\+IT\+\_\+\+Type\+Def}} interrupt, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified SPI interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga9cd72fbbe7ca802fa85cbfbd391c359d}{ex\+SPI\+\_\+\+DMACmd}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the SPI DMA request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_gad28bd275f9cdd1f0e425e95aef654fc2}{ex\+SPI\+\_\+\+CSInternal\+Selected}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Set or reset Slave chip csn signal output \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_gaf7878fe8a984eed9a6fbd58e262664a3}{ex\+SPI\+\_\+\+Data\+Edge\+Adjust}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_gaf4c1d143caf5b6990e3675b5bd4422c3}{SPI\+\_\+\+Data\+Edge\+Adjust\+\_\+\+Type\+Def}} adjust\+\_\+value)
+\begin{DoxyCompactList}\small\item\em tx data and rx data phase adjust. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga18c931f51bd3dcfeaec8cf73c3a241e2}{I2\+S\+\_\+\+Cmd}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Set or reset i2s \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga9d5e943831a24c29523a55e231eaaaf4}{I2\+S\+\_\+\+Init}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{struct_i2_s___init_type_def}{I2\+S\+\_\+\+Init\+Type\+Def}} $\ast$I2\+S\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em i2s Config \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SPI FIRMWARE LIBRARY. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{hal__spi_8h_source}{hal\+\_\+spi.\+h}} 中定义.
+

@@ -1,0 +1,109 @@
+\hypertarget{struct_can_peli_rx_msg}{}\doxysection{Can\+Peli\+Rx\+Msg结构体 参考}
+\label{struct_can_peli_rx_msg}\index{CanPeliRxMsg@{CanPeliRxMsg}}
+
+
+CAN Rx message structure definition  
+
+
+
+
+{\ttfamily \#include $<$hal\+\_\+can.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_can_peli_rx_msg_a1a4213c71d6667900ca35bbe749ca95b}{ID}}
+\begin{DoxyCompactList}\small\item\em Specifies the extended identifier. This parameter can be a value between 0 to 0x1\+FFFFFFF. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_can_peli_rx_msg_ab94182f5df18727c946c4a1b2b8c8d65}{FF}}
+\begin{DoxyCompactList}\small\item\em CAN\+\_\+identifier\+\_\+type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_can_peli_rx_msg_a54b9c6db149166a1c78c27961a9d746f}{RTR}}
+\begin{DoxyCompactList}\small\item\em Specifies the type of frame for the received message. This parameter can be a value of \mbox{\hyperlink{group___c_a_n___exported___types_ga4e70ade1ffbd9f5baeeebf14308cc530}{Trans\+Frame}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_can_peli_rx_msg_a9e481550369ad4ac608cd1663bb57c25}{DLC}}
+\begin{DoxyCompactList}\small\item\em Specifies the length of the frame that will be received. This parameter can be a value between 0 to 8. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_can_peli_rx_msg_a6034990d61822082d7a4c24398aa756d}{Data}} \mbox{[}8\mbox{]}
+\begin{DoxyCompactList}\small\item\em Contains the data to be received. It ranges from 0 to0x\+FF. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+CAN Rx message structure definition 
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00242}{242}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{struct_can_peli_rx_msg_a6034990d61822082d7a4c24398aa756d}\label{struct_can_peli_rx_msg_a6034990d61822082d7a4c24398aa756d}} 
+\index{CanPeliRxMsg@{CanPeliRxMsg}!Data@{Data}}
+\index{Data@{Data}!CanPeliRxMsg@{CanPeliRxMsg}}
+\doxysubsubsection{\texorpdfstring{Data}{Data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Can\+Peli\+Rx\+Msg\+::\+Data\mbox{[}8\mbox{]}}
+
+
+
+Contains the data to be received. It ranges from 0 to0x\+FF. 
+
+
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00248}{248}} 行定义.
+
+\mbox{\Hypertarget{struct_can_peli_rx_msg_a9e481550369ad4ac608cd1663bb57c25}\label{struct_can_peli_rx_msg_a9e481550369ad4ac608cd1663bb57c25}} 
+\index{CanPeliRxMsg@{CanPeliRxMsg}!DLC@{DLC}}
+\index{DLC@{DLC}!CanPeliRxMsg@{CanPeliRxMsg}}
+\doxysubsubsection{\texorpdfstring{DLC}{DLC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Can\+Peli\+Rx\+Msg\+::\+DLC}
+
+
+
+Specifies the length of the frame that will be received. This parameter can be a value between 0 to 8. 
+
+
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00247}{247}} 行定义.
+
+\mbox{\Hypertarget{struct_can_peli_rx_msg_ab94182f5df18727c946c4a1b2b8c8d65}\label{struct_can_peli_rx_msg_ab94182f5df18727c946c4a1b2b8c8d65}} 
+\index{CanPeliRxMsg@{CanPeliRxMsg}!FF@{FF}}
+\index{FF@{FF}!CanPeliRxMsg@{CanPeliRxMsg}}
+\doxysubsubsection{\texorpdfstring{FF}{FF}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Can\+Peli\+Rx\+Msg\+::\+FF}
+
+
+
+CAN\+\_\+identifier\+\_\+type. 
+
+Specifies the type of identifier for the message that will be received. This parameter can be a value of 
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00244}{244}} 行定义.
+
+\mbox{\Hypertarget{struct_can_peli_rx_msg_a1a4213c71d6667900ca35bbe749ca95b}\label{struct_can_peli_rx_msg_a1a4213c71d6667900ca35bbe749ca95b}} 
+\index{CanPeliRxMsg@{CanPeliRxMsg}!ID@{ID}}
+\index{ID@{ID}!CanPeliRxMsg@{CanPeliRxMsg}}
+\doxysubsubsection{\texorpdfstring{ID}{ID}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} Can\+Peli\+Rx\+Msg\+::\+ID}
+
+
+
+Specifies the extended identifier. This parameter can be a value between 0 to 0x1\+FFFFFFF. 
+
+
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00243}{243}} 行定义.
+
+\mbox{\Hypertarget{struct_can_peli_rx_msg_a54b9c6db149166a1c78c27961a9d746f}\label{struct_can_peli_rx_msg_a54b9c6db149166a1c78c27961a9d746f}} 
+\index{CanPeliRxMsg@{CanPeliRxMsg}!RTR@{RTR}}
+\index{RTR@{RTR}!CanPeliRxMsg@{CanPeliRxMsg}}
+\doxysubsubsection{\texorpdfstring{RTR}{RTR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Can\+Peli\+Rx\+Msg\+::\+RTR}
+
+
+
+Specifies the type of frame for the received message. This parameter can be a value of \mbox{\hyperlink{group___c_a_n___exported___types_ga4e70ade1ffbd9f5baeeebf14308cc530}{Trans\+Frame}}. 
+
+
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00246}{246}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Inc/\mbox{\hyperlink{hal__can_8h}{hal\+\_\+can.\+h}}\end{DoxyCompactItemize}

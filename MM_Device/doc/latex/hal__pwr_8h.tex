@@ -1,0 +1,125 @@
+\hypertarget{hal__pwr_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Inc/hal\+\_\+pwr.h 文件参考}
+\label{hal__pwr_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_pwr.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_pwr.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE PWR FIRMWARE LIBRARY.  
+
+
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}reg\+\_\+pwr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}reg\+\_\+syscfg.\+h\char`\"{}}\newline
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___p_w_r___exported___types_ga4ebf4192e548dd55da09491bde5f8054}{PWR\+\_\+\+PVDLevel\+\_\+1\+V7}}~\mbox{\hyperlink{reg__syscfg_8h_a762838359ec30671531e238997a6ef98}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+1\+V7}}
+\item 
+\#define \mbox{\hyperlink{group___p_w_r___exported___types_ga11ec1e7ff7434d2a747f468269366e30}{PWR\+\_\+\+PVDLevel\+\_\+2\+V0}}~\mbox{\hyperlink{reg__syscfg_8h_a018463e9bba79b36f1d5106606917f35}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+2\+V0}}
+\item 
+\#define \mbox{\hyperlink{group___p_w_r___exported___types_ga561e543dedb4c2cb126ec8d9d604260c}{PWR\+\_\+\+PVDLevel\+\_\+2\+V3}}~\mbox{\hyperlink{reg__syscfg_8h_a54ed275850c99ea3dc17fc519e40fb38}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+2\+V3}}
+\item 
+\#define \mbox{\hyperlink{group___p_w_r___exported___types_ga46174e5288082b59473068a3ca8e8ea6}{PWR\+\_\+\+PVDLevel\+\_\+2\+V6}}~\mbox{\hyperlink{reg__syscfg_8h_ab7658ee7be9b70eeabbcd7bdeec786b2}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+2\+V6}}
+\item 
+\#define \mbox{\hyperlink{group___p_w_r___exported___types_ga9c156a7155f9946c0d3a73794f51a1ce}{PWR\+\_\+\+PVDLevel\+\_\+2\+V9}}~\mbox{\hyperlink{reg__syscfg_8h_ad8aaedefe16864e9a94cac9a6ac86c76}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+2\+V9}}
+\item 
+\#define \mbox{\hyperlink{group___p_w_r___exported___types_ga45e5430446c1dcfecd31416994a1cf52}{PWR\+\_\+\+PVDLevel\+\_\+3\+V2}}~\mbox{\hyperlink{reg__syscfg_8h_a7e4f425f3dfb18663868b86d43cfe64b}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+3\+V2}}
+\item 
+\#define \mbox{\hyperlink{group___p_w_r___exported___types_gaf4022ae1510ac9b6f651eafc1ceac814}{PWR\+\_\+\+PVDLevel\+\_\+3\+V5}}~\mbox{\hyperlink{reg__syscfg_8h_afa21b7a7a8f82448e089fb83db09190c}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+3\+V5}}
+\item 
+\#define \mbox{\hyperlink{group___p_w_r___exported___types_ga1fabcc8aef1384bdeaff162517fcba0f}{PWR\+\_\+\+PVDLevel\+\_\+3\+V8}}~\mbox{\hyperlink{reg__syscfg_8h_a10e75a16efaf9e7f404d968ecd728914}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+3\+V8}}
+\item 
+\#define \mbox{\hyperlink{group___p_w_r___exported___types_ga953d36f617686cdfc7d0ad3a25209a14}{PWR\+\_\+\+PVDLevel\+\_\+4\+V1}}~\mbox{\hyperlink{reg__syscfg_8h_a7399e6104a0be590b5f1c63b5b60618c}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+4\+V1}}
+\item 
+\#define \mbox{\hyperlink{group___p_w_r___exported___types_gabc32303119ebec373b21b9171120d4e4}{PWR\+\_\+\+PVDLevel\+\_\+4\+V4}}~\mbox{\hyperlink{reg__syscfg_8h_a361ce5abcb17318141adbf1d7883f616}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+4\+V4}}
+\item 
+\#define \mbox{\hyperlink{group___p_w_r___exported___types_gaaa0ea7aab9c40c2275d54fed0e50bc84}{PWR\+\_\+\+PVDLevel\+\_\+4\+V7}}~\mbox{\hyperlink{reg__syscfg_8h_a44811ac264275ddfb337e4aab8ffba05}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+4\+V7}}
+\item 
+\#define \mbox{\hyperlink{group___p_w_r___exported___variables_ga3de33738fd3c7e77bffbcfaefc3e7645}{GLOBAL}}~extern
+\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___p_w_r___exported___types_ga8a3ee125c096dff610dd319ba2feb737}{em\+WUP\+\_\+\+Pin\+\_\+\+Typedef}} \{ \newline
+\mbox{\hyperlink{group___p_w_r___exported___types_gga8a3ee125c096dff610dd319ba2feb737af70f3c9d3b44e0085451ccc433d0bea7}{em\+WUP\+\_\+\+Pin1}} = 0
+, \mbox{\hyperlink{group___p_w_r___exported___types_gga8a3ee125c096dff610dd319ba2feb737a9c254bde2d5fe799b776ae162a9a6f28}{em\+WUP\+\_\+\+Pin2}} = 1
+, \mbox{\hyperlink{group___p_w_r___exported___types_gga8a3ee125c096dff610dd319ba2feb737a10f31130ee30895e3fd4d21fabdc198b}{em\+WUP\+\_\+\+Pin3}}
+, \mbox{\hyperlink{group___p_w_r___exported___types_gga8a3ee125c096dff610dd319ba2feb737a3735a264aa9018e0b46dad047169b19d}{em\+WUP\+\_\+\+Pin4}}
+, \newline
+\mbox{\hyperlink{group___p_w_r___exported___types_gga8a3ee125c096dff610dd319ba2feb737a517d15eb62e4720bf17286baf7ef049e}{em\+WUP\+\_\+\+Pin5}}
+, \mbox{\hyperlink{group___p_w_r___exported___types_gga8a3ee125c096dff610dd319ba2feb737adfcd9557afbb4bff4b5cdd4e46b039b4}{em\+WUP\+\_\+\+Pin6}}
+ \}
+\item 
+enum \mbox{\hyperlink{group___p_w_r___exported___types_gac427c07ca3dda23389ab60ed004f98d9}{em\+PVD\+\_\+\+Level\+\_\+\+Typedef}} \{ \newline
+\mbox{\hyperlink{group___p_w_r___exported___types_ggac427c07ca3dda23389ab60ed004f98d9a4b7dc6e24e2de2100ae5df36ab835d49}{em\+PVD\+\_\+\+LEVEL0}} = SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+1\+V7
+, \mbox{\hyperlink{group___p_w_r___exported___types_ggac427c07ca3dda23389ab60ed004f98d9ac4f52728d94508f388e3100b7d950a50}{em\+PVD\+\_\+\+LEVEL1}} = SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+2\+V0
+, \mbox{\hyperlink{group___p_w_r___exported___types_ggac427c07ca3dda23389ab60ed004f98d9a463fdfe2a7c148ab4e2ad9ae00a69564}{em\+PVD\+\_\+\+LEVEL2}} = SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+2\+V3
+, \mbox{\hyperlink{group___p_w_r___exported___types_ggac427c07ca3dda23389ab60ed004f98d9a0df4640e914898d09deb142387fe282b}{em\+PVD\+\_\+\+LEVEL3}} = SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+2\+V6
+, \newline
+\mbox{\hyperlink{group___p_w_r___exported___types_ggac427c07ca3dda23389ab60ed004f98d9a3f80e59c4f0ca71f8c31777dc69fe93e}{em\+PVD\+\_\+\+LEVEL4}} = SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+2\+V9
+, \mbox{\hyperlink{group___p_w_r___exported___types_ggac427c07ca3dda23389ab60ed004f98d9a2c55625b9d45d5059a414994d73e2ff9}{em\+PVD\+\_\+\+LEVEL5}} = SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+3\+V2
+, \mbox{\hyperlink{group___p_w_r___exported___types_ggac427c07ca3dda23389ab60ed004f98d9ace65a3e4940339cd79c47d4cb7762406}{em\+PVD\+\_\+\+LEVEL6}} = SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+3\+V5
+, \mbox{\hyperlink{group___p_w_r___exported___types_ggac427c07ca3dda23389ab60ed004f98d9a62b4063f5866889a3c2035b7b904236b}{em\+PVD\+\_\+\+LEVEL7}} = SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+3\+V8
+, \newline
+\mbox{\hyperlink{group___p_w_r___exported___types_ggac427c07ca3dda23389ab60ed004f98d9a7d72fe1c653106a966dd90ccf73489b4}{em\+PVD\+\_\+\+LEVEL8}} = SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+4\+V1
+, \mbox{\hyperlink{group___p_w_r___exported___types_ggac427c07ca3dda23389ab60ed004f98d9a31d0274dbcd414b0ce4149147d891b8f}{em\+PVD\+\_\+\+LEVEL9}} = SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+4\+V4
+, \mbox{\hyperlink{group___p_w_r___exported___types_ggac427c07ca3dda23389ab60ed004f98d9ab841df88d2ef114a847a8afe630444b2}{em\+PVD\+\_\+\+LEVEL10}} = SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+4\+V7
+ \}
+\begin{DoxyCompactList}\small\item\em PVD\+\_\+detection\+\_\+level \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___p_w_r___exported___types_ga4ee40bcbad76fea558842b351bc5d37f}{em\+PWR\+\_\+\+Reg\+\_\+\+Stop\+\_\+mode\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___p_w_r___exported___types_gga4ee40bcbad76fea558842b351bc5d37fab1f3f0ec4c48982c569ab687b0257977}{PWR\+\_\+\+Regulator\+\_\+\+ON}} = 0x00000000
+, \mbox{\hyperlink{group___p_w_r___exported___types_gga4ee40bcbad76fea558842b351bc5d37fab47c444f59ceafed670356ff781bab3c}{PWR\+\_\+\+Regulator\+\_\+\+Low\+Power}} = 0x00000001
+ \}
+\begin{DoxyCompactList}\small\item\em Regulator\+\_\+state\+\_\+is\+\_\+\+STOP\+\_\+mode \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___p_w_r___exported___types_gaae72de7edd29fb153afdb2608728474d}{em\+PWR\+\_\+\+STOP\+\_\+\+Mode\+En\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___p_w_r___exported___types_ggaae72de7edd29fb153afdb2608728474da160ae65e723e72e07ffb36b076aa9838}{PWR\+\_\+\+STOPEntry\+\_\+\+WFI}} = 0x00000001
+, \mbox{\hyperlink{group___p_w_r___exported___types_ggaae72de7edd29fb153afdb2608728474da22293b285b1fc2248ea251f599018a2c}{PWR\+\_\+\+STOPEntry\+\_\+\+WFE}} = 0x00000002
+ \}
+\begin{DoxyCompactList}\small\item\em STOP\+\_\+mode\+\_\+entry \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___p_w_r___exported___types_ga8b0cbdeb0f9635d827e64e6205849353}{em\+PWR\+\_\+\+LP\+\_\+\+Mode\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___p_w_r___exported___types_gga8b0cbdeb0f9635d827e64e6205849353abaffac446de24e9ddc4066a6f0858e0c}{LP\+\_\+\+STOP\+\_\+\+MODE}} = 0
+, \mbox{\hyperlink{group___p_w_r___exported___types_gga8b0cbdeb0f9635d827e64e6205849353a6c8362ed4e333b36aea475fc27bb9a87}{LP\+\_\+\+SLEEP\+\_\+\+MODE}} = 1
+, \mbox{\hyperlink{group___p_w_r___exported___types_gga8b0cbdeb0f9635d827e64e6205849353a96d52a50e3e220a9c2b93e2c41e27628}{LP\+\_\+\+STANDBY\+\_\+\+MODE}} = 2
+ \}
+\begin{DoxyCompactList}\small\item\em Low Power Mode \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___p_w_r___exported___types_ga105257a7af6bf6fdb628bd651bdc6b7f}{em\+PWR\+\_\+\+Wait\+\_\+\+Mode\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___p_w_r___exported___types_gga105257a7af6bf6fdb628bd651bdc6b7fa7e3ea6a224e6c5f469d9ce0bd708f3aa}{LP\+\_\+\+WFI}}
+, \mbox{\hyperlink{group___p_w_r___exported___types_gga105257a7af6bf6fdb628bd651bdc6b7fa04d4d073435bd5d045ed50468d541932}{LP\+\_\+\+WFE}}
+ \}
+\begin{DoxyCompactList}\small\item\em Wait\+\_\+for\+\_\+mode \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___p_w_r___exported___functions_gad03a0aac7bc3bc3a9fd012f3769a6990}{PWR\+\_\+\+De\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes the PWR peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___p_w_r___exported___functions_gae2eff9578fadfd85912aec19069cf8bf}{PWR\+\_\+\+Backup\+Access\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables access to the RTC and backup registers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___p_w_r___exported___functions_gaa211e4b10afd5881233b7f5f74540f1a}{PWR\+\_\+\+PVDCmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Power Voltage Detector(\+PVD). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___p_w_r___exported___functions_ga3833bb772fae7bba52750786b097dfc6}{PWR\+\_\+\+PVDLevel\+Config}} (\mbox{\hyperlink{group___p_w_r___exported___types_gac427c07ca3dda23389ab60ed004f98d9}{em\+PVD\+\_\+\+Level\+\_\+\+Typedef}} pvd\+\_\+level)
+\begin{DoxyCompactList}\small\item\em Configures the voltage threshold detected by the Power Voltage Detector(\+PVD). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___p_w_r___exported___functions_gab41dba96a770ff4ea02b3b440ae92a91}{PWR\+\_\+\+Wake\+Up\+Pin\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Wake\+Up Pin functionality. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___p_w_r___exported___functions_ga9bf6928eb09403e960cb6a1bd361bcf5}{PWR\+\_\+\+Enter\+STOPMode}} (\mbox{\hyperlink{group___p_w_r___exported___types_ga4ee40bcbad76fea558842b351bc5d37f}{em\+PWR\+\_\+\+Reg\+\_\+\+Stop\+\_\+mode\+\_\+\+Typedef}} regulator, \mbox{\hyperlink{group___p_w_r___exported___types_gaae72de7edd29fb153afdb2608728474d}{em\+PWR\+\_\+\+STOP\+\_\+\+Mode\+En\+\_\+\+Typedef}} stop\+\_\+entry)
+\begin{DoxyCompactList}\small\item\em Enters STOP mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___p_w_r___exported___functions_ga00ddae00a9c327b81b24d2597b0052f3}{PWR\+\_\+\+Enter\+STANDBYMode}} (void)
+\begin{DoxyCompactList}\small\item\em Enters STANDBY mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___p_w_r___exported___functions_ga635227b2d1225d815e2d10f0dff68c49}{PWR\+\_\+\+Clear\+Flag}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)
+\begin{DoxyCompactList}\small\item\em Clears the PWR\textquotesingle{}s pending flags. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___p_w_r___exported___functions_ga28c2352270def8931a00c3e281905755}{PWR\+\_\+\+Get\+Flag\+Status}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified PWR flag is set or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___p_w_r___exported___functions_ga51597d0a03c890acc07621ab0d13db17}{PWR\+\_\+\+Get\+PVDOFlag\+Status}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} flag)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified PWR flag is set or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___p_w_r___exported___functions_gabe38055df9883fdd11f31aadfae6b76d}{ex\+PWR\+\_\+\+Enter\+Low\+Power\+Mode}} (\mbox{\hyperlink{group___p_w_r___exported___types_ga8b0cbdeb0f9635d827e64e6205849353}{em\+PWR\+\_\+\+LP\+\_\+\+Mode\+\_\+\+Typedef}} lp\+\_\+mode, \mbox{\hyperlink{group___p_w_r___exported___types_ga105257a7af6bf6fdb628bd651bdc6b7f}{em\+PWR\+\_\+\+Wait\+\_\+\+Mode\+\_\+\+Typedef}} wait\+\_\+mode)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE PWR FIRMWARE LIBRARY. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{hal__pwr_8h_source}{hal\+\_\+pwr.\+h}} 中定义.
+

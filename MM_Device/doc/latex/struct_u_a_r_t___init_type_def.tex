@@ -1,0 +1,251 @@
+\hypertarget{struct_u_a_r_t___init_type_def}{}\doxysection{UART\+\_\+\+Init\+Type\+Def结构体 参考}
+\label{struct_u_a_r_t___init_type_def}\index{UART\_InitTypeDef@{UART\_InitTypeDef}}
+
+
+UART Init Structure definition  
+
+
+
+
+{\ttfamily \#include $<$hal\+\_\+uart.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___init_type_def_aa0bd678303495d6792b60a794eeb750a}{BaudRate}}\\
+\>\>{\em This member configures the UART communication baud rate. }\\
+\>\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___init_type_def_a7dc252f67ecba10b94cf9619df8076bf}{UART\_BaudRate}}\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{group___u_a_r_t___exported___types_ga2680013e3731f208fc48bbdfff25ca8d}{UART\_WordLength\_TypeDef}} \mbox{\hyperlink{struct_u_a_r_t___init_type_def_a423d089031f9fca367a287ae943c67fc}{WordLength}}\\
+\>\>{\em Specifies the number of data bits transmitted or received in a frame. }\\
+\>\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{struct_u_a_r_t___init_type_def_a5abe7e49bf6c7faf59f341c6da5db666}{UART\_WordLength}}\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{group___u_a_r_t___exported___types_ga6321b7a7eb58130cd69a001d3fccc861}{UART\_Stop\_Bits\_TypeDef}} \mbox{\hyperlink{struct_u_a_r_t___init_type_def_a3d0a4447fdb5625fc32a08825c478a8c}{StopBits}}\\
+\>\>{\em Specifies the number of stop bits transmitted. }\\
+\>\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{struct_u_a_r_t___init_type_def_a5adcd67031ce2975e1eeedc2a899b3ac}{UART\_StopBits}}\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{group___u_a_r_t___exported___types_gac58d0be24a1a8be355be3e5e6c8ba83f}{UART\_Parity\_TypeDef}} \mbox{\hyperlink{struct_u_a_r_t___init_type_def_a683d50b0139e8ca3a17c35608350a505}{Parity}}\\
+\>\>{\em Specifies the parity mode. }\\
+\>\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{struct_u_a_r_t___init_type_def_a15e5c0f6f2b4795ad0d8ef87879b7f3c}{UART\_Parity}}\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{struct_u_a_r_t___init_type_def_a517b98d15982901f7efd3b113eeb5490}{Mode}}\\
+\>\>{\em Specifies wether the Receive or Transmit mode is }\\
+\>\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{struct_u_a_r_t___init_type_def_a2f174c01cf0b91f19450c1ef1a9939d6}{UART\_Mode}}\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{group___u_a_r_t___exported___types_ga5ade294c2e8895699b615a299e0b91be}{UART\_HW\_FLOWCONTROL\_TypeDef}} \mbox{\hyperlink{struct_u_a_r_t___init_type_def_a08e4758c9353efad653a8d0d1326a824}{HWFlowControl}}\\
+\>\>{\em Specifies wether the hardware flow control mode is enabled or disabled. }\\
+\>\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{struct_u_a_r_t___init_type_def_adeb663184d8840d3d4609472761d58e4}{UART\_HardwareFlowControl}}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+UART Init Structure definition 
+
+在文件 \mbox{\hyperlink{hal__uart_8h_source}{hal\+\_\+uart.\+h}} 第 \mbox{\hyperlink{hal__uart_8h_source_l00122}{122}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{struct_u_a_r_t___init_type_def_a12b96e9464120bdc7203a62602038410}\label{struct_u_a_r_t___init_type_def_a12b96e9464120bdc7203a62602038410}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  UART\+\_\+\+Init\+Type\+Def\+::@73}
+
+\mbox{\Hypertarget{struct_u_a_r_t___init_type_def_a2a8e5003da102061a27f73e40f4ce10d}\label{struct_u_a_r_t___init_type_def_a2a8e5003da102061a27f73e40f4ce10d}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  UART\+\_\+\+Init\+Type\+Def\+::@75}
+
+\mbox{\Hypertarget{struct_u_a_r_t___init_type_def_a5a0de41d23a46b43d4e8462020ac62a1}\label{struct_u_a_r_t___init_type_def_a5a0de41d23a46b43d4e8462020ac62a1}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  UART\+\_\+\+Init\+Type\+Def\+::@77}
+
+\mbox{\Hypertarget{struct_u_a_r_t___init_type_def_aa2f4f3a8a5c754049f360dc252c8dbe5}\label{struct_u_a_r_t___init_type_def_aa2f4f3a8a5c754049f360dc252c8dbe5}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  UART\+\_\+\+Init\+Type\+Def\+::@79}
+
+\mbox{\Hypertarget{struct_u_a_r_t___init_type_def_ab763f94e6210127608800bbd1c71bfd5}\label{struct_u_a_r_t___init_type_def_ab763f94e6210127608800bbd1c71bfd5}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  UART\+\_\+\+Init\+Type\+Def\+::@81}
+
+\mbox{\Hypertarget{struct_u_a_r_t___init_type_def_a5b23689b88a326c5d0fb97cd72c4dc10}\label{struct_u_a_r_t___init_type_def_a5b23689b88a326c5d0fb97cd72c4dc10}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  UART\+\_\+\+Init\+Type\+Def\+::@83}
+
+\mbox{\Hypertarget{struct_u_a_r_t___init_type_def_aa0bd678303495d6792b60a794eeb750a}\label{struct_u_a_r_t___init_type_def_aa0bd678303495d6792b60a794eeb750a}} 
+\index{UART\_InitTypeDef@{UART\_InitTypeDef}!BaudRate@{BaudRate}}
+\index{BaudRate@{BaudRate}!UART\_InitTypeDef@{UART\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{BaudRate}{BaudRate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} UART\+\_\+\+Init\+Type\+Def\+::\+Baud\+Rate}
+
+
+
+This member configures the UART communication baud rate. 
+
+
+
+在文件 \mbox{\hyperlink{hal__uart_8h_source}{hal\+\_\+uart.\+h}} 第 \mbox{\hyperlink{hal__uart_8h_source_l00124}{124}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___init_type_def_a08e4758c9353efad653a8d0d1326a824}\label{struct_u_a_r_t___init_type_def_a08e4758c9353efad653a8d0d1326a824}} 
+\index{UART\_InitTypeDef@{UART\_InitTypeDef}!HWFlowControl@{HWFlowControl}}
+\index{HWFlowControl@{HWFlowControl}!UART\_InitTypeDef@{UART\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{HWFlowControl}{HWFlowControl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___u_a_r_t___exported___types_ga5ade294c2e8895699b615a299e0b91be}{UART\+\_\+\+HW\+\_\+\+FLOWCONTROL\+\_\+\+Type\+Def}} UART\+\_\+\+Init\+Type\+Def\+::\+HWFlow\+Control}
+
+
+
+Specifies wether the hardware flow control mode is enabled or disabled. 
+
+
+
+在文件 \mbox{\hyperlink{hal__uart_8h_source}{hal\+\_\+uart.\+h}} 第 \mbox{\hyperlink{hal__uart_8h_source_l00144}{144}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___init_type_def_a517b98d15982901f7efd3b113eeb5490}\label{struct_u_a_r_t___init_type_def_a517b98d15982901f7efd3b113eeb5490}} 
+\index{UART\_InitTypeDef@{UART\_InitTypeDef}!Mode@{Mode}}
+\index{Mode@{Mode}!UART\_InitTypeDef@{UART\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{Mode}{Mode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} UART\+\_\+\+Init\+Type\+Def\+::\+Mode}
+
+
+
+Specifies wether the Receive or Transmit mode is 
+
+
+
+在文件 \mbox{\hyperlink{hal__uart_8h_source}{hal\+\_\+uart.\+h}} 第 \mbox{\hyperlink{hal__uart_8h_source_l00140}{140}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___init_type_def_a683d50b0139e8ca3a17c35608350a505}\label{struct_u_a_r_t___init_type_def_a683d50b0139e8ca3a17c35608350a505}} 
+\index{UART\_InitTypeDef@{UART\_InitTypeDef}!Parity@{Parity}}
+\index{Parity@{Parity}!UART\_InitTypeDef@{UART\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{Parity}{Parity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___u_a_r_t___exported___types_gac58d0be24a1a8be355be3e5e6c8ba83f}{UART\+\_\+\+Parity\+\_\+\+Type\+Def}} UART\+\_\+\+Init\+Type\+Def\+::\+Parity}
+
+
+
+Specifies the parity mode. 
+
+
+
+在文件 \mbox{\hyperlink{hal__uart_8h_source}{hal\+\_\+uart.\+h}} 第 \mbox{\hyperlink{hal__uart_8h_source_l00136}{136}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___init_type_def_a3d0a4447fdb5625fc32a08825c478a8c}\label{struct_u_a_r_t___init_type_def_a3d0a4447fdb5625fc32a08825c478a8c}} 
+\index{UART\_InitTypeDef@{UART\_InitTypeDef}!StopBits@{StopBits}}
+\index{StopBits@{StopBits}!UART\_InitTypeDef@{UART\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{StopBits}{StopBits}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___u_a_r_t___exported___types_ga6321b7a7eb58130cd69a001d3fccc861}{UART\+\_\+\+Stop\+\_\+\+Bits\+\_\+\+Type\+Def}} UART\+\_\+\+Init\+Type\+Def\+::\+Stop\+Bits}
+
+
+
+Specifies the number of stop bits transmitted. 
+
+
+
+在文件 \mbox{\hyperlink{hal__uart_8h_source}{hal\+\_\+uart.\+h}} 第 \mbox{\hyperlink{hal__uart_8h_source_l00132}{132}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___init_type_def_a7dc252f67ecba10b94cf9619df8076bf}\label{struct_u_a_r_t___init_type_def_a7dc252f67ecba10b94cf9619df8076bf}} 
+\index{UART\_InitTypeDef@{UART\_InitTypeDef}!UART\_BaudRate@{UART\_BaudRate}}
+\index{UART\_BaudRate@{UART\_BaudRate}!UART\_InitTypeDef@{UART\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{UART\_BaudRate}{UART\_BaudRate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} UART\+\_\+\+Init\+Type\+Def\+::\+UART\+\_\+\+Baud\+Rate}
+
+
+
+在文件 \mbox{\hyperlink{hal__uart_8h_source}{hal\+\_\+uart.\+h}} 第 \mbox{\hyperlink{hal__uart_8h_source_l00125}{125}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___init_type_def_adeb663184d8840d3d4609472761d58e4}\label{struct_u_a_r_t___init_type_def_adeb663184d8840d3d4609472761d58e4}} 
+\index{UART\_InitTypeDef@{UART\_InitTypeDef}!UART\_HardwareFlowControl@{UART\_HardwareFlowControl}}
+\index{UART\_HardwareFlowControl@{UART\_HardwareFlowControl}!UART\_InitTypeDef@{UART\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{UART\_HardwareFlowControl}{UART\_HardwareFlowControl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} UART\+\_\+\+Init\+Type\+Def\+::\+UART\+\_\+\+Hardware\+Flow\+Control}
+
+
+
+在文件 \mbox{\hyperlink{hal__uart_8h_source}{hal\+\_\+uart.\+h}} 第 \mbox{\hyperlink{hal__uart_8h_source_l00145}{145}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___init_type_def_a2f174c01cf0b91f19450c1ef1a9939d6}\label{struct_u_a_r_t___init_type_def_a2f174c01cf0b91f19450c1ef1a9939d6}} 
+\index{UART\_InitTypeDef@{UART\_InitTypeDef}!UART\_Mode@{UART\_Mode}}
+\index{UART\_Mode@{UART\_Mode}!UART\_InitTypeDef@{UART\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{UART\_Mode}{UART\_Mode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} UART\+\_\+\+Init\+Type\+Def\+::\+UART\+\_\+\+Mode}
+
+
+
+在文件 \mbox{\hyperlink{hal__uart_8h_source}{hal\+\_\+uart.\+h}} 第 \mbox{\hyperlink{hal__uart_8h_source_l00141}{141}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___init_type_def_a15e5c0f6f2b4795ad0d8ef87879b7f3c}\label{struct_u_a_r_t___init_type_def_a15e5c0f6f2b4795ad0d8ef87879b7f3c}} 
+\index{UART\_InitTypeDef@{UART\_InitTypeDef}!UART\_Parity@{UART\_Parity}}
+\index{UART\_Parity@{UART\_Parity}!UART\_InitTypeDef@{UART\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{UART\_Parity}{UART\_Parity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} UART\+\_\+\+Init\+Type\+Def\+::\+UART\+\_\+\+Parity}
+
+
+
+在文件 \mbox{\hyperlink{hal__uart_8h_source}{hal\+\_\+uart.\+h}} 第 \mbox{\hyperlink{hal__uart_8h_source_l00137}{137}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___init_type_def_a5adcd67031ce2975e1eeedc2a899b3ac}\label{struct_u_a_r_t___init_type_def_a5adcd67031ce2975e1eeedc2a899b3ac}} 
+\index{UART\_InitTypeDef@{UART\_InitTypeDef}!UART\_StopBits@{UART\_StopBits}}
+\index{UART\_StopBits@{UART\_StopBits}!UART\_InitTypeDef@{UART\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{UART\_StopBits}{UART\_StopBits}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} UART\+\_\+\+Init\+Type\+Def\+::\+UART\+\_\+\+Stop\+Bits}
+
+
+
+在文件 \mbox{\hyperlink{hal__uart_8h_source}{hal\+\_\+uart.\+h}} 第 \mbox{\hyperlink{hal__uart_8h_source_l00133}{133}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___init_type_def_a5abe7e49bf6c7faf59f341c6da5db666}\label{struct_u_a_r_t___init_type_def_a5abe7e49bf6c7faf59f341c6da5db666}} 
+\index{UART\_InitTypeDef@{UART\_InitTypeDef}!UART\_WordLength@{UART\_WordLength}}
+\index{UART\_WordLength@{UART\_WordLength}!UART\_InitTypeDef@{UART\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{UART\_WordLength}{UART\_WordLength}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} UART\+\_\+\+Init\+Type\+Def\+::\+UART\+\_\+\+Word\+Length}
+
+
+
+在文件 \mbox{\hyperlink{hal__uart_8h_source}{hal\+\_\+uart.\+h}} 第 \mbox{\hyperlink{hal__uart_8h_source_l00129}{129}} 行定义.
+
+\mbox{\Hypertarget{struct_u_a_r_t___init_type_def_a423d089031f9fca367a287ae943c67fc}\label{struct_u_a_r_t___init_type_def_a423d089031f9fca367a287ae943c67fc}} 
+\index{UART\_InitTypeDef@{UART\_InitTypeDef}!WordLength@{WordLength}}
+\index{WordLength@{WordLength}!UART\_InitTypeDef@{UART\_InitTypeDef}}
+\doxysubsubsection{\texorpdfstring{WordLength}{WordLength}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___u_a_r_t___exported___types_ga2680013e3731f208fc48bbdfff25ca8d}{UART\+\_\+\+Word\+Length\+\_\+\+Type\+Def}} UART\+\_\+\+Init\+Type\+Def\+::\+Word\+Length}
+
+
+
+Specifies the number of data bits transmitted or received in a frame. 
+
+
+
+在文件 \mbox{\hyperlink{hal__uart_8h_source}{hal\+\_\+uart.\+h}} 第 \mbox{\hyperlink{hal__uart_8h_source_l00128}{128}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Inc/\mbox{\hyperlink{hal__uart_8h}{hal\+\_\+uart.\+h}}\end{DoxyCompactItemize}

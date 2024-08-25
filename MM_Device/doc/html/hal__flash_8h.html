@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>template: C:/Users/XerolySkinner/Desktop/MM_Device/MM32F327x/HAL_Lib/Inc/hal_flash.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">template
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8a23370bd962f2be3cb202251f8a0865.html">MM32F327x</a></li><li class="navelem"><a class="el" href="dir_3b1bed74bcb45e4245a73e66928ea90d.html">HAL_Lib</a></li><li class="navelem"><a class="el" href="dir_d0c94a65a7731bb943335e05fa4de4c7.html">Inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">hal_flash.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE FLASH FIRMWARE LIBRARY.  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="types_8h_source.html">types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="reg__common_8h_source.html">reg_common.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="reg__flash_8h_source.html">reg_flash.h</a>&quot;</code><br />
+</div>
+<p><a href="hal__flash_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ga34ec82060edcc9a18bf804b07dec5881"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga34ec82060edcc9a18bf804b07dec5881">RDP_Key</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>)0x00A5)</td></tr>
+<tr class="separator:ga34ec82060edcc9a18bf804b07dec5881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd77e7bf91765d891ce63e2f0084b019"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#gafd77e7bf91765d891ce63e2f0084b019">FLASH_KEY1</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x45670123)</td></tr>
+<tr class="separator:gafd77e7bf91765d891ce63e2f0084b019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee83d0f557e158da52f4a205db6b60a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#gaee83d0f557e158da52f4a205db6b60a7">FLASH_KEY2</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0xCDEF89AB)</td></tr>
+<tr class="separator:gaee83d0f557e158da52f4a205db6b60a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62b5515e9a29a487adcc30a88d082244"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga62b5515e9a29a487adcc30a88d082244">EraseTimeout</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000FFF)</td></tr>
+<tr class="separator:ga62b5515e9a29a487adcc30a88d082244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0794a43966b6084d28d13c651c739385"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga0794a43966b6084d28d13c651c739385">ProgramTimeout</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x0000000F)</td></tr>
+<tr class="separator:ga0794a43966b6084d28d13c651c739385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5c6f6155e4ebae0978a3d2a0d991e68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#gac5c6f6155e4ebae0978a3d2a0d991e68">FLASH_WRProt_Pages0to3</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000001)</td></tr>
+<tr class="memdesc:gac5c6f6155e4ebae0978a3d2a0d991e68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 0 to 3  <a href="group___f_l_a_s_h___exported___constants.html#gac5c6f6155e4ebae0978a3d2a0d991e68">更多...</a><br /></td></tr>
+<tr class="separator:gac5c6f6155e4ebae0978a3d2a0d991e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b33c4de30c55331e7e60c0795c824ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga1b33c4de30c55331e7e60c0795c824ad">FLASH_WRProt_Pages4to7</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000002)</td></tr>
+<tr class="memdesc:ga1b33c4de30c55331e7e60c0795c824ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 4 to 7  <a href="group___f_l_a_s_h___exported___constants.html#ga1b33c4de30c55331e7e60c0795c824ad">更多...</a><br /></td></tr>
+<tr class="separator:ga1b33c4de30c55331e7e60c0795c824ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7eca7a8b11accdd6dadf3445847e1a57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga7eca7a8b11accdd6dadf3445847e1a57">FLASH_WRProt_Pages8to11</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000004)</td></tr>
+<tr class="memdesc:ga7eca7a8b11accdd6dadf3445847e1a57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 8 to 11  <a href="group___f_l_a_s_h___exported___constants.html#ga7eca7a8b11accdd6dadf3445847e1a57">更多...</a><br /></td></tr>
+<tr class="separator:ga7eca7a8b11accdd6dadf3445847e1a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa02b9439f75982e2e1c14f8af9a8c091"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#gaa02b9439f75982e2e1c14f8af9a8c091">FLASH_WRProt_Pages12to15</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000008)</td></tr>
+<tr class="memdesc:gaa02b9439f75982e2e1c14f8af9a8c091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 12 to 15  <a href="group___f_l_a_s_h___exported___constants.html#gaa02b9439f75982e2e1c14f8af9a8c091">更多...</a><br /></td></tr>
+<tr class="separator:gaa02b9439f75982e2e1c14f8af9a8c091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa589ce30909c3a9a0bffc8a59b6013fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#gaa589ce30909c3a9a0bffc8a59b6013fb">FLASH_WRProt_Pages16to19</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000010)</td></tr>
+<tr class="memdesc:gaa589ce30909c3a9a0bffc8a59b6013fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 16 to 19  <a href="group___f_l_a_s_h___exported___constants.html#gaa589ce30909c3a9a0bffc8a59b6013fb">更多...</a><br /></td></tr>
+<tr class="separator:gaa589ce30909c3a9a0bffc8a59b6013fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga537e0f85899e13ca2ed93455e537d950"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga537e0f85899e13ca2ed93455e537d950">FLASH_WRProt_Pages20to23</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000020)</td></tr>
+<tr class="memdesc:ga537e0f85899e13ca2ed93455e537d950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 20 to 23  <a href="group___f_l_a_s_h___exported___constants.html#ga537e0f85899e13ca2ed93455e537d950">更多...</a><br /></td></tr>
+<tr class="separator:ga537e0f85899e13ca2ed93455e537d950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d6b94b48e0dd21949139267b90a08ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga1d6b94b48e0dd21949139267b90a08ef">FLASH_WRProt_Pages24to27</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000040)</td></tr>
+<tr class="memdesc:ga1d6b94b48e0dd21949139267b90a08ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 24 to 27  <a href="group___f_l_a_s_h___exported___constants.html#ga1d6b94b48e0dd21949139267b90a08ef">更多...</a><br /></td></tr>
+<tr class="separator:ga1d6b94b48e0dd21949139267b90a08ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga800860d071cfb40b1b0e94111a0cb549"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga800860d071cfb40b1b0e94111a0cb549">FLASH_WRProt_Pages28to31</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000080)</td></tr>
+<tr class="memdesc:ga800860d071cfb40b1b0e94111a0cb549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 28 to 31  <a href="group___f_l_a_s_h___exported___constants.html#ga800860d071cfb40b1b0e94111a0cb549">更多...</a><br /></td></tr>
+<tr class="separator:ga800860d071cfb40b1b0e94111a0cb549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga81a4250850e5fe7c251365cc22839a96"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga81a4250850e5fe7c251365cc22839a96">FLASH_WRProt_Pages32to35</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000100)</td></tr>
+<tr class="memdesc:ga81a4250850e5fe7c251365cc22839a96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 32 to 35  <a href="group___f_l_a_s_h___exported___constants.html#ga81a4250850e5fe7c251365cc22839a96">更多...</a><br /></td></tr>
+<tr class="separator:ga81a4250850e5fe7c251365cc22839a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga783f47425af52b9a12914520d9ee175e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga783f47425af52b9a12914520d9ee175e">FLASH_WRProt_Pages36to39</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000200)</td></tr>
+<tr class="memdesc:ga783f47425af52b9a12914520d9ee175e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 36 to 39  <a href="group___f_l_a_s_h___exported___constants.html#ga783f47425af52b9a12914520d9ee175e">更多...</a><br /></td></tr>
+<tr class="separator:ga783f47425af52b9a12914520d9ee175e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30798723c36db2b8145b6a5c8ffafded"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga30798723c36db2b8145b6a5c8ffafded">FLASH_WRProt_Pages40to43</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000400)</td></tr>
+<tr class="memdesc:ga30798723c36db2b8145b6a5c8ffafded"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 40 to 43  <a href="group___f_l_a_s_h___exported___constants.html#ga30798723c36db2b8145b6a5c8ffafded">更多...</a><br /></td></tr>
+<tr class="separator:ga30798723c36db2b8145b6a5c8ffafded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa2d897455d5f71c9fd3721d49b3578fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#gaa2d897455d5f71c9fd3721d49b3578fc">FLASH_WRProt_Pages44to47</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00000800)</td></tr>
+<tr class="memdesc:gaa2d897455d5f71c9fd3721d49b3578fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 44 to 47  <a href="group___f_l_a_s_h___exported___constants.html#gaa2d897455d5f71c9fd3721d49b3578fc">更多...</a><br /></td></tr>
+<tr class="separator:gaa2d897455d5f71c9fd3721d49b3578fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6bb79080cb276b330499f26c706048e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#gac6bb79080cb276b330499f26c706048e">FLASH_WRProt_Pages48to51</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00001000)</td></tr>
+<tr class="memdesc:gac6bb79080cb276b330499f26c706048e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 48 to 51  <a href="group___f_l_a_s_h___exported___constants.html#gac6bb79080cb276b330499f26c706048e">更多...</a><br /></td></tr>
+<tr class="separator:gac6bb79080cb276b330499f26c706048e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab5beefbfebf060f71421995f3c7a6418"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#gab5beefbfebf060f71421995f3c7a6418">FLASH_WRProt_Pages52to55</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00002000)</td></tr>
+<tr class="memdesc:gab5beefbfebf060f71421995f3c7a6418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 52 to 55  <a href="group___f_l_a_s_h___exported___constants.html#gab5beefbfebf060f71421995f3c7a6418">更多...</a><br /></td></tr>
+<tr class="separator:gab5beefbfebf060f71421995f3c7a6418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3705c210feeeb63c31976495c0b851f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga3705c210feeeb63c31976495c0b851f1">FLASH_WRProt_Pages56to59</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00004000)</td></tr>
+<tr class="memdesc:ga3705c210feeeb63c31976495c0b851f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 56 to 59  <a href="group___f_l_a_s_h___exported___constants.html#ga3705c210feeeb63c31976495c0b851f1">更多...</a><br /></td></tr>
+<tr class="separator:ga3705c210feeeb63c31976495c0b851f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1978945fc02d1867900f17c4999c50d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga1978945fc02d1867900f17c4999c50d5">FLASH_WRProt_Pages60to63</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00008000)</td></tr>
+<tr class="memdesc:ga1978945fc02d1867900f17c4999c50d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 60 to 63  <a href="group___f_l_a_s_h___exported___constants.html#ga1978945fc02d1867900f17c4999c50d5">更多...</a><br /></td></tr>
+<tr class="separator:ga1978945fc02d1867900f17c4999c50d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga124928d6134ddac13e3e8810a0d8dd1a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga124928d6134ddac13e3e8810a0d8dd1a">FLASH_WRProt_Pages64to67</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00010000)</td></tr>
+<tr class="memdesc:ga124928d6134ddac13e3e8810a0d8dd1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 64 to 67  <a href="group___f_l_a_s_h___exported___constants.html#ga124928d6134ddac13e3e8810a0d8dd1a">更多...</a><br /></td></tr>
+<tr class="separator:ga124928d6134ddac13e3e8810a0d8dd1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafbb813885c6cd505c64083f2f88532fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#gafbb813885c6cd505c64083f2f88532fb">FLASH_WRProt_Pages68to71</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00020000)</td></tr>
+<tr class="memdesc:gafbb813885c6cd505c64083f2f88532fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 68 to 71  <a href="group___f_l_a_s_h___exported___constants.html#gafbb813885c6cd505c64083f2f88532fb">更多...</a><br /></td></tr>
+<tr class="separator:gafbb813885c6cd505c64083f2f88532fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1a19c52012bbb30f3ae1599fa5a200cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga1a19c52012bbb30f3ae1599fa5a200cc">FLASH_WRProt_Pages72to75</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00040000)</td></tr>
+<tr class="memdesc:ga1a19c52012bbb30f3ae1599fa5a200cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 72 to 75  <a href="group___f_l_a_s_h___exported___constants.html#ga1a19c52012bbb30f3ae1599fa5a200cc">更多...</a><br /></td></tr>
+<tr class="separator:ga1a19c52012bbb30f3ae1599fa5a200cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e1f9abfa57766312c6cbae9b42f3ab6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga9e1f9abfa57766312c6cbae9b42f3ab6">FLASH_WRProt_Pages76to79</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00080000)</td></tr>
+<tr class="memdesc:ga9e1f9abfa57766312c6cbae9b42f3ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 76 to 79  <a href="group___f_l_a_s_h___exported___constants.html#ga9e1f9abfa57766312c6cbae9b42f3ab6">更多...</a><br /></td></tr>
+<tr class="separator:ga9e1f9abfa57766312c6cbae9b42f3ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5749428874f99f77a5c5fc48a88816d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga5749428874f99f77a5c5fc48a88816d9">FLASH_WRProt_Pages80to83</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00100000)</td></tr>
+<tr class="memdesc:ga5749428874f99f77a5c5fc48a88816d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 80 to 83  <a href="group___f_l_a_s_h___exported___constants.html#ga5749428874f99f77a5c5fc48a88816d9">更多...</a><br /></td></tr>
+<tr class="separator:ga5749428874f99f77a5c5fc48a88816d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9dbf7aeb5b54b42f9b345c95d00eaf32"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga9dbf7aeb5b54b42f9b345c95d00eaf32">FLASH_WRProt_Pages84to87</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00200000)</td></tr>
+<tr class="memdesc:ga9dbf7aeb5b54b42f9b345c95d00eaf32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 84 to 87  <a href="group___f_l_a_s_h___exported___constants.html#ga9dbf7aeb5b54b42f9b345c95d00eaf32">更多...</a><br /></td></tr>
+<tr class="separator:ga9dbf7aeb5b54b42f9b345c95d00eaf32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeece6aa5e198239067c47f678b9d015e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#gaeece6aa5e198239067c47f678b9d015e">FLASH_WRProt_Pages88to91</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00400000)</td></tr>
+<tr class="memdesc:gaeece6aa5e198239067c47f678b9d015e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 88 to 91  <a href="group___f_l_a_s_h___exported___constants.html#gaeece6aa5e198239067c47f678b9d015e">更多...</a><br /></td></tr>
+<tr class="separator:gaeece6aa5e198239067c47f678b9d015e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab7d95c1f574523ef827bafd01a64b0bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#gab7d95c1f574523ef827bafd01a64b0bb">FLASH_WRProt_Pages92to95</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x00800000)</td></tr>
+<tr class="memdesc:gab7d95c1f574523ef827bafd01a64b0bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 92 to 95  <a href="group___f_l_a_s_h___exported___constants.html#gab7d95c1f574523ef827bafd01a64b0bb">更多...</a><br /></td></tr>
+<tr class="separator:gab7d95c1f574523ef827bafd01a64b0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f3ea488c33b3e209cab996545f55c49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga8f3ea488c33b3e209cab996545f55c49">FLASH_WRProt_Pages96to99</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x01000000)</td></tr>
+<tr class="memdesc:ga8f3ea488c33b3e209cab996545f55c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 96 to 99  <a href="group___f_l_a_s_h___exported___constants.html#ga8f3ea488c33b3e209cab996545f55c49">更多...</a><br /></td></tr>
+<tr class="separator:ga8f3ea488c33b3e209cab996545f55c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c03cee6931c623ccdaae19233c81f4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga0c03cee6931c623ccdaae19233c81f4e">FLASH_WRProt_Pages100to103</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x02000000)</td></tr>
+<tr class="memdesc:ga0c03cee6931c623ccdaae19233c81f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 100 to 103  <a href="group___f_l_a_s_h___exported___constants.html#ga0c03cee6931c623ccdaae19233c81f4e">更多...</a><br /></td></tr>
+<tr class="separator:ga0c03cee6931c623ccdaae19233c81f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2e096d51e61a972c97093110211b3be5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga2e096d51e61a972c97093110211b3be5">FLASH_WRProt_Pages104to107</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x04000000)</td></tr>
+<tr class="memdesc:ga2e096d51e61a972c97093110211b3be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 104 to 107  <a href="group___f_l_a_s_h___exported___constants.html#ga2e096d51e61a972c97093110211b3be5">更多...</a><br /></td></tr>
+<tr class="separator:ga2e096d51e61a972c97093110211b3be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga899e34df1ab5369d840461686eb9c318"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga899e34df1ab5369d840461686eb9c318">FLASH_WRProt_Pages108to111</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x08000000)</td></tr>
+<tr class="memdesc:ga899e34df1ab5369d840461686eb9c318"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 108 to 111  <a href="group___f_l_a_s_h___exported___constants.html#ga899e34df1ab5369d840461686eb9c318">更多...</a><br /></td></tr>
+<tr class="separator:ga899e34df1ab5369d840461686eb9c318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd2d5839240b77f70be15e76086745ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#gacd2d5839240b77f70be15e76086745ab">FLASH_WRProt_Pages112to115</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x10000000)</td></tr>
+<tr class="memdesc:gacd2d5839240b77f70be15e76086745ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 112 to 115  <a href="group___f_l_a_s_h___exported___constants.html#gacd2d5839240b77f70be15e76086745ab">更多...</a><br /></td></tr>
+<tr class="separator:gacd2d5839240b77f70be15e76086745ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1283655c7c974e0de142cec7921c8673"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#ga1283655c7c974e0de142cec7921c8673">FLASH_WRProt_Pages116to119</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x20000000)</td></tr>
+<tr class="memdesc:ga1283655c7c974e0de142cec7921c8673"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 115 to 119  <a href="group___f_l_a_s_h___exported___constants.html#ga1283655c7c974e0de142cec7921c8673">更多...</a><br /></td></tr>
+<tr class="separator:ga1283655c7c974e0de142cec7921c8673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8d2f42123810fefc68572709d8830ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#gac8d2f42123810fefc68572709d8830ec">FLASH_WRProt_Pages120to123</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x40000000)</td></tr>
+<tr class="memdesc:gac8d2f42123810fefc68572709d8830ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 120 to 123  <a href="group___f_l_a_s_h___exported___constants.html#gac8d2f42123810fefc68572709d8830ec">更多...</a><br /></td></tr>
+<tr class="separator:gac8d2f42123810fefc68572709d8830ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6e70db5200b52248c9ec4293ff9890e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___constants.html#gae6e70db5200b52248c9ec4293ff9890e">FLASH_WRProt_Pages124to127</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>)0x80000000)</td></tr>
+<tr class="memdesc:gae6e70db5200b52248c9ec4293ff9890e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection of page 124 to 127  <a href="group___f_l_a_s_h___exported___constants.html#gae6e70db5200b52248c9ec4293ff9890e">更多...</a><br /></td></tr>
+<tr class="separator:gae6e70db5200b52248c9ec4293ff9890e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3de33738fd3c7e77bffbcfaefc3e7645"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___variables.html#ga3de33738fd3c7e77bffbcfaefc3e7645">GLOBAL</a>&#160;&#160;&#160;extern</td></tr>
+<tr class="separator:ga3de33738fd3c7e77bffbcfaefc3e7645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:gadc63a6f3404ff1f71229a66915e9cdc0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___types.html#gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</a> { <br />
+&#160;&#160;<a class="el" href="group___f_l_a_s_h___exported___types.html#ggadc63a6f3404ff1f71229a66915e9cdc0aa25021d41842af8a68cefcb65949e099">FLASH_BUSY</a> = 1
+, <a class="el" href="group___f_l_a_s_h___exported___types.html#ggadc63a6f3404ff1f71229a66915e9cdc0adcb0c5002fc757739886a2601a3981da">FLASH_ERROR_PG</a>
+, <a class="el" href="group___f_l_a_s_h___exported___types.html#ggadc63a6f3404ff1f71229a66915e9cdc0ac9e2d95d3ba415fb7392d72a2458f4d8">FLASH_ERROR_WRP</a>
+, <a class="el" href="group___f_l_a_s_h___exported___types.html#ggadc63a6f3404ff1f71229a66915e9cdc0ab0e88e9f59edee379a1a710a8b7deebf">FLASH_COMPLETE</a>
+, <br />
+&#160;&#160;<a class="el" href="group___f_l_a_s_h___exported___types.html#ggadc63a6f3404ff1f71229a66915e9cdc0a90c514b6a619e3a4e6c2eec3154323f8">FLASH_TIMEOUT</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:gadc63a6f3404ff1f71229a66915e9cdc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">FLASH Status  <a href="group___f_l_a_s_h___exported___types.html#gadc63a6f3404ff1f71229a66915e9cdc0">更多...</a><br /></td></tr>
+<tr class="separator:gadc63a6f3404ff1f71229a66915e9cdc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5b981d1729a55ceb15c3be9c31e4875"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___types.html#gaa5b981d1729a55ceb15c3be9c31e4875">FLASH_Latency_TypeDef</a> { <a class="el" href="group___f_l_a_s_h___exported___types.html#ggaa5b981d1729a55ceb15c3be9c31e4875a2a231eba16e649da0f8de50fb4290d0d">FLASH_Latency_0</a> = FLASH_ACR_LATENCY_0
+, <a class="el" href="group___f_l_a_s_h___exported___types.html#ggaa5b981d1729a55ceb15c3be9c31e4875a9421da0a0abafb54cad2b93b0cc41e60">FLASH_Latency_1</a> = FLASH_ACR_LATENCY_1
+, <a class="el" href="group___f_l_a_s_h___exported___types.html#ggaa5b981d1729a55ceb15c3be9c31e4875a015d28d491155b6067a010a1b11e28ab">FLASH_Latency_2</a> = FLASH_ACR_LATENCY_2
+, <a class="el" href="group___f_l_a_s_h___exported___types.html#ggaa5b981d1729a55ceb15c3be9c31e4875a92369f8c23cc4e506a28e3cfa8ad4aba">FLASH_Latency_3</a> = FLASH_ACR_LATENCY_3
+ }</td></tr>
+<tr class="memdesc:gaa5b981d1729a55ceb15c3be9c31e4875"><td class="mdescLeft">&#160;</td><td class="mdescRight">FLASH Latency  <a href="group___f_l_a_s_h___exported___types.html#gaa5b981d1729a55ceb15c3be9c31e4875">更多...</a><br /></td></tr>
+<tr class="separator:gaa5b981d1729a55ceb15c3be9c31e4875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c034270555867c4d719bfa36e20736b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___types.html#ga3c034270555867c4d719bfa36e20736b">FLASH_HalfCycleAccess_TypeDef</a> { <a class="el" href="group___f_l_a_s_h___exported___types.html#gga3c034270555867c4d719bfa36e20736ba4927e7916a9e80365c7305b3243d0405">FLASH_HalfCycleAccess_Enable</a> = FLASH_ACR_HLFCYA
+, <a class="el" href="group___f_l_a_s_h___exported___types.html#gga3c034270555867c4d719bfa36e20736ba266d9ad899cccdaf20c7dd4c09b15f9a">FLASH_HalfCycleAccess_Disable</a> = (s32)~FLASH_ACR_HLFCYA
+ }</td></tr>
+<tr class="memdesc:ga3c034270555867c4d719bfa36e20736b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Half_Cycle_Enable_Disable  <a href="group___f_l_a_s_h___exported___types.html#ga3c034270555867c4d719bfa36e20736b">更多...</a><br /></td></tr>
+<tr class="separator:ga3c034270555867c4d719bfa36e20736b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ac8aa0eb363aea9696800b8ea9c1d8b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___types.html#ga7ac8aa0eb363aea9696800b8ea9c1d8b">FLASH_PrefetchBuffer_TypeDef</a> { <a class="el" href="group___f_l_a_s_h___exported___types.html#gga7ac8aa0eb363aea9696800b8ea9c1d8bae9d47ed3a3cd14d43e2a81ed3fea13f5">FLASH_PrefetchBuffer_Enable</a> = FLASH_ACR_PRFTBE
+, <a class="el" href="group___f_l_a_s_h___exported___types.html#gga7ac8aa0eb363aea9696800b8ea9c1d8ba112de835dbacf7acb3693a910df919d4">FLASH_PrefetchBuffer_Disable</a> = (s32)~FLASH_ACR_PRFTBE
+ }</td></tr>
+<tr class="memdesc:ga7ac8aa0eb363aea9696800b8ea9c1d8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prefetch_Buffer_Enable_Disable  <a href="group___f_l_a_s_h___exported___types.html#ga7ac8aa0eb363aea9696800b8ea9c1d8b">更多...</a><br /></td></tr>
+<tr class="separator:ga7ac8aa0eb363aea9696800b8ea9c1d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e4539b913a5c2c0936d3c28a71c650f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___types.html#ga9e4539b913a5c2c0936d3c28a71c650f">OB_IWDG_TypeDef</a> { <a class="el" href="group___f_l_a_s_h___exported___types.html#gga9e4539b913a5c2c0936d3c28a71c650fabce0d8bedfe4b2bee6adfca4baf77d57">OB_IWDG_SW</a> = 0x0001
+, <a class="el" href="group___f_l_a_s_h___exported___types.html#gga9e4539b913a5c2c0936d3c28a71c650faa789ab6e135f96269e6e66dbc27f8a4b">OB_IWDG_HW</a> = 0x0000
+ }</td></tr>
+<tr class="memdesc:ga9e4539b913a5c2c0936d3c28a71c650f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Option_Bytes_IWatchdog  <a href="group___f_l_a_s_h___exported___types.html#ga9e4539b913a5c2c0936d3c28a71c650f">更多...</a><br /></td></tr>
+<tr class="separator:ga9e4539b913a5c2c0936d3c28a71c650f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20354cfd4bf512e0f53a7bbd97d3ce47"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___types.html#ga20354cfd4bf512e0f53a7bbd97d3ce47">OB_STOP_TypeDef</a> { <a class="el" href="group___f_l_a_s_h___exported___types.html#gga20354cfd4bf512e0f53a7bbd97d3ce47a54ad00a7de0ada25d705da624b154ac0">OB_STOP_NoRST</a> = 0x0002
+, <a class="el" href="group___f_l_a_s_h___exported___types.html#gga20354cfd4bf512e0f53a7bbd97d3ce47afcfcac69a6839bd65b79a949b96c7dc6">OB_STOP_RST</a> = 0x0000
+ }</td></tr>
+<tr class="memdesc:ga20354cfd4bf512e0f53a7bbd97d3ce47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Option_Bytes_nRST_STOP  <a href="group___f_l_a_s_h___exported___types.html#ga20354cfd4bf512e0f53a7bbd97d3ce47">更多...</a><br /></td></tr>
+<tr class="separator:ga20354cfd4bf512e0f53a7bbd97d3ce47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa256a568fada756a3bbd852f1faff085"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___types.html#gaa256a568fada756a3bbd852f1faff085">OB_STDBY_TypeDef</a> { <a class="el" href="group___f_l_a_s_h___exported___types.html#ggaa256a568fada756a3bbd852f1faff085a09b602ef8dce18a3f0b24c167086833c">OB_STDBY_NoRST</a> = 0x0004
+, <a class="el" href="group___f_l_a_s_h___exported___types.html#ggaa256a568fada756a3bbd852f1faff085a3d508687fd4d4d1408f1570e417977ba">OB_STDBY_RST</a> = 0x0000
+ }</td></tr>
+<tr class="memdesc:gaa256a568fada756a3bbd852f1faff085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Option_Bytes_nRST_STDBY  <a href="group___f_l_a_s_h___exported___types.html#gaa256a568fada756a3bbd852f1faff085">更多...</a><br /></td></tr>
+<tr class="separator:gaa256a568fada756a3bbd852f1faff085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84ea7733d1706f38fd6f70b19bc22275"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___types.html#ga84ea7733d1706f38fd6f70b19bc22275">FLASH_IT_TypeDef</a> { <a class="el" href="group___f_l_a_s_h___exported___types.html#gga84ea7733d1706f38fd6f70b19bc22275aa4ba5070696b556ef85e0706b7d19503">FLASH_IT_ERROR</a> = FLASH_CR_ERRIE
+, <a class="el" href="group___f_l_a_s_h___exported___types.html#gga84ea7733d1706f38fd6f70b19bc22275a8490b4e13cb6ace7e0eb216033f50560">FLASH_IT_EOP</a> = FLASH_CR_EOPIE
+ }</td></tr>
+<tr class="memdesc:ga84ea7733d1706f38fd6f70b19bc22275"><td class="mdescLeft">&#160;</td><td class="mdescRight">FLASH_Interrupts  <a href="group___f_l_a_s_h___exported___types.html#ga84ea7733d1706f38fd6f70b19bc22275">更多...</a><br /></td></tr>
+<tr class="separator:ga84ea7733d1706f38fd6f70b19bc22275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ea3bb6b697ebeeb10233905c7a0846c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___types.html#ga3ea3bb6b697ebeeb10233905c7a0846c">FLASH_FLAG_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group___f_l_a_s_h___exported___types.html#gga3ea3bb6b697ebeeb10233905c7a0846cabc94f7db0a0478924fa3d87f6fa48012">FLASH_FLAG_EOP</a> = FLASH_SR_EOP
+, <a class="el" href="group___f_l_a_s_h___exported___types.html#gga3ea3bb6b697ebeeb10233905c7a0846ca12e592d054fc5786e37450af4f358413">FLASH_FLAG_PGERR</a> = FLASH_SR_PGERR
+, <a class="el" href="group___f_l_a_s_h___exported___types.html#gga3ea3bb6b697ebeeb10233905c7a0846ca9ce7a92c39e81a02c39c576d4d0d9771">FLASH_FLAG_WRPRTERR</a> = FLASH_SR_WRPRTERR
+, <a class="el" href="group___f_l_a_s_h___exported___types.html#gga3ea3bb6b697ebeeb10233905c7a0846cabc8c5b58231e32ccac9504556bd92c20">FLASH_FLAG_BSY</a> = FLASH_SR_BUSY
+, <br />
+&#160;&#160;<a class="el" href="group___f_l_a_s_h___exported___types.html#gga3ea3bb6b697ebeeb10233905c7a0846cafd87ebe9974f89ba64bea6b019027aa4">FLASH_FLAG_OPTERR</a> = FLASH_OBR_OPTERR
+<br />
+ }</td></tr>
+<tr class="memdesc:ga3ea3bb6b697ebeeb10233905c7a0846c"><td class="mdescLeft">&#160;</td><td class="mdescRight">FLASH_Flags  <a href="group___f_l_a_s_h___exported___types.html#ga3ea3bb6b697ebeeb10233905c7a0846c">更多...</a><br /></td></tr>
+<tr class="separator:ga3ea3bb6b697ebeeb10233905c7a0846c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:gab9d5d871cf12693c052ea0d1caaf47e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#gab9d5d871cf12693c052ea0d1caaf47e9">FLASH_SetLatency</a> (<a class="el" href="group___f_l_a_s_h___exported___types.html#gaa5b981d1729a55ceb15c3be9c31e4875">FLASH_Latency_TypeDef</a> latency)</td></tr>
+<tr class="memdesc:gab9d5d871cf12693c052ea0d1caaf47e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the code latency value.  <a href="group___f_l_a_s_h___exported___functions.html#gab9d5d871cf12693c052ea0d1caaf47e9">更多...</a><br /></td></tr>
+<tr class="separator:gab9d5d871cf12693c052ea0d1caaf47e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5d06911713bd1b5b4dc6c3e65b2dd34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#gaf5d06911713bd1b5b4dc6c3e65b2dd34">FLASH_HalfCycleAccessCmd</a> (<a class="el" href="group___f_l_a_s_h___exported___types.html#ga3c034270555867c4d719bfa36e20736b">FLASH_HalfCycleAccess_TypeDef</a> half_cycle_access)</td></tr>
+<tr class="memdesc:gaf5d06911713bd1b5b4dc6c3e65b2dd34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the Half cycle flash access.  <a href="group___f_l_a_s_h___exported___functions.html#gaf5d06911713bd1b5b4dc6c3e65b2dd34">更多...</a><br /></td></tr>
+<tr class="separator:gaf5d06911713bd1b5b4dc6c3e65b2dd34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga579db6b8b3bc7bedc2a8a2260deaba9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga579db6b8b3bc7bedc2a8a2260deaba9a">FLASH_PrefetchBufferCmd</a> (<a class="el" href="group___f_l_a_s_h___exported___types.html#ga7ac8aa0eb363aea9696800b8ea9c1d8b">FLASH_PrefetchBuffer_TypeDef</a> prefetch_buffer)</td></tr>
+<tr class="memdesc:ga579db6b8b3bc7bedc2a8a2260deaba9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the Prefetch Buffer.  <a href="group___f_l_a_s_h___exported___functions.html#ga579db6b8b3bc7bedc2a8a2260deaba9a">更多...</a><br /></td></tr>
+<tr class="separator:ga579db6b8b3bc7bedc2a8a2260deaba9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga375930f02e82db922e036ed8da814cd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga375930f02e82db922e036ed8da814cd6">FLASH_Unlock</a> ()</td></tr>
+<tr class="memdesc:ga375930f02e82db922e036ed8da814cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlocks the FLASH Program Erase Controller.  <a href="group___f_l_a_s_h___exported___functions.html#ga375930f02e82db922e036ed8da814cd6">更多...</a><br /></td></tr>
+<tr class="separator:ga375930f02e82db922e036ed8da814cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46899557353c4312ddbe3f25e65df1d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga46899557353c4312ddbe3f25e65df1d8">FLASH_Lock</a> (void)</td></tr>
+<tr class="memdesc:ga46899557353c4312ddbe3f25e65df1d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locks the FLASH Program Erase Controller.  <a href="group___f_l_a_s_h___exported___functions.html#ga46899557353c4312ddbe3f25e65df1d8">更多...</a><br /></td></tr>
+<tr class="separator:ga46899557353c4312ddbe3f25e65df1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaceb4894d570dee0ad9da962111544a9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#gaceb4894d570dee0ad9da962111544a9e">FLASH_OPTB_Enable</a> (void)</td></tr>
+<tr class="memdesc:gaceb4894d570dee0ad9da962111544a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable to program the FLASH Option Byte.  <a href="group___f_l_a_s_h___exported___functions.html#gaceb4894d570dee0ad9da962111544a9e">更多...</a><br /></td></tr>
+<tr class="separator:gaceb4894d570dee0ad9da962111544a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa8701693ad5598340fa38eb0f8066f8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#gaa8701693ad5598340fa38eb0f8066f8e">FLASH_ITConfig</a> (<a class="el" href="group___f_l_a_s_h___exported___types.html#ga84ea7733d1706f38fd6f70b19bc22275">FLASH_IT_TypeDef</a> interrupt, <a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="memdesc:gaa8701693ad5598340fa38eb0f8066f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the specified FLASH interrupts.  <a href="group___f_l_a_s_h___exported___functions.html#gaa8701693ad5598340fa38eb0f8066f8e">更多...</a><br /></td></tr>
+<tr class="separator:gaa8701693ad5598340fa38eb0f8066f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga581401730f8582536faba362e41a991d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga581401730f8582536faba362e41a991d">FLASH_ClearFlag</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> flag)</td></tr>
+<tr class="memdesc:ga581401730f8582536faba362e41a991d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the FLASH's pending flags.  <a href="group___f_l_a_s_h___exported___functions.html#ga581401730f8582536faba362e41a991d">更多...</a><br /></td></tr>
+<tr class="separator:ga581401730f8582536faba362e41a991d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4abbe1b00f130491e79491bcee1c0c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#gaf4abbe1b00f130491e79491bcee1c0c9">exFLASH_EraseEE</a> (<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> page_address)</td></tr>
+<tr class="memdesc:gaf4abbe1b00f130491e79491bcee1c0c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erases a specified FLASH page.  <a href="group___f_l_a_s_h___exported___functions.html#gaf4abbe1b00f130491e79491bcee1c0c9">更多...</a><br /></td></tr>
+<tr class="separator:gaf4abbe1b00f130491e79491bcee1c0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga296275aad64fb3b3b8f9706665d73a21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga296275aad64fb3b3b8f9706665d73a21">exFLASH_ProgramEE</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> *buf, <a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> addr, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> len)</td></tr>
+<tr class="memdesc:ga296275aad64fb3b3b8f9706665d73a21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Programs a buffer at a specified address.  <a href="group___f_l_a_s_h___exported___functions.html#ga296275aad64fb3b3b8f9706665d73a21">更多...</a><br /></td></tr>
+<tr class="separator:ga296275aad64fb3b3b8f9706665d73a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6fc2dfe01c38eeabe7e49b39fb03101a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga6fc2dfe01c38eeabe7e49b39fb03101a">exFLASH_WriteEE</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> *buf, <a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> page_address, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> len)</td></tr>
+<tr class="memdesc:ga6fc2dfe01c38eeabe7e49b39fb03101a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Programs a buffer at a specified address.  <a href="group___f_l_a_s_h___exported___functions.html#ga6fc2dfe01c38eeabe7e49b39fb03101a">更多...</a><br /></td></tr>
+<tr class="separator:ga6fc2dfe01c38eeabe7e49b39fb03101a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f7388f9332f25d2cc3a4c57043ec70b"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga5f7388f9332f25d2cc3a4c57043ec70b">exFLASH_Locate</a> (<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> page_address, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> len)</td></tr>
+<tr class="memdesc:ga5f7388f9332f25d2cc3a4c57043ec70b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locate the writable area on the specified address.  <a href="group___f_l_a_s_h___exported___functions.html#ga5f7388f9332f25d2cc3a4c57043ec70b">更多...</a><br /></td></tr>
+<tr class="separator:ga5f7388f9332f25d2cc3a4c57043ec70b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ede87763965ed231b67cec59159e186"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga2ede87763965ed231b67cec59159e186">exFLASH_ReadEE</a> (<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> page_address, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> len)</td></tr>
+<tr class="memdesc:ga2ede87763965ed231b67cec59159e186"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the beginning address of the last written data.  <a href="group___f_l_a_s_h___exported___functions.html#ga2ede87763965ed231b67cec59159e186">更多...</a><br /></td></tr>
+<tr class="separator:ga2ede87763965ed231b67cec59159e186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7fd2a24eef9e1fa32b5de00a4ea5f294"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga7fd2a24eef9e1fa32b5de00a4ea5f294">exFLASH_FindEmpty</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> *ptr, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> len)</td></tr>
+<tr class="memdesc:ga7fd2a24eef9e1fa32b5de00a4ea5f294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the data that at the ptr address with the length is len is empty.  <a href="group___f_l_a_s_h___exported___functions.html#ga7fd2a24eef9e1fa32b5de00a4ea5f294">更多...</a><br /></td></tr>
+<tr class="separator:ga7fd2a24eef9e1fa32b5de00a4ea5f294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga409e758e6d678208feef9bfe7e8e891f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga409e758e6d678208feef9bfe7e8e891f">FLASH_GetUserOptionByte</a> ()</td></tr>
+<tr class="memdesc:ga409e758e6d678208feef9bfe7e8e891f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the FLASH User Option Bytes values.  <a href="group___f_l_a_s_h___exported___functions.html#ga409e758e6d678208feef9bfe7e8e891f">更多...</a><br /></td></tr>
+<tr class="separator:ga409e758e6d678208feef9bfe7e8e891f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff61f1a6a1ea350327604811a2bfbc48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#gaff61f1a6a1ea350327604811a2bfbc48">FLASH_GetWriteProtectionOptionByte</a> ()</td></tr>
+<tr class="memdesc:gaff61f1a6a1ea350327604811a2bfbc48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the FLASH Write Protection Option Bytes Register value.  <a href="group___f_l_a_s_h___exported___functions.html#gaff61f1a6a1ea350327604811a2bfbc48">更多...</a><br /></td></tr>
+<tr class="separator:gaff61f1a6a1ea350327604811a2bfbc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf6a82db2d8980df2fd471a658704ad40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___f_l_a_s_h___exported___types.html#gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#gaf6a82db2d8980df2fd471a658704ad40">FLASH_ErasePage</a> (<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> page_address)</td></tr>
+<tr class="memdesc:gaf6a82db2d8980df2fd471a658704ad40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erases a specified FLASH page.  <a href="group___f_l_a_s_h___exported___functions.html#gaf6a82db2d8980df2fd471a658704ad40">更多...</a><br /></td></tr>
+<tr class="separator:gaf6a82db2d8980df2fd471a658704ad40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53b327137409fa4deaa80e03c9b3c3eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___f_l_a_s_h___exported___types.html#gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga53b327137409fa4deaa80e03c9b3c3eb">FLASH_EraseAllPages</a> ()</td></tr>
+<tr class="memdesc:ga53b327137409fa4deaa80e03c9b3c3eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erases all FLASH pages.  <a href="group___f_l_a_s_h___exported___functions.html#ga53b327137409fa4deaa80e03c9b3c3eb">更多...</a><br /></td></tr>
+<tr class="separator:ga53b327137409fa4deaa80e03c9b3c3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga71293dd676c00316ad7c5c4c41857065"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___f_l_a_s_h___exported___types.html#gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga71293dd676c00316ad7c5c4c41857065">FLASH_EraseOptionBytes</a> ()</td></tr>
+<tr class="memdesc:ga71293dd676c00316ad7c5c4c41857065"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erases the FLASH option bytes.  <a href="group___f_l_a_s_h___exported___functions.html#ga71293dd676c00316ad7c5c4c41857065">更多...</a><br /></td></tr>
+<tr class="separator:ga71293dd676c00316ad7c5c4c41857065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga82b198bf677e70c207aa5a3512943907"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___f_l_a_s_h___exported___types.html#gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga82b198bf677e70c207aa5a3512943907">FLASH_EraseProtect</a> (void)</td></tr>
+<tr class="separator:ga82b198bf677e70c207aa5a3512943907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga93a676ee392e25ea66dca6d281472839"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___f_l_a_s_h___exported___types.html#gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga93a676ee392e25ea66dca6d281472839">FLASH_ProgramHalfWord</a> (<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> address, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> data)</td></tr>
+<tr class="memdesc:ga93a676ee392e25ea66dca6d281472839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Programs a half word at a specified address.  <a href="group___f_l_a_s_h___exported___functions.html#ga93a676ee392e25ea66dca6d281472839">更多...</a><br /></td></tr>
+<tr class="separator:ga93a676ee392e25ea66dca6d281472839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga631cbfcb0091c0c5eadcadfc55adcebd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___f_l_a_s_h___exported___types.html#gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga631cbfcb0091c0c5eadcadfc55adcebd">FLASH_ProgramWord</a> (<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> address, <a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> data)</td></tr>
+<tr class="memdesc:ga631cbfcb0091c0c5eadcadfc55adcebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Programs a word at a specified address.  <a href="group___f_l_a_s_h___exported___functions.html#ga631cbfcb0091c0c5eadcadfc55adcebd">更多...</a><br /></td></tr>
+<tr class="separator:ga631cbfcb0091c0c5eadcadfc55adcebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36b4a0c57c884a889f54d1e6138d91a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___f_l_a_s_h___exported___types.html#gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga36b4a0c57c884a889f54d1e6138d91a1">FLASH_ProgramOptionHalfWord</a> (<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> address, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> data)</td></tr>
+<tr class="memdesc:ga36b4a0c57c884a889f54d1e6138d91a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Programs a half word at a specified Option Byte Data address.  <a href="group___f_l_a_s_h___exported___functions.html#ga36b4a0c57c884a889f54d1e6138d91a1">更多...</a><br /></td></tr>
+<tr class="separator:ga36b4a0c57c884a889f54d1e6138d91a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ff9f1ec3d71dbe586808ec2038d878a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___f_l_a_s_h___exported___types.html#gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga3ff9f1ec3d71dbe586808ec2038d878a">FLASH_ProgramOptionByteData</a> (<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> address, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data)</td></tr>
+<tr class="memdesc:ga3ff9f1ec3d71dbe586808ec2038d878a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Programs a byte at a specified Option Byte Data address.  <a href="group___f_l_a_s_h___exported___functions.html#ga3ff9f1ec3d71dbe586808ec2038d878a">更多...</a><br /></td></tr>
+<tr class="separator:ga3ff9f1ec3d71dbe586808ec2038d878a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f0d36eeaf0c88ddd7bcdda9ca9d7dde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___f_l_a_s_h___exported___types.html#gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga9f0d36eeaf0c88ddd7bcdda9ca9d7dde">FLASH_ProgramProtect</a> (<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> address, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> data)</td></tr>
+<tr class="memdesc:ga9f0d36eeaf0c88ddd7bcdda9ca9d7dde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read protection for the specified address  <a href="group___f_l_a_s_h___exported___functions.html#ga9f0d36eeaf0c88ddd7bcdda9ca9d7dde">更多...</a><br /></td></tr>
+<tr class="separator:ga9f0d36eeaf0c88ddd7bcdda9ca9d7dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga10d07d1afffb4cc2fa31abc38e826b3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___f_l_a_s_h___exported___types.html#gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga10d07d1afffb4cc2fa31abc38e826b3d">FLASH_EnableWriteProtection</a> (<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> page)</td></tr>
+<tr class="memdesc:ga10d07d1afffb4cc2fa31abc38e826b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write protection for the specified address  <a href="group___f_l_a_s_h___exported___functions.html#ga10d07d1afffb4cc2fa31abc38e826b3d">更多...</a><br /></td></tr>
+<tr class="separator:ga10d07d1afffb4cc2fa31abc38e826b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a68063f000cfa657d52c47325dabbef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___f_l_a_s_h___exported___types.html#gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga4a68063f000cfa657d52c47325dabbef">FLASH_UserOptionByteConfig</a> (<a class="el" href="group___f_l_a_s_h___exported___types.html#ga9e4539b913a5c2c0936d3c28a71c650f">OB_IWDG_TypeDef</a> ob_iwdg, <a class="el" href="group___f_l_a_s_h___exported___types.html#ga20354cfd4bf512e0f53a7bbd97d3ce47">OB_STOP_TypeDef</a> ob_stop, <a class="el" href="group___f_l_a_s_h___exported___types.html#gaa256a568fada756a3bbd852f1faff085">OB_STDBY_TypeDef</a> standby)</td></tr>
+<tr class="memdesc:ga4a68063f000cfa657d52c47325dabbef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Programs the FLASH User Option Byte: IWDG_SW / RST_STOP / RST_STDBY.  <a href="group___f_l_a_s_h___exported___functions.html#ga4a68063f000cfa657d52c47325dabbef">更多...</a><br /></td></tr>
+<tr class="separator:ga4a68063f000cfa657d52c47325dabbef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga54f8dfa81c2d841f7bbbd2655ea3339b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___f_l_a_s_h___exported___types.html#gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga54f8dfa81c2d841f7bbbd2655ea3339b">FLASH_GetStatus</a> ()</td></tr>
+<tr class="memdesc:ga54f8dfa81c2d841f7bbbd2655ea3339b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the FLASH Status.  <a href="group___f_l_a_s_h___exported___functions.html#ga54f8dfa81c2d841f7bbbd2655ea3339b">更多...</a><br /></td></tr>
+<tr class="separator:ga54f8dfa81c2d841f7bbbd2655ea3339b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga255fd9aaf1496ce173a0034eede90db6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___f_l_a_s_h___exported___types.html#gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga255fd9aaf1496ce173a0034eede90db6">FLASH_WaitForLastOperation</a> (<a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> time_out)</td></tr>
+<tr class="memdesc:ga255fd9aaf1496ce173a0034eede90db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for a Flash operation to complete or a TIMEOUT to occur.  <a href="group___f_l_a_s_h___exported___functions.html#ga255fd9aaf1496ce173a0034eede90db6">更多...</a><br /></td></tr>
+<tr class="separator:ga255fd9aaf1496ce173a0034eede90db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaebc6f575adb7c7249de4721b8f32b06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___f_l_a_s_h___exported___types.html#gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#gaaebc6f575adb7c7249de4721b8f32b06">FLASH_ReadOutProtection</a> (<a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="separator:gaaebc6f575adb7c7249de4721b8f32b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga289bffe7f078d6a130222f03c59bc235"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a89136caac2e14c55151f527ac02daaff">FlagStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#ga289bffe7f078d6a130222f03c59bc235">FLASH_GetPrefetchBufferStatus</a> (void)</td></tr>
+<tr class="memdesc:ga289bffe7f078d6a130222f03c59bc235"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the FLASH Prefetch Buffer status is set or not.  <a href="group___f_l_a_s_h___exported___functions.html#ga289bffe7f078d6a130222f03c59bc235">更多...</a><br /></td></tr>
+<tr class="separator:ga289bffe7f078d6a130222f03c59bc235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa08481babdb354765977c41af5c09071"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a89136caac2e14c55151f527ac02daaff">FlagStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_l_a_s_h___exported___functions.html#gaa08481babdb354765977c41af5c09071">FLASH_GetFlagStatus</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> flag)</td></tr>
+<tr class="memdesc:gaa08481babdb354765977c41af5c09071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified FLASH flag is set or not.  <a href="group___f_l_a_s_h___exported___functions.html#gaa08481babdb354765977c41af5c09071">更多...</a><br /></td></tr>
+<tr class="separator:gaa08481babdb354765977c41af5c09071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE FLASH FIRMWARE LIBRARY. </p>
+<dl class="section author"><dt>作者</dt><dd>AE TEAM </dd></dl>
+<dl class="section attention"><dt>注意</dt><dd></dd></dl>
+<p>THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.</p>
+<h2><center> COPYRIGHT MINDMOTION </center></h2>
+
+<p class="definition">在文件 <a class="el" href="hal__flash_8h_source.html">hal_flash.h</a> 中定义.</p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

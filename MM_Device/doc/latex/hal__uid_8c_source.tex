@@ -1,0 +1,29 @@
+\hypertarget{hal__uid_8c_source}{}\doxysection{hal\+\_\+uid.\+c}
+\label{hal__uid_8c_source}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_uid.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_uid.c}}
+\mbox{\hyperlink{hal__uid_8c}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00018}00018 \textcolor{comment}{// Define to prevent recursive inclusion}}
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00019}\mbox{\hyperlink{hal__uid_8c_a6d77509cc31ab5f3370ad5bd04351abf}{00019}} \textcolor{preprocessor}{\#define \_HAL\_UID\_C\_}}
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00021}00021 \textcolor{comment}{// Files includes}}
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00022}00022 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{hal__uid_8h}{hal\_uid.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00035}\mbox{\hyperlink{group___u_i_d___exported___functions_ga0510e5ce615fe6b82c8ae33c8edccb19}{00035}} \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{group___u_i_d___exported___functions_ga0510e5ce615fe6b82c8ae33c8edccb19}{device\_id\_data}}[12] = \{0\};}
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00042}\mbox{\hyperlink{group___u_i_d___exported___functions_gadbfb9509d250582cd4d100151a37bef1}{00042}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___u_i_d___exported___functions_gadbfb9509d250582cd4d100151a37bef1}{GetChipUID}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00043}00043 \{}
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00044}00044     \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} i;}
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00046}00046     \textcolor{keywordflow}{for} (i = 0; i < 12; i++) \{}
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00047}00047         \mbox{\hyperlink{group___u_i_d___exported___functions_ga0510e5ce615fe6b82c8ae33c8edccb19}{device\_id\_data}}[i] = *((\mbox{\hyperlink{types_8h_aecf7c4189e2bd5ee7ac61f5639b1327a}{vu8}}*)(\mbox{\hyperlink{reg__common_8h_a664eda42b83c919b153b07b23348be67}{UID\_BASE}} + i));}
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00048}00048     \}}
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00049}00049 \}}
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{hal__uid_8c_source_l00054}00054 }
+
+\end{DoxyCode}

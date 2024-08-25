@@ -1,0 +1,493 @@
+\hypertarget{struct_t_i_m___type_def}{}\doxysection{TIM\+\_\+\+Type\+Def结构体 参考}
+\label{struct_t_i_m___type_def}\index{TIM\_TypeDef@{TIM\_TypeDef}}
+
+
+Timer Register Structure Definition  
+
+
+
+
+{\ttfamily \#include $<$reg\+\_\+tim.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_adcf5b4349bebbaa50f8f8982e8c4b406}{CR1}}
+\begin{DoxyCompactList}\small\item\em TIM control register 1, offset\+: 0x00 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_a995b915ab15f196752ec605b74098d52}{CR2}}
+\begin{DoxyCompactList}\small\item\em TIM control register 2, offset\+: 0x04 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_a9ce545ebaf44b5b58d60869ee3e52a0e}{SMCR}}
+\begin{DoxyCompactList}\small\item\em TIM slave Mode Control register, offset\+: 0x08 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_a478956c7b7dc933ddc3c8b2bd5120d5b}{DIER}}
+\begin{DoxyCompactList}\small\item\em TIM DMA/interrupt enable register, offset\+: 0x0C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_aa18c33ab29565882fbadbc03b2ac2405}{SR}}
+\begin{DoxyCompactList}\small\item\em TIM status register, offset\+: 0x10 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_abd92013929e7b97f5fe667ca2ec93103}{EGR}}
+\begin{DoxyCompactList}\small\item\em TIM event generation register, offset\+: 0x14 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_a6738764abd451e3f658532fa0e488b73}{CCMR1}}
+\begin{DoxyCompactList}\small\item\em TIM capture/compare mode register 1, offset\+: 0x18 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_ab25fa1b100d136f8b4f62ba500d288a4}{CCMR2}}
+\begin{DoxyCompactList}\small\item\em TIM capture/compare mode register 2, offset\+: 0x1C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_aa61619733f2f97a434a35c7450575ae4}{CCER}}
+\begin{DoxyCompactList}\small\item\em TIM capture/compare enable register, offset\+: 0x20 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_ad9b38775b262890d2c29964bf884a9aa}{CNT}}
+\begin{DoxyCompactList}\small\item\em TIM counter register, offset\+: 0x24 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_a8ff3e47558e6d0b93387f54f7b83a020}{PSC}}
+\begin{DoxyCompactList}\small\item\em TIM prescaler register, offset\+: 0x28 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_a0c47e26b32ce86a46b48654b49076337}{ARR}}
+\begin{DoxyCompactList}\small\item\em TIM auto-\/reload register, offset\+: 0x2C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_ae16a340c4a12c1580b26deceee81c97d}{RCR}}
+\begin{DoxyCompactList}\small\item\em TIM repetition counter register, offset\+: 0x30 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_a8b58c7b896f92fda04c649e50465352c}{CCR1}}
+\begin{DoxyCompactList}\small\item\em TIM capture/compare register 1, offset\+: 0x34 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_ad1c8953548e17ed476f8b9446261ebfe}{CCR2}}
+\begin{DoxyCompactList}\small\item\em TIM capture/compare register 2, offset\+: 0x38 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_ae780834aa8f8d8f855aebe550cc82d1a}{CCR3}}
+\begin{DoxyCompactList}\small\item\em TIM capture/compare register 3, offset\+: 0x3C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_af55831a83b98e9af23b6e0b669e84791}{CCR4}}
+\begin{DoxyCompactList}\small\item\em TIM capture/compare register 4, offset\+: 0x40 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_aea1519187109b55955fee2f09d0d1082}{BDTR}}
+\begin{DoxyCompactList}\small\item\em TIM break and dead-\/time register, offset\+: 0x44 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_aab5fcd0b645a9d081b746117f32d111b}{DCR}}
+\begin{DoxyCompactList}\small\item\em TIM DMA control register, offset\+: 0x48 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_a3e30404c6300fd0d16e7a89e1d072e57}{DMAR}}
+\begin{DoxyCompactList}\small\item\em TIM DMA address for full transfer register, offset\+: 0x4C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_aad6ceb98b18f358dcf94aa3e43452dcf}{OR}}
+\begin{DoxyCompactList}\small\item\em Option register, offset\+: 0x50 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_a56cb45a2d0f7ce383754e19d33f7a813}{CCMR3}}
+\begin{DoxyCompactList}\small\item\em TIM capture/compare mode register 3, offset\+: 0x54 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_af9ca423370d8508225f7e0bd77c206a2}{CCR5}}
+\begin{DoxyCompactList}\small\item\em TIM capture/compare register 5, offset\+: 0x58 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_ac7df32913b5001e33d15cb9342610732}{PDER}}
+\begin{DoxyCompactList}\small\item\em PWM Shift repeat enable register, offset\+: 0x5C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_a27055ceb1ba7d037527e709d1e82bd23}{CCR1\+FALL}}
+\begin{DoxyCompactList}\small\item\em PWM shift count CCR1 register, offset\+: 0x60 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_a7bac1ec70b04385a129e48d8b87e4f89}{CCR2\+FALL}}
+\begin{DoxyCompactList}\small\item\em PWM shift count CCR2 register, offset\+: 0x64 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_a9545be7211e9b712b9ed209cedebafd6}{CCR3\+FALL}}
+\begin{DoxyCompactList}\small\item\em PWM shift count CCR3 register, offset\+: 0x68 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_ad879aab21109d15bfd8cd11533eba005}{CCR4\+FALL}}
+\begin{DoxyCompactList}\small\item\em PWM shift count CCR4 register, offset\+: 0x6c \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_t_i_m___type_def_a3fde0d130a07032b0f2bf6d9c792e090}{CCR5\+FALL}}
+\begin{DoxyCompactList}\small\item\em PWM shift count CCR5 register, offset\+: 0x70 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Timer Register Structure Definition 
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00068}{68}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{struct_t_i_m___type_def_a0c47e26b32ce86a46b48654b49076337}\label{struct_t_i_m___type_def_a0c47e26b32ce86a46b48654b49076337}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!ARR@{ARR}}
+\index{ARR@{ARR}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{ARR}{ARR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+ARR}
+
+
+
+TIM auto-\/reload register, offset\+: 0x2C 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00080}{80}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_aea1519187109b55955fee2f09d0d1082}\label{struct_t_i_m___type_def_aea1519187109b55955fee2f09d0d1082}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!BDTR@{BDTR}}
+\index{BDTR@{BDTR}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{BDTR}{BDTR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+BDTR}
+
+
+
+TIM break and dead-\/time register, offset\+: 0x44 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00086}{86}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_aa61619733f2f97a434a35c7450575ae4}\label{struct_t_i_m___type_def_aa61619733f2f97a434a35c7450575ae4}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!CCER@{CCER}}
+\index{CCER@{CCER}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CCER}{CCER}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+CCER}
+
+
+
+TIM capture/compare enable register, offset\+: 0x20 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00077}{77}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_a6738764abd451e3f658532fa0e488b73}\label{struct_t_i_m___type_def_a6738764abd451e3f658532fa0e488b73}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!CCMR1@{CCMR1}}
+\index{CCMR1@{CCMR1}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CCMR1}{CCMR1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+CCMR1}
+
+
+
+TIM capture/compare mode register 1, offset\+: 0x18 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00075}{75}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_ab25fa1b100d136f8b4f62ba500d288a4}\label{struct_t_i_m___type_def_ab25fa1b100d136f8b4f62ba500d288a4}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!CCMR2@{CCMR2}}
+\index{CCMR2@{CCMR2}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CCMR2}{CCMR2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+CCMR2}
+
+
+
+TIM capture/compare mode register 2, offset\+: 0x1C 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00076}{76}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_a56cb45a2d0f7ce383754e19d33f7a813}\label{struct_t_i_m___type_def_a56cb45a2d0f7ce383754e19d33f7a813}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!CCMR3@{CCMR3}}
+\index{CCMR3@{CCMR3}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CCMR3}{CCMR3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+CCMR3}
+
+
+
+TIM capture/compare mode register 3, offset\+: 0x54 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00090}{90}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_a8b58c7b896f92fda04c649e50465352c}\label{struct_t_i_m___type_def_a8b58c7b896f92fda04c649e50465352c}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!CCR1@{CCR1}}
+\index{CCR1@{CCR1}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CCR1}{CCR1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+CCR1}
+
+
+
+TIM capture/compare register 1, offset\+: 0x34 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00082}{82}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_a27055ceb1ba7d037527e709d1e82bd23}\label{struct_t_i_m___type_def_a27055ceb1ba7d037527e709d1e82bd23}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!CCR1FALL@{CCR1FALL}}
+\index{CCR1FALL@{CCR1FALL}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CCR1FALL}{CCR1FALL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+CCR1\+FALL}
+
+
+
+PWM shift count CCR1 register, offset\+: 0x60 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00093}{93}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_ad1c8953548e17ed476f8b9446261ebfe}\label{struct_t_i_m___type_def_ad1c8953548e17ed476f8b9446261ebfe}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!CCR2@{CCR2}}
+\index{CCR2@{CCR2}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CCR2}{CCR2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+CCR2}
+
+
+
+TIM capture/compare register 2, offset\+: 0x38 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00083}{83}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_a7bac1ec70b04385a129e48d8b87e4f89}\label{struct_t_i_m___type_def_a7bac1ec70b04385a129e48d8b87e4f89}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!CCR2FALL@{CCR2FALL}}
+\index{CCR2FALL@{CCR2FALL}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CCR2FALL}{CCR2FALL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+CCR2\+FALL}
+
+
+
+PWM shift count CCR2 register, offset\+: 0x64 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00094}{94}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_ae780834aa8f8d8f855aebe550cc82d1a}\label{struct_t_i_m___type_def_ae780834aa8f8d8f855aebe550cc82d1a}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!CCR3@{CCR3}}
+\index{CCR3@{CCR3}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CCR3}{CCR3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+CCR3}
+
+
+
+TIM capture/compare register 3, offset\+: 0x3C 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00084}{84}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_a9545be7211e9b712b9ed209cedebafd6}\label{struct_t_i_m___type_def_a9545be7211e9b712b9ed209cedebafd6}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!CCR3FALL@{CCR3FALL}}
+\index{CCR3FALL@{CCR3FALL}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CCR3FALL}{CCR3FALL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+CCR3\+FALL}
+
+
+
+PWM shift count CCR3 register, offset\+: 0x68 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00095}{95}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_af55831a83b98e9af23b6e0b669e84791}\label{struct_t_i_m___type_def_af55831a83b98e9af23b6e0b669e84791}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!CCR4@{CCR4}}
+\index{CCR4@{CCR4}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CCR4}{CCR4}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+CCR4}
+
+
+
+TIM capture/compare register 4, offset\+: 0x40 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00085}{85}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_ad879aab21109d15bfd8cd11533eba005}\label{struct_t_i_m___type_def_ad879aab21109d15bfd8cd11533eba005}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!CCR4FALL@{CCR4FALL}}
+\index{CCR4FALL@{CCR4FALL}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CCR4FALL}{CCR4FALL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+CCR4\+FALL}
+
+
+
+PWM shift count CCR4 register, offset\+: 0x6c 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00096}{96}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_af9ca423370d8508225f7e0bd77c206a2}\label{struct_t_i_m___type_def_af9ca423370d8508225f7e0bd77c206a2}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!CCR5@{CCR5}}
+\index{CCR5@{CCR5}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CCR5}{CCR5}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+CCR5}
+
+
+
+TIM capture/compare register 5, offset\+: 0x58 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00091}{91}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_a3fde0d130a07032b0f2bf6d9c792e090}\label{struct_t_i_m___type_def_a3fde0d130a07032b0f2bf6d9c792e090}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!CCR5FALL@{CCR5FALL}}
+\index{CCR5FALL@{CCR5FALL}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CCR5FALL}{CCR5FALL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+CCR5\+FALL}
+
+
+
+PWM shift count CCR5 register, offset\+: 0x70 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00097}{97}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_ad9b38775b262890d2c29964bf884a9aa}\label{struct_t_i_m___type_def_ad9b38775b262890d2c29964bf884a9aa}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!CNT@{CNT}}
+\index{CNT@{CNT}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CNT}{CNT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+CNT}
+
+
+
+TIM counter register, offset\+: 0x24 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00078}{78}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_adcf5b4349bebbaa50f8f8982e8c4b406}\label{struct_t_i_m___type_def_adcf5b4349bebbaa50f8f8982e8c4b406}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!CR1@{CR1}}
+\index{CR1@{CR1}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CR1}{CR1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+CR1}
+
+
+
+TIM control register 1, offset\+: 0x00 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00069}{69}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_a995b915ab15f196752ec605b74098d52}\label{struct_t_i_m___type_def_a995b915ab15f196752ec605b74098d52}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!CR2@{CR2}}
+\index{CR2@{CR2}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CR2}{CR2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+CR2}
+
+
+
+TIM control register 2, offset\+: 0x04 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00070}{70}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_aab5fcd0b645a9d081b746117f32d111b}\label{struct_t_i_m___type_def_aab5fcd0b645a9d081b746117f32d111b}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!DCR@{DCR}}
+\index{DCR@{DCR}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DCR}{DCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+DCR}
+
+
+
+TIM DMA control register, offset\+: 0x48 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00087}{87}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_a478956c7b7dc933ddc3c8b2bd5120d5b}\label{struct_t_i_m___type_def_a478956c7b7dc933ddc3c8b2bd5120d5b}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!DIER@{DIER}}
+\index{DIER@{DIER}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DIER}{DIER}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+DIER}
+
+
+
+TIM DMA/interrupt enable register, offset\+: 0x0C 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00072}{72}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_a3e30404c6300fd0d16e7a89e1d072e57}\label{struct_t_i_m___type_def_a3e30404c6300fd0d16e7a89e1d072e57}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!DMAR@{DMAR}}
+\index{DMAR@{DMAR}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DMAR}{DMAR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+DMAR}
+
+
+
+TIM DMA address for full transfer register, offset\+: 0x4C 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00088}{88}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_abd92013929e7b97f5fe667ca2ec93103}\label{struct_t_i_m___type_def_abd92013929e7b97f5fe667ca2ec93103}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!EGR@{EGR}}
+\index{EGR@{EGR}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{EGR}{EGR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+EGR}
+
+
+
+TIM event generation register, offset\+: 0x14 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00074}{74}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_aad6ceb98b18f358dcf94aa3e43452dcf}\label{struct_t_i_m___type_def_aad6ceb98b18f358dcf94aa3e43452dcf}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!OR@{OR}}
+\index{OR@{OR}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{OR}{OR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+OR}
+
+
+
+Option register, offset\+: 0x50 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00089}{89}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_ac7df32913b5001e33d15cb9342610732}\label{struct_t_i_m___type_def_ac7df32913b5001e33d15cb9342610732}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!PDER@{PDER}}
+\index{PDER@{PDER}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{PDER}{PDER}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+PDER}
+
+
+
+PWM Shift repeat enable register, offset\+: 0x5C 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00092}{92}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_a8ff3e47558e6d0b93387f54f7b83a020}\label{struct_t_i_m___type_def_a8ff3e47558e6d0b93387f54f7b83a020}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!PSC@{PSC}}
+\index{PSC@{PSC}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{PSC}{PSC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+PSC}
+
+
+
+TIM prescaler register, offset\+: 0x28 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00079}{79}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_ae16a340c4a12c1580b26deceee81c97d}\label{struct_t_i_m___type_def_ae16a340c4a12c1580b26deceee81c97d}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!RCR@{RCR}}
+\index{RCR@{RCR}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RCR}{RCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+RCR}
+
+
+
+TIM repetition counter register, offset\+: 0x30 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00081}{81}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_a9ce545ebaf44b5b58d60869ee3e52a0e}\label{struct_t_i_m___type_def_a9ce545ebaf44b5b58d60869ee3e52a0e}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!SMCR@{SMCR}}
+\index{SMCR@{SMCR}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{SMCR}{SMCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+SMCR}
+
+
+
+TIM slave Mode Control register, offset\+: 0x08 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00071}{71}} 行定义.
+
+\mbox{\Hypertarget{struct_t_i_m___type_def_aa18c33ab29565882fbadbc03b2ac2405}\label{struct_t_i_m___type_def_aa18c33ab29565882fbadbc03b2ac2405}} 
+\index{TIM\_TypeDef@{TIM\_TypeDef}!SR@{SR}}
+\index{SR@{SR}!TIM\_TypeDef@{TIM\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{SR}{SR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} TIM\+\_\+\+Type\+Def\+::\+SR}
+
+
+
+TIM status register, offset\+: 0x10 
+
+
+
+在文件 \mbox{\hyperlink{reg__tim_8h_source}{reg\+\_\+tim.\+h}} 第 \mbox{\hyperlink{reg__tim_8h_source_l00073}{73}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/\mbox{\hyperlink{reg__tim_8h}{reg\+\_\+tim.\+h}}\end{DoxyCompactItemize}

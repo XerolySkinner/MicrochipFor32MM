@@ -1,0 +1,2090 @@
+\hypertarget{reg__syscfg_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/reg\+\_\+syscfg.h 文件参考}
+\label{reg__syscfg_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_syscfg.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_syscfg.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_s_y_s_c_f_g___type_def}{SYSCFG\+\_\+\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em Sys\+Tem Configuration Register Structure Definition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a62246020bf3b34b6a4d8d0e84ec79d3d}{SYSCFG\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a25b99d6065f1c8f751e78f43ade652cb}{APB2\+PERIPH\+\_\+\+BASE}} + 0x0000)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x40010000 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a3c833fe1c486cb62250ccbca32899cb8}{SYSCFG}}~((\mbox{\hyperlink{struct_s_y_s_c_f_g___type_def}{SYSCFG\+\_\+\+Type\+Def}} $\ast$) \mbox{\hyperlink{reg__syscfg_8h_a62246020bf3b34b6a4d8d0e84ec79d3d}{SYSCFG\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_aae5b3e8026accf298129f0e5e56454c4}{SYSCFG\+\_\+\+CFGR\+\_\+\+MEM\+\_\+\+MODE\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em System Configuration (SYSCFG) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_ab68bf5cb50de235f8dc0cc8a49bfadb2}{SYSCFG\+\_\+\+CFGR\+\_\+\+MEM\+\_\+\+MODE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000003)
+\begin{DoxyCompactList}\small\item\em SYSCFG\+\_\+\+Memory Remap Config \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a9bce2f4e2705b6c93dcf661b21fcd71c}{SYSCFG\+\_\+\+CFGR\+\_\+\+MEM\+\_\+\+MODE\+\_\+0}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000001)
+\begin{DoxyCompactList}\small\item\em SYSCFG\+\_\+\+Memory Remap Config Bit 0 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_af345ca149adfddcb40900d6d79316d10}{SYSCFG\+\_\+\+CFGR\+\_\+\+MEM\+\_\+\+MODE\+\_\+1}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000002)
+\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a5c96a540bf8feb3c99d0d8a94c942e19}{SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+SYNC\+\_\+\+EN\+\_\+\+Pos}}~(27)
+\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a24a2654a3b73be9c7d1ed43965d7f462}{SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+SYNC\+\_\+\+EN}}~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a5c96a540bf8feb3c99d0d8a94c942e19}{SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+SYNC\+\_\+\+EN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em FSMC SYNC Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a9869bb8d70c48e579bbf2b75aaaa7508}{SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+AF\+\_\+\+ADDR\+\_\+\+Pos}}~(28)
+\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a1072f5bf8c627bbba2351f022e419451}{SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+AF\+\_\+\+ADDR}}~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a9869bb8d70c48e579bbf2b75aaaa7508}{SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+AF\+\_\+\+ADDR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em FSMC Databus AF Address \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a96b55a9ee875508d1372da40278b0065}{SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+MODE\+\_\+\+Pos}}~(29)
+\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a632f984d3ad07b910c912969b1bf389c}{SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+MODE}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x03$<$$<$\mbox{\hyperlink{reg__syscfg_8h_a96b55a9ee875508d1372da40278b0065}{SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+MODE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em FSMC Interface Mode Config \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a1e41509481ebd68464ce045f271f6c06}{SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+MODE0}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00$<$$<$\mbox{\hyperlink{reg__syscfg_8h_a96b55a9ee875508d1372da40278b0065}{SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+MODE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em FSMC Mode Config Mode 0 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a838e05df89ebe496d6985c2a6133421f}{SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+MODE1}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01$<$$<$\mbox{\hyperlink{reg__syscfg_8h_a96b55a9ee875508d1372da40278b0065}{SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+MODE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em FSMC Mode Config Mode 1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a75b70d07448c3037234bc2abb8e3d884}{SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI0}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x000F)
+\begin{DoxyCompactList}\small\item\em SYSCFG\+\_\+\+EXTICR1 Register Bit definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a7fc84838c77f799cb7e57d6e97c6c16d}{SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI1}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x00\+F0)
+\begin{DoxyCompactList}\small\item\em EXTI 1 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a6d0a0a6b8223777937d8c9012658d6cd}{SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI2}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0\+F00)
+\begin{DoxyCompactList}\small\item\em EXTI 2 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_ac3bf2306f79ebb709da5ecf83e59ded4}{SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI3}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x\+F000)
+\begin{DoxyCompactList}\small\item\em EXTI 3 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a6de6aa8e32ae5cd07fd69e42e7226bd1}{SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI0\+\_\+\+PA}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)
+\begin{DoxyCompactList}\small\item\em EXTI0 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_af43c9ef6b61e39655cbe969967c79a69}{SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI0\+\_\+\+PB}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0001)
+\begin{DoxyCompactList}\small\item\em PB\mbox{[}0\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a861a4d7b48ffd93997267baaad12fd51}{SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI0\+\_\+\+PC}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0002)
+\begin{DoxyCompactList}\small\item\em PC\mbox{[}0\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_af6439042c8cd14f99fe3813cff47c0ee}{SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI0\+\_\+\+PD}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0003)
+\begin{DoxyCompactList}\small\item\em PD\mbox{[}0\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_af4b78c30e4ef4fa441582eb3c102865d}{SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI1\+\_\+\+PA}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)
+\begin{DoxyCompactList}\small\item\em EXTI1 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a19a11fce288d19546c76257483e0dcb6}{SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI1\+\_\+\+PB}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0010)
+\begin{DoxyCompactList}\small\item\em PB\mbox{[}1\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_ae45a8c814b13fa19f157364dc715c08a}{SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI1\+\_\+\+PC}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0020)
+\begin{DoxyCompactList}\small\item\em PC\mbox{[}1\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a93cb136eaf357affc4a28a8d423cabbb}{SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI1\+\_\+\+PD}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0030)
+\begin{DoxyCompactList}\small\item\em PD\mbox{[}1\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a4096f472e87e021f4d4c94457ddaf5f1}{SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI2\+\_\+\+PA}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)
+\begin{DoxyCompactList}\small\item\em EXTI2 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a8cd240d61fd8a9666621f0dee07a08e5}{SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI2\+\_\+\+PB}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0100)
+\begin{DoxyCompactList}\small\item\em PB\mbox{[}2\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a03ce7faaf56aa9efcc74af65619e275e}{SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI2\+\_\+\+PC}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0200)
+\begin{DoxyCompactList}\small\item\em PC\mbox{[}2\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_afc35fcdcc89b487fab2901e1f5a7f41b}{SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI2\+\_\+\+PD}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0300)
+\begin{DoxyCompactList}\small\item\em PD\mbox{[}2\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a45ed24773c389f4477944c2c43d106c0}{SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI3\+\_\+\+PA}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)
+\begin{DoxyCompactList}\small\item\em EXTI3 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a652183838bb096717551bf8a1917c257}{SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI3\+\_\+\+PB}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x1000)
+\begin{DoxyCompactList}\small\item\em PB\mbox{[}3\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_acb1809e5b8a9ebc4b1cbc8967d985929}{SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI3\+\_\+\+PC}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x2000)
+\begin{DoxyCompactList}\small\item\em PC\mbox{[}3\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a205440ffa174509d57c2b6a1814f8202}{SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI3\+\_\+\+PD}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x3000)
+\begin{DoxyCompactList}\small\item\em PD\mbox{[}3\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_ad2a57b4872977812e60d521268190e1e}{SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI4}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x000F)
+\begin{DoxyCompactList}\small\item\em SYSCFG\+\_\+\+EXTICR2 Register Bit definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a6682a1b97b04c5c33085ffd2827ccd17}{SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI5}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x00\+F0)
+\begin{DoxyCompactList}\small\item\em EXTI 5 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a6c50caf6019fd7d5038d77e61f57ad7b}{SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI6}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0\+F00)
+\begin{DoxyCompactList}\small\item\em EXTI 6 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a638ea3bb014752813d064d37b3388950}{SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI7}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x\+F000)
+\begin{DoxyCompactList}\small\item\em EXTI 7 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a51147f1747daf48dbcfad03285ae8889}{SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI4\+\_\+\+PA}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)
+\begin{DoxyCompactList}\small\item\em EXTI4 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a917aeb0df688d6b34785085fc85d9e47}{SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI4\+\_\+\+PB}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0001)
+\begin{DoxyCompactList}\small\item\em PB\mbox{[}4\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a14ac312beeb19d3bb34a552546477613}{SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI4\+\_\+\+PC}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0002)
+\begin{DoxyCompactList}\small\item\em PC\mbox{[}4\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_aec62164e18d1b525e8272169b1efe642}{SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI4\+\_\+\+PD}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0003)
+\begin{DoxyCompactList}\small\item\em PD\mbox{[}4\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_afb9581c515a4bdf1ed88fe96d8c24794}{SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI5\+\_\+\+PA}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)
+\begin{DoxyCompactList}\small\item\em EXTI5 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a90a3f610234dfa13f56e72c76a12be74}{SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI5\+\_\+\+PB}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0010)
+\begin{DoxyCompactList}\small\item\em PB\mbox{[}5\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a33b6bdc1b4bfeda0d4034dc67f1a6046}{SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI5\+\_\+\+PC}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0020)
+\begin{DoxyCompactList}\small\item\em PC\mbox{[}5\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a0eea392f1530c7cb794a63d04e268a70}{SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI5\+\_\+\+PD}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0030)
+\begin{DoxyCompactList}\small\item\em PD\mbox{[}5\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a3e87c78fb6dfde7c8b7f81fe3b65aae9}{SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI6\+\_\+\+PA}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)
+\begin{DoxyCompactList}\small\item\em EXTI6 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a6528de8e4ca8741e86ae254e1d6b2a70}{SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI6\+\_\+\+PB}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0100)
+\begin{DoxyCompactList}\small\item\em PB\mbox{[}6\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a53d8745705d5eb84c70a8554f61d59ac}{SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI6\+\_\+\+PC}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0200)
+\begin{DoxyCompactList}\small\item\em PC\mbox{[}6\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a26c97cdece451441e49120e754020cdc}{SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI6\+\_\+\+PD}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0300)
+\begin{DoxyCompactList}\small\item\em PD\mbox{[}6\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a2f1bfd3af524288b6ce54d7f9aef410a}{SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI7\+\_\+\+PA}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)
+\begin{DoxyCompactList}\small\item\em EXTI7 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_ab18d324986b18858f901febbcc2a57b7}{SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI7\+\_\+\+PB}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x1000)
+\begin{DoxyCompactList}\small\item\em PB\mbox{[}7\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_ae9f53618d9cf13af2b2ecf191da8595a}{SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI7\+\_\+\+PC}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x2000)
+\begin{DoxyCompactList}\small\item\em PC\mbox{[}7\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_ae38aa3b76227bb8e9d8cedc31c023f63}{SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI7\+\_\+\+PD}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x3000)
+\begin{DoxyCompactList}\small\item\em PD\mbox{[}7\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_af2a656b18cc728e38acb72cf8d7e7935}{SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI8}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x000F)
+\begin{DoxyCompactList}\small\item\em SYSCFG\+\_\+\+EXTICR3 Register Bit definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a002462e4c233adc6dd502de726994575}{SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI9}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x00\+F0)
+\begin{DoxyCompactList}\small\item\em EXTI 9 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a8fc06b17c3b3d393b749bf9924a43a80}{SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI10}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0\+F00)
+\begin{DoxyCompactList}\small\item\em EXTI 10 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_aa66cc9a579696c8f5c41f5f138ee1e67}{SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI11}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x\+F000)
+\begin{DoxyCompactList}\small\item\em EXTI 11 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_ae1c6843a871f1a06ca25c0de50048b10}{SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI8\+\_\+\+PA}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)
+\begin{DoxyCompactList}\small\item\em EXTI8 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a4818dc7bffc8dfc2acc48995a62e66c5}{SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI8\+\_\+\+PB}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0001)
+\begin{DoxyCompactList}\small\item\em PB\mbox{[}8\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_aba0d34ff57632d7753981404cef548e2}{SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI8\+\_\+\+PC}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0002)
+\begin{DoxyCompactList}\small\item\em PC\mbox{[}8\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_aa15260ba354dee354f0a71e7913009c3}{SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI8\+\_\+\+PD}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0003)
+\begin{DoxyCompactList}\small\item\em PD\mbox{[}8\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a93e284e59c4ff887b2e79851ac0a81c4}{SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI9\+\_\+\+PA}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)
+\begin{DoxyCompactList}\small\item\em EXTI9 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_aa9271cbc1ed09774a5fef4b379cab260}{SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI9\+\_\+\+PB}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0010)
+\begin{DoxyCompactList}\small\item\em PB\mbox{[}9\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a1cc355176941881870c620c0837cab48}{SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI9\+\_\+\+PC}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0020)
+\begin{DoxyCompactList}\small\item\em PC\mbox{[}9\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a75af3c7a94cfc78361c94b054f9fe064}{SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI9\+\_\+\+PD}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0030)
+\begin{DoxyCompactList}\small\item\em PD\mbox{[}9\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a25acdbb9e916c440c41a060d861130ee}{SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI10\+\_\+\+PA}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)
+\begin{DoxyCompactList}\small\item\em EXTI10 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_ab8d9aec4349bf38a4a9753b267b7de7e}{SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI10\+\_\+\+PB}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0100)
+\begin{DoxyCompactList}\small\item\em PB\mbox{[}10\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a62d2b81d49e30ab4fe96572be5da8484}{SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI10\+\_\+\+PC}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0200)
+\begin{DoxyCompactList}\small\item\em PC\mbox{[}10\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_aab3553c540cd836d465824939c2e3b79}{SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI10\+\_\+\+PD}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0300)
+\begin{DoxyCompactList}\small\item\em PE\mbox{[}10\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a0ca8a85d4512677eff6ed2aac897a366}{SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI11\+\_\+\+PA}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)
+\begin{DoxyCompactList}\small\item\em EXTI11 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_aedb3a8cc6b1763e303986553c0e4e7f8}{SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI11\+\_\+\+PB}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x1000)
+\begin{DoxyCompactList}\small\item\em PB\mbox{[}11\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a0b01c8ba6cb27899a4f5fa494bf2b3f5}{SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI11\+\_\+\+PC}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x2000)
+\begin{DoxyCompactList}\small\item\em PC\mbox{[}11\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a6a69d636cda0352da0982c54f582787d}{SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI11\+\_\+\+PD}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x3000)
+\begin{DoxyCompactList}\small\item\em PD\mbox{[}11\mbox{]} pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a9d4b31f4a75d935b6a52afe6a16463d1}{SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI12}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x000F)
+\begin{DoxyCompactList}\small\item\em SYSCFG\+\_\+\+EXTICR4 Register Bit definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a7f04cda5bfe876431d5ad864302d7fa1}{SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI13}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x00\+F0)
+\begin{DoxyCompactList}\small\item\em EXTI 13 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_abde06df3ec6e357374820a5a615991aa}{SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI14}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0\+F00)
+\begin{DoxyCompactList}\small\item\em EXTI 14 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_abd325c27cff1ae3de773d5e205a33f4e}{SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI15}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x\+F000)
+\begin{DoxyCompactList}\small\item\em EXTI 15 configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a3ceaa63866465faa8145ce0c5d9a44d0}{SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI12\+\_\+\+PA}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)
+\begin{DoxyCompactList}\small\item\em PA\mbox{[}12\mbox{]} pin for EXTI12 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_ad8b00a462533a83c75c588340a2fa710}{SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI12\+\_\+\+PB}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0001)
+\begin{DoxyCompactList}\small\item\em PB\mbox{[}12\mbox{]} pin for EXTI12 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a4d27668b1fa6b1accde06aa144faa970}{SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI12\+\_\+\+PC}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0002)
+\begin{DoxyCompactList}\small\item\em PC\mbox{[}12\mbox{]} pin for EXTI12 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_aa46ddd43a361d82abcb3cb7779ac74ff}{SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI12\+\_\+\+PD}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0003)
+\begin{DoxyCompactList}\small\item\em PD\mbox{[}12\mbox{]} pin for EXTI12 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a0514aaa894c9be44ba47c1346756f90b}{SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI13\+\_\+\+PA}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)
+\begin{DoxyCompactList}\small\item\em PA\mbox{[}13\mbox{]} pin for EXTI13 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a34e6776e3ebfecc9e78c5aec77c48eff}{SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI13\+\_\+\+PB}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0010)
+\begin{DoxyCompactList}\small\item\em PB\mbox{[}13\mbox{]} pin for EXTI13 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a1c7833d4e3c6b7f3878f62a200a6ab14}{SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI13\+\_\+\+PC}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0020)
+\begin{DoxyCompactList}\small\item\em PC\mbox{[}13\mbox{]} pin for EXTI13 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_abed530f628b3c37281f7a583af1cdb3c}{SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI13\+\_\+\+PD}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0030)
+\begin{DoxyCompactList}\small\item\em PD\mbox{[}13\mbox{]} pin for EXTI13 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a7ad140a68e3e4e0406a182a504679ea9}{SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI14\+\_\+\+PA}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)
+\begin{DoxyCompactList}\small\item\em PA\mbox{[}14\mbox{]} pin for EXTI14 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_ae5c1b8a0f2b4f79bd868bbb2b4eff617}{SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI14\+\_\+\+PB}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0100)
+\begin{DoxyCompactList}\small\item\em PB\mbox{[}14\mbox{]} pin for EXTI14 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a8ca668cdd447acb1740566f46de5eb19}{SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI14\+\_\+\+PC}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0200)
+\begin{DoxyCompactList}\small\item\em PC\mbox{[}14\mbox{]} pin for EXTI14 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a2f20b2bfa9dc8b57a987c127c6dfa6fe}{SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI14\+\_\+\+PD}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0300)
+\begin{DoxyCompactList}\small\item\em PD\mbox{[}14\mbox{]} pin for EXTI14 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_ae2f28920677dd99f9132ed28f7b1d5e2}{SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI15\+\_\+\+PA}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)
+\begin{DoxyCompactList}\small\item\em PA\mbox{[}15\mbox{]} pin for EXTI15 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a412f44d6a8f8f60420d7e7f8b5635e09}{SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI15\+\_\+\+PB}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x1000)
+\begin{DoxyCompactList}\small\item\em PB\mbox{[}15\mbox{]} pin for EXTI15 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a49778592caef3a176ee82c9b83e25148}{SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI15\+\_\+\+PC}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x2000)
+\begin{DoxyCompactList}\small\item\em PC\mbox{[}15\mbox{]} pin for EXTI15 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_ac23e07d92a68cf7f8c3e58b479638885}{SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI15\+\_\+\+PD}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x3000)
+\begin{DoxyCompactList}\small\item\em PD\mbox{[}15\mbox{]} pin for EXTI15 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a3f2e47cdeef768823644e201839547ee}{SYSCFG\+\_\+\+CFGR2\+\_\+\+I2\+C1\+\_\+\+MODE\+\_\+\+SEL\+\_\+\+Pos}}~(16)
+\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_aa3e7c42d5934cd1006035264b1959e96}{SYSCFG\+\_\+\+CFGR2\+\_\+\+I2\+C1\+\_\+\+MODE\+\_\+\+SEL}}~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a3f2e47cdeef768823644e201839547ee}{SYSCFG\+\_\+\+CFGR2\+\_\+\+I2\+C1\+\_\+\+MODE\+\_\+\+SEL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em I2\+C1 Enable Push\+Pull mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a0a46df9f1ee70720e25afbd0b363c360}{SYSCFG\+\_\+\+CFGR2\+\_\+\+I2\+C2\+\_\+\+MODE\+\_\+\+SEL\+\_\+\+Pos}}~(17)
+\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a115b45b3461964db6b57286c0dbdc656}{SYSCFG\+\_\+\+CFGR2\+\_\+\+I2\+C2\+\_\+\+MODE\+\_\+\+SEL}}~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a0a46df9f1ee70720e25afbd0b363c360}{SYSCFG\+\_\+\+CFGR2\+\_\+\+I2\+C2\+\_\+\+MODE\+\_\+\+SEL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em I2\+C2 Enable Push\+Pull mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a6140e81fa4a10fb4fd79d6768ab355f7}{SYSCFG\+\_\+\+CFGR2\+\_\+\+MII\+\_\+\+RMII\+\_\+\+MODE\+\_\+\+SEL\+\_\+\+Pos}}~(20)
+\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a7db9bb5823b7e16b05144e1541799dc7}{SYSCFG\+\_\+\+CFGR2\+\_\+\+MII\+\_\+\+RMII\+\_\+\+MODE\+\_\+\+SEL}}~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a6140e81fa4a10fb4fd79d6768ab355f7}{SYSCFG\+\_\+\+CFGR2\+\_\+\+MII\+\_\+\+RMII\+\_\+\+MODE\+\_\+\+SEL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em MII\+\_\+\+RMII mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a0a8636a0a385466223691656e5f68eda}{SYSCFG\+\_\+\+CFGR2\+\_\+\+MAC\+\_\+\+SPEED\+\_\+\+SEL\+\_\+\+Pos}}~(21)
+\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_ad20207b05e1a69ffada3ecb2c20b0da0}{SYSCFG\+\_\+\+CFGR2\+\_\+\+MAC\+\_\+\+SPEED\+\_\+\+SEL}}~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a0a8636a0a385466223691656e5f68eda}{SYSCFG\+\_\+\+CFGR2\+\_\+\+MAC\+\_\+\+SPEED\+\_\+\+SEL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em MAC\+\_\+\+SPEED mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a1042cbd9c950ea7fb29dfdae31d78935}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PVDE\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a352165efb5d3fa83538b089d7f9f5a8d}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PVDE}}~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a1042cbd9c950ea7fb29dfdae31d78935}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PVDE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Power Voltage Detector Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a71f9e9d516948c582a9f678df7b875b2}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS}}~(0x0\+FU  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a762838359ec30671531e238997a6ef98}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+1\+V7}}~(0x00U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em PVD level 1.\+7V \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a018463e9bba79b36f1d5106606917f35}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+2\+V0}}~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em PVD level 2.\+0V \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a54ed275850c99ea3dc17fc519e40fb38}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+2\+V3}}~(0x02U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em PVD level 2.\+3V \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_ab7658ee7be9b70eeabbcd7bdeec786b2}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+2\+V6}}~(0x03U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em PVD level 2.\+6V \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_ad8aaedefe16864e9a94cac9a6ac86c76}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+2\+V9}}~(0x04U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em PVD level 2.\+9V \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a7e4f425f3dfb18663868b86d43cfe64b}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+3\+V2}}~(0x05U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em PVD level 3.\+2V \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_afa21b7a7a8f82448e089fb83db09190c}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+3\+V5}}~(0x06U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em PVD level 3.\+5V \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a10e75a16efaf9e7f404d968ecd728914}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+3\+V8}}~(0x07U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em PVD level 3.\+8V \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a7399e6104a0be590b5f1c63b5b60618c}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+4\+V1}}~(0x08U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em PVD level 4.\+1V \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a361ce5abcb17318141adbf1d7883f616}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+4\+V4}}~(0x09U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em PVD level 4.\+4V \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a44811ac264275ddfb337e4aab8ffba05}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+4\+V7}}~(0x0\+AU  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em PVD level 4.\+7V \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a318f9eefba5e1f7ba6c8799c9dca1161}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PVDO\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_aa3ef8c17bf6b9fe26564516918cb7535}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PVDO}}~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a318f9eefba5e1f7ba6c8799c9dca1161}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PVDO\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em PVD Output \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a43429f078906bb17aa96df9b1779e84b}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTO\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a6be72ae0e9ec89b1000f325955350d58}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTO}}~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a43429f078906bb17aa96df9b1779e84b}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTO\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em VDT Output Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_ad306bc6568c36a2047d28e60f79d7e05}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTE\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a27d875591afe1cf283ccdff28ae9e2db}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTE}}~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_ad306bc6568c36a2047d28e60f79d7e05}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em VDT Output \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a358218173fcef2b8dffa97af9c35cfe3}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTLS\+\_\+\+Pos}}~(9)
+\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a54873183513148c1f89b2a9745435716}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTLS}}~(0x0\+FU  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a358218173fcef2b8dffa97af9c35cfe3}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTLS\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_ac83c174076727112ccd70fdafc85e8c3}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTLS\+\_\+0\+V9}}~(0x00U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a358218173fcef2b8dffa97af9c35cfe3}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTLS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em VDT level 0.\+9V \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a706154aa6b91bc7fa08c5f4becf14118}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTLS\+\_\+1\+V0}}~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a358218173fcef2b8dffa97af9c35cfe3}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTLS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em VDT level 1.\+0V \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a12f40dd8a96641da008c35866df5c630}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTLS\+\_\+1\+V1}}~(0x02U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a358218173fcef2b8dffa97af9c35cfe3}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTLS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em VDT level 1.\+1V \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_aaf5d687badbdcc3ee8e952dfe3c4b349}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTLS\+\_\+1\+V2}}~(0x03U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a358218173fcef2b8dffa97af9c35cfe3}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTLS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em VDT level 1.\+2V \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a55a63874425582f4e274afe10759fc76}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VBATDIV3\+EN\+\_\+\+Pos}}~(11)
+\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a1996c5e2127dee9b48afa97efd66c2ed}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VBATDIV3\+EN}}~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a55a63874425582f4e274afe10759fc76}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VBATDIV3\+EN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em VBATDIV3 Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_a28d78cefbdfb254a44f630b1d5d3809a}{SYSCFG\+\_\+\+VOSDLY\+\_\+\+CNT\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__syscfg_8h_afab6ebb8fd88ce411f0a8489e42256a0}{SYSCFG\+\_\+\+VOSDLY\+\_\+\+CNT}}~(0x03\+FFU $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a28d78cefbdfb254a44f630b1d5d3809a}{SYSCFG\+\_\+\+VOSDLY\+\_\+\+CNT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em SYSCFG VOSDLY CNT \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{reg__syscfg_8h_a3c833fe1c486cb62250ccbca32899cb8}\label{reg__syscfg_8h_a3c833fe1c486cb62250ccbca32899cb8}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG@{SYSCFG}}
+\index{SYSCFG@{SYSCFG}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG}{SYSCFG}}
+{\footnotesize\ttfamily \#define SYSCFG~((\mbox{\hyperlink{struct_s_y_s_c_f_g___type_def}{SYSCFG\+\_\+\+Type\+Def}} $\ast$) \mbox{\hyperlink{reg__syscfg_8h_a62246020bf3b34b6a4d8d0e84ec79d3d}{SYSCFG\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00068}{68}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a62246020bf3b34b6a4d8d0e84ec79d3d}\label{reg__syscfg_8h_a62246020bf3b34b6a4d8d0e84ec79d3d}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_BASE@{SYSCFG\_BASE}}
+\index{SYSCFG\_BASE@{SYSCFG\_BASE}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_BASE}{SYSCFG\_BASE}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a25b99d6065f1c8f751e78f43ade652cb}{APB2\+PERIPH\+\_\+\+BASE}} + 0x0000)}
+
+
+
+Base Address\+: 0x40010000 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00045}{45}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_aa3e7c42d5934cd1006035264b1959e96}\label{reg__syscfg_8h_aa3e7c42d5934cd1006035264b1959e96}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_CFGR2\_I2C1\_MODE\_SEL@{SYSCFG\_CFGR2\_I2C1\_MODE\_SEL}}
+\index{SYSCFG\_CFGR2\_I2C1\_MODE\_SEL@{SYSCFG\_CFGR2\_I2C1\_MODE\_SEL}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_CFGR2\_I2C1\_MODE\_SEL}{SYSCFG\_CFGR2\_I2C1\_MODE\_SEL}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+CFGR2\+\_\+\+I2\+C1\+\_\+\+MODE\+\_\+\+SEL~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a3f2e47cdeef768823644e201839547ee}{SYSCFG\+\_\+\+CFGR2\+\_\+\+I2\+C1\+\_\+\+MODE\+\_\+\+SEL\+\_\+\+Pos}})}
+
+
+
+I2\+C1 Enable Push\+Pull mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00221}{221}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a3f2e47cdeef768823644e201839547ee}\label{reg__syscfg_8h_a3f2e47cdeef768823644e201839547ee}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_CFGR2\_I2C1\_MODE\_SEL\_Pos@{SYSCFG\_CFGR2\_I2C1\_MODE\_SEL\_Pos}}
+\index{SYSCFG\_CFGR2\_I2C1\_MODE\_SEL\_Pos@{SYSCFG\_CFGR2\_I2C1\_MODE\_SEL\_Pos}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_CFGR2\_I2C1\_MODE\_SEL\_Pos}{SYSCFG\_CFGR2\_I2C1\_MODE\_SEL\_Pos}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+CFGR2\+\_\+\+I2\+C1\+\_\+\+MODE\+\_\+\+SEL\+\_\+\+Pos~(16)}
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00220}{220}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a115b45b3461964db6b57286c0dbdc656}\label{reg__syscfg_8h_a115b45b3461964db6b57286c0dbdc656}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_CFGR2\_I2C2\_MODE\_SEL@{SYSCFG\_CFGR2\_I2C2\_MODE\_SEL}}
+\index{SYSCFG\_CFGR2\_I2C2\_MODE\_SEL@{SYSCFG\_CFGR2\_I2C2\_MODE\_SEL}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_CFGR2\_I2C2\_MODE\_SEL}{SYSCFG\_CFGR2\_I2C2\_MODE\_SEL}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+CFGR2\+\_\+\+I2\+C2\+\_\+\+MODE\+\_\+\+SEL~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a0a46df9f1ee70720e25afbd0b363c360}{SYSCFG\+\_\+\+CFGR2\+\_\+\+I2\+C2\+\_\+\+MODE\+\_\+\+SEL\+\_\+\+Pos}})}
+
+
+
+I2\+C2 Enable Push\+Pull mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00223}{223}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a0a46df9f1ee70720e25afbd0b363c360}\label{reg__syscfg_8h_a0a46df9f1ee70720e25afbd0b363c360}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_CFGR2\_I2C2\_MODE\_SEL\_Pos@{SYSCFG\_CFGR2\_I2C2\_MODE\_SEL\_Pos}}
+\index{SYSCFG\_CFGR2\_I2C2\_MODE\_SEL\_Pos@{SYSCFG\_CFGR2\_I2C2\_MODE\_SEL\_Pos}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_CFGR2\_I2C2\_MODE\_SEL\_Pos}{SYSCFG\_CFGR2\_I2C2\_MODE\_SEL\_Pos}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+CFGR2\+\_\+\+I2\+C2\+\_\+\+MODE\+\_\+\+SEL\+\_\+\+Pos~(17)}
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00222}{222}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_ad20207b05e1a69ffada3ecb2c20b0da0}\label{reg__syscfg_8h_ad20207b05e1a69ffada3ecb2c20b0da0}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_CFGR2\_MAC\_SPEED\_SEL@{SYSCFG\_CFGR2\_MAC\_SPEED\_SEL}}
+\index{SYSCFG\_CFGR2\_MAC\_SPEED\_SEL@{SYSCFG\_CFGR2\_MAC\_SPEED\_SEL}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_CFGR2\_MAC\_SPEED\_SEL}{SYSCFG\_CFGR2\_MAC\_SPEED\_SEL}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+CFGR2\+\_\+\+MAC\+\_\+\+SPEED\+\_\+\+SEL~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a0a8636a0a385466223691656e5f68eda}{SYSCFG\+\_\+\+CFGR2\+\_\+\+MAC\+\_\+\+SPEED\+\_\+\+SEL\+\_\+\+Pos}})}
+
+
+
+MAC\+\_\+\+SPEED mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00228}{228}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a0a8636a0a385466223691656e5f68eda}\label{reg__syscfg_8h_a0a8636a0a385466223691656e5f68eda}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_CFGR2\_MAC\_SPEED\_SEL\_Pos@{SYSCFG\_CFGR2\_MAC\_SPEED\_SEL\_Pos}}
+\index{SYSCFG\_CFGR2\_MAC\_SPEED\_SEL\_Pos@{SYSCFG\_CFGR2\_MAC\_SPEED\_SEL\_Pos}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_CFGR2\_MAC\_SPEED\_SEL\_Pos}{SYSCFG\_CFGR2\_MAC\_SPEED\_SEL\_Pos}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+CFGR2\+\_\+\+MAC\+\_\+\+SPEED\+\_\+\+SEL\+\_\+\+Pos~(21)}
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00227}{227}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a7db9bb5823b7e16b05144e1541799dc7}\label{reg__syscfg_8h_a7db9bb5823b7e16b05144e1541799dc7}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_CFGR2\_MII\_RMII\_MODE\_SEL@{SYSCFG\_CFGR2\_MII\_RMII\_MODE\_SEL}}
+\index{SYSCFG\_CFGR2\_MII\_RMII\_MODE\_SEL@{SYSCFG\_CFGR2\_MII\_RMII\_MODE\_SEL}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_CFGR2\_MII\_RMII\_MODE\_SEL}{SYSCFG\_CFGR2\_MII\_RMII\_MODE\_SEL}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+CFGR2\+\_\+\+MII\+\_\+\+RMII\+\_\+\+MODE\+\_\+\+SEL~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a6140e81fa4a10fb4fd79d6768ab355f7}{SYSCFG\+\_\+\+CFGR2\+\_\+\+MII\+\_\+\+RMII\+\_\+\+MODE\+\_\+\+SEL\+\_\+\+Pos}})}
+
+
+
+MII\+\_\+\+RMII mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00226}{226}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a6140e81fa4a10fb4fd79d6768ab355f7}\label{reg__syscfg_8h_a6140e81fa4a10fb4fd79d6768ab355f7}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_CFGR2\_MII\_RMII\_MODE\_SEL\_Pos@{SYSCFG\_CFGR2\_MII\_RMII\_MODE\_SEL\_Pos}}
+\index{SYSCFG\_CFGR2\_MII\_RMII\_MODE\_SEL\_Pos@{SYSCFG\_CFGR2\_MII\_RMII\_MODE\_SEL\_Pos}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_CFGR2\_MII\_RMII\_MODE\_SEL\_Pos}{SYSCFG\_CFGR2\_MII\_RMII\_MODE\_SEL\_Pos}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+CFGR2\+\_\+\+MII\+\_\+\+RMII\+\_\+\+MODE\+\_\+\+SEL\+\_\+\+Pos~(20)}
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00225}{225}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a1072f5bf8c627bbba2351f022e419451}\label{reg__syscfg_8h_a1072f5bf8c627bbba2351f022e419451}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_CFGR\_FSMC\_AF\_ADDR@{SYSCFG\_CFGR\_FSMC\_AF\_ADDR}}
+\index{SYSCFG\_CFGR\_FSMC\_AF\_ADDR@{SYSCFG\_CFGR\_FSMC\_AF\_ADDR}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_CFGR\_FSMC\_AF\_ADDR}{SYSCFG\_CFGR\_FSMC\_AF\_ADDR}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+AF\+\_\+\+ADDR~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a9869bb8d70c48e579bbf2b75aaaa7508}{SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+AF\+\_\+\+ADDR\+\_\+\+Pos}})}
+
+
+
+FSMC Databus AF Address 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00086}{86}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a9869bb8d70c48e579bbf2b75aaaa7508}\label{reg__syscfg_8h_a9869bb8d70c48e579bbf2b75aaaa7508}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_CFGR\_FSMC\_AF\_ADDR\_Pos@{SYSCFG\_CFGR\_FSMC\_AF\_ADDR\_Pos}}
+\index{SYSCFG\_CFGR\_FSMC\_AF\_ADDR\_Pos@{SYSCFG\_CFGR\_FSMC\_AF\_ADDR\_Pos}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_CFGR\_FSMC\_AF\_ADDR\_Pos}{SYSCFG\_CFGR\_FSMC\_AF\_ADDR\_Pos}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+AF\+\_\+\+ADDR\+\_\+\+Pos~(28)}
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00085}{85}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a632f984d3ad07b910c912969b1bf389c}\label{reg__syscfg_8h_a632f984d3ad07b910c912969b1bf389c}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_CFGR\_FSMC\_MODE@{SYSCFG\_CFGR\_FSMC\_MODE}}
+\index{SYSCFG\_CFGR\_FSMC\_MODE@{SYSCFG\_CFGR\_FSMC\_MODE}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_CFGR\_FSMC\_MODE}{SYSCFG\_CFGR\_FSMC\_MODE}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+MODE~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x03$<$$<$\mbox{\hyperlink{reg__syscfg_8h_a96b55a9ee875508d1372da40278b0065}{SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+MODE\+\_\+\+Pos}})}
+
+
+
+FSMC Interface Mode Config 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00088}{88}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a1e41509481ebd68464ce045f271f6c06}\label{reg__syscfg_8h_a1e41509481ebd68464ce045f271f6c06}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_CFGR\_FSMC\_MODE0@{SYSCFG\_CFGR\_FSMC\_MODE0}}
+\index{SYSCFG\_CFGR\_FSMC\_MODE0@{SYSCFG\_CFGR\_FSMC\_MODE0}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_CFGR\_FSMC\_MODE0}{SYSCFG\_CFGR\_FSMC\_MODE0}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+MODE0~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00$<$$<$\mbox{\hyperlink{reg__syscfg_8h_a96b55a9ee875508d1372da40278b0065}{SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+MODE\+\_\+\+Pos}})}
+
+
+
+FSMC Mode Config Mode 0 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00089}{89}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a838e05df89ebe496d6985c2a6133421f}\label{reg__syscfg_8h_a838e05df89ebe496d6985c2a6133421f}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_CFGR\_FSMC\_MODE1@{SYSCFG\_CFGR\_FSMC\_MODE1}}
+\index{SYSCFG\_CFGR\_FSMC\_MODE1@{SYSCFG\_CFGR\_FSMC\_MODE1}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_CFGR\_FSMC\_MODE1}{SYSCFG\_CFGR\_FSMC\_MODE1}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+MODE1~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x01$<$$<$\mbox{\hyperlink{reg__syscfg_8h_a96b55a9ee875508d1372da40278b0065}{SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+MODE\+\_\+\+Pos}})}
+
+
+
+FSMC Mode Config Mode 1 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00090}{90}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a96b55a9ee875508d1372da40278b0065}\label{reg__syscfg_8h_a96b55a9ee875508d1372da40278b0065}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_CFGR\_FSMC\_MODE\_Pos@{SYSCFG\_CFGR\_FSMC\_MODE\_Pos}}
+\index{SYSCFG\_CFGR\_FSMC\_MODE\_Pos@{SYSCFG\_CFGR\_FSMC\_MODE\_Pos}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_CFGR\_FSMC\_MODE\_Pos}{SYSCFG\_CFGR\_FSMC\_MODE\_Pos}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+MODE\+\_\+\+Pos~(29)}
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00087}{87}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a24a2654a3b73be9c7d1ed43965d7f462}\label{reg__syscfg_8h_a24a2654a3b73be9c7d1ed43965d7f462}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_CFGR\_FSMC\_SYNC\_EN@{SYSCFG\_CFGR\_FSMC\_SYNC\_EN}}
+\index{SYSCFG\_CFGR\_FSMC\_SYNC\_EN@{SYSCFG\_CFGR\_FSMC\_SYNC\_EN}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_CFGR\_FSMC\_SYNC\_EN}{SYSCFG\_CFGR\_FSMC\_SYNC\_EN}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+SYNC\+\_\+\+EN~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a5c96a540bf8feb3c99d0d8a94c942e19}{SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+SYNC\+\_\+\+EN\+\_\+\+Pos}})}
+
+
+
+FSMC SYNC Enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00084}{84}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a5c96a540bf8feb3c99d0d8a94c942e19}\label{reg__syscfg_8h_a5c96a540bf8feb3c99d0d8a94c942e19}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_CFGR\_FSMC\_SYNC\_EN\_Pos@{SYSCFG\_CFGR\_FSMC\_SYNC\_EN\_Pos}}
+\index{SYSCFG\_CFGR\_FSMC\_SYNC\_EN\_Pos@{SYSCFG\_CFGR\_FSMC\_SYNC\_EN\_Pos}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_CFGR\_FSMC\_SYNC\_EN\_Pos}{SYSCFG\_CFGR\_FSMC\_SYNC\_EN\_Pos}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+CFGR\+\_\+\+FSMC\+\_\+\+SYNC\+\_\+\+EN\+\_\+\+Pos~(27)}
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00083}{83}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_ab68bf5cb50de235f8dc0cc8a49bfadb2}\label{reg__syscfg_8h_ab68bf5cb50de235f8dc0cc8a49bfadb2}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_CFGR\_MEM\_MODE@{SYSCFG\_CFGR\_MEM\_MODE}}
+\index{SYSCFG\_CFGR\_MEM\_MODE@{SYSCFG\_CFGR\_MEM\_MODE}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_CFGR\_MEM\_MODE}{SYSCFG\_CFGR\_MEM\_MODE}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+CFGR\+\_\+\+MEM\+\_\+\+MODE~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000003)}
+
+
+
+SYSCFG\+\_\+\+Memory Remap Config 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00078}{78}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a9bce2f4e2705b6c93dcf661b21fcd71c}\label{reg__syscfg_8h_a9bce2f4e2705b6c93dcf661b21fcd71c}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_CFGR\_MEM\_MODE\_0@{SYSCFG\_CFGR\_MEM\_MODE\_0}}
+\index{SYSCFG\_CFGR\_MEM\_MODE\_0@{SYSCFG\_CFGR\_MEM\_MODE\_0}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_CFGR\_MEM\_MODE\_0}{SYSCFG\_CFGR\_MEM\_MODE\_0}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+CFGR\+\_\+\+MEM\+\_\+\+MODE\+\_\+0~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000001)}
+
+
+
+SYSCFG\+\_\+\+Memory Remap Config Bit 0 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00079}{79}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_af345ca149adfddcb40900d6d79316d10}\label{reg__syscfg_8h_af345ca149adfddcb40900d6d79316d10}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_CFGR\_MEM\_MODE\_1@{SYSCFG\_CFGR\_MEM\_MODE\_1}}
+\index{SYSCFG\_CFGR\_MEM\_MODE\_1@{SYSCFG\_CFGR\_MEM\_MODE\_1}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_CFGR\_MEM\_MODE\_1}{SYSCFG\_CFGR\_MEM\_MODE\_1}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+CFGR\+\_\+\+MEM\+\_\+\+MODE\+\_\+1~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000002)}
+
+SYSCFG\+\_\+\+Memory Remap Config Bit 1 
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00080}{80}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_aae5b3e8026accf298129f0e5e56454c4}\label{reg__syscfg_8h_aae5b3e8026accf298129f0e5e56454c4}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_CFGR\_MEM\_MODE\_Pos@{SYSCFG\_CFGR\_MEM\_MODE\_Pos}}
+\index{SYSCFG\_CFGR\_MEM\_MODE\_Pos@{SYSCFG\_CFGR\_MEM\_MODE\_Pos}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_CFGR\_MEM\_MODE\_Pos}{SYSCFG\_CFGR\_MEM\_MODE\_Pos}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+CFGR\+\_\+\+MEM\+\_\+\+MODE\+\_\+\+Pos~(0)}
+
+
+
+System Configuration (SYSCFG) 
+
+SYSCFG\+\_\+\+CFGR Register Bit definition 
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00077}{77}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a75b70d07448c3037234bc2abb8e3d884}\label{reg__syscfg_8h_a75b70d07448c3037234bc2abb8e3d884}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR1\_EXTI0@{SYSCFG\_EXTICR1\_EXTI0}}
+\index{SYSCFG\_EXTICR1\_EXTI0@{SYSCFG\_EXTICR1\_EXTI0}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR1\_EXTI0}{SYSCFG\_EXTICR1\_EXTI0}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI0~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x000F)}
+
+
+
+SYSCFG\+\_\+\+EXTICR1 Register Bit definition 
+
+EXTI 0 configuration 
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00094}{94}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a6de6aa8e32ae5cd07fd69e42e7226bd1}\label{reg__syscfg_8h_a6de6aa8e32ae5cd07fd69e42e7226bd1}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR1\_EXTI0\_PA@{SYSCFG\_EXTICR1\_EXTI0\_PA}}
+\index{SYSCFG\_EXTICR1\_EXTI0\_PA@{SYSCFG\_EXTICR1\_EXTI0\_PA}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR1\_EXTI0\_PA}{SYSCFG\_EXTICR1\_EXTI0\_PA}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI0\+\_\+\+PA~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)}
+
+
+
+EXTI0 configuration 
+
+PA\mbox{[}0\mbox{]} pin 
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00100}{100}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_af43c9ef6b61e39655cbe969967c79a69}\label{reg__syscfg_8h_af43c9ef6b61e39655cbe969967c79a69}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR1\_EXTI0\_PB@{SYSCFG\_EXTICR1\_EXTI0\_PB}}
+\index{SYSCFG\_EXTICR1\_EXTI0\_PB@{SYSCFG\_EXTICR1\_EXTI0\_PB}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR1\_EXTI0\_PB}{SYSCFG\_EXTICR1\_EXTI0\_PB}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI0\+\_\+\+PB~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0001)}
+
+
+
+PB\mbox{[}0\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00101}{101}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a861a4d7b48ffd93997267baaad12fd51}\label{reg__syscfg_8h_a861a4d7b48ffd93997267baaad12fd51}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR1\_EXTI0\_PC@{SYSCFG\_EXTICR1\_EXTI0\_PC}}
+\index{SYSCFG\_EXTICR1\_EXTI0\_PC@{SYSCFG\_EXTICR1\_EXTI0\_PC}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR1\_EXTI0\_PC}{SYSCFG\_EXTICR1\_EXTI0\_PC}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI0\+\_\+\+PC~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0002)}
+
+
+
+PC\mbox{[}0\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00102}{102}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_af6439042c8cd14f99fe3813cff47c0ee}\label{reg__syscfg_8h_af6439042c8cd14f99fe3813cff47c0ee}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR1\_EXTI0\_PD@{SYSCFG\_EXTICR1\_EXTI0\_PD}}
+\index{SYSCFG\_EXTICR1\_EXTI0\_PD@{SYSCFG\_EXTICR1\_EXTI0\_PD}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR1\_EXTI0\_PD}{SYSCFG\_EXTICR1\_EXTI0\_PD}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI0\+\_\+\+PD~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0003)}
+
+
+
+PD\mbox{[}0\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00103}{103}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a7fc84838c77f799cb7e57d6e97c6c16d}\label{reg__syscfg_8h_a7fc84838c77f799cb7e57d6e97c6c16d}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR1\_EXTI1@{SYSCFG\_EXTICR1\_EXTI1}}
+\index{SYSCFG\_EXTICR1\_EXTI1@{SYSCFG\_EXTICR1\_EXTI1}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR1\_EXTI1}{SYSCFG\_EXTICR1\_EXTI1}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI1~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x00\+F0)}
+
+
+
+EXTI 1 configuration 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00095}{95}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_af4b78c30e4ef4fa441582eb3c102865d}\label{reg__syscfg_8h_af4b78c30e4ef4fa441582eb3c102865d}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR1\_EXTI1\_PA@{SYSCFG\_EXTICR1\_EXTI1\_PA}}
+\index{SYSCFG\_EXTICR1\_EXTI1\_PA@{SYSCFG\_EXTICR1\_EXTI1\_PA}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR1\_EXTI1\_PA}{SYSCFG\_EXTICR1\_EXTI1\_PA}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI1\+\_\+\+PA~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)}
+
+
+
+EXTI1 configuration 
+
+PA\mbox{[}1\mbox{]} pin 
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00106}{106}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a19a11fce288d19546c76257483e0dcb6}\label{reg__syscfg_8h_a19a11fce288d19546c76257483e0dcb6}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR1\_EXTI1\_PB@{SYSCFG\_EXTICR1\_EXTI1\_PB}}
+\index{SYSCFG\_EXTICR1\_EXTI1\_PB@{SYSCFG\_EXTICR1\_EXTI1\_PB}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR1\_EXTI1\_PB}{SYSCFG\_EXTICR1\_EXTI1\_PB}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI1\+\_\+\+PB~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0010)}
+
+
+
+PB\mbox{[}1\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00107}{107}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_ae45a8c814b13fa19f157364dc715c08a}\label{reg__syscfg_8h_ae45a8c814b13fa19f157364dc715c08a}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR1\_EXTI1\_PC@{SYSCFG\_EXTICR1\_EXTI1\_PC}}
+\index{SYSCFG\_EXTICR1\_EXTI1\_PC@{SYSCFG\_EXTICR1\_EXTI1\_PC}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR1\_EXTI1\_PC}{SYSCFG\_EXTICR1\_EXTI1\_PC}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI1\+\_\+\+PC~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0020)}
+
+
+
+PC\mbox{[}1\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00108}{108}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a93cb136eaf357affc4a28a8d423cabbb}\label{reg__syscfg_8h_a93cb136eaf357affc4a28a8d423cabbb}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR1\_EXTI1\_PD@{SYSCFG\_EXTICR1\_EXTI1\_PD}}
+\index{SYSCFG\_EXTICR1\_EXTI1\_PD@{SYSCFG\_EXTICR1\_EXTI1\_PD}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR1\_EXTI1\_PD}{SYSCFG\_EXTICR1\_EXTI1\_PD}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI1\+\_\+\+PD~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0030)}
+
+
+
+PD\mbox{[}1\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00109}{109}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a6d0a0a6b8223777937d8c9012658d6cd}\label{reg__syscfg_8h_a6d0a0a6b8223777937d8c9012658d6cd}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR1\_EXTI2@{SYSCFG\_EXTICR1\_EXTI2}}
+\index{SYSCFG\_EXTICR1\_EXTI2@{SYSCFG\_EXTICR1\_EXTI2}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR1\_EXTI2}{SYSCFG\_EXTICR1\_EXTI2}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI2~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0\+F00)}
+
+
+
+EXTI 2 configuration 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00096}{96}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a4096f472e87e021f4d4c94457ddaf5f1}\label{reg__syscfg_8h_a4096f472e87e021f4d4c94457ddaf5f1}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR1\_EXTI2\_PA@{SYSCFG\_EXTICR1\_EXTI2\_PA}}
+\index{SYSCFG\_EXTICR1\_EXTI2\_PA@{SYSCFG\_EXTICR1\_EXTI2\_PA}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR1\_EXTI2\_PA}{SYSCFG\_EXTICR1\_EXTI2\_PA}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI2\+\_\+\+PA~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)}
+
+
+
+EXTI2 configuration 
+
+PA\mbox{[}2\mbox{]} pin 
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00112}{112}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a8cd240d61fd8a9666621f0dee07a08e5}\label{reg__syscfg_8h_a8cd240d61fd8a9666621f0dee07a08e5}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR1\_EXTI2\_PB@{SYSCFG\_EXTICR1\_EXTI2\_PB}}
+\index{SYSCFG\_EXTICR1\_EXTI2\_PB@{SYSCFG\_EXTICR1\_EXTI2\_PB}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR1\_EXTI2\_PB}{SYSCFG\_EXTICR1\_EXTI2\_PB}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI2\+\_\+\+PB~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0100)}
+
+
+
+PB\mbox{[}2\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00113}{113}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a03ce7faaf56aa9efcc74af65619e275e}\label{reg__syscfg_8h_a03ce7faaf56aa9efcc74af65619e275e}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR1\_EXTI2\_PC@{SYSCFG\_EXTICR1\_EXTI2\_PC}}
+\index{SYSCFG\_EXTICR1\_EXTI2\_PC@{SYSCFG\_EXTICR1\_EXTI2\_PC}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR1\_EXTI2\_PC}{SYSCFG\_EXTICR1\_EXTI2\_PC}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI2\+\_\+\+PC~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0200)}
+
+
+
+PC\mbox{[}2\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00114}{114}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_afc35fcdcc89b487fab2901e1f5a7f41b}\label{reg__syscfg_8h_afc35fcdcc89b487fab2901e1f5a7f41b}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR1\_EXTI2\_PD@{SYSCFG\_EXTICR1\_EXTI2\_PD}}
+\index{SYSCFG\_EXTICR1\_EXTI2\_PD@{SYSCFG\_EXTICR1\_EXTI2\_PD}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR1\_EXTI2\_PD}{SYSCFG\_EXTICR1\_EXTI2\_PD}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI2\+\_\+\+PD~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0300)}
+
+
+
+PD\mbox{[}2\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00115}{115}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_ac3bf2306f79ebb709da5ecf83e59ded4}\label{reg__syscfg_8h_ac3bf2306f79ebb709da5ecf83e59ded4}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR1\_EXTI3@{SYSCFG\_EXTICR1\_EXTI3}}
+\index{SYSCFG\_EXTICR1\_EXTI3@{SYSCFG\_EXTICR1\_EXTI3}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR1\_EXTI3}{SYSCFG\_EXTICR1\_EXTI3}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI3~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x\+F000)}
+
+
+
+EXTI 3 configuration 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00097}{97}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a45ed24773c389f4477944c2c43d106c0}\label{reg__syscfg_8h_a45ed24773c389f4477944c2c43d106c0}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR1\_EXTI3\_PA@{SYSCFG\_EXTICR1\_EXTI3\_PA}}
+\index{SYSCFG\_EXTICR1\_EXTI3\_PA@{SYSCFG\_EXTICR1\_EXTI3\_PA}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR1\_EXTI3\_PA}{SYSCFG\_EXTICR1\_EXTI3\_PA}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI3\+\_\+\+PA~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)}
+
+
+
+EXTI3 configuration 
+
+PA\mbox{[}3\mbox{]} pin 
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00119}{119}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a652183838bb096717551bf8a1917c257}\label{reg__syscfg_8h_a652183838bb096717551bf8a1917c257}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR1\_EXTI3\_PB@{SYSCFG\_EXTICR1\_EXTI3\_PB}}
+\index{SYSCFG\_EXTICR1\_EXTI3\_PB@{SYSCFG\_EXTICR1\_EXTI3\_PB}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR1\_EXTI3\_PB}{SYSCFG\_EXTICR1\_EXTI3\_PB}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI3\+\_\+\+PB~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x1000)}
+
+
+
+PB\mbox{[}3\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00120}{120}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_acb1809e5b8a9ebc4b1cbc8967d985929}\label{reg__syscfg_8h_acb1809e5b8a9ebc4b1cbc8967d985929}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR1\_EXTI3\_PC@{SYSCFG\_EXTICR1\_EXTI3\_PC}}
+\index{SYSCFG\_EXTICR1\_EXTI3\_PC@{SYSCFG\_EXTICR1\_EXTI3\_PC}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR1\_EXTI3\_PC}{SYSCFG\_EXTICR1\_EXTI3\_PC}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI3\+\_\+\+PC~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x2000)}
+
+
+
+PC\mbox{[}3\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00121}{121}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a205440ffa174509d57c2b6a1814f8202}\label{reg__syscfg_8h_a205440ffa174509d57c2b6a1814f8202}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR1\_EXTI3\_PD@{SYSCFG\_EXTICR1\_EXTI3\_PD}}
+\index{SYSCFG\_EXTICR1\_EXTI3\_PD@{SYSCFG\_EXTICR1\_EXTI3\_PD}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR1\_EXTI3\_PD}{SYSCFG\_EXTICR1\_EXTI3\_PD}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR1\+\_\+\+EXTI3\+\_\+\+PD~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x3000)}
+
+
+
+PD\mbox{[}3\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00122}{122}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_ad2a57b4872977812e60d521268190e1e}\label{reg__syscfg_8h_ad2a57b4872977812e60d521268190e1e}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR2\_EXTI4@{SYSCFG\_EXTICR2\_EXTI4}}
+\index{SYSCFG\_EXTICR2\_EXTI4@{SYSCFG\_EXTICR2\_EXTI4}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR2\_EXTI4}{SYSCFG\_EXTICR2\_EXTI4}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI4~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x000F)}
+
+
+
+SYSCFG\+\_\+\+EXTICR2 Register Bit definition 
+
+EXTI 4 configuration 
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00126}{126}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a51147f1747daf48dbcfad03285ae8889}\label{reg__syscfg_8h_a51147f1747daf48dbcfad03285ae8889}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR2\_EXTI4\_PA@{SYSCFG\_EXTICR2\_EXTI4\_PA}}
+\index{SYSCFG\_EXTICR2\_EXTI4\_PA@{SYSCFG\_EXTICR2\_EXTI4\_PA}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR2\_EXTI4\_PA}{SYSCFG\_EXTICR2\_EXTI4\_PA}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI4\+\_\+\+PA~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)}
+
+
+
+EXTI4 configuration 
+
+PA\mbox{[}4\mbox{]} pin 
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00132}{132}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a917aeb0df688d6b34785085fc85d9e47}\label{reg__syscfg_8h_a917aeb0df688d6b34785085fc85d9e47}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR2\_EXTI4\_PB@{SYSCFG\_EXTICR2\_EXTI4\_PB}}
+\index{SYSCFG\_EXTICR2\_EXTI4\_PB@{SYSCFG\_EXTICR2\_EXTI4\_PB}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR2\_EXTI4\_PB}{SYSCFG\_EXTICR2\_EXTI4\_PB}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI4\+\_\+\+PB~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0001)}
+
+
+
+PB\mbox{[}4\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00133}{133}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a14ac312beeb19d3bb34a552546477613}\label{reg__syscfg_8h_a14ac312beeb19d3bb34a552546477613}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR2\_EXTI4\_PC@{SYSCFG\_EXTICR2\_EXTI4\_PC}}
+\index{SYSCFG\_EXTICR2\_EXTI4\_PC@{SYSCFG\_EXTICR2\_EXTI4\_PC}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR2\_EXTI4\_PC}{SYSCFG\_EXTICR2\_EXTI4\_PC}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI4\+\_\+\+PC~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0002)}
+
+
+
+PC\mbox{[}4\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00134}{134}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_aec62164e18d1b525e8272169b1efe642}\label{reg__syscfg_8h_aec62164e18d1b525e8272169b1efe642}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR2\_EXTI4\_PD@{SYSCFG\_EXTICR2\_EXTI4\_PD}}
+\index{SYSCFG\_EXTICR2\_EXTI4\_PD@{SYSCFG\_EXTICR2\_EXTI4\_PD}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR2\_EXTI4\_PD}{SYSCFG\_EXTICR2\_EXTI4\_PD}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI4\+\_\+\+PD~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0003)}
+
+
+
+PD\mbox{[}4\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00135}{135}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a6682a1b97b04c5c33085ffd2827ccd17}\label{reg__syscfg_8h_a6682a1b97b04c5c33085ffd2827ccd17}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR2\_EXTI5@{SYSCFG\_EXTICR2\_EXTI5}}
+\index{SYSCFG\_EXTICR2\_EXTI5@{SYSCFG\_EXTICR2\_EXTI5}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR2\_EXTI5}{SYSCFG\_EXTICR2\_EXTI5}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI5~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x00\+F0)}
+
+
+
+EXTI 5 configuration 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00127}{127}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_afb9581c515a4bdf1ed88fe96d8c24794}\label{reg__syscfg_8h_afb9581c515a4bdf1ed88fe96d8c24794}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR2\_EXTI5\_PA@{SYSCFG\_EXTICR2\_EXTI5\_PA}}
+\index{SYSCFG\_EXTICR2\_EXTI5\_PA@{SYSCFG\_EXTICR2\_EXTI5\_PA}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR2\_EXTI5\_PA}{SYSCFG\_EXTICR2\_EXTI5\_PA}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI5\+\_\+\+PA~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)}
+
+
+
+EXTI5 configuration 
+
+PA\mbox{[}5\mbox{]} pin 
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00139}{139}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a90a3f610234dfa13f56e72c76a12be74}\label{reg__syscfg_8h_a90a3f610234dfa13f56e72c76a12be74}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR2\_EXTI5\_PB@{SYSCFG\_EXTICR2\_EXTI5\_PB}}
+\index{SYSCFG\_EXTICR2\_EXTI5\_PB@{SYSCFG\_EXTICR2\_EXTI5\_PB}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR2\_EXTI5\_PB}{SYSCFG\_EXTICR2\_EXTI5\_PB}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI5\+\_\+\+PB~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0010)}
+
+
+
+PB\mbox{[}5\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00140}{140}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a33b6bdc1b4bfeda0d4034dc67f1a6046}\label{reg__syscfg_8h_a33b6bdc1b4bfeda0d4034dc67f1a6046}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR2\_EXTI5\_PC@{SYSCFG\_EXTICR2\_EXTI5\_PC}}
+\index{SYSCFG\_EXTICR2\_EXTI5\_PC@{SYSCFG\_EXTICR2\_EXTI5\_PC}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR2\_EXTI5\_PC}{SYSCFG\_EXTICR2\_EXTI5\_PC}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI5\+\_\+\+PC~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0020)}
+
+
+
+PC\mbox{[}5\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00141}{141}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a0eea392f1530c7cb794a63d04e268a70}\label{reg__syscfg_8h_a0eea392f1530c7cb794a63d04e268a70}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR2\_EXTI5\_PD@{SYSCFG\_EXTICR2\_EXTI5\_PD}}
+\index{SYSCFG\_EXTICR2\_EXTI5\_PD@{SYSCFG\_EXTICR2\_EXTI5\_PD}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR2\_EXTI5\_PD}{SYSCFG\_EXTICR2\_EXTI5\_PD}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI5\+\_\+\+PD~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0030)}
+
+
+
+PD\mbox{[}5\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00142}{142}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a6c50caf6019fd7d5038d77e61f57ad7b}\label{reg__syscfg_8h_a6c50caf6019fd7d5038d77e61f57ad7b}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR2\_EXTI6@{SYSCFG\_EXTICR2\_EXTI6}}
+\index{SYSCFG\_EXTICR2\_EXTI6@{SYSCFG\_EXTICR2\_EXTI6}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR2\_EXTI6}{SYSCFG\_EXTICR2\_EXTI6}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI6~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0\+F00)}
+
+
+
+EXTI 6 configuration 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00128}{128}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a3e87c78fb6dfde7c8b7f81fe3b65aae9}\label{reg__syscfg_8h_a3e87c78fb6dfde7c8b7f81fe3b65aae9}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR2\_EXTI6\_PA@{SYSCFG\_EXTICR2\_EXTI6\_PA}}
+\index{SYSCFG\_EXTICR2\_EXTI6\_PA@{SYSCFG\_EXTICR2\_EXTI6\_PA}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR2\_EXTI6\_PA}{SYSCFG\_EXTICR2\_EXTI6\_PA}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI6\+\_\+\+PA~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)}
+
+
+
+EXTI6 configuration 
+
+PA\mbox{[}6\mbox{]} pin 
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00146}{146}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a6528de8e4ca8741e86ae254e1d6b2a70}\label{reg__syscfg_8h_a6528de8e4ca8741e86ae254e1d6b2a70}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR2\_EXTI6\_PB@{SYSCFG\_EXTICR2\_EXTI6\_PB}}
+\index{SYSCFG\_EXTICR2\_EXTI6\_PB@{SYSCFG\_EXTICR2\_EXTI6\_PB}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR2\_EXTI6\_PB}{SYSCFG\_EXTICR2\_EXTI6\_PB}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI6\+\_\+\+PB~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0100)}
+
+
+
+PB\mbox{[}6\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00147}{147}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a53d8745705d5eb84c70a8554f61d59ac}\label{reg__syscfg_8h_a53d8745705d5eb84c70a8554f61d59ac}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR2\_EXTI6\_PC@{SYSCFG\_EXTICR2\_EXTI6\_PC}}
+\index{SYSCFG\_EXTICR2\_EXTI6\_PC@{SYSCFG\_EXTICR2\_EXTI6\_PC}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR2\_EXTI6\_PC}{SYSCFG\_EXTICR2\_EXTI6\_PC}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI6\+\_\+\+PC~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0200)}
+
+
+
+PC\mbox{[}6\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00148}{148}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a26c97cdece451441e49120e754020cdc}\label{reg__syscfg_8h_a26c97cdece451441e49120e754020cdc}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR2\_EXTI6\_PD@{SYSCFG\_EXTICR2\_EXTI6\_PD}}
+\index{SYSCFG\_EXTICR2\_EXTI6\_PD@{SYSCFG\_EXTICR2\_EXTI6\_PD}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR2\_EXTI6\_PD}{SYSCFG\_EXTICR2\_EXTI6\_PD}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI6\+\_\+\+PD~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0300)}
+
+
+
+PD\mbox{[}6\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00149}{149}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a638ea3bb014752813d064d37b3388950}\label{reg__syscfg_8h_a638ea3bb014752813d064d37b3388950}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR2\_EXTI7@{SYSCFG\_EXTICR2\_EXTI7}}
+\index{SYSCFG\_EXTICR2\_EXTI7@{SYSCFG\_EXTICR2\_EXTI7}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR2\_EXTI7}{SYSCFG\_EXTICR2\_EXTI7}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI7~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x\+F000)}
+
+
+
+EXTI 7 configuration 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00129}{129}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a2f1bfd3af524288b6ce54d7f9aef410a}\label{reg__syscfg_8h_a2f1bfd3af524288b6ce54d7f9aef410a}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR2\_EXTI7\_PA@{SYSCFG\_EXTICR2\_EXTI7\_PA}}
+\index{SYSCFG\_EXTICR2\_EXTI7\_PA@{SYSCFG\_EXTICR2\_EXTI7\_PA}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR2\_EXTI7\_PA}{SYSCFG\_EXTICR2\_EXTI7\_PA}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI7\+\_\+\+PA~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)}
+
+
+
+EXTI7 configuration 
+
+PA\mbox{[}7\mbox{]} pin 
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00153}{153}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_ab18d324986b18858f901febbcc2a57b7}\label{reg__syscfg_8h_ab18d324986b18858f901febbcc2a57b7}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR2\_EXTI7\_PB@{SYSCFG\_EXTICR2\_EXTI7\_PB}}
+\index{SYSCFG\_EXTICR2\_EXTI7\_PB@{SYSCFG\_EXTICR2\_EXTI7\_PB}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR2\_EXTI7\_PB}{SYSCFG\_EXTICR2\_EXTI7\_PB}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI7\+\_\+\+PB~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x1000)}
+
+
+
+PB\mbox{[}7\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00154}{154}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_ae9f53618d9cf13af2b2ecf191da8595a}\label{reg__syscfg_8h_ae9f53618d9cf13af2b2ecf191da8595a}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR2\_EXTI7\_PC@{SYSCFG\_EXTICR2\_EXTI7\_PC}}
+\index{SYSCFG\_EXTICR2\_EXTI7\_PC@{SYSCFG\_EXTICR2\_EXTI7\_PC}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR2\_EXTI7\_PC}{SYSCFG\_EXTICR2\_EXTI7\_PC}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI7\+\_\+\+PC~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x2000)}
+
+
+
+PC\mbox{[}7\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00155}{155}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_ae38aa3b76227bb8e9d8cedc31c023f63}\label{reg__syscfg_8h_ae38aa3b76227bb8e9d8cedc31c023f63}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR2\_EXTI7\_PD@{SYSCFG\_EXTICR2\_EXTI7\_PD}}
+\index{SYSCFG\_EXTICR2\_EXTI7\_PD@{SYSCFG\_EXTICR2\_EXTI7\_PD}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR2\_EXTI7\_PD}{SYSCFG\_EXTICR2\_EXTI7\_PD}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR2\+\_\+\+EXTI7\+\_\+\+PD~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x3000)}
+
+
+
+PD\mbox{[}7\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00156}{156}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a8fc06b17c3b3d393b749bf9924a43a80}\label{reg__syscfg_8h_a8fc06b17c3b3d393b749bf9924a43a80}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR3\_EXTI10@{SYSCFG\_EXTICR3\_EXTI10}}
+\index{SYSCFG\_EXTICR3\_EXTI10@{SYSCFG\_EXTICR3\_EXTI10}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR3\_EXTI10}{SYSCFG\_EXTICR3\_EXTI10}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI10~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0\+F00)}
+
+
+
+EXTI 10 configuration 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00161}{161}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a25acdbb9e916c440c41a060d861130ee}\label{reg__syscfg_8h_a25acdbb9e916c440c41a060d861130ee}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR3\_EXTI10\_PA@{SYSCFG\_EXTICR3\_EXTI10\_PA}}
+\index{SYSCFG\_EXTICR3\_EXTI10\_PA@{SYSCFG\_EXTICR3\_EXTI10\_PA}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR3\_EXTI10\_PA}{SYSCFG\_EXTICR3\_EXTI10\_PA}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI10\+\_\+\+PA~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)}
+
+
+
+EXTI10 configuration 
+
+PA\mbox{[}10\mbox{]} pin 
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00179}{179}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_ab8d9aec4349bf38a4a9753b267b7de7e}\label{reg__syscfg_8h_ab8d9aec4349bf38a4a9753b267b7de7e}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR3\_EXTI10\_PB@{SYSCFG\_EXTICR3\_EXTI10\_PB}}
+\index{SYSCFG\_EXTICR3\_EXTI10\_PB@{SYSCFG\_EXTICR3\_EXTI10\_PB}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR3\_EXTI10\_PB}{SYSCFG\_EXTICR3\_EXTI10\_PB}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI10\+\_\+\+PB~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0100)}
+
+
+
+PB\mbox{[}10\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00180}{180}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a62d2b81d49e30ab4fe96572be5da8484}\label{reg__syscfg_8h_a62d2b81d49e30ab4fe96572be5da8484}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR3\_EXTI10\_PC@{SYSCFG\_EXTICR3\_EXTI10\_PC}}
+\index{SYSCFG\_EXTICR3\_EXTI10\_PC@{SYSCFG\_EXTICR3\_EXTI10\_PC}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR3\_EXTI10\_PC}{SYSCFG\_EXTICR3\_EXTI10\_PC}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI10\+\_\+\+PC~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0200)}
+
+
+
+PC\mbox{[}10\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00181}{181}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_aab3553c540cd836d465824939c2e3b79}\label{reg__syscfg_8h_aab3553c540cd836d465824939c2e3b79}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR3\_EXTI10\_PD@{SYSCFG\_EXTICR3\_EXTI10\_PD}}
+\index{SYSCFG\_EXTICR3\_EXTI10\_PD@{SYSCFG\_EXTICR3\_EXTI10\_PD}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR3\_EXTI10\_PD}{SYSCFG\_EXTICR3\_EXTI10\_PD}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI10\+\_\+\+PD~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0300)}
+
+
+
+PE\mbox{[}10\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00182}{182}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_aa66cc9a579696c8f5c41f5f138ee1e67}\label{reg__syscfg_8h_aa66cc9a579696c8f5c41f5f138ee1e67}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR3\_EXTI11@{SYSCFG\_EXTICR3\_EXTI11}}
+\index{SYSCFG\_EXTICR3\_EXTI11@{SYSCFG\_EXTICR3\_EXTI11}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR3\_EXTI11}{SYSCFG\_EXTICR3\_EXTI11}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI11~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x\+F000)}
+
+
+
+EXTI 11 configuration 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00162}{162}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a0ca8a85d4512677eff6ed2aac897a366}\label{reg__syscfg_8h_a0ca8a85d4512677eff6ed2aac897a366}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR3\_EXTI11\_PA@{SYSCFG\_EXTICR3\_EXTI11\_PA}}
+\index{SYSCFG\_EXTICR3\_EXTI11\_PA@{SYSCFG\_EXTICR3\_EXTI11\_PA}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR3\_EXTI11\_PA}{SYSCFG\_EXTICR3\_EXTI11\_PA}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI11\+\_\+\+PA~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)}
+
+
+
+EXTI11 configuration 
+
+PA\mbox{[}11\mbox{]} pin 
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00185}{185}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_aedb3a8cc6b1763e303986553c0e4e7f8}\label{reg__syscfg_8h_aedb3a8cc6b1763e303986553c0e4e7f8}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR3\_EXTI11\_PB@{SYSCFG\_EXTICR3\_EXTI11\_PB}}
+\index{SYSCFG\_EXTICR3\_EXTI11\_PB@{SYSCFG\_EXTICR3\_EXTI11\_PB}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR3\_EXTI11\_PB}{SYSCFG\_EXTICR3\_EXTI11\_PB}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI11\+\_\+\+PB~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x1000)}
+
+
+
+PB\mbox{[}11\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00186}{186}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a0b01c8ba6cb27899a4f5fa494bf2b3f5}\label{reg__syscfg_8h_a0b01c8ba6cb27899a4f5fa494bf2b3f5}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR3\_EXTI11\_PC@{SYSCFG\_EXTICR3\_EXTI11\_PC}}
+\index{SYSCFG\_EXTICR3\_EXTI11\_PC@{SYSCFG\_EXTICR3\_EXTI11\_PC}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR3\_EXTI11\_PC}{SYSCFG\_EXTICR3\_EXTI11\_PC}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI11\+\_\+\+PC~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x2000)}
+
+
+
+PC\mbox{[}11\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00187}{187}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a6a69d636cda0352da0982c54f582787d}\label{reg__syscfg_8h_a6a69d636cda0352da0982c54f582787d}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR3\_EXTI11\_PD@{SYSCFG\_EXTICR3\_EXTI11\_PD}}
+\index{SYSCFG\_EXTICR3\_EXTI11\_PD@{SYSCFG\_EXTICR3\_EXTI11\_PD}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR3\_EXTI11\_PD}{SYSCFG\_EXTICR3\_EXTI11\_PD}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI11\+\_\+\+PD~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x3000)}
+
+
+
+PD\mbox{[}11\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00188}{188}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_af2a656b18cc728e38acb72cf8d7e7935}\label{reg__syscfg_8h_af2a656b18cc728e38acb72cf8d7e7935}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR3\_EXTI8@{SYSCFG\_EXTICR3\_EXTI8}}
+\index{SYSCFG\_EXTICR3\_EXTI8@{SYSCFG\_EXTICR3\_EXTI8}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR3\_EXTI8}{SYSCFG\_EXTICR3\_EXTI8}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI8~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x000F)}
+
+
+
+SYSCFG\+\_\+\+EXTICR3 Register Bit definition 
+
+EXTI 8 configuration 
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00159}{159}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_ae1c6843a871f1a06ca25c0de50048b10}\label{reg__syscfg_8h_ae1c6843a871f1a06ca25c0de50048b10}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR3\_EXTI8\_PA@{SYSCFG\_EXTICR3\_EXTI8\_PA}}
+\index{SYSCFG\_EXTICR3\_EXTI8\_PA@{SYSCFG\_EXTICR3\_EXTI8\_PA}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR3\_EXTI8\_PA}{SYSCFG\_EXTICR3\_EXTI8\_PA}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI8\+\_\+\+PA~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)}
+
+
+
+EXTI8 configuration 
+
+PA\mbox{[}8\mbox{]} pin 
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00165}{165}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a4818dc7bffc8dfc2acc48995a62e66c5}\label{reg__syscfg_8h_a4818dc7bffc8dfc2acc48995a62e66c5}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR3\_EXTI8\_PB@{SYSCFG\_EXTICR3\_EXTI8\_PB}}
+\index{SYSCFG\_EXTICR3\_EXTI8\_PB@{SYSCFG\_EXTICR3\_EXTI8\_PB}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR3\_EXTI8\_PB}{SYSCFG\_EXTICR3\_EXTI8\_PB}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI8\+\_\+\+PB~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0001)}
+
+
+
+PB\mbox{[}8\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00166}{166}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_aba0d34ff57632d7753981404cef548e2}\label{reg__syscfg_8h_aba0d34ff57632d7753981404cef548e2}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR3\_EXTI8\_PC@{SYSCFG\_EXTICR3\_EXTI8\_PC}}
+\index{SYSCFG\_EXTICR3\_EXTI8\_PC@{SYSCFG\_EXTICR3\_EXTI8\_PC}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR3\_EXTI8\_PC}{SYSCFG\_EXTICR3\_EXTI8\_PC}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI8\+\_\+\+PC~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0002)}
+
+
+
+PC\mbox{[}8\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00167}{167}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_aa15260ba354dee354f0a71e7913009c3}\label{reg__syscfg_8h_aa15260ba354dee354f0a71e7913009c3}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR3\_EXTI8\_PD@{SYSCFG\_EXTICR3\_EXTI8\_PD}}
+\index{SYSCFG\_EXTICR3\_EXTI8\_PD@{SYSCFG\_EXTICR3\_EXTI8\_PD}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR3\_EXTI8\_PD}{SYSCFG\_EXTICR3\_EXTI8\_PD}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI8\+\_\+\+PD~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0003)}
+
+
+
+PD\mbox{[}8\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00168}{168}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a002462e4c233adc6dd502de726994575}\label{reg__syscfg_8h_a002462e4c233adc6dd502de726994575}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR3\_EXTI9@{SYSCFG\_EXTICR3\_EXTI9}}
+\index{SYSCFG\_EXTICR3\_EXTI9@{SYSCFG\_EXTICR3\_EXTI9}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR3\_EXTI9}{SYSCFG\_EXTICR3\_EXTI9}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI9~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x00\+F0)}
+
+
+
+EXTI 9 configuration 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00160}{160}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a93e284e59c4ff887b2e79851ac0a81c4}\label{reg__syscfg_8h_a93e284e59c4ff887b2e79851ac0a81c4}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR3\_EXTI9\_PA@{SYSCFG\_EXTICR3\_EXTI9\_PA}}
+\index{SYSCFG\_EXTICR3\_EXTI9\_PA@{SYSCFG\_EXTICR3\_EXTI9\_PA}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR3\_EXTI9\_PA}{SYSCFG\_EXTICR3\_EXTI9\_PA}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI9\+\_\+\+PA~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)}
+
+
+
+EXTI9 configuration 
+
+PA\mbox{[}9\mbox{]} pin 
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00173}{173}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_aa9271cbc1ed09774a5fef4b379cab260}\label{reg__syscfg_8h_aa9271cbc1ed09774a5fef4b379cab260}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR3\_EXTI9\_PB@{SYSCFG\_EXTICR3\_EXTI9\_PB}}
+\index{SYSCFG\_EXTICR3\_EXTI9\_PB@{SYSCFG\_EXTICR3\_EXTI9\_PB}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR3\_EXTI9\_PB}{SYSCFG\_EXTICR3\_EXTI9\_PB}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI9\+\_\+\+PB~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0010)}
+
+
+
+PB\mbox{[}9\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00174}{174}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a1cc355176941881870c620c0837cab48}\label{reg__syscfg_8h_a1cc355176941881870c620c0837cab48}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR3\_EXTI9\_PC@{SYSCFG\_EXTICR3\_EXTI9\_PC}}
+\index{SYSCFG\_EXTICR3\_EXTI9\_PC@{SYSCFG\_EXTICR3\_EXTI9\_PC}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR3\_EXTI9\_PC}{SYSCFG\_EXTICR3\_EXTI9\_PC}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI9\+\_\+\+PC~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0020)}
+
+
+
+PC\mbox{[}9\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00175}{175}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a75af3c7a94cfc78361c94b054f9fe064}\label{reg__syscfg_8h_a75af3c7a94cfc78361c94b054f9fe064}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR3\_EXTI9\_PD@{SYSCFG\_EXTICR3\_EXTI9\_PD}}
+\index{SYSCFG\_EXTICR3\_EXTI9\_PD@{SYSCFG\_EXTICR3\_EXTI9\_PD}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR3\_EXTI9\_PD}{SYSCFG\_EXTICR3\_EXTI9\_PD}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR3\+\_\+\+EXTI9\+\_\+\+PD~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0030)}
+
+
+
+PD\mbox{[}9\mbox{]} pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00176}{176}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a9d4b31f4a75d935b6a52afe6a16463d1}\label{reg__syscfg_8h_a9d4b31f4a75d935b6a52afe6a16463d1}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR4\_EXTI12@{SYSCFG\_EXTICR4\_EXTI12}}
+\index{SYSCFG\_EXTICR4\_EXTI12@{SYSCFG\_EXTICR4\_EXTI12}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR4\_EXTI12}{SYSCFG\_EXTICR4\_EXTI12}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI12~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x000F)}
+
+
+
+SYSCFG\+\_\+\+EXTICR4 Register Bit definition 
+
+EXTI 12 configuration 
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00192}{192}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a3ceaa63866465faa8145ce0c5d9a44d0}\label{reg__syscfg_8h_a3ceaa63866465faa8145ce0c5d9a44d0}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR4\_EXTI12\_PA@{SYSCFG\_EXTICR4\_EXTI12\_PA}}
+\index{SYSCFG\_EXTICR4\_EXTI12\_PA@{SYSCFG\_EXTICR4\_EXTI12\_PA}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR4\_EXTI12\_PA}{SYSCFG\_EXTICR4\_EXTI12\_PA}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI12\+\_\+\+PA~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)}
+
+
+
+PA\mbox{[}12\mbox{]} pin for EXTI12 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00197}{197}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_ad8b00a462533a83c75c588340a2fa710}\label{reg__syscfg_8h_ad8b00a462533a83c75c588340a2fa710}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR4\_EXTI12\_PB@{SYSCFG\_EXTICR4\_EXTI12\_PB}}
+\index{SYSCFG\_EXTICR4\_EXTI12\_PB@{SYSCFG\_EXTICR4\_EXTI12\_PB}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR4\_EXTI12\_PB}{SYSCFG\_EXTICR4\_EXTI12\_PB}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI12\+\_\+\+PB~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0001)}
+
+
+
+PB\mbox{[}12\mbox{]} pin for EXTI12 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00198}{198}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a4d27668b1fa6b1accde06aa144faa970}\label{reg__syscfg_8h_a4d27668b1fa6b1accde06aa144faa970}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR4\_EXTI12\_PC@{SYSCFG\_EXTICR4\_EXTI12\_PC}}
+\index{SYSCFG\_EXTICR4\_EXTI12\_PC@{SYSCFG\_EXTICR4\_EXTI12\_PC}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR4\_EXTI12\_PC}{SYSCFG\_EXTICR4\_EXTI12\_PC}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI12\+\_\+\+PC~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0002)}
+
+
+
+PC\mbox{[}12\mbox{]} pin for EXTI12 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00199}{199}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_aa46ddd43a361d82abcb3cb7779ac74ff}\label{reg__syscfg_8h_aa46ddd43a361d82abcb3cb7779ac74ff}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR4\_EXTI12\_PD@{SYSCFG\_EXTICR4\_EXTI12\_PD}}
+\index{SYSCFG\_EXTICR4\_EXTI12\_PD@{SYSCFG\_EXTICR4\_EXTI12\_PD}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR4\_EXTI12\_PD}{SYSCFG\_EXTICR4\_EXTI12\_PD}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI12\+\_\+\+PD~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0003)}
+
+
+
+PD\mbox{[}12\mbox{]} pin for EXTI12 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00200}{200}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a7f04cda5bfe876431d5ad864302d7fa1}\label{reg__syscfg_8h_a7f04cda5bfe876431d5ad864302d7fa1}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR4\_EXTI13@{SYSCFG\_EXTICR4\_EXTI13}}
+\index{SYSCFG\_EXTICR4\_EXTI13@{SYSCFG\_EXTICR4\_EXTI13}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR4\_EXTI13}{SYSCFG\_EXTICR4\_EXTI13}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI13~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x00\+F0)}
+
+
+
+EXTI 13 configuration 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00193}{193}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a0514aaa894c9be44ba47c1346756f90b}\label{reg__syscfg_8h_a0514aaa894c9be44ba47c1346756f90b}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR4\_EXTI13\_PA@{SYSCFG\_EXTICR4\_EXTI13\_PA}}
+\index{SYSCFG\_EXTICR4\_EXTI13\_PA@{SYSCFG\_EXTICR4\_EXTI13\_PA}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR4\_EXTI13\_PA}{SYSCFG\_EXTICR4\_EXTI13\_PA}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI13\+\_\+\+PA~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)}
+
+
+
+PA\mbox{[}13\mbox{]} pin for EXTI13 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00202}{202}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a34e6776e3ebfecc9e78c5aec77c48eff}\label{reg__syscfg_8h_a34e6776e3ebfecc9e78c5aec77c48eff}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR4\_EXTI13\_PB@{SYSCFG\_EXTICR4\_EXTI13\_PB}}
+\index{SYSCFG\_EXTICR4\_EXTI13\_PB@{SYSCFG\_EXTICR4\_EXTI13\_PB}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR4\_EXTI13\_PB}{SYSCFG\_EXTICR4\_EXTI13\_PB}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI13\+\_\+\+PB~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0010)}
+
+
+
+PB\mbox{[}13\mbox{]} pin for EXTI13 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00203}{203}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a1c7833d4e3c6b7f3878f62a200a6ab14}\label{reg__syscfg_8h_a1c7833d4e3c6b7f3878f62a200a6ab14}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR4\_EXTI13\_PC@{SYSCFG\_EXTICR4\_EXTI13\_PC}}
+\index{SYSCFG\_EXTICR4\_EXTI13\_PC@{SYSCFG\_EXTICR4\_EXTI13\_PC}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR4\_EXTI13\_PC}{SYSCFG\_EXTICR4\_EXTI13\_PC}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI13\+\_\+\+PC~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0020)}
+
+
+
+PC\mbox{[}13\mbox{]} pin for EXTI13 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00204}{204}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_abed530f628b3c37281f7a583af1cdb3c}\label{reg__syscfg_8h_abed530f628b3c37281f7a583af1cdb3c}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR4\_EXTI13\_PD@{SYSCFG\_EXTICR4\_EXTI13\_PD}}
+\index{SYSCFG\_EXTICR4\_EXTI13\_PD@{SYSCFG\_EXTICR4\_EXTI13\_PD}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR4\_EXTI13\_PD}{SYSCFG\_EXTICR4\_EXTI13\_PD}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI13\+\_\+\+PD~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0030)}
+
+
+
+PD\mbox{[}13\mbox{]} pin for EXTI13 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00205}{205}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_abde06df3ec6e357374820a5a615991aa}\label{reg__syscfg_8h_abde06df3ec6e357374820a5a615991aa}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR4\_EXTI14@{SYSCFG\_EXTICR4\_EXTI14}}
+\index{SYSCFG\_EXTICR4\_EXTI14@{SYSCFG\_EXTICR4\_EXTI14}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR4\_EXTI14}{SYSCFG\_EXTICR4\_EXTI14}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI14~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0\+F00)}
+
+
+
+EXTI 14 configuration 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00194}{194}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a7ad140a68e3e4e0406a182a504679ea9}\label{reg__syscfg_8h_a7ad140a68e3e4e0406a182a504679ea9}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR4\_EXTI14\_PA@{SYSCFG\_EXTICR4\_EXTI14\_PA}}
+\index{SYSCFG\_EXTICR4\_EXTI14\_PA@{SYSCFG\_EXTICR4\_EXTI14\_PA}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR4\_EXTI14\_PA}{SYSCFG\_EXTICR4\_EXTI14\_PA}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI14\+\_\+\+PA~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)}
+
+
+
+PA\mbox{[}14\mbox{]} pin for EXTI14 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00207}{207}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_ae5c1b8a0f2b4f79bd868bbb2b4eff617}\label{reg__syscfg_8h_ae5c1b8a0f2b4f79bd868bbb2b4eff617}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR4\_EXTI14\_PB@{SYSCFG\_EXTICR4\_EXTI14\_PB}}
+\index{SYSCFG\_EXTICR4\_EXTI14\_PB@{SYSCFG\_EXTICR4\_EXTI14\_PB}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR4\_EXTI14\_PB}{SYSCFG\_EXTICR4\_EXTI14\_PB}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI14\+\_\+\+PB~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0100)}
+
+
+
+PB\mbox{[}14\mbox{]} pin for EXTI14 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00208}{208}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a8ca668cdd447acb1740566f46de5eb19}\label{reg__syscfg_8h_a8ca668cdd447acb1740566f46de5eb19}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR4\_EXTI14\_PC@{SYSCFG\_EXTICR4\_EXTI14\_PC}}
+\index{SYSCFG\_EXTICR4\_EXTI14\_PC@{SYSCFG\_EXTICR4\_EXTI14\_PC}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR4\_EXTI14\_PC}{SYSCFG\_EXTICR4\_EXTI14\_PC}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI14\+\_\+\+PC~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0200)}
+
+
+
+PC\mbox{[}14\mbox{]} pin for EXTI14 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00209}{209}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a2f20b2bfa9dc8b57a987c127c6dfa6fe}\label{reg__syscfg_8h_a2f20b2bfa9dc8b57a987c127c6dfa6fe}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR4\_EXTI14\_PD@{SYSCFG\_EXTICR4\_EXTI14\_PD}}
+\index{SYSCFG\_EXTICR4\_EXTI14\_PD@{SYSCFG\_EXTICR4\_EXTI14\_PD}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR4\_EXTI14\_PD}{SYSCFG\_EXTICR4\_EXTI14\_PD}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI14\+\_\+\+PD~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0300)}
+
+
+
+PD\mbox{[}14\mbox{]} pin for EXTI14 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00210}{210}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_abd325c27cff1ae3de773d5e205a33f4e}\label{reg__syscfg_8h_abd325c27cff1ae3de773d5e205a33f4e}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR4\_EXTI15@{SYSCFG\_EXTICR4\_EXTI15}}
+\index{SYSCFG\_EXTICR4\_EXTI15@{SYSCFG\_EXTICR4\_EXTI15}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR4\_EXTI15}{SYSCFG\_EXTICR4\_EXTI15}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI15~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x\+F000)}
+
+
+
+EXTI 15 configuration 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00195}{195}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_ae2f28920677dd99f9132ed28f7b1d5e2}\label{reg__syscfg_8h_ae2f28920677dd99f9132ed28f7b1d5e2}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR4\_EXTI15\_PA@{SYSCFG\_EXTICR4\_EXTI15\_PA}}
+\index{SYSCFG\_EXTICR4\_EXTI15\_PA@{SYSCFG\_EXTICR4\_EXTI15\_PA}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR4\_EXTI15\_PA}{SYSCFG\_EXTICR4\_EXTI15\_PA}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI15\+\_\+\+PA~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x0000)}
+
+
+
+PA\mbox{[}15\mbox{]} pin for EXTI15 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00212}{212}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a412f44d6a8f8f60420d7e7f8b5635e09}\label{reg__syscfg_8h_a412f44d6a8f8f60420d7e7f8b5635e09}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR4\_EXTI15\_PB@{SYSCFG\_EXTICR4\_EXTI15\_PB}}
+\index{SYSCFG\_EXTICR4\_EXTI15\_PB@{SYSCFG\_EXTICR4\_EXTI15\_PB}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR4\_EXTI15\_PB}{SYSCFG\_EXTICR4\_EXTI15\_PB}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI15\+\_\+\+PB~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x1000)}
+
+
+
+PB\mbox{[}15\mbox{]} pin for EXTI15 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00213}{213}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a49778592caef3a176ee82c9b83e25148}\label{reg__syscfg_8h_a49778592caef3a176ee82c9b83e25148}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR4\_EXTI15\_PC@{SYSCFG\_EXTICR4\_EXTI15\_PC}}
+\index{SYSCFG\_EXTICR4\_EXTI15\_PC@{SYSCFG\_EXTICR4\_EXTI15\_PC}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR4\_EXTI15\_PC}{SYSCFG\_EXTICR4\_EXTI15\_PC}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI15\+\_\+\+PC~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x2000)}
+
+
+
+PC\mbox{[}15\mbox{]} pin for EXTI15 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00214}{214}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_ac23e07d92a68cf7f8c3e58b479638885}\label{reg__syscfg_8h_ac23e07d92a68cf7f8c3e58b479638885}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_EXTICR4\_EXTI15\_PD@{SYSCFG\_EXTICR4\_EXTI15\_PD}}
+\index{SYSCFG\_EXTICR4\_EXTI15\_PD@{SYSCFG\_EXTICR4\_EXTI15\_PD}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_EXTICR4\_EXTI15\_PD}{SYSCFG\_EXTICR4\_EXTI15\_PD}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+EXTICR4\+\_\+\+EXTI15\+\_\+\+PD~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})0x3000)}
+
+
+
+PD\mbox{[}15\mbox{]} pin for EXTI15 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00215}{215}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a71f9e9d516948c582a9f678df7b875b2}\label{reg__syscfg_8h_a71f9e9d516948c582a9f678df7b875b2}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_PLS@{SYSCFG\_PDETCSR\_PLS}}
+\index{SYSCFG\_PDETCSR\_PLS@{SYSCFG\_PDETCSR\_PLS}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_PLS}{SYSCFG\_PDETCSR\_PLS}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS~(0x0\+FU  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00235}{235}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a762838359ec30671531e238997a6ef98}\label{reg__syscfg_8h_a762838359ec30671531e238997a6ef98}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_PLS\_1V7@{SYSCFG\_PDETCSR\_PLS\_1V7}}
+\index{SYSCFG\_PDETCSR\_PLS\_1V7@{SYSCFG\_PDETCSR\_PLS\_1V7}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_PLS\_1V7}{SYSCFG\_PDETCSR\_PLS\_1V7}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+1\+V7~(0x00U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})}
+
+
+
+PVD level 1.\+7V 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00237}{237}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a018463e9bba79b36f1d5106606917f35}\label{reg__syscfg_8h_a018463e9bba79b36f1d5106606917f35}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_PLS\_2V0@{SYSCFG\_PDETCSR\_PLS\_2V0}}
+\index{SYSCFG\_PDETCSR\_PLS\_2V0@{SYSCFG\_PDETCSR\_PLS\_2V0}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_PLS\_2V0}{SYSCFG\_PDETCSR\_PLS\_2V0}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+2\+V0~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})}
+
+
+
+PVD level 2.\+0V 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00238}{238}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a54ed275850c99ea3dc17fc519e40fb38}\label{reg__syscfg_8h_a54ed275850c99ea3dc17fc519e40fb38}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_PLS\_2V3@{SYSCFG\_PDETCSR\_PLS\_2V3}}
+\index{SYSCFG\_PDETCSR\_PLS\_2V3@{SYSCFG\_PDETCSR\_PLS\_2V3}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_PLS\_2V3}{SYSCFG\_PDETCSR\_PLS\_2V3}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+2\+V3~(0x02U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})}
+
+
+
+PVD level 2.\+3V 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00239}{239}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_ab7658ee7be9b70eeabbcd7bdeec786b2}\label{reg__syscfg_8h_ab7658ee7be9b70eeabbcd7bdeec786b2}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_PLS\_2V6@{SYSCFG\_PDETCSR\_PLS\_2V6}}
+\index{SYSCFG\_PDETCSR\_PLS\_2V6@{SYSCFG\_PDETCSR\_PLS\_2V6}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_PLS\_2V6}{SYSCFG\_PDETCSR\_PLS\_2V6}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+2\+V6~(0x03U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})}
+
+
+
+PVD level 2.\+6V 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00240}{240}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_ad8aaedefe16864e9a94cac9a6ac86c76}\label{reg__syscfg_8h_ad8aaedefe16864e9a94cac9a6ac86c76}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_PLS\_2V9@{SYSCFG\_PDETCSR\_PLS\_2V9}}
+\index{SYSCFG\_PDETCSR\_PLS\_2V9@{SYSCFG\_PDETCSR\_PLS\_2V9}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_PLS\_2V9}{SYSCFG\_PDETCSR\_PLS\_2V9}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+2\+V9~(0x04U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})}
+
+
+
+PVD level 2.\+9V 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00241}{241}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a7e4f425f3dfb18663868b86d43cfe64b}\label{reg__syscfg_8h_a7e4f425f3dfb18663868b86d43cfe64b}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_PLS\_3V2@{SYSCFG\_PDETCSR\_PLS\_3V2}}
+\index{SYSCFG\_PDETCSR\_PLS\_3V2@{SYSCFG\_PDETCSR\_PLS\_3V2}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_PLS\_3V2}{SYSCFG\_PDETCSR\_PLS\_3V2}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+3\+V2~(0x05U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})}
+
+
+
+PVD level 3.\+2V 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00242}{242}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_afa21b7a7a8f82448e089fb83db09190c}\label{reg__syscfg_8h_afa21b7a7a8f82448e089fb83db09190c}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_PLS\_3V5@{SYSCFG\_PDETCSR\_PLS\_3V5}}
+\index{SYSCFG\_PDETCSR\_PLS\_3V5@{SYSCFG\_PDETCSR\_PLS\_3V5}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_PLS\_3V5}{SYSCFG\_PDETCSR\_PLS\_3V5}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+3\+V5~(0x06U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})}
+
+
+
+PVD level 3.\+5V 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00243}{243}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a10e75a16efaf9e7f404d968ecd728914}\label{reg__syscfg_8h_a10e75a16efaf9e7f404d968ecd728914}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_PLS\_3V8@{SYSCFG\_PDETCSR\_PLS\_3V8}}
+\index{SYSCFG\_PDETCSR\_PLS\_3V8@{SYSCFG\_PDETCSR\_PLS\_3V8}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_PLS\_3V8}{SYSCFG\_PDETCSR\_PLS\_3V8}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+3\+V8~(0x07U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})}
+
+
+
+PVD level 3.\+8V 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00244}{244}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a7399e6104a0be590b5f1c63b5b60618c}\label{reg__syscfg_8h_a7399e6104a0be590b5f1c63b5b60618c}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_PLS\_4V1@{SYSCFG\_PDETCSR\_PLS\_4V1}}
+\index{SYSCFG\_PDETCSR\_PLS\_4V1@{SYSCFG\_PDETCSR\_PLS\_4V1}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_PLS\_4V1}{SYSCFG\_PDETCSR\_PLS\_4V1}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+4\+V1~(0x08U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})}
+
+
+
+PVD level 4.\+1V 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00245}{245}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a361ce5abcb17318141adbf1d7883f616}\label{reg__syscfg_8h_a361ce5abcb17318141adbf1d7883f616}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_PLS\_4V4@{SYSCFG\_PDETCSR\_PLS\_4V4}}
+\index{SYSCFG\_PDETCSR\_PLS\_4V4@{SYSCFG\_PDETCSR\_PLS\_4V4}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_PLS\_4V4}{SYSCFG\_PDETCSR\_PLS\_4V4}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+4\+V4~(0x09U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})}
+
+
+
+PVD level 4.\+4V 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00246}{246}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a44811ac264275ddfb337e4aab8ffba05}\label{reg__syscfg_8h_a44811ac264275ddfb337e4aab8ffba05}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_PLS\_4V7@{SYSCFG\_PDETCSR\_PLS\_4V7}}
+\index{SYSCFG\_PDETCSR\_PLS\_4V7@{SYSCFG\_PDETCSR\_PLS\_4V7}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_PLS\_4V7}{SYSCFG\_PDETCSR\_PLS\_4V7}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+4\+V7~(0x0\+AU  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos}})}
+
+
+
+PVD level 4.\+7V 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00247}{247}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}\label{reg__syscfg_8h_a7f94c7fe6ecce7cb1aed63f978feecfc}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_PLS\_Pos@{SYSCFG\_PDETCSR\_PLS\_Pos}}
+\index{SYSCFG\_PDETCSR\_PLS\_Pos@{SYSCFG\_PDETCSR\_PLS\_Pos}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_PLS\_Pos}{SYSCFG\_PDETCSR\_PLS\_Pos}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+PLS\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00234}{234}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a352165efb5d3fa83538b089d7f9f5a8d}\label{reg__syscfg_8h_a352165efb5d3fa83538b089d7f9f5a8d}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_PVDE@{SYSCFG\_PDETCSR\_PVDE}}
+\index{SYSCFG\_PDETCSR\_PVDE@{SYSCFG\_PDETCSR\_PVDE}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_PVDE}{SYSCFG\_PDETCSR\_PVDE}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+PVDE~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a1042cbd9c950ea7fb29dfdae31d78935}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PVDE\+\_\+\+Pos}})}
+
+
+
+Power Voltage Detector Enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00232}{232}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a1042cbd9c950ea7fb29dfdae31d78935}\label{reg__syscfg_8h_a1042cbd9c950ea7fb29dfdae31d78935}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_PVDE\_Pos@{SYSCFG\_PDETCSR\_PVDE\_Pos}}
+\index{SYSCFG\_PDETCSR\_PVDE\_Pos@{SYSCFG\_PDETCSR\_PVDE\_Pos}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_PVDE\_Pos}{SYSCFG\_PDETCSR\_PVDE\_Pos}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+PVDE\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00231}{231}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_aa3ef8c17bf6b9fe26564516918cb7535}\label{reg__syscfg_8h_aa3ef8c17bf6b9fe26564516918cb7535}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_PVDO@{SYSCFG\_PDETCSR\_PVDO}}
+\index{SYSCFG\_PDETCSR\_PVDO@{SYSCFG\_PDETCSR\_PVDO}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_PVDO}{SYSCFG\_PDETCSR\_PVDO}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+PVDO~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a318f9eefba5e1f7ba6c8799c9dca1161}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+PVDO\+\_\+\+Pos}})}
+
+
+
+PVD Output 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00264}{264}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a318f9eefba5e1f7ba6c8799c9dca1161}\label{reg__syscfg_8h_a318f9eefba5e1f7ba6c8799c9dca1161}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_PVDO\_Pos@{SYSCFG\_PDETCSR\_PVDO\_Pos}}
+\index{SYSCFG\_PDETCSR\_PVDO\_Pos@{SYSCFG\_PDETCSR\_PVDO\_Pos}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_PVDO\_Pos}{SYSCFG\_PDETCSR\_PVDO\_Pos}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+PVDO\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00263}{263}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a1996c5e2127dee9b48afa97efd66c2ed}\label{reg__syscfg_8h_a1996c5e2127dee9b48afa97efd66c2ed}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_VBATDIV3EN@{SYSCFG\_PDETCSR\_VBATDIV3EN}}
+\index{SYSCFG\_PDETCSR\_VBATDIV3EN@{SYSCFG\_PDETCSR\_VBATDIV3EN}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_VBATDIV3EN}{SYSCFG\_PDETCSR\_VBATDIV3EN}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+VBATDIV3\+EN~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a55a63874425582f4e274afe10759fc76}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VBATDIV3\+EN\+\_\+\+Pos}})}
+
+
+
+VBATDIV3 Enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00282}{282}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a55a63874425582f4e274afe10759fc76}\label{reg__syscfg_8h_a55a63874425582f4e274afe10759fc76}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_VBATDIV3EN\_Pos@{SYSCFG\_PDETCSR\_VBATDIV3EN\_Pos}}
+\index{SYSCFG\_PDETCSR\_VBATDIV3EN\_Pos@{SYSCFG\_PDETCSR\_VBATDIV3EN\_Pos}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_VBATDIV3EN\_Pos}{SYSCFG\_PDETCSR\_VBATDIV3EN\_Pos}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+VBATDIV3\+EN\+\_\+\+Pos~(11)}
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00281}{281}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a27d875591afe1cf283ccdff28ae9e2db}\label{reg__syscfg_8h_a27d875591afe1cf283ccdff28ae9e2db}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_VDTE@{SYSCFG\_PDETCSR\_VDTE}}
+\index{SYSCFG\_PDETCSR\_VDTE@{SYSCFG\_PDETCSR\_VDTE}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_VDTE}{SYSCFG\_PDETCSR\_VDTE}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTE~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_ad306bc6568c36a2047d28e60f79d7e05}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTE\+\_\+\+Pos}})}
+
+
+
+VDT Output 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00272}{272}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_ad306bc6568c36a2047d28e60f79d7e05}\label{reg__syscfg_8h_ad306bc6568c36a2047d28e60f79d7e05}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_VDTE\_Pos@{SYSCFG\_PDETCSR\_VDTE\_Pos}}
+\index{SYSCFG\_PDETCSR\_VDTE\_Pos@{SYSCFG\_PDETCSR\_VDTE\_Pos}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_VDTE\_Pos}{SYSCFG\_PDETCSR\_VDTE\_Pos}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTE\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00271}{271}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a54873183513148c1f89b2a9745435716}\label{reg__syscfg_8h_a54873183513148c1f89b2a9745435716}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_VDTLS@{SYSCFG\_PDETCSR\_VDTLS}}
+\index{SYSCFG\_PDETCSR\_VDTLS@{SYSCFG\_PDETCSR\_VDTLS}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_VDTLS}{SYSCFG\_PDETCSR\_VDTLS}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTLS~(0x0\+FU  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a358218173fcef2b8dffa97af9c35cfe3}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTLS\+\_\+\+Pos}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00275}{275}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_ac83c174076727112ccd70fdafc85e8c3}\label{reg__syscfg_8h_ac83c174076727112ccd70fdafc85e8c3}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_VDTLS\_0V9@{SYSCFG\_PDETCSR\_VDTLS\_0V9}}
+\index{SYSCFG\_PDETCSR\_VDTLS\_0V9@{SYSCFG\_PDETCSR\_VDTLS\_0V9}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_VDTLS\_0V9}{SYSCFG\_PDETCSR\_VDTLS\_0V9}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTLS\+\_\+0\+V9~(0x00U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a358218173fcef2b8dffa97af9c35cfe3}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTLS\+\_\+\+Pos}})}
+
+
+
+VDT level 0.\+9V 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00276}{276}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a706154aa6b91bc7fa08c5f4becf14118}\label{reg__syscfg_8h_a706154aa6b91bc7fa08c5f4becf14118}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_VDTLS\_1V0@{SYSCFG\_PDETCSR\_VDTLS\_1V0}}
+\index{SYSCFG\_PDETCSR\_VDTLS\_1V0@{SYSCFG\_PDETCSR\_VDTLS\_1V0}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_VDTLS\_1V0}{SYSCFG\_PDETCSR\_VDTLS\_1V0}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTLS\+\_\+1\+V0~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a358218173fcef2b8dffa97af9c35cfe3}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTLS\+\_\+\+Pos}})}
+
+
+
+VDT level 1.\+0V 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00277}{277}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a12f40dd8a96641da008c35866df5c630}\label{reg__syscfg_8h_a12f40dd8a96641da008c35866df5c630}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_VDTLS\_1V1@{SYSCFG\_PDETCSR\_VDTLS\_1V1}}
+\index{SYSCFG\_PDETCSR\_VDTLS\_1V1@{SYSCFG\_PDETCSR\_VDTLS\_1V1}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_VDTLS\_1V1}{SYSCFG\_PDETCSR\_VDTLS\_1V1}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTLS\+\_\+1\+V1~(0x02U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a358218173fcef2b8dffa97af9c35cfe3}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTLS\+\_\+\+Pos}})}
+
+
+
+VDT level 1.\+1V 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00278}{278}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_aaf5d687badbdcc3ee8e952dfe3c4b349}\label{reg__syscfg_8h_aaf5d687badbdcc3ee8e952dfe3c4b349}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_VDTLS\_1V2@{SYSCFG\_PDETCSR\_VDTLS\_1V2}}
+\index{SYSCFG\_PDETCSR\_VDTLS\_1V2@{SYSCFG\_PDETCSR\_VDTLS\_1V2}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_VDTLS\_1V2}{SYSCFG\_PDETCSR\_VDTLS\_1V2}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTLS\+\_\+1\+V2~(0x03U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a358218173fcef2b8dffa97af9c35cfe3}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTLS\+\_\+\+Pos}})}
+
+
+
+VDT level 1.\+2V 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00279}{279}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a358218173fcef2b8dffa97af9c35cfe3}\label{reg__syscfg_8h_a358218173fcef2b8dffa97af9c35cfe3}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_VDTLS\_Pos@{SYSCFG\_PDETCSR\_VDTLS\_Pos}}
+\index{SYSCFG\_PDETCSR\_VDTLS\_Pos@{SYSCFG\_PDETCSR\_VDTLS\_Pos}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_VDTLS\_Pos}{SYSCFG\_PDETCSR\_VDTLS\_Pos}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTLS\+\_\+\+Pos~(9)}
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00274}{274}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a6be72ae0e9ec89b1000f325955350d58}\label{reg__syscfg_8h_a6be72ae0e9ec89b1000f325955350d58}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_VDTO@{SYSCFG\_PDETCSR\_VDTO}}
+\index{SYSCFG\_PDETCSR\_VDTO@{SYSCFG\_PDETCSR\_VDTO}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_VDTO}{SYSCFG\_PDETCSR\_VDTO}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTO~(0x01U  $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a43429f078906bb17aa96df9b1779e84b}{SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTO\+\_\+\+Pos}})}
+
+
+
+VDT Output Enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00269}{269}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a43429f078906bb17aa96df9b1779e84b}\label{reg__syscfg_8h_a43429f078906bb17aa96df9b1779e84b}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_PDETCSR\_VDTO\_Pos@{SYSCFG\_PDETCSR\_VDTO\_Pos}}
+\index{SYSCFG\_PDETCSR\_VDTO\_Pos@{SYSCFG\_PDETCSR\_VDTO\_Pos}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PDETCSR\_VDTO\_Pos}{SYSCFG\_PDETCSR\_VDTO\_Pos}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+PDETCSR\+\_\+\+VDTO\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00268}{268}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_afab6ebb8fd88ce411f0a8489e42256a0}\label{reg__syscfg_8h_afab6ebb8fd88ce411f0a8489e42256a0}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_VOSDLY\_CNT@{SYSCFG\_VOSDLY\_CNT}}
+\index{SYSCFG\_VOSDLY\_CNT@{SYSCFG\_VOSDLY\_CNT}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_VOSDLY\_CNT}{SYSCFG\_VOSDLY\_CNT}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+VOSDLY\+\_\+\+CNT~(0x03\+FFU $<$$<$ \mbox{\hyperlink{reg__syscfg_8h_a28d78cefbdfb254a44f630b1d5d3809a}{SYSCFG\+\_\+\+VOSDLY\+\_\+\+CNT\+\_\+\+Pos}})}
+
+
+
+SYSCFG VOSDLY CNT 
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00285}{285}} 行定义.
+
+\mbox{\Hypertarget{reg__syscfg_8h_a28d78cefbdfb254a44f630b1d5d3809a}\label{reg__syscfg_8h_a28d78cefbdfb254a44f630b1d5d3809a}} 
+\index{reg\_syscfg.h@{reg\_syscfg.h}!SYSCFG\_VOSDLY\_CNT\_Pos@{SYSCFG\_VOSDLY\_CNT\_Pos}}
+\index{SYSCFG\_VOSDLY\_CNT\_Pos@{SYSCFG\_VOSDLY\_CNT\_Pos}!reg\_syscfg.h@{reg\_syscfg.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_VOSDLY\_CNT\_Pos}{SYSCFG\_VOSDLY\_CNT\_Pos}}
+{\footnotesize\ttfamily \#define SYSCFG\+\_\+\+VOSDLY\+\_\+\+CNT\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__syscfg_8h_source}{reg\+\_\+syscfg.\+h}} 第 \mbox{\hyperlink{reg__syscfg_8h_source_l00284}{284}} 行定义.
+

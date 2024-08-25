@@ -1,0 +1,65 @@
+\hypertarget{hal__wwdg_8c}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Src/hal\+\_\+wwdg.c 文件参考}
+\label{hal__wwdg_8c}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_wwdg.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_wwdg.c}}
+
+
+THIS FILE PROVIDES ALL THE WWDG FIRMWARE FUNCTIONS.  
+
+
+{\ttfamily \#include \char`\"{}hal\+\_\+wwdg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}hal\+\_\+rcc.\+h\char`\"{}}\newline
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{hal__wwdg_8c_af5a8bd1551d6d34658f8f3766b309254}{\+\_\+\+HAL\+\_\+\+WWDG\+\_\+\+C\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___w_w_d_g___exported___functions_ga1b1260b29ebd4d77ddacfda1433fd3b8}{WWDG\+\_\+\+De\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Deinitializes the WWDG peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___w_w_d_g___exported___functions_ga34a589b9bcff65f66b668104a70474c2}{WWDG\+\_\+\+Set\+Prescaler}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} prescaler)
+\begin{DoxyCompactList}\small\item\em Sets the WWDG Prescaler. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___w_w_d_g___exported___functions_ga300fe6e036a39f0b2afb61eaef39e2ad}{WWDG\+\_\+\+Set\+Window\+Value}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} window\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Sets the WWDG window value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___w_w_d_g___exported___functions_gaf89349338e1c76065d46c44ecfcc5399}{WWDG\+\_\+\+Enable\+IT}} ()
+\begin{DoxyCompactList}\small\item\em Enables the WWDG Early Wakeup interrupt(\+EWI). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___w_w_d_g___exported___functions_ga1cc54e88140ed41b5b841827fe24af8c}{WWDG\+\_\+\+Set\+Counter}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} count)
+\begin{DoxyCompactList}\small\item\em Sets the WWDG counter value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___w_w_d_g___exported___functions_ga3fbec6b1ceeac07d7fbdfc3fd27fe122}{WWDG\+\_\+\+Get\+Counter}} ()
+\begin{DoxyCompactList}\small\item\em Enables WWDG and load the counter value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___w_w_d_g___exported___functions_gafe7aa18bd66fb5548de08429070e831c}{WWDG\+\_\+\+Enable}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} count)
+\begin{DoxyCompactList}\small\item\em Enables WWDG and load the counter value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___w_w_d_g___exported___functions_ga72379e299a3ed528bc37dcf8e411c093}{WWDG\+\_\+\+Get\+Flag\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Checks whether the Early Wakeup interrupt flag is set or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___w_w_d_g___exported___functions_gad16e73c97d4dae79cd88049e8438b98e}{WWDG\+\_\+\+Clear\+Flag}} ()
+\begin{DoxyCompactList}\small\item\em Clears Early Wakeup interrupt flag. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE PROVIDES ALL THE WWDG FIRMWARE FUNCTIONS. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{hal__wwdg_8c_source}{hal\+\_\+wwdg.\+c}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{hal__wwdg_8c_af5a8bd1551d6d34658f8f3766b309254}\label{hal__wwdg_8c_af5a8bd1551d6d34658f8f3766b309254}} 
+\index{hal\_wwdg.c@{hal\_wwdg.c}!\_HAL\_WWDG\_C\_@{\_HAL\_WWDG\_C\_}}
+\index{\_HAL\_WWDG\_C\_@{\_HAL\_WWDG\_C\_}!hal\_wwdg.c@{hal\_wwdg.c}}
+\doxysubsubsection{\texorpdfstring{\_HAL\_WWDG\_C\_}{\_HAL\_WWDG\_C\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+HAL\+\_\+\+WWDG\+\_\+\+C\+\_\+}
+
+
+
+在文件 \mbox{\hyperlink{hal__wwdg_8c_source}{hal\+\_\+wwdg.\+c}} 第 \mbox{\hyperlink{hal__wwdg_8c_source_l00019}{19}} 行定义.
+

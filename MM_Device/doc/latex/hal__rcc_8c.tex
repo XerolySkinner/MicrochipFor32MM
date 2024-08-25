@@ -1,0 +1,185 @@
+\hypertarget{hal__rcc_8c}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Src/hal\+\_\+rcc.c 文件参考}
+\label{hal__rcc_8c}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_rcc.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_rcc.c}}
+
+
+THIS FILE PROVIDES ALL THE RCC FIRMWARE FUNCTIONS.  
+
+
+{\ttfamily \#include \char`\"{}mm32\+\_\+reg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}hal\+\_\+rcc.\+h\char`\"{}}\newline
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{hal__rcc_8c_a386d00230cc827b95226e2b2ff81e51a}{\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+C\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gacb77a0b6147f1e4427cc797a9bb25ba3}{RCC\+\_\+\+De\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Resets the RCC clock configuration to default state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga3e8bc2e6f7ae26aec2081dbfe686304b}{RCC\+\_\+\+HSEConfig}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_gaf79c982653100ce2c61af761adfc7cab}{RCCHSE\+\_\+\+Type\+Def}} state)
+\begin{DoxyCompactList}\small\item\em Configures the External High Speed oscillator (HSE). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___r_c_c___exported___functions_ga06abd1ebec26432c3d67a3aecd1619ed}{RCC\+\_\+\+Get\+Flag\+Status}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_gae8c5d530bd004628086e325a834211dc}{RCC\+\_\+\+FLAG\+\_\+\+Type\+Def}} flag)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified RCC flag is set or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a8333b96c67f83cba354b3407fcbb6ee8}{Error\+Status}} \mbox{\hyperlink{group___r_c_c___exported___functions_gae0f15692614dd048ee4110a056f001dc}{RCC\+\_\+\+Wait\+For\+HSEStart\+Up}} (void)
+\begin{DoxyCompactList}\small\item\em Waits for HSE start-\/up. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a8333b96c67f83cba354b3407fcbb6ee8}{Error\+Status}} \mbox{\hyperlink{group___r_c_c___exported___functions_gad009e601704dce329f700f8748df052c}{RCC\+\_\+\+Wait\+For\+Flag\+Start\+Up}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_gae8c5d530bd004628086e325a834211dc}{RCC\+\_\+\+FLAG\+\_\+\+Type\+Def}} flag)
+\begin{DoxyCompactList}\small\item\em Waits for flag start-\/up. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga5e70adef1e770c79463d0ff7ab06daf1}{RCC\+\_\+\+HSICmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Internal High Speed oscillator (HSI). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga41ec26146346c4312ed52f0af08d90c6}{RCC\+\_\+\+SYSCLKConfig}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_gab314ddace15b8d75ef143188c3061a97}{SYSCLK\+\_\+\+Type\+Def}} sys\+\_\+clk\+\_\+source)
+\begin{DoxyCompactList}\small\item\em Configures the system clock (SYSCLK). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gab80e92fad32d9b81ba9ce347c69c5c8a}{RCC\+\_\+\+PLLDMDNConfig}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} plldn, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} plldm)
+\begin{DoxyCompactList}\small\item\em Configures the PLL clock source and DM DN factor. This function must be used only when the PLL is disabled. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gaa13d7c409c45ee4d92c738755f063d19}{RCC\+\_\+\+PLLCmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the PLL. The PLL can not be disabled if it is used as system clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gad234bcd2bc739b7c577963e674b2f9c9}{RCC\+\_\+\+PLLConfig}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_ga8d9ccc495d0577912191a7bc9bdbd8d7}{RCC\+\_\+\+PLLSource\+\_\+\+Type\+Def}} pll\+\_\+src, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gab9ba8af25cbeccce21dc2dbf0b10a666}{RCC\+\_\+\+PLLMul\+\_\+\+Type\+Def}} pll\+\_\+mul)
+\begin{DoxyCompactList}\small\item\em Configures the PLL clock source and multiplication factor. This function must be used only when the PLL is disabled. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gad0ec21ebb92969e32f5a0a76a008ce6e}{RCC\+\_\+\+USBCLKConfig}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_ga6873373a50342c72526dbcf1cd3b05b5}{RCC\+\_\+\+USBCLKSOURCE\+\_\+\+Type\+Def}} usb\+\_\+clk\+\_\+src)
+\begin{DoxyCompactList}\small\item\em Configures the USB clock (USBCLK). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{group___r_c_c___exported___functions_gac1c3e8cbc43e62cd101da77bba77ca75}{RCC\+\_\+\+Get\+SYSCLKSource}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the clock source used as system clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga808e5d9a77ff2dff623717a5c15cc1f8}{RCC\+\_\+\+HCLKConfig}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_ga42d9f90e4aa8d927be0c7736b1f654a3}{RCC\+\_\+\+AHB\+\_\+\+CLK\+\_\+\+Type\+Def}} sys\+\_\+clk)
+\begin{DoxyCompactList}\small\item\em Configures the AHB clock (hclk). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga8e8f479cad164c2e30d3b0d027332bf9}{RCC\+\_\+\+PCLK1\+Config}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_ga61fd16d8e595865d03e612b0aedf67c5}{RCC\+\_\+\+APB1\+\_\+\+APB2\+\_\+\+CLK\+\_\+\+Type\+Def}} hclk)
+\begin{DoxyCompactList}\small\item\em Configures the Low Speed APB clock (pclk1). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gaae996202123e188d6a1384eaedc66f6c}{RCC\+\_\+\+PCLK2\+Config}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_ga61fd16d8e595865d03e612b0aedf67c5}{RCC\+\_\+\+APB1\+\_\+\+APB2\+\_\+\+CLK\+\_\+\+Type\+Def}} hclk)
+\begin{DoxyCompactList}\small\item\em Configures the High Speed APB clock (pclk2). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga008d409c5d4a347536a370ae1935947a}{RCC\+\_\+\+ADCCLKConfig}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_ga845eb12e4204b847a7a8ab99ce0e448f}{RCC\+\_\+\+ADCCLKSOURCE\+\_\+\+Type\+Def}} pclk2)
+\begin{DoxyCompactList}\small\item\em Configures the ADC clock (ADCCLK). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga9900ce044315a61b416f69338f31c07b}{RCC\+\_\+\+LSEConfig}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_ga8c4dfb3b1aa4dd4c65a4322c05d08ac5}{RCC\+\_\+\+LSE\+\_\+\+Type\+Def}} state)
+\begin{DoxyCompactList}\small\item\em Configures the External Low Speed oscillator (LSE). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gaf177e87d3bc68670c03eeb1eb6845b6b}{RCC\+\_\+\+RTCCLKConfig}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_ga76fd6ebbea4e50a4faf71e81c51ef317}{RCC\+\_\+\+RTCCLKSOURCE\+\_\+\+Type\+Def}} rtc\+\_\+clk\+\_\+src)
+\begin{DoxyCompactList}\small\item\em Configures the RTC clock (RTCCLK). Once the RTC clock is selected it can be changed unless the Backup domain is reset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gab03110b6f30807553c03748727771b89}{RCC\+\_\+\+RTCCLKCmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the RTC clock. This function must be used only after the RTC clock was selected using the RCC\+\_\+\+RTCCLKConfig function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gadfa2f9ce00b1ca0457cf9104e5e9c703}{RCC\+\_\+\+LSICmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Internal Low Speed oscillator (LSI). LSI can not be disabled if the IWDG is running. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___r_c_c___exported___functions_gace95b2b7607483d30009e9162ec6febb}{RCC\+\_\+\+Get\+Sys\+Clock\+Freq}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the clock frequency of different on chip clocks. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___r_c_c___exported___functions_ga0b703bee35b03b826d2f3af5d2c89aae}{RCC\+\_\+\+Get\+HCLKFreq}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the hclk frequency of different on chip clocks. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___r_c_c___exported___functions_ga5837c7297ea0173b6b2661993ba47479}{RCC\+\_\+\+Get\+PCLK1\+Freq}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the pclk1 frequency of different on chip clocks. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___r_c_c___exported___functions_gaa089422d0ddc2847a8cf0d4997bde5c3}{RCC\+\_\+\+Get\+PCLK2\+Freq}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the pclk2 frequency of different on chip clocks. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gaedc1a52bbaba2a78e347a03d7d9a9035}{RCC\+\_\+\+Get\+Clocks\+Freq}} (\mbox{\hyperlink{struct_r_c_c___clocks_type_def}{RCC\+\_\+\+Clocks\+Type\+Def}} $\ast$clk)
+\begin{DoxyCompactList}\small\item\em Returns the frequency of different on chip clocks. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gacd97489bbec7a0dcb21abfcb5b9dbd3a}{RCC\+\_\+\+AHBPeriph\+Clock\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ahb\+\_\+periph, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the AHB peripheral clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga2e1483f271a5daa2ffa6dc9f5b51adfd}{RCC\+\_\+\+AHB2\+Periph\+Clock\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ahb\+\_\+periph, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga5da33a30efc37868890cdd67aa324751}{RCC\+\_\+\+AHB3\+Periph\+Clock\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ahb\+\_\+periph, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga6795c56926d46ee70db7475bf70e443f}{RCC\+\_\+\+APB2\+Periph\+Clock\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} apb2\+\_\+periph, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the High Speed APB (APB2) peripheral clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gabd7a5ac36fb2b92827889cec53fd0141}{RCC\+\_\+\+APB1\+Periph\+Clock\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} apb1\+\_\+periph, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Low Speed APB (APB1) peripheral clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga4600254f45c034633b409f6ba479f6f2}{RCC\+\_\+\+APB2\+Periph\+Reset\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} apb2\+\_\+periph, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Forces or releases High Speed APB (APB2) peripheral reset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gaa7a94d7540b0936a8f07191dd99b2022}{RCC\+\_\+\+APB1\+Periph\+Reset\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} apb1\+\_\+periph, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Forces or releases Low Speed APB (APB1) peripheral reset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga2284d4bad95f741f57168435ee90956d}{RCC\+\_\+\+AHBPeriph\+Reset\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ahb\+\_\+periph, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Forces or releases Low Speed AHB peripheral reset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga256b3cb351a7fb7ab3d696e4d6d49c50}{RCC\+\_\+\+AHB2\+Periph\+Reset\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ahb\+\_\+periph, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Forces or releases Low Speed AHB2 peripheral reset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga14aa9397569cbcd3cec46c779844bf65}{RCC\+\_\+\+AHB3\+Periph\+Reset\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ahb\+\_\+periph, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Forces or releases Low Speed AHB2 peripheral reset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga90652428211c565c37cd4df3257fc83f}{RCC\+\_\+\+Backup\+Reset\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Forces or releases the Backup domain reset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga188fcb7cc4581356a6edca60f08774b5}{RCC\+\_\+\+Clock\+Security\+System\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Clock Security System. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga905a9a034d8641fe7bfcbbffb1aa632b}{RCC\+\_\+\+MCOConfig}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_ga6af1d0d9d1463f9368e6f4b731f7859f}{RCC\+\_\+\+MCO\+\_\+\+Type\+Def}} mco\+\_\+src)
+\begin{DoxyCompactList}\small\item\em Selects the clock source to output on MCO pin. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga53f909dbb15a54124419084ebda97d72}{RCC\+\_\+\+Clear\+Flag}} (void)
+\begin{DoxyCompactList}\small\item\em Clears the RCC reset flags. The reset flags are\+: RCC\+\_\+\+FLAG\+\_\+\+PINRST, RCC\+\_\+\+FLAG\+\_\+\+PORRST, RCC\+\_\+\+FLAG\+\_\+\+SFTRST, RCC\+\_\+\+FLAG\+\_\+\+IWDGRST, RCC\+\_\+\+FLAG\+\_\+\+WWDGRST, RCC\+\_\+\+FLAG\+\_\+\+LPWRRST \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gabc85bb6ecf765af60d5f9a07b84e464f}{RCC\+\_\+\+ITConfig}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_ga23735f41dde839d727e55c310e5b1e8f}{RCC\+\_\+\+IT\+\_\+\+Type\+Def}} it, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified RCC interrupts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} \mbox{\hyperlink{group___r_c_c___exported___functions_gaab0139c6bc2ed8bd504ca33adb25b25a}{RCC\+\_\+\+Get\+ITStatus}} (\mbox{\hyperlink{group___r_c_c___exported___enumeration_ga23735f41dde839d727e55c310e5b1e8f}{RCC\+\_\+\+IT\+\_\+\+Type\+Def}} it)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified RCC interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gad2f4eec45ba567b4e978abc69d6b94ad}{RCC\+\_\+\+Clear\+ITPending\+Bit}} (\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} it)
+\begin{DoxyCompactList}\small\item\em Clears the RCC{\ucr}?interrupt pending bits. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga372c71d3e65cc403910490b30b0e0f6c}{RCC\+\_\+\+APB1\+Periph\+Reset}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} apb1\+\_\+periph)
+\begin{DoxyCompactList}\small\item\em Forces or releases Low Speed APB (APB1) peripheral reset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gac2ba2a511334415dfa9d8d4caa51dcfd}{RCC\+\_\+\+APB2\+Periph\+Reset}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} apb2\+\_\+periph)
+\begin{DoxyCompactList}\small\item\em Forces or releases Low Speed APB (APB2) peripheral reset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga28ac0189be36843de64a14f4e8f95551}{RCC\+\_\+\+AHBPeriph\+Reset}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ahb1\+\_\+periph)
+\begin{DoxyCompactList}\small\item\em Forces or releases High Speed AHB (AHB1) peripheral reset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gad9e30971b169c6fee0f090ef9948a17a}{ex\+RCC\+\_\+\+APB1\+Periph\+Reset}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} apb1\+\_\+periph)
+\begin{DoxyCompactList}\small\item\em Forces or releases Low Speed APB (APB1) peripheral reset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga21c12642dce3869c0301ddc4459f820a}{ex\+RCC\+\_\+\+Backup\+Reset}} ()
+\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gafaf2c96ab5171fc65c71b167e80c0539}{ex\+RCC\+\_\+\+APB2\+Periph\+Reset}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} apb2\+\_\+periph)
+\begin{DoxyCompactList}\small\item\em Forces or releases High Speed APB (APB2) peripheral reset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga69442b88c064fa4110c09507cbdf78a2}{ex\+RCC\+\_\+\+AHBPeriph\+Reset}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ahb1\+\_\+periph)
+\begin{DoxyCompactList}\small\item\em Forces or releases High Speed AHB (AHB1) peripheral reset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gaeb09313c4e0f9c5e62b1f6977b4ac61b}{ex\+RCC\+\_\+\+Systick\+Disable}} ()
+\begin{DoxyCompactList}\small\item\em Disable systick \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gaf17fec75486646e8ef5e4421bb3dafd4}{ex\+RCC\+\_\+\+Systick\+Enable}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} sys\+\_\+tick\+\_\+period)
+\begin{DoxyCompactList}\small\item\em Enable systick \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gad2335a1af8c24a8bed54b34dbc3cbfa9}{RCC\+\_\+\+ADC\+\_\+\+Clock\+Cmd}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$peripheral, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified ADC peripheral Clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga353f01e8bdb26f389f28a8534f901d19}{RCC\+\_\+\+BKP\+\_\+\+Clock\+Cmd}} (\mbox{\hyperlink{struct_b_k_p___type_def}{BKP\+\_\+\+Type\+Def}} $\ast$peripheral, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified BKP peripheral Clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga48a450dca10e6f56f183b12463232379}{RCC\+\_\+\+CAN\+\_\+\+Clock\+Cmd}} (\mbox{\hyperlink{struct_c_a_n___type_def}{CAN\+\_\+\+Type\+Def}} $\ast$peripheral, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified CAN peripheral Clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga20582a5a3fcb5b5dc504a0595f9065fc}{RCC\+\_\+\+COMP\+\_\+\+Clock\+Cmd}} (\mbox{\hyperlink{struct_c_o_m_p___type_def}{COMP\+\_\+\+Type\+Def}} $\ast$peripheral, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified COMP peripheral Clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga9c5008d1cc0b6e3ad6d1e95d4e37e212}{RCC\+\_\+\+CRC\+\_\+\+Clock\+Cmd}} (\mbox{\hyperlink{struct_c_r_c___type_def}{CRC\+\_\+\+Type\+Def}} $\ast$peripheral, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified CRC peripheral Clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gafc39a2ad254bdba3e3651bcef360b4a1}{RCC\+\_\+\+DAC\+\_\+\+Clock\+Cmd}} (\mbox{\hyperlink{struct_d_a_c___type_def}{DAC\+\_\+\+Type\+Def}} $\ast$peripheral, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified DAC peripheral Clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_gae638aec39d8c9175468420f185f4b60d}{RCC\+\_\+\+DMA\+\_\+\+Clock\+Cmd}} (\mbox{\hyperlink{struct_d_m_a___type_def}{DMA\+\_\+\+Type\+Def}} $\ast$peripheral, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified DMA peripheral Clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga16523c13eb82fb3cbf19a6d59e52be2f}{RCC\+\_\+\+GPIO\+\_\+\+Clock\+Cmd}} (\mbox{\hyperlink{struct_g_p_i_o___type_def}{GPIO\+\_\+\+Type\+Def}} $\ast$peripheral, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified GPIO peripheral Clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_c_c___exported___functions_ga28781f161f0939a238c1e24835847687}{RCC\+\_\+\+UART\+\_\+\+Clock\+Cmd}} (\mbox{\hyperlink{struct_u_a_r_t___type_def}{UART\+\_\+\+Type\+Def}} $\ast$peripheral, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Deinitializes the uart peripheral registers to their default reset values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{hal__rcc_8c_aaceb8d051859fbecbd9692da4206dd8e}{tb\+Presc}} \mbox{[}$\,$\mbox{]} = \{0, 0, 0, 0, 1, 2, 3, 4, 1, 2, 3, 4, 6, 7, 8, 9\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE PROVIDES ALL THE RCC FIRMWARE FUNCTIONS. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{hal__rcc_8c_source}{hal\+\_\+rcc.\+c}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{hal__rcc_8c_a386d00230cc827b95226e2b2ff81e51a}\label{hal__rcc_8c_a386d00230cc827b95226e2b2ff81e51a}} 
+\index{hal\_rcc.c@{hal\_rcc.c}!\_HAL\_RCC\_C\_@{\_HAL\_RCC\_C\_}}
+\index{\_HAL\_RCC\_C\_@{\_HAL\_RCC\_C\_}!hal\_rcc.c@{hal\_rcc.c}}
+\doxysubsubsection{\texorpdfstring{\_HAL\_RCC\_C\_}{\_HAL\_RCC\_C\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+HAL\+\_\+\+RCC\+\_\+\+C\+\_\+}
+
+
+
+在文件 \mbox{\hyperlink{hal__rcc_8c_source}{hal\+\_\+rcc.\+c}} 第 \mbox{\hyperlink{hal__rcc_8c_source_l00019}{19}} 行定义.
+
+
+
+\doxysubsection{变量说明}
+\mbox{\Hypertarget{hal__rcc_8c_aaceb8d051859fbecbd9692da4206dd8e}\label{hal__rcc_8c_aaceb8d051859fbecbd9692da4206dd8e}} 
+\index{hal\_rcc.c@{hal\_rcc.c}!tbPresc@{tbPresc}}
+\index{tbPresc@{tbPresc}!hal\_rcc.c@{hal\_rcc.c}}
+\doxysubsubsection{\texorpdfstring{tbPresc}{tbPresc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} tb\+Presc\mbox{[}$\,$\mbox{]} = \{0, 0, 0, 0, 1, 2, 3, 4, 1, 2, 3, 4, 6, 7, 8, 9\}}
+
+
+
+在文件 \mbox{\hyperlink{hal__rcc_8c_source}{hal\+\_\+rcc.\+c}} 第 \mbox{\hyperlink{hal__rcc_8c_source_l00027}{27}} 行定义.
+

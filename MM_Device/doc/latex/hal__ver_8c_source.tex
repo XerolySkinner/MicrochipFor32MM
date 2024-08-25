@@ -1,0 +1,75 @@
+\hypertarget{hal__ver_8c_source}{}\doxysection{hal\+\_\+ver.\+c}
+\label{hal__ver_8c_source}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_ver.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_ver.c}}
+\mbox{\hyperlink{hal__ver_8c}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00018}00018 \textcolor{comment}{// Define to prevent recursive inclusion}}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00019}\mbox{\hyperlink{hal__ver_8c_acda621571e246f143e5e4f96cbea7f4b}{00019}} \textcolor{preprocessor}{\#define \_HAL\_VER\_C\_}}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00021}00021 \textcolor{comment}{// Files includes}}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00022}00022 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{hal__ver_8h}{hal\_ver.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00025}00025 \textcolor{comment}{// MM32 Library version is 0.90}}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00027}\mbox{\hyperlink{hal__ver_8c_a52daee22cead5b15dbc3a0e0a66ee709}{00027}} \textcolor{preprocessor}{\#define \_\_MM32\_LIB\_VERSION\_MAIN         (0x0U)                                  }}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00028}\mbox{\hyperlink{hal__ver_8c_acac060969df57e35d10b5d8d9cfa54c3}{00028}} \textcolor{preprocessor}{\#define \_\_MM32\_LIB\_VERSION\_SUB1         (0x9U)                                  }}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00029}\mbox{\hyperlink{hal__ver_8c_ae191f5ee2ad98b5649606c555388cc4a}{00029}} \textcolor{preprocessor}{\#define \_\_MM32\_LIB\_VERSION\_SUB2         (0x0U)                                  }}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00030}\mbox{\hyperlink{hal__ver_8c_a994ec69872c95395e7e55f36f9bbf3ac}{00030}} \textcolor{preprocessor}{\#define \_\_MM32\_LIB\_VERSION\_RC           (0x00U)                                 }}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00031}\mbox{\hyperlink{hal__ver_8c_a3311c1261fc4138e4363f0fb61aa4457}{00031}} \textcolor{preprocessor}{\#define \_\_MM32\_LIB\_VERSION              ((\_\_MM32\_LIB\_VERSION\_MAIN << 24U)\(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00032}00032 \textcolor{preprocessor}{                                         |(\_\_MM32\_LIB\_VERSION\_SUB1 << 16U)\(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00033}00033 \textcolor{preprocessor}{                                         |(\_\_MM32\_LIB\_VERSION\_SUB2 << 8U )\(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00034}00034 \textcolor{preprocessor}{                                         |(\_\_MM32\_LIB\_VERSION\_RC))}}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00036}00036 \textcolor{comment}{// MM32 Library release date is 2021-\/05-\/10 (YYYY-\/MM-\/DD)}}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00037}\mbox{\hyperlink{hal__ver_8c_a095400984b0a4a1c56e9c40b450a6816}{00037}} \textcolor{preprocessor}{\#define \_\_MM32\_LIB\_RELESE\_YEARH         (0x20U)                                  }}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00038}\mbox{\hyperlink{hal__ver_8c_a17174bcde453adbf34e705073903f2eb}{00038}} \textcolor{preprocessor}{\#define \_\_MM32\_LIB\_RELESE\_YEARL         (0x21U)                                  }}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00039}\mbox{\hyperlink{hal__ver_8c_af646bb2901e0d43ec2d13adcddec5ab7}{00039}} \textcolor{preprocessor}{\#define \_\_MM32\_LIB\_RELESE\_MONTH         (0x05U)                                  }}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00040}\mbox{\hyperlink{hal__ver_8c_ad8eb38756427dfa825a48a3ef1790922}{00040}} \textcolor{preprocessor}{\#define \_\_MM32\_LIB\_RELESE\_DAY           (0x10U)                                }}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00041}\mbox{\hyperlink{hal__ver_8c_a98352ec1ea09342aefab4ed652ee875d}{00041}} \textcolor{preprocessor}{\#define \_\_MM32\_LIB\_RELESE\_DATE          ((\_\_MM32\_LIB\_RELESE\_YEARH << 24U)\(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00042}00042 \textcolor{preprocessor}{                                         |(\_\_MM32\_LIB\_RELESE\_YEARL << 16U)\(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00043}00043 \textcolor{preprocessor}{                                         |(\_\_MM32\_LIB\_RELESE\_MONTH << 8U )\(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00044}00044 \textcolor{preprocessor}{                                         |(\_\_MM32\_LIB\_RELESE\_DAY))}}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00062}\mbox{\hyperlink{group___u_a_r_t___exported___functions_gaf6ec93dd06ec3ef2a3c46f443533b9a8}{00062}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___lib_gaf6ec93dd06ec3ef2a3c46f443533b9a8}{Get\_MM32LibVersion}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00063}00063 \{}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00064}00064     \textcolor{keywordflow}{return} \mbox{\hyperlink{hal__ver_8c_a3311c1261fc4138e4363f0fb61aa4457}{\_\_MM32\_LIB\_VERSION}};}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00065}00065 \}}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00072}\mbox{\hyperlink{group___lib_ga2d4db38da75482d2c33e8b99cabf92bc}{00072}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___lib_ga2d4db38da75482d2c33e8b99cabf92bc}{Get\_MM32LibReleaseDate}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00073}00073 \{}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00074}00074     \textcolor{keywordflow}{return} \mbox{\hyperlink{hal__ver_8c_a98352ec1ea09342aefab4ed652ee875d}{\_\_MM32\_LIB\_RELESE\_DATE}};}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00075}00075 \}}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00081}\mbox{\hyperlink{group___u_a_r_t___exported___functions_ga44844af0d0aad62ea1f49643f971139f}{00081}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___lib_ga44844af0d0aad62ea1f49643f971139f}{Get\_ChipsetREVID}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00082}00082 \{}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00083}00083     \textcolor{keywordflow}{return}((\mbox{\hyperlink{reg__dbg_8h_a92ec6d9ec2251fda7d4ce09748cd74b4}{DBGMCU}}-\/>IDCODE) \& 0xF );}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00084}00084 \}}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00090}\mbox{\hyperlink{group___u_a_r_t___exported___functions_gada26846bbaa4c55df94b341e82e50b75}{00090}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___lib_gada26846bbaa4c55df94b341e82e50b75}{Get\_ChipsetDEVID}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00091}00091 \{}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00092}00092     \textcolor{keywordflow}{return}((\mbox{\hyperlink{reg__dbg_8h_a92ec6d9ec2251fda7d4ce09748cd74b4}{DBGMCU}}-\/>IDCODE) );}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00093}00093 \}}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00100}\mbox{\hyperlink{group___u_a_r_t___exported___functions_gab9fa76c092cb330c7754d543991b41e8}{00100}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___lib_gab9fa76c092cb330c7754d543991b41e8}{Get\_ChipsetUIDw0}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00101}00101 \{}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00102}00102     \textcolor{keywordflow}{return}(\mbox{\hyperlink{types_8h_ae627593fda08d9e63c92d8b45cd2582d}{READ\_REG}}(*((\mbox{\hyperlink{types_8h_afe8851af77f42df60783f067c5d9c213}{vu32}}*)\mbox{\hyperlink{reg__common_8h_a664eda42b83c919b153b07b23348be67}{UID\_BASE}})));}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00103}00103 \}}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00109}\mbox{\hyperlink{group___u_a_r_t___exported___functions_gade5f87118c29bcf76d8ae4dc74177af7}{00109}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___lib_gade5f87118c29bcf76d8ae4dc74177af7}{Get\_ChipsetUIDw1}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00110}00110 \{}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00111}00111     \textcolor{keywordflow}{return}(\mbox{\hyperlink{types_8h_ae627593fda08d9e63c92d8b45cd2582d}{READ\_REG}}(*((\mbox{\hyperlink{types_8h_afe8851af77f42df60783f067c5d9c213}{vu32}}*)(\mbox{\hyperlink{reg__common_8h_a664eda42b83c919b153b07b23348be67}{UID\_BASE}} + 4U))));}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00112}00112 \}}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00118}\mbox{\hyperlink{group___u_a_r_t___exported___functions_gaae7fe8710aab50990246150a49711da0}{00118}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___lib_gaae7fe8710aab50990246150a49711da0}{Get\_ChipsetUIDw2}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00119}00119 \{}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00120}00120     \textcolor{keywordflow}{return}(\mbox{\hyperlink{types_8h_ae627593fda08d9e63c92d8b45cd2582d}{READ\_REG}}(*((\mbox{\hyperlink{types_8h_afe8851af77f42df60783f067c5d9c213}{vu32}}*)(\mbox{\hyperlink{reg__common_8h_a664eda42b83c919b153b07b23348be67}{UID\_BASE}} + 8U))));}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00121}00121 \}}
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00122}00122 }
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00123}00123 }
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00124}00124 }
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00126}00126 }
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00128}00128 }
+\DoxyCodeLine{\Hypertarget{hal__ver_8c_source_l00130}00130 }
+
+\end{DoxyCode}

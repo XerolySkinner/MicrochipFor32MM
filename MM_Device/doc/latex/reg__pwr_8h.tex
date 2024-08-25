@@ -1,0 +1,1442 @@
+\hypertarget{reg__pwr_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/reg\+\_\+pwr.h 文件参考}
+\label{reg__pwr_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_pwr.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_pwr.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_p_w_r___type_def}{PWR\+\_\+\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em PWR Register Structure Definition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_ac691ec23dace8b7a649a25acb110217a}{PWR\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x7000)
+\begin{DoxyCompactList}\small\item\em PWR Base Address Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a04651c526497822a859942b928e57f8e}{PWR}}~((\mbox{\hyperlink{struct_p_w_r___type_def}{PWR\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__pwr_8h_ac691ec23dace8b7a649a25acb110217a}{PWR\+\_\+\+BASE}})
+\begin{DoxyCompactList}\small\item\em PWR type pointer Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_af570e08262b40964ad0407f57efbf1b1}{PWR\+\_\+\+CR\+\_\+\+LDPS\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em PWR\+\_\+\+CR register Bit definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a9e3698fe3e13232fecda6c1d9b3544f3}{PWR\+\_\+\+CR\+\_\+\+LDPS}}~(0x01U  $<$$<$ \mbox{\hyperlink{reg__pwr_8h_af570e08262b40964ad0407f57efbf1b1}{PWR\+\_\+\+CR\+\_\+\+LDPS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Domain Write Protction \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_af1038bf2ac726320cfe05865bda0a07e}{PWR\+\_\+\+CR\+\_\+\+PDDS\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a8c8075e98772470804c9e3fe74984115}{PWR\+\_\+\+CR\+\_\+\+PDDS}}~(0x01U  $<$$<$ \mbox{\hyperlink{reg__pwr_8h_af1038bf2ac726320cfe05865bda0a07e}{PWR\+\_\+\+CR\+\_\+\+PDDS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Power Down Deepsleep \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a657c1dc4aa1d976d5cb8870ad7791a09}{PWR\+\_\+\+CR\+\_\+\+CSBF\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_ab44484cacc35c80cf82eb011d6cbe13a}{PWR\+\_\+\+CR\+\_\+\+CSBF}}~(0x01U  $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a657c1dc4aa1d976d5cb8870ad7791a09}{PWR\+\_\+\+CR\+\_\+\+CSBF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Clear Standby Flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a01aef09ef39c6fa907ffd2195e2091a7}{PWR\+\_\+\+CR\+\_\+\+LPR\+\_\+\+Pos}}~(13)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a998601e1a4538a5f8fd8746b5d2ead9c}{PWR\+\_\+\+CR\+\_\+\+LPR}}~(0x01U  $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a01aef09ef39c6fa907ffd2195e2091a7}{PWR\+\_\+\+CR\+\_\+\+LPR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Low power run \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a2f4f27bd20dad692917746ce1f184d28}{PWR\+\_\+\+CR\+\_\+\+VOS\+\_\+\+Pos}}~(14)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a50175d84c0cc39a949eb63d9c1d74987}{PWR\+\_\+\+CR\+\_\+\+VOS0}}~(0x00U  $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a2f4f27bd20dad692917746ce1f184d28}{PWR\+\_\+\+CR\+\_\+\+VOS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Modulator Voltage Output Select 1.\+80V \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a813351f0fa7d4b299c9b70f28c1ae833}{PWR\+\_\+\+CR\+\_\+\+VOS1}}~(0x01U  $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a2f4f27bd20dad692917746ce1f184d28}{PWR\+\_\+\+CR\+\_\+\+VOS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Modulator Voltage Output Select 1.\+70V \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a2742113b52a11eec5f6b6b74b27c174b}{PWR\+\_\+\+CR\+\_\+\+VOS2}}~(0x02U  $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a2f4f27bd20dad692917746ce1f184d28}{PWR\+\_\+\+CR\+\_\+\+VOS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Modulator Voltage Output Select 1.\+60V \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_af31a76eef42aa4cbda1891c382c4cf14}{PWR\+\_\+\+CR\+\_\+\+VOS3}}~(0x03U  $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a2f4f27bd20dad692917746ce1f184d28}{PWR\+\_\+\+CR\+\_\+\+VOS\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Modulator Voltage Output Select 1.\+55V \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a28df9eb1abdd9d2f29b3f471f9aa096f}{PWR\+\_\+\+CSR\+\_\+\+SBF\+\_\+\+Pos}}~(1)
+\begin{DoxyCompactList}\small\item\em PWR\+\_\+\+CSR register Bit definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_ab4fd42f153660593cad6f4fe22ff76bb}{PWR\+\_\+\+CSR\+\_\+\+SBF}}~(0x01U  $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a28df9eb1abdd9d2f29b3f471f9aa096f}{PWR\+\_\+\+CSR\+\_\+\+SBF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Standby Flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_ad2938c00bca7b4425b8289498e781b48}{PWR\+\_\+\+CSR\+\_\+\+VOSRDY\+\_\+\+Pos}}~(14)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a4126ed19cce54a5411ff8dd440171695}{PWR\+\_\+\+CSR\+\_\+\+VOSRDY}}~(0x01U  $<$$<$ PWR\+\_\+\+CR\+\_\+\+VOSRDY\+\_\+\+Pos)
+\begin{DoxyCompactList}\small\item\em Voltage Modulator Output Selection Ready ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a6264c20ff5427804a41fbb356d1b5559}{PWR\+\_\+\+CR2\+\_\+\+EWUP1\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a84ebdf0893ad3ea77bb259030b20f3a6}{PWR\+\_\+\+CR2\+\_\+\+EWUP1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a6264c20ff5427804a41fbb356d1b5559}{PWR\+\_\+\+CR2\+\_\+\+EWUP1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Enable WKUP1 wake-\/up pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a2faaaf296e93e13dabba54c038d9b4b0}{PWR\+\_\+\+CR2\+\_\+\+EWUP2\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a662c86173ae993757a306eae7b01f3a7}{PWR\+\_\+\+CR2\+\_\+\+EWUP2}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a2faaaf296e93e13dabba54c038d9b4b0}{PWR\+\_\+\+CR2\+\_\+\+EWUP2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Enable WKUP2 wake-\/up pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a2ac523ed1f2f9113e1b2f8c587caf408}{PWR\+\_\+\+CR2\+\_\+\+EWUP3\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a59733d030c06004683567c878c778670}{PWR\+\_\+\+CR2\+\_\+\+EWUP3}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a2ac523ed1f2f9113e1b2f8c587caf408}{PWR\+\_\+\+CR2\+\_\+\+EWUP3\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Enable WKUP3 wake-\/up pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a30754d23cbcfa502367cc8b7c6d68b07}{PWR\+\_\+\+CR2\+\_\+\+EWUP4\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a03f91052c81ef5c05409f396bd83b52d}{PWR\+\_\+\+CR2\+\_\+\+EWUP4}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a30754d23cbcfa502367cc8b7c6d68b07}{PWR\+\_\+\+CR2\+\_\+\+EWUP4\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Enable WKUP4 wake-\/up pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a25c86a1483ae190f80f4a4af0098dacc}{PWR\+\_\+\+CR2\+\_\+\+EWUP5\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a662f8ed6f4f18b814e2db96d2297640a}{PWR\+\_\+\+CR2\+\_\+\+EWUP5}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a25c86a1483ae190f80f4a4af0098dacc}{PWR\+\_\+\+CR2\+\_\+\+EWUP5\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Enable WKUP5 wake-\/up pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a201e2b8a3a7611e108577dc72b9c373d}{PWR\+\_\+\+CR2\+\_\+\+EWUP6\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_ac49996100f7054fffbde6c2f5191dda1}{PWR\+\_\+\+CR2\+\_\+\+EWUP6}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a201e2b8a3a7611e108577dc72b9c373d}{PWR\+\_\+\+CR2\+\_\+\+EWUP6\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Enable WKUP6 wake-\/up pin \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a82a844107506d54f473043dcea0c1fd3}{PWR\+\_\+\+CR2\+\_\+\+ENWU\+\_\+\+Pos}}~(15)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a6595534b1e79ce46798b08831fd946ef}{PWR\+\_\+\+CR2\+\_\+\+ENWU}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a82a844107506d54f473043dcea0c1fd3}{PWR\+\_\+\+CR2\+\_\+\+ENWU\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Enable wakeup module ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a0ef7f277f3e14eb11dda75e7aa4200e2}{PWR\+\_\+\+CR3\+\_\+\+WP1\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_aab388d90ae5c4614930bf999ffab994a}{PWR\+\_\+\+CR3\+\_\+\+WP1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a0ef7f277f3e14eb11dda75e7aa4200e2}{PWR\+\_\+\+CR3\+\_\+\+WP1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em WKUP1 used for event polarity detection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_afeff6d3feeed32c40c7883f19441db57}{PWR\+\_\+\+CR3\+\_\+\+WP2\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_acbe347f2e479e90c12c6b6394e53a1e2}{PWR\+\_\+\+CR3\+\_\+\+WP2}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_afeff6d3feeed32c40c7883f19441db57}{PWR\+\_\+\+CR3\+\_\+\+WP2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em WKUP2 used for event polarity detection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a0c4f0f273ad1550f9b8f6dd9252cd911}{PWR\+\_\+\+CR3\+\_\+\+WP3\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a57055569462c0a4d020222fca075f297}{PWR\+\_\+\+CR3\+\_\+\+WP3}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a0c4f0f273ad1550f9b8f6dd9252cd911}{PWR\+\_\+\+CR3\+\_\+\+WP3\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em WKUP3 used for event polarity detection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a593b53bd54da9d8eb967f5b8fbcdb442}{PWR\+\_\+\+CR3\+\_\+\+WP4\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_ae4342151a54769f0e895c1ab9870c42d}{PWR\+\_\+\+CR3\+\_\+\+WP4}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a593b53bd54da9d8eb967f5b8fbcdb442}{PWR\+\_\+\+CR3\+\_\+\+WP4\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em WKUP4 used for event polarity detection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a6c4ac2dd4b904a34e383aad7ca65ef68}{PWR\+\_\+\+CR3\+\_\+\+WP5\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a1727c45edea523c0c46adb873a9eac3d}{PWR\+\_\+\+CR3\+\_\+\+WP5}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a6c4ac2dd4b904a34e383aad7ca65ef68}{PWR\+\_\+\+CR3\+\_\+\+WP5\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em WKUP5 used for event polarity detection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_aa4cd4987fa37d3434518fb9895853c44}{PWR\+\_\+\+CR3\+\_\+\+WP6\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_ad4f9a3c1d5364af498740f4bec76a432}{PWR\+\_\+\+CR3\+\_\+\+WP6}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_aa4cd4987fa37d3434518fb9895853c44}{PWR\+\_\+\+CR3\+\_\+\+WP6\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em WKUP6 used for event polarity detection ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_aecbe9be16d7a9fd030527333b629919e}{PWR\+\_\+\+CR4\+\_\+\+FILTSEL0\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_afd80d1d70442b8e6644a2467a483f124}{PWR\+\_\+\+CR4\+\_\+\+FILTSEL0}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_aecbe9be16d7a9fd030527333b629919e}{PWR\+\_\+\+CR4\+\_\+\+FILTSEL0\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em selection wake-\/up source \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a804e586c5b5f53dc18d403f1a1df57a0}{PWR\+\_\+\+CR4\+\_\+\+FILTE0\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a668d90b4d8539b66cf788abc946fca49}{PWR\+\_\+\+CR4\+\_\+\+FILTE0}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a804e586c5b5f53dc18d403f1a1df57a0}{PWR\+\_\+\+CR4\+\_\+\+FILTE0\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em enable Filter 0 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a6db6ae09826bd4e4b84adf037ff3eae8}{PWR\+\_\+\+CR4\+\_\+\+FILTF0\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a3bf14847f072899ae3935cc0ffbef881}{PWR\+\_\+\+CR4\+\_\+\+FILTF0}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a6db6ae09826bd4e4b84adf037ff3eae8}{PWR\+\_\+\+CR4\+\_\+\+FILTF0\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Whether the wake source passes through filter 0 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a615f5315800b7bf893899b6afb7682aa}{PWR\+\_\+\+CR4\+\_\+\+FILTCNT0\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a9a0e5d60ef491d6ce87f8935dbb745f9}{PWR\+\_\+\+CR4\+\_\+\+FILTCNT0}}~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a615f5315800b7bf893899b6afb7682aa}{PWR\+\_\+\+CR4\+\_\+\+FILTCNT0\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Filter 0 counter ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a2d3760c6d0bf038bdcc4b23fe5ccdbc2}{PWR\+\_\+\+CR5\+\_\+\+FILTSEL1\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a952e1bd0359b771fced357413ba37c1e}{PWR\+\_\+\+CR5\+\_\+\+FILTSEL1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a2d3760c6d0bf038bdcc4b23fe5ccdbc2}{PWR\+\_\+\+CR5\+\_\+\+FILTSEL1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em selection wake-\/up source \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_ad7592b9c4ce9baa703f8833b2886e900}{PWR\+\_\+\+CR5\+\_\+\+FILTE1\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_aeeb7e815f27245d7c30aed914f30d12b}{PWR\+\_\+\+CR5\+\_\+\+FILTE1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_ad7592b9c4ce9baa703f8833b2886e900}{PWR\+\_\+\+CR5\+\_\+\+FILTE1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em enable Filter 1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a11522c253f8557a2c771c491ce58cfe3}{PWR\+\_\+\+CR5\+\_\+\+FILTF1\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_ab2f42f722b351f5aa4dd372e020be8fe}{PWR\+\_\+\+CR5\+\_\+\+FILTF1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a11522c253f8557a2c771c491ce58cfe3}{PWR\+\_\+\+CR5\+\_\+\+FILTF1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Whether the wake source passes through filter 1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a946c62453a7b8c7e62c69611e6ac79a8}{PWR\+\_\+\+CR5\+\_\+\+FILTCNT1\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a2f2155a8be07baa5dbeaeb10885db35e}{PWR\+\_\+\+CR5\+\_\+\+FILTCNT1}}~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a946c62453a7b8c7e62c69611e6ac79a8}{PWR\+\_\+\+CR5\+\_\+\+FILTCNT1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Filter 1 counter ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a57366eb1cea6b14bfa5f27e4801ae64f}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_ac69ee4f4cc4fbd04c85694c60b3ec0a9}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W1}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a57366eb1cea6b14bfa5f27e4801ae64f}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 1 LSI cycle wake \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_aa6309fa0cbd34cbd11270a2959cc18ff}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W2}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a57366eb1cea6b14bfa5f27e4801ae64f}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 2 LSI cycle wake \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_ab61fdc78dc89b29a988c7964a1f93843}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W3}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a57366eb1cea6b14bfa5f27e4801ae64f}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 3 LSI cycle wake \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a64823ef4a3cfbcb6399a0d303c8d1cc7}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W4}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a57366eb1cea6b14bfa5f27e4801ae64f}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 4 LSI cycle wake \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a2097a6e1adb8f7ebdac7601dcfa1b139}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W5}}~(0x04U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a57366eb1cea6b14bfa5f27e4801ae64f}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 5 LSI cycle wake \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_acc8ad5eddda19f708a5a57e9ae33288c}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W6}}~(0x05U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a57366eb1cea6b14bfa5f27e4801ae64f}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 6 LSI cycle wake \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a40fd8e63602f5e27c16a257beb8bffc0}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W7}}~(0x06U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a57366eb1cea6b14bfa5f27e4801ae64f}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 7 LSI cycle wake \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_af14c0eaa95a39af140731bbe3f9ed08c}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W8}}~(0x07U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a57366eb1cea6b14bfa5f27e4801ae64f}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em 8 LSI cycle wake ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_ac16378ce303a2a74fa18fb8b365c6ae8}{PWR\+\_\+\+SR\+\_\+\+WUF1\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a51881b1e53eacd5a8f5db201284cafb0}{PWR\+\_\+\+SR\+\_\+\+WUF1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_ac16378ce303a2a74fa18fb8b365c6ae8}{PWR\+\_\+\+SR\+\_\+\+WUF1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em wake-\/up flag 1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a8e5a9fe65a53844f4361d7420b086f26}{PWR\+\_\+\+SR\+\_\+\+WUF2\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a57a218695e2fff80e839d951ce93d489}{PWR\+\_\+\+SR\+\_\+\+WUF2}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a8e5a9fe65a53844f4361d7420b086f26}{PWR\+\_\+\+SR\+\_\+\+WUF2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em wake-\/up flag 2 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_ab236ad703b8be46d703de01ca05d2cb9}{PWR\+\_\+\+SR\+\_\+\+WUF3\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a610bb38545916091ed32fbb0a2e47bbe}{PWR\+\_\+\+SR\+\_\+\+WUF3}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_ab236ad703b8be46d703de01ca05d2cb9}{PWR\+\_\+\+SR\+\_\+\+WUF3\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em wake-\/up flag 3 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a480639b650fd0459656a6cbc842b3856}{PWR\+\_\+\+SR\+\_\+\+WUF4\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_ab2800d3cf02b9fee2013737ec5d2b756}{PWR\+\_\+\+SR\+\_\+\+WUF4}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a480639b650fd0459656a6cbc842b3856}{PWR\+\_\+\+SR\+\_\+\+WUF4\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em wake-\/up flag 4 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a45f619eac1c04b307c444347613b670f}{PWR\+\_\+\+SR\+\_\+\+WUF5\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a4353635b760d64678316965e91bc8713}{PWR\+\_\+\+SR\+\_\+\+WUF5}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a45f619eac1c04b307c444347613b670f}{PWR\+\_\+\+SR\+\_\+\+WUF5\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em wake-\/up flag 5 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_af689cde198c4bad8a32e1c289c634b13}{PWR\+\_\+\+SR\+\_\+\+WUF6\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a07ea775448d3db653eb46992a5e6ccdf}{PWR\+\_\+\+SR\+\_\+\+WUF6}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_af689cde198c4bad8a32e1c289c634b13}{PWR\+\_\+\+SR\+\_\+\+WUF6\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em wake-\/up flag 6 ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_ae6909ba44c7142a50c39b58cb72ef464}{PWR\+\_\+\+SCR\+\_\+\+CWUF1\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a2a12f5af4994abe5b34cf7eae3dacf70}{PWR\+\_\+\+SCR\+\_\+\+CWUF1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_ae6909ba44c7142a50c39b58cb72ef464}{PWR\+\_\+\+SCR\+\_\+\+CWUF1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em clear wake-\/up flag 1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_ad97b48b66e135768b645abbf6ca4a0c8}{PWR\+\_\+\+SCR\+\_\+\+CWUF2\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a4128b0b9a09d2443ce0e4eef81177a8d}{PWR\+\_\+\+SCR\+\_\+\+CWUF2}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_ad97b48b66e135768b645abbf6ca4a0c8}{PWR\+\_\+\+SCR\+\_\+\+CWUF2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em clear wake-\/up flag 2 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a80713e25e31ad64073d8ab9c9cd9248f}{PWR\+\_\+\+SCR\+\_\+\+CWUF3\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a2b435bfeeeb80cd6e640fa6f9210649a}{PWR\+\_\+\+SCR\+\_\+\+CWUF3}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a80713e25e31ad64073d8ab9c9cd9248f}{PWR\+\_\+\+SCR\+\_\+\+CWUF3\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em clear wake-\/up flag 3 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a4f2eb15c4662edb69ebd5fa8f3c72a9f}{PWR\+\_\+\+SCR\+\_\+\+CWUF4\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a032b297a06e80628d63eb25dd1388268}{PWR\+\_\+\+SCR\+\_\+\+CWUF4}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a4f2eb15c4662edb69ebd5fa8f3c72a9f}{PWR\+\_\+\+SCR\+\_\+\+CWUF4\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em clear wake-\/up flag 4 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_ac7fb9168e8f2c434d78a033dd6a20f65}{PWR\+\_\+\+SCR\+\_\+\+CWUF5\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_af1cc08299b937e0c1c87e24aa153c005}{PWR\+\_\+\+SCR\+\_\+\+CWUF5}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_ac7fb9168e8f2c434d78a033dd6a20f65}{PWR\+\_\+\+SCR\+\_\+\+CWUF5\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em clear wake-\/up flag 5 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a58dbe22d1770be0eb39c2abc14dc0f1e}{PWR\+\_\+\+SCR\+\_\+\+CWUF6\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_acd258d21ebd14e16b095749fd5ff20ce}{PWR\+\_\+\+SCR\+\_\+\+CWUF6}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a58dbe22d1770be0eb39c2abc14dc0f1e}{PWR\+\_\+\+SCR\+\_\+\+CWUF6\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em clear wake-\/up flag 6 ///////////////////////////////////////////////////////////////////////////// \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a6cc513c0edcb01c80914ad417ceb56e8}{PWR\+\_\+\+CFGR\+\_\+\+LSICALSEL\+\_\+\+Pos}}~(0)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a043bf41fe9c68b2ee7eb6acabaab11f5}{PWR\+\_\+\+CFGR\+\_\+\+LSICALSEL}}~(0x1\+FU $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a6cc513c0edcb01c80914ad417ceb56e8}{PWR\+\_\+\+CFGR\+\_\+\+LSICALSEL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Enable internal clock calibration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a6ab0a03f81c3698e99dc540097c6cdf5}{PWR\+\_\+\+CFGR\+\_\+\+LSICAL\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__pwr_8h_a6dc6c961ef597bc43c10052e5f3d77d5}{PWR\+\_\+\+CFGR\+\_\+\+LSICAL}}~(0x1\+FU $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a6ab0a03f81c3698e99dc540097c6cdf5}{PWR\+\_\+\+CFGR\+\_\+\+LSICAL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Internal high-\/speed clock calibration \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{reg__pwr_8h_a04651c526497822a859942b928e57f8e}\label{reg__pwr_8h_a04651c526497822a859942b928e57f8e}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR@{PWR}}
+\index{PWR@{PWR}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR}{PWR}}
+{\footnotesize\ttfamily \#define PWR~((\mbox{\hyperlink{struct_p_w_r___type_def}{PWR\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__pwr_8h_ac691ec23dace8b7a649a25acb110217a}{PWR\+\_\+\+BASE}})}
+
+
+
+PWR type pointer Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00078}{78}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_ac691ec23dace8b7a649a25acb110217a}\label{reg__pwr_8h_ac691ec23dace8b7a649a25acb110217a}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_BASE@{PWR\_BASE}}
+\index{PWR\_BASE@{PWR\_BASE}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_BASE}{PWR\_BASE}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x7000)}
+
+
+
+PWR Base Address Definition 
+
+Base Address\+: 0x40007000 
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00047}{47}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a6dc6c961ef597bc43c10052e5f3d77d5}\label{reg__pwr_8h_a6dc6c961ef597bc43c10052e5f3d77d5}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CFGR\_LSICAL@{PWR\_CFGR\_LSICAL}}
+\index{PWR\_CFGR\_LSICAL@{PWR\_CFGR\_LSICAL}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CFGR\_LSICAL}{PWR\_CFGR\_LSICAL}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CFGR\+\_\+\+LSICAL~(0x1\+FU $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a6ab0a03f81c3698e99dc540097c6cdf5}{PWR\+\_\+\+CFGR\+\_\+\+LSICAL\+\_\+\+Pos}})}
+
+
+
+Internal high-\/speed clock calibration 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00209}{209}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a6ab0a03f81c3698e99dc540097c6cdf5}\label{reg__pwr_8h_a6ab0a03f81c3698e99dc540097c6cdf5}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CFGR\_LSICAL\_Pos@{PWR\_CFGR\_LSICAL\_Pos}}
+\index{PWR\_CFGR\_LSICAL\_Pos@{PWR\_CFGR\_LSICAL\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CFGR\_LSICAL\_Pos}{PWR\_CFGR\_LSICAL\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CFGR\+\_\+\+LSICAL\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00208}{208}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a043bf41fe9c68b2ee7eb6acabaab11f5}\label{reg__pwr_8h_a043bf41fe9c68b2ee7eb6acabaab11f5}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CFGR\_LSICALSEL@{PWR\_CFGR\_LSICALSEL}}
+\index{PWR\_CFGR\_LSICALSEL@{PWR\_CFGR\_LSICALSEL}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CFGR\_LSICALSEL}{PWR\_CFGR\_LSICALSEL}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CFGR\+\_\+\+LSICALSEL~(0x1\+FU $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a6cc513c0edcb01c80914ad417ceb56e8}{PWR\+\_\+\+CFGR\+\_\+\+LSICALSEL\+\_\+\+Pos}})}
+
+
+
+Enable internal clock calibration 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00207}{207}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a6cc513c0edcb01c80914ad417ceb56e8}\label{reg__pwr_8h_a6cc513c0edcb01c80914ad417ceb56e8}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CFGR\_LSICALSEL\_Pos@{PWR\_CFGR\_LSICALSEL\_Pos}}
+\index{PWR\_CFGR\_LSICALSEL\_Pos@{PWR\_CFGR\_LSICALSEL\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CFGR\_LSICALSEL\_Pos}{PWR\_CFGR\_LSICALSEL\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CFGR\+\_\+\+LSICALSEL\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00206}{206}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a6595534b1e79ce46798b08831fd946ef}\label{reg__pwr_8h_a6595534b1e79ce46798b08831fd946ef}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR2\_ENWU@{PWR\_CR2\_ENWU}}
+\index{PWR\_CR2\_ENWU@{PWR\_CR2\_ENWU}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR2\_ENWU}{PWR\_CR2\_ENWU}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR2\+\_\+\+ENWU~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a82a844107506d54f473043dcea0c1fd3}{PWR\+\_\+\+CR2\+\_\+\+ENWU\+\_\+\+Pos}})}
+
+
+
+Enable wakeup module ///////////////////////////////////////////////////////////////////////////// 
+
+PWR\+\_\+\+CR3 register Bit definition 
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00126}{126}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a82a844107506d54f473043dcea0c1fd3}\label{reg__pwr_8h_a82a844107506d54f473043dcea0c1fd3}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR2\_ENWU\_Pos@{PWR\_CR2\_ENWU\_Pos}}
+\index{PWR\_CR2\_ENWU\_Pos@{PWR\_CR2\_ENWU\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR2\_ENWU\_Pos}{PWR\_CR2\_ENWU\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR2\+\_\+\+ENWU\+\_\+\+Pos~(15)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00122}{122}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a84ebdf0893ad3ea77bb259030b20f3a6}\label{reg__pwr_8h_a84ebdf0893ad3ea77bb259030b20f3a6}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR2\_EWUP1@{PWR\_CR2\_EWUP1}}
+\index{PWR\_CR2\_EWUP1@{PWR\_CR2\_EWUP1}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR2\_EWUP1}{PWR\_CR2\_EWUP1}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR2\+\_\+\+EWUP1~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a6264c20ff5427804a41fbb356d1b5559}{PWR\+\_\+\+CR2\+\_\+\+EWUP1\+\_\+\+Pos}})}
+
+
+
+Enable WKUP1 wake-\/up pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00111}{111}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a6264c20ff5427804a41fbb356d1b5559}\label{reg__pwr_8h_a6264c20ff5427804a41fbb356d1b5559}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR2\_EWUP1\_Pos@{PWR\_CR2\_EWUP1\_Pos}}
+\index{PWR\_CR2\_EWUP1\_Pos@{PWR\_CR2\_EWUP1\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR2\_EWUP1\_Pos}{PWR\_CR2\_EWUP1\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR2\+\_\+\+EWUP1\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00110}{110}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a662c86173ae993757a306eae7b01f3a7}\label{reg__pwr_8h_a662c86173ae993757a306eae7b01f3a7}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR2\_EWUP2@{PWR\_CR2\_EWUP2}}
+\index{PWR\_CR2\_EWUP2@{PWR\_CR2\_EWUP2}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR2\_EWUP2}{PWR\_CR2\_EWUP2}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR2\+\_\+\+EWUP2~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a2faaaf296e93e13dabba54c038d9b4b0}{PWR\+\_\+\+CR2\+\_\+\+EWUP2\+\_\+\+Pos}})}
+
+
+
+Enable WKUP2 wake-\/up pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00113}{113}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a2faaaf296e93e13dabba54c038d9b4b0}\label{reg__pwr_8h_a2faaaf296e93e13dabba54c038d9b4b0}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR2\_EWUP2\_Pos@{PWR\_CR2\_EWUP2\_Pos}}
+\index{PWR\_CR2\_EWUP2\_Pos@{PWR\_CR2\_EWUP2\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR2\_EWUP2\_Pos}{PWR\_CR2\_EWUP2\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR2\+\_\+\+EWUP2\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00112}{112}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a59733d030c06004683567c878c778670}\label{reg__pwr_8h_a59733d030c06004683567c878c778670}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR2\_EWUP3@{PWR\_CR2\_EWUP3}}
+\index{PWR\_CR2\_EWUP3@{PWR\_CR2\_EWUP3}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR2\_EWUP3}{PWR\_CR2\_EWUP3}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR2\+\_\+\+EWUP3~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a2ac523ed1f2f9113e1b2f8c587caf408}{PWR\+\_\+\+CR2\+\_\+\+EWUP3\+\_\+\+Pos}})}
+
+
+
+Enable WKUP3 wake-\/up pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00115}{115}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a2ac523ed1f2f9113e1b2f8c587caf408}\label{reg__pwr_8h_a2ac523ed1f2f9113e1b2f8c587caf408}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR2\_EWUP3\_Pos@{PWR\_CR2\_EWUP3\_Pos}}
+\index{PWR\_CR2\_EWUP3\_Pos@{PWR\_CR2\_EWUP3\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR2\_EWUP3\_Pos}{PWR\_CR2\_EWUP3\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR2\+\_\+\+EWUP3\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00114}{114}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a03f91052c81ef5c05409f396bd83b52d}\label{reg__pwr_8h_a03f91052c81ef5c05409f396bd83b52d}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR2\_EWUP4@{PWR\_CR2\_EWUP4}}
+\index{PWR\_CR2\_EWUP4@{PWR\_CR2\_EWUP4}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR2\_EWUP4}{PWR\_CR2\_EWUP4}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR2\+\_\+\+EWUP4~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a30754d23cbcfa502367cc8b7c6d68b07}{PWR\+\_\+\+CR2\+\_\+\+EWUP4\+\_\+\+Pos}})}
+
+
+
+Enable WKUP4 wake-\/up pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00117}{117}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a30754d23cbcfa502367cc8b7c6d68b07}\label{reg__pwr_8h_a30754d23cbcfa502367cc8b7c6d68b07}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR2\_EWUP4\_Pos@{PWR\_CR2\_EWUP4\_Pos}}
+\index{PWR\_CR2\_EWUP4\_Pos@{PWR\_CR2\_EWUP4\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR2\_EWUP4\_Pos}{PWR\_CR2\_EWUP4\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR2\+\_\+\+EWUP4\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00116}{116}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a662f8ed6f4f18b814e2db96d2297640a}\label{reg__pwr_8h_a662f8ed6f4f18b814e2db96d2297640a}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR2\_EWUP5@{PWR\_CR2\_EWUP5}}
+\index{PWR\_CR2\_EWUP5@{PWR\_CR2\_EWUP5}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR2\_EWUP5}{PWR\_CR2\_EWUP5}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR2\+\_\+\+EWUP5~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a25c86a1483ae190f80f4a4af0098dacc}{PWR\+\_\+\+CR2\+\_\+\+EWUP5\+\_\+\+Pos}})}
+
+
+
+Enable WKUP5 wake-\/up pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00119}{119}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a25c86a1483ae190f80f4a4af0098dacc}\label{reg__pwr_8h_a25c86a1483ae190f80f4a4af0098dacc}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR2\_EWUP5\_Pos@{PWR\_CR2\_EWUP5\_Pos}}
+\index{PWR\_CR2\_EWUP5\_Pos@{PWR\_CR2\_EWUP5\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR2\_EWUP5\_Pos}{PWR\_CR2\_EWUP5\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR2\+\_\+\+EWUP5\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00118}{118}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_ac49996100f7054fffbde6c2f5191dda1}\label{reg__pwr_8h_ac49996100f7054fffbde6c2f5191dda1}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR2\_EWUP6@{PWR\_CR2\_EWUP6}}
+\index{PWR\_CR2\_EWUP6@{PWR\_CR2\_EWUP6}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR2\_EWUP6}{PWR\_CR2\_EWUP6}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR2\+\_\+\+EWUP6~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a201e2b8a3a7611e108577dc72b9c373d}{PWR\+\_\+\+CR2\+\_\+\+EWUP6\+\_\+\+Pos}})}
+
+
+
+Enable WKUP6 wake-\/up pin 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00121}{121}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a201e2b8a3a7611e108577dc72b9c373d}\label{reg__pwr_8h_a201e2b8a3a7611e108577dc72b9c373d}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR2\_EWUP6\_Pos@{PWR\_CR2\_EWUP6\_Pos}}
+\index{PWR\_CR2\_EWUP6\_Pos@{PWR\_CR2\_EWUP6\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR2\_EWUP6\_Pos}{PWR\_CR2\_EWUP6\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR2\+\_\+\+EWUP6\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00120}{120}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_aab388d90ae5c4614930bf999ffab994a}\label{reg__pwr_8h_aab388d90ae5c4614930bf999ffab994a}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR3\_WP1@{PWR\_CR3\_WP1}}
+\index{PWR\_CR3\_WP1@{PWR\_CR3\_WP1}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR3\_WP1}{PWR\_CR3\_WP1}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR3\+\_\+\+WP1~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a0ef7f277f3e14eb11dda75e7aa4200e2}{PWR\+\_\+\+CR3\+\_\+\+WP1\+\_\+\+Pos}})}
+
+
+
+WKUP1 used for event polarity detection 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00128}{128}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a0ef7f277f3e14eb11dda75e7aa4200e2}\label{reg__pwr_8h_a0ef7f277f3e14eb11dda75e7aa4200e2}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR3\_WP1\_Pos@{PWR\_CR3\_WP1\_Pos}}
+\index{PWR\_CR3\_WP1\_Pos@{PWR\_CR3\_WP1\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR3\_WP1\_Pos}{PWR\_CR3\_WP1\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR3\+\_\+\+WP1\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00127}{127}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_acbe347f2e479e90c12c6b6394e53a1e2}\label{reg__pwr_8h_acbe347f2e479e90c12c6b6394e53a1e2}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR3\_WP2@{PWR\_CR3\_WP2}}
+\index{PWR\_CR3\_WP2@{PWR\_CR3\_WP2}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR3\_WP2}{PWR\_CR3\_WP2}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR3\+\_\+\+WP2~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_afeff6d3feeed32c40c7883f19441db57}{PWR\+\_\+\+CR3\+\_\+\+WP2\+\_\+\+Pos}})}
+
+
+
+WKUP2 used for event polarity detection 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00130}{130}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_afeff6d3feeed32c40c7883f19441db57}\label{reg__pwr_8h_afeff6d3feeed32c40c7883f19441db57}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR3\_WP2\_Pos@{PWR\_CR3\_WP2\_Pos}}
+\index{PWR\_CR3\_WP2\_Pos@{PWR\_CR3\_WP2\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR3\_WP2\_Pos}{PWR\_CR3\_WP2\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR3\+\_\+\+WP2\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00129}{129}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a57055569462c0a4d020222fca075f297}\label{reg__pwr_8h_a57055569462c0a4d020222fca075f297}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR3\_WP3@{PWR\_CR3\_WP3}}
+\index{PWR\_CR3\_WP3@{PWR\_CR3\_WP3}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR3\_WP3}{PWR\_CR3\_WP3}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR3\+\_\+\+WP3~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a0c4f0f273ad1550f9b8f6dd9252cd911}{PWR\+\_\+\+CR3\+\_\+\+WP3\+\_\+\+Pos}})}
+
+
+
+WKUP3 used for event polarity detection 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00132}{132}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a0c4f0f273ad1550f9b8f6dd9252cd911}\label{reg__pwr_8h_a0c4f0f273ad1550f9b8f6dd9252cd911}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR3\_WP3\_Pos@{PWR\_CR3\_WP3\_Pos}}
+\index{PWR\_CR3\_WP3\_Pos@{PWR\_CR3\_WP3\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR3\_WP3\_Pos}{PWR\_CR3\_WP3\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR3\+\_\+\+WP3\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00131}{131}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_ae4342151a54769f0e895c1ab9870c42d}\label{reg__pwr_8h_ae4342151a54769f0e895c1ab9870c42d}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR3\_WP4@{PWR\_CR3\_WP4}}
+\index{PWR\_CR3\_WP4@{PWR\_CR3\_WP4}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR3\_WP4}{PWR\_CR3\_WP4}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR3\+\_\+\+WP4~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a593b53bd54da9d8eb967f5b8fbcdb442}{PWR\+\_\+\+CR3\+\_\+\+WP4\+\_\+\+Pos}})}
+
+
+
+WKUP4 used for event polarity detection 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00134}{134}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a593b53bd54da9d8eb967f5b8fbcdb442}\label{reg__pwr_8h_a593b53bd54da9d8eb967f5b8fbcdb442}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR3\_WP4\_Pos@{PWR\_CR3\_WP4\_Pos}}
+\index{PWR\_CR3\_WP4\_Pos@{PWR\_CR3\_WP4\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR3\_WP4\_Pos}{PWR\_CR3\_WP4\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR3\+\_\+\+WP4\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00133}{133}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a1727c45edea523c0c46adb873a9eac3d}\label{reg__pwr_8h_a1727c45edea523c0c46adb873a9eac3d}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR3\_WP5@{PWR\_CR3\_WP5}}
+\index{PWR\_CR3\_WP5@{PWR\_CR3\_WP5}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR3\_WP5}{PWR\_CR3\_WP5}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR3\+\_\+\+WP5~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a6c4ac2dd4b904a34e383aad7ca65ef68}{PWR\+\_\+\+CR3\+\_\+\+WP5\+\_\+\+Pos}})}
+
+
+
+WKUP5 used for event polarity detection 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00136}{136}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a6c4ac2dd4b904a34e383aad7ca65ef68}\label{reg__pwr_8h_a6c4ac2dd4b904a34e383aad7ca65ef68}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR3\_WP5\_Pos@{PWR\_CR3\_WP5\_Pos}}
+\index{PWR\_CR3\_WP5\_Pos@{PWR\_CR3\_WP5\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR3\_WP5\_Pos}{PWR\_CR3\_WP5\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR3\+\_\+\+WP5\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00135}{135}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_ad4f9a3c1d5364af498740f4bec76a432}\label{reg__pwr_8h_ad4f9a3c1d5364af498740f4bec76a432}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR3\_WP6@{PWR\_CR3\_WP6}}
+\index{PWR\_CR3\_WP6@{PWR\_CR3\_WP6}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR3\_WP6}{PWR\_CR3\_WP6}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR3\+\_\+\+WP6~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_aa4cd4987fa37d3434518fb9895853c44}{PWR\+\_\+\+CR3\+\_\+\+WP6\+\_\+\+Pos}})}
+
+
+
+WKUP6 used for event polarity detection ///////////////////////////////////////////////////////////////////////////// 
+
+PWR\+\_\+\+CR4 register Bit definition 
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00141}{141}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_aa4cd4987fa37d3434518fb9895853c44}\label{reg__pwr_8h_aa4cd4987fa37d3434518fb9895853c44}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR3\_WP6\_Pos@{PWR\_CR3\_WP6\_Pos}}
+\index{PWR\_CR3\_WP6\_Pos@{PWR\_CR3\_WP6\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR3\_WP6\_Pos}{PWR\_CR3\_WP6\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR3\+\_\+\+WP6\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00137}{137}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a9a0e5d60ef491d6ce87f8935dbb745f9}\label{reg__pwr_8h_a9a0e5d60ef491d6ce87f8935dbb745f9}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR4\_FILTCNT0@{PWR\_CR4\_FILTCNT0}}
+\index{PWR\_CR4\_FILTCNT0@{PWR\_CR4\_FILTCNT0}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR4\_FILTCNT0}{PWR\_CR4\_FILTCNT0}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR4\+\_\+\+FILTCNT0~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a615f5315800b7bf893899b6afb7682aa}{PWR\+\_\+\+CR4\+\_\+\+FILTCNT0\+\_\+\+Pos}})}
+
+
+
+Filter 0 counter ///////////////////////////////////////////////////////////////////////////// 
+
+PWR\+\_\+\+CR5 register Bit definition 
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00152}{152}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a615f5315800b7bf893899b6afb7682aa}\label{reg__pwr_8h_a615f5315800b7bf893899b6afb7682aa}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR4\_FILTCNT0\_Pos@{PWR\_CR4\_FILTCNT0\_Pos}}
+\index{PWR\_CR4\_FILTCNT0\_Pos@{PWR\_CR4\_FILTCNT0\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR4\_FILTCNT0\_Pos}{PWR\_CR4\_FILTCNT0\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR4\+\_\+\+FILTCNT0\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00148}{148}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a668d90b4d8539b66cf788abc946fca49}\label{reg__pwr_8h_a668d90b4d8539b66cf788abc946fca49}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR4\_FILTE0@{PWR\_CR4\_FILTE0}}
+\index{PWR\_CR4\_FILTE0@{PWR\_CR4\_FILTE0}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR4\_FILTE0}{PWR\_CR4\_FILTE0}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR4\+\_\+\+FILTE0~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a804e586c5b5f53dc18d403f1a1df57a0}{PWR\+\_\+\+CR4\+\_\+\+FILTE0\+\_\+\+Pos}})}
+
+
+
+enable Filter 0 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00145}{145}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a804e586c5b5f53dc18d403f1a1df57a0}\label{reg__pwr_8h_a804e586c5b5f53dc18d403f1a1df57a0}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR4\_FILTE0\_Pos@{PWR\_CR4\_FILTE0\_Pos}}
+\index{PWR\_CR4\_FILTE0\_Pos@{PWR\_CR4\_FILTE0\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR4\_FILTE0\_Pos}{PWR\_CR4\_FILTE0\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR4\+\_\+\+FILTE0\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00144}{144}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a3bf14847f072899ae3935cc0ffbef881}\label{reg__pwr_8h_a3bf14847f072899ae3935cc0ffbef881}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR4\_FILTF0@{PWR\_CR4\_FILTF0}}
+\index{PWR\_CR4\_FILTF0@{PWR\_CR4\_FILTF0}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR4\_FILTF0}{PWR\_CR4\_FILTF0}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR4\+\_\+\+FILTF0~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a6db6ae09826bd4e4b84adf037ff3eae8}{PWR\+\_\+\+CR4\+\_\+\+FILTF0\+\_\+\+Pos}})}
+
+
+
+Whether the wake source passes through filter 0 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00147}{147}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a6db6ae09826bd4e4b84adf037ff3eae8}\label{reg__pwr_8h_a6db6ae09826bd4e4b84adf037ff3eae8}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR4\_FILTF0\_Pos@{PWR\_CR4\_FILTF0\_Pos}}
+\index{PWR\_CR4\_FILTF0\_Pos@{PWR\_CR4\_FILTF0\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR4\_FILTF0\_Pos}{PWR\_CR4\_FILTF0\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR4\+\_\+\+FILTF0\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00146}{146}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_afd80d1d70442b8e6644a2467a483f124}\label{reg__pwr_8h_afd80d1d70442b8e6644a2467a483f124}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR4\_FILTSEL0@{PWR\_CR4\_FILTSEL0}}
+\index{PWR\_CR4\_FILTSEL0@{PWR\_CR4\_FILTSEL0}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR4\_FILTSEL0}{PWR\_CR4\_FILTSEL0}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR4\+\_\+\+FILTSEL0~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_aecbe9be16d7a9fd030527333b629919e}{PWR\+\_\+\+CR4\+\_\+\+FILTSEL0\+\_\+\+Pos}})}
+
+
+
+selection wake-\/up source 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00143}{143}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_aecbe9be16d7a9fd030527333b629919e}\label{reg__pwr_8h_aecbe9be16d7a9fd030527333b629919e}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR4\_FILTSEL0\_Pos@{PWR\_CR4\_FILTSEL0\_Pos}}
+\index{PWR\_CR4\_FILTSEL0\_Pos@{PWR\_CR4\_FILTSEL0\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR4\_FILTSEL0\_Pos}{PWR\_CR4\_FILTSEL0\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR4\+\_\+\+FILTSEL0\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00142}{142}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a2f2155a8be07baa5dbeaeb10885db35e}\label{reg__pwr_8h_a2f2155a8be07baa5dbeaeb10885db35e}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR5\_FILTCNT1@{PWR\_CR5\_FILTCNT1}}
+\index{PWR\_CR5\_FILTCNT1@{PWR\_CR5\_FILTCNT1}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR5\_FILTCNT1}{PWR\_CR5\_FILTCNT1}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR5\+\_\+\+FILTCNT1~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a946c62453a7b8c7e62c69611e6ac79a8}{PWR\+\_\+\+CR5\+\_\+\+FILTCNT1\+\_\+\+Pos}})}
+
+
+
+Filter 1 counter ///////////////////////////////////////////////////////////////////////////// 
+
+PWR\+\_\+\+CR6 register Bit definition 
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00163}{163}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a946c62453a7b8c7e62c69611e6ac79a8}\label{reg__pwr_8h_a946c62453a7b8c7e62c69611e6ac79a8}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR5\_FILTCNT1\_Pos@{PWR\_CR5\_FILTCNT1\_Pos}}
+\index{PWR\_CR5\_FILTCNT1\_Pos@{PWR\_CR5\_FILTCNT1\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR5\_FILTCNT1\_Pos}{PWR\_CR5\_FILTCNT1\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR5\+\_\+\+FILTCNT1\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00159}{159}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_aeeb7e815f27245d7c30aed914f30d12b}\label{reg__pwr_8h_aeeb7e815f27245d7c30aed914f30d12b}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR5\_FILTE1@{PWR\_CR5\_FILTE1}}
+\index{PWR\_CR5\_FILTE1@{PWR\_CR5\_FILTE1}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR5\_FILTE1}{PWR\_CR5\_FILTE1}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR5\+\_\+\+FILTE1~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_ad7592b9c4ce9baa703f8833b2886e900}{PWR\+\_\+\+CR5\+\_\+\+FILTE1\+\_\+\+Pos}})}
+
+
+
+enable Filter 1 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00156}{156}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_ad7592b9c4ce9baa703f8833b2886e900}\label{reg__pwr_8h_ad7592b9c4ce9baa703f8833b2886e900}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR5\_FILTE1\_Pos@{PWR\_CR5\_FILTE1\_Pos}}
+\index{PWR\_CR5\_FILTE1\_Pos@{PWR\_CR5\_FILTE1\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR5\_FILTE1\_Pos}{PWR\_CR5\_FILTE1\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR5\+\_\+\+FILTE1\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00155}{155}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_ab2f42f722b351f5aa4dd372e020be8fe}\label{reg__pwr_8h_ab2f42f722b351f5aa4dd372e020be8fe}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR5\_FILTF1@{PWR\_CR5\_FILTF1}}
+\index{PWR\_CR5\_FILTF1@{PWR\_CR5\_FILTF1}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR5\_FILTF1}{PWR\_CR5\_FILTF1}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR5\+\_\+\+FILTF1~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a11522c253f8557a2c771c491ce58cfe3}{PWR\+\_\+\+CR5\+\_\+\+FILTF1\+\_\+\+Pos}})}
+
+
+
+Whether the wake source passes through filter 1 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00158}{158}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a11522c253f8557a2c771c491ce58cfe3}\label{reg__pwr_8h_a11522c253f8557a2c771c491ce58cfe3}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR5\_FILTF1\_Pos@{PWR\_CR5\_FILTF1\_Pos}}
+\index{PWR\_CR5\_FILTF1\_Pos@{PWR\_CR5\_FILTF1\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR5\_FILTF1\_Pos}{PWR\_CR5\_FILTF1\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR5\+\_\+\+FILTF1\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00157}{157}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a952e1bd0359b771fced357413ba37c1e}\label{reg__pwr_8h_a952e1bd0359b771fced357413ba37c1e}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR5\_FILTSEL1@{PWR\_CR5\_FILTSEL1}}
+\index{PWR\_CR5\_FILTSEL1@{PWR\_CR5\_FILTSEL1}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR5\_FILTSEL1}{PWR\_CR5\_FILTSEL1}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR5\+\_\+\+FILTSEL1~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a2d3760c6d0bf038bdcc4b23fe5ccdbc2}{PWR\+\_\+\+CR5\+\_\+\+FILTSEL1\+\_\+\+Pos}})}
+
+
+
+selection wake-\/up source 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00154}{154}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a2d3760c6d0bf038bdcc4b23fe5ccdbc2}\label{reg__pwr_8h_a2d3760c6d0bf038bdcc4b23fe5ccdbc2}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR5\_FILTSEL1\_Pos@{PWR\_CR5\_FILTSEL1\_Pos}}
+\index{PWR\_CR5\_FILTSEL1\_Pos@{PWR\_CR5\_FILTSEL1\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR5\_FILTSEL1\_Pos}{PWR\_CR5\_FILTSEL1\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR5\+\_\+\+FILTSEL1\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00153}{153}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_ac69ee4f4cc4fbd04c85694c60b3ec0a9}\label{reg__pwr_8h_ac69ee4f4cc4fbd04c85694c60b3ec0a9}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR6\_STDBY\_FS\_W1@{PWR\_CR6\_STDBY\_FS\_W1}}
+\index{PWR\_CR6\_STDBY\_FS\_W1@{PWR\_CR6\_STDBY\_FS\_W1}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR6\_STDBY\_FS\_W1}{PWR\_CR6\_STDBY\_FS\_W1}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W1~(0x00U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a57366eb1cea6b14bfa5f27e4801ae64f}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W\+\_\+\+Pos}})}
+
+
+
+1 LSI cycle wake 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00165}{165}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_aa6309fa0cbd34cbd11270a2959cc18ff}\label{reg__pwr_8h_aa6309fa0cbd34cbd11270a2959cc18ff}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR6\_STDBY\_FS\_W2@{PWR\_CR6\_STDBY\_FS\_W2}}
+\index{PWR\_CR6\_STDBY\_FS\_W2@{PWR\_CR6\_STDBY\_FS\_W2}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR6\_STDBY\_FS\_W2}{PWR\_CR6\_STDBY\_FS\_W2}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W2~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a57366eb1cea6b14bfa5f27e4801ae64f}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W\+\_\+\+Pos}})}
+
+
+
+2 LSI cycle wake 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00166}{166}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_ab61fdc78dc89b29a988c7964a1f93843}\label{reg__pwr_8h_ab61fdc78dc89b29a988c7964a1f93843}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR6\_STDBY\_FS\_W3@{PWR\_CR6\_STDBY\_FS\_W3}}
+\index{PWR\_CR6\_STDBY\_FS\_W3@{PWR\_CR6\_STDBY\_FS\_W3}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR6\_STDBY\_FS\_W3}{PWR\_CR6\_STDBY\_FS\_W3}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W3~(0x02U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a57366eb1cea6b14bfa5f27e4801ae64f}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W\+\_\+\+Pos}})}
+
+
+
+3 LSI cycle wake 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00167}{167}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a64823ef4a3cfbcb6399a0d303c8d1cc7}\label{reg__pwr_8h_a64823ef4a3cfbcb6399a0d303c8d1cc7}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR6\_STDBY\_FS\_W4@{PWR\_CR6\_STDBY\_FS\_W4}}
+\index{PWR\_CR6\_STDBY\_FS\_W4@{PWR\_CR6\_STDBY\_FS\_W4}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR6\_STDBY\_FS\_W4}{PWR\_CR6\_STDBY\_FS\_W4}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W4~(0x03U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a57366eb1cea6b14bfa5f27e4801ae64f}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W\+\_\+\+Pos}})}
+
+
+
+4 LSI cycle wake 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00168}{168}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a2097a6e1adb8f7ebdac7601dcfa1b139}\label{reg__pwr_8h_a2097a6e1adb8f7ebdac7601dcfa1b139}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR6\_STDBY\_FS\_W5@{PWR\_CR6\_STDBY\_FS\_W5}}
+\index{PWR\_CR6\_STDBY\_FS\_W5@{PWR\_CR6\_STDBY\_FS\_W5}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR6\_STDBY\_FS\_W5}{PWR\_CR6\_STDBY\_FS\_W5}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W5~(0x04U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a57366eb1cea6b14bfa5f27e4801ae64f}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W\+\_\+\+Pos}})}
+
+
+
+5 LSI cycle wake 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00169}{169}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_acc8ad5eddda19f708a5a57e9ae33288c}\label{reg__pwr_8h_acc8ad5eddda19f708a5a57e9ae33288c}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR6\_STDBY\_FS\_W6@{PWR\_CR6\_STDBY\_FS\_W6}}
+\index{PWR\_CR6\_STDBY\_FS\_W6@{PWR\_CR6\_STDBY\_FS\_W6}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR6\_STDBY\_FS\_W6}{PWR\_CR6\_STDBY\_FS\_W6}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W6~(0x05U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a57366eb1cea6b14bfa5f27e4801ae64f}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W\+\_\+\+Pos}})}
+
+
+
+6 LSI cycle wake 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00170}{170}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a40fd8e63602f5e27c16a257beb8bffc0}\label{reg__pwr_8h_a40fd8e63602f5e27c16a257beb8bffc0}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR6\_STDBY\_FS\_W7@{PWR\_CR6\_STDBY\_FS\_W7}}
+\index{PWR\_CR6\_STDBY\_FS\_W7@{PWR\_CR6\_STDBY\_FS\_W7}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR6\_STDBY\_FS\_W7}{PWR\_CR6\_STDBY\_FS\_W7}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W7~(0x06U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a57366eb1cea6b14bfa5f27e4801ae64f}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W\+\_\+\+Pos}})}
+
+
+
+7 LSI cycle wake 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00171}{171}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_af14c0eaa95a39af140731bbe3f9ed08c}\label{reg__pwr_8h_af14c0eaa95a39af140731bbe3f9ed08c}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR6\_STDBY\_FS\_W8@{PWR\_CR6\_STDBY\_FS\_W8}}
+\index{PWR\_CR6\_STDBY\_FS\_W8@{PWR\_CR6\_STDBY\_FS\_W8}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR6\_STDBY\_FS\_W8}{PWR\_CR6\_STDBY\_FS\_W8}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W8~(0x07U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a57366eb1cea6b14bfa5f27e4801ae64f}{PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W\+\_\+\+Pos}})}
+
+
+
+8 LSI cycle wake ///////////////////////////////////////////////////////////////////////////// 
+
+PWR\+\_\+\+SR register Bit definition 
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00175}{175}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a57366eb1cea6b14bfa5f27e4801ae64f}\label{reg__pwr_8h_a57366eb1cea6b14bfa5f27e4801ae64f}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR6\_STDBY\_FS\_W\_Pos@{PWR\_CR6\_STDBY\_FS\_W\_Pos}}
+\index{PWR\_CR6\_STDBY\_FS\_W\_Pos@{PWR\_CR6\_STDBY\_FS\_W\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR6\_STDBY\_FS\_W\_Pos}{PWR\_CR6\_STDBY\_FS\_W\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR6\+\_\+\+STDBY\+\_\+\+FS\+\_\+\+W\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00164}{164}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_ab44484cacc35c80cf82eb011d6cbe13a}\label{reg__pwr_8h_ab44484cacc35c80cf82eb011d6cbe13a}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR\_CSBF@{PWR\_CR\_CSBF}}
+\index{PWR\_CR\_CSBF@{PWR\_CR\_CSBF}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR\_CSBF}{PWR\_CR\_CSBF}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR\+\_\+\+CSBF~(0x01U  $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a657c1dc4aa1d976d5cb8870ad7791a09}{PWR\+\_\+\+CR\+\_\+\+CSBF\+\_\+\+Pos}})}
+
+
+
+Clear Standby Flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00091}{91}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a657c1dc4aa1d976d5cb8870ad7791a09}\label{reg__pwr_8h_a657c1dc4aa1d976d5cb8870ad7791a09}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR\_CSBF\_Pos@{PWR\_CR\_CSBF\_Pos}}
+\index{PWR\_CR\_CSBF\_Pos@{PWR\_CR\_CSBF\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR\_CSBF\_Pos}{PWR\_CR\_CSBF\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR\+\_\+\+CSBF\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00090}{90}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a9e3698fe3e13232fecda6c1d9b3544f3}\label{reg__pwr_8h_a9e3698fe3e13232fecda6c1d9b3544f3}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR\_LDPS@{PWR\_CR\_LDPS}}
+\index{PWR\_CR\_LDPS@{PWR\_CR\_LDPS}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR\_LDPS}{PWR\_CR\_LDPS}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR\+\_\+\+LDPS~(0x01U  $<$$<$ \mbox{\hyperlink{reg__pwr_8h_af570e08262b40964ad0407f57efbf1b1}{PWR\+\_\+\+CR\+\_\+\+LDPS\+\_\+\+Pos}})}
+
+
+
+Domain Write Protction 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00086}{86}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_af570e08262b40964ad0407f57efbf1b1}\label{reg__pwr_8h_af570e08262b40964ad0407f57efbf1b1}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR\_LDPS\_Pos@{PWR\_CR\_LDPS\_Pos}}
+\index{PWR\_CR\_LDPS\_Pos@{PWR\_CR\_LDPS\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR\_LDPS\_Pos}{PWR\_CR\_LDPS\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR\+\_\+\+LDPS\+\_\+\+Pos~(0)}
+
+
+
+PWR\+\_\+\+CR register Bit definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00085}{85}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a998601e1a4538a5f8fd8746b5d2ead9c}\label{reg__pwr_8h_a998601e1a4538a5f8fd8746b5d2ead9c}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR\_LPR@{PWR\_CR\_LPR}}
+\index{PWR\_CR\_LPR@{PWR\_CR\_LPR}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR\_LPR}{PWR\_CR\_LPR}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR\+\_\+\+LPR~(0x01U  $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a01aef09ef39c6fa907ffd2195e2091a7}{PWR\+\_\+\+CR\+\_\+\+LPR\+\_\+\+Pos}})}
+
+
+
+Low power run 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00093}{93}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a01aef09ef39c6fa907ffd2195e2091a7}\label{reg__pwr_8h_a01aef09ef39c6fa907ffd2195e2091a7}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR\_LPR\_Pos@{PWR\_CR\_LPR\_Pos}}
+\index{PWR\_CR\_LPR\_Pos@{PWR\_CR\_LPR\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR\_LPR\_Pos}{PWR\_CR\_LPR\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR\+\_\+\+LPR\+\_\+\+Pos~(13)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00092}{92}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a8c8075e98772470804c9e3fe74984115}\label{reg__pwr_8h_a8c8075e98772470804c9e3fe74984115}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR\_PDDS@{PWR\_CR\_PDDS}}
+\index{PWR\_CR\_PDDS@{PWR\_CR\_PDDS}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR\_PDDS}{PWR\_CR\_PDDS}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR\+\_\+\+PDDS~(0x01U  $<$$<$ \mbox{\hyperlink{reg__pwr_8h_af1038bf2ac726320cfe05865bda0a07e}{PWR\+\_\+\+CR\+\_\+\+PDDS\+\_\+\+Pos}})}
+
+
+
+Power Down Deepsleep 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00089}{89}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_af1038bf2ac726320cfe05865bda0a07e}\label{reg__pwr_8h_af1038bf2ac726320cfe05865bda0a07e}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR\_PDDS\_Pos@{PWR\_CR\_PDDS\_Pos}}
+\index{PWR\_CR\_PDDS\_Pos@{PWR\_CR\_PDDS\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR\_PDDS\_Pos}{PWR\_CR\_PDDS\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR\+\_\+\+PDDS\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00088}{88}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a50175d84c0cc39a949eb63d9c1d74987}\label{reg__pwr_8h_a50175d84c0cc39a949eb63d9c1d74987}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR\_VOS0@{PWR\_CR\_VOS0}}
+\index{PWR\_CR\_VOS0@{PWR\_CR\_VOS0}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR\_VOS0}{PWR\_CR\_VOS0}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR\+\_\+\+VOS0~(0x00U  $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a2f4f27bd20dad692917746ce1f184d28}{PWR\+\_\+\+CR\+\_\+\+VOS\+\_\+\+Pos}})}
+
+
+
+Modulator Voltage Output Select 1.\+80V 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00095}{95}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a813351f0fa7d4b299c9b70f28c1ae833}\label{reg__pwr_8h_a813351f0fa7d4b299c9b70f28c1ae833}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR\_VOS1@{PWR\_CR\_VOS1}}
+\index{PWR\_CR\_VOS1@{PWR\_CR\_VOS1}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR\_VOS1}{PWR\_CR\_VOS1}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR\+\_\+\+VOS1~(0x01U  $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a2f4f27bd20dad692917746ce1f184d28}{PWR\+\_\+\+CR\+\_\+\+VOS\+\_\+\+Pos}})}
+
+
+
+Modulator Voltage Output Select 1.\+70V 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00096}{96}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a2742113b52a11eec5f6b6b74b27c174b}\label{reg__pwr_8h_a2742113b52a11eec5f6b6b74b27c174b}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR\_VOS2@{PWR\_CR\_VOS2}}
+\index{PWR\_CR\_VOS2@{PWR\_CR\_VOS2}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR\_VOS2}{PWR\_CR\_VOS2}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR\+\_\+\+VOS2~(0x02U  $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a2f4f27bd20dad692917746ce1f184d28}{PWR\+\_\+\+CR\+\_\+\+VOS\+\_\+\+Pos}})}
+
+
+
+Modulator Voltage Output Select 1.\+60V 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00097}{97}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_af31a76eef42aa4cbda1891c382c4cf14}\label{reg__pwr_8h_af31a76eef42aa4cbda1891c382c4cf14}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR\_VOS3@{PWR\_CR\_VOS3}}
+\index{PWR\_CR\_VOS3@{PWR\_CR\_VOS3}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR\_VOS3}{PWR\_CR\_VOS3}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR\+\_\+\+VOS3~(0x03U  $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a2f4f27bd20dad692917746ce1f184d28}{PWR\+\_\+\+CR\+\_\+\+VOS\+\_\+\+Pos}})}
+
+
+
+Modulator Voltage Output Select 1.\+55V 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00098}{98}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a2f4f27bd20dad692917746ce1f184d28}\label{reg__pwr_8h_a2f4f27bd20dad692917746ce1f184d28}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CR\_VOS\_Pos@{PWR\_CR\_VOS\_Pos}}
+\index{PWR\_CR\_VOS\_Pos@{PWR\_CR\_VOS\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CR\_VOS\_Pos}{PWR\_CR\_VOS\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CR\+\_\+\+VOS\+\_\+\+Pos~(14)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00094}{94}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_ab4fd42f153660593cad6f4fe22ff76bb}\label{reg__pwr_8h_ab4fd42f153660593cad6f4fe22ff76bb}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CSR\_SBF@{PWR\_CSR\_SBF}}
+\index{PWR\_CSR\_SBF@{PWR\_CSR\_SBF}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CSR\_SBF}{PWR\_CSR\_SBF}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CSR\+\_\+\+SBF~(0x01U  $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a28df9eb1abdd9d2f29b3f471f9aa096f}{PWR\+\_\+\+CSR\+\_\+\+SBF\+\_\+\+Pos}})}
+
+
+
+Standby Flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00104}{104}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a28df9eb1abdd9d2f29b3f471f9aa096f}\label{reg__pwr_8h_a28df9eb1abdd9d2f29b3f471f9aa096f}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CSR\_SBF\_Pos@{PWR\_CSR\_SBF\_Pos}}
+\index{PWR\_CSR\_SBF\_Pos@{PWR\_CSR\_SBF\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CSR\_SBF\_Pos}{PWR\_CSR\_SBF\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CSR\+\_\+\+SBF\+\_\+\+Pos~(1)}
+
+
+
+PWR\+\_\+\+CSR register Bit definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00103}{103}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a4126ed19cce54a5411ff8dd440171695}\label{reg__pwr_8h_a4126ed19cce54a5411ff8dd440171695}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CSR\_VOSRDY@{PWR\_CSR\_VOSRDY}}
+\index{PWR\_CSR\_VOSRDY@{PWR\_CSR\_VOSRDY}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CSR\_VOSRDY}{PWR\_CSR\_VOSRDY}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CSR\+\_\+\+VOSRDY~(0x01U  $<$$<$ PWR\+\_\+\+CR\+\_\+\+VOSRDY\+\_\+\+Pos)}
+
+
+
+Voltage Modulator Output Selection Ready ///////////////////////////////////////////////////////////////////////////// 
+
+PWR\+\_\+\+CR2 register Bit definition 
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00109}{109}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_ad2938c00bca7b4425b8289498e781b48}\label{reg__pwr_8h_ad2938c00bca7b4425b8289498e781b48}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_CSR\_VOSRDY\_Pos@{PWR\_CSR\_VOSRDY\_Pos}}
+\index{PWR\_CSR\_VOSRDY\_Pos@{PWR\_CSR\_VOSRDY\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_CSR\_VOSRDY\_Pos}{PWR\_CSR\_VOSRDY\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+CSR\+\_\+\+VOSRDY\+\_\+\+Pos~(14)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00105}{105}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a2a12f5af4994abe5b34cf7eae3dacf70}\label{reg__pwr_8h_a2a12f5af4994abe5b34cf7eae3dacf70}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SCR\_CWUF1@{PWR\_SCR\_CWUF1}}
+\index{PWR\_SCR\_CWUF1@{PWR\_SCR\_CWUF1}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SCR\_CWUF1}{PWR\_SCR\_CWUF1}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SCR\+\_\+\+CWUF1~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_ae6909ba44c7142a50c39b58cb72ef464}{PWR\+\_\+\+SCR\+\_\+\+CWUF1\+\_\+\+Pos}})}
+
+
+
+clear wake-\/up flag 1 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00192}{192}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_ae6909ba44c7142a50c39b58cb72ef464}\label{reg__pwr_8h_ae6909ba44c7142a50c39b58cb72ef464}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SCR\_CWUF1\_Pos@{PWR\_SCR\_CWUF1\_Pos}}
+\index{PWR\_SCR\_CWUF1\_Pos@{PWR\_SCR\_CWUF1\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SCR\_CWUF1\_Pos}{PWR\_SCR\_CWUF1\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SCR\+\_\+\+CWUF1\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00191}{191}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a4128b0b9a09d2443ce0e4eef81177a8d}\label{reg__pwr_8h_a4128b0b9a09d2443ce0e4eef81177a8d}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SCR\_CWUF2@{PWR\_SCR\_CWUF2}}
+\index{PWR\_SCR\_CWUF2@{PWR\_SCR\_CWUF2}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SCR\_CWUF2}{PWR\_SCR\_CWUF2}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SCR\+\_\+\+CWUF2~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_ad97b48b66e135768b645abbf6ca4a0c8}{PWR\+\_\+\+SCR\+\_\+\+CWUF2\+\_\+\+Pos}})}
+
+
+
+clear wake-\/up flag 2 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00194}{194}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_ad97b48b66e135768b645abbf6ca4a0c8}\label{reg__pwr_8h_ad97b48b66e135768b645abbf6ca4a0c8}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SCR\_CWUF2\_Pos@{PWR\_SCR\_CWUF2\_Pos}}
+\index{PWR\_SCR\_CWUF2\_Pos@{PWR\_SCR\_CWUF2\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SCR\_CWUF2\_Pos}{PWR\_SCR\_CWUF2\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SCR\+\_\+\+CWUF2\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00193}{193}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a2b435bfeeeb80cd6e640fa6f9210649a}\label{reg__pwr_8h_a2b435bfeeeb80cd6e640fa6f9210649a}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SCR\_CWUF3@{PWR\_SCR\_CWUF3}}
+\index{PWR\_SCR\_CWUF3@{PWR\_SCR\_CWUF3}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SCR\_CWUF3}{PWR\_SCR\_CWUF3}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SCR\+\_\+\+CWUF3~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a80713e25e31ad64073d8ab9c9cd9248f}{PWR\+\_\+\+SCR\+\_\+\+CWUF3\+\_\+\+Pos}})}
+
+
+
+clear wake-\/up flag 3 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00196}{196}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a80713e25e31ad64073d8ab9c9cd9248f}\label{reg__pwr_8h_a80713e25e31ad64073d8ab9c9cd9248f}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SCR\_CWUF3\_Pos@{PWR\_SCR\_CWUF3\_Pos}}
+\index{PWR\_SCR\_CWUF3\_Pos@{PWR\_SCR\_CWUF3\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SCR\_CWUF3\_Pos}{PWR\_SCR\_CWUF3\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SCR\+\_\+\+CWUF3\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00195}{195}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a032b297a06e80628d63eb25dd1388268}\label{reg__pwr_8h_a032b297a06e80628d63eb25dd1388268}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SCR\_CWUF4@{PWR\_SCR\_CWUF4}}
+\index{PWR\_SCR\_CWUF4@{PWR\_SCR\_CWUF4}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SCR\_CWUF4}{PWR\_SCR\_CWUF4}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SCR\+\_\+\+CWUF4~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a4f2eb15c4662edb69ebd5fa8f3c72a9f}{PWR\+\_\+\+SCR\+\_\+\+CWUF4\+\_\+\+Pos}})}
+
+
+
+clear wake-\/up flag 4 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00198}{198}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a4f2eb15c4662edb69ebd5fa8f3c72a9f}\label{reg__pwr_8h_a4f2eb15c4662edb69ebd5fa8f3c72a9f}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SCR\_CWUF4\_Pos@{PWR\_SCR\_CWUF4\_Pos}}
+\index{PWR\_SCR\_CWUF4\_Pos@{PWR\_SCR\_CWUF4\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SCR\_CWUF4\_Pos}{PWR\_SCR\_CWUF4\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SCR\+\_\+\+CWUF4\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00197}{197}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_af1cc08299b937e0c1c87e24aa153c005}\label{reg__pwr_8h_af1cc08299b937e0c1c87e24aa153c005}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SCR\_CWUF5@{PWR\_SCR\_CWUF5}}
+\index{PWR\_SCR\_CWUF5@{PWR\_SCR\_CWUF5}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SCR\_CWUF5}{PWR\_SCR\_CWUF5}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SCR\+\_\+\+CWUF5~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_ac7fb9168e8f2c434d78a033dd6a20f65}{PWR\+\_\+\+SCR\+\_\+\+CWUF5\+\_\+\+Pos}})}
+
+
+
+clear wake-\/up flag 5 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00200}{200}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_ac7fb9168e8f2c434d78a033dd6a20f65}\label{reg__pwr_8h_ac7fb9168e8f2c434d78a033dd6a20f65}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SCR\_CWUF5\_Pos@{PWR\_SCR\_CWUF5\_Pos}}
+\index{PWR\_SCR\_CWUF5\_Pos@{PWR\_SCR\_CWUF5\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SCR\_CWUF5\_Pos}{PWR\_SCR\_CWUF5\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SCR\+\_\+\+CWUF5\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00199}{199}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_acd258d21ebd14e16b095749fd5ff20ce}\label{reg__pwr_8h_acd258d21ebd14e16b095749fd5ff20ce}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SCR\_CWUF6@{PWR\_SCR\_CWUF6}}
+\index{PWR\_SCR\_CWUF6@{PWR\_SCR\_CWUF6}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SCR\_CWUF6}{PWR\_SCR\_CWUF6}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SCR\+\_\+\+CWUF6~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a58dbe22d1770be0eb39c2abc14dc0f1e}{PWR\+\_\+\+SCR\+\_\+\+CWUF6\+\_\+\+Pos}})}
+
+
+
+clear wake-\/up flag 6 ///////////////////////////////////////////////////////////////////////////// 
+
+PWR\+\_\+\+CFGR register Bit definition 
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00205}{205}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a58dbe22d1770be0eb39c2abc14dc0f1e}\label{reg__pwr_8h_a58dbe22d1770be0eb39c2abc14dc0f1e}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SCR\_CWUF6\_Pos@{PWR\_SCR\_CWUF6\_Pos}}
+\index{PWR\_SCR\_CWUF6\_Pos@{PWR\_SCR\_CWUF6\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SCR\_CWUF6\_Pos}{PWR\_SCR\_CWUF6\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SCR\+\_\+\+CWUF6\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00201}{201}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a51881b1e53eacd5a8f5db201284cafb0}\label{reg__pwr_8h_a51881b1e53eacd5a8f5db201284cafb0}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SR\_WUF1@{PWR\_SR\_WUF1}}
+\index{PWR\_SR\_WUF1@{PWR\_SR\_WUF1}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SR\_WUF1}{PWR\_SR\_WUF1}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SR\+\_\+\+WUF1~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_ac16378ce303a2a74fa18fb8b365c6ae8}{PWR\+\_\+\+SR\+\_\+\+WUF1\+\_\+\+Pos}})}
+
+
+
+wake-\/up flag 1 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00177}{177}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_ac16378ce303a2a74fa18fb8b365c6ae8}\label{reg__pwr_8h_ac16378ce303a2a74fa18fb8b365c6ae8}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SR\_WUF1\_Pos@{PWR\_SR\_WUF1\_Pos}}
+\index{PWR\_SR\_WUF1\_Pos@{PWR\_SR\_WUF1\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SR\_WUF1\_Pos}{PWR\_SR\_WUF1\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SR\+\_\+\+WUF1\+\_\+\+Pos~(0)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00176}{176}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a57a218695e2fff80e839d951ce93d489}\label{reg__pwr_8h_a57a218695e2fff80e839d951ce93d489}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SR\_WUF2@{PWR\_SR\_WUF2}}
+\index{PWR\_SR\_WUF2@{PWR\_SR\_WUF2}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SR\_WUF2}{PWR\_SR\_WUF2}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SR\+\_\+\+WUF2~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a8e5a9fe65a53844f4361d7420b086f26}{PWR\+\_\+\+SR\+\_\+\+WUF2\+\_\+\+Pos}})}
+
+
+
+wake-\/up flag 2 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00179}{179}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a8e5a9fe65a53844f4361d7420b086f26}\label{reg__pwr_8h_a8e5a9fe65a53844f4361d7420b086f26}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SR\_WUF2\_Pos@{PWR\_SR\_WUF2\_Pos}}
+\index{PWR\_SR\_WUF2\_Pos@{PWR\_SR\_WUF2\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SR\_WUF2\_Pos}{PWR\_SR\_WUF2\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SR\+\_\+\+WUF2\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00178}{178}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a610bb38545916091ed32fbb0a2e47bbe}\label{reg__pwr_8h_a610bb38545916091ed32fbb0a2e47bbe}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SR\_WUF3@{PWR\_SR\_WUF3}}
+\index{PWR\_SR\_WUF3@{PWR\_SR\_WUF3}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SR\_WUF3}{PWR\_SR\_WUF3}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SR\+\_\+\+WUF3~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_ab236ad703b8be46d703de01ca05d2cb9}{PWR\+\_\+\+SR\+\_\+\+WUF3\+\_\+\+Pos}})}
+
+
+
+wake-\/up flag 3 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00181}{181}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_ab236ad703b8be46d703de01ca05d2cb9}\label{reg__pwr_8h_ab236ad703b8be46d703de01ca05d2cb9}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SR\_WUF3\_Pos@{PWR\_SR\_WUF3\_Pos}}
+\index{PWR\_SR\_WUF3\_Pos@{PWR\_SR\_WUF3\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SR\_WUF3\_Pos}{PWR\_SR\_WUF3\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SR\+\_\+\+WUF3\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00180}{180}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_ab2800d3cf02b9fee2013737ec5d2b756}\label{reg__pwr_8h_ab2800d3cf02b9fee2013737ec5d2b756}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SR\_WUF4@{PWR\_SR\_WUF4}}
+\index{PWR\_SR\_WUF4@{PWR\_SR\_WUF4}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SR\_WUF4}{PWR\_SR\_WUF4}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SR\+\_\+\+WUF4~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a480639b650fd0459656a6cbc842b3856}{PWR\+\_\+\+SR\+\_\+\+WUF4\+\_\+\+Pos}})}
+
+
+
+wake-\/up flag 4 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00183}{183}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a480639b650fd0459656a6cbc842b3856}\label{reg__pwr_8h_a480639b650fd0459656a6cbc842b3856}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SR\_WUF4\_Pos@{PWR\_SR\_WUF4\_Pos}}
+\index{PWR\_SR\_WUF4\_Pos@{PWR\_SR\_WUF4\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SR\_WUF4\_Pos}{PWR\_SR\_WUF4\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SR\+\_\+\+WUF4\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00182}{182}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a4353635b760d64678316965e91bc8713}\label{reg__pwr_8h_a4353635b760d64678316965e91bc8713}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SR\_WUF5@{PWR\_SR\_WUF5}}
+\index{PWR\_SR\_WUF5@{PWR\_SR\_WUF5}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SR\_WUF5}{PWR\_SR\_WUF5}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SR\+\_\+\+WUF5~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_a45f619eac1c04b307c444347613b670f}{PWR\+\_\+\+SR\+\_\+\+WUF5\+\_\+\+Pos}})}
+
+
+
+wake-\/up flag 5 
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00185}{185}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a45f619eac1c04b307c444347613b670f}\label{reg__pwr_8h_a45f619eac1c04b307c444347613b670f}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SR\_WUF5\_Pos@{PWR\_SR\_WUF5\_Pos}}
+\index{PWR\_SR\_WUF5\_Pos@{PWR\_SR\_WUF5\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SR\_WUF5\_Pos}{PWR\_SR\_WUF5\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SR\+\_\+\+WUF5\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00184}{184}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_a07ea775448d3db653eb46992a5e6ccdf}\label{reg__pwr_8h_a07ea775448d3db653eb46992a5e6ccdf}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SR\_WUF6@{PWR\_SR\_WUF6}}
+\index{PWR\_SR\_WUF6@{PWR\_SR\_WUF6}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SR\_WUF6}{PWR\_SR\_WUF6}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SR\+\_\+\+WUF6~(0x01U $<$$<$ \mbox{\hyperlink{reg__pwr_8h_af689cde198c4bad8a32e1c289c634b13}{PWR\+\_\+\+SR\+\_\+\+WUF6\+\_\+\+Pos}})}
+
+
+
+wake-\/up flag 6 ///////////////////////////////////////////////////////////////////////////// 
+
+PWR\+\_\+\+SCR register Bit definition 
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00190}{190}} 行定义.
+
+\mbox{\Hypertarget{reg__pwr_8h_af689cde198c4bad8a32e1c289c634b13}\label{reg__pwr_8h_af689cde198c4bad8a32e1c289c634b13}} 
+\index{reg\_pwr.h@{reg\_pwr.h}!PWR\_SR\_WUF6\_Pos@{PWR\_SR\_WUF6\_Pos}}
+\index{PWR\_SR\_WUF6\_Pos@{PWR\_SR\_WUF6\_Pos}!reg\_pwr.h@{reg\_pwr.h}}
+\doxysubsubsection{\texorpdfstring{PWR\_SR\_WUF6\_Pos}{PWR\_SR\_WUF6\_Pos}}
+{\footnotesize\ttfamily \#define PWR\+\_\+\+SR\+\_\+\+WUF6\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__pwr_8h_source}{reg\+\_\+pwr.\+h}} 第 \mbox{\hyperlink{reg__pwr_8h_source_l00186}{186}} 行定义.
+

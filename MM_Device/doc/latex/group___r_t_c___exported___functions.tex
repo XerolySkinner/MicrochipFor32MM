@@ -1,0 +1,393 @@
+\hypertarget{group___r_t_c___exported___functions}{}\doxysection{RTC\+\_\+\+Exported\+\_\+\+Functions}
+\label{group___r_t_c___exported___functions}\index{RTC\_Exported\_Functions@{RTC\_Exported\_Functions}}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___r_t_c___exported___functions_ga23d641300488d94eedfd6c5d90d90551}{RTC\+\_\+\+ITConfig}} (\mbox{\hyperlink{group___r_t_c___exported___types_gadd8fd9fc19696d5fa416bf4a84d4523e}{RTC\+\_\+\+IT\+\_\+\+Type\+Def}} it, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified RTC interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_t_c___exported___functions_ga4de4fa8c17e61489244085990712184b}{RTC\+\_\+\+Clear\+Flag}} (\mbox{\hyperlink{group___r_t_c___exported___types_gacfbb226cf86a9033b1039fd508aba10b}{RTC\+\_\+\+FLAG\+\_\+\+Type\+Def}} flag)
+\begin{DoxyCompactList}\small\item\em Clears the RTC\textquotesingle{}s pending flags. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_t_c___exported___functions_gaf6caf0930546b17a7a9179804bbb39bf}{RTC\+\_\+\+Clear\+ITPending\+Bit}} (\mbox{\hyperlink{group___r_t_c___exported___types_gadd8fd9fc19696d5fa416bf4a84d4523e}{RTC\+\_\+\+IT\+\_\+\+Type\+Def}} it)
+\begin{DoxyCompactList}\small\item\em Clears the RTC\textquotesingle{}s interrupt pending bits. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_t_c___exported___functions_ga23612d9da2fe057a0cd72c684e5b438a}{RTC\+\_\+\+Enter\+Config\+Mode}} (void)
+\begin{DoxyCompactList}\small\item\em Enters the RTC configuration mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_t_c___exported___functions_gaf9c04b52542faed02a5b4afe78588dba}{RTC\+\_\+\+Set\+Counter}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} count)
+\begin{DoxyCompactList}\small\item\em Sets the RTC counter value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_t_c___exported___functions_ga88e7133a331f31b6dc1fa2ccbb883766}{RTC\+\_\+\+Set\+Prescaler}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} prescaler)
+\begin{DoxyCompactList}\small\item\em Sets the RTC prescaler value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_t_c___exported___functions_gaf3e50510ca3a94fa30a4d7eb7c373e2e}{RTC\+\_\+\+Set\+Alarm}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} alarm)
+\begin{DoxyCompactList}\small\item\em Sets the RTC alarm value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_t_c___exported___functions_ga7585aa6e2dbb497173b2fd03bac0d304}{RTC\+\_\+\+Exit\+Config\+Mode}} (void)
+\begin{DoxyCompactList}\small\item\em Exits from the RTC configuration mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_t_c___exported___functions_gaa0a406ef860d5231748c5f0d82673036}{RTC\+\_\+\+Wait\+For\+Last\+Task}} (void)
+\begin{DoxyCompactList}\small\item\em Waits until last write operation on RTC registers has finished. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_t_c___exported___functions_gaca4346e0dc15dccc15179786b28450db}{RTC\+\_\+\+Wait\+For\+Synchro}} (void)
+\begin{DoxyCompactList}\small\item\em Waits until the RTC registers (RTC\+\_\+\+CNT, RTC\+\_\+\+ALR and RTC\+\_\+\+PRL) are synchronized with RTC APB clock. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___r_t_c___exported___functions_gad0ed150c22d59b3728550812c3cf7d02}{RTC\+\_\+\+Get\+Counter}} (void)
+\begin{DoxyCompactList}\small\item\em Gets the RTC counter value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___r_t_c___exported___functions_gaa436a06e2390cbbd3fb91b94b0411e94}{RTC\+\_\+\+Get\+Divider}} (void)
+\begin{DoxyCompactList}\small\item\em Gets the RTC divider value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___r_t_c___exported___functions_ga393ad767b7f13d6c72bf8d5e6b222b5d}{RTC\+\_\+\+Get\+Flag\+Status}} (\mbox{\hyperlink{group___r_t_c___exported___types_gacfbb226cf86a9033b1039fd508aba10b}{RTC\+\_\+\+FLAG\+\_\+\+Type\+Def}} flag)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified RTC flag is set or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} \mbox{\hyperlink{group___r_t_c___exported___functions_ga04001a828eb2d235855d81d47ccd057c}{RTC\+\_\+\+Get\+ITStatus}} (\mbox{\hyperlink{group___r_t_c___exported___types_gadd8fd9fc19696d5fa416bf4a84d4523e}{RTC\+\_\+\+IT\+\_\+\+Type\+Def}} it)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified RTC interrupt has occurred or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+\doxysubsection{函数说明}
+\mbox{\Hypertarget{group___r_t_c___exported___functions_ga4de4fa8c17e61489244085990712184b}\label{group___r_t_c___exported___functions_ga4de4fa8c17e61489244085990712184b}} 
+\index{RTC\_Exported\_Functions@{RTC\_Exported\_Functions}!RTC\_ClearFlag@{RTC\_ClearFlag}}
+\index{RTC\_ClearFlag@{RTC\_ClearFlag}!RTC\_Exported\_Functions@{RTC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{RTC\_ClearFlag()}{RTC\_ClearFlag()}}
+{\footnotesize\ttfamily void RTC\+\_\+\+Clear\+Flag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___r_t_c___exported___types_gacfbb226cf86a9033b1039fd508aba10b}{RTC\+\_\+\+FLAG\+\_\+\+Type\+Def}}}]{flag }\end{DoxyParamCaption})}
+
+
+
+Clears the RTC\textquotesingle{}s pending flags. 
+
+
+\begin{DoxyParams}{参数}
+{\em flag} & specifies the flag to clear. This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item RTC\+\_\+\+FLAG\+\_\+\+RSF\+: Registers Synchronized flag. This flag is cleared only after an APB reset or an APB Clock stop. \item RTC\+\_\+\+FLAG\+\_\+\+OW\+: Overflow flag \item RTC\+\_\+\+FLAG\+\_\+\+ALR\+: Alarm flag \item RTC\+\_\+\+FLAG\+\_\+\+SEC\+: Second flag \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__rtc_8c_source}{hal\+\_\+rtc.\+c}} 第 \mbox{\hyperlink{hal__rtc_8c_source_l00194}{194}} 行定义.
+
+\mbox{\Hypertarget{group___r_t_c___exported___functions_gaf6caf0930546b17a7a9179804bbb39bf}\label{group___r_t_c___exported___functions_gaf6caf0930546b17a7a9179804bbb39bf}} 
+\index{RTC\_Exported\_Functions@{RTC\_Exported\_Functions}!RTC\_ClearITPendingBit@{RTC\_ClearITPendingBit}}
+\index{RTC\_ClearITPendingBit@{RTC\_ClearITPendingBit}!RTC\_Exported\_Functions@{RTC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{RTC\_ClearITPendingBit()}{RTC\_ClearITPendingBit()}}
+{\footnotesize\ttfamily void RTC\+\_\+\+Clear\+ITPending\+Bit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___r_t_c___exported___types_gadd8fd9fc19696d5fa416bf4a84d4523e}{RTC\+\_\+\+IT\+\_\+\+Type\+Def}}}]{it }\end{DoxyParamCaption})}
+
+
+
+Clears the RTC\textquotesingle{}s interrupt pending bits. 
+
+
+\begin{DoxyParams}{参数}
+{\em it} & specifies the interrupt pending bit to clear. This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item RTC\+\_\+\+IT\+\_\+\+OW\+: Overflow interrupt \item RTC\+\_\+\+IT\+\_\+\+ALR\+: Alarm interrupt \item RTC\+\_\+\+IT\+\_\+\+SEC\+: Second interrupt \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__rtc_8c_source}{hal\+\_\+rtc.\+c}} 第 \mbox{\hyperlink{hal__rtc_8c_source_l00222}{222}} 行定义.
+
+\mbox{\Hypertarget{group___r_t_c___exported___functions_ga23612d9da2fe057a0cd72c684e5b438a}\label{group___r_t_c___exported___functions_ga23612d9da2fe057a0cd72c684e5b438a}} 
+\index{RTC\_Exported\_Functions@{RTC\_Exported\_Functions}!RTC\_EnterConfigMode@{RTC\_EnterConfigMode}}
+\index{RTC\_EnterConfigMode@{RTC\_EnterConfigMode}!RTC\_Exported\_Functions@{RTC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{RTC\_EnterConfigMode()}{RTC\_EnterConfigMode()}}
+{\footnotesize\ttfamily void RTC\+\_\+\+Enter\+Config\+Mode (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Enters the RTC configuration mode. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__rtc_8c_source}{hal\+\_\+rtc.\+c}} 第 \mbox{\hyperlink{hal__rtc_8c_source_l00060}{60}} 行定义.
+
+\mbox{\Hypertarget{group___r_t_c___exported___functions_ga7585aa6e2dbb497173b2fd03bac0d304}\label{group___r_t_c___exported___functions_ga7585aa6e2dbb497173b2fd03bac0d304}} 
+\index{RTC\_Exported\_Functions@{RTC\_Exported\_Functions}!RTC\_ExitConfigMode@{RTC\_ExitConfigMode}}
+\index{RTC\_ExitConfigMode@{RTC\_ExitConfigMode}!RTC\_Exported\_Functions@{RTC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{RTC\_ExitConfigMode()}{RTC\_ExitConfigMode()}}
+{\footnotesize\ttfamily void RTC\+\_\+\+Exit\+Config\+Mode (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Exits from the RTC configuration mode. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__rtc_8c_source}{hal\+\_\+rtc.\+c}} 第 \mbox{\hyperlink{hal__rtc_8c_source_l00071}{71}} 行定义.
+
+\mbox{\Hypertarget{group___r_t_c___exported___functions_gad0ed150c22d59b3728550812c3cf7d02}\label{group___r_t_c___exported___functions_gad0ed150c22d59b3728550812c3cf7d02}} 
+\index{RTC\_Exported\_Functions@{RTC\_Exported\_Functions}!RTC\_GetCounter@{RTC\_GetCounter}}
+\index{RTC\_GetCounter@{RTC\_GetCounter}!RTC\_Exported\_Functions@{RTC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{RTC\_GetCounter()}{RTC\_GetCounter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RTC\+\_\+\+Get\+Counter (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gets the RTC counter value. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em RTC} & counter value. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__rtc_8c_source}{hal\+\_\+rtc.\+c}} 第 \mbox{\hyperlink{hal__rtc_8c_source_l00083}{83}} 行定义.
+
+\mbox{\Hypertarget{group___r_t_c___exported___functions_gaa436a06e2390cbbd3fb91b94b0411e94}\label{group___r_t_c___exported___functions_gaa436a06e2390cbbd3fb91b94b0411e94}} 
+\index{RTC\_Exported\_Functions@{RTC\_Exported\_Functions}!RTC\_GetDivider@{RTC\_GetDivider}}
+\index{RTC\_GetDivider@{RTC\_GetDivider}!RTC\_Exported\_Functions@{RTC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{RTC\_GetDivider()}{RTC\_GetDivider()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RTC\+\_\+\+Get\+Divider (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gets the RTC divider value. 
+
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em RTC} & Divider value. \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__rtc_8c_source}{hal\+\_\+rtc.\+c}} 第 \mbox{\hyperlink{hal__rtc_8c_source_l00136}{136}} 行定义.
+
+\mbox{\Hypertarget{group___r_t_c___exported___functions_ga393ad767b7f13d6c72bf8d5e6b222b5d}\label{group___r_t_c___exported___functions_ga393ad767b7f13d6c72bf8d5e6b222b5d}} 
+\index{RTC\_Exported\_Functions@{RTC\_Exported\_Functions}!RTC\_GetFlagStatus@{RTC\_GetFlagStatus}}
+\index{RTC\_GetFlagStatus@{RTC\_GetFlagStatus}!RTC\_Exported\_Functions@{RTC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{RTC\_GetFlagStatus()}{RTC\_GetFlagStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} RTC\+\_\+\+Get\+Flag\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___r_t_c___exported___types_gacfbb226cf86a9033b1039fd508aba10b}{RTC\+\_\+\+FLAG\+\_\+\+Type\+Def}}}]{flag }\end{DoxyParamCaption})}
+
+
+
+Checks whether the specified RTC flag is set or not. 
+
+
+\begin{DoxyParams}{参数}
+{\em flag} & specifies the flag to check. This parameter can be one the following values\+: \begin{DoxyItemize}
+\item RTC\+\_\+\+FLAG\+\_\+\+RTOFF\+: RTC Operation OFF flag \item RTC\+\_\+\+FLAG\+\_\+\+RSF\+: Registers Synchronized flag \item RTC\+\_\+\+FLAG\+\_\+\+OW\+: Overflow flag \item RTC\+\_\+\+FLAG\+\_\+\+ALR\+: Alarm flag \item RTC\+\_\+\+FLAG\+\_\+\+SEC\+: Second flag \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em The} & state of RTC\+\_\+\+FLAG (SET or RESET). \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__rtc_8c_source}{hal\+\_\+rtc.\+c}} 第 \mbox{\hyperlink{hal__rtc_8c_source_l00178}{178}} 行定义.
+
+\mbox{\Hypertarget{group___r_t_c___exported___functions_ga04001a828eb2d235855d81d47ccd057c}\label{group___r_t_c___exported___functions_ga04001a828eb2d235855d81d47ccd057c}} 
+\index{RTC\_Exported\_Functions@{RTC\_Exported\_Functions}!RTC\_GetITStatus@{RTC\_GetITStatus}}
+\index{RTC\_GetITStatus@{RTC\_GetITStatus}!RTC\_Exported\_Functions@{RTC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{RTC\_GetITStatus()}{RTC\_GetITStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} RTC\+\_\+\+Get\+ITStatus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___r_t_c___exported___types_gadd8fd9fc19696d5fa416bf4a84d4523e}{RTC\+\_\+\+IT\+\_\+\+Type\+Def}}}]{it }\end{DoxyParamCaption})}
+
+
+
+Checks whether the specified RTC interrupt has occurred or not. 
+
+
+\begin{DoxyParams}{参数}
+{\em it} & specifies the RTC interrupts sources to check. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item RTC\+\_\+\+IT\+\_\+\+OW\+: Overflow interrupt \item RTC\+\_\+\+IT\+\_\+\+ALR\+: Alarm interrupt \item RTC\+\_\+\+IT\+\_\+\+SEC\+: Second interrupt \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em The} & state of the RTC\+\_\+\+IT (SET or RESET). \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__rtc_8c_source}{hal\+\_\+rtc.\+c}} 第 \mbox{\hyperlink{hal__rtc_8c_source_l00208}{208}} 行定义.
+
+\mbox{\Hypertarget{group___r_t_c___exported___functions_ga23d641300488d94eedfd6c5d90d90551}\label{group___r_t_c___exported___functions_ga23d641300488d94eedfd6c5d90d90551}} 
+\index{RTC\_Exported\_Functions@{RTC\_Exported\_Functions}!RTC\_ITConfig@{RTC\_ITConfig}}
+\index{RTC\_ITConfig@{RTC\_ITConfig}!RTC\_Exported\_Functions@{RTC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{RTC\_ITConfig()}{RTC\_ITConfig()}}
+{\footnotesize\ttfamily void RTC\+\_\+\+ITConfig (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___r_t_c___exported___types_gadd8fd9fc19696d5fa416bf4a84d4523e}{RTC\+\_\+\+IT\+\_\+\+Type\+Def}}}]{it,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the specified RTC interrupts. 
+
+
+\begin{DoxyParams}{参数}
+{\em it} & specifies the RTC interrupts sources to be enabled or disabled. This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item RTC\+\_\+\+IT\+\_\+\+OW\+: Overflow interrupt \item RTC\+\_\+\+IT\+\_\+\+ALR\+: Alarm interrupt \item RTC\+\_\+\+IT\+\_\+\+SEC\+: Second interrupt \end{DoxyItemize}
+\\
+\hline
+{\em state} & new state of the specified RTC interrupts. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__rtc_8c_source}{hal\+\_\+rtc.\+c}} 第 \mbox{\hyperlink{hal__rtc_8c_source_l00049}{49}} 行定义.
+
+\mbox{\Hypertarget{group___r_t_c___exported___functions_gaf3e50510ca3a94fa30a4d7eb7c373e2e}\label{group___r_t_c___exported___functions_gaf3e50510ca3a94fa30a4d7eb7c373e2e}} 
+\index{RTC\_Exported\_Functions@{RTC\_Exported\_Functions}!RTC\_SetAlarm@{RTC\_SetAlarm}}
+\index{RTC\_SetAlarm@{RTC\_SetAlarm}!RTC\_Exported\_Functions@{RTC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{RTC\_SetAlarm()}{RTC\_SetAlarm()}}
+{\footnotesize\ttfamily void RTC\+\_\+\+Set\+Alarm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{alarm }\end{DoxyParamCaption})}
+
+
+
+Sets the RTC alarm value. 
+
+
+\begin{DoxyParams}{参数}
+{\em alarm} & RTC alarm new value. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__rtc_8c_source}{hal\+\_\+rtc.\+c}} 第 \mbox{\hyperlink{hal__rtc_8c_source_l00122}{122}} 行定义.
+
+\mbox{\Hypertarget{group___r_t_c___exported___functions_gaf9c04b52542faed02a5b4afe78588dba}\label{group___r_t_c___exported___functions_gaf9c04b52542faed02a5b4afe78588dba}} 
+\index{RTC\_Exported\_Functions@{RTC\_Exported\_Functions}!RTC\_SetCounter@{RTC\_SetCounter}}
+\index{RTC\_SetCounter@{RTC\_SetCounter}!RTC\_Exported\_Functions@{RTC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{RTC\_SetCounter()}{RTC\_SetCounter()}}
+{\footnotesize\ttfamily void RTC\+\_\+\+Set\+Counter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{count }\end{DoxyParamCaption})}
+
+
+
+Sets the RTC counter value. 
+
+
+\begin{DoxyParams}{参数}
+{\em count} & RTC counter new value. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__rtc_8c_source}{hal\+\_\+rtc.\+c}} 第 \mbox{\hyperlink{hal__rtc_8c_source_l00094}{94}} 行定义.
+
+\mbox{\Hypertarget{group___r_t_c___exported___functions_ga88e7133a331f31b6dc1fa2ccbb883766}\label{group___r_t_c___exported___functions_ga88e7133a331f31b6dc1fa2ccbb883766}} 
+\index{RTC\_Exported\_Functions@{RTC\_Exported\_Functions}!RTC\_SetPrescaler@{RTC\_SetPrescaler}}
+\index{RTC\_SetPrescaler@{RTC\_SetPrescaler}!RTC\_Exported\_Functions@{RTC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{RTC\_SetPrescaler()}{RTC\_SetPrescaler()}}
+{\footnotesize\ttfamily void RTC\+\_\+\+Set\+Prescaler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{prescaler }\end{DoxyParamCaption})}
+
+
+
+Sets the RTC prescaler value. 
+
+
+\begin{DoxyParams}{参数}
+{\em prescaler} & RTC prescaler new value. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__rtc_8c_source}{hal\+\_\+rtc.\+c}} 第 \mbox{\hyperlink{hal__rtc_8c_source_l00108}{108}} 行定义.
+
+\mbox{\Hypertarget{group___r_t_c___exported___functions_gaa0a406ef860d5231748c5f0d82673036}\label{group___r_t_c___exported___functions_gaa0a406ef860d5231748c5f0d82673036}} 
+\index{RTC\_Exported\_Functions@{RTC\_Exported\_Functions}!RTC\_WaitForLastTask@{RTC\_WaitForLastTask}}
+\index{RTC\_WaitForLastTask@{RTC\_WaitForLastTask}!RTC\_Exported\_Functions@{RTC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{RTC\_WaitForLastTask()}{RTC\_WaitForLastTask()}}
+{\footnotesize\ttfamily void RTC\+\_\+\+Wait\+For\+Last\+Task (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Waits until last write operation on RTC registers has finished. 
+
+\begin{DoxyNote}{注解}
+This function must be called before any write to RTC registers. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__rtc_8c_source}{hal\+\_\+rtc.\+c}} 第 \mbox{\hyperlink{hal__rtc_8c_source_l00148}{148}} 行定义.
+
+\mbox{\Hypertarget{group___r_t_c___exported___functions_gaca4346e0dc15dccc15179786b28450db}\label{group___r_t_c___exported___functions_gaca4346e0dc15dccc15179786b28450db}} 
+\index{RTC\_Exported\_Functions@{RTC\_Exported\_Functions}!RTC\_WaitForSynchro@{RTC\_WaitForSynchro}}
+\index{RTC\_WaitForSynchro@{RTC\_WaitForSynchro}!RTC\_Exported\_Functions@{RTC\_Exported\_Functions}}
+\doxysubsubsection{\texorpdfstring{RTC\_WaitForSynchro()}{RTC\_WaitForSynchro()}}
+{\footnotesize\ttfamily void RTC\+\_\+\+Wait\+For\+Synchro (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Waits until the RTC registers (RTC\+\_\+\+CNT, RTC\+\_\+\+ALR and RTC\+\_\+\+PRL) are synchronized with RTC APB clock. 
+
+\begin{DoxyNote}{注解}
+This function must be called before any read operation after an APB reset or an APB clock stop. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{参数}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__rtc_8c_source}{hal\+\_\+rtc.\+c}} 第 \mbox{\hyperlink{hal__rtc_8c_source_l00161}{161}} 行定义.
+

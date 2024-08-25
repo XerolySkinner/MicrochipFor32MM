@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>template: C:/Users/XerolySkinner/Desktop/MM_Device/MM32F327x/Include/reg_pwr.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">template
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8a23370bd962f2be3cb202251f8a0865.html">MM32F327x</a></li><li class="navelem"><a class="el" href="dir_558e241ee7368c5b8b9a34748b15bdf8.html">Include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">reg_pwr.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="reg__pwr_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// Define to prevent recursive inclusion</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#ifndef __REG_PWR_H</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#define __REG_PWR_H</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Files includes</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">types.h</a>&quot;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#if defined ( __CC_ARM )</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#pragma anon_unions</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#ac691ec23dace8b7a649a25acb110217a">   47</a></span><span class="preprocessor">#define PWR_BASE                        (APB1PERIPH_BASE + 0x7000)              </span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="struct_p_w_r___type_def.html">   56</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">union </span>{</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="struct_p_w_r___type_def.html#a7b10b98198000b7d97b026324120f5c5">   58</a></span>        <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_p_w_r___type_def.html#a7b10b98198000b7d97b026324120f5c5">CR</a>;                                                            </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="struct_p_w_r___type_def.html#ac63e91454996da5a39884c42f96346f5">   59</a></span>        <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_p_w_r___type_def.html#ac63e91454996da5a39884c42f96346f5">CR1</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    };</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">union </span>{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="struct_p_w_r___type_def.html#aef20e6a6f11aaf09270309852c79ce4d">   62</a></span>        <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_p_w_r___type_def.html#aef20e6a6f11aaf09270309852c79ce4d">CSR</a>;                                                               </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="struct_p_w_r___type_def.html#a224c31d1a35717fd9f06e51753537ae9">   63</a></span>        <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_p_w_r___type_def.html#a224c31d1a35717fd9f06e51753537ae9">CSR1</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    };</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="struct_p_w_r___type_def.html#acd78ed8a93d8e7c966917431e260840c">   65</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_p_w_r___type_def.html#acd78ed8a93d8e7c966917431e260840c">CR2</a>;                                                               </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="struct_p_w_r___type_def.html#a7f19ff25a8b4f2e4c84af8530783e99f">   66</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_p_w_r___type_def.html#a7f19ff25a8b4f2e4c84af8530783e99f">CR3</a>;                                                               </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="struct_p_w_r___type_def.html#a9ec28d5d2fb168dfa40cd7b29da7a19d">   67</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_p_w_r___type_def.html#a9ec28d5d2fb168dfa40cd7b29da7a19d">CR4</a>;                                                               </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="struct_p_w_r___type_def.html#ad2d0fb32c153753341a245a3c41dcf1b">   68</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_p_w_r___type_def.html#ad2d0fb32c153753341a245a3c41dcf1b">CR5</a>;                                                               </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="struct_p_w_r___type_def.html#a4ece18c3d17dc3afecf9d210dade0c6d">   69</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_p_w_r___type_def.html#a4ece18c3d17dc3afecf9d210dade0c6d">CR6</a>;                                                               </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="struct_p_w_r___type_def.html#a91f4cc6d5ee29f659652674d0ad87ed2">   70</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_p_w_r___type_def.html#a91f4cc6d5ee29f659652674d0ad87ed2">SR</a>;                                                                </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="struct_p_w_r___type_def.html#affb79a2338d598efa2eb6f41b35d4f4a">   71</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_p_w_r___type_def.html#affb79a2338d598efa2eb6f41b35d4f4a">SCR</a>;                                                               </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="struct_p_w_r___type_def.html#a9ee5d5159e34bb89c0a4650a30a289fc">   72</a></span>    <a class="code hl_define" href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code hl_typedef" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> <a class="code hl_variable" href="struct_p_w_r___type_def.html#a9ee5d5159e34bb89c0a4650a30a289fc">CFGR</a>;                                                              </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>} <a class="code hl_struct" href="struct_p_w_r___type_def.html">PWR_TypeDef</a>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a04651c526497822a859942b928e57f8e">   78</a></span><span class="preprocessor">#define PWR                             ((PWR_TypeDef*) PWR_BASE)</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#af570e08262b40964ad0407f57efbf1b1">   85</a></span><span class="preprocessor">#define PWR_CR_LDPS_Pos                 (0)</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a9e3698fe3e13232fecda6c1d9b3544f3">   86</a></span><span class="preprocessor">#define PWR_CR_LDPS                     (0x01U  &lt;&lt; PWR_CR_LDPS_Pos)             </span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#af1038bf2ac726320cfe05865bda0a07e">   88</a></span><span class="preprocessor">#define PWR_CR_PDDS_Pos                 (1)</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a8c8075e98772470804c9e3fe74984115">   89</a></span><span class="preprocessor">#define PWR_CR_PDDS                     (0x01U  &lt;&lt; PWR_CR_PDDS_Pos)             </span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a657c1dc4aa1d976d5cb8870ad7791a09">   90</a></span><span class="preprocessor">#define PWR_CR_CSBF_Pos                 (3)</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#ab44484cacc35c80cf82eb011d6cbe13a">   91</a></span><span class="preprocessor">#define PWR_CR_CSBF                     (0x01U  &lt;&lt; PWR_CR_CSBF_Pos)             </span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a01aef09ef39c6fa907ffd2195e2091a7">   92</a></span><span class="preprocessor">#define PWR_CR_LPR_Pos                  (13)</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a998601e1a4538a5f8fd8746b5d2ead9c">   93</a></span><span class="preprocessor">#define PWR_CR_LPR                      (0x01U  &lt;&lt; PWR_CR_LPR_Pos)              </span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a2f4f27bd20dad692917746ce1f184d28">   94</a></span><span class="preprocessor">#define PWR_CR_VOS_Pos                  (14)</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a50175d84c0cc39a949eb63d9c1d74987">   95</a></span><span class="preprocessor">#define PWR_CR_VOS0                     (0x00U  &lt;&lt; PWR_CR_VOS_Pos)              </span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a813351f0fa7d4b299c9b70f28c1ae833">   96</a></span><span class="preprocessor">#define PWR_CR_VOS1                     (0x01U  &lt;&lt; PWR_CR_VOS_Pos)              </span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a2742113b52a11eec5f6b6b74b27c174b">   97</a></span><span class="preprocessor">#define PWR_CR_VOS2                     (0x02U  &lt;&lt; PWR_CR_VOS_Pos)              </span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#af31a76eef42aa4cbda1891c382c4cf14">   98</a></span><span class="preprocessor">#define PWR_CR_VOS3                     (0x03U  &lt;&lt; PWR_CR_VOS_Pos)              </span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a28df9eb1abdd9d2f29b3f471f9aa096f">  103</a></span><span class="preprocessor">#define PWR_CSR_SBF_Pos                 (1)</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#ab4fd42f153660593cad6f4fe22ff76bb">  104</a></span><span class="preprocessor">#define PWR_CSR_SBF                     (0x01U  &lt;&lt; PWR_CSR_SBF_Pos)             </span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#ad2938c00bca7b4425b8289498e781b48">  105</a></span><span class="preprocessor">#define PWR_CSR_VOSRDY_Pos              (14)</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">#define PWR_CSR_VOSRDY                  (0x01U  &lt;&lt; PWR_CR_VOSRDY_Pos)           </span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a6264c20ff5427804a41fbb356d1b5559">  110</a></span><span class="preprocessor">#define PWR_CR2_EWUP1_Pos                (0)</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a84ebdf0893ad3ea77bb259030b20f3a6">  111</a></span><span class="preprocessor">#define PWR_CR2_EWUP1                    (0x01U &lt;&lt; PWR_CR2_EWUP1_Pos)           </span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a2faaaf296e93e13dabba54c038d9b4b0">  112</a></span><span class="preprocessor">#define PWR_CR2_EWUP2_Pos                (1)</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a662c86173ae993757a306eae7b01f3a7">  113</a></span><span class="preprocessor">#define PWR_CR2_EWUP2                    (0x01U &lt;&lt; PWR_CR2_EWUP2_Pos)           </span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a2ac523ed1f2f9113e1b2f8c587caf408">  114</a></span><span class="preprocessor">#define PWR_CR2_EWUP3_Pos                (2)</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a59733d030c06004683567c878c778670">  115</a></span><span class="preprocessor">#define PWR_CR2_EWUP3                    (0x01U &lt;&lt; PWR_CR2_EWUP3_Pos)           </span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a30754d23cbcfa502367cc8b7c6d68b07">  116</a></span><span class="preprocessor">#define PWR_CR2_EWUP4_Pos                (3)</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a03f91052c81ef5c05409f396bd83b52d">  117</a></span><span class="preprocessor">#define PWR_CR2_EWUP4                    (0x01U &lt;&lt; PWR_CR2_EWUP4_Pos)           </span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a25c86a1483ae190f80f4a4af0098dacc">  118</a></span><span class="preprocessor">#define PWR_CR2_EWUP5_Pos                (4)</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a662f8ed6f4f18b814e2db96d2297640a">  119</a></span><span class="preprocessor">#define PWR_CR2_EWUP5                    (0x01U &lt;&lt; PWR_CR2_EWUP5_Pos)           </span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a201e2b8a3a7611e108577dc72b9c373d">  120</a></span><span class="preprocessor">#define PWR_CR2_EWUP6_Pos                (5)</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#ac49996100f7054fffbde6c2f5191dda1">  121</a></span><span class="preprocessor">#define PWR_CR2_EWUP6                    (0x01U &lt;&lt; PWR_CR2_EWUP6_Pos)           </span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a82a844107506d54f473043dcea0c1fd3">  122</a></span><span class="preprocessor">#define PWR_CR2_ENWU_Pos                 (15)</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="preprocessor">#define PWR_CR2_ENWU                     (0x01U &lt;&lt; PWR_CR2_ENWU_Pos)            </span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a0ef7f277f3e14eb11dda75e7aa4200e2">  127</a></span><span class="preprocessor">#define PWR_CR3_WP1_Pos                (0)</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#aab388d90ae5c4614930bf999ffab994a">  128</a></span><span class="preprocessor">#define PWR_CR3_WP1                    (0x01U &lt;&lt; PWR_CR3_WP1_Pos)               </span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#afeff6d3feeed32c40c7883f19441db57">  129</a></span><span class="preprocessor">#define PWR_CR3_WP2_Pos                (1)</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#acbe347f2e479e90c12c6b6394e53a1e2">  130</a></span><span class="preprocessor">#define PWR_CR3_WP2                    (0x01U &lt;&lt; PWR_CR3_WP2_Pos)               </span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a0c4f0f273ad1550f9b8f6dd9252cd911">  131</a></span><span class="preprocessor">#define PWR_CR3_WP3_Pos                (2)</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a57055569462c0a4d020222fca075f297">  132</a></span><span class="preprocessor">#define PWR_CR3_WP3                    (0x01U &lt;&lt; PWR_CR3_WP3_Pos)               </span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a593b53bd54da9d8eb967f5b8fbcdb442">  133</a></span><span class="preprocessor">#define PWR_CR3_WP4_Pos                (3)</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#ae4342151a54769f0e895c1ab9870c42d">  134</a></span><span class="preprocessor">#define PWR_CR3_WP4                    (0x01U &lt;&lt; PWR_CR3_WP4_Pos)               </span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a6c4ac2dd4b904a34e383aad7ca65ef68">  135</a></span><span class="preprocessor">#define PWR_CR3_WP5_Pos                (4)</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a1727c45edea523c0c46adb873a9eac3d">  136</a></span><span class="preprocessor">#define PWR_CR3_WP5                    (0x01U &lt;&lt; PWR_CR3_WP5_Pos)               </span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#aa4cd4987fa37d3434518fb9895853c44">  137</a></span><span class="preprocessor">#define PWR_CR3_WP6_Pos                (5)</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="preprocessor">#define PWR_CR3_WP6                    (0x01U &lt;&lt; PWR_CR3_WP6_Pos)               </span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#aecbe9be16d7a9fd030527333b629919e">  142</a></span><span class="preprocessor">#define PWR_CR4_FILTSEL0_Pos           (0)</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#afd80d1d70442b8e6644a2467a483f124">  143</a></span><span class="preprocessor">#define PWR_CR4_FILTSEL0               (0x01U &lt;&lt; PWR_CR4_FILTSEL0_Pos)          </span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a804e586c5b5f53dc18d403f1a1df57a0">  144</a></span><span class="preprocessor">#define PWR_CR4_FILTE0_Pos             (2)</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a668d90b4d8539b66cf788abc946fca49">  145</a></span><span class="preprocessor">#define PWR_CR4_FILTE0                 (0x01U &lt;&lt; PWR_CR4_FILTE0_Pos)            </span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a6db6ae09826bd4e4b84adf037ff3eae8">  146</a></span><span class="preprocessor">#define PWR_CR4_FILTF0_Pos             (4)</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a3bf14847f072899ae3935cc0ffbef881">  147</a></span><span class="preprocessor">#define PWR_CR4_FILTF0                 (0x01U &lt;&lt; PWR_CR4_FILTF0_Pos)            </span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a615f5315800b7bf893899b6afb7682aa">  148</a></span><span class="preprocessor">#define PWR_CR4_FILTCNT0_Pos           (8)</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="preprocessor">#define PWR_CR4_FILTCNT0               (0xFFU &lt;&lt; PWR_CR4_FILTCNT0_Pos)          </span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a2d3760c6d0bf038bdcc4b23fe5ccdbc2">  153</a></span><span class="preprocessor">#define PWR_CR5_FILTSEL1_Pos           (0)</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a952e1bd0359b771fced357413ba37c1e">  154</a></span><span class="preprocessor">#define PWR_CR5_FILTSEL1               (0x01U &lt;&lt; PWR_CR5_FILTSEL1_Pos)          </span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#ad7592b9c4ce9baa703f8833b2886e900">  155</a></span><span class="preprocessor">#define PWR_CR5_FILTE1_Pos             (2)</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#aeeb7e815f27245d7c30aed914f30d12b">  156</a></span><span class="preprocessor">#define PWR_CR5_FILTE1                 (0x01U &lt;&lt; PWR_CR5_FILTE1_Pos)            </span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a11522c253f8557a2c771c491ce58cfe3">  157</a></span><span class="preprocessor">#define PWR_CR5_FILTF1_Pos             (4)</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#ab2f42f722b351f5aa4dd372e020be8fe">  158</a></span><span class="preprocessor">#define PWR_CR5_FILTF1                 (0x01U &lt;&lt; PWR_CR5_FILTF1_Pos)            </span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a946c62453a7b8c7e62c69611e6ac79a8">  159</a></span><span class="preprocessor">#define PWR_CR5_FILTCNT1_Pos           (8)</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="preprocessor">#define PWR_CR5_FILTCNT1               (0xFFU &lt;&lt; PWR_CR5_FILTCNT1_Pos)          </span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a57366eb1cea6b14bfa5f27e4801ae64f">  164</a></span><span class="preprocessor">#define PWR_CR6_STDBY_FS_W_Pos          (0)</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#ac69ee4f4cc4fbd04c85694c60b3ec0a9">  165</a></span><span class="preprocessor">#define PWR_CR6_STDBY_FS_W1             (0x00U &lt;&lt; PWR_CR6_STDBY_FS_W_Pos)       </span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#aa6309fa0cbd34cbd11270a2959cc18ff">  166</a></span><span class="preprocessor">#define PWR_CR6_STDBY_FS_W2             (0x01U &lt;&lt; PWR_CR6_STDBY_FS_W_Pos)       </span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#ab61fdc78dc89b29a988c7964a1f93843">  167</a></span><span class="preprocessor">#define PWR_CR6_STDBY_FS_W3             (0x02U &lt;&lt; PWR_CR6_STDBY_FS_W_Pos)       </span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a64823ef4a3cfbcb6399a0d303c8d1cc7">  168</a></span><span class="preprocessor">#define PWR_CR6_STDBY_FS_W4             (0x03U &lt;&lt; PWR_CR6_STDBY_FS_W_Pos)       </span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a2097a6e1adb8f7ebdac7601dcfa1b139">  169</a></span><span class="preprocessor">#define PWR_CR6_STDBY_FS_W5             (0x04U &lt;&lt; PWR_CR6_STDBY_FS_W_Pos)       </span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#acc8ad5eddda19f708a5a57e9ae33288c">  170</a></span><span class="preprocessor">#define PWR_CR6_STDBY_FS_W6             (0x05U &lt;&lt; PWR_CR6_STDBY_FS_W_Pos)       </span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a40fd8e63602f5e27c16a257beb8bffc0">  171</a></span><span class="preprocessor">#define PWR_CR6_STDBY_FS_W7             (0x06U &lt;&lt; PWR_CR6_STDBY_FS_W_Pos)       </span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="preprocessor">#define PWR_CR6_STDBY_FS_W8             (0x07U &lt;&lt; PWR_CR6_STDBY_FS_W_Pos)       </span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#ac16378ce303a2a74fa18fb8b365c6ae8">  176</a></span><span class="preprocessor">#define PWR_SR_WUF1_Pos                (0)</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a51881b1e53eacd5a8f5db201284cafb0">  177</a></span><span class="preprocessor">#define PWR_SR_WUF1                    (0x01U &lt;&lt; PWR_SR_WUF1_Pos)               </span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a8e5a9fe65a53844f4361d7420b086f26">  178</a></span><span class="preprocessor">#define PWR_SR_WUF2_Pos                (1)</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a57a218695e2fff80e839d951ce93d489">  179</a></span><span class="preprocessor">#define PWR_SR_WUF2                    (0x01U &lt;&lt; PWR_SR_WUF2_Pos)               </span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#ab236ad703b8be46d703de01ca05d2cb9">  180</a></span><span class="preprocessor">#define PWR_SR_WUF3_Pos                (2)</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a610bb38545916091ed32fbb0a2e47bbe">  181</a></span><span class="preprocessor">#define PWR_SR_WUF3                    (0x01U &lt;&lt; PWR_SR_WUF3_Pos)               </span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a480639b650fd0459656a6cbc842b3856">  182</a></span><span class="preprocessor">#define PWR_SR_WUF4_Pos                (3)</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#ab2800d3cf02b9fee2013737ec5d2b756">  183</a></span><span class="preprocessor">#define PWR_SR_WUF4                    (0x01U &lt;&lt; PWR_SR_WUF4_Pos)               </span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a45f619eac1c04b307c444347613b670f">  184</a></span><span class="preprocessor">#define PWR_SR_WUF5_Pos                (4)</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a4353635b760d64678316965e91bc8713">  185</a></span><span class="preprocessor">#define PWR_SR_WUF5                    (0x01U &lt;&lt; PWR_SR_WUF5_Pos)               </span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#af689cde198c4bad8a32e1c289c634b13">  186</a></span><span class="preprocessor">#define PWR_SR_WUF6_Pos                (5)</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="preprocessor">#define PWR_SR_WUF6                    (0x01U &lt;&lt; PWR_SR_WUF6_Pos)               </span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#ae6909ba44c7142a50c39b58cb72ef464">  191</a></span><span class="preprocessor">#define PWR_SCR_CWUF1_Pos              (0)</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a2a12f5af4994abe5b34cf7eae3dacf70">  192</a></span><span class="preprocessor">#define PWR_SCR_CWUF1                  (0x01U &lt;&lt; PWR_SCR_CWUF1_Pos)             </span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#ad97b48b66e135768b645abbf6ca4a0c8">  193</a></span><span class="preprocessor">#define PWR_SCR_CWUF2_Pos              (1)</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a4128b0b9a09d2443ce0e4eef81177a8d">  194</a></span><span class="preprocessor">#define PWR_SCR_CWUF2                  (0x01U &lt;&lt; PWR_SCR_CWUF2_Pos)             </span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a80713e25e31ad64073d8ab9c9cd9248f">  195</a></span><span class="preprocessor">#define PWR_SCR_CWUF3_Pos              (2)</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a2b435bfeeeb80cd6e640fa6f9210649a">  196</a></span><span class="preprocessor">#define PWR_SCR_CWUF3                  (0x01U &lt;&lt; PWR_SCR_CWUF3_Pos)             </span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a4f2eb15c4662edb69ebd5fa8f3c72a9f">  197</a></span><span class="preprocessor">#define PWR_SCR_CWUF4_Pos              (3)</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a032b297a06e80628d63eb25dd1388268">  198</a></span><span class="preprocessor">#define PWR_SCR_CWUF4                  (0x01U &lt;&lt; PWR_SCR_CWUF4_Pos)             </span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#ac7fb9168e8f2c434d78a033dd6a20f65">  199</a></span><span class="preprocessor">#define PWR_SCR_CWUF5_Pos              (4)</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#af1cc08299b937e0c1c87e24aa153c005">  200</a></span><span class="preprocessor">#define PWR_SCR_CWUF5                  (0x01U &lt;&lt; PWR_SCR_CWUF5_Pos)             </span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a58dbe22d1770be0eb39c2abc14dc0f1e">  201</a></span><span class="preprocessor">#define PWR_SCR_CWUF6_Pos              (5)</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="preprocessor">#define PWR_SCR_CWUF6                  (0x01U &lt;&lt; PWR_SCR_CWUF6_Pos)             </span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a6cc513c0edcb01c80914ad417ceb56e8">  206</a></span><span class="preprocessor">#define PWR_CFGR_LSICALSEL_Pos         (0)</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a043bf41fe9c68b2ee7eb6acabaab11f5">  207</a></span><span class="preprocessor">#define PWR_CFGR_LSICALSEL             (0x1FU &lt;&lt; PWR_CFGR_LSICALSEL_Pos)        </span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a6ab0a03f81c3698e99dc540097c6cdf5">  208</a></span><span class="preprocessor">#define PWR_CFGR_LSICAL_Pos            (5)</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="reg__pwr_8h.html#a6dc6c961ef597bc43c10052e5f3d77d5">  209</a></span><span class="preprocessor">#define PWR_CFGR_LSICAL                (0x1FU &lt;&lt; PWR_CFGR_LSICAL_Pos)           </span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="acore__armv8mbl_8h_html_aec43007d9998a0a0e01faede4133d6be"><div class="ttname"><a href="core__armv8mbl_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a></div><div class="ttdeci">#define __IO</div><div class="ttdef"><b>Definition:</b> <a href="core__armv8mbl_8h_source.html#l00194">core_armv8mbl.h:194</a></div></div>
+<div class="ttc" id="astruct_p_w_r___type_def_html"><div class="ttname"><a href="struct_p_w_r___type_def.html">PWR_TypeDef</a></div><div class="ttdoc">PWR Register Structure Definition</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00056">reg_pwr.h:56</a></div></div>
+<div class="ttc" id="astruct_p_w_r___type_def_html_a224c31d1a35717fd9f06e51753537ae9"><div class="ttname"><a href="struct_p_w_r___type_def.html#a224c31d1a35717fd9f06e51753537ae9">PWR_TypeDef::CSR1</a></div><div class="ttdeci">__IO u32 CSR1</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00063">reg_pwr.h:63</a></div></div>
+<div class="ttc" id="astruct_p_w_r___type_def_html_a4ece18c3d17dc3afecf9d210dade0c6d"><div class="ttname"><a href="struct_p_w_r___type_def.html#a4ece18c3d17dc3afecf9d210dade0c6d">PWR_TypeDef::CR6</a></div><div class="ttdeci">__IO u32 CR6</div><div class="ttdoc">Control register 6 offset: 0x18</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00069">reg_pwr.h:69</a></div></div>
+<div class="ttc" id="astruct_p_w_r___type_def_html_a7b10b98198000b7d97b026324120f5c5"><div class="ttname"><a href="struct_p_w_r___type_def.html#a7b10b98198000b7d97b026324120f5c5">PWR_TypeDef::CR</a></div><div class="ttdeci">__IO u32 CR</div><div class="ttdoc">Control register, offset: 0x00</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00058">reg_pwr.h:58</a></div></div>
+<div class="ttc" id="astruct_p_w_r___type_def_html_a7f19ff25a8b4f2e4c84af8530783e99f"><div class="ttname"><a href="struct_p_w_r___type_def.html#a7f19ff25a8b4f2e4c84af8530783e99f">PWR_TypeDef::CR3</a></div><div class="ttdeci">__IO u32 CR3</div><div class="ttdoc">Control register 3 offset: 0x0C</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00066">reg_pwr.h:66</a></div></div>
+<div class="ttc" id="astruct_p_w_r___type_def_html_a91f4cc6d5ee29f659652674d0ad87ed2"><div class="ttname"><a href="struct_p_w_r___type_def.html#a91f4cc6d5ee29f659652674d0ad87ed2">PWR_TypeDef::SR</a></div><div class="ttdeci">__IO u32 SR</div><div class="ttdoc">Status register offset: 0x1C</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00070">reg_pwr.h:70</a></div></div>
+<div class="ttc" id="astruct_p_w_r___type_def_html_a9ec28d5d2fb168dfa40cd7b29da7a19d"><div class="ttname"><a href="struct_p_w_r___type_def.html#a9ec28d5d2fb168dfa40cd7b29da7a19d">PWR_TypeDef::CR4</a></div><div class="ttdeci">__IO u32 CR4</div><div class="ttdoc">Control register 4 offset: 0x10</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00067">reg_pwr.h:67</a></div></div>
+<div class="ttc" id="astruct_p_w_r___type_def_html_a9ee5d5159e34bb89c0a4650a30a289fc"><div class="ttname"><a href="struct_p_w_r___type_def.html#a9ee5d5159e34bb89c0a4650a30a289fc">PWR_TypeDef::CFGR</a></div><div class="ttdeci">__IO u32 CFGR</div><div class="ttdoc">Configuration register offset: 0x24</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00072">reg_pwr.h:72</a></div></div>
+<div class="ttc" id="astruct_p_w_r___type_def_html_ac63e91454996da5a39884c42f96346f5"><div class="ttname"><a href="struct_p_w_r___type_def.html#ac63e91454996da5a39884c42f96346f5">PWR_TypeDef::CR1</a></div><div class="ttdeci">__IO u32 CR1</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00059">reg_pwr.h:59</a></div></div>
+<div class="ttc" id="astruct_p_w_r___type_def_html_acd78ed8a93d8e7c966917431e260840c"><div class="ttname"><a href="struct_p_w_r___type_def.html#acd78ed8a93d8e7c966917431e260840c">PWR_TypeDef::CR2</a></div><div class="ttdeci">__IO u32 CR2</div><div class="ttdoc">Control register 2 offset: 0x08</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00065">reg_pwr.h:65</a></div></div>
+<div class="ttc" id="astruct_p_w_r___type_def_html_ad2d0fb32c153753341a245a3c41dcf1b"><div class="ttname"><a href="struct_p_w_r___type_def.html#ad2d0fb32c153753341a245a3c41dcf1b">PWR_TypeDef::CR5</a></div><div class="ttdeci">__IO u32 CR5</div><div class="ttdoc">Control register 5 offset: 0x14</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00068">reg_pwr.h:68</a></div></div>
+<div class="ttc" id="astruct_p_w_r___type_def_html_aef20e6a6f11aaf09270309852c79ce4d"><div class="ttname"><a href="struct_p_w_r___type_def.html#aef20e6a6f11aaf09270309852c79ce4d">PWR_TypeDef::CSR</a></div><div class="ttdeci">__IO u32 CSR</div><div class="ttdoc">Control Status register offset: 0x04</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00062">reg_pwr.h:62</a></div></div>
+<div class="ttc" id="astruct_p_w_r___type_def_html_affb79a2338d598efa2eb6f41b35d4f4a"><div class="ttname"><a href="struct_p_w_r___type_def.html#affb79a2338d598efa2eb6f41b35d4f4a">PWR_TypeDef::SCR</a></div><div class="ttdeci">__IO u32 SCR</div><div class="ttdoc">clear status register offset: 0x20</div><div class="ttdef"><b>Definition:</b> <a href="reg__pwr_8h_source.html#l00071">reg_pwr.h:71</a></div></div>
+<div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">THIS FILE PROVIDES ALL THE TYPE FIRMWARE FUNCTIONS.</div></div>
+<div class="ttc" id="atypes_8h_html_a10e94b422ef0c20dcdec20d31a1f5049"><div class="ttname"><a href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a></div><div class="ttdeci">unsigned int u32</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00054">types.h:54</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

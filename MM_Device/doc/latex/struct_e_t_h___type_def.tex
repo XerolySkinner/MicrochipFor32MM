@@ -1,0 +1,1349 @@
+\hypertarget{struct_e_t_h___type_def}{}\doxysection{ETH\+\_\+\+Type\+Def结构体 参考}
+\label{struct_e_t_h___type_def}\index{ETH\_TypeDef@{ETH\_TypeDef}}
+
+
+ETH Register Structure Definition  
+
+
+
+
+{\ttfamily \#include $<$reg\+\_\+eth.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a96e5d776bee7dce78c58e038aca784a8}{MACCR}}
+\begin{DoxyCompactList}\small\item\em configuration register offset 0x0000 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a5474d2cc5c2d02b5cba6d21143e49b6c}{MACFFR}}
+\begin{DoxyCompactList}\small\item\em frame filter register offset 0x0004 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a8b261b1aacb4cc444af991155d52f3ad}{MACHTHR}}
+\begin{DoxyCompactList}\small\item\em Hash list high register offset 0x0008 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a0d9b6cfc6bdc2052e2a0e46e9a9c4051}{MACHTLR}}
+\begin{DoxyCompactList}\small\item\em Hash list low register offset 0x000C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_afb9ebcfbaa5414b1b76ec039c3781737}{MACMIIAR}}
+\begin{DoxyCompactList}\small\item\em MII address register offset 0x0010 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a362d87e403b6b4ccacb0ad32baf2d258}{MACMIIDR}}
+\begin{DoxyCompactList}\small\item\em MII data register offset 0x0014 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a0fdd8b04e337b48f58a601fb8d224a34}{MACFCR}}
+\begin{DoxyCompactList}\small\item\em flow control register offset 0x0018 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_ae67c71644e24fc4a37866acc3588bf06}{MACVLANTR}}
+\begin{DoxyCompactList}\small\item\em VLAN label register offset 0x001C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a73fdb0bacbac56f52a340a7c06ea9285}{RESERVEDX0020}} \mbox{[}2\mbox{]}
+\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a0ba0a3ae409b7c70c48c2a5b70a0d0b1}{MACRWUFFR}}
+\begin{DoxyCompactList}\small\item\em 0x0020 $\sim$ 0x0024 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a6569d1ea7aac4eb3a0ac2d4b38ab06cc}{MACPMTCSR}}
+\begin{DoxyCompactList}\small\item\em 0x0028 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a8fbc495c09f8f1fd874554513efe44df}{RESERVEDX0030}} \mbox{[}4\mbox{]}
+\begin{DoxyCompactList}\small\item\em 0x002C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_ae98cfa38b3fc5f13919c12b37a444a72}{MACA0\+HR}}
+\begin{DoxyCompactList}\small\item\em 0x0030 $\sim$ 0x003C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a9870414268e005e9cf97d9c3e52033a1}{MACA0\+LR}}
+\begin{DoxyCompactList}\small\item\em address 0 low register offset 0x0044 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_ac84addb9f2d64be3fc9f1cba898d8e24}{MACA1\+HR}}
+\begin{DoxyCompactList}\small\item\em address 1 high register offset 0x0048 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_aacffc871d6582f261b89a5ee9a4c5639}{MACA1\+LR}}
+\begin{DoxyCompactList}\small\item\em address 1 low register offset 0x004C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a9a5f2b72d5e3587de3821e4494436d42}{MACA2\+HR}}
+\begin{DoxyCompactList}\small\item\em address 2 high register offset 0x0050 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a982dacd52f4b7235098cb2879906ac04}{MACA2\+LR}}
+\begin{DoxyCompactList}\small\item\em address 2 low register offset 0x0054 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a2d74639c255563b4dc2dbfb24f74e5b3}{MACA3\+HR}}
+\begin{DoxyCompactList}\small\item\em address 3 high register offset 0x0058 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a59a6c7005bfe5c3f9bfbb269d407f95e}{MACA3\+LR}}
+\begin{DoxyCompactList}\small\item\em address 3 low register offset 0x005C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_ab02070026ad76f5d95b82f3b178f9ca2}{MACA4\+HR}}
+\begin{DoxyCompactList}\small\item\em address 4 high register offset 0x0060 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a0fc1cf5df04b69c7de9e6594b30eb377}{MACA4\+LR}}
+\begin{DoxyCompactList}\small\item\em address 4 low register offset 0x0064 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a7849ffae954e5484886b888aa3049a92}{MACA5\+HR}}
+\begin{DoxyCompactList}\small\item\em address 5 high register offset 0x0068 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_afe119a91ec251b90cbcacbdefafa5cbc}{MACA5\+LR}}
+\begin{DoxyCompactList}\small\item\em address 5 low register offset 0x006C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_abe167bee7dd0bd386d9ead10e466c9dd}{MACA6\+HR}}
+\begin{DoxyCompactList}\small\item\em address 6 high register offset 0x0070 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_af0047f1054ec5badab0756c5cfed18b2}{MACA6\+LR}}
+\begin{DoxyCompactList}\small\item\em address 6 low register offset 0x0074 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_adfefce0bb7468cf32df13566706d1472}{MACA7\+HR}}
+\begin{DoxyCompactList}\small\item\em address 7 high register offset 0x0078 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a70fc688d68e979165dd41803ac981409}{MACA7\+LR}}
+\begin{DoxyCompactList}\small\item\em address 7 low register offset 0x007C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a08712bdd4e29a519bfed4df85393b50b}{MACA8\+HR}}
+\begin{DoxyCompactList}\small\item\em address 8 high register offset 0x0080 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a69ac7727e3618ba5f4737db3879a8a4c}{MACA8\+LR}}
+\begin{DoxyCompactList}\small\item\em address 8 low register offset 0x0084 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a0d593ad946330d45bd614d343525bab5}{MACA9\+HR}}
+\begin{DoxyCompactList}\small\item\em address 9 high register offset 0x0088 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a82e894c3f4d8c18464bf119e0e2f5b0d}{MACA9\+LR}}
+\begin{DoxyCompactList}\small\item\em address 9 low register offset 0x008C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a2b1ec55bfeaddef26ffdc10e17269a10}{MACA10\+HR}}
+\begin{DoxyCompactList}\small\item\em address 10 high register offset 0x0090 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a737a5805f7c0ba725ab0f645e2db151f}{MACA10\+LR}}
+\begin{DoxyCompactList}\small\item\em address 10 low register offset 0x0094 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a3fadfecb3b38a42dfdfdf59d0d32e3f4}{MACA11\+HR}}
+\begin{DoxyCompactList}\small\item\em address 11 high register offset 0x0098 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_af1f88532c5d281522c4c772c2c023d4f}{MACA11\+LR}}
+\begin{DoxyCompactList}\small\item\em address 11 low register offset 0x009C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_aafd50bbc188dac9459c0d5282e41f3a3}{MACA12\+HR}}
+\begin{DoxyCompactList}\small\item\em address 12 high register offset 0x00\+A0 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a558124a8ad9fd6ed222655340970efa8}{MACA12\+LR}}
+\begin{DoxyCompactList}\small\item\em address 12 low register offset 0x00\+A4 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a7ab84ec60548a173c23d292b7caa0c5b}{MACA13\+HR}}
+\begin{DoxyCompactList}\small\item\em address 13 high register offset 0x00\+A8 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a5f7ac9ee79a61f864aa888b47e1e9ae9}{MACA13\+LR}}
+\begin{DoxyCompactList}\small\item\em address 13 low register offset 0x00\+AC \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a5e74347e5e22ece8bc2da584e65a940e}{MACA14\+HR}}
+\begin{DoxyCompactList}\small\item\em address 14 high register offset 0x00\+B0 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_ab68556ce92369ed1740bfab84b36e40e}{MACA14\+LR}}
+\begin{DoxyCompactList}\small\item\em address 14 low register offset 0x00\+B4 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a6e23e9a592e00621845573e1cf0a3a59}{MACA15\+HR}}
+\begin{DoxyCompactList}\small\item\em address 15 high register offset 0x00\+B8 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a845955a97ff53b5d0bf5ba1e9149f4e8}{MACA15\+LR}}
+\begin{DoxyCompactList}\small\item\em address 15 low register offset 0x00\+BC \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_aa85a88f839b7aadb66938eac9b0af8be}{MACANCR}}
+\begin{DoxyCompactList}\small\item\em Automatic negotiation control register offset 0x00\+C0 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a65c3188113623f0de64f2ed444792649}{MACANSR}}
+\begin{DoxyCompactList}\small\item\em Automatic negotiation of the status register offset 0x00\+C4 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a3d6d9d259c3d45529f7c53c56a0badd7}{MACANAR}}
+\begin{DoxyCompactList}\small\item\em Automatic negotiation of broadcast registers offset 0x00\+C8 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a0d19fd2f688a27e7a4854056e7520ac0}{MACANLPAR}}
+\begin{DoxyCompactList}\small\item\em Automatic negotiation of link partner capability register offset 0x00\+CC \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a118687dc6454863821b4d2024405b988}{MACANER}}
+\begin{DoxyCompactList}\small\item\em Automatic negotiation of extension registers offset 0x00\+D0 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a39f9e57c06c1654cbdcdd2f7a828b35f}{MACTBIER}}
+\begin{DoxyCompactList}\small\item\em Ten -\/ place interface extension register offset 0x00\+D4 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_aa8e5955114cada296455dfc3f7644d73}{MACMIISR}}
+\begin{DoxyCompactList}\small\item\em MII status register offset 0x00\+D8 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a7aad3ce3f71d30d434d4bcc51f46e0c4}{RESERVEDX00\+DC}} \mbox{[}9\mbox{]}
+\begin{DoxyCompactList}\small\item\em offset 0x00\+DC $\sim$ 0x00\+FC \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_afc613508f726810ea372cc25981b96a9}{MMCCR}}
+\begin{DoxyCompactList}\small\item\em MMC controls registers offset 0x0100 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a38a07e9a26c230aeae81a591f2df8fbe}{MMCRIR}}
+\begin{DoxyCompactList}\small\item\em The MMC receives the interrupt register offset 0x0104 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a3039874534479d45b92b372249f2ddce}{MMCTIR}}
+\begin{DoxyCompactList}\small\item\em The MMC sends the interrupt register offset 0x0108 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a633ad32c38bf542013dabd9ea843e307}{MMCRIMR}}
+\begin{DoxyCompactList}\small\item\em The MMC receives the interrupt mask register offset 0x010C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a1d081c785bd1a543c1886686c90f21a9}{MMCTIMR}}
+\begin{DoxyCompactList}\small\item\em MMC sends interrupt masking registers offset 0x0110 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a7b1a07592ab1dc9f9fcd96a1b9843d79}{RESERVEDX0114}} \mbox{[}14\mbox{]}
+\begin{DoxyCompactList}\small\item\em offset 0x0114 $\sim$ 0x0148 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_ac00ae4e4f55f67cf5ecc15070dfe8eaf}{MMCTGFSCCR}}
+\begin{DoxyCompactList}\small\item\em A good frame counter register that MMC sends after a single conflict offset 0x014C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_af4c178a73c3befca062ec33ad0186ea6}{MMCTGFMSCCR}}
+\begin{DoxyCompactList}\small\item\em A good frame counter register that MMC sends after multiple collisions offset 0x0150 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a8eef5eff3588f264a54b160150d34b62}{RESERVEDX0154}} \mbox{[}5\mbox{]}
+\begin{DoxyCompactList}\small\item\em offset 0x0154 $\sim$ 0x0164 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a9ddc29144e1613254bd770cdc76f986c}{MMCTGFCR}}
+\begin{DoxyCompactList}\small\item\em Good frame counter register sent by MMC offset 0x0168 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_ac33f4886ff57687a505c10dc67613849}{RESERVEDX016C}} \mbox{[}10\mbox{]}
+\begin{DoxyCompactList}\small\item\em offset 0x016C $\sim$ 0x0190 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_acc58bf22d1d4b8e7d72f80d04a2c0511}{MMCRFCECR}}
+\begin{DoxyCompactList}\small\item\em Ethernet MMC with CRC error counter register receives frame register offset 0x0194 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a235b827a445bceadd76e54da48ddf66c}{MMCRFAECR}}
+\begin{DoxyCompactList}\small\item\em Ethernet MMC receives frames with alignment error counter registers offset 0x0198 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_ae097fc0dff8494b8b7f917668d21c6eb}{RESERVEDX019C}} \mbox{[}10\mbox{]}
+\begin{DoxyCompactList}\small\item\em offset 0x019C $\sim$ 0x01\+C0 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a72bad95440ff4603919648472d41382f}{MMCRGUFCR}}
+\begin{DoxyCompactList}\small\item\em Good unicast frame counter register received by MMC offset 0x01\+C4 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a97a299a2a21759bdb0b537d701ce9ddc}{RESERVEDx01\+C8}} \mbox{[}910\mbox{]}
+\begin{DoxyCompactList}\small\item\em offset 0x01\+C8 $\sim$ 0x0\+FFC \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a12f47d29c74934885805955bbc14beba}{DMABMR}}
+\begin{DoxyCompactList}\small\item\em Bus mode register offset 0x1000 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_ab37670a413e4604a6e65d8d927e446d3}{DMATPDR}}
+\begin{DoxyCompactList}\small\item\em DMA sends the polling request register offset 0x1004 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a1437351493f9a604d4d06e4791640b65}{DMARPDR}}
+\begin{DoxyCompactList}\small\item\em DMA receives the polling request register offset 0x1008 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a435db8c449190f3aa19ca159a8915cef}{DMARDLAR}}
+\begin{DoxyCompactList}\small\item\em DMA receives a list of descriptor addresses offset 0x100C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a872e38038b6b1a4757a0cd79bcb681e8}{DMATDLAR}}
+\begin{DoxyCompactList}\small\item\em DMA sends the descriptor list address offset 0x1010 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a8f73963fc88e3e1fdabb1e82429d8e1e}{DMASR}}
+\begin{DoxyCompactList}\small\item\em DMA status register offset 0x1014 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a9f254b65093acab58d2d33883b10a341}{DMAOMR}}
+\begin{DoxyCompactList}\small\item\em DMA working mode register offset 0x1018 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a7a420346e0c8f807ff1631d57f5f2689}{DMAIER}}
+\begin{DoxyCompactList}\small\item\em DMA interrupt enablement register offset 0x101C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_acd25cc6e32427e7dd744324609483bd2}{DMAMFBOCR}}
+\begin{DoxyCompactList}\small\item\em DMA lost frames and cache overflow counter registers offset 0x1020 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a510381bc99e47eae71df973564df7f30}{DMARSWTR}}
+\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a876e7f221ec6ed7cc1a73b0ec80c79f5}{RESERVEDX1028}} \mbox{[}8\mbox{]}
+\begin{DoxyCompactList}\small\item\em 0x1024 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a5b6d64df2d54a548175258c599bb5d0b}{DMACHTDR}}
+\begin{DoxyCompactList}\small\item\em 0x1028 $\sim$ 0x1044 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_ac10093e1605da8a66b6e3916f86af787}{DMACHRDR}}
+\begin{DoxyCompactList}\small\item\em 0x1048 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a1139284d0f04b5d47da10046fc094f79}{DMACHTBAR}}
+\begin{DoxyCompactList}\small\item\em 0x104C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_e_t_h___type_def_a49b07fb2552b4c48ec9793956eb5dfb5}{DMACHRBAR}}
+\begin{DoxyCompactList}\small\item\em DMA currently receives the cache address register offset 0x1054 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+ETH Register Structure Definition 
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00047}{47}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{struct_e_t_h___type_def_a12f47d29c74934885805955bbc14beba}\label{struct_e_t_h___type_def_a12f47d29c74934885805955bbc14beba}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!DMABMR@{DMABMR}}
+\index{DMABMR@{DMABMR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DMABMR}{DMABMR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+DMABMR}
+
+
+
+Bus mode register offset 0x1000 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00116}{116}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a49b07fb2552b4c48ec9793956eb5dfb5}\label{struct_e_t_h___type_def_a49b07fb2552b4c48ec9793956eb5dfb5}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!DMACHRBAR@{DMACHRBAR}}
+\index{DMACHRBAR@{DMACHRBAR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DMACHRBAR}{DMACHRBAR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+DMACHRBAR}
+
+
+
+DMA currently receives the cache address register offset 0x1054 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00130}{130}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_ac10093e1605da8a66b6e3916f86af787}\label{struct_e_t_h___type_def_ac10093e1605da8a66b6e3916f86af787}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!DMACHRDR@{DMACHRDR}}
+\index{DMACHRDR@{DMACHRDR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DMACHRDR}{DMACHRDR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+DMACHRDR}
+
+
+
+0x1048 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00128}{128}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a1139284d0f04b5d47da10046fc094f79}\label{struct_e_t_h___type_def_a1139284d0f04b5d47da10046fc094f79}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!DMACHTBAR@{DMACHTBAR}}
+\index{DMACHTBAR@{DMACHTBAR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DMACHTBAR}{DMACHTBAR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+DMACHTBAR}
+
+
+
+0x104C 
+
+DMA is currently sending the cache address register offset 0x1050 
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00129}{129}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a5b6d64df2d54a548175258c599bb5d0b}\label{struct_e_t_h___type_def_a5b6d64df2d54a548175258c599bb5d0b}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!DMACHTDR@{DMACHTDR}}
+\index{DMACHTDR@{DMACHTDR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DMACHTDR}{DMACHTDR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+DMACHTDR}
+
+
+
+0x1028 $\sim$ 0x1044 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00127}{127}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a7a420346e0c8f807ff1631d57f5f2689}\label{struct_e_t_h___type_def_a7a420346e0c8f807ff1631d57f5f2689}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!DMAIER@{DMAIER}}
+\index{DMAIER@{DMAIER}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DMAIER}{DMAIER}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+DMAIER}
+
+
+
+DMA interrupt enablement register offset 0x101C 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00123}{123}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_acd25cc6e32427e7dd744324609483bd2}\label{struct_e_t_h___type_def_acd25cc6e32427e7dd744324609483bd2}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!DMAMFBOCR@{DMAMFBOCR}}
+\index{DMAMFBOCR@{DMAMFBOCR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DMAMFBOCR}{DMAMFBOCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+DMAMFBOCR}
+
+
+
+DMA lost frames and cache overflow counter registers offset 0x1020 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00124}{124}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a9f254b65093acab58d2d33883b10a341}\label{struct_e_t_h___type_def_a9f254b65093acab58d2d33883b10a341}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!DMAOMR@{DMAOMR}}
+\index{DMAOMR@{DMAOMR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DMAOMR}{DMAOMR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+DMAOMR}
+
+
+
+DMA working mode register offset 0x1018 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00122}{122}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a435db8c449190f3aa19ca159a8915cef}\label{struct_e_t_h___type_def_a435db8c449190f3aa19ca159a8915cef}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!DMARDLAR@{DMARDLAR}}
+\index{DMARDLAR@{DMARDLAR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DMARDLAR}{DMARDLAR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+DMARDLAR}
+
+
+
+DMA receives a list of descriptor addresses offset 0x100C 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00119}{119}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a1437351493f9a604d4d06e4791640b65}\label{struct_e_t_h___type_def_a1437351493f9a604d4d06e4791640b65}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!DMARPDR@{DMARPDR}}
+\index{DMARPDR@{DMARPDR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DMARPDR}{DMARPDR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+DMARPDR}
+
+
+
+DMA receives the polling request register offset 0x1008 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00118}{118}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a510381bc99e47eae71df973564df7f30}\label{struct_e_t_h___type_def_a510381bc99e47eae71df973564df7f30}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!DMARSWTR@{DMARSWTR}}
+\index{DMARSWTR@{DMARSWTR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DMARSWTR}{DMARSWTR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+DMARSWTR}
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00125}{125}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a8f73963fc88e3e1fdabb1e82429d8e1e}\label{struct_e_t_h___type_def_a8f73963fc88e3e1fdabb1e82429d8e1e}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!DMASR@{DMASR}}
+\index{DMASR@{DMASR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DMASR}{DMASR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+DMASR}
+
+
+
+DMA status register offset 0x1014 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00121}{121}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a872e38038b6b1a4757a0cd79bcb681e8}\label{struct_e_t_h___type_def_a872e38038b6b1a4757a0cd79bcb681e8}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!DMATDLAR@{DMATDLAR}}
+\index{DMATDLAR@{DMATDLAR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DMATDLAR}{DMATDLAR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+DMATDLAR}
+
+
+
+DMA sends the descriptor list address offset 0x1010 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00120}{120}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_ab37670a413e4604a6e65d8d927e446d3}\label{struct_e_t_h___type_def_ab37670a413e4604a6e65d8d927e446d3}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!DMATPDR@{DMATPDR}}
+\index{DMATPDR@{DMATPDR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DMATPDR}{DMATPDR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+DMATPDR}
+
+
+
+DMA sends the polling request register offset 0x1004 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00117}{117}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_ae98cfa38b3fc5f13919c12b37a444a72}\label{struct_e_t_h___type_def_ae98cfa38b3fc5f13919c12b37a444a72}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA0HR@{MACA0HR}}
+\index{MACA0HR@{MACA0HR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA0HR}{MACA0HR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA0\+HR}
+
+
+
+0x0030 $\sim$ 0x003C 
+
+address 0 high register offset 0x0040 
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00060}{60}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a9870414268e005e9cf97d9c3e52033a1}\label{struct_e_t_h___type_def_a9870414268e005e9cf97d9c3e52033a1}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA0LR@{MACA0LR}}
+\index{MACA0LR@{MACA0LR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA0LR}{MACA0LR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA0\+LR}
+
+
+
+address 0 low register offset 0x0044 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00061}{61}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a2b1ec55bfeaddef26ffdc10e17269a10}\label{struct_e_t_h___type_def_a2b1ec55bfeaddef26ffdc10e17269a10}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA10HR@{MACA10HR}}
+\index{MACA10HR@{MACA10HR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA10HR}{MACA10HR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA10\+HR}
+
+
+
+address 10 high register offset 0x0090 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00080}{80}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a737a5805f7c0ba725ab0f645e2db151f}\label{struct_e_t_h___type_def_a737a5805f7c0ba725ab0f645e2db151f}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA10LR@{MACA10LR}}
+\index{MACA10LR@{MACA10LR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA10LR}{MACA10LR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA10\+LR}
+
+
+
+address 10 low register offset 0x0094 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00081}{81}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a3fadfecb3b38a42dfdfdf59d0d32e3f4}\label{struct_e_t_h___type_def_a3fadfecb3b38a42dfdfdf59d0d32e3f4}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA11HR@{MACA11HR}}
+\index{MACA11HR@{MACA11HR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA11HR}{MACA11HR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA11\+HR}
+
+
+
+address 11 high register offset 0x0098 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00082}{82}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_af1f88532c5d281522c4c772c2c023d4f}\label{struct_e_t_h___type_def_af1f88532c5d281522c4c772c2c023d4f}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA11LR@{MACA11LR}}
+\index{MACA11LR@{MACA11LR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA11LR}{MACA11LR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA11\+LR}
+
+
+
+address 11 low register offset 0x009C 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00083}{83}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_aafd50bbc188dac9459c0d5282e41f3a3}\label{struct_e_t_h___type_def_aafd50bbc188dac9459c0d5282e41f3a3}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA12HR@{MACA12HR}}
+\index{MACA12HR@{MACA12HR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA12HR}{MACA12HR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA12\+HR}
+
+
+
+address 12 high register offset 0x00\+A0 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00084}{84}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a558124a8ad9fd6ed222655340970efa8}\label{struct_e_t_h___type_def_a558124a8ad9fd6ed222655340970efa8}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA12LR@{MACA12LR}}
+\index{MACA12LR@{MACA12LR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA12LR}{MACA12LR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA12\+LR}
+
+
+
+address 12 low register offset 0x00\+A4 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00085}{85}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a7ab84ec60548a173c23d292b7caa0c5b}\label{struct_e_t_h___type_def_a7ab84ec60548a173c23d292b7caa0c5b}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA13HR@{MACA13HR}}
+\index{MACA13HR@{MACA13HR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA13HR}{MACA13HR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA13\+HR}
+
+
+
+address 13 high register offset 0x00\+A8 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00086}{86}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a5f7ac9ee79a61f864aa888b47e1e9ae9}\label{struct_e_t_h___type_def_a5f7ac9ee79a61f864aa888b47e1e9ae9}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA13LR@{MACA13LR}}
+\index{MACA13LR@{MACA13LR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA13LR}{MACA13LR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA13\+LR}
+
+
+
+address 13 low register offset 0x00\+AC 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00087}{87}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a5e74347e5e22ece8bc2da584e65a940e}\label{struct_e_t_h___type_def_a5e74347e5e22ece8bc2da584e65a940e}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA14HR@{MACA14HR}}
+\index{MACA14HR@{MACA14HR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA14HR}{MACA14HR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA14\+HR}
+
+
+
+address 14 high register offset 0x00\+B0 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00088}{88}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_ab68556ce92369ed1740bfab84b36e40e}\label{struct_e_t_h___type_def_ab68556ce92369ed1740bfab84b36e40e}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA14LR@{MACA14LR}}
+\index{MACA14LR@{MACA14LR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA14LR}{MACA14LR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA14\+LR}
+
+
+
+address 14 low register offset 0x00\+B4 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00089}{89}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a6e23e9a592e00621845573e1cf0a3a59}\label{struct_e_t_h___type_def_a6e23e9a592e00621845573e1cf0a3a59}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA15HR@{MACA15HR}}
+\index{MACA15HR@{MACA15HR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA15HR}{MACA15HR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA15\+HR}
+
+
+
+address 15 high register offset 0x00\+B8 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00090}{90}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a845955a97ff53b5d0bf5ba1e9149f4e8}\label{struct_e_t_h___type_def_a845955a97ff53b5d0bf5ba1e9149f4e8}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA15LR@{MACA15LR}}
+\index{MACA15LR@{MACA15LR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA15LR}{MACA15LR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA15\+LR}
+
+
+
+address 15 low register offset 0x00\+BC 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00091}{91}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_ac84addb9f2d64be3fc9f1cba898d8e24}\label{struct_e_t_h___type_def_ac84addb9f2d64be3fc9f1cba898d8e24}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA1HR@{MACA1HR}}
+\index{MACA1HR@{MACA1HR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA1HR}{MACA1HR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA1\+HR}
+
+
+
+address 1 high register offset 0x0048 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00062}{62}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_aacffc871d6582f261b89a5ee9a4c5639}\label{struct_e_t_h___type_def_aacffc871d6582f261b89a5ee9a4c5639}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA1LR@{MACA1LR}}
+\index{MACA1LR@{MACA1LR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA1LR}{MACA1LR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA1\+LR}
+
+
+
+address 1 low register offset 0x004C 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00063}{63}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a9a5f2b72d5e3587de3821e4494436d42}\label{struct_e_t_h___type_def_a9a5f2b72d5e3587de3821e4494436d42}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA2HR@{MACA2HR}}
+\index{MACA2HR@{MACA2HR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA2HR}{MACA2HR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA2\+HR}
+
+
+
+address 2 high register offset 0x0050 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00064}{64}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a982dacd52f4b7235098cb2879906ac04}\label{struct_e_t_h___type_def_a982dacd52f4b7235098cb2879906ac04}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA2LR@{MACA2LR}}
+\index{MACA2LR@{MACA2LR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA2LR}{MACA2LR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA2\+LR}
+
+
+
+address 2 low register offset 0x0054 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00065}{65}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a2d74639c255563b4dc2dbfb24f74e5b3}\label{struct_e_t_h___type_def_a2d74639c255563b4dc2dbfb24f74e5b3}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA3HR@{MACA3HR}}
+\index{MACA3HR@{MACA3HR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA3HR}{MACA3HR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA3\+HR}
+
+
+
+address 3 high register offset 0x0058 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00066}{66}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a59a6c7005bfe5c3f9bfbb269d407f95e}\label{struct_e_t_h___type_def_a59a6c7005bfe5c3f9bfbb269d407f95e}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA3LR@{MACA3LR}}
+\index{MACA3LR@{MACA3LR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA3LR}{MACA3LR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA3\+LR}
+
+
+
+address 3 low register offset 0x005C 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00067}{67}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_ab02070026ad76f5d95b82f3b178f9ca2}\label{struct_e_t_h___type_def_ab02070026ad76f5d95b82f3b178f9ca2}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA4HR@{MACA4HR}}
+\index{MACA4HR@{MACA4HR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA4HR}{MACA4HR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA4\+HR}
+
+
+
+address 4 high register offset 0x0060 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00068}{68}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a0fc1cf5df04b69c7de9e6594b30eb377}\label{struct_e_t_h___type_def_a0fc1cf5df04b69c7de9e6594b30eb377}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA4LR@{MACA4LR}}
+\index{MACA4LR@{MACA4LR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA4LR}{MACA4LR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA4\+LR}
+
+
+
+address 4 low register offset 0x0064 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00069}{69}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a7849ffae954e5484886b888aa3049a92}\label{struct_e_t_h___type_def_a7849ffae954e5484886b888aa3049a92}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA5HR@{MACA5HR}}
+\index{MACA5HR@{MACA5HR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA5HR}{MACA5HR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA5\+HR}
+
+
+
+address 5 high register offset 0x0068 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00070}{70}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_afe119a91ec251b90cbcacbdefafa5cbc}\label{struct_e_t_h___type_def_afe119a91ec251b90cbcacbdefafa5cbc}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA5LR@{MACA5LR}}
+\index{MACA5LR@{MACA5LR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA5LR}{MACA5LR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA5\+LR}
+
+
+
+address 5 low register offset 0x006C 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00071}{71}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_abe167bee7dd0bd386d9ead10e466c9dd}\label{struct_e_t_h___type_def_abe167bee7dd0bd386d9ead10e466c9dd}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA6HR@{MACA6HR}}
+\index{MACA6HR@{MACA6HR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA6HR}{MACA6HR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA6\+HR}
+
+
+
+address 6 high register offset 0x0070 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00072}{72}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_af0047f1054ec5badab0756c5cfed18b2}\label{struct_e_t_h___type_def_af0047f1054ec5badab0756c5cfed18b2}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA6LR@{MACA6LR}}
+\index{MACA6LR@{MACA6LR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA6LR}{MACA6LR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA6\+LR}
+
+
+
+address 6 low register offset 0x0074 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00073}{73}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_adfefce0bb7468cf32df13566706d1472}\label{struct_e_t_h___type_def_adfefce0bb7468cf32df13566706d1472}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA7HR@{MACA7HR}}
+\index{MACA7HR@{MACA7HR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA7HR}{MACA7HR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA7\+HR}
+
+
+
+address 7 high register offset 0x0078 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00074}{74}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a70fc688d68e979165dd41803ac981409}\label{struct_e_t_h___type_def_a70fc688d68e979165dd41803ac981409}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA7LR@{MACA7LR}}
+\index{MACA7LR@{MACA7LR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA7LR}{MACA7LR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA7\+LR}
+
+
+
+address 7 low register offset 0x007C 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00075}{75}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a08712bdd4e29a519bfed4df85393b50b}\label{struct_e_t_h___type_def_a08712bdd4e29a519bfed4df85393b50b}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA8HR@{MACA8HR}}
+\index{MACA8HR@{MACA8HR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA8HR}{MACA8HR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA8\+HR}
+
+
+
+address 8 high register offset 0x0080 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00076}{76}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a69ac7727e3618ba5f4737db3879a8a4c}\label{struct_e_t_h___type_def_a69ac7727e3618ba5f4737db3879a8a4c}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA8LR@{MACA8LR}}
+\index{MACA8LR@{MACA8LR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA8LR}{MACA8LR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA8\+LR}
+
+
+
+address 8 low register offset 0x0084 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00077}{77}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a0d593ad946330d45bd614d343525bab5}\label{struct_e_t_h___type_def_a0d593ad946330d45bd614d343525bab5}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA9HR@{MACA9HR}}
+\index{MACA9HR@{MACA9HR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA9HR}{MACA9HR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA9\+HR}
+
+
+
+address 9 high register offset 0x0088 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00078}{78}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a82e894c3f4d8c18464bf119e0e2f5b0d}\label{struct_e_t_h___type_def_a82e894c3f4d8c18464bf119e0e2f5b0d}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACA9LR@{MACA9LR}}
+\index{MACA9LR@{MACA9LR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACA9LR}{MACA9LR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACA9\+LR}
+
+
+
+address 9 low register offset 0x008C 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00079}{79}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a3d6d9d259c3d45529f7c53c56a0badd7}\label{struct_e_t_h___type_def_a3d6d9d259c3d45529f7c53c56a0badd7}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACANAR@{MACANAR}}
+\index{MACANAR@{MACANAR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACANAR}{MACANAR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACANAR}
+
+
+
+Automatic negotiation of broadcast registers offset 0x00\+C8 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00094}{94}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_aa85a88f839b7aadb66938eac9b0af8be}\label{struct_e_t_h___type_def_aa85a88f839b7aadb66938eac9b0af8be}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACANCR@{MACANCR}}
+\index{MACANCR@{MACANCR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACANCR}{MACANCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACANCR}
+
+
+
+Automatic negotiation control register offset 0x00\+C0 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00092}{92}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a118687dc6454863821b4d2024405b988}\label{struct_e_t_h___type_def_a118687dc6454863821b4d2024405b988}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACANER@{MACANER}}
+\index{MACANER@{MACANER}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACANER}{MACANER}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACANER}
+
+
+
+Automatic negotiation of extension registers offset 0x00\+D0 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00096}{96}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a0d19fd2f688a27e7a4854056e7520ac0}\label{struct_e_t_h___type_def_a0d19fd2f688a27e7a4854056e7520ac0}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACANLPAR@{MACANLPAR}}
+\index{MACANLPAR@{MACANLPAR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACANLPAR}{MACANLPAR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACANLPAR}
+
+
+
+Automatic negotiation of link partner capability register offset 0x00\+CC 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00095}{95}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a65c3188113623f0de64f2ed444792649}\label{struct_e_t_h___type_def_a65c3188113623f0de64f2ed444792649}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACANSR@{MACANSR}}
+\index{MACANSR@{MACANSR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACANSR}{MACANSR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACANSR}
+
+
+
+Automatic negotiation of the status register offset 0x00\+C4 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00093}{93}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a96e5d776bee7dce78c58e038aca784a8}\label{struct_e_t_h___type_def_a96e5d776bee7dce78c58e038aca784a8}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACCR@{MACCR}}
+\index{MACCR@{MACCR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACCR}{MACCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACCR}
+
+
+
+configuration register offset 0x0000 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00048}{48}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a0fdd8b04e337b48f58a601fb8d224a34}\label{struct_e_t_h___type_def_a0fdd8b04e337b48f58a601fb8d224a34}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACFCR@{MACFCR}}
+\index{MACFCR@{MACFCR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACFCR}{MACFCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACFCR}
+
+
+
+flow control register offset 0x0018 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00054}{54}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a5474d2cc5c2d02b5cba6d21143e49b6c}\label{struct_e_t_h___type_def_a5474d2cc5c2d02b5cba6d21143e49b6c}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACFFR@{MACFFR}}
+\index{MACFFR@{MACFFR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACFFR}{MACFFR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACFFR}
+
+
+
+frame filter register offset 0x0004 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00049}{49}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a8b261b1aacb4cc444af991155d52f3ad}\label{struct_e_t_h___type_def_a8b261b1aacb4cc444af991155d52f3ad}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACHTHR@{MACHTHR}}
+\index{MACHTHR@{MACHTHR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACHTHR}{MACHTHR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACHTHR}
+
+
+
+Hash list high register offset 0x0008 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00050}{50}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a0d9b6cfc6bdc2052e2a0e46e9a9c4051}\label{struct_e_t_h___type_def_a0d9b6cfc6bdc2052e2a0e46e9a9c4051}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACHTLR@{MACHTLR}}
+\index{MACHTLR@{MACHTLR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACHTLR}{MACHTLR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACHTLR}
+
+
+
+Hash list low register offset 0x000C 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00051}{51}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_afb9ebcfbaa5414b1b76ec039c3781737}\label{struct_e_t_h___type_def_afb9ebcfbaa5414b1b76ec039c3781737}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACMIIAR@{MACMIIAR}}
+\index{MACMIIAR@{MACMIIAR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACMIIAR}{MACMIIAR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACMIIAR}
+
+
+
+MII address register offset 0x0010 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00052}{52}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a362d87e403b6b4ccacb0ad32baf2d258}\label{struct_e_t_h___type_def_a362d87e403b6b4ccacb0ad32baf2d258}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACMIIDR@{MACMIIDR}}
+\index{MACMIIDR@{MACMIIDR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACMIIDR}{MACMIIDR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACMIIDR}
+
+
+
+MII data register offset 0x0014 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00053}{53}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_aa8e5955114cada296455dfc3f7644d73}\label{struct_e_t_h___type_def_aa8e5955114cada296455dfc3f7644d73}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACMIISR@{MACMIISR}}
+\index{MACMIISR@{MACMIISR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACMIISR}{MACMIISR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACMIISR}
+
+
+
+MII status register offset 0x00\+D8 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00098}{98}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a6569d1ea7aac4eb3a0ac2d4b38ab06cc}\label{struct_e_t_h___type_def_a6569d1ea7aac4eb3a0ac2d4b38ab06cc}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACPMTCSR@{MACPMTCSR}}
+\index{MACPMTCSR@{MACPMTCSR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACPMTCSR}{MACPMTCSR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACPMTCSR}
+
+
+
+0x0028 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00058}{58}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a0ba0a3ae409b7c70c48c2a5b70a0d0b1}\label{struct_e_t_h___type_def_a0ba0a3ae409b7c70c48c2a5b70a0d0b1}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACRWUFFR@{MACRWUFFR}}
+\index{MACRWUFFR@{MACRWUFFR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACRWUFFR}{MACRWUFFR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACRWUFFR}
+
+
+
+0x0020 $\sim$ 0x0024 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00057}{57}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a39f9e57c06c1654cbdcdd2f7a828b35f}\label{struct_e_t_h___type_def_a39f9e57c06c1654cbdcdd2f7a828b35f}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACTBIER@{MACTBIER}}
+\index{MACTBIER@{MACTBIER}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACTBIER}{MACTBIER}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACTBIER}
+
+
+
+Ten -\/ place interface extension register offset 0x00\+D4 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00097}{97}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_ae67c71644e24fc4a37866acc3588bf06}\label{struct_e_t_h___type_def_ae67c71644e24fc4a37866acc3588bf06}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MACVLANTR@{MACVLANTR}}
+\index{MACVLANTR@{MACVLANTR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MACVLANTR}{MACVLANTR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MACVLANTR}
+
+
+
+VLAN label register offset 0x001C 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00055}{55}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_afc613508f726810ea372cc25981b96a9}\label{struct_e_t_h___type_def_afc613508f726810ea372cc25981b96a9}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MMCCR@{MMCCR}}
+\index{MMCCR@{MMCCR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMCCR}{MMCCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MMCCR}
+
+
+
+MMC controls registers offset 0x0100 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00100}{100}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a235b827a445bceadd76e54da48ddf66c}\label{struct_e_t_h___type_def_a235b827a445bceadd76e54da48ddf66c}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MMCRFAECR@{MMCRFAECR}}
+\index{MMCRFAECR@{MMCRFAECR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMCRFAECR}{MMCRFAECR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MMCRFAECR}
+
+
+
+Ethernet MMC receives frames with alignment error counter registers offset 0x0198 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00112}{112}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_acc58bf22d1d4b8e7d72f80d04a2c0511}\label{struct_e_t_h___type_def_acc58bf22d1d4b8e7d72f80d04a2c0511}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MMCRFCECR@{MMCRFCECR}}
+\index{MMCRFCECR@{MMCRFCECR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMCRFCECR}{MMCRFCECR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MMCRFCECR}
+
+
+
+Ethernet MMC with CRC error counter register receives frame register offset 0x0194 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00111}{111}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a72bad95440ff4603919648472d41382f}\label{struct_e_t_h___type_def_a72bad95440ff4603919648472d41382f}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MMCRGUFCR@{MMCRGUFCR}}
+\index{MMCRGUFCR@{MMCRGUFCR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMCRGUFCR}{MMCRGUFCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MMCRGUFCR}
+
+
+
+Good unicast frame counter register received by MMC offset 0x01\+C4 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00114}{114}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a633ad32c38bf542013dabd9ea843e307}\label{struct_e_t_h___type_def_a633ad32c38bf542013dabd9ea843e307}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MMCRIMR@{MMCRIMR}}
+\index{MMCRIMR@{MMCRIMR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMCRIMR}{MMCRIMR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MMCRIMR}
+
+
+
+The MMC receives the interrupt mask register offset 0x010C 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00103}{103}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a38a07e9a26c230aeae81a591f2df8fbe}\label{struct_e_t_h___type_def_a38a07e9a26c230aeae81a591f2df8fbe}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MMCRIR@{MMCRIR}}
+\index{MMCRIR@{MMCRIR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMCRIR}{MMCRIR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MMCRIR}
+
+
+
+The MMC receives the interrupt register offset 0x0104 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00101}{101}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a9ddc29144e1613254bd770cdc76f986c}\label{struct_e_t_h___type_def_a9ddc29144e1613254bd770cdc76f986c}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MMCTGFCR@{MMCTGFCR}}
+\index{MMCTGFCR@{MMCTGFCR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMCTGFCR}{MMCTGFCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MMCTGFCR}
+
+
+
+Good frame counter register sent by MMC offset 0x0168 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00109}{109}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_af4c178a73c3befca062ec33ad0186ea6}\label{struct_e_t_h___type_def_af4c178a73c3befca062ec33ad0186ea6}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MMCTGFMSCCR@{MMCTGFMSCCR}}
+\index{MMCTGFMSCCR@{MMCTGFMSCCR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMCTGFMSCCR}{MMCTGFMSCCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MMCTGFMSCCR}
+
+
+
+A good frame counter register that MMC sends after multiple collisions offset 0x0150 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00107}{107}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_ac00ae4e4f55f67cf5ecc15070dfe8eaf}\label{struct_e_t_h___type_def_ac00ae4e4f55f67cf5ecc15070dfe8eaf}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MMCTGFSCCR@{MMCTGFSCCR}}
+\index{MMCTGFSCCR@{MMCTGFSCCR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMCTGFSCCR}{MMCTGFSCCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MMCTGFSCCR}
+
+
+
+A good frame counter register that MMC sends after a single conflict offset 0x014C 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00106}{106}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a1d081c785bd1a543c1886686c90f21a9}\label{struct_e_t_h___type_def_a1d081c785bd1a543c1886686c90f21a9}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MMCTIMR@{MMCTIMR}}
+\index{MMCTIMR@{MMCTIMR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMCTIMR}{MMCTIMR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MMCTIMR}
+
+
+
+MMC sends interrupt masking registers offset 0x0110 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00104}{104}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a3039874534479d45b92b372249f2ddce}\label{struct_e_t_h___type_def_a3039874534479d45b92b372249f2ddce}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!MMCTIR@{MMCTIR}}
+\index{MMCTIR@{MMCTIR}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMCTIR}{MMCTIR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+MMCTIR}
+
+
+
+The MMC sends the interrupt register offset 0x0108 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00102}{102}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a73fdb0bacbac56f52a340a7c06ea9285}\label{struct_e_t_h___type_def_a73fdb0bacbac56f52a340a7c06ea9285}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!RESERVEDX0020@{RESERVEDX0020}}
+\index{RESERVEDX0020@{RESERVEDX0020}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RESERVEDX0020}{RESERVEDX0020}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+RESERVEDX0020\mbox{[}2\mbox{]}}
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00056}{56}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a8fbc495c09f8f1fd874554513efe44df}\label{struct_e_t_h___type_def_a8fbc495c09f8f1fd874554513efe44df}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!RESERVEDX0030@{RESERVEDX0030}}
+\index{RESERVEDX0030@{RESERVEDX0030}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RESERVEDX0030}{RESERVEDX0030}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+RESERVEDX0030\mbox{[}4\mbox{]}}
+
+
+
+0x002C 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00059}{59}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a7aad3ce3f71d30d434d4bcc51f46e0c4}\label{struct_e_t_h___type_def_a7aad3ce3f71d30d434d4bcc51f46e0c4}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!RESERVEDX00DC@{RESERVEDX00DC}}
+\index{RESERVEDX00DC@{RESERVEDX00DC}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RESERVEDX00DC}{RESERVEDX00DC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+RESERVEDX00\+DC\mbox{[}9\mbox{]}}
+
+
+
+offset 0x00\+DC $\sim$ 0x00\+FC 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00099}{99}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a7b1a07592ab1dc9f9fcd96a1b9843d79}\label{struct_e_t_h___type_def_a7b1a07592ab1dc9f9fcd96a1b9843d79}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!RESERVEDX0114@{RESERVEDX0114}}
+\index{RESERVEDX0114@{RESERVEDX0114}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RESERVEDX0114}{RESERVEDX0114}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+RESERVEDX0114\mbox{[}14\mbox{]}}
+
+
+
+offset 0x0114 $\sim$ 0x0148 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00105}{105}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a8eef5eff3588f264a54b160150d34b62}\label{struct_e_t_h___type_def_a8eef5eff3588f264a54b160150d34b62}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!RESERVEDX0154@{RESERVEDX0154}}
+\index{RESERVEDX0154@{RESERVEDX0154}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RESERVEDX0154}{RESERVEDX0154}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+RESERVEDX0154\mbox{[}5\mbox{]}}
+
+
+
+offset 0x0154 $\sim$ 0x0164 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00108}{108}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_ac33f4886ff57687a505c10dc67613849}\label{struct_e_t_h___type_def_ac33f4886ff57687a505c10dc67613849}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!RESERVEDX016C@{RESERVEDX016C}}
+\index{RESERVEDX016C@{RESERVEDX016C}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RESERVEDX016C}{RESERVEDX016C}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+RESERVEDX016C\mbox{[}10\mbox{]}}
+
+
+
+offset 0x016C $\sim$ 0x0190 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00110}{110}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_ae097fc0dff8494b8b7f917668d21c6eb}\label{struct_e_t_h___type_def_ae097fc0dff8494b8b7f917668d21c6eb}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!RESERVEDX019C@{RESERVEDX019C}}
+\index{RESERVEDX019C@{RESERVEDX019C}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RESERVEDX019C}{RESERVEDX019C}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+RESERVEDX019C\mbox{[}10\mbox{]}}
+
+
+
+offset 0x019C $\sim$ 0x01\+C0 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00113}{113}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a97a299a2a21759bdb0b537d701ce9ddc}\label{struct_e_t_h___type_def_a97a299a2a21759bdb0b537d701ce9ddc}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!RESERVEDx01C8@{RESERVEDx01C8}}
+\index{RESERVEDx01C8@{RESERVEDx01C8}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RESERVEDx01C8}{RESERVEDx01C8}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+RESERVEDx01\+C8\mbox{[}910\mbox{]}}
+
+
+
+offset 0x01\+C8 $\sim$ 0x0\+FFC 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00115}{115}} 行定义.
+
+\mbox{\Hypertarget{struct_e_t_h___type_def_a876e7f221ec6ed7cc1a73b0ec80c79f5}\label{struct_e_t_h___type_def_a876e7f221ec6ed7cc1a73b0ec80c79f5}} 
+\index{ETH\_TypeDef@{ETH\_TypeDef}!RESERVEDX1028@{RESERVEDX1028}}
+\index{RESERVEDX1028@{RESERVEDX1028}!ETH\_TypeDef@{ETH\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RESERVEDX1028}{RESERVEDX1028}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} ETH\+\_\+\+Type\+Def\+::\+RESERVEDX1028\mbox{[}8\mbox{]}}
+
+
+
+0x1024 
+
+
+
+在文件 \mbox{\hyperlink{reg__eth_8h_source}{reg\+\_\+eth.\+h}} 第 \mbox{\hyperlink{reg__eth_8h_source_l00126}{126}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/\mbox{\hyperlink{reg__eth_8h}{reg\+\_\+eth.\+h}}\end{DoxyCompactItemize}

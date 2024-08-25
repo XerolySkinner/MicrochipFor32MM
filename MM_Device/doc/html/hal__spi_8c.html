@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>template: C:/Users/XerolySkinner/Desktop/MM_Device/MM32F327x/HAL_Lib/Src/hal_spi.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">template
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8a23370bd962f2be3cb202251f8a0865.html">MM32F327x</a></li><li class="navelem"><a class="el" href="dir_3b1bed74bcb45e4245a73e66928ea90d.html">HAL_Lib</a></li><li class="navelem"><a class="el" href="dir_7c9ac39f302c264f6f2d20643460873b.html">Src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">hal_spi.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>THIS FILE PROVIDES ALL THE SPI FIRMWARE FUNCTIONS.  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;math.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="hal__spi_8h_source.html">hal_spi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hal__rcc_8h_source.html">hal_rcc.h</a>&quot;</code><br />
+</div>
+<p><a href="hal__spi_8c_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:aacf5765fdd5e272f27b8678dda60fe84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal__spi_8c.html#aacf5765fdd5e272f27b8678dda60fe84">_HAL_SPI_C_</a></td></tr>
+<tr class="separator:aacf5765fdd5e272f27b8678dda60fe84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ga9be82ef17067af5f9b6fe2c0759bd140"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#ga9be82ef17067af5f9b6fe2c0759bd140">SPI_DeInit</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi)</td></tr>
+<tr class="memdesc:ga9be82ef17067af5f9b6fe2c0759bd140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitializes the spi peripheral registers to their default reset values.  <a href="group___s_p_i___exported___functions.html#ga9be82ef17067af5f9b6fe2c0759bd140">更多...</a><br /></td></tr>
+<tr class="separator:ga9be82ef17067af5f9b6fe2c0759bd140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e75e11f3492279dac8b27691019b941"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#ga0e75e11f3492279dac8b27691019b941">SPI_Init</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="struct_s_p_i___init_type_def.html">SPI_InitTypeDef</a> *init_struct)</td></tr>
+<tr class="memdesc:ga0e75e11f3492279dac8b27691019b941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the spi peripheral according to the specified parameters in the init_struct .  <a href="group___s_p_i___exported___functions.html#ga0e75e11f3492279dac8b27691019b941">更多...</a><br /></td></tr>
+<tr class="separator:ga0e75e11f3492279dac8b27691019b941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b3460985df43e97a0cc3a4ee3190ca1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#ga6b3460985df43e97a0cc3a4ee3190ca1">SPI_StructInit</a> (<a class="el" href="struct_s_p_i___init_type_def.html">SPI_InitTypeDef</a> *init_struct)</td></tr>
+<tr class="memdesc:ga6b3460985df43e97a0cc3a4ee3190ca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills each init_struct member with its default value.  <a href="group___s_p_i___exported___functions.html#ga6b3460985df43e97a0cc3a4ee3190ca1">更多...</a><br /></td></tr>
+<tr class="separator:ga6b3460985df43e97a0cc3a4ee3190ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga47aa73c577d17d8e3c9e6885025483b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#ga47aa73c577d17d8e3c9e6885025483b8">SPI_Cmd</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="memdesc:ga47aa73c577d17d8e3c9e6885025483b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the specified SPI peripheral.  <a href="group___s_p_i___exported___functions.html#ga47aa73c577d17d8e3c9e6885025483b8">更多...</a><br /></td></tr>
+<tr class="separator:ga47aa73c577d17d8e3c9e6885025483b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97b8bda80d3514d14719e16d4c6051f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#ga97b8bda80d3514d14719e16d4c6051f8">SPI_ITConfig</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> interrupt, <a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="memdesc:ga97b8bda80d3514d14719e16d4c6051f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the specified SPI interrupts.  <a href="group___s_p_i___exported___functions.html#ga97b8bda80d3514d14719e16d4c6051f8">更多...</a><br /></td></tr>
+<tr class="separator:ga97b8bda80d3514d14719e16d4c6051f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7a116cb656e01210a3a6e33ecba1b39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#gad7a116cb656e01210a3a6e33ecba1b39">SPI_DMACmd</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="memdesc:gad7a116cb656e01210a3a6e33ecba1b39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the SPI DMA interface.  <a href="group___s_p_i___exported___functions.html#gad7a116cb656e01210a3a6e33ecba1b39">更多...</a><br /></td></tr>
+<tr class="separator:gad7a116cb656e01210a3a6e33ecba1b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7da7314157aa58f717c1153cf3ee6bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#gae7da7314157aa58f717c1153cf3ee6bf">SPI_FifoTrigger</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="group___s_p_i___exported___types.html#ga4d295b8d484ea3d570e04e9dea7281a0">SPI_TLF_TypeDef</a> fifo_trigger_value, <a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="memdesc:gae7da7314157aa58f717c1153cf3ee6bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">configure tn Fifo trigger level bit.  <a href="group___s_p_i___exported___functions.html#gae7da7314157aa58f717c1153cf3ee6bf">更多...</a><br /></td></tr>
+<tr class="separator:gae7da7314157aa58f717c1153cf3ee6bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga14e64a94b3b2c45f62f9624864a27d25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#ga14e64a94b3b2c45f62f9624864a27d25">SPI_SendData</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> data)</td></tr>
+<tr class="memdesc:ga14e64a94b3b2c45f62f9624864a27d25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmits a Data through the spi peripheral.  <a href="group___s_p_i___exported___functions.html#ga14e64a94b3b2c45f62f9624864a27d25">更多...</a><br /></td></tr>
+<tr class="separator:ga14e64a94b3b2c45f62f9624864a27d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabadb78e9bc0490e2db24fa593c0a6a52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#gabadb78e9bc0490e2db24fa593c0a6a52">SPI_ReceiveData</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi)</td></tr>
+<tr class="memdesc:gabadb78e9bc0490e2db24fa593c0a6a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the most recent received data by the spi peripheral.  <a href="group___s_p_i___exported___functions.html#gabadb78e9bc0490e2db24fa593c0a6a52">更多...</a><br /></td></tr>
+<tr class="separator:gabadb78e9bc0490e2db24fa593c0a6a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9290348ae577c26f956d227290355397"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#ga9290348ae577c26f956d227290355397">SPI_CSInternalSelected</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="memdesc:ga9290348ae577c26f956d227290355397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slave chip csn single by selected  <a href="group___s_p_i___exported___functions.html#ga9290348ae577c26f956d227290355397">更多...</a><br /></td></tr>
+<tr class="separator:ga9290348ae577c26f956d227290355397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ff538de08a3bec7fea37e5224311c99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#ga3ff538de08a3bec7fea37e5224311c99">SPI_NSSInternalSoftwareConfig</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="group___s_p_i___exported___types.html#gab933301dd92b8210b299aeac7744b41e">SPI_NSS_TypeDef</a> nss)</td></tr>
+<tr class="memdesc:ga3ff538de08a3bec7fea37e5224311c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the NSS pin control mode for the selected SPI.  <a href="group___s_p_i___exported___functions.html#ga3ff538de08a3bec7fea37e5224311c99">更多...</a><br /></td></tr>
+<tr class="separator:ga3ff538de08a3bec7fea37e5224311c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2126b440a24574e9bdc9e680187e1f82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#ga2126b440a24574e9bdc9e680187e1f82">SPI_DataSizeConfig</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_size)</td></tr>
+<tr class="memdesc:ga2126b440a24574e9bdc9e680187e1f82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the data size for the selected SPI.  <a href="group___s_p_i___exported___functions.html#ga2126b440a24574e9bdc9e680187e1f82">更多...</a><br /></td></tr>
+<tr class="separator:ga2126b440a24574e9bdc9e680187e1f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0601080e7eab0c71bb1744e269249268"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#ga0601080e7eab0c71bb1744e269249268">SPI_DataSizeTypeConfig</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="group___s_p_i___exported___types.html#gaa972b0f6f8a36bba9ad030fe993e6d11">SPI_DataSize_TypeDef</a> SPI_DataSize)</td></tr>
+<tr class="separator:ga0601080e7eab0c71bb1744e269249268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0451ff3327029f8e060729d5b0d61cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#gac0451ff3327029f8e060729d5b0d61cd">SPI_BiDirectionalLineConfig</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="group___s_p_i___exported___types.html#gac78f6a965850892d9f27db6c2eaa3798">SPI_Direction_TypeDef</a> direction)</td></tr>
+<tr class="memdesc:gac0451ff3327029f8e060729d5b0d61cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the data transfer direction in bi-directional mode for the specified SPI.  <a href="group___s_p_i___exported___functions.html#gac0451ff3327029f8e060729d5b0d61cd">更多...</a><br /></td></tr>
+<tr class="separator:gac0451ff3327029f8e060729d5b0d61cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga626bd032401d802fded68faeebeed19c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a89136caac2e14c55151f527ac02daaff">FlagStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#ga626bd032401d802fded68faeebeed19c">SPI_GetFlagStatus</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="group___s_p_i___exported___types.html#ga4f662a71fef63be8d3a0c7aa23199f71">SPI_FLAG_TypeDef</a> flag)</td></tr>
+<tr class="memdesc:ga626bd032401d802fded68faeebeed19c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified SPI flag is set or not.  <a href="group___s_p_i___exported___functions.html#ga626bd032401d802fded68faeebeed19c">更多...</a><br /></td></tr>
+<tr class="separator:ga626bd032401d802fded68faeebeed19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07f8aca4af44f2ca7162bffe4a309beb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a39d4411201fb731279ad5a409b2b80d7">ITStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#ga07f8aca4af44f2ca7162bffe4a309beb">SPI_GetITStatus</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="group___s_p_i___exported___types.html#gab3f320b40f3ccc9ca49baf7e21064c79">SPI_IT_TypeDef</a> interrupt)</td></tr>
+<tr class="memdesc:ga07f8aca4af44f2ca7162bffe4a309beb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified SPI interrupt has occurred or not.  <a href="group___s_p_i___exported___functions.html#ga07f8aca4af44f2ca7162bffe4a309beb">更多...</a><br /></td></tr>
+<tr class="separator:ga07f8aca4af44f2ca7162bffe4a309beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd1c05b6b56b3805712748bee2b4c190"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#gadd1c05b6b56b3805712748bee2b4c190">SPI_ClearITPendingBit</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="group___s_p_i___exported___types.html#gab3f320b40f3ccc9ca49baf7e21064c79">SPI_IT_TypeDef</a> interrupt)</td></tr>
+<tr class="memdesc:gadd1c05b6b56b3805712748bee2b4c190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the spi interrupt pending bit.  <a href="group___s_p_i___exported___functions.html#gadd1c05b6b56b3805712748bee2b4c190">更多...</a><br /></td></tr>
+<tr class="separator:gadd1c05b6b56b3805712748bee2b4c190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62be4362af90330815eee28030dcad02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#ga62be4362af90330815eee28030dcad02">SPI_RxBytes</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> number)</td></tr>
+<tr class="memdesc:ga62be4362af90330815eee28030dcad02"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI Hole a count Received bytes in next receive process.  <a href="group___s_p_i___exported___functions.html#ga62be4362af90330815eee28030dcad02">更多...</a><br /></td></tr>
+<tr class="separator:ga62be4362af90330815eee28030dcad02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga55fa09f8cfeb8d73ce4e0652a611556b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#ga55fa09f8cfeb8d73ce4e0652a611556b">SPI_SlaveAdjust</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="group___s_p_i___exported___types.html#ga610e4a1e831ff4149c714998eba68fc8">SPI_SlaveAdjust_TypeDef</a> adjust_value)</td></tr>
+<tr class="memdesc:ga55fa09f8cfeb8d73ce4e0652a611556b"><td class="mdescLeft">&#160;</td><td class="mdescRight">slave mode tx data transmit phase adjust set.  <a href="group___s_p_i___exported___functions.html#ga55fa09f8cfeb8d73ce4e0652a611556b">更多...</a><br /></td></tr>
+<tr class="separator:ga55fa09f8cfeb8d73ce4e0652a611556b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d9915c16271da583039c7a6c3c8bd4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#ga3d9915c16271da583039c7a6c3c8bd4b">exSPI_ITCmd</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="memdesc:ga3d9915c16271da583039c7a6c3c8bd4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables all SPI interrupts.  <a href="group___s_p_i___exported___functions.html#ga3d9915c16271da583039c7a6c3c8bd4b">更多...</a><br /></td></tr>
+<tr class="separator:ga3d9915c16271da583039c7a6c3c8bd4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga13a17696bf005a63d7af5c3e30a5355d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#ga13a17696bf005a63d7af5c3e30a5355d">exSPI_ITConfig</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="group___s_p_i___exported___types.html#gab3f320b40f3ccc9ca49baf7e21064c79">SPI_IT_TypeDef</a> interrupt, <a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="memdesc:ga13a17696bf005a63d7af5c3e30a5355d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the specified SPI interrupts.  <a href="group___s_p_i___exported___functions.html#ga13a17696bf005a63d7af5c3e30a5355d">更多...</a><br /></td></tr>
+<tr class="separator:ga13a17696bf005a63d7af5c3e30a5355d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9cd72fbbe7ca802fa85cbfbd391c359d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#ga9cd72fbbe7ca802fa85cbfbd391c359d">exSPI_DMACmd</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="memdesc:ga9cd72fbbe7ca802fa85cbfbd391c359d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the SPI DMA request.  <a href="group___s_p_i___exported___functions.html#ga9cd72fbbe7ca802fa85cbfbd391c359d">更多...</a><br /></td></tr>
+<tr class="separator:ga9cd72fbbe7ca802fa85cbfbd391c359d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad28bd275f9cdd1f0e425e95aef654fc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#gad28bd275f9cdd1f0e425e95aef654fc2">exSPI_CSInternalSelected</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="memdesc:gad28bd275f9cdd1f0e425e95aef654fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set or reset Slave chip csn signal output  <a href="group___s_p_i___exported___functions.html#gad28bd275f9cdd1f0e425e95aef654fc2">更多...</a><br /></td></tr>
+<tr class="separator:gad28bd275f9cdd1f0e425e95aef654fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7878fe8a984eed9a6fbd58e262664a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#gaf7878fe8a984eed9a6fbd58e262664a3">exSPI_DataEdgeAdjust</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="group___s_p_i___exported___types.html#gaf4c1d143caf5b6990e3675b5bd4422c3">SPI_DataEdgeAdjust_TypeDef</a> adjust_value)</td></tr>
+<tr class="memdesc:gaf7878fe8a984eed9a6fbd58e262664a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">tx data and rx data phase adjust.  <a href="group___s_p_i___exported___functions.html#gaf7878fe8a984eed9a6fbd58e262664a3">更多...</a><br /></td></tr>
+<tr class="separator:gaf7878fe8a984eed9a6fbd58e262664a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18c931f51bd3dcfeaec8cf73c3a241e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#ga18c931f51bd3dcfeaec8cf73c3a241e2">I2S_Cmd</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</td></tr>
+<tr class="memdesc:ga18c931f51bd3dcfeaec8cf73c3a241e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set or reset i2s  <a href="group___s_p_i___exported___functions.html#ga18c931f51bd3dcfeaec8cf73c3a241e2">更多...</a><br /></td></tr>
+<tr class="separator:ga18c931f51bd3dcfeaec8cf73c3a241e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d5e943831a24c29523a55e231eaaaf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___exported___functions.html#ga9d5e943831a24c29523a55e231eaaaf4">I2S_Init</a> (<a class="el" href="struct_s_p_i___type_def.html">SPI_TypeDef</a> *spi, <a class="el" href="struct_i2_s___init_type_def.html">I2S_InitTypeDef</a> *I2S_InitStruct)</td></tr>
+<tr class="memdesc:ga9d5e943831a24c29523a55e231eaaaf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">i2s Config  <a href="group___s_p_i___exported___functions.html#ga9d5e943831a24c29523a55e231eaaaf4">更多...</a><br /></td></tr>
+<tr class="separator:ga9d5e943831a24c29523a55e231eaaaf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >THIS FILE PROVIDES ALL THE SPI FIRMWARE FUNCTIONS. </p>
+<dl class="section author"><dt>作者</dt><dd>AE TEAM </dd></dl>
+<dl class="section attention"><dt>注意</dt><dd></dd></dl>
+<p>THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.</p>
+<h2><center> COPYRIGHT MINDMOTION </center></h2>
+
+<p class="definition">在文件 <a class="el" href="hal__spi_8c_source.html">hal_spi.c</a> 中定义.</p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="aacf5765fdd5e272f27b8678dda60fe84" name="aacf5765fdd5e272f27b8678dda60fe84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacf5765fdd5e272f27b8678dda60fe84">&#9670;&#160;</a></span>_HAL_SPI_C_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _HAL_SPI_C_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="hal__spi_8c_source.html">hal_spi.c</a> 第 <a class="el" href="hal__spi_8c_source.html#l00019">19</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

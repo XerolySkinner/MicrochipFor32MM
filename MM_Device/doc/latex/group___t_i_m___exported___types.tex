@@ -1,0 +1,1898 @@
+\hypertarget{group___t_i_m___exported___types}{}\doxysection{TIM\+\_\+\+Exported\+\_\+\+Types}
+\label{group___t_i_m___exported___types}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_t_i_m___time_base_init_type_def}{TIM\+\_\+\+Time\+Base\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em TIM Time Base Init structure definition \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_t_i_m___o_c_init_type_def}{TIM\+\_\+\+OCInit\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em TIM Output Compare Init structure definition \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_t_i_m___i_c_init_type_def}{TIM\+\_\+\+ICInit\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em TIM Input Capture Init structure definition \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_t_i_m___b_d_t_r_init_type_def}{TIM\+\_\+\+BDTRInit\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em BDTR structure definition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_gaa607f029313fe4fa5dae8cddd5142355}{TIMCHx\+\_\+\+Typedef}} \{ \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_ggaa607f029313fe4fa5dae8cddd5142355a9da1f05ce9bda8e1fa42ec1ef5363d9e}{TIM\+\_\+\+Channel\+\_\+1}} = 0x0000
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaa607f029313fe4fa5dae8cddd5142355a00a0245155f583ce0caa2b4377f1d480}{TIM\+\_\+\+Channel\+\_\+2}} = 0x0004
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaa607f029313fe4fa5dae8cddd5142355aef84a7162af4cdda335c45f76438ae1c}{TIM\+\_\+\+Channel\+\_\+3}} = 0x0008
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaa607f029313fe4fa5dae8cddd5142355a045f55f781aa78f4877cff2b71b945f0}{TIM\+\_\+\+Channel\+\_\+4}} = 0x000C
+, \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_ggaa607f029313fe4fa5dae8cddd5142355a9e8195139d45eeb4a7c6d49eb1f23966}{TIM\+\_\+\+Channel\+\_\+5}} = 0x0010
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Channel \label{group___t_i_m___exported___types_TIM_Channel}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Channel}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga54935e710a238b52a0e01057e32ff7a3}{TIMCOUNTMODE\+\_\+\+Typedef}} \{ \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga54935e710a238b52a0e01057e32ff7a3a9fd93609ab64781d740bc8019854ad98}{TIM\+\_\+\+Counter\+Mode\+\_\+\+Up}} = 0x0000
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga54935e710a238b52a0e01057e32ff7a3aa2963e6b68a3a5e1bdab26a16e7e05b0}{TIM\+\_\+\+Counter\+Mode\+\_\+\+Down}} = TIM\+\_\+\+CR1\+\_\+\+DIR
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga54935e710a238b52a0e01057e32ff7a3a29e44efc2f618f4c6e56e294a8415779}{TIM\+\_\+\+Counter\+Mode\+\_\+\+Center\+Aligned1}} = TIM\+\_\+\+CR1\+\_\+\+CMS\+\_\+\+CENTERALIGNED1
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga54935e710a238b52a0e01057e32ff7a3a2da145e8ea2d8bf350039e93e90be69e}{TIM\+\_\+\+Counter\+Mode\+\_\+\+Center\+Aligned2}} = TIM\+\_\+\+CR1\+\_\+\+CMS\+\_\+\+CENTERALIGNED2
+, \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga54935e710a238b52a0e01057e32ff7a3adba677665e563f7de06b27dd38c043d5}{TIM\+\_\+\+Counter\+Mode\+\_\+\+Center\+Aligned3}} = TIM\+\_\+\+CR1\+\_\+\+CMS\+\_\+\+CENTERALIGNED3
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Counter\+\_\+\+Mode \label{group___t_i_m___exported___types_TIM_Counter_Mode}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Counter_Mode}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga4755a59c16f8950f0db4baa92381d4f4}{TIMOCMODE\+\_\+\+Typedef}} \{ \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4ac97b8660e146a84b4d405f480b0c294b}{TIM\+\_\+\+OCMode\+\_\+\+Timing}} = 0x0000
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4a90e9291c3827abd1d77f5e80e51902c0}{TIM\+\_\+\+OCMode\+\_\+\+Active}} = 0x0010
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4af5e4739b37671356c4ba7d356e879da8}{TIM\+\_\+\+OCMode\+\_\+\+Inactive}} = 0x0020
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4af6615a005d9353a4a6f4c6299439a493}{TIM\+\_\+\+OCMode\+\_\+\+Toggle}} = 0x0030
+, \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4ad9aa66c72420d53b65253654ab514c79}{TIM\+\_\+\+OCMode\+\_\+\+PWM1}} = 0x0060
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4ac65c2eeea478b8e7415185a4f1409769}{TIM\+\_\+\+OCMode\+\_\+\+PWM2}} = 0x0070
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4ab9c4ada8494c7d79e9585ceb6734b68a}{TIM\+\_\+\+Forced\+Action\+\_\+\+Active}} = 0x0050
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4ad91a198943c2b75e615422eddcdda5e5}{TIM\+\_\+\+Forced\+Action\+\_\+\+In\+Active}} = 0x0040
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Output\+\_\+\+Compare\+\_\+and\+\_\+\+PWM\+\_\+modes\+\_\+and\+\_\+\+Forced\+\_\+\+Action \label{group___t_i_m___exported___types_TIM_Output_Compare_and_PWM_modes_and_Forced_Action}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Output_Compare_and_PWM_modes_and_Forced_Action}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga13041713dc8197b8530550863ab6f92d}{TIMCKD\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_gga13041713dc8197b8530550863ab6f92da941d2d755f00b858634d1e9900aaf6ef}{TIM\+\_\+\+CKD\+\_\+\+DIV1}} = TIM\+\_\+\+CR1\+\_\+\+CKD\+\_\+\+DIV1
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga13041713dc8197b8530550863ab6f92da978783b233c586fb90f1ecb423b43cdd}{TIM\+\_\+\+CKD\+\_\+\+DIV2}} = TIM\+\_\+\+CR1\+\_\+\+CKD\+\_\+\+DIV2
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga13041713dc8197b8530550863ab6f92da0c7735b84f8a13873d71087339650822}{TIM\+\_\+\+CKD\+\_\+\+DIV4}} = TIM\+\_\+\+CR1\+\_\+\+CKD\+\_\+\+DIV4
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Clock\+\_\+\+Division\+\_\+\+CKD \label{group___t_i_m___exported___types_TIM_Clock_Division_CKD}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Clock_Division_CKD}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga2f87dae31a46572d48d9dd3ad084142b}{TIMTS\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142ba8810e7c07e203811cada449bee51b8b7}{TIM\+\_\+\+TS\+\_\+\+ITR0}} = TIM\+\_\+\+SMCR\+\_\+\+TS\+\_\+\+ITR0
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142babf107b3690552d1a7f177d4338c3728d}{TIM\+\_\+\+TS\+\_\+\+ITR1}} = TIM\+\_\+\+SMCR\+\_\+\+TS\+\_\+\+ITR1
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142baf02ca0ba8fb9e52437d38bdd208c95cc}{TIM\+\_\+\+TS\+\_\+\+ITR2}} = TIM\+\_\+\+SMCR\+\_\+\+TS\+\_\+\+ITR2
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142ba32a6c775886bc02f6f9f2e5ff7e4ac65}{TIM\+\_\+\+TS\+\_\+\+ITR3}} = TIM\+\_\+\+SMCR\+\_\+\+TS\+\_\+\+ITR3
+, \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142ba7eec7eee2fedce46169194179f9381b8}{TIM\+\_\+\+TS\+\_\+\+TI1\+F\+\_\+\+ED}} = TIM\+\_\+\+SMCR\+\_\+\+TS\+\_\+\+TI1\+F\+\_\+\+ED
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142ba2b047674935ac92791f0941dcbd952c9}{TIM\+\_\+\+TS\+\_\+\+TI1\+FP1}} = TIM\+\_\+\+SMCR\+\_\+\+TS\+\_\+\+TI1\+FP1
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142ba2656f987928cda23a1d99d04413c4cdc}{TIM\+\_\+\+TS\+\_\+\+TI2\+FP2}} = TIM\+\_\+\+SMCR\+\_\+\+TS\+\_\+\+TI2\+FP2
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142bae7ae7fa6581126ecce7d18dea1c4eaf6}{TIM\+\_\+\+TS\+\_\+\+ETRF}} = TIM\+\_\+\+SMCR\+\_\+\+TS\+\_\+\+ETRF
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Internal\+\_\+\+Trigger\+\_\+\+Selection \label{group___t_i_m___exported___types_TIM_Internal_Trigger_Selection}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Internal_Trigger_Selection}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga8dff96eeb1f9a896abd193f981d2aecb}{TIMMMS\+\_\+\+Typedef}} \{ \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecba4b7d0d2cf6a3a3ab95e09bce80430df8}{TIM\+\_\+\+TRIGSource\+\_\+\+Reset}} = TIM\+\_\+\+CR2\+\_\+\+MMS\+\_\+\+RESET
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecbad3cef8b721b783ee0fb1faa932adb1f5}{TIM\+\_\+\+TRIGSource\+\_\+\+Enable}} = TIM\+\_\+\+CR2\+\_\+\+MMS\+\_\+\+ENABLE
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecbaef2534993bfae91c2c7cf7bb07666b34}{TIM\+\_\+\+TRIGSource\+\_\+\+Update}} = TIM\+\_\+\+CR2\+\_\+\+MMS\+\_\+\+UPDATE
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecba4af48a82c029037c3a596a9efe64bc95}{TIM\+\_\+\+TRIGSource\+\_\+\+OC1}} = TIM\+\_\+\+CR2\+\_\+\+MMS\+\_\+\+OC1
+, \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecba84c3ef0fc2c3e54f18f0713c8d57fd1b}{TIM\+\_\+\+TRIGSource\+\_\+\+OC1\+Ref}} = TIM\+\_\+\+CR2\+\_\+\+MMS\+\_\+\+OC1\+REF
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecba8a6335e0499d562c0fb24580a8af0102}{TIM\+\_\+\+TRIGSource\+\_\+\+OC2\+Ref}} = TIM\+\_\+\+CR2\+\_\+\+MMS\+\_\+\+OC2\+REF
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecba9fa764a62f642e9160cc90abd119d196}{TIM\+\_\+\+TRIGSource\+\_\+\+OC3\+Ref}} = TIM\+\_\+\+CR2\+\_\+\+MMS\+\_\+\+OC3\+REF
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecbad3aa97543a7c5767318f3c9e5a33fb00}{TIM\+\_\+\+TRIGSource\+\_\+\+OC4\+Ref}} = TIM\+\_\+\+CR2\+\_\+\+MMS\+\_\+\+OC4\+REF
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Trigger\+\_\+\+Output\+\_\+\+Source \label{group___t_i_m___exported___types_TIM_Trigger_Output_Source}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Trigger_Output_Source}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga0640487dae111a6d3bc212636291fdd8}{TIMSMSMODE\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_gga0640487dae111a6d3bc212636291fdd8a3bad9b6ada120ee4436e8b53d0c96bb9}{TIM\+\_\+\+Slave\+Mode\+\_\+\+Reset}} = TIM\+\_\+\+SMCR\+\_\+\+SMS\+\_\+\+RESET
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga0640487dae111a6d3bc212636291fdd8aa887ec9025393a8c1a4ccd1a0b1041d0}{TIM\+\_\+\+Slave\+Mode\+\_\+\+Gated}} = TIM\+\_\+\+SMCR\+\_\+\+SMS\+\_\+\+GATED
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga0640487dae111a6d3bc212636291fdd8a4dba83fa7dfb7fc6108aaf6323717a3b}{TIM\+\_\+\+Slave\+Mode\+\_\+\+Trigger}} = TIM\+\_\+\+SMCR\+\_\+\+SMS\+\_\+\+TRIGGER
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga0640487dae111a6d3bc212636291fdd8a704d3b2b5b5cc584480dfd6585cc2ce1}{TIM\+\_\+\+Slave\+Mode\+\_\+\+External1}} = TIM\+\_\+\+SMCR\+\_\+\+SMS\+\_\+\+EXTERNAL1
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Slave\+\_\+\+Mode \label{group___t_i_m___exported___types_TIM_Slave_Mode}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Slave_Mode}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga5bb2170be69c57642c8ed8140c1ed82c}{TIMEGR\+\_\+\+Typedef}} \{ \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82cad0a719a2a2be6f4fe51d6e848c324448}{TIM\+\_\+\+Event\+Source\+\_\+\+Update}} = TIM\+\_\+\+EGR\+\_\+\+UG
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82caeffaff5f72e44f3adcc1dbe6509110d9}{TIM\+\_\+\+Event\+Source\+\_\+\+CC1}} = TIM\+\_\+\+EGR\+\_\+\+CC1G
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82caa24f909a054f99f51db510291c4dd7d4}{TIM\+\_\+\+Event\+Source\+\_\+\+CC2}} = TIM\+\_\+\+EGR\+\_\+\+CC2G
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82ca62d0847f2f7a11356001f291ddd60df5}{TIM\+\_\+\+Event\+Source\+\_\+\+CC3}} = TIM\+\_\+\+EGR\+\_\+\+CC3G
+, \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82cab00b77db0e8cb17317f3c3c898dc296c}{TIM\+\_\+\+Event\+Source\+\_\+\+CC4}} = TIM\+\_\+\+EGR\+\_\+\+CC4G
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82ca7f8e998f83940f4d0160fbe1f95acca3}{TIM\+\_\+\+Event\+Source\+\_\+\+COM}} = TIM\+\_\+\+EGR\+\_\+\+COMG
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82cad52c6cd02c1fca1d17c8f12324b0d7e7}{TIM\+\_\+\+Event\+Source\+\_\+\+Trigger}} = TIM\+\_\+\+EGR\+\_\+\+TG
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82ca6d9ab1cd7a30406a8b01f5f81782e527}{TIM\+\_\+\+Event\+Source\+\_\+\+Break}} = TIM\+\_\+\+EGR\+\_\+\+BG
+, \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82ca472431f888fb3f1a8b6d29c9a9a2586b}{TIM\+\_\+\+Event\+Source\+\_\+\+CC5}} = (s32)0x00010000
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Event\+\_\+\+Source \label{group___t_i_m___exported___types_TIM_Event_Source}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Event_Source}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga2562a2355f11e412da6b2e624729866c}{TIMEXTTRGPSC\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_gga2562a2355f11e412da6b2e624729866cadc30c0ab13593d4174072c4dba60ec1b}{TIM\+\_\+\+Ext\+TRGPSC\+\_\+\+OFF}} = TIM\+\_\+\+SMCR\+\_\+\+ETPS\+\_\+\+OFF
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga2562a2355f11e412da6b2e624729866ca97978d8744895b5ba16eb44b19482b08}{TIM\+\_\+\+Ext\+TRGPSC\+\_\+\+DIV2}} = TIM\+\_\+\+SMCR\+\_\+\+ETPS\+\_\+\+DIV2
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga2562a2355f11e412da6b2e624729866cad596390dcc5277c2f98b4a7ba218f342}{TIM\+\_\+\+Ext\+TRGPSC\+\_\+\+DIV4}} = TIM\+\_\+\+SMCR\+\_\+\+ETPS\+\_\+\+DIV4
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga2562a2355f11e412da6b2e624729866ca79ea73800fecb9610800605604eab1f0}{TIM\+\_\+\+Ext\+TRGPSC\+\_\+\+DIV8}} = TIM\+\_\+\+SMCR\+\_\+\+ETPS\+\_\+\+DIV8
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+External\+\_\+\+Trigger\+\_\+\+Prescaler \label{group___t_i_m___exported___types_TIM_External_Trigger_Prescaler}%
+\Hypertarget{group___t_i_m___exported___types_TIM_External_Trigger_Prescaler}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_gaa29afd336772b6a7c8fe405d5ebadd2c}{TIM\+\_\+\+TIEXTCLKSRC\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_ggaa29afd336772b6a7c8fe405d5ebadd2ca74bf6df0dffea684afb1050c603775df}{TIM\+\_\+\+TIx\+External\+CLK1\+Source\+\_\+\+TI1}} = TIM\+\_\+\+SMCR\+\_\+\+TS\+\_\+\+TI1\+FP1
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaa29afd336772b6a7c8fe405d5ebadd2cab10dc3a0e8b9add3bff400bb1503d532}{TIM\+\_\+\+TIx\+External\+CLK1\+Source\+\_\+\+TI2}} = TIM\+\_\+\+SMCR\+\_\+\+TS\+\_\+\+TI2\+FP2
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaa29afd336772b6a7c8fe405d5ebadd2ca2d7e3dfbe57b67b792adb23e205eef60}{TIM\+\_\+\+TIx\+External\+CLK1\+Source\+\_\+\+TI1\+ED}} = TIM\+\_\+\+SMCR\+\_\+\+TS\+\_\+\+TI1\+F\+\_\+\+ED
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+TIx\+\_\+\+External\+\_\+\+Clock\+\_\+\+Source \label{group___t_i_m___exported___types_TIM_TIx_External_Clock_Source}%
+\Hypertarget{group___t_i_m___exported___types_TIM_TIx_External_Clock_Source}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga7d7035f698d5d66ae70d7e896c4c1535}{TIMLOCKLEVEL\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_gga7d7035f698d5d66ae70d7e896c4c1535a188b4dcbc19d51ee771ef74be60c60f5}{TIM\+\_\+\+LOCKLevel\+\_\+\+OFF}} = TIM\+\_\+\+BDTR\+\_\+\+LOCK\+\_\+\+OFF
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga7d7035f698d5d66ae70d7e896c4c1535ac867e7e174009e94a20032f0d0679dd8}{TIM\+\_\+\+LOCKLevel\+\_\+1}} = TIM\+\_\+\+BDTR\+\_\+\+LOCK\+\_\+1
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga7d7035f698d5d66ae70d7e896c4c1535a449c3ae09c1f6967469d2e75648f19b9}{TIM\+\_\+\+LOCKLevel\+\_\+2}} = TIM\+\_\+\+BDTR\+\_\+\+LOCK\+\_\+2
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga7d7035f698d5d66ae70d7e896c4c1535ad4c5883a74b69e9a0b51fcf12ef3be9a}{TIM\+\_\+\+LOCKLevel\+\_\+3}} = TIM\+\_\+\+BDTR\+\_\+\+LOCK\+\_\+3
+ \}
+\begin{DoxyCompactList}\small\item\em Lock\+\_\+level \label{group___t_i_m___exported___types_Lock_level}%
+\Hypertarget{group___t_i_m___exported___types_Lock_level}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga415b201b38faa58cb2df8f3698c6c2f6}{TIMOPMODE\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_gga415b201b38faa58cb2df8f3698c6c2f6a07869acbd11b9bc5133fa06820ce4a7b}{TIM\+\_\+\+OPMode\+\_\+\+Repetitive}} = 0
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga415b201b38faa58cb2df8f3698c6c2f6a840d8aba07d53fdd1649ed9c7d87b11e}{TIM\+\_\+\+OPMode\+\_\+\+Single}} = TIM\+\_\+\+CR1\+\_\+\+OPM
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+One\+\_\+\+Pulse\+\_\+\+Mode \label{group___t_i_m___exported___types_TIM_One_Pulse_Mode}%
+\Hypertarget{group___t_i_m___exported___types_TIM_One_Pulse_Mode}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_gab669f90ec2d29c2c09e4a8f3d02b8d86}{TIMCCx\+P\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_ggab669f90ec2d29c2c09e4a8f3d02b8d86aff47f44716b3f321bd2a18bbd8d8c16d}{TIM\+\_\+\+OCPolarity\+\_\+\+High}}
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggab669f90ec2d29c2c09e4a8f3d02b8d86a986958a378bc13eca036651a54b6477f}{TIM\+\_\+\+OCPolarity\+\_\+\+Low}} = TIM\+\_\+\+CCER\+\_\+\+CC1P
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Output\+\_\+\+Compare\+\_\+\+Polarity \label{group___t_i_m___exported___types_TIM_Output_Compare_Polarity}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Output_Compare_Polarity}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_gae525feec01466cba19beb832f79fb902}{TIMCCx\+NP\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_ggae525feec01466cba19beb832f79fb902a52a23d2c381028239794fbfb9028e473}{TIM\+\_\+\+OCNPolarity\+\_\+\+High}}
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggae525feec01466cba19beb832f79fb902a0cf7f177b7ca5b21085dd0a82bb4f296}{TIM\+\_\+\+OCNPolarity\+\_\+\+Low}} = TIM\+\_\+\+CCER\+\_\+\+CC1\+NP
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Output\+\_\+\+Compare\+\_\+\+N\+\_\+\+Polarity \label{group___t_i_m___exported___types_TIM_Output_Compare_N_Polarity}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Output_Compare_N_Polarity}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_gac3d09c5e2bb8f6bc941e267ff6116174}{TIMOUTPUTSTATE\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_ggac3d09c5e2bb8f6bc941e267ff6116174a54f0bc1ff9f7d0bd474c012279bf2873}{TIM\+\_\+\+Output\+State\+\_\+\+Disable}} = 0
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggac3d09c5e2bb8f6bc941e267ff6116174a193712770d5cec24495c7c9460e3fdfb}{TIM\+\_\+\+Output\+State\+\_\+\+Enable}} = TIM\+\_\+\+CCER\+\_\+\+CC1\+EN
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Output\+\_\+\+Compare\+\_\+state \label{group___t_i_m___exported___types_TIM_Output_Compare_state}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Output_Compare_state}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga9e21b2857bf3902eb9afe1046259aca0}{TIMOUTPUTNSTATE\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_gga9e21b2857bf3902eb9afe1046259aca0a043fc5a0874879fd21f4582432b188e2}{TIM\+\_\+\+Output\+NState\+\_\+\+Disable}} = 0
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga9e21b2857bf3902eb9afe1046259aca0af8f46fda550aecf5abc9b50fad4b05da}{TIM\+\_\+\+Output\+NState\+\_\+\+Enable}} = TIM\+\_\+\+CCER\+\_\+\+CC1\+NEN
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Output\+\_\+\+Compare\+\_\+\+N\+\_\+state \label{group___t_i_m___exported___types_TIM_Output_Compare_N_state}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Output_Compare_N_state}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga7ed3e6f2ba2b697dd531e987de21452c}{TIMCCx\+E\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_gga7ed3e6f2ba2b697dd531e987de21452caaf5a8ecbee528fee00dc2338f64c00ce}{TIM\+\_\+\+CCx\+\_\+\+Disable}} = 0
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga7ed3e6f2ba2b697dd531e987de21452ca6b656bbfdb1f7780e7de41c5b96ac1a5}{TIM\+\_\+\+CCx\+\_\+\+Enable}} = TIM\+\_\+\+CCER\+\_\+\+CC1\+EN
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Capture\+\_\+\+Compare\+\_\+state \label{group___t_i_m___exported___types_TIM_Capture_Compare_state}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Capture_Compare_state}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga2d5980dde7fd8afd730dabc1e7b9509c}{TIMCCx\+NE\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_gga2d5980dde7fd8afd730dabc1e7b9509ca7e4820ab92cf08917e7491070e17e9a3}{TIM\+\_\+\+CCx\+N\+\_\+\+Disable}} = 0
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga2d5980dde7fd8afd730dabc1e7b9509caaf786e93c4b8f12f7fec8fdb0b3b6618}{TIM\+\_\+\+CCx\+N\+\_\+\+Enable}} = TIM\+\_\+\+CCER\+\_\+\+CC1\+NEN
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Capture\+\_\+\+Compare\+\_\+\+N\+\_\+state \label{group___t_i_m___exported___types_TIM_Capture_Compare_N_state}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Capture_Compare_N_state}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga999889eb7d5b8c5719acc048b51fa2b3}{TIMBKE\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_gga999889eb7d5b8c5719acc048b51fa2b3acdf55f036be7e66298b6f5af233bc64c}{TIM\+\_\+\+Break\+\_\+\+Disable}} = 0
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga999889eb7d5b8c5719acc048b51fa2b3abeee31704988e7c99d1562fc32d9bd72}{TIM\+\_\+\+Break\+\_\+\+Enable}} = TIM\+\_\+\+BDTR\+\_\+\+BKEN
+ \}
+\begin{DoxyCompactList}\small\item\em Break\+\_\+\+Input\+\_\+enable\+\_\+disable \label{group___t_i_m___exported___types_Break_Input_enable_disable}%
+\Hypertarget{group___t_i_m___exported___types_Break_Input_enable_disable}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga04ca069fdcc5bdac308e9e919390ba07}{TIMBKP\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_gga04ca069fdcc5bdac308e9e919390ba07a201dc8be3703d5c37762c1ee26e90f2e}{TIM\+\_\+\+Break\+Polarity\+\_\+\+Low}} = 0
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga04ca069fdcc5bdac308e9e919390ba07aa3b72ebd5ee45eee738231c8cf9b8ebd}{TIM\+\_\+\+Break\+Polarity\+\_\+\+High}} = TIM\+\_\+\+BDTR\+\_\+\+BKP
+ \}
+\begin{DoxyCompactList}\small\item\em Break\+\_\+\+Polarity \label{group___t_i_m___exported___types_Break_Polarity}%
+\Hypertarget{group___t_i_m___exported___types_Break_Polarity}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_gafe60ae1694371f85dc7d66e2a005d69f}{TIMAOE\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_ggafe60ae1694371f85dc7d66e2a005d69fa7670b84adc5212a895031f0911fe92dd}{TIM\+\_\+\+Automatic\+Output\+\_\+\+Disable}} = 0
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggafe60ae1694371f85dc7d66e2a005d69fab47685ff1fbf5ac7d01248df11d4b9da}{TIM\+\_\+\+Automatic\+Output\+\_\+\+Enable}} = TIM\+\_\+\+BDTR\+\_\+\+AOEN
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+AOE\+\_\+\+Bit\+\_\+\+Set\+\_\+\+Reset \label{group___t_i_m___exported___types_TIM_AOE_Bit_Set_Reset}%
+\Hypertarget{group___t_i_m___exported___types_TIM_AOE_Bit_Set_Reset}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga592db89d77a665337647aeae552eeb74}{TIMDOE\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_gga592db89d77a665337647aeae552eeb74ae4cfc413cff6204a53a3c242a69de476}{TIM\+\_\+\+Direct\+Output\+\_\+\+Disable}} = 0
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga592db89d77a665337647aeae552eeb74a717aba4c6deae36cfaf82504a98fab84}{TIM\+\_\+\+Direct\+Output\+\_\+\+Enable}} = TIM\+\_\+\+BDTR\+\_\+\+DOEN
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+DOE\+\_\+\+Bit\+\_\+\+Set\+\_\+\+Reset \label{group___t_i_m___exported___types_TIM_DOE_Bit_Set_Reset}%
+\Hypertarget{group___t_i_m___exported___types_TIM_DOE_Bit_Set_Reset}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga8851ad88e3ed4e971e1cce12c2b8d444}{TIMOSSI\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_gga8851ad88e3ed4e971e1cce12c2b8d444ac1919ec7c1386213255340e036d5c2d3}{TIM\+\_\+\+OSSIState\+\_\+\+Disable}} = 0
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga8851ad88e3ed4e971e1cce12c2b8d444a3779440ffcda1e639bd1e46cb6e4425b}{TIM\+\_\+\+OSSIState\+\_\+\+Enable}} = TIM\+\_\+\+BDTR\+\_\+\+OSSI
+ \}
+\begin{DoxyCompactList}\small\item\em OSSI\+\_\+\+Off\+\_\+\+State\+\_\+\+Selection\+\_\+for\+\_\+\+Idle\+\_\+mode\+\_\+state \label{group___t_i_m___exported___types_OSSI_Off_State_Selection_for_Idle_mode_state}%
+\Hypertarget{group___t_i_m___exported___types_OSSI_Off_State_Selection_for_Idle_mode_state}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_gad7538e5ca012e2d1fd1e7edeaef63aad}{TIMOSSR\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_ggad7538e5ca012e2d1fd1e7edeaef63aada89ad92f1616f40e87c35ff4e7655337f}{TIM\+\_\+\+OSSRState\+\_\+\+Disable}} = 0
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggad7538e5ca012e2d1fd1e7edeaef63aadad097cbb84166bc26eceb6933b89d0866}{TIM\+\_\+\+OSSRState\+\_\+\+Enable}} = TIM\+\_\+\+BDTR\+\_\+\+OSSR
+ \}
+\begin{DoxyCompactList}\small\item\em OSSR\+\_\+\+Off\+\_\+\+State\+\_\+\+Selection\+\_\+for\+\_\+\+Run\+\_\+mode\+\_\+state \label{group___t_i_m___exported___types_OSSR_Off_State_Selection_for_Run_mode_state}%
+\Hypertarget{group___t_i_m___exported___types_OSSR_Off_State_Selection_for_Run_mode_state}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga38470c206fcab9e945ddc4976c46fcc4}{TIMOIS\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_gga38470c206fcab9e945ddc4976c46fcc4ab7e96abf68c15dba5acfec0be98e6081}{TIM\+\_\+\+OCIdle\+State\+\_\+\+Reset}} = 0
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga38470c206fcab9e945ddc4976c46fcc4a1ff11c1fc12bb2fcaaacfc9ab77a9104}{TIM\+\_\+\+OCIdle\+State\+\_\+\+Set}} = TIM\+\_\+\+CR2\+\_\+\+OIS1
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Output\+\_\+\+Compare\+\_\+\+Idle\+\_\+\+State \label{group___t_i_m___exported___types_TIM_Output_Compare_Idle_State}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Output_Compare_Idle_State}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga9e01ab725e12881e8596d5a7e7c36283}{TIMOISN\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_gga9e01ab725e12881e8596d5a7e7c36283a1f5eb92e7728dac41e85431ec7d2d5e9}{TIM\+\_\+\+OCNIdle\+State\+\_\+\+Reset}} = 0
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga9e01ab725e12881e8596d5a7e7c36283a27156e7bd0f8a2512b984634d69c5107}{TIM\+\_\+\+OCNIdle\+State\+\_\+\+Set}} = TIM\+\_\+\+CR2\+\_\+\+OIS1N
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Output\+\_\+\+Compare\+\_\+\+N\+\_\+\+Idle\+\_\+\+State \label{group___t_i_m___exported___types_TIM_Output_Compare_N_Idle_State}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Output_Compare_N_Idle_State}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga72d9eedd64c9bd011440617b4d79e303}{TIMICSEL\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_gga72d9eedd64c9bd011440617b4d79e303aa93592ee68fd730821fb90cc9a46b6b2}{TIM\+\_\+\+ICSelection\+\_\+\+Direct\+TI}} = TIM\+\_\+\+CCMR1\+\_\+\+CC1\+S\+\_\+\+DIRECTTI
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga72d9eedd64c9bd011440617b4d79e303a46445442916b753db20860713f1f72bf}{TIM\+\_\+\+ICSelection\+\_\+\+Indirect\+TI}} = TIM\+\_\+\+CCMR1\+\_\+\+CC1\+S\+\_\+\+INDIRECTTI
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga72d9eedd64c9bd011440617b4d79e303a8a9650dd85025a9f5c34d2a5955fd4e0}{TIM\+\_\+\+ICSelection\+\_\+\+TRC}} = TIM\+\_\+\+CCMR1\+\_\+\+CC1\+S\+\_\+\+TRC
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Input\+\_\+\+Capture\+\_\+\+Selection \label{group___t_i_m___exported___types_TIM_Input_Capture_Selection}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Input_Capture_Selection}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga1fdb23b3b49d6f2b611c2fcf90841c59}{TIMICPSC\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_gga1fdb23b3b49d6f2b611c2fcf90841c59a375b06589661dcf6b0badd71f036c936}{TIM\+\_\+\+ICPSC\+\_\+\+DIV1}} = 0x0000
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga1fdb23b3b49d6f2b611c2fcf90841c59a7c54d3d49e7901955d85d4121ecfaa86}{TIM\+\_\+\+ICPSC\+\_\+\+DIV2}} = 0x0004
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga1fdb23b3b49d6f2b611c2fcf90841c59ab636f200828fd198d4e51cade4178c2a}{TIM\+\_\+\+ICPSC\+\_\+\+DIV4}} = 0x0008
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga1fdb23b3b49d6f2b611c2fcf90841c59af508a38decc4fdcef814a7ba758bb082}{TIM\+\_\+\+ICPSC\+\_\+\+DIV8}} = 0x000C
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Input\+\_\+\+Capture\+\_\+\+Prescaler \label{group___t_i_m___exported___types_TIM_Input_Capture_Prescaler}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Input_Capture_Prescaler}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_gae1c4f5433b3d09fca8eaa9090b3e7fe3}{TIMICP\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_ggae1c4f5433b3d09fca8eaa9090b3e7fe3add7aa95d25e6ce5b57ea42c6a3938318}{TIM\+\_\+\+ICPolarity\+\_\+\+Rising}} = 0
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggae1c4f5433b3d09fca8eaa9090b3e7fe3a244f9de4a8b7bea982bdbe198354945a}{TIM\+\_\+\+ICPolarity\+\_\+\+Falling}} = TIM\+\_\+\+CCER\+\_\+\+CC1P
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggae1c4f5433b3d09fca8eaa9090b3e7fe3afc3eb2b7c3cbb3907a904a8540bcf686}{TIM\+\_\+\+ICPolarity\+\_\+\+Both\+Edge}} = TIM\+\_\+\+CCER\+\_\+\+CC1P $\vert$ TIM\+\_\+\+CCER\+\_\+\+CC1\+NP
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Input\+\_\+\+Capture\+\_\+\+Polarity \label{group___t_i_m___exported___types_TIM_Input_Capture_Polarity}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Input_Capture_Polarity}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga12e8890a1358317bd93321777d736d3f}{TIMETP\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_gga12e8890a1358317bd93321777d736d3fa8421c6610f4077c7bc8842287056c661}{TIM\+\_\+\+Ext\+TRGPolarity\+\_\+\+Non\+Inverted}} = 0
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga12e8890a1358317bd93321777d736d3fa4b0a6e063c83444426dcce29c2f10c69}{TIM\+\_\+\+Ext\+TRGPolarity\+\_\+\+Inverted}} = TIM\+\_\+\+SMCR\+\_\+\+ETP
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+External\+\_\+\+Trigger\+\_\+\+Polarity \label{group___t_i_m___exported___types_TIM_External_Trigger_Polarity}%
+\Hypertarget{group___t_i_m___exported___types_TIM_External_Trigger_Polarity}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_gafe177bbe68a58ea41f7201bc23fc6993}{TIMUG\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_ggafe177bbe68a58ea41f7201bc23fc6993ab50f5e7f2cb71f4e6d6a9868e23971ee}{TIM\+\_\+\+PSCReload\+Mode\+\_\+\+Update}} = 0
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggafe177bbe68a58ea41f7201bc23fc6993a6d72a851eb41057fac90e12d1bb7d4c2}{TIM\+\_\+\+PSCReload\+Mode\+\_\+\+Immediate}} = TIM\+\_\+\+EGR\+\_\+\+UG
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Prescaler\+\_\+\+Reload\+\_\+\+Mode \label{group___t_i_m___exported___types_TIM_Prescaler_Reload_Mode}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Prescaler_Reload_Mode}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga04b54c02f2685160b7b519bae614553f}{TIMSMSENCODER\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_gga04b54c02f2685160b7b519bae614553fa142d7d35b159887ac21bc89b084d9f9c}{TIM\+\_\+\+Encoder\+Mode\+\_\+\+TI1}} = TIM\+\_\+\+SMCR\+\_\+\+SMS\+\_\+\+ENCODER1
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga04b54c02f2685160b7b519bae614553fa7b6bee5a7f91facea3feb14db80805e0}{TIM\+\_\+\+Encoder\+Mode\+\_\+\+TI2}} = TIM\+\_\+\+SMCR\+\_\+\+SMS\+\_\+\+ENCODER2
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga04b54c02f2685160b7b519bae614553fa602f925435e55d33ab70726c5e08534b}{TIM\+\_\+\+Encoder\+Mode\+\_\+\+TI12}} = TIM\+\_\+\+SMCR\+\_\+\+SMS\+\_\+\+ENCODER3
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Encoder\+\_\+\+Mode \label{group___t_i_m___exported___types_TIM_Encoder_Mode}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Encoder_Mode}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga69cc4e1e80f2ef676c27b9eb260a589d}{TIMURS\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_gga69cc4e1e80f2ef676c27b9eb260a589da7b5acf46d6d7bcd19011c4b824ffb3d5}{TIM\+\_\+\+Update\+Source\+\_\+\+Global}} = 0
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga69cc4e1e80f2ef676c27b9eb260a589dac5aeaae95950a7b4c10c5720b5c5bf3a}{TIM\+\_\+\+Update\+Source\+\_\+\+Regular}} = TIM\+\_\+\+CR1\+\_\+\+URS
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Update\+\_\+\+Source \label{group___t_i_m___exported___types_TIM_Update_Source}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Update_Source}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_gad8977abd8a47bcdf440691d2d2e0a12f}{TIMOCPE\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_ggad8977abd8a47bcdf440691d2d2e0a12fab9503bba8f8cc0ecb68a76c3d3052588}{TIM\+\_\+\+OCPreload\+\_\+\+Disable}} = 0
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggad8977abd8a47bcdf440691d2d2e0a12fa8636d10ec343c321705d2f30d5b6e441}{TIM\+\_\+\+OCPreload\+\_\+\+Enable}} = TIM\+\_\+\+CCMR1\+\_\+\+OC1\+PEN
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Output\+\_\+\+Compare\+\_\+\+Preload\+\_\+\+State \label{group___t_i_m___exported___types_TIM_Output_Compare_Preload_State}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Output_Compare_Preload_State}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga32f0dad8a4fd993273e86d8fe664b3e0}{TIMOCFE\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_gga32f0dad8a4fd993273e86d8fe664b3e0a7cc196483db0f611adc664665b100e77}{TIM\+\_\+\+OCFast\+\_\+\+Disable}} = 0
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga32f0dad8a4fd993273e86d8fe664b3e0abece7e2bc208e3b27a2c7ca45f80498f}{TIM\+\_\+\+OCFast\+\_\+\+Enable}} = TIM\+\_\+\+CCMR1\+\_\+\+OC1\+FEN
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Output\+\_\+\+Compare\+\_\+\+Fast\+\_\+\+State \label{group___t_i_m___exported___types_TIM_Output_Compare_Fast_State}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Output_Compare_Fast_State}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga8c4be63dabbdcdffb92de1409a903d0b}{TIMOCCE\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_gga8c4be63dabbdcdffb92de1409a903d0ba811e8203b155a20f470af2028409db8b}{TIM\+\_\+\+OCClear\+\_\+\+Disable}} = 0
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga8c4be63dabbdcdffb92de1409a903d0bab9f95928fa2df89958578c2a26fa60cd}{TIM\+\_\+\+OCClear\+\_\+\+Enable}} = TIM\+\_\+\+CCMR1\+\_\+\+OC1\+CEN
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Output\+\_\+\+Compare\+\_\+\+Clear\+\_\+\+State \label{group___t_i_m___exported___types_TIM_Output_Compare_Clear_State}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Output_Compare_Clear_State}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga6db6c5064c70fd6b5e03d9d55c75963d}{TIMMSM\+\_\+\+Typedef}} \{ \mbox{\hyperlink{group___t_i_m___exported___types_gga6db6c5064c70fd6b5e03d9d55c75963da5aaa0c882c00ae40a8524ca8674125f3}{TIM\+\_\+\+Master\+Slave\+Mode\+\_\+\+Disable}} = 0
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga6db6c5064c70fd6b5e03d9d55c75963daba3fe207f1def96db7ee16f12737ee83}{TIM\+\_\+\+Master\+Slave\+Mode\+\_\+\+Enable}} = TIM\+\_\+\+SMCR\+\_\+\+MSM
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Master\+\_\+\+Slave\+\_\+\+Mode \label{group___t_i_m___exported___types_TIM_Master_Slave_Mode}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Master_Slave_Mode}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga2311c0f5d67692c7d8162a41e5ddce93}{TIMIT\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93a0fd01d7f495b9c855817ef0bb500fafb}{TIM\+\_\+\+IT\+\_\+\+Update}} = TIM\+\_\+\+DIER\+\_\+\+UI
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93ac3c0a00e211b9962e9cfb94c896390ce}{TIM\+\_\+\+IT\+\_\+\+CC1}} = TIM\+\_\+\+DIER\+\_\+\+CC1I
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93a8e9eb6cc2c7951d9b30515937dca1bec}{TIM\+\_\+\+IT\+\_\+\+CC2}} = TIM\+\_\+\+DIER\+\_\+\+CC2I
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93a339416fc0c682189f1e0ff13ef576f1b}{TIM\+\_\+\+IT\+\_\+\+CC3}} = TIM\+\_\+\+DIER\+\_\+\+CC3I
+, \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93af7e936e45e7a7f25b3793c54d106ebce}{TIM\+\_\+\+IT\+\_\+\+CC4}} = TIM\+\_\+\+DIER\+\_\+\+CC4I
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93ac129750a04434754ae17eeb3d3840a39}{TIM\+\_\+\+IT\+\_\+\+COM}} = TIM\+\_\+\+DIER\+\_\+\+COMI
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93a1e50283cc06a1c7305b43717bb855321}{TIM\+\_\+\+IT\+\_\+\+Trigger}} = TIM\+\_\+\+DIER\+\_\+\+TI
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93a71a4891c1b0d61397ea34eb8cb3c6987}{TIM\+\_\+\+IT\+\_\+\+Break}} = TIM\+\_\+\+DIER\+\_\+\+BI
+, \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93a1f66f42f74c9d7751a561874b5138071}{TIM\+\_\+\+IT\+\_\+\+CC5}} = TIM\+\_\+\+DIER\+\_\+\+CC5I
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+interrupt\+\_\+sources \label{group___t_i_m___exported___types_TIM_Master_Slave_Mode}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Master_Slave_Mode}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga1bfb6ae649342157fb0bb2520ebde422}{TIMFLAG\+\_\+\+Typedef}} \{ \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422ae8c98d7cbccf5068d46548934181171a}{TIM\+\_\+\+FLAG\+\_\+\+Update}} = TIM\+\_\+\+SR\+\_\+\+UI
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422a76a71070f0c9f32a31bf22c07317dd0a}{TIM\+\_\+\+FLAG\+\_\+\+CC1}} = TIM\+\_\+\+SR\+\_\+\+CC1I
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422aff54c72e0cd8bf7a11f4bd04d0586e8a}{TIM\+\_\+\+FLAG\+\_\+\+CC2}} = TIM\+\_\+\+SR\+\_\+\+CC2I
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422ac265019199c0bda7b75e2254101a2411}{TIM\+\_\+\+FLAG\+\_\+\+CC3}} = TIM\+\_\+\+SR\+\_\+\+CC3I
+, \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422a62d78de222767afb0625754ef8da525f}{TIM\+\_\+\+FLAG\+\_\+\+CC4}} = TIM\+\_\+\+SR\+\_\+\+CC4I
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422aeb59d6e3051d0abd4810dd9004b03046}{TIM\+\_\+\+FLAG\+\_\+\+COM}} = TIM\+\_\+\+SR\+\_\+\+COMI
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422ac164fddea17f96cc085fc748454df9e7}{TIM\+\_\+\+FLAG\+\_\+\+Trigger}} = TIM\+\_\+\+SR\+\_\+\+TI
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422a0c42b61b93802dbfd79c6aa01003a7b2}{TIM\+\_\+\+FLAG\+\_\+\+Break}} = TIM\+\_\+\+SR\+\_\+\+BI
+, \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422a997e0014e8c9d64e9db11e44c9573918}{TIM\+\_\+\+FLAG\+\_\+\+CC1\+OF}} = TIM\+\_\+\+SR\+\_\+\+CC1O
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422af338738d529c6942fa9bb4d41f612a17}{TIM\+\_\+\+FLAG\+\_\+\+CC2\+OF}} = TIM\+\_\+\+SR\+\_\+\+CC2O
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422a29d4fc92d45ebf22fb23c9c6ca632095}{TIM\+\_\+\+FLAG\+\_\+\+CC3\+OF}} = TIM\+\_\+\+SR\+\_\+\+CC3O
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422ac8f4a798b44197f1b955f8828a213691}{TIM\+\_\+\+FLAG\+\_\+\+CC4\+OF}} = TIM\+\_\+\+SR\+\_\+\+CC4O
+, \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422a8b62a8d58fe679b579c5db1f09e606bb}{TIM\+\_\+\+FLAG\+\_\+\+CC5}} = TIM\+\_\+\+SR\+\_\+\+CC5I
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+Flags \label{group___t_i_m___exported___types_TIM_Flags}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Flags}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_gaf4526a0a150b80c5b5eb45ec06817f63}{TIMDMASRC\+\_\+\+Typedef}} \{ \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_ggaf4526a0a150b80c5b5eb45ec06817f63a77dce3e454092244791d1409c8db461c}{TIM\+\_\+\+DMA\+\_\+\+Update}} = TIM\+\_\+\+DIER\+\_\+\+UD
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaf4526a0a150b80c5b5eb45ec06817f63a7c43c0145af5672a90766fa07ee7472f}{TIM\+\_\+\+DMA\+\_\+\+CC1}} = TIM\+\_\+\+DIER\+\_\+\+CC1D
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaf4526a0a150b80c5b5eb45ec06817f63a2038a61b971406523f313b9ed4ce48c5}{TIM\+\_\+\+DMA\+\_\+\+CC2}} = TIM\+\_\+\+DIER\+\_\+\+CC2D
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaf4526a0a150b80c5b5eb45ec06817f63a10c25a9e59407a269d27a9cc8b7b84d2}{TIM\+\_\+\+DMA\+\_\+\+CC3}} = TIM\+\_\+\+DIER\+\_\+\+CC3D
+, \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_ggaf4526a0a150b80c5b5eb45ec06817f63add9f391dfeed7d3e98676ab6d38880b0}{TIM\+\_\+\+DMA\+\_\+\+CC4}} = TIM\+\_\+\+DIER\+\_\+\+CC4D
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaf4526a0a150b80c5b5eb45ec06817f63a6caaf1f4dd562e52b3014552ca0a8f4a}{TIM\+\_\+\+DMA\+\_\+\+COM}} = TIM\+\_\+\+DIER\+\_\+\+COMD
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaf4526a0a150b80c5b5eb45ec06817f63a83cb52b6b536e669abb069d71c55a000}{TIM\+\_\+\+DMA\+\_\+\+Trigger}} = TIM\+\_\+\+DIER\+\_\+\+TD
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+DMA\+\_\+sources \label{group___t_i_m___exported___types_TIM_DMA_sources}%
+\Hypertarget{group___t_i_m___exported___types_TIM_DMA_sources}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_ga7bd119b2e9325470933280b609df5f7d}{TIMDMABASE\+\_\+\+Typedef}} \{ \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da8b5fe8270da4a086339058a6aa80813a}{TIM\+\_\+\+DMABase\+\_\+\+CR1}} = 0x0000
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da124315c67c895c88701d4a3935a2d9e3}{TIM\+\_\+\+DMABase\+\_\+\+CR2}} = 0x0001
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da34e4dad82c1fbfed6c75527c4c9ba453}{TIM\+\_\+\+DMABase\+\_\+\+SMCR}} = 0x0002
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7daa0f1ae30f7ce725d7410722d6e92e972}{TIM\+\_\+\+DMABase\+\_\+\+DIER}} = 0x0003
+, \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7daae501ad6e01c907c2ce753e9dfad71d6}{TIM\+\_\+\+DMABase\+\_\+\+SR}} = 0x0004
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da58b63c8cf568b4b4be3169f40fc0713a}{TIM\+\_\+\+DMABase\+\_\+\+EGR}} = 0x0005
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da0685320126441d8f368fc0a0d277533a}{TIM\+\_\+\+DMABase\+\_\+\+CCMR1}} = 0x0006
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7dadc461c31bf694e944141b59a5fb72a42}{TIM\+\_\+\+DMABase\+\_\+\+CCMR2}} = 0x0007
+, \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7dae1a529069aa39c84c4fe652d0210dd1c}{TIM\+\_\+\+DMABase\+\_\+\+CCER}} = 0x0008
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da7187daa1d7daf591e522bdf0cc5862ef}{TIM\+\_\+\+DMABase\+\_\+\+CNT}} = 0x0009
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da2e32396b747e08a0cd6819becee94dd7}{TIM\+\_\+\+DMABase\+\_\+\+PSC}} = 0x000A
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7dad0ff11cc55517decfe56be1b38e96cde}{TIM\+\_\+\+DMABase\+\_\+\+ARR}} = 0x000B
+, \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7dad55dfdb41050e782ca245abaf9d69ff4}{TIM\+\_\+\+DMABase\+\_\+\+RCR}} = 0x000C
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da4cc621c7e6c662071f8343d7e8ed4f61}{TIM\+\_\+\+DMABase\+\_\+\+CCR1}} = 0x000D
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7daee641a392e6048f271ae401212068717}{TIM\+\_\+\+DMABase\+\_\+\+CCR2}} = 0x000E
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7dadd758818105fb4e6a6e14b54f3707b80}{TIM\+\_\+\+DMABase\+\_\+\+CCR3}} = 0x000F
+, \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7dadad7fd451dc2465565aef7dfface4383}{TIM\+\_\+\+DMABase\+\_\+\+CCR4}} = 0x0010
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7daf8bd8d3ecf65e8931bcb740f94e79e33}{TIM\+\_\+\+DMABase\+\_\+\+BDTR}} = 0x0011
+, \mbox{\hyperlink{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7daf10e6629ae8c00508621b6027ebf2e21}{TIM\+\_\+\+DMABase\+\_\+\+DCR}} = 0x0012
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+DMA\+\_\+\+Base\+\_\+address \label{group___t_i_m___exported___types_TIM_DMA_Base_address}%
+\Hypertarget{group___t_i_m___exported___types_TIM_DMA_Base_address}%
+\end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___t_i_m___exported___types_gaacdd433c16a815e95ffda70c8bded42d}{TIMDMABURSTLENGTH\+\_\+\+Typedef}} \{ \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da7639a8795cda376fa4e2b3402b9d176a}{TIM\+\_\+\+DMABurst\+Length\+\_\+1\+Byte}} = 0x0000
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da27f7ebefc26824aad5be0bc9223b3390}{TIM\+\_\+\+DMABurst\+Length\+\_\+2\+Bytes}} = 0x0100
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da14d032f4e391ef66049ab386042c4c5d}{TIM\+\_\+\+DMABurst\+Length\+\_\+3\+Bytes}} = 0x0200
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42dacf9707a916cd547633c70b1a092daf42}{TIM\+\_\+\+DMABurst\+Length\+\_\+4\+Bytes}} = 0x0300
+, \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42dae99318fd89aa37df3740c6bcb13c3980}{TIM\+\_\+\+DMABurst\+Length\+\_\+5\+Bytes}} = 0x0400
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da36713815d91efe1b38a4a2b1832454ed}{TIM\+\_\+\+DMABurst\+Length\+\_\+6\+Bytes}} = 0x0500
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da1bf7b67bde953a3d55ef6fd10754d498}{TIM\+\_\+\+DMABurst\+Length\+\_\+7\+Bytes}} = 0x0600
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42dac996b6383a62c1459c199e130245f94c}{TIM\+\_\+\+DMABurst\+Length\+\_\+8\+Bytes}} = 0x0700
+, \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da093fcae132c628239746d6e0c2bab722}{TIM\+\_\+\+DMABurst\+Length\+\_\+9\+Bytes}} = 0x0800
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da5b646c30925f2987af78d746ca3469a7}{TIM\+\_\+\+DMABurst\+Length\+\_\+10\+Bytes}} = 0x0900
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da19cd6bf9b17bd8cb1896f9009d63a164}{TIM\+\_\+\+DMABurst\+Length\+\_\+11\+Bytes}} = 0x0\+A00
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42dab70fec35cf0aa268118386b434b74b19}{TIM\+\_\+\+DMABurst\+Length\+\_\+12\+Bytes}} = 0x0\+B00
+, \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da835fc30a5f2684e69265cb285ea60e2a}{TIM\+\_\+\+DMABurst\+Length\+\_\+13\+Bytes}} = 0x0\+C00
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da8559e5047927b0b360b7f77d4d8e2a54}{TIM\+\_\+\+DMABurst\+Length\+\_\+14\+Bytes}} = 0x0\+D00
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42dac57053e1275535f972ac6192b917003a}{TIM\+\_\+\+DMABurst\+Length\+\_\+15\+Bytes}} = 0x0\+E00
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da80c94ee19891ccc594cfe11eeee86987}{TIM\+\_\+\+DMABurst\+Length\+\_\+16\+Bytes}} = 0x0\+F00
+, \newline
+\mbox{\hyperlink{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42daf9cec5b1a2a9da4b3911cf3daa63cbe3}{TIM\+\_\+\+DMABurst\+Length\+\_\+17\+Bytes}} = 0x1000
+, \mbox{\hyperlink{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42daeb6ae1a021d96774632d4dcca04432b4}{TIM\+\_\+\+DMABurst\+Length\+\_\+18\+Bytes}} = 0x1100
+ \}
+\begin{DoxyCompactList}\small\item\em TIM\+\_\+\+DMA\+\_\+\+Burst\+\_\+\+Length \label{group___t_i_m___exported___types_TIM_DMA_Burst_Length}%
+\Hypertarget{group___t_i_m___exported___types_TIM_DMA_Burst_Length}%
+\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+\doxysubsection{枚举类型说明}
+\mbox{\Hypertarget{group___t_i_m___exported___types_gaa29afd336772b6a7c8fe405d5ebadd2c}\label{group___t_i_m___exported___types_gaa29afd336772b6a7c8fe405d5ebadd2c}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_TIEXTCLKSRC\_Typedef@{TIM\_TIEXTCLKSRC\_Typedef}}
+\index{TIM\_TIEXTCLKSRC\_Typedef@{TIM\_TIEXTCLKSRC\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIM\_TIEXTCLKSRC\_Typedef}{TIM\_TIEXTCLKSRC\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_gaa29afd336772b6a7c8fe405d5ebadd2c}{TIM\+\_\+\+TIEXTCLKSRC\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+TIx\+\_\+\+External\+\_\+\+Clock\+\_\+\+Source \label{group___t_i_m___exported___types_TIM_TIx_External_Clock_Source}%
+\Hypertarget{group___t_i_m___exported___types_TIM_TIx_External_Clock_Source}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_TIxExternalCLK1Source\_TI1@{TIM\_TIxExternalCLK1Source\_TI1}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_TIxExternalCLK1Source\_TI1@{TIM\_TIxExternalCLK1Source\_TI1}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaa29afd336772b6a7c8fe405d5ebadd2ca74bf6df0dffea684afb1050c603775df}\label{group___t_i_m___exported___types_ggaa29afd336772b6a7c8fe405d5ebadd2ca74bf6df0dffea684afb1050c603775df}} 
+TIM\+\_\+\+TIx\+External\+CLK1\+Source\+\_\+\+TI1&Filtered Timer Input 1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_TIxExternalCLK1Source\_TI2@{TIM\_TIxExternalCLK1Source\_TI2}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_TIxExternalCLK1Source\_TI2@{TIM\_TIxExternalCLK1Source\_TI2}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaa29afd336772b6a7c8fe405d5ebadd2cab10dc3a0e8b9add3bff400bb1503d532}\label{group___t_i_m___exported___types_ggaa29afd336772b6a7c8fe405d5ebadd2cab10dc3a0e8b9add3bff400bb1503d532}} 
+TIM\+\_\+\+TIx\+External\+CLK1\+Source\+\_\+\+TI2&Filtered Timer Input 2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_TIxExternalCLK1Source\_TI1ED@{TIM\_TIxExternalCLK1Source\_TI1ED}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_TIxExternalCLK1Source\_TI1ED@{TIM\_TIxExternalCLK1Source\_TI1ED}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaa29afd336772b6a7c8fe405d5ebadd2ca2d7e3dfbe57b67b792adb23e205eef60}\label{group___t_i_m___exported___types_ggaa29afd336772b6a7c8fe405d5ebadd2ca2d7e3dfbe57b67b792adb23e205eef60}} 
+TIM\+\_\+\+TIx\+External\+CLK1\+Source\+\_\+\+TI1\+ED&TI1 Edge Detector \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00153}{153}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_gafe60ae1694371f85dc7d66e2a005d69f}\label{group___t_i_m___exported___types_gafe60ae1694371f85dc7d66e2a005d69f}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMAOE\_Typedef@{TIMAOE\_Typedef}}
+\index{TIMAOE\_Typedef@{TIMAOE\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMAOE\_Typedef}{TIMAOE\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_gafe60ae1694371f85dc7d66e2a005d69f}{TIMAOE\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+AOE\+\_\+\+Bit\+\_\+\+Set\+\_\+\+Reset \label{group___t_i_m___exported___types_TIM_AOE_Bit_Set_Reset}%
+\Hypertarget{group___t_i_m___exported___types_TIM_AOE_Bit_Set_Reset}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_AutomaticOutput\_Disable@{TIM\_AutomaticOutput\_Disable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_AutomaticOutput\_Disable@{TIM\_AutomaticOutput\_Disable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggafe60ae1694371f85dc7d66e2a005d69fa7670b84adc5212a895031f0911fe92dd}\label{group___t_i_m___exported___types_ggafe60ae1694371f85dc7d66e2a005d69fa7670b84adc5212a895031f0911fe92dd}} 
+TIM\+\_\+\+Automatic\+Output\+\_\+\+Disable&MOE can be set only by software. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_AutomaticOutput\_Enable@{TIM\_AutomaticOutput\_Enable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_AutomaticOutput\_Enable@{TIM\_AutomaticOutput\_Enable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggafe60ae1694371f85dc7d66e2a005d69fab47685ff1fbf5ac7d01248df11d4b9da}\label{group___t_i_m___exported___types_ggafe60ae1694371f85dc7d66e2a005d69fab47685ff1fbf5ac7d01248df11d4b9da}} 
+TIM\+\_\+\+Automatic\+Output\+\_\+\+Enable&update event (if the break input is not be active). MOE can be set by software or automatically at the next \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00249}{249}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga999889eb7d5b8c5719acc048b51fa2b3}\label{group___t_i_m___exported___types_ga999889eb7d5b8c5719acc048b51fa2b3}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMBKE\_Typedef@{TIMBKE\_Typedef}}
+\index{TIMBKE\_Typedef@{TIMBKE\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMBKE\_Typedef}{TIMBKE\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga999889eb7d5b8c5719acc048b51fa2b3}{TIMBKE\+\_\+\+Typedef}}}
+
+
+
+Break\+\_\+\+Input\+\_\+enable\+\_\+disable \label{group___t_i_m___exported___types_Break_Input_enable_disable}%
+\Hypertarget{group___t_i_m___exported___types_Break_Input_enable_disable}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_Break\_Disable@{TIM\_Break\_Disable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_Break\_Disable@{TIM\_Break\_Disable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga999889eb7d5b8c5719acc048b51fa2b3acdf55f036be7e66298b6f5af233bc64c}\label{group___t_i_m___exported___types_gga999889eb7d5b8c5719acc048b51fa2b3acdf55f036be7e66298b6f5af233bc64c}} 
+TIM\+\_\+\+Break\+\_\+\+Disable&Break inputs (BRK and CSS clock failure event) disabled \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_Break\_Enable@{TIM\_Break\_Enable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_Break\_Enable@{TIM\_Break\_Enable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga999889eb7d5b8c5719acc048b51fa2b3abeee31704988e7c99d1562fc32d9bd72}\label{group___t_i_m___exported___types_gga999889eb7d5b8c5719acc048b51fa2b3abeee31704988e7c99d1562fc32d9bd72}} 
+TIM\+\_\+\+Break\+\_\+\+Enable&Break inputs (BRK and CSS clock failure event) enabled \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00233}{233}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga04ca069fdcc5bdac308e9e919390ba07}\label{group___t_i_m___exported___types_ga04ca069fdcc5bdac308e9e919390ba07}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMBKP\_Typedef@{TIMBKP\_Typedef}}
+\index{TIMBKP\_Typedef@{TIMBKP\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMBKP\_Typedef}{TIMBKP\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga04ca069fdcc5bdac308e9e919390ba07}{TIMBKP\+\_\+\+Typedef}}}
+
+
+
+Break\+\_\+\+Polarity \label{group___t_i_m___exported___types_Break_Polarity}%
+\Hypertarget{group___t_i_m___exported___types_Break_Polarity}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_BreakPolarity\_Low@{TIM\_BreakPolarity\_Low}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_BreakPolarity\_Low@{TIM\_BreakPolarity\_Low}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga04ca069fdcc5bdac308e9e919390ba07a201dc8be3703d5c37762c1ee26e90f2e}\label{group___t_i_m___exported___types_gga04ca069fdcc5bdac308e9e919390ba07a201dc8be3703d5c37762c1ee26e90f2e}} 
+TIM\+\_\+\+Break\+Polarity\+\_\+\+Low&Break input BRK is active low \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_BreakPolarity\_High@{TIM\_BreakPolarity\_High}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_BreakPolarity\_High@{TIM\_BreakPolarity\_High}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga04ca069fdcc5bdac308e9e919390ba07aa3b72ebd5ee45eee738231c8cf9b8ebd}\label{group___t_i_m___exported___types_gga04ca069fdcc5bdac308e9e919390ba07aa3b72ebd5ee45eee738231c8cf9b8ebd}} 
+TIM\+\_\+\+Break\+Polarity\+\_\+\+High&Break input BRK is active high \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00241}{241}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga7ed3e6f2ba2b697dd531e987de21452c}\label{group___t_i_m___exported___types_ga7ed3e6f2ba2b697dd531e987de21452c}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMCCxE\_Typedef@{TIMCCxE\_Typedef}}
+\index{TIMCCxE\_Typedef@{TIMCCxE\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMCCxE\_Typedef}{TIMCCxE\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga7ed3e6f2ba2b697dd531e987de21452c}{TIMCCx\+E\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Capture\+\_\+\+Compare\+\_\+state \label{group___t_i_m___exported___types_TIM_Capture_Compare_state}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Capture_Compare_state}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_CCx\_Disable@{TIM\_CCx\_Disable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_CCx\_Disable@{TIM\_CCx\_Disable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7ed3e6f2ba2b697dd531e987de21452caaf5a8ecbee528fee00dc2338f64c00ce}\label{group___t_i_m___exported___types_gga7ed3e6f2ba2b697dd531e987de21452caaf5a8ecbee528fee00dc2338f64c00ce}} 
+TIM\+\_\+\+CCx\+\_\+\+Disable&Capture/\+Compare Enable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_CCx\_Enable@{TIM\_CCx\_Enable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_CCx\_Enable@{TIM\_CCx\_Enable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7ed3e6f2ba2b697dd531e987de21452ca6b656bbfdb1f7780e7de41c5b96ac1a5}\label{group___t_i_m___exported___types_gga7ed3e6f2ba2b697dd531e987de21452ca6b656bbfdb1f7780e7de41c5b96ac1a5}} 
+TIM\+\_\+\+CCx\+\_\+\+Enable&Capture/\+Compare Enable \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00217}{217}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga2d5980dde7fd8afd730dabc1e7b9509c}\label{group___t_i_m___exported___types_ga2d5980dde7fd8afd730dabc1e7b9509c}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMCCxNE\_Typedef@{TIMCCxNE\_Typedef}}
+\index{TIMCCxNE\_Typedef@{TIMCCxNE\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMCCxNE\_Typedef}{TIMCCxNE\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga2d5980dde7fd8afd730dabc1e7b9509c}{TIMCCx\+NE\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Capture\+\_\+\+Compare\+\_\+\+N\+\_\+state \label{group___t_i_m___exported___types_TIM_Capture_Compare_N_state}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Capture_Compare_N_state}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_CCxN\_Disable@{TIM\_CCxN\_Disable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_CCxN\_Disable@{TIM\_CCxN\_Disable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2d5980dde7fd8afd730dabc1e7b9509ca7e4820ab92cf08917e7491070e17e9a3}\label{group___t_i_m___exported___types_gga2d5980dde7fd8afd730dabc1e7b9509ca7e4820ab92cf08917e7491070e17e9a3}} 
+TIM\+\_\+\+CCx\+N\+\_\+\+Disable&Capture/\+Compare N Enable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_CCxN\_Enable@{TIM\_CCxN\_Enable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_CCxN\_Enable@{TIM\_CCxN\_Enable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2d5980dde7fd8afd730dabc1e7b9509caaf786e93c4b8f12f7fec8fdb0b3b6618}\label{group___t_i_m___exported___types_gga2d5980dde7fd8afd730dabc1e7b9509caaf786e93c4b8f12f7fec8fdb0b3b6618}} 
+TIM\+\_\+\+CCx\+N\+\_\+\+Enable&Capture/\+Compare N Enable \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00225}{225}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_gae525feec01466cba19beb832f79fb902}\label{group___t_i_m___exported___types_gae525feec01466cba19beb832f79fb902}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMCCxNP\_Typedef@{TIMCCxNP\_Typedef}}
+\index{TIMCCxNP\_Typedef@{TIMCCxNP\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMCCxNP\_Typedef}{TIMCCxNP\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_gae525feec01466cba19beb832f79fb902}{TIMCCx\+NP\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Output\+\_\+\+Compare\+\_\+\+N\+\_\+\+Polarity \label{group___t_i_m___exported___types_TIM_Output_Compare_N_Polarity}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Output_Compare_N_Polarity}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OCNPolarity\_High@{TIM\_OCNPolarity\_High}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OCNPolarity\_High@{TIM\_OCNPolarity\_High}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggae525feec01466cba19beb832f79fb902a52a23d2c381028239794fbfb9028e473}\label{group___t_i_m___exported___types_ggae525feec01466cba19beb832f79fb902a52a23d2c381028239794fbfb9028e473}} 
+TIM\+\_\+\+OCNPolarity\+\_\+\+High&Output Compare active high \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OCNPolarity\_Low@{TIM\_OCNPolarity\_Low}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OCNPolarity\_Low@{TIM\_OCNPolarity\_Low}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggae525feec01466cba19beb832f79fb902a0cf7f177b7ca5b21085dd0a82bb4f296}\label{group___t_i_m___exported___types_ggae525feec01466cba19beb832f79fb902a0cf7f177b7ca5b21085dd0a82bb4f296}} 
+TIM\+\_\+\+OCNPolarity\+\_\+\+Low&Output Compare active low \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00193}{193}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_gab669f90ec2d29c2c09e4a8f3d02b8d86}\label{group___t_i_m___exported___types_gab669f90ec2d29c2c09e4a8f3d02b8d86}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMCCxP\_Typedef@{TIMCCxP\_Typedef}}
+\index{TIMCCxP\_Typedef@{TIMCCxP\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMCCxP\_Typedef}{TIMCCxP\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_gab669f90ec2d29c2c09e4a8f3d02b8d86}{TIMCCx\+P\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Output\+\_\+\+Compare\+\_\+\+Polarity \label{group___t_i_m___exported___types_TIM_Output_Compare_Polarity}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Output_Compare_Polarity}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OCPolarity\_High@{TIM\_OCPolarity\_High}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OCPolarity\_High@{TIM\_OCPolarity\_High}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggab669f90ec2d29c2c09e4a8f3d02b8d86aff47f44716b3f321bd2a18bbd8d8c16d}\label{group___t_i_m___exported___types_ggab669f90ec2d29c2c09e4a8f3d02b8d86aff47f44716b3f321bd2a18bbd8d8c16d}} 
+TIM\+\_\+\+OCPolarity\+\_\+\+High&Output Compare active high \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OCPolarity\_Low@{TIM\_OCPolarity\_Low}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OCPolarity\_Low@{TIM\_OCPolarity\_Low}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggab669f90ec2d29c2c09e4a8f3d02b8d86a986958a378bc13eca036651a54b6477f}\label{group___t_i_m___exported___types_ggab669f90ec2d29c2c09e4a8f3d02b8d86a986958a378bc13eca036651a54b6477f}} 
+TIM\+\_\+\+OCPolarity\+\_\+\+Low&Output Compare active low \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00185}{185}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_gaa607f029313fe4fa5dae8cddd5142355}\label{group___t_i_m___exported___types_gaa607f029313fe4fa5dae8cddd5142355}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMCHx\_Typedef@{TIMCHx\_Typedef}}
+\index{TIMCHx\_Typedef@{TIMCHx\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMCHx\_Typedef}{TIMCHx\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_gaa607f029313fe4fa5dae8cddd5142355}{TIMCHx\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Channel \label{group___t_i_m___exported___types_TIM_Channel}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Channel}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_Channel\_1@{TIM\_Channel\_1}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_Channel\_1@{TIM\_Channel\_1}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaa607f029313fe4fa5dae8cddd5142355a9da1f05ce9bda8e1fa42ec1ef5363d9e}\label{group___t_i_m___exported___types_ggaa607f029313fe4fa5dae8cddd5142355a9da1f05ce9bda8e1fa42ec1ef5363d9e}} 
+TIM\+\_\+\+Channel\+\_\+1&TIM Channel 1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_Channel\_2@{TIM\_Channel\_2}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_Channel\_2@{TIM\_Channel\_2}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaa607f029313fe4fa5dae8cddd5142355a00a0245155f583ce0caa2b4377f1d480}\label{group___t_i_m___exported___types_ggaa607f029313fe4fa5dae8cddd5142355a00a0245155f583ce0caa2b4377f1d480}} 
+TIM\+\_\+\+Channel\+\_\+2&TIM Channel 2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_Channel\_3@{TIM\_Channel\_3}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_Channel\_3@{TIM\_Channel\_3}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaa607f029313fe4fa5dae8cddd5142355aef84a7162af4cdda335c45f76438ae1c}\label{group___t_i_m___exported___types_ggaa607f029313fe4fa5dae8cddd5142355aef84a7162af4cdda335c45f76438ae1c}} 
+TIM\+\_\+\+Channel\+\_\+3&TIM Channel 3 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_Channel\_4@{TIM\_Channel\_4}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_Channel\_4@{TIM\_Channel\_4}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaa607f029313fe4fa5dae8cddd5142355a045f55f781aa78f4877cff2b71b945f0}\label{group___t_i_m___exported___types_ggaa607f029313fe4fa5dae8cddd5142355a045f55f781aa78f4877cff2b71b945f0}} 
+TIM\+\_\+\+Channel\+\_\+4&TIM Channel 4 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_Channel\_5@{TIM\_Channel\_5}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_Channel\_5@{TIM\_Channel\_5}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaa607f029313fe4fa5dae8cddd5142355a9e8195139d45eeb4a7c6d49eb1f23966}\label{group___t_i_m___exported___types_ggaa607f029313fe4fa5dae8cddd5142355a9e8195139d45eeb4a7c6d49eb1f23966}} 
+TIM\+\_\+\+Channel\+\_\+5&TIM Channel 5 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00043}{43}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga13041713dc8197b8530550863ab6f92d}\label{group___t_i_m___exported___types_ga13041713dc8197b8530550863ab6f92d}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMCKD\_TypeDef@{TIMCKD\_TypeDef}}
+\index{TIMCKD\_TypeDef@{TIMCKD\_TypeDef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMCKD\_TypeDef}{TIMCKD\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga13041713dc8197b8530550863ab6f92d}{TIMCKD\+\_\+\+Type\+Def}}}
+
+
+
+TIM\+\_\+\+Clock\+\_\+\+Division\+\_\+\+CKD \label{group___t_i_m___exported___types_TIM_Clock_Division_CKD}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Clock_Division_CKD}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_CKD\_DIV1@{TIM\_CKD\_DIV1}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_CKD\_DIV1@{TIM\_CKD\_DIV1}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga13041713dc8197b8530550863ab6f92da941d2d755f00b858634d1e9900aaf6ef}\label{group___t_i_m___exported___types_gga13041713dc8197b8530550863ab6f92da941d2d755f00b858634d1e9900aaf6ef}} 
+TIM\+\_\+\+CKD\+\_\+\+DIV1&TDTS = Tck\+\_\+tim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_CKD\_DIV2@{TIM\_CKD\_DIV2}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_CKD\_DIV2@{TIM\_CKD\_DIV2}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga13041713dc8197b8530550863ab6f92da978783b233c586fb90f1ecb423b43cdd}\label{group___t_i_m___exported___types_gga13041713dc8197b8530550863ab6f92da978783b233c586fb90f1ecb423b43cdd}} 
+TIM\+\_\+\+CKD\+\_\+\+DIV2&TDTS = 2 $\ast$ Tck\+\_\+tim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_CKD\_DIV4@{TIM\_CKD\_DIV4}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_CKD\_DIV4@{TIM\_CKD\_DIV4}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga13041713dc8197b8530550863ab6f92da0c7735b84f8a13873d71087339650822}\label{group___t_i_m___exported___types_gga13041713dc8197b8530550863ab6f92da0c7735b84f8a13873d71087339650822}} 
+TIM\+\_\+\+CKD\+\_\+\+DIV4&TDTS = 4 $\ast$ Tck\+\_\+tim \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00079}{79}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga54935e710a238b52a0e01057e32ff7a3}\label{group___t_i_m___exported___types_ga54935e710a238b52a0e01057e32ff7a3}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMCOUNTMODE\_Typedef@{TIMCOUNTMODE\_Typedef}}
+\index{TIMCOUNTMODE\_Typedef@{TIMCOUNTMODE\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMCOUNTMODE\_Typedef}{TIMCOUNTMODE\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga54935e710a238b52a0e01057e32ff7a3}{TIMCOUNTMODE\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Counter\+\_\+\+Mode \label{group___t_i_m___exported___types_TIM_Counter_Mode}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Counter_Mode}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_CounterMode\_Up@{TIM\_CounterMode\_Up}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_CounterMode\_Up@{TIM\_CounterMode\_Up}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga54935e710a238b52a0e01057e32ff7a3a9fd93609ab64781d740bc8019854ad98}\label{group___t_i_m___exported___types_gga54935e710a238b52a0e01057e32ff7a3a9fd93609ab64781d740bc8019854ad98}} 
+TIM\+\_\+\+Counter\+Mode\+\_\+\+Up&TIM Up Counting Mode \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_CounterMode\_Down@{TIM\_CounterMode\_Down}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_CounterMode\_Down@{TIM\_CounterMode\_Down}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga54935e710a238b52a0e01057e32ff7a3aa2963e6b68a3a5e1bdab26a16e7e05b0}\label{group___t_i_m___exported___types_gga54935e710a238b52a0e01057e32ff7a3aa2963e6b68a3a5e1bdab26a16e7e05b0}} 
+TIM\+\_\+\+Counter\+Mode\+\_\+\+Down&TIM Down Counting Mode \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_CounterMode\_CenterAligned1@{TIM\_CounterMode\_CenterAligned1}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_CounterMode\_CenterAligned1@{TIM\_CounterMode\_CenterAligned1}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga54935e710a238b52a0e01057e32ff7a3a29e44efc2f618f4c6e56e294a8415779}\label{group___t_i_m___exported___types_gga54935e710a238b52a0e01057e32ff7a3a29e44efc2f618f4c6e56e294a8415779}} 
+TIM\+\_\+\+Counter\+Mode\+\_\+\+Center\+Aligned1&TIM Center Aligned Mode1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_CounterMode\_CenterAligned2@{TIM\_CounterMode\_CenterAligned2}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_CounterMode\_CenterAligned2@{TIM\_CounterMode\_CenterAligned2}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga54935e710a238b52a0e01057e32ff7a3a2da145e8ea2d8bf350039e93e90be69e}\label{group___t_i_m___exported___types_gga54935e710a238b52a0e01057e32ff7a3a2da145e8ea2d8bf350039e93e90be69e}} 
+TIM\+\_\+\+Counter\+Mode\+\_\+\+Center\+Aligned2&TIM Center Aligned Mode2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_CounterMode\_CenterAligned3@{TIM\_CounterMode\_CenterAligned3}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_CounterMode\_CenterAligned3@{TIM\_CounterMode\_CenterAligned3}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga54935e710a238b52a0e01057e32ff7a3adba677665e563f7de06b27dd38c043d5}\label{group___t_i_m___exported___types_gga54935e710a238b52a0e01057e32ff7a3adba677665e563f7de06b27dd38c043d5}} 
+TIM\+\_\+\+Counter\+Mode\+\_\+\+Center\+Aligned3&TIM Center Aligned Mode3 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00054}{54}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga7bd119b2e9325470933280b609df5f7d}\label{group___t_i_m___exported___types_ga7bd119b2e9325470933280b609df5f7d}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMDMABASE\_Typedef@{TIMDMABASE\_Typedef}}
+\index{TIMDMABASE\_Typedef@{TIMDMABASE\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMDMABASE\_Typedef}{TIMDMABASE\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga7bd119b2e9325470933280b609df5f7d}{TIMDMABASE\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+DMA\+\_\+\+Base\+\_\+address \label{group___t_i_m___exported___types_TIM_DMA_Base_address}%
+\Hypertarget{group___t_i_m___exported___types_TIM_DMA_Base_address}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABase\_CR1@{TIM\_DMABase\_CR1}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABase\_CR1@{TIM\_DMABase\_CR1}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da8b5fe8270da4a086339058a6aa80813a}\label{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da8b5fe8270da4a086339058a6aa80813a}} 
+TIM\+\_\+\+DMABase\+\_\+\+CR1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABase\_CR2@{TIM\_DMABase\_CR2}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABase\_CR2@{TIM\_DMABase\_CR2}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da124315c67c895c88701d4a3935a2d9e3}\label{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da124315c67c895c88701d4a3935a2d9e3}} 
+TIM\+\_\+\+DMABase\+\_\+\+CR2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABase\_SMCR@{TIM\_DMABase\_SMCR}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABase\_SMCR@{TIM\_DMABase\_SMCR}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da34e4dad82c1fbfed6c75527c4c9ba453}\label{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da34e4dad82c1fbfed6c75527c4c9ba453}} 
+TIM\+\_\+\+DMABase\+\_\+\+SMCR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABase\_DIER@{TIM\_DMABase\_DIER}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABase\_DIER@{TIM\_DMABase\_DIER}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7daa0f1ae30f7ce725d7410722d6e92e972}\label{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7daa0f1ae30f7ce725d7410722d6e92e972}} 
+TIM\+\_\+\+DMABase\+\_\+\+DIER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABase\_SR@{TIM\_DMABase\_SR}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABase\_SR@{TIM\_DMABase\_SR}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7daae501ad6e01c907c2ce753e9dfad71d6}\label{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7daae501ad6e01c907c2ce753e9dfad71d6}} 
+TIM\+\_\+\+DMABase\+\_\+\+SR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABase\_EGR@{TIM\_DMABase\_EGR}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABase\_EGR@{TIM\_DMABase\_EGR}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da58b63c8cf568b4b4be3169f40fc0713a}\label{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da58b63c8cf568b4b4be3169f40fc0713a}} 
+TIM\+\_\+\+DMABase\+\_\+\+EGR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABase\_CCMR1@{TIM\_DMABase\_CCMR1}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABase\_CCMR1@{TIM\_DMABase\_CCMR1}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da0685320126441d8f368fc0a0d277533a}\label{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da0685320126441d8f368fc0a0d277533a}} 
+TIM\+\_\+\+DMABase\+\_\+\+CCMR1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABase\_CCMR2@{TIM\_DMABase\_CCMR2}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABase\_CCMR2@{TIM\_DMABase\_CCMR2}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7dadc461c31bf694e944141b59a5fb72a42}\label{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7dadc461c31bf694e944141b59a5fb72a42}} 
+TIM\+\_\+\+DMABase\+\_\+\+CCMR2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABase\_CCER@{TIM\_DMABase\_CCER}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABase\_CCER@{TIM\_DMABase\_CCER}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7dae1a529069aa39c84c4fe652d0210dd1c}\label{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7dae1a529069aa39c84c4fe652d0210dd1c}} 
+TIM\+\_\+\+DMABase\+\_\+\+CCER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABase\_CNT@{TIM\_DMABase\_CNT}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABase\_CNT@{TIM\_DMABase\_CNT}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da7187daa1d7daf591e522bdf0cc5862ef}\label{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da7187daa1d7daf591e522bdf0cc5862ef}} 
+TIM\+\_\+\+DMABase\+\_\+\+CNT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABase\_PSC@{TIM\_DMABase\_PSC}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABase\_PSC@{TIM\_DMABase\_PSC}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da2e32396b747e08a0cd6819becee94dd7}\label{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da2e32396b747e08a0cd6819becee94dd7}} 
+TIM\+\_\+\+DMABase\+\_\+\+PSC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABase\_ARR@{TIM\_DMABase\_ARR}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABase\_ARR@{TIM\_DMABase\_ARR}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7dad0ff11cc55517decfe56be1b38e96cde}\label{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7dad0ff11cc55517decfe56be1b38e96cde}} 
+TIM\+\_\+\+DMABase\+\_\+\+ARR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABase\_RCR@{TIM\_DMABase\_RCR}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABase\_RCR@{TIM\_DMABase\_RCR}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7dad55dfdb41050e782ca245abaf9d69ff4}\label{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7dad55dfdb41050e782ca245abaf9d69ff4}} 
+TIM\+\_\+\+DMABase\+\_\+\+RCR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABase\_CCR1@{TIM\_DMABase\_CCR1}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABase\_CCR1@{TIM\_DMABase\_CCR1}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da4cc621c7e6c662071f8343d7e8ed4f61}\label{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7da4cc621c7e6c662071f8343d7e8ed4f61}} 
+TIM\+\_\+\+DMABase\+\_\+\+CCR1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABase\_CCR2@{TIM\_DMABase\_CCR2}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABase\_CCR2@{TIM\_DMABase\_CCR2}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7daee641a392e6048f271ae401212068717}\label{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7daee641a392e6048f271ae401212068717}} 
+TIM\+\_\+\+DMABase\+\_\+\+CCR2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABase\_CCR3@{TIM\_DMABase\_CCR3}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABase\_CCR3@{TIM\_DMABase\_CCR3}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7dadd758818105fb4e6a6e14b54f3707b80}\label{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7dadd758818105fb4e6a6e14b54f3707b80}} 
+TIM\+\_\+\+DMABase\+\_\+\+CCR3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABase\_CCR4@{TIM\_DMABase\_CCR4}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABase\_CCR4@{TIM\_DMABase\_CCR4}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7dadad7fd451dc2465565aef7dfface4383}\label{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7dadad7fd451dc2465565aef7dfface4383}} 
+TIM\+\_\+\+DMABase\+\_\+\+CCR4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABase\_BDTR@{TIM\_DMABase\_BDTR}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABase\_BDTR@{TIM\_DMABase\_BDTR}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7daf8bd8d3ecf65e8931bcb740f94e79e33}\label{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7daf8bd8d3ecf65e8931bcb740f94e79e33}} 
+TIM\+\_\+\+DMABase\+\_\+\+BDTR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABase\_DCR@{TIM\_DMABase\_DCR}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABase\_DCR@{TIM\_DMABase\_DCR}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7daf10e6629ae8c00508621b6027ebf2e21}\label{group___t_i_m___exported___types_gga7bd119b2e9325470933280b609df5f7daf10e6629ae8c00508621b6027ebf2e21}} 
+TIM\+\_\+\+DMABase\+\_\+\+DCR&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00442}{442}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_gaacdd433c16a815e95ffda70c8bded42d}\label{group___t_i_m___exported___types_gaacdd433c16a815e95ffda70c8bded42d}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMDMABURSTLENGTH\_Typedef@{TIMDMABURSTLENGTH\_Typedef}}
+\index{TIMDMABURSTLENGTH\_Typedef@{TIMDMABURSTLENGTH\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMDMABURSTLENGTH\_Typedef}{TIMDMABURSTLENGTH\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_gaacdd433c16a815e95ffda70c8bded42d}{TIMDMABURSTLENGTH\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+DMA\+\_\+\+Burst\+\_\+\+Length \label{group___t_i_m___exported___types_TIM_DMA_Burst_Length}%
+\Hypertarget{group___t_i_m___exported___types_TIM_DMA_Burst_Length}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABurstLength\_1Byte@{TIM\_DMABurstLength\_1Byte}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABurstLength\_1Byte@{TIM\_DMABurstLength\_1Byte}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da7639a8795cda376fa4e2b3402b9d176a}\label{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da7639a8795cda376fa4e2b3402b9d176a}} 
+TIM\+\_\+\+DMABurst\+Length\+\_\+1\+Byte&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABurstLength\_2Bytes@{TIM\_DMABurstLength\_2Bytes}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABurstLength\_2Bytes@{TIM\_DMABurstLength\_2Bytes}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da27f7ebefc26824aad5be0bc9223b3390}\label{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da27f7ebefc26824aad5be0bc9223b3390}} 
+TIM\+\_\+\+DMABurst\+Length\+\_\+2\+Bytes&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABurstLength\_3Bytes@{TIM\_DMABurstLength\_3Bytes}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABurstLength\_3Bytes@{TIM\_DMABurstLength\_3Bytes}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da14d032f4e391ef66049ab386042c4c5d}\label{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da14d032f4e391ef66049ab386042c4c5d}} 
+TIM\+\_\+\+DMABurst\+Length\+\_\+3\+Bytes&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABurstLength\_4Bytes@{TIM\_DMABurstLength\_4Bytes}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABurstLength\_4Bytes@{TIM\_DMABurstLength\_4Bytes}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42dacf9707a916cd547633c70b1a092daf42}\label{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42dacf9707a916cd547633c70b1a092daf42}} 
+TIM\+\_\+\+DMABurst\+Length\+\_\+4\+Bytes&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABurstLength\_5Bytes@{TIM\_DMABurstLength\_5Bytes}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABurstLength\_5Bytes@{TIM\_DMABurstLength\_5Bytes}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42dae99318fd89aa37df3740c6bcb13c3980}\label{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42dae99318fd89aa37df3740c6bcb13c3980}} 
+TIM\+\_\+\+DMABurst\+Length\+\_\+5\+Bytes&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABurstLength\_6Bytes@{TIM\_DMABurstLength\_6Bytes}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABurstLength\_6Bytes@{TIM\_DMABurstLength\_6Bytes}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da36713815d91efe1b38a4a2b1832454ed}\label{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da36713815d91efe1b38a4a2b1832454ed}} 
+TIM\+\_\+\+DMABurst\+Length\+\_\+6\+Bytes&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABurstLength\_7Bytes@{TIM\_DMABurstLength\_7Bytes}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABurstLength\_7Bytes@{TIM\_DMABurstLength\_7Bytes}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da1bf7b67bde953a3d55ef6fd10754d498}\label{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da1bf7b67bde953a3d55ef6fd10754d498}} 
+TIM\+\_\+\+DMABurst\+Length\+\_\+7\+Bytes&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABurstLength\_8Bytes@{TIM\_DMABurstLength\_8Bytes}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABurstLength\_8Bytes@{TIM\_DMABurstLength\_8Bytes}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42dac996b6383a62c1459c199e130245f94c}\label{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42dac996b6383a62c1459c199e130245f94c}} 
+TIM\+\_\+\+DMABurst\+Length\+\_\+8\+Bytes&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABurstLength\_9Bytes@{TIM\_DMABurstLength\_9Bytes}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABurstLength\_9Bytes@{TIM\_DMABurstLength\_9Bytes}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da093fcae132c628239746d6e0c2bab722}\label{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da093fcae132c628239746d6e0c2bab722}} 
+TIM\+\_\+\+DMABurst\+Length\+\_\+9\+Bytes&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABurstLength\_10Bytes@{TIM\_DMABurstLength\_10Bytes}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABurstLength\_10Bytes@{TIM\_DMABurstLength\_10Bytes}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da5b646c30925f2987af78d746ca3469a7}\label{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da5b646c30925f2987af78d746ca3469a7}} 
+TIM\+\_\+\+DMABurst\+Length\+\_\+10\+Bytes&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABurstLength\_11Bytes@{TIM\_DMABurstLength\_11Bytes}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABurstLength\_11Bytes@{TIM\_DMABurstLength\_11Bytes}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da19cd6bf9b17bd8cb1896f9009d63a164}\label{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da19cd6bf9b17bd8cb1896f9009d63a164}} 
+TIM\+\_\+\+DMABurst\+Length\+\_\+11\+Bytes&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABurstLength\_12Bytes@{TIM\_DMABurstLength\_12Bytes}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABurstLength\_12Bytes@{TIM\_DMABurstLength\_12Bytes}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42dab70fec35cf0aa268118386b434b74b19}\label{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42dab70fec35cf0aa268118386b434b74b19}} 
+TIM\+\_\+\+DMABurst\+Length\+\_\+12\+Bytes&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABurstLength\_13Bytes@{TIM\_DMABurstLength\_13Bytes}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABurstLength\_13Bytes@{TIM\_DMABurstLength\_13Bytes}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da835fc30a5f2684e69265cb285ea60e2a}\label{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da835fc30a5f2684e69265cb285ea60e2a}} 
+TIM\+\_\+\+DMABurst\+Length\+\_\+13\+Bytes&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABurstLength\_14Bytes@{TIM\_DMABurstLength\_14Bytes}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABurstLength\_14Bytes@{TIM\_DMABurstLength\_14Bytes}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da8559e5047927b0b360b7f77d4d8e2a54}\label{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da8559e5047927b0b360b7f77d4d8e2a54}} 
+TIM\+\_\+\+DMABurst\+Length\+\_\+14\+Bytes&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABurstLength\_15Bytes@{TIM\_DMABurstLength\_15Bytes}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABurstLength\_15Bytes@{TIM\_DMABurstLength\_15Bytes}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42dac57053e1275535f972ac6192b917003a}\label{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42dac57053e1275535f972ac6192b917003a}} 
+TIM\+\_\+\+DMABurst\+Length\+\_\+15\+Bytes&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABurstLength\_16Bytes@{TIM\_DMABurstLength\_16Bytes}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABurstLength\_16Bytes@{TIM\_DMABurstLength\_16Bytes}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da80c94ee19891ccc594cfe11eeee86987}\label{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42da80c94ee19891ccc594cfe11eeee86987}} 
+TIM\+\_\+\+DMABurst\+Length\+\_\+16\+Bytes&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABurstLength\_17Bytes@{TIM\_DMABurstLength\_17Bytes}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABurstLength\_17Bytes@{TIM\_DMABurstLength\_17Bytes}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42daf9cec5b1a2a9da4b3911cf3daa63cbe3}\label{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42daf9cec5b1a2a9da4b3911cf3daa63cbe3}} 
+TIM\+\_\+\+DMABurst\+Length\+\_\+17\+Bytes&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMABurstLength\_18Bytes@{TIM\_DMABurstLength\_18Bytes}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMABurstLength\_18Bytes@{TIM\_DMABurstLength\_18Bytes}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42daeb6ae1a021d96774632d4dcca04432b4}\label{group___t_i_m___exported___types_ggaacdd433c16a815e95ffda70c8bded42daeb6ae1a021d96774632d4dcca04432b4}} 
+TIM\+\_\+\+DMABurst\+Length\+\_\+18\+Bytes&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00467}{467}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_gaf4526a0a150b80c5b5eb45ec06817f63}\label{group___t_i_m___exported___types_gaf4526a0a150b80c5b5eb45ec06817f63}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMDMASRC\_Typedef@{TIMDMASRC\_Typedef}}
+\index{TIMDMASRC\_Typedef@{TIMDMASRC\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMDMASRC\_Typedef}{TIMDMASRC\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_gaf4526a0a150b80c5b5eb45ec06817f63}{TIMDMASRC\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+DMA\+\_\+sources \label{group___t_i_m___exported___types_TIM_DMA_sources}%
+\Hypertarget{group___t_i_m___exported___types_TIM_DMA_sources}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMA\_Update@{TIM\_DMA\_Update}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMA\_Update@{TIM\_DMA\_Update}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaf4526a0a150b80c5b5eb45ec06817f63a77dce3e454092244791d1409c8db461c}\label{group___t_i_m___exported___types_ggaf4526a0a150b80c5b5eb45ec06817f63a77dce3e454092244791d1409c8db461c}} 
+TIM\+\_\+\+DMA\+\_\+\+Update&TIM update Interrupt source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMA\_CC1@{TIM\_DMA\_CC1}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMA\_CC1@{TIM\_DMA\_CC1}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaf4526a0a150b80c5b5eb45ec06817f63a7c43c0145af5672a90766fa07ee7472f}\label{group___t_i_m___exported___types_ggaf4526a0a150b80c5b5eb45ec06817f63a7c43c0145af5672a90766fa07ee7472f}} 
+TIM\+\_\+\+DMA\+\_\+\+CC1&TIM Capture Compare 1 DMA source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMA\_CC2@{TIM\_DMA\_CC2}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMA\_CC2@{TIM\_DMA\_CC2}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaf4526a0a150b80c5b5eb45ec06817f63a2038a61b971406523f313b9ed4ce48c5}\label{group___t_i_m___exported___types_ggaf4526a0a150b80c5b5eb45ec06817f63a2038a61b971406523f313b9ed4ce48c5}} 
+TIM\+\_\+\+DMA\+\_\+\+CC2&TIM Capture Compare 2 DMA source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMA\_CC3@{TIM\_DMA\_CC3}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMA\_CC3@{TIM\_DMA\_CC3}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaf4526a0a150b80c5b5eb45ec06817f63a10c25a9e59407a269d27a9cc8b7b84d2}\label{group___t_i_m___exported___types_ggaf4526a0a150b80c5b5eb45ec06817f63a10c25a9e59407a269d27a9cc8b7b84d2}} 
+TIM\+\_\+\+DMA\+\_\+\+CC3&TIM Capture Compare 3 DMA source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMA\_CC4@{TIM\_DMA\_CC4}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMA\_CC4@{TIM\_DMA\_CC4}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaf4526a0a150b80c5b5eb45ec06817f63add9f391dfeed7d3e98676ab6d38880b0}\label{group___t_i_m___exported___types_ggaf4526a0a150b80c5b5eb45ec06817f63add9f391dfeed7d3e98676ab6d38880b0}} 
+TIM\+\_\+\+DMA\+\_\+\+CC4&TIM Capture Compare 4 DMA source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMA\_COM@{TIM\_DMA\_COM}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMA\_COM@{TIM\_DMA\_COM}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaf4526a0a150b80c5b5eb45ec06817f63a6caaf1f4dd562e52b3014552ca0a8f4a}\label{group___t_i_m___exported___types_ggaf4526a0a150b80c5b5eb45ec06817f63a6caaf1f4dd562e52b3014552ca0a8f4a}} 
+TIM\+\_\+\+DMA\+\_\+\+COM&TIM Commutation DMA source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DMA\_Trigger@{TIM\_DMA\_Trigger}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DMA\_Trigger@{TIM\_DMA\_Trigger}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggaf4526a0a150b80c5b5eb45ec06817f63a83cb52b6b536e669abb069d71c55a000}\label{group___t_i_m___exported___types_ggaf4526a0a150b80c5b5eb45ec06817f63a83cb52b6b536e669abb069d71c55a000}} 
+TIM\+\_\+\+DMA\+\_\+\+Trigger&TIM Trigger DMA source \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00429}{429}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga592db89d77a665337647aeae552eeb74}\label{group___t_i_m___exported___types_ga592db89d77a665337647aeae552eeb74}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMDOE\_Typedef@{TIMDOE\_Typedef}}
+\index{TIMDOE\_Typedef@{TIMDOE\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMDOE\_Typedef}{TIMDOE\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga592db89d77a665337647aeae552eeb74}{TIMDOE\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+DOE\+\_\+\+Bit\+\_\+\+Set\+\_\+\+Reset \label{group___t_i_m___exported___types_TIM_DOE_Bit_Set_Reset}%
+\Hypertarget{group___t_i_m___exported___types_TIM_DOE_Bit_Set_Reset}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DirectOutput\_Disable@{TIM\_DirectOutput\_Disable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DirectOutput\_Disable@{TIM\_DirectOutput\_Disable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga592db89d77a665337647aeae552eeb74ae4cfc413cff6204a53a3c242a69de476}\label{group___t_i_m___exported___types_gga592db89d77a665337647aeae552eeb74ae4cfc413cff6204a53a3c242a69de476}} 
+TIM\+\_\+\+Direct\+Output\+\_\+\+Disable&Direct output disable, output waiting for dead time \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_DirectOutput\_Enable@{TIM\_DirectOutput\_Enable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_DirectOutput\_Enable@{TIM\_DirectOutput\_Enable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga592db89d77a665337647aeae552eeb74a717aba4c6deae36cfaf82504a98fab84}\label{group___t_i_m___exported___types_gga592db89d77a665337647aeae552eeb74a717aba4c6deae36cfaf82504a98fab84}} 
+TIM\+\_\+\+Direct\+Output\+\_\+\+Enable&Direct output enable, no longer waiting for output after dead time \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00258}{258}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga5bb2170be69c57642c8ed8140c1ed82c}\label{group___t_i_m___exported___types_ga5bb2170be69c57642c8ed8140c1ed82c}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMEGR\_Typedef@{TIMEGR\_Typedef}}
+\index{TIMEGR\_Typedef@{TIMEGR\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMEGR\_Typedef}{TIMEGR\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga5bb2170be69c57642c8ed8140c1ed82c}{TIMEGR\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Event\+\_\+\+Source \label{group___t_i_m___exported___types_TIM_Event_Source}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Event_Source}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_EventSource\_Update@{TIM\_EventSource\_Update}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_EventSource\_Update@{TIM\_EventSource\_Update}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82cad0a719a2a2be6f4fe51d6e848c324448}\label{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82cad0a719a2a2be6f4fe51d6e848c324448}} 
+TIM\+\_\+\+Event\+Source\+\_\+\+Update&Timer update Event source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_EventSource\_CC1@{TIM\_EventSource\_CC1}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_EventSource\_CC1@{TIM\_EventSource\_CC1}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82caeffaff5f72e44f3adcc1dbe6509110d9}\label{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82caeffaff5f72e44f3adcc1dbe6509110d9}} 
+TIM\+\_\+\+Event\+Source\+\_\+\+CC1&Timer Capture Compare 1 Event source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_EventSource\_CC2@{TIM\_EventSource\_CC2}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_EventSource\_CC2@{TIM\_EventSource\_CC2}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82caa24f909a054f99f51db510291c4dd7d4}\label{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82caa24f909a054f99f51db510291c4dd7d4}} 
+TIM\+\_\+\+Event\+Source\+\_\+\+CC2&Timer Capture Compare 2 Event source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_EventSource\_CC3@{TIM\_EventSource\_CC3}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_EventSource\_CC3@{TIM\_EventSource\_CC3}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82ca62d0847f2f7a11356001f291ddd60df5}\label{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82ca62d0847f2f7a11356001f291ddd60df5}} 
+TIM\+\_\+\+Event\+Source\+\_\+\+CC3&Timer Capture Compare 3 Event source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_EventSource\_CC4@{TIM\_EventSource\_CC4}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_EventSource\_CC4@{TIM\_EventSource\_CC4}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82cab00b77db0e8cb17317f3c3c898dc296c}\label{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82cab00b77db0e8cb17317f3c3c898dc296c}} 
+TIM\+\_\+\+Event\+Source\+\_\+\+CC4&Timer Capture Compare 4 Event source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_EventSource\_COM@{TIM\_EventSource\_COM}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_EventSource\_COM@{TIM\_EventSource\_COM}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82ca7f8e998f83940f4d0160fbe1f95acca3}\label{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82ca7f8e998f83940f4d0160fbe1f95acca3}} 
+TIM\+\_\+\+Event\+Source\+\_\+\+COM&Timer COM event source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_EventSource\_Trigger@{TIM\_EventSource\_Trigger}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_EventSource\_Trigger@{TIM\_EventSource\_Trigger}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82cad52c6cd02c1fca1d17c8f12324b0d7e7}\label{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82cad52c6cd02c1fca1d17c8f12324b0d7e7}} 
+TIM\+\_\+\+Event\+Source\+\_\+\+Trigger&Timer Trigger Event source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_EventSource\_Break@{TIM\_EventSource\_Break}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_EventSource\_Break@{TIM\_EventSource\_Break}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82ca6d9ab1cd7a30406a8b01f5f81782e527}\label{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82ca6d9ab1cd7a30406a8b01f5f81782e527}} 
+TIM\+\_\+\+Event\+Source\+\_\+\+Break&Timer Break event source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_EventSource\_CC5@{TIM\_EventSource\_CC5}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_EventSource\_CC5@{TIM\_EventSource\_CC5}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82ca472431f888fb3f1a8b6d29c9a9a2586b}\label{group___t_i_m___exported___types_gga5bb2170be69c57642c8ed8140c1ed82ca472431f888fb3f1a8b6d29c9a9a2586b}} 
+TIM\+\_\+\+Event\+Source\+\_\+\+CC5&Timer Capture Compare 5 Event source \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00128}{128}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga12e8890a1358317bd93321777d736d3f}\label{group___t_i_m___exported___types_ga12e8890a1358317bd93321777d736d3f}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMETP\_Typedef@{TIMETP\_Typedef}}
+\index{TIMETP\_Typedef@{TIMETP\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMETP\_Typedef}{TIMETP\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga12e8890a1358317bd93321777d736d3f}{TIMETP\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+External\+\_\+\+Trigger\+\_\+\+Polarity \label{group___t_i_m___exported___types_TIM_External_Trigger_Polarity}%
+\Hypertarget{group___t_i_m___exported___types_TIM_External_Trigger_Polarity}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_ExtTRGPolarity\_NonInverted@{TIM\_ExtTRGPolarity\_NonInverted}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_ExtTRGPolarity\_NonInverted@{TIM\_ExtTRGPolarity\_NonInverted}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga12e8890a1358317bd93321777d736d3fa8421c6610f4077c7bc8842287056c661}\label{group___t_i_m___exported___types_gga12e8890a1358317bd93321777d736d3fa8421c6610f4077c7bc8842287056c661}} 
+TIM\+\_\+\+Ext\+TRGPolarity\+\_\+\+Non\+Inverted&Active high or rising edge active \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_ExtTRGPolarity\_Inverted@{TIM\_ExtTRGPolarity\_Inverted}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_ExtTRGPolarity\_Inverted@{TIM\_ExtTRGPolarity\_Inverted}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga12e8890a1358317bd93321777d736d3fa4b0a6e063c83444426dcce29c2f10c69}\label{group___t_i_m___exported___types_gga12e8890a1358317bd93321777d736d3fa4b0a6e063c83444426dcce29c2f10c69}} 
+TIM\+\_\+\+Ext\+TRGPolarity\+\_\+\+Inverted&Active low or falling edge active \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00328}{328}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga2562a2355f11e412da6b2e624729866c}\label{group___t_i_m___exported___types_ga2562a2355f11e412da6b2e624729866c}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMEXTTRGPSC\_Typedef@{TIMEXTTRGPSC\_Typedef}}
+\index{TIMEXTTRGPSC\_Typedef@{TIMEXTTRGPSC\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMEXTTRGPSC\_Typedef}{TIMEXTTRGPSC\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga2562a2355f11e412da6b2e624729866c}{TIMEXTTRGPSC\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+External\+\_\+\+Trigger\+\_\+\+Prescaler \label{group___t_i_m___exported___types_TIM_External_Trigger_Prescaler}%
+\Hypertarget{group___t_i_m___exported___types_TIM_External_Trigger_Prescaler}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_ExtTRGPSC\_OFF@{TIM\_ExtTRGPSC\_OFF}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_ExtTRGPSC\_OFF@{TIM\_ExtTRGPSC\_OFF}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2562a2355f11e412da6b2e624729866cadc30c0ab13593d4174072c4dba60ec1b}\label{group___t_i_m___exported___types_gga2562a2355f11e412da6b2e624729866cadc30c0ab13593d4174072c4dba60ec1b}} 
+TIM\+\_\+\+Ext\+TRGPSC\+\_\+\+OFF&ETRP Prescaler OFF \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_ExtTRGPSC\_DIV2@{TIM\_ExtTRGPSC\_DIV2}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_ExtTRGPSC\_DIV2@{TIM\_ExtTRGPSC\_DIV2}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2562a2355f11e412da6b2e624729866ca97978d8744895b5ba16eb44b19482b08}\label{group___t_i_m___exported___types_gga2562a2355f11e412da6b2e624729866ca97978d8744895b5ba16eb44b19482b08}} 
+TIM\+\_\+\+Ext\+TRGPSC\+\_\+\+DIV2&ETRP frequency divided by 2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_ExtTRGPSC\_DIV4@{TIM\_ExtTRGPSC\_DIV4}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_ExtTRGPSC\_DIV4@{TIM\_ExtTRGPSC\_DIV4}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2562a2355f11e412da6b2e624729866cad596390dcc5277c2f98b4a7ba218f342}\label{group___t_i_m___exported___types_gga2562a2355f11e412da6b2e624729866cad596390dcc5277c2f98b4a7ba218f342}} 
+TIM\+\_\+\+Ext\+TRGPSC\+\_\+\+DIV4&ETRP frequency divided by 4 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_ExtTRGPSC\_DIV8@{TIM\_ExtTRGPSC\_DIV8}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_ExtTRGPSC\_DIV8@{TIM\_ExtTRGPSC\_DIV8}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2562a2355f11e412da6b2e624729866ca79ea73800fecb9610800605604eab1f0}\label{group___t_i_m___exported___types_gga2562a2355f11e412da6b2e624729866ca79ea73800fecb9610800605604eab1f0}} 
+TIM\+\_\+\+Ext\+TRGPSC\+\_\+\+DIV8&ETRP frequency divided by 8 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00143}{143}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga1bfb6ae649342157fb0bb2520ebde422}\label{group___t_i_m___exported___types_ga1bfb6ae649342157fb0bb2520ebde422}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMFLAG\_Typedef@{TIMFLAG\_Typedef}}
+\index{TIMFLAG\_Typedef@{TIMFLAG\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMFLAG\_Typedef}{TIMFLAG\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga1bfb6ae649342157fb0bb2520ebde422}{TIMFLAG\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Flags \label{group___t_i_m___exported___types_TIM_Flags}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Flags}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_FLAG\_Update@{TIM\_FLAG\_Update}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_FLAG\_Update@{TIM\_FLAG\_Update}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422ae8c98d7cbccf5068d46548934181171a}\label{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422ae8c98d7cbccf5068d46548934181171a}} 
+TIM\+\_\+\+FLAG\+\_\+\+Update&TIM update Flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_FLAG\_CC1@{TIM\_FLAG\_CC1}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_FLAG\_CC1@{TIM\_FLAG\_CC1}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422a76a71070f0c9f32a31bf22c07317dd0a}\label{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422a76a71070f0c9f32a31bf22c07317dd0a}} 
+TIM\+\_\+\+FLAG\+\_\+\+CC1&TIM Capture Compare 1 Flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_FLAG\_CC2@{TIM\_FLAG\_CC2}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_FLAG\_CC2@{TIM\_FLAG\_CC2}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422aff54c72e0cd8bf7a11f4bd04d0586e8a}\label{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422aff54c72e0cd8bf7a11f4bd04d0586e8a}} 
+TIM\+\_\+\+FLAG\+\_\+\+CC2&TIM Capture Compare 2 Flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_FLAG\_CC3@{TIM\_FLAG\_CC3}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_FLAG\_CC3@{TIM\_FLAG\_CC3}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422ac265019199c0bda7b75e2254101a2411}\label{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422ac265019199c0bda7b75e2254101a2411}} 
+TIM\+\_\+\+FLAG\+\_\+\+CC3&TIM Capture Compare 3 Flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_FLAG\_CC4@{TIM\_FLAG\_CC4}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_FLAG\_CC4@{TIM\_FLAG\_CC4}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422a62d78de222767afb0625754ef8da525f}\label{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422a62d78de222767afb0625754ef8da525f}} 
+TIM\+\_\+\+FLAG\+\_\+\+CC4&TIM Capture Compare 4 Flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_FLAG\_COM@{TIM\_FLAG\_COM}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_FLAG\_COM@{TIM\_FLAG\_COM}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422aeb59d6e3051d0abd4810dd9004b03046}\label{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422aeb59d6e3051d0abd4810dd9004b03046}} 
+TIM\+\_\+\+FLAG\+\_\+\+COM&TIM Commutation Flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_FLAG\_Trigger@{TIM\_FLAG\_Trigger}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_FLAG\_Trigger@{TIM\_FLAG\_Trigger}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422ac164fddea17f96cc085fc748454df9e7}\label{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422ac164fddea17f96cc085fc748454df9e7}} 
+TIM\+\_\+\+FLAG\+\_\+\+Trigger&TIM Trigger Flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_FLAG\_Break@{TIM\_FLAG\_Break}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_FLAG\_Break@{TIM\_FLAG\_Break}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422a0c42b61b93802dbfd79c6aa01003a7b2}\label{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422a0c42b61b93802dbfd79c6aa01003a7b2}} 
+TIM\+\_\+\+FLAG\+\_\+\+Break&TIM Break Flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_FLAG\_CC1OF@{TIM\_FLAG\_CC1OF}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_FLAG\_CC1OF@{TIM\_FLAG\_CC1OF}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422a997e0014e8c9d64e9db11e44c9573918}\label{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422a997e0014e8c9d64e9db11e44c9573918}} 
+TIM\+\_\+\+FLAG\+\_\+\+CC1\+OF&TIM Capture Compare 1 overcapture Flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_FLAG\_CC2OF@{TIM\_FLAG\_CC2OF}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_FLAG\_CC2OF@{TIM\_FLAG\_CC2OF}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422af338738d529c6942fa9bb4d41f612a17}\label{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422af338738d529c6942fa9bb4d41f612a17}} 
+TIM\+\_\+\+FLAG\+\_\+\+CC2\+OF&TIM Capture Compare 2 overcapture Flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_FLAG\_CC3OF@{TIM\_FLAG\_CC3OF}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_FLAG\_CC3OF@{TIM\_FLAG\_CC3OF}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422a29d4fc92d45ebf22fb23c9c6ca632095}\label{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422a29d4fc92d45ebf22fb23c9c6ca632095}} 
+TIM\+\_\+\+FLAG\+\_\+\+CC3\+OF&TIM Capture Compare 3 overcapture Flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_FLAG\_CC4OF@{TIM\_FLAG\_CC4OF}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_FLAG\_CC4OF@{TIM\_FLAG\_CC4OF}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422ac8f4a798b44197f1b955f8828a213691}\label{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422ac8f4a798b44197f1b955f8828a213691}} 
+TIM\+\_\+\+FLAG\+\_\+\+CC4\+OF&TIM Capture Compare 4 overcapture Flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_FLAG\_CC5@{TIM\_FLAG\_CC5}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_FLAG\_CC5@{TIM\_FLAG\_CC5}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422a8b62a8d58fe679b579c5db1f09e606bb}\label{group___t_i_m___exported___types_gga1bfb6ae649342157fb0bb2520ebde422a8b62a8d58fe679b579c5db1f09e606bb}} 
+TIM\+\_\+\+FLAG\+\_\+\+CC5&TIM Capture Compare 5 Flag \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00411}{411}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_gae1c4f5433b3d09fca8eaa9090b3e7fe3}\label{group___t_i_m___exported___types_gae1c4f5433b3d09fca8eaa9090b3e7fe3}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMICP\_Typedef@{TIMICP\_Typedef}}
+\index{TIMICP\_Typedef@{TIMICP\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMICP\_Typedef}{TIMICP\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_gae1c4f5433b3d09fca8eaa9090b3e7fe3}{TIMICP\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Input\+\_\+\+Capture\+\_\+\+Polarity \label{group___t_i_m___exported___types_TIM_Input_Capture_Polarity}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Input_Capture_Polarity}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_ICPolarity\_Rising@{TIM\_ICPolarity\_Rising}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_ICPolarity\_Rising@{TIM\_ICPolarity\_Rising}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggae1c4f5433b3d09fca8eaa9090b3e7fe3add7aa95d25e6ce5b57ea42c6a3938318}\label{group___t_i_m___exported___types_ggae1c4f5433b3d09fca8eaa9090b3e7fe3add7aa95d25e6ce5b57ea42c6a3938318}} 
+TIM\+\_\+\+ICPolarity\+\_\+\+Rising&IC Rising edge \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_ICPolarity\_Falling@{TIM\_ICPolarity\_Falling}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_ICPolarity\_Falling@{TIM\_ICPolarity\_Falling}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggae1c4f5433b3d09fca8eaa9090b3e7fe3a244f9de4a8b7bea982bdbe198354945a}\label{group___t_i_m___exported___types_ggae1c4f5433b3d09fca8eaa9090b3e7fe3a244f9de4a8b7bea982bdbe198354945a}} 
+TIM\+\_\+\+ICPolarity\+\_\+\+Falling&IC Falling edge \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_ICPolarity\_BothEdge@{TIM\_ICPolarity\_BothEdge}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_ICPolarity\_BothEdge@{TIM\_ICPolarity\_BothEdge}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggae1c4f5433b3d09fca8eaa9090b3e7fe3afc3eb2b7c3cbb3907a904a8540bcf686}\label{group___t_i_m___exported___types_ggae1c4f5433b3d09fca8eaa9090b3e7fe3afc3eb2b7c3cbb3907a904a8540bcf686}} 
+TIM\+\_\+\+ICPolarity\+\_\+\+Both\+Edge&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00319}{319}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga1fdb23b3b49d6f2b611c2fcf90841c59}\label{group___t_i_m___exported___types_ga1fdb23b3b49d6f2b611c2fcf90841c59}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMICPSC\_Typedef@{TIMICPSC\_Typedef}}
+\index{TIMICPSC\_Typedef@{TIMICPSC\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMICPSC\_Typedef}{TIMICPSC\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga1fdb23b3b49d6f2b611c2fcf90841c59}{TIMICPSC\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Input\+\_\+\+Capture\+\_\+\+Prescaler \label{group___t_i_m___exported___types_TIM_Input_Capture_Prescaler}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Input_Capture_Prescaler}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_ICPSC\_DIV1@{TIM\_ICPSC\_DIV1}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_ICPSC\_DIV1@{TIM\_ICPSC\_DIV1}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga1fdb23b3b49d6f2b611c2fcf90841c59a375b06589661dcf6b0badd71f036c936}\label{group___t_i_m___exported___types_gga1fdb23b3b49d6f2b611c2fcf90841c59a375b06589661dcf6b0badd71f036c936}} 
+TIM\+\_\+\+ICPSC\+\_\+\+DIV1&no prescaler \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_ICPSC\_DIV2@{TIM\_ICPSC\_DIV2}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_ICPSC\_DIV2@{TIM\_ICPSC\_DIV2}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga1fdb23b3b49d6f2b611c2fcf90841c59a7c54d3d49e7901955d85d4121ecfaa86}\label{group___t_i_m___exported___types_gga1fdb23b3b49d6f2b611c2fcf90841c59a7c54d3d49e7901955d85d4121ecfaa86}} 
+TIM\+\_\+\+ICPSC\+\_\+\+DIV2&capture is done once every 2 events \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_ICPSC\_DIV4@{TIM\_ICPSC\_DIV4}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_ICPSC\_DIV4@{TIM\_ICPSC\_DIV4}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga1fdb23b3b49d6f2b611c2fcf90841c59ab636f200828fd198d4e51cade4178c2a}\label{group___t_i_m___exported___types_gga1fdb23b3b49d6f2b611c2fcf90841c59ab636f200828fd198d4e51cade4178c2a}} 
+TIM\+\_\+\+ICPSC\+\_\+\+DIV4&capture is done once every 4 events \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_ICPSC\_DIV8@{TIM\_ICPSC\_DIV8}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_ICPSC\_DIV8@{TIM\_ICPSC\_DIV8}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga1fdb23b3b49d6f2b611c2fcf90841c59af508a38decc4fdcef814a7ba758bb082}\label{group___t_i_m___exported___types_gga1fdb23b3b49d6f2b611c2fcf90841c59af508a38decc4fdcef814a7ba758bb082}} 
+TIM\+\_\+\+ICPSC\+\_\+\+DIV8&capture is done once every 8 events \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00309}{309}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga72d9eedd64c9bd011440617b4d79e303}\label{group___t_i_m___exported___types_ga72d9eedd64c9bd011440617b4d79e303}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMICSEL\_Typedef@{TIMICSEL\_Typedef}}
+\index{TIMICSEL\_Typedef@{TIMICSEL\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMICSEL\_Typedef}{TIMICSEL\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga72d9eedd64c9bd011440617b4d79e303}{TIMICSEL\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Input\+\_\+\+Capture\+\_\+\+Selection \label{group___t_i_m___exported___types_TIM_Input_Capture_Selection}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Input_Capture_Selection}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_ICSelection\_DirectTI@{TIM\_ICSelection\_DirectTI}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_ICSelection\_DirectTI@{TIM\_ICSelection\_DirectTI}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga72d9eedd64c9bd011440617b4d79e303aa93592ee68fd730821fb90cc9a46b6b2}\label{group___t_i_m___exported___types_gga72d9eedd64c9bd011440617b4d79e303aa93592ee68fd730821fb90cc9a46b6b2}} 
+TIM\+\_\+\+ICSelection\+\_\+\+Direct\+TI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_ICSelection\_IndirectTI@{TIM\_ICSelection\_IndirectTI}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_ICSelection\_IndirectTI@{TIM\_ICSelection\_IndirectTI}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga72d9eedd64c9bd011440617b4d79e303a46445442916b753db20860713f1f72bf}\label{group___t_i_m___exported___types_gga72d9eedd64c9bd011440617b4d79e303a46445442916b753db20860713f1f72bf}} 
+TIM\+\_\+\+ICSelection\+\_\+\+Indirect\+TI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_ICSelection\_TRC@{TIM\_ICSelection\_TRC}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_ICSelection\_TRC@{TIM\_ICSelection\_TRC}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga72d9eedd64c9bd011440617b4d79e303a8a9650dd85025a9f5c34d2a5955fd4e0}\label{group___t_i_m___exported___types_gga72d9eedd64c9bd011440617b4d79e303a8a9650dd85025a9f5c34d2a5955fd4e0}} 
+TIM\+\_\+\+ICSelection\+\_\+\+TRC&TIM Input is selected to be connected to TRC. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00300}{300}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga2311c0f5d67692c7d8162a41e5ddce93}\label{group___t_i_m___exported___types_ga2311c0f5d67692c7d8162a41e5ddce93}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMIT\_TypeDef@{TIMIT\_TypeDef}}
+\index{TIMIT\_TypeDef@{TIMIT\_TypeDef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMIT\_TypeDef}{TIMIT\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga2311c0f5d67692c7d8162a41e5ddce93}{TIMIT\+\_\+\+Type\+Def}}}
+
+
+
+TIM\+\_\+interrupt\+\_\+sources \label{group___t_i_m___exported___types_TIM_Master_Slave_Mode}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Master_Slave_Mode}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_IT\_Update@{TIM\_IT\_Update}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_IT\_Update@{TIM\_IT\_Update}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93a0fd01d7f495b9c855817ef0bb500fafb}\label{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93a0fd01d7f495b9c855817ef0bb500fafb}} 
+TIM\+\_\+\+IT\+\_\+\+Update&TIM update Interrupt source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_IT\_CC1@{TIM\_IT\_CC1}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_IT\_CC1@{TIM\_IT\_CC1}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93ac3c0a00e211b9962e9cfb94c896390ce}\label{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93ac3c0a00e211b9962e9cfb94c896390ce}} 
+TIM\+\_\+\+IT\+\_\+\+CC1&TIM Capture Compare 1 Interrupt source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_IT\_CC2@{TIM\_IT\_CC2}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_IT\_CC2@{TIM\_IT\_CC2}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93a8e9eb6cc2c7951d9b30515937dca1bec}\label{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93a8e9eb6cc2c7951d9b30515937dca1bec}} 
+TIM\+\_\+\+IT\+\_\+\+CC2&TIM Capture Compare 2 Interrupt source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_IT\_CC3@{TIM\_IT\_CC3}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_IT\_CC3@{TIM\_IT\_CC3}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93a339416fc0c682189f1e0ff13ef576f1b}\label{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93a339416fc0c682189f1e0ff13ef576f1b}} 
+TIM\+\_\+\+IT\+\_\+\+CC3&TIM Capture Compare 3 Interrupt source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_IT\_CC4@{TIM\_IT\_CC4}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_IT\_CC4@{TIM\_IT\_CC4}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93af7e936e45e7a7f25b3793c54d106ebce}\label{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93af7e936e45e7a7f25b3793c54d106ebce}} 
+TIM\+\_\+\+IT\+\_\+\+CC4&TIM Capture Compare 4 Interrupt source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_IT\_COM@{TIM\_IT\_COM}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_IT\_COM@{TIM\_IT\_COM}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93ac129750a04434754ae17eeb3d3840a39}\label{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93ac129750a04434754ae17eeb3d3840a39}} 
+TIM\+\_\+\+IT\+\_\+\+COM&TIM Commutation Interrupt source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_IT\_Trigger@{TIM\_IT\_Trigger}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_IT\_Trigger@{TIM\_IT\_Trigger}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93a1e50283cc06a1c7305b43717bb855321}\label{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93a1e50283cc06a1c7305b43717bb855321}} 
+TIM\+\_\+\+IT\+\_\+\+Trigger&TIM Trigger Interrupt source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_IT\_Break@{TIM\_IT\_Break}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_IT\_Break@{TIM\_IT\_Break}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93a71a4891c1b0d61397ea34eb8cb3c6987}\label{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93a71a4891c1b0d61397ea34eb8cb3c6987}} 
+TIM\+\_\+\+IT\+\_\+\+Break&TIM Break Interrupt source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_IT\_CC5@{TIM\_IT\_CC5}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_IT\_CC5@{TIM\_IT\_CC5}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93a1f66f42f74c9d7751a561874b5138071}\label{group___t_i_m___exported___types_gga2311c0f5d67692c7d8162a41e5ddce93a1f66f42f74c9d7751a561874b5138071}} 
+TIM\+\_\+\+IT\+\_\+\+CC5&TIM Capture Compare 5 Interrupt source \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00396}{396}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga7d7035f698d5d66ae70d7e896c4c1535}\label{group___t_i_m___exported___types_ga7d7035f698d5d66ae70d7e896c4c1535}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMLOCKLEVEL\_Typedef@{TIMLOCKLEVEL\_Typedef}}
+\index{TIMLOCKLEVEL\_Typedef@{TIMLOCKLEVEL\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMLOCKLEVEL\_Typedef}{TIMLOCKLEVEL\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga7d7035f698d5d66ae70d7e896c4c1535}{TIMLOCKLEVEL\+\_\+\+Typedef}}}
+
+
+
+Lock\+\_\+level \label{group___t_i_m___exported___types_Lock_level}%
+\Hypertarget{group___t_i_m___exported___types_Lock_level}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_LOCKLevel\_OFF@{TIM\_LOCKLevel\_OFF}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_LOCKLevel\_OFF@{TIM\_LOCKLevel\_OFF}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7d7035f698d5d66ae70d7e896c4c1535a188b4dcbc19d51ee771ef74be60c60f5}\label{group___t_i_m___exported___types_gga7d7035f698d5d66ae70d7e896c4c1535a188b4dcbc19d51ee771ef74be60c60f5}} 
+TIM\+\_\+\+LOCKLevel\+\_\+\+OFF&No bit is write protected. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_LOCKLevel\_1@{TIM\_LOCKLevel\_1}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_LOCKLevel\_1@{TIM\_LOCKLevel\_1}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7d7035f698d5d66ae70d7e896c4c1535ac867e7e174009e94a20032f0d0679dd8}\label{group___t_i_m___exported___types_gga7d7035f698d5d66ae70d7e896c4c1535ac867e7e174009e94a20032f0d0679dd8}} 
+TIM\+\_\+\+LOCKLevel\+\_\+1&register and BKE/\+BKP/\+AOE bits in TIMx\+\_\+\+BDTR register can no longer be written. DTG bits in TIMx\+\_\+\+BDTR register, OISx and OISxN bits in TIMx\+\_\+\+CR2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_LOCKLevel\_2@{TIM\_LOCKLevel\_2}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_LOCKLevel\_2@{TIM\_LOCKLevel\_2}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7d7035f698d5d66ae70d7e896c4c1535a449c3ae09c1f6967469d2e75648f19b9}\label{group___t_i_m___exported___types_gga7d7035f698d5d66ae70d7e896c4c1535a449c3ae09c1f6967469d2e75648f19b9}} 
+TIM\+\_\+\+LOCKLevel\+\_\+2&LOCK Level 1 + CC Polarity bits (CCx\+P/\+CCx\+NP bits in TIMx\+\_\+\+CCER register, as s32 as the related channel is configured in output through the CCxS bits) as well as OSSR and OSSI bits can no longer be written. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_LOCKLevel\_3@{TIM\_LOCKLevel\_3}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_LOCKLevel\_3@{TIM\_LOCKLevel\_3}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga7d7035f698d5d66ae70d7e896c4c1535ad4c5883a74b69e9a0b51fcf12ef3be9a}\label{group___t_i_m___exported___types_gga7d7035f698d5d66ae70d7e896c4c1535ad4c5883a74b69e9a0b51fcf12ef3be9a}} 
+TIM\+\_\+\+LOCKLevel\+\_\+3&LOCK Level 2 + CC Control bits (OCxM and OCx\+PE bits in TIMx\+\_\+\+CCMRx registers, as s32 as the related channel is configured in output through the CCxS bits) can no longer be written. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00162}{162}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga8dff96eeb1f9a896abd193f981d2aecb}\label{group___t_i_m___exported___types_ga8dff96eeb1f9a896abd193f981d2aecb}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMMMS\_Typedef@{TIMMMS\_Typedef}}
+\index{TIMMMS\_Typedef@{TIMMMS\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMMMS\_Typedef}{TIMMMS\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga8dff96eeb1f9a896abd193f981d2aecb}{TIMMMS\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Trigger\+\_\+\+Output\+\_\+\+Source \label{group___t_i_m___exported___types_TIM_Trigger_Output_Source}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Trigger_Output_Source}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_TRIGSource\_Reset@{TIM\_TRIGSource\_Reset}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_TRIGSource\_Reset@{TIM\_TRIGSource\_Reset}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecba4b7d0d2cf6a3a3ab95e09bce80430df8}\label{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecba4b7d0d2cf6a3a3ab95e09bce80430df8}} 
+TIM\+\_\+\+TRIGSource\+\_\+\+Reset&The UG bit in the TIM\+\_\+\+EGR register is used as the trigger output (TRIG). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_TRIGSource\_Enable@{TIM\_TRIGSource\_Enable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_TRIGSource\_Enable@{TIM\_TRIGSource\_Enable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecbad3cef8b721b783ee0fb1faa932adb1f5}\label{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecbad3cef8b721b783ee0fb1faa932adb1f5}} 
+TIM\+\_\+\+TRIGSource\+\_\+\+Enable&The Counter Enable CEN is used as the trigger output (TRIG). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_TRIGSource\_Update@{TIM\_TRIGSource\_Update}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_TRIGSource\_Update@{TIM\_TRIGSource\_Update}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecbaef2534993bfae91c2c7cf7bb07666b34}\label{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecbaef2534993bfae91c2c7cf7bb07666b34}} 
+TIM\+\_\+\+TRIGSource\+\_\+\+Update&The update event is used as the trigger output (TRIG). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_TRIGSource\_OC1@{TIM\_TRIGSource\_OC1}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_TRIGSource\_OC1@{TIM\_TRIGSource\_OC1}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecba4af48a82c029037c3a596a9efe64bc95}\label{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecba4af48a82c029037c3a596a9efe64bc95}} 
+TIM\+\_\+\+TRIGSource\+\_\+\+OC1&is to be set, as soon as a capture or compare match occurs (TRIG). The trigger output sends a positive pulse when the CC1\+IF flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_TRIGSource\_OC1Ref@{TIM\_TRIGSource\_OC1Ref}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_TRIGSource\_OC1Ref@{TIM\_TRIGSource\_OC1Ref}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecba84c3ef0fc2c3e54f18f0713c8d57fd1b}\label{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecba84c3ef0fc2c3e54f18f0713c8d57fd1b}} 
+TIM\+\_\+\+TRIGSource\+\_\+\+OC1\+Ref&OC1\+REF signal is used as the trigger output (TRIG). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_TRIGSource\_OC2Ref@{TIM\_TRIGSource\_OC2Ref}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_TRIGSource\_OC2Ref@{TIM\_TRIGSource\_OC2Ref}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecba8a6335e0499d562c0fb24580a8af0102}\label{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecba8a6335e0499d562c0fb24580a8af0102}} 
+TIM\+\_\+\+TRIGSource\+\_\+\+OC2\+Ref&OC2\+REF signal is used as the trigger output (TRIG). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_TRIGSource\_OC3Ref@{TIM\_TRIGSource\_OC3Ref}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_TRIGSource\_OC3Ref@{TIM\_TRIGSource\_OC3Ref}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecba9fa764a62f642e9160cc90abd119d196}\label{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecba9fa764a62f642e9160cc90abd119d196}} 
+TIM\+\_\+\+TRIGSource\+\_\+\+OC3\+Ref&OC3\+REF signal is used as the trigger output (TRIG). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_TRIGSource\_OC4Ref@{TIM\_TRIGSource\_OC4Ref}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_TRIGSource\_OC4Ref@{TIM\_TRIGSource\_OC4Ref}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecbad3aa97543a7c5767318f3c9e5a33fb00}\label{group___t_i_m___exported___types_gga8dff96eeb1f9a896abd193f981d2aecbad3aa97543a7c5767318f3c9e5a33fb00}} 
+TIM\+\_\+\+TRIGSource\+\_\+\+OC4\+Ref&OC4\+REF signal is used as the trigger output (TRIG). \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00102}{102}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga6db6c5064c70fd6b5e03d9d55c75963d}\label{group___t_i_m___exported___types_ga6db6c5064c70fd6b5e03d9d55c75963d}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMMSM\_Typedef@{TIMMSM\_Typedef}}
+\index{TIMMSM\_Typedef@{TIMMSM\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMMSM\_Typedef}{TIMMSM\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga6db6c5064c70fd6b5e03d9d55c75963d}{TIMMSM\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Master\+\_\+\+Slave\+\_\+\+Mode \label{group___t_i_m___exported___types_TIM_Master_Slave_Mode}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Master_Slave_Mode}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_MasterSlaveMode\_Disable@{TIM\_MasterSlaveMode\_Disable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_MasterSlaveMode\_Disable@{TIM\_MasterSlaveMode\_Disable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga6db6c5064c70fd6b5e03d9d55c75963da5aaa0c882c00ae40a8524ca8674125f3}\label{group___t_i_m___exported___types_gga6db6c5064c70fd6b5e03d9d55c75963da5aaa0c882c00ae40a8524ca8674125f3}} 
+TIM\+\_\+\+Master\+Slave\+Mode\+\_\+\+Disable&No action \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_MasterSlaveMode\_Enable@{TIM\_MasterSlaveMode\_Enable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_MasterSlaveMode\_Enable@{TIM\_MasterSlaveMode\_Enable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga6db6c5064c70fd6b5e03d9d55c75963daba3fe207f1def96db7ee16f12737ee83}\label{group___t_i_m___exported___types_gga6db6c5064c70fd6b5e03d9d55c75963daba3fe207f1def96db7ee16f12737ee83}} 
+TIM\+\_\+\+Master\+Slave\+Mode\+\_\+\+Enable&synchronization between the current timer and its slaves (through TRIG) \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00388}{388}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga8c4be63dabbdcdffb92de1409a903d0b}\label{group___t_i_m___exported___types_ga8c4be63dabbdcdffb92de1409a903d0b}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMOCCE\_Typedef@{TIMOCCE\_Typedef}}
+\index{TIMOCCE\_Typedef@{TIMOCCE\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMOCCE\_Typedef}{TIMOCCE\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga8c4be63dabbdcdffb92de1409a903d0b}{TIMOCCE\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Output\+\_\+\+Compare\+\_\+\+Clear\+\_\+\+State \label{group___t_i_m___exported___types_TIM_Output_Compare_Clear_State}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Output_Compare_Clear_State}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OCClear\_Disable@{TIM\_OCClear\_Disable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OCClear\_Disable@{TIM\_OCClear\_Disable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga8c4be63dabbdcdffb92de1409a903d0ba811e8203b155a20f470af2028409db8b}\label{group___t_i_m___exported___types_gga8c4be63dabbdcdffb92de1409a903d0ba811e8203b155a20f470af2028409db8b}} 
+TIM\+\_\+\+OCClear\+\_\+\+Disable&TIM Output clear disable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OCClear\_Enable@{TIM\_OCClear\_Enable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OCClear\_Enable@{TIM\_OCClear\_Enable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga8c4be63dabbdcdffb92de1409a903d0bab9f95928fa2df89958578c2a26fa60cd}\label{group___t_i_m___exported___types_gga8c4be63dabbdcdffb92de1409a903d0bab9f95928fa2df89958578c2a26fa60cd}} 
+TIM\+\_\+\+OCClear\+\_\+\+Enable&TIM Output clear enable \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00380}{380}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga32f0dad8a4fd993273e86d8fe664b3e0}\label{group___t_i_m___exported___types_ga32f0dad8a4fd993273e86d8fe664b3e0}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMOCFE\_Typedef@{TIMOCFE\_Typedef}}
+\index{TIMOCFE\_Typedef@{TIMOCFE\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMOCFE\_Typedef}{TIMOCFE\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga32f0dad8a4fd993273e86d8fe664b3e0}{TIMOCFE\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Output\+\_\+\+Compare\+\_\+\+Fast\+\_\+\+State \label{group___t_i_m___exported___types_TIM_Output_Compare_Fast_State}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Output_Compare_Fast_State}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OCFast\_Disable@{TIM\_OCFast\_Disable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OCFast\_Disable@{TIM\_OCFast\_Disable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga32f0dad8a4fd993273e86d8fe664b3e0a7cc196483db0f611adc664665b100e77}\label{group___t_i_m___exported___types_gga32f0dad8a4fd993273e86d8fe664b3e0a7cc196483db0f611adc664665b100e77}} 
+TIM\+\_\+\+OCFast\+\_\+\+Disable&TIM output compare fast disable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OCFast\_Enable@{TIM\_OCFast\_Enable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OCFast\_Enable@{TIM\_OCFast\_Enable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga32f0dad8a4fd993273e86d8fe664b3e0abece7e2bc208e3b27a2c7ca45f80498f}\label{group___t_i_m___exported___types_gga32f0dad8a4fd993273e86d8fe664b3e0abece7e2bc208e3b27a2c7ca45f80498f}} 
+TIM\+\_\+\+OCFast\+\_\+\+Enable&TIM output compare fast enable \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00372}{372}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga4755a59c16f8950f0db4baa92381d4f4}\label{group___t_i_m___exported___types_ga4755a59c16f8950f0db4baa92381d4f4}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMOCMODE\_Typedef@{TIMOCMODE\_Typedef}}
+\index{TIMOCMODE\_Typedef@{TIMOCMODE\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMOCMODE\_Typedef}{TIMOCMODE\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga4755a59c16f8950f0db4baa92381d4f4}{TIMOCMODE\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Output\+\_\+\+Compare\+\_\+and\+\_\+\+PWM\+\_\+modes\+\_\+and\+\_\+\+Forced\+\_\+\+Action \label{group___t_i_m___exported___types_TIM_Output_Compare_and_PWM_modes_and_Forced_Action}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Output_Compare_and_PWM_modes_and_Forced_Action}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OCMode\_Timing@{TIM\_OCMode\_Timing}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OCMode\_Timing@{TIM\_OCMode\_Timing}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4ac97b8660e146a84b4d405f480b0c294b}\label{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4ac97b8660e146a84b4d405f480b0c294b}} 
+TIM\+\_\+\+OCMode\+\_\+\+Timing&Output compare mode\+: Timing \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OCMode\_Active@{TIM\_OCMode\_Active}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OCMode\_Active@{TIM\_OCMode\_Active}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4a90e9291c3827abd1d77f5e80e51902c0}\label{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4a90e9291c3827abd1d77f5e80e51902c0}} 
+TIM\+\_\+\+OCMode\+\_\+\+Active&Output compare mode\+: Active \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OCMode\_Inactive@{TIM\_OCMode\_Inactive}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OCMode\_Inactive@{TIM\_OCMode\_Inactive}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4af5e4739b37671356c4ba7d356e879da8}\label{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4af5e4739b37671356c4ba7d356e879da8}} 
+TIM\+\_\+\+OCMode\+\_\+\+Inactive&Output compare mode\+: Inactive \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OCMode\_Toggle@{TIM\_OCMode\_Toggle}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OCMode\_Toggle@{TIM\_OCMode\_Toggle}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4af6615a005d9353a4a6f4c6299439a493}\label{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4af6615a005d9353a4a6f4c6299439a493}} 
+TIM\+\_\+\+OCMode\+\_\+\+Toggle&Output compare mode\+: Toggle \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OCMode\_PWM1@{TIM\_OCMode\_PWM1}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OCMode\_PWM1@{TIM\_OCMode\_PWM1}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4ad9aa66c72420d53b65253654ab514c79}\label{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4ad9aa66c72420d53b65253654ab514c79}} 
+TIM\+\_\+\+OCMode\+\_\+\+PWM1&Output compare mode\+: PWM1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OCMode\_PWM2@{TIM\_OCMode\_PWM2}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OCMode\_PWM2@{TIM\_OCMode\_PWM2}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4ac65c2eeea478b8e7415185a4f1409769}\label{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4ac65c2eeea478b8e7415185a4f1409769}} 
+TIM\+\_\+\+OCMode\+\_\+\+PWM2&Output compare mode\+: PWM2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_ForcedAction\_Active@{TIM\_ForcedAction\_Active}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_ForcedAction\_Active@{TIM\_ForcedAction\_Active}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4ab9c4ada8494c7d79e9585ceb6734b68a}\label{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4ab9c4ada8494c7d79e9585ceb6734b68a}} 
+TIM\+\_\+\+Forced\+Action\+\_\+\+Active&Force active level on OCn\+REF \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_ForcedAction\_InActive@{TIM\_ForcedAction\_InActive}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_ForcedAction\_InActive@{TIM\_ForcedAction\_InActive}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4ad91a198943c2b75e615422eddcdda5e5}\label{group___t_i_m___exported___types_gga4755a59c16f8950f0db4baa92381d4f4ad91a198943c2b75e615422eddcdda5e5}} 
+TIM\+\_\+\+Forced\+Action\+\_\+\+In\+Active&Force inactive level on OCn\+REF \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00065}{65}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_gad8977abd8a47bcdf440691d2d2e0a12f}\label{group___t_i_m___exported___types_gad8977abd8a47bcdf440691d2d2e0a12f}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMOCPE\_Typedef@{TIMOCPE\_Typedef}}
+\index{TIMOCPE\_Typedef@{TIMOCPE\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMOCPE\_Typedef}{TIMOCPE\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_gad8977abd8a47bcdf440691d2d2e0a12f}{TIMOCPE\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Output\+\_\+\+Compare\+\_\+\+Preload\+\_\+\+State \label{group___t_i_m___exported___types_TIM_Output_Compare_Preload_State}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Output_Compare_Preload_State}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OCPreload\_Disable@{TIM\_OCPreload\_Disable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OCPreload\_Disable@{TIM\_OCPreload\_Disable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggad8977abd8a47bcdf440691d2d2e0a12fab9503bba8f8cc0ecb68a76c3d3052588}\label{group___t_i_m___exported___types_ggad8977abd8a47bcdf440691d2d2e0a12fab9503bba8f8cc0ecb68a76c3d3052588}} 
+TIM\+\_\+\+OCPreload\+\_\+\+Disable&TIM output compare preload disable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OCPreload\_Enable@{TIM\_OCPreload\_Enable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OCPreload\_Enable@{TIM\_OCPreload\_Enable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggad8977abd8a47bcdf440691d2d2e0a12fa8636d10ec343c321705d2f30d5b6e441}\label{group___t_i_m___exported___types_ggad8977abd8a47bcdf440691d2d2e0a12fa8636d10ec343c321705d2f30d5b6e441}} 
+TIM\+\_\+\+OCPreload\+\_\+\+Enable&TIM output compare preload enable \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00364}{364}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga38470c206fcab9e945ddc4976c46fcc4}\label{group___t_i_m___exported___types_ga38470c206fcab9e945ddc4976c46fcc4}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMOIS\_Typedef@{TIMOIS\_Typedef}}
+\index{TIMOIS\_Typedef@{TIMOIS\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMOIS\_Typedef}{TIMOIS\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga38470c206fcab9e945ddc4976c46fcc4}{TIMOIS\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Output\+\_\+\+Compare\+\_\+\+Idle\+\_\+\+State \label{group___t_i_m___exported___types_TIM_Output_Compare_Idle_State}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Output_Compare_Idle_State}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OCIdleState\_Reset@{TIM\_OCIdleState\_Reset}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OCIdleState\_Reset@{TIM\_OCIdleState\_Reset}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga38470c206fcab9e945ddc4976c46fcc4ab7e96abf68c15dba5acfec0be98e6081}\label{group___t_i_m___exported___types_gga38470c206fcab9e945ddc4976c46fcc4ab7e96abf68c15dba5acfec0be98e6081}} 
+TIM\+\_\+\+OCIdle\+State\+\_\+\+Reset&OCn=0 (after a dead-\/time if OCnN is implemented) when MOE=0.(n= 0 \+: 4) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OCIdleState\_Set@{TIM\_OCIdleState\_Set}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OCIdleState\_Set@{TIM\_OCIdleState\_Set}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga38470c206fcab9e945ddc4976c46fcc4a1ff11c1fc12bb2fcaaacfc9ab77a9104}\label{group___t_i_m___exported___types_gga38470c206fcab9e945ddc4976c46fcc4a1ff11c1fc12bb2fcaaacfc9ab77a9104}} 
+TIM\+\_\+\+OCIdle\+State\+\_\+\+Set&OCn=1 (after a dead-\/time if OCnN is implemented) when MOE=0.(n= 0 \+: 4) \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00284}{284}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga9e01ab725e12881e8596d5a7e7c36283}\label{group___t_i_m___exported___types_ga9e01ab725e12881e8596d5a7e7c36283}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMOISN\_Typedef@{TIMOISN\_Typedef}}
+\index{TIMOISN\_Typedef@{TIMOISN\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMOISN\_Typedef}{TIMOISN\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga9e01ab725e12881e8596d5a7e7c36283}{TIMOISN\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Output\+\_\+\+Compare\+\_\+\+N\+\_\+\+Idle\+\_\+\+State \label{group___t_i_m___exported___types_TIM_Output_Compare_N_Idle_State}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Output_Compare_N_Idle_State}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OCNIdleState\_Reset@{TIM\_OCNIdleState\_Reset}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OCNIdleState\_Reset@{TIM\_OCNIdleState\_Reset}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga9e01ab725e12881e8596d5a7e7c36283a1f5eb92e7728dac41e85431ec7d2d5e9}\label{group___t_i_m___exported___types_gga9e01ab725e12881e8596d5a7e7c36283a1f5eb92e7728dac41e85431ec7d2d5e9}} 
+TIM\+\_\+\+OCNIdle\+State\+\_\+\+Reset&OCnN=0 after a dead-\/time when MOE=0.(n= 0 \+: 4) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OCNIdleState\_Set@{TIM\_OCNIdleState\_Set}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OCNIdleState\_Set@{TIM\_OCNIdleState\_Set}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga9e01ab725e12881e8596d5a7e7c36283a27156e7bd0f8a2512b984634d69c5107}\label{group___t_i_m___exported___types_gga9e01ab725e12881e8596d5a7e7c36283a27156e7bd0f8a2512b984634d69c5107}} 
+TIM\+\_\+\+OCNIdle\+State\+\_\+\+Set&OCnN=1 after a dead-\/time when MOE=0.(n= 0 \+: 4) \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00292}{292}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga415b201b38faa58cb2df8f3698c6c2f6}\label{group___t_i_m___exported___types_ga415b201b38faa58cb2df8f3698c6c2f6}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMOPMODE\_Typedef@{TIMOPMODE\_Typedef}}
+\index{TIMOPMODE\_Typedef@{TIMOPMODE\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMOPMODE\_Typedef}{TIMOPMODE\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga415b201b38faa58cb2df8f3698c6c2f6}{TIMOPMODE\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+One\+\_\+\+Pulse\+\_\+\+Mode \label{group___t_i_m___exported___types_TIM_One_Pulse_Mode}%
+\Hypertarget{group___t_i_m___exported___types_TIM_One_Pulse_Mode}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OPMode\_Repetitive@{TIM\_OPMode\_Repetitive}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OPMode\_Repetitive@{TIM\_OPMode\_Repetitive}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga415b201b38faa58cb2df8f3698c6c2f6a07869acbd11b9bc5133fa06820ce4a7b}\label{group___t_i_m___exported___types_gga415b201b38faa58cb2df8f3698c6c2f6a07869acbd11b9bc5133fa06820ce4a7b}} 
+TIM\+\_\+\+OPMode\+\_\+\+Repetitive&Counter is not stopped at update event \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OPMode\_Single@{TIM\_OPMode\_Single}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OPMode\_Single@{TIM\_OPMode\_Single}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga415b201b38faa58cb2df8f3698c6c2f6a840d8aba07d53fdd1649ed9c7d87b11e}\label{group___t_i_m___exported___types_gga415b201b38faa58cb2df8f3698c6c2f6a840d8aba07d53fdd1649ed9c7d87b11e}} 
+TIM\+\_\+\+OPMode\+\_\+\+Single&Counter stops counting at the next update event (clearing the bit CEN) \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00177}{177}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga8851ad88e3ed4e971e1cce12c2b8d444}\label{group___t_i_m___exported___types_ga8851ad88e3ed4e971e1cce12c2b8d444}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMOSSI\_Typedef@{TIMOSSI\_Typedef}}
+\index{TIMOSSI\_Typedef@{TIMOSSI\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMOSSI\_Typedef}{TIMOSSI\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga8851ad88e3ed4e971e1cce12c2b8d444}{TIMOSSI\+\_\+\+Typedef}}}
+
+
+
+OSSI\+\_\+\+Off\+\_\+\+State\+\_\+\+Selection\+\_\+for\+\_\+\+Idle\+\_\+mode\+\_\+state \label{group___t_i_m___exported___types_OSSI_Off_State_Selection_for_Idle_mode_state}%
+\Hypertarget{group___t_i_m___exported___types_OSSI_Off_State_Selection_for_Idle_mode_state}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OSSIState\_Disable@{TIM\_OSSIState\_Disable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OSSIState\_Disable@{TIM\_OSSIState\_Disable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga8851ad88e3ed4e971e1cce12c2b8d444ac1919ec7c1386213255340e036d5c2d3}\label{group___t_i_m___exported___types_gga8851ad88e3ed4e971e1cce12c2b8d444ac1919ec7c1386213255340e036d5c2d3}} 
+TIM\+\_\+\+OSSIState\+\_\+\+Disable&When inactive, OC/\+OCN outputs are disabled (OC/\+OCN enable output signal=0). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OSSIState\_Enable@{TIM\_OSSIState\_Enable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OSSIState\_Enable@{TIM\_OSSIState\_Enable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga8851ad88e3ed4e971e1cce12c2b8d444a3779440ffcda1e639bd1e46cb6e4425b}\label{group___t_i_m___exported___types_gga8851ad88e3ed4e971e1cce12c2b8d444a3779440ffcda1e639bd1e46cb6e4425b}} 
+TIM\+\_\+\+OSSIState\+\_\+\+Enable&as soon as CCxE=1 or CCx\+NE=1. OC/\+OCN enable output signal=1). When inactive, OC/\+OCN outputs are forced first with their idle level \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00266}{266}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_gad7538e5ca012e2d1fd1e7edeaef63aad}\label{group___t_i_m___exported___types_gad7538e5ca012e2d1fd1e7edeaef63aad}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMOSSR\_Typedef@{TIMOSSR\_Typedef}}
+\index{TIMOSSR\_Typedef@{TIMOSSR\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMOSSR\_Typedef}{TIMOSSR\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_gad7538e5ca012e2d1fd1e7edeaef63aad}{TIMOSSR\+\_\+\+Typedef}}}
+
+
+
+OSSR\+\_\+\+Off\+\_\+\+State\+\_\+\+Selection\+\_\+for\+\_\+\+Run\+\_\+mode\+\_\+state \label{group___t_i_m___exported___types_OSSR_Off_State_Selection_for_Run_mode_state}%
+\Hypertarget{group___t_i_m___exported___types_OSSR_Off_State_Selection_for_Run_mode_state}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OSSRState\_Disable@{TIM\_OSSRState\_Disable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OSSRState\_Disable@{TIM\_OSSRState\_Disable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggad7538e5ca012e2d1fd1e7edeaef63aada89ad92f1616f40e87c35ff4e7655337f}\label{group___t_i_m___exported___types_ggad7538e5ca012e2d1fd1e7edeaef63aada89ad92f1616f40e87c35ff4e7655337f}} 
+TIM\+\_\+\+OSSRState\+\_\+\+Disable&When inactive, OC/\+OCN outputs are disabled (OC/\+OCN enable output signal=0). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OSSRState\_Enable@{TIM\_OSSRState\_Enable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OSSRState\_Enable@{TIM\_OSSRState\_Enable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggad7538e5ca012e2d1fd1e7edeaef63aadad097cbb84166bc26eceb6933b89d0866}\label{group___t_i_m___exported___types_ggad7538e5ca012e2d1fd1e7edeaef63aadad097cbb84166bc26eceb6933b89d0866}} 
+TIM\+\_\+\+OSSRState\+\_\+\+Enable&as soon as CCxE=1 or CCx\+NE=1. Then, OC/\+OCN enable output signal=1. When inactive, OC/\+OCN outputs are enabled with their inactive level \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00275}{275}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga9e21b2857bf3902eb9afe1046259aca0}\label{group___t_i_m___exported___types_ga9e21b2857bf3902eb9afe1046259aca0}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMOUTPUTNSTATE\_Typedef@{TIMOUTPUTNSTATE\_Typedef}}
+\index{TIMOUTPUTNSTATE\_Typedef@{TIMOUTPUTNSTATE\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMOUTPUTNSTATE\_Typedef}{TIMOUTPUTNSTATE\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga9e21b2857bf3902eb9afe1046259aca0}{TIMOUTPUTNSTATE\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Output\+\_\+\+Compare\+\_\+\+N\+\_\+state \label{group___t_i_m___exported___types_TIM_Output_Compare_N_state}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Output_Compare_N_state}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OutputNState\_Disable@{TIM\_OutputNState\_Disable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OutputNState\_Disable@{TIM\_OutputNState\_Disable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga9e21b2857bf3902eb9afe1046259aca0a043fc5a0874879fd21f4582432b188e2}\label{group___t_i_m___exported___types_gga9e21b2857bf3902eb9afe1046259aca0a043fc5a0874879fd21f4582432b188e2}} 
+TIM\+\_\+\+Output\+NState\+\_\+\+Disable&Output Compare N Disable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OutputNState\_Enable@{TIM\_OutputNState\_Enable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OutputNState\_Enable@{TIM\_OutputNState\_Enable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga9e21b2857bf3902eb9afe1046259aca0af8f46fda550aecf5abc9b50fad4b05da}\label{group___t_i_m___exported___types_gga9e21b2857bf3902eb9afe1046259aca0af8f46fda550aecf5abc9b50fad4b05da}} 
+TIM\+\_\+\+Output\+NState\+\_\+\+Enable&Output Compare N Enable \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00209}{209}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_gac3d09c5e2bb8f6bc941e267ff6116174}\label{group___t_i_m___exported___types_gac3d09c5e2bb8f6bc941e267ff6116174}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMOUTPUTSTATE\_Typedef@{TIMOUTPUTSTATE\_Typedef}}
+\index{TIMOUTPUTSTATE\_Typedef@{TIMOUTPUTSTATE\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMOUTPUTSTATE\_Typedef}{TIMOUTPUTSTATE\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_gac3d09c5e2bb8f6bc941e267ff6116174}{TIMOUTPUTSTATE\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Output\+\_\+\+Compare\+\_\+state \label{group___t_i_m___exported___types_TIM_Output_Compare_state}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Output_Compare_state}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OutputState\_Disable@{TIM\_OutputState\_Disable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OutputState\_Disable@{TIM\_OutputState\_Disable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggac3d09c5e2bb8f6bc941e267ff6116174a54f0bc1ff9f7d0bd474c012279bf2873}\label{group___t_i_m___exported___types_ggac3d09c5e2bb8f6bc941e267ff6116174a54f0bc1ff9f7d0bd474c012279bf2873}} 
+TIM\+\_\+\+Output\+State\+\_\+\+Disable&Output Compare Disable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_OutputState\_Enable@{TIM\_OutputState\_Enable}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_OutputState\_Enable@{TIM\_OutputState\_Enable}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggac3d09c5e2bb8f6bc941e267ff6116174a193712770d5cec24495c7c9460e3fdfb}\label{group___t_i_m___exported___types_ggac3d09c5e2bb8f6bc941e267ff6116174a193712770d5cec24495c7c9460e3fdfb}} 
+TIM\+\_\+\+Output\+State\+\_\+\+Enable&Output Compare Enable \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00201}{201}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga04b54c02f2685160b7b519bae614553f}\label{group___t_i_m___exported___types_ga04b54c02f2685160b7b519bae614553f}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMSMSENCODER\_Typedef@{TIMSMSENCODER\_Typedef}}
+\index{TIMSMSENCODER\_Typedef@{TIMSMSENCODER\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMSMSENCODER\_Typedef}{TIMSMSENCODER\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga04b54c02f2685160b7b519bae614553f}{TIMSMSENCODER\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Encoder\+\_\+\+Mode \label{group___t_i_m___exported___types_TIM_Encoder_Mode}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Encoder_Mode}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_EncoderMode\_TI1@{TIM\_EncoderMode\_TI1}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_EncoderMode\_TI1@{TIM\_EncoderMode\_TI1}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga04b54c02f2685160b7b519bae614553fa142d7d35b159887ac21bc89b084d9f9c}\label{group___t_i_m___exported___types_gga04b54c02f2685160b7b519bae614553fa142d7d35b159887ac21bc89b084d9f9c}} 
+TIM\+\_\+\+Encoder\+Mode\+\_\+\+TI1&Counter counts on TI1\+FP1 edge depending on TI2\+FP2 level. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_EncoderMode\_TI2@{TIM\_EncoderMode\_TI2}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_EncoderMode\_TI2@{TIM\_EncoderMode\_TI2}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga04b54c02f2685160b7b519bae614553fa7b6bee5a7f91facea3feb14db80805e0}\label{group___t_i_m___exported___types_gga04b54c02f2685160b7b519bae614553fa7b6bee5a7f91facea3feb14db80805e0}} 
+TIM\+\_\+\+Encoder\+Mode\+\_\+\+TI2&Counter counts on TI2\+FP2 edge depending on TI1\+FP1 level. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_EncoderMode\_TI12@{TIM\_EncoderMode\_TI12}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_EncoderMode\_TI12@{TIM\_EncoderMode\_TI12}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga04b54c02f2685160b7b519bae614553fa602f925435e55d33ab70726c5e08534b}\label{group___t_i_m___exported___types_gga04b54c02f2685160b7b519bae614553fa602f925435e55d33ab70726c5e08534b}} 
+TIM\+\_\+\+Encoder\+Mode\+\_\+\+TI12&on the level of the other input. Counter counts on both TI1\+FP1 and TI2\+FP2 edges depending \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00344}{344}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga0640487dae111a6d3bc212636291fdd8}\label{group___t_i_m___exported___types_ga0640487dae111a6d3bc212636291fdd8}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMSMSMODE\_Typedef@{TIMSMSMODE\_Typedef}}
+\index{TIMSMSMODE\_Typedef@{TIMSMSMODE\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMSMSMODE\_Typedef}{TIMSMSMODE\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga0640487dae111a6d3bc212636291fdd8}{TIMSMSMODE\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Slave\+\_\+\+Mode \label{group___t_i_m___exported___types_TIM_Slave_Mode}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Slave_Mode}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_SlaveMode\_Reset@{TIM\_SlaveMode\_Reset}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_SlaveMode\_Reset@{TIM\_SlaveMode\_Reset}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga0640487dae111a6d3bc212636291fdd8a3bad9b6ada120ee4436e8b53d0c96bb9}\label{group___t_i_m___exported___types_gga0640487dae111a6d3bc212636291fdd8a3bad9b6ada120ee4436e8b53d0c96bb9}} 
+TIM\+\_\+\+Slave\+Mode\+\_\+\+Reset&the counter and triggers an update of the registers. Rising edge of the selected trigger signal (TRGI) re-\/initializes \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_SlaveMode\_Gated@{TIM\_SlaveMode\_Gated}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_SlaveMode\_Gated@{TIM\_SlaveMode\_Gated}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga0640487dae111a6d3bc212636291fdd8aa887ec9025393a8c1a4ccd1a0b1041d0}\label{group___t_i_m___exported___types_gga0640487dae111a6d3bc212636291fdd8aa887ec9025393a8c1a4ccd1a0b1041d0}} 
+TIM\+\_\+\+Slave\+Mode\+\_\+\+Gated&The counter clock is enabled when the trigger signal (TRGI) is high. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_SlaveMode\_Trigger@{TIM\_SlaveMode\_Trigger}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_SlaveMode\_Trigger@{TIM\_SlaveMode\_Trigger}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga0640487dae111a6d3bc212636291fdd8a4dba83fa7dfb7fc6108aaf6323717a3b}\label{group___t_i_m___exported___types_gga0640487dae111a6d3bc212636291fdd8a4dba83fa7dfb7fc6108aaf6323717a3b}} 
+TIM\+\_\+\+Slave\+Mode\+\_\+\+Trigger&The counter starts at a rising edge of the trigger TRGI. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_SlaveMode\_External1@{TIM\_SlaveMode\_External1}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_SlaveMode\_External1@{TIM\_SlaveMode\_External1}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga0640487dae111a6d3bc212636291fdd8a704d3b2b5b5cc584480dfd6585cc2ce1}\label{group___t_i_m___exported___types_gga0640487dae111a6d3bc212636291fdd8a704d3b2b5b5cc584480dfd6585cc2ce1}} 
+TIM\+\_\+\+Slave\+Mode\+\_\+\+External1&Rising edges of the selected trigger (TRGI) clock the counter. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00117}{117}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga2f87dae31a46572d48d9dd3ad084142b}\label{group___t_i_m___exported___types_ga2f87dae31a46572d48d9dd3ad084142b}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMTS\_TypeDef@{TIMTS\_TypeDef}}
+\index{TIMTS\_TypeDef@{TIMTS\_TypeDef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMTS\_TypeDef}{TIMTS\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga2f87dae31a46572d48d9dd3ad084142b}{TIMTS\+\_\+\+Type\+Def}}}
+
+
+
+TIM\+\_\+\+Internal\+\_\+\+Trigger\+\_\+\+Selection \label{group___t_i_m___exported___types_TIM_Internal_Trigger_Selection}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Internal_Trigger_Selection}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_TS\_ITR0@{TIM\_TS\_ITR0}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_TS\_ITR0@{TIM\_TS\_ITR0}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142ba8810e7c07e203811cada449bee51b8b7}\label{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142ba8810e7c07e203811cada449bee51b8b7}} 
+TIM\+\_\+\+TS\+\_\+\+ITR0&Internal Trigger 0 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_TS\_ITR1@{TIM\_TS\_ITR1}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_TS\_ITR1@{TIM\_TS\_ITR1}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142babf107b3690552d1a7f177d4338c3728d}\label{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142babf107b3690552d1a7f177d4338c3728d}} 
+TIM\+\_\+\+TS\+\_\+\+ITR1&Internal Trigger 1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_TS\_ITR2@{TIM\_TS\_ITR2}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_TS\_ITR2@{TIM\_TS\_ITR2}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142baf02ca0ba8fb9e52437d38bdd208c95cc}\label{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142baf02ca0ba8fb9e52437d38bdd208c95cc}} 
+TIM\+\_\+\+TS\+\_\+\+ITR2&Internal Trigger 2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_TS\_ITR3@{TIM\_TS\_ITR3}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_TS\_ITR3@{TIM\_TS\_ITR3}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142ba32a6c775886bc02f6f9f2e5ff7e4ac65}\label{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142ba32a6c775886bc02f6f9f2e5ff7e4ac65}} 
+TIM\+\_\+\+TS\+\_\+\+ITR3&Internal Trigger 3 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_TS\_TI1F\_ED@{TIM\_TS\_TI1F\_ED}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_TS\_TI1F\_ED@{TIM\_TS\_TI1F\_ED}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142ba7eec7eee2fedce46169194179f9381b8}\label{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142ba7eec7eee2fedce46169194179f9381b8}} 
+TIM\+\_\+\+TS\+\_\+\+TI1\+F\+\_\+\+ED&TI1 Edge Detector \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_TS\_TI1FP1@{TIM\_TS\_TI1FP1}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_TS\_TI1FP1@{TIM\_TS\_TI1FP1}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142ba2b047674935ac92791f0941dcbd952c9}\label{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142ba2b047674935ac92791f0941dcbd952c9}} 
+TIM\+\_\+\+TS\+\_\+\+TI1\+FP1&Filtered Timer Input 1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_TS\_TI2FP2@{TIM\_TS\_TI2FP2}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_TS\_TI2FP2@{TIM\_TS\_TI2FP2}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142ba2656f987928cda23a1d99d04413c4cdc}\label{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142ba2656f987928cda23a1d99d04413c4cdc}} 
+TIM\+\_\+\+TS\+\_\+\+TI2\+FP2&Filtered Timer Input 2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_TS\_ETRF@{TIM\_TS\_ETRF}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_TS\_ETRF@{TIM\_TS\_ETRF}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142bae7ae7fa6581126ecce7d18dea1c4eaf6}\label{group___t_i_m___exported___types_gga2f87dae31a46572d48d9dd3ad084142bae7ae7fa6581126ecce7d18dea1c4eaf6}} 
+TIM\+\_\+\+TS\+\_\+\+ETRF&TI1 Edge Detector \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00088}{88}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_gafe177bbe68a58ea41f7201bc23fc6993}\label{group___t_i_m___exported___types_gafe177bbe68a58ea41f7201bc23fc6993}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMUG\_Typedef@{TIMUG\_Typedef}}
+\index{TIMUG\_Typedef@{TIMUG\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMUG\_Typedef}{TIMUG\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_gafe177bbe68a58ea41f7201bc23fc6993}{TIMUG\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Prescaler\+\_\+\+Reload\+\_\+\+Mode \label{group___t_i_m___exported___types_TIM_Prescaler_Reload_Mode}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Prescaler_Reload_Mode}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_PSCReloadMode\_Update@{TIM\_PSCReloadMode\_Update}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_PSCReloadMode\_Update@{TIM\_PSCReloadMode\_Update}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggafe177bbe68a58ea41f7201bc23fc6993ab50f5e7f2cb71f4e6d6a9868e23971ee}\label{group___t_i_m___exported___types_ggafe177bbe68a58ea41f7201bc23fc6993ab50f5e7f2cb71f4e6d6a9868e23971ee}} 
+TIM\+\_\+\+PSCReload\+Mode\+\_\+\+Update&The Prescaler is loaded at the update event \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_PSCReloadMode\_Immediate@{TIM\_PSCReloadMode\_Immediate}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_PSCReloadMode\_Immediate@{TIM\_PSCReloadMode\_Immediate}}}\mbox{\Hypertarget{group___t_i_m___exported___types_ggafe177bbe68a58ea41f7201bc23fc6993a6d72a851eb41057fac90e12d1bb7d4c2}\label{group___t_i_m___exported___types_ggafe177bbe68a58ea41f7201bc23fc6993a6d72a851eb41057fac90e12d1bb7d4c2}} 
+TIM\+\_\+\+PSCReload\+Mode\+\_\+\+Immediate&The Prescaler is loaded immediately \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00336}{336}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___exported___types_ga69cc4e1e80f2ef676c27b9eb260a589d}\label{group___t_i_m___exported___types_ga69cc4e1e80f2ef676c27b9eb260a589d}} 
+\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIMURS\_Typedef@{TIMURS\_Typedef}}
+\index{TIMURS\_Typedef@{TIMURS\_Typedef}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{TIMURS\_Typedef}{TIMURS\_Typedef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___t_i_m___exported___types_ga69cc4e1e80f2ef676c27b9eb260a589d}{TIMURS\+\_\+\+Typedef}}}
+
+
+
+TIM\+\_\+\+Update\+\_\+\+Source \label{group___t_i_m___exported___types_TIM_Update_Source}%
+\Hypertarget{group___t_i_m___exported___types_TIM_Update_Source}%
+
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_UpdateSource\_Global@{TIM\_UpdateSource\_Global}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_UpdateSource\_Global@{TIM\_UpdateSource\_Global}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga69cc4e1e80f2ef676c27b9eb260a589da7b5acf46d6d7bcd19011c4b824ffb3d5}\label{group___t_i_m___exported___types_gga69cc4e1e80f2ef676c27b9eb260a589da7b5acf46d6d7bcd19011c4b824ffb3d5}} 
+TIM\+\_\+\+Update\+Source\+\_\+\+Global&Source of update is counter overflow/underflow. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_UpdateSource\_Regular@{TIM\_UpdateSource\_Regular}!TIM\_Exported\_Types@{TIM\_Exported\_Types}}\index{TIM\_Exported\_Types@{TIM\_Exported\_Types}!TIM\_UpdateSource\_Regular@{TIM\_UpdateSource\_Regular}}}\mbox{\Hypertarget{group___t_i_m___exported___types_gga69cc4e1e80f2ef676c27b9eb260a589dac5aeaae95950a7b4c10c5720b5c5bf3a}\label{group___t_i_m___exported___types_gga69cc4e1e80f2ef676c27b9eb260a589dac5aeaae95950a7b4c10c5720b5c5bf3a}} 
+TIM\+\_\+\+Update\+Source\+\_\+\+Regular&Source of update is the counter overflow/underflow or the setting of UG bit, or an update generation through the slave mode controller. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8h_source}{hal\+\_\+tim.\+h}} 第 \mbox{\hyperlink{hal__tim_8h_source_l00354}{354}} 行定义.
+

@@ -1,0 +1,307 @@
+\hypertarget{group___f_l_a_s_h___exported___types}{}\doxysection{FLASH\+\_\+\+Exported\+\_\+\+Types}
+\label{group___f_l_a_s_h___exported___types}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{FLASH\+\_\+\+Status}} \{ \newline
+\mbox{\hyperlink{group___f_l_a_s_h___exported___types_ggadc63a6f3404ff1f71229a66915e9cdc0aa25021d41842af8a68cefcb65949e099}{FLASH\+\_\+\+BUSY}} = 1
+, \mbox{\hyperlink{group___f_l_a_s_h___exported___types_ggadc63a6f3404ff1f71229a66915e9cdc0adcb0c5002fc757739886a2601a3981da}{FLASH\+\_\+\+ERROR\+\_\+\+PG}}
+, \mbox{\hyperlink{group___f_l_a_s_h___exported___types_ggadc63a6f3404ff1f71229a66915e9cdc0ac9e2d95d3ba415fb7392d72a2458f4d8}{FLASH\+\_\+\+ERROR\+\_\+\+WRP}}
+, \mbox{\hyperlink{group___f_l_a_s_h___exported___types_ggadc63a6f3404ff1f71229a66915e9cdc0ab0e88e9f59edee379a1a710a8b7deebf}{FLASH\+\_\+\+COMPLETE}}
+, \newline
+\mbox{\hyperlink{group___f_l_a_s_h___exported___types_ggadc63a6f3404ff1f71229a66915e9cdc0a90c514b6a619e3a4e6c2eec3154323f8}{FLASH\+\_\+\+TIMEOUT}}
+ \}
+\begin{DoxyCompactList}\small\item\em FLASH Status \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___f_l_a_s_h___exported___types_gaa5b981d1729a55ceb15c3be9c31e4875}{FLASH\+\_\+\+Latency\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___f_l_a_s_h___exported___types_ggaa5b981d1729a55ceb15c3be9c31e4875a2a231eba16e649da0f8de50fb4290d0d}{FLASH\+\_\+\+Latency\+\_\+0}} = FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+0
+, \mbox{\hyperlink{group___f_l_a_s_h___exported___types_ggaa5b981d1729a55ceb15c3be9c31e4875a9421da0a0abafb54cad2b93b0cc41e60}{FLASH\+\_\+\+Latency\+\_\+1}} = FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+1
+, \mbox{\hyperlink{group___f_l_a_s_h___exported___types_ggaa5b981d1729a55ceb15c3be9c31e4875a015d28d491155b6067a010a1b11e28ab}{FLASH\+\_\+\+Latency\+\_\+2}} = FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+2
+, \mbox{\hyperlink{group___f_l_a_s_h___exported___types_ggaa5b981d1729a55ceb15c3be9c31e4875a92369f8c23cc4e506a28e3cfa8ad4aba}{FLASH\+\_\+\+Latency\+\_\+3}} = FLASH\+\_\+\+ACR\+\_\+\+LATENCY\+\_\+3
+ \}
+\begin{DoxyCompactList}\small\item\em FLASH Latency \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___f_l_a_s_h___exported___types_ga3c034270555867c4d719bfa36e20736b}{FLASH\+\_\+\+Half\+Cycle\+Access\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___f_l_a_s_h___exported___types_gga3c034270555867c4d719bfa36e20736ba4927e7916a9e80365c7305b3243d0405}{FLASH\+\_\+\+Half\+Cycle\+Access\+\_\+\+Enable}} = FLASH\+\_\+\+ACR\+\_\+\+HLFCYA
+, \mbox{\hyperlink{group___f_l_a_s_h___exported___types_gga3c034270555867c4d719bfa36e20736ba266d9ad899cccdaf20c7dd4c09b15f9a}{FLASH\+\_\+\+Half\+Cycle\+Access\+\_\+\+Disable}} = (s32)$\sim$\+FLASH\+\_\+\+ACR\+\_\+\+HLFCYA
+ \}
+\begin{DoxyCompactList}\small\item\em Half\+\_\+\+Cycle\+\_\+\+Enable\+\_\+\+Disable \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___f_l_a_s_h___exported___types_ga7ac8aa0eb363aea9696800b8ea9c1d8b}{FLASH\+\_\+\+Prefetch\+Buffer\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___f_l_a_s_h___exported___types_gga7ac8aa0eb363aea9696800b8ea9c1d8bae9d47ed3a3cd14d43e2a81ed3fea13f5}{FLASH\+\_\+\+Prefetch\+Buffer\+\_\+\+Enable}} = FLASH\+\_\+\+ACR\+\_\+\+PRFTBE
+, \mbox{\hyperlink{group___f_l_a_s_h___exported___types_gga7ac8aa0eb363aea9696800b8ea9c1d8ba112de835dbacf7acb3693a910df919d4}{FLASH\+\_\+\+Prefetch\+Buffer\+\_\+\+Disable}} = (s32)$\sim$\+FLASH\+\_\+\+ACR\+\_\+\+PRFTBE
+ \}
+\begin{DoxyCompactList}\small\item\em Prefetch\+\_\+\+Buffer\+\_\+\+Enable\+\_\+\+Disable \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___f_l_a_s_h___exported___types_ga9e4539b913a5c2c0936d3c28a71c650f}{OB\+\_\+\+IWDG\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___f_l_a_s_h___exported___types_gga9e4539b913a5c2c0936d3c28a71c650fabce0d8bedfe4b2bee6adfca4baf77d57}{OB\+\_\+\+IWDG\+\_\+\+SW}} = 0x0001
+, \mbox{\hyperlink{group___f_l_a_s_h___exported___types_gga9e4539b913a5c2c0936d3c28a71c650faa789ab6e135f96269e6e66dbc27f8a4b}{OB\+\_\+\+IWDG\+\_\+\+HW}} = 0x0000
+ \}
+\begin{DoxyCompactList}\small\item\em Option\+\_\+\+Bytes\+\_\+\+IWatchdog \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___f_l_a_s_h___exported___types_ga20354cfd4bf512e0f53a7bbd97d3ce47}{OB\+\_\+\+STOP\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___f_l_a_s_h___exported___types_gga20354cfd4bf512e0f53a7bbd97d3ce47a54ad00a7de0ada25d705da624b154ac0}{OB\+\_\+\+STOP\+\_\+\+No\+RST}} = 0x0002
+, \mbox{\hyperlink{group___f_l_a_s_h___exported___types_gga20354cfd4bf512e0f53a7bbd97d3ce47afcfcac69a6839bd65b79a949b96c7dc6}{OB\+\_\+\+STOP\+\_\+\+RST}} = 0x0000
+ \}
+\begin{DoxyCompactList}\small\item\em Option\+\_\+\+Bytes\+\_\+n\+RST\+\_\+\+STOP \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___f_l_a_s_h___exported___types_gaa256a568fada756a3bbd852f1faff085}{OB\+\_\+\+STDBY\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___f_l_a_s_h___exported___types_ggaa256a568fada756a3bbd852f1faff085a09b602ef8dce18a3f0b24c167086833c}{OB\+\_\+\+STDBY\+\_\+\+No\+RST}} = 0x0004
+, \mbox{\hyperlink{group___f_l_a_s_h___exported___types_ggaa256a568fada756a3bbd852f1faff085a3d508687fd4d4d1408f1570e417977ba}{OB\+\_\+\+STDBY\+\_\+\+RST}} = 0x0000
+ \}
+\begin{DoxyCompactList}\small\item\em Option\+\_\+\+Bytes\+\_\+n\+RST\+\_\+\+STDBY \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___f_l_a_s_h___exported___types_ga84ea7733d1706f38fd6f70b19bc22275}{FLASH\+\_\+\+IT\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___f_l_a_s_h___exported___types_gga84ea7733d1706f38fd6f70b19bc22275aa4ba5070696b556ef85e0706b7d19503}{FLASH\+\_\+\+IT\+\_\+\+ERROR}} = FLASH\+\_\+\+CR\+\_\+\+ERRIE
+, \mbox{\hyperlink{group___f_l_a_s_h___exported___types_gga84ea7733d1706f38fd6f70b19bc22275a8490b4e13cb6ace7e0eb216033f50560}{FLASH\+\_\+\+IT\+\_\+\+EOP}} = FLASH\+\_\+\+CR\+\_\+\+EOPIE
+ \}
+\begin{DoxyCompactList}\small\item\em FLASH\+\_\+\+Interrupts \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___f_l_a_s_h___exported___types_ga3ea3bb6b697ebeeb10233905c7a0846c}{FLASH\+\_\+\+FLAG\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___f_l_a_s_h___exported___types_gga3ea3bb6b697ebeeb10233905c7a0846cabc94f7db0a0478924fa3d87f6fa48012}{FLASH\+\_\+\+FLAG\+\_\+\+EOP}} = FLASH\+\_\+\+SR\+\_\+\+EOP
+, \mbox{\hyperlink{group___f_l_a_s_h___exported___types_gga3ea3bb6b697ebeeb10233905c7a0846ca12e592d054fc5786e37450af4f358413}{FLASH\+\_\+\+FLAG\+\_\+\+PGERR}} = FLASH\+\_\+\+SR\+\_\+\+PGERR
+, \mbox{\hyperlink{group___f_l_a_s_h___exported___types_gga3ea3bb6b697ebeeb10233905c7a0846ca9ce7a92c39e81a02c39c576d4d0d9771}{FLASH\+\_\+\+FLAG\+\_\+\+WRPRTERR}} = FLASH\+\_\+\+SR\+\_\+\+WRPRTERR
+, \mbox{\hyperlink{group___f_l_a_s_h___exported___types_gga3ea3bb6b697ebeeb10233905c7a0846cabc8c5b58231e32ccac9504556bd92c20}{FLASH\+\_\+\+FLAG\+\_\+\+BSY}} = FLASH\+\_\+\+SR\+\_\+\+BUSY
+, \newline
+\mbox{\hyperlink{group___f_l_a_s_h___exported___types_gga3ea3bb6b697ebeeb10233905c7a0846cafd87ebe9974f89ba64bea6b019027aa4}{FLASH\+\_\+\+FLAG\+\_\+\+OPTERR}} = FLASH\+\_\+\+OBR\+\_\+\+OPTERR
+ \}
+\begin{DoxyCompactList}\small\item\em FLASH\+\_\+\+Flags \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+\doxysubsection{枚举类型说明}
+\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_ga3ea3bb6b697ebeeb10233905c7a0846c}\label{group___f_l_a_s_h___exported___types_ga3ea3bb6b697ebeeb10233905c7a0846c}} 
+\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_FLAG\_TypeDef@{FLASH\_FLAG\_TypeDef}}
+\index{FLASH\_FLAG\_TypeDef@{FLASH\_FLAG\_TypeDef}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{FLASH\_FLAG\_TypeDef}{FLASH\_FLAG\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___f_l_a_s_h___exported___types_ga3ea3bb6b697ebeeb10233905c7a0846c}{FLASH\+\_\+\+FLAG\+\_\+\+Type\+Def}}}
+
+
+
+FLASH\+\_\+\+Flags 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASH\_FLAG\_EOP@{FLASH\_FLAG\_EOP}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_FLAG\_EOP@{FLASH\_FLAG\_EOP}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_gga3ea3bb6b697ebeeb10233905c7a0846cabc94f7db0a0478924fa3d87f6fa48012}\label{group___f_l_a_s_h___exported___types_gga3ea3bb6b697ebeeb10233905c7a0846cabc94f7db0a0478924fa3d87f6fa48012}} 
+FLASH\+\_\+\+FLAG\+\_\+\+EOP&FLASH End of Operation flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASH\_FLAG\_PGERR@{FLASH\_FLAG\_PGERR}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_FLAG\_PGERR@{FLASH\_FLAG\_PGERR}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_gga3ea3bb6b697ebeeb10233905c7a0846ca12e592d054fc5786e37450af4f358413}\label{group___f_l_a_s_h___exported___types_gga3ea3bb6b697ebeeb10233905c7a0846ca12e592d054fc5786e37450af4f358413}} 
+FLASH\+\_\+\+FLAG\+\_\+\+PGERR&FLASH Program error flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASH\_FLAG\_WRPRTERR@{FLASH\_FLAG\_WRPRTERR}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_FLAG\_WRPRTERR@{FLASH\_FLAG\_WRPRTERR}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_gga3ea3bb6b697ebeeb10233905c7a0846ca9ce7a92c39e81a02c39c576d4d0d9771}\label{group___f_l_a_s_h___exported___types_gga3ea3bb6b697ebeeb10233905c7a0846ca9ce7a92c39e81a02c39c576d4d0d9771}} 
+FLASH\+\_\+\+FLAG\+\_\+\+WRPRTERR&FLASH Write protected error flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASH\_FLAG\_BSY@{FLASH\_FLAG\_BSY}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_FLAG\_BSY@{FLASH\_FLAG\_BSY}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_gga3ea3bb6b697ebeeb10233905c7a0846cabc8c5b58231e32ccac9504556bd92c20}\label{group___f_l_a_s_h___exported___types_gga3ea3bb6b697ebeeb10233905c7a0846cabc8c5b58231e32ccac9504556bd92c20}} 
+FLASH\+\_\+\+FLAG\+\_\+\+BSY&FLASH Busy flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASH\_FLAG\_OPTERR@{FLASH\_FLAG\_OPTERR}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_FLAG\_OPTERR@{FLASH\_FLAG\_OPTERR}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_gga3ea3bb6b697ebeeb10233905c7a0846cafd87ebe9974f89ba64bea6b019027aa4}\label{group___f_l_a_s_h___exported___types_gga3ea3bb6b697ebeeb10233905c7a0846cafd87ebe9974f89ba64bea6b019027aa4}} 
+FLASH\+\_\+\+FLAG\+\_\+\+OPTERR&FLASH Option Byte error flag \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__flash_8h_source}{hal\+\_\+flash.\+h}} 第 \mbox{\hyperlink{hal__flash_8h_source_l00113}{113}} 行定义.
+
+\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_ga3c034270555867c4d719bfa36e20736b}\label{group___f_l_a_s_h___exported___types_ga3c034270555867c4d719bfa36e20736b}} 
+\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_HalfCycleAccess\_TypeDef@{FLASH\_HalfCycleAccess\_TypeDef}}
+\index{FLASH\_HalfCycleAccess\_TypeDef@{FLASH\_HalfCycleAccess\_TypeDef}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{FLASH\_HalfCycleAccess\_TypeDef}{FLASH\_HalfCycleAccess\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___f_l_a_s_h___exported___types_ga3c034270555867c4d719bfa36e20736b}{FLASH\+\_\+\+Half\+Cycle\+Access\+\_\+\+Type\+Def}}}
+
+
+
+Half\+\_\+\+Cycle\+\_\+\+Enable\+\_\+\+Disable 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASH\_HalfCycleAccess\_Enable@{FLASH\_HalfCycleAccess\_Enable}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_HalfCycleAccess\_Enable@{FLASH\_HalfCycleAccess\_Enable}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_gga3c034270555867c4d719bfa36e20736ba4927e7916a9e80365c7305b3243d0405}\label{group___f_l_a_s_h___exported___types_gga3c034270555867c4d719bfa36e20736ba4927e7916a9e80365c7305b3243d0405}} 
+FLASH\+\_\+\+Half\+Cycle\+Access\+\_\+\+Enable&FLASH Half Cycle Enable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASH\_HalfCycleAccess\_Disable@{FLASH\_HalfCycleAccess\_Disable}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_HalfCycleAccess\_Disable@{FLASH\_HalfCycleAccess\_Disable}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_gga3c034270555867c4d719bfa36e20736ba266d9ad899cccdaf20c7dd4c09b15f9a}\label{group___f_l_a_s_h___exported___types_gga3c034270555867c4d719bfa36e20736ba266d9ad899cccdaf20c7dd4c09b15f9a}} 
+FLASH\+\_\+\+Half\+Cycle\+Access\+\_\+\+Disable&FLASH Half Cycle Disable \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__flash_8h_source}{hal\+\_\+flash.\+h}} 第 \mbox{\hyperlink{hal__flash_8h_source_l00065}{65}} 行定义.
+
+\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_ga84ea7733d1706f38fd6f70b19bc22275}\label{group___f_l_a_s_h___exported___types_ga84ea7733d1706f38fd6f70b19bc22275}} 
+\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_IT\_TypeDef@{FLASH\_IT\_TypeDef}}
+\index{FLASH\_IT\_TypeDef@{FLASH\_IT\_TypeDef}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{FLASH\_IT\_TypeDef}{FLASH\_IT\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___f_l_a_s_h___exported___types_ga84ea7733d1706f38fd6f70b19bc22275}{FLASH\+\_\+\+IT\+\_\+\+Type\+Def}}}
+
+
+
+FLASH\+\_\+\+Interrupts 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASH\_IT\_ERROR@{FLASH\_IT\_ERROR}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_IT\_ERROR@{FLASH\_IT\_ERROR}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_gga84ea7733d1706f38fd6f70b19bc22275aa4ba5070696b556ef85e0706b7d19503}\label{group___f_l_a_s_h___exported___types_gga84ea7733d1706f38fd6f70b19bc22275aa4ba5070696b556ef85e0706b7d19503}} 
+FLASH\+\_\+\+IT\+\_\+\+ERROR&FPEC error interrupt source \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASH\_IT\_EOP@{FLASH\_IT\_EOP}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_IT\_EOP@{FLASH\_IT\_EOP}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_gga84ea7733d1706f38fd6f70b19bc22275a8490b4e13cb6ace7e0eb216033f50560}\label{group___f_l_a_s_h___exported___types_gga84ea7733d1706f38fd6f70b19bc22275a8490b4e13cb6ace7e0eb216033f50560}} 
+FLASH\+\_\+\+IT\+\_\+\+EOP&End of FLASH Operation Interrupt source \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__flash_8h_source}{hal\+\_\+flash.\+h}} 第 \mbox{\hyperlink{hal__flash_8h_source_l00105}{105}} 行定义.
+
+\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_gaa5b981d1729a55ceb15c3be9c31e4875}\label{group___f_l_a_s_h___exported___types_gaa5b981d1729a55ceb15c3be9c31e4875}} 
+\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_Latency\_TypeDef@{FLASH\_Latency\_TypeDef}}
+\index{FLASH\_Latency\_TypeDef@{FLASH\_Latency\_TypeDef}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{FLASH\_Latency\_TypeDef}{FLASH\_Latency\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___f_l_a_s_h___exported___types_gaa5b981d1729a55ceb15c3be9c31e4875}{FLASH\+\_\+\+Latency\+\_\+\+Type\+Def}}}
+
+
+
+FLASH Latency 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASH\_Latency\_0@{FLASH\_Latency\_0}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_Latency\_0@{FLASH\_Latency\_0}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_ggaa5b981d1729a55ceb15c3be9c31e4875a2a231eba16e649da0f8de50fb4290d0d}\label{group___f_l_a_s_h___exported___types_ggaa5b981d1729a55ceb15c3be9c31e4875a2a231eba16e649da0f8de50fb4290d0d}} 
+FLASH\+\_\+\+Latency\+\_\+0&FLASH Zero Latency cycle \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASH\_Latency\_1@{FLASH\_Latency\_1}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_Latency\_1@{FLASH\_Latency\_1}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_ggaa5b981d1729a55ceb15c3be9c31e4875a9421da0a0abafb54cad2b93b0cc41e60}\label{group___f_l_a_s_h___exported___types_ggaa5b981d1729a55ceb15c3be9c31e4875a9421da0a0abafb54cad2b93b0cc41e60}} 
+FLASH\+\_\+\+Latency\+\_\+1&FLASH One Latency cycle \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASH\_Latency\_2@{FLASH\_Latency\_2}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_Latency\_2@{FLASH\_Latency\_2}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_ggaa5b981d1729a55ceb15c3be9c31e4875a015d28d491155b6067a010a1b11e28ab}\label{group___f_l_a_s_h___exported___types_ggaa5b981d1729a55ceb15c3be9c31e4875a015d28d491155b6067a010a1b11e28ab}} 
+FLASH\+\_\+\+Latency\+\_\+2&FLASH Two Latency cycles \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASH\_Latency\_3@{FLASH\_Latency\_3}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_Latency\_3@{FLASH\_Latency\_3}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_ggaa5b981d1729a55ceb15c3be9c31e4875a92369f8c23cc4e506a28e3cfa8ad4aba}\label{group___f_l_a_s_h___exported___types_ggaa5b981d1729a55ceb15c3be9c31e4875a92369f8c23cc4e506a28e3cfa8ad4aba}} 
+FLASH\+\_\+\+Latency\+\_\+3&FLASH Three Latency cycles \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__flash_8h_source}{hal\+\_\+flash.\+h}} 第 \mbox{\hyperlink{hal__flash_8h_source_l00055}{55}} 行定义.
+
+\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_ga7ac8aa0eb363aea9696800b8ea9c1d8b}\label{group___f_l_a_s_h___exported___types_ga7ac8aa0eb363aea9696800b8ea9c1d8b}} 
+\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_PrefetchBuffer\_TypeDef@{FLASH\_PrefetchBuffer\_TypeDef}}
+\index{FLASH\_PrefetchBuffer\_TypeDef@{FLASH\_PrefetchBuffer\_TypeDef}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{FLASH\_PrefetchBuffer\_TypeDef}{FLASH\_PrefetchBuffer\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___f_l_a_s_h___exported___types_ga7ac8aa0eb363aea9696800b8ea9c1d8b}{FLASH\+\_\+\+Prefetch\+Buffer\+\_\+\+Type\+Def}}}
+
+
+
+Prefetch\+\_\+\+Buffer\+\_\+\+Enable\+\_\+\+Disable 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASH\_PrefetchBuffer\_Enable@{FLASH\_PrefetchBuffer\_Enable}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_PrefetchBuffer\_Enable@{FLASH\_PrefetchBuffer\_Enable}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_gga7ac8aa0eb363aea9696800b8ea9c1d8bae9d47ed3a3cd14d43e2a81ed3fea13f5}\label{group___f_l_a_s_h___exported___types_gga7ac8aa0eb363aea9696800b8ea9c1d8bae9d47ed3a3cd14d43e2a81ed3fea13f5}} 
+FLASH\+\_\+\+Prefetch\+Buffer\+\_\+\+Enable&FLASH Prefetch Buffer Enable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASH\_PrefetchBuffer\_Disable@{FLASH\_PrefetchBuffer\_Disable}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_PrefetchBuffer\_Disable@{FLASH\_PrefetchBuffer\_Disable}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_gga7ac8aa0eb363aea9696800b8ea9c1d8ba112de835dbacf7acb3693a910df919d4}\label{group___f_l_a_s_h___exported___types_gga7ac8aa0eb363aea9696800b8ea9c1d8ba112de835dbacf7acb3693a910df919d4}} 
+FLASH\+\_\+\+Prefetch\+Buffer\+\_\+\+Disable&FLASH Prefetch Buffer Disable \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__flash_8h_source}{hal\+\_\+flash.\+h}} 第 \mbox{\hyperlink{hal__flash_8h_source_l00073}{73}} 行定义.
+
+\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}\label{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}} 
+\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_Status@{FLASH\_Status}}
+\index{FLASH\_Status@{FLASH\_Status}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{FLASH\_Status}{FLASH\_Status}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{FLASH\+\_\+\+Status}}}
+
+
+
+FLASH Status 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASH\_BUSY@{FLASH\_BUSY}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_BUSY@{FLASH\_BUSY}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_ggadc63a6f3404ff1f71229a66915e9cdc0aa25021d41842af8a68cefcb65949e099}\label{group___f_l_a_s_h___exported___types_ggadc63a6f3404ff1f71229a66915e9cdc0aa25021d41842af8a68cefcb65949e099}} 
+FLASH\+\_\+\+BUSY&FLASH busy status \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASH\_ERROR\_PG@{FLASH\_ERROR\_PG}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_ERROR\_PG@{FLASH\_ERROR\_PG}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_ggadc63a6f3404ff1f71229a66915e9cdc0adcb0c5002fc757739886a2601a3981da}\label{group___f_l_a_s_h___exported___types_ggadc63a6f3404ff1f71229a66915e9cdc0adcb0c5002fc757739886a2601a3981da}} 
+FLASH\+\_\+\+ERROR\+\_\+\+PG&FLASH programming error status \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASH\_ERROR\_WRP@{FLASH\_ERROR\_WRP}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_ERROR\_WRP@{FLASH\_ERROR\_WRP}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_ggadc63a6f3404ff1f71229a66915e9cdc0ac9e2d95d3ba415fb7392d72a2458f4d8}\label{group___f_l_a_s_h___exported___types_ggadc63a6f3404ff1f71229a66915e9cdc0ac9e2d95d3ba415fb7392d72a2458f4d8}} 
+FLASH\+\_\+\+ERROR\+\_\+\+WRP&FLASH write protection error status \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASH\_COMPLETE@{FLASH\_COMPLETE}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_COMPLETE@{FLASH\_COMPLETE}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_ggadc63a6f3404ff1f71229a66915e9cdc0ab0e88e9f59edee379a1a710a8b7deebf}\label{group___f_l_a_s_h___exported___types_ggadc63a6f3404ff1f71229a66915e9cdc0ab0e88e9f59edee379a1a710a8b7deebf}} 
+FLASH\+\_\+\+COMPLETE&FLASH end of operation status \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASH\_TIMEOUT@{FLASH\_TIMEOUT}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!FLASH\_TIMEOUT@{FLASH\_TIMEOUT}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_ggadc63a6f3404ff1f71229a66915e9cdc0a90c514b6a619e3a4e6c2eec3154323f8}\label{group___f_l_a_s_h___exported___types_ggadc63a6f3404ff1f71229a66915e9cdc0a90c514b6a619e3a4e6c2eec3154323f8}} 
+FLASH\+\_\+\+TIMEOUT&FLASH Last operation timed out status \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__flash_8h_source}{hal\+\_\+flash.\+h}} 第 \mbox{\hyperlink{hal__flash_8h_source_l00044}{44}} 行定义.
+
+\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_ga9e4539b913a5c2c0936d3c28a71c650f}\label{group___f_l_a_s_h___exported___types_ga9e4539b913a5c2c0936d3c28a71c650f}} 
+\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!OB\_IWDG\_TypeDef@{OB\_IWDG\_TypeDef}}
+\index{OB\_IWDG\_TypeDef@{OB\_IWDG\_TypeDef}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{OB\_IWDG\_TypeDef}{OB\_IWDG\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___f_l_a_s_h___exported___types_ga9e4539b913a5c2c0936d3c28a71c650f}{OB\+\_\+\+IWDG\+\_\+\+Type\+Def}}}
+
+
+
+Option\+\_\+\+Bytes\+\_\+\+IWatchdog 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OB\_IWDG\_SW@{OB\_IWDG\_SW}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!OB\_IWDG\_SW@{OB\_IWDG\_SW}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_gga9e4539b913a5c2c0936d3c28a71c650fabce0d8bedfe4b2bee6adfca4baf77d57}\label{group___f_l_a_s_h___exported___types_gga9e4539b913a5c2c0936d3c28a71c650fabce0d8bedfe4b2bee6adfca4baf77d57}} 
+OB\+\_\+\+IWDG\+\_\+\+SW&Software IWDG selected \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OB\_IWDG\_HW@{OB\_IWDG\_HW}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!OB\_IWDG\_HW@{OB\_IWDG\_HW}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_gga9e4539b913a5c2c0936d3c28a71c650faa789ab6e135f96269e6e66dbc27f8a4b}\label{group___f_l_a_s_h___exported___types_gga9e4539b913a5c2c0936d3c28a71c650faa789ab6e135f96269e6e66dbc27f8a4b}} 
+OB\+\_\+\+IWDG\+\_\+\+HW&Hardware IWDG selected \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__flash_8h_source}{hal\+\_\+flash.\+h}} 第 \mbox{\hyperlink{hal__flash_8h_source_l00081}{81}} 行定义.
+
+\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_gaa256a568fada756a3bbd852f1faff085}\label{group___f_l_a_s_h___exported___types_gaa256a568fada756a3bbd852f1faff085}} 
+\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!OB\_STDBY\_TypeDef@{OB\_STDBY\_TypeDef}}
+\index{OB\_STDBY\_TypeDef@{OB\_STDBY\_TypeDef}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{OB\_STDBY\_TypeDef}{OB\_STDBY\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___f_l_a_s_h___exported___types_gaa256a568fada756a3bbd852f1faff085}{OB\+\_\+\+STDBY\+\_\+\+Type\+Def}}}
+
+
+
+Option\+\_\+\+Bytes\+\_\+n\+RST\+\_\+\+STDBY 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OB\_STDBY\_NoRST@{OB\_STDBY\_NoRST}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!OB\_STDBY\_NoRST@{OB\_STDBY\_NoRST}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_ggaa256a568fada756a3bbd852f1faff085a09b602ef8dce18a3f0b24c167086833c}\label{group___f_l_a_s_h___exported___types_ggaa256a568fada756a3bbd852f1faff085a09b602ef8dce18a3f0b24c167086833c}} 
+OB\+\_\+\+STDBY\+\_\+\+No\+RST&No reset generated when entering in STANDBY \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OB\_STDBY\_RST@{OB\_STDBY\_RST}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!OB\_STDBY\_RST@{OB\_STDBY\_RST}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_ggaa256a568fada756a3bbd852f1faff085a3d508687fd4d4d1408f1570e417977ba}\label{group___f_l_a_s_h___exported___types_ggaa256a568fada756a3bbd852f1faff085a3d508687fd4d4d1408f1570e417977ba}} 
+OB\+\_\+\+STDBY\+\_\+\+RST&Reset generated when entering in STANDBY \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__flash_8h_source}{hal\+\_\+flash.\+h}} 第 \mbox{\hyperlink{hal__flash_8h_source_l00097}{97}} 行定义.
+
+\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_ga20354cfd4bf512e0f53a7bbd97d3ce47}\label{group___f_l_a_s_h___exported___types_ga20354cfd4bf512e0f53a7bbd97d3ce47}} 
+\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!OB\_STOP\_TypeDef@{OB\_STOP\_TypeDef}}
+\index{OB\_STOP\_TypeDef@{OB\_STOP\_TypeDef}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{OB\_STOP\_TypeDef}{OB\_STOP\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___f_l_a_s_h___exported___types_ga20354cfd4bf512e0f53a7bbd97d3ce47}{OB\+\_\+\+STOP\+\_\+\+Type\+Def}}}
+
+
+
+Option\+\_\+\+Bytes\+\_\+n\+RST\+\_\+\+STOP 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OB\_STOP\_NoRST@{OB\_STOP\_NoRST}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!OB\_STOP\_NoRST@{OB\_STOP\_NoRST}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_gga20354cfd4bf512e0f53a7bbd97d3ce47a54ad00a7de0ada25d705da624b154ac0}\label{group___f_l_a_s_h___exported___types_gga20354cfd4bf512e0f53a7bbd97d3ce47a54ad00a7de0ada25d705da624b154ac0}} 
+OB\+\_\+\+STOP\+\_\+\+No\+RST&No reset generated when entering in STOP \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OB\_STOP\_RST@{OB\_STOP\_RST}!FLASH\_Exported\_Types@{FLASH\_Exported\_Types}}\index{FLASH\_Exported\_Types@{FLASH\_Exported\_Types}!OB\_STOP\_RST@{OB\_STOP\_RST}}}\mbox{\Hypertarget{group___f_l_a_s_h___exported___types_gga20354cfd4bf512e0f53a7bbd97d3ce47afcfcac69a6839bd65b79a949b96c7dc6}\label{group___f_l_a_s_h___exported___types_gga20354cfd4bf512e0f53a7bbd97d3ce47afcfcac69a6839bd65b79a949b96c7dc6}} 
+OB\+\_\+\+STOP\+\_\+\+RST&Reset generated when entering in STOP \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__flash_8h_source}{hal\+\_\+flash.\+h}} 第 \mbox{\hyperlink{hal__flash_8h_source_l00089}{89}} 行定义.
+

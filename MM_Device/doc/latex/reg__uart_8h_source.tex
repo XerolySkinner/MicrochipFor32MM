@@ -1,0 +1,293 @@
+\hypertarget{reg__uart_8h_source}{}\doxysection{reg\+\_\+uart.\+h}
+\label{reg__uart_8h_source}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_uart.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_uart.h}}
+\mbox{\hyperlink{reg__uart_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00019}00019 \textcolor{comment}{// Define to prevent recursive inclusion}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00021}00021 \textcolor{preprocessor}{\#ifndef \_\_REG\_UART\_H}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00022}00022 \textcolor{preprocessor}{\#define \_\_REG\_UART\_H}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00024}00024 \textcolor{comment}{// Files includes}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00026}00026 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00027}00027 \textcolor{preprocessor}{\#include <stdbool.h>}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00028}00028 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{types_8h}{types.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00033}00033 \textcolor{preprocessor}{\#if defined ( \_\_CC\_ARM )}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00034}00034 \textcolor{preprocessor}{\#pragma anon\_unions}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00035}00035 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00049}\mbox{\hyperlink{reg__uart_8h_a383bf0c4670c3a7fa72df80f66331a46}{00049}} \textcolor{preprocessor}{\#define UART1\_BASE                      (APB2PERIPH\_BASE + 0x3800)              }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00050}\mbox{\hyperlink{reg__uart_8h_ac9998d643534960b684d45a60b998421}{00050}} \textcolor{preprocessor}{\#define UART2\_BASE                      (APB1PERIPH\_BASE + 0x4400)              }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00051}\mbox{\hyperlink{reg__uart_8h_a2eff3896840fdf741bd67d2d7fe99a34}{00051}} \textcolor{preprocessor}{\#define UART3\_BASE                      (APB1PERIPH\_BASE + 0x4800)              }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00052}\mbox{\hyperlink{reg__uart_8h_a94d92270bf587ccdc3a37a5bb5d20467}{00052}} \textcolor{preprocessor}{\#define UART4\_BASE                      (APB1PERIPH\_BASE + 0x4C00)              }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00053}\mbox{\hyperlink{reg__uart_8h_aa155689c0e206e6994951dc3cf31052a}{00053}} \textcolor{preprocessor}{\#define UART5\_BASE                      (APB1PERIPH\_BASE + 0x5000)              }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00054}\mbox{\hyperlink{reg__uart_8h_a77f0753cf94e8b7b3e04a52a896f9dcb}{00054}} \textcolor{preprocessor}{\#define UART6\_BASE                      (APB2PERIPH\_BASE + 0x3C00)              }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00055}\mbox{\hyperlink{reg__uart_8h_a3150e4b10ec876c0b20f22de12a8fa40}{00055}} \textcolor{preprocessor}{\#define UART7\_BASE                      (APB1PERIPH\_BASE + 0x7800)              }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00056}\mbox{\hyperlink{reg__uart_8h_ac9c6cd59a248941d9d2462ab21a2346e}{00056}} \textcolor{preprocessor}{\#define UART8\_BASE                      (APB1PERIPH\_BASE + 0x7C00)              }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00067}\mbox{\hyperlink{struct_u_a_r_t___type_def}{00067}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00068}\mbox{\hyperlink{struct_u_a_r_t___type_def_a64fabd90a53a550231eaa032a2780e34}{00068}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_a64fabd90a53a550231eaa032a2780e34}{TDR}};                                                               }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00069}\mbox{\hyperlink{struct_u_a_r_t___type_def_aefe730fc9fc7c74736f1bfe36af287df}{00069}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_aefe730fc9fc7c74736f1bfe36af287df}{RDR}};                                                               }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00070}\mbox{\hyperlink{struct_u_a_r_t___type_def_ad80c153406f60414081363264ef8c167}{00070}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_ad80c153406f60414081363264ef8c167}{CSR}};                                                               }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00071}\mbox{\hyperlink{struct_u_a_r_t___type_def_a36a0dcf0c5552425873b96ae3fa98f00}{00071}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_a36a0dcf0c5552425873b96ae3fa98f00}{ISR}};                                                               }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00072}\mbox{\hyperlink{struct_u_a_r_t___type_def_aebbac5bee364dd061c1bf39b14117c6c}{00072}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_aebbac5bee364dd061c1bf39b14117c6c}{IER}};                                                               }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00073}\mbox{\hyperlink{struct_u_a_r_t___type_def_aa8891e045a3b963358e505629cd993c3}{00073}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_aa8891e045a3b963358e505629cd993c3}{ICR}};                                                               }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00074}\mbox{\hyperlink{struct_u_a_r_t___type_def_a929e154e4ae4bb1798674799911a8c78}{00074}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_a929e154e4ae4bb1798674799911a8c78}{GCR}};                                                               }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00075}\mbox{\hyperlink{struct_u_a_r_t___type_def_a2a3aadd9ad4f6e705799e44b123a2974}{00075}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_a2a3aadd9ad4f6e705799e44b123a2974}{CCR}};                                                               }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00076}\mbox{\hyperlink{struct_u_a_r_t___type_def_a22d0506ea3779574f0a660152c03891e}{00076}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_a22d0506ea3779574f0a660152c03891e}{BRR}};                                                               }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00077}\mbox{\hyperlink{struct_u_a_r_t___type_def_acac2adf1170968e11130d048e9e081b3}{00077}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_acac2adf1170968e11130d048e9e081b3}{FRA}};                                                               }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00079}\mbox{\hyperlink{struct_u_a_r_t___type_def_aad19418513a4165cb1e0d4b806073b01}{00079}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_aad19418513a4165cb1e0d4b806073b01}{RXAR}};                                                              }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00080}\mbox{\hyperlink{struct_u_a_r_t___type_def_aaaa745c3867e72c391694a03a7583f44}{00080}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_aaaa745c3867e72c391694a03a7583f44}{RXMR}};                                                              }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00081}\mbox{\hyperlink{struct_u_a_r_t___type_def_ab0513240c4113be625acd46e8b90508c}{00081}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_ab0513240c4113be625acd46e8b90508c}{SCR}};                                                               }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00083}\mbox{\hyperlink{struct_u_a_r_t___type_def_a6d3a878203ea84b98702a3225faeb4da}{00083}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_a6d3a878203ea84b98702a3225faeb4da}{IDLR}};                                                              }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00084}\mbox{\hyperlink{struct_u_a_r_t___type_def_ad8aa12dcef2bb4a0fc68c87c60122b0c}{00084}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_ad8aa12dcef2bb4a0fc68c87c60122b0c}{ABRCR}};                                                             }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00085}\mbox{\hyperlink{struct_u_a_r_t___type_def_a92460a52559396f4b4c58d464f63a998}{00085}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_u_a_r_t___type_def_a92460a52559396f4b4c58d464f63a998}{IRDA}};                                                              }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00086}00086 \} \mbox{\hyperlink{struct_u_a_r_t___type_def}{UART\_TypeDef}};}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00092}\mbox{\hyperlink{reg__uart_8h_a8d69bf04d07af4fbbab5a8bd291f65ff}{00092}} \textcolor{preprocessor}{\#define UART1                           ((UART\_TypeDef*) UART1\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00093}\mbox{\hyperlink{reg__uart_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{00093}} \textcolor{preprocessor}{\#define UART2                           ((UART\_TypeDef*) UART2\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00095}\mbox{\hyperlink{reg__uart_8h_a961726a611b38bcaf61f3d598b0a59ec}{00095}} \textcolor{preprocessor}{\#define UART3                           ((UART\_TypeDef*) UART3\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00096}\mbox{\hyperlink{reg__uart_8h_a7c035f6f443c999fc043b2b7fb598800}{00096}} \textcolor{preprocessor}{\#define UART4                           ((UART\_TypeDef*) UART4\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00097}\mbox{\hyperlink{reg__uart_8h_a9274e37cf5e8a174fc5dd627b98ec0fe}{00097}} \textcolor{preprocessor}{\#define UART5                           ((UART\_TypeDef*) UART5\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00098}\mbox{\hyperlink{reg__uart_8h_a61531d783c55be06875e7029331ffd67}{00098}} \textcolor{preprocessor}{\#define UART6                           ((UART\_TypeDef*) UART6\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00099}\mbox{\hyperlink{reg__uart_8h_a20bc10f5b73e8b51724b2f23c5b2e785}{00099}} \textcolor{preprocessor}{\#define UART7                           ((UART\_TypeDef*) UART7\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00100}\mbox{\hyperlink{reg__uart_8h_a2fe70804956e53dcbdc82dbacbbbfabc}{00100}} \textcolor{preprocessor}{\#define UART8                           ((UART\_TypeDef*) UART8\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00102}00102 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00106}\mbox{\hyperlink{reg__uart_8h_a1ab204596214046146d550091ec0ab98}{00106}} \textcolor{preprocessor}{\#define UART\_TDR\_DATA\_Pos               (0)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00107}\mbox{\hyperlink{reg__uart_8h_a86766d4cdade6d63fe5956e575241e4d}{00107}} \textcolor{preprocessor}{\#define UART\_TDR\_DATA                   (0xFFU << UART\_TDR\_DATA\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00108}00108 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00112}\mbox{\hyperlink{reg__uart_8h_ad6a1fff82f3c5c3e40dfda73927e28f2}{00112}} \textcolor{preprocessor}{\#define UART\_RDR\_DATA\_Pos               (0)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00113}\mbox{\hyperlink{reg__uart_8h_abb111f48e513b2f57a33a4f23c5fb7f5}{00113}} \textcolor{preprocessor}{\#define UART\_RDR\_DATA                   (0xFFU << UART\_RDR\_DATA\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00114}00114 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00118}\mbox{\hyperlink{reg__uart_8h_ababea7657559106b3e2b6e44b8186096}{00118}} \textcolor{preprocessor}{\#define UART\_CSR\_TXC\_Pos                (0)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00119}\mbox{\hyperlink{reg__uart_8h_a116c94895a66ef962dfeb8490184eec4}{00119}} \textcolor{preprocessor}{\#define UART\_CSR\_TXC                    (0x01U << UART\_CSR\_TXC\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00120}\mbox{\hyperlink{reg__uart_8h_a7e8dc094ccab823017510a433fabde9a}{00120}} \textcolor{preprocessor}{\#define UART\_CSR\_RXAVL\_Pos              (1)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00121}\mbox{\hyperlink{reg__uart_8h_a3781e44cbef4ece0aa99c82fccfd3fcd}{00121}} \textcolor{preprocessor}{\#define UART\_CSR\_RXAVL                  (0x01U << UART\_CSR\_RXAVL\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00122}\mbox{\hyperlink{reg__uart_8h_a13e504e795997c65fe589ba5d0ea4a23}{00122}} \textcolor{preprocessor}{\#define UART\_CSR\_TXFULL\_Pos             (2)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00123}\mbox{\hyperlink{reg__uart_8h_a8efc192af3c2d7979137bd07c98f2514}{00123}} \textcolor{preprocessor}{\#define UART\_CSR\_TXFULL                 (0x01U << UART\_CSR\_TXFULL\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00124}\mbox{\hyperlink{reg__uart_8h_a4cc292feee4fbfd6c98956505d32a4ec}{00124}} \textcolor{preprocessor}{\#define UART\_CSR\_TXEPT\_Pos              (3)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00125}\mbox{\hyperlink{reg__uart_8h_a7d3c0f23c007e26635040e5dd405f74c}{00125}} \textcolor{preprocessor}{\#define UART\_CSR\_TXEPT                  (0x01U << UART\_CSR\_TXEPT\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00126}00126 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00130}\mbox{\hyperlink{reg__uart_8h_aeec425a2a0f843006f006c66c0af6c11}{00130}} \textcolor{preprocessor}{\#define UART\_ISR\_TX\_Pos                 (0)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00131}\mbox{\hyperlink{reg__uart_8h_a0e8ac0d5fa50cbe95233c5e4de1b19a0}{00131}} \textcolor{preprocessor}{\#define UART\_ISR\_TX                     (0x01U << UART\_ISR\_TX\_Pos)              }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00132}\mbox{\hyperlink{reg__uart_8h_a6c579743b8ebb6075117dd92117f7b13}{00132}} \textcolor{preprocessor}{\#define UART\_ISR\_RX\_Pos                 (1)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00133}\mbox{\hyperlink{reg__uart_8h_a0ec3f8aee12539ec289749174e145fdf}{00133}} \textcolor{preprocessor}{\#define UART\_ISR\_RX                     (0x01U << UART\_ISR\_RX\_Pos)              }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00134}00134 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00135}\mbox{\hyperlink{reg__uart_8h_a30c00be4419716a787836553fb3f7514}{00135}} \textcolor{preprocessor}{\#define UART\_ISR\_TXC\_Pos                (2)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00136}\mbox{\hyperlink{reg__uart_8h_acdc5dad033adb254a0a3a9751e3e39c5}{00136}} \textcolor{preprocessor}{\#define UART\_ISR\_TXC                    (0x01U << UART\_ISR\_TXC\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00137}00137 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00138}\mbox{\hyperlink{reg__uart_8h_a5334f9c1d6e55f2f707effc6d9c8fa40}{00138}} \textcolor{preprocessor}{\#define UART\_ISR\_RXOERR\_Pos             (3)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00139}\mbox{\hyperlink{reg__uart_8h_a966b9b736c3cec59dbb5443d972ee98d}{00139}} \textcolor{preprocessor}{\#define UART\_ISR\_RXOERR                 (0x01U << UART\_ISR\_RXOERR\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00140}\mbox{\hyperlink{reg__uart_8h_ae6df8d041916d88151041e0cbd9e88cd}{00140}} \textcolor{preprocessor}{\#define UART\_ISR\_RXPERR\_Pos             (4)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00141}\mbox{\hyperlink{reg__uart_8h_a3dc84023999d0955092ae32ed91bbef2}{00141}} \textcolor{preprocessor}{\#define UART\_ISR\_RXPERR                 (0x01U << UART\_ISR\_RXPERR\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00142}\mbox{\hyperlink{reg__uart_8h_a6bd854e00cb9f17ec3e6f17a6905f393}{00142}} \textcolor{preprocessor}{\#define UART\_ISR\_RXFERR\_Pos             (5)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00143}\mbox{\hyperlink{reg__uart_8h_ac1534b9013eb3b107883a46d21bba893}{00143}} \textcolor{preprocessor}{\#define UART\_ISR\_RXFERR                 (0x01U << UART\_ISR\_RXFERR\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00144}\mbox{\hyperlink{reg__uart_8h_a85ce33a7ff6e110600d6774225805b2d}{00144}} \textcolor{preprocessor}{\#define UART\_ISR\_RXBRK\_Pos              (6)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00145}\mbox{\hyperlink{reg__uart_8h_a30a90f64ed0300b3d31bdbb400c47a99}{00145}} \textcolor{preprocessor}{\#define UART\_ISR\_RXBRK                  (0x01U << UART\_ISR\_RXBRK\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00146}00146 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00147}\mbox{\hyperlink{reg__uart_8h_a2d77e320cde28e3ba4b8551596184508}{00147}} \textcolor{preprocessor}{\#define UART\_ISR\_TXBRK\_Pos              (7)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00148}\mbox{\hyperlink{reg__uart_8h_a87e3a311167a2e137e1e2a20c6e36729}{00148}} \textcolor{preprocessor}{\#define UART\_ISR\_TXBRK                  (0x01U << UART\_ISR\_TXBRK\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00149}\mbox{\hyperlink{reg__uart_8h_ad3dcb527529641144aa7fa3d3eb53bd7}{00149}} \textcolor{preprocessor}{\#define UART\_ISR\_RXB8\_Pos               (8)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00150}\mbox{\hyperlink{reg__uart_8h_a8356b1452f09c1f03d9ebbb627e9682e}{00150}} \textcolor{preprocessor}{\#define UART\_ISR\_RXB8                   (0x01U << UART\_ISR\_RXB8\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00151}00151 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00152}\mbox{\hyperlink{reg__uart_8h_aae937f5f8a9d9b500903d96f8cefe5c5}{00152}} \textcolor{preprocessor}{\#define UART\_ISR\_RXIDLE\_Pos             (9)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00153}\mbox{\hyperlink{reg__uart_8h_a9761c80dd4977276b8d7d6572bf6507e}{00153}} \textcolor{preprocessor}{\#define UART\_ISR\_RXIDLE                 (0x01U << UART\_ISR\_RXIDLE\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00154}\mbox{\hyperlink{reg__uart_8h_a54e925872e5934d08ddadfbaa6f86eda}{00154}} \textcolor{preprocessor}{\#define UART\_ISR\_ABREND\_INTF\_Pos         (10)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00155}\mbox{\hyperlink{reg__uart_8h_acf314ed11e998e4def7abeea072aedfa}{00155}} \textcolor{preprocessor}{\#define UART\_ISR\_ABREND\_INTF             (0x01U << UART\_ISR\_ABREND\_INTF\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00156}\mbox{\hyperlink{reg__uart_8h_acf3655f2c2d0fbfca86028901063265c}{00156}} \textcolor{preprocessor}{\#define UART\_ISR\_ABRERR\_INTF\_Pos         (11)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00157}\mbox{\hyperlink{reg__uart_8h_a57bc1ee47bde35aacf89009ee41b00e8}{00157}} \textcolor{preprocessor}{\#define UART\_ISR\_ABRERR\_INTF             (0x01U << UART\_ISR\_ABRERR\_INTF\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00158}00158 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00162}\mbox{\hyperlink{reg__uart_8h_ae2af5ece78f0fa8e45a6e57ba56824ab}{00162}} \textcolor{preprocessor}{\#define UART\_IER\_TX\_Pos                 (0)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00163}\mbox{\hyperlink{reg__uart_8h_aad48cb4cd654171e57c3e33a6373b5dc}{00163}} \textcolor{preprocessor}{\#define UART\_IER\_TX                     (0x01U << UART\_IER\_TX\_Pos)              }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00164}\mbox{\hyperlink{reg__uart_8h_a3457c26b1abc3aeea93aeaf1c1d36dfb}{00164}} \textcolor{preprocessor}{\#define UART\_IER\_RX\_Pos                 (1)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00165}\mbox{\hyperlink{reg__uart_8h_a6265b02e3680dd7e798ffba3606b7d27}{00165}} \textcolor{preprocessor}{\#define UART\_IER\_RX                     (0x01U << UART\_IER\_RX\_Pos)              }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00166}00166 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00167}\mbox{\hyperlink{reg__uart_8h_ace39afa4b70bf403c282ce9c781a0a20}{00167}} \textcolor{preprocessor}{\#define UART\_IER\_TXC\_Pos                (2)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00168}\mbox{\hyperlink{reg__uart_8h_aa201448c97aa4b67b979606164a3ad1d}{00168}} \textcolor{preprocessor}{\#define UART\_IER\_TXC                    (0x01U << UART\_IER\_TXC\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00169}00169 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00170}\mbox{\hyperlink{reg__uart_8h_ac64fb2f8c82d805c261193a0b9e0f23e}{00170}} \textcolor{preprocessor}{\#define UART\_IER\_RXOERR\_Pos             (3)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00171}\mbox{\hyperlink{reg__uart_8h_ace5249a4ca9d4a6156e3e15f21cac384}{00171}} \textcolor{preprocessor}{\#define UART\_IER\_RXOERR                 (0x01U << UART\_IER\_RXOERR\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00172}\mbox{\hyperlink{reg__uart_8h_a67cddc6a6cce8d6abab8ee9ae369720d}{00172}} \textcolor{preprocessor}{\#define UART\_IER\_RXPERR\_Pos             (4)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00173}\mbox{\hyperlink{reg__uart_8h_a1fc555ee6ad0e36d63121a8a1a9db4fe}{00173}} \textcolor{preprocessor}{\#define UART\_IER\_RXPERR                 (0x01U << UART\_IER\_RXPERR\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00174}\mbox{\hyperlink{reg__uart_8h_a266bc79e5a9dc791e31470ee6ecb3b71}{00174}} \textcolor{preprocessor}{\#define UART\_IER\_RXFERR\_Pos             (5)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00175}\mbox{\hyperlink{reg__uart_8h_ae188782aa4b6c18850319dc90476ac06}{00175}} \textcolor{preprocessor}{\#define UART\_IER\_RXFERR                 (0x01U << UART\_IER\_RXFERR\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00176}\mbox{\hyperlink{reg__uart_8h_a09ab61f8c5cbe1662850fbd6a44e9902}{00176}} \textcolor{preprocessor}{\#define UART\_IER\_RXBRK\_Pos              (6)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00177}\mbox{\hyperlink{reg__uart_8h_a78096e0a2e40ba46638c098876796f6f}{00177}} \textcolor{preprocessor}{\#define UART\_IER\_RXBRK                  (0x01U << UART\_IER\_RXBRK\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00178}00178 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00179}\mbox{\hyperlink{reg__uart_8h_af23b95c07698ed7ce550114c3a70c128}{00179}} \textcolor{preprocessor}{\#define UART\_IER\_TXBRK\_Pos              (7)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00180}\mbox{\hyperlink{reg__uart_8h_a4bd034d8d2796d05eaece2edd818c38a}{00180}} \textcolor{preprocessor}{\#define UART\_IER\_TXBRK                  (0x01U << UART\_IER\_TXBRK\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00181}\mbox{\hyperlink{reg__uart_8h_a7c8b35c2b0bd9aca0f8f3b379c4c0507}{00181}} \textcolor{preprocessor}{\#define UART\_IER\_RXB8\_Pos               (8)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00182}\mbox{\hyperlink{reg__uart_8h_ae49d455826b53c1238c6469a4d1759ec}{00182}} \textcolor{preprocessor}{\#define UART\_IER\_RXB8                   (0x01U << UART\_IER\_RXB8\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00183}00183 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00184}\mbox{\hyperlink{reg__uart_8h_a292b5499a6b25509b3143dfcf5735336}{00184}} \textcolor{preprocessor}{\#define UART\_IER\_RXIDLE\_Pos             (9)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00185}\mbox{\hyperlink{reg__uart_8h_a02b1d0d5fbc5b1cf9bfbea0b7fe33458}{00185}} \textcolor{preprocessor}{\#define UART\_IER\_RXIDLE                 (0x01U << UART\_IER\_RXIDLE\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00186}\mbox{\hyperlink{reg__uart_8h_a27520b84a10b5e9fc55793b05c6cbf4c}{00186}} \textcolor{preprocessor}{\#define UART\_IER\_ABREND\_IEN\_Pos         (10)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00187}\mbox{\hyperlink{reg__uart_8h_aabbbd664441fe95cc8c7f47e55592310}{00187}} \textcolor{preprocessor}{\#define UART\_IER\_ABREND\_IEN             (0x01U << UART\_IER\_ABREND\_IEN\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00188}\mbox{\hyperlink{reg__uart_8h_a9e9f8a7e74523a52d0bbf9b6888c3b8f}{00188}} \textcolor{preprocessor}{\#define UART\_IER\_ABRERR\_IEN\_Pos         (11)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00189}\mbox{\hyperlink{reg__uart_8h_ab6846901ac72a8c6ae66209c1f0fad6e}{00189}} \textcolor{preprocessor}{\#define UART\_IER\_ABRERR\_IEN             (0x01U << UART\_IER\_ABRERR\_IEN\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00190}00190 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00194}00194 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00195}\mbox{\hyperlink{reg__uart_8h_afe25f017a04459b88b7575f9335baac2}{00195}} \textcolor{preprocessor}{\#define UART\_ICR\_TX\_Pos                 (0)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00196}\mbox{\hyperlink{reg__uart_8h_a182c6c394d12283c1d61dbe2174b12d0}{00196}} \textcolor{preprocessor}{\#define UART\_ICR\_TX                     (0x01U << UART\_ICR\_TX\_Pos)              }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00197}\mbox{\hyperlink{reg__uart_8h_a97b5e06d1e40c9ac3ed2521212ac5106}{00197}} \textcolor{preprocessor}{\#define UART\_ICR\_RX\_Pos                 (1)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00198}\mbox{\hyperlink{reg__uart_8h_a0cf3aff7b57d9bddc24fe00d08ff6330}{00198}} \textcolor{preprocessor}{\#define UART\_ICR\_RX                     (0x01U << UART\_ICR\_RX\_Pos)              }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00199}00199 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00200}\mbox{\hyperlink{reg__uart_8h_a15d7ce03feb0390c1e9c23ce3bf0591d}{00200}} \textcolor{preprocessor}{\#define UART\_ICR\_TXC\_Pos                (2)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00201}\mbox{\hyperlink{reg__uart_8h_ab876c1450f64a238228de688606143fc}{00201}} \textcolor{preprocessor}{\#define UART\_ICR\_TXC                    (0x01U << UART\_ICR\_TXC\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00202}00202 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00203}\mbox{\hyperlink{reg__uart_8h_a586dfa2f682983ad1cf7a04511de5f14}{00203}} \textcolor{preprocessor}{\#define UART\_ICR\_RXOERR\_Pos             (3)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00204}\mbox{\hyperlink{reg__uart_8h_a2d6430cbb53873cadaa171060023cdb9}{00204}} \textcolor{preprocessor}{\#define UART\_ICR\_RXOERR                 (0x01U << UART\_ICR\_RXOERR\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00205}\mbox{\hyperlink{reg__uart_8h_a957076c9c27de01e5c55a123084c0814}{00205}} \textcolor{preprocessor}{\#define UART\_ICR\_RXPERR\_Pos             (4)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00206}\mbox{\hyperlink{reg__uart_8h_ae2e5c75870ae372fad9a3c6d59cd4b74}{00206}} \textcolor{preprocessor}{\#define UART\_ICR\_RXPERR                 (0x01U << UART\_ICR\_RXPERR\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00207}00207 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00208}\mbox{\hyperlink{reg__uart_8h_ae971c6c56885662896992204cfdbadca}{00208}} \textcolor{preprocessor}{\#define UART\_ICR\_RXFERR\_Pos             (5)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00209}\mbox{\hyperlink{reg__uart_8h_a19c57b8f55fa1928e29046d980d91b7b}{00209}} \textcolor{preprocessor}{\#define UART\_ICR\_RXFERR                 (0x01U << UART\_ICR\_RXFERR\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00210}\mbox{\hyperlink{reg__uart_8h_ae723b7313b8756352ff0a550c364b1d3}{00210}} \textcolor{preprocessor}{\#define UART\_ICR\_RXBRK\_Pos              (6)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00211}\mbox{\hyperlink{reg__uart_8h_a8b3e8dba6bbb8e684b4390aadffd898e}{00211}} \textcolor{preprocessor}{\#define UART\_ICR\_RXBRK                  (0x01U << UART\_ICR\_RXBRK\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00212}00212 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00213}\mbox{\hyperlink{reg__uart_8h_a96195fe3b99b89a4e5af9f41e9e17ba4}{00213}} \textcolor{preprocessor}{\#define UART\_ICR\_TXBRK\_Pos              (7)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00214}\mbox{\hyperlink{reg__uart_8h_ab75a735ed783532715716975a79439c4}{00214}} \textcolor{preprocessor}{\#define UART\_ICR\_TXBRK                  (0x01U << UART\_ICR\_TXBRK\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00215}\mbox{\hyperlink{reg__uart_8h_afea89a8c0900b9f3756f0d2d370795f0}{00215}} \textcolor{preprocessor}{\#define UART\_ICR\_RXB8\_Pos               (8)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00216}\mbox{\hyperlink{reg__uart_8h_af89f18b80da5f56b64fb7fe8453eafe3}{00216}} \textcolor{preprocessor}{\#define UART\_ICR\_RXB8                   (0x01U << UART\_ICR\_RXB8\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00217}00217 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00218}\mbox{\hyperlink{reg__uart_8h_aa337a3a81c2673bf94b94bfa3aa82929}{00218}} \textcolor{preprocessor}{\#define UART\_ICR\_RXIDLE\_Pos             (9)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00219}\mbox{\hyperlink{reg__uart_8h_a3fc38114c91d479457b0819a84c889cf}{00219}} \textcolor{preprocessor}{\#define UART\_ICR\_RXIDLE                 (0x01U << UART\_ICR\_RXIDLE\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00220}\mbox{\hyperlink{reg__uart_8h_a72e8d00132add4ef6edb970b3625d122}{00220}} \textcolor{preprocessor}{\#define UART\_ICR\_ABRENDCLR\_Pos         (10)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00221}\mbox{\hyperlink{reg__uart_8h_a0bda35a96aae8bf6585612029cf5c885}{00221}} \textcolor{preprocessor}{\#define UART\_ICR\_ABRENDCLR             (0x01U << UART\_ICR\_ABRENDCLR\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00222}\mbox{\hyperlink{reg__uart_8h_a9258f40af729a8fa858b90c73b1a9728}{00222}} \textcolor{preprocessor}{\#define UART\_ICR\_ABRERRCLR\_Pos         (11)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00223}\mbox{\hyperlink{reg__uart_8h_a11714521c254a6045cbb39da71e7e4c7}{00223}} \textcolor{preprocessor}{\#define UART\_ICR\_ABRERRCLR             (0x01U << UART\_ICR\_ABRERRCLR\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00224}00224 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00228}\mbox{\hyperlink{reg__uart_8h_a574aec5018a489d2c9f6938cd5f59976}{00228}} \textcolor{preprocessor}{\#define UART\_GCR\_UART\_Pos               (0)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00229}\mbox{\hyperlink{reg__uart_8h_a589711af826ec302ee77b7c6e01627e5}{00229}} \textcolor{preprocessor}{\#define UART\_GCR\_UART                   (0x01U << UART\_GCR\_UART\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00230}\mbox{\hyperlink{reg__uart_8h_a19712d3c481b1ba0330e35dd76ffc3b1}{00230}} \textcolor{preprocessor}{\#define UART\_GCR\_DMA\_Pos                (1)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00231}\mbox{\hyperlink{reg__uart_8h_ac81a6e99eccb96a57ab179dfb367d4be}{00231}} \textcolor{preprocessor}{\#define UART\_GCR\_DMA                    (0x01U << UART\_GCR\_DMA\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00232}\mbox{\hyperlink{reg__uart_8h_ac6b1540bf9c1930534e3bf74449ef42c}{00232}} \textcolor{preprocessor}{\#define UART\_GCR\_AUTOFLOW\_Pos           (2)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00233}\mbox{\hyperlink{reg__uart_8h_a367541d1bd923b4729815e1169c351ab}{00233}} \textcolor{preprocessor}{\#define UART\_GCR\_AUTOFLOW               (0x01U << UART\_GCR\_AUTOFLOW\_Pos)        }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00234}\mbox{\hyperlink{reg__uart_8h_a05c61d5c2ee3bf4bb55cebfdbb89c703}{00234}} \textcolor{preprocessor}{\#define UART\_GCR\_RX\_Pos                 (3)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00235}\mbox{\hyperlink{reg__uart_8h_aa25fd40511f15ad69f7d4c0468540503}{00235}} \textcolor{preprocessor}{\#define UART\_GCR\_RX                     (0x01U << UART\_GCR\_RX\_Pos)              }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00236}\mbox{\hyperlink{reg__uart_8h_a27dddcab64449b09806d3c35725df65b}{00236}} \textcolor{preprocessor}{\#define UART\_GCR\_TX\_Pos                 (4)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00237}\mbox{\hyperlink{reg__uart_8h_aa85573706feb2b66083812396a49906f}{00237}} \textcolor{preprocessor}{\#define UART\_GCR\_TX                     (0x01U << UART\_GCR\_TX\_Pos)              }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00238}00238 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00239}\mbox{\hyperlink{reg__uart_8h_a2ca6782d379c74e464167db19401b5da}{00239}} \textcolor{preprocessor}{\#define UART\_GCR\_SELB8\_Pos              (7)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00240}\mbox{\hyperlink{reg__uart_8h_a9c1faf464c66242431623f5a28b40f66}{00240}} \textcolor{preprocessor}{\#define UART\_GCR\_SELB8                  (0x01U << UART\_GCR\_SELB8\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00241}\mbox{\hyperlink{reg__uart_8h_a3ad2c892b1dc3dc2e9b79a9a6b2fd053}{00241}} \textcolor{preprocessor}{\#define UART\_GCR\_SWAP\_Pos               (8)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00242}\mbox{\hyperlink{reg__uart_8h_a8061711a58e7aa1992e84a4632175ed4}{00242}} \textcolor{preprocessor}{\#define UART\_GCR\_SWAP                   (0x01U << UART\_GCR\_SWAP\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00243}\mbox{\hyperlink{reg__uart_8h_ac75b02a01b172062fdcc38cc54b0a915}{00243}} \textcolor{preprocessor}{\#define UART\_GCR\_RXTOG\_Pos              (9)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00244}\mbox{\hyperlink{reg__uart_8h_ab6b996e690672f435cb0d9d8496cc0f7}{00244}} \textcolor{preprocessor}{\#define UART\_GCR\_RXTOG                  (0x01U << UART\_GCR\_RXTOG\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00245}\mbox{\hyperlink{reg__uart_8h_a615880e1eb993f08707acc5de124e086}{00245}} \textcolor{preprocessor}{\#define UART\_GCR\_TXTOG\_Pos              (10)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00246}\mbox{\hyperlink{reg__uart_8h_a20d189154f093c3d89d866011d8ce45d}{00246}} \textcolor{preprocessor}{\#define UART\_GCR\_TXTOG                  (0x01U << UART\_GCR\_TXTOG\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00247}00247 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00251}\mbox{\hyperlink{reg__uart_8h_a0bb29721cf4634207f36b40423622617}{00251}} \textcolor{preprocessor}{\#define UART\_CCR\_PEN\_Pos                (0)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00252}\mbox{\hyperlink{reg__uart_8h_a8a629239bf263ae183bab7bfafeb13c5}{00252}} \textcolor{preprocessor}{\#define UART\_CCR\_PEN                    (0x01U << UART\_CCR\_PEN\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00253}\mbox{\hyperlink{reg__uart_8h_a52de974f30d8ca93e3206f0e3bab6ace}{00253}} \textcolor{preprocessor}{\#define UART\_CCR\_PSEL\_Pos               (1)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00254}\mbox{\hyperlink{reg__uart_8h_a7c8311e5ff58aa98cf8f1567f50d60d3}{00254}} \textcolor{preprocessor}{\#define UART\_CCR\_PSEL                   (0x01U << UART\_CCR\_PSEL\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00255}00255 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00256}\mbox{\hyperlink{reg__uart_8h_a0988603a70037f33f11b5b96bceeef31}{00256}} \textcolor{preprocessor}{\#define UART\_CCR\_SPB\_Pos                (2)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00257}\mbox{\hyperlink{reg__uart_8h_af2abac091db4e0afa6df0ee847f17755}{00257}} \textcolor{preprocessor}{\#define UART\_CCR\_SPB                    (0x01U << UART\_CCR\_SPB\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00258}00258 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00259}00259 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00260}00260 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00261}\mbox{\hyperlink{reg__uart_8h_ae18b41072a2f559bfdfe55b420746212}{00261}} \textcolor{preprocessor}{\#define UART\_CCR\_SPB0\_Pos               UART\_CCR\_SPB\_Pos}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00262}\mbox{\hyperlink{reg__uart_8h_a94d0f2a43481dffe8eb738bb61f441f1}{00262}} \textcolor{preprocessor}{\#define UART\_CCR\_SPB0                   UART\_CCR\_SPB                            }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00263}00263 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00264}\mbox{\hyperlink{reg__uart_8h_acdd4f53e581cfb20c0ef494a327ffb62}{00264}} \textcolor{preprocessor}{\#define UART\_CCR\_BRK\_Pos                (3)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00265}\mbox{\hyperlink{reg__uart_8h_a9d81049d6de33fbfe5974b25069c17b8}{00265}} \textcolor{preprocessor}{\#define UART\_CCR\_BRK                    (0x01U << UART\_CCR\_BRK\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00266}\mbox{\hyperlink{reg__uart_8h_acd6d316907826be184db97a3675503ac}{00266}} \textcolor{preprocessor}{\#define UART\_CCR\_CHAR\_Pos               (4)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00267}\mbox{\hyperlink{reg__uart_8h_ae7bc01446224b563f598e4c6ffcfadf7}{00267}} \textcolor{preprocessor}{\#define UART\_CCR\_CHAR                   (0x03U << UART\_CCR\_CHAR\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00268}\mbox{\hyperlink{reg__uart_8h_a034c81332e4a31684c5c0f0dc0a646c7}{00268}} \textcolor{preprocessor}{\#define UART\_CCR\_CHAR\_5b                (0x00U << UART\_CCR\_CHAR\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00269}\mbox{\hyperlink{reg__uart_8h_aea24296c7fb30d12620d1fe947cb3789}{00269}} \textcolor{preprocessor}{\#define UART\_CCR\_CHAR\_6b                (0x01U << UART\_CCR\_CHAR\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00270}\mbox{\hyperlink{reg__uart_8h_a8c32327f26a7307c00f1b32db1b4849a}{00270}} \textcolor{preprocessor}{\#define UART\_CCR\_CHAR\_7b                (0x02U << UART\_CCR\_CHAR\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00271}\mbox{\hyperlink{reg__uart_8h_abc123b959de573d7812c25b6b207ef19}{00271}} \textcolor{preprocessor}{\#define UART\_CCR\_CHAR\_8b                (0x03U << UART\_CCR\_CHAR\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00272}00272 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00273}\mbox{\hyperlink{reg__uart_8h_a5d8b0dda408ddc10e5c40edd99fb3c48}{00273}} \textcolor{preprocessor}{\#define UART\_CCR\_SPB1\_Pos               (6)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00274}\mbox{\hyperlink{reg__uart_8h_a87b66fc1a77c2d1cd30b7096bc66f0b4}{00274}} \textcolor{preprocessor}{\#define UART\_CCR\_SPB1                   (0x01U << UART\_CCR\_SPB1\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00275}\mbox{\hyperlink{reg__uart_8h_abb37a333c01a22dc08a3910465b5c39c}{00275}} \textcolor{preprocessor}{\#define UART\_CCR\_B8RXD\_Pos              (7)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00276}\mbox{\hyperlink{reg__uart_8h_acc7ecb1c3e54a6250b0c25f04a43b610}{00276}} \textcolor{preprocessor}{\#define UART\_CCR\_B8RXD                  (0x01U << UART\_CCR\_B8RXD\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00277}\mbox{\hyperlink{reg__uart_8h_ad6818444f47868aada3b36c4a56e4c40}{00277}} \textcolor{preprocessor}{\#define UART\_CCR\_B8TXD\_Pos              (8)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00278}\mbox{\hyperlink{reg__uart_8h_a7d3e5a3b077f69eab3fd79ae3420c8bb}{00278}} \textcolor{preprocessor}{\#define UART\_CCR\_B8TXD                  (0x01U << UART\_CCR\_B8TXD\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00279}\mbox{\hyperlink{reg__uart_8h_a775803894e77bcb5c80fa015d93e4f90}{00279}} \textcolor{preprocessor}{\#define UART\_CCR\_B8POL\_Pos              (9)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00280}\mbox{\hyperlink{reg__uart_8h_a9ddbbe0acf3d852580dc0f896e1e4372}{00280}} \textcolor{preprocessor}{\#define UART\_CCR\_B8POL                  (0x01U << UART\_CCR\_B8POL\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00281}\mbox{\hyperlink{reg__uart_8h_a1ffec9581a30416c0ce1ab63d51befca}{00281}} \textcolor{preprocessor}{\#define UART\_CCR\_B8TOG\_Pos              (10)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00282}\mbox{\hyperlink{reg__uart_8h_af4f0521d9067d662cda5d7df94d0a06d}{00282}} \textcolor{preprocessor}{\#define UART\_CCR\_B8TOG                  (0x01U << UART\_CCR\_B8TOG\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00283}\mbox{\hyperlink{reg__uart_8h_ab2d4e4a4cb494e2c96659defd93e9a40}{00283}} \textcolor{preprocessor}{\#define UART\_CCR\_B8EN\_Pos               (11)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00284}\mbox{\hyperlink{reg__uart_8h_a1ed0004a09d7dd8dfacd8bee987ca67a}{00284}} \textcolor{preprocessor}{\#define UART\_CCR\_B8EN                   (0x01U << UART\_CCR\_B8EN\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00285}\mbox{\hyperlink{reg__uart_8h_a99af3331acafb013e3acd2ec21962993}{00285}} \textcolor{preprocessor}{\#define UART\_CCR\_RWU\_Pos                (12)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00286}\mbox{\hyperlink{reg__uart_8h_a8a022fb91e23214863405827c564b551}{00286}} \textcolor{preprocessor}{\#define UART\_CCR\_RWU                    (0x01U << UART\_CCR\_RWU\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00287}\mbox{\hyperlink{reg__uart_8h_a32e4466c066a942c973925a027d03fe5}{00287}} \textcolor{preprocessor}{\#define UART\_CCR\_WAKE\_Pos               (13)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00288}\mbox{\hyperlink{reg__uart_8h_af111c13f85d729ba3dcd1b16081a5231}{00288}} \textcolor{preprocessor}{\#define UART\_CCR\_WAKE                   (0x01U << UART\_CCR\_WAKE\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00289}00289 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00290}\mbox{\hyperlink{reg__uart_8h_acb2941a78f07f5ed29527724c454a083}{00290}} \textcolor{preprocessor}{\#define UART\_CCR\_LIN\_Pos            (14)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00291}\mbox{\hyperlink{reg__uart_8h_ab6fa883039aef8ee3964146b23222561}{00291}} \textcolor{preprocessor}{\#define UART\_CCR\_LIN                (0x01U << UART\_CCR\_LIN\_Pos)             }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00292}00292 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00296}\mbox{\hyperlink{reg__uart_8h_a68a25068706ba124f29d13da0a07f7b3}{00296}} \textcolor{preprocessor}{\#define UART\_BRR\_MANTISSA\_Pos        (0)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00297}\mbox{\hyperlink{reg__uart_8h_a10b2adf888a271b67bb19ee476023f3e}{00297}} \textcolor{preprocessor}{\#define UART\_BRR\_MANTISSA            (0xFFFFU << UART\_BRR\_MANTISSA\_Pos)      }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00298}00298 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00302}\mbox{\hyperlink{reg__uart_8h_ab5f90b895b676c18999aa35007014b80}{00302}} \textcolor{preprocessor}{\#define UART\_BRR\_FRACTION\_Pos        (0)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00303}\mbox{\hyperlink{reg__uart_8h_ac0009582af01f8e19a1c9f235fa49ce9}{00303}} \textcolor{preprocessor}{\#define UART\_BRR\_FRACTION            (0x0FU << UART\_BRR\_FRACTION\_Pos)        }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00304}00304 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00308}\mbox{\hyperlink{reg__uart_8h_a9b7528c449e072da57850d9c89c2151e}{00308}} \textcolor{preprocessor}{\#define UART\_RXAR\_ADDR\_Pos          (0)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00309}\mbox{\hyperlink{reg__uart_8h_a13a76a978fb634f1757ab40b5a9ac062}{00309}} \textcolor{preprocessor}{\#define UART\_RXAR\_ADDR              (0xFFU << UART\_RXAR\_ADDR\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00310}00310 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00314}\mbox{\hyperlink{reg__uart_8h_a83e26a8ae5322e61df1966cfdf447346}{00314}} \textcolor{preprocessor}{\#define UART\_RXMR\_MASK\_Pos          (0)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00315}\mbox{\hyperlink{reg__uart_8h_a07dca1aa19c8d6f630d876762670c794}{00315}} \textcolor{preprocessor}{\#define UART\_RXMR\_MASK              (0xFFU << UART\_RXMR\_MASK\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00316}00316 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00320}\mbox{\hyperlink{reg__uart_8h_abd5ba5db92ae1ff840819cbe61aa8e71}{00320}} \textcolor{preprocessor}{\#define UART\_SCR\_SCEN\_Pos           (0)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00321}\mbox{\hyperlink{reg__uart_8h_a7d34c81e77774d8f4b1f4a2885a6a5e8}{00321}} \textcolor{preprocessor}{\#define UART\_SCR\_SCEN               (0x01U << UART\_SCR\_SCEN\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00322}\mbox{\hyperlink{reg__uart_8h_abcacac905b15ef42b850abfea0b15989}{00322}} \textcolor{preprocessor}{\#define UART\_SCR\_SCARB\_Pos          (1)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00323}\mbox{\hyperlink{reg__uart_8h_a8be85911aeb148f6b0c02dad544a695e}{00323}} \textcolor{preprocessor}{\#define UART\_SCR\_SCARB              (0x01U << UART\_SCR\_SCARB\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00324}\mbox{\hyperlink{reg__uart_8h_a24af28792b5dd3cbd4e1580a7bf2d15c}{00324}} \textcolor{preprocessor}{\#define UART\_SCR\_NACK\_Pos           (2)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00325}\mbox{\hyperlink{reg__uart_8h_ab6e55d56c97ade98b26c77a8f78f34ac}{00325}} \textcolor{preprocessor}{\#define UART\_SCR\_NACK               (0x01U << UART\_SCR\_NACK\_Pos)            }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00326}\mbox{\hyperlink{reg__uart_8h_aac67015c93ea7447e4048f88f13064de}{00326}} \textcolor{preprocessor}{\#define UART\_SCR\_SCFCNT\_Pos         (4)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00327}\mbox{\hyperlink{reg__uart_8h_a35ec4a961d9853ed29785c642661115c}{00327}} \textcolor{preprocessor}{\#define UART\_SCR\_SCFCNT             (0xFFU << UART\_SCR\_SCFCNT\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00328}\mbox{\hyperlink{reg__uart_8h_acd3d6bc8e167ab91617f4b07cef80c4e}{00328}} \textcolor{preprocessor}{\#define UART\_SCR\_HDSEL\_Pos          (12)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00329}00329 \textcolor{preprocessor}{\#define UART\_SCR\_HDSEL              (0x01U << UART\_SCR\_HDSEL\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00333}\mbox{\hyperlink{reg__uart_8h_a2f0e0127a0f34d4144c4a0de9cde6a97}{00333}} \textcolor{preprocessor}{\#define UART\_ABRCR\_ABREN\_Pos        (0)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00334}\mbox{\hyperlink{reg__uart_8h_aa844d1230abf09b5e69d7b354ff16607}{00334}} \textcolor{preprocessor}{\#define UART\_ABRCR\_ABREN            (0x01U<<UART\_ABRCR\_ABREN\_Pos)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00335}\mbox{\hyperlink{reg__uart_8h_aded05b3ecafc825dfe5e8b088b82020a}{00335}} \textcolor{preprocessor}{\#define UART\_ABRCR\_BITCNT\_Pos       (1)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00336}\mbox{\hyperlink{reg__uart_8h_a7699ee27318dd02282d456226d9683a3}{00336}} \textcolor{preprocessor}{\#define UART\_ABRCR\_BITCNT           (0x03U<<UART\_ABRCR\_BITCNT\_Pos)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00337}\mbox{\hyperlink{reg__uart_8h_a368f8cf6b051cc0913cd6af50740b1fa}{00337}} \textcolor{preprocessor}{\#define UART\_ABRCR\_BITCNT\_MODE0     (0x00U<<UART\_ABRCR\_BITCNT\_Pos)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00338}\mbox{\hyperlink{reg__uart_8h_ab23b495879bfe40a0981657e7576f367}{00338}} \textcolor{preprocessor}{\#define UART\_ABRCR\_BITCNT\_MODE1     (0x01U<<UART\_ABRCR\_BITCNT\_Pos)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00339}\mbox{\hyperlink{reg__uart_8h_ac518db404ebd91f36ed894be32aede90}{00339}} \textcolor{preprocessor}{\#define UART\_ABRCR\_BITCNT\_MODE2     (0x02U<<UART\_ABRCR\_BITCNT\_Pos)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00340}\mbox{\hyperlink{reg__uart_8h_a8858d11da289336a3c82c673e38dbced}{00340}} \textcolor{preprocessor}{\#define UART\_ABRCR\_BITCNT\_MODE3     (0x03U<<UART\_ABRCR\_BITCNT\_Pos)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00341}\mbox{\hyperlink{reg__uart_8h_ae1f47d329d54a82b7c2935ce36cb4e76}{00341}} \textcolor{preprocessor}{\#define UART\_ABRCR\_FORMER\_Pos       (3)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00342}\mbox{\hyperlink{reg__uart_8h_a71300ec671eba543445f440b5120d380}{00342}} \textcolor{preprocessor}{\#define UART\_ABRCR\_FORMER           (0x01U<<UART\_ABRCR\_FORMER\_Pos)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00343}\mbox{\hyperlink{reg__uart_8h_a801f6987db295e5d3ce9e901e11449f3}{00343}} \textcolor{preprocessor}{\#define UART\_ABRCR\_LATTER\_Pos       (4)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00344}\mbox{\hyperlink{reg__uart_8h_a6301c22b946a5010c988fc73a6c70fd5}{00344}} \textcolor{preprocessor}{\#define UART\_ABRCR\_LATTER           (0x01U<<UART\_ABRCR\_LATTER\_Pos)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00345}00345 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00349}\mbox{\hyperlink{reg__uart_8h_ac8775ea0ca907802bad4eeaf58e80e58}{00349}} \textcolor{preprocessor}{\#define UART\_IDLR\_IDLR\_Pos          (0)}}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00350}\mbox{\hyperlink{reg__uart_8h_a67ed091862f6081c43d7ce19912c21db}{00350}} \textcolor{preprocessor}{\#define UART\_IDLR\_IDLR              (0xFFFFU << UART\_IDLR\_IDLR\_Pos)         }}
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00351}00351 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00352}00352 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00353}00353 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00355}00355 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00357}00357 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00359}00359 }
+\DoxyCodeLine{\Hypertarget{reg__uart_8h_source_l00361}00361 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

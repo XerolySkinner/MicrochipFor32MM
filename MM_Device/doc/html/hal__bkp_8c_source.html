@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>template: C:/Users/XerolySkinner/Desktop/MM_Device/MM32F327x/HAL_Lib/Src/hal_bkp.c 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">template
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8a23370bd962f2be3cb202251f8a0865.html">MM32F327x</a></li><li class="navelem"><a class="el" href="dir_3b1bed74bcb45e4245a73e66928ea90d.html">HAL_Lib</a></li><li class="navelem"><a class="el" href="dir_7c9ac39f302c264f6f2d20643460873b.html">Src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">hal_bkp.c</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="hal__bkp_8c.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Define to prevent recursive inclusion</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="hal__bkp_8c.html#a7d522afca3f8d8bda6a2357a7c6088eb">   19</a></span><span class="preprocessor">#define _HAL_BKP_C_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// Files includes</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">types.h</a>&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="hal__pwr_8h.html">hal_pwr.h</a>&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="hal__rcc_8h.html">hal_rcc.h</a>&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="hal__bkp_8h.html">hal_bkp.h</a>&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="group___b_k_p___exported___functions.html#gaabff4d8f5ebf4fd9a840bcc9042ca226">   47</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___b_k_p___exported___functions.html#gaabff4d8f5ebf4fd9a840bcc9042ca226">BKP_DeInit</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_function" href="group___r_c_c___exported___functions.html#ga90652428211c565c37cd4df3257fc83f">RCC_BackupResetCmd</a>(<a class="code hl_enumvalue" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf">ENABLE</a>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_function" href="group___r_c_c___exported___functions.html#ga90652428211c565c37cd4df3257fc83f">RCC_BackupResetCmd</a>(<a class="code hl_enumvalue" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d">DISABLE</a>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="group___b_k_p___exported___functions.html#gaaf67b893b98dfc4900b681bf47439db5">   61</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___b_k_p___exported___functions.html#gaaf67b893b98dfc4900b681bf47439db5">BKP_TamperPinLevelConfig</a>(<a class="code hl_enumeration" href="group___b_k_p___exported___types.html#ga71fe621c289e0c835e7ffbf7f56fcc20">BKPTPAL_Typedef</a> tamper_pin_level)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>{</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_define" href="reg__bkp_8h.html#aa38716de06974ea948ad34ef7bfee00b">BKP</a>-&gt;CR = tamper_pin_level;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="group___b_k_p___exported___functions.html#ga77a95c4b304d5168dc52c79c4d60693e">   72</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___b_k_p___exported___functions.html#ga77a95c4b304d5168dc52c79c4d60693e">BKP_TamperPinCmd</a>(<a class="code hl_enumeration" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>{</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    (state) ? <a class="code hl_define" href="types_8h.html#a62af7cb8bfabd5a9f6ea45582e08843b">SET_BIT</a>(<a class="code hl_define" href="reg__bkp_8h.html#aa38716de06974ea948ad34ef7bfee00b">BKP</a>-&gt;CR, <a class="code hl_define" href="reg__bkp_8h.html#adbb835fd9fbe4d74e598d15de3c12e63">BKP_CR_TPE</a>) : <a class="code hl_define" href="types_8h.html#aa6e88ced7a7081f8ff415c9f5bd6b043">CLEAR_BIT</a>(<a class="code hl_define" href="reg__bkp_8h.html#aa38716de06974ea948ad34ef7bfee00b">BKP</a>-&gt;CR, <a class="code hl_define" href="reg__bkp_8h.html#adbb835fd9fbe4d74e598d15de3c12e63">BKP_CR_TPE</a>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="group___b_k_p___exported___functions.html#ga6fb94a960dc1b9f0c80474239a1f6682">   83</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___b_k_p___exported___functions.html#ga6fb94a960dc1b9f0c80474239a1f6682">BKP_ITConfig</a>(<a class="code hl_enumeration" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> state)</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>{</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    (state) ? <a class="code hl_define" href="types_8h.html#a62af7cb8bfabd5a9f6ea45582e08843b">SET_BIT</a>(<a class="code hl_define" href="reg__bkp_8h.html#aa38716de06974ea948ad34ef7bfee00b">BKP</a>-&gt;CSR, <a class="code hl_define" href="reg__bkp_8h.html#a38baaf48576f4b3ab209369e04d468ad">BKP_CSR_TPIE</a>) : <a class="code hl_define" href="types_8h.html#aa6e88ced7a7081f8ff415c9f5bd6b043">CLEAR_BIT</a>(<a class="code hl_define" href="reg__bkp_8h.html#aa38716de06974ea948ad34ef7bfee00b">BKP</a>-&gt;CSR, <a class="code hl_define" href="reg__bkp_8h.html#a38baaf48576f4b3ab209369e04d468ad">BKP_CSR_TPIE</a>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>}</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="group___b_k_p___exported___functions.html#ga1759540aae2219d295f12c5af4dfc709">  101</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___b_k_p___exported___functions.html#ga1759540aae2219d295f12c5af4dfc709">BKP_RTCOutputConfig</a>(<a class="code hl_enumeration" href="group___b_k_p___exported___types.html#gafe4db372923bc55590043005fc398f19">BKPRTCOUTPUTSRC_Typedef</a> rtc_output_source)</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>{</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <a class="code hl_define" href="types_8h.html#a9604563d4bca5bd6bc9a17c9511e599b">MODIFY_REG</a>(<a class="code hl_define" href="reg__bkp_8h.html#aa38716de06974ea948ad34ef7bfee00b">BKP</a>-&gt;RTCCR, <a class="code hl_define" href="reg__bkp_8h.html#a639d569ffd9211519b910c1e6304f7b3">BKP_RTCCR_CCO</a> | <a class="code hl_define" href="reg__bkp_8h.html#a924692225ba4db945660687fe47f50b4">BKP_RTCCR_ASOE</a> | <a class="code hl_define" href="reg__bkp_8h.html#a8d017e8f3c09696cd74e170a95966be4">BKP_RTCCR_ASOS</a>, rtc_output_source);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="group___b_k_p___exported___functions.html#gaf7f30c71c0c0e273348ed0dba06ae8fe">  112</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___b_k_p___exported___functions.html#gaf7f30c71c0c0e273348ed0dba06ae8fe">BKP_SetRTCCalibrationValue</a>(<a class="code hl_typedef" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> calibration_value)</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>{</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <a class="code hl_define" href="types_8h.html#a9604563d4bca5bd6bc9a17c9511e599b">MODIFY_REG</a>(<a class="code hl_define" href="reg__bkp_8h.html#aa38716de06974ea948ad34ef7bfee00b">BKP</a>-&gt;RTCCR, <a class="code hl_define" href="reg__bkp_8h.html#a4f2eeeef42c2f7a59d28a9d5eb4c6857">BKP_RTCCR_CAL</a>, calibration_value);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="group___b_k_p___exported___functions.html#gacc9aedde760383f0bd146f0d77a547db">  122</a></span><a class="code hl_enumeration" href="types_8h.html#a89136caac2e14c55151f527ac02daaff">FlagStatus</a> <a class="code hl_function" href="group___b_k_p___exported___functions.html#gacc9aedde760383f0bd146f0d77a547db">BKP_GetFlagStatus</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>{</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordflow">return</span> ((<a class="code hl_define" href="reg__bkp_8h.html#aa38716de06974ea948ad34ef7bfee00b">BKP</a>-&gt;CSR &amp; <a class="code hl_define" href="reg__bkp_8h.html#a71a05fe4e45b0dc0b1f970e51085678d">BKP_CSR_TEF</a>) ? <a class="code hl_enumvalue" href="types_8h.html#a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792">SET</a> : <a class="code hl_enumvalue" href="types_8h.html#a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05">RESET</a>);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="group___b_k_p___exported___functions.html#ga3f3aea5b0a3d8d5d79b0b506928351ea">  132</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___b_k_p___exported___functions.html#ga3f3aea5b0a3d8d5d79b0b506928351ea">BKP_ClearFlag</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>{</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <a class="code hl_define" href="types_8h.html#a62af7cb8bfabd5a9f6ea45582e08843b">SET_BIT</a>(<a class="code hl_define" href="reg__bkp_8h.html#aa38716de06974ea948ad34ef7bfee00b">BKP</a>-&gt;CSR, <a class="code hl_define" href="reg__bkp_8h.html#ad8cec91d3c30db07961227bcea5c5452">BKP_CSR_CTE</a>);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>}</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="group___b_k_p___exported___functions.html#ga99566c9f1f17f499020606cb63511494">  142</a></span><a class="code hl_typedef" href="types_8h.html#a39d4411201fb731279ad5a409b2b80d7">ITStatus</a> <a class="code hl_function" href="group___b_k_p___exported___functions.html#ga99566c9f1f17f499020606cb63511494">BKP_GetITStatus</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>{</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keywordflow">return</span> ((<a class="code hl_define" href="reg__bkp_8h.html#aa38716de06974ea948ad34ef7bfee00b">BKP</a>-&gt;CSR &amp; <a class="code hl_define" href="reg__bkp_8h.html#a3a8317e460ec3e18c78869beacd0bac8">BKP_CSR_TIF</a>) ? <a class="code hl_enumvalue" href="types_8h.html#a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792">SET</a> : <a class="code hl_enumvalue" href="types_8h.html#a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05">RESET</a>);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>}</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="group___b_k_p___exported___functions.html#ga6a93ef8e40959bb10fea670e2040ad74">  152</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___b_k_p___exported___functions.html#ga6a93ef8e40959bb10fea670e2040ad74">BKP_ClearITPendingBit</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>{</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <a class="code hl_define" href="types_8h.html#a62af7cb8bfabd5a9f6ea45582e08843b">SET_BIT</a>(<a class="code hl_define" href="reg__bkp_8h.html#aa38716de06974ea948ad34ef7bfee00b">BKP</a>-&gt;CSR, <a class="code hl_define" href="reg__bkp_8h.html#ad7dc97ae504ef58fb2137c1fdd02fc4e">BKP_CSR_CTI</a>);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>}</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="group___b_k_p___exported___functions.html#ga18f654c7d6dae0c271f5b5e5f7f6812c">  164</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___b_k_p___exported___functions.html#ga18f654c7d6dae0c271f5b5e5f7f6812c">BKP_WriteBackupRegister</a>(<a class="code hl_enumeration" href="group___b_k_p___exported___types.html#gad7572a71ed7a4ad20c46b788a6131acd">BKPDR_Typedef</a> bkp_dr, <a class="code hl_typedef" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> data)</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>{</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    *(<a class="code hl_typedef" href="types_8h.html#a9e9f2c67df0bbcd2dd7753693525ee07">vu16</a>*)(<a class="code hl_define" href="reg__bkp_8h.html#aa15d5a9f40794105397ba5ea567c4ae1">BKP_BASE</a> + bkp_dr) = data;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>}</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="group___b_k_p___exported___functions.html#ga58f118206712845818afa853a9b9b07c">  175</a></span><a class="code hl_typedef" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> <a class="code hl_function" href="group___b_k_p___exported___functions.html#ga58f118206712845818afa853a9b9b07c">BKP_ReadBackupRegister</a>(<a class="code hl_enumeration" href="group___b_k_p___exported___types.html#gad7572a71ed7a4ad20c46b788a6131acd">BKPDR_Typedef</a> bkp_dr)</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>{</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="keywordflow">return</span> (*(<a class="code hl_typedef" href="types_8h.html#a9e9f2c67df0bbcd2dd7753693525ee07">vu16</a>*)(<a class="code hl_define" href="reg__bkp_8h.html#aa15d5a9f40794105397ba5ea567c4ae1">BKP_BASE</a> + bkp_dr));</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>}</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">//          Extended function interface</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="group___b_k_p___exported___functions.html#gac84b7dfc94f5425613c1d31e261af934">  187</a></span><span class="comment"></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___b_k_p___exported___functions.html#gac84b7dfc94f5425613c1d31e261af934">exBKP_Init</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>{</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <a class="code hl_function" href="group___r_c_c___exported___functions.html#gabd7a5ac36fb2b92827889cec53fd0141">RCC_APB1PeriphClockCmd</a>(<a class="code hl_define" href="reg__rcc_8h.html#ae630b8e610ae204fdada83dccb07b55c">RCC_APB1ENR_PWR</a>, <a class="code hl_enumvalue" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf">ENABLE</a>);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="comment">//COMMON_EnableIpClock(emCLOCK_PWR);</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <a class="code hl_function" href="group___r_c_c___exported___functions.html#gabd7a5ac36fb2b92827889cec53fd0141">RCC_APB1PeriphClockCmd</a>(<a class="code hl_define" href="reg__rcc_8h.html#aae6088849790691a4cb5dc5f6d620084">RCC_APB1ENR_BKP</a>, <a class="code hl_enumvalue" href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf">ENABLE</a>);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="comment">//COMMON_EnableIpClock(emCLOCK_BKP);</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <a class="code hl_define" href="reg__rcc_8h.html#a74944438a086975793d26ae48d5882d4">RCC</a>-&gt;BDCR |= <a class="code hl_define" href="reg__rcc_8h.html#ab56a1848dcac240ec805f568e4a49d60">RCC_BDCR_DBP</a>;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>}</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="group___b_k_p___exported___functions.html#ga9b1fe7225f033281b8d75a26e26866d6">  204</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___b_k_p___exported___functions.html#ga9b1fe7225f033281b8d75a26e26866d6">exBKP_ImmWrite</a>(<a class="code hl_enumeration" href="group___b_k_p___exported___types.html#gad7572a71ed7a4ad20c46b788a6131acd">BKPDR_Typedef</a> bkp_dr, <a class="code hl_typedef" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> dat)</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>{</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <a class="code hl_define" href="reg__rcc_8h.html#a74944438a086975793d26ae48d5882d4">RCC</a>-&gt;BDCR |= <a class="code hl_define" href="reg__rcc_8h.html#ab56a1848dcac240ec805f568e4a49d60">RCC_BDCR_DBP</a>;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    *(<a class="code hl_typedef" href="types_8h.html#a9e9f2c67df0bbcd2dd7753693525ee07">vu16</a>*)(<a class="code hl_define" href="reg__bkp_8h.html#aa15d5a9f40794105397ba5ea567c4ae1">BKP_BASE</a> + bkp_dr) = dat;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <a class="code hl_define" href="reg__rcc_8h.html#a74944438a086975793d26ae48d5882d4">RCC</a>-&gt;BDCR &amp;= ~RCC_BDCR_DBP;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>}</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="group___b_k_p___exported___functions.html#gadc08509756db41d732c598b14f7d936e">  218</a></span><a class="code hl_typedef" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> <a class="code hl_function" href="group___b_k_p___exported___functions.html#gadc08509756db41d732c598b14f7d936e">exBKP_ImmRead</a>(<a class="code hl_enumeration" href="group___b_k_p___exported___types.html#gad7572a71ed7a4ad20c46b788a6131acd">BKPDR_Typedef</a> bkp_dr)</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>{</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <a class="code hl_typedef" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> dat;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <a class="code hl_define" href="reg__rcc_8h.html#a74944438a086975793d26ae48d5882d4">RCC</a>-&gt;BDCR |= <a class="code hl_define" href="reg__rcc_8h.html#ab56a1848dcac240ec805f568e4a49d60">RCC_BDCR_DBP</a>;</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    dat = (*(<a class="code hl_typedef" href="types_8h.html#a9e9f2c67df0bbcd2dd7753693525ee07">vu16</a>*)(<a class="code hl_define" href="reg__bkp_8h.html#aa15d5a9f40794105397ba5ea567c4ae1">BKP_BASE</a> + bkp_dr));</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    <a class="code hl_define" href="reg__rcc_8h.html#a74944438a086975793d26ae48d5882d4">RCC</a>-&gt;BDCR &amp;= ~RCC_BDCR_DBP;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    <span class="keywordflow">return</span> dat;</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>}</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
+<div class="ttc" id="agroup___b_k_p___exported___functions_html_ga1759540aae2219d295f12c5af4dfc709"><div class="ttname"><a href="group___b_k_p___exported___functions.html#ga1759540aae2219d295f12c5af4dfc709">BKP_RTCOutputConfig</a></div><div class="ttdeci">void BKP_RTCOutputConfig(BKPRTCOUTPUTSRC_Typedef rtc_output_source)</div><div class="ttdoc">Select the RTC output source to output on the Tamper pin.</div><div class="ttdef"><b>Definition:</b> <a href="hal__bkp_8c_source.html#l00101">hal_bkp.c:101</a></div></div>
+<div class="ttc" id="agroup___b_k_p___exported___functions_html_ga18f654c7d6dae0c271f5b5e5f7f6812c"><div class="ttname"><a href="group___b_k_p___exported___functions.html#ga18f654c7d6dae0c271f5b5e5f7f6812c">BKP_WriteBackupRegister</a></div><div class="ttdeci">void BKP_WriteBackupRegister(BKPDR_Typedef bkp_dr, u16 data)</div><div class="ttdoc">Writes user data to the specified data Backup Register.</div><div class="ttdef"><b>Definition:</b> <a href="hal__bkp_8c_source.html#l00164">hal_bkp.c:164</a></div></div>
+<div class="ttc" id="agroup___b_k_p___exported___functions_html_ga3f3aea5b0a3d8d5d79b0b506928351ea"><div class="ttname"><a href="group___b_k_p___exported___functions.html#ga3f3aea5b0a3d8d5d79b0b506928351ea">BKP_ClearFlag</a></div><div class="ttdeci">void BKP_ClearFlag(void)</div><div class="ttdoc">Clears Tamper Pin Event pending flag.</div><div class="ttdef"><b>Definition:</b> <a href="hal__bkp_8c_source.html#l00132">hal_bkp.c:132</a></div></div>
+<div class="ttc" id="agroup___b_k_p___exported___functions_html_ga58f118206712845818afa853a9b9b07c"><div class="ttname"><a href="group___b_k_p___exported___functions.html#ga58f118206712845818afa853a9b9b07c">BKP_ReadBackupRegister</a></div><div class="ttdeci">u16 BKP_ReadBackupRegister(BKPDR_Typedef bkp_dr)</div><div class="ttdoc">Reads data from the specified data Backup Register.</div><div class="ttdef"><b>Definition:</b> <a href="hal__bkp_8c_source.html#l00175">hal_bkp.c:175</a></div></div>
+<div class="ttc" id="agroup___b_k_p___exported___functions_html_ga6a93ef8e40959bb10fea670e2040ad74"><div class="ttname"><a href="group___b_k_p___exported___functions.html#ga6a93ef8e40959bb10fea670e2040ad74">BKP_ClearITPendingBit</a></div><div class="ttdeci">void BKP_ClearITPendingBit(void)</div><div class="ttdoc">Clears Tamper Pin Interrupt pending bit.</div><div class="ttdef"><b>Definition:</b> <a href="hal__bkp_8c_source.html#l00152">hal_bkp.c:152</a></div></div>
+<div class="ttc" id="agroup___b_k_p___exported___functions_html_ga6fb94a960dc1b9f0c80474239a1f6682"><div class="ttname"><a href="group___b_k_p___exported___functions.html#ga6fb94a960dc1b9f0c80474239a1f6682">BKP_ITConfig</a></div><div class="ttdeci">void BKP_ITConfig(FunctionalState state)</div><div class="ttdoc">Enables or disables the Tamper Pin Interrupt.</div><div class="ttdef"><b>Definition:</b> <a href="hal__bkp_8c_source.html#l00083">hal_bkp.c:83</a></div></div>
+<div class="ttc" id="agroup___b_k_p___exported___functions_html_ga77a95c4b304d5168dc52c79c4d60693e"><div class="ttname"><a href="group___b_k_p___exported___functions.html#ga77a95c4b304d5168dc52c79c4d60693e">BKP_TamperPinCmd</a></div><div class="ttdeci">void BKP_TamperPinCmd(FunctionalState state)</div><div class="ttdoc">Enables or disables the Tamper Pin activation.</div><div class="ttdef"><b>Definition:</b> <a href="hal__bkp_8c_source.html#l00072">hal_bkp.c:72</a></div></div>
+<div class="ttc" id="agroup___b_k_p___exported___functions_html_ga99566c9f1f17f499020606cb63511494"><div class="ttname"><a href="group___b_k_p___exported___functions.html#ga99566c9f1f17f499020606cb63511494">BKP_GetITStatus</a></div><div class="ttdeci">ITStatus BKP_GetITStatus(void)</div><div class="ttdoc">Checks whether the Tamper Pin Interrupt has occurred or not.</div><div class="ttdef"><b>Definition:</b> <a href="hal__bkp_8c_source.html#l00142">hal_bkp.c:142</a></div></div>
+<div class="ttc" id="agroup___b_k_p___exported___functions_html_ga9b1fe7225f033281b8d75a26e26866d6"><div class="ttname"><a href="group___b_k_p___exported___functions.html#ga9b1fe7225f033281b8d75a26e26866d6">exBKP_ImmWrite</a></div><div class="ttdeci">void exBKP_ImmWrite(BKPDR_Typedef bkp_dr, u16 data)</div><div class="ttdoc">Writes user data to the specified data Backup Register immediately.</div><div class="ttdef"><b>Definition:</b> <a href="hal__bkp_8c_source.html#l00204">hal_bkp.c:204</a></div></div>
+<div class="ttc" id="agroup___b_k_p___exported___functions_html_gaabff4d8f5ebf4fd9a840bcc9042ca226"><div class="ttname"><a href="group___b_k_p___exported___functions.html#gaabff4d8f5ebf4fd9a840bcc9042ca226">BKP_DeInit</a></div><div class="ttdeci">void BKP_DeInit(void)</div><div class="ttdoc">Deinitializes the BKP peripheral registers to their default reset values.</div><div class="ttdef"><b>Definition:</b> <a href="hal__bkp_8c_source.html#l00047">hal_bkp.c:47</a></div></div>
+<div class="ttc" id="agroup___b_k_p___exported___functions_html_gaaf67b893b98dfc4900b681bf47439db5"><div class="ttname"><a href="group___b_k_p___exported___functions.html#gaaf67b893b98dfc4900b681bf47439db5">BKP_TamperPinLevelConfig</a></div><div class="ttdeci">void BKP_TamperPinLevelConfig(BKPTPAL_Typedef tamper_pin_level)</div><div class="ttdoc">Configures the Tamper Pin active level.</div><div class="ttdef"><b>Definition:</b> <a href="hal__bkp_8c_source.html#l00061">hal_bkp.c:61</a></div></div>
+<div class="ttc" id="agroup___b_k_p___exported___functions_html_gac84b7dfc94f5425613c1d31e261af934"><div class="ttname"><a href="group___b_k_p___exported___functions.html#gac84b7dfc94f5425613c1d31e261af934">exBKP_Init</a></div><div class="ttdeci">void exBKP_Init(void)</div><div class="ttdoc">Initializes the BKP peripheral, enable access to the backup registers.</div><div class="ttdef"><b>Definition:</b> <a href="hal__bkp_8c_source.html#l00187">hal_bkp.c:187</a></div></div>
+<div class="ttc" id="agroup___b_k_p___exported___functions_html_gacc9aedde760383f0bd146f0d77a547db"><div class="ttname"><a href="group___b_k_p___exported___functions.html#gacc9aedde760383f0bd146f0d77a547db">BKP_GetFlagStatus</a></div><div class="ttdeci">FlagStatus BKP_GetFlagStatus(void)</div><div class="ttdoc">Checks whether the Tamper Pin Event flag is set or not.</div><div class="ttdef"><b>Definition:</b> <a href="hal__bkp_8c_source.html#l00122">hal_bkp.c:122</a></div></div>
+<div class="ttc" id="agroup___b_k_p___exported___functions_html_gadc08509756db41d732c598b14f7d936e"><div class="ttname"><a href="group___b_k_p___exported___functions.html#gadc08509756db41d732c598b14f7d936e">exBKP_ImmRead</a></div><div class="ttdeci">u16 exBKP_ImmRead(BKPDR_Typedef bkp_dr)</div><div class="ttdoc">Reads data from the specified data Backup Register immediately.</div><div class="ttdef"><b>Definition:</b> <a href="hal__bkp_8c_source.html#l00218">hal_bkp.c:218</a></div></div>
+<div class="ttc" id="agroup___b_k_p___exported___functions_html_gaf7f30c71c0c0e273348ed0dba06ae8fe"><div class="ttname"><a href="group___b_k_p___exported___functions.html#gaf7f30c71c0c0e273348ed0dba06ae8fe">BKP_SetRTCCalibrationValue</a></div><div class="ttdeci">void BKP_SetRTCCalibrationValue(u8 calibration_value)</div><div class="ttdoc">Sets RTC Clock Calibration value.</div><div class="ttdef"><b>Definition:</b> <a href="hal__bkp_8c_source.html#l00112">hal_bkp.c:112</a></div></div>
+<div class="ttc" id="agroup___b_k_p___exported___types_html_ga71fe621c289e0c835e7ffbf7f56fcc20"><div class="ttname"><a href="group___b_k_p___exported___types.html#ga71fe621c289e0c835e7ffbf7f56fcc20">BKPTPAL_Typedef</a></div><div class="ttdeci">BKPTPAL_Typedef</div><div class="ttdoc">Tamper_Pin_active_level</div><div class="ttdef"><b>Definition:</b> <a href="hal__bkp_8h_source.html#l00070">hal_bkp.h:70</a></div></div>
+<div class="ttc" id="agroup___b_k_p___exported___types_html_gad7572a71ed7a4ad20c46b788a6131acd"><div class="ttname"><a href="group___b_k_p___exported___types.html#gad7572a71ed7a4ad20c46b788a6131acd">BKPDR_Typedef</a></div><div class="ttdeci">BKPDR_Typedef</div><div class="ttdef"><b>Definition:</b> <a href="hal__bkp_8h_source.html#l00043">hal_bkp.h:43</a></div></div>
+<div class="ttc" id="agroup___b_k_p___exported___types_html_gafe4db372923bc55590043005fc398f19"><div class="ttname"><a href="group___b_k_p___exported___types.html#gafe4db372923bc55590043005fc398f19">BKPRTCOUTPUTSRC_Typedef</a></div><div class="ttdeci">BKPRTCOUTPUTSRC_Typedef</div><div class="ttdoc">RTC_output_source_to_output_on_the_Tamper_pin</div><div class="ttdef"><b>Definition:</b> <a href="hal__bkp_8h_source.html#l00078">hal_bkp.h:78</a></div></div>
+<div class="ttc" id="agroup___r_c_c___exported___functions_html_ga90652428211c565c37cd4df3257fc83f"><div class="ttname"><a href="group___r_c_c___exported___functions.html#ga90652428211c565c37cd4df3257fc83f">RCC_BackupResetCmd</a></div><div class="ttdeci">void RCC_BackupResetCmd(FunctionalState state)</div><div class="ttdoc">Forces or releases the Backup domain reset.</div><div class="ttdef"><b>Definition:</b> <a href="hal__rcc_8c_source.html#l00606">hal_rcc.c:606</a></div></div>
+<div class="ttc" id="agroup___r_c_c___exported___functions_html_gabd7a5ac36fb2b92827889cec53fd0141"><div class="ttname"><a href="group___r_c_c___exported___functions.html#gabd7a5ac36fb2b92827889cec53fd0141">RCC_APB1PeriphClockCmd</a></div><div class="ttdeci">void RCC_APB1PeriphClockCmd(u32 apb1_periph, FunctionalState state)</div><div class="ttdoc">Enables or disables the Low Speed APB (APB1) peripheral clock.</div><div class="ttdef"><b>Definition:</b> <a href="hal__rcc_8c_source.html#l00535">hal_rcc.c:535</a></div></div>
+<div class="ttc" id="ahal__bkp_8h_html"><div class="ttname"><a href="hal__bkp_8h.html">hal_bkp.h</a></div><div class="ttdoc">THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE BKP FIRMWARE LIBRARY.</div></div>
+<div class="ttc" id="ahal__pwr_8h_html"><div class="ttname"><a href="hal__pwr_8h.html">hal_pwr.h</a></div><div class="ttdoc">THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE PWR FIRMWARE LIBRARY.</div></div>
+<div class="ttc" id="ahal__rcc_8h_html"><div class="ttname"><a href="hal__rcc_8h.html">hal_rcc.h</a></div><div class="ttdoc">THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE RCC FIRMWARE LIBRARY.</div></div>
+<div class="ttc" id="areg__bkp_8h_html_a38baaf48576f4b3ab209369e04d468ad"><div class="ttname"><a href="reg__bkp_8h.html#a38baaf48576f4b3ab209369e04d468ad">BKP_CSR_TPIE</a></div><div class="ttdeci">#define BKP_CSR_TPIE</div><div class="ttdoc">TAMPER Pin interrupt enable</div><div class="ttdef"><b>Definition:</b> <a href="reg__bkp_8h_source.html#l00129">reg_bkp.h:129</a></div></div>
+<div class="ttc" id="areg__bkp_8h_html_a3a8317e460ec3e18c78869beacd0bac8"><div class="ttname"><a href="reg__bkp_8h.html#a3a8317e460ec3e18c78869beacd0bac8">BKP_CSR_TIF</a></div><div class="ttdeci">#define BKP_CSR_TIF</div><div class="ttdoc">Tamper Interrupt Flag</div><div class="ttdef"><b>Definition:</b> <a href="reg__bkp_8h_source.html#l00133">reg_bkp.h:133</a></div></div>
+<div class="ttc" id="areg__bkp_8h_html_a4f2eeeef42c2f7a59d28a9d5eb4c6857"><div class="ttname"><a href="reg__bkp_8h.html#a4f2eeeef42c2f7a59d28a9d5eb4c6857">BKP_RTCCR_CAL</a></div><div class="ttdeci">#define BKP_RTCCR_CAL</div><div class="ttdoc">Calibration value</div><div class="ttdef"><b>Definition:</b> <a href="reg__bkp_8h_source.html#l00105">reg_bkp.h:105</a></div></div>
+<div class="ttc" id="areg__bkp_8h_html_a639d569ffd9211519b910c1e6304f7b3"><div class="ttname"><a href="reg__bkp_8h.html#a639d569ffd9211519b910c1e6304f7b3">BKP_RTCCR_CCO</a></div><div class="ttdeci">#define BKP_RTCCR_CCO</div><div class="ttdoc">Calibration Clock Output</div><div class="ttdef"><b>Definition:</b> <a href="reg__bkp_8h_source.html#l00107">reg_bkp.h:107</a></div></div>
+<div class="ttc" id="areg__bkp_8h_html_a71a05fe4e45b0dc0b1f970e51085678d"><div class="ttname"><a href="reg__bkp_8h.html#a71a05fe4e45b0dc0b1f970e51085678d">BKP_CSR_TEF</a></div><div class="ttdeci">#define BKP_CSR_TEF</div><div class="ttdoc">Tamper Event Flag</div><div class="ttdef"><b>Definition:</b> <a href="reg__bkp_8h_source.html#l00131">reg_bkp.h:131</a></div></div>
+<div class="ttc" id="areg__bkp_8h_html_a8d017e8f3c09696cd74e170a95966be4"><div class="ttname"><a href="reg__bkp_8h.html#a8d017e8f3c09696cd74e170a95966be4">BKP_RTCCR_ASOS</a></div><div class="ttdeci">#define BKP_RTCCR_ASOS</div><div class="ttdoc">Alarm or Second Output Selection</div><div class="ttdef"><b>Definition:</b> <a href="reg__bkp_8h_source.html#l00111">reg_bkp.h:111</a></div></div>
+<div class="ttc" id="areg__bkp_8h_html_a924692225ba4db945660687fe47f50b4"><div class="ttname"><a href="reg__bkp_8h.html#a924692225ba4db945660687fe47f50b4">BKP_RTCCR_ASOE</a></div><div class="ttdeci">#define BKP_RTCCR_ASOE</div><div class="ttdoc">Alarm or Second Output Enable</div><div class="ttdef"><b>Definition:</b> <a href="reg__bkp_8h_source.html#l00109">reg_bkp.h:109</a></div></div>
+<div class="ttc" id="areg__bkp_8h_html_aa15d5a9f40794105397ba5ea567c4ae1"><div class="ttname"><a href="reg__bkp_8h.html#aa15d5a9f40794105397ba5ea567c4ae1">BKP_BASE</a></div><div class="ttdeci">#define BKP_BASE</div><div class="ttdoc">BKP Base Address Definition</div><div class="ttdef"><b>Definition:</b> <a href="reg__bkp_8h_source.html#l00048">reg_bkp.h:48</a></div></div>
+<div class="ttc" id="areg__bkp_8h_html_aa38716de06974ea948ad34ef7bfee00b"><div class="ttname"><a href="reg__bkp_8h.html#aa38716de06974ea948ad34ef7bfee00b">BKP</a></div><div class="ttdeci">#define BKP</div><div class="ttdoc">BKP type pointer Definition</div><div class="ttdef"><b>Definition:</b> <a href="reg__bkp_8h_source.html#l00091">reg_bkp.h:91</a></div></div>
+<div class="ttc" id="areg__bkp_8h_html_ad7dc97ae504ef58fb2137c1fdd02fc4e"><div class="ttname"><a href="reg__bkp_8h.html#ad7dc97ae504ef58fb2137c1fdd02fc4e">BKP_CSR_CTI</a></div><div class="ttdeci">#define BKP_CSR_CTI</div><div class="ttdoc">Clear Tamper Interrupt</div><div class="ttdef"><b>Definition:</b> <a href="reg__bkp_8h_source.html#l00127">reg_bkp.h:127</a></div></div>
+<div class="ttc" id="areg__bkp_8h_html_ad8cec91d3c30db07961227bcea5c5452"><div class="ttname"><a href="reg__bkp_8h.html#ad8cec91d3c30db07961227bcea5c5452">BKP_CSR_CTE</a></div><div class="ttdeci">#define BKP_CSR_CTE</div><div class="ttdoc">Clear Tamper event</div><div class="ttdef"><b>Definition:</b> <a href="reg__bkp_8h_source.html#l00125">reg_bkp.h:125</a></div></div>
+<div class="ttc" id="areg__bkp_8h_html_adbb835fd9fbe4d74e598d15de3c12e63"><div class="ttname"><a href="reg__bkp_8h.html#adbb835fd9fbe4d74e598d15de3c12e63">BKP_CR_TPE</a></div><div class="ttdeci">#define BKP_CR_TPE</div><div class="ttdoc">TAMPER pin enable</div><div class="ttdef"><b>Definition:</b> <a href="reg__bkp_8h_source.html#l00117">reg_bkp.h:117</a></div></div>
+<div class="ttc" id="areg__rcc_8h_html_a74944438a086975793d26ae48d5882d4"><div class="ttname"><a href="reg__rcc_8h.html#a74944438a086975793d26ae48d5882d4">RCC</a></div><div class="ttdeci">#define RCC</div><div class="ttdoc">RCC type pointer Definition</div><div class="ttdef"><b>Definition:</b> <a href="reg__rcc_8h_source.html#l00092">reg_rcc.h:92</a></div></div>
+<div class="ttc" id="areg__rcc_8h_html_aae6088849790691a4cb5dc5f6d620084"><div class="ttname"><a href="reg__rcc_8h.html#aae6088849790691a4cb5dc5f6d620084">RCC_APB1ENR_BKP</a></div><div class="ttdeci">#define RCC_APB1ENR_BKP</div><div class="ttdoc">Backup interface clock enable</div><div class="ttdef"><b>Definition:</b> <a href="reg__rcc_8h_source.html#l00475">reg_rcc.h:475</a></div></div>
+<div class="ttc" id="areg__rcc_8h_html_ab56a1848dcac240ec805f568e4a49d60"><div class="ttname"><a href="reg__rcc_8h.html#ab56a1848dcac240ec805f568e4a49d60">RCC_BDCR_DBP</a></div><div class="ttdeci">#define RCC_BDCR_DBP</div><div class="ttdoc">DBP clock enable</div><div class="ttdef"><b>Definition:</b> <a href="reg__rcc_8h_source.html#l00511">reg_rcc.h:511</a></div></div>
+<div class="ttc" id="areg__rcc_8h_html_ae630b8e610ae204fdada83dccb07b55c"><div class="ttname"><a href="reg__rcc_8h.html#ae630b8e610ae204fdada83dccb07b55c">RCC_APB1ENR_PWR</a></div><div class="ttdeci">#define RCC_APB1ENR_PWR</div><div class="ttdoc">Power interface clock enable</div><div class="ttdef"><b>Definition:</b> <a href="reg__rcc_8h_source.html#l00478">reg_rcc.h:478</a></div></div>
+<div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">THIS FILE PROVIDES ALL THE TYPE FIRMWARE FUNCTIONS.</div></div>
+<div class="ttc" id="atypes_8h_html_a39d4411201fb731279ad5a409b2b80d7"><div class="ttname"><a href="types_8h.html#a39d4411201fb731279ad5a409b2b80d7">ITStatus</a></div><div class="ttdeci">enum FlagStatus ITStatus</div></div>
+<div class="ttc" id="atypes_8h_html_a62af7cb8bfabd5a9f6ea45582e08843b"><div class="ttname"><a href="types_8h.html#a62af7cb8bfabd5a9f6ea45582e08843b">SET_BIT</a></div><div class="ttdeci">#define SET_BIT(reg, bit)</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00093">types.h:93</a></div></div>
+<div class="ttc" id="atypes_8h_html_a89136caac2e14c55151f527ac02daaff"><div class="ttname"><a href="types_8h.html#a89136caac2e14c55151f527ac02daaff">FlagStatus</a></div><div class="ttdeci">FlagStatus</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00073">types.h:73</a></div></div>
+<div class="ttc" id="atypes_8h_html_a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05"><div class="ttname"><a href="types_8h.html#a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05">RESET</a></div><div class="ttdeci">@ RESET</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00073">types.h:73</a></div></div>
+<div class="ttc" id="atypes_8h_html_a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792"><div class="ttname"><a href="types_8h.html#a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792">SET</a></div><div class="ttdeci">@ SET</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00073">types.h:73</a></div></div>
+<div class="ttc" id="atypes_8h_html_a9604563d4bca5bd6bc9a17c9511e599b"><div class="ttname"><a href="types_8h.html#a9604563d4bca5bd6bc9a17c9511e599b">MODIFY_REG</a></div><div class="ttdeci">#define MODIFY_REG(reg, CLEARMASK, SETMASK)</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00099">types.h:99</a></div></div>
+<div class="ttc" id="atypes_8h_html_a9e6c91d77e24643b888dbd1a1a590054"><div class="ttname"><a href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a></div><div class="ttdeci">unsigned short u16</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00055">types.h:55</a></div></div>
+<div class="ttc" id="atypes_8h_html_a9e9f2c67df0bbcd2dd7753693525ee07"><div class="ttname"><a href="types_8h.html#a9e9f2c67df0bbcd2dd7753693525ee07">vu16</a></div><div class="ttdeci">volatile unsigned short vu16</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00063">types.h:63</a></div></div>
+<div class="ttc" id="atypes_8h_html_aa6e88ced7a7081f8ff415c9f5bd6b043"><div class="ttname"><a href="types_8h.html#aa6e88ced7a7081f8ff415c9f5bd6b043">CLEAR_BIT</a></div><div class="ttdeci">#define CLEAR_BIT(reg, bit)</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00094">types.h:94</a></div></div>
+<div class="ttc" id="atypes_8h_html_ac9a7e9a35d2513ec15c3b537aaa4fba1"><div class="ttname"><a href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a></div><div class="ttdeci">FunctionalState</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00074">types.h:74</a></div></div>
+<div class="ttc" id="atypes_8h_html_ac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf"><div class="ttname"><a href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf">ENABLE</a></div><div class="ttdeci">@ ENABLE</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00074">types.h:74</a></div></div>
+<div class="ttc" id="atypes_8h_html_ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d"><div class="ttname"><a href="types_8h.html#ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d">DISABLE</a></div><div class="ttdeci">@ DISABLE</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00074">types.h:74</a></div></div>
+<div class="ttc" id="atypes_8h_html_aed742c436da53c1080638ce6ef7d13de"><div class="ttname"><a href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a></div><div class="ttdeci">unsigned char u8</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00056">types.h:56</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

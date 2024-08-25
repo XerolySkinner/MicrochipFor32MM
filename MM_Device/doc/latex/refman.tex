@@ -1,0 +1,757 @@
+  % Handle batch mode
+  % to overcome problems with too many open files
+  \let\mypdfximage\pdfximage\def\pdfximage{\immediate\mypdfximage}
+  % Set document class depending on configuration
+  \documentclass[twoside]{book}
+  %% moved from doxygen.sty due to workaround for LaTex 2019 version and unmaintained tabu package
+  \usepackage{ifthen}
+  \ifx\requestedLaTeXdate\undefined
+    \usepackage{array}
+  \else
+    \usepackage{array}[=2016-10-06]
+  \fi
+  %%
+  % Packages required by doxygen
+  \usepackage{fixltx2e} % for \textsubscript
+  \usepackage{doxygen}
+  \usepackage{graphicx}
+  \usepackage[utf8]{inputenc}
+  \usepackage{makeidx}
+  \PassOptionsToPackage{warn}{textcomp}
+  \usepackage{textcomp}
+  \usepackage[nointegrals]{wasysym}
+  \usepackage{ifxetex}
+  % NLS support packages
+  \usepackage{CJKutf8}
+  % Define default fonts
+  % Font selection
+  % set main and monospaced font
+  \usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\renewcommand{\familydefault}{\sfdefault}
+  \usepackage{sectsty}
+  \allsectionsfont{%
+    \fontseries{bc}\selectfont%
+    \color{darkgray}%
+  }
+  \renewcommand{\DoxyLabelFont}{%
+    \fontseries{bc}\selectfont%
+    \color{darkgray}%
+  }
+  \newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+   % Arguments of doxygenemoji:
+   % 1) ':<text>:' form of the emoji, already LaTeX-escaped
+   % 2) file with the name of the emoji without the .png extension
+   % in case image exist use this otherwise use the ':<text>:' form
+   \newcommand{\doxygenemoji}[2]{%
+     \IfFileExists{./#2.png}{\raisebox{-0.1em}{\includegraphics[height=0.9em]{./#2.png}}}{#1}%
+   }
+  % Page & text layout
+  \usepackage{geometry}
+  \geometry{%
+    a4paper,%
+    top=2.5cm,%
+    bottom=2.5cm,%
+    left=2.5cm,%
+    right=2.5cm%
+  }
+  % Allow a bit of overflow to go unnoticed by other means
+  \tolerance=750
+  \hfuzz=15pt
+  \hbadness=750
+  \setlength{\emergencystretch}{15pt}
+  \setlength{\parindent}{0cm}
+  \newcommand{\doxynormalparskip}{\setlength{\parskip}{3ex plus 2ex minus 2ex}}
+  \newcommand{\doxytocparskip}{\setlength{\parskip}{1ex plus 0ex minus 0ex}}
+  \doxynormalparskip
+  % Redefine paragraph/subparagraph environments, using sectsty fonts
+  \makeatletter
+  \renewcommand{\paragraph}{%
+    \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+      \normalfont\normalsize\bfseries\SS@parafont%
+    }%
+  }
+  \renewcommand{\subparagraph}{%
+    \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+      \normalfont\normalsize\bfseries\SS@subparafont%
+    }%
+  }
+  \makeatother
+  \makeatletter
+  \newcommand\hrulefilll{\leavevmode\leaders\hrule\hskip 0pt plus 1filll\kern\z@}
+  \makeatother
+  % Headers & footers
+  \usepackage{fancyhdr}
+  \pagestyle{fancyplain}
+  \renewcommand{\footrulewidth}{0.4pt}
+  \fancypagestyle{fancyplain}{
+    \fancyhf{}
+    \fancyhead[LE, RO]{\bfseries\thepage}
+    \fancyhead[LO]{\bfseries\rightmark}
+    \fancyhead[RE]{\bfseries\leftmark}
+    \fancyfoot[LO, RE]{\bfseries\scriptsize 制作者 Doxygen }
+  }
+  \fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyfoot[LO, RE]{\bfseries\scriptsize 制作者 Doxygen }
+    \renewcommand{\headrulewidth}{0pt}
+  }
+  \pagestyle{fancyplain}
+  \renewcommand{\chaptermark}[1]{%
+    \markboth{#1}{}%
+  }
+  \renewcommand{\sectionmark}[1]{%
+    \markright{\thesection\ #1}%
+  }
+  % ToC, LoF, LoT, bibliography, and index
+  % Indices & bibliography
+  \usepackage{natbib}
+  \usepackage[titles]{tocloft}
+  \setcounter{tocdepth}{3}
+  \setcounter{secnumdepth}{5}
+  % creating indexes
+  \makeindex
+  \usepackage{newunicodechar}
+  \newunicodechar{⁻}{${}^{-}$}% Superscript minus
+  \newunicodechar{²}{${}^{2}$}% Superscript two
+  \newunicodechar{³}{${}^{3}$}% Superscript three
+  % Hyperlinks
+    % Hyperlinks (required, but should be loaded last)
+    \ifpdf
+      \usepackage[pdftex,pagebackref=true]{hyperref}
+    \else
+      \ifxetex
+        \usepackage[pagebackref=true]{hyperref}
+      \else
+        \usepackage[ps2pdf,pagebackref=true]{hyperref}
+      \fi
+    \fi
+    \hypersetup{%
+      colorlinks=true,%
+      linkcolor=blue,%
+      citecolor=blue,%
+      unicode,%
+      pdftitle={template},%
+      pdfsubject={}%
+    }
+  % Custom commands used by the header
+  % Custom commands
+  \newcommand{\clearemptydoublepage}{%
+    \newpage{\pagestyle{empty}\cleardoublepage}%
+  }
+  % caption style definition
+  \usepackage{caption}
+  \captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+  % in page table of contents
+  \usepackage{etoc}
+  \etocsettocstyle{\doxytocparskip}{\doxynormalparskip}
+  % prevent numbers overlap the titles in toc
+  \renewcommand{\numberline}[1]{#1~}
+% End of preamble, now comes the document contents
+%===== C O N T E N T S =====
+\begin{document}
+  \raggedbottom
+  \begin{CJK}{UTF8}{gbsn}
+  % Titlepage & ToC
+    % To avoid duplicate page anchors due to reuse of same numbers for
+    % the index (be it as roman numbers)
+    \hypersetup{pageanchor=false,
+                bookmarksnumbered=true,
+                pdfencoding=unicode
+               }
+  \pagenumbering{alph}
+  \begin{titlepage}
+  \vspace*{7cm}
+  \begin{center}%
+  {\Large template}\\
+  \vspace*{1cm}
+  {\large 制作者 Doxygen 1.9.5}\\
+  \end{center}
+  \end{titlepage}
+  \clearemptydoublepage
+  \pagenumbering{roman}
+  \tableofcontents
+  \clearemptydoublepage
+  \pagenumbering{arabic}
+  % re-enable anchors again
+  \hypersetup{pageanchor=true}
+%--- Begin generated contents ---
+\chapter{CMSIS DSP Software Library}
+\label{index}\hypertarget{index}{}\input{index}
+\chapter{MISRA-\/C\+:2004 Compliance Exceptions}
+\label{_c_m_s_i_s__m_i_s_r_a__exceptions}
+\Hypertarget{_c_m_s_i_s__m_i_s_r_a__exceptions}
+\input{_c_m_s_i_s__m_i_s_r_a__exceptions}
+\chapter{模块索引}
+\input{modules}
+\chapter{类索引}
+\input{annotated}
+\chapter{文件索引}
+\input{files}
+\chapter{模块说明}
+\input{group__group_math}
+\input{group__group_fast_math}
+\input{group__group_cmplx_math}
+\input{group__group_filters}
+\input{group__group_matrix}
+\input{group__group_transforms}
+\input{group__group_controller}
+\input{group__group_stats}
+\input{group__group_support}
+\input{group__group_interpolation}
+\input{group__group_examples}
+\input{group___p_i_d}
+\input{group__clarke}
+\input{group__inv__clarke}
+\input{group__park}
+\input{group__inv__park}
+\input{group___linear_interpolate}
+\input{group___s_q_r_t}
+\input{group___bilinear_interpolate}
+\input{group___c_m_s_i_s___core___reg_acc_functions}
+\input{group___c_m_s_i_s___core___instruction_interface}
+\input{group___c_m_s_i_s___s_i_m_d__intrinsics}
+\input{group___c_m_s_i_s__glob__defs}
+\input{group___c_m_s_i_s__core__register}
+\input{group___c_m_s_i_s___c_o_r_e}
+\input{group___c_m_s_i_s___n_v_i_c}
+\input{group___c_m_s_i_s___s_c_b}
+\input{group___c_m_s_i_s___sys_tick}
+\input{group___c_m_s_i_s___d_w_t}
+\input{group___c_m_s_i_s___t_p_i}
+\input{group___c_m_s_i_s___core_debug}
+\input{group___c_m_s_i_s__core__bitfield}
+\input{group___c_m_s_i_s__core__base}
+\input{group___c_m_s_i_s___core___function_interface}
+\input{group___c_m_s_i_s___core___n_v_i_c_functions}
+\input{group___c_m_s_i_s___core___fpu_functions}
+\input{group___c_m_s_i_s___core___s_a_u_functions}
+\input{group___c_m_s_i_s___core___sys_tick_functions}
+\input{group___c_m_s_i_s___s_cn_s_c_b}
+\input{group___c_m_s_i_s___i_t_m}
+\input{group___c_m_s_i_s___f_p_u}
+\input{group___c_m_s_i_s__core___debug_functions}
+\input{group___c_m_s_i_s___core___cache_functions}
+\input{group___a_d_c___h_a_l}
+\input{group___a_d_c___exported___types}
+\input{group___a_d_c___exported___variables}
+\input{group___a_d_c___exported___functions}
+\input{group___b_k_p___h_a_l}
+\input{group___b_k_p___exported___types}
+\input{group___b_k_p___exported___variables}
+\input{group___b_k_p___exported___functions}
+\input{group___c_a_n___h_a_l}
+\input{group___c_a_n___exported___types}
+\input{group___c_a_n___exported___constants}
+\input{group__parasmeter__of___c_a_n__transmission__register}
+\input{group___c_a_n___exported___variables}
+\input{group___c_a_n___exported___functions}
+\input{group___c_o_m_p___h_a_l}
+\input{group___c_o_m_p___exported___types}
+\input{group___c_o_m_p___exported___constants}
+\input{group___c_o_m_p___exported___variables}
+\input{group___c_o_m_p___exported___functions}
+\input{group___c_r_c___h_a_l}
+\input{group___c_r_c___exported___types}
+\input{group___c_r_c___exported___constants}
+\input{group___c_r_c___exported___variables}
+\input{group___c_r_c___exported___functions}
+\input{group___c_r_s___h_a_l}
+\input{group___g_p_i_o___exported___types}
+\input{group___d_a_c___h_a_l}
+\input{group___d_a_c___exported___types}
+\input{group___d_a_c___exported___constants}
+\input{group___d_a_c___exported___variables}
+\input{group___d_a_c___exported___functions}
+\input{group___d_b_g___h_a_l}
+\input{group___d_b_g___exported___types}
+\input{group___d_i_v___exported___variables}
+\input{group___d_b_g___exported___functions}
+\input{group___d_m_a___h_a_l}
+\input{group___d_m_a___exported___types}
+\input{group___d_m_a___exported___variables}
+\input{group___d_m_a___exported___functions}
+\input{group___e_t_h___h_a_l}
+\input{group___e_t_h___exported___types}
+\input{group___e_x_t_i___h_a_l}
+\input{group___e_x_t_i___exported___types}
+\input{group___e_x_t_i___exported___constants}
+\input{group___e_x_t_i___exported___variables}
+\input{group___e_x_t_i___exported___functions}
+\input{group___f_l_a_s_h___h_a_l}
+\input{group___f_l_a_s_h___exported___types}
+\input{group___f_l_a_s_h___exported___constants}
+\input{group___f_l_a_s_h___exported___variables}
+\input{group___f_l_a_s_h___exported___functions}
+\input{group___f_s_m_c___h_a_l}
+\input{group___f_s_m_c___exported___types}
+\input{group___g_p_i_o___h_a_l}
+\input{group___g_p_i_o___exported___constants}
+\input{group___g_p_i_o___exported___variables}
+\input{group___g_p_i_o___exported___functions}
+\input{group___i2_c___h_a_l}
+\input{group___i2_c___exported___types}
+\input{group___d_r_v___exported___constants}
+\input{group___i2_c___exported___constants}
+\input{group___i2_c___private___defines}
+\input{group___i2_c__modes}
+\input{group___i2_c__interrupts__definition}
+\input{group___i2_c__flags__definition}
+\input{group___i2_c___events}
+\input{group___i2_c___statusflags__definition}
+\input{group___i2_c___exported___variables}
+\input{group___i2_c___exported___functions}
+\input{group___i_w_d_g___h_a_l}
+\input{group___i_w_d_g___exported___constants}
+\input{group___i_w_d_g___exported___variables}
+\input{group___i_w_d_g___exported___functions}
+\input{group___n_v_i_c___h_a_l}
+\input{group___n_v_i_c___exported___types}
+\input{group___n_v_i_c___exported___constants}
+\input{group___n_v_i_c___exported___variables}
+\input{group___n_v_i_c___exported___functions}
+\input{group___p_w_r___h_a_l}
+\input{group___p_w_r___exported___types}
+\input{group___p_w_r___exported___variables}
+\input{group___p_w_r___exported___functions}
+\input{group___r_c_c___h_a_l}
+\input{group___r_c_c___exported___types}
+\input{group___r_c_c___exported___constants}
+\input{group___r_c_c___exported___enumeration}
+\input{group___r_c_c___exported___variables}
+\input{group___r_c_c___exported___functions}
+\input{group___r_e_d_e_f_i_n_e___h_a_l}
+\input{group___r_e_d_e_f_i_n_e___exported___types}
+\input{group___r_e_d_e_f_i_n_e___exported___constants}
+\input{group___r_e_d_e_f_i_n_e___exported___variables}
+\input{group___r_e_d_e_f_i_n_e___exported___functions}
+\input{group___r_t_c___h_a_l}
+\input{group___r_t_c___exported___types}
+\input{group___r_t_c___exported___constants}
+\input{group___r_t_c___exported___variables}
+\input{group___r_t_c___exported___functions}
+\input{group___s_d_i_o}
+\input{group___following}
+\input{group___s_d}
+\input{group___mask}
+\input{group___masks}
+\input{group___s_p_i___h_a_l}
+\input{group___s_p_i___exported___types}
+\input{group___s_p_i___exported___constants}
+\input{group___s_p_i___register___mask}
+\input{group___s_p_i___exported___variables}
+\input{group___s_p_i___exported___functions}
+\input{group___s_y_s_c_f_g___h_a_l}
+\input{group___s_y_s_c_f_g___exported___types}
+\input{group___t_i_m___h_a_l}
+\input{group___t_i_m___exported___types}
+\input{group___t_i_m___exported___variables}
+\input{group___t_i_m___exported___functions}
+\input{group___u_a_r_t___h_a_l}
+\input{group___u_a_r_t___exported___types}
+\input{group___u_a_r_t___exported___constants}
+\input{group___u_a_r_t___exported___variables}
+\input{group___u_a_r_t___exported___functions}
+\input{group___u_i_d___h_a_l}
+\input{group___u_i_d___exported___variables}
+\input{group___u_i_d___exported___functions}
+\input{group___w_w_d_g___h_a_l}
+\input{group___w_w_d_g___exported___types}
+\input{group___w_w_d_g___exported___variables}
+\input{group___w_w_d_g___exported___functions}
+\input{group___t_i_m___private___functions}
+\input{group___a_h_b__peripheral}
+\input{group___a_p_b2__peripheral}
+\input{group___a_p_b1__peripheral}
+\input{group___m_m32___hardware___abstract___layer}
+\input{group___c_r_s___exported___functions}
+\input{group___f_s_m_c___exported___functions}
+\input{group___m_s_i_c___h_a_l}
+\input{group___m_i_s_c___exported___functions}
+\input{group___s_d_i_o___h_a_l}
+\input{group___s_d_i_o___exported___functions}
+\input{group___v_e_r___h_a_l}
+\input{group___lib}
+\input{group___c_m_s_i_s}
+\chapter{类说明}
+\input{struct_a_d_c___init_type_def}
+\input{struct_a_d_c___type_def}
+\input{union_a_p_s_r___type}
+\input{structarm__bilinear__interp__instance__f32}
+\input{structarm__bilinear__interp__instance__q15}
+\input{structarm__bilinear__interp__instance__q31}
+\input{structarm__bilinear__interp__instance__q7}
+\input{structarm__biquad__cas__df1__32x64__ins__q31}
+\input{structarm__biquad__cascade__df2_t__instance__f32}
+\input{structarm__biquad__cascade__df2_t__instance__f64}
+\input{structarm__biquad__cascade__stereo__df2_t__instance__f32}
+\input{structarm__biquad__casd__df1__inst__f32}
+\input{structarm__biquad__casd__df1__inst__q15}
+\input{structarm__biquad__casd__df1__inst__q31}
+\input{structarm__cfft__instance__f32}
+\input{structarm__cfft__instance__q15}
+\input{structarm__cfft__instance__q31}
+\input{structarm__cfft__radix2__instance__f32}
+\input{structarm__cfft__radix2__instance__q15}
+\input{structarm__cfft__radix2__instance__q31}
+\input{structarm__cfft__radix4__instance__f32}
+\input{structarm__cfft__radix4__instance__q15}
+\input{structarm__cfft__radix4__instance__q31}
+\input{structarm__dct4__instance__f32}
+\input{structarm__dct4__instance__q15}
+\input{structarm__dct4__instance__q31}
+\input{structarm__fir__decimate__instance__f32}
+\input{structarm__fir__decimate__instance__q15}
+\input{structarm__fir__decimate__instance__q31}
+\input{structarm__fir__instance__f32}
+\input{structarm__fir__instance__q15}
+\input{structarm__fir__instance__q31}
+\input{structarm__fir__instance__q7}
+\input{structarm__fir__interpolate__instance__f32}
+\input{structarm__fir__interpolate__instance__q15}
+\input{structarm__fir__interpolate__instance__q31}
+\input{structarm__fir__lattice__instance__f32}
+\input{structarm__fir__lattice__instance__q15}
+\input{structarm__fir__lattice__instance__q31}
+\input{structarm__fir__sparse__instance__f32}
+\input{structarm__fir__sparse__instance__q15}
+\input{structarm__fir__sparse__instance__q31}
+\input{structarm__fir__sparse__instance__q7}
+\input{structarm__iir__lattice__instance__f32}
+\input{structarm__iir__lattice__instance__q15}
+\input{structarm__iir__lattice__instance__q31}
+\input{structarm__linear__interp__instance__f32}
+\input{structarm__lms__instance__f32}
+\input{structarm__lms__instance__q15}
+\input{structarm__lms__instance__q31}
+\input{structarm__lms__norm__instance__f32}
+\input{structarm__lms__norm__instance__q15}
+\input{structarm__lms__norm__instance__q31}
+\input{structarm__matrix__instance__f32}
+\input{structarm__matrix__instance__f64}
+\input{structarm__matrix__instance__q15}
+\input{structarm__matrix__instance__q31}
+\input{structarm__pid__instance__f32}
+\input{structarm__pid__instance__q15}
+\input{structarm__pid__instance__q31}
+\input{structarm__rfft__fast__instance__f32}
+\input{structarm__rfft__instance__f32}
+\input{structarm__rfft__instance__q15}
+\input{structarm__rfft__instance__q31}
+\input{struct_b_k_p___type_def}
+\input{struct_c_a_c_h_e___type_def}
+\input{struct_c_a_n___basic___filter_init_type_def}
+\input{struct_c_a_n___basic___init_type_def}
+\input{struct_c_a_n___f_l_t___g_r_o_u_p}
+\input{struct_c_a_n___peli___filter_init_type_def}
+\input{struct_c_a_n___peli___f_l_t___type_def}
+\input{struct_c_a_n___peli___init_type_def}
+\input{struct_c_a_n___peli___type_def}
+\input{struct_c_a_n___type_def}
+\input{struct_can_basic_rx_msg}
+\input{struct_can_basic_tx_msg}
+\input{struct_can_peli_rx_msg}
+\input{struct_can_peli_tx_msg}
+\input{struct_c_o_m_p___init_type_def}
+\input{struct_c_o_m_p___p_o_l_l___init_type_def}
+\input{struct_c_o_m_p___type_def}
+\input{union_c_o_n_t_r_o_l___type}
+\input{struct_core_debug___type}
+\input{struct_c_r_c___type_def}
+\input{struct_c_r_s___type_def}
+\input{struct_d_a_c___init_type_def}
+\input{struct_d_a_c___type_def}
+\input{struct_d_b_g_m_c_u___type_def}
+\input{struct_d_m_a___channel___type_def}
+\input{struct_d_m_a___init_type_def}
+\input{struct_d_m_a___type_def}
+\input{struct_d_w_t___type}
+\input{struct_e_t_h___d_m_a___rx___frame__infos}
+\input{struct_e_t_h___d_m_a_d_e_s_c_type_def}
+\input{struct_e_t_h___init_type_def}
+\input{struct_e_t_h___type_def}
+\input{structex_n_v_i_c___init___type_def}
+\input{struct_e_x_t_i___init_type_def}
+\input{struct_e_x_t_i___type_def}
+\input{struct_f_l_a_s_h___type_def}
+\input{struct_f_p_u___type}
+\input{struct_frame_type_def}
+\input{struct_f_s_m_c___init_type_def}
+\input{struct_f_s_m_c___n_o_r_s_r_a_m___bank___init_type_def}
+\input{struct_f_s_m_c___type_def}
+\input{struct_g_p_i_o___init_type_def}
+\input{struct_g_p_i_o___type_def}
+\input{struct_i2_c___init_type_def}
+\input{struct_i2_c___type_def}
+\input{struct_i2_s___init_type_def}
+\input{union_i_p_s_r___type}
+\input{struct_i_t_m___type}
+\input{struct_i_w_d_g___type_def}
+\input{struct_n_v_i_c___init_type_def}
+\input{struct_n_v_i_c___type}
+\input{struct_o_b___type_def}
+\input{struct_p_r_o_t_e_c_t___type_def}
+\input{struct_p_w_r___type_def}
+\input{struct_r_c_c___clocks_type_def}
+\input{struct_r_c_c___type_def}
+\input{struct_r_t_c___type_def}
+\input{struct_s_c_b___type}
+\input{struct_s_cn_s_c_b___type}
+\input{struct_s_d___card_info}
+\input{struct_s_d___c_i_d}
+\input{struct_s_d___c_s_d}
+\input{struct_s_d_i_o___cmd_init_type_def}
+\input{struct_s_d_i_o___data_init_type_def}
+\input{struct_s_d_i_o___init_type_def}
+\input{struct_s_d_i_o___type_def}
+\input{struct_s_p_i___init_type_def}
+\input{struct_s_p_i___type_def}
+\input{struct_s_y_s_c_f_g___type_def}
+\input{struct_sys_tick___type}
+\input{struct_t_i_m___b_d_t_r_init_type_def}
+\input{struct_t_i_m___i_c_init_type_def}
+\input{struct_t_i_m___o_c_init_type_def}
+\input{struct_t_i_m___time_base_init_type_def}
+\input{struct_t_i_m___type_def}
+\input{struct_t_p_i___type}
+\input{struct_u_a_r_t___init_type_def}
+\input{struct_u_a_r_t___type_def}
+\input{struct_u_s_b___o_t_g___f_s___type_def}
+\input{struct_w_w_d_g___type_def}
+\input{unionx_p_s_r___type}
+\chapter{文件说明}
+\input{arm__common__tables_8h}
+\input{arm__common__tables_8h_source}
+\input{arm__const__structs_8h}
+\input{arm__const__structs_8h_source}
+\input{arm__math_8h}
+\input{arm__math_8h_source}
+\input{cmsis__armcc_8h}
+\input{cmsis__armcc_8h_source}
+\input{cmsis__armclang_8h}
+\input{cmsis__armclang_8h_source}
+\input{cmsis__compiler_8h}
+\input{cmsis__compiler_8h_source}
+\input{cmsis__gcc_8h}
+\input{cmsis__gcc_8h_source}
+\input{core__armv8mbl_8h}
+\input{core__armv8mbl_8h_source}
+\input{core__armv8mml_8h}
+\input{core__armv8mml_8h_source}
+\input{core__cm0_8h}
+\input{core__cm0_8h_source}
+\input{core__cm0plus_8h}
+\input{core__cm0plus_8h_source}
+\input{core__cm23_8h}
+\input{core__cm23_8h_source}
+\input{core__cm3_8h}
+\input{core__cm3_8h_source}
+\input{core__cm33_8h}
+\input{core__cm33_8h_source}
+\input{core__cm4_8h}
+\input{core__cm4_8h_source}
+\input{core__cm7_8h}
+\input{core__cm7_8h_source}
+\input{core__sc000_8h}
+\input{core__sc000_8h_source}
+\input{core__sc300_8h}
+\input{core__sc300_8h_source}
+\input{tz__context_8h}
+\input{tz__context_8h_source}
+\input{dtype_8h}
+\input{dtype_8h_source}
+\input{hal__adc_8h}
+\input{hal__adc_8h_source}
+\input{hal__bkp_8h}
+\input{hal__bkp_8h_source}
+\input{hal__can_8h}
+\input{hal__can_8h_source}
+\input{hal__comp_8h}
+\input{hal__comp_8h_source}
+\input{hal__conf_8h}
+\input{hal__conf_8h_source}
+\input{hal__crc_8h}
+\input{hal__crc_8h_source}
+\input{hal__crs_8h}
+\input{hal__crs_8h_source}
+\input{hal__dac_8h}
+\input{hal__dac_8h_source}
+\input{hal__dbg_8h}
+\input{hal__dbg_8h_source}
+\input{hal__device_8h}
+\input{hal__device_8h_source}
+\input{hal__dma_8h}
+\input{hal__dma_8h_source}
+\input{hal__eth_8h}
+\input{hal__eth_8h_source}
+\input{hal__eth__conf_8h}
+\input{hal__eth__conf_8h_source}
+\input{hal__exti_8h}
+\input{hal__exti_8h_source}
+\input{hal__flash_8h}
+\input{hal__flash_8h_source}
+\input{hal__fsmc_8h}
+\input{hal__fsmc_8h_source}
+\input{hal__gpio_8h}
+\input{hal__gpio_8h_source}
+\input{hal__i2c_8h}
+\input{hal__i2c_8h_source}
+\input{hal__iwdg_8h}
+\input{hal__iwdg_8h_source}
+\input{hal__misc_8h}
+\input{hal__misc_8h_source}
+\input{hal__pwr_8h}
+\input{hal__pwr_8h_source}
+\input{hal__rcc_8h}
+\input{hal__rcc_8h_source}
+\input{hal__redefine_8h}
+\input{hal__redefine_8h_source}
+\input{hal__rtc_8h}
+\input{hal__rtc_8h_source}
+\input{hal__sdio_8h}
+\input{hal__sdio_8h_source}
+\input{hal__spi_8h}
+\input{hal__spi_8h_source}
+\input{hal__syscfg_8h}
+\input{hal__syscfg_8h_source}
+\input{hal__tim_8h}
+\input{hal__tim_8h_source}
+\input{hal__uart_8h}
+\input{hal__uart_8h_source}
+\input{hal__uid_8h}
+\input{hal__uid_8h_source}
+\input{hal__ver_8h}
+\input{hal__ver_8h_source}
+\input{hal__wwdg_8h}
+\input{hal__wwdg_8h_source}
+\input{hal__adc_8c}
+\input{hal__adc_8c_source}
+\input{hal__bkp_8c}
+\input{hal__bkp_8c_source}
+\input{hal__can_8c}
+\input{hal__can_8c_source}
+\input{hal__comp_8c}
+\input{hal__comp_8c_source}
+\input{hal__crc_8c}
+\input{hal__crc_8c_source}
+\input{hal__crs_8c}
+\input{hal__crs_8c_source}
+\input{hal__dac_8c}
+\input{hal__dac_8c_source}
+\input{hal__dbg_8c}
+\input{hal__dbg_8c_source}
+\input{hal__dma_8c}
+\input{hal__dma_8c_source}
+\input{hal__eth_8c}
+\input{hal__eth_8c_source}
+\input{hal__exti_8c}
+\input{hal__exti_8c_source}
+\input{hal__flash_8c}
+\input{hal__flash_8c_source}
+\input{hal__fsmc_8c}
+\input{hal__fsmc_8c_source}
+\input{hal__gpio_8c}
+\input{hal__gpio_8c_source}
+\input{hal__i2c_8c}
+\input{hal__i2c_8c_source}
+\input{hal__iwdg_8c}
+\input{hal__iwdg_8c_source}
+\input{hal__misc_8c}
+\input{hal__misc_8c_source}
+\input{hal__pwr_8c}
+\input{hal__pwr_8c_source}
+\input{hal__rcc_8c}
+\input{hal__rcc_8c_source}
+\input{hal__rtc_8c}
+\input{hal__rtc_8c_source}
+\input{hal__sdio_8c}
+\input{hal__sdio_8c_source}
+\input{hal__spi_8c}
+\input{hal__spi_8c_source}
+\input{hal__tim_8c}
+\input{hal__tim_8c_source}
+\input{hal__uart_8c}
+\input{hal__uart_8c_source}
+\input{hal__uid_8c}
+\input{hal__uid_8c_source}
+\input{hal__ver_8c}
+\input{hal__ver_8c_source}
+\input{hal__wwdg_8c}
+\input{hal__wwdg_8c_source}
+\input{mm32__device_8h}
+\input{mm32__device_8h_source}
+\input{mm32__reg_8h}
+\input{mm32__reg_8h_source}
+\input{mm32__reg__redefine__v1_8h}
+\input{mm32__reg__redefine__v1_8h_source}
+\input{reg__adc_8h}
+\input{reg__adc_8h_source}
+\input{reg__bkp_8h}
+\input{reg__bkp_8h_source}
+\input{reg__can_8h}
+\input{reg__can_8h_source}
+\input{reg__common_8h}
+\input{reg__common_8h_source}
+\input{reg__comp_8h}
+\input{reg__comp_8h_source}
+\input{reg__crc_8h}
+\input{reg__crc_8h_source}
+\input{reg__crs_8h}
+\input{reg__crs_8h_source}
+\input{reg__dac_8h}
+\input{reg__dac_8h_source}
+\input{reg__dbg_8h}
+\input{reg__dbg_8h_source}
+\input{reg__dma_8h}
+\input{reg__dma_8h_source}
+\input{reg__eth_8h}
+\input{reg__eth_8h_source}
+\input{reg__exti_8h}
+\input{reg__exti_8h_source}
+\input{reg__flash_8h}
+\input{reg__flash_8h_source}
+\input{reg__fsmc_8h}
+\input{reg__fsmc_8h_source}
+\input{reg__gpio_8h}
+\input{reg__gpio_8h_source}
+\input{reg__i2c_8h}
+\input{reg__i2c_8h_source}
+\input{reg__iwdg_8h}
+\input{reg__iwdg_8h_source}
+\input{reg__pwm_8h}
+\input{reg__pwm_8h_source}
+\input{reg__pwr_8h}
+\input{reg__pwr_8h_source}
+\input{reg__rcc_8h}
+\input{reg__rcc_8h_source}
+\input{reg__rtc_8h}
+\input{reg__rtc_8h_source}
+\input{reg__sdio_8h}
+\input{reg__sdio_8h_source}
+\input{reg__spi_8h}
+\input{reg__spi_8h_source}
+\input{reg__syscfg_8h}
+\input{reg__syscfg_8h_source}
+\input{reg__tim_8h}
+\input{reg__tim_8h_source}
+\input{reg__uart_8h}
+\input{reg__uart_8h_source}
+\input{reg__usb__otg__fs_8h}
+\input{reg__usb__otg__fs_8h_source}
+\input{reg__wwdg_8h}
+\input{reg__wwdg_8h_source}
+\input{types_8h}
+\input{types_8h_source}
+\input{system__mm32f327x_8c}
+\input{system__mm32f327x_8c_source}
+%--- End generated contents ---
+% Index
+  \backmatter
+  \newpage
+  \phantomsection
+  \clearemptydoublepage
+  \addcontentsline{toc}{chapter}{\indexname}
+  \printindex
+% Required for some languages (in combination with latexdocumentpre from the header)
+\end{CJK}
+\end{document}

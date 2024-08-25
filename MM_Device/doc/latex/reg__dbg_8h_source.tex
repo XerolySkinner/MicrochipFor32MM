@@ -1,0 +1,83 @@
+\hypertarget{reg__dbg_8h_source}{}\doxysection{reg\+\_\+dbg.\+h}
+\label{reg__dbg_8h_source}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_dbg.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_dbg.h}}
+\mbox{\hyperlink{reg__dbg_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00019}00019 \textcolor{comment}{// Define to prevent recursive inclusion}}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00021}00021 \textcolor{preprocessor}{\#ifndef \_\_REG\_DBG\_H}}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00022}00022 \textcolor{preprocessor}{\#define \_\_REG\_DBG\_H}}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00024}00024 \textcolor{comment}{// Files includes}}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00026}00026 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00027}00027 \textcolor{preprocessor}{\#include <stdbool.h>}}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00028}00028 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{types_8h}{types.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00033}00033 \textcolor{preprocessor}{\#if defined ( \_\_CC\_ARM )}}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00034}00034 \textcolor{preprocessor}{\#pragma anon\_unions}}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00035}00035 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00048}00048 \textcolor{preprocessor}{\#define DBG\_BASE                        (0x40007080UL)                         }}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00052}\mbox{\hyperlink{struct_d_b_g_m_c_u___type_def}{00052}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00053}\mbox{\hyperlink{struct_d_b_g_m_c_u___type_def_a19d2ce85ffa2196fedc17ffc0b6a15bc}{00053}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_b_g_m_c_u___type_def_a19d2ce85ffa2196fedc17ffc0b6a15bc}{IDCODE}};                                                            }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00054}\mbox{\hyperlink{struct_d_b_g_m_c_u___type_def_aebaf54b170a1c53191da1bd211638ff7}{00054}}     \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_d_b_g_m_c_u___type_def_aebaf54b170a1c53191da1bd211638ff7}{CR}};                                                                }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00055}00055 \} \mbox{\hyperlink{struct_d_b_g_m_c_u___type_def}{DBGMCU\_TypeDef}};}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00062}\mbox{\hyperlink{reg__dbg_8h_a92ec6d9ec2251fda7d4ce09748cd74b4}{00062}} \textcolor{preprocessor}{\#define DBGMCU                          ((DBGMCU\_TypeDef*) DBG\_BASE)}}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00069}\mbox{\hyperlink{reg__dbg_8h_ad05a229877e557798dfbabe7188d7a54}{00069}} \textcolor{preprocessor}{\#define DBGMCU\_IDCODE\_DEV\_ID\_Pos        (0)}}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00070}\mbox{\hyperlink{reg__dbg_8h_afd961fcddc40341a817a9ec85b7c80ac}{00070}} \textcolor{preprocessor}{\#define DBGMCU\_IDCODE\_DEV\_ID            (0xFFFFFFFFU << DBGMCU\_IDCODE\_DEV\_ID\_Pos)   }}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00075}\mbox{\hyperlink{reg__dbg_8h_a6b8b373e1d75728b0ea551a4e9275b6f}{00075}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_SLEEP\_Pos             (0)}}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00076}\mbox{\hyperlink{reg__dbg_8h_a7edfbfde9817d581a66b041ceced8a28}{00076}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_SLEEP                 (0x01U << DBGMCU\_CR\_SLEEP\_Pos)          }}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00077}\mbox{\hyperlink{reg__dbg_8h_aba1288bf5b59908d4c3a83b23fd4eec9}{00077}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_STOP\_Pos              (1)}}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00078}\mbox{\hyperlink{reg__dbg_8h_ac6bdad2ebae84094bc8880c8e5cbadef}{00078}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_STOP                  (0x01U << DBGMCU\_CR\_STOP\_Pos)           }}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00079}\mbox{\hyperlink{reg__dbg_8h_a03a067ec69c267ccafd6dbd135d7554d}{00079}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_STANDBY\_Pos           (2)}}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00080}\mbox{\hyperlink{reg__dbg_8h_adac0d02a3885d2696156e9b6ad0ca775}{00080}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_STANDBY               (0x01U << DBGMCU\_CR\_STANDBY\_Pos)        }}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00081}\mbox{\hyperlink{reg__dbg_8h_a2be1af4b18b8c9ce4001dd363e6626e7}{00081}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_TRACE\_IOEN\_Pos        (5)}}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00082}\mbox{\hyperlink{reg__dbg_8h_a9034b6eb9d4dceadffc6a1d1959056c9}{00082}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_TRACE\_IOEN            (0x01U << DBGMCU\_CR\_TRACE\_IOEN\_Pos)     }}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00083}\mbox{\hyperlink{reg__dbg_8h_a20dddffa934315ca4a5902cbf45f4d93}{00083}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_TRACE\_MODE\_Pos        (6)}}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00084}\mbox{\hyperlink{reg__dbg_8h_ad641a08b344645d47a0789ffa25d7079}{00084}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_TRACE\_MODE\_Msk        (0x03U << DBGMCU\_CR\_TRACE\_MODE\_Pos)     }}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00085}\mbox{\hyperlink{reg__dbg_8h_a2d41a4027853783633d929a43f8d6d85}{00085}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_TRACE\_MODE\_0          (0x01U << DBGMCU\_CR\_TRACE\_MODE\_Pos)     }}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00086}\mbox{\hyperlink{reg__dbg_8h_a7ba3a830051b53d43d850768242c503e}{00086}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_TRACE\_MODE\_1          (0x02U << DBGMCU\_CR\_TRACE\_MODE\_Pos)     }}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00087}\mbox{\hyperlink{reg__dbg_8h_a8bd7f8662da7691fef8c6dde96ffb0ff}{00087}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_TRACE\_MODE\_ASYNC      (0x00U << DBGMCU\_CR\_TRACE\_MODE\_Pos)     }}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00088}\mbox{\hyperlink{reg__dbg_8h_a2126b84899e746a1e9eac8ecb98acf11}{00088}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_TRACE\_MODE\_SYNC1      (0x01U << DBGMCU\_CR\_TRACE\_MODE\_Pos)     }}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00089}\mbox{\hyperlink{reg__dbg_8h_a65858c6cd568ae284a13572276a53068}{00089}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_TRACE\_MODE\_SYNC2      (0x02U << DBGMCU\_CR\_TRACE\_MODE\_Pos)     }}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00091}\mbox{\hyperlink{reg__dbg_8h_a38ee4ae807d68c37fc374d0025b498a0}{00091}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_IWDG\_STOP\_Pos         (8)}}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00092}\mbox{\hyperlink{reg__dbg_8h_ae97ff694e642772c086d85fcd6b70a91}{00092}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_IWDG\_STOP             (0x01U << DBGMCU\_CR\_IWDG\_STOP\_Pos)      }}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00093}\mbox{\hyperlink{reg__dbg_8h_a41c903f57091845352ed84df7b7473e7}{00093}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_WWDG\_STOP\_Pos         (9)}}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00094}\mbox{\hyperlink{reg__dbg_8h_ae1a0b27b5e542b867f070a3ac3a3f81e}{00094}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_WWDG\_STOP             (0x01U << DBGMCU\_CR\_WWDG\_STOP\_Pos)      }}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00095}\mbox{\hyperlink{reg__dbg_8h_a7d5d015fdc3ffcd86943707f73dfd808}{00095}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_TIM\_STOP\_Pos          (10)}}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00096}\mbox{\hyperlink{reg__dbg_8h_a6154c7f46c21394d3c147d3daf49a866}{00096}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_TIM1\_STOP             (0x01U << DBGMCU\_CR\_TIM\_STOP\_Pos)       }}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00097}\mbox{\hyperlink{reg__dbg_8h_a87acb8c2c89dc8d72b6c653f77f46960}{00097}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_TIM2\_STOP             (0x02U << DBGMCU\_CR\_TIM\_STOP\_Pos)       }}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00098}\mbox{\hyperlink{reg__dbg_8h_a369bd7e54a2bd8f504b6f31398d2675d}{00098}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_TIM3\_STOP             (0x04U << DBGMCU\_CR\_TIM\_STOP\_Pos)       }}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00099}\mbox{\hyperlink{reg__dbg_8h_a45723865ceffd522e098ec8ab24e9875}{00099}} \textcolor{preprocessor}{\#define DBGMCU\_CR\_TIM4\_STOP             (0x08U << DBGMCU\_CR\_TIM\_STOP\_Pos)       }}
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00102}00102 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00103}00103 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00104}00104 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00106}00106 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00108}00108 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00110}00110 }
+\DoxyCodeLine{\Hypertarget{reg__dbg_8h_source_l00112}00112 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

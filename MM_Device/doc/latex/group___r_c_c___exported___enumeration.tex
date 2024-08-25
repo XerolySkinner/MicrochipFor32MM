@@ -1,0 +1,689 @@
+\hypertarget{group___r_c_c___exported___enumeration}{}\doxysection{RCC\+\_\+\+Exported\+\_\+\+Enumeration}
+\label{group___r_c_c___exported___enumeration}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_r_c_c___clocks_type_def}{RCC\+\_\+\+Clocks\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em RCC clock frequency type definition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_gaf79c982653100ce2c61af761adfc7cab}{RCCHSE\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggaf79c982653100ce2c61af761adfc7cabaca6d3f37abab454bad865a276a7ecf7f}{RCC\+\_\+\+HSE\+\_\+\+OFF}} = 0
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggaf79c982653100ce2c61af761adfc7cabaea98bb74fc53bf7eb75d10d2f84bb6c3}{RCC\+\_\+\+HSE\+\_\+\+ON}} = RCC\+\_\+\+CR\+\_\+\+HSEON
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggaf79c982653100ce2c61af761adfc7caba4cfaffa45f1fda45e90ea47ec414bc77}{RCC\+\_\+\+HSE\+\_\+\+Bypass}} = RCC\+\_\+\+CR\+\_\+\+HSEBYP
+ \}
+\begin{DoxyCompactList}\small\item\em HSE configuration \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_gae49e46645a362f436cbea1f4b0ad9e8d}{RCC\+\_\+\+Register\+Flag\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae49e46645a362f436cbea1f4b0ad9e8daaf3a317a0c2e03cd10a0201eb1a2db79}{CR\+\_\+\+REG\+\_\+\+INDEX}} = 1
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae49e46645a362f436cbea1f4b0ad9e8da31549e6163e3ef75bfd73e16b19094dd}{BDCR\+\_\+\+REG\+\_\+\+INDEX}} = 2
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae49e46645a362f436cbea1f4b0ad9e8daf0b4505debdd38f65f337338e17808ed}{CSR\+\_\+\+REG\+\_\+\+INDEX}} = 3
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae49e46645a362f436cbea1f4b0ad9e8daf451b3515e32025f1adea0fc3a669dc8}{RCC\+\_\+\+FLAG\+\_\+\+MASK}} = 0x1\+FU
+ \}
+\begin{DoxyCompactList}\small\item\em Used for flags \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_gae8c5d530bd004628086e325a834211dc}{RCC\+\_\+\+FLAG\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dcaf2db6972c4815a618192891075b13e73}{RCC\+\_\+\+FLAG\+\_\+\+HSIRDY}} = ((u8)((CR\+\_\+\+REG\+\_\+\+INDEX \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5U) $\vert$ RCC\+\_\+\+CR\+\_\+\+HSIRDY\+\_\+\+Pos))
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca2ab8ac62d5534cf5df273e3afc6afce0}{RCC\+\_\+\+FLAG\+\_\+\+HSERDY}} = ((u8)((CR\+\_\+\+REG\+\_\+\+INDEX \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5U) $\vert$ RCC\+\_\+\+CR\+\_\+\+HSERDY\+\_\+\+Pos))
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca007016aaaa0476bef52c9aaf4d0e59f1}{RCC\+\_\+\+FLAG\+\_\+\+PLLRDY}} = ((u8)((CR\+\_\+\+REG\+\_\+\+INDEX \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5U) $\vert$ RCC\+\_\+\+CR\+\_\+\+PLLRDY\+\_\+\+Pos))
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dcad94cd0936d9edc078e6d0f8b12bad58d}{RCC\+\_\+\+FLAG\+\_\+\+LSIRDY}} = ((u8)((CSR\+\_\+\+REG\+\_\+\+INDEX \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5U) $\vert$ RCC\+\_\+\+CSR\+\_\+\+LSIRDY\+\_\+\+Pos))
+, \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dcafb5733f727662f2c3a9ce926c55572e6}{RCC\+\_\+\+FLAG\+\_\+\+PINRST}} = ((u8)((CSR\+\_\+\+REG\+\_\+\+INDEX \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5U) $\vert$ RCC\+\_\+\+CSR\+\_\+\+PINRSTF\+\_\+\+Pos))
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca7af41d553891f564801283e643b8fd00}{RCC\+\_\+\+FLAG\+\_\+\+PORRST}} = ((u8)((CSR\+\_\+\+REG\+\_\+\+INDEX \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5U) $\vert$ RCC\+\_\+\+CSR\+\_\+\+PORRSTF\+\_\+\+Pos))
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dcac4133127119bcf2ffc55c78a34c154cc}{RCC\+\_\+\+FLAG\+\_\+\+SFTRST}} = ((u8)((CSR\+\_\+\+REG\+\_\+\+INDEX \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5U) $\vert$ RCC\+\_\+\+CSR\+\_\+\+SFTRSTF\+\_\+\+Pos))
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca786385e48af0457b51bceb7217df50fe}{RCC\+\_\+\+FLAG\+\_\+\+IWDGRST}} = ((u8)((CSR\+\_\+\+REG\+\_\+\+INDEX \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5U) $\vert$ RCC\+\_\+\+CSR\+\_\+\+IWDGRSTF\+\_\+\+Pos))
+, \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca65ffc59cc41d608e7443a41ce9aa8bcd}{RCC\+\_\+\+FLAG\+\_\+\+WWDGRST}} = ((u8)((CSR\+\_\+\+REG\+\_\+\+INDEX \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5U) $\vert$ RCC\+\_\+\+CSR\+\_\+\+WWDGRSTF\+\_\+\+Pos))
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca4478ab7374127bb5ac2b456ef186b1ee}{RCC\+\_\+\+FLAG\+\_\+\+LSERDY}} = ((u8)((BDCR\+\_\+\+REG\+\_\+\+INDEX \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5U) $\vert$ RCC\+\_\+\+BDCR\+\_\+\+LSERDY\+\_\+\+Pos))
+ \}
+\begin{DoxyCompactList}\small\item\em RCC Flag \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_gab314ddace15b8d75ef143188c3061a97}{SYSCLK\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab314ddace15b8d75ef143188c3061a97a1876e08e92a9ea07faac183d918ac1fc}{RCC\+\_\+\+HSI}} = 0
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab314ddace15b8d75ef143188c3061a97aa72a0e027ef7492439824d675d4a2fb4}{RCC\+\_\+\+HSE}} = 1
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab314ddace15b8d75ef143188c3061a97a627d71402d403a5517bd652ece1d5013}{RCC\+\_\+\+PLL}} = 2
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab314ddace15b8d75ef143188c3061a97a4e5d0c838caa0e75a56ea47ef36ad782}{RCC\+\_\+\+LSI}} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em System clock source \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga8d9ccc495d0577912191a7bc9bdbd8d7}{RCC\+\_\+\+PLLSource\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga8d9ccc495d0577912191a7bc9bdbd8d7a7554132678a1982b133a9083507a458a}{RCC\+\_\+\+HSI\+\_\+\+Div4}} = 0
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga8d9ccc495d0577912191a7bc9bdbd8d7a80ac75f7a601538d570ee5f676d83c13}{RCC\+\_\+\+HSI\+\_\+\+Div}} = 0
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga8d9ccc495d0577912191a7bc9bdbd8d7ad6b7b3c95a02ef2fa46437118f29b955}{RCC\+\_\+\+HSE\+\_\+\+Div1}} = RCC\+\_\+\+PLLCFGR\+\_\+\+PLLSRC
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga8d9ccc495d0577912191a7bc9bdbd8d7aab26b33cc9eb380205ad19d589900b4d}{RCC\+\_\+\+HSE\+\_\+\+Div2}} = (RCC\+\_\+\+PLLCFGR\+\_\+\+PLLXTPRE $\vert$ RCC\+\_\+\+PLLCFGR\+\_\+\+PLLSRC)
+ \}
+\begin{DoxyCompactList}\small\item\em PLL entry clock source \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_gab9ba8af25cbeccce21dc2dbf0b10a666}{RCC\+\_\+\+PLLMul\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a69d077da02c15bf354e7059563ca0a70}{RCC\+\_\+\+PLLMul\+\_\+2}} = 0x00000000U
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a2f451119fd4032b9b022d3def9b213bd}{RCC\+\_\+\+PLLMul\+\_\+3}} = 0x00040000U
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666ad7cd3b75b9dc6420a1e7bc0e92b5aed2}{RCC\+\_\+\+PLLMul\+\_\+4}} = 0x00080000U
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a7182192624db710c5d56ca427abc430c}{RCC\+\_\+\+PLLMul\+\_\+5}} = 0x000\+C0000U
+, \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a063361caa80e01124069d8bacedb60b7}{RCC\+\_\+\+PLLMul\+\_\+6}} = 0x00100000U
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a67dfb901a4b30a64adc5a9242751a713}{RCC\+\_\+\+PLLMul\+\_\+7}} = 0x00140000U
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a4a97d52a5d55db081d9a5af3f6ec7737}{RCC\+\_\+\+PLLMul\+\_\+8}} = 0x00180000U
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666aaea5784dbdbab03baa7b856d6a516a48}{RCC\+\_\+\+PLLMul\+\_\+9}} = 0x001\+C0000U
+, \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a061808b8d83fefd0951447fe2b45c336}{RCC\+\_\+\+PLLMul\+\_\+10}} = 0x00200000U
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a511c72ef202c682b105f219c676a3467}{RCC\+\_\+\+PLLMul\+\_\+11}} = 0x00240000U
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a6db238fda79a08d967c6546ce9ce9d0a}{RCC\+\_\+\+PLLMul\+\_\+12}} = 0x00280000U
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666aa0bd292fe98bce311843b756a91abc61}{RCC\+\_\+\+PLLMul\+\_\+13}} = 0x002\+C0000U
+, \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a6012597b880cebab49ea9a459de342b5}{RCC\+\_\+\+PLLMul\+\_\+14}} = 0x00300000U
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a6a9290f81809e00d97db149449bb97ae}{RCC\+\_\+\+PLLMul\+\_\+15}} = 0x00340000U
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666aa0212c0cc64e30fa91d388a07046ee5c}{RCC\+\_\+\+PLLMul\+\_\+16}} = 0x00380000U
+ \}
+\begin{DoxyCompactList}\small\item\em PLL multiplication factor \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga42d9f90e4aa8d927be0c7736b1f654a3}{RCC\+\_\+\+AHB\+\_\+\+CLK\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3ad45c38b95a87d8b852dc45a19400d2d7}{RCC\+\_\+\+SYSCLK\+\_\+\+Div1}} = RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+\+DIV1
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3ae186496933abb4a3d5938c01e2368bfe}{RCC\+\_\+\+SYSCLK\+\_\+\+Div2}} = RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+\+DIV2
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3afee0526efd1ae394727784654907664e}{RCC\+\_\+\+SYSCLK\+\_\+\+Div4}} = RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+\+DIV4
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3aec19bb60f5d71f8249fdf8d4b178add1}{RCC\+\_\+\+SYSCLK\+\_\+\+Div8}} = RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+\+DIV8
+, \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3a3736dae4d173dd1bde40a78364401b2a}{RCC\+\_\+\+SYSCLK\+\_\+\+Div16}} = RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+\+DIV16
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3a26932baf04b8bdd61b81e9ec1bc0e52a}{RCC\+\_\+\+SYSCLK\+\_\+\+Div64}} = RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+\+DIV64
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3a77cbc053d7384abe4d9686dc9310c106}{RCC\+\_\+\+SYSCLK\+\_\+\+Div128}} = RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+\+DIV128
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3ab7dfec7167e79b1dd9c68fd942877604}{RCC\+\_\+\+SYSCLK\+\_\+\+Div256}} = RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+\+DIV256
+, \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3ac86a954031f593404f0d6a1056ea274c}{RCC\+\_\+\+SYSCLK\+\_\+\+Div512}} = RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+\+DIV512
+ \}
+\begin{DoxyCompactList}\small\item\em AHB clock source \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga61fd16d8e595865d03e612b0aedf67c5}{RCC\+\_\+\+APB1\+\_\+\+APB2\+\_\+\+CLK\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_gga61fd16d8e595865d03e612b0aedf67c5ac2728fc66c8f41bdfe4c5966e1515c1c}{RCC\+\_\+\+HCLK\+\_\+\+Div1}} = RCC\+\_\+\+CFGR\+\_\+\+PPRE1\+\_\+\+DIV1
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga61fd16d8e595865d03e612b0aedf67c5a32d2dc1ca495b273d32ee2187c6c5b0d}{RCC\+\_\+\+HCLK\+\_\+\+Div2}} = RCC\+\_\+\+CFGR\+\_\+\+PPRE1\+\_\+\+DIV2
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga61fd16d8e595865d03e612b0aedf67c5a8eedf8b2dcc1407e3a421e456cf5e828}{RCC\+\_\+\+HCLK\+\_\+\+Div4}} = RCC\+\_\+\+CFGR\+\_\+\+PPRE1\+\_\+\+DIV4
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga61fd16d8e595865d03e612b0aedf67c5a5e74588c938f079fbbc23e78bd7f2240}{RCC\+\_\+\+HCLK\+\_\+\+Div8}} = RCC\+\_\+\+CFGR\+\_\+\+PPRE1\+\_\+\+DIV8
+, \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_gga61fd16d8e595865d03e612b0aedf67c5a1d4e0022531dbec71cbe9c35488958bb}{RCC\+\_\+\+HCLK\+\_\+\+Div16}} = RCC\+\_\+\+CFGR\+\_\+\+PPRE1\+\_\+\+DIV16
+ \}
+\begin{DoxyCompactList}\small\item\em APB1 and APB2clock source \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga6873373a50342c72526dbcf1cd3b05b5}{RCC\+\_\+\+USBCLKSOURCE\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga6873373a50342c72526dbcf1cd3b05b5ab48da416d36ca81f66371ccbd9c00ed2}{RCC\+\_\+\+USBCLKSource\+\_\+\+PLLCLK\+\_\+\+Div1}} = 0
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga6873373a50342c72526dbcf1cd3b05b5a9ef8bdece42869c252efd7df4b2c377c}{RCC\+\_\+\+USBCLKSource\+\_\+\+PLLCLK\+\_\+\+Div2}} = 1
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga6873373a50342c72526dbcf1cd3b05b5a1569f739ea3c2c9998be4c972037beeb}{RCC\+\_\+\+USBCLKSource\+\_\+\+PLLCLK\+\_\+\+Div3}} = 2
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga6873373a50342c72526dbcf1cd3b05b5a2a80abd7f894cdc214591fa0fcb52a1a}{RCC\+\_\+\+USBCLKSource\+\_\+\+PLLCLK\+\_\+\+Div4}} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em USB Device clock source \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga845eb12e4204b847a7a8ab99ce0e448f}{RCC\+\_\+\+ADCCLKSOURCE\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga845eb12e4204b847a7a8ab99ce0e448fa0d7c2592dffcd51c6395188acaa667c4}{RCC\+\_\+\+PCLK2\+\_\+\+Div2}} = (0x00000000)
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga845eb12e4204b847a7a8ab99ce0e448fae17aa2c849017ff372882c743e356e84}{RCC\+\_\+\+PCLK2\+\_\+\+Div4}} = (0x00004000)
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga845eb12e4204b847a7a8ab99ce0e448fa4c9eaa6d82170956b5fa8b84e9437451}{RCC\+\_\+\+PCLK2\+\_\+\+Div6}} = (0x00008000)
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga845eb12e4204b847a7a8ab99ce0e448fa45a0cc19fe2d3ff5c4ec7f19117d96f9}{RCC\+\_\+\+PCLK2\+\_\+\+Div8}} = (0x0000\+C000)
+ \}
+\begin{DoxyCompactList}\small\item\em ADC clock source \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga8c4dfb3b1aa4dd4c65a4322c05d08ac5}{RCC\+\_\+\+LSE\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga8c4dfb3b1aa4dd4c65a4322c05d08ac5afc4a3d76bab24af90d4fe951d1beeb7e}{RCC\+\_\+\+LSE\+\_\+\+OFF}} = 0
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga8c4dfb3b1aa4dd4c65a4322c05d08ac5a34dc6dd7ed85b6add353deab0501d395}{RCC\+\_\+\+LSE\+\_\+\+ON}} = RCC\+\_\+\+BDCR\+\_\+\+LSEON
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga8c4dfb3b1aa4dd4c65a4322c05d08ac5a015533c1130388356b2ced8438b60652}{RCC\+\_\+\+LSE\+\_\+\+Bypass}} = RCC\+\_\+\+BDCR\+\_\+\+LSEBYP
+ \}
+\begin{DoxyCompactList}\small\item\em LSE configuration \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga76fd6ebbea4e50a4faf71e81c51ef317}{RCC\+\_\+\+RTCCLKSOURCE\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga76fd6ebbea4e50a4faf71e81c51ef317a141f917b9d76d12df475fa94cce98e26}{RCC\+\_\+\+RTCCLKSource\+\_\+\+LSE}} = RCC\+\_\+\+BDCR\+\_\+\+RTCSEL\+\_\+\+LSE
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga76fd6ebbea4e50a4faf71e81c51ef317aade81f57e0e2d4a1c12601732c838871}{RCC\+\_\+\+RTCCLKSource\+\_\+\+LSI}} = RCC\+\_\+\+BDCR\+\_\+\+RTCSEL\+\_\+\+LSI
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga76fd6ebbea4e50a4faf71e81c51ef317ac1627b4b062ea9ac0905c52dce9d3de3}{RCC\+\_\+\+RTCCLKSource\+\_\+\+HSE\+\_\+\+Div128}} = RCC\+\_\+\+BDCR\+\_\+\+RTCSEL\+\_\+\+HSE
+ \}
+\begin{DoxyCompactList}\small\item\em RTC clock source \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga6af1d0d9d1463f9368e6f4b731f7859f}{RCC\+\_\+\+MCO\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fa252e0edac21dd997e817ec47408aee93}{RCC\+\_\+\+MCO\+\_\+\+No\+Clock}} = RCC\+\_\+\+CFGR\+\_\+\+MCO\+\_\+\+NOCLOCK
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fa46ba48e6d10df6aad7a6cd07de7e9ebe}{RCC\+\_\+\+MCO\+\_\+\+LSI}} = RCC\+\_\+\+CFGR\+\_\+\+MCO\+\_\+\+LSI
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fae9aef096471a9176e9b4f19b95fb8cfc}{RCC\+\_\+\+MCO\+\_\+\+LSE}} = RCC\+\_\+\+CFGR\+\_\+\+MCO\+\_\+\+LSE
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fa7c8423f42ccdac5a3a7f8ff7db29667e}{RCC\+\_\+\+MCO\+\_\+\+SYSCLK}} = RCC\+\_\+\+CFGR\+\_\+\+MCO\+\_\+\+SYSCLK
+, \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fab594556c859f119d1027f6b25282015f}{RCC\+\_\+\+MCO\+\_\+\+HSI}} = RCC\+\_\+\+CFGR\+\_\+\+MCO\+\_\+\+HSI
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fa217322258f801c19609debbf02b592f1}{RCC\+\_\+\+MCO\+\_\+\+HSE}} = RCC\+\_\+\+CFGR\+\_\+\+MCO\+\_\+\+HSE
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fab3193d958ce6db168afe5a89a92aae8f}{RCC\+\_\+\+MCO\+\_\+\+PLLCLK\+\_\+\+Div2}} = RCC\+\_\+\+CFGR\+\_\+\+MCO\+\_\+\+PLL
+ \}
+\begin{DoxyCompactList}\small\item\em Clock source to output on MCO pin \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga23735f41dde839d727e55c310e5b1e8f}{RCC\+\_\+\+IT\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fa9e7bae0e7ae96ace9c0e96a925fcf14b}{RCC\+\_\+\+IT\+\_\+\+LSIRDY}} = RCC\+\_\+\+CIR\+\_\+\+LSIRDYF
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fae0973b5644ecb0e0a994d894a72a435c}{RCC\+\_\+\+IT\+\_\+\+LSERDY}} = RCC\+\_\+\+CIR\+\_\+\+LSERDYF
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fa8a031a64f7e4540eb8adaac112b6130b}{RCC\+\_\+\+IT\+\_\+\+HSIRDY}} = RCC\+\_\+\+CIR\+\_\+\+HSIRDYF
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fa5884f9e4902450684748bdd668a54115}{RCC\+\_\+\+IT\+\_\+\+HSERDY}} = RCC\+\_\+\+CIR\+\_\+\+HSERDYF
+, \newline
+\mbox{\hyperlink{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fae976644e593acf21735e5b1d3833c5fc}{RCC\+\_\+\+IT\+\_\+\+PLLRDY}} = RCC\+\_\+\+CIR\+\_\+\+PLLRDYF
+, \mbox{\hyperlink{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fa8619f9d46a9d6c40617825bd2977c735}{RCC\+\_\+\+IT\+\_\+\+CSS}} = RCC\+\_\+\+CIR\+\_\+\+CSSF
+ \}
+\begin{DoxyCompactList}\small\item\em RCC Interrupt source \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+\doxysubsection{枚举类型说明}
+\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ga845eb12e4204b847a7a8ab99ce0e448f}\label{group___r_c_c___exported___enumeration_ga845eb12e4204b847a7a8ab99ce0e448f}} 
+\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_ADCCLKSOURCE\_TypeDef@{RCC\_ADCCLKSOURCE\_TypeDef}}
+\index{RCC\_ADCCLKSOURCE\_TypeDef@{RCC\_ADCCLKSOURCE\_TypeDef}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}
+\doxysubsubsection{\texorpdfstring{RCC\_ADCCLKSOURCE\_TypeDef}{RCC\_ADCCLKSOURCE\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga845eb12e4204b847a7a8ab99ce0e448f}{RCC\+\_\+\+ADCCLKSOURCE\+\_\+\+Type\+Def}}}
+
+
+
+ADC clock source 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_PCLK2\_Div2@{RCC\_PCLK2\_Div2}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_PCLK2\_Div2@{RCC\_PCLK2\_Div2}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga845eb12e4204b847a7a8ab99ce0e448fa0d7c2592dffcd51c6395188acaa667c4}\label{group___r_c_c___exported___enumeration_gga845eb12e4204b847a7a8ab99ce0e448fa0d7c2592dffcd51c6395188acaa667c4}} 
+RCC\+\_\+\+PCLK2\+\_\+\+Div2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_PCLK2\_Div4@{RCC\_PCLK2\_Div4}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_PCLK2\_Div4@{RCC\_PCLK2\_Div4}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga845eb12e4204b847a7a8ab99ce0e448fae17aa2c849017ff372882c743e356e84}\label{group___r_c_c___exported___enumeration_gga845eb12e4204b847a7a8ab99ce0e448fae17aa2c849017ff372882c743e356e84}} 
+RCC\+\_\+\+PCLK2\+\_\+\+Div4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_PCLK2\_Div6@{RCC\_PCLK2\_Div6}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_PCLK2\_Div6@{RCC\_PCLK2\_Div6}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga845eb12e4204b847a7a8ab99ce0e448fa4c9eaa6d82170956b5fa8b84e9437451}\label{group___r_c_c___exported___enumeration_gga845eb12e4204b847a7a8ab99ce0e448fa4c9eaa6d82170956b5fa8b84e9437451}} 
+RCC\+\_\+\+PCLK2\+\_\+\+Div6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_PCLK2\_Div8@{RCC\_PCLK2\_Div8}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_PCLK2\_Div8@{RCC\_PCLK2\_Div8}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga845eb12e4204b847a7a8ab99ce0e448fa45a0cc19fe2d3ff5c4ec7f19117d96f9}\label{group___r_c_c___exported___enumeration_gga845eb12e4204b847a7a8ab99ce0e448fa45a0cc19fe2d3ff5c4ec7f19117d96f9}} 
+RCC\+\_\+\+PCLK2\+\_\+\+Div8&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__rcc_8h_source}{hal\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{hal__rcc_8h_source_l00176}{176}} 行定义.
+
+\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ga42d9f90e4aa8d927be0c7736b1f654a3}\label{group___r_c_c___exported___enumeration_ga42d9f90e4aa8d927be0c7736b1f654a3}} 
+\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_AHB\_CLK\_TypeDef@{RCC\_AHB\_CLK\_TypeDef}}
+\index{RCC\_AHB\_CLK\_TypeDef@{RCC\_AHB\_CLK\_TypeDef}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}
+\doxysubsubsection{\texorpdfstring{RCC\_AHB\_CLK\_TypeDef}{RCC\_AHB\_CLK\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga42d9f90e4aa8d927be0c7736b1f654a3}{RCC\+\_\+\+AHB\+\_\+\+CLK\+\_\+\+Type\+Def}}}
+
+
+
+AHB clock source 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_SYSCLK\_Div1@{RCC\_SYSCLK\_Div1}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_SYSCLK\_Div1@{RCC\_SYSCLK\_Div1}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3ad45c38b95a87d8b852dc45a19400d2d7}\label{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3ad45c38b95a87d8b852dc45a19400d2d7}} 
+RCC\+\_\+\+SYSCLK\+\_\+\+Div1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_SYSCLK\_Div2@{RCC\_SYSCLK\_Div2}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_SYSCLK\_Div2@{RCC\_SYSCLK\_Div2}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3ae186496933abb4a3d5938c01e2368bfe}\label{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3ae186496933abb4a3d5938c01e2368bfe}} 
+RCC\+\_\+\+SYSCLK\+\_\+\+Div2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_SYSCLK\_Div4@{RCC\_SYSCLK\_Div4}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_SYSCLK\_Div4@{RCC\_SYSCLK\_Div4}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3afee0526efd1ae394727784654907664e}\label{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3afee0526efd1ae394727784654907664e}} 
+RCC\+\_\+\+SYSCLK\+\_\+\+Div4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_SYSCLK\_Div8@{RCC\_SYSCLK\_Div8}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_SYSCLK\_Div8@{RCC\_SYSCLK\_Div8}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3aec19bb60f5d71f8249fdf8d4b178add1}\label{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3aec19bb60f5d71f8249fdf8d4b178add1}} 
+RCC\+\_\+\+SYSCLK\+\_\+\+Div8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_SYSCLK\_Div16@{RCC\_SYSCLK\_Div16}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_SYSCLK\_Div16@{RCC\_SYSCLK\_Div16}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3a3736dae4d173dd1bde40a78364401b2a}\label{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3a3736dae4d173dd1bde40a78364401b2a}} 
+RCC\+\_\+\+SYSCLK\+\_\+\+Div16&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_SYSCLK\_Div64@{RCC\_SYSCLK\_Div64}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_SYSCLK\_Div64@{RCC\_SYSCLK\_Div64}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3a26932baf04b8bdd61b81e9ec1bc0e52a}\label{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3a26932baf04b8bdd61b81e9ec1bc0e52a}} 
+RCC\+\_\+\+SYSCLK\+\_\+\+Div64&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_SYSCLK\_Div128@{RCC\_SYSCLK\_Div128}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_SYSCLK\_Div128@{RCC\_SYSCLK\_Div128}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3a77cbc053d7384abe4d9686dc9310c106}\label{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3a77cbc053d7384abe4d9686dc9310c106}} 
+RCC\+\_\+\+SYSCLK\+\_\+\+Div128&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_SYSCLK\_Div256@{RCC\_SYSCLK\_Div256}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_SYSCLK\_Div256@{RCC\_SYSCLK\_Div256}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3ab7dfec7167e79b1dd9c68fd942877604}\label{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3ab7dfec7167e79b1dd9c68fd942877604}} 
+RCC\+\_\+\+SYSCLK\+\_\+\+Div256&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_SYSCLK\_Div512@{RCC\_SYSCLK\_Div512}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_SYSCLK\_Div512@{RCC\_SYSCLK\_Div512}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3ac86a954031f593404f0d6a1056ea274c}\label{group___r_c_c___exported___enumeration_gga42d9f90e4aa8d927be0c7736b1f654a3ac86a954031f593404f0d6a1056ea274c}} 
+RCC\+\_\+\+SYSCLK\+\_\+\+Div512&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__rcc_8h_source}{hal\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{hal__rcc_8h_source_l00142}{142}} 行定义.
+
+\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ga61fd16d8e595865d03e612b0aedf67c5}\label{group___r_c_c___exported___enumeration_ga61fd16d8e595865d03e612b0aedf67c5}} 
+\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_APB1\_APB2\_CLK\_TypeDef@{RCC\_APB1\_APB2\_CLK\_TypeDef}}
+\index{RCC\_APB1\_APB2\_CLK\_TypeDef@{RCC\_APB1\_APB2\_CLK\_TypeDef}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}
+\doxysubsubsection{\texorpdfstring{RCC\_APB1\_APB2\_CLK\_TypeDef}{RCC\_APB1\_APB2\_CLK\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga61fd16d8e595865d03e612b0aedf67c5}{RCC\+\_\+\+APB1\+\_\+\+APB2\+\_\+\+CLK\+\_\+\+Type\+Def}}}
+
+
+
+APB1 and APB2clock source 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_HCLK\_Div1@{RCC\_HCLK\_Div1}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_HCLK\_Div1@{RCC\_HCLK\_Div1}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga61fd16d8e595865d03e612b0aedf67c5ac2728fc66c8f41bdfe4c5966e1515c1c}\label{group___r_c_c___exported___enumeration_gga61fd16d8e595865d03e612b0aedf67c5ac2728fc66c8f41bdfe4c5966e1515c1c}} 
+RCC\+\_\+\+HCLK\+\_\+\+Div1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_HCLK\_Div2@{RCC\_HCLK\_Div2}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_HCLK\_Div2@{RCC\_HCLK\_Div2}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga61fd16d8e595865d03e612b0aedf67c5a32d2dc1ca495b273d32ee2187c6c5b0d}\label{group___r_c_c___exported___enumeration_gga61fd16d8e595865d03e612b0aedf67c5a32d2dc1ca495b273d32ee2187c6c5b0d}} 
+RCC\+\_\+\+HCLK\+\_\+\+Div2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_HCLK\_Div4@{RCC\_HCLK\_Div4}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_HCLK\_Div4@{RCC\_HCLK\_Div4}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga61fd16d8e595865d03e612b0aedf67c5a8eedf8b2dcc1407e3a421e456cf5e828}\label{group___r_c_c___exported___enumeration_gga61fd16d8e595865d03e612b0aedf67c5a8eedf8b2dcc1407e3a421e456cf5e828}} 
+RCC\+\_\+\+HCLK\+\_\+\+Div4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_HCLK\_Div8@{RCC\_HCLK\_Div8}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_HCLK\_Div8@{RCC\_HCLK\_Div8}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga61fd16d8e595865d03e612b0aedf67c5a5e74588c938f079fbbc23e78bd7f2240}\label{group___r_c_c___exported___enumeration_gga61fd16d8e595865d03e612b0aedf67c5a5e74588c938f079fbbc23e78bd7f2240}} 
+RCC\+\_\+\+HCLK\+\_\+\+Div8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_HCLK\_Div16@{RCC\_HCLK\_Div16}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_HCLK\_Div16@{RCC\_HCLK\_Div16}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga61fd16d8e595865d03e612b0aedf67c5a1d4e0022531dbec71cbe9c35488958bb}\label{group___r_c_c___exported___enumeration_gga61fd16d8e595865d03e612b0aedf67c5a1d4e0022531dbec71cbe9c35488958bb}} 
+RCC\+\_\+\+HCLK\+\_\+\+Div16&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__rcc_8h_source}{hal\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{hal__rcc_8h_source_l00156}{156}} 行定义.
+
+\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gae8c5d530bd004628086e325a834211dc}\label{group___r_c_c___exported___enumeration_gae8c5d530bd004628086e325a834211dc}} 
+\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_FLAG\_TypeDef@{RCC\_FLAG\_TypeDef}}
+\index{RCC\_FLAG\_TypeDef@{RCC\_FLAG\_TypeDef}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}
+\doxysubsubsection{\texorpdfstring{RCC\_FLAG\_TypeDef}{RCC\_FLAG\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_gae8c5d530bd004628086e325a834211dc}{RCC\+\_\+\+FLAG\+\_\+\+Type\+Def}}}
+
+
+
+RCC Flag 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_FLAG\_HSIRDY@{RCC\_FLAG\_HSIRDY}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_FLAG\_HSIRDY@{RCC\_FLAG\_HSIRDY}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dcaf2db6972c4815a618192891075b13e73}\label{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dcaf2db6972c4815a618192891075b13e73}} 
+RCC\+\_\+\+FLAG\+\_\+\+HSIRDY&Internal High Speed clock ready flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_FLAG\_HSERDY@{RCC\_FLAG\_HSERDY}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_FLAG\_HSERDY@{RCC\_FLAG\_HSERDY}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca2ab8ac62d5534cf5df273e3afc6afce0}\label{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca2ab8ac62d5534cf5df273e3afc6afce0}} 
+RCC\+\_\+\+FLAG\+\_\+\+HSERDY&External High Speed clock ready flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_FLAG\_PLLRDY@{RCC\_FLAG\_PLLRDY}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_FLAG\_PLLRDY@{RCC\_FLAG\_PLLRDY}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca007016aaaa0476bef52c9aaf4d0e59f1}\label{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca007016aaaa0476bef52c9aaf4d0e59f1}} 
+RCC\+\_\+\+FLAG\+\_\+\+PLLRDY&PLL clock ready flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_FLAG\_LSIRDY@{RCC\_FLAG\_LSIRDY}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_FLAG\_LSIRDY@{RCC\_FLAG\_LSIRDY}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dcad94cd0936d9edc078e6d0f8b12bad58d}\label{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dcad94cd0936d9edc078e6d0f8b12bad58d}} 
+RCC\+\_\+\+FLAG\+\_\+\+LSIRDY&Internal Low Speed oscillator Ready \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_FLAG\_PINRST@{RCC\_FLAG\_PINRST}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_FLAG\_PINRST@{RCC\_FLAG\_PINRST}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dcafb5733f727662f2c3a9ce926c55572e6}\label{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dcafb5733f727662f2c3a9ce926c55572e6}} 
+RCC\+\_\+\+FLAG\+\_\+\+PINRST&PIN reset flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_FLAG\_PORRST@{RCC\_FLAG\_PORRST}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_FLAG\_PORRST@{RCC\_FLAG\_PORRST}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca7af41d553891f564801283e643b8fd00}\label{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca7af41d553891f564801283e643b8fd00}} 
+RCC\+\_\+\+FLAG\+\_\+\+PORRST&POR/\+PDR reset flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_FLAG\_SFTRST@{RCC\_FLAG\_SFTRST}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_FLAG\_SFTRST@{RCC\_FLAG\_SFTRST}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dcac4133127119bcf2ffc55c78a34c154cc}\label{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dcac4133127119bcf2ffc55c78a34c154cc}} 
+RCC\+\_\+\+FLAG\+\_\+\+SFTRST&Software Reset flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_FLAG\_IWDGRST@{RCC\_FLAG\_IWDGRST}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_FLAG\_IWDGRST@{RCC\_FLAG\_IWDGRST}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca786385e48af0457b51bceb7217df50fe}\label{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca786385e48af0457b51bceb7217df50fe}} 
+RCC\+\_\+\+FLAG\+\_\+\+IWDGRST&Independent Watchdog reset flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_FLAG\_WWDGRST@{RCC\_FLAG\_WWDGRST}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_FLAG\_WWDGRST@{RCC\_FLAG\_WWDGRST}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca65ffc59cc41d608e7443a41ce9aa8bcd}\label{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca65ffc59cc41d608e7443a41ce9aa8bcd}} 
+RCC\+\_\+\+FLAG\+\_\+\+WWDGRST&Window watchdog reset flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_FLAG\_LSERDY@{RCC\_FLAG\_LSERDY}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_FLAG\_LSERDY@{RCC\_FLAG\_LSERDY}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca4478ab7374127bb5ac2b456ef186b1ee}\label{group___r_c_c___exported___enumeration_ggae8c5d530bd004628086e325a834211dca4478ab7374127bb5ac2b456ef186b1ee}} 
+RCC\+\_\+\+FLAG\+\_\+\+LSERDY&External Low Speed oscillator Ready \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__rcc_8h_source}{hal\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{hal__rcc_8h_source_l00078}{78}} 行定义.
+
+\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ga23735f41dde839d727e55c310e5b1e8f}\label{group___r_c_c___exported___enumeration_ga23735f41dde839d727e55c310e5b1e8f}} 
+\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_IT\_TypeDef@{RCC\_IT\_TypeDef}}
+\index{RCC\_IT\_TypeDef@{RCC\_IT\_TypeDef}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}
+\doxysubsubsection{\texorpdfstring{RCC\_IT\_TypeDef}{RCC\_IT\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga23735f41dde839d727e55c310e5b1e8f}{RCC\+\_\+\+IT\+\_\+\+Type\+Def}}}
+
+
+
+RCC Interrupt source 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_IT\_LSIRDY@{RCC\_IT\_LSIRDY}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_IT\_LSIRDY@{RCC\_IT\_LSIRDY}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fa9e7bae0e7ae96ace9c0e96a925fcf14b}\label{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fa9e7bae0e7ae96ace9c0e96a925fcf14b}} 
+RCC\+\_\+\+IT\+\_\+\+LSIRDY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_IT\_LSERDY@{RCC\_IT\_LSERDY}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_IT\_LSERDY@{RCC\_IT\_LSERDY}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fae0973b5644ecb0e0a994d894a72a435c}\label{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fae0973b5644ecb0e0a994d894a72a435c}} 
+RCC\+\_\+\+IT\+\_\+\+LSERDY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_IT\_HSIRDY@{RCC\_IT\_HSIRDY}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_IT\_HSIRDY@{RCC\_IT\_HSIRDY}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fa8a031a64f7e4540eb8adaac112b6130b}\label{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fa8a031a64f7e4540eb8adaac112b6130b}} 
+RCC\+\_\+\+IT\+\_\+\+HSIRDY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_IT\_HSERDY@{RCC\_IT\_HSERDY}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_IT\_HSERDY@{RCC\_IT\_HSERDY}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fa5884f9e4902450684748bdd668a54115}\label{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fa5884f9e4902450684748bdd668a54115}} 
+RCC\+\_\+\+IT\+\_\+\+HSERDY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_IT\_PLLRDY@{RCC\_IT\_PLLRDY}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_IT\_PLLRDY@{RCC\_IT\_PLLRDY}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fae976644e593acf21735e5b1d3833c5fc}\label{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fae976644e593acf21735e5b1d3833c5fc}} 
+RCC\+\_\+\+IT\+\_\+\+PLLRDY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_IT\_CSS@{RCC\_IT\_CSS}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_IT\_CSS@{RCC\_IT\_CSS}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fa8619f9d46a9d6c40617825bd2977c735}\label{group___r_c_c___exported___enumeration_gga23735f41dde839d727e55c310e5b1e8fa8619f9d46a9d6c40617825bd2977c735}} 
+RCC\+\_\+\+IT\+\_\+\+CSS&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__rcc_8h_source}{hal\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{hal__rcc_8h_source_l00217}{217}} 行定义.
+
+\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ga8c4dfb3b1aa4dd4c65a4322c05d08ac5}\label{group___r_c_c___exported___enumeration_ga8c4dfb3b1aa4dd4c65a4322c05d08ac5}} 
+\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_LSE\_TypeDef@{RCC\_LSE\_TypeDef}}
+\index{RCC\_LSE\_TypeDef@{RCC\_LSE\_TypeDef}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}
+\doxysubsubsection{\texorpdfstring{RCC\_LSE\_TypeDef}{RCC\_LSE\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga8c4dfb3b1aa4dd4c65a4322c05d08ac5}{RCC\+\_\+\+LSE\+\_\+\+Type\+Def}}}
+
+
+
+LSE configuration 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_LSE\_OFF@{RCC\_LSE\_OFF}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_LSE\_OFF@{RCC\_LSE\_OFF}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga8c4dfb3b1aa4dd4c65a4322c05d08ac5afc4a3d76bab24af90d4fe951d1beeb7e}\label{group___r_c_c___exported___enumeration_gga8c4dfb3b1aa4dd4c65a4322c05d08ac5afc4a3d76bab24af90d4fe951d1beeb7e}} 
+RCC\+\_\+\+LSE\+\_\+\+OFF&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_LSE\_ON@{RCC\_LSE\_ON}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_LSE\_ON@{RCC\_LSE\_ON}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga8c4dfb3b1aa4dd4c65a4322c05d08ac5a34dc6dd7ed85b6add353deab0501d395}\label{group___r_c_c___exported___enumeration_gga8c4dfb3b1aa4dd4c65a4322c05d08ac5a34dc6dd7ed85b6add353deab0501d395}} 
+RCC\+\_\+\+LSE\+\_\+\+ON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_LSE\_Bypass@{RCC\_LSE\_Bypass}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_LSE\_Bypass@{RCC\_LSE\_Bypass}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga8c4dfb3b1aa4dd4c65a4322c05d08ac5a015533c1130388356b2ced8438b60652}\label{group___r_c_c___exported___enumeration_gga8c4dfb3b1aa4dd4c65a4322c05d08ac5a015533c1130388356b2ced8438b60652}} 
+RCC\+\_\+\+LSE\+\_\+\+Bypass&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__rcc_8h_source}{hal\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{hal__rcc_8h_source_l00186}{186}} 行定义.
+
+\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ga6af1d0d9d1463f9368e6f4b731f7859f}\label{group___r_c_c___exported___enumeration_ga6af1d0d9d1463f9368e6f4b731f7859f}} 
+\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_MCO\_TypeDef@{RCC\_MCO\_TypeDef}}
+\index{RCC\_MCO\_TypeDef@{RCC\_MCO\_TypeDef}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}
+\doxysubsubsection{\texorpdfstring{RCC\_MCO\_TypeDef}{RCC\_MCO\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga6af1d0d9d1463f9368e6f4b731f7859f}{RCC\+\_\+\+MCO\+\_\+\+Type\+Def}}}
+
+
+
+Clock source to output on MCO pin 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_MCO\_NoClock@{RCC\_MCO\_NoClock}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_MCO\_NoClock@{RCC\_MCO\_NoClock}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fa252e0edac21dd997e817ec47408aee93}\label{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fa252e0edac21dd997e817ec47408aee93}} 
+RCC\+\_\+\+MCO\+\_\+\+No\+Clock&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_MCO\_LSI@{RCC\_MCO\_LSI}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_MCO\_LSI@{RCC\_MCO\_LSI}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fa46ba48e6d10df6aad7a6cd07de7e9ebe}\label{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fa46ba48e6d10df6aad7a6cd07de7e9ebe}} 
+RCC\+\_\+\+MCO\+\_\+\+LSI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_MCO\_LSE@{RCC\_MCO\_LSE}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_MCO\_LSE@{RCC\_MCO\_LSE}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fae9aef096471a9176e9b4f19b95fb8cfc}\label{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fae9aef096471a9176e9b4f19b95fb8cfc}} 
+RCC\+\_\+\+MCO\+\_\+\+LSE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_MCO\_SYSCLK@{RCC\_MCO\_SYSCLK}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_MCO\_SYSCLK@{RCC\_MCO\_SYSCLK}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fa7c8423f42ccdac5a3a7f8ff7db29667e}\label{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fa7c8423f42ccdac5a3a7f8ff7db29667e}} 
+RCC\+\_\+\+MCO\+\_\+\+SYSCLK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_MCO\_HSI@{RCC\_MCO\_HSI}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_MCO\_HSI@{RCC\_MCO\_HSI}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fab594556c859f119d1027f6b25282015f}\label{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fab594556c859f119d1027f6b25282015f}} 
+RCC\+\_\+\+MCO\+\_\+\+HSI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_MCO\_HSE@{RCC\_MCO\_HSE}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_MCO\_HSE@{RCC\_MCO\_HSE}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fa217322258f801c19609debbf02b592f1}\label{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fa217322258f801c19609debbf02b592f1}} 
+RCC\+\_\+\+MCO\+\_\+\+HSE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_MCO\_PLLCLK\_Div2@{RCC\_MCO\_PLLCLK\_Div2}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_MCO\_PLLCLK\_Div2@{RCC\_MCO\_PLLCLK\_Div2}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fab3193d958ce6db168afe5a89a92aae8f}\label{group___r_c_c___exported___enumeration_gga6af1d0d9d1463f9368e6f4b731f7859fab3193d958ce6db168afe5a89a92aae8f}} 
+RCC\+\_\+\+MCO\+\_\+\+PLLCLK\+\_\+\+Div2&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__rcc_8h_source}{hal\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{hal__rcc_8h_source_l00204}{204}} 行定义.
+
+\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gab9ba8af25cbeccce21dc2dbf0b10a666}\label{group___r_c_c___exported___enumeration_gab9ba8af25cbeccce21dc2dbf0b10a666}} 
+\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_PLLMul\_TypeDef@{RCC\_PLLMul\_TypeDef}}
+\index{RCC\_PLLMul\_TypeDef@{RCC\_PLLMul\_TypeDef}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}
+\doxysubsubsection{\texorpdfstring{RCC\_PLLMul\_TypeDef}{RCC\_PLLMul\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_gab9ba8af25cbeccce21dc2dbf0b10a666}{RCC\+\_\+\+PLLMul\+\_\+\+Type\+Def}}}
+
+
+
+PLL multiplication factor 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_PLLMul\_2@{RCC\_PLLMul\_2}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_PLLMul\_2@{RCC\_PLLMul\_2}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a69d077da02c15bf354e7059563ca0a70}\label{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a69d077da02c15bf354e7059563ca0a70}} 
+RCC\+\_\+\+PLLMul\+\_\+2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_PLLMul\_3@{RCC\_PLLMul\_3}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_PLLMul\_3@{RCC\_PLLMul\_3}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a2f451119fd4032b9b022d3def9b213bd}\label{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a2f451119fd4032b9b022d3def9b213bd}} 
+RCC\+\_\+\+PLLMul\+\_\+3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_PLLMul\_4@{RCC\_PLLMul\_4}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_PLLMul\_4@{RCC\_PLLMul\_4}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666ad7cd3b75b9dc6420a1e7bc0e92b5aed2}\label{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666ad7cd3b75b9dc6420a1e7bc0e92b5aed2}} 
+RCC\+\_\+\+PLLMul\+\_\+4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_PLLMul\_5@{RCC\_PLLMul\_5}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_PLLMul\_5@{RCC\_PLLMul\_5}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a7182192624db710c5d56ca427abc430c}\label{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a7182192624db710c5d56ca427abc430c}} 
+RCC\+\_\+\+PLLMul\+\_\+5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_PLLMul\_6@{RCC\_PLLMul\_6}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_PLLMul\_6@{RCC\_PLLMul\_6}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a063361caa80e01124069d8bacedb60b7}\label{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a063361caa80e01124069d8bacedb60b7}} 
+RCC\+\_\+\+PLLMul\+\_\+6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_PLLMul\_7@{RCC\_PLLMul\_7}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_PLLMul\_7@{RCC\_PLLMul\_7}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a67dfb901a4b30a64adc5a9242751a713}\label{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a67dfb901a4b30a64adc5a9242751a713}} 
+RCC\+\_\+\+PLLMul\+\_\+7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_PLLMul\_8@{RCC\_PLLMul\_8}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_PLLMul\_8@{RCC\_PLLMul\_8}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a4a97d52a5d55db081d9a5af3f6ec7737}\label{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a4a97d52a5d55db081d9a5af3f6ec7737}} 
+RCC\+\_\+\+PLLMul\+\_\+8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_PLLMul\_9@{RCC\_PLLMul\_9}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_PLLMul\_9@{RCC\_PLLMul\_9}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666aaea5784dbdbab03baa7b856d6a516a48}\label{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666aaea5784dbdbab03baa7b856d6a516a48}} 
+RCC\+\_\+\+PLLMul\+\_\+9&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_PLLMul\_10@{RCC\_PLLMul\_10}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_PLLMul\_10@{RCC\_PLLMul\_10}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a061808b8d83fefd0951447fe2b45c336}\label{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a061808b8d83fefd0951447fe2b45c336}} 
+RCC\+\_\+\+PLLMul\+\_\+10&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_PLLMul\_11@{RCC\_PLLMul\_11}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_PLLMul\_11@{RCC\_PLLMul\_11}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a511c72ef202c682b105f219c676a3467}\label{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a511c72ef202c682b105f219c676a3467}} 
+RCC\+\_\+\+PLLMul\+\_\+11&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_PLLMul\_12@{RCC\_PLLMul\_12}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_PLLMul\_12@{RCC\_PLLMul\_12}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a6db238fda79a08d967c6546ce9ce9d0a}\label{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a6db238fda79a08d967c6546ce9ce9d0a}} 
+RCC\+\_\+\+PLLMul\+\_\+12&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_PLLMul\_13@{RCC\_PLLMul\_13}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_PLLMul\_13@{RCC\_PLLMul\_13}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666aa0bd292fe98bce311843b756a91abc61}\label{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666aa0bd292fe98bce311843b756a91abc61}} 
+RCC\+\_\+\+PLLMul\+\_\+13&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_PLLMul\_14@{RCC\_PLLMul\_14}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_PLLMul\_14@{RCC\_PLLMul\_14}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a6012597b880cebab49ea9a459de342b5}\label{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a6012597b880cebab49ea9a459de342b5}} 
+RCC\+\_\+\+PLLMul\+\_\+14&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_PLLMul\_15@{RCC\_PLLMul\_15}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_PLLMul\_15@{RCC\_PLLMul\_15}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a6a9290f81809e00d97db149449bb97ae}\label{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666a6a9290f81809e00d97db149449bb97ae}} 
+RCC\+\_\+\+PLLMul\+\_\+15&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_PLLMul\_16@{RCC\_PLLMul\_16}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_PLLMul\_16@{RCC\_PLLMul\_16}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666aa0212c0cc64e30fa91d388a07046ee5c}\label{group___r_c_c___exported___enumeration_ggab9ba8af25cbeccce21dc2dbf0b10a666aa0212c0cc64e30fa91d388a07046ee5c}} 
+RCC\+\_\+\+PLLMul\+\_\+16&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__rcc_8h_source}{hal\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{hal__rcc_8h_source_l00121}{121}} 行定义.
+
+\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ga8d9ccc495d0577912191a7bc9bdbd8d7}\label{group___r_c_c___exported___enumeration_ga8d9ccc495d0577912191a7bc9bdbd8d7}} 
+\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_PLLSource\_TypeDef@{RCC\_PLLSource\_TypeDef}}
+\index{RCC\_PLLSource\_TypeDef@{RCC\_PLLSource\_TypeDef}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}
+\doxysubsubsection{\texorpdfstring{RCC\_PLLSource\_TypeDef}{RCC\_PLLSource\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga8d9ccc495d0577912191a7bc9bdbd8d7}{RCC\+\_\+\+PLLSource\+\_\+\+Type\+Def}}}
+
+
+
+PLL entry clock source 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_HSI\_Div4@{RCC\_HSI\_Div4}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_HSI\_Div4@{RCC\_HSI\_Div4}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga8d9ccc495d0577912191a7bc9bdbd8d7a7554132678a1982b133a9083507a458a}\label{group___r_c_c___exported___enumeration_gga8d9ccc495d0577912191a7bc9bdbd8d7a7554132678a1982b133a9083507a458a}} 
+RCC\+\_\+\+HSI\+\_\+\+Div4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_HSI\_Div@{RCC\_HSI\_Div}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_HSI\_Div@{RCC\_HSI\_Div}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga8d9ccc495d0577912191a7bc9bdbd8d7a80ac75f7a601538d570ee5f676d83c13}\label{group___r_c_c___exported___enumeration_gga8d9ccc495d0577912191a7bc9bdbd8d7a80ac75f7a601538d570ee5f676d83c13}} 
+RCC\+\_\+\+HSI\+\_\+\+Div&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_HSE\_Div1@{RCC\_HSE\_Div1}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_HSE\_Div1@{RCC\_HSE\_Div1}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga8d9ccc495d0577912191a7bc9bdbd8d7ad6b7b3c95a02ef2fa46437118f29b955}\label{group___r_c_c___exported___enumeration_gga8d9ccc495d0577912191a7bc9bdbd8d7ad6b7b3c95a02ef2fa46437118f29b955}} 
+RCC\+\_\+\+HSE\+\_\+\+Div1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_HSE\_Div2@{RCC\_HSE\_Div2}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_HSE\_Div2@{RCC\_HSE\_Div2}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga8d9ccc495d0577912191a7bc9bdbd8d7aab26b33cc9eb380205ad19d589900b4d}\label{group___r_c_c___exported___enumeration_gga8d9ccc495d0577912191a7bc9bdbd8d7aab26b33cc9eb380205ad19d589900b4d}} 
+RCC\+\_\+\+HSE\+\_\+\+Div2&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__rcc_8h_source}{hal\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{hal__rcc_8h_source_l00111}{111}} 行定义.
+
+\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gae49e46645a362f436cbea1f4b0ad9e8d}\label{group___r_c_c___exported___enumeration_gae49e46645a362f436cbea1f4b0ad9e8d}} 
+\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_RegisterFlag\_TypeDef@{RCC\_RegisterFlag\_TypeDef}}
+\index{RCC\_RegisterFlag\_TypeDef@{RCC\_RegisterFlag\_TypeDef}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}
+\doxysubsubsection{\texorpdfstring{RCC\_RegisterFlag\_TypeDef}{RCC\_RegisterFlag\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_gae49e46645a362f436cbea1f4b0ad9e8d}{RCC\+\_\+\+Register\+Flag\+\_\+\+Type\+Def}}}
+
+
+
+Used for flags 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CR\_REG\_INDEX@{CR\_REG\_INDEX}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!CR\_REG\_INDEX@{CR\_REG\_INDEX}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggae49e46645a362f436cbea1f4b0ad9e8daaf3a317a0c2e03cd10a0201eb1a2db79}\label{group___r_c_c___exported___enumeration_ggae49e46645a362f436cbea1f4b0ad9e8daaf3a317a0c2e03cd10a0201eb1a2db79}} 
+CR\+\_\+\+REG\+\_\+\+INDEX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BDCR\_REG\_INDEX@{BDCR\_REG\_INDEX}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!BDCR\_REG\_INDEX@{BDCR\_REG\_INDEX}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggae49e46645a362f436cbea1f4b0ad9e8da31549e6163e3ef75bfd73e16b19094dd}\label{group___r_c_c___exported___enumeration_ggae49e46645a362f436cbea1f4b0ad9e8da31549e6163e3ef75bfd73e16b19094dd}} 
+BDCR\+\_\+\+REG\+\_\+\+INDEX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CSR\_REG\_INDEX@{CSR\_REG\_INDEX}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!CSR\_REG\_INDEX@{CSR\_REG\_INDEX}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggae49e46645a362f436cbea1f4b0ad9e8daf0b4505debdd38f65f337338e17808ed}\label{group___r_c_c___exported___enumeration_ggae49e46645a362f436cbea1f4b0ad9e8daf0b4505debdd38f65f337338e17808ed}} 
+CSR\+\_\+\+REG\+\_\+\+INDEX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_FLAG\_MASK@{RCC\_FLAG\_MASK}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_FLAG\_MASK@{RCC\_FLAG\_MASK}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggae49e46645a362f436cbea1f4b0ad9e8daf451b3515e32025f1adea0fc3a669dc8}\label{group___r_c_c___exported___enumeration_ggae49e46645a362f436cbea1f4b0ad9e8daf451b3515e32025f1adea0fc3a669dc8}} 
+RCC\+\_\+\+FLAG\+\_\+\+MASK&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__rcc_8h_source}{hal\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{hal__rcc_8h_source_l00068}{68}} 行定义.
+
+\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ga76fd6ebbea4e50a4faf71e81c51ef317}\label{group___r_c_c___exported___enumeration_ga76fd6ebbea4e50a4faf71e81c51ef317}} 
+\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_RTCCLKSOURCE\_TypeDef@{RCC\_RTCCLKSOURCE\_TypeDef}}
+\index{RCC\_RTCCLKSOURCE\_TypeDef@{RCC\_RTCCLKSOURCE\_TypeDef}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}
+\doxysubsubsection{\texorpdfstring{RCC\_RTCCLKSOURCE\_TypeDef}{RCC\_RTCCLKSOURCE\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga76fd6ebbea4e50a4faf71e81c51ef317}{RCC\+\_\+\+RTCCLKSOURCE\+\_\+\+Type\+Def}}}
+
+
+
+RTC clock source 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_RTCCLKSource\_LSE@{RCC\_RTCCLKSource\_LSE}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_RTCCLKSource\_LSE@{RCC\_RTCCLKSource\_LSE}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga76fd6ebbea4e50a4faf71e81c51ef317a141f917b9d76d12df475fa94cce98e26}\label{group___r_c_c___exported___enumeration_gga76fd6ebbea4e50a4faf71e81c51ef317a141f917b9d76d12df475fa94cce98e26}} 
+RCC\+\_\+\+RTCCLKSource\+\_\+\+LSE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_RTCCLKSource\_LSI@{RCC\_RTCCLKSource\_LSI}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_RTCCLKSource\_LSI@{RCC\_RTCCLKSource\_LSI}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga76fd6ebbea4e50a4faf71e81c51ef317aade81f57e0e2d4a1c12601732c838871}\label{group___r_c_c___exported___enumeration_gga76fd6ebbea4e50a4faf71e81c51ef317aade81f57e0e2d4a1c12601732c838871}} 
+RCC\+\_\+\+RTCCLKSource\+\_\+\+LSI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_RTCCLKSource\_HSE\_Div128@{RCC\_RTCCLKSource\_HSE\_Div128}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_RTCCLKSource\_HSE\_Div128@{RCC\_RTCCLKSource\_HSE\_Div128}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga76fd6ebbea4e50a4faf71e81c51ef317ac1627b4b062ea9ac0905c52dce9d3de3}\label{group___r_c_c___exported___enumeration_gga76fd6ebbea4e50a4faf71e81c51ef317ac1627b4b062ea9ac0905c52dce9d3de3}} 
+RCC\+\_\+\+RTCCLKSource\+\_\+\+HSE\+\_\+\+Div128&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__rcc_8h_source}{hal\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{hal__rcc_8h_source_l00195}{195}} 行定义.
+
+\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ga6873373a50342c72526dbcf1cd3b05b5}\label{group___r_c_c___exported___enumeration_ga6873373a50342c72526dbcf1cd3b05b5}} 
+\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_USBCLKSOURCE\_TypeDef@{RCC\_USBCLKSOURCE\_TypeDef}}
+\index{RCC\_USBCLKSOURCE\_TypeDef@{RCC\_USBCLKSOURCE\_TypeDef}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}
+\doxysubsubsection{\texorpdfstring{RCC\_USBCLKSOURCE\_TypeDef}{RCC\_USBCLKSOURCE\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_ga6873373a50342c72526dbcf1cd3b05b5}{RCC\+\_\+\+USBCLKSOURCE\+\_\+\+Type\+Def}}}
+
+
+
+USB Device clock source 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_USBCLKSource\_PLLCLK\_Div1@{RCC\_USBCLKSource\_PLLCLK\_Div1}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_USBCLKSource\_PLLCLK\_Div1@{RCC\_USBCLKSource\_PLLCLK\_Div1}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga6873373a50342c72526dbcf1cd3b05b5ab48da416d36ca81f66371ccbd9c00ed2}\label{group___r_c_c___exported___enumeration_gga6873373a50342c72526dbcf1cd3b05b5ab48da416d36ca81f66371ccbd9c00ed2}} 
+RCC\+\_\+\+USBCLKSource\+\_\+\+PLLCLK\+\_\+\+Div1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_USBCLKSource\_PLLCLK\_Div2@{RCC\_USBCLKSource\_PLLCLK\_Div2}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_USBCLKSource\_PLLCLK\_Div2@{RCC\_USBCLKSource\_PLLCLK\_Div2}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga6873373a50342c72526dbcf1cd3b05b5a9ef8bdece42869c252efd7df4b2c377c}\label{group___r_c_c___exported___enumeration_gga6873373a50342c72526dbcf1cd3b05b5a9ef8bdece42869c252efd7df4b2c377c}} 
+RCC\+\_\+\+USBCLKSource\+\_\+\+PLLCLK\+\_\+\+Div2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_USBCLKSource\_PLLCLK\_Div3@{RCC\_USBCLKSource\_PLLCLK\_Div3}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_USBCLKSource\_PLLCLK\_Div3@{RCC\_USBCLKSource\_PLLCLK\_Div3}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga6873373a50342c72526dbcf1cd3b05b5a1569f739ea3c2c9998be4c972037beeb}\label{group___r_c_c___exported___enumeration_gga6873373a50342c72526dbcf1cd3b05b5a1569f739ea3c2c9998be4c972037beeb}} 
+RCC\+\_\+\+USBCLKSource\+\_\+\+PLLCLK\+\_\+\+Div3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_USBCLKSource\_PLLCLK\_Div4@{RCC\_USBCLKSource\_PLLCLK\_Div4}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_USBCLKSource\_PLLCLK\_Div4@{RCC\_USBCLKSource\_PLLCLK\_Div4}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gga6873373a50342c72526dbcf1cd3b05b5a2a80abd7f894cdc214591fa0fcb52a1a}\label{group___r_c_c___exported___enumeration_gga6873373a50342c72526dbcf1cd3b05b5a2a80abd7f894cdc214591fa0fcb52a1a}} 
+RCC\+\_\+\+USBCLKSource\+\_\+\+PLLCLK\+\_\+\+Div4&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__rcc_8h_source}{hal\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{hal__rcc_8h_source_l00166}{166}} 行定义.
+
+\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gaf79c982653100ce2c61af761adfc7cab}\label{group___r_c_c___exported___enumeration_gaf79c982653100ce2c61af761adfc7cab}} 
+\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCCHSE\_TypeDef@{RCCHSE\_TypeDef}}
+\index{RCCHSE\_TypeDef@{RCCHSE\_TypeDef}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}
+\doxysubsubsection{\texorpdfstring{RCCHSE\_TypeDef}{RCCHSE\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_gaf79c982653100ce2c61af761adfc7cab}{RCCHSE\+\_\+\+Type\+Def}}}
+
+
+
+HSE configuration 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_HSE\_OFF@{RCC\_HSE\_OFF}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_HSE\_OFF@{RCC\_HSE\_OFF}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggaf79c982653100ce2c61af761adfc7cabaca6d3f37abab454bad865a276a7ecf7f}\label{group___r_c_c___exported___enumeration_ggaf79c982653100ce2c61af761adfc7cabaca6d3f37abab454bad865a276a7ecf7f}} 
+RCC\+\_\+\+HSE\+\_\+\+OFF&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_HSE\_ON@{RCC\_HSE\_ON}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_HSE\_ON@{RCC\_HSE\_ON}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggaf79c982653100ce2c61af761adfc7cabaea98bb74fc53bf7eb75d10d2f84bb6c3}\label{group___r_c_c___exported___enumeration_ggaf79c982653100ce2c61af761adfc7cabaea98bb74fc53bf7eb75d10d2f84bb6c3}} 
+RCC\+\_\+\+HSE\+\_\+\+ON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_HSE\_Bypass@{RCC\_HSE\_Bypass}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_HSE\_Bypass@{RCC\_HSE\_Bypass}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggaf79c982653100ce2c61af761adfc7caba4cfaffa45f1fda45e90ea47ec414bc77}\label{group___r_c_c___exported___enumeration_ggaf79c982653100ce2c61af761adfc7caba4cfaffa45f1fda45e90ea47ec414bc77}} 
+RCC\+\_\+\+HSE\+\_\+\+Bypass&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__rcc_8h_source}{hal\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{hal__rcc_8h_source_l00059}{59}} 行定义.
+
+\mbox{\Hypertarget{group___r_c_c___exported___enumeration_gab314ddace15b8d75ef143188c3061a97}\label{group___r_c_c___exported___enumeration_gab314ddace15b8d75ef143188c3061a97}} 
+\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!SYSCLK\_TypeDef@{SYSCLK\_TypeDef}}
+\index{SYSCLK\_TypeDef@{SYSCLK\_TypeDef}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}
+\doxysubsubsection{\texorpdfstring{SYSCLK\_TypeDef}{SYSCLK\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___r_c_c___exported___enumeration_gab314ddace15b8d75ef143188c3061a97}{SYSCLK\+\_\+\+Type\+Def}}}
+
+
+
+System clock source 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_HSI@{RCC\_HSI}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_HSI@{RCC\_HSI}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggab314ddace15b8d75ef143188c3061a97a1876e08e92a9ea07faac183d918ac1fc}\label{group___r_c_c___exported___enumeration_ggab314ddace15b8d75ef143188c3061a97a1876e08e92a9ea07faac183d918ac1fc}} 
+RCC\+\_\+\+HSI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_HSE@{RCC\_HSE}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_HSE@{RCC\_HSE}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggab314ddace15b8d75ef143188c3061a97aa72a0e027ef7492439824d675d4a2fb4}\label{group___r_c_c___exported___enumeration_ggab314ddace15b8d75ef143188c3061a97aa72a0e027ef7492439824d675d4a2fb4}} 
+RCC\+\_\+\+HSE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_PLL@{RCC\_PLL}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_PLL@{RCC\_PLL}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggab314ddace15b8d75ef143188c3061a97a627d71402d403a5517bd652ece1d5013}\label{group___r_c_c___exported___enumeration_ggab314ddace15b8d75ef143188c3061a97a627d71402d403a5517bd652ece1d5013}} 
+RCC\+\_\+\+PLL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RCC\_LSI@{RCC\_LSI}!RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}}\index{RCC\_Exported\_Enumeration@{RCC\_Exported\_Enumeration}!RCC\_LSI@{RCC\_LSI}}}\mbox{\Hypertarget{group___r_c_c___exported___enumeration_ggab314ddace15b8d75ef143188c3061a97a4e5d0c838caa0e75a56ea47ef36ad782}\label{group___r_c_c___exported___enumeration_ggab314ddace15b8d75ef143188c3061a97a4e5d0c838caa0e75a56ea47ef36ad782}} 
+RCC\+\_\+\+LSI&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__rcc_8h_source}{hal\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{hal__rcc_8h_source_l00100}{100}} 行定义.
+

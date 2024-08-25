@@ -1,0 +1,674 @@
+\hypertarget{struct_s_d_i_o___type_def}{}\doxysection{SDIO\+\_\+\+Type\+Def结构体 参考}
+\label{struct_s_d_i_o___type_def}\index{SDIO\_TypeDef@{SDIO\_TypeDef}}
+
+
+SDIO Register Structure Definition  
+
+
+
+
+{\ttfamily \#include $<$reg\+\_\+sdio.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a459eee98b30895c9fb77b2cb5e562238}{MMC\+\_\+\+CTRL}}
+\begin{DoxyCompactList}\small\item\em SDIO transmit data register, offset\+: 0x00 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_ac88ee766a0d8c83fbfa5db5ee8376982}{MMC\+\_\+\+IO}}
+\begin{DoxyCompactList}\small\item\em SDIO receive data register, offset\+: 0x04 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_aad0654cf806bc0a3149c5be19f33c881}{MMC\+\_\+\+BYTECNTL}}
+\begin{DoxyCompactList}\small\item\em SDIO current state register, offset\+: 0x08 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a798f0405f1fff784e05ab58a0f78f28b}{MMC\+\_\+\+TR\+\_\+\+BLOCKCNT}}
+\begin{DoxyCompactList}\small\item\em SDIO interruput state register, offset\+: 0x0C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_aec063890ebd2a51817310a18c9a5e402}{MMC\+\_\+\+CRCCTL}}
+\begin{DoxyCompactList}\small\item\em SDIO interruput enable register, offset\+: 0x10 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a11cc29600d60d7af91eb9b34bdb4376d}{CMD\+\_\+\+CRC}}
+\begin{DoxyCompactList}\small\item\em SDIO interruput control register, offset\+: 0x14 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a5bb0d93210b8e6466ca729ec9c84d120}{DAT\+\_\+\+CRCL}}
+\begin{DoxyCompactList}\small\item\em SDIO global control register, offset\+: 0x18 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a314595b3fc1e35217c8beb4105da7b14}{DAT\+\_\+\+CRCH}}
+\begin{DoxyCompactList}\small\item\em SDIO common control register, offset\+: 0x1C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a18d645abf4cb74d70d74c8a8f2ae080c}{MMC\+\_\+\+PORT}}
+\begin{DoxyCompactList}\small\item\em SDIO baud rate control register, offset\+: 0x20 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a1bfbc93dff6209e536094a6880a5fdc3}{MMC\+\_\+\+INT\+\_\+\+MASK}}
+\begin{DoxyCompactList}\small\item\em SDIO receive data number register, offset\+: 0x24 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a7551d6afb477ffefdddaf8b70a8b73d3}{CLR\+\_\+\+MMC\+\_\+\+INT}}
+\begin{DoxyCompactList}\small\item\em SDIO chip select register, offset\+: 0x28 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a383dba48377601cd29846a9139417e48}{MMC\+\_\+\+CARDSEL}}
+\begin{DoxyCompactList}\small\item\em SDIO extand control register, offset\+: 0x2C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_aaea24023791e2d74f20dd71632dbb007}{MMC\+\_\+\+SIG}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x30 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_afb0c1066792a0ecfcbb98d2be5a01d37}{MMC\+\_\+\+IO\+\_\+\+MBCTL}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x34 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a3048480b3ff527cc512c8b9c36b7ac5d}{MMC\+\_\+\+BLOCKCNT}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x38 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a4f7e3c04fa5d5f940e8e86f07d719dbf}{MMC\+\_\+\+TIMEOUTCNT}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x3C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a573a56a24852ad37aa9e04fc92a950ec}{CMD\+\_\+\+BUF0}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x40 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a0b2d2b692dd099a6291d4a8dd701c8e6}{CMD\+\_\+\+BUF1}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x44 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a81dadcdab23117b958bbbd272b63678b}{CMD\+\_\+\+BUF2}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x48 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a52066bc2276094c66d71afc88ff92e94}{CMD\+\_\+\+BUF3}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x4C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a195b44ba8a25404940a786d95b28462b}{CMD\+\_\+\+BUF4}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x50 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_aa13d3f84c758342b959e88d754447efe}{CMD\+\_\+\+BUF5}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x54 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_ab982367ac9d218b551e56f3ed3e164a4}{CMD\+\_\+\+BUF6}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x58 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a56995b9fd2714e050d6c69501c6a3bb7}{CMD\+\_\+\+BUF7}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x5C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a9ecea6327ccde0b5ac78b2006b63ed6c}{CMD\+\_\+\+BUF8}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x60 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_aa48acdac9dafbc4c88412b76fbf02bff}{CMD\+\_\+\+BUF9}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x64 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a5c73e5041b85ed6d9c4b86204e979f9d}{CMD\+\_\+\+BUF10}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x68 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_aa207241cd59cfdee63fb4b6a721cc438}{CMD\+\_\+\+BUF11}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x6C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_ae4d7311c9f6a75783d139907634dc40a}{CMD\+\_\+\+BUF12}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x70 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a32bff622f9970ca4c795e4907e3d75e2}{CMD\+\_\+\+BUF13}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x74 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_adfc2f0d4dd6221470af492e193a9319d}{CMD\+\_\+\+BUF14}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x78 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a5bfe8cc3da8597a364636a8f3ce96508}{CMD\+\_\+\+BUF15}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x7C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a8fc0f85871cd03d6f4f3866d549f00da}{BUF\+\_\+\+CTL}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x80 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a7de153652db3713913df3bc79e2dfcea}{RESERVED}} \mbox{[}31\mbox{]}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x84 \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a76bbb5f868a90a10c4da507c34601970}{DATA\_BUF0}}\\
+\>\>{\em 0ffset: 0x100 }\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a55e866a817025f44a4da26b57a9a0539}{FIFO}}\\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a732d4a2cd3eb9fe5b1e917b811dd0312}{DATA\+\_\+\+BUF1}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x104 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_ae69c17b7b2f6c5e9596fd317ec21a7d5}{DATA\+\_\+\+BUF2}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x108 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_aca47e6ff800e63baebbf20ce1032d2ca}{DATA\+\_\+\+BUF3}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x10C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_d_i_o___type_def_a4b83d4f279954f63a95554bbba30b7ad}{DATA\+\_\+\+BUF4}}
+\begin{DoxyCompactList}\small\item\em 0ffset\+: 0x110 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+SDIO Register Structure Definition 
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00046}{46}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_aafbc153c6ea06bf9daa641423ace9401}\label{struct_s_d_i_o___type_def_aafbc153c6ea06bf9daa641423ace9401}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  SDIO\+\_\+\+Type\+Def\+::@205}
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a8fc0f85871cd03d6f4f3866d549f00da}\label{struct_s_d_i_o___type_def_a8fc0f85871cd03d6f4f3866d549f00da}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!BUF\_CTL@{BUF\_CTL}}
+\index{BUF\_CTL@{BUF\_CTL}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{BUF\_CTL}{BUF\_CTL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+BUF\+\_\+\+CTL}
+
+
+
+0ffset\+: 0x80 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00079}{79}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a7551d6afb477ffefdddaf8b70a8b73d3}\label{struct_s_d_i_o___type_def_a7551d6afb477ffefdddaf8b70a8b73d3}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!CLR\_MMC\_INT@{CLR\_MMC\_INT}}
+\index{CLR\_MMC\_INT@{CLR\_MMC\_INT}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CLR\_MMC\_INT}{CLR\_MMC\_INT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+CLR\+\_\+\+MMC\+\_\+\+INT}
+
+
+
+SDIO chip select register, offset\+: 0x28 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00057}{57}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a573a56a24852ad37aa9e04fc92a950ec}\label{struct_s_d_i_o___type_def_a573a56a24852ad37aa9e04fc92a950ec}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!CMD\_BUF0@{CMD\_BUF0}}
+\index{CMD\_BUF0@{CMD\_BUF0}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CMD\_BUF0}{CMD\_BUF0}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+CMD\+\_\+\+BUF0}
+
+
+
+0ffset\+: 0x40 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00063}{63}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a0b2d2b692dd099a6291d4a8dd701c8e6}\label{struct_s_d_i_o___type_def_a0b2d2b692dd099a6291d4a8dd701c8e6}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!CMD\_BUF1@{CMD\_BUF1}}
+\index{CMD\_BUF1@{CMD\_BUF1}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CMD\_BUF1}{CMD\_BUF1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+CMD\+\_\+\+BUF1}
+
+
+
+0ffset\+: 0x44 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00064}{64}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a5c73e5041b85ed6d9c4b86204e979f9d}\label{struct_s_d_i_o___type_def_a5c73e5041b85ed6d9c4b86204e979f9d}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!CMD\_BUF10@{CMD\_BUF10}}
+\index{CMD\_BUF10@{CMD\_BUF10}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CMD\_BUF10}{CMD\_BUF10}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+CMD\+\_\+\+BUF10}
+
+
+
+0ffset\+: 0x68 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00073}{73}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_aa207241cd59cfdee63fb4b6a721cc438}\label{struct_s_d_i_o___type_def_aa207241cd59cfdee63fb4b6a721cc438}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!CMD\_BUF11@{CMD\_BUF11}}
+\index{CMD\_BUF11@{CMD\_BUF11}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CMD\_BUF11}{CMD\_BUF11}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+CMD\+\_\+\+BUF11}
+
+
+
+0ffset\+: 0x6C 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00074}{74}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_ae4d7311c9f6a75783d139907634dc40a}\label{struct_s_d_i_o___type_def_ae4d7311c9f6a75783d139907634dc40a}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!CMD\_BUF12@{CMD\_BUF12}}
+\index{CMD\_BUF12@{CMD\_BUF12}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CMD\_BUF12}{CMD\_BUF12}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+CMD\+\_\+\+BUF12}
+
+
+
+0ffset\+: 0x70 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00075}{75}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a32bff622f9970ca4c795e4907e3d75e2}\label{struct_s_d_i_o___type_def_a32bff622f9970ca4c795e4907e3d75e2}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!CMD\_BUF13@{CMD\_BUF13}}
+\index{CMD\_BUF13@{CMD\_BUF13}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CMD\_BUF13}{CMD\_BUF13}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+CMD\+\_\+\+BUF13}
+
+
+
+0ffset\+: 0x74 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00076}{76}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_adfc2f0d4dd6221470af492e193a9319d}\label{struct_s_d_i_o___type_def_adfc2f0d4dd6221470af492e193a9319d}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!CMD\_BUF14@{CMD\_BUF14}}
+\index{CMD\_BUF14@{CMD\_BUF14}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CMD\_BUF14}{CMD\_BUF14}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+CMD\+\_\+\+BUF14}
+
+
+
+0ffset\+: 0x78 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00077}{77}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a5bfe8cc3da8597a364636a8f3ce96508}\label{struct_s_d_i_o___type_def_a5bfe8cc3da8597a364636a8f3ce96508}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!CMD\_BUF15@{CMD\_BUF15}}
+\index{CMD\_BUF15@{CMD\_BUF15}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CMD\_BUF15}{CMD\_BUF15}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+CMD\+\_\+\+BUF15}
+
+
+
+0ffset\+: 0x7C 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00078}{78}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a81dadcdab23117b958bbbd272b63678b}\label{struct_s_d_i_o___type_def_a81dadcdab23117b958bbbd272b63678b}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!CMD\_BUF2@{CMD\_BUF2}}
+\index{CMD\_BUF2@{CMD\_BUF2}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CMD\_BUF2}{CMD\_BUF2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+CMD\+\_\+\+BUF2}
+
+
+
+0ffset\+: 0x48 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00065}{65}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a52066bc2276094c66d71afc88ff92e94}\label{struct_s_d_i_o___type_def_a52066bc2276094c66d71afc88ff92e94}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!CMD\_BUF3@{CMD\_BUF3}}
+\index{CMD\_BUF3@{CMD\_BUF3}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CMD\_BUF3}{CMD\_BUF3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+CMD\+\_\+\+BUF3}
+
+
+
+0ffset\+: 0x4C 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00066}{66}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a195b44ba8a25404940a786d95b28462b}\label{struct_s_d_i_o___type_def_a195b44ba8a25404940a786d95b28462b}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!CMD\_BUF4@{CMD\_BUF4}}
+\index{CMD\_BUF4@{CMD\_BUF4}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CMD\_BUF4}{CMD\_BUF4}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+CMD\+\_\+\+BUF4}
+
+
+
+0ffset\+: 0x50 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00067}{67}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_aa13d3f84c758342b959e88d754447efe}\label{struct_s_d_i_o___type_def_aa13d3f84c758342b959e88d754447efe}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!CMD\_BUF5@{CMD\_BUF5}}
+\index{CMD\_BUF5@{CMD\_BUF5}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CMD\_BUF5}{CMD\_BUF5}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+CMD\+\_\+\+BUF5}
+
+
+
+0ffset\+: 0x54 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00068}{68}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_ab982367ac9d218b551e56f3ed3e164a4}\label{struct_s_d_i_o___type_def_ab982367ac9d218b551e56f3ed3e164a4}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!CMD\_BUF6@{CMD\_BUF6}}
+\index{CMD\_BUF6@{CMD\_BUF6}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CMD\_BUF6}{CMD\_BUF6}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+CMD\+\_\+\+BUF6}
+
+
+
+0ffset\+: 0x58 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00069}{69}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a56995b9fd2714e050d6c69501c6a3bb7}\label{struct_s_d_i_o___type_def_a56995b9fd2714e050d6c69501c6a3bb7}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!CMD\_BUF7@{CMD\_BUF7}}
+\index{CMD\_BUF7@{CMD\_BUF7}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CMD\_BUF7}{CMD\_BUF7}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+CMD\+\_\+\+BUF7}
+
+
+
+0ffset\+: 0x5C 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00070}{70}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a9ecea6327ccde0b5ac78b2006b63ed6c}\label{struct_s_d_i_o___type_def_a9ecea6327ccde0b5ac78b2006b63ed6c}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!CMD\_BUF8@{CMD\_BUF8}}
+\index{CMD\_BUF8@{CMD\_BUF8}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CMD\_BUF8}{CMD\_BUF8}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+CMD\+\_\+\+BUF8}
+
+
+
+0ffset\+: 0x60 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00071}{71}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_aa48acdac9dafbc4c88412b76fbf02bff}\label{struct_s_d_i_o___type_def_aa48acdac9dafbc4c88412b76fbf02bff}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!CMD\_BUF9@{CMD\_BUF9}}
+\index{CMD\_BUF9@{CMD\_BUF9}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CMD\_BUF9}{CMD\_BUF9}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+CMD\+\_\+\+BUF9}
+
+
+
+0ffset\+: 0x64 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00072}{72}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a11cc29600d60d7af91eb9b34bdb4376d}\label{struct_s_d_i_o___type_def_a11cc29600d60d7af91eb9b34bdb4376d}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!CMD\_CRC@{CMD\_CRC}}
+\index{CMD\_CRC@{CMD\_CRC}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CMD\_CRC}{CMD\_CRC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+CMD\+\_\+\+CRC}
+
+
+
+SDIO interruput control register, offset\+: 0x14 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00052}{52}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a314595b3fc1e35217c8beb4105da7b14}\label{struct_s_d_i_o___type_def_a314595b3fc1e35217c8beb4105da7b14}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!DAT\_CRCH@{DAT\_CRCH}}
+\index{DAT\_CRCH@{DAT\_CRCH}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DAT\_CRCH}{DAT\_CRCH}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+DAT\+\_\+\+CRCH}
+
+
+
+SDIO common control register, offset\+: 0x1C 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00054}{54}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a5bb0d93210b8e6466ca729ec9c84d120}\label{struct_s_d_i_o___type_def_a5bb0d93210b8e6466ca729ec9c84d120}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!DAT\_CRCL@{DAT\_CRCL}}
+\index{DAT\_CRCL@{DAT\_CRCL}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DAT\_CRCL}{DAT\_CRCL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+DAT\+\_\+\+CRCL}
+
+
+
+SDIO global control register, offset\+: 0x18 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00053}{53}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a76bbb5f868a90a10c4da507c34601970}\label{struct_s_d_i_o___type_def_a76bbb5f868a90a10c4da507c34601970}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!DATA\_BUF0@{DATA\_BUF0}}
+\index{DATA\_BUF0@{DATA\_BUF0}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DATA\_BUF0}{DATA\_BUF0}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+DATA\+\_\+\+BUF0}
+
+
+
+0ffset\+: 0x100 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00083}{83}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a732d4a2cd3eb9fe5b1e917b811dd0312}\label{struct_s_d_i_o___type_def_a732d4a2cd3eb9fe5b1e917b811dd0312}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!DATA\_BUF1@{DATA\_BUF1}}
+\index{DATA\_BUF1@{DATA\_BUF1}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DATA\_BUF1}{DATA\_BUF1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+DATA\+\_\+\+BUF1}
+
+
+
+0ffset\+: 0x104 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00086}{86}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_ae69c17b7b2f6c5e9596fd317ec21a7d5}\label{struct_s_d_i_o___type_def_ae69c17b7b2f6c5e9596fd317ec21a7d5}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!DATA\_BUF2@{DATA\_BUF2}}
+\index{DATA\_BUF2@{DATA\_BUF2}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DATA\_BUF2}{DATA\_BUF2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+DATA\+\_\+\+BUF2}
+
+
+
+0ffset\+: 0x108 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00087}{87}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_aca47e6ff800e63baebbf20ce1032d2ca}\label{struct_s_d_i_o___type_def_aca47e6ff800e63baebbf20ce1032d2ca}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!DATA\_BUF3@{DATA\_BUF3}}
+\index{DATA\_BUF3@{DATA\_BUF3}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DATA\_BUF3}{DATA\_BUF3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+DATA\+\_\+\+BUF3}
+
+
+
+0ffset\+: 0x10C 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00088}{88}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a4b83d4f279954f63a95554bbba30b7ad}\label{struct_s_d_i_o___type_def_a4b83d4f279954f63a95554bbba30b7ad}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!DATA\_BUF4@{DATA\_BUF4}}
+\index{DATA\_BUF4@{DATA\_BUF4}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{DATA\_BUF4}{DATA\_BUF4}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+DATA\+\_\+\+BUF4}
+
+
+
+0ffset\+: 0x110 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00089}{89}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a55e866a817025f44a4da26b57a9a0539}\label{struct_s_d_i_o___type_def_a55e866a817025f44a4da26b57a9a0539}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!FIFO@{FIFO}}
+\index{FIFO@{FIFO}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{FIFO}{FIFO}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+FIFO}
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00084}{84}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a3048480b3ff527cc512c8b9c36b7ac5d}\label{struct_s_d_i_o___type_def_a3048480b3ff527cc512c8b9c36b7ac5d}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!MMC\_BLOCKCNT@{MMC\_BLOCKCNT}}
+\index{MMC\_BLOCKCNT@{MMC\_BLOCKCNT}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMC\_BLOCKCNT}{MMC\_BLOCKCNT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+MMC\+\_\+\+BLOCKCNT}
+
+
+
+0ffset\+: 0x38 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00061}{61}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_aad0654cf806bc0a3149c5be19f33c881}\label{struct_s_d_i_o___type_def_aad0654cf806bc0a3149c5be19f33c881}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!MMC\_BYTECNTL@{MMC\_BYTECNTL}}
+\index{MMC\_BYTECNTL@{MMC\_BYTECNTL}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMC\_BYTECNTL}{MMC\_BYTECNTL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+MMC\+\_\+\+BYTECNTL}
+
+
+
+SDIO current state register, offset\+: 0x08 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00049}{49}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a383dba48377601cd29846a9139417e48}\label{struct_s_d_i_o___type_def_a383dba48377601cd29846a9139417e48}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!MMC\_CARDSEL@{MMC\_CARDSEL}}
+\index{MMC\_CARDSEL@{MMC\_CARDSEL}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMC\_CARDSEL}{MMC\_CARDSEL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+MMC\+\_\+\+CARDSEL}
+
+
+
+SDIO extand control register, offset\+: 0x2C 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00058}{58}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_aec063890ebd2a51817310a18c9a5e402}\label{struct_s_d_i_o___type_def_aec063890ebd2a51817310a18c9a5e402}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!MMC\_CRCCTL@{MMC\_CRCCTL}}
+\index{MMC\_CRCCTL@{MMC\_CRCCTL}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMC\_CRCCTL}{MMC\_CRCCTL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+MMC\+\_\+\+CRCCTL}
+
+
+
+SDIO interruput enable register, offset\+: 0x10 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00051}{51}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a459eee98b30895c9fb77b2cb5e562238}\label{struct_s_d_i_o___type_def_a459eee98b30895c9fb77b2cb5e562238}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!MMC\_CTRL@{MMC\_CTRL}}
+\index{MMC\_CTRL@{MMC\_CTRL}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMC\_CTRL}{MMC\_CTRL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+MMC\+\_\+\+CTRL}
+
+
+
+SDIO transmit data register, offset\+: 0x00 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00047}{47}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a1bfbc93dff6209e536094a6880a5fdc3}\label{struct_s_d_i_o___type_def_a1bfbc93dff6209e536094a6880a5fdc3}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!MMC\_INT\_MASK@{MMC\_INT\_MASK}}
+\index{MMC\_INT\_MASK@{MMC\_INT\_MASK}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMC\_INT\_MASK}{MMC\_INT\_MASK}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+MMC\+\_\+\+INT\+\_\+\+MASK}
+
+
+
+SDIO receive data number register, offset\+: 0x24 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00056}{56}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_ac88ee766a0d8c83fbfa5db5ee8376982}\label{struct_s_d_i_o___type_def_ac88ee766a0d8c83fbfa5db5ee8376982}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!MMC\_IO@{MMC\_IO}}
+\index{MMC\_IO@{MMC\_IO}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMC\_IO}{MMC\_IO}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+MMC\+\_\+\+IO}
+
+
+
+SDIO receive data register, offset\+: 0x04 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00048}{48}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_afb0c1066792a0ecfcbb98d2be5a01d37}\label{struct_s_d_i_o___type_def_afb0c1066792a0ecfcbb98d2be5a01d37}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!MMC\_IO\_MBCTL@{MMC\_IO\_MBCTL}}
+\index{MMC\_IO\_MBCTL@{MMC\_IO\_MBCTL}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMC\_IO\_MBCTL}{MMC\_IO\_MBCTL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+MMC\+\_\+\+IO\+\_\+\+MBCTL}
+
+
+
+0ffset\+: 0x34 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00060}{60}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a18d645abf4cb74d70d74c8a8f2ae080c}\label{struct_s_d_i_o___type_def_a18d645abf4cb74d70d74c8a8f2ae080c}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!MMC\_PORT@{MMC\_PORT}}
+\index{MMC\_PORT@{MMC\_PORT}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMC\_PORT}{MMC\_PORT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+MMC\+\_\+\+PORT}
+
+
+
+SDIO baud rate control register, offset\+: 0x20 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00055}{55}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_aaea24023791e2d74f20dd71632dbb007}\label{struct_s_d_i_o___type_def_aaea24023791e2d74f20dd71632dbb007}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!MMC\_SIG@{MMC\_SIG}}
+\index{MMC\_SIG@{MMC\_SIG}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMC\_SIG}{MMC\_SIG}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+MMC\+\_\+\+SIG}
+
+
+
+0ffset\+: 0x30 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00059}{59}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a4f7e3c04fa5d5f940e8e86f07d719dbf}\label{struct_s_d_i_o___type_def_a4f7e3c04fa5d5f940e8e86f07d719dbf}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!MMC\_TIMEOUTCNT@{MMC\_TIMEOUTCNT}}
+\index{MMC\_TIMEOUTCNT@{MMC\_TIMEOUTCNT}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMC\_TIMEOUTCNT}{MMC\_TIMEOUTCNT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+MMC\+\_\+\+TIMEOUTCNT}
+
+
+
+0ffset\+: 0x3C 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00062}{62}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a798f0405f1fff784e05ab58a0f78f28b}\label{struct_s_d_i_o___type_def_a798f0405f1fff784e05ab58a0f78f28b}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!MMC\_TR\_BLOCKCNT@{MMC\_TR\_BLOCKCNT}}
+\index{MMC\_TR\_BLOCKCNT@{MMC\_TR\_BLOCKCNT}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{MMC\_TR\_BLOCKCNT}{MMC\_TR\_BLOCKCNT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+MMC\+\_\+\+TR\+\_\+\+BLOCKCNT}
+
+
+
+SDIO interruput state register, offset\+: 0x0C 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00050}{50}} 行定义.
+
+\mbox{\Hypertarget{struct_s_d_i_o___type_def_a7de153652db3713913df3bc79e2dfcea}\label{struct_s_d_i_o___type_def_a7de153652db3713913df3bc79e2dfcea}} 
+\index{SDIO\_TypeDef@{SDIO\_TypeDef}!RESERVED@{RESERVED}}
+\index{RESERVED@{RESERVED}!SDIO\_TypeDef@{SDIO\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RESERVED}{RESERVED}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SDIO\+\_\+\+Type\+Def\+::\+RESERVED\mbox{[}31\mbox{]}}
+
+
+
+0ffset\+: 0x84 
+
+
+
+在文件 \mbox{\hyperlink{reg__sdio_8h_source}{reg\+\_\+sdio.\+h}} 第 \mbox{\hyperlink{reg__sdio_8h_source_l00081}{81}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/\mbox{\hyperlink{reg__sdio_8h}{reg\+\_\+sdio.\+h}}\end{DoxyCompactItemize}

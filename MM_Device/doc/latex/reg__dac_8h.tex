@@ -1,0 +1,1662 @@
+\hypertarget{reg__dac_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/reg\+\_\+dac.h 文件参考}
+\label{reg__dac_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_dac.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_dac.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_d_a_c___type_def}{DAC\+\_\+\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em Digital to analog converter register \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{reg__dac_8h_ad18d0b914c7f68cecbee1a2d23a67d38}{DAC\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x7400)
+\begin{DoxyCompactList}\small\item\em DAC Base Address Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a4aa2a4ab86ce00c23035e5cee2e7fc7e}{DAC}}~((\mbox{\hyperlink{struct_d_a_c___type_def}{DAC\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dac_8h_ad18d0b914c7f68cecbee1a2d23a67d38}{DAC\+\_\+\+BASE}})
+\begin{DoxyCompactList}\small\item\em DAC type pointer Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a7663eb8440e12383fc88241acbfc99cf}{DAC\+\_\+\+CR\+\_\+\+EN1\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+CR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_abd8cedbb3dda03d56ac0ba92d2d9cefd}{DAC\+\_\+\+CR\+\_\+\+EN1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7663eb8440e12383fc88241acbfc99cf}{DAC\+\_\+\+CR\+\_\+\+EN1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel1 enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a9f43af44fba93c50bf4765608ec6d902}{DAC\+\_\+\+CR\+\_\+\+BOFF1\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a0b1e2b83ae1ab889cb1e34a99746c9d8}{DAC\+\_\+\+CR\+\_\+\+BOFF1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a9f43af44fba93c50bf4765608ec6d902}{DAC\+\_\+\+CR\+\_\+\+BOFF1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel1 output buffer disable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a6ef4ab719505604c7a41e31c27fd05dd}{DAC\+\_\+\+CR\+\_\+\+TEN1\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a998aa4fd791ea2f4626df6ddc8fc7109}{DAC\+\_\+\+CR\+\_\+\+TEN1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a6ef4ab719505604c7a41e31c27fd05dd}{DAC\+\_\+\+CR\+\_\+\+TEN1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel1 Trigger enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_adc5baf43a193c631ad3c05eb24b97a7b}{DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__dac_8h_af951c1a57a1a19e356df57d908f09c6c}{DAC\+\_\+\+CR\+\_\+\+TSEL1}}~(0x07U $<$$<$ \mbox{\hyperlink{reg__dac_8h_adc5baf43a193c631ad3c05eb24b97a7b}{DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em TSEL1\mbox{[}2\+:0\mbox{]} (DAC channel1 Trigger selection) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a82cd645673b77b73d1ddc0e8d0817e5b}{DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+TIM1\+\_\+\+TRIG}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__dac_8h_adc5baf43a193c631ad3c05eb24b97a7b}{DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em TIM1\+\_\+\+TRIG trigger \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a983ee70d5c8c0e67dff839fd5933761f}{DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+TIM3\+\_\+\+TRIG}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_adc5baf43a193c631ad3c05eb24b97a7b}{DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em TIM3\+\_\+\+TRIG trigger \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_adbef9920d56c222df69bb5f30fddd4b4}{DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+TIM2\+\_\+\+TRIG}}~(0x04U $<$$<$ \mbox{\hyperlink{reg__dac_8h_adc5baf43a193c631ad3c05eb24b97a7b}{DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em TIM2\+\_\+\+TRIG trigger \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_ad5c94b86c37eb2a3447fd32e805f2e87}{DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+TIM4\+\_\+\+TRIG}}~(0x05U $<$$<$ \mbox{\hyperlink{reg__dac_8h_adc5baf43a193c631ad3c05eb24b97a7b}{DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em TIM4\+\_\+\+TRIG trigger \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a44a45d4429ff3d518f52a3bb01af4595}{DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+EXTI9}}~(0x06U $<$$<$ \mbox{\hyperlink{reg__dac_8h_adc5baf43a193c631ad3c05eb24b97a7b}{DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em External interrupt line 9 trigger \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a7ebdb78dfe892329e53e7f054d2240af}{DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+SOFTWARE}}~(0x07U $<$$<$ \mbox{\hyperlink{reg__dac_8h_adc5baf43a193c631ad3c05eb24b97a7b}{DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Software trigger \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a16a0202d6e3295400dc21b2088d333e1}{DAC\+\_\+\+CR\+\_\+\+WAVE1\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a90491f31219d07175629eecdcdc9271e}{DAC\+\_\+\+CR\+\_\+\+WAVE1}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a16a0202d6e3295400dc21b2088d333e1}{DAC\+\_\+\+CR\+\_\+\+WAVE1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em WAVE1\mbox{[}1\+:0\mbox{]} (DAC channel1 noise/triangle wave generation enable) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a7cd586a125f0f7ffb5784bfb5228e9cb}{DAC\+\_\+\+CR\+\_\+\+WAVE1\+\_\+\+NONE}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a16a0202d6e3295400dc21b2088d333e1}{DAC\+\_\+\+CR\+\_\+\+WAVE1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Turn off waveform generation \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a0bdbd7bb6004048e7eaa6c0d1ec21608}{DAC\+\_\+\+CR\+\_\+\+WAVE1\+\_\+\+NOISE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a16a0202d6e3295400dc21b2088d333e1}{DAC\+\_\+\+CR\+\_\+\+WAVE1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Noise waveform generation \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a014195407a7aecbb236be4708aaa70f2}{DAC\+\_\+\+CR\+\_\+\+WAVE1\+\_\+\+TRIANGLE}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a16a0202d6e3295400dc21b2088d333e1}{DAC\+\_\+\+CR\+\_\+\+WAVE1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave generation \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a3bcf611b2f0b975513325895bf16e085}{DAC\+\_\+\+CR\+\_\+\+MAMP1}}~(0x0\+FU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em MAMP1\mbox{[}3\+:0\mbox{]} (DAC channel1 Mask/\+Amplitude selector) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a6cc15817842cb7992d449c448684f68d}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+1}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_afdc83b4feb742c632ba66f55d102432b}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+3}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 3 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_ac2f9f59b831361a8c2ac5de8bffbe3e4}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+7}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 7 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a8e320c9606c7a570fddd9681b6ed997c}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+15}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 15 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a7eed009c4b12947d955eff8295402bfa}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+31}}~(0x04U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 31 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a05c15d4e386634c82369d71043b7918e}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+63}}~(0x05U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 63 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a1d5571b796535d153cf5b482eca4ae25}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+127}}~(0x06U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 127 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_acdb2bb69dd8285bcd1c52f2cd0cb9e2d}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+255}}~(0x07U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 255 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a48cf58532c20342b777faeec4638a8e2}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+511}}~(0x08U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 511 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a1fb4a60a08e60c92b4f772c0d48be081}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+1023}}~(0x09U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 1023 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a980567f3a4c7502c95b69b5ffabe44ed}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+2047}}~(0x0\+AU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 2047 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a4402c4b16acfdf0e1708870123af4926}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+4095}}~(0x0\+BU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 4095 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_ac1caf9621895f2a99c4b33a0908247b6}{DAC\+\_\+\+CR\+\_\+\+DMAEN1\+\_\+\+Pos}}~(12)
+\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a995c19d8c8de9ee09057ec6151154e17}{DAC\+\_\+\+CR\+\_\+\+DMAEN1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_ac1caf9621895f2a99c4b33a0908247b6}{DAC\+\_\+\+CR\+\_\+\+DMAEN1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel1 DMA enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_af2dbea8c55239069a24139f398785af4}{DAC\+\_\+\+CR\+\_\+\+EN2\+\_\+\+Pos}}~(16)
+\item 
+\#define \mbox{\hyperlink{reg__dac_8h_aa65db2420e02fc6813842f57134d898f}{DAC\+\_\+\+CR\+\_\+\+EN2}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_af2dbea8c55239069a24139f398785af4}{DAC\+\_\+\+CR\+\_\+\+EN2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel2 enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_abb3eb9eaa48220ba7cac6204c4637b75}{DAC\+\_\+\+CR\+\_\+\+BOFF2\+\_\+\+Pos}}~(17)
+\item 
+\#define \mbox{\hyperlink{reg__dac_8h_add6f660a5f15262beca06b9098a559e9}{DAC\+\_\+\+CR\+\_\+\+BOFF2}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_abb3eb9eaa48220ba7cac6204c4637b75}{DAC\+\_\+\+CR\+\_\+\+BOFF2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel2 output buffer disable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_aa2ef8fa2150330a16a2b19f17caa051e}{DAC\+\_\+\+CR\+\_\+\+TEN2\+\_\+\+Pos}}~(18)
+\item 
+\#define \mbox{\hyperlink{reg__dac_8h_ab8fc527f6ddb787123da09d2085b772f}{DAC\+\_\+\+CR\+\_\+\+TEN2}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_aa2ef8fa2150330a16a2b19f17caa051e}{DAC\+\_\+\+CR\+\_\+\+TEN2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel2 Trigger enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a80a933188591c4fbcad260c256105277}{DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+Pos}}~(19)
+\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a73b4d0ccff78f7c3862903e7b0e66302}{DAC\+\_\+\+CR\+\_\+\+TSEL2}}~(0x07U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a80a933188591c4fbcad260c256105277}{DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em TSEL1\mbox{[}2\+:0\mbox{]} (DAC channel1 Trigger selection) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a2d12f6284b51f734669fd8829fc2a82f}{DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+TIM1\+\_\+\+TRIG}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a80a933188591c4fbcad260c256105277}{DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em TIM1\+\_\+\+TRIG trigger \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a610faf2ea53f20089fa743deed51fbb9}{DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+TIM3\+\_\+\+TRIG}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a80a933188591c4fbcad260c256105277}{DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em TIM3\+\_\+\+TRIG trigger \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_aadab668d44e27de079ec69a2d05a5a27}{DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+TIM2\+\_\+\+TRIG}}~(0x04U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a80a933188591c4fbcad260c256105277}{DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em TIM2\+\_\+\+TRIG trigger \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a8486a5c30bef4d0d4bc79b72da59a1fb}{DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+TIM4\+\_\+\+TRIG}}~(0x05U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a80a933188591c4fbcad260c256105277}{DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em TIM4\+\_\+\+TRIG trigger \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a971ea99a077cc5197d2231c93baf1f63}{DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+EXTI9}}~(0x06U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a80a933188591c4fbcad260c256105277}{DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em External interrupt line 9 trigger \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_ad183e0fb500d45c7c80b9b853ee51400}{DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+SOFTWARE}}~(0x07U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a80a933188591c4fbcad260c256105277}{DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Software trigger \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a7795c9de47dc6747045ee7e2e6fb8ba9}{DAC\+\_\+\+CR\+\_\+\+WAVE2\+\_\+\+Pos}}~(22)
+\item 
+\#define \mbox{\hyperlink{reg__dac_8h_acf24e48cf288db4a4643057dd09e3a7b}{DAC\+\_\+\+CR\+\_\+\+WAVE2}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7795c9de47dc6747045ee7e2e6fb8ba9}{DAC\+\_\+\+CR\+\_\+\+WAVE2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em WAVE1\mbox{[}1\+:0\mbox{]} (DAC channel1 noise/triangle wave generation enable) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a4a5cb7bb2c8902ca022ef2aa0a85bea6}{DAC\+\_\+\+CR\+\_\+\+WAVE2\+\_\+\+NONE}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7795c9de47dc6747045ee7e2e6fb8ba9}{DAC\+\_\+\+CR\+\_\+\+WAVE2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Turn off waveform generation \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_adece7a1a3d6d3b318e1ba0693fffc397}{DAC\+\_\+\+CR\+\_\+\+WAVE2\+\_\+\+NOISE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7795c9de47dc6747045ee7e2e6fb8ba9}{DAC\+\_\+\+CR\+\_\+\+WAVE2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Noise waveform generation \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a276e7bfcefb8555803e92b07e60746a0}{DAC\+\_\+\+CR\+\_\+\+WAVE2\+\_\+\+TRIANGLE}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7795c9de47dc6747045ee7e2e6fb8ba9}{DAC\+\_\+\+CR\+\_\+\+WAVE2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave generation \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}}~(24)
+\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a7cf03fe2359cb0f11c33f793c2e92bdd}{DAC\+\_\+\+CR\+\_\+\+MAMP2}}~(0x0\+FU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em MAMP1\mbox{[}3\+:0\mbox{]} (DAC channel1 Mask/\+Amplitude selector) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a860032e8196838cd36a655c1749139d6}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+1}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_aa0fe77a2029873111cbe723a5cba9c57}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+3}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 3 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_ae506d8258724df4599dadc1943db136f}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+7}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 7 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a5d418bc60fa4fc6376e981bb25e19053}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+15}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 15 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_ab4478cca0c71f0617eaa171d9f29f613}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+31}}~(0x04U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 31 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_ada0cdfe2c2eb590c4a59aaa8b43aae7e}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+63}}~(0x05U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 63 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a2c681aa98eacb0d6004f39245c659051}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+127}}~(0x06U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 127 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a1875f9c5918c6384d4342bfb8db47148}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+255}}~(0x07U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 255 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a8e7a8446e12e6f3a99270b8d6001a355}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+511}}~(0x08U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 511 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a3d14db05c0b84a38a08ca5975c770631}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+1023}}~(0x09U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 1023 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a2de33684b4b5fccfa88b3d9b6a7c3d35}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+2047}}~(0x0\+AU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 2047 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_ab6aaffaef57d56c451d08a76594bc8ac}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+4095}}~(0x0\+BU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Triangle wave amplitude equal to 4095 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a264e3d328584463c5164a7cca726cabb}{DAC\+\_\+\+CR\+\_\+\+DMAEN2\+\_\+\+Pos}}~(28)
+\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a6f905c2ac89f976df6c4beffdde58b53}{DAC\+\_\+\+CR\+\_\+\+DMAEN2}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a264e3d328584463c5164a7cca726cabb}{DAC\+\_\+\+CR\+\_\+\+DMAEN2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel2 DMA enabled \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a32d8b5dafe7a5f4963e5f12656e48ee1}{DAC\+\_\+\+SWTRIGR\+\_\+\+SWTRIG1\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+SWTRIGR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a970ef02dffaceb35ff1dd7aceb67acdd}{DAC\+\_\+\+SWTRIGR\+\_\+\+SWTRIG1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a32d8b5dafe7a5f4963e5f12656e48ee1}{DAC\+\_\+\+SWTRIGR\+\_\+\+SWTRIG1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel1 software trigger \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_adb85dac71ddd76ce877fad49a47634b5}{DAC\+\_\+\+SWTRIGR\+\_\+\+SWTRIG2\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__dac_8h_af0e53585b505d21f5c457476bd5a18f8}{DAC\+\_\+\+SWTRIGR\+\_\+\+SWTRIG2}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_adb85dac71ddd76ce877fad49a47634b5}{DAC\+\_\+\+SWTRIGR\+\_\+\+SWTRIG2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel2 software trigger \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a1444c7ceda390c29b964ed3d884c0817}{DAC\+\_\+\+SWTRIGR\+\_\+\+DACPRE\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__dac_8h_ac5538a4cedf0045e00b22f4fe2344321}{DAC\+\_\+\+SWTRIGR\+\_\+\+DACPRE}}~(0x7\+FU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a1444c7ceda390c29b964ed3d884c0817}{DAC\+\_\+\+SWTRIGR\+\_\+\+DACPRE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC prescale \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_ab3250ec13530e0e363f0ab92c149774f}{DAC\+\_\+\+DHR12\+R1\+\_\+\+DACC1\+DHR\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+DHR12\+R1 Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a5295b5cb7f5d71ed2e8a310deb00013d}{DAC\+\_\+\+DHR12\+R1\+\_\+\+DACC1\+DHR}}~(0x\+FFFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_ab3250ec13530e0e363f0ab92c149774f}{DAC\+\_\+\+DHR12\+R1\+\_\+\+DACC1\+DHR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel1 12-\/bit Right align data \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_ac1dcdc73fc338b3548cddcf84fb0c951}{DAC\+\_\+\+DHR12\+L1\+\_\+\+DACC1\+DHR\+\_\+\+Pos}}~(4)
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+DHR12\+L1 Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a0d34667f8f4b753689c8c936c28471c5}{DAC\+\_\+\+DHR12\+L1\+\_\+\+DACC1\+DHR}}~(0x\+FFFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_ac1dcdc73fc338b3548cddcf84fb0c951}{DAC\+\_\+\+DHR12\+L1\+\_\+\+DACC1\+DHR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel1 12-\/bit Left align data \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a6b874c02d121c755a1d4523f2e39134e}{DAC\+\_\+\+DHR8\+R1\+\_\+\+DACC1\+DHR\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+DHR8\+R1 Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_ae1fc9f022fe4a08f67c51646177b26cb}{DAC\+\_\+\+DHR8\+R1\+\_\+\+DACC1\+DHR}}~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a6b874c02d121c755a1d4523f2e39134e}{DAC\+\_\+\+DHR8\+R1\+\_\+\+DACC1\+DHR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel1 8-\/bit Right align data \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_add13752ec5bc912023c608426e47908e}{DAC\+\_\+\+DHR12\+R2\+\_\+\+DACC2\+DHR\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+DHR12\+R2 Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a7506e369b37d55826042b540b10e44c7}{DAC\+\_\+\+DHR12\+R2\+\_\+\+DACC2\+DHR}}~(0x\+FFFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_add13752ec5bc912023c608426e47908e}{DAC\+\_\+\+DHR12\+R2\+\_\+\+DACC2\+DHR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel2 12-\/bit Right align data \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a8fe559f6278c4abd3b5db6277e82925b}{DAC\+\_\+\+DHR12\+L2\+\_\+\+DACC2\+DHR\+\_\+\+Pos}}~(4)
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+DHR12\+L2 Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a0f66bd794202221e1a55547673b7abab}{DAC\+\_\+\+DHR12\+L2\+\_\+\+DACC2\+DHR}}~(0x\+FFFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a8fe559f6278c4abd3b5db6277e82925b}{DAC\+\_\+\+DHR12\+L2\+\_\+\+DACC2\+DHR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel2 12-\/bit Left align data \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a4a8082de99f7eef453237a409763718b}{DAC\+\_\+\+DHR8\+R2\+\_\+\+DACC2\+DHR\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+DHR8\+R2 Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a7da94dc053e6637efb9ccb57b7ae481c}{DAC\+\_\+\+DHR8\+R2\+\_\+\+DACC2\+DHR}}~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a4a8082de99f7eef453237a409763718b}{DAC\+\_\+\+DHR8\+R2\+\_\+\+DACC2\+DHR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel2 8-\/bit Right align data \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a6d1a7b56cdc34694e1aa032be202e79d}{DAC\+\_\+\+DHR12\+RD\+\_\+\+DACC1\+DHR\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+DHR12\+RD Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_aca45719f3d365c9495bdcf6364ae59f8}{DAC\+\_\+\+DHR12\+RD\+\_\+\+DACC1\+DHR}}~(0x\+FFFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a6d1a7b56cdc34694e1aa032be202e79d}{DAC\+\_\+\+DHR12\+RD\+\_\+\+DACC1\+DHR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel1 12-\/bit Right align data \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_ae522220c8b02ab4bcf82f122a45997d3}{DAC\+\_\+\+DHR12\+RD\+\_\+\+DACC2\+DHR\+\_\+\+Pos}}~(16)
+\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a3edd68db1697af93027e05f6b764c540}{DAC\+\_\+\+DHR12\+RD\+\_\+\+DACC2\+DHR}}~(0x\+FFFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_ae522220c8b02ab4bcf82f122a45997d3}{DAC\+\_\+\+DHR12\+RD\+\_\+\+DACC2\+DHR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel2 12-\/bit Right align data \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_aa367fe7ed3f9b2d5114dcc46ccab7468}{DAC\+\_\+\+DHR12\+LD\+\_\+\+DACC1\+DHR\+\_\+\+Pos}}~(4)
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+DHR12\+LD Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a203db656bfef6fedee17b99fb77b1bdd}{DAC\+\_\+\+DHR12\+LD\+\_\+\+DACC1\+DHR}}~(0x\+FFFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_aa367fe7ed3f9b2d5114dcc46ccab7468}{DAC\+\_\+\+DHR12\+LD\+\_\+\+DACC1\+DHR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel1 12-\/bit Right align data \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_ade1db665f01f9d179045057d0e857da0}{DAC\+\_\+\+DHR12\+LD\+\_\+\+DACC2\+DHR\+\_\+\+Pos}}~(20)
+\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a8421d613b182aab8d6c58592bcda6c17}{DAC\+\_\+\+DHR12\+LD\+\_\+\+DACC2\+DHR}}~(0x\+FFFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_ade1db665f01f9d179045057d0e857da0}{DAC\+\_\+\+DHR12\+LD\+\_\+\+DACC2\+DHR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel2 12-\/bit Right align data \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_ac004fb7fdc93225fb835b27e39229a57}{DAC\+\_\+\+DHR8\+RD\+\_\+\+DACC1\+DHR\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+DHR8\+RD Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a9aee01ad181fa5b541864ed62907d70d}{DAC\+\_\+\+DHR8\+RD\+\_\+\+DACC1\+DHR}}~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_ac004fb7fdc93225fb835b27e39229a57}{DAC\+\_\+\+DHR8\+RD\+\_\+\+DACC1\+DHR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel1 8-\/bit Right align data \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_abf849d0278349997f891d987def91224}{DAC\+\_\+\+DHR8\+RD\+\_\+\+DACC2\+DHR\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__dac_8h_ae31631eaac76ebecb059918c351ef3c9}{DAC\+\_\+\+DHR8\+RD\+\_\+\+DACC2\+DHR}}~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_abf849d0278349997f891d987def91224}{DAC\+\_\+\+DHR8\+RD\+\_\+\+DACC2\+DHR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel2 8-\/bit Right align data \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_aacef98a0af264fa6b23a187e74d7c82d}{DAC\+\_\+\+DOR1\+\_\+\+DACC1\+DOR\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+DOR1 Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a5b4192938e039dc25a7df8fcc5f3932a}{DAC\+\_\+\+DOR1\+\_\+\+DACC1\+DOR}}~(0x\+FFFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_aacef98a0af264fa6b23a187e74d7c82d}{DAC\+\_\+\+DOR1\+\_\+\+DACC1\+DOR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel1 data output \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_a17aa70d42a524b2dd911326fa65630f1}{DAC\+\_\+\+DOR2\+\_\+\+DACC2\+DOR\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+DOR2 Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dac_8h_acaaa39c1e82279918918b072fd56db04}{DAC\+\_\+\+DOR2\+\_\+\+DACC2\+DOR}}~(0x\+FFFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a17aa70d42a524b2dd911326fa65630f1}{DAC\+\_\+\+DOR2\+\_\+\+DACC2\+DOR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DAC channel2 data output \#endif \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{reg__dac_8h_a4aa2a4ab86ce00c23035e5cee2e7fc7e}\label{reg__dac_8h_a4aa2a4ab86ce00c23035e5cee2e7fc7e}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC@{DAC}}
+\index{DAC@{DAC}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC}{DAC}}
+{\footnotesize\ttfamily \#define DAC~((\mbox{\hyperlink{struct_d_a_c___type_def}{DAC\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dac_8h_ad18d0b914c7f68cecbee1a2d23a67d38}{DAC\+\_\+\+BASE}})}
+
+
+
+DAC type pointer Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00075}{75}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_ad18d0b914c7f68cecbee1a2d23a67d38}\label{reg__dac_8h_ad18d0b914c7f68cecbee1a2d23a67d38}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_BASE@{DAC\_BASE}}
+\index{DAC\_BASE@{DAC\_BASE}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_BASE}{DAC\_BASE}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x7400)}
+
+
+
+DAC Base Address Definition 
+
+Base Address\+: 0x40007400 
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00047}{47}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a0b1e2b83ae1ab889cb1e34a99746c9d8}\label{reg__dac_8h_a0b1e2b83ae1ab889cb1e34a99746c9d8}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_BOFF1@{DAC\_CR\_BOFF1}}
+\index{DAC\_CR\_BOFF1@{DAC\_CR\_BOFF1}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_BOFF1}{DAC\_CR\_BOFF1}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+BOFF1~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a9f43af44fba93c50bf4765608ec6d902}{DAC\+\_\+\+CR\+\_\+\+BOFF1\+\_\+\+Pos}})}
+
+
+
+DAC channel1 output buffer disable 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00085}{85}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a9f43af44fba93c50bf4765608ec6d902}\label{reg__dac_8h_a9f43af44fba93c50bf4765608ec6d902}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_BOFF1\_Pos@{DAC\_CR\_BOFF1\_Pos}}
+\index{DAC\_CR\_BOFF1\_Pos@{DAC\_CR\_BOFF1\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_BOFF1\_Pos}{DAC\_CR\_BOFF1\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+BOFF1\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00084}{84}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_add6f660a5f15262beca06b9098a559e9}\label{reg__dac_8h_add6f660a5f15262beca06b9098a559e9}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_BOFF2@{DAC\_CR\_BOFF2}}
+\index{DAC\_CR\_BOFF2@{DAC\_CR\_BOFF2}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_BOFF2}{DAC\_CR\_BOFF2}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+BOFF2~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_abb3eb9eaa48220ba7cac6204c4637b75}{DAC\+\_\+\+CR\+\_\+\+BOFF2\+\_\+\+Pos}})}
+
+
+
+DAC channel2 output buffer disable 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00120}{120}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_abb3eb9eaa48220ba7cac6204c4637b75}\label{reg__dac_8h_abb3eb9eaa48220ba7cac6204c4637b75}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_BOFF2\_Pos@{DAC\_CR\_BOFF2\_Pos}}
+\index{DAC\_CR\_BOFF2\_Pos@{DAC\_CR\_BOFF2\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_BOFF2\_Pos}{DAC\_CR\_BOFF2\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+BOFF2\+\_\+\+Pos~(17)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00119}{119}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a995c19d8c8de9ee09057ec6151154e17}\label{reg__dac_8h_a995c19d8c8de9ee09057ec6151154e17}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_DMAEN1@{DAC\_CR\_DMAEN1}}
+\index{DAC\_CR\_DMAEN1@{DAC\_CR\_DMAEN1}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_DMAEN1}{DAC\_CR\_DMAEN1}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+DMAEN1~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_ac1caf9621895f2a99c4b33a0908247b6}{DAC\+\_\+\+CR\+\_\+\+DMAEN1\+\_\+\+Pos}})}
+
+
+
+DAC channel1 DMA enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00116}{116}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_ac1caf9621895f2a99c4b33a0908247b6}\label{reg__dac_8h_ac1caf9621895f2a99c4b33a0908247b6}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_DMAEN1\_Pos@{DAC\_CR\_DMAEN1\_Pos}}
+\index{DAC\_CR\_DMAEN1\_Pos@{DAC\_CR\_DMAEN1\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_DMAEN1\_Pos}{DAC\_CR\_DMAEN1\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+DMAEN1\+\_\+\+Pos~(12)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00115}{115}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a6f905c2ac89f976df6c4beffdde58b53}\label{reg__dac_8h_a6f905c2ac89f976df6c4beffdde58b53}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_DMAEN2@{DAC\_CR\_DMAEN2}}
+\index{DAC\_CR\_DMAEN2@{DAC\_CR\_DMAEN2}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_DMAEN2}{DAC\_CR\_DMAEN2}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+DMAEN2~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a264e3d328584463c5164a7cca726cabb}{DAC\+\_\+\+CR\+\_\+\+DMAEN2\+\_\+\+Pos}})}
+
+
+
+DAC channel2 DMA enabled 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00151}{151}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a264e3d328584463c5164a7cca726cabb}\label{reg__dac_8h_a264e3d328584463c5164a7cca726cabb}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_DMAEN2\_Pos@{DAC\_CR\_DMAEN2\_Pos}}
+\index{DAC\_CR\_DMAEN2\_Pos@{DAC\_CR\_DMAEN2\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_DMAEN2\_Pos}{DAC\_CR\_DMAEN2\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+DMAEN2\+\_\+\+Pos~(28)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00150}{150}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_abd8cedbb3dda03d56ac0ba92d2d9cefd}\label{reg__dac_8h_abd8cedbb3dda03d56ac0ba92d2d9cefd}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_EN1@{DAC\_CR\_EN1}}
+\index{DAC\_CR\_EN1@{DAC\_CR\_EN1}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_EN1}{DAC\_CR\_EN1}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+EN1~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7663eb8440e12383fc88241acbfc99cf}{DAC\+\_\+\+CR\+\_\+\+EN1\+\_\+\+Pos}})}
+
+
+
+DAC channel1 enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00083}{83}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a7663eb8440e12383fc88241acbfc99cf}\label{reg__dac_8h_a7663eb8440e12383fc88241acbfc99cf}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_EN1\_Pos@{DAC\_CR\_EN1\_Pos}}
+\index{DAC\_CR\_EN1\_Pos@{DAC\_CR\_EN1\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_EN1\_Pos}{DAC\_CR\_EN1\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+EN1\+\_\+\+Pos~(0)}
+
+
+
+DAC\+\_\+\+CR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00082}{82}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_aa65db2420e02fc6813842f57134d898f}\label{reg__dac_8h_aa65db2420e02fc6813842f57134d898f}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_EN2@{DAC\_CR\_EN2}}
+\index{DAC\_CR\_EN2@{DAC\_CR\_EN2}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_EN2}{DAC\_CR\_EN2}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+EN2~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_af2dbea8c55239069a24139f398785af4}{DAC\+\_\+\+CR\+\_\+\+EN2\+\_\+\+Pos}})}
+
+
+
+DAC channel2 enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00118}{118}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_af2dbea8c55239069a24139f398785af4}\label{reg__dac_8h_af2dbea8c55239069a24139f398785af4}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_EN2\_Pos@{DAC\_CR\_EN2\_Pos}}
+\index{DAC\_CR\_EN2\_Pos@{DAC\_CR\_EN2\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_EN2\_Pos}{DAC\_CR\_EN2\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+EN2\+\_\+\+Pos~(16)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00117}{117}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a3bcf611b2f0b975513325895bf16e085}\label{reg__dac_8h_a3bcf611b2f0b975513325895bf16e085}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP1@{DAC\_CR\_MAMP1}}
+\index{DAC\_CR\_MAMP1@{DAC\_CR\_MAMP1}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP1}{DAC\_CR\_MAMP1}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP1~(0x0\+FU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})}
+
+
+
+MAMP1\mbox{[}3\+:0\mbox{]} (DAC channel1 Mask/\+Amplitude selector) 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00102}{102}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a6cc15817842cb7992d449c448684f68d}\label{reg__dac_8h_a6cc15817842cb7992d449c448684f68d}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP1\_1@{DAC\_CR\_MAMP1\_1}}
+\index{DAC\_CR\_MAMP1\_1@{DAC\_CR\_MAMP1\_1}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP1\_1}{DAC\_CR\_MAMP1\_1}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+1~(0x00U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 1 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00103}{103}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a1fb4a60a08e60c92b4f772c0d48be081}\label{reg__dac_8h_a1fb4a60a08e60c92b4f772c0d48be081}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP1\_1023@{DAC\_CR\_MAMP1\_1023}}
+\index{DAC\_CR\_MAMP1\_1023@{DAC\_CR\_MAMP1\_1023}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP1\_1023}{DAC\_CR\_MAMP1\_1023}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+1023~(0x09U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 1023 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00112}{112}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a1d5571b796535d153cf5b482eca4ae25}\label{reg__dac_8h_a1d5571b796535d153cf5b482eca4ae25}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP1\_127@{DAC\_CR\_MAMP1\_127}}
+\index{DAC\_CR\_MAMP1\_127@{DAC\_CR\_MAMP1\_127}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP1\_127}{DAC\_CR\_MAMP1\_127}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+127~(0x06U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 127 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00109}{109}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a8e320c9606c7a570fddd9681b6ed997c}\label{reg__dac_8h_a8e320c9606c7a570fddd9681b6ed997c}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP1\_15@{DAC\_CR\_MAMP1\_15}}
+\index{DAC\_CR\_MAMP1\_15@{DAC\_CR\_MAMP1\_15}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP1\_15}{DAC\_CR\_MAMP1\_15}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+15~(0x03U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 15 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00106}{106}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a980567f3a4c7502c95b69b5ffabe44ed}\label{reg__dac_8h_a980567f3a4c7502c95b69b5ffabe44ed}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP1\_2047@{DAC\_CR\_MAMP1\_2047}}
+\index{DAC\_CR\_MAMP1\_2047@{DAC\_CR\_MAMP1\_2047}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP1\_2047}{DAC\_CR\_MAMP1\_2047}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+2047~(0x0\+AU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 2047 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00113}{113}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_acdb2bb69dd8285bcd1c52f2cd0cb9e2d}\label{reg__dac_8h_acdb2bb69dd8285bcd1c52f2cd0cb9e2d}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP1\_255@{DAC\_CR\_MAMP1\_255}}
+\index{DAC\_CR\_MAMP1\_255@{DAC\_CR\_MAMP1\_255}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP1\_255}{DAC\_CR\_MAMP1\_255}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+255~(0x07U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 255 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00110}{110}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_afdc83b4feb742c632ba66f55d102432b}\label{reg__dac_8h_afdc83b4feb742c632ba66f55d102432b}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP1\_3@{DAC\_CR\_MAMP1\_3}}
+\index{DAC\_CR\_MAMP1\_3@{DAC\_CR\_MAMP1\_3}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP1\_3}{DAC\_CR\_MAMP1\_3}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+3~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 3 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00104}{104}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a7eed009c4b12947d955eff8295402bfa}\label{reg__dac_8h_a7eed009c4b12947d955eff8295402bfa}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP1\_31@{DAC\_CR\_MAMP1\_31}}
+\index{DAC\_CR\_MAMP1\_31@{DAC\_CR\_MAMP1\_31}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP1\_31}{DAC\_CR\_MAMP1\_31}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+31~(0x04U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 31 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00107}{107}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a4402c4b16acfdf0e1708870123af4926}\label{reg__dac_8h_a4402c4b16acfdf0e1708870123af4926}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP1\_4095@{DAC\_CR\_MAMP1\_4095}}
+\index{DAC\_CR\_MAMP1\_4095@{DAC\_CR\_MAMP1\_4095}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP1\_4095}{DAC\_CR\_MAMP1\_4095}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+4095~(0x0\+BU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 4095 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00114}{114}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a48cf58532c20342b777faeec4638a8e2}\label{reg__dac_8h_a48cf58532c20342b777faeec4638a8e2}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP1\_511@{DAC\_CR\_MAMP1\_511}}
+\index{DAC\_CR\_MAMP1\_511@{DAC\_CR\_MAMP1\_511}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP1\_511}{DAC\_CR\_MAMP1\_511}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+511~(0x08U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 511 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00111}{111}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a05c15d4e386634c82369d71043b7918e}\label{reg__dac_8h_a05c15d4e386634c82369d71043b7918e}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP1\_63@{DAC\_CR\_MAMP1\_63}}
+\index{DAC\_CR\_MAMP1\_63@{DAC\_CR\_MAMP1\_63}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP1\_63}{DAC\_CR\_MAMP1\_63}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+63~(0x05U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 63 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00108}{108}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_ac2f9f59b831361a8c2ac5de8bffbe3e4}\label{reg__dac_8h_ac2f9f59b831361a8c2ac5de8bffbe3e4}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP1\_7@{DAC\_CR\_MAMP1\_7}}
+\index{DAC\_CR\_MAMP1\_7@{DAC\_CR\_MAMP1\_7}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP1\_7}{DAC\_CR\_MAMP1\_7}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+7~(0x02U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}{DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 7 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00105}{105}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}\label{reg__dac_8h_a018b4d24c02a803f2efb996745f49015}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP1\_Pos@{DAC\_CR\_MAMP1\_Pos}}
+\index{DAC\_CR\_MAMP1\_Pos@{DAC\_CR\_MAMP1\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP1\_Pos}{DAC\_CR\_MAMP1\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00101}{101}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a7cf03fe2359cb0f11c33f793c2e92bdd}\label{reg__dac_8h_a7cf03fe2359cb0f11c33f793c2e92bdd}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP2@{DAC\_CR\_MAMP2}}
+\index{DAC\_CR\_MAMP2@{DAC\_CR\_MAMP2}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP2}{DAC\_CR\_MAMP2}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP2~(0x0\+FU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})}
+
+
+
+MAMP1\mbox{[}3\+:0\mbox{]} (DAC channel1 Mask/\+Amplitude selector) 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00137}{137}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a860032e8196838cd36a655c1749139d6}\label{reg__dac_8h_a860032e8196838cd36a655c1749139d6}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP2\_1@{DAC\_CR\_MAMP2\_1}}
+\index{DAC\_CR\_MAMP2\_1@{DAC\_CR\_MAMP2\_1}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP2\_1}{DAC\_CR\_MAMP2\_1}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+1~(0x00U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 1 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00138}{138}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a3d14db05c0b84a38a08ca5975c770631}\label{reg__dac_8h_a3d14db05c0b84a38a08ca5975c770631}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP2\_1023@{DAC\_CR\_MAMP2\_1023}}
+\index{DAC\_CR\_MAMP2\_1023@{DAC\_CR\_MAMP2\_1023}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP2\_1023}{DAC\_CR\_MAMP2\_1023}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+1023~(0x09U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 1023 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00147}{147}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a2c681aa98eacb0d6004f39245c659051}\label{reg__dac_8h_a2c681aa98eacb0d6004f39245c659051}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP2\_127@{DAC\_CR\_MAMP2\_127}}
+\index{DAC\_CR\_MAMP2\_127@{DAC\_CR\_MAMP2\_127}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP2\_127}{DAC\_CR\_MAMP2\_127}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+127~(0x06U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 127 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00144}{144}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a5d418bc60fa4fc6376e981bb25e19053}\label{reg__dac_8h_a5d418bc60fa4fc6376e981bb25e19053}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP2\_15@{DAC\_CR\_MAMP2\_15}}
+\index{DAC\_CR\_MAMP2\_15@{DAC\_CR\_MAMP2\_15}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP2\_15}{DAC\_CR\_MAMP2\_15}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+15~(0x03U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 15 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00141}{141}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a2de33684b4b5fccfa88b3d9b6a7c3d35}\label{reg__dac_8h_a2de33684b4b5fccfa88b3d9b6a7c3d35}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP2\_2047@{DAC\_CR\_MAMP2\_2047}}
+\index{DAC\_CR\_MAMP2\_2047@{DAC\_CR\_MAMP2\_2047}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP2\_2047}{DAC\_CR\_MAMP2\_2047}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+2047~(0x0\+AU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 2047 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00148}{148}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a1875f9c5918c6384d4342bfb8db47148}\label{reg__dac_8h_a1875f9c5918c6384d4342bfb8db47148}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP2\_255@{DAC\_CR\_MAMP2\_255}}
+\index{DAC\_CR\_MAMP2\_255@{DAC\_CR\_MAMP2\_255}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP2\_255}{DAC\_CR\_MAMP2\_255}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+255~(0x07U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 255 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00145}{145}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_aa0fe77a2029873111cbe723a5cba9c57}\label{reg__dac_8h_aa0fe77a2029873111cbe723a5cba9c57}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP2\_3@{DAC\_CR\_MAMP2\_3}}
+\index{DAC\_CR\_MAMP2\_3@{DAC\_CR\_MAMP2\_3}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP2\_3}{DAC\_CR\_MAMP2\_3}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+3~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 3 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00139}{139}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_ab4478cca0c71f0617eaa171d9f29f613}\label{reg__dac_8h_ab4478cca0c71f0617eaa171d9f29f613}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP2\_31@{DAC\_CR\_MAMP2\_31}}
+\index{DAC\_CR\_MAMP2\_31@{DAC\_CR\_MAMP2\_31}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP2\_31}{DAC\_CR\_MAMP2\_31}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+31~(0x04U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 31 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00142}{142}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_ab6aaffaef57d56c451d08a76594bc8ac}\label{reg__dac_8h_ab6aaffaef57d56c451d08a76594bc8ac}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP2\_4095@{DAC\_CR\_MAMP2\_4095}}
+\index{DAC\_CR\_MAMP2\_4095@{DAC\_CR\_MAMP2\_4095}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP2\_4095}{DAC\_CR\_MAMP2\_4095}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+4095~(0x0\+BU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 4095 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00149}{149}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a8e7a8446e12e6f3a99270b8d6001a355}\label{reg__dac_8h_a8e7a8446e12e6f3a99270b8d6001a355}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP2\_511@{DAC\_CR\_MAMP2\_511}}
+\index{DAC\_CR\_MAMP2\_511@{DAC\_CR\_MAMP2\_511}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP2\_511}{DAC\_CR\_MAMP2\_511}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+511~(0x08U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 511 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00146}{146}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_ada0cdfe2c2eb590c4a59aaa8b43aae7e}\label{reg__dac_8h_ada0cdfe2c2eb590c4a59aaa8b43aae7e}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP2\_63@{DAC\_CR\_MAMP2\_63}}
+\index{DAC\_CR\_MAMP2\_63@{DAC\_CR\_MAMP2\_63}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP2\_63}{DAC\_CR\_MAMP2\_63}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+63~(0x05U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 63 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00143}{143}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_ae506d8258724df4599dadc1943db136f}\label{reg__dac_8h_ae506d8258724df4599dadc1943db136f}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP2\_7@{DAC\_CR\_MAMP2\_7}}
+\index{DAC\_CR\_MAMP2\_7@{DAC\_CR\_MAMP2\_7}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP2\_7}{DAC\_CR\_MAMP2\_7}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+7~(0x02U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}{DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos}})}
+
+
+
+Triangle wave amplitude equal to 7 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00140}{140}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}\label{reg__dac_8h_a7cccefc999aeab6622afaf662c7c8c50}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_MAMP2\_Pos@{DAC\_CR\_MAMP2\_Pos}}
+\index{DAC\_CR\_MAMP2\_Pos@{DAC\_CR\_MAMP2\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_MAMP2\_Pos}{DAC\_CR\_MAMP2\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+MAMP2\+\_\+\+Pos~(24)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00136}{136}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a998aa4fd791ea2f4626df6ddc8fc7109}\label{reg__dac_8h_a998aa4fd791ea2f4626df6ddc8fc7109}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_TEN1@{DAC\_CR\_TEN1}}
+\index{DAC\_CR\_TEN1@{DAC\_CR\_TEN1}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_TEN1}{DAC\_CR\_TEN1}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+TEN1~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a6ef4ab719505604c7a41e31c27fd05dd}{DAC\+\_\+\+CR\+\_\+\+TEN1\+\_\+\+Pos}})}
+
+
+
+DAC channel1 Trigger enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00087}{87}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a6ef4ab719505604c7a41e31c27fd05dd}\label{reg__dac_8h_a6ef4ab719505604c7a41e31c27fd05dd}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_TEN1\_Pos@{DAC\_CR\_TEN1\_Pos}}
+\index{DAC\_CR\_TEN1\_Pos@{DAC\_CR\_TEN1\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_TEN1\_Pos}{DAC\_CR\_TEN1\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+TEN1\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00086}{86}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_ab8fc527f6ddb787123da09d2085b772f}\label{reg__dac_8h_ab8fc527f6ddb787123da09d2085b772f}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_TEN2@{DAC\_CR\_TEN2}}
+\index{DAC\_CR\_TEN2@{DAC\_CR\_TEN2}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_TEN2}{DAC\_CR\_TEN2}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+TEN2~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_aa2ef8fa2150330a16a2b19f17caa051e}{DAC\+\_\+\+CR\+\_\+\+TEN2\+\_\+\+Pos}})}
+
+
+
+DAC channel2 Trigger enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00122}{122}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_aa2ef8fa2150330a16a2b19f17caa051e}\label{reg__dac_8h_aa2ef8fa2150330a16a2b19f17caa051e}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_TEN2\_Pos@{DAC\_CR\_TEN2\_Pos}}
+\index{DAC\_CR\_TEN2\_Pos@{DAC\_CR\_TEN2\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_TEN2\_Pos}{DAC\_CR\_TEN2\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+TEN2\+\_\+\+Pos~(18)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00121}{121}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_af951c1a57a1a19e356df57d908f09c6c}\label{reg__dac_8h_af951c1a57a1a19e356df57d908f09c6c}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_TSEL1@{DAC\_CR\_TSEL1}}
+\index{DAC\_CR\_TSEL1@{DAC\_CR\_TSEL1}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_TSEL1}{DAC\_CR\_TSEL1}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+TSEL1~(0x07U $<$$<$ \mbox{\hyperlink{reg__dac_8h_adc5baf43a193c631ad3c05eb24b97a7b}{DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+Pos}})}
+
+
+
+TSEL1\mbox{[}2\+:0\mbox{]} (DAC channel1 Trigger selection) 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00089}{89}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a44a45d4429ff3d518f52a3bb01af4595}\label{reg__dac_8h_a44a45d4429ff3d518f52a3bb01af4595}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_TSEL1\_EXTI9@{DAC\_CR\_TSEL1\_EXTI9}}
+\index{DAC\_CR\_TSEL1\_EXTI9@{DAC\_CR\_TSEL1\_EXTI9}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_TSEL1\_EXTI9}{DAC\_CR\_TSEL1\_EXTI9}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+EXTI9~(0x06U $<$$<$ \mbox{\hyperlink{reg__dac_8h_adc5baf43a193c631ad3c05eb24b97a7b}{DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+Pos}})}
+
+
+
+External interrupt line 9 trigger 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00094}{94}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_adc5baf43a193c631ad3c05eb24b97a7b}\label{reg__dac_8h_adc5baf43a193c631ad3c05eb24b97a7b}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_TSEL1\_Pos@{DAC\_CR\_TSEL1\_Pos}}
+\index{DAC\_CR\_TSEL1\_Pos@{DAC\_CR\_TSEL1\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_TSEL1\_Pos}{DAC\_CR\_TSEL1\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00088}{88}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a7ebdb78dfe892329e53e7f054d2240af}\label{reg__dac_8h_a7ebdb78dfe892329e53e7f054d2240af}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_TSEL1\_SOFTWARE@{DAC\_CR\_TSEL1\_SOFTWARE}}
+\index{DAC\_CR\_TSEL1\_SOFTWARE@{DAC\_CR\_TSEL1\_SOFTWARE}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_TSEL1\_SOFTWARE}{DAC\_CR\_TSEL1\_SOFTWARE}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+SOFTWARE~(0x07U $<$$<$ \mbox{\hyperlink{reg__dac_8h_adc5baf43a193c631ad3c05eb24b97a7b}{DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+Pos}})}
+
+
+
+Software trigger 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00095}{95}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a82cd645673b77b73d1ddc0e8d0817e5b}\label{reg__dac_8h_a82cd645673b77b73d1ddc0e8d0817e5b}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_TSEL1\_TIM1\_TRIG@{DAC\_CR\_TSEL1\_TIM1\_TRIG}}
+\index{DAC\_CR\_TSEL1\_TIM1\_TRIG@{DAC\_CR\_TSEL1\_TIM1\_TRIG}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_TSEL1\_TIM1\_TRIG}{DAC\_CR\_TSEL1\_TIM1\_TRIG}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+TIM1\+\_\+\+TRIG~(0x00U $<$$<$ \mbox{\hyperlink{reg__dac_8h_adc5baf43a193c631ad3c05eb24b97a7b}{DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+Pos}})}
+
+
+
+TIM1\+\_\+\+TRIG trigger 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00090}{90}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_adbef9920d56c222df69bb5f30fddd4b4}\label{reg__dac_8h_adbef9920d56c222df69bb5f30fddd4b4}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_TSEL1\_TIM2\_TRIG@{DAC\_CR\_TSEL1\_TIM2\_TRIG}}
+\index{DAC\_CR\_TSEL1\_TIM2\_TRIG@{DAC\_CR\_TSEL1\_TIM2\_TRIG}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_TSEL1\_TIM2\_TRIG}{DAC\_CR\_TSEL1\_TIM2\_TRIG}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+TIM2\+\_\+\+TRIG~(0x04U $<$$<$ \mbox{\hyperlink{reg__dac_8h_adc5baf43a193c631ad3c05eb24b97a7b}{DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+Pos}})}
+
+
+
+TIM2\+\_\+\+TRIG trigger 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00092}{92}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a983ee70d5c8c0e67dff839fd5933761f}\label{reg__dac_8h_a983ee70d5c8c0e67dff839fd5933761f}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_TSEL1\_TIM3\_TRIG@{DAC\_CR\_TSEL1\_TIM3\_TRIG}}
+\index{DAC\_CR\_TSEL1\_TIM3\_TRIG@{DAC\_CR\_TSEL1\_TIM3\_TRIG}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_TSEL1\_TIM3\_TRIG}{DAC\_CR\_TSEL1\_TIM3\_TRIG}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+TIM3\+\_\+\+TRIG~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_adc5baf43a193c631ad3c05eb24b97a7b}{DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+Pos}})}
+
+
+
+TIM3\+\_\+\+TRIG trigger 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00091}{91}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_ad5c94b86c37eb2a3447fd32e805f2e87}\label{reg__dac_8h_ad5c94b86c37eb2a3447fd32e805f2e87}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_TSEL1\_TIM4\_TRIG@{DAC\_CR\_TSEL1\_TIM4\_TRIG}}
+\index{DAC\_CR\_TSEL1\_TIM4\_TRIG@{DAC\_CR\_TSEL1\_TIM4\_TRIG}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_TSEL1\_TIM4\_TRIG}{DAC\_CR\_TSEL1\_TIM4\_TRIG}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+TIM4\+\_\+\+TRIG~(0x05U $<$$<$ \mbox{\hyperlink{reg__dac_8h_adc5baf43a193c631ad3c05eb24b97a7b}{DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+Pos}})}
+
+
+
+TIM4\+\_\+\+TRIG trigger 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00093}{93}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a73b4d0ccff78f7c3862903e7b0e66302}\label{reg__dac_8h_a73b4d0ccff78f7c3862903e7b0e66302}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_TSEL2@{DAC\_CR\_TSEL2}}
+\index{DAC\_CR\_TSEL2@{DAC\_CR\_TSEL2}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_TSEL2}{DAC\_CR\_TSEL2}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+TSEL2~(0x07U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a80a933188591c4fbcad260c256105277}{DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+Pos}})}
+
+
+
+TSEL1\mbox{[}2\+:0\mbox{]} (DAC channel1 Trigger selection) 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00124}{124}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a971ea99a077cc5197d2231c93baf1f63}\label{reg__dac_8h_a971ea99a077cc5197d2231c93baf1f63}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_TSEL2\_EXTI9@{DAC\_CR\_TSEL2\_EXTI9}}
+\index{DAC\_CR\_TSEL2\_EXTI9@{DAC\_CR\_TSEL2\_EXTI9}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_TSEL2\_EXTI9}{DAC\_CR\_TSEL2\_EXTI9}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+EXTI9~(0x06U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a80a933188591c4fbcad260c256105277}{DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+Pos}})}
+
+
+
+External interrupt line 9 trigger 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00129}{129}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a80a933188591c4fbcad260c256105277}\label{reg__dac_8h_a80a933188591c4fbcad260c256105277}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_TSEL2\_Pos@{DAC\_CR\_TSEL2\_Pos}}
+\index{DAC\_CR\_TSEL2\_Pos@{DAC\_CR\_TSEL2\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_TSEL2\_Pos}{DAC\_CR\_TSEL2\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+Pos~(19)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00123}{123}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_ad183e0fb500d45c7c80b9b853ee51400}\label{reg__dac_8h_ad183e0fb500d45c7c80b9b853ee51400}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_TSEL2\_SOFTWARE@{DAC\_CR\_TSEL2\_SOFTWARE}}
+\index{DAC\_CR\_TSEL2\_SOFTWARE@{DAC\_CR\_TSEL2\_SOFTWARE}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_TSEL2\_SOFTWARE}{DAC\_CR\_TSEL2\_SOFTWARE}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+SOFTWARE~(0x07U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a80a933188591c4fbcad260c256105277}{DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+Pos}})}
+
+
+
+Software trigger 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00130}{130}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a2d12f6284b51f734669fd8829fc2a82f}\label{reg__dac_8h_a2d12f6284b51f734669fd8829fc2a82f}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_TSEL2\_TIM1\_TRIG@{DAC\_CR\_TSEL2\_TIM1\_TRIG}}
+\index{DAC\_CR\_TSEL2\_TIM1\_TRIG@{DAC\_CR\_TSEL2\_TIM1\_TRIG}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_TSEL2\_TIM1\_TRIG}{DAC\_CR\_TSEL2\_TIM1\_TRIG}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+TIM1\+\_\+\+TRIG~(0x00U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a80a933188591c4fbcad260c256105277}{DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+Pos}})}
+
+
+
+TIM1\+\_\+\+TRIG trigger 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00125}{125}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_aadab668d44e27de079ec69a2d05a5a27}\label{reg__dac_8h_aadab668d44e27de079ec69a2d05a5a27}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_TSEL2\_TIM2\_TRIG@{DAC\_CR\_TSEL2\_TIM2\_TRIG}}
+\index{DAC\_CR\_TSEL2\_TIM2\_TRIG@{DAC\_CR\_TSEL2\_TIM2\_TRIG}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_TSEL2\_TIM2\_TRIG}{DAC\_CR\_TSEL2\_TIM2\_TRIG}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+TIM2\+\_\+\+TRIG~(0x04U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a80a933188591c4fbcad260c256105277}{DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+Pos}})}
+
+
+
+TIM2\+\_\+\+TRIG trigger 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00127}{127}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a610faf2ea53f20089fa743deed51fbb9}\label{reg__dac_8h_a610faf2ea53f20089fa743deed51fbb9}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_TSEL2\_TIM3\_TRIG@{DAC\_CR\_TSEL2\_TIM3\_TRIG}}
+\index{DAC\_CR\_TSEL2\_TIM3\_TRIG@{DAC\_CR\_TSEL2\_TIM3\_TRIG}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_TSEL2\_TIM3\_TRIG}{DAC\_CR\_TSEL2\_TIM3\_TRIG}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+TIM3\+\_\+\+TRIG~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a80a933188591c4fbcad260c256105277}{DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+Pos}})}
+
+
+
+TIM3\+\_\+\+TRIG trigger 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00126}{126}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a8486a5c30bef4d0d4bc79b72da59a1fb}\label{reg__dac_8h_a8486a5c30bef4d0d4bc79b72da59a1fb}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_TSEL2\_TIM4\_TRIG@{DAC\_CR\_TSEL2\_TIM4\_TRIG}}
+\index{DAC\_CR\_TSEL2\_TIM4\_TRIG@{DAC\_CR\_TSEL2\_TIM4\_TRIG}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_TSEL2\_TIM4\_TRIG}{DAC\_CR\_TSEL2\_TIM4\_TRIG}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+TIM4\+\_\+\+TRIG~(0x05U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a80a933188591c4fbcad260c256105277}{DAC\+\_\+\+CR\+\_\+\+TSEL2\+\_\+\+Pos}})}
+
+
+
+TIM4\+\_\+\+TRIG trigger 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00128}{128}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a90491f31219d07175629eecdcdc9271e}\label{reg__dac_8h_a90491f31219d07175629eecdcdc9271e}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_WAVE1@{DAC\_CR\_WAVE1}}
+\index{DAC\_CR\_WAVE1@{DAC\_CR\_WAVE1}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_WAVE1}{DAC\_CR\_WAVE1}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+WAVE1~(0x03U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a16a0202d6e3295400dc21b2088d333e1}{DAC\+\_\+\+CR\+\_\+\+WAVE1\+\_\+\+Pos}})}
+
+
+
+WAVE1\mbox{[}1\+:0\mbox{]} (DAC channel1 noise/triangle wave generation enable) 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00097}{97}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a0bdbd7bb6004048e7eaa6c0d1ec21608}\label{reg__dac_8h_a0bdbd7bb6004048e7eaa6c0d1ec21608}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_WAVE1\_NOISE@{DAC\_CR\_WAVE1\_NOISE}}
+\index{DAC\_CR\_WAVE1\_NOISE@{DAC\_CR\_WAVE1\_NOISE}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_WAVE1\_NOISE}{DAC\_CR\_WAVE1\_NOISE}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+WAVE1\+\_\+\+NOISE~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a16a0202d6e3295400dc21b2088d333e1}{DAC\+\_\+\+CR\+\_\+\+WAVE1\+\_\+\+Pos}})}
+
+
+
+Noise waveform generation 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00099}{99}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a7cd586a125f0f7ffb5784bfb5228e9cb}\label{reg__dac_8h_a7cd586a125f0f7ffb5784bfb5228e9cb}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_WAVE1\_NONE@{DAC\_CR\_WAVE1\_NONE}}
+\index{DAC\_CR\_WAVE1\_NONE@{DAC\_CR\_WAVE1\_NONE}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_WAVE1\_NONE}{DAC\_CR\_WAVE1\_NONE}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+WAVE1\+\_\+\+NONE~(0x00U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a16a0202d6e3295400dc21b2088d333e1}{DAC\+\_\+\+CR\+\_\+\+WAVE1\+\_\+\+Pos}})}
+
+
+
+Turn off waveform generation 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00098}{98}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a16a0202d6e3295400dc21b2088d333e1}\label{reg__dac_8h_a16a0202d6e3295400dc21b2088d333e1}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_WAVE1\_Pos@{DAC\_CR\_WAVE1\_Pos}}
+\index{DAC\_CR\_WAVE1\_Pos@{DAC\_CR\_WAVE1\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_WAVE1\_Pos}{DAC\_CR\_WAVE1\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+WAVE1\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00096}{96}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a014195407a7aecbb236be4708aaa70f2}\label{reg__dac_8h_a014195407a7aecbb236be4708aaa70f2}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_WAVE1\_TRIANGLE@{DAC\_CR\_WAVE1\_TRIANGLE}}
+\index{DAC\_CR\_WAVE1\_TRIANGLE@{DAC\_CR\_WAVE1\_TRIANGLE}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_WAVE1\_TRIANGLE}{DAC\_CR\_WAVE1\_TRIANGLE}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+WAVE1\+\_\+\+TRIANGLE~(0x02U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a16a0202d6e3295400dc21b2088d333e1}{DAC\+\_\+\+CR\+\_\+\+WAVE1\+\_\+\+Pos}})}
+
+
+
+Triangle wave generation 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00100}{100}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_acf24e48cf288db4a4643057dd09e3a7b}\label{reg__dac_8h_acf24e48cf288db4a4643057dd09e3a7b}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_WAVE2@{DAC\_CR\_WAVE2}}
+\index{DAC\_CR\_WAVE2@{DAC\_CR\_WAVE2}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_WAVE2}{DAC\_CR\_WAVE2}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+WAVE2~(0x03U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7795c9de47dc6747045ee7e2e6fb8ba9}{DAC\+\_\+\+CR\+\_\+\+WAVE2\+\_\+\+Pos}})}
+
+
+
+WAVE1\mbox{[}1\+:0\mbox{]} (DAC channel1 noise/triangle wave generation enable) 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00132}{132}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_adece7a1a3d6d3b318e1ba0693fffc397}\label{reg__dac_8h_adece7a1a3d6d3b318e1ba0693fffc397}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_WAVE2\_NOISE@{DAC\_CR\_WAVE2\_NOISE}}
+\index{DAC\_CR\_WAVE2\_NOISE@{DAC\_CR\_WAVE2\_NOISE}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_WAVE2\_NOISE}{DAC\_CR\_WAVE2\_NOISE}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+WAVE2\+\_\+\+NOISE~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7795c9de47dc6747045ee7e2e6fb8ba9}{DAC\+\_\+\+CR\+\_\+\+WAVE2\+\_\+\+Pos}})}
+
+
+
+Noise waveform generation 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00134}{134}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a4a5cb7bb2c8902ca022ef2aa0a85bea6}\label{reg__dac_8h_a4a5cb7bb2c8902ca022ef2aa0a85bea6}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_WAVE2\_NONE@{DAC\_CR\_WAVE2\_NONE}}
+\index{DAC\_CR\_WAVE2\_NONE@{DAC\_CR\_WAVE2\_NONE}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_WAVE2\_NONE}{DAC\_CR\_WAVE2\_NONE}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+WAVE2\+\_\+\+NONE~(0x00U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7795c9de47dc6747045ee7e2e6fb8ba9}{DAC\+\_\+\+CR\+\_\+\+WAVE2\+\_\+\+Pos}})}
+
+
+
+Turn off waveform generation 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00133}{133}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a7795c9de47dc6747045ee7e2e6fb8ba9}\label{reg__dac_8h_a7795c9de47dc6747045ee7e2e6fb8ba9}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_WAVE2\_Pos@{DAC\_CR\_WAVE2\_Pos}}
+\index{DAC\_CR\_WAVE2\_Pos@{DAC\_CR\_WAVE2\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_WAVE2\_Pos}{DAC\_CR\_WAVE2\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+WAVE2\+\_\+\+Pos~(22)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00131}{131}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a276e7bfcefb8555803e92b07e60746a0}\label{reg__dac_8h_a276e7bfcefb8555803e92b07e60746a0}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_CR\_WAVE2\_TRIANGLE@{DAC\_CR\_WAVE2\_TRIANGLE}}
+\index{DAC\_CR\_WAVE2\_TRIANGLE@{DAC\_CR\_WAVE2\_TRIANGLE}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_CR\_WAVE2\_TRIANGLE}{DAC\_CR\_WAVE2\_TRIANGLE}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+CR\+\_\+\+WAVE2\+\_\+\+TRIANGLE~(0x02U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a7795c9de47dc6747045ee7e2e6fb8ba9}{DAC\+\_\+\+CR\+\_\+\+WAVE2\+\_\+\+Pos}})}
+
+
+
+Triangle wave generation 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00135}{135}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a0d34667f8f4b753689c8c936c28471c5}\label{reg__dac_8h_a0d34667f8f4b753689c8c936c28471c5}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR12L1\_DACC1DHR@{DAC\_DHR12L1\_DACC1DHR}}
+\index{DAC\_DHR12L1\_DACC1DHR@{DAC\_DHR12L1\_DACC1DHR}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR12L1\_DACC1DHR}{DAC\_DHR12L1\_DACC1DHR}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR12\+L1\+\_\+\+DACC1\+DHR~(0x\+FFFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_ac1dcdc73fc338b3548cddcf84fb0c951}{DAC\+\_\+\+DHR12\+L1\+\_\+\+DACC1\+DHR\+\_\+\+Pos}})}
+
+
+
+DAC channel1 12-\/bit Left align data 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00173}{173}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_ac1dcdc73fc338b3548cddcf84fb0c951}\label{reg__dac_8h_ac1dcdc73fc338b3548cddcf84fb0c951}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR12L1\_DACC1DHR\_Pos@{DAC\_DHR12L1\_DACC1DHR\_Pos}}
+\index{DAC\_DHR12L1\_DACC1DHR\_Pos@{DAC\_DHR12L1\_DACC1DHR\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR12L1\_DACC1DHR\_Pos}{DAC\_DHR12L1\_DACC1DHR\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR12\+L1\+\_\+\+DACC1\+DHR\+\_\+\+Pos~(4)}
+
+
+
+DAC\+\_\+\+DHR12\+L1 Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00172}{172}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a0f66bd794202221e1a55547673b7abab}\label{reg__dac_8h_a0f66bd794202221e1a55547673b7abab}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR12L2\_DACC2DHR@{DAC\_DHR12L2\_DACC2DHR}}
+\index{DAC\_DHR12L2\_DACC2DHR@{DAC\_DHR12L2\_DACC2DHR}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR12L2\_DACC2DHR}{DAC\_DHR12L2\_DACC2DHR}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR12\+L2\+\_\+\+DACC2\+DHR~(0x\+FFFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a8fe559f6278c4abd3b5db6277e82925b}{DAC\+\_\+\+DHR12\+L2\+\_\+\+DACC2\+DHR\+\_\+\+Pos}})}
+
+
+
+DAC channel2 12-\/bit Left align data 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00191}{191}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a8fe559f6278c4abd3b5db6277e82925b}\label{reg__dac_8h_a8fe559f6278c4abd3b5db6277e82925b}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR12L2\_DACC2DHR\_Pos@{DAC\_DHR12L2\_DACC2DHR\_Pos}}
+\index{DAC\_DHR12L2\_DACC2DHR\_Pos@{DAC\_DHR12L2\_DACC2DHR\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR12L2\_DACC2DHR\_Pos}{DAC\_DHR12L2\_DACC2DHR\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR12\+L2\+\_\+\+DACC2\+DHR\+\_\+\+Pos~(4)}
+
+
+
+DAC\+\_\+\+DHR12\+L2 Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00190}{190}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a203db656bfef6fedee17b99fb77b1bdd}\label{reg__dac_8h_a203db656bfef6fedee17b99fb77b1bdd}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR12LD\_DACC1DHR@{DAC\_DHR12LD\_DACC1DHR}}
+\index{DAC\_DHR12LD\_DACC1DHR@{DAC\_DHR12LD\_DACC1DHR}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR12LD\_DACC1DHR}{DAC\_DHR12LD\_DACC1DHR}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR12\+LD\+\_\+\+DACC1\+DHR~(0x\+FFFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_aa367fe7ed3f9b2d5114dcc46ccab7468}{DAC\+\_\+\+DHR12\+LD\+\_\+\+DACC1\+DHR\+\_\+\+Pos}})}
+
+
+
+DAC channel1 12-\/bit Right align data 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00211}{211}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_aa367fe7ed3f9b2d5114dcc46ccab7468}\label{reg__dac_8h_aa367fe7ed3f9b2d5114dcc46ccab7468}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR12LD\_DACC1DHR\_Pos@{DAC\_DHR12LD\_DACC1DHR\_Pos}}
+\index{DAC\_DHR12LD\_DACC1DHR\_Pos@{DAC\_DHR12LD\_DACC1DHR\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR12LD\_DACC1DHR\_Pos}{DAC\_DHR12LD\_DACC1DHR\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR12\+LD\+\_\+\+DACC1\+DHR\+\_\+\+Pos~(4)}
+
+
+
+DAC\+\_\+\+DHR12\+LD Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00210}{210}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a8421d613b182aab8d6c58592bcda6c17}\label{reg__dac_8h_a8421d613b182aab8d6c58592bcda6c17}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR12LD\_DACC2DHR@{DAC\_DHR12LD\_DACC2DHR}}
+\index{DAC\_DHR12LD\_DACC2DHR@{DAC\_DHR12LD\_DACC2DHR}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR12LD\_DACC2DHR}{DAC\_DHR12LD\_DACC2DHR}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR12\+LD\+\_\+\+DACC2\+DHR~(0x\+FFFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_ade1db665f01f9d179045057d0e857da0}{DAC\+\_\+\+DHR12\+LD\+\_\+\+DACC2\+DHR\+\_\+\+Pos}})}
+
+
+
+DAC channel2 12-\/bit Right align data 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00213}{213}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_ade1db665f01f9d179045057d0e857da0}\label{reg__dac_8h_ade1db665f01f9d179045057d0e857da0}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR12LD\_DACC2DHR\_Pos@{DAC\_DHR12LD\_DACC2DHR\_Pos}}
+\index{DAC\_DHR12LD\_DACC2DHR\_Pos@{DAC\_DHR12LD\_DACC2DHR\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR12LD\_DACC2DHR\_Pos}{DAC\_DHR12LD\_DACC2DHR\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR12\+LD\+\_\+\+DACC2\+DHR\+\_\+\+Pos~(20)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00212}{212}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a5295b5cb7f5d71ed2e8a310deb00013d}\label{reg__dac_8h_a5295b5cb7f5d71ed2e8a310deb00013d}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR12R1\_DACC1DHR@{DAC\_DHR12R1\_DACC1DHR}}
+\index{DAC\_DHR12R1\_DACC1DHR@{DAC\_DHR12R1\_DACC1DHR}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR12R1\_DACC1DHR}{DAC\_DHR12R1\_DACC1DHR}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR12\+R1\+\_\+\+DACC1\+DHR~(0x\+FFFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_ab3250ec13530e0e363f0ab92c149774f}{DAC\+\_\+\+DHR12\+R1\+\_\+\+DACC1\+DHR\+\_\+\+Pos}})}
+
+
+
+DAC channel1 12-\/bit Right align data 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00167}{167}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_ab3250ec13530e0e363f0ab92c149774f}\label{reg__dac_8h_ab3250ec13530e0e363f0ab92c149774f}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR12R1\_DACC1DHR\_Pos@{DAC\_DHR12R1\_DACC1DHR\_Pos}}
+\index{DAC\_DHR12R1\_DACC1DHR\_Pos@{DAC\_DHR12R1\_DACC1DHR\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR12R1\_DACC1DHR\_Pos}{DAC\_DHR12R1\_DACC1DHR\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR12\+R1\+\_\+\+DACC1\+DHR\+\_\+\+Pos~(0)}
+
+
+
+DAC\+\_\+\+DHR12\+R1 Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00166}{166}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a7506e369b37d55826042b540b10e44c7}\label{reg__dac_8h_a7506e369b37d55826042b540b10e44c7}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR12R2\_DACC2DHR@{DAC\_DHR12R2\_DACC2DHR}}
+\index{DAC\_DHR12R2\_DACC2DHR@{DAC\_DHR12R2\_DACC2DHR}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR12R2\_DACC2DHR}{DAC\_DHR12R2\_DACC2DHR}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR12\+R2\+\_\+\+DACC2\+DHR~(0x\+FFFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_add13752ec5bc912023c608426e47908e}{DAC\+\_\+\+DHR12\+R2\+\_\+\+DACC2\+DHR\+\_\+\+Pos}})}
+
+
+
+DAC channel2 12-\/bit Right align data 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00185}{185}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_add13752ec5bc912023c608426e47908e}\label{reg__dac_8h_add13752ec5bc912023c608426e47908e}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR12R2\_DACC2DHR\_Pos@{DAC\_DHR12R2\_DACC2DHR\_Pos}}
+\index{DAC\_DHR12R2\_DACC2DHR\_Pos@{DAC\_DHR12R2\_DACC2DHR\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR12R2\_DACC2DHR\_Pos}{DAC\_DHR12R2\_DACC2DHR\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR12\+R2\+\_\+\+DACC2\+DHR\+\_\+\+Pos~(0)}
+
+
+
+DAC\+\_\+\+DHR12\+R2 Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00184}{184}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_aca45719f3d365c9495bdcf6364ae59f8}\label{reg__dac_8h_aca45719f3d365c9495bdcf6364ae59f8}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR12RD\_DACC1DHR@{DAC\_DHR12RD\_DACC1DHR}}
+\index{DAC\_DHR12RD\_DACC1DHR@{DAC\_DHR12RD\_DACC1DHR}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR12RD\_DACC1DHR}{DAC\_DHR12RD\_DACC1DHR}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR12\+RD\+\_\+\+DACC1\+DHR~(0x\+FFFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a6d1a7b56cdc34694e1aa032be202e79d}{DAC\+\_\+\+DHR12\+RD\+\_\+\+DACC1\+DHR\+\_\+\+Pos}})}
+
+
+
+DAC channel1 12-\/bit Right align data 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00203}{203}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a6d1a7b56cdc34694e1aa032be202e79d}\label{reg__dac_8h_a6d1a7b56cdc34694e1aa032be202e79d}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR12RD\_DACC1DHR\_Pos@{DAC\_DHR12RD\_DACC1DHR\_Pos}}
+\index{DAC\_DHR12RD\_DACC1DHR\_Pos@{DAC\_DHR12RD\_DACC1DHR\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR12RD\_DACC1DHR\_Pos}{DAC\_DHR12RD\_DACC1DHR\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR12\+RD\+\_\+\+DACC1\+DHR\+\_\+\+Pos~(0)}
+
+
+
+DAC\+\_\+\+DHR12\+RD Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00202}{202}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a3edd68db1697af93027e05f6b764c540}\label{reg__dac_8h_a3edd68db1697af93027e05f6b764c540}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR12RD\_DACC2DHR@{DAC\_DHR12RD\_DACC2DHR}}
+\index{DAC\_DHR12RD\_DACC2DHR@{DAC\_DHR12RD\_DACC2DHR}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR12RD\_DACC2DHR}{DAC\_DHR12RD\_DACC2DHR}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR12\+RD\+\_\+\+DACC2\+DHR~(0x\+FFFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_ae522220c8b02ab4bcf82f122a45997d3}{DAC\+\_\+\+DHR12\+RD\+\_\+\+DACC2\+DHR\+\_\+\+Pos}})}
+
+
+
+DAC channel2 12-\/bit Right align data 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00205}{205}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_ae522220c8b02ab4bcf82f122a45997d3}\label{reg__dac_8h_ae522220c8b02ab4bcf82f122a45997d3}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR12RD\_DACC2DHR\_Pos@{DAC\_DHR12RD\_DACC2DHR\_Pos}}
+\index{DAC\_DHR12RD\_DACC2DHR\_Pos@{DAC\_DHR12RD\_DACC2DHR\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR12RD\_DACC2DHR\_Pos}{DAC\_DHR12RD\_DACC2DHR\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR12\+RD\+\_\+\+DACC2\+DHR\+\_\+\+Pos~(16)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00204}{204}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_ae1fc9f022fe4a08f67c51646177b26cb}\label{reg__dac_8h_ae1fc9f022fe4a08f67c51646177b26cb}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR8R1\_DACC1DHR@{DAC\_DHR8R1\_DACC1DHR}}
+\index{DAC\_DHR8R1\_DACC1DHR@{DAC\_DHR8R1\_DACC1DHR}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR8R1\_DACC1DHR}{DAC\_DHR8R1\_DACC1DHR}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR8\+R1\+\_\+\+DACC1\+DHR~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a6b874c02d121c755a1d4523f2e39134e}{DAC\+\_\+\+DHR8\+R1\+\_\+\+DACC1\+DHR\+\_\+\+Pos}})}
+
+
+
+DAC channel1 8-\/bit Right align data 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00179}{179}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a6b874c02d121c755a1d4523f2e39134e}\label{reg__dac_8h_a6b874c02d121c755a1d4523f2e39134e}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR8R1\_DACC1DHR\_Pos@{DAC\_DHR8R1\_DACC1DHR\_Pos}}
+\index{DAC\_DHR8R1\_DACC1DHR\_Pos@{DAC\_DHR8R1\_DACC1DHR\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR8R1\_DACC1DHR\_Pos}{DAC\_DHR8R1\_DACC1DHR\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR8\+R1\+\_\+\+DACC1\+DHR\+\_\+\+Pos~(0)}
+
+
+
+DAC\+\_\+\+DHR8\+R1 Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00178}{178}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a7da94dc053e6637efb9ccb57b7ae481c}\label{reg__dac_8h_a7da94dc053e6637efb9ccb57b7ae481c}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR8R2\_DACC2DHR@{DAC\_DHR8R2\_DACC2DHR}}
+\index{DAC\_DHR8R2\_DACC2DHR@{DAC\_DHR8R2\_DACC2DHR}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR8R2\_DACC2DHR}{DAC\_DHR8R2\_DACC2DHR}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR8\+R2\+\_\+\+DACC2\+DHR~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a4a8082de99f7eef453237a409763718b}{DAC\+\_\+\+DHR8\+R2\+\_\+\+DACC2\+DHR\+\_\+\+Pos}})}
+
+
+
+DAC channel2 8-\/bit Right align data 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00197}{197}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a4a8082de99f7eef453237a409763718b}\label{reg__dac_8h_a4a8082de99f7eef453237a409763718b}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR8R2\_DACC2DHR\_Pos@{DAC\_DHR8R2\_DACC2DHR\_Pos}}
+\index{DAC\_DHR8R2\_DACC2DHR\_Pos@{DAC\_DHR8R2\_DACC2DHR\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR8R2\_DACC2DHR\_Pos}{DAC\_DHR8R2\_DACC2DHR\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR8\+R2\+\_\+\+DACC2\+DHR\+\_\+\+Pos~(0)}
+
+
+
+DAC\+\_\+\+DHR8\+R2 Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00196}{196}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a9aee01ad181fa5b541864ed62907d70d}\label{reg__dac_8h_a9aee01ad181fa5b541864ed62907d70d}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR8RD\_DACC1DHR@{DAC\_DHR8RD\_DACC1DHR}}
+\index{DAC\_DHR8RD\_DACC1DHR@{DAC\_DHR8RD\_DACC1DHR}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR8RD\_DACC1DHR}{DAC\_DHR8RD\_DACC1DHR}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR8\+RD\+\_\+\+DACC1\+DHR~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_ac004fb7fdc93225fb835b27e39229a57}{DAC\+\_\+\+DHR8\+RD\+\_\+\+DACC1\+DHR\+\_\+\+Pos}})}
+
+
+
+DAC channel1 8-\/bit Right align data 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00219}{219}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_ac004fb7fdc93225fb835b27e39229a57}\label{reg__dac_8h_ac004fb7fdc93225fb835b27e39229a57}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR8RD\_DACC1DHR\_Pos@{DAC\_DHR8RD\_DACC1DHR\_Pos}}
+\index{DAC\_DHR8RD\_DACC1DHR\_Pos@{DAC\_DHR8RD\_DACC1DHR\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR8RD\_DACC1DHR\_Pos}{DAC\_DHR8RD\_DACC1DHR\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR8\+RD\+\_\+\+DACC1\+DHR\+\_\+\+Pos~(0)}
+
+
+
+DAC\+\_\+\+DHR8\+RD Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00218}{218}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_ae31631eaac76ebecb059918c351ef3c9}\label{reg__dac_8h_ae31631eaac76ebecb059918c351ef3c9}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR8RD\_DACC2DHR@{DAC\_DHR8RD\_DACC2DHR}}
+\index{DAC\_DHR8RD\_DACC2DHR@{DAC\_DHR8RD\_DACC2DHR}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR8RD\_DACC2DHR}{DAC\_DHR8RD\_DACC2DHR}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR8\+RD\+\_\+\+DACC2\+DHR~(0x\+FFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_abf849d0278349997f891d987def91224}{DAC\+\_\+\+DHR8\+RD\+\_\+\+DACC2\+DHR\+\_\+\+Pos}})}
+
+
+
+DAC channel2 8-\/bit Right align data 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00221}{221}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_abf849d0278349997f891d987def91224}\label{reg__dac_8h_abf849d0278349997f891d987def91224}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DHR8RD\_DACC2DHR\_Pos@{DAC\_DHR8RD\_DACC2DHR\_Pos}}
+\index{DAC\_DHR8RD\_DACC2DHR\_Pos@{DAC\_DHR8RD\_DACC2DHR\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DHR8RD\_DACC2DHR\_Pos}{DAC\_DHR8RD\_DACC2DHR\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DHR8\+RD\+\_\+\+DACC2\+DHR\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00220}{220}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a5b4192938e039dc25a7df8fcc5f3932a}\label{reg__dac_8h_a5b4192938e039dc25a7df8fcc5f3932a}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DOR1\_DACC1DOR@{DAC\_DOR1\_DACC1DOR}}
+\index{DAC\_DOR1\_DACC1DOR@{DAC\_DOR1\_DACC1DOR}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DOR1\_DACC1DOR}{DAC\_DOR1\_DACC1DOR}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DOR1\+\_\+\+DACC1\+DOR~(0x\+FFFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_aacef98a0af264fa6b23a187e74d7c82d}{DAC\+\_\+\+DOR1\+\_\+\+DACC1\+DOR\+\_\+\+Pos}})}
+
+
+
+DAC channel1 data output 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00227}{227}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_aacef98a0af264fa6b23a187e74d7c82d}\label{reg__dac_8h_aacef98a0af264fa6b23a187e74d7c82d}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DOR1\_DACC1DOR\_Pos@{DAC\_DOR1\_DACC1DOR\_Pos}}
+\index{DAC\_DOR1\_DACC1DOR\_Pos@{DAC\_DOR1\_DACC1DOR\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DOR1\_DACC1DOR\_Pos}{DAC\_DOR1\_DACC1DOR\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DOR1\+\_\+\+DACC1\+DOR\+\_\+\+Pos~(0)}
+
+
+
+DAC\+\_\+\+DOR1 Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00226}{226}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_acaaa39c1e82279918918b072fd56db04}\label{reg__dac_8h_acaaa39c1e82279918918b072fd56db04}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DOR2\_DACC2DOR@{DAC\_DOR2\_DACC2DOR}}
+\index{DAC\_DOR2\_DACC2DOR@{DAC\_DOR2\_DACC2DOR}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DOR2\_DACC2DOR}{DAC\_DOR2\_DACC2DOR}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DOR2\+\_\+\+DACC2\+DOR~(0x\+FFFU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a17aa70d42a524b2dd911326fa65630f1}{DAC\+\_\+\+DOR2\+\_\+\+DACC2\+DOR\+\_\+\+Pos}})}
+
+
+
+DAC channel2 data output \#endif 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00233}{233}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a17aa70d42a524b2dd911326fa65630f1}\label{reg__dac_8h_a17aa70d42a524b2dd911326fa65630f1}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_DOR2\_DACC2DOR\_Pos@{DAC\_DOR2\_DACC2DOR\_Pos}}
+\index{DAC\_DOR2\_DACC2DOR\_Pos@{DAC\_DOR2\_DACC2DOR\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_DOR2\_DACC2DOR\_Pos}{DAC\_DOR2\_DACC2DOR\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+DOR2\+\_\+\+DACC2\+DOR\+\_\+\+Pos~(0)}
+
+
+
+DAC\+\_\+\+DOR2 Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00232}{232}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_ac5538a4cedf0045e00b22f4fe2344321}\label{reg__dac_8h_ac5538a4cedf0045e00b22f4fe2344321}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_SWTRIGR\_DACPRE@{DAC\_SWTRIGR\_DACPRE}}
+\index{DAC\_SWTRIGR\_DACPRE@{DAC\_SWTRIGR\_DACPRE}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_SWTRIGR\_DACPRE}{DAC\_SWTRIGR\_DACPRE}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+SWTRIGR\+\_\+\+DACPRE~(0x7\+FU $<$$<$ \mbox{\hyperlink{reg__dac_8h_a1444c7ceda390c29b964ed3d884c0817}{DAC\+\_\+\+SWTRIGR\+\_\+\+DACPRE\+\_\+\+Pos}})}
+
+
+
+DAC prescale 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00161}{161}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a1444c7ceda390c29b964ed3d884c0817}\label{reg__dac_8h_a1444c7ceda390c29b964ed3d884c0817}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_SWTRIGR\_DACPRE\_Pos@{DAC\_SWTRIGR\_DACPRE\_Pos}}
+\index{DAC\_SWTRIGR\_DACPRE\_Pos@{DAC\_SWTRIGR\_DACPRE\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_SWTRIGR\_DACPRE\_Pos}{DAC\_SWTRIGR\_DACPRE\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+SWTRIGR\+\_\+\+DACPRE\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00160}{160}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a970ef02dffaceb35ff1dd7aceb67acdd}\label{reg__dac_8h_a970ef02dffaceb35ff1dd7aceb67acdd}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_SWTRIGR\_SWTRIG1@{DAC\_SWTRIGR\_SWTRIG1}}
+\index{DAC\_SWTRIGR\_SWTRIG1@{DAC\_SWTRIGR\_SWTRIG1}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_SWTRIGR\_SWTRIG1}{DAC\_SWTRIGR\_SWTRIG1}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+SWTRIGR\+\_\+\+SWTRIG1~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_a32d8b5dafe7a5f4963e5f12656e48ee1}{DAC\+\_\+\+SWTRIGR\+\_\+\+SWTRIG1\+\_\+\+Pos}})}
+
+
+
+DAC channel1 software trigger 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00157}{157}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_a32d8b5dafe7a5f4963e5f12656e48ee1}\label{reg__dac_8h_a32d8b5dafe7a5f4963e5f12656e48ee1}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_SWTRIGR\_SWTRIG1\_Pos@{DAC\_SWTRIGR\_SWTRIG1\_Pos}}
+\index{DAC\_SWTRIGR\_SWTRIG1\_Pos@{DAC\_SWTRIGR\_SWTRIG1\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_SWTRIGR\_SWTRIG1\_Pos}{DAC\_SWTRIGR\_SWTRIG1\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+SWTRIGR\+\_\+\+SWTRIG1\+\_\+\+Pos~(0)}
+
+
+
+DAC\+\_\+\+SWTRIGR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00156}{156}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_af0e53585b505d21f5c457476bd5a18f8}\label{reg__dac_8h_af0e53585b505d21f5c457476bd5a18f8}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_SWTRIGR\_SWTRIG2@{DAC\_SWTRIGR\_SWTRIG2}}
+\index{DAC\_SWTRIGR\_SWTRIG2@{DAC\_SWTRIGR\_SWTRIG2}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_SWTRIGR\_SWTRIG2}{DAC\_SWTRIGR\_SWTRIG2}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+SWTRIGR\+\_\+\+SWTRIG2~(0x01U $<$$<$ \mbox{\hyperlink{reg__dac_8h_adb85dac71ddd76ce877fad49a47634b5}{DAC\+\_\+\+SWTRIGR\+\_\+\+SWTRIG2\+\_\+\+Pos}})}
+
+
+
+DAC channel2 software trigger 
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00159}{159}} 行定义.
+
+\mbox{\Hypertarget{reg__dac_8h_adb85dac71ddd76ce877fad49a47634b5}\label{reg__dac_8h_adb85dac71ddd76ce877fad49a47634b5}} 
+\index{reg\_dac.h@{reg\_dac.h}!DAC\_SWTRIGR\_SWTRIG2\_Pos@{DAC\_SWTRIGR\_SWTRIG2\_Pos}}
+\index{DAC\_SWTRIGR\_SWTRIG2\_Pos@{DAC\_SWTRIGR\_SWTRIG2\_Pos}!reg\_dac.h@{reg\_dac.h}}
+\doxysubsubsection{\texorpdfstring{DAC\_SWTRIGR\_SWTRIG2\_Pos}{DAC\_SWTRIGR\_SWTRIG2\_Pos}}
+{\footnotesize\ttfamily \#define DAC\+\_\+\+SWTRIGR\+\_\+\+SWTRIG2\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dac_8h_source}{reg\+\_\+dac.\+h}} 第 \mbox{\hyperlink{reg__dac_8h_source_l00158}{158}} 行定义.
+

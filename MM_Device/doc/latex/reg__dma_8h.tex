@@ -1,0 +1,2876 @@
+\hypertarget{reg__dma_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/reg\+\_\+dma.h 文件参考}
+\label{reg__dma_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_dma.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_dma.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em DMA Register Structure Definition \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_d_m_a___type_def}{DMA\+\_\+\+Type\+Def}}
+\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ab2d8a917a0e4ea99a22ac6ebf279bc72}{DMA1\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x0000)
+\begin{DoxyCompactList}\small\item\em DMA Base Address Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a888dbc1608243badeb3554ffedc7364c}{DMA1\+\_\+\+Channel1\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x0008)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x40020008 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a38a70090eef3687e83fa6ac0c6d22267}{DMA1\+\_\+\+Channel2\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x001C)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x4002001C \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a70b3d9f36ca9ce95b4e421c11154fe5d}{DMA1\+\_\+\+Channel3\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x0030)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x40020030 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a1adc93cd0baf0897202c71110e045692}{DMA1\+\_\+\+Channel4\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x0044)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x40020044 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ac041a71cd6c1973964f847a68aa14478}{DMA1\+\_\+\+Channel5\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x0058)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x40020058 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a896c2c7585dd8bc3969cf8561f689d2d}{DMA1\+\_\+\+Channel6\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x006C)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x4002006C \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_aeee0d1f77d0db1db533016a09351166c}{DMA1\+\_\+\+Channel7\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x0080)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x40020080 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ab72a9ae145053ee13d1d491fb5c1df64}{DMA2\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x0400)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x40020400 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ad3bd6c4201d12f5d474518c1b02f8e3b}{DMA2\+\_\+\+Channel1\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x0408)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x40020408 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a22f39f23c879c699b88e04a629f69d1c}{DMA2\+\_\+\+Channel2\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x041C)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x4002041C \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a6f2369b8bc155fb55a28891987605c2c}{DMA2\+\_\+\+Channel3\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x0430)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x40020430 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a01b063266473f290a55047654fbbfbee}{DMA2\+\_\+\+Channel4\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x0444)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x40020444 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a1eea983a5d68bf36f4d19fbb07955ca1}{DMA2\+\_\+\+Channel5\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x0458)
+\begin{DoxyCompactList}\small\item\em Base Address\+: 0x40020458 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_acc16d2a5937f7585320a98f7f6b578f9}{DMA1}}~((\mbox{\hyperlink{struct_d_m_a___type_def}{DMA\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_ab2d8a917a0e4ea99a22ac6ebf279bc72}{DMA1\+\_\+\+BASE}})
+\begin{DoxyCompactList}\small\item\em DMA type pointer Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a15bf87ecd3d2d13b1fdd937523d91062}{DMA1\+\_\+ch1}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a888dbc1608243badeb3554ffedc7364c}{DMA1\+\_\+\+Channel1\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a080049aca6fb32245ff8def5505df1b6}{DMA1\+\_\+ch2}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a38a70090eef3687e83fa6ac0c6d22267}{DMA1\+\_\+\+Channel2\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a5efe535fa81d529624077c6f4897ffbc}{DMA1\+\_\+ch3}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a70b3d9f36ca9ce95b4e421c11154fe5d}{DMA1\+\_\+\+Channel3\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a5448f905fc9ab94c5aa46bf9d6d0a12c}{DMA1\+\_\+ch4}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a1adc93cd0baf0897202c71110e045692}{DMA1\+\_\+\+Channel4\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a1a1ece853cf8562e7c37690ed117ef50}{DMA1\+\_\+ch5}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_ac041a71cd6c1973964f847a68aa14478}{DMA1\+\_\+\+Channel5\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ac83c5be824be1c02716e2522e80ddf7a}{DMA1\+\_\+\+Channel1}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a888dbc1608243badeb3554ffedc7364c}{DMA1\+\_\+\+Channel1\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a23d7631dd10c645e06971b2543ba2949}{DMA1\+\_\+\+Channel2}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a38a70090eef3687e83fa6ac0c6d22267}{DMA1\+\_\+\+Channel2\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_acf7b6093a37b306d7f1f50b2f200f0d0}{DMA1\+\_\+\+Channel3}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a70b3d9f36ca9ce95b4e421c11154fe5d}{DMA1\+\_\+\+Channel3\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ad2c42743316bf64da557130061b1f56a}{DMA1\+\_\+\+Channel4}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a1adc93cd0baf0897202c71110e045692}{DMA1\+\_\+\+Channel4\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a06ff98ddef3c962795d2e2444004abff}{DMA1\+\_\+\+Channel5}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_ac041a71cd6c1973964f847a68aa14478}{DMA1\+\_\+\+Channel5\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_abbf3c70538f48712fe05ccbb959cc548}{DMA1\+\_\+ch6}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a896c2c7585dd8bc3969cf8561f689d2d}{DMA1\+\_\+\+Channel6\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a66e8343ef1dbaaa8fb4c2396e54b79ea}{DMA1\+\_\+ch7}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_aeee0d1f77d0db1db533016a09351166c}{DMA1\+\_\+\+Channel7\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ac013c4376e4797831b5ddd2a09519df8}{DMA1\+\_\+\+Channel6}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a896c2c7585dd8bc3969cf8561f689d2d}{DMA1\+\_\+\+Channel6\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a4f9c23b3d1add93ed206b5c9afa5cda3}{DMA1\+\_\+\+Channel7}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_aeee0d1f77d0db1db533016a09351166c}{DMA1\+\_\+\+Channel7\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a506520140eec1708bc7570c49bdf972d}{DMA2}}~((\mbox{\hyperlink{struct_d_m_a___type_def}{DMA\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_ab72a9ae145053ee13d1d491fb5c1df64}{DMA2\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a7457f5f395681e33e594d6909f64cd4d}{DMA2\+\_\+ch1}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_ad3bd6c4201d12f5d474518c1b02f8e3b}{DMA2\+\_\+\+Channel1\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_aa5f9845a402cdfe524f13c559b027c29}{DMA2\+\_\+ch2}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a22f39f23c879c699b88e04a629f69d1c}{DMA2\+\_\+\+Channel2\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_add6bc19cbd80a0431e52edfb0d072291}{DMA2\+\_\+ch3}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a6f2369b8bc155fb55a28891987605c2c}{DMA2\+\_\+\+Channel3\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a83d21c03d7a6fdc92f4dcdd80bc2ef17}{DMA2\+\_\+ch4}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a01b063266473f290a55047654fbbfbee}{DMA2\+\_\+\+Channel4\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a80c38f0eee0b0fdb84914f161ebfb37c}{DMA2\+\_\+ch5}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a1eea983a5d68bf36f4d19fbb07955ca1}{DMA2\+\_\+\+Channel5\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ad86c75e1ff89e03e15570f47962865c8}{DMA2\+\_\+\+Channel1}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_ad3bd6c4201d12f5d474518c1b02f8e3b}{DMA2\+\_\+\+Channel1\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a316024020799373b9d8e35c316c74f24}{DMA2\+\_\+\+Channel2}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a22f39f23c879c699b88e04a629f69d1c}{DMA2\+\_\+\+Channel2\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a6dca52a79587e0ca9a5d669048b4c7eb}{DMA2\+\_\+\+Channel3}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a6f2369b8bc155fb55a28891987605c2c}{DMA2\+\_\+\+Channel3\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a612b396657695191ad740b0b59bc9f12}{DMA2\+\_\+\+Channel4}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a01b063266473f290a55047654fbbfbee}{DMA2\+\_\+\+Channel4\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a521c13b7d0f82a6897d47995da392750}{DMA2\+\_\+\+Channel5}}~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a1eea983a5d68bf36f4d19fbb07955ca1}{DMA2\+\_\+\+Channel5\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a087ec211a08c8241dad366d1785cda52}{DMA\+\_\+\+ISR\+\_\+\+GIF1\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em DMA\+\_\+\+ISR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a3475228c998897d0f408a4c5da066186}{DMA\+\_\+\+ISR\+\_\+\+GIF1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a087ec211a08c8241dad366d1785cda52}{DMA\+\_\+\+ISR\+\_\+\+GIF1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 1 Global interrupt flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ac085bfd33abd74b8fea8fdb2c0d50281}{DMA\+\_\+\+ISR\+\_\+\+TCIF1\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a1a1522414af27c7fff2cc27edac1d680}{DMA\+\_\+\+ISR\+\_\+\+TCIF1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_ac085bfd33abd74b8fea8fdb2c0d50281}{DMA\+\_\+\+ISR\+\_\+\+TCIF1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 1 Transfer Complete flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_adca211fa8d7b7129ebee6385bfe3c74b}{DMA\+\_\+\+ISR\+\_\+\+HTIF1\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a5f83359698adf05854b55705f78d8a5c}{DMA\+\_\+\+ISR\+\_\+\+HTIF1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_adca211fa8d7b7129ebee6385bfe3c74b}{DMA\+\_\+\+ISR\+\_\+\+HTIF1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 1 Half Transfer flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a0b01017e80e2ef95bf33e48cd5f1c464}{DMA\+\_\+\+ISR\+\_\+\+TEIF1\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a26bfd55e965445ae253a5c5fa8f1769a}{DMA\+\_\+\+ISR\+\_\+\+TEIF1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a0b01017e80e2ef95bf33e48cd5f1c464}{DMA\+\_\+\+ISR\+\_\+\+TEIF1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 1 Transfer Error flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a0012c596aa1189cfe65548fe251335ed}{DMA\+\_\+\+ISR\+\_\+\+GIF2\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a44fa823dbb15b829621961efc60d6a95}{DMA\+\_\+\+ISR\+\_\+\+GIF2}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a0012c596aa1189cfe65548fe251335ed}{DMA\+\_\+\+ISR\+\_\+\+GIF2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 2 Global interrupt flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ab069ba1399d2868037f766a08dbe1e4a}{DMA\+\_\+\+ISR\+\_\+\+TCIF2\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a631741eb4843eda3578808a3d8b527b2}{DMA\+\_\+\+ISR\+\_\+\+TCIF2}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_ab069ba1399d2868037f766a08dbe1e4a}{DMA\+\_\+\+ISR\+\_\+\+TCIF2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 2 Transfer Complete flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ad85456b2273dd7dfbb08fe92ac61b1e4}{DMA\+\_\+\+ISR\+\_\+\+HTIF2\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a8ee1947aef188f437f37d3ff444f8646}{DMA\+\_\+\+ISR\+\_\+\+HTIF2}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_ad85456b2273dd7dfbb08fe92ac61b1e4}{DMA\+\_\+\+ISR\+\_\+\+HTIF2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 2 Half Transfer flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a0cdbf8d2aa171d79890a087f1c43dbd6}{DMA\+\_\+\+ISR\+\_\+\+TEIF2\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a5bcd07efcadd5fef598edec1cca70e38}{DMA\+\_\+\+ISR\+\_\+\+TEIF2}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a0cdbf8d2aa171d79890a087f1c43dbd6}{DMA\+\_\+\+ISR\+\_\+\+TEIF2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 2 Transfer Error flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a54fef9be564548137ad7c2445b20c335}{DMA\+\_\+\+ISR\+\_\+\+GIF3\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_acb0bd8fb0e580688c5cf617b618bbc17}{DMA\+\_\+\+ISR\+\_\+\+GIF3}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a54fef9be564548137ad7c2445b20c335}{DMA\+\_\+\+ISR\+\_\+\+GIF3\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 3 Global interrupt flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_af1479bcdda36f67b6337b034b920fc6d}{DMA\+\_\+\+ISR\+\_\+\+TCIF3\+\_\+\+Pos}}~(9)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a28664595df654d9d8052fb6f9cc48495}{DMA\+\_\+\+ISR\+\_\+\+TCIF3}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_af1479bcdda36f67b6337b034b920fc6d}{DMA\+\_\+\+ISR\+\_\+\+TCIF3\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 3 Transfer Complete flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a126264bff9e43ab1e8f833762fe83c1d}{DMA\+\_\+\+ISR\+\_\+\+HTIF3\+\_\+\+Pos}}~(10)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a53bb9a00737c52faffaaa91ff08b34a1}{DMA\+\_\+\+ISR\+\_\+\+HTIF3}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a126264bff9e43ab1e8f833762fe83c1d}{DMA\+\_\+\+ISR\+\_\+\+HTIF3\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 3 Half Transfer flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a248a455a5f3c5fee0cc45ab365d7b516}{DMA\+\_\+\+ISR\+\_\+\+TEIF3\+\_\+\+Pos}}~(11)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_aa624379143a2535d7a60d87d59834d10}{DMA\+\_\+\+ISR\+\_\+\+TEIF3}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a248a455a5f3c5fee0cc45ab365d7b516}{DMA\+\_\+\+ISR\+\_\+\+TEIF3\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 3 Transfer Error flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a3a333a9204a12b733075b76fe405e073}{DMA\+\_\+\+ISR\+\_\+\+GIF4\+\_\+\+Pos}}~(12)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_af4f69823d44810c353af1f0a89eaf180}{DMA\+\_\+\+ISR\+\_\+\+GIF4}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a3a333a9204a12b733075b76fe405e073}{DMA\+\_\+\+ISR\+\_\+\+GIF4\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 4 Global interrupt flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a29c55dfd31b2060f1fb68338588a859e}{DMA\+\_\+\+ISR\+\_\+\+TCIF4\+\_\+\+Pos}}~(13)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ad7d4e46949a35cf037a303bd65a0c87a}{DMA\+\_\+\+ISR\+\_\+\+TCIF4}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a29c55dfd31b2060f1fb68338588a859e}{DMA\+\_\+\+ISR\+\_\+\+TCIF4\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 4 Transfer Complete flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a2fa14ca3e688cfacb5f01b8e236b2dc8}{DMA\+\_\+\+ISR\+\_\+\+HTIF4\+\_\+\+Pos}}~(14)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a684cf326c770f1ab21c604a5f62907ad}{DMA\+\_\+\+ISR\+\_\+\+HTIF4}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a2fa14ca3e688cfacb5f01b8e236b2dc8}{DMA\+\_\+\+ISR\+\_\+\+HTIF4\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 4 Half Transfer flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a4d5a506abd056cdecd143aa6b453a3c0}{DMA\+\_\+\+ISR\+\_\+\+TEIF4\+\_\+\+Pos}}~(15)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a12fcc1471918f3e7b293b2d825177253}{DMA\+\_\+\+ISR\+\_\+\+TEIF4}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a4d5a506abd056cdecd143aa6b453a3c0}{DMA\+\_\+\+ISR\+\_\+\+TEIF4\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 4 Transfer Error flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_aaf2a17e91ebc38899d49756cb90bf4ad}{DMA\+\_\+\+ISR\+\_\+\+GIF5\+\_\+\+Pos}}~(16)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a83d4d9cba635d1e33e3477b773379cfd}{DMA\+\_\+\+ISR\+\_\+\+GIF5}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_aaf2a17e91ebc38899d49756cb90bf4ad}{DMA\+\_\+\+ISR\+\_\+\+GIF5\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 5 Global interrupt flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_aa3df7a4b5b5522c858efb983e147e521}{DMA\+\_\+\+ISR\+\_\+\+TCIF5\+\_\+\+Pos}}~(17)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a5ea57d09f13edbd6ad8afe9465e0fa70}{DMA\+\_\+\+ISR\+\_\+\+TCIF5}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_aa3df7a4b5b5522c858efb983e147e521}{DMA\+\_\+\+ISR\+\_\+\+TCIF5\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 5 Transfer Complete flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a9052b436400d7e915f8f5bfff90f90e1}{DMA\+\_\+\+ISR\+\_\+\+HTIF5\+\_\+\+Pos}}~(18)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a3d1f2b8c82b1e20b4311af8ca9576736}{DMA\+\_\+\+ISR\+\_\+\+HTIF5}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a9052b436400d7e915f8f5bfff90f90e1}{DMA\+\_\+\+ISR\+\_\+\+HTIF5\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 5 Half Transfer flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a6c21cfd99b9042aae0c09646f194400d}{DMA\+\_\+\+ISR\+\_\+\+TEIF5\+\_\+\+Pos}}~(19)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a42f9b12c4c80cbb7cd0f94f139c73de3}{DMA\+\_\+\+ISR\+\_\+\+TEIF5}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a6c21cfd99b9042aae0c09646f194400d}{DMA\+\_\+\+ISR\+\_\+\+TEIF5\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 5 Transfer Error flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_adf4eabd1be5d69031f89e738b5c74b67}{DMA\+\_\+\+ISR\+\_\+\+GIF6\+\_\+\+Pos}}~(20)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ac55f4836aa8e6cfc9bdcadfabf65b5d8}{DMA\+\_\+\+ISR\+\_\+\+GIF6}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_adf4eabd1be5d69031f89e738b5c74b67}{DMA\+\_\+\+ISR\+\_\+\+GIF6\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 6 Global interrupt flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a51a0e94ffea3d92ae1dc0eb5747cecc1}{DMA\+\_\+\+ISR\+\_\+\+TCIF6\+\_\+\+Pos}}~(21)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a2d76395cf6c6ef50e05c96d7ae723058}{DMA\+\_\+\+ISR\+\_\+\+TCIF6}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a51a0e94ffea3d92ae1dc0eb5747cecc1}{DMA\+\_\+\+ISR\+\_\+\+TCIF6\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 6 Transfer Complete flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ae04cbdca367113e9af5ded68c90e8523}{DMA\+\_\+\+ISR\+\_\+\+HTIF6\+\_\+\+Pos}}~(22)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a41b6d9787aeff76a51581d9488b4604f}{DMA\+\_\+\+ISR\+\_\+\+HTIF6}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_ae04cbdca367113e9af5ded68c90e8523}{DMA\+\_\+\+ISR\+\_\+\+HTIF6\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 6 Half Transfer flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a963d5205894b028565a3845600f4ffd6}{DMA\+\_\+\+ISR\+\_\+\+TEIF6\+\_\+\+Pos}}~(23)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ae47d914969922381708ae06c1c71123a}{DMA\+\_\+\+ISR\+\_\+\+TEIF6}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a963d5205894b028565a3845600f4ffd6}{DMA\+\_\+\+ISR\+\_\+\+TEIF6\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 6 Transfer Error flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a6e8c37f4c5e50c523965acdd6fb68407}{DMA\+\_\+\+ISR\+\_\+\+GIF7\+\_\+\+Pos}}~(24)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a86f178e879b2d8ceeea351e4750272dd}{DMA\+\_\+\+ISR\+\_\+\+GIF7}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a6e8c37f4c5e50c523965acdd6fb68407}{DMA\+\_\+\+ISR\+\_\+\+GIF7\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 7 Global interrupt flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_af045c89aa989b77cd4a81d5995a35350}{DMA\+\_\+\+ISR\+\_\+\+TCIF7\+\_\+\+Pos}}~(25)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a4528af54928542c09502c01827418732}{DMA\+\_\+\+ISR\+\_\+\+TCIF7}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_af045c89aa989b77cd4a81d5995a35350}{DMA\+\_\+\+ISR\+\_\+\+TCIF7\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 7 Transfer Complete flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a797a964a31272c1fcab6b10f248f01b2}{DMA\+\_\+\+ISR\+\_\+\+HTIF7\+\_\+\+Pos}}~(26)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a769016c2b0bf22ff3ad6967b3dc0e2bb}{DMA\+\_\+\+ISR\+\_\+\+HTIF7}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a797a964a31272c1fcab6b10f248f01b2}{DMA\+\_\+\+ISR\+\_\+\+HTIF7\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 7 Half Transfer flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a206b3332efbd7d8fdd094e791de94812}{DMA\+\_\+\+ISR\+\_\+\+TEIF7\+\_\+\+Pos}}~(27)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_af8333b3c78b7d0a07bd4b1e91e902b31}{DMA\+\_\+\+ISR\+\_\+\+TEIF7}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a206b3332efbd7d8fdd094e791de94812}{DMA\+\_\+\+ISR\+\_\+\+TEIF7\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 7 Transfer Error flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a384a232196033f388924f3f598f63777}{DMA\+\_\+\+IFCR\+\_\+\+CGIF1\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em DMA\+\_\+\+IFCR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a75ad797334d9fb70750ace14b16e0122}{DMA\+\_\+\+IFCR\+\_\+\+CGIF1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a384a232196033f388924f3f598f63777}{DMA\+\_\+\+IFCR\+\_\+\+CGIF1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 1 Global interrupt clearr \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a4602952d83692098965c92eb075ba8f2}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF1\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a60085fa798cf77f80365839e7d88c8f1}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a4602952d83692098965c92eb075ba8f2}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 1 Transfer Complete clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a429ea8f924228f3c9c769a1dd10fccd2}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF1\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a66e9aa2475130fbf63db304ceea019eb}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a429ea8f924228f3c9c769a1dd10fccd2}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 1 Half Transfer clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ae398bd469325b42df8d631c2c7648c03}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF1\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a989699cace2fa87efa867b825c1deb29}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF1}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_ae398bd469325b42df8d631c2c7648c03}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF1\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 1 Transfer Error clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a1a87eeb6e68e40c01607eb3055b2c802}{DMA\+\_\+\+IFCR\+\_\+\+CGIF2\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ab907e446bbf1e1400dc5fdbd929d0e5f}{DMA\+\_\+\+IFCR\+\_\+\+CGIF2}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a1a87eeb6e68e40c01607eb3055b2c802}{DMA\+\_\+\+IFCR\+\_\+\+CGIF2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 2 Global interrupt clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_acfd856f903bc2bb83b5e33bdcfbb72a8}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF2\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a8505b947a04834750e164dc320dfae09}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF2}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_acfd856f903bc2bb83b5e33bdcfbb72a8}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 2 Transfer Complete clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a5ae42f9ec920fc45409fca256fc1c094}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF2\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a3e769c78024a22b4d1f528ce03ccc760}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF2}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a5ae42f9ec920fc45409fca256fc1c094}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 2 Half Transfer clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a2c81071e0ad5e28ca23e87a3bef63f78}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF2\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a4abb0afb7dbe362c150bf80c4c751a67}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF2}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a2c81071e0ad5e28ca23e87a3bef63f78}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF2\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 2 Transfer Error clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ae8abc8c7851622f66870e25e698befa2}{DMA\+\_\+\+IFCR\+\_\+\+CGIF3\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a0d98e88c334091e20e931372646a6b0d}{DMA\+\_\+\+IFCR\+\_\+\+CGIF3}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_ae8abc8c7851622f66870e25e698befa2}{DMA\+\_\+\+IFCR\+\_\+\+CGIF3\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 3 Global interrupt clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_afa340e56f4bfd8bf669b3cb636940a21}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF3\+\_\+\+Pos}}~(9)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_accb4c0c5e0f2e01dec12ba366b83cb4d}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF3}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_afa340e56f4bfd8bf669b3cb636940a21}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF3\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 3 Transfer Complete clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_aa9188b1e168f052779be66773b2132d6}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF3\+\_\+\+Pos}}~(10)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a2dea86ca2ec8aa945b840f2c1866e1f6}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF3}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_aa9188b1e168f052779be66773b2132d6}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF3\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 3 Half Transfer clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a57eb58cc21d13c4e954049cffe43853a}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF3\+\_\+\+Pos}}~(11)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a59bad79f1ae37b69b048834808e8d067}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF3}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a57eb58cc21d13c4e954049cffe43853a}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF3\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 3 Transfer Error clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_aad4c91830b4d46fcd53d414a91735273}{DMA\+\_\+\+IFCR\+\_\+\+CGIF4\+\_\+\+Pos}}~(12)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a73d22139e4567c89e2afcb4aef71104c}{DMA\+\_\+\+IFCR\+\_\+\+CGIF4}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_aad4c91830b4d46fcd53d414a91735273}{DMA\+\_\+\+IFCR\+\_\+\+CGIF4\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 4 Global interrupt clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a44f092ea2c52ba0b5137c06702776f95}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF4\+\_\+\+Pos}}~(13)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a34b431fd4e034f8333e44594712f75eb}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF4}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a44f092ea2c52ba0b5137c06702776f95}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF4\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 4 Transfer Complete clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a8a8373c904a0574577398d22fe2d1872}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF4\+\_\+\+Pos}}~(14)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a950664b81ec2d4d843f89ef102107d7b}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF4}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a8a8373c904a0574577398d22fe2d1872}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF4\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 4 Half Transfer clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a30cfe132853ae9bea3b745104f6c6bf7}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF4\+\_\+\+Pos}}~(15)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a6fdda8f7f2507c1d3988c7310a35d46c}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF4}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a30cfe132853ae9bea3b745104f6c6bf7}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF4\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 4 Transfer Error clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a3885a548a01240f4b093215c9940ef70}{DMA\+\_\+\+IFCR\+\_\+\+CGIF5\+\_\+\+Pos}}~(16)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a943245d2a8300854d53fd07bb957a6fc}{DMA\+\_\+\+IFCR\+\_\+\+CGIF5}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a3885a548a01240f4b093215c9940ef70}{DMA\+\_\+\+IFCR\+\_\+\+CGIF5\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 5 Global interrupt clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_acccd6618430fcc0515973f1335ea1cd7}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF5\+\_\+\+Pos}}~(17)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_aae4c7d1d10beb535aec39de9a8bdc327}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF5}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_acccd6618430fcc0515973f1335ea1cd7}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF5\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 5 Transfer Complete clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ac4ff720ba13ea5f68b85d13cf881798a}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF5\+\_\+\+Pos}}~(18)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a3c23c727a4dbbc45a356c8418299275d}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF5}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_ac4ff720ba13ea5f68b85d13cf881798a}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF5\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 5 Half Transfer clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a9f212a62195d09ebbdfcdf2811a3798a}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF5\+\_\+\+Pos}}~(19)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a6ec6326d337a773b4ced9d8a680c05a9}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF5}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a9f212a62195d09ebbdfcdf2811a3798a}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF5\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 5 Transfer Error clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a65947a2b4d94e4d611a087a9a9d26069}{DMA\+\_\+\+IFCR\+\_\+\+CGIF6\+\_\+\+Pos}}~(20)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a7fc61098c5cf9a7d53ddcb155e34c984}{DMA\+\_\+\+IFCR\+\_\+\+CGIF6}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a65947a2b4d94e4d611a087a9a9d26069}{DMA\+\_\+\+IFCR\+\_\+\+CGIF6\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 6 Global interrupt clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a94e93900522ede13863a0419ebedc67e}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF6\+\_\+\+Pos}}~(21)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ac3dca486df2f235aac8f3975f5f4ab75}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF6}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a94e93900522ede13863a0419ebedc67e}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF6\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 6 Transfer Complete clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a93f0d87ce3ac10330dc041aba3a26476}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF6\+\_\+\+Pos}}~(22)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ae67273db02ffd8f2bfe0a5c93e9282a4}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF6}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a93f0d87ce3ac10330dc041aba3a26476}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF6\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 6 Half Transfer clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a55707c4ab09e3bb7905a7ccd9e15cb02}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF6\+\_\+\+Pos}}~(23)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a1e523c5cbf5594ffe8540c317bce6933}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF6}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a55707c4ab09e3bb7905a7ccd9e15cb02}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF6\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 6 Transfer Error clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a191c8a88496206410e22515c1dc8f726}{DMA\+\_\+\+IFCR\+\_\+\+CGIF7\+\_\+\+Pos}}~(24)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_aad9f01dfeb289156448f5a5a0ad54099}{DMA\+\_\+\+IFCR\+\_\+\+CGIF7}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a191c8a88496206410e22515c1dc8f726}{DMA\+\_\+\+IFCR\+\_\+\+CGIF7\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 7 Global interrupt clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a00709a6aa2ad9e2a2bd93ecaea62a47b}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF7\+\_\+\+Pos}}~(25)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ac26181e8c2bd1fddc1e774cb7b621e5b}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF7}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a00709a6aa2ad9e2a2bd93ecaea62a47b}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF7\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 7 Transfer Complete clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a03149a3b9b879b9f8ad6ba03021df818}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF7\+\_\+\+Pos}}~(26)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_aa7378f7a26730bfd5c950b7c7efb9272}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF7}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a03149a3b9b879b9f8ad6ba03021df818}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF7\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 7 Half Transfer clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a61cdda5706c58ca9294f1457576c3d87}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF7\+\_\+\+Pos}}~(27)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a4076bf1ed67fb39d4a0175e5943d5f2d}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF7}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a61cdda5706c58ca9294f1457576c3d87}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF7\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel 7 Transfer Error clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a7f4112f52d39f2b8046af889c49c504c}{DMA\+\_\+\+CCR\+\_\+\+EN\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em DMA\+\_\+\+CCR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ababa3817d21a78079be76bc26b2c10f2}{DMA\+\_\+\+CCR\+\_\+\+EN}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a7f4112f52d39f2b8046af889c49c504c}{DMA\+\_\+\+CCR\+\_\+\+EN\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Channel enabl \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_abe3b07726862ce6f3a0007de1553330a}{DMA\+\_\+\+CCR\+\_\+\+TCIE\+\_\+\+Pos}}~(1)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_aaba9cd82cab0cca23de038e946f81c6a}{DMA\+\_\+\+CCR\+\_\+\+TCIE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_abe3b07726862ce6f3a0007de1553330a}{DMA\+\_\+\+CCR\+\_\+\+TCIE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transfer complete interrupt enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a5675e39ff8c23a18657c52281efc4c7e}{DMA\+\_\+\+CCR\+\_\+\+HTIE\+\_\+\+Pos}}~(2)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a0f0fae31377ab1d33e36cead97b1811b}{DMA\+\_\+\+CCR\+\_\+\+HTIE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a5675e39ff8c23a18657c52281efc4c7e}{DMA\+\_\+\+CCR\+\_\+\+HTIE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Half Transfer interrupt enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ab2744612a297431a80718a67c7c79f19}{DMA\+\_\+\+CCR\+\_\+\+TEIE\+\_\+\+Pos}}~(3)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a3dd2204c9046500140e3c720fb5a415f}{DMA\+\_\+\+CCR\+\_\+\+TEIE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_ab2744612a297431a80718a67c7c79f19}{DMA\+\_\+\+CCR\+\_\+\+TEIE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Transfer error interrupt enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a9fcc441150b42892a6ae5a4ae784d85e}{DMA\+\_\+\+CCR\+\_\+\+DIR\+\_\+\+Pos}}~(4)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a8f1ece172cf3c3e696b86d401d7345a2}{DMA\+\_\+\+CCR\+\_\+\+DIR}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a9fcc441150b42892a6ae5a4ae784d85e}{DMA\+\_\+\+CCR\+\_\+\+DIR\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Data transfer direction \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a66a4138896fef96641f9ad5eb269f4c4}{DMA\+\_\+\+CCR\+\_\+\+CIRC\+\_\+\+Pos}}~(5)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a445471396e741418bcd6f63404f4052c}{DMA\+\_\+\+CCR\+\_\+\+CIRC}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a66a4138896fef96641f9ad5eb269f4c4}{DMA\+\_\+\+CCR\+\_\+\+CIRC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Circular mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a165bb032ce1148af49048daec69508e9}{DMA\+\_\+\+CCR\+\_\+\+PINC\+\_\+\+Pos}}~(6)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a028cb96357bd24868a74ee1134a35b7e}{DMA\+\_\+\+CCR\+\_\+\+PINC}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a165bb032ce1148af49048daec69508e9}{DMA\+\_\+\+CCR\+\_\+\+PINC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Peripheral increment mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_af2f07a706a1a1b3b351151aff8b48be2}{DMA\+\_\+\+CCR\+\_\+\+MINC\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_aa189138f534283d876f654ec9474987e}{DMA\+\_\+\+CCR\+\_\+\+MINC}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_af2f07a706a1a1b3b351151aff8b48be2}{DMA\+\_\+\+CCR\+\_\+\+MINC\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Memory increment mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a73550e263e014a80ba68b9d44d335a83}{DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+\+Pos}}~(8)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a1a8d824b9bff520523fccfbe57b07516}{DMA\+\_\+\+CCR\+\_\+\+PSIZE}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a73550e263e014a80ba68b9d44d335a83}{DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em PSIZE\mbox{[}1\+:0\mbox{]} bits (Peripheral size) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a4b3726c7d0fd3b00e33637f163c79128}{DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+0}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a73550e263e014a80ba68b9d44d335a83}{DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Bit0 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a8e8d8786f16dda2bef035ba2df15b69d}{DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+1}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a73550e263e014a80ba68b9d44d335a83}{DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Bit1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a73b3d2706a5edb3f39e1f8f8ad0b4fd2}{DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+\+BYTE}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a73550e263e014a80ba68b9d44d335a83}{DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DMA Peripheral Data Size Byte \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_adde96e7cfeb08e5e48862a338cfe9791}{DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+\+HALFWORD}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a73550e263e014a80ba68b9d44d335a83}{DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DMA Peripheral Data Size Half\+Word \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a6f4a3508ff43c686c4e36d67451cd83c}{DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+\+WORD}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a73550e263e014a80ba68b9d44d335a83}{DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DMA Peripheral Data Size Word \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_afd0ff14a5994586ebdeba33fde4a2c36}{DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+\+Pos}}~(10)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a492495253fe3f05ea83dd3c3dbb5dddf}{DMA\+\_\+\+CCR\+\_\+\+MSIZE}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__dma_8h_afd0ff14a5994586ebdeba33fde4a2c36}{DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em MSIZE\mbox{[}1\+:0\mbox{]} bits (Memory size) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a600d3f8200fc42ea6e1c7c8abbd327ad}{DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+0}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_afd0ff14a5994586ebdeba33fde4a2c36}{DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Bit0 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a60b9958fbde96f69160ca7edf92d4c27}{DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+1}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__dma_8h_afd0ff14a5994586ebdeba33fde4a2c36}{DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Bit1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a94de8f4521db8129abfeccf891a27664}{DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+\+BYTE}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__dma_8h_afd0ff14a5994586ebdeba33fde4a2c36}{DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DMA Memory Data Size Byte \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_add20224aea8e355592857fedf247b539}{DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+\+HALFWORD}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_afd0ff14a5994586ebdeba33fde4a2c36}{DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DMA Memory Data Size Half\+Word \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a40f4a8974d742eac2e5cd949936cc828}{DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+\+WORD}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__dma_8h_afd0ff14a5994586ebdeba33fde4a2c36}{DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DMA Memory Data Size Word \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a6f49ebf3f4035ea2357b791da026846b}{DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+Pos}}~(12)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a97726688157629243aa59bb60e33c284}{DMA\+\_\+\+CCR\+\_\+\+PL}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a6f49ebf3f4035ea2357b791da026846b}{DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em PL\mbox{[}1\+:0\mbox{]} bits(\+Channel Priority level) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_aa935d7f115297c5e9e10a62efd065247}{DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+0}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a6f49ebf3f4035ea2357b791da026846b}{DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Bit0 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a82819927445c9617409bb08e09dc4cd8}{DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+1}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a6f49ebf3f4035ea2357b791da026846b}{DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Bit1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a4214a6b9559c3b9f5bc0a5fb4381ca72}{DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+Low}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a6f49ebf3f4035ea2357b791da026846b}{DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DMA Priority Low \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_af4eb1e57780745ac59f18b1265c7aaaf}{DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+Medium}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a6f49ebf3f4035ea2357b791da026846b}{DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DMA Priority Medium \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a5d40b6e1c73110b2bfb00e914951c33f}{DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+High}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a6f49ebf3f4035ea2357b791da026846b}{DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DMA Priority High \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a43ced3955edbc9cef993e2e9c0878a97}{DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+Very\+High}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a6f49ebf3f4035ea2357b791da026846b}{DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em DMA Priority Very\+High \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a3a61a27bfdc367d330e26069cdac75d0}{DMA\+\_\+\+CCR\+\_\+\+M2\+M\+\_\+\+Pos}}~(14)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a4a26aed2c9ee1cfe3e98b871cb8fb195}{DMA\+\_\+\+CCR\+\_\+\+M2M}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a3a61a27bfdc367d330e26069cdac75d0}{DMA\+\_\+\+CCR\+\_\+\+M2\+M\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Memory to memory mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_adca138b69c0aad49c1d224b24bfe44e0}{DMA\+\_\+\+CCR\+\_\+\+ARE\+\_\+\+Pos}}~(15)
+\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a26505fc5780607068fea8643a373b546}{DMA\+\_\+\+CCR\+\_\+\+ARE}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_adca138b69c0aad49c1d224b24bfe44e0}{DMA\+\_\+\+CCR\+\_\+\+ARE\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Auto-\/\+Reload Enable bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_a96337334b23e814de339a9697b8cfe52}{DMA\+\_\+\+CNDTR\+\_\+\+NDT\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em DMA\+\_\+\+CNDTR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_ad42c0abbace3b816e7669e27b3676d2a}{DMA\+\_\+\+CNDTR\+\_\+\+NDT}}~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__dma_8h_a96337334b23e814de339a9697b8cfe52}{DMA\+\_\+\+CNDTR\+\_\+\+NDT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Number of data to Transfer \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_aedbe38bfd0952b6490a0517143030eb0}{DMA\+\_\+\+CPAR\+\_\+\+PA\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em DMA\+\_\+\+CPAR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_aa3f5ad05ab0a37eb49692c4d77730eb1}{DMA\+\_\+\+CPAR\+\_\+\+PA}}~(0x\+FFFFFFFFU $<$$<$ \mbox{\hyperlink{reg__dma_8h_aedbe38bfd0952b6490a0517143030eb0}{DMA\+\_\+\+CPAR\+\_\+\+PA\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Peripheral Address \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_af8680eed5bbb2c59ececcacbdb9cdd5b}{DMA\+\_\+\+CMAR\+\_\+\+MA\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em DMA\+\_\+\+CMAR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__dma_8h_aacd9100e19b17a0641359cd158ea0cb7}{DMA\+\_\+\+CMAR\+\_\+\+MA}}~(0x\+FFFFFFFFU $<$$<$ \mbox{\hyperlink{reg__dma_8h_af8680eed5bbb2c59ececcacbdb9cdd5b}{DMA\+\_\+\+CMAR\+\_\+\+MA\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Peripheral Address \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{reg__dma_8h_acc16d2a5937f7585320a98f7f6b578f9}\label{reg__dma_8h_acc16d2a5937f7585320a98f7f6b578f9}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1@{DMA1}}
+\index{DMA1@{DMA1}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1}{DMA1}}
+{\footnotesize\ttfamily \#define DMA1~((\mbox{\hyperlink{struct_d_m_a___type_def}{DMA\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_ab2d8a917a0e4ea99a22ac6ebf279bc72}{DMA1\+\_\+\+BASE}})}
+
+
+
+DMA type pointer Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00087}{87}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ab2d8a917a0e4ea99a22ac6ebf279bc72}\label{reg__dma_8h_ab2d8a917a0e4ea99a22ac6ebf279bc72}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1\_BASE@{DMA1\_BASE}}
+\index{DMA1\_BASE@{DMA1\_BASE}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_BASE}{DMA1\_BASE}}
+{\footnotesize\ttfamily \#define DMA1\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x0000)}
+
+
+
+DMA Base Address Definition 
+
+Base Address\+: 0x40020000 
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00047}{47}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a15bf87ecd3d2d13b1fdd937523d91062}\label{reg__dma_8h_a15bf87ecd3d2d13b1fdd937523d91062}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1\_ch1@{DMA1\_ch1}}
+\index{DMA1\_ch1@{DMA1\_ch1}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_ch1}{DMA1\_ch1}}
+{\footnotesize\ttfamily \#define DMA1\+\_\+ch1~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a888dbc1608243badeb3554ffedc7364c}{DMA1\+\_\+\+Channel1\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00088}{88}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a080049aca6fb32245ff8def5505df1b6}\label{reg__dma_8h_a080049aca6fb32245ff8def5505df1b6}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1\_ch2@{DMA1\_ch2}}
+\index{DMA1\_ch2@{DMA1\_ch2}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_ch2}{DMA1\_ch2}}
+{\footnotesize\ttfamily \#define DMA1\+\_\+ch2~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a38a70090eef3687e83fa6ac0c6d22267}{DMA1\+\_\+\+Channel2\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00089}{89}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a5efe535fa81d529624077c6f4897ffbc}\label{reg__dma_8h_a5efe535fa81d529624077c6f4897ffbc}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1\_ch3@{DMA1\_ch3}}
+\index{DMA1\_ch3@{DMA1\_ch3}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_ch3}{DMA1\_ch3}}
+{\footnotesize\ttfamily \#define DMA1\+\_\+ch3~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a70b3d9f36ca9ce95b4e421c11154fe5d}{DMA1\+\_\+\+Channel3\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00090}{90}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a5448f905fc9ab94c5aa46bf9d6d0a12c}\label{reg__dma_8h_a5448f905fc9ab94c5aa46bf9d6d0a12c}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1\_ch4@{DMA1\_ch4}}
+\index{DMA1\_ch4@{DMA1\_ch4}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_ch4}{DMA1\_ch4}}
+{\footnotesize\ttfamily \#define DMA1\+\_\+ch4~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a1adc93cd0baf0897202c71110e045692}{DMA1\+\_\+\+Channel4\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00091}{91}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a1a1ece853cf8562e7c37690ed117ef50}\label{reg__dma_8h_a1a1ece853cf8562e7c37690ed117ef50}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1\_ch5@{DMA1\_ch5}}
+\index{DMA1\_ch5@{DMA1\_ch5}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_ch5}{DMA1\_ch5}}
+{\footnotesize\ttfamily \#define DMA1\+\_\+ch5~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_ac041a71cd6c1973964f847a68aa14478}{DMA1\+\_\+\+Channel5\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00092}{92}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_abbf3c70538f48712fe05ccbb959cc548}\label{reg__dma_8h_abbf3c70538f48712fe05ccbb959cc548}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1\_ch6@{DMA1\_ch6}}
+\index{DMA1\_ch6@{DMA1\_ch6}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_ch6}{DMA1\_ch6}}
+{\footnotesize\ttfamily \#define DMA1\+\_\+ch6~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a896c2c7585dd8bc3969cf8561f689d2d}{DMA1\+\_\+\+Channel6\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00101}{101}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a66e8343ef1dbaaa8fb4c2396e54b79ea}\label{reg__dma_8h_a66e8343ef1dbaaa8fb4c2396e54b79ea}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1\_ch7@{DMA1\_ch7}}
+\index{DMA1\_ch7@{DMA1\_ch7}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_ch7}{DMA1\_ch7}}
+{\footnotesize\ttfamily \#define DMA1\+\_\+ch7~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_aeee0d1f77d0db1db533016a09351166c}{DMA1\+\_\+\+Channel7\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00102}{102}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ac83c5be824be1c02716e2522e80ddf7a}\label{reg__dma_8h_ac83c5be824be1c02716e2522e80ddf7a}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1\_Channel1@{DMA1\_Channel1}}
+\index{DMA1\_Channel1@{DMA1\_Channel1}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_Channel1}{DMA1\_Channel1}}
+{\footnotesize\ttfamily \#define DMA1\+\_\+\+Channel1~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a888dbc1608243badeb3554ffedc7364c}{DMA1\+\_\+\+Channel1\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00094}{94}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a888dbc1608243badeb3554ffedc7364c}\label{reg__dma_8h_a888dbc1608243badeb3554ffedc7364c}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1\_Channel1\_BASE@{DMA1\_Channel1\_BASE}}
+\index{DMA1\_Channel1\_BASE@{DMA1\_Channel1\_BASE}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_Channel1\_BASE}{DMA1\_Channel1\_BASE}}
+{\footnotesize\ttfamily \#define DMA1\+\_\+\+Channel1\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x0008)}
+
+
+
+Base Address\+: 0x40020008 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00048}{48}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a23d7631dd10c645e06971b2543ba2949}\label{reg__dma_8h_a23d7631dd10c645e06971b2543ba2949}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1\_Channel2@{DMA1\_Channel2}}
+\index{DMA1\_Channel2@{DMA1\_Channel2}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_Channel2}{DMA1\_Channel2}}
+{\footnotesize\ttfamily \#define DMA1\+\_\+\+Channel2~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a38a70090eef3687e83fa6ac0c6d22267}{DMA1\+\_\+\+Channel2\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00095}{95}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a38a70090eef3687e83fa6ac0c6d22267}\label{reg__dma_8h_a38a70090eef3687e83fa6ac0c6d22267}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1\_Channel2\_BASE@{DMA1\_Channel2\_BASE}}
+\index{DMA1\_Channel2\_BASE@{DMA1\_Channel2\_BASE}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_Channel2\_BASE}{DMA1\_Channel2\_BASE}}
+{\footnotesize\ttfamily \#define DMA1\+\_\+\+Channel2\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x001C)}
+
+
+
+Base Address\+: 0x4002001C 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00049}{49}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_acf7b6093a37b306d7f1f50b2f200f0d0}\label{reg__dma_8h_acf7b6093a37b306d7f1f50b2f200f0d0}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1\_Channel3@{DMA1\_Channel3}}
+\index{DMA1\_Channel3@{DMA1\_Channel3}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_Channel3}{DMA1\_Channel3}}
+{\footnotesize\ttfamily \#define DMA1\+\_\+\+Channel3~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a70b3d9f36ca9ce95b4e421c11154fe5d}{DMA1\+\_\+\+Channel3\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00096}{96}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a70b3d9f36ca9ce95b4e421c11154fe5d}\label{reg__dma_8h_a70b3d9f36ca9ce95b4e421c11154fe5d}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1\_Channel3\_BASE@{DMA1\_Channel3\_BASE}}
+\index{DMA1\_Channel3\_BASE@{DMA1\_Channel3\_BASE}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_Channel3\_BASE}{DMA1\_Channel3\_BASE}}
+{\footnotesize\ttfamily \#define DMA1\+\_\+\+Channel3\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x0030)}
+
+
+
+Base Address\+: 0x40020030 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00050}{50}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ad2c42743316bf64da557130061b1f56a}\label{reg__dma_8h_ad2c42743316bf64da557130061b1f56a}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1\_Channel4@{DMA1\_Channel4}}
+\index{DMA1\_Channel4@{DMA1\_Channel4}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_Channel4}{DMA1\_Channel4}}
+{\footnotesize\ttfamily \#define DMA1\+\_\+\+Channel4~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a1adc93cd0baf0897202c71110e045692}{DMA1\+\_\+\+Channel4\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00097}{97}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a1adc93cd0baf0897202c71110e045692}\label{reg__dma_8h_a1adc93cd0baf0897202c71110e045692}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1\_Channel4\_BASE@{DMA1\_Channel4\_BASE}}
+\index{DMA1\_Channel4\_BASE@{DMA1\_Channel4\_BASE}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_Channel4\_BASE}{DMA1\_Channel4\_BASE}}
+{\footnotesize\ttfamily \#define DMA1\+\_\+\+Channel4\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x0044)}
+
+
+
+Base Address\+: 0x40020044 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00051}{51}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a06ff98ddef3c962795d2e2444004abff}\label{reg__dma_8h_a06ff98ddef3c962795d2e2444004abff}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1\_Channel5@{DMA1\_Channel5}}
+\index{DMA1\_Channel5@{DMA1\_Channel5}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_Channel5}{DMA1\_Channel5}}
+{\footnotesize\ttfamily \#define DMA1\+\_\+\+Channel5~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_ac041a71cd6c1973964f847a68aa14478}{DMA1\+\_\+\+Channel5\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00098}{98}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ac041a71cd6c1973964f847a68aa14478}\label{reg__dma_8h_ac041a71cd6c1973964f847a68aa14478}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1\_Channel5\_BASE@{DMA1\_Channel5\_BASE}}
+\index{DMA1\_Channel5\_BASE@{DMA1\_Channel5\_BASE}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_Channel5\_BASE}{DMA1\_Channel5\_BASE}}
+{\footnotesize\ttfamily \#define DMA1\+\_\+\+Channel5\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x0058)}
+
+
+
+Base Address\+: 0x40020058 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00052}{52}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ac013c4376e4797831b5ddd2a09519df8}\label{reg__dma_8h_ac013c4376e4797831b5ddd2a09519df8}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1\_Channel6@{DMA1\_Channel6}}
+\index{DMA1\_Channel6@{DMA1\_Channel6}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_Channel6}{DMA1\_Channel6}}
+{\footnotesize\ttfamily \#define DMA1\+\_\+\+Channel6~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a896c2c7585dd8bc3969cf8561f689d2d}{DMA1\+\_\+\+Channel6\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00104}{104}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a896c2c7585dd8bc3969cf8561f689d2d}\label{reg__dma_8h_a896c2c7585dd8bc3969cf8561f689d2d}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1\_Channel6\_BASE@{DMA1\_Channel6\_BASE}}
+\index{DMA1\_Channel6\_BASE@{DMA1\_Channel6\_BASE}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_Channel6\_BASE}{DMA1\_Channel6\_BASE}}
+{\footnotesize\ttfamily \#define DMA1\+\_\+\+Channel6\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x006C)}
+
+
+
+Base Address\+: 0x4002006C 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00054}{54}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a4f9c23b3d1add93ed206b5c9afa5cda3}\label{reg__dma_8h_a4f9c23b3d1add93ed206b5c9afa5cda3}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1\_Channel7@{DMA1\_Channel7}}
+\index{DMA1\_Channel7@{DMA1\_Channel7}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_Channel7}{DMA1\_Channel7}}
+{\footnotesize\ttfamily \#define DMA1\+\_\+\+Channel7~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_aeee0d1f77d0db1db533016a09351166c}{DMA1\+\_\+\+Channel7\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00105}{105}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_aeee0d1f77d0db1db533016a09351166c}\label{reg__dma_8h_aeee0d1f77d0db1db533016a09351166c}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA1\_Channel7\_BASE@{DMA1\_Channel7\_BASE}}
+\index{DMA1\_Channel7\_BASE@{DMA1\_Channel7\_BASE}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_Channel7\_BASE}{DMA1\_Channel7\_BASE}}
+{\footnotesize\ttfamily \#define DMA1\+\_\+\+Channel7\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x0080)}
+
+
+
+Base Address\+: 0x40020080 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00055}{55}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a506520140eec1708bc7570c49bdf972d}\label{reg__dma_8h_a506520140eec1708bc7570c49bdf972d}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA2@{DMA2}}
+\index{DMA2@{DMA2}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA2}{DMA2}}
+{\footnotesize\ttfamily \#define DMA2~((\mbox{\hyperlink{struct_d_m_a___type_def}{DMA\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_ab72a9ae145053ee13d1d491fb5c1df64}{DMA2\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00107}{107}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ab72a9ae145053ee13d1d491fb5c1df64}\label{reg__dma_8h_ab72a9ae145053ee13d1d491fb5c1df64}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA2\_BASE@{DMA2\_BASE}}
+\index{DMA2\_BASE@{DMA2\_BASE}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA2\_BASE}{DMA2\_BASE}}
+{\footnotesize\ttfamily \#define DMA2\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x0400)}
+
+
+
+Base Address\+: 0x40020400 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00056}{56}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a7457f5f395681e33e594d6909f64cd4d}\label{reg__dma_8h_a7457f5f395681e33e594d6909f64cd4d}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA2\_ch1@{DMA2\_ch1}}
+\index{DMA2\_ch1@{DMA2\_ch1}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA2\_ch1}{DMA2\_ch1}}
+{\footnotesize\ttfamily \#define DMA2\+\_\+ch1~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_ad3bd6c4201d12f5d474518c1b02f8e3b}{DMA2\+\_\+\+Channel1\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00108}{108}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_aa5f9845a402cdfe524f13c559b027c29}\label{reg__dma_8h_aa5f9845a402cdfe524f13c559b027c29}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA2\_ch2@{DMA2\_ch2}}
+\index{DMA2\_ch2@{DMA2\_ch2}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA2\_ch2}{DMA2\_ch2}}
+{\footnotesize\ttfamily \#define DMA2\+\_\+ch2~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a22f39f23c879c699b88e04a629f69d1c}{DMA2\+\_\+\+Channel2\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00109}{109}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_add6bc19cbd80a0431e52edfb0d072291}\label{reg__dma_8h_add6bc19cbd80a0431e52edfb0d072291}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA2\_ch3@{DMA2\_ch3}}
+\index{DMA2\_ch3@{DMA2\_ch3}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA2\_ch3}{DMA2\_ch3}}
+{\footnotesize\ttfamily \#define DMA2\+\_\+ch3~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a6f2369b8bc155fb55a28891987605c2c}{DMA2\+\_\+\+Channel3\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00110}{110}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a83d21c03d7a6fdc92f4dcdd80bc2ef17}\label{reg__dma_8h_a83d21c03d7a6fdc92f4dcdd80bc2ef17}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA2\_ch4@{DMA2\_ch4}}
+\index{DMA2\_ch4@{DMA2\_ch4}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA2\_ch4}{DMA2\_ch4}}
+{\footnotesize\ttfamily \#define DMA2\+\_\+ch4~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a01b063266473f290a55047654fbbfbee}{DMA2\+\_\+\+Channel4\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00111}{111}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a80c38f0eee0b0fdb84914f161ebfb37c}\label{reg__dma_8h_a80c38f0eee0b0fdb84914f161ebfb37c}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA2\_ch5@{DMA2\_ch5}}
+\index{DMA2\_ch5@{DMA2\_ch5}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA2\_ch5}{DMA2\_ch5}}
+{\footnotesize\ttfamily \#define DMA2\+\_\+ch5~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a1eea983a5d68bf36f4d19fbb07955ca1}{DMA2\+\_\+\+Channel5\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00112}{112}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ad86c75e1ff89e03e15570f47962865c8}\label{reg__dma_8h_ad86c75e1ff89e03e15570f47962865c8}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA2\_Channel1@{DMA2\_Channel1}}
+\index{DMA2\_Channel1@{DMA2\_Channel1}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA2\_Channel1}{DMA2\_Channel1}}
+{\footnotesize\ttfamily \#define DMA2\+\_\+\+Channel1~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_ad3bd6c4201d12f5d474518c1b02f8e3b}{DMA2\+\_\+\+Channel1\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00113}{113}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ad3bd6c4201d12f5d474518c1b02f8e3b}\label{reg__dma_8h_ad3bd6c4201d12f5d474518c1b02f8e3b}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA2\_Channel1\_BASE@{DMA2\_Channel1\_BASE}}
+\index{DMA2\_Channel1\_BASE@{DMA2\_Channel1\_BASE}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA2\_Channel1\_BASE}{DMA2\_Channel1\_BASE}}
+{\footnotesize\ttfamily \#define DMA2\+\_\+\+Channel1\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x0408)}
+
+
+
+Base Address\+: 0x40020408 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00057}{57}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a316024020799373b9d8e35c316c74f24}\label{reg__dma_8h_a316024020799373b9d8e35c316c74f24}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA2\_Channel2@{DMA2\_Channel2}}
+\index{DMA2\_Channel2@{DMA2\_Channel2}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA2\_Channel2}{DMA2\_Channel2}}
+{\footnotesize\ttfamily \#define DMA2\+\_\+\+Channel2~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a22f39f23c879c699b88e04a629f69d1c}{DMA2\+\_\+\+Channel2\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00114}{114}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a22f39f23c879c699b88e04a629f69d1c}\label{reg__dma_8h_a22f39f23c879c699b88e04a629f69d1c}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA2\_Channel2\_BASE@{DMA2\_Channel2\_BASE}}
+\index{DMA2\_Channel2\_BASE@{DMA2\_Channel2\_BASE}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA2\_Channel2\_BASE}{DMA2\_Channel2\_BASE}}
+{\footnotesize\ttfamily \#define DMA2\+\_\+\+Channel2\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x041C)}
+
+
+
+Base Address\+: 0x4002041C 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00058}{58}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a6dca52a79587e0ca9a5d669048b4c7eb}\label{reg__dma_8h_a6dca52a79587e0ca9a5d669048b4c7eb}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA2\_Channel3@{DMA2\_Channel3}}
+\index{DMA2\_Channel3@{DMA2\_Channel3}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA2\_Channel3}{DMA2\_Channel3}}
+{\footnotesize\ttfamily \#define DMA2\+\_\+\+Channel3~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a6f2369b8bc155fb55a28891987605c2c}{DMA2\+\_\+\+Channel3\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00115}{115}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a6f2369b8bc155fb55a28891987605c2c}\label{reg__dma_8h_a6f2369b8bc155fb55a28891987605c2c}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA2\_Channel3\_BASE@{DMA2\_Channel3\_BASE}}
+\index{DMA2\_Channel3\_BASE@{DMA2\_Channel3\_BASE}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA2\_Channel3\_BASE}{DMA2\_Channel3\_BASE}}
+{\footnotesize\ttfamily \#define DMA2\+\_\+\+Channel3\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x0430)}
+
+
+
+Base Address\+: 0x40020430 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00059}{59}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a612b396657695191ad740b0b59bc9f12}\label{reg__dma_8h_a612b396657695191ad740b0b59bc9f12}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA2\_Channel4@{DMA2\_Channel4}}
+\index{DMA2\_Channel4@{DMA2\_Channel4}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA2\_Channel4}{DMA2\_Channel4}}
+{\footnotesize\ttfamily \#define DMA2\+\_\+\+Channel4~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a01b063266473f290a55047654fbbfbee}{DMA2\+\_\+\+Channel4\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00116}{116}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a01b063266473f290a55047654fbbfbee}\label{reg__dma_8h_a01b063266473f290a55047654fbbfbee}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA2\_Channel4\_BASE@{DMA2\_Channel4\_BASE}}
+\index{DMA2\_Channel4\_BASE@{DMA2\_Channel4\_BASE}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA2\_Channel4\_BASE}{DMA2\_Channel4\_BASE}}
+{\footnotesize\ttfamily \#define DMA2\+\_\+\+Channel4\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x0444)}
+
+
+
+Base Address\+: 0x40020444 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00060}{60}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a521c13b7d0f82a6897d47995da392750}\label{reg__dma_8h_a521c13b7d0f82a6897d47995da392750}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA2\_Channel5@{DMA2\_Channel5}}
+\index{DMA2\_Channel5@{DMA2\_Channel5}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA2\_Channel5}{DMA2\_Channel5}}
+{\footnotesize\ttfamily \#define DMA2\+\_\+\+Channel5~((\mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\+\_\+\+Channel\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__dma_8h_a1eea983a5d68bf36f4d19fbb07955ca1}{DMA2\+\_\+\+Channel5\+\_\+\+BASE}})}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00117}{117}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a1eea983a5d68bf36f4d19fbb07955ca1}\label{reg__dma_8h_a1eea983a5d68bf36f4d19fbb07955ca1}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA2\_Channel5\_BASE@{DMA2\_Channel5\_BASE}}
+\index{DMA2\_Channel5\_BASE@{DMA2\_Channel5\_BASE}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA2\_Channel5\_BASE}{DMA2\_Channel5\_BASE}}
+{\footnotesize\ttfamily \#define DMA2\+\_\+\+Channel5\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a92eb5d49730765d2abd0f5b09548f9f5}{AHBPERIPH\+\_\+\+BASE}} + 0x0458)}
+
+
+
+Base Address\+: 0x40020458 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00061}{61}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a26505fc5780607068fea8643a373b546}\label{reg__dma_8h_a26505fc5780607068fea8643a373b546}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_ARE@{DMA\_CCR\_ARE}}
+\index{DMA\_CCR\_ARE@{DMA\_CCR\_ARE}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_ARE}{DMA\_CCR\_ARE}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+ARE~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_adca138b69c0aad49c1d224b24bfe44e0}{DMA\+\_\+\+CCR\+\_\+\+ARE\+\_\+\+Pos}})}
+
+
+
+Auto-\/\+Reload Enable bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00293}{293}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_adca138b69c0aad49c1d224b24bfe44e0}\label{reg__dma_8h_adca138b69c0aad49c1d224b24bfe44e0}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_ARE\_Pos@{DMA\_CCR\_ARE\_Pos}}
+\index{DMA\_CCR\_ARE\_Pos@{DMA\_CCR\_ARE\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_ARE\_Pos}{DMA\_CCR\_ARE\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+ARE\+\_\+\+Pos~(15)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00292}{292}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a445471396e741418bcd6f63404f4052c}\label{reg__dma_8h_a445471396e741418bcd6f63404f4052c}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_CIRC@{DMA\_CCR\_CIRC}}
+\index{DMA\_CCR\_CIRC@{DMA\_CCR\_CIRC}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_CIRC}{DMA\_CCR\_CIRC}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+CIRC~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a66a4138896fef96641f9ad5eb269f4c4}{DMA\+\_\+\+CCR\+\_\+\+CIRC\+\_\+\+Pos}})}
+
+
+
+Circular mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00256}{256}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a66a4138896fef96641f9ad5eb269f4c4}\label{reg__dma_8h_a66a4138896fef96641f9ad5eb269f4c4}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_CIRC\_Pos@{DMA\_CCR\_CIRC\_Pos}}
+\index{DMA\_CCR\_CIRC\_Pos@{DMA\_CCR\_CIRC\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_CIRC\_Pos}{DMA\_CCR\_CIRC\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+CIRC\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00255}{255}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a8f1ece172cf3c3e696b86d401d7345a2}\label{reg__dma_8h_a8f1ece172cf3c3e696b86d401d7345a2}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_DIR@{DMA\_CCR\_DIR}}
+\index{DMA\_CCR\_DIR@{DMA\_CCR\_DIR}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_DIR}{DMA\_CCR\_DIR}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+DIR~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a9fcc441150b42892a6ae5a4ae784d85e}{DMA\+\_\+\+CCR\+\_\+\+DIR\+\_\+\+Pos}})}
+
+
+
+Data transfer direction 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00254}{254}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a9fcc441150b42892a6ae5a4ae784d85e}\label{reg__dma_8h_a9fcc441150b42892a6ae5a4ae784d85e}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_DIR\_Pos@{DMA\_CCR\_DIR\_Pos}}
+\index{DMA\_CCR\_DIR\_Pos@{DMA\_CCR\_DIR\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_DIR\_Pos}{DMA\_CCR\_DIR\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+DIR\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00253}{253}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ababa3817d21a78079be76bc26b2c10f2}\label{reg__dma_8h_ababa3817d21a78079be76bc26b2c10f2}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_EN@{DMA\_CCR\_EN}}
+\index{DMA\_CCR\_EN@{DMA\_CCR\_EN}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_EN}{DMA\_CCR\_EN}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+EN~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a7f4112f52d39f2b8046af889c49c504c}{DMA\+\_\+\+CCR\+\_\+\+EN\+\_\+\+Pos}})}
+
+
+
+Channel enabl 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00246}{246}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a7f4112f52d39f2b8046af889c49c504c}\label{reg__dma_8h_a7f4112f52d39f2b8046af889c49c504c}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_EN\_Pos@{DMA\_CCR\_EN\_Pos}}
+\index{DMA\_CCR\_EN\_Pos@{DMA\_CCR\_EN\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_EN\_Pos}{DMA\_CCR\_EN\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+EN\+\_\+\+Pos~(0)}
+
+
+
+DMA\+\_\+\+CCR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00245}{245}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a0f0fae31377ab1d33e36cead97b1811b}\label{reg__dma_8h_a0f0fae31377ab1d33e36cead97b1811b}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_HTIE@{DMA\_CCR\_HTIE}}
+\index{DMA\_CCR\_HTIE@{DMA\_CCR\_HTIE}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_HTIE}{DMA\_CCR\_HTIE}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+HTIE~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a5675e39ff8c23a18657c52281efc4c7e}{DMA\+\_\+\+CCR\+\_\+\+HTIE\+\_\+\+Pos}})}
+
+
+
+Half Transfer interrupt enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00250}{250}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a5675e39ff8c23a18657c52281efc4c7e}\label{reg__dma_8h_a5675e39ff8c23a18657c52281efc4c7e}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_HTIE\_Pos@{DMA\_CCR\_HTIE\_Pos}}
+\index{DMA\_CCR\_HTIE\_Pos@{DMA\_CCR\_HTIE\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_HTIE\_Pos}{DMA\_CCR\_HTIE\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+HTIE\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00249}{249}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a4a26aed2c9ee1cfe3e98b871cb8fb195}\label{reg__dma_8h_a4a26aed2c9ee1cfe3e98b871cb8fb195}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_M2M@{DMA\_CCR\_M2M}}
+\index{DMA\_CCR\_M2M@{DMA\_CCR\_M2M}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_M2M}{DMA\_CCR\_M2M}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+M2M~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a3a61a27bfdc367d330e26069cdac75d0}{DMA\+\_\+\+CCR\+\_\+\+M2\+M\+\_\+\+Pos}})}
+
+
+
+Memory to memory mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00290}{290}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a3a61a27bfdc367d330e26069cdac75d0}\label{reg__dma_8h_a3a61a27bfdc367d330e26069cdac75d0}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_M2M\_Pos@{DMA\_CCR\_M2M\_Pos}}
+\index{DMA\_CCR\_M2M\_Pos@{DMA\_CCR\_M2M\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_M2M\_Pos}{DMA\_CCR\_M2M\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+M2\+M\+\_\+\+Pos~(14)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00289}{289}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_aa189138f534283d876f654ec9474987e}\label{reg__dma_8h_aa189138f534283d876f654ec9474987e}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_MINC@{DMA\_CCR\_MINC}}
+\index{DMA\_CCR\_MINC@{DMA\_CCR\_MINC}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_MINC}{DMA\_CCR\_MINC}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+MINC~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_af2f07a706a1a1b3b351151aff8b48be2}{DMA\+\_\+\+CCR\+\_\+\+MINC\+\_\+\+Pos}})}
+
+
+
+Memory increment mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00260}{260}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_af2f07a706a1a1b3b351151aff8b48be2}\label{reg__dma_8h_af2f07a706a1a1b3b351151aff8b48be2}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_MINC\_Pos@{DMA\_CCR\_MINC\_Pos}}
+\index{DMA\_CCR\_MINC\_Pos@{DMA\_CCR\_MINC\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_MINC\_Pos}{DMA\_CCR\_MINC\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+MINC\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00259}{259}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a492495253fe3f05ea83dd3c3dbb5dddf}\label{reg__dma_8h_a492495253fe3f05ea83dd3c3dbb5dddf}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_MSIZE@{DMA\_CCR\_MSIZE}}
+\index{DMA\_CCR\_MSIZE@{DMA\_CCR\_MSIZE}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_MSIZE}{DMA\_CCR\_MSIZE}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+MSIZE~(0x03U $<$$<$ \mbox{\hyperlink{reg__dma_8h_afd0ff14a5994586ebdeba33fde4a2c36}{DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+\+Pos}})}
+
+
+
+MSIZE\mbox{[}1\+:0\mbox{]} bits (Memory size) 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00272}{272}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a600d3f8200fc42ea6e1c7c8abbd327ad}\label{reg__dma_8h_a600d3f8200fc42ea6e1c7c8abbd327ad}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_MSIZE\_0@{DMA\_CCR\_MSIZE\_0}}
+\index{DMA\_CCR\_MSIZE\_0@{DMA\_CCR\_MSIZE\_0}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_MSIZE\_0}{DMA\_CCR\_MSIZE\_0}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+0~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_afd0ff14a5994586ebdeba33fde4a2c36}{DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+\+Pos}})}
+
+
+
+Bit0 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00273}{273}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a60b9958fbde96f69160ca7edf92d4c27}\label{reg__dma_8h_a60b9958fbde96f69160ca7edf92d4c27}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_MSIZE\_1@{DMA\_CCR\_MSIZE\_1}}
+\index{DMA\_CCR\_MSIZE\_1@{DMA\_CCR\_MSIZE\_1}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_MSIZE\_1}{DMA\_CCR\_MSIZE\_1}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+1~(0x02U $<$$<$ \mbox{\hyperlink{reg__dma_8h_afd0ff14a5994586ebdeba33fde4a2c36}{DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+\+Pos}})}
+
+
+
+Bit1 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00274}{274}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a94de8f4521db8129abfeccf891a27664}\label{reg__dma_8h_a94de8f4521db8129abfeccf891a27664}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_MSIZE\_BYTE@{DMA\_CCR\_MSIZE\_BYTE}}
+\index{DMA\_CCR\_MSIZE\_BYTE@{DMA\_CCR\_MSIZE\_BYTE}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_MSIZE\_BYTE}{DMA\_CCR\_MSIZE\_BYTE}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+\+BYTE~(0x00U $<$$<$ \mbox{\hyperlink{reg__dma_8h_afd0ff14a5994586ebdeba33fde4a2c36}{DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+\+Pos}})}
+
+
+
+DMA Memory Data Size Byte 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00276}{276}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_add20224aea8e355592857fedf247b539}\label{reg__dma_8h_add20224aea8e355592857fedf247b539}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_MSIZE\_HALFWORD@{DMA\_CCR\_MSIZE\_HALFWORD}}
+\index{DMA\_CCR\_MSIZE\_HALFWORD@{DMA\_CCR\_MSIZE\_HALFWORD}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_MSIZE\_HALFWORD}{DMA\_CCR\_MSIZE\_HALFWORD}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+\+HALFWORD~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_afd0ff14a5994586ebdeba33fde4a2c36}{DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+\+Pos}})}
+
+
+
+DMA Memory Data Size Half\+Word 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00277}{277}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_afd0ff14a5994586ebdeba33fde4a2c36}\label{reg__dma_8h_afd0ff14a5994586ebdeba33fde4a2c36}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_MSIZE\_Pos@{DMA\_CCR\_MSIZE\_Pos}}
+\index{DMA\_CCR\_MSIZE\_Pos@{DMA\_CCR\_MSIZE\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_MSIZE\_Pos}{DMA\_CCR\_MSIZE\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+\+Pos~(10)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00271}{271}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a40f4a8974d742eac2e5cd949936cc828}\label{reg__dma_8h_a40f4a8974d742eac2e5cd949936cc828}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_MSIZE\_WORD@{DMA\_CCR\_MSIZE\_WORD}}
+\index{DMA\_CCR\_MSIZE\_WORD@{DMA\_CCR\_MSIZE\_WORD}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_MSIZE\_WORD}{DMA\_CCR\_MSIZE\_WORD}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+\+WORD~(0x02U $<$$<$ \mbox{\hyperlink{reg__dma_8h_afd0ff14a5994586ebdeba33fde4a2c36}{DMA\+\_\+\+CCR\+\_\+\+MSIZE\+\_\+\+Pos}})}
+
+
+
+DMA Memory Data Size Word 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00278}{278}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a028cb96357bd24868a74ee1134a35b7e}\label{reg__dma_8h_a028cb96357bd24868a74ee1134a35b7e}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_PINC@{DMA\_CCR\_PINC}}
+\index{DMA\_CCR\_PINC@{DMA\_CCR\_PINC}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_PINC}{DMA\_CCR\_PINC}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+PINC~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a165bb032ce1148af49048daec69508e9}{DMA\+\_\+\+CCR\+\_\+\+PINC\+\_\+\+Pos}})}
+
+
+
+Peripheral increment mode 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00258}{258}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a165bb032ce1148af49048daec69508e9}\label{reg__dma_8h_a165bb032ce1148af49048daec69508e9}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_PINC\_Pos@{DMA\_CCR\_PINC\_Pos}}
+\index{DMA\_CCR\_PINC\_Pos@{DMA\_CCR\_PINC\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_PINC\_Pos}{DMA\_CCR\_PINC\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+PINC\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00257}{257}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a97726688157629243aa59bb60e33c284}\label{reg__dma_8h_a97726688157629243aa59bb60e33c284}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_PL@{DMA\_CCR\_PL}}
+\index{DMA\_CCR\_PL@{DMA\_CCR\_PL}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_PL}{DMA\_CCR\_PL}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+PL~(0x03U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a6f49ebf3f4035ea2357b791da026846b}{DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+Pos}})}
+
+
+
+PL\mbox{[}1\+:0\mbox{]} bits(\+Channel Priority level) 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00281}{281}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_aa935d7f115297c5e9e10a62efd065247}\label{reg__dma_8h_aa935d7f115297c5e9e10a62efd065247}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_PL\_0@{DMA\_CCR\_PL\_0}}
+\index{DMA\_CCR\_PL\_0@{DMA\_CCR\_PL\_0}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_PL\_0}{DMA\_CCR\_PL\_0}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+0~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a6f49ebf3f4035ea2357b791da026846b}{DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+Pos}})}
+
+
+
+Bit0 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00282}{282}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a82819927445c9617409bb08e09dc4cd8}\label{reg__dma_8h_a82819927445c9617409bb08e09dc4cd8}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_PL\_1@{DMA\_CCR\_PL\_1}}
+\index{DMA\_CCR\_PL\_1@{DMA\_CCR\_PL\_1}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_PL\_1}{DMA\_CCR\_PL\_1}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+1~(0x02U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a6f49ebf3f4035ea2357b791da026846b}{DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+Pos}})}
+
+
+
+Bit1 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00283}{283}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a5d40b6e1c73110b2bfb00e914951c33f}\label{reg__dma_8h_a5d40b6e1c73110b2bfb00e914951c33f}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_PL\_High@{DMA\_CCR\_PL\_High}}
+\index{DMA\_CCR\_PL\_High@{DMA\_CCR\_PL\_High}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_PL\_High}{DMA\_CCR\_PL\_High}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+High~(0x02U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a6f49ebf3f4035ea2357b791da026846b}{DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+Pos}})}
+
+
+
+DMA Priority High 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00287}{287}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a4214a6b9559c3b9f5bc0a5fb4381ca72}\label{reg__dma_8h_a4214a6b9559c3b9f5bc0a5fb4381ca72}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_PL\_Low@{DMA\_CCR\_PL\_Low}}
+\index{DMA\_CCR\_PL\_Low@{DMA\_CCR\_PL\_Low}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_PL\_Low}{DMA\_CCR\_PL\_Low}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+Low~(0x00U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a6f49ebf3f4035ea2357b791da026846b}{DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+Pos}})}
+
+
+
+DMA Priority Low 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00285}{285}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_af4eb1e57780745ac59f18b1265c7aaaf}\label{reg__dma_8h_af4eb1e57780745ac59f18b1265c7aaaf}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_PL\_Medium@{DMA\_CCR\_PL\_Medium}}
+\index{DMA\_CCR\_PL\_Medium@{DMA\_CCR\_PL\_Medium}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_PL\_Medium}{DMA\_CCR\_PL\_Medium}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+Medium~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a6f49ebf3f4035ea2357b791da026846b}{DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+Pos}})}
+
+
+
+DMA Priority Medium 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00286}{286}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a6f49ebf3f4035ea2357b791da026846b}\label{reg__dma_8h_a6f49ebf3f4035ea2357b791da026846b}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_PL\_Pos@{DMA\_CCR\_PL\_Pos}}
+\index{DMA\_CCR\_PL\_Pos@{DMA\_CCR\_PL\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_PL\_Pos}{DMA\_CCR\_PL\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+Pos~(12)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00280}{280}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a43ced3955edbc9cef993e2e9c0878a97}\label{reg__dma_8h_a43ced3955edbc9cef993e2e9c0878a97}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_PL\_VeryHigh@{DMA\_CCR\_PL\_VeryHigh}}
+\index{DMA\_CCR\_PL\_VeryHigh@{DMA\_CCR\_PL\_VeryHigh}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_PL\_VeryHigh}{DMA\_CCR\_PL\_VeryHigh}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+Very\+High~(0x03U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a6f49ebf3f4035ea2357b791da026846b}{DMA\+\_\+\+CCR\+\_\+\+PL\+\_\+\+Pos}})}
+
+
+
+DMA Priority Very\+High 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00288}{288}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a1a8d824b9bff520523fccfbe57b07516}\label{reg__dma_8h_a1a8d824b9bff520523fccfbe57b07516}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_PSIZE@{DMA\_CCR\_PSIZE}}
+\index{DMA\_CCR\_PSIZE@{DMA\_CCR\_PSIZE}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_PSIZE}{DMA\_CCR\_PSIZE}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+PSIZE~(0x03U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a73550e263e014a80ba68b9d44d335a83}{DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+\+Pos}})}
+
+
+
+PSIZE\mbox{[}1\+:0\mbox{]} bits (Peripheral size) 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00263}{263}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a4b3726c7d0fd3b00e33637f163c79128}\label{reg__dma_8h_a4b3726c7d0fd3b00e33637f163c79128}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_PSIZE\_0@{DMA\_CCR\_PSIZE\_0}}
+\index{DMA\_CCR\_PSIZE\_0@{DMA\_CCR\_PSIZE\_0}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_PSIZE\_0}{DMA\_CCR\_PSIZE\_0}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+0~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a73550e263e014a80ba68b9d44d335a83}{DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+\+Pos}})}
+
+
+
+Bit0 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00264}{264}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a8e8d8786f16dda2bef035ba2df15b69d}\label{reg__dma_8h_a8e8d8786f16dda2bef035ba2df15b69d}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_PSIZE\_1@{DMA\_CCR\_PSIZE\_1}}
+\index{DMA\_CCR\_PSIZE\_1@{DMA\_CCR\_PSIZE\_1}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_PSIZE\_1}{DMA\_CCR\_PSIZE\_1}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+1~(0x02U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a73550e263e014a80ba68b9d44d335a83}{DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+\+Pos}})}
+
+
+
+Bit1 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00265}{265}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a73b3d2706a5edb3f39e1f8f8ad0b4fd2}\label{reg__dma_8h_a73b3d2706a5edb3f39e1f8f8ad0b4fd2}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_PSIZE\_BYTE@{DMA\_CCR\_PSIZE\_BYTE}}
+\index{DMA\_CCR\_PSIZE\_BYTE@{DMA\_CCR\_PSIZE\_BYTE}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_PSIZE\_BYTE}{DMA\_CCR\_PSIZE\_BYTE}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+\+BYTE~(0x00U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a73550e263e014a80ba68b9d44d335a83}{DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+\+Pos}})}
+
+
+
+DMA Peripheral Data Size Byte 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00267}{267}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_adde96e7cfeb08e5e48862a338cfe9791}\label{reg__dma_8h_adde96e7cfeb08e5e48862a338cfe9791}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_PSIZE\_HALFWORD@{DMA\_CCR\_PSIZE\_HALFWORD}}
+\index{DMA\_CCR\_PSIZE\_HALFWORD@{DMA\_CCR\_PSIZE\_HALFWORD}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_PSIZE\_HALFWORD}{DMA\_CCR\_PSIZE\_HALFWORD}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+\+HALFWORD~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a73550e263e014a80ba68b9d44d335a83}{DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+\+Pos}})}
+
+
+
+DMA Peripheral Data Size Half\+Word 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00268}{268}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a73550e263e014a80ba68b9d44d335a83}\label{reg__dma_8h_a73550e263e014a80ba68b9d44d335a83}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_PSIZE\_Pos@{DMA\_CCR\_PSIZE\_Pos}}
+\index{DMA\_CCR\_PSIZE\_Pos@{DMA\_CCR\_PSIZE\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_PSIZE\_Pos}{DMA\_CCR\_PSIZE\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00262}{262}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a6f4a3508ff43c686c4e36d67451cd83c}\label{reg__dma_8h_a6f4a3508ff43c686c4e36d67451cd83c}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_PSIZE\_WORD@{DMA\_CCR\_PSIZE\_WORD}}
+\index{DMA\_CCR\_PSIZE\_WORD@{DMA\_CCR\_PSIZE\_WORD}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_PSIZE\_WORD}{DMA\_CCR\_PSIZE\_WORD}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+\+WORD~(0x02U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a73550e263e014a80ba68b9d44d335a83}{DMA\+\_\+\+CCR\+\_\+\+PSIZE\+\_\+\+Pos}})}
+
+
+
+DMA Peripheral Data Size Word 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00269}{269}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_aaba9cd82cab0cca23de038e946f81c6a}\label{reg__dma_8h_aaba9cd82cab0cca23de038e946f81c6a}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_TCIE@{DMA\_CCR\_TCIE}}
+\index{DMA\_CCR\_TCIE@{DMA\_CCR\_TCIE}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_TCIE}{DMA\_CCR\_TCIE}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+TCIE~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_abe3b07726862ce6f3a0007de1553330a}{DMA\+\_\+\+CCR\+\_\+\+TCIE\+\_\+\+Pos}})}
+
+
+
+Transfer complete interrupt enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00248}{248}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_abe3b07726862ce6f3a0007de1553330a}\label{reg__dma_8h_abe3b07726862ce6f3a0007de1553330a}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_TCIE\_Pos@{DMA\_CCR\_TCIE\_Pos}}
+\index{DMA\_CCR\_TCIE\_Pos@{DMA\_CCR\_TCIE\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_TCIE\_Pos}{DMA\_CCR\_TCIE\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+TCIE\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00247}{247}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a3dd2204c9046500140e3c720fb5a415f}\label{reg__dma_8h_a3dd2204c9046500140e3c720fb5a415f}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_TEIE@{DMA\_CCR\_TEIE}}
+\index{DMA\_CCR\_TEIE@{DMA\_CCR\_TEIE}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_TEIE}{DMA\_CCR\_TEIE}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+TEIE~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_ab2744612a297431a80718a67c7c79f19}{DMA\+\_\+\+CCR\+\_\+\+TEIE\+\_\+\+Pos}})}
+
+
+
+Transfer error interrupt enable 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00252}{252}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ab2744612a297431a80718a67c7c79f19}\label{reg__dma_8h_ab2744612a297431a80718a67c7c79f19}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CCR\_TEIE\_Pos@{DMA\_CCR\_TEIE\_Pos}}
+\index{DMA\_CCR\_TEIE\_Pos@{DMA\_CCR\_TEIE\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CCR\_TEIE\_Pos}{DMA\_CCR\_TEIE\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CCR\+\_\+\+TEIE\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00251}{251}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_aacd9100e19b17a0641359cd158ea0cb7}\label{reg__dma_8h_aacd9100e19b17a0641359cd158ea0cb7}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CMAR\_MA@{DMA\_CMAR\_MA}}
+\index{DMA\_CMAR\_MA@{DMA\_CMAR\_MA}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CMAR\_MA}{DMA\_CMAR\_MA}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CMAR\+\_\+\+MA~(0x\+FFFFFFFFU $<$$<$ \mbox{\hyperlink{reg__dma_8h_af8680eed5bbb2c59ececcacbdb9cdd5b}{DMA\+\_\+\+CMAR\+\_\+\+MA\+\_\+\+Pos}})}
+
+
+
+Peripheral Address 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00311}{311}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_af8680eed5bbb2c59ececcacbdb9cdd5b}\label{reg__dma_8h_af8680eed5bbb2c59ececcacbdb9cdd5b}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CMAR\_MA\_Pos@{DMA\_CMAR\_MA\_Pos}}
+\index{DMA\_CMAR\_MA\_Pos@{DMA\_CMAR\_MA\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CMAR\_MA\_Pos}{DMA\_CMAR\_MA\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CMAR\+\_\+\+MA\+\_\+\+Pos~(0)}
+
+
+
+DMA\+\_\+\+CMAR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00310}{310}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ad42c0abbace3b816e7669e27b3676d2a}\label{reg__dma_8h_ad42c0abbace3b816e7669e27b3676d2a}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CNDTR\_NDT@{DMA\_CNDTR\_NDT}}
+\index{DMA\_CNDTR\_NDT@{DMA\_CNDTR\_NDT}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CNDTR\_NDT}{DMA\_CNDTR\_NDT}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CNDTR\+\_\+\+NDT~(0x\+FFFFU $<$$<$ \mbox{\hyperlink{reg__dma_8h_a96337334b23e814de339a9697b8cfe52}{DMA\+\_\+\+CNDTR\+\_\+\+NDT\+\_\+\+Pos}})}
+
+
+
+Number of data to Transfer 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00299}{299}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a96337334b23e814de339a9697b8cfe52}\label{reg__dma_8h_a96337334b23e814de339a9697b8cfe52}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CNDTR\_NDT\_Pos@{DMA\_CNDTR\_NDT\_Pos}}
+\index{DMA\_CNDTR\_NDT\_Pos@{DMA\_CNDTR\_NDT\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CNDTR\_NDT\_Pos}{DMA\_CNDTR\_NDT\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CNDTR\+\_\+\+NDT\+\_\+\+Pos~(0)}
+
+
+
+DMA\+\_\+\+CNDTR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00298}{298}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_aa3f5ad05ab0a37eb49692c4d77730eb1}\label{reg__dma_8h_aa3f5ad05ab0a37eb49692c4d77730eb1}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CPAR\_PA@{DMA\_CPAR\_PA}}
+\index{DMA\_CPAR\_PA@{DMA\_CPAR\_PA}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CPAR\_PA}{DMA\_CPAR\_PA}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CPAR\+\_\+\+PA~(0x\+FFFFFFFFU $<$$<$ \mbox{\hyperlink{reg__dma_8h_aedbe38bfd0952b6490a0517143030eb0}{DMA\+\_\+\+CPAR\+\_\+\+PA\+\_\+\+Pos}})}
+
+
+
+Peripheral Address 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00305}{305}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_aedbe38bfd0952b6490a0517143030eb0}\label{reg__dma_8h_aedbe38bfd0952b6490a0517143030eb0}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_CPAR\_PA\_Pos@{DMA\_CPAR\_PA\_Pos}}
+\index{DMA\_CPAR\_PA\_Pos@{DMA\_CPAR\_PA\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_CPAR\_PA\_Pos}{DMA\_CPAR\_PA\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+CPAR\+\_\+\+PA\+\_\+\+Pos~(0)}
+
+
+
+DMA\+\_\+\+CPAR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00304}{304}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a75ad797334d9fb70750ace14b16e0122}\label{reg__dma_8h_a75ad797334d9fb70750ace14b16e0122}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CGIF1@{DMA\_IFCR\_CGIF1}}
+\index{DMA\_IFCR\_CGIF1@{DMA\_IFCR\_CGIF1}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CGIF1}{DMA\_IFCR\_CGIF1}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CGIF1~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a384a232196033f388924f3f598f63777}{DMA\+\_\+\+IFCR\+\_\+\+CGIF1\+\_\+\+Pos}})}
+
+
+
+Channel 1 Global interrupt clearr 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00185}{185}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a384a232196033f388924f3f598f63777}\label{reg__dma_8h_a384a232196033f388924f3f598f63777}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CGIF1\_Pos@{DMA\_IFCR\_CGIF1\_Pos}}
+\index{DMA\_IFCR\_CGIF1\_Pos@{DMA\_IFCR\_CGIF1\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CGIF1\_Pos}{DMA\_IFCR\_CGIF1\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CGIF1\+\_\+\+Pos~(0)}
+
+
+
+DMA\+\_\+\+IFCR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00184}{184}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ab907e446bbf1e1400dc5fdbd929d0e5f}\label{reg__dma_8h_ab907e446bbf1e1400dc5fdbd929d0e5f}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CGIF2@{DMA\_IFCR\_CGIF2}}
+\index{DMA\_IFCR\_CGIF2@{DMA\_IFCR\_CGIF2}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CGIF2}{DMA\_IFCR\_CGIF2}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CGIF2~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a1a87eeb6e68e40c01607eb3055b2c802}{DMA\+\_\+\+IFCR\+\_\+\+CGIF2\+\_\+\+Pos}})}
+
+
+
+Channel 2 Global interrupt clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00193}{193}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a1a87eeb6e68e40c01607eb3055b2c802}\label{reg__dma_8h_a1a87eeb6e68e40c01607eb3055b2c802}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CGIF2\_Pos@{DMA\_IFCR\_CGIF2\_Pos}}
+\index{DMA\_IFCR\_CGIF2\_Pos@{DMA\_IFCR\_CGIF2\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CGIF2\_Pos}{DMA\_IFCR\_CGIF2\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CGIF2\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00192}{192}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a0d98e88c334091e20e931372646a6b0d}\label{reg__dma_8h_a0d98e88c334091e20e931372646a6b0d}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CGIF3@{DMA\_IFCR\_CGIF3}}
+\index{DMA\_IFCR\_CGIF3@{DMA\_IFCR\_CGIF3}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CGIF3}{DMA\_IFCR\_CGIF3}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CGIF3~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_ae8abc8c7851622f66870e25e698befa2}{DMA\+\_\+\+IFCR\+\_\+\+CGIF3\+\_\+\+Pos}})}
+
+
+
+Channel 3 Global interrupt clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00201}{201}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ae8abc8c7851622f66870e25e698befa2}\label{reg__dma_8h_ae8abc8c7851622f66870e25e698befa2}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CGIF3\_Pos@{DMA\_IFCR\_CGIF3\_Pos}}
+\index{DMA\_IFCR\_CGIF3\_Pos@{DMA\_IFCR\_CGIF3\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CGIF3\_Pos}{DMA\_IFCR\_CGIF3\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CGIF3\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00200}{200}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a73d22139e4567c89e2afcb4aef71104c}\label{reg__dma_8h_a73d22139e4567c89e2afcb4aef71104c}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CGIF4@{DMA\_IFCR\_CGIF4}}
+\index{DMA\_IFCR\_CGIF4@{DMA\_IFCR\_CGIF4}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CGIF4}{DMA\_IFCR\_CGIF4}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CGIF4~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_aad4c91830b4d46fcd53d414a91735273}{DMA\+\_\+\+IFCR\+\_\+\+CGIF4\+\_\+\+Pos}})}
+
+
+
+Channel 4 Global interrupt clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00209}{209}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_aad4c91830b4d46fcd53d414a91735273}\label{reg__dma_8h_aad4c91830b4d46fcd53d414a91735273}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CGIF4\_Pos@{DMA\_IFCR\_CGIF4\_Pos}}
+\index{DMA\_IFCR\_CGIF4\_Pos@{DMA\_IFCR\_CGIF4\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CGIF4\_Pos}{DMA\_IFCR\_CGIF4\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CGIF4\+\_\+\+Pos~(12)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00208}{208}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a943245d2a8300854d53fd07bb957a6fc}\label{reg__dma_8h_a943245d2a8300854d53fd07bb957a6fc}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CGIF5@{DMA\_IFCR\_CGIF5}}
+\index{DMA\_IFCR\_CGIF5@{DMA\_IFCR\_CGIF5}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CGIF5}{DMA\_IFCR\_CGIF5}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CGIF5~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a3885a548a01240f4b093215c9940ef70}{DMA\+\_\+\+IFCR\+\_\+\+CGIF5\+\_\+\+Pos}})}
+
+
+
+Channel 5 Global interrupt clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00217}{217}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a3885a548a01240f4b093215c9940ef70}\label{reg__dma_8h_a3885a548a01240f4b093215c9940ef70}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CGIF5\_Pos@{DMA\_IFCR\_CGIF5\_Pos}}
+\index{DMA\_IFCR\_CGIF5\_Pos@{DMA\_IFCR\_CGIF5\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CGIF5\_Pos}{DMA\_IFCR\_CGIF5\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CGIF5\+\_\+\+Pos~(16)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00216}{216}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a7fc61098c5cf9a7d53ddcb155e34c984}\label{reg__dma_8h_a7fc61098c5cf9a7d53ddcb155e34c984}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CGIF6@{DMA\_IFCR\_CGIF6}}
+\index{DMA\_IFCR\_CGIF6@{DMA\_IFCR\_CGIF6}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CGIF6}{DMA\_IFCR\_CGIF6}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CGIF6~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a65947a2b4d94e4d611a087a9a9d26069}{DMA\+\_\+\+IFCR\+\_\+\+CGIF6\+\_\+\+Pos}})}
+
+
+
+Channel 6 Global interrupt clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00226}{226}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a65947a2b4d94e4d611a087a9a9d26069}\label{reg__dma_8h_a65947a2b4d94e4d611a087a9a9d26069}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CGIF6\_Pos@{DMA\_IFCR\_CGIF6\_Pos}}
+\index{DMA\_IFCR\_CGIF6\_Pos@{DMA\_IFCR\_CGIF6\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CGIF6\_Pos}{DMA\_IFCR\_CGIF6\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CGIF6\+\_\+\+Pos~(20)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00225}{225}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_aad9f01dfeb289156448f5a5a0ad54099}\label{reg__dma_8h_aad9f01dfeb289156448f5a5a0ad54099}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CGIF7@{DMA\_IFCR\_CGIF7}}
+\index{DMA\_IFCR\_CGIF7@{DMA\_IFCR\_CGIF7}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CGIF7}{DMA\_IFCR\_CGIF7}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CGIF7~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a191c8a88496206410e22515c1dc8f726}{DMA\+\_\+\+IFCR\+\_\+\+CGIF7\+\_\+\+Pos}})}
+
+
+
+Channel 7 Global interrupt clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00234}{234}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a191c8a88496206410e22515c1dc8f726}\label{reg__dma_8h_a191c8a88496206410e22515c1dc8f726}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CGIF7\_Pos@{DMA\_IFCR\_CGIF7\_Pos}}
+\index{DMA\_IFCR\_CGIF7\_Pos@{DMA\_IFCR\_CGIF7\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CGIF7\_Pos}{DMA\_IFCR\_CGIF7\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CGIF7\+\_\+\+Pos~(24)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00233}{233}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a66e9aa2475130fbf63db304ceea019eb}\label{reg__dma_8h_a66e9aa2475130fbf63db304ceea019eb}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CHTIF1@{DMA\_IFCR\_CHTIF1}}
+\index{DMA\_IFCR\_CHTIF1@{DMA\_IFCR\_CHTIF1}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CHTIF1}{DMA\_IFCR\_CHTIF1}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CHTIF1~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a429ea8f924228f3c9c769a1dd10fccd2}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF1\+\_\+\+Pos}})}
+
+
+
+Channel 1 Half Transfer clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00189}{189}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a429ea8f924228f3c9c769a1dd10fccd2}\label{reg__dma_8h_a429ea8f924228f3c9c769a1dd10fccd2}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CHTIF1\_Pos@{DMA\_IFCR\_CHTIF1\_Pos}}
+\index{DMA\_IFCR\_CHTIF1\_Pos@{DMA\_IFCR\_CHTIF1\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CHTIF1\_Pos}{DMA\_IFCR\_CHTIF1\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CHTIF1\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00188}{188}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a3e769c78024a22b4d1f528ce03ccc760}\label{reg__dma_8h_a3e769c78024a22b4d1f528ce03ccc760}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CHTIF2@{DMA\_IFCR\_CHTIF2}}
+\index{DMA\_IFCR\_CHTIF2@{DMA\_IFCR\_CHTIF2}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CHTIF2}{DMA\_IFCR\_CHTIF2}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CHTIF2~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a5ae42f9ec920fc45409fca256fc1c094}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF2\+\_\+\+Pos}})}
+
+
+
+Channel 2 Half Transfer clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00197}{197}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a5ae42f9ec920fc45409fca256fc1c094}\label{reg__dma_8h_a5ae42f9ec920fc45409fca256fc1c094}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CHTIF2\_Pos@{DMA\_IFCR\_CHTIF2\_Pos}}
+\index{DMA\_IFCR\_CHTIF2\_Pos@{DMA\_IFCR\_CHTIF2\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CHTIF2\_Pos}{DMA\_IFCR\_CHTIF2\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CHTIF2\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00196}{196}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a2dea86ca2ec8aa945b840f2c1866e1f6}\label{reg__dma_8h_a2dea86ca2ec8aa945b840f2c1866e1f6}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CHTIF3@{DMA\_IFCR\_CHTIF3}}
+\index{DMA\_IFCR\_CHTIF3@{DMA\_IFCR\_CHTIF3}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CHTIF3}{DMA\_IFCR\_CHTIF3}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CHTIF3~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_aa9188b1e168f052779be66773b2132d6}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF3\+\_\+\+Pos}})}
+
+
+
+Channel 3 Half Transfer clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00205}{205}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_aa9188b1e168f052779be66773b2132d6}\label{reg__dma_8h_aa9188b1e168f052779be66773b2132d6}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CHTIF3\_Pos@{DMA\_IFCR\_CHTIF3\_Pos}}
+\index{DMA\_IFCR\_CHTIF3\_Pos@{DMA\_IFCR\_CHTIF3\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CHTIF3\_Pos}{DMA\_IFCR\_CHTIF3\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CHTIF3\+\_\+\+Pos~(10)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00204}{204}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a950664b81ec2d4d843f89ef102107d7b}\label{reg__dma_8h_a950664b81ec2d4d843f89ef102107d7b}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CHTIF4@{DMA\_IFCR\_CHTIF4}}
+\index{DMA\_IFCR\_CHTIF4@{DMA\_IFCR\_CHTIF4}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CHTIF4}{DMA\_IFCR\_CHTIF4}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CHTIF4~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a8a8373c904a0574577398d22fe2d1872}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF4\+\_\+\+Pos}})}
+
+
+
+Channel 4 Half Transfer clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00213}{213}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a8a8373c904a0574577398d22fe2d1872}\label{reg__dma_8h_a8a8373c904a0574577398d22fe2d1872}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CHTIF4\_Pos@{DMA\_IFCR\_CHTIF4\_Pos}}
+\index{DMA\_IFCR\_CHTIF4\_Pos@{DMA\_IFCR\_CHTIF4\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CHTIF4\_Pos}{DMA\_IFCR\_CHTIF4\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CHTIF4\+\_\+\+Pos~(14)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00212}{212}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a3c23c727a4dbbc45a356c8418299275d}\label{reg__dma_8h_a3c23c727a4dbbc45a356c8418299275d}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CHTIF5@{DMA\_IFCR\_CHTIF5}}
+\index{DMA\_IFCR\_CHTIF5@{DMA\_IFCR\_CHTIF5}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CHTIF5}{DMA\_IFCR\_CHTIF5}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CHTIF5~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_ac4ff720ba13ea5f68b85d13cf881798a}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF5\+\_\+\+Pos}})}
+
+
+
+Channel 5 Half Transfer clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00221}{221}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ac4ff720ba13ea5f68b85d13cf881798a}\label{reg__dma_8h_ac4ff720ba13ea5f68b85d13cf881798a}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CHTIF5\_Pos@{DMA\_IFCR\_CHTIF5\_Pos}}
+\index{DMA\_IFCR\_CHTIF5\_Pos@{DMA\_IFCR\_CHTIF5\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CHTIF5\_Pos}{DMA\_IFCR\_CHTIF5\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CHTIF5\+\_\+\+Pos~(18)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00220}{220}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ae67273db02ffd8f2bfe0a5c93e9282a4}\label{reg__dma_8h_ae67273db02ffd8f2bfe0a5c93e9282a4}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CHTIF6@{DMA\_IFCR\_CHTIF6}}
+\index{DMA\_IFCR\_CHTIF6@{DMA\_IFCR\_CHTIF6}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CHTIF6}{DMA\_IFCR\_CHTIF6}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CHTIF6~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a93f0d87ce3ac10330dc041aba3a26476}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF6\+\_\+\+Pos}})}
+
+
+
+Channel 6 Half Transfer clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00230}{230}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a93f0d87ce3ac10330dc041aba3a26476}\label{reg__dma_8h_a93f0d87ce3ac10330dc041aba3a26476}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CHTIF6\_Pos@{DMA\_IFCR\_CHTIF6\_Pos}}
+\index{DMA\_IFCR\_CHTIF6\_Pos@{DMA\_IFCR\_CHTIF6\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CHTIF6\_Pos}{DMA\_IFCR\_CHTIF6\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CHTIF6\+\_\+\+Pos~(22)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00229}{229}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_aa7378f7a26730bfd5c950b7c7efb9272}\label{reg__dma_8h_aa7378f7a26730bfd5c950b7c7efb9272}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CHTIF7@{DMA\_IFCR\_CHTIF7}}
+\index{DMA\_IFCR\_CHTIF7@{DMA\_IFCR\_CHTIF7}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CHTIF7}{DMA\_IFCR\_CHTIF7}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CHTIF7~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a03149a3b9b879b9f8ad6ba03021df818}{DMA\+\_\+\+IFCR\+\_\+\+CHTIF7\+\_\+\+Pos}})}
+
+
+
+Channel 7 Half Transfer clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00238}{238}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a03149a3b9b879b9f8ad6ba03021df818}\label{reg__dma_8h_a03149a3b9b879b9f8ad6ba03021df818}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CHTIF7\_Pos@{DMA\_IFCR\_CHTIF7\_Pos}}
+\index{DMA\_IFCR\_CHTIF7\_Pos@{DMA\_IFCR\_CHTIF7\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CHTIF7\_Pos}{DMA\_IFCR\_CHTIF7\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CHTIF7\+\_\+\+Pos~(26)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00237}{237}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a60085fa798cf77f80365839e7d88c8f1}\label{reg__dma_8h_a60085fa798cf77f80365839e7d88c8f1}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTCIF1@{DMA\_IFCR\_CTCIF1}}
+\index{DMA\_IFCR\_CTCIF1@{DMA\_IFCR\_CTCIF1}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTCIF1}{DMA\_IFCR\_CTCIF1}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTCIF1~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a4602952d83692098965c92eb075ba8f2}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF1\+\_\+\+Pos}})}
+
+
+
+Channel 1 Transfer Complete clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00187}{187}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a4602952d83692098965c92eb075ba8f2}\label{reg__dma_8h_a4602952d83692098965c92eb075ba8f2}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTCIF1\_Pos@{DMA\_IFCR\_CTCIF1\_Pos}}
+\index{DMA\_IFCR\_CTCIF1\_Pos@{DMA\_IFCR\_CTCIF1\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTCIF1\_Pos}{DMA\_IFCR\_CTCIF1\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTCIF1\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00186}{186}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a8505b947a04834750e164dc320dfae09}\label{reg__dma_8h_a8505b947a04834750e164dc320dfae09}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTCIF2@{DMA\_IFCR\_CTCIF2}}
+\index{DMA\_IFCR\_CTCIF2@{DMA\_IFCR\_CTCIF2}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTCIF2}{DMA\_IFCR\_CTCIF2}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTCIF2~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_acfd856f903bc2bb83b5e33bdcfbb72a8}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF2\+\_\+\+Pos}})}
+
+
+
+Channel 2 Transfer Complete clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00195}{195}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_acfd856f903bc2bb83b5e33bdcfbb72a8}\label{reg__dma_8h_acfd856f903bc2bb83b5e33bdcfbb72a8}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTCIF2\_Pos@{DMA\_IFCR\_CTCIF2\_Pos}}
+\index{DMA\_IFCR\_CTCIF2\_Pos@{DMA\_IFCR\_CTCIF2\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTCIF2\_Pos}{DMA\_IFCR\_CTCIF2\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTCIF2\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00194}{194}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_accb4c0c5e0f2e01dec12ba366b83cb4d}\label{reg__dma_8h_accb4c0c5e0f2e01dec12ba366b83cb4d}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTCIF3@{DMA\_IFCR\_CTCIF3}}
+\index{DMA\_IFCR\_CTCIF3@{DMA\_IFCR\_CTCIF3}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTCIF3}{DMA\_IFCR\_CTCIF3}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTCIF3~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_afa340e56f4bfd8bf669b3cb636940a21}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF3\+\_\+\+Pos}})}
+
+
+
+Channel 3 Transfer Complete clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00203}{203}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_afa340e56f4bfd8bf669b3cb636940a21}\label{reg__dma_8h_afa340e56f4bfd8bf669b3cb636940a21}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTCIF3\_Pos@{DMA\_IFCR\_CTCIF3\_Pos}}
+\index{DMA\_IFCR\_CTCIF3\_Pos@{DMA\_IFCR\_CTCIF3\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTCIF3\_Pos}{DMA\_IFCR\_CTCIF3\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTCIF3\+\_\+\+Pos~(9)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00202}{202}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a34b431fd4e034f8333e44594712f75eb}\label{reg__dma_8h_a34b431fd4e034f8333e44594712f75eb}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTCIF4@{DMA\_IFCR\_CTCIF4}}
+\index{DMA\_IFCR\_CTCIF4@{DMA\_IFCR\_CTCIF4}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTCIF4}{DMA\_IFCR\_CTCIF4}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTCIF4~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a44f092ea2c52ba0b5137c06702776f95}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF4\+\_\+\+Pos}})}
+
+
+
+Channel 4 Transfer Complete clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00211}{211}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a44f092ea2c52ba0b5137c06702776f95}\label{reg__dma_8h_a44f092ea2c52ba0b5137c06702776f95}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTCIF4\_Pos@{DMA\_IFCR\_CTCIF4\_Pos}}
+\index{DMA\_IFCR\_CTCIF4\_Pos@{DMA\_IFCR\_CTCIF4\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTCIF4\_Pos}{DMA\_IFCR\_CTCIF4\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTCIF4\+\_\+\+Pos~(13)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00210}{210}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_aae4c7d1d10beb535aec39de9a8bdc327}\label{reg__dma_8h_aae4c7d1d10beb535aec39de9a8bdc327}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTCIF5@{DMA\_IFCR\_CTCIF5}}
+\index{DMA\_IFCR\_CTCIF5@{DMA\_IFCR\_CTCIF5}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTCIF5}{DMA\_IFCR\_CTCIF5}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTCIF5~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_acccd6618430fcc0515973f1335ea1cd7}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF5\+\_\+\+Pos}})}
+
+
+
+Channel 5 Transfer Complete clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00219}{219}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_acccd6618430fcc0515973f1335ea1cd7}\label{reg__dma_8h_acccd6618430fcc0515973f1335ea1cd7}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTCIF5\_Pos@{DMA\_IFCR\_CTCIF5\_Pos}}
+\index{DMA\_IFCR\_CTCIF5\_Pos@{DMA\_IFCR\_CTCIF5\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTCIF5\_Pos}{DMA\_IFCR\_CTCIF5\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTCIF5\+\_\+\+Pos~(17)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00218}{218}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ac3dca486df2f235aac8f3975f5f4ab75}\label{reg__dma_8h_ac3dca486df2f235aac8f3975f5f4ab75}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTCIF6@{DMA\_IFCR\_CTCIF6}}
+\index{DMA\_IFCR\_CTCIF6@{DMA\_IFCR\_CTCIF6}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTCIF6}{DMA\_IFCR\_CTCIF6}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTCIF6~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a94e93900522ede13863a0419ebedc67e}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF6\+\_\+\+Pos}})}
+
+
+
+Channel 6 Transfer Complete clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00228}{228}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a94e93900522ede13863a0419ebedc67e}\label{reg__dma_8h_a94e93900522ede13863a0419ebedc67e}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTCIF6\_Pos@{DMA\_IFCR\_CTCIF6\_Pos}}
+\index{DMA\_IFCR\_CTCIF6\_Pos@{DMA\_IFCR\_CTCIF6\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTCIF6\_Pos}{DMA\_IFCR\_CTCIF6\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTCIF6\+\_\+\+Pos~(21)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00227}{227}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ac26181e8c2bd1fddc1e774cb7b621e5b}\label{reg__dma_8h_ac26181e8c2bd1fddc1e774cb7b621e5b}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTCIF7@{DMA\_IFCR\_CTCIF7}}
+\index{DMA\_IFCR\_CTCIF7@{DMA\_IFCR\_CTCIF7}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTCIF7}{DMA\_IFCR\_CTCIF7}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTCIF7~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a00709a6aa2ad9e2a2bd93ecaea62a47b}{DMA\+\_\+\+IFCR\+\_\+\+CTCIF7\+\_\+\+Pos}})}
+
+
+
+Channel 7 Transfer Complete clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00236}{236}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a00709a6aa2ad9e2a2bd93ecaea62a47b}\label{reg__dma_8h_a00709a6aa2ad9e2a2bd93ecaea62a47b}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTCIF7\_Pos@{DMA\_IFCR\_CTCIF7\_Pos}}
+\index{DMA\_IFCR\_CTCIF7\_Pos@{DMA\_IFCR\_CTCIF7\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTCIF7\_Pos}{DMA\_IFCR\_CTCIF7\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTCIF7\+\_\+\+Pos~(25)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00235}{235}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a989699cace2fa87efa867b825c1deb29}\label{reg__dma_8h_a989699cace2fa87efa867b825c1deb29}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTEIF1@{DMA\_IFCR\_CTEIF1}}
+\index{DMA\_IFCR\_CTEIF1@{DMA\_IFCR\_CTEIF1}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTEIF1}{DMA\_IFCR\_CTEIF1}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTEIF1~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_ae398bd469325b42df8d631c2c7648c03}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF1\+\_\+\+Pos}})}
+
+
+
+Channel 1 Transfer Error clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00191}{191}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ae398bd469325b42df8d631c2c7648c03}\label{reg__dma_8h_ae398bd469325b42df8d631c2c7648c03}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTEIF1\_Pos@{DMA\_IFCR\_CTEIF1\_Pos}}
+\index{DMA\_IFCR\_CTEIF1\_Pos@{DMA\_IFCR\_CTEIF1\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTEIF1\_Pos}{DMA\_IFCR\_CTEIF1\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTEIF1\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00190}{190}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a4abb0afb7dbe362c150bf80c4c751a67}\label{reg__dma_8h_a4abb0afb7dbe362c150bf80c4c751a67}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTEIF2@{DMA\_IFCR\_CTEIF2}}
+\index{DMA\_IFCR\_CTEIF2@{DMA\_IFCR\_CTEIF2}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTEIF2}{DMA\_IFCR\_CTEIF2}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTEIF2~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a2c81071e0ad5e28ca23e87a3bef63f78}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF2\+\_\+\+Pos}})}
+
+
+
+Channel 2 Transfer Error clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00199}{199}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a2c81071e0ad5e28ca23e87a3bef63f78}\label{reg__dma_8h_a2c81071e0ad5e28ca23e87a3bef63f78}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTEIF2\_Pos@{DMA\_IFCR\_CTEIF2\_Pos}}
+\index{DMA\_IFCR\_CTEIF2\_Pos@{DMA\_IFCR\_CTEIF2\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTEIF2\_Pos}{DMA\_IFCR\_CTEIF2\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTEIF2\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00198}{198}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a59bad79f1ae37b69b048834808e8d067}\label{reg__dma_8h_a59bad79f1ae37b69b048834808e8d067}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTEIF3@{DMA\_IFCR\_CTEIF3}}
+\index{DMA\_IFCR\_CTEIF3@{DMA\_IFCR\_CTEIF3}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTEIF3}{DMA\_IFCR\_CTEIF3}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTEIF3~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a57eb58cc21d13c4e954049cffe43853a}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF3\+\_\+\+Pos}})}
+
+
+
+Channel 3 Transfer Error clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00207}{207}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a57eb58cc21d13c4e954049cffe43853a}\label{reg__dma_8h_a57eb58cc21d13c4e954049cffe43853a}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTEIF3\_Pos@{DMA\_IFCR\_CTEIF3\_Pos}}
+\index{DMA\_IFCR\_CTEIF3\_Pos@{DMA\_IFCR\_CTEIF3\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTEIF3\_Pos}{DMA\_IFCR\_CTEIF3\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTEIF3\+\_\+\+Pos~(11)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00206}{206}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a6fdda8f7f2507c1d3988c7310a35d46c}\label{reg__dma_8h_a6fdda8f7f2507c1d3988c7310a35d46c}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTEIF4@{DMA\_IFCR\_CTEIF4}}
+\index{DMA\_IFCR\_CTEIF4@{DMA\_IFCR\_CTEIF4}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTEIF4}{DMA\_IFCR\_CTEIF4}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTEIF4~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a30cfe132853ae9bea3b745104f6c6bf7}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF4\+\_\+\+Pos}})}
+
+
+
+Channel 4 Transfer Error clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00215}{215}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a30cfe132853ae9bea3b745104f6c6bf7}\label{reg__dma_8h_a30cfe132853ae9bea3b745104f6c6bf7}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTEIF4\_Pos@{DMA\_IFCR\_CTEIF4\_Pos}}
+\index{DMA\_IFCR\_CTEIF4\_Pos@{DMA\_IFCR\_CTEIF4\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTEIF4\_Pos}{DMA\_IFCR\_CTEIF4\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTEIF4\+\_\+\+Pos~(15)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00214}{214}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a6ec6326d337a773b4ced9d8a680c05a9}\label{reg__dma_8h_a6ec6326d337a773b4ced9d8a680c05a9}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTEIF5@{DMA\_IFCR\_CTEIF5}}
+\index{DMA\_IFCR\_CTEIF5@{DMA\_IFCR\_CTEIF5}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTEIF5}{DMA\_IFCR\_CTEIF5}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTEIF5~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a9f212a62195d09ebbdfcdf2811a3798a}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF5\+\_\+\+Pos}})}
+
+
+
+Channel 5 Transfer Error clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00223}{223}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a9f212a62195d09ebbdfcdf2811a3798a}\label{reg__dma_8h_a9f212a62195d09ebbdfcdf2811a3798a}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTEIF5\_Pos@{DMA\_IFCR\_CTEIF5\_Pos}}
+\index{DMA\_IFCR\_CTEIF5\_Pos@{DMA\_IFCR\_CTEIF5\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTEIF5\_Pos}{DMA\_IFCR\_CTEIF5\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTEIF5\+\_\+\+Pos~(19)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00222}{222}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a1e523c5cbf5594ffe8540c317bce6933}\label{reg__dma_8h_a1e523c5cbf5594ffe8540c317bce6933}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTEIF6@{DMA\_IFCR\_CTEIF6}}
+\index{DMA\_IFCR\_CTEIF6@{DMA\_IFCR\_CTEIF6}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTEIF6}{DMA\_IFCR\_CTEIF6}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTEIF6~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a55707c4ab09e3bb7905a7ccd9e15cb02}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF6\+\_\+\+Pos}})}
+
+
+
+Channel 6 Transfer Error clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00232}{232}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a55707c4ab09e3bb7905a7ccd9e15cb02}\label{reg__dma_8h_a55707c4ab09e3bb7905a7ccd9e15cb02}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTEIF6\_Pos@{DMA\_IFCR\_CTEIF6\_Pos}}
+\index{DMA\_IFCR\_CTEIF6\_Pos@{DMA\_IFCR\_CTEIF6\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTEIF6\_Pos}{DMA\_IFCR\_CTEIF6\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTEIF6\+\_\+\+Pos~(23)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00231}{231}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a4076bf1ed67fb39d4a0175e5943d5f2d}\label{reg__dma_8h_a4076bf1ed67fb39d4a0175e5943d5f2d}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTEIF7@{DMA\_IFCR\_CTEIF7}}
+\index{DMA\_IFCR\_CTEIF7@{DMA\_IFCR\_CTEIF7}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTEIF7}{DMA\_IFCR\_CTEIF7}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTEIF7~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a61cdda5706c58ca9294f1457576c3d87}{DMA\+\_\+\+IFCR\+\_\+\+CTEIF7\+\_\+\+Pos}})}
+
+
+
+Channel 7 Transfer Error clear 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00240}{240}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a61cdda5706c58ca9294f1457576c3d87}\label{reg__dma_8h_a61cdda5706c58ca9294f1457576c3d87}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_IFCR\_CTEIF7\_Pos@{DMA\_IFCR\_CTEIF7\_Pos}}
+\index{DMA\_IFCR\_CTEIF7\_Pos@{DMA\_IFCR\_CTEIF7\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_IFCR\_CTEIF7\_Pos}{DMA\_IFCR\_CTEIF7\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+IFCR\+\_\+\+CTEIF7\+\_\+\+Pos~(27)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00239}{239}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a3475228c998897d0f408a4c5da066186}\label{reg__dma_8h_a3475228c998897d0f408a4c5da066186}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_GIF1@{DMA\_ISR\_GIF1}}
+\index{DMA\_ISR\_GIF1@{DMA\_ISR\_GIF1}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_GIF1}{DMA\_ISR\_GIF1}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+GIF1~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a087ec211a08c8241dad366d1785cda52}{DMA\+\_\+\+ISR\+\_\+\+GIF1\+\_\+\+Pos}})}
+
+
+
+Channel 1 Global interrupt flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00124}{124}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a087ec211a08c8241dad366d1785cda52}\label{reg__dma_8h_a087ec211a08c8241dad366d1785cda52}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_GIF1\_Pos@{DMA\_ISR\_GIF1\_Pos}}
+\index{DMA\_ISR\_GIF1\_Pos@{DMA\_ISR\_GIF1\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_GIF1\_Pos}{DMA\_ISR\_GIF1\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+GIF1\+\_\+\+Pos~(0)}
+
+
+
+DMA\+\_\+\+ISR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00123}{123}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a44fa823dbb15b829621961efc60d6a95}\label{reg__dma_8h_a44fa823dbb15b829621961efc60d6a95}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_GIF2@{DMA\_ISR\_GIF2}}
+\index{DMA\_ISR\_GIF2@{DMA\_ISR\_GIF2}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_GIF2}{DMA\_ISR\_GIF2}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+GIF2~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a0012c596aa1189cfe65548fe251335ed}{DMA\+\_\+\+ISR\+\_\+\+GIF2\+\_\+\+Pos}})}
+
+
+
+Channel 2 Global interrupt flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00132}{132}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a0012c596aa1189cfe65548fe251335ed}\label{reg__dma_8h_a0012c596aa1189cfe65548fe251335ed}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_GIF2\_Pos@{DMA\_ISR\_GIF2\_Pos}}
+\index{DMA\_ISR\_GIF2\_Pos@{DMA\_ISR\_GIF2\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_GIF2\_Pos}{DMA\_ISR\_GIF2\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+GIF2\+\_\+\+Pos~(4)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00131}{131}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_acb0bd8fb0e580688c5cf617b618bbc17}\label{reg__dma_8h_acb0bd8fb0e580688c5cf617b618bbc17}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_GIF3@{DMA\_ISR\_GIF3}}
+\index{DMA\_ISR\_GIF3@{DMA\_ISR\_GIF3}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_GIF3}{DMA\_ISR\_GIF3}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+GIF3~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a54fef9be564548137ad7c2445b20c335}{DMA\+\_\+\+ISR\+\_\+\+GIF3\+\_\+\+Pos}})}
+
+
+
+Channel 3 Global interrupt flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00140}{140}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a54fef9be564548137ad7c2445b20c335}\label{reg__dma_8h_a54fef9be564548137ad7c2445b20c335}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_GIF3\_Pos@{DMA\_ISR\_GIF3\_Pos}}
+\index{DMA\_ISR\_GIF3\_Pos@{DMA\_ISR\_GIF3\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_GIF3\_Pos}{DMA\_ISR\_GIF3\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+GIF3\+\_\+\+Pos~(8)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00139}{139}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_af4f69823d44810c353af1f0a89eaf180}\label{reg__dma_8h_af4f69823d44810c353af1f0a89eaf180}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_GIF4@{DMA\_ISR\_GIF4}}
+\index{DMA\_ISR\_GIF4@{DMA\_ISR\_GIF4}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_GIF4}{DMA\_ISR\_GIF4}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+GIF4~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a3a333a9204a12b733075b76fe405e073}{DMA\+\_\+\+ISR\+\_\+\+GIF4\+\_\+\+Pos}})}
+
+
+
+Channel 4 Global interrupt flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00148}{148}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a3a333a9204a12b733075b76fe405e073}\label{reg__dma_8h_a3a333a9204a12b733075b76fe405e073}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_GIF4\_Pos@{DMA\_ISR\_GIF4\_Pos}}
+\index{DMA\_ISR\_GIF4\_Pos@{DMA\_ISR\_GIF4\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_GIF4\_Pos}{DMA\_ISR\_GIF4\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+GIF4\+\_\+\+Pos~(12)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00147}{147}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a83d4d9cba635d1e33e3477b773379cfd}\label{reg__dma_8h_a83d4d9cba635d1e33e3477b773379cfd}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_GIF5@{DMA\_ISR\_GIF5}}
+\index{DMA\_ISR\_GIF5@{DMA\_ISR\_GIF5}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_GIF5}{DMA\_ISR\_GIF5}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+GIF5~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_aaf2a17e91ebc38899d49756cb90bf4ad}{DMA\+\_\+\+ISR\+\_\+\+GIF5\+\_\+\+Pos}})}
+
+
+
+Channel 5 Global interrupt flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00156}{156}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_aaf2a17e91ebc38899d49756cb90bf4ad}\label{reg__dma_8h_aaf2a17e91ebc38899d49756cb90bf4ad}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_GIF5\_Pos@{DMA\_ISR\_GIF5\_Pos}}
+\index{DMA\_ISR\_GIF5\_Pos@{DMA\_ISR\_GIF5\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_GIF5\_Pos}{DMA\_ISR\_GIF5\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+GIF5\+\_\+\+Pos~(16)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00155}{155}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ac55f4836aa8e6cfc9bdcadfabf65b5d8}\label{reg__dma_8h_ac55f4836aa8e6cfc9bdcadfabf65b5d8}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_GIF6@{DMA\_ISR\_GIF6}}
+\index{DMA\_ISR\_GIF6@{DMA\_ISR\_GIF6}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_GIF6}{DMA\_ISR\_GIF6}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+GIF6~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_adf4eabd1be5d69031f89e738b5c74b67}{DMA\+\_\+\+ISR\+\_\+\+GIF6\+\_\+\+Pos}})}
+
+
+
+Channel 6 Global interrupt flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00165}{165}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_adf4eabd1be5d69031f89e738b5c74b67}\label{reg__dma_8h_adf4eabd1be5d69031f89e738b5c74b67}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_GIF6\_Pos@{DMA\_ISR\_GIF6\_Pos}}
+\index{DMA\_ISR\_GIF6\_Pos@{DMA\_ISR\_GIF6\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_GIF6\_Pos}{DMA\_ISR\_GIF6\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+GIF6\+\_\+\+Pos~(20)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00164}{164}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a86f178e879b2d8ceeea351e4750272dd}\label{reg__dma_8h_a86f178e879b2d8ceeea351e4750272dd}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_GIF7@{DMA\_ISR\_GIF7}}
+\index{DMA\_ISR\_GIF7@{DMA\_ISR\_GIF7}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_GIF7}{DMA\_ISR\_GIF7}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+GIF7~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a6e8c37f4c5e50c523965acdd6fb68407}{DMA\+\_\+\+ISR\+\_\+\+GIF7\+\_\+\+Pos}})}
+
+
+
+Channel 7 Global interrupt flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00173}{173}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a6e8c37f4c5e50c523965acdd6fb68407}\label{reg__dma_8h_a6e8c37f4c5e50c523965acdd6fb68407}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_GIF7\_Pos@{DMA\_ISR\_GIF7\_Pos}}
+\index{DMA\_ISR\_GIF7\_Pos@{DMA\_ISR\_GIF7\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_GIF7\_Pos}{DMA\_ISR\_GIF7\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+GIF7\+\_\+\+Pos~(24)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00172}{172}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a5f83359698adf05854b55705f78d8a5c}\label{reg__dma_8h_a5f83359698adf05854b55705f78d8a5c}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_HTIF1@{DMA\_ISR\_HTIF1}}
+\index{DMA\_ISR\_HTIF1@{DMA\_ISR\_HTIF1}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_HTIF1}{DMA\_ISR\_HTIF1}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+HTIF1~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_adca211fa8d7b7129ebee6385bfe3c74b}{DMA\+\_\+\+ISR\+\_\+\+HTIF1\+\_\+\+Pos}})}
+
+
+
+Channel 1 Half Transfer flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00128}{128}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_adca211fa8d7b7129ebee6385bfe3c74b}\label{reg__dma_8h_adca211fa8d7b7129ebee6385bfe3c74b}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_HTIF1\_Pos@{DMA\_ISR\_HTIF1\_Pos}}
+\index{DMA\_ISR\_HTIF1\_Pos@{DMA\_ISR\_HTIF1\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_HTIF1\_Pos}{DMA\_ISR\_HTIF1\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+HTIF1\+\_\+\+Pos~(2)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00127}{127}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a8ee1947aef188f437f37d3ff444f8646}\label{reg__dma_8h_a8ee1947aef188f437f37d3ff444f8646}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_HTIF2@{DMA\_ISR\_HTIF2}}
+\index{DMA\_ISR\_HTIF2@{DMA\_ISR\_HTIF2}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_HTIF2}{DMA\_ISR\_HTIF2}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+HTIF2~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_ad85456b2273dd7dfbb08fe92ac61b1e4}{DMA\+\_\+\+ISR\+\_\+\+HTIF2\+\_\+\+Pos}})}
+
+
+
+Channel 2 Half Transfer flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00136}{136}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ad85456b2273dd7dfbb08fe92ac61b1e4}\label{reg__dma_8h_ad85456b2273dd7dfbb08fe92ac61b1e4}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_HTIF2\_Pos@{DMA\_ISR\_HTIF2\_Pos}}
+\index{DMA\_ISR\_HTIF2\_Pos@{DMA\_ISR\_HTIF2\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_HTIF2\_Pos}{DMA\_ISR\_HTIF2\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+HTIF2\+\_\+\+Pos~(6)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00135}{135}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a53bb9a00737c52faffaaa91ff08b34a1}\label{reg__dma_8h_a53bb9a00737c52faffaaa91ff08b34a1}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_HTIF3@{DMA\_ISR\_HTIF3}}
+\index{DMA\_ISR\_HTIF3@{DMA\_ISR\_HTIF3}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_HTIF3}{DMA\_ISR\_HTIF3}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+HTIF3~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a126264bff9e43ab1e8f833762fe83c1d}{DMA\+\_\+\+ISR\+\_\+\+HTIF3\+\_\+\+Pos}})}
+
+
+
+Channel 3 Half Transfer flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00144}{144}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a126264bff9e43ab1e8f833762fe83c1d}\label{reg__dma_8h_a126264bff9e43ab1e8f833762fe83c1d}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_HTIF3\_Pos@{DMA\_ISR\_HTIF3\_Pos}}
+\index{DMA\_ISR\_HTIF3\_Pos@{DMA\_ISR\_HTIF3\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_HTIF3\_Pos}{DMA\_ISR\_HTIF3\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+HTIF3\+\_\+\+Pos~(10)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00143}{143}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a684cf326c770f1ab21c604a5f62907ad}\label{reg__dma_8h_a684cf326c770f1ab21c604a5f62907ad}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_HTIF4@{DMA\_ISR\_HTIF4}}
+\index{DMA\_ISR\_HTIF4@{DMA\_ISR\_HTIF4}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_HTIF4}{DMA\_ISR\_HTIF4}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+HTIF4~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a2fa14ca3e688cfacb5f01b8e236b2dc8}{DMA\+\_\+\+ISR\+\_\+\+HTIF4\+\_\+\+Pos}})}
+
+
+
+Channel 4 Half Transfer flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00152}{152}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a2fa14ca3e688cfacb5f01b8e236b2dc8}\label{reg__dma_8h_a2fa14ca3e688cfacb5f01b8e236b2dc8}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_HTIF4\_Pos@{DMA\_ISR\_HTIF4\_Pos}}
+\index{DMA\_ISR\_HTIF4\_Pos@{DMA\_ISR\_HTIF4\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_HTIF4\_Pos}{DMA\_ISR\_HTIF4\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+HTIF4\+\_\+\+Pos~(14)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00151}{151}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a3d1f2b8c82b1e20b4311af8ca9576736}\label{reg__dma_8h_a3d1f2b8c82b1e20b4311af8ca9576736}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_HTIF5@{DMA\_ISR\_HTIF5}}
+\index{DMA\_ISR\_HTIF5@{DMA\_ISR\_HTIF5}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_HTIF5}{DMA\_ISR\_HTIF5}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+HTIF5~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a9052b436400d7e915f8f5bfff90f90e1}{DMA\+\_\+\+ISR\+\_\+\+HTIF5\+\_\+\+Pos}})}
+
+
+
+Channel 5 Half Transfer flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00160}{160}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a9052b436400d7e915f8f5bfff90f90e1}\label{reg__dma_8h_a9052b436400d7e915f8f5bfff90f90e1}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_HTIF5\_Pos@{DMA\_ISR\_HTIF5\_Pos}}
+\index{DMA\_ISR\_HTIF5\_Pos@{DMA\_ISR\_HTIF5\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_HTIF5\_Pos}{DMA\_ISR\_HTIF5\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+HTIF5\+\_\+\+Pos~(18)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00159}{159}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a41b6d9787aeff76a51581d9488b4604f}\label{reg__dma_8h_a41b6d9787aeff76a51581d9488b4604f}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_HTIF6@{DMA\_ISR\_HTIF6}}
+\index{DMA\_ISR\_HTIF6@{DMA\_ISR\_HTIF6}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_HTIF6}{DMA\_ISR\_HTIF6}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+HTIF6~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_ae04cbdca367113e9af5ded68c90e8523}{DMA\+\_\+\+ISR\+\_\+\+HTIF6\+\_\+\+Pos}})}
+
+
+
+Channel 6 Half Transfer flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00169}{169}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ae04cbdca367113e9af5ded68c90e8523}\label{reg__dma_8h_ae04cbdca367113e9af5ded68c90e8523}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_HTIF6\_Pos@{DMA\_ISR\_HTIF6\_Pos}}
+\index{DMA\_ISR\_HTIF6\_Pos@{DMA\_ISR\_HTIF6\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_HTIF6\_Pos}{DMA\_ISR\_HTIF6\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+HTIF6\+\_\+\+Pos~(22)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00168}{168}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a769016c2b0bf22ff3ad6967b3dc0e2bb}\label{reg__dma_8h_a769016c2b0bf22ff3ad6967b3dc0e2bb}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_HTIF7@{DMA\_ISR\_HTIF7}}
+\index{DMA\_ISR\_HTIF7@{DMA\_ISR\_HTIF7}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_HTIF7}{DMA\_ISR\_HTIF7}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+HTIF7~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a797a964a31272c1fcab6b10f248f01b2}{DMA\+\_\+\+ISR\+\_\+\+HTIF7\+\_\+\+Pos}})}
+
+
+
+Channel 7 Half Transfer flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00177}{177}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a797a964a31272c1fcab6b10f248f01b2}\label{reg__dma_8h_a797a964a31272c1fcab6b10f248f01b2}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_HTIF7\_Pos@{DMA\_ISR\_HTIF7\_Pos}}
+\index{DMA\_ISR\_HTIF7\_Pos@{DMA\_ISR\_HTIF7\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_HTIF7\_Pos}{DMA\_ISR\_HTIF7\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+HTIF7\+\_\+\+Pos~(26)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00176}{176}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a1a1522414af27c7fff2cc27edac1d680}\label{reg__dma_8h_a1a1522414af27c7fff2cc27edac1d680}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TCIF1@{DMA\_ISR\_TCIF1}}
+\index{DMA\_ISR\_TCIF1@{DMA\_ISR\_TCIF1}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TCIF1}{DMA\_ISR\_TCIF1}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TCIF1~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_ac085bfd33abd74b8fea8fdb2c0d50281}{DMA\+\_\+\+ISR\+\_\+\+TCIF1\+\_\+\+Pos}})}
+
+
+
+Channel 1 Transfer Complete flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00126}{126}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ac085bfd33abd74b8fea8fdb2c0d50281}\label{reg__dma_8h_ac085bfd33abd74b8fea8fdb2c0d50281}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TCIF1\_Pos@{DMA\_ISR\_TCIF1\_Pos}}
+\index{DMA\_ISR\_TCIF1\_Pos@{DMA\_ISR\_TCIF1\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TCIF1\_Pos}{DMA\_ISR\_TCIF1\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TCIF1\+\_\+\+Pos~(1)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00125}{125}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a631741eb4843eda3578808a3d8b527b2}\label{reg__dma_8h_a631741eb4843eda3578808a3d8b527b2}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TCIF2@{DMA\_ISR\_TCIF2}}
+\index{DMA\_ISR\_TCIF2@{DMA\_ISR\_TCIF2}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TCIF2}{DMA\_ISR\_TCIF2}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TCIF2~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_ab069ba1399d2868037f766a08dbe1e4a}{DMA\+\_\+\+ISR\+\_\+\+TCIF2\+\_\+\+Pos}})}
+
+
+
+Channel 2 Transfer Complete flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00134}{134}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ab069ba1399d2868037f766a08dbe1e4a}\label{reg__dma_8h_ab069ba1399d2868037f766a08dbe1e4a}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TCIF2\_Pos@{DMA\_ISR\_TCIF2\_Pos}}
+\index{DMA\_ISR\_TCIF2\_Pos@{DMA\_ISR\_TCIF2\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TCIF2\_Pos}{DMA\_ISR\_TCIF2\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TCIF2\+\_\+\+Pos~(5)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00133}{133}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a28664595df654d9d8052fb6f9cc48495}\label{reg__dma_8h_a28664595df654d9d8052fb6f9cc48495}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TCIF3@{DMA\_ISR\_TCIF3}}
+\index{DMA\_ISR\_TCIF3@{DMA\_ISR\_TCIF3}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TCIF3}{DMA\_ISR\_TCIF3}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TCIF3~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_af1479bcdda36f67b6337b034b920fc6d}{DMA\+\_\+\+ISR\+\_\+\+TCIF3\+\_\+\+Pos}})}
+
+
+
+Channel 3 Transfer Complete flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00142}{142}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_af1479bcdda36f67b6337b034b920fc6d}\label{reg__dma_8h_af1479bcdda36f67b6337b034b920fc6d}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TCIF3\_Pos@{DMA\_ISR\_TCIF3\_Pos}}
+\index{DMA\_ISR\_TCIF3\_Pos@{DMA\_ISR\_TCIF3\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TCIF3\_Pos}{DMA\_ISR\_TCIF3\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TCIF3\+\_\+\+Pos~(9)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00141}{141}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ad7d4e46949a35cf037a303bd65a0c87a}\label{reg__dma_8h_ad7d4e46949a35cf037a303bd65a0c87a}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TCIF4@{DMA\_ISR\_TCIF4}}
+\index{DMA\_ISR\_TCIF4@{DMA\_ISR\_TCIF4}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TCIF4}{DMA\_ISR\_TCIF4}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TCIF4~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a29c55dfd31b2060f1fb68338588a859e}{DMA\+\_\+\+ISR\+\_\+\+TCIF4\+\_\+\+Pos}})}
+
+
+
+Channel 4 Transfer Complete flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00150}{150}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a29c55dfd31b2060f1fb68338588a859e}\label{reg__dma_8h_a29c55dfd31b2060f1fb68338588a859e}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TCIF4\_Pos@{DMA\_ISR\_TCIF4\_Pos}}
+\index{DMA\_ISR\_TCIF4\_Pos@{DMA\_ISR\_TCIF4\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TCIF4\_Pos}{DMA\_ISR\_TCIF4\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TCIF4\+\_\+\+Pos~(13)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00149}{149}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a5ea57d09f13edbd6ad8afe9465e0fa70}\label{reg__dma_8h_a5ea57d09f13edbd6ad8afe9465e0fa70}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TCIF5@{DMA\_ISR\_TCIF5}}
+\index{DMA\_ISR\_TCIF5@{DMA\_ISR\_TCIF5}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TCIF5}{DMA\_ISR\_TCIF5}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TCIF5~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_aa3df7a4b5b5522c858efb983e147e521}{DMA\+\_\+\+ISR\+\_\+\+TCIF5\+\_\+\+Pos}})}
+
+
+
+Channel 5 Transfer Complete flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00158}{158}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_aa3df7a4b5b5522c858efb983e147e521}\label{reg__dma_8h_aa3df7a4b5b5522c858efb983e147e521}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TCIF5\_Pos@{DMA\_ISR\_TCIF5\_Pos}}
+\index{DMA\_ISR\_TCIF5\_Pos@{DMA\_ISR\_TCIF5\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TCIF5\_Pos}{DMA\_ISR\_TCIF5\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TCIF5\+\_\+\+Pos~(17)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00157}{157}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a2d76395cf6c6ef50e05c96d7ae723058}\label{reg__dma_8h_a2d76395cf6c6ef50e05c96d7ae723058}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TCIF6@{DMA\_ISR\_TCIF6}}
+\index{DMA\_ISR\_TCIF6@{DMA\_ISR\_TCIF6}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TCIF6}{DMA\_ISR\_TCIF6}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TCIF6~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a51a0e94ffea3d92ae1dc0eb5747cecc1}{DMA\+\_\+\+ISR\+\_\+\+TCIF6\+\_\+\+Pos}})}
+
+
+
+Channel 6 Transfer Complete flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00167}{167}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a51a0e94ffea3d92ae1dc0eb5747cecc1}\label{reg__dma_8h_a51a0e94ffea3d92ae1dc0eb5747cecc1}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TCIF6\_Pos@{DMA\_ISR\_TCIF6\_Pos}}
+\index{DMA\_ISR\_TCIF6\_Pos@{DMA\_ISR\_TCIF6\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TCIF6\_Pos}{DMA\_ISR\_TCIF6\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TCIF6\+\_\+\+Pos~(21)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00166}{166}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a4528af54928542c09502c01827418732}\label{reg__dma_8h_a4528af54928542c09502c01827418732}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TCIF7@{DMA\_ISR\_TCIF7}}
+\index{DMA\_ISR\_TCIF7@{DMA\_ISR\_TCIF7}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TCIF7}{DMA\_ISR\_TCIF7}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TCIF7~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_af045c89aa989b77cd4a81d5995a35350}{DMA\+\_\+\+ISR\+\_\+\+TCIF7\+\_\+\+Pos}})}
+
+
+
+Channel 7 Transfer Complete flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00175}{175}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_af045c89aa989b77cd4a81d5995a35350}\label{reg__dma_8h_af045c89aa989b77cd4a81d5995a35350}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TCIF7\_Pos@{DMA\_ISR\_TCIF7\_Pos}}
+\index{DMA\_ISR\_TCIF7\_Pos@{DMA\_ISR\_TCIF7\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TCIF7\_Pos}{DMA\_ISR\_TCIF7\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TCIF7\+\_\+\+Pos~(25)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00174}{174}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a26bfd55e965445ae253a5c5fa8f1769a}\label{reg__dma_8h_a26bfd55e965445ae253a5c5fa8f1769a}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TEIF1@{DMA\_ISR\_TEIF1}}
+\index{DMA\_ISR\_TEIF1@{DMA\_ISR\_TEIF1}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TEIF1}{DMA\_ISR\_TEIF1}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TEIF1~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a0b01017e80e2ef95bf33e48cd5f1c464}{DMA\+\_\+\+ISR\+\_\+\+TEIF1\+\_\+\+Pos}})}
+
+
+
+Channel 1 Transfer Error flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00130}{130}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a0b01017e80e2ef95bf33e48cd5f1c464}\label{reg__dma_8h_a0b01017e80e2ef95bf33e48cd5f1c464}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TEIF1\_Pos@{DMA\_ISR\_TEIF1\_Pos}}
+\index{DMA\_ISR\_TEIF1\_Pos@{DMA\_ISR\_TEIF1\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TEIF1\_Pos}{DMA\_ISR\_TEIF1\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TEIF1\+\_\+\+Pos~(3)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00129}{129}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a5bcd07efcadd5fef598edec1cca70e38}\label{reg__dma_8h_a5bcd07efcadd5fef598edec1cca70e38}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TEIF2@{DMA\_ISR\_TEIF2}}
+\index{DMA\_ISR\_TEIF2@{DMA\_ISR\_TEIF2}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TEIF2}{DMA\_ISR\_TEIF2}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TEIF2~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a0cdbf8d2aa171d79890a087f1c43dbd6}{DMA\+\_\+\+ISR\+\_\+\+TEIF2\+\_\+\+Pos}})}
+
+
+
+Channel 2 Transfer Error flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00138}{138}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a0cdbf8d2aa171d79890a087f1c43dbd6}\label{reg__dma_8h_a0cdbf8d2aa171d79890a087f1c43dbd6}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TEIF2\_Pos@{DMA\_ISR\_TEIF2\_Pos}}
+\index{DMA\_ISR\_TEIF2\_Pos@{DMA\_ISR\_TEIF2\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TEIF2\_Pos}{DMA\_ISR\_TEIF2\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TEIF2\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00137}{137}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_aa624379143a2535d7a60d87d59834d10}\label{reg__dma_8h_aa624379143a2535d7a60d87d59834d10}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TEIF3@{DMA\_ISR\_TEIF3}}
+\index{DMA\_ISR\_TEIF3@{DMA\_ISR\_TEIF3}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TEIF3}{DMA\_ISR\_TEIF3}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TEIF3~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a248a455a5f3c5fee0cc45ab365d7b516}{DMA\+\_\+\+ISR\+\_\+\+TEIF3\+\_\+\+Pos}})}
+
+
+
+Channel 3 Transfer Error flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00146}{146}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a248a455a5f3c5fee0cc45ab365d7b516}\label{reg__dma_8h_a248a455a5f3c5fee0cc45ab365d7b516}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TEIF3\_Pos@{DMA\_ISR\_TEIF3\_Pos}}
+\index{DMA\_ISR\_TEIF3\_Pos@{DMA\_ISR\_TEIF3\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TEIF3\_Pos}{DMA\_ISR\_TEIF3\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TEIF3\+\_\+\+Pos~(11)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00145}{145}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a12fcc1471918f3e7b293b2d825177253}\label{reg__dma_8h_a12fcc1471918f3e7b293b2d825177253}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TEIF4@{DMA\_ISR\_TEIF4}}
+\index{DMA\_ISR\_TEIF4@{DMA\_ISR\_TEIF4}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TEIF4}{DMA\_ISR\_TEIF4}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TEIF4~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a4d5a506abd056cdecd143aa6b453a3c0}{DMA\+\_\+\+ISR\+\_\+\+TEIF4\+\_\+\+Pos}})}
+
+
+
+Channel 4 Transfer Error flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00154}{154}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a4d5a506abd056cdecd143aa6b453a3c0}\label{reg__dma_8h_a4d5a506abd056cdecd143aa6b453a3c0}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TEIF4\_Pos@{DMA\_ISR\_TEIF4\_Pos}}
+\index{DMA\_ISR\_TEIF4\_Pos@{DMA\_ISR\_TEIF4\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TEIF4\_Pos}{DMA\_ISR\_TEIF4\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TEIF4\+\_\+\+Pos~(15)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00153}{153}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a42f9b12c4c80cbb7cd0f94f139c73de3}\label{reg__dma_8h_a42f9b12c4c80cbb7cd0f94f139c73de3}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TEIF5@{DMA\_ISR\_TEIF5}}
+\index{DMA\_ISR\_TEIF5@{DMA\_ISR\_TEIF5}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TEIF5}{DMA\_ISR\_TEIF5}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TEIF5~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a6c21cfd99b9042aae0c09646f194400d}{DMA\+\_\+\+ISR\+\_\+\+TEIF5\+\_\+\+Pos}})}
+
+
+
+Channel 5 Transfer Error flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00162}{162}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a6c21cfd99b9042aae0c09646f194400d}\label{reg__dma_8h_a6c21cfd99b9042aae0c09646f194400d}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TEIF5\_Pos@{DMA\_ISR\_TEIF5\_Pos}}
+\index{DMA\_ISR\_TEIF5\_Pos@{DMA\_ISR\_TEIF5\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TEIF5\_Pos}{DMA\_ISR\_TEIF5\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TEIF5\+\_\+\+Pos~(19)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00161}{161}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_ae47d914969922381708ae06c1c71123a}\label{reg__dma_8h_ae47d914969922381708ae06c1c71123a}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TEIF6@{DMA\_ISR\_TEIF6}}
+\index{DMA\_ISR\_TEIF6@{DMA\_ISR\_TEIF6}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TEIF6}{DMA\_ISR\_TEIF6}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TEIF6~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a963d5205894b028565a3845600f4ffd6}{DMA\+\_\+\+ISR\+\_\+\+TEIF6\+\_\+\+Pos}})}
+
+
+
+Channel 6 Transfer Error flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00171}{171}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a963d5205894b028565a3845600f4ffd6}\label{reg__dma_8h_a963d5205894b028565a3845600f4ffd6}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TEIF6\_Pos@{DMA\_ISR\_TEIF6\_Pos}}
+\index{DMA\_ISR\_TEIF6\_Pos@{DMA\_ISR\_TEIF6\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TEIF6\_Pos}{DMA\_ISR\_TEIF6\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TEIF6\+\_\+\+Pos~(23)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00170}{170}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_af8333b3c78b7d0a07bd4b1e91e902b31}\label{reg__dma_8h_af8333b3c78b7d0a07bd4b1e91e902b31}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TEIF7@{DMA\_ISR\_TEIF7}}
+\index{DMA\_ISR\_TEIF7@{DMA\_ISR\_TEIF7}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TEIF7}{DMA\_ISR\_TEIF7}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TEIF7~(0x01U $<$$<$ \mbox{\hyperlink{reg__dma_8h_a206b3332efbd7d8fdd094e791de94812}{DMA\+\_\+\+ISR\+\_\+\+TEIF7\+\_\+\+Pos}})}
+
+
+
+Channel 7 Transfer Error flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00179}{179}} 行定义.
+
+\mbox{\Hypertarget{reg__dma_8h_a206b3332efbd7d8fdd094e791de94812}\label{reg__dma_8h_a206b3332efbd7d8fdd094e791de94812}} 
+\index{reg\_dma.h@{reg\_dma.h}!DMA\_ISR\_TEIF7\_Pos@{DMA\_ISR\_TEIF7\_Pos}}
+\index{DMA\_ISR\_TEIF7\_Pos@{DMA\_ISR\_TEIF7\_Pos}!reg\_dma.h@{reg\_dma.h}}
+\doxysubsubsection{\texorpdfstring{DMA\_ISR\_TEIF7\_Pos}{DMA\_ISR\_TEIF7\_Pos}}
+{\footnotesize\ttfamily \#define DMA\+\_\+\+ISR\+\_\+\+TEIF7\+\_\+\+Pos~(27)}
+
+
+
+在文件 \mbox{\hyperlink{reg__dma_8h_source}{reg\+\_\+dma.\+h}} 第 \mbox{\hyperlink{reg__dma_8h_source_l00178}{178}} 行定义.
+

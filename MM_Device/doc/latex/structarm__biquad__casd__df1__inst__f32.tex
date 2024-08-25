@@ -1,0 +1,65 @@
+\hypertarget{structarm__biquad__casd__df1__inst__f32}{}\doxysection{arm\+\_\+biquad\+\_\+casd\+\_\+df1\+\_\+inst\+\_\+f32结构体 参考}
+\label{structarm__biquad__casd__df1__inst__f32}\index{arm\_biquad\_casd\_df1\_inst\_f32@{arm\_biquad\_casd\_df1\_inst\_f32}}
+
+
+Instance structure for the floating-\/point Biquad cascade filter.  
+
+
+
+
+{\ttfamily \#include $<$arm\+\_\+math.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structarm__biquad__casd__df1__inst__f32_af69820c37a87252c46453e4cfe120585}{num\+Stages}}
+\item 
+\mbox{\hyperlink{arm__math_8h_a4611b605e45ab401f02cab15c5e38715}{float32\+\_\+t}} $\ast$ \mbox{\hyperlink{structarm__biquad__casd__df1__inst__f32_a8c245d79e0d8cfabc82409d4b54fb682}{p\+State}}
+\item 
+\mbox{\hyperlink{arm__math_8h_a4611b605e45ab401f02cab15c5e38715}{float32\+\_\+t}} $\ast$ \mbox{\hyperlink{structarm__biquad__casd__df1__inst__f32_af9df3820576fb921809d1462c9c6d16c}{p\+Coeffs}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Instance structure for the floating-\/point Biquad cascade filter. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l01288}{1288}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{structarm__biquad__casd__df1__inst__f32_af69820c37a87252c46453e4cfe120585}\label{structarm__biquad__casd__df1__inst__f32_af69820c37a87252c46453e4cfe120585}} 
+\index{arm\_biquad\_casd\_df1\_inst\_f32@{arm\_biquad\_casd\_df1\_inst\_f32}!numStages@{numStages}}
+\index{numStages@{numStages}!arm\_biquad\_casd\_df1\_inst\_f32@{arm\_biquad\_casd\_df1\_inst\_f32}}
+\doxysubsubsection{\texorpdfstring{numStages}{numStages}}
+{\footnotesize\ttfamily uint32\+\_\+t arm\+\_\+biquad\+\_\+casd\+\_\+df1\+\_\+inst\+\_\+f32\+::num\+Stages}
+
+number of 2nd order stages in the filter. Overall order is 2$\ast$num\+Stages. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l01289}{1289}} 行定义.
+
+\mbox{\Hypertarget{structarm__biquad__casd__df1__inst__f32_af9df3820576fb921809d1462c9c6d16c}\label{structarm__biquad__casd__df1__inst__f32_af9df3820576fb921809d1462c9c6d16c}} 
+\index{arm\_biquad\_casd\_df1\_inst\_f32@{arm\_biquad\_casd\_df1\_inst\_f32}!pCoeffs@{pCoeffs}}
+\index{pCoeffs@{pCoeffs}!arm\_biquad\_casd\_df1\_inst\_f32@{arm\_biquad\_casd\_df1\_inst\_f32}}
+\doxysubsubsection{\texorpdfstring{pCoeffs}{pCoeffs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{arm__math_8h_a4611b605e45ab401f02cab15c5e38715}{float32\+\_\+t}}$\ast$ arm\+\_\+biquad\+\_\+casd\+\_\+df1\+\_\+inst\+\_\+f32\+::p\+Coeffs}
+
+Points to the array of coefficients. The array is of length 5$\ast$num\+Stages. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l01291}{1291}} 行定义.
+
+\mbox{\Hypertarget{structarm__biquad__casd__df1__inst__f32_a8c245d79e0d8cfabc82409d4b54fb682}\label{structarm__biquad__casd__df1__inst__f32_a8c245d79e0d8cfabc82409d4b54fb682}} 
+\index{arm\_biquad\_casd\_df1\_inst\_f32@{arm\_biquad\_casd\_df1\_inst\_f32}!pState@{pState}}
+\index{pState@{pState}!arm\_biquad\_casd\_df1\_inst\_f32@{arm\_biquad\_casd\_df1\_inst\_f32}}
+\doxysubsubsection{\texorpdfstring{pState}{pState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{arm__math_8h_a4611b605e45ab401f02cab15c5e38715}{float32\+\_\+t}}$\ast$ arm\+\_\+biquad\+\_\+casd\+\_\+df1\+\_\+inst\+\_\+f32\+::p\+State}
+
+Points to the array of state coefficients. The array is of length 4$\ast$num\+Stages. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l01290}{1290}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+CMSIS/\mbox{\hyperlink{arm__math_8h}{arm\+\_\+math.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,120 @@
+\hypertarget{hal__dac_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Inc/hal\+\_\+dac.h 文件参考}
+\label{hal__dac_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_dac.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Inc/hal\_dac.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE DAC FIRMWARE LIBRARY.  
+
+
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}reg\+\_\+dac.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_d_a_c___init_type_def}{DAC\+\_\+\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em DAC Init structure definition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___d_a_c___exported___constants_ga6dee06de1749dbb023bbe6cf6b712177}{DHR12\+R1\+\_\+\+Offset}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000008)
+\item 
+\#define \mbox{\hyperlink{group___d_a_c___exported___constants_gacc20fd23bbf86d19f69bd0d3d8ed8ab9}{DHR12\+R2\+\_\+\+Offset}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000014)
+\item 
+\#define \mbox{\hyperlink{group___d_a_c___exported___constants_gad97923563ab2302bd633bf9b0020cd27}{DHR12\+RD\+\_\+\+Offset}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x00000020)
+\item 
+\#define \mbox{\hyperlink{group___d_a_c___exported___constants_ga8b74efa305005920d7f9b9c49eacf98e}{DOR\+\_\+\+Offset}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})0x0000002C)
+\item 
+\#define \mbox{\hyperlink{group___d_a_c___exported___variables_ga3de33738fd3c7e77bffbcfaefc3e7645}{GLOBAL}}~extern
+\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___d_a_c___exported___types_ga3add1c6af7148a2fd093c3a9dd1eabf5}{em\+DACTRIG\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5a2a84d20905a37456d852b7918229ddd2}{DAC\+\_\+\+Trigger\+\_\+\+None}} = 0x00000000
+, \mbox{\hyperlink{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5a7d3bc60b8a9f899b9c1b5f5bce10c255}{DAC\+\_\+\+Trigger\+\_\+\+T1\+\_\+\+TRIG}} = (DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+TIM1\+\_\+\+TRIG $\vert$ DAC\+\_\+\+CR\+\_\+\+TEN1)
+, \mbox{\hyperlink{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5a741db4099bbc34581462dd4ae605ec97}{DAC\+\_\+\+Trigger\+\_\+\+T3\+\_\+\+TRIG}} = (DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+TIM3\+\_\+\+TRIG $\vert$ DAC\+\_\+\+CR\+\_\+\+TEN1)
+, \mbox{\hyperlink{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5a3cb012ae0d8f5f38760149b304097d67}{DAC\+\_\+\+Trigger\+\_\+\+T2\+\_\+\+TRIG}} = (DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+TIM2\+\_\+\+TRIG $\vert$ DAC\+\_\+\+CR\+\_\+\+TEN1)
+, \newline
+\mbox{\hyperlink{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5a44d483066d2522503fa08310a8b4f119}{DAC\+\_\+\+Trigger\+\_\+\+T4\+\_\+\+TRIG}} = (DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+TIM4\+\_\+\+TRIG $\vert$ DAC\+\_\+\+CR\+\_\+\+TEN1)
+, \mbox{\hyperlink{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5aefbdf847e4ebf2bb29c9dbd845ca9078}{DAC\+\_\+\+Trigger\+\_\+\+Ext\+\_\+\+IT9}} = (DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+EXTI9 $\vert$ DAC\+\_\+\+CR\+\_\+\+TEN1)
+, \mbox{\hyperlink{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5ac78196bbfac35147d46f3ede4254a8a0}{DAC\+\_\+\+Trigger\+\_\+\+Software}} = (DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+SOFTWARE)
+ \}
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+Trigger\+\_\+\+Selection \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___d_a_c___exported___types_ga1faa3be447f7db2a4f6dee23d48171a1}{em\+DACWAVE\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___d_a_c___exported___types_gga1faa3be447f7db2a4f6dee23d48171a1a93a69f0af567f82590ee4c3b7eee80e0}{DAC\+\_\+\+Wave\+Generation\+\_\+\+None}} = DAC\+\_\+\+CR\+\_\+\+WAVE1\+\_\+\+NONE
+, \mbox{\hyperlink{group___d_a_c___exported___types_gga1faa3be447f7db2a4f6dee23d48171a1a62401b9eab8cac0fdbd1f1d856785b45}{DAC\+\_\+\+Wave\+Generation\+\_\+\+Noise}} = DAC\+\_\+\+CR\+\_\+\+WAVE1\+\_\+\+NOISE
+, \mbox{\hyperlink{group___d_a_c___exported___types_gga1faa3be447f7db2a4f6dee23d48171a1a147eece5897397f6380cca05b3cab597}{DAC\+\_\+\+Wave\+Generation\+\_\+\+Triangle}} = DAC\+\_\+\+CR\+\_\+\+WAVE1\+\_\+\+TRIANGLE
+ \}
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+Wave\+\_\+\+Generation \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___d_a_c___exported___types_gae7506f8aeb2de2968ae38a082490e977}{em\+DACAMP\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a1d3f1b67a4541823885df92dcf8c664d}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+1}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+1
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a8f09d9a6789d731f6544bf00a268096f}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+3}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+3
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977aabf742d4b48b53577b4569ad462c1926}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+7}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+7
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a3d71741e32bf881c7acd3f39d8d98bd0}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+15}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+15
+, \newline
+\mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a6d1a7aa89fceaa22f64a91a3edfb7768}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+31}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+31
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a331bdbe6d1bbf91b8f6e7640fad8022c}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+63}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+63
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a209550fbd459302532105d1aaecda3f2}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+127}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+127
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977aef048d8e865d690259928155cec55c2f}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+255}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+255
+, \newline
+\mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a7f5988132d87ae59c476de6268fe9b49}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+511}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+511
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a5b27827245f4e2a3b390a23f32cdf58d}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+1023}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+1023
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977afab513622fab893cc9f7a748ab641d10}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+2047}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+2047
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a5bded37d8ecc0526e179d5c6ea133045}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+4095}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+4095
+ \}
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+Mask\+\_\+\+Amplitude \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___d_a_c___exported___types_ga7e0c8ae673fea8abf7818ce324874723}{em\+DACCH\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___d_a_c___exported___types_gga7e0c8ae673fea8abf7818ce324874723ae1a419af74f34d32349f658d9e3b7657}{DAC\+\_\+\+Channel\+\_\+1}}
+, \mbox{\hyperlink{group___d_a_c___exported___types_gga7e0c8ae673fea8abf7818ce324874723a98549f575bf809212a780605930f0cb2}{DAC\+\_\+\+Channel\+\_\+2}} = (u32)0x00000010
+ \}
+\begin{DoxyCompactList}\small\item\em channel \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___d_a_c___exported___types_gac4883f249cc6e92a0ae887895598df89}{em\+DACALIGN\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___d_a_c___exported___types_ggac4883f249cc6e92a0ae887895598df89ab0428733486fe0de32e7bbfd1ab1507d}{DAC\+\_\+\+Align\+\_\+12b\+\_\+R}} = ((u32)0x00000000)
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggac4883f249cc6e92a0ae887895598df89abc08eab26462c294f8e7f98ed84b187a}{DAC\+\_\+\+Align\+\_\+12b\+\_\+L}} = ((u32)0x00000004)
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggac4883f249cc6e92a0ae887895598df89aa4f9866c2dc515048faf5e9d1de418af}{DAC\+\_\+\+Align\+\_\+8b\+\_\+R}} = ((u32)0x00000008)
+ \}
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+Data\+\_\+\+Alignement \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___d_a_c___exported___types_gae49e06c65417c70227c686bad6b513f4}{em\+DACBOFF\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___d_a_c___exported___types_ggae49e06c65417c70227c686bad6b513f4a70b619c8ff2f6c71a7a26d672c18541e}{DAC\+\_\+\+Output\+Buffer\+\_\+\+Enable}} = 0x00000000
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggae49e06c65417c70227c686bad6b513f4a0eadcf0224bbb3c14e3b23b2d6064a3b}{DAC\+\_\+\+Output\+Buffer\+\_\+\+Disable}} = DAC\+\_\+\+CR\+\_\+\+BOFF1
+ \}
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+Output\+\_\+\+Buffer \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___d_a_c___exported___functions_ga1fae225204e1e049d6795319e99ba8bc}{DAC\+\_\+\+De\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes the DAC peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_a_c___exported___functions_ga7a75e485cf9a0d9871e7053a1409a660}{DAC\+\_\+\+Init}} (\mbox{\hyperlink{group___d_a_c___exported___types_ga7e0c8ae673fea8abf7818ce324874723}{em\+DACCH\+\_\+\+Type\+Def}} channel, \mbox{\hyperlink{struct_d_a_c___init_type_def}{DAC\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Initializes the DAC peripheral according to the specified parameters in the DAC\+\_\+\+Init\+Struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_a_c___exported___functions_ga815b774d9fd13579d1b72d7053ddac89}{DAC\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{struct_d_a_c___init_type_def}{DAC\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Fills each DAC\+\_\+\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_a_c___exported___functions_gaaf50d963be6d15e10eb708e0049d41b5}{DAC\+\_\+\+Cmd}} (\mbox{\hyperlink{group___d_a_c___exported___types_ga7e0c8ae673fea8abf7818ce324874723}{em\+DACCH\+\_\+\+Type\+Def}} channel, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified DAC channel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_a_c___exported___functions_gadf8eb57a5bbb79e539a68753659e4090}{DAC\+\_\+\+DMACmd}} (\mbox{\hyperlink{group___d_a_c___exported___types_ga7e0c8ae673fea8abf7818ce324874723}{em\+DACCH\+\_\+\+Type\+Def}} channel, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified DAC channel DMA request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_a_c___exported___functions_ga5d50788a766eedb4670991d71216fbdc}{DAC\+\_\+\+Software\+Trigger\+Cmd}} (\mbox{\hyperlink{group___d_a_c___exported___types_ga7e0c8ae673fea8abf7818ce324874723}{em\+DACCH\+\_\+\+Type\+Def}} channel, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the selected DAC channel software trigger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_a_c___exported___functions_ga8486bbe020f5197a267aefd2dc8c49e9}{DAC\+\_\+\+Dual\+Software\+Trigger\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables simultaneously the two DAC channels software triggers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_a_c___exported___functions_ga5744c10fec5184741d2bbd51c6a169b3}{DAC\+\_\+\+Wave\+Generation\+Cmd}} (\mbox{\hyperlink{group___d_a_c___exported___types_ga7e0c8ae673fea8abf7818ce324874723}{em\+DACCH\+\_\+\+Type\+Def}} channel, \mbox{\hyperlink{group___d_a_c___exported___types_ga1faa3be447f7db2a4f6dee23d48171a1}{em\+DACWAVE\+\_\+\+Type\+Def}} wave, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the selected DAC channel wave generation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_a_c___exported___functions_gae39627896f1e8a7598c7d75cff57d5b4}{DAC\+\_\+\+Set\+Channel1\+Data}} (\mbox{\hyperlink{group___d_a_c___exported___types_gac4883f249cc6e92a0ae887895598df89}{em\+DACALIGN\+\_\+\+Type\+Def}} alignement, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} data)
+\begin{DoxyCompactList}\small\item\em Set the specified data holding register value for DAC channel1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_a_c___exported___functions_gae936b3825fbbe0add60eb061648cd3af}{DAC\+\_\+\+Set\+Channel2\+Data}} (\mbox{\hyperlink{group___d_a_c___exported___types_gac4883f249cc6e92a0ae887895598df89}{em\+DACALIGN\+\_\+\+Type\+Def}} alignement, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} data)
+\begin{DoxyCompactList}\small\item\em Set the specified data holding register value for DAC channel2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_a_c___exported___functions_gaba1e91fef1c2775acbae9d975c668041}{DAC\+\_\+\+Set\+Dual\+Channel\+Data}} (\mbox{\hyperlink{group___d_a_c___exported___types_gac4883f249cc6e92a0ae887895598df89}{em\+DACALIGN\+\_\+\+Type\+Def}} alignement, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} data2, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} data1)
+\begin{DoxyCompactList}\small\item\em Set the specified data holding register value for dual channel DAC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{group___d_a_c___exported___functions_ga89fd33164cd7b9b647ede7cd0f8b5941}{DAC\+\_\+\+Get\+Data\+Output\+Value}} (\mbox{\hyperlink{group___d_a_c___exported___types_ga7e0c8ae673fea8abf7818ce324874723}{em\+DACCH\+\_\+\+Type\+Def}} channel)
+\begin{DoxyCompactList}\small\item\em Returns the last data output value of the selected DAC cahnnel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE DAC FIRMWARE LIBRARY. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{hal__dac_8h_source}{hal\+\_\+dac.\+h}} 中定义.
+

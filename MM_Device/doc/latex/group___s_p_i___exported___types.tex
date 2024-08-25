@@ -1,0 +1,701 @@
+\hypertarget{group___s_p_i___exported___types}{}\doxysection{SPI\+\_\+\+Exported\+\_\+\+Types}
+\label{group___s_p_i___exported___types}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}}
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_s_p_i___init_type_def}{SPI\+\_\+\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em SPI Init structure definition \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_i2_s___init_type_def}{I2\+S\+\_\+\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em I2S Init structure definition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_ga86cf6253be51ccc45f53b908cb42ba14}{SPI\+\_\+\+Mode\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_gga86cf6253be51ccc45f53b908cb42ba14abc31e0f5c5fa48a51a30c291d04e0821}{SPI\+\_\+\+Mode\+\_\+\+Slave}} = 0x0000
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga86cf6253be51ccc45f53b908cb42ba14a27907a819fe089bc6a9ea1dae15bf7ab}{SPI\+\_\+\+Mode\+\_\+\+Master}} = SPI\+\_\+\+GCR\+\_\+\+MODE
+ \}
+\begin{DoxyCompactList}\small\item\em SPI mode enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_gaa972b0f6f8a36bba9ad030fe993e6d11}{SPI\+\_\+\+Data\+Size\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_ggaa972b0f6f8a36bba9ad030fe993e6d11a8bb39470175b8c975c7260bce15a1f7b}{SPI\+\_\+\+Data\+Size\+\_\+8b}} = 0x0000
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggaa972b0f6f8a36bba9ad030fe993e6d11aa35b2b56d823f59978eeb3963376007a}{SPI\+\_\+\+Data\+Size\+\_\+32b}} = SPI\+\_\+\+GCR\+\_\+\+DWSEL
+ \}
+\begin{DoxyCompactList}\small\item\em SPI data size enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_ga41477365be2d18a10d6a339d231e4fdd}{SPI\+\_\+\+CPOL\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_gga41477365be2d18a10d6a339d231e4fdda7a59bd7fc76c62dc0bf6e57956dcae4f}{SPI\+\_\+\+CPOL\+\_\+\+Low}} = 0x0000
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga41477365be2d18a10d6a339d231e4fdda4bc1f087b8d02c4858efe1163a58d24a}{SPI\+\_\+\+CPOL\+\_\+\+High}} = SPI\+\_\+\+CCR\+\_\+\+CPOL
+ \}
+\begin{DoxyCompactList}\small\item\em SPI clock polarity enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_ga78bd5e9d735e57d303e04e563a37cde4}{SPI\+\_\+\+CPHA\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_gga78bd5e9d735e57d303e04e563a37cde4a430fd63456418eb9e90d3c314f2dc658}{SPI\+\_\+\+CPHA\+\_\+2\+Edge}} = 0x0000
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga78bd5e9d735e57d303e04e563a37cde4a404d29e5c96e7790ceda4be6156334e4}{SPI\+\_\+\+CPHA\+\_\+1\+Edge}} = SPI\+\_\+\+CCR\+\_\+\+CPHA
+ \}
+\begin{DoxyCompactList}\small\item\em SPI clock phase enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_gab933301dd92b8210b299aeac7744b41e}{SPI\+\_\+\+NSS\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_ggab933301dd92b8210b299aeac7744b41ea9157cc888d2b13c6fb5716ac5f46e558}{SPI\+\_\+\+NSS\+\_\+\+Soft}} = 0x0000
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggab933301dd92b8210b299aeac7744b41ea708e21b749ef6c03f5707bd9c0b486f1}{SPI\+\_\+\+NSS\+\_\+\+Hard}} = SPI\+\_\+\+GCR\+\_\+\+NSS
+ \}
+\begin{DoxyCompactList}\small\item\em SPI nss control mode enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_gafd08e5cb7cff2cd9cd8de72b8246961c}{SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961cae3fa031ff038fcb3c491d28779b1e26b}{SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+2}} = 0x0002
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961ca7cf658ad85d48091d3c1fcc050a6efb1}{SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+4}} = 0x0004
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961ca276c22abb80cac9f2a074339393e7979}{SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+8}} = 0x0008
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961cae2e2d51474cb5863a083c4c8134ed2a3}{SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+16}} = 0x0010
+, \newline
+\mbox{\hyperlink{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961ca9434623cfd2ea9d3a1147b815a56d412}{SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+32}} = 0x0020
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961cacc4485daac112a6e27bc03dd41894e1b}{SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+64}} = 0x0040
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961caeb9ded1982accafea3e4729621788872}{SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+128}} = 0x0080
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961ca6aad64e4c3a18db5825cbd2612305bd5}{SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+256}} = 0x0100
+ \}
+\begin{DoxyCompactList}\small\item\em SPI baud rate prescaler enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_gadf3ac7d60a4329fdb2bd4058843775a9}{SPI\+\_\+\+First\+Bit\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_ggadf3ac7d60a4329fdb2bd4058843775a9a1e265070c51e612b1abe2140aa0a301a}{SPI\+\_\+\+First\+Bit\+\_\+\+MSB}} = 0x0000
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggadf3ac7d60a4329fdb2bd4058843775a9a83f89ca551c11568a1a1c6c147e845ec}{SPI\+\_\+\+First\+Bit\+\_\+\+LSB}} = SPI\+\_\+\+CCR\+\_\+\+LSBFE
+ \}
+\begin{DoxyCompactList}\small\item\em SPI first bit enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_ga4d295b8d484ea3d570e04e9dea7281a0}{SPI\+\_\+\+TLF\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_gga4d295b8d484ea3d570e04e9dea7281a0a64404ccca374aa6a617e5b22832b02e5}{SPI\+\_\+\+RXTLF}} = SPI\+\_\+\+GCR\+\_\+\+RXTLF\+\_\+\+Half
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga4d295b8d484ea3d570e04e9dea7281a0a84cfb6bcdfe6a9c358f549bf3756ca98}{SPI\+\_\+\+TXTLF}} = SPI\+\_\+\+GCR\+\_\+\+TXTLF\+\_\+\+Half
+ \}
+\begin{DoxyCompactList}\small\item\em SPI FIFO trigger level enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_gac78f6a965850892d9f27db6c2eaa3798}{SPI\+\_\+\+Direction\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_ggac78f6a965850892d9f27db6c2eaa3798aa57c1c9ca239962a5eac67cbeeaee765}{SPI\+\_\+\+Direction\+\_\+\+Rx}}
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggac78f6a965850892d9f27db6c2eaa3798af591654a87615fa3315518b709e066c2}{SPI\+\_\+\+Direction\+\_\+\+Tx}}
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggac78f6a965850892d9f27db6c2eaa3798a488e5e861ae55c78bb6c88b655b7c45b}{SPI\+\_\+\+Disable\+\_\+\+Rx}}
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggac78f6a965850892d9f27db6c2eaa3798a639b7652a7559b8afc84089797fdc9b2}{SPI\+\_\+\+Disable\+\_\+\+Tx}}
+ \}
+\begin{DoxyCompactList}\small\item\em SPI bit derection enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_ga4f662a71fef63be8d3a0c7aa23199f71}{SPI\+\_\+\+FLAG\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_gga4f662a71fef63be8d3a0c7aa23199f71a0b31d185ff9b1b929ebffc506e1d210e}{SPI\+\_\+\+FLAG\+\_\+\+RXAVL}} = SPI\+\_\+\+SR\+\_\+\+RXAVL
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga4f662a71fef63be8d3a0c7aa23199f71a855b417d7dee6429efaf4ce0082e1d94}{SPI\+\_\+\+FLAG\+\_\+\+TXEPT}} = SPI\+\_\+\+SR\+\_\+\+TXEPT
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga4f662a71fef63be8d3a0c7aa23199f71aef59da99e022660544e60c927d224cb5}{SPI\+\_\+\+FLAG\+\_\+\+TXFULL}} = SPI\+\_\+\+SR\+\_\+\+TXFULL
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga4f662a71fef63be8d3a0c7aa23199f71ab91fd44e2ee72096726bb8a5d4acab6c}{SPI\+\_\+\+FLAG\+\_\+\+RXAVL\+\_\+4\+BYTE}} = SPI\+\_\+\+SR\+\_\+\+RXAVL\+\_\+4\+BYTE
+ \}
+\begin{DoxyCompactList}\small\item\em SPI flag enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_ga610e4a1e831ff4149c714998eba68fc8}{SPI\+\_\+\+Slave\+Adjust\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_gga610e4a1e831ff4149c714998eba68fc8a56a3afe68fd6fcb9090bb8d9b1f4effd}{SPI\+\_\+\+Slave\+Adjust\+\_\+\+LOW}}
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga610e4a1e831ff4149c714998eba68fc8a63aae1a51c5ee5b94365d470e80dc3a1}{SPI\+\_\+\+Slave\+Adjust\+\_\+\+FAST}}
+ \}
+\begin{DoxyCompactList}\small\item\em SPI slave mode data edge adjust enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_gaf4c1d143caf5b6990e3675b5bd4422c3}{SPI\+\_\+\+Data\+Edge\+Adjust\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_ggaf4c1d143caf5b6990e3675b5bd4422c3ab408a45ea27ba16c21394be9e5719008}{SPI\+\_\+\+Data\+Edge\+Adjust\+\_\+\+LOW}}
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggaf4c1d143caf5b6990e3675b5bd4422c3a0b956ee1dc91835f2c25a9900c4f0039}{SPI\+\_\+\+Data\+Edge\+Adjust\+\_\+\+FAST}}
+ \}
+\begin{DoxyCompactList}\small\item\em SPI data edge adjust enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_gab3f320b40f3ccc9ca49baf7e21064c79}{SPI\+\_\+\+IT\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79a756453548b97393cf648b02631d4a6f3}{SPI\+\_\+\+IT\+\_\+\+TXEPT}} = 0x40
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79acbeeab2ad8390fb717339b2283319bbf}{SPI\+\_\+\+IT\+\_\+\+RXFULL}} = 0x20
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79ae95a2f291ecc1c35e92069bd15c9d1fc}{SPI\+\_\+\+IT\+\_\+\+RXMATCH}} = 0x10
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79ad35284dad117925811bd6b0cb31e38ec}{SPI\+\_\+\+IT\+\_\+\+RXOERR}} = 0x08
+, \newline
+\mbox{\hyperlink{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79a1b656da3e624cd5ca63de35d8ff1d377}{SPI\+\_\+\+IT\+\_\+\+UNDERRUN}} = 0x04
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79ac8160606fd4282926391e7e376cd10c0}{SPI\+\_\+\+IT\+\_\+\+RX}} = 0x02
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79a4d2c9709b259ebf393ef6742d68876ed}{SPI\+\_\+\+IT\+\_\+\+TX}} = 0x01
+ \}
+\begin{DoxyCompactList}\small\item\em SPI interruput enum definition \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_ga72d7858a69929ec18e22b1dab7ad9c00}{SPI\+\_\+\+I2\+S\+\_\+\+STANDARD\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___s_p_i___exported___types_gga72d7858a69929ec18e22b1dab7ad9c00ae30e5204bb41a8feb3a5d41a20b2be9b}{I2\+S\+\_\+\+Standard\+\_\+\+Phillips}} = 0x0000
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga72d7858a69929ec18e22b1dab7ad9c00ac3a80911118d8983119efc646ccfa26a}{I2\+S\+\_\+\+Standard\+\_\+\+MSB}} = 0x0010
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga72d7858a69929ec18e22b1dab7ad9c00ad1e0ec682bd771bd6abd339934b03cdf}{I2\+S\+\_\+\+Standard\+\_\+\+LSB}} = 0x0020
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga72d7858a69929ec18e22b1dab7ad9c00a66b65d354520fef6ee2f9fee3d6ed968}{I2\+S\+\_\+\+Standard\+\_\+\+PCMShort}} = 0x0030
+, \newline
+\mbox{\hyperlink{group___s_p_i___exported___types_gga72d7858a69929ec18e22b1dab7ad9c00a6bb9046cfbdb01ef34aea693f8a608ea}{I2\+S\+\_\+\+Standard\+\_\+\+PCMLong}} = 0x00\+B0
+ \}
+\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_ga813ed2f89f68173ea42f0a62d3696b2c}{SPI\+\_\+\+I2\+S\+\_\+\+DATAFORMAT\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_gga813ed2f89f68173ea42f0a62d3696b2cad9978a21f7e476a37a0646cc3975db62}{I2\+S\+\_\+\+Data\+Format\+\_\+16b}} = 0x0000
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga813ed2f89f68173ea42f0a62d3696b2cabec251a3842ac72ce4d382f75a264839}{I2\+S\+\_\+\+Data\+Format\+\_\+16bextended}} = 0x0001
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga813ed2f89f68173ea42f0a62d3696b2cae4e841e86302d85c1034affc5a83091a}{I2\+S\+\_\+\+Data\+Format\+\_\+24b}} = 0x0003
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga813ed2f89f68173ea42f0a62d3696b2cadefa15c8f2c4191d0febf4ed35b8cf0b}{I2\+S\+\_\+\+Data\+Format\+\_\+32b}} = 0x0005
+ \}
+\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_gae1f59e0a62e91b5ab3b001ba775aa190}{SPI\+\_\+\+I2\+S\+\_\+\+AUDIO\+\_\+\+FREQ\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190ac898e98601b195dae819a45963b87524}{I2\+S\+\_\+\+Audio\+Freq\+\_\+192k}} = (192000)
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a53ac6d793703b11c615d95f407b00091}{I2\+S\+\_\+\+Audio\+Freq\+\_\+96k}} = (96000)
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190ab67f020f3b1e4b5c9b46b37d91a9826a}{I2\+S\+\_\+\+Audio\+Freq\+\_\+48k}} = (48000)
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a58f110c538ebe32e625beb5a16dce0e1}{I2\+S\+\_\+\+Audio\+Freq\+\_\+44k}} = (44100)
+, \newline
+\mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190ab15372e94dc72b4e7474aa81c4f81a0c}{I2\+S\+\_\+\+Audio\+Freq\+\_\+32k}} = (32000)
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190ab5e9cd54b6ef99501d6ba865abc10860}{I2\+S\+\_\+\+Audio\+Freq\+\_\+24k}} = (24000)
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a3c109f4e5b2e11032b9adca9baeff721}{I2\+S\+\_\+\+Audio\+Freq\+\_\+22k}} = (22050)
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a3d320069edab4b644562c1f72c3cc825}{I2\+S\+\_\+\+Audio\+Freq\+\_\+16k}} = (16000)
+, \newline
+\mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a35fb3d96f6d95c0f8c14a9933146a601}{I2\+S\+\_\+\+Audio\+Freq\+\_\+11k}} = (11025)
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a122b73608f07a92dc4ef5c3a96fe0458}{I2\+S\+\_\+\+Audio\+Freq\+\_\+12k}} = (12000)
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a82f4bb79783cc9c98189aa2cf805e974}{I2\+S\+\_\+\+Audio\+Freq\+\_\+8k}} = (8000)
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a0a12b2a4ebd1efe55cbdb8738f7cbd79}{I2\+S\+\_\+\+Audio\+Freq\+\_\+4k}} = (4000)
+, \newline
+\mbox{\hyperlink{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190af0e0bf91e113b72e25a403d2de7edba3}{I2\+S\+\_\+\+Audio\+Freq\+\_\+\+Default}} = (2)
+ \}
+\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_gab14de94faff5d7c41c6fa17ea894c27c}{SPI\+\_\+\+I2\+S\+\_\+\+TRANS\+\_\+\+MODE\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_ggab14de94faff5d7c41c6fa17ea894c27ca06867ac9dcc699769111eb1d0224b956}{I2\+S\+\_\+\+Mode\+\_\+\+Slave\+Tx}} = 0x0000
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggab14de94faff5d7c41c6fa17ea894c27ca92503d73ea281d3bc284ccb08b21688e}{I2\+S\+\_\+\+Mode\+\_\+\+Slave\+Rx}} = 0x0100
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggab14de94faff5d7c41c6fa17ea894c27ca41a59a0077e9d8f3305f7f7e5c2e7935}{I2\+S\+\_\+\+Mode\+\_\+\+Master\+Tx}} = 0x0200
+, \mbox{\hyperlink{group___s_p_i___exported___types_ggab14de94faff5d7c41c6fa17ea894c27ca84050b2ba1de6cc861849fc83599d990}{I2\+S\+\_\+\+Mode\+\_\+\+Master\+Rx}} = 0x0300
+ \}
+\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_ga20d46b6a5a42b8780655b8b9fb64c9b0}{SPI\+\_\+\+I2\+S\+\_\+\+MCLK\+\_\+\+OUTPUT\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_gga20d46b6a5a42b8780655b8b9fb64c9b0a0c7f256c4140bffc11d4b6fa7650a1a5}{I2\+S\+\_\+\+MCLKOutput\+\_\+\+Enable}} = 0x0800
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga20d46b6a5a42b8780655b8b9fb64c9b0abbf5487bea5c83f7a9e90a9c13d6fa08}{I2\+S\+\_\+\+MCLKOutput\+\_\+\+Disable}} = 0x0000
+ \}
+\item 
+enum \mbox{\hyperlink{group___s_p_i___exported___types_ga7c56f150fcc8bbea997bdcc83c24bee0}{SPI\+\_\+\+I2\+S\+\_\+\+CPOL\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___s_p_i___exported___types_gga7c56f150fcc8bbea997bdcc83c24bee0aa57269ff2652b1068bce3e08dc809182}{I2\+S\+\_\+\+CPOL\+\_\+\+Low}} = 0x0000
+, \mbox{\hyperlink{group___s_p_i___exported___types_gga7c56f150fcc8bbea997bdcc83c24bee0ac179e6c174605174bc67743f6ed5c44b}{I2\+S\+\_\+\+CPOL\+\_\+\+High}} = SPI\+\_\+\+CCR\+\_\+\+CPOL
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+\doxysubsection{枚举类型说明}
+\mbox{\Hypertarget{group___s_p_i___exported___types_gafd08e5cb7cff2cd9cd8de72b8246961c}\label{group___s_p_i___exported___types_gafd08e5cb7cff2cd9cd8de72b8246961c}} 
+\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_BaudRatePrescaler\_TypeDef@{SPI\_BaudRatePrescaler\_TypeDef}}
+\index{SPI\_BaudRatePrescaler\_TypeDef@{SPI\_BaudRatePrescaler\_TypeDef}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SPI\_BaudRatePrescaler\_TypeDef}{SPI\_BaudRatePrescaler\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___s_p_i___exported___types_gafd08e5cb7cff2cd9cd8de72b8246961c}{SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+\+Type\+Def}}}
+
+
+
+SPI baud rate prescaler enum definition 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_BaudRatePrescaler\_2@{SPI\_BaudRatePrescaler\_2}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_BaudRatePrescaler\_2@{SPI\_BaudRatePrescaler\_2}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961cae3fa031ff038fcb3c491d28779b1e26b}\label{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961cae3fa031ff038fcb3c491d28779b1e26b}} 
+SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+2&SCK clock devide by 2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_BaudRatePrescaler\_4@{SPI\_BaudRatePrescaler\_4}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_BaudRatePrescaler\_4@{SPI\_BaudRatePrescaler\_4}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961ca7cf658ad85d48091d3c1fcc050a6efb1}\label{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961ca7cf658ad85d48091d3c1fcc050a6efb1}} 
+SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+4&SCK clock devide by 4 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_BaudRatePrescaler\_8@{SPI\_BaudRatePrescaler\_8}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_BaudRatePrescaler\_8@{SPI\_BaudRatePrescaler\_8}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961ca276c22abb80cac9f2a074339393e7979}\label{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961ca276c22abb80cac9f2a074339393e7979}} 
+SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+8&SCK clock devide by 7 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_BaudRatePrescaler\_16@{SPI\_BaudRatePrescaler\_16}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_BaudRatePrescaler\_16@{SPI\_BaudRatePrescaler\_16}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961cae2e2d51474cb5863a083c4c8134ed2a3}\label{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961cae2e2d51474cb5863a083c4c8134ed2a3}} 
+SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+16&SCK clock devide by 16 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_BaudRatePrescaler\_32@{SPI\_BaudRatePrescaler\_32}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_BaudRatePrescaler\_32@{SPI\_BaudRatePrescaler\_32}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961ca9434623cfd2ea9d3a1147b815a56d412}\label{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961ca9434623cfd2ea9d3a1147b815a56d412}} 
+SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+32&SCK clock devide by 32 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_BaudRatePrescaler\_64@{SPI\_BaudRatePrescaler\_64}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_BaudRatePrescaler\_64@{SPI\_BaudRatePrescaler\_64}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961cacc4485daac112a6e27bc03dd41894e1b}\label{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961cacc4485daac112a6e27bc03dd41894e1b}} 
+SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+64&SCK clock devide by 64 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_BaudRatePrescaler\_128@{SPI\_BaudRatePrescaler\_128}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_BaudRatePrescaler\_128@{SPI\_BaudRatePrescaler\_128}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961caeb9ded1982accafea3e4729621788872}\label{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961caeb9ded1982accafea3e4729621788872}} 
+SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+128&SCK clock devide by 128 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_BaudRatePrescaler\_256@{SPI\_BaudRatePrescaler\_256}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_BaudRatePrescaler\_256@{SPI\_BaudRatePrescaler\_256}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961ca6aad64e4c3a18db5825cbd2612305bd5}\label{group___s_p_i___exported___types_ggafd08e5cb7cff2cd9cd8de72b8246961ca6aad64e4c3a18db5825cbd2612305bd5}} 
+SPI\+\_\+\+Baud\+Rate\+Prescaler\+\_\+256&SCK clock devide by 256 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8h_source}{hal\+\_\+spi.\+h}} 第 \mbox{\hyperlink{hal__spi_8h_source_l00083}{83}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___types_ga78bd5e9d735e57d303e04e563a37cde4}\label{group___s_p_i___exported___types_ga78bd5e9d735e57d303e04e563a37cde4}} 
+\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_CPHA\_TypeDef@{SPI\_CPHA\_TypeDef}}
+\index{SPI\_CPHA\_TypeDef@{SPI\_CPHA\_TypeDef}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SPI\_CPHA\_TypeDef}{SPI\_CPHA\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___s_p_i___exported___types_ga78bd5e9d735e57d303e04e563a37cde4}{SPI\+\_\+\+CPHA\+\_\+\+Type\+Def}}}
+
+
+
+SPI clock phase enum definition 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_CPHA\_2Edge@{SPI\_CPHA\_2Edge}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_CPHA\_2Edge@{SPI\_CPHA\_2Edge}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga78bd5e9d735e57d303e04e563a37cde4a430fd63456418eb9e90d3c314f2dc658}\label{group___s_p_i___exported___types_gga78bd5e9d735e57d303e04e563a37cde4a430fd63456418eb9e90d3c314f2dc658}} 
+SPI\+\_\+\+CPHA\+\_\+2\+Edge&Data sampling starts from the second clock edge. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_CPHA\_1Edge@{SPI\_CPHA\_1Edge}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_CPHA\_1Edge@{SPI\_CPHA\_1Edge}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga78bd5e9d735e57d303e04e563a37cde4a404d29e5c96e7790ceda4be6156334e4}\label{group___s_p_i___exported___types_gga78bd5e9d735e57d303e04e563a37cde4a404d29e5c96e7790ceda4be6156334e4}} 
+SPI\+\_\+\+CPHA\+\_\+1\+Edge&Data sampling starts from the first clock edge. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8h_source}{hal\+\_\+spi.\+h}} 第 \mbox{\hyperlink{hal__spi_8h_source_l00067}{67}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___types_ga41477365be2d18a10d6a339d231e4fdd}\label{group___s_p_i___exported___types_ga41477365be2d18a10d6a339d231e4fdd}} 
+\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_CPOL\_TypeDef@{SPI\_CPOL\_TypeDef}}
+\index{SPI\_CPOL\_TypeDef@{SPI\_CPOL\_TypeDef}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SPI\_CPOL\_TypeDef}{SPI\_CPOL\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___s_p_i___exported___types_ga41477365be2d18a10d6a339d231e4fdd}{SPI\+\_\+\+CPOL\+\_\+\+Type\+Def}}}
+
+
+
+SPI clock polarity enum definition 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_CPOL\_Low@{SPI\_CPOL\_Low}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_CPOL\_Low@{SPI\_CPOL\_Low}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga41477365be2d18a10d6a339d231e4fdda7a59bd7fc76c62dc0bf6e57956dcae4f}\label{group___s_p_i___exported___types_gga41477365be2d18a10d6a339d231e4fdda7a59bd7fc76c62dc0bf6e57956dcae4f}} 
+SPI\+\_\+\+CPOL\+\_\+\+Low&The clock is low in idle state. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_CPOL\_High@{SPI\_CPOL\_High}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_CPOL\_High@{SPI\_CPOL\_High}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga41477365be2d18a10d6a339d231e4fdda4bc1f087b8d02c4858efe1163a58d24a}\label{group___s_p_i___exported___types_gga41477365be2d18a10d6a339d231e4fdda4bc1f087b8d02c4858efe1163a58d24a}} 
+SPI\+\_\+\+CPOL\+\_\+\+High&The clock is high in idle state. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8h_source}{hal\+\_\+spi.\+h}} 第 \mbox{\hyperlink{hal__spi_8h_source_l00059}{59}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___types_gaf4c1d143caf5b6990e3675b5bd4422c3}\label{group___s_p_i___exported___types_gaf4c1d143caf5b6990e3675b5bd4422c3}} 
+\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_DataEdgeAdjust\_TypeDef@{SPI\_DataEdgeAdjust\_TypeDef}}
+\index{SPI\_DataEdgeAdjust\_TypeDef@{SPI\_DataEdgeAdjust\_TypeDef}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SPI\_DataEdgeAdjust\_TypeDef}{SPI\_DataEdgeAdjust\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___s_p_i___exported___types_gaf4c1d143caf5b6990e3675b5bd4422c3}{SPI\+\_\+\+Data\+Edge\+Adjust\+\_\+\+Type\+Def}}}
+
+
+
+SPI data edge adjust enum definition 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_DataEdgeAdjust\_LOW@{SPI\_DataEdgeAdjust\_LOW}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_DataEdgeAdjust\_LOW@{SPI\_DataEdgeAdjust\_LOW}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggaf4c1d143caf5b6990e3675b5bd4422c3ab408a45ea27ba16c21394be9e5719008}\label{group___s_p_i___exported___types_ggaf4c1d143caf5b6990e3675b5bd4422c3ab408a45ea27ba16c21394be9e5719008}} 
+SPI\+\_\+\+Data\+Edge\+Adjust\+\_\+\+LOW&SPI data edge adjust in low speed mode \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_DataEdgeAdjust\_FAST@{SPI\_DataEdgeAdjust\_FAST}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_DataEdgeAdjust\_FAST@{SPI\_DataEdgeAdjust\_FAST}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggaf4c1d143caf5b6990e3675b5bd4422c3a0b956ee1dc91835f2c25a9900c4f0039}\label{group___s_p_i___exported___types_ggaf4c1d143caf5b6990e3675b5bd4422c3a0b956ee1dc91835f2c25a9900c4f0039}} 
+SPI\+\_\+\+Data\+Edge\+Adjust\+\_\+\+FAST&SPI data edge adjust in fast speed mode \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8h_source}{hal\+\_\+spi.\+h}} 第 \mbox{\hyperlink{hal__spi_8h_source_l00141}{141}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___types_gaa972b0f6f8a36bba9ad030fe993e6d11}\label{group___s_p_i___exported___types_gaa972b0f6f8a36bba9ad030fe993e6d11}} 
+\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_DataSize\_TypeDef@{SPI\_DataSize\_TypeDef}}
+\index{SPI\_DataSize\_TypeDef@{SPI\_DataSize\_TypeDef}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SPI\_DataSize\_TypeDef}{SPI\_DataSize\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___s_p_i___exported___types_gaa972b0f6f8a36bba9ad030fe993e6d11}{SPI\+\_\+\+Data\+Size\+\_\+\+Type\+Def}}}
+
+
+
+SPI data size enum definition 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_DataSize\_8b@{SPI\_DataSize\_8b}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_DataSize\_8b@{SPI\_DataSize\_8b}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggaa972b0f6f8a36bba9ad030fe993e6d11a8bb39470175b8c975c7260bce15a1f7b}\label{group___s_p_i___exported___types_ggaa972b0f6f8a36bba9ad030fe993e6d11a8bb39470175b8c975c7260bce15a1f7b}} 
+SPI\+\_\+\+Data\+Size\+\_\+8b&8 bits valid data \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_DataSize\_32b@{SPI\_DataSize\_32b}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_DataSize\_32b@{SPI\_DataSize\_32b}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggaa972b0f6f8a36bba9ad030fe993e6d11aa35b2b56d823f59978eeb3963376007a}\label{group___s_p_i___exported___types_ggaa972b0f6f8a36bba9ad030fe993e6d11aa35b2b56d823f59978eeb3963376007a}} 
+SPI\+\_\+\+Data\+Size\+\_\+32b&32 bits valid data \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8h_source}{hal\+\_\+spi.\+h}} 第 \mbox{\hyperlink{hal__spi_8h_source_l00051}{51}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___types_gac78f6a965850892d9f27db6c2eaa3798}\label{group___s_p_i___exported___types_gac78f6a965850892d9f27db6c2eaa3798}} 
+\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_Direction\_TypeDef@{SPI\_Direction\_TypeDef}}
+\index{SPI\_Direction\_TypeDef@{SPI\_Direction\_TypeDef}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SPI\_Direction\_TypeDef}{SPI\_Direction\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___s_p_i___exported___types_gac78f6a965850892d9f27db6c2eaa3798}{SPI\+\_\+\+Direction\+\_\+\+Type\+Def}}}
+
+
+
+SPI bit derection enum definition 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_Direction\_Rx@{SPI\_Direction\_Rx}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_Direction\_Rx@{SPI\_Direction\_Rx}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggac78f6a965850892d9f27db6c2eaa3798aa57c1c9ca239962a5eac67cbeeaee765}\label{group___s_p_i___exported___types_ggac78f6a965850892d9f27db6c2eaa3798aa57c1c9ca239962a5eac67cbeeaee765}} 
+SPI\+\_\+\+Direction\+\_\+\+Rx&Receive enable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_Direction\_Tx@{SPI\_Direction\_Tx}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_Direction\_Tx@{SPI\_Direction\_Tx}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggac78f6a965850892d9f27db6c2eaa3798af591654a87615fa3315518b709e066c2}\label{group___s_p_i___exported___types_ggac78f6a965850892d9f27db6c2eaa3798af591654a87615fa3315518b709e066c2}} 
+SPI\+\_\+\+Direction\+\_\+\+Tx&Transmit enable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_Disable\_Rx@{SPI\_Disable\_Rx}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_Disable\_Rx@{SPI\_Disable\_Rx}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggac78f6a965850892d9f27db6c2eaa3798a488e5e861ae55c78bb6c88b655b7c45b}\label{group___s_p_i___exported___types_ggac78f6a965850892d9f27db6c2eaa3798a488e5e861ae55c78bb6c88b655b7c45b}} 
+SPI\+\_\+\+Disable\+\_\+\+Rx&Receive disable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_Disable\_Tx@{SPI\_Disable\_Tx}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_Disable\_Tx@{SPI\_Disable\_Tx}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggac78f6a965850892d9f27db6c2eaa3798a639b7652a7559b8afc84089797fdc9b2}\label{group___s_p_i___exported___types_ggac78f6a965850892d9f27db6c2eaa3798a639b7652a7559b8afc84089797fdc9b2}} 
+SPI\+\_\+\+Disable\+\_\+\+Tx&Transmit disable \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8h_source}{hal\+\_\+spi.\+h}} 第 \mbox{\hyperlink{hal__spi_8h_source_l00113}{113}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___types_gadf3ac7d60a4329fdb2bd4058843775a9}\label{group___s_p_i___exported___types_gadf3ac7d60a4329fdb2bd4058843775a9}} 
+\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_FirstBit\_TypeDef@{SPI\_FirstBit\_TypeDef}}
+\index{SPI\_FirstBit\_TypeDef@{SPI\_FirstBit\_TypeDef}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SPI\_FirstBit\_TypeDef}{SPI\_FirstBit\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___s_p_i___exported___types_gadf3ac7d60a4329fdb2bd4058843775a9}{SPI\+\_\+\+First\+Bit\+\_\+\+Type\+Def}}}
+
+
+
+SPI first bit enum definition 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_FirstBit\_MSB@{SPI\_FirstBit\_MSB}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_FirstBit\_MSB@{SPI\_FirstBit\_MSB}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggadf3ac7d60a4329fdb2bd4058843775a9a1e265070c51e612b1abe2140aa0a301a}\label{group___s_p_i___exported___types_ggadf3ac7d60a4329fdb2bd4058843775a9a1e265070c51e612b1abe2140aa0a301a}} 
+SPI\+\_\+\+First\+Bit\+\_\+\+MSB&Data transfers start from MSB \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_FirstBit\_LSB@{SPI\_FirstBit\_LSB}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_FirstBit\_LSB@{SPI\_FirstBit\_LSB}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggadf3ac7d60a4329fdb2bd4058843775a9a83f89ca551c11568a1a1c6c147e845ec}\label{group___s_p_i___exported___types_ggadf3ac7d60a4329fdb2bd4058843775a9a83f89ca551c11568a1a1c6c147e845ec}} 
+SPI\+\_\+\+First\+Bit\+\_\+\+LSB&Data transfers start from LSB \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8h_source}{hal\+\_\+spi.\+h}} 第 \mbox{\hyperlink{hal__spi_8h_source_l00097}{97}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___types_ga4f662a71fef63be8d3a0c7aa23199f71}\label{group___s_p_i___exported___types_ga4f662a71fef63be8d3a0c7aa23199f71}} 
+\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_FLAG\_TypeDef@{SPI\_FLAG\_TypeDef}}
+\index{SPI\_FLAG\_TypeDef@{SPI\_FLAG\_TypeDef}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SPI\_FLAG\_TypeDef}{SPI\_FLAG\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___s_p_i___exported___types_ga4f662a71fef63be8d3a0c7aa23199f71}{SPI\+\_\+\+FLAG\+\_\+\+Type\+Def}}}
+
+
+
+SPI flag enum definition 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_FLAG\_RXAVL@{SPI\_FLAG\_RXAVL}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_FLAG\_RXAVL@{SPI\_FLAG\_RXAVL}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga4f662a71fef63be8d3a0c7aa23199f71a0b31d185ff9b1b929ebffc506e1d210e}\label{group___s_p_i___exported___types_gga4f662a71fef63be8d3a0c7aa23199f71a0b31d185ff9b1b929ebffc506e1d210e}} 
+SPI\+\_\+\+FLAG\+\_\+\+RXAVL&Receive 1 byte available data flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_FLAG\_TXEPT@{SPI\_FLAG\_TXEPT}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_FLAG\_TXEPT@{SPI\_FLAG\_TXEPT}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga4f662a71fef63be8d3a0c7aa23199f71a855b417d7dee6429efaf4ce0082e1d94}\label{group___s_p_i___exported___types_gga4f662a71fef63be8d3a0c7aa23199f71a855b417d7dee6429efaf4ce0082e1d94}} 
+SPI\+\_\+\+FLAG\+\_\+\+TXEPT&Transmitter empty flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_FLAG\_TXFULL@{SPI\_FLAG\_TXFULL}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_FLAG\_TXFULL@{SPI\_FLAG\_TXFULL}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga4f662a71fef63be8d3a0c7aa23199f71aef59da99e022660544e60c927d224cb5}\label{group___s_p_i___exported___types_gga4f662a71fef63be8d3a0c7aa23199f71aef59da99e022660544e60c927d224cb5}} 
+SPI\+\_\+\+FLAG\+\_\+\+TXFULL&Transmitter FIFO full status flag \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_FLAG\_RXAVL\_4BYTE@{SPI\_FLAG\_RXAVL\_4BYTE}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_FLAG\_RXAVL\_4BYTE@{SPI\_FLAG\_RXAVL\_4BYTE}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga4f662a71fef63be8d3a0c7aa23199f71ab91fd44e2ee72096726bb8a5d4acab6c}\label{group___s_p_i___exported___types_gga4f662a71fef63be8d3a0c7aa23199f71ab91fd44e2ee72096726bb8a5d4acab6c}} 
+SPI\+\_\+\+FLAG\+\_\+\+RXAVL\+\_\+4\+BYTE&Receive 4 bytes available data flag \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8h_source}{hal\+\_\+spi.\+h}} 第 \mbox{\hyperlink{hal__spi_8h_source_l00123}{123}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___types_gae1f59e0a62e91b5ab3b001ba775aa190}\label{group___s_p_i___exported___types_gae1f59e0a62e91b5ab3b001ba775aa190}} 
+\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_I2S\_AUDIO\_FREQ\_TypeDef@{SPI\_I2S\_AUDIO\_FREQ\_TypeDef}}
+\index{SPI\_I2S\_AUDIO\_FREQ\_TypeDef@{SPI\_I2S\_AUDIO\_FREQ\_TypeDef}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SPI\_I2S\_AUDIO\_FREQ\_TypeDef}{SPI\_I2S\_AUDIO\_FREQ\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___s_p_i___exported___types_gae1f59e0a62e91b5ab3b001ba775aa190}{SPI\+\_\+\+I2\+S\+\_\+\+AUDIO\+\_\+\+FREQ\+\_\+\+Type\+Def}}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_AudioFreq\_192k@{I2S\_AudioFreq\_192k}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_AudioFreq\_192k@{I2S\_AudioFreq\_192k}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190ac898e98601b195dae819a45963b87524}\label{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190ac898e98601b195dae819a45963b87524}} 
+I2\+S\+\_\+\+Audio\+Freq\+\_\+192k&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_AudioFreq\_96k@{I2S\_AudioFreq\_96k}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_AudioFreq\_96k@{I2S\_AudioFreq\_96k}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a53ac6d793703b11c615d95f407b00091}\label{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a53ac6d793703b11c615d95f407b00091}} 
+I2\+S\+\_\+\+Audio\+Freq\+\_\+96k&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_AudioFreq\_48k@{I2S\_AudioFreq\_48k}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_AudioFreq\_48k@{I2S\_AudioFreq\_48k}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190ab67f020f3b1e4b5c9b46b37d91a9826a}\label{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190ab67f020f3b1e4b5c9b46b37d91a9826a}} 
+I2\+S\+\_\+\+Audio\+Freq\+\_\+48k&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_AudioFreq\_44k@{I2S\_AudioFreq\_44k}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_AudioFreq\_44k@{I2S\_AudioFreq\_44k}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a58f110c538ebe32e625beb5a16dce0e1}\label{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a58f110c538ebe32e625beb5a16dce0e1}} 
+I2\+S\+\_\+\+Audio\+Freq\+\_\+44k&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_AudioFreq\_32k@{I2S\_AudioFreq\_32k}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_AudioFreq\_32k@{I2S\_AudioFreq\_32k}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190ab15372e94dc72b4e7474aa81c4f81a0c}\label{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190ab15372e94dc72b4e7474aa81c4f81a0c}} 
+I2\+S\+\_\+\+Audio\+Freq\+\_\+32k&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_AudioFreq\_24k@{I2S\_AudioFreq\_24k}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_AudioFreq\_24k@{I2S\_AudioFreq\_24k}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190ab5e9cd54b6ef99501d6ba865abc10860}\label{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190ab5e9cd54b6ef99501d6ba865abc10860}} 
+I2\+S\+\_\+\+Audio\+Freq\+\_\+24k&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_AudioFreq\_22k@{I2S\_AudioFreq\_22k}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_AudioFreq\_22k@{I2S\_AudioFreq\_22k}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a3c109f4e5b2e11032b9adca9baeff721}\label{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a3c109f4e5b2e11032b9adca9baeff721}} 
+I2\+S\+\_\+\+Audio\+Freq\+\_\+22k&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_AudioFreq\_16k@{I2S\_AudioFreq\_16k}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_AudioFreq\_16k@{I2S\_AudioFreq\_16k}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a3d320069edab4b644562c1f72c3cc825}\label{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a3d320069edab4b644562c1f72c3cc825}} 
+I2\+S\+\_\+\+Audio\+Freq\+\_\+16k&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_AudioFreq\_11k@{I2S\_AudioFreq\_11k}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_AudioFreq\_11k@{I2S\_AudioFreq\_11k}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a35fb3d96f6d95c0f8c14a9933146a601}\label{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a35fb3d96f6d95c0f8c14a9933146a601}} 
+I2\+S\+\_\+\+Audio\+Freq\+\_\+11k&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_AudioFreq\_12k@{I2S\_AudioFreq\_12k}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_AudioFreq\_12k@{I2S\_AudioFreq\_12k}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a122b73608f07a92dc4ef5c3a96fe0458}\label{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a122b73608f07a92dc4ef5c3a96fe0458}} 
+I2\+S\+\_\+\+Audio\+Freq\+\_\+12k&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_AudioFreq\_8k@{I2S\_AudioFreq\_8k}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_AudioFreq\_8k@{I2S\_AudioFreq\_8k}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a82f4bb79783cc9c98189aa2cf805e974}\label{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a82f4bb79783cc9c98189aa2cf805e974}} 
+I2\+S\+\_\+\+Audio\+Freq\+\_\+8k&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_AudioFreq\_4k@{I2S\_AudioFreq\_4k}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_AudioFreq\_4k@{I2S\_AudioFreq\_4k}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a0a12b2a4ebd1efe55cbdb8738f7cbd79}\label{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190a0a12b2a4ebd1efe55cbdb8738f7cbd79}} 
+I2\+S\+\_\+\+Audio\+Freq\+\_\+4k&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_AudioFreq\_Default@{I2S\_AudioFreq\_Default}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_AudioFreq\_Default@{I2S\_AudioFreq\_Default}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190af0e0bf91e113b72e25a403d2de7edba3}\label{group___s_p_i___exported___types_ggae1f59e0a62e91b5ab3b001ba775aa190af0e0bf91e113b72e25a403d2de7edba3}} 
+I2\+S\+\_\+\+Audio\+Freq\+\_\+\+Default&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8h_source}{hal\+\_\+spi.\+h}} 第 \mbox{\hyperlink{hal__spi_8h_source_l00175}{175}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___types_ga7c56f150fcc8bbea997bdcc83c24bee0}\label{group___s_p_i___exported___types_ga7c56f150fcc8bbea997bdcc83c24bee0}} 
+\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_I2S\_CPOL\_TypeDef@{SPI\_I2S\_CPOL\_TypeDef}}
+\index{SPI\_I2S\_CPOL\_TypeDef@{SPI\_I2S\_CPOL\_TypeDef}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SPI\_I2S\_CPOL\_TypeDef}{SPI\_I2S\_CPOL\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___s_p_i___exported___types_ga7c56f150fcc8bbea997bdcc83c24bee0}{SPI\+\_\+\+I2\+S\+\_\+\+CPOL\+\_\+\+Type\+Def}}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_CPOL\_Low@{I2S\_CPOL\_Low}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_CPOL\_Low@{I2S\_CPOL\_Low}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga7c56f150fcc8bbea997bdcc83c24bee0aa57269ff2652b1068bce3e08dc809182}\label{group___s_p_i___exported___types_gga7c56f150fcc8bbea997bdcc83c24bee0aa57269ff2652b1068bce3e08dc809182}} 
+I2\+S\+\_\+\+CPOL\+\_\+\+Low&The clock is low in idle state. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_CPOL\_High@{I2S\_CPOL\_High}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_CPOL\_High@{I2S\_CPOL\_High}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga7c56f150fcc8bbea997bdcc83c24bee0ac179e6c174605174bc67743f6ed5c44b}\label{group___s_p_i___exported___types_gga7c56f150fcc8bbea997bdcc83c24bee0ac179e6c174605174bc67743f6ed5c44b}} 
+I2\+S\+\_\+\+CPOL\+\_\+\+High&The clock is high in idle state. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8h_source}{hal\+\_\+spi.\+h}} 第 \mbox{\hyperlink{hal__spi_8h_source_l00202}{202}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___types_ga813ed2f89f68173ea42f0a62d3696b2c}\label{group___s_p_i___exported___types_ga813ed2f89f68173ea42f0a62d3696b2c}} 
+\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_I2S\_DATAFORMAT\_TypeDef@{SPI\_I2S\_DATAFORMAT\_TypeDef}}
+\index{SPI\_I2S\_DATAFORMAT\_TypeDef@{SPI\_I2S\_DATAFORMAT\_TypeDef}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SPI\_I2S\_DATAFORMAT\_TypeDef}{SPI\_I2S\_DATAFORMAT\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___s_p_i___exported___types_ga813ed2f89f68173ea42f0a62d3696b2c}{SPI\+\_\+\+I2\+S\+\_\+\+DATAFORMAT\+\_\+\+Type\+Def}}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_DataFormat\_16b@{I2S\_DataFormat\_16b}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_DataFormat\_16b@{I2S\_DataFormat\_16b}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga813ed2f89f68173ea42f0a62d3696b2cad9978a21f7e476a37a0646cc3975db62}\label{group___s_p_i___exported___types_gga813ed2f89f68173ea42f0a62d3696b2cad9978a21f7e476a37a0646cc3975db62}} 
+I2\+S\+\_\+\+Data\+Format\+\_\+16b&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_DataFormat\_16bextended@{I2S\_DataFormat\_16bextended}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_DataFormat\_16bextended@{I2S\_DataFormat\_16bextended}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga813ed2f89f68173ea42f0a62d3696b2cabec251a3842ac72ce4d382f75a264839}\label{group___s_p_i___exported___types_gga813ed2f89f68173ea42f0a62d3696b2cabec251a3842ac72ce4d382f75a264839}} 
+I2\+S\+\_\+\+Data\+Format\+\_\+16bextended&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_DataFormat\_24b@{I2S\_DataFormat\_24b}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_DataFormat\_24b@{I2S\_DataFormat\_24b}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga813ed2f89f68173ea42f0a62d3696b2cae4e841e86302d85c1034affc5a83091a}\label{group___s_p_i___exported___types_gga813ed2f89f68173ea42f0a62d3696b2cae4e841e86302d85c1034affc5a83091a}} 
+I2\+S\+\_\+\+Data\+Format\+\_\+24b&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_DataFormat\_32b@{I2S\_DataFormat\_32b}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_DataFormat\_32b@{I2S\_DataFormat\_32b}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga813ed2f89f68173ea42f0a62d3696b2cadefa15c8f2c4191d0febf4ed35b8cf0b}\label{group___s_p_i___exported___types_gga813ed2f89f68173ea42f0a62d3696b2cadefa15c8f2c4191d0febf4ed35b8cf0b}} 
+I2\+S\+\_\+\+Data\+Format\+\_\+32b&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8h_source}{hal\+\_\+spi.\+h}} 第 \mbox{\hyperlink{hal__spi_8h_source_l00169}{169}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___types_ga20d46b6a5a42b8780655b8b9fb64c9b0}\label{group___s_p_i___exported___types_ga20d46b6a5a42b8780655b8b9fb64c9b0}} 
+\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_I2S\_MCLK\_OUTPUT\_TypeDef@{SPI\_I2S\_MCLK\_OUTPUT\_TypeDef}}
+\index{SPI\_I2S\_MCLK\_OUTPUT\_TypeDef@{SPI\_I2S\_MCLK\_OUTPUT\_TypeDef}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SPI\_I2S\_MCLK\_OUTPUT\_TypeDef}{SPI\_I2S\_MCLK\_OUTPUT\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___s_p_i___exported___types_ga20d46b6a5a42b8780655b8b9fb64c9b0}{SPI\+\_\+\+I2\+S\+\_\+\+MCLK\+\_\+\+OUTPUT\+\_\+\+Type\+Def}}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_MCLKOutput\_Enable@{I2S\_MCLKOutput\_Enable}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_MCLKOutput\_Enable@{I2S\_MCLKOutput\_Enable}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga20d46b6a5a42b8780655b8b9fb64c9b0a0c7f256c4140bffc11d4b6fa7650a1a5}\label{group___s_p_i___exported___types_gga20d46b6a5a42b8780655b8b9fb64c9b0a0c7f256c4140bffc11d4b6fa7650a1a5}} 
+I2\+S\+\_\+\+MCLKOutput\+\_\+\+Enable&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_MCLKOutput\_Disable@{I2S\_MCLKOutput\_Disable}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_MCLKOutput\_Disable@{I2S\_MCLKOutput\_Disable}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga20d46b6a5a42b8780655b8b9fb64c9b0abbf5487bea5c83f7a9e90a9c13d6fa08}\label{group___s_p_i___exported___types_gga20d46b6a5a42b8780655b8b9fb64c9b0abbf5487bea5c83f7a9e90a9c13d6fa08}} 
+I2\+S\+\_\+\+MCLKOutput\+\_\+\+Disable&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8h_source}{hal\+\_\+spi.\+h}} 第 \mbox{\hyperlink{hal__spi_8h_source_l00197}{197}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___types_ga72d7858a69929ec18e22b1dab7ad9c00}\label{group___s_p_i___exported___types_ga72d7858a69929ec18e22b1dab7ad9c00}} 
+\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_I2S\_STANDARD\_TypeDef@{SPI\_I2S\_STANDARD\_TypeDef}}
+\index{SPI\_I2S\_STANDARD\_TypeDef@{SPI\_I2S\_STANDARD\_TypeDef}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SPI\_I2S\_STANDARD\_TypeDef}{SPI\_I2S\_STANDARD\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___s_p_i___exported___types_ga72d7858a69929ec18e22b1dab7ad9c00}{SPI\+\_\+\+I2\+S\+\_\+\+STANDARD\+\_\+\+Type\+Def}}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_Standard\_Phillips@{I2S\_Standard\_Phillips}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_Standard\_Phillips@{I2S\_Standard\_Phillips}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga72d7858a69929ec18e22b1dab7ad9c00ae30e5204bb41a8feb3a5d41a20b2be9b}\label{group___s_p_i___exported___types_gga72d7858a69929ec18e22b1dab7ad9c00ae30e5204bb41a8feb3a5d41a20b2be9b}} 
+I2\+S\+\_\+\+Standard\+\_\+\+Phillips&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_Standard\_MSB@{I2S\_Standard\_MSB}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_Standard\_MSB@{I2S\_Standard\_MSB}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga72d7858a69929ec18e22b1dab7ad9c00ac3a80911118d8983119efc646ccfa26a}\label{group___s_p_i___exported___types_gga72d7858a69929ec18e22b1dab7ad9c00ac3a80911118d8983119efc646ccfa26a}} 
+I2\+S\+\_\+\+Standard\+\_\+\+MSB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_Standard\_LSB@{I2S\_Standard\_LSB}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_Standard\_LSB@{I2S\_Standard\_LSB}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga72d7858a69929ec18e22b1dab7ad9c00ad1e0ec682bd771bd6abd339934b03cdf}\label{group___s_p_i___exported___types_gga72d7858a69929ec18e22b1dab7ad9c00ad1e0ec682bd771bd6abd339934b03cdf}} 
+I2\+S\+\_\+\+Standard\+\_\+\+LSB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_Standard\_PCMShort@{I2S\_Standard\_PCMShort}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_Standard\_PCMShort@{I2S\_Standard\_PCMShort}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga72d7858a69929ec18e22b1dab7ad9c00a66b65d354520fef6ee2f9fee3d6ed968}\label{group___s_p_i___exported___types_gga72d7858a69929ec18e22b1dab7ad9c00a66b65d354520fef6ee2f9fee3d6ed968}} 
+I2\+S\+\_\+\+Standard\+\_\+\+PCMShort&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_Standard\_PCMLong@{I2S\_Standard\_PCMLong}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_Standard\_PCMLong@{I2S\_Standard\_PCMLong}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga72d7858a69929ec18e22b1dab7ad9c00a6bb9046cfbdb01ef34aea693f8a608ea}\label{group___s_p_i___exported___types_gga72d7858a69929ec18e22b1dab7ad9c00a6bb9046cfbdb01ef34aea693f8a608ea}} 
+I2\+S\+\_\+\+Standard\+\_\+\+PCMLong&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8h_source}{hal\+\_\+spi.\+h}} 第 \mbox{\hyperlink{hal__spi_8h_source_l00160}{160}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___types_gab14de94faff5d7c41c6fa17ea894c27c}\label{group___s_p_i___exported___types_gab14de94faff5d7c41c6fa17ea894c27c}} 
+\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_I2S\_TRANS\_MODE\_TypeDef@{SPI\_I2S\_TRANS\_MODE\_TypeDef}}
+\index{SPI\_I2S\_TRANS\_MODE\_TypeDef@{SPI\_I2S\_TRANS\_MODE\_TypeDef}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SPI\_I2S\_TRANS\_MODE\_TypeDef}{SPI\_I2S\_TRANS\_MODE\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___s_p_i___exported___types_gab14de94faff5d7c41c6fa17ea894c27c}{SPI\+\_\+\+I2\+S\+\_\+\+TRANS\+\_\+\+MODE\+\_\+\+Type\+Def}}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_Mode\_SlaveTx@{I2S\_Mode\_SlaveTx}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_Mode\_SlaveTx@{I2S\_Mode\_SlaveTx}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggab14de94faff5d7c41c6fa17ea894c27ca06867ac9dcc699769111eb1d0224b956}\label{group___s_p_i___exported___types_ggab14de94faff5d7c41c6fa17ea894c27ca06867ac9dcc699769111eb1d0224b956}} 
+I2\+S\+\_\+\+Mode\+\_\+\+Slave\+Tx&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_Mode\_SlaveRx@{I2S\_Mode\_SlaveRx}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_Mode\_SlaveRx@{I2S\_Mode\_SlaveRx}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggab14de94faff5d7c41c6fa17ea894c27ca92503d73ea281d3bc284ccb08b21688e}\label{group___s_p_i___exported___types_ggab14de94faff5d7c41c6fa17ea894c27ca92503d73ea281d3bc284ccb08b21688e}} 
+I2\+S\+\_\+\+Mode\+\_\+\+Slave\+Rx&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_Mode\_MasterTx@{I2S\_Mode\_MasterTx}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_Mode\_MasterTx@{I2S\_Mode\_MasterTx}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggab14de94faff5d7c41c6fa17ea894c27ca41a59a0077e9d8f3305f7f7e5c2e7935}\label{group___s_p_i___exported___types_ggab14de94faff5d7c41c6fa17ea894c27ca41a59a0077e9d8f3305f7f7e5c2e7935}} 
+I2\+S\+\_\+\+Mode\+\_\+\+Master\+Tx&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2S\_Mode\_MasterRx@{I2S\_Mode\_MasterRx}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!I2S\_Mode\_MasterRx@{I2S\_Mode\_MasterRx}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggab14de94faff5d7c41c6fa17ea894c27ca84050b2ba1de6cc861849fc83599d990}\label{group___s_p_i___exported___types_ggab14de94faff5d7c41c6fa17ea894c27ca84050b2ba1de6cc861849fc83599d990}} 
+I2\+S\+\_\+\+Mode\+\_\+\+Master\+Rx&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8h_source}{hal\+\_\+spi.\+h}} 第 \mbox{\hyperlink{hal__spi_8h_source_l00190}{190}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___types_gab3f320b40f3ccc9ca49baf7e21064c79}\label{group___s_p_i___exported___types_gab3f320b40f3ccc9ca49baf7e21064c79}} 
+\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_IT\_TypeDef@{SPI\_IT\_TypeDef}}
+\index{SPI\_IT\_TypeDef@{SPI\_IT\_TypeDef}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SPI\_IT\_TypeDef}{SPI\_IT\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___s_p_i___exported___types_gab3f320b40f3ccc9ca49baf7e21064c79}{SPI\+\_\+\+IT\+\_\+\+Type\+Def}}}
+
+
+
+SPI interruput enum definition 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_IT\_TXEPT@{SPI\_IT\_TXEPT}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_IT\_TXEPT@{SPI\_IT\_TXEPT}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79a756453548b97393cf648b02631d4a6f3}\label{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79a756453548b97393cf648b02631d4a6f3}} 
+SPI\+\_\+\+IT\+\_\+\+TXEPT&Transmitter empty interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_IT\_RXFULL@{SPI\_IT\_RXFULL}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_IT\_RXFULL@{SPI\_IT\_RXFULL}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79acbeeab2ad8390fb717339b2283319bbf}\label{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79acbeeab2ad8390fb717339b2283319bbf}} 
+SPI\+\_\+\+IT\+\_\+\+RXFULL&RX FIFO full interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_IT\_RXMATCH@{SPI\_IT\_RXMATCH}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_IT\_RXMATCH@{SPI\_IT\_RXMATCH}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79ae95a2f291ecc1c35e92069bd15c9d1fc}\label{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79ae95a2f291ecc1c35e92069bd15c9d1fc}} 
+SPI\+\_\+\+IT\+\_\+\+RXMATCH&Receive data match the RXDNR number interrut \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_IT\_RXOERR@{SPI\_IT\_RXOERR}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_IT\_RXOERR@{SPI\_IT\_RXOERR}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79ad35284dad117925811bd6b0cb31e38ec}\label{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79ad35284dad117925811bd6b0cb31e38ec}} 
+SPI\+\_\+\+IT\+\_\+\+RXOERR&Receive overrun error interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_IT\_UNDERRUN@{SPI\_IT\_UNDERRUN}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_IT\_UNDERRUN@{SPI\_IT\_UNDERRUN}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79a1b656da3e624cd5ca63de35d8ff1d377}\label{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79a1b656da3e624cd5ca63de35d8ff1d377}} 
+SPI\+\_\+\+IT\+\_\+\+UNDERRUN&Underrun interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_IT\_RX@{SPI\_IT\_RX}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_IT\_RX@{SPI\_IT\_RX}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79ac8160606fd4282926391e7e376cd10c0}\label{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79ac8160606fd4282926391e7e376cd10c0}} 
+SPI\+\_\+\+IT\+\_\+\+RX&Receive available data interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_IT\_TX@{SPI\_IT\_TX}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_IT\_TX@{SPI\_IT\_TX}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79a4d2c9709b259ebf393ef6742d68876ed}\label{group___s_p_i___exported___types_ggab3f320b40f3ccc9ca49baf7e21064c79a4d2c9709b259ebf393ef6742d68876ed}} 
+SPI\+\_\+\+IT\+\_\+\+TX&Transmit FIFO available interrupt \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8h_source}{hal\+\_\+spi.\+h}} 第 \mbox{\hyperlink{hal__spi_8h_source_l00149}{149}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___types_ga86cf6253be51ccc45f53b908cb42ba14}\label{group___s_p_i___exported___types_ga86cf6253be51ccc45f53b908cb42ba14}} 
+\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_Mode\_TypeDef@{SPI\_Mode\_TypeDef}}
+\index{SPI\_Mode\_TypeDef@{SPI\_Mode\_TypeDef}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SPI\_Mode\_TypeDef}{SPI\_Mode\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___s_p_i___exported___types_ga86cf6253be51ccc45f53b908cb42ba14}{SPI\+\_\+\+Mode\+\_\+\+Type\+Def}}}
+
+
+
+SPI mode enum definition 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_Mode\_Slave@{SPI\_Mode\_Slave}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_Mode\_Slave@{SPI\_Mode\_Slave}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga86cf6253be51ccc45f53b908cb42ba14abc31e0f5c5fa48a51a30c291d04e0821}\label{group___s_p_i___exported___types_gga86cf6253be51ccc45f53b908cb42ba14abc31e0f5c5fa48a51a30c291d04e0821}} 
+SPI\+\_\+\+Mode\+\_\+\+Slave&SPI slave mode \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_Mode\_Master@{SPI\_Mode\_Master}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_Mode\_Master@{SPI\_Mode\_Master}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga86cf6253be51ccc45f53b908cb42ba14a27907a819fe089bc6a9ea1dae15bf7ab}\label{group___s_p_i___exported___types_gga86cf6253be51ccc45f53b908cb42ba14a27907a819fe089bc6a9ea1dae15bf7ab}} 
+SPI\+\_\+\+Mode\+\_\+\+Master&SPI master mode \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8h_source}{hal\+\_\+spi.\+h}} 第 \mbox{\hyperlink{hal__spi_8h_source_l00043}{43}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___types_gab933301dd92b8210b299aeac7744b41e}\label{group___s_p_i___exported___types_gab933301dd92b8210b299aeac7744b41e}} 
+\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_NSS\_TypeDef@{SPI\_NSS\_TypeDef}}
+\index{SPI\_NSS\_TypeDef@{SPI\_NSS\_TypeDef}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SPI\_NSS\_TypeDef}{SPI\_NSS\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___s_p_i___exported___types_gab933301dd92b8210b299aeac7744b41e}{SPI\+\_\+\+NSS\+\_\+\+Type\+Def}}}
+
+
+
+SPI nss control mode enum definition 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_NSS\_Soft@{SPI\_NSS\_Soft}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_NSS\_Soft@{SPI\_NSS\_Soft}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggab933301dd92b8210b299aeac7744b41ea9157cc888d2b13c6fb5716ac5f46e558}\label{group___s_p_i___exported___types_ggab933301dd92b8210b299aeac7744b41ea9157cc888d2b13c6fb5716ac5f46e558}} 
+SPI\+\_\+\+NSS\+\_\+\+Soft&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_NSS\_Hard@{SPI\_NSS\_Hard}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_NSS\_Hard@{SPI\_NSS\_Hard}}}\mbox{\Hypertarget{group___s_p_i___exported___types_ggab933301dd92b8210b299aeac7744b41ea708e21b749ef6c03f5707bd9c0b486f1}\label{group___s_p_i___exported___types_ggab933301dd92b8210b299aeac7744b41ea708e21b749ef6c03f5707bd9c0b486f1}} 
+SPI\+\_\+\+NSS\+\_\+\+Hard&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8h_source}{hal\+\_\+spi.\+h}} 第 \mbox{\hyperlink{hal__spi_8h_source_l00075}{75}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___types_ga610e4a1e831ff4149c714998eba68fc8}\label{group___s_p_i___exported___types_ga610e4a1e831ff4149c714998eba68fc8}} 
+\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_SlaveAdjust\_TypeDef@{SPI\_SlaveAdjust\_TypeDef}}
+\index{SPI\_SlaveAdjust\_TypeDef@{SPI\_SlaveAdjust\_TypeDef}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SPI\_SlaveAdjust\_TypeDef}{SPI\_SlaveAdjust\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___s_p_i___exported___types_ga610e4a1e831ff4149c714998eba68fc8}{SPI\+\_\+\+Slave\+Adjust\+\_\+\+Type\+Def}}}
+
+
+
+SPI slave mode data edge adjust enum definition 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_SlaveAdjust\_LOW@{SPI\_SlaveAdjust\_LOW}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_SlaveAdjust\_LOW@{SPI\_SlaveAdjust\_LOW}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga610e4a1e831ff4149c714998eba68fc8a56a3afe68fd6fcb9090bb8d9b1f4effd}\label{group___s_p_i___exported___types_gga610e4a1e831ff4149c714998eba68fc8a56a3afe68fd6fcb9090bb8d9b1f4effd}} 
+SPI\+\_\+\+Slave\+Adjust\+\_\+\+LOW&SPI slave mode data edge adjust in low speed mode \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_SlaveAdjust\_FAST@{SPI\_SlaveAdjust\_FAST}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_SlaveAdjust\_FAST@{SPI\_SlaveAdjust\_FAST}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga610e4a1e831ff4149c714998eba68fc8a63aae1a51c5ee5b94365d470e80dc3a1}\label{group___s_p_i___exported___types_gga610e4a1e831ff4149c714998eba68fc8a63aae1a51c5ee5b94365d470e80dc3a1}} 
+SPI\+\_\+\+Slave\+Adjust\+\_\+\+FAST&SPI slave mode data edge adjust in fast speed mode \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8h_source}{hal\+\_\+spi.\+h}} 第 \mbox{\hyperlink{hal__spi_8h_source_l00133}{133}} 行定义.
+
+\mbox{\Hypertarget{group___s_p_i___exported___types_ga4d295b8d484ea3d570e04e9dea7281a0}\label{group___s_p_i___exported___types_ga4d295b8d484ea3d570e04e9dea7281a0}} 
+\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_TLF\_TypeDef@{SPI\_TLF\_TypeDef}}
+\index{SPI\_TLF\_TypeDef@{SPI\_TLF\_TypeDef}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{SPI\_TLF\_TypeDef}{SPI\_TLF\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___s_p_i___exported___types_ga4d295b8d484ea3d570e04e9dea7281a0}{SPI\+\_\+\+TLF\+\_\+\+Type\+Def}}}
+
+
+
+SPI FIFO trigger level enum definition 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_RXTLF@{SPI\_RXTLF}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_RXTLF@{SPI\_RXTLF}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga4d295b8d484ea3d570e04e9dea7281a0a64404ccca374aa6a617e5b22832b02e5}\label{group___s_p_i___exported___types_gga4d295b8d484ea3d570e04e9dea7281a0a64404ccca374aa6a617e5b22832b02e5}} 
+SPI\+\_\+\+RXTLF&RX FIFO trigger level \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_TXTLF@{SPI\_TXTLF}!SPI\_Exported\_Types@{SPI\_Exported\_Types}}\index{SPI\_Exported\_Types@{SPI\_Exported\_Types}!SPI\_TXTLF@{SPI\_TXTLF}}}\mbox{\Hypertarget{group___s_p_i___exported___types_gga4d295b8d484ea3d570e04e9dea7281a0a84cfb6bcdfe6a9c358f549bf3756ca98}\label{group___s_p_i___exported___types_gga4d295b8d484ea3d570e04e9dea7281a0a84cfb6bcdfe6a9c358f549bf3756ca98}} 
+SPI\+\_\+\+TXTLF&TX FIFO trigger level \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__spi_8h_source}{hal\+\_\+spi.\+h}} 第 \mbox{\hyperlink{hal__spi_8h_source_l00105}{105}} 行定义.
+

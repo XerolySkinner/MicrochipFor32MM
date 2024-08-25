@@ -1,0 +1,183 @@
+\hypertarget{group___t_i_m___private___functions}{}\doxysection{TIM\+\_\+\+Private\+\_\+\+Functions}
+\label{group___t_i_m___private___functions}\index{TIM\_Private\_Functions@{TIM\_Private\_Functions}}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___t_i_m___private___functions_gafd4b45665b09d4ef4a021f9b2711c925}{TIM\+\_\+\+PWMShift\+Config}} (\mbox{\hyperlink{struct_t_i_m___type_def}{TIM\+\_\+\+Type\+Def}} $\ast$tim, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} it, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified TIM PWM shift /\+DMA reqeat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___t_i_m___private___functions_ga977c36837bf02e8e70351cc8d78fffef}{TIM\+\_\+\+Set\+CCR1\+FALL}} (\mbox{\hyperlink{struct_t_i_m___type_def}{TIM\+\_\+\+Type\+Def}} $\ast$tim, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} shift)
+\begin{DoxyCompactList}\small\item\em Sets the tim CCR1 shift Register value \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___t_i_m___private___functions_gab36f38b46bdd62c69602177759ac20a3}{TIM\+\_\+\+Set\+CCR2\+FALL}} (\mbox{\hyperlink{struct_t_i_m___type_def}{TIM\+\_\+\+Type\+Def}} $\ast$tim, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} shift)
+\begin{DoxyCompactList}\small\item\em Sets the tim CCR2 shift Register value \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___t_i_m___private___functions_ga7511d38c880e771458df24eff6ef53d3}{TIM\+\_\+\+Set\+CCR3\+FALL}} (\mbox{\hyperlink{struct_t_i_m___type_def}{TIM\+\_\+\+Type\+Def}} $\ast$tim, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} shift)
+\begin{DoxyCompactList}\small\item\em Sets the tim CCR3 shift Register value \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___t_i_m___private___functions_gae0140934bb46ed6d816b2b18349c3a30}{TIM\+\_\+\+Set\+CCR4\+FALL}} (\mbox{\hyperlink{struct_t_i_m___type_def}{TIM\+\_\+\+Type\+Def}} $\ast$tim, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} shift)
+\begin{DoxyCompactList}\small\item\em Sets the tim CCR4 shift Register value \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___t_i_m___private___functions_ga5461804d7b4e078c4551ee8a2ff743eb}{TIM\+\_\+\+Set\+CCR5\+FALL}} (\mbox{\hyperlink{struct_t_i_m___type_def}{TIM\+\_\+\+Type\+Def}} $\ast$tim, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} shift)
+\begin{DoxyCompactList}\small\item\em Sets the tim CCR5 shift Register value \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+\doxysubsection{函数说明}
+\mbox{\Hypertarget{group___t_i_m___private___functions_gafd4b45665b09d4ef4a021f9b2711c925}\label{group___t_i_m___private___functions_gafd4b45665b09d4ef4a021f9b2711c925}} 
+\index{TIM\_Private\_Functions@{TIM\_Private\_Functions}!TIM\_PWMShiftConfig@{TIM\_PWMShiftConfig}}
+\index{TIM\_PWMShiftConfig@{TIM\_PWMShiftConfig}!TIM\_Private\_Functions@{TIM\_Private\_Functions}}
+\doxysubsubsection{\texorpdfstring{TIM\_PWMShiftConfig()}{TIM\_PWMShiftConfig()}}
+{\footnotesize\ttfamily void TIM\+\_\+\+PWMShift\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_t_i_m___type_def}{TIM\+\_\+\+Type\+Def}} $\ast$}]{tim,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{it,  }\item[{\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the specified TIM PWM shift /\+DMA reqeat. 
+
+
+\begin{DoxyParams}{参数}
+{\em tim} & select the tim peripheral. \\
+\hline
+{\em it} & Specifies the TIM PWM shift channel to enable or disable. This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item TIM\+\_\+\+PDER\+\_\+\+CCDREPE\+: TIM DMA reqeat enable bit \item TIM\+\_\+\+PDER\+\_\+\+CCR1\+SHIFTEN\+: TIM Channel 1 output PWM phase shift enable bit \item TIM\+\_\+\+PDER\+\_\+\+CCR2\+SHIFTEN\+: TIM Channel 2 output PWM phase shift enable bit \item TIM\+\_\+\+PDER\+\_\+\+CCR3\+SHIFTEN\+: TIM Channel 3 output PWM phase shift enable bit \item TIM\+\_\+\+PDER\+\_\+\+CCR4\+SHIFTEN\+: TIM Channel 4 output PWM phase shift enable bit \item TIM\+\_\+\+PDER\+\_\+\+CCR5\+SHIFTEN\+: TIM Channel 5 output PWM phase shift enable bit \end{DoxyItemize}
+\\
+\hline
+{\em state} & new state of the TIM interrupts. This parameter can be\+: ENABLE or DISABLE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8c_source}{hal\+\_\+tim.\+c}} 第 \mbox{\hyperlink{hal__tim_8c_source_l01807}{1807}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___private___functions_ga977c36837bf02e8e70351cc8d78fffef}\label{group___t_i_m___private___functions_ga977c36837bf02e8e70351cc8d78fffef}} 
+\index{TIM\_Private\_Functions@{TIM\_Private\_Functions}!TIM\_SetCCR1FALL@{TIM\_SetCCR1FALL}}
+\index{TIM\_SetCCR1FALL@{TIM\_SetCCR1FALL}!TIM\_Private\_Functions@{TIM\_Private\_Functions}}
+\doxysubsubsection{\texorpdfstring{TIM\_SetCCR1FALL()}{TIM\_SetCCR1FALL()}}
+{\footnotesize\ttfamily void TIM\+\_\+\+Set\+CCR1\+FALL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_t_i_m___type_def}{TIM\+\_\+\+Type\+Def}} $\ast$}]{tim,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{shift }\end{DoxyParamCaption})}
+
+
+
+Sets the tim CCR1 shift Register value 
+
+
+\begin{DoxyParams}{参数}
+{\em tim} & select the TIM peripheral. \\
+\hline
+{\em compare} & specifies the Capture Compare1 register new value. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8c_source}{hal\+\_\+tim.\+c}} 第 \mbox{\hyperlink{hal__tim_8c_source_l01817}{1817}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___private___functions_gab36f38b46bdd62c69602177759ac20a3}\label{group___t_i_m___private___functions_gab36f38b46bdd62c69602177759ac20a3}} 
+\index{TIM\_Private\_Functions@{TIM\_Private\_Functions}!TIM\_SetCCR2FALL@{TIM\_SetCCR2FALL}}
+\index{TIM\_SetCCR2FALL@{TIM\_SetCCR2FALL}!TIM\_Private\_Functions@{TIM\_Private\_Functions}}
+\doxysubsubsection{\texorpdfstring{TIM\_SetCCR2FALL()}{TIM\_SetCCR2FALL()}}
+{\footnotesize\ttfamily void TIM\+\_\+\+Set\+CCR2\+FALL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_t_i_m___type_def}{TIM\+\_\+\+Type\+Def}} $\ast$}]{tim,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{shift }\end{DoxyParamCaption})}
+
+
+
+Sets the tim CCR2 shift Register value 
+
+
+\begin{DoxyParams}{参数}
+{\em tim} & select the TIM peripheral. \\
+\hline
+{\em compare} & specifies the Capture Compare1 register new value. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8c_source}{hal\+\_\+tim.\+c}} 第 \mbox{\hyperlink{hal__tim_8c_source_l01829}{1829}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___private___functions_ga7511d38c880e771458df24eff6ef53d3}\label{group___t_i_m___private___functions_ga7511d38c880e771458df24eff6ef53d3}} 
+\index{TIM\_Private\_Functions@{TIM\_Private\_Functions}!TIM\_SetCCR3FALL@{TIM\_SetCCR3FALL}}
+\index{TIM\_SetCCR3FALL@{TIM\_SetCCR3FALL}!TIM\_Private\_Functions@{TIM\_Private\_Functions}}
+\doxysubsubsection{\texorpdfstring{TIM\_SetCCR3FALL()}{TIM\_SetCCR3FALL()}}
+{\footnotesize\ttfamily void TIM\+\_\+\+Set\+CCR3\+FALL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_t_i_m___type_def}{TIM\+\_\+\+Type\+Def}} $\ast$}]{tim,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{shift }\end{DoxyParamCaption})}
+
+
+
+Sets the tim CCR3 shift Register value 
+
+
+\begin{DoxyParams}{参数}
+{\em tim} & select the TIM peripheral. \\
+\hline
+{\em compare} & specifies the Capture Compare1 register new value. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8c_source}{hal\+\_\+tim.\+c}} 第 \mbox{\hyperlink{hal__tim_8c_source_l01841}{1841}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___private___functions_gae0140934bb46ed6d816b2b18349c3a30}\label{group___t_i_m___private___functions_gae0140934bb46ed6d816b2b18349c3a30}} 
+\index{TIM\_Private\_Functions@{TIM\_Private\_Functions}!TIM\_SetCCR4FALL@{TIM\_SetCCR4FALL}}
+\index{TIM\_SetCCR4FALL@{TIM\_SetCCR4FALL}!TIM\_Private\_Functions@{TIM\_Private\_Functions}}
+\doxysubsubsection{\texorpdfstring{TIM\_SetCCR4FALL()}{TIM\_SetCCR4FALL()}}
+{\footnotesize\ttfamily void TIM\+\_\+\+Set\+CCR4\+FALL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_t_i_m___type_def}{TIM\+\_\+\+Type\+Def}} $\ast$}]{tim,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{shift }\end{DoxyParamCaption})}
+
+
+
+Sets the tim CCR4 shift Register value 
+
+
+\begin{DoxyParams}{参数}
+{\em tim} & select the TIM peripheral. \\
+\hline
+{\em compare} & specifies the Capture Compare1 register new value. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8c_source}{hal\+\_\+tim.\+c}} 第 \mbox{\hyperlink{hal__tim_8c_source_l01853}{1853}} 行定义.
+
+\mbox{\Hypertarget{group___t_i_m___private___functions_ga5461804d7b4e078c4551ee8a2ff743eb}\label{group___t_i_m___private___functions_ga5461804d7b4e078c4551ee8a2ff743eb}} 
+\index{TIM\_Private\_Functions@{TIM\_Private\_Functions}!TIM\_SetCCR5FALL@{TIM\_SetCCR5FALL}}
+\index{TIM\_SetCCR5FALL@{TIM\_SetCCR5FALL}!TIM\_Private\_Functions@{TIM\_Private\_Functions}}
+\doxysubsubsection{\texorpdfstring{TIM\_SetCCR5FALL()}{TIM\_SetCCR5FALL()}}
+{\footnotesize\ttfamily void TIM\+\_\+\+Set\+CCR5\+FALL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_t_i_m___type_def}{TIM\+\_\+\+Type\+Def}} $\ast$}]{tim,  }\item[{\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{shift }\end{DoxyParamCaption})}
+
+
+
+Sets the tim CCR5 shift Register value 
+
+
+\begin{DoxyParams}{参数}
+{\em tim} & select the TIM peripheral. \\
+\hline
+{\em compare} & specifies the Capture Compare1 register new value. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{hal__tim_8c_source}{hal\+\_\+tim.\+c}} 第 \mbox{\hyperlink{hal__tim_8c_source_l01865}{1865}} 行定义.
+

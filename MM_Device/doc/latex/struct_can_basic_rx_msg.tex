@@ -1,0 +1,93 @@
+\hypertarget{struct_can_basic_rx_msg}{}\doxysection{Can\+Basic\+Rx\+Msg结构体 参考}
+\label{struct_can_basic_rx_msg}\index{CanBasicRxMsg@{CanBasicRxMsg}}
+
+
+CAN\+\_\+\+Basic Rx message structure definition  
+
+
+
+
+{\ttfamily \#include $<$hal\+\_\+can.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{struct_can_basic_rx_msg_a3702890bad9093eec269b1366265d314}{ID}}
+\begin{DoxyCompactList}\small\item\em Specifies the standard identifier. This parameter can be a value between 0 to 0x7\+FF. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_can_basic_rx_msg_ade99d59307b8b3f764c53d46d9730f67}{RTR}}
+\begin{DoxyCompactList}\small\item\em Specifies the type of frame for the received message. This parameter can be a value of \mbox{\hyperlink{group___c_a_n___exported___types_ga4e70ade1ffbd9f5baeeebf14308cc530}{Trans\+Frame}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_can_basic_rx_msg_a9c3575892b3d51e3433bffdbb87185c5}{DLC}}
+\begin{DoxyCompactList}\small\item\em Specifies the length of the frame that will be received. This parameter can be a value between 0 to 8 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{struct_can_basic_rx_msg_a08ad7547c1546dd1e03a709d4adb31e3}{Data}} \mbox{[}8\mbox{]}
+\begin{DoxyCompactList}\small\item\em Contains the data to be received. It ranges from 0 to 0x\+FF. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+CAN\+\_\+\+Basic Rx message structure definition 
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00214}{214}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{struct_can_basic_rx_msg_a08ad7547c1546dd1e03a709d4adb31e3}\label{struct_can_basic_rx_msg_a08ad7547c1546dd1e03a709d4adb31e3}} 
+\index{CanBasicRxMsg@{CanBasicRxMsg}!Data@{Data}}
+\index{Data@{Data}!CanBasicRxMsg@{CanBasicRxMsg}}
+\doxysubsubsection{\texorpdfstring{Data}{Data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Can\+Basic\+Rx\+Msg\+::\+Data\mbox{[}8\mbox{]}}
+
+
+
+Contains the data to be received. It ranges from 0 to 0x\+FF. 
+
+
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00218}{218}} 行定义.
+
+\mbox{\Hypertarget{struct_can_basic_rx_msg_a9c3575892b3d51e3433bffdbb87185c5}\label{struct_can_basic_rx_msg_a9c3575892b3d51e3433bffdbb87185c5}} 
+\index{CanBasicRxMsg@{CanBasicRxMsg}!DLC@{DLC}}
+\index{DLC@{DLC}!CanBasicRxMsg@{CanBasicRxMsg}}
+\doxysubsubsection{\texorpdfstring{DLC}{DLC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Can\+Basic\+Rx\+Msg\+::\+DLC}
+
+
+
+Specifies the length of the frame that will be received. This parameter can be a value between 0 to 8 
+
+
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00217}{217}} 行定义.
+
+\mbox{\Hypertarget{struct_can_basic_rx_msg_a3702890bad9093eec269b1366265d314}\label{struct_can_basic_rx_msg_a3702890bad9093eec269b1366265d314}} 
+\index{CanBasicRxMsg@{CanBasicRxMsg}!ID@{ID}}
+\index{ID@{ID}!CanBasicRxMsg@{CanBasicRxMsg}}
+\doxysubsubsection{\texorpdfstring{ID}{ID}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} Can\+Basic\+Rx\+Msg\+::\+ID}
+
+
+
+Specifies the standard identifier. This parameter can be a value between 0 to 0x7\+FF. 
+
+
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00215}{215}} 行定义.
+
+\mbox{\Hypertarget{struct_can_basic_rx_msg_ade99d59307b8b3f764c53d46d9730f67}\label{struct_can_basic_rx_msg_ade99d59307b8b3f764c53d46d9730f67}} 
+\index{CanBasicRxMsg@{CanBasicRxMsg}!RTR@{RTR}}
+\index{RTR@{RTR}!CanBasicRxMsg@{CanBasicRxMsg}}
+\doxysubsubsection{\texorpdfstring{RTR}{RTR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Can\+Basic\+Rx\+Msg\+::\+RTR}
+
+
+
+Specifies the type of frame for the received message. This parameter can be a value of \mbox{\hyperlink{group___c_a_n___exported___types_ga4e70ade1ffbd9f5baeeebf14308cc530}{Trans\+Frame}} 
+
+
+
+在文件 \mbox{\hyperlink{hal__can_8h_source}{hal\+\_\+can.\+h}} 第 \mbox{\hyperlink{hal__can_8h_source_l00216}{216}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Inc/\mbox{\hyperlink{hal__can_8h}{hal\+\_\+can.\+h}}\end{DoxyCompactItemize}

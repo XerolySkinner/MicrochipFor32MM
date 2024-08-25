@@ -1,0 +1,89 @@
+\hypertarget{structarm__lms__instance__q31}{}\doxysection{arm\+\_\+lms\+\_\+instance\+\_\+q31结构体 参考}
+\label{structarm__lms__instance__q31}\index{arm\_lms\_instance\_q31@{arm\_lms\_instance\_q31}}
+
+
+Instance structure for the Q31 LMS filter.  
+
+
+
+
+{\ttfamily \#include $<$arm\+\_\+math.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structarm__lms__instance__q31_ac0d84f7d054555931ef8a62511fbcb8a}{num\+Taps}}
+\item 
+\mbox{\hyperlink{arm__math_8h_adc89a3547f5324b7b3b95adec3806bc0}{q31\+\_\+t}} $\ast$ \mbox{\hyperlink{structarm__lms__instance__q31_a206d47b49de6f357f933ebe61520753c}{p\+State}}
+\item 
+\mbox{\hyperlink{arm__math_8h_adc89a3547f5324b7b3b95adec3806bc0}{q31\+\_\+t}} $\ast$ \mbox{\hyperlink{structarm__lms__instance__q31_a4afe56e991a5416adfd462aa88bda500}{p\+Coeffs}}
+\item 
+\mbox{\hyperlink{arm__math_8h_adc89a3547f5324b7b3b95adec3806bc0}{q31\+\_\+t}} \mbox{\hyperlink{structarm__lms__instance__q31_acb6ca9996b3c5f740d5d6c8e9f4f1d46}{mu}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structarm__lms__instance__q31_a4705a8f0011bb9166e09bf5bd51e595e}{post\+Shift}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Instance structure for the Q31 LMS filter. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l04066}{4066}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{structarm__lms__instance__q31_acb6ca9996b3c5f740d5d6c8e9f4f1d46}\label{structarm__lms__instance__q31_acb6ca9996b3c5f740d5d6c8e9f4f1d46}} 
+\index{arm\_lms\_instance\_q31@{arm\_lms\_instance\_q31}!mu@{mu}}
+\index{mu@{mu}!arm\_lms\_instance\_q31@{arm\_lms\_instance\_q31}}
+\doxysubsubsection{\texorpdfstring{mu}{mu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{arm__math_8h_adc89a3547f5324b7b3b95adec3806bc0}{q31\+\_\+t}} arm\+\_\+lms\+\_\+instance\+\_\+q31\+::mu}
+
+step size that controls filter coefficient updates. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l04070}{4070}} 行定义.
+
+\mbox{\Hypertarget{structarm__lms__instance__q31_ac0d84f7d054555931ef8a62511fbcb8a}\label{structarm__lms__instance__q31_ac0d84f7d054555931ef8a62511fbcb8a}} 
+\index{arm\_lms\_instance\_q31@{arm\_lms\_instance\_q31}!numTaps@{numTaps}}
+\index{numTaps@{numTaps}!arm\_lms\_instance\_q31@{arm\_lms\_instance\_q31}}
+\doxysubsubsection{\texorpdfstring{numTaps}{numTaps}}
+{\footnotesize\ttfamily uint16\+\_\+t arm\+\_\+lms\+\_\+instance\+\_\+q31\+::num\+Taps}
+
+number of coefficients in the filter. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l04067}{4067}} 行定义.
+
+\mbox{\Hypertarget{structarm__lms__instance__q31_a4afe56e991a5416adfd462aa88bda500}\label{structarm__lms__instance__q31_a4afe56e991a5416adfd462aa88bda500}} 
+\index{arm\_lms\_instance\_q31@{arm\_lms\_instance\_q31}!pCoeffs@{pCoeffs}}
+\index{pCoeffs@{pCoeffs}!arm\_lms\_instance\_q31@{arm\_lms\_instance\_q31}}
+\doxysubsubsection{\texorpdfstring{pCoeffs}{pCoeffs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{arm__math_8h_adc89a3547f5324b7b3b95adec3806bc0}{q31\+\_\+t}}$\ast$ arm\+\_\+lms\+\_\+instance\+\_\+q31\+::p\+Coeffs}
+
+points to the coefficient array. The array is of length num\+Taps. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l04069}{4069}} 行定义.
+
+\mbox{\Hypertarget{structarm__lms__instance__q31_a4705a8f0011bb9166e09bf5bd51e595e}\label{structarm__lms__instance__q31_a4705a8f0011bb9166e09bf5bd51e595e}} 
+\index{arm\_lms\_instance\_q31@{arm\_lms\_instance\_q31}!postShift@{postShift}}
+\index{postShift@{postShift}!arm\_lms\_instance\_q31@{arm\_lms\_instance\_q31}}
+\doxysubsubsection{\texorpdfstring{postShift}{postShift}}
+{\footnotesize\ttfamily uint32\+\_\+t arm\+\_\+lms\+\_\+instance\+\_\+q31\+::post\+Shift}
+
+bit shift applied to coefficients. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l04071}{4071}} 行定义.
+
+\mbox{\Hypertarget{structarm__lms__instance__q31_a206d47b49de6f357f933ebe61520753c}\label{structarm__lms__instance__q31_a206d47b49de6f357f933ebe61520753c}} 
+\index{arm\_lms\_instance\_q31@{arm\_lms\_instance\_q31}!pState@{pState}}
+\index{pState@{pState}!arm\_lms\_instance\_q31@{arm\_lms\_instance\_q31}}
+\doxysubsubsection{\texorpdfstring{pState}{pState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{arm__math_8h_adc89a3547f5324b7b3b95adec3806bc0}{q31\+\_\+t}}$\ast$ arm\+\_\+lms\+\_\+instance\+\_\+q31\+::p\+State}
+
+points to the state variable array. The array is of length num\+Taps+block\+Size-\/1. 
+
+在文件 \mbox{\hyperlink{arm__math_8h_source}{arm\+\_\+math.\+h}} 第 \mbox{\hyperlink{arm__math_8h_source_l04068}{4068}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+CMSIS/\mbox{\hyperlink{arm__math_8h}{arm\+\_\+math.\+h}}\end{DoxyCompactItemize}

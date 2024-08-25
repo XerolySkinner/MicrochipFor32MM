@@ -1,0 +1,330 @@
+\hypertarget{reg__wwdg_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/reg\+\_\+wwdg.h 文件参考}
+\label{reg__wwdg_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_wwdg.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/reg\_wwdg.h}}
+
+
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_w_w_d_g___type_def}{WWDG\+\_\+\+Type\+Def}}
+\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{reg__wwdg_8h_a9a5bf4728ab93dea5b569f5b972cbe62}{WWDG\+\_\+\+BASE}}~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x2\+C00)
+\begin{DoxyCompactList}\small\item\em WWDG Base Address Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__wwdg_8h_a2a3f5b5b5ac58a5e6544c26613a91853}{USENCOMBINEREGISTER}}
+\begin{DoxyCompactList}\small\item\em WWDG Register Structure Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__wwdg_8h_a9821fd01757986612ddb8982e2fe27f1}{WWDG}}~((\mbox{\hyperlink{struct_w_w_d_g___type_def}{WWDG\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__wwdg_8h_a9a5bf4728ab93dea5b569f5b972cbe62}{WWDG\+\_\+\+BASE}})
+\begin{DoxyCompactList}\small\item\em WWDG type pointer Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__wwdg_8h_adcefe5650c3412d1ca2d9c0147741406}{WWDG\+\_\+\+CR\+\_\+\+CNT\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em WWDG\+\_\+\+CR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__wwdg_8h_ad6d2a9fdcf8116fc3ad5ae03a6b995b7}{WWDG\+\_\+\+CR\+\_\+\+CNT}}~(0x7\+FU $<$$<$ \mbox{\hyperlink{reg__wwdg_8h_adcefe5650c3412d1ca2d9c0147741406}{WWDG\+\_\+\+CR\+\_\+\+CNT\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em T\mbox{[}6\+:0\mbox{]} bits (7-\/Bit counter (MSB to LSB)) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__wwdg_8h_a51b9fed94bc5fdbc67446173e1b3676c}{WWDG\+\_\+\+CR\+\_\+\+WDGA\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__wwdg_8h_ab647e9997b8b8e67de72af1aaea3f52f}{WWDG\+\_\+\+CR\+\_\+\+WDGA}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__wwdg_8h_a51b9fed94bc5fdbc67446173e1b3676c}{WWDG\+\_\+\+CR\+\_\+\+WDGA\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Activation bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__wwdg_8h_a417b2e7567dddaf7c6bd62be33af544c}{WWDG\+\_\+\+CFGR\+\_\+\+WINDOW\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em WWDG\+\_\+\+CFR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__wwdg_8h_a9edcab760275a33ffbece4edf0c154ba}{WWDG\+\_\+\+CFGR\+\_\+\+WINDOW}}~(0x7\+FU $<$$<$ \mbox{\hyperlink{reg__wwdg_8h_a417b2e7567dddaf7c6bd62be33af544c}{WWDG\+\_\+\+CFGR\+\_\+\+WINDOW\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em W\mbox{[}6\+:0\mbox{]} bits (7-\/bit window value) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__wwdg_8h_a769805cf123907189fca808459083659}{WWDG\+\_\+\+CFGR\+\_\+\+WDGTB\+\_\+\+Pos}}~(7)
+\item 
+\#define \mbox{\hyperlink{reg__wwdg_8h_ae6d10a33820d33e1ce879945fc1ff041}{WWDG\+\_\+\+CFGR\+\_\+\+WDGTB}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__wwdg_8h_a769805cf123907189fca808459083659}{WWDG\+\_\+\+CFGR\+\_\+\+WDGTB\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em WDGTB\mbox{[}1\+:0\mbox{]} bits (Timer Base) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__wwdg_8h_aeff578fbb676001377e532d08083be1c}{WWDG\+\_\+\+CFGR\+\_\+\+WDGTB\+\_\+1}}~(0x00U $<$$<$ \mbox{\hyperlink{reg__wwdg_8h_a769805cf123907189fca808459083659}{WWDG\+\_\+\+CFGR\+\_\+\+WDGTB\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em WDGTB\mbox{[}1\+:0\mbox{]} bits (Timer Base /1) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__wwdg_8h_abafe02e22258c74e4d0d293184b72bbd}{WWDG\+\_\+\+CFGR\+\_\+\+WDGTB\+\_\+2}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__wwdg_8h_a769805cf123907189fca808459083659}{WWDG\+\_\+\+CFGR\+\_\+\+WDGTB\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em WDGTB\mbox{[}1\+:0\mbox{]} bits (Timer Base /2) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__wwdg_8h_a524da00a43650edca9f22a013d5132c4}{WWDG\+\_\+\+CFGR\+\_\+\+WDGTB\+\_\+4}}~(0x02U $<$$<$ \mbox{\hyperlink{reg__wwdg_8h_a769805cf123907189fca808459083659}{WWDG\+\_\+\+CFGR\+\_\+\+WDGTB\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em WDGTB\mbox{[}1\+:0\mbox{]} bits (Timer Base /4) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__wwdg_8h_a0970f789c9297136444c3c3d2090491a}{WWDG\+\_\+\+CFGR\+\_\+\+WDGTB\+\_\+8}}~(0x03U $<$$<$ \mbox{\hyperlink{reg__wwdg_8h_a769805cf123907189fca808459083659}{WWDG\+\_\+\+CFGR\+\_\+\+WDGTB\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em WDGTB\mbox{[}1\+:0\mbox{]} bits (Timer Base /8) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__wwdg_8h_af9186d89af6ae2c5cfb35869e21ea3c3}{WWDG\+\_\+\+CFGR\+\_\+\+EWI\+\_\+\+Pos}}~(9)
+\item 
+\#define \mbox{\hyperlink{reg__wwdg_8h_a7619aa91f93700621c265d4b4e2c39d7}{WWDG\+\_\+\+CFGR\+\_\+\+EWI}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__wwdg_8h_af9186d89af6ae2c5cfb35869e21ea3c3}{WWDG\+\_\+\+CFGR\+\_\+\+EWI\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Early Wakeup Interrupt \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__wwdg_8h_ac4c37d2819f82d4cec6c8c9a9250ee43}{WWDG\+\_\+\+SR\+\_\+\+EWIF\+\_\+\+Pos}}~(0)
+\begin{DoxyCompactList}\small\item\em WWDG\+\_\+\+SR Register Bit Definition \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{reg__wwdg_8h_a96cf9ddd91b6079c5aceef6f3e857b69}{WWDG\+\_\+\+SR\+\_\+\+EWIF}}~(0x01U $<$$<$ \mbox{\hyperlink{reg__wwdg_8h_ac4c37d2819f82d4cec6c8c9a9250ee43}{WWDG\+\_\+\+SR\+\_\+\+EWIF\+\_\+\+Pos}})
+\begin{DoxyCompactList}\small\item\em Early Wakeup Interrupt Flag \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE CONTAINS ALL THE FUNCTIONS PROTOTYPES FOR THE SERIES OF MM32 FIRMWARE LIBRARY. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{reg__wwdg_8h_source}{reg\+\_\+wwdg.\+h}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{reg__wwdg_8h_a2a3f5b5b5ac58a5e6544c26613a91853}\label{reg__wwdg_8h_a2a3f5b5b5ac58a5e6544c26613a91853}} 
+\index{reg\_wwdg.h@{reg\_wwdg.h}!USENCOMBINEREGISTER@{USENCOMBINEREGISTER}}
+\index{USENCOMBINEREGISTER@{USENCOMBINEREGISTER}!reg\_wwdg.h@{reg\_wwdg.h}}
+\doxysubsubsection{\texorpdfstring{USENCOMBINEREGISTER}{USENCOMBINEREGISTER}}
+{\footnotesize\ttfamily \#define USENCOMBINEREGISTER}
+
+
+
+WWDG Register Structure Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__wwdg_8h_source}{reg\+\_\+wwdg.\+h}} 第 \mbox{\hyperlink{reg__wwdg_8h_source_l00060}{60}} 行定义.
+
+\mbox{\Hypertarget{reg__wwdg_8h_a9821fd01757986612ddb8982e2fe27f1}\label{reg__wwdg_8h_a9821fd01757986612ddb8982e2fe27f1}} 
+\index{reg\_wwdg.h@{reg\_wwdg.h}!WWDG@{WWDG}}
+\index{WWDG@{WWDG}!reg\_wwdg.h@{reg\_wwdg.h}}
+\doxysubsubsection{\texorpdfstring{WWDG}{WWDG}}
+{\footnotesize\ttfamily \#define WWDG~((\mbox{\hyperlink{struct_w_w_d_g___type_def}{WWDG\+\_\+\+Type\+Def}}$\ast$) \mbox{\hyperlink{reg__wwdg_8h_a9a5bf4728ab93dea5b569f5b972cbe62}{WWDG\+\_\+\+BASE}})}
+
+
+
+WWDG type pointer Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__wwdg_8h_source}{reg\+\_\+wwdg.\+h}} 第 \mbox{\hyperlink{reg__wwdg_8h_source_l00090}{90}} 行定义.
+
+\mbox{\Hypertarget{reg__wwdg_8h_a9a5bf4728ab93dea5b569f5b972cbe62}\label{reg__wwdg_8h_a9a5bf4728ab93dea5b569f5b972cbe62}} 
+\index{reg\_wwdg.h@{reg\_wwdg.h}!WWDG\_BASE@{WWDG\_BASE}}
+\index{WWDG\_BASE@{WWDG\_BASE}!reg\_wwdg.h@{reg\_wwdg.h}}
+\doxysubsubsection{\texorpdfstring{WWDG\_BASE}{WWDG\_BASE}}
+{\footnotesize\ttfamily \#define WWDG\+\_\+\+BASE~(\mbox{\hyperlink{reg__common_8h_a45666d911f39addd4c8c0a0ac3388cfb}{APB1\+PERIPH\+\_\+\+BASE}} + 0x2\+C00)}
+
+
+
+WWDG Base Address Definition 
+
+Base Address\+: 0x40002\+C00 
+
+在文件 \mbox{\hyperlink{reg__wwdg_8h_source}{reg\+\_\+wwdg.\+h}} 第 \mbox{\hyperlink{reg__wwdg_8h_source_l00050}{50}} 行定义.
+
+\mbox{\Hypertarget{reg__wwdg_8h_a7619aa91f93700621c265d4b4e2c39d7}\label{reg__wwdg_8h_a7619aa91f93700621c265d4b4e2c39d7}} 
+\index{reg\_wwdg.h@{reg\_wwdg.h}!WWDG\_CFGR\_EWI@{WWDG\_CFGR\_EWI}}
+\index{WWDG\_CFGR\_EWI@{WWDG\_CFGR\_EWI}!reg\_wwdg.h@{reg\_wwdg.h}}
+\doxysubsubsection{\texorpdfstring{WWDG\_CFGR\_EWI}{WWDG\_CFGR\_EWI}}
+{\footnotesize\ttfamily \#define WWDG\+\_\+\+CFGR\+\_\+\+EWI~(0x01U $<$$<$ \mbox{\hyperlink{reg__wwdg_8h_af9186d89af6ae2c5cfb35869e21ea3c3}{WWDG\+\_\+\+CFGR\+\_\+\+EWI\+\_\+\+Pos}})}
+
+
+
+Early Wakeup Interrupt 
+
+
+
+在文件 \mbox{\hyperlink{reg__wwdg_8h_source}{reg\+\_\+wwdg.\+h}} 第 \mbox{\hyperlink{reg__wwdg_8h_source_l00114}{114}} 行定义.
+
+\mbox{\Hypertarget{reg__wwdg_8h_af9186d89af6ae2c5cfb35869e21ea3c3}\label{reg__wwdg_8h_af9186d89af6ae2c5cfb35869e21ea3c3}} 
+\index{reg\_wwdg.h@{reg\_wwdg.h}!WWDG\_CFGR\_EWI\_Pos@{WWDG\_CFGR\_EWI\_Pos}}
+\index{WWDG\_CFGR\_EWI\_Pos@{WWDG\_CFGR\_EWI\_Pos}!reg\_wwdg.h@{reg\_wwdg.h}}
+\doxysubsubsection{\texorpdfstring{WWDG\_CFGR\_EWI\_Pos}{WWDG\_CFGR\_EWI\_Pos}}
+{\footnotesize\ttfamily \#define WWDG\+\_\+\+CFGR\+\_\+\+EWI\+\_\+\+Pos~(9)}
+
+
+
+在文件 \mbox{\hyperlink{reg__wwdg_8h_source}{reg\+\_\+wwdg.\+h}} 第 \mbox{\hyperlink{reg__wwdg_8h_source_l00113}{113}} 行定义.
+
+\mbox{\Hypertarget{reg__wwdg_8h_ae6d10a33820d33e1ce879945fc1ff041}\label{reg__wwdg_8h_ae6d10a33820d33e1ce879945fc1ff041}} 
+\index{reg\_wwdg.h@{reg\_wwdg.h}!WWDG\_CFGR\_WDGTB@{WWDG\_CFGR\_WDGTB}}
+\index{WWDG\_CFGR\_WDGTB@{WWDG\_CFGR\_WDGTB}!reg\_wwdg.h@{reg\_wwdg.h}}
+\doxysubsubsection{\texorpdfstring{WWDG\_CFGR\_WDGTB}{WWDG\_CFGR\_WDGTB}}
+{\footnotesize\ttfamily \#define WWDG\+\_\+\+CFGR\+\_\+\+WDGTB~(0x03U $<$$<$ \mbox{\hyperlink{reg__wwdg_8h_a769805cf123907189fca808459083659}{WWDG\+\_\+\+CFGR\+\_\+\+WDGTB\+\_\+\+Pos}})}
+
+
+
+WDGTB\mbox{[}1\+:0\mbox{]} bits (Timer Base) 
+
+
+
+在文件 \mbox{\hyperlink{reg__wwdg_8h_source}{reg\+\_\+wwdg.\+h}} 第 \mbox{\hyperlink{reg__wwdg_8h_source_l00108}{108}} 行定义.
+
+\mbox{\Hypertarget{reg__wwdg_8h_aeff578fbb676001377e532d08083be1c}\label{reg__wwdg_8h_aeff578fbb676001377e532d08083be1c}} 
+\index{reg\_wwdg.h@{reg\_wwdg.h}!WWDG\_CFGR\_WDGTB\_1@{WWDG\_CFGR\_WDGTB\_1}}
+\index{WWDG\_CFGR\_WDGTB\_1@{WWDG\_CFGR\_WDGTB\_1}!reg\_wwdg.h@{reg\_wwdg.h}}
+\doxysubsubsection{\texorpdfstring{WWDG\_CFGR\_WDGTB\_1}{WWDG\_CFGR\_WDGTB\_1}}
+{\footnotesize\ttfamily \#define WWDG\+\_\+\+CFGR\+\_\+\+WDGTB\+\_\+1~(0x00U $<$$<$ \mbox{\hyperlink{reg__wwdg_8h_a769805cf123907189fca808459083659}{WWDG\+\_\+\+CFGR\+\_\+\+WDGTB\+\_\+\+Pos}})}
+
+
+
+WDGTB\mbox{[}1\+:0\mbox{]} bits (Timer Base /1) 
+
+
+
+在文件 \mbox{\hyperlink{reg__wwdg_8h_source}{reg\+\_\+wwdg.\+h}} 第 \mbox{\hyperlink{reg__wwdg_8h_source_l00109}{109}} 行定义.
+
+\mbox{\Hypertarget{reg__wwdg_8h_abafe02e22258c74e4d0d293184b72bbd}\label{reg__wwdg_8h_abafe02e22258c74e4d0d293184b72bbd}} 
+\index{reg\_wwdg.h@{reg\_wwdg.h}!WWDG\_CFGR\_WDGTB\_2@{WWDG\_CFGR\_WDGTB\_2}}
+\index{WWDG\_CFGR\_WDGTB\_2@{WWDG\_CFGR\_WDGTB\_2}!reg\_wwdg.h@{reg\_wwdg.h}}
+\doxysubsubsection{\texorpdfstring{WWDG\_CFGR\_WDGTB\_2}{WWDG\_CFGR\_WDGTB\_2}}
+{\footnotesize\ttfamily \#define WWDG\+\_\+\+CFGR\+\_\+\+WDGTB\+\_\+2~(0x01U $<$$<$ \mbox{\hyperlink{reg__wwdg_8h_a769805cf123907189fca808459083659}{WWDG\+\_\+\+CFGR\+\_\+\+WDGTB\+\_\+\+Pos}})}
+
+
+
+WDGTB\mbox{[}1\+:0\mbox{]} bits (Timer Base /2) 
+
+
+
+在文件 \mbox{\hyperlink{reg__wwdg_8h_source}{reg\+\_\+wwdg.\+h}} 第 \mbox{\hyperlink{reg__wwdg_8h_source_l00110}{110}} 行定义.
+
+\mbox{\Hypertarget{reg__wwdg_8h_a524da00a43650edca9f22a013d5132c4}\label{reg__wwdg_8h_a524da00a43650edca9f22a013d5132c4}} 
+\index{reg\_wwdg.h@{reg\_wwdg.h}!WWDG\_CFGR\_WDGTB\_4@{WWDG\_CFGR\_WDGTB\_4}}
+\index{WWDG\_CFGR\_WDGTB\_4@{WWDG\_CFGR\_WDGTB\_4}!reg\_wwdg.h@{reg\_wwdg.h}}
+\doxysubsubsection{\texorpdfstring{WWDG\_CFGR\_WDGTB\_4}{WWDG\_CFGR\_WDGTB\_4}}
+{\footnotesize\ttfamily \#define WWDG\+\_\+\+CFGR\+\_\+\+WDGTB\+\_\+4~(0x02U $<$$<$ \mbox{\hyperlink{reg__wwdg_8h_a769805cf123907189fca808459083659}{WWDG\+\_\+\+CFGR\+\_\+\+WDGTB\+\_\+\+Pos}})}
+
+
+
+WDGTB\mbox{[}1\+:0\mbox{]} bits (Timer Base /4) 
+
+
+
+在文件 \mbox{\hyperlink{reg__wwdg_8h_source}{reg\+\_\+wwdg.\+h}} 第 \mbox{\hyperlink{reg__wwdg_8h_source_l00111}{111}} 行定义.
+
+\mbox{\Hypertarget{reg__wwdg_8h_a0970f789c9297136444c3c3d2090491a}\label{reg__wwdg_8h_a0970f789c9297136444c3c3d2090491a}} 
+\index{reg\_wwdg.h@{reg\_wwdg.h}!WWDG\_CFGR\_WDGTB\_8@{WWDG\_CFGR\_WDGTB\_8}}
+\index{WWDG\_CFGR\_WDGTB\_8@{WWDG\_CFGR\_WDGTB\_8}!reg\_wwdg.h@{reg\_wwdg.h}}
+\doxysubsubsection{\texorpdfstring{WWDG\_CFGR\_WDGTB\_8}{WWDG\_CFGR\_WDGTB\_8}}
+{\footnotesize\ttfamily \#define WWDG\+\_\+\+CFGR\+\_\+\+WDGTB\+\_\+8~(0x03U $<$$<$ \mbox{\hyperlink{reg__wwdg_8h_a769805cf123907189fca808459083659}{WWDG\+\_\+\+CFGR\+\_\+\+WDGTB\+\_\+\+Pos}})}
+
+
+
+WDGTB\mbox{[}1\+:0\mbox{]} bits (Timer Base /8) 
+
+
+
+在文件 \mbox{\hyperlink{reg__wwdg_8h_source}{reg\+\_\+wwdg.\+h}} 第 \mbox{\hyperlink{reg__wwdg_8h_source_l00112}{112}} 行定义.
+
+\mbox{\Hypertarget{reg__wwdg_8h_a769805cf123907189fca808459083659}\label{reg__wwdg_8h_a769805cf123907189fca808459083659}} 
+\index{reg\_wwdg.h@{reg\_wwdg.h}!WWDG\_CFGR\_WDGTB\_Pos@{WWDG\_CFGR\_WDGTB\_Pos}}
+\index{WWDG\_CFGR\_WDGTB\_Pos@{WWDG\_CFGR\_WDGTB\_Pos}!reg\_wwdg.h@{reg\_wwdg.h}}
+\doxysubsubsection{\texorpdfstring{WWDG\_CFGR\_WDGTB\_Pos}{WWDG\_CFGR\_WDGTB\_Pos}}
+{\footnotesize\ttfamily \#define WWDG\+\_\+\+CFGR\+\_\+\+WDGTB\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__wwdg_8h_source}{reg\+\_\+wwdg.\+h}} 第 \mbox{\hyperlink{reg__wwdg_8h_source_l00107}{107}} 行定义.
+
+\mbox{\Hypertarget{reg__wwdg_8h_a9edcab760275a33ffbece4edf0c154ba}\label{reg__wwdg_8h_a9edcab760275a33ffbece4edf0c154ba}} 
+\index{reg\_wwdg.h@{reg\_wwdg.h}!WWDG\_CFGR\_WINDOW@{WWDG\_CFGR\_WINDOW}}
+\index{WWDG\_CFGR\_WINDOW@{WWDG\_CFGR\_WINDOW}!reg\_wwdg.h@{reg\_wwdg.h}}
+\doxysubsubsection{\texorpdfstring{WWDG\_CFGR\_WINDOW}{WWDG\_CFGR\_WINDOW}}
+{\footnotesize\ttfamily \#define WWDG\+\_\+\+CFGR\+\_\+\+WINDOW~(0x7\+FU $<$$<$ \mbox{\hyperlink{reg__wwdg_8h_a417b2e7567dddaf7c6bd62be33af544c}{WWDG\+\_\+\+CFGR\+\_\+\+WINDOW\+\_\+\+Pos}})}
+
+
+
+W\mbox{[}6\+:0\mbox{]} bits (7-\/bit window value) 
+
+
+
+在文件 \mbox{\hyperlink{reg__wwdg_8h_source}{reg\+\_\+wwdg.\+h}} 第 \mbox{\hyperlink{reg__wwdg_8h_source_l00106}{106}} 行定义.
+
+\mbox{\Hypertarget{reg__wwdg_8h_a417b2e7567dddaf7c6bd62be33af544c}\label{reg__wwdg_8h_a417b2e7567dddaf7c6bd62be33af544c}} 
+\index{reg\_wwdg.h@{reg\_wwdg.h}!WWDG\_CFGR\_WINDOW\_Pos@{WWDG\_CFGR\_WINDOW\_Pos}}
+\index{WWDG\_CFGR\_WINDOW\_Pos@{WWDG\_CFGR\_WINDOW\_Pos}!reg\_wwdg.h@{reg\_wwdg.h}}
+\doxysubsubsection{\texorpdfstring{WWDG\_CFGR\_WINDOW\_Pos}{WWDG\_CFGR\_WINDOW\_Pos}}
+{\footnotesize\ttfamily \#define WWDG\+\_\+\+CFGR\+\_\+\+WINDOW\+\_\+\+Pos~(0)}
+
+
+
+WWDG\+\_\+\+CFR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__wwdg_8h_source}{reg\+\_\+wwdg.\+h}} 第 \mbox{\hyperlink{reg__wwdg_8h_source_l00105}{105}} 行定义.
+
+\mbox{\Hypertarget{reg__wwdg_8h_ad6d2a9fdcf8116fc3ad5ae03a6b995b7}\label{reg__wwdg_8h_ad6d2a9fdcf8116fc3ad5ae03a6b995b7}} 
+\index{reg\_wwdg.h@{reg\_wwdg.h}!WWDG\_CR\_CNT@{WWDG\_CR\_CNT}}
+\index{WWDG\_CR\_CNT@{WWDG\_CR\_CNT}!reg\_wwdg.h@{reg\_wwdg.h}}
+\doxysubsubsection{\texorpdfstring{WWDG\_CR\_CNT}{WWDG\_CR\_CNT}}
+{\footnotesize\ttfamily \#define WWDG\+\_\+\+CR\+\_\+\+CNT~(0x7\+FU $<$$<$ \mbox{\hyperlink{reg__wwdg_8h_adcefe5650c3412d1ca2d9c0147741406}{WWDG\+\_\+\+CR\+\_\+\+CNT\+\_\+\+Pos}})}
+
+
+
+T\mbox{[}6\+:0\mbox{]} bits (7-\/Bit counter (MSB to LSB)) 
+
+
+
+在文件 \mbox{\hyperlink{reg__wwdg_8h_source}{reg\+\_\+wwdg.\+h}} 第 \mbox{\hyperlink{reg__wwdg_8h_source_l00098}{98}} 行定义.
+
+\mbox{\Hypertarget{reg__wwdg_8h_adcefe5650c3412d1ca2d9c0147741406}\label{reg__wwdg_8h_adcefe5650c3412d1ca2d9c0147741406}} 
+\index{reg\_wwdg.h@{reg\_wwdg.h}!WWDG\_CR\_CNT\_Pos@{WWDG\_CR\_CNT\_Pos}}
+\index{WWDG\_CR\_CNT\_Pos@{WWDG\_CR\_CNT\_Pos}!reg\_wwdg.h@{reg\_wwdg.h}}
+\doxysubsubsection{\texorpdfstring{WWDG\_CR\_CNT\_Pos}{WWDG\_CR\_CNT\_Pos}}
+{\footnotesize\ttfamily \#define WWDG\+\_\+\+CR\+\_\+\+CNT\+\_\+\+Pos~(0)}
+
+
+
+WWDG\+\_\+\+CR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__wwdg_8h_source}{reg\+\_\+wwdg.\+h}} 第 \mbox{\hyperlink{reg__wwdg_8h_source_l00097}{97}} 行定义.
+
+\mbox{\Hypertarget{reg__wwdg_8h_ab647e9997b8b8e67de72af1aaea3f52f}\label{reg__wwdg_8h_ab647e9997b8b8e67de72af1aaea3f52f}} 
+\index{reg\_wwdg.h@{reg\_wwdg.h}!WWDG\_CR\_WDGA@{WWDG\_CR\_WDGA}}
+\index{WWDG\_CR\_WDGA@{WWDG\_CR\_WDGA}!reg\_wwdg.h@{reg\_wwdg.h}}
+\doxysubsubsection{\texorpdfstring{WWDG\_CR\_WDGA}{WWDG\_CR\_WDGA}}
+{\footnotesize\ttfamily \#define WWDG\+\_\+\+CR\+\_\+\+WDGA~(0x01U $<$$<$ \mbox{\hyperlink{reg__wwdg_8h_a51b9fed94bc5fdbc67446173e1b3676c}{WWDG\+\_\+\+CR\+\_\+\+WDGA\+\_\+\+Pos}})}
+
+
+
+Activation bit 
+
+
+
+在文件 \mbox{\hyperlink{reg__wwdg_8h_source}{reg\+\_\+wwdg.\+h}} 第 \mbox{\hyperlink{reg__wwdg_8h_source_l00100}{100}} 行定义.
+
+\mbox{\Hypertarget{reg__wwdg_8h_a51b9fed94bc5fdbc67446173e1b3676c}\label{reg__wwdg_8h_a51b9fed94bc5fdbc67446173e1b3676c}} 
+\index{reg\_wwdg.h@{reg\_wwdg.h}!WWDG\_CR\_WDGA\_Pos@{WWDG\_CR\_WDGA\_Pos}}
+\index{WWDG\_CR\_WDGA\_Pos@{WWDG\_CR\_WDGA\_Pos}!reg\_wwdg.h@{reg\_wwdg.h}}
+\doxysubsubsection{\texorpdfstring{WWDG\_CR\_WDGA\_Pos}{WWDG\_CR\_WDGA\_Pos}}
+{\footnotesize\ttfamily \#define WWDG\+\_\+\+CR\+\_\+\+WDGA\+\_\+\+Pos~(7)}
+
+
+
+在文件 \mbox{\hyperlink{reg__wwdg_8h_source}{reg\+\_\+wwdg.\+h}} 第 \mbox{\hyperlink{reg__wwdg_8h_source_l00099}{99}} 行定义.
+
+\mbox{\Hypertarget{reg__wwdg_8h_a96cf9ddd91b6079c5aceef6f3e857b69}\label{reg__wwdg_8h_a96cf9ddd91b6079c5aceef6f3e857b69}} 
+\index{reg\_wwdg.h@{reg\_wwdg.h}!WWDG\_SR\_EWIF@{WWDG\_SR\_EWIF}}
+\index{WWDG\_SR\_EWIF@{WWDG\_SR\_EWIF}!reg\_wwdg.h@{reg\_wwdg.h}}
+\doxysubsubsection{\texorpdfstring{WWDG\_SR\_EWIF}{WWDG\_SR\_EWIF}}
+{\footnotesize\ttfamily \#define WWDG\+\_\+\+SR\+\_\+\+EWIF~(0x01U $<$$<$ \mbox{\hyperlink{reg__wwdg_8h_ac4c37d2819f82d4cec6c8c9a9250ee43}{WWDG\+\_\+\+SR\+\_\+\+EWIF\+\_\+\+Pos}})}
+
+
+
+Early Wakeup Interrupt Flag 
+
+
+
+在文件 \mbox{\hyperlink{reg__wwdg_8h_source}{reg\+\_\+wwdg.\+h}} 第 \mbox{\hyperlink{reg__wwdg_8h_source_l00120}{120}} 行定义.
+
+\mbox{\Hypertarget{reg__wwdg_8h_ac4c37d2819f82d4cec6c8c9a9250ee43}\label{reg__wwdg_8h_ac4c37d2819f82d4cec6c8c9a9250ee43}} 
+\index{reg\_wwdg.h@{reg\_wwdg.h}!WWDG\_SR\_EWIF\_Pos@{WWDG\_SR\_EWIF\_Pos}}
+\index{WWDG\_SR\_EWIF\_Pos@{WWDG\_SR\_EWIF\_Pos}!reg\_wwdg.h@{reg\_wwdg.h}}
+\doxysubsubsection{\texorpdfstring{WWDG\_SR\_EWIF\_Pos}{WWDG\_SR\_EWIF\_Pos}}
+{\footnotesize\ttfamily \#define WWDG\+\_\+\+SR\+\_\+\+EWIF\+\_\+\+Pos~(0)}
+
+
+
+WWDG\+\_\+\+SR Register Bit Definition 
+
+
+
+在文件 \mbox{\hyperlink{reg__wwdg_8h_source}{reg\+\_\+wwdg.\+h}} 第 \mbox{\hyperlink{reg__wwdg_8h_source_l00119}{119}} 行定义.
+

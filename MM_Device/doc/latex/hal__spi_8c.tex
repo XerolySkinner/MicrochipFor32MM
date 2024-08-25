@@ -1,0 +1,100 @@
+\hypertarget{hal__spi_8c}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Src/hal\+\_\+spi.c 文件参考}
+\label{hal__spi_8c}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_spi.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_spi.c}}
+
+
+THIS FILE PROVIDES ALL THE SPI FIRMWARE FUNCTIONS.  
+
+
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}hal\+\_\+spi.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}hal\+\_\+rcc.\+h\char`\"{}}\newline
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{hal__spi_8c_aacf5765fdd5e272f27b8678dda60fe84}{\+\_\+\+HAL\+\_\+\+SPI\+\_\+\+C\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga9be82ef17067af5f9b6fe2c0759bd140}{SPI\+\_\+\+De\+Init}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi)
+\begin{DoxyCompactList}\small\item\em Deinitializes the spi peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga0e75e11f3492279dac8b27691019b941}{SPI\+\_\+\+Init}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{struct_s_p_i___init_type_def}{SPI\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Initializes the spi peripheral according to the specified parameters in the init\+\_\+struct . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga6b3460985df43e97a0cc3a4ee3190ca1}{SPI\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{struct_s_p_i___init_type_def}{SPI\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Fills each init\+\_\+struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga47aa73c577d17d8e3c9e6885025483b8}{SPI\+\_\+\+Cmd}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified SPI peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga97b8bda80d3514d14719e16d4c6051f8}{SPI\+\_\+\+ITConfig}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} interrupt, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified SPI interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_gad7a116cb656e01210a3a6e33ecba1b39}{SPI\+\_\+\+DMACmd}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the SPI DMA interface. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_gae7da7314157aa58f717c1153cf3ee6bf}{SPI\+\_\+\+Fifo\+Trigger}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_ga4d295b8d484ea3d570e04e9dea7281a0}{SPI\+\_\+\+TLF\+\_\+\+Type\+Def}} fifo\+\_\+trigger\+\_\+value, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em configure tn Fifo trigger level bit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga14e64a94b3b2c45f62f9624864a27d25}{SPI\+\_\+\+Send\+Data}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} data)
+\begin{DoxyCompactList}\small\item\em Transmits a Data through the spi peripheral. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___s_p_i___exported___functions_gabadb78e9bc0490e2db24fa593c0a6a52}{SPI\+\_\+\+Receive\+Data}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi)
+\begin{DoxyCompactList}\small\item\em Returns the most recent received data by the spi peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga9290348ae577c26f956d227290355397}{SPI\+\_\+\+CSInternal\+Selected}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Slave chip csn single by selected \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga3ff538de08a3bec7fea37e5224311c99}{SPI\+\_\+\+NSSInternal\+Software\+Config}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_gab933301dd92b8210b299aeac7744b41e}{SPI\+\_\+\+NSS\+\_\+\+Type\+Def}} nss)
+\begin{DoxyCompactList}\small\item\em Configures the NSS pin control mode for the selected SPI. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group___s_p_i___exported___functions_ga2126b440a24574e9bdc9e680187e1f82}{SPI\+\_\+\+Data\+Size\+Config}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} data\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Configures the data size for the selected SPI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga0601080e7eab0c71bb1744e269249268}{SPI\+\_\+\+Data\+Size\+Type\+Config}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_gaa972b0f6f8a36bba9ad030fe993e6d11}{SPI\+\_\+\+Data\+Size\+\_\+\+Type\+Def}} SPI\+\_\+\+Data\+Size)
+\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_gac0451ff3327029f8e060729d5b0d61cd}{SPI\+\_\+\+Bi\+Directional\+Line\+Config}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_gac78f6a965850892d9f27db6c2eaa3798}{SPI\+\_\+\+Direction\+\_\+\+Type\+Def}} direction)
+\begin{DoxyCompactList}\small\item\em Selects the data transfer direction in bi-\/directional mode for the specified SPI. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___s_p_i___exported___functions_ga626bd032401d802fded68faeebeed19c}{SPI\+\_\+\+Get\+Flag\+Status}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_ga4f662a71fef63be8d3a0c7aa23199f71}{SPI\+\_\+\+FLAG\+\_\+\+Type\+Def}} flag)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified SPI flag is set or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} \mbox{\hyperlink{group___s_p_i___exported___functions_ga07f8aca4af44f2ca7162bffe4a309beb}{SPI\+\_\+\+Get\+ITStatus}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_gab3f320b40f3ccc9ca49baf7e21064c79}{SPI\+\_\+\+IT\+\_\+\+Type\+Def}} interrupt)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified SPI interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_gadd1c05b6b56b3805712748bee2b4c190}{SPI\+\_\+\+Clear\+ITPending\+Bit}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_gab3f320b40f3ccc9ca49baf7e21064c79}{SPI\+\_\+\+IT\+\_\+\+Type\+Def}} interrupt)
+\begin{DoxyCompactList}\small\item\em Clears the spi interrupt pending bit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga62be4362af90330815eee28030dcad02}{SPI\+\_\+\+Rx\+Bytes}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} number)
+\begin{DoxyCompactList}\small\item\em SPI Hole a count Received bytes in next receive process. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga55fa09f8cfeb8d73ce4e0652a611556b}{SPI\+\_\+\+Slave\+Adjust}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_ga610e4a1e831ff4149c714998eba68fc8}{SPI\+\_\+\+Slave\+Adjust\+\_\+\+Type\+Def}} adjust\+\_\+value)
+\begin{DoxyCompactList}\small\item\em slave mode tx data transmit phase adjust set. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga3d9915c16271da583039c7a6c3c8bd4b}{ex\+SPI\+\_\+\+ITCmd}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables all SPI interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga13a17696bf005a63d7af5c3e30a5355d}{ex\+SPI\+\_\+\+ITConfig}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_gab3f320b40f3ccc9ca49baf7e21064c79}{SPI\+\_\+\+IT\+\_\+\+Type\+Def}} interrupt, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified SPI interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga9cd72fbbe7ca802fa85cbfbd391c359d}{ex\+SPI\+\_\+\+DMACmd}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the SPI DMA request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_gad28bd275f9cdd1f0e425e95aef654fc2}{ex\+SPI\+\_\+\+CSInternal\+Selected}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Set or reset Slave chip csn signal output \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_gaf7878fe8a984eed9a6fbd58e262664a3}{ex\+SPI\+\_\+\+Data\+Edge\+Adjust}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{group___s_p_i___exported___types_gaf4c1d143caf5b6990e3675b5bd4422c3}{SPI\+\_\+\+Data\+Edge\+Adjust\+\_\+\+Type\+Def}} adjust\+\_\+value)
+\begin{DoxyCompactList}\small\item\em tx data and rx data phase adjust. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga18c931f51bd3dcfeaec8cf73c3a241e2}{I2\+S\+\_\+\+Cmd}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Set or reset i2s \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_p_i___exported___functions_ga9d5e943831a24c29523a55e231eaaaf4}{I2\+S\+\_\+\+Init}} (\mbox{\hyperlink{struct_s_p_i___type_def}{SPI\+\_\+\+Type\+Def}} $\ast$spi, \mbox{\hyperlink{struct_i2_s___init_type_def}{I2\+S\+\_\+\+Init\+Type\+Def}} $\ast$I2\+S\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em i2s Config \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE PROVIDES ALL THE SPI FIRMWARE FUNCTIONS. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{hal__spi_8c_aacf5765fdd5e272f27b8678dda60fe84}\label{hal__spi_8c_aacf5765fdd5e272f27b8678dda60fe84}} 
+\index{hal\_spi.c@{hal\_spi.c}!\_HAL\_SPI\_C\_@{\_HAL\_SPI\_C\_}}
+\index{\_HAL\_SPI\_C\_@{\_HAL\_SPI\_C\_}!hal\_spi.c@{hal\_spi.c}}
+\doxysubsubsection{\texorpdfstring{\_HAL\_SPI\_C\_}{\_HAL\_SPI\_C\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+HAL\+\_\+\+SPI\+\_\+\+C\+\_\+}
+
+
+
+在文件 \mbox{\hyperlink{hal__spi_8c_source}{hal\+\_\+spi.\+c}} 第 \mbox{\hyperlink{hal__spi_8c_source_l00019}{19}} 行定义.
+

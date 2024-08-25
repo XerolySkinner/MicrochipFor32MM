@@ -1,0 +1,290 @@
+\hypertarget{hal__adc_8c_source}{}\doxysection{hal\+\_\+adc.\+c}
+\label{hal__adc_8c_source}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_adc.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_adc.c}}
+\mbox{\hyperlink{hal__adc_8c}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00018}00018 \textcolor{comment}{// Define to prevent recursive inclusion}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00019}\mbox{\hyperlink{hal__adc_8c_ab97598ade107ff12f62660b7babde3b8}{00019}} \textcolor{preprocessor}{\#define \_HAL\_ADC\_C\_}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00021}00021 \textcolor{comment}{// Files includes}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00022}00022 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{hal__adc_8h}{hal\_adc.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00023}00023 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{hal__rcc_8h}{hal\_rcc.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00043}\mbox{\hyperlink{group___a_d_c___exported___functions_gae91292994c16e7ddb1b289ae2541128d}{00043}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_gae91292994c16e7ddb1b289ae2541128d}{ADC\_DeInit}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00044}00044 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00046}00046     \textcolor{keywordflow}{switch} (*(\mbox{\hyperlink{types_8h_afe8851af77f42df60783f067c5d9c213}{vu32}}*)\&adc) \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00048}00048         \textcolor{keywordflow}{case} \mbox{\hyperlink{reg__adc_8h_a695c9a2f892363a1c942405c8d351b91}{ADC1\_BASE}}:}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00049}00049             \mbox{\hyperlink{group___r_c_c___exported___functions_gafaf2c96ab5171fc65c71b167e80c0539}{exRCC\_APB2PeriphReset}}(\mbox{\hyperlink{reg__rcc_8h_aa90fe26cd02819c0c0d4530a2a995e7b}{RCC\_APB2ENR\_ADC1}});}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00050}00050             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00051}00051         \textcolor{keywordflow}{case} \mbox{\hyperlink{reg__adc_8h_a6544abc57f9759f610eee09a02442ae6}{ADC2\_BASE}}:}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00052}00052             \mbox{\hyperlink{group___r_c_c___exported___functions_gafaf2c96ab5171fc65c71b167e80c0539}{exRCC\_APB2PeriphReset}}(\mbox{\hyperlink{reg__rcc_8h_a0933d1e3ec4b2540c28a036df63dd6a8}{RCC\_APB2ENR\_ADC2}});}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00053}00053             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00054}00054         \textcolor{keywordflow}{case} \mbox{\hyperlink{reg__adc_8h_aca766f86c8e0b00a8e2b0224dcbb4c82}{ADC3\_BASE}}:}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00055}00055             \mbox{\hyperlink{group___r_c_c___exported___functions_gafaf2c96ab5171fc65c71b167e80c0539}{exRCC\_APB2PeriphReset}}(\mbox{\hyperlink{reg__rcc_8h_a25548e96ad891a148389618ee48fb553}{RCC\_APB2ENR\_ADC3}});}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00056}00056             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00057}00057         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00058}00058             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00059}00059     \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00060}00060 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00071}\mbox{\hyperlink{group___a_d_c___exported___functions_ga27120f6d128276dad945f1219e043347}{00071}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga27120f6d128276dad945f1219e043347}{ADC\_Init}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{struct_a_d_c___init_type_def}{ADC\_InitTypeDef}}* init\_struct)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00072}00072 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00073}00073     adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ae3d783774e9e9455d06bcde5a77c2682}{ADCFG}} \&= \string~(\mbox{\hyperlink{reg__adc_8h_af8420d99ae870e706f78d91f85de5b62}{ADC\_CFGR\_PRE}} | \mbox{\hyperlink{reg__adc_8h_a9d45872a1894f478bcf18bc5d9a2b4c6}{ADC\_CFGR\_RSLTCTL}});}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00074}00074     adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ae3d783774e9e9455d06bcde5a77c2682}{ADCFG}} |= (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})(init\_struct-\/>\mbox{\hyperlink{struct_a_d_c___init_type_def_a13b72d6661099eddcdcad4a7bc2f5b39}{ADC\_PRESCARE}}) | init\_struct-\/>\mbox{\hyperlink{struct_a_d_c___init_type_def_a69a086ebb46da101b6de7877b3b6c773}{ADC\_Resolution}};}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00076}00076     adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a03ecc8512d44bd842325144915dd927d}{ADCR}} \&= \string~(\mbox{\hyperlink{reg__adc_8h_a5b3497b37e06a3a6042370d14e2a49b3}{ADC\_CR\_ALIGN}} | \mbox{\hyperlink{reg__adc_8h_aaa33105138931ec16576cfbb3a915409}{ADC\_CR\_MODE}} | \mbox{\hyperlink{reg__adc_8h_a1c9b9fe162e0c9031f11f75fe1be64ee}{ADC\_CR\_TRGSEL}});}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00077}00077     adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a03ecc8512d44bd842325144915dd927d}{ADCR}} |= ((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})init\_struct-\/>\mbox{\hyperlink{struct_a_d_c___init_type_def_ab4e268675ad296dd7b8016052d24043c}{ADC\_DataAlign}}) | init\_struct-\/>\mbox{\hyperlink{struct_a_d_c___init_type_def_a11c85e5c9dd59bcabaf70afb95f45db3}{ADC\_ExternalTrigConv}} | ((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})init\_struct-\/>\mbox{\hyperlink{struct_a_d_c___init_type_def_a16d43a4aad5a8e32d7f628e29b07efa6}{ADC\_Mode}});}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00078}00078 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00086}\mbox{\hyperlink{group___a_d_c___exported___functions_ga56b66c52c77c096d1aef17e5d67e3c05}{00086}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga56b66c52c77c096d1aef17e5d67e3c05}{ADC\_StructInit}}(\mbox{\hyperlink{struct_a_d_c___init_type_def}{ADC\_InitTypeDef}}* init\_struct)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00087}00087 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00088}00088     init\_struct-\/>\mbox{\hyperlink{struct_a_d_c___init_type_def_a69a086ebb46da101b6de7877b3b6c773}{ADC\_Resolution}}         = \mbox{\hyperlink{group___a_d_c___exported___types_gga09273daf81bdff3b74f5200c284bd69ba77d585266d31b8f252be27293b460caa}{ADC\_Resolution\_12b}};}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00089}00089     init\_struct-\/>\mbox{\hyperlink{struct_a_d_c___init_type_def_a13b72d6661099eddcdcad4a7bc2f5b39}{ADC\_PRESCARE}}           = \mbox{\hyperlink{group___a_d_c___exported___types_gga13038482f8965ce9ae9dcf4f0e195cbeaba0fcc68f071cebc67d7b6b0d62a6e2a}{ADC\_PCLK2\_PRESCARE\_2}};}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00090}00090     init\_struct-\/>\mbox{\hyperlink{struct_a_d_c___init_type_def_a16d43a4aad5a8e32d7f628e29b07efa6}{ADC\_Mode}}               = \mbox{\hyperlink{reg__adc_8h_afef088adc515825a07a035486032df38}{ADC\_CR\_IMM}};                           \textcolor{comment}{//ADC\_Mode\_Single;}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00091}00091     init\_struct-\/>\mbox{\hyperlink{struct_a_d_c___init_type_def_a2149036a332281e70a36879a2396b8d1}{ADC\_ContinuousConvMode}} = \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d}{DISABLE}};                              \textcolor{comment}{// useless}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00092}00092     init\_struct-\/>\mbox{\hyperlink{struct_a_d_c___init_type_def_a11c85e5c9dd59bcabaf70afb95f45db3}{ADC\_ExternalTrigConv}}   = \mbox{\hyperlink{group___a_d_c___exported___types_ggaa2158b25e8ce9095a9c2b40564576f40a2a90c2f24e1f3908d50bcc6c59d6d625}{ADC1\_ExternalTrigConv\_T1\_CC1}};}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00093}00093     init\_struct-\/>\mbox{\hyperlink{struct_a_d_c___init_type_def_ab4e268675ad296dd7b8016052d24043c}{ADC\_DataAlign}}          = \mbox{\hyperlink{group___a_d_c___exported___types_gga6aeea31cfe86550ed9cd4af2c3bb48d7a8f39937ee0a311c53a7a20f4bd7a37ce}{ADC\_DataAlign\_Right}};}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00094}00094 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00095}00095 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00102}\mbox{\hyperlink{group___a_d_c___exported___functions_ga90caa4a20126123e813cd0f0127e5518}{00102}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga90caa4a20126123e813cd0f0127e5518}{ADC\_Cmd}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00103}00103 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00104}00104     (state) ? (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ae3d783774e9e9455d06bcde5a77c2682}{ADCFG}} |= \mbox{\hyperlink{reg__adc_8h_a874de0fadd15f77870f23969fcd0c5a6}{ADC\_CFGR\_ADEN}}) : (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ae3d783774e9e9455d06bcde5a77c2682}{ADCFG}} \&= \string~ADC\_CFGR\_ADEN);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00105}00105 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00112}\mbox{\hyperlink{group___a_d_c___exported___functions_ga035bde6dcbf7e309d311eb0e1defdb85}{00112}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga035bde6dcbf7e309d311eb0e1defdb85}{ADC\_DMACmd}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00113}00113 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00114}00114     (state) ? (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a03ecc8512d44bd842325144915dd927d}{ADCR}} |= \mbox{\hyperlink{reg__adc_8h_a35cb424beebfb4e9fd815e238cd2e7d1}{ADC\_CR\_DMAEN}}) : (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a03ecc8512d44bd842325144915dd927d}{ADCR}} \&= \string~ADC\_CR\_DMAEN);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00115}00115 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00123}\mbox{\hyperlink{group___a_d_c___exported___functions_ga5b85e30ed4ba47913ab2520d1334f6a0}{00123}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga5b85e30ed4ba47913ab2520d1334f6a0}{ADC\_ITConfig}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{group___a_d_c___exported___types_ga6f254861fc56625c91961c4f58b5c58f}{ADCFLAG\_TypeDef}} adc\_interrupt, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00124}00124 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00125}00125     \textcolor{keywordflow}{if} (adc\_interrupt == \mbox{\hyperlink{group___a_d_c___exported___types_gga6f254861fc56625c91961c4f58b5c58fa7dfdb96f2f332f604215f90af4735a6b}{ADC\_IT\_EOC}})}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00126}00126         (state) ? (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a03ecc8512d44bd842325144915dd927d}{ADCR}} |= \mbox{\hyperlink{reg__adc_8h_aa7f0b64d4468659083398bda8511602c}{ADC\_CR\_ADIE}}) : (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a03ecc8512d44bd842325144915dd927d}{ADCR}} \&= \string~ADC\_CR\_ADIE);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00127}00127     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00128}00128         (state) ? (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a03ecc8512d44bd842325144915dd927d}{ADCR}} |= \mbox{\hyperlink{reg__adc_8h_a669b9c54ef1927984653386e3294ffd5}{ADC\_CR\_ADWIE}}) : (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a03ecc8512d44bd842325144915dd927d}{ADCR}} \&= \string~\mbox{\hyperlink{reg__adc_8h_a669b9c54ef1927984653386e3294ffd5}{ADC\_CR\_ADWIE}});}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00129}00129 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00130}00130 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00137}\mbox{\hyperlink{group___a_d_c___exported___functions_ga0813ef7da97bfe472b26fe18363c266d}{00137}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga0813ef7da97bfe472b26fe18363c266d}{ADC\_SoftwareStartConvCmd}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00138}00138 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00139}00139     (state) ? (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a03ecc8512d44bd842325144915dd927d}{ADCR}} |= \mbox{\hyperlink{reg__adc_8h_a953919324504e415911c9288f1e6eec6}{ADC\_CR\_ADST}}) : (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a03ecc8512d44bd842325144915dd927d}{ADCR}} \&= \string~ADC\_CR\_ADST);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00140}00140 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00141}00141 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00147}\mbox{\hyperlink{group___a_d_c___exported___functions_gad507ff2cbf800483b69a71275fd0d5d8}{00147}} \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}} \mbox{\hyperlink{group___a_d_c___exported___functions_gad507ff2cbf800483b69a71275fd0d5d8}{ADC\_GetSoftwareStartConvStatus}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00148}00148 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00149}00149     \textcolor{keywordflow}{return} (((adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a03ecc8512d44bd842325144915dd927d}{ADCR}} \& \mbox{\hyperlink{reg__adc_8h_a953919324504e415911c9288f1e6eec6}{ADC\_CR\_ADST}}) != (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}}) ? \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792}{SET}} : \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}});}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00150}00150 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00160}\mbox{\hyperlink{group___a_d_c___exported___functions_ga322ccf21ea71c9f641c292fbf98f264d}{00160}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga322ccf21ea71c9f641c292fbf98f264d}{ADC\_RegularChannelConfig}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} channel, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} rank, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} sample\_time)    \textcolor{comment}{//ADCSAM\_TypeDef}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00161}00161 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00162}00162 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00163}00163     \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} tempchan;}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00164}00164     sample\_time = sample\_time \& 0xF;}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00165}00165     tempchan = channel;}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00166}00166     \textcolor{keywordflow}{if}(tempchan > 8) \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00167}00167         tempchan = tempchan \& 0xF;}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00168}00168         tempchan = tempchan -\/ 8;}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00169}00169         adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a0de7b3dbb75163a12f2d18afbdbebc6a}{SMPR2}} \&= \string~(0xF << tempchan);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00170}00170         adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a0de7b3dbb75163a12f2d18afbdbebc6a}{SMPR2}} |= (sample\_time << tempchan);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00171}00171     \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00172}00172     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00173}00173         adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ab8fa05cb4d0f5477e085be377372a3c8}{SMPR1}} \&= \string~(0xF << tempchan);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00174}00174         adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ab8fa05cb4d0f5477e085be377372a3c8}{SMPR1}} |= (sample\_time << tempchan);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00175}00175     \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00176}00176     adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a4361a4d4686218f9f848be14ede2af51}{ADCHS}} \&= \string~(1 << channel);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00177}00177     adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a4361a4d4686218f9f848be14ede2af51}{ADCHS}} |=  (1 << channel);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00178}00178 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00179}00179     \textcolor{keywordflow}{if} (channel \& \mbox{\hyperlink{reg__adc_8h_aeea8eaf37ad01c67e17f47c598a2d50c}{ADC\_CHSR\_CHT}})}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00180}00180         \mbox{\hyperlink{group___a_d_c___exported___functions_ga059a5fc00d0652a153cb4a9d29cc6d9f}{ADC\_TempSensorVrefintCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf}{ENABLE}});}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00181}00181     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (channel \& \mbox{\hyperlink{reg__adc_8h_aaac0220554373fe8240e62635efffc2d}{ADC\_CHSR\_CHV}})}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00182}00182         \mbox{\hyperlink{group___a_d_c___exported___functions_ga059a5fc00d0652a153cb4a9d29cc6d9f}{ADC\_TempSensorVrefintCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf}{ENABLE}});}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00183}00183 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00184}00184 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00191}\mbox{\hyperlink{group___a_d_c___exported___functions_gaeb2a4d48cad6dff001e54b85f0229a16}{00191}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_gaeb2a4d48cad6dff001e54b85f0229a16}{ADC\_ExternalTrigConvCmd}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00192}00192 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00193}00193     (state) ? (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a03ecc8512d44bd842325144915dd927d}{ADCR}} |= \mbox{\hyperlink{reg__adc_8h_a37e7360b72be9a7aa64c78613b0af462}{ADC\_CR\_TRGEN}}) : (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a03ecc8512d44bd842325144915dd927d}{ADCR}} \&= \string~ADC\_CR\_TRGEN);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00194}00194 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00202}\mbox{\hyperlink{group___a_d_c___exported___functions_ga78b8e27313d2f6ced0ed207fde234b98}{00202}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga78b8e27313d2f6ced0ed207fde234b98}{ADC\_ExternalTrigConvConfig}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{group___a_d_c___exported___types_gaa2158b25e8ce9095a9c2b40564576f40}{EXTERTRIG\_TypeDef}} adc\_external\_trig\_source)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00203}00203 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00204}00204     adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a03ecc8512d44bd842325144915dd927d}{ADCR}} \&= \string~ADC\_CR\_TRGSEL;}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00205}00205     adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a03ecc8512d44bd842325144915dd927d}{ADCR}} |=  adc\_external\_trig\_source;}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00206}00206 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00207}00207 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00208}00208 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00214}\mbox{\hyperlink{group___a_d_c___exported___functions_gaf5dd08b7165a8100b02517af06bb505a}{00214}} \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{group___a_d_c___exported___functions_gaf5dd08b7165a8100b02517af06bb505a}{ADC\_GetConversionValue}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00215}00215 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00216}00216     \textcolor{keywordflow}{return} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a0b2ad0e3344abb197556eca9cfbde85b}{ADDATA}};}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00217}00217 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00218}00218 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00224}\mbox{\hyperlink{group___a_d_c___exported___functions_ga0df9ab39de442582b4446e21284d9f7a}{00224}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___a_d_c___exported___functions_ga0df9ab39de442582b4446e21284d9f7a}{ADC\_GetDualModeConversionValue}}()}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00225}00225 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00226}00226     \textcolor{keywordflow}{return} (*(\mbox{\hyperlink{types_8h_afe8851af77f42df60783f067c5d9c213}{vu32}}*)\mbox{\hyperlink{reg__adc_8h_a695c9a2f892363a1c942405c8d351b91}{ADC1\_BASE}});}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00227}00227 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00228}00228 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00229}00229 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00230}00230 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00237}\mbox{\hyperlink{group___a_d_c___exported___functions_ga4af5621015210721a120032b74b0ecf8}{00237}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga4af5621015210721a120032b74b0ecf8}{ADC\_AnalogWatchdogCmd}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00238}00238 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00239}00239     (state) ? (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ae3d783774e9e9455d06bcde5a77c2682}{ADCFG}} |= \mbox{\hyperlink{reg__adc_8h_a2bb1816313d206a07896ec98680386a2}{ADC\_CFGR\_ADWEN}}) : (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ae3d783774e9e9455d06bcde5a77c2682}{ADCFG}} \&= \string~ADC\_CFGR\_ADWEN);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00240}00240 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00241}00241 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00251}\mbox{\hyperlink{group___a_d_c___exported___functions_ga3a1812c364a931e2cae313f78358a1e0}{00251}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga3a1812c364a931e2cae313f78358a1e0}{ADC\_AnalogWatchdogThresholdsConfig}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} high\_threshold, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} low\_threshold)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00252}00252 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00253}00253     \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} tempThreshold;}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00254}00254     tempThreshold = high\_threshold;}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00255}00255     adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a1feac4f32ce3a05c067d0d6e065bd30b}{ADCMPR}}    = (tempThreshold << 16) | low\_threshold;}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00256}00256 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00257}00257 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00264}\mbox{\hyperlink{group___a_d_c___exported___functions_ga30b2200ebd9a606ae08139bdecf72d46}{00264}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga30b2200ebd9a606ae08139bdecf72d46}{ADC\_AnalogWatchdogSingleChannelConfig}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{group___a_d_c___exported___types_ga1d9cc90acac78acbbbff830e4c078925}{ADCCHANNEL\_TypeDef}} channel)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00265}00265 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00266}00266     adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a03ecc8512d44bd842325144915dd927d}{ADCR}} \&= \string~ADC\_CR\_CMPCH;}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00267}00267     adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a03ecc8512d44bd842325144915dd927d}{ADCR}} |= (channel << \mbox{\hyperlink{reg__adc_8h_a41e2eca171abf33f48d105d7fcdbd3f2}{ADC\_CR\_CMPCH\_Pos}});}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00268}00268 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00269}00269 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00275}\mbox{\hyperlink{group___a_d_c___exported___functions_ga059a5fc00d0652a153cb4a9d29cc6d9f}{00275}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga059a5fc00d0652a153cb4a9d29cc6d9f}{ADC\_TempSensorVrefintCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00276}00276 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00277}00277     (state) ? (\mbox{\hyperlink{reg__adc_8h_a90d2d5c526ce5c0a551f533eccbee71a}{ADC1}}-\/>ADCFG |=  (\mbox{\hyperlink{reg__adc_8h_ad0921b1894fccf361d79d24ce0bbc0b1}{ADC\_CFGR\_TEN}} | \mbox{\hyperlink{reg__adc_8h_a7e42318e9185a60aec329eaa03f77c2a}{ADC\_CFGR\_VEN}}))}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00278}00278     : (\mbox{\hyperlink{reg__adc_8h_a90d2d5c526ce5c0a551f533eccbee71a}{ADC1}}-\/>ADCFG \&= \string~(\mbox{\hyperlink{reg__adc_8h_ad0921b1894fccf361d79d24ce0bbc0b1}{ADC\_CFGR\_TEN}} | \mbox{\hyperlink{reg__adc_8h_a7e42318e9185a60aec329eaa03f77c2a}{ADC\_CFGR\_VEN}}));}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00279}00279 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00280}00280 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00281}00281 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00287}\mbox{\hyperlink{group___a_d_c___exported___functions_ga7870f3f65bb30d4b211df5dff6fa157d}{00287}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga7870f3f65bb30d4b211df5dff6fa157d}{ADC\_TempSensorCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00288}00288 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00289}00289     \mbox{\hyperlink{group___a_d_c___exported___functions_ga059a5fc00d0652a153cb4a9d29cc6d9f}{ADC\_TempSensorVrefintCmd}}(state);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00290}00290 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00296}\mbox{\hyperlink{group___a_d_c___exported___functions_ga7eeb7bc604dd71bb70e3ed1a32660d9e}{00296}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga7eeb7bc604dd71bb70e3ed1a32660d9e}{ADC\_VrefintCmd}}(\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00297}00297 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00298}00298     \mbox{\hyperlink{group___a_d_c___exported___functions_ga059a5fc00d0652a153cb4a9d29cc6d9f}{ADC\_TempSensorVrefintCmd}}(state);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00299}00299 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00306}\mbox{\hyperlink{group___a_d_c___exported___functions_ga2730bb49d7cc3cda404894bf2252d0c8}{00306}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga2730bb49d7cc3cda404894bf2252d0c8}{exADC\_TempSensorVrefintCmd}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} chs, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00307}00307 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00308}00308     \textcolor{keywordflow}{if} (chs \& \mbox{\hyperlink{reg__adc_8h_aeea8eaf37ad01c67e17f47c598a2d50c}{ADC\_CHSR\_CHT}}) \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00309}00309         (state) ? (\mbox{\hyperlink{reg__adc_8h_a90d2d5c526ce5c0a551f533eccbee71a}{ADC1}}-\/>ADCFG |=  \mbox{\hyperlink{reg__adc_8h_ad0921b1894fccf361d79d24ce0bbc0b1}{ADC\_CFGR\_TEN}})}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00310}00310         : (\mbox{\hyperlink{reg__adc_8h_a90d2d5c526ce5c0a551f533eccbee71a}{ADC1}}-\/>ADCFG \&= \string~ADC\_CFGR\_TEN);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00311}00311     \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00312}00312     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (chs \& \mbox{\hyperlink{reg__adc_8h_aaac0220554373fe8240e62635efffc2d}{ADC\_CHSR\_CHV}}) \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00313}00313         (state) ? (\mbox{\hyperlink{reg__adc_8h_a90d2d5c526ce5c0a551f533eccbee71a}{ADC1}}-\/>ADCFG |=  \mbox{\hyperlink{reg__adc_8h_a7e42318e9185a60aec329eaa03f77c2a}{ADC\_CFGR\_VEN}})}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00314}00314         : (\mbox{\hyperlink{reg__adc_8h_a90d2d5c526ce5c0a551f533eccbee71a}{ADC1}}-\/>ADCFG \&= \string~ADC\_CFGR\_VEN);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00315}00315     \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00316}00316 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00317}00317 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00318}00318 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00325}\mbox{\hyperlink{group___a_d_c___exported___functions_gad923662d453d8fcc0fb2aa6cb545070d}{00325}} \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}} \mbox{\hyperlink{group___a_d_c___exported___functions_gad923662d453d8fcc0fb2aa6cb545070d}{ADC\_GetFlagStatus}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{group___a_d_c___exported___types_ga6f254861fc56625c91961c4f58b5c58f}{ADCFLAG\_TypeDef}} adc\_flag)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00326}00326 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00327}00327     \textcolor{keywordflow}{return} (adc\_flag == \mbox{\hyperlink{group___a_d_c___exported___types_gga6f254861fc56625c91961c4f58b5c58fa7dfdb96f2f332f604215f90af4735a6b}{ADC\_IT\_EOC}}) ? ((adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a92ee355e92cde1d617e54e2257e4a013}{ADSTA}} \& \mbox{\hyperlink{reg__adc_8h_ae023e0be3818aad7dbac1318791fef43}{ADC\_SR\_ADIF}}) ? \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792}{SET}} : \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}}) : ((adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a92ee355e92cde1d617e54e2257e4a013}{ADSTA}} \& \mbox{\hyperlink{reg__adc_8h_a7468430b7e1a43b01a4129cef1d4464a}{ADC\_SR\_ADWIF}}) ? \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792}{SET}} : \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}});}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00328}00328 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00329}00329 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00336}\mbox{\hyperlink{group___a_d_c___exported___functions_gae24d81d84f123287e04d75f90037ec66}{00336}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_gae24d81d84f123287e04d75f90037ec66}{ADC\_ClearFlag}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{group___a_d_c___exported___types_ga6f254861fc56625c91961c4f58b5c58f}{ADCFLAG\_TypeDef}} adc\_flag)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00337}00337 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00338}00338     (adc\_flag == \mbox{\hyperlink{group___a_d_c___exported___types_gga6f254861fc56625c91961c4f58b5c58fa7dfdb96f2f332f604215f90af4735a6b}{ADC\_IT\_EOC}}) ? (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a92ee355e92cde1d617e54e2257e4a013}{ADSTA}} |= \mbox{\hyperlink{reg__adc_8h_ae023e0be3818aad7dbac1318791fef43}{ADC\_SR\_ADIF}}) : (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a92ee355e92cde1d617e54e2257e4a013}{ADSTA}} |= \mbox{\hyperlink{reg__adc_8h_a7468430b7e1a43b01a4129cef1d4464a}{ADC\_SR\_ADWIF}});}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00339}00339 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00340}00340 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00347}\mbox{\hyperlink{group___a_d_c___exported___functions_gae31d48daf1297ec81f0c0505fed9fd7d}{00347}} \mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} \mbox{\hyperlink{group___a_d_c___exported___functions_gae31d48daf1297ec81f0c0505fed9fd7d}{ADC\_GetITStatus}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{group___a_d_c___exported___types_ga6f254861fc56625c91961c4f58b5c58f}{ADCFLAG\_TypeDef}} adc\_interrupt)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00348}00348 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00349}00349     \textcolor{keywordflow}{return} (adc\_interrupt == \mbox{\hyperlink{group___a_d_c___exported___types_gga6f254861fc56625c91961c4f58b5c58fa7dfdb96f2f332f604215f90af4735a6b}{ADC\_IT\_EOC}}) ? ((adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a92ee355e92cde1d617e54e2257e4a013}{ADSTA}} \& \mbox{\hyperlink{reg__adc_8h_ae023e0be3818aad7dbac1318791fef43}{ADC\_SR\_ADIF}}) ? \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792}{SET}} : \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}}) : ((adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a92ee355e92cde1d617e54e2257e4a013}{ADSTA}} \& \mbox{\hyperlink{reg__adc_8h_a7468430b7e1a43b01a4129cef1d4464a}{ADC\_SR\_ADWIF}}) ? \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792}{SET}} : \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}});}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00350}00350 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00351}00351 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00358}\mbox{\hyperlink{group___a_d_c___exported___functions_gaad9e0d54f00201258429b2d3c76c6f40}{00358}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_gaad9e0d54f00201258429b2d3c76c6f40}{ADC\_ClearITPendingBit}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{group___a_d_c___exported___types_ga6f254861fc56625c91961c4f58b5c58f}{ADCFLAG\_TypeDef}} adc\_interrupt)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00359}00359 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00360}00360     (adc\_interrupt == \mbox{\hyperlink{group___a_d_c___exported___types_gga6f254861fc56625c91961c4f58b5c58fa7dfdb96f2f332f604215f90af4735a6b}{ADC\_IT\_EOC}}) ? (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a92ee355e92cde1d617e54e2257e4a013}{ADSTA}} |= \mbox{\hyperlink{reg__adc_8h_ae023e0be3818aad7dbac1318791fef43}{ADC\_SR\_ADIF}}) : (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a92ee355e92cde1d617e54e2257e4a013}{ADSTA}} |= \mbox{\hyperlink{reg__adc_8h_a7468430b7e1a43b01a4129cef1d4464a}{ADC\_SR\_ADWIF}});}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00361}00361 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00369}\mbox{\hyperlink{group___a_d_c___exported___functions_ga8f0c6a7e8db57d399e3e9b09ca1e876e}{00369}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga8f0c6a7e8db57d399e3e9b09ca1e876e}{ADC\_ANY\_CH\_Config}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} rank, \mbox{\hyperlink{group___a_d_c___exported___types_ga1d9cc90acac78acbbbff830e4c078925}{ADCCHANNEL\_TypeDef}} adc\_channel)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00370}00370 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00371}00371     rank = rank \& 0xF;}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00372}00372     \textcolor{keywordflow}{if}(rank < 8) \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00373}00373         adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a023c1211c1f100e1f7bcb1b6e1f7bf8b}{CHANY0}} \&= \string~(0x0F << (4 * rank));}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00374}00374         adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a023c1211c1f100e1f7bcb1b6e1f7bf8b}{CHANY0}} |= (adc\_channel << (4 * rank));}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00375}00375     \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00376}00376     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00377}00377         adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_aee735cbfe178483cda3127654fdb8d33}{CHANY1}} \&= \string~(0x0F << (4 * (rank -\/ 8)));}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00378}00378         adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_aee735cbfe178483cda3127654fdb8d33}{CHANY1}} |= (adc\_channel << (4 * (rank -\/ 8)));}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00379}00379     \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00380}00380 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00387}\mbox{\hyperlink{group___a_d_c___exported___functions_gabefb18b50de5e538215f04c2bcf8e5e8}{00387}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_gabefb18b50de5e538215f04c2bcf8e5e8}{ADC\_ANY\_NUM\_Config}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} num)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00388}00388 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00389}00389     \textcolor{keywordflow}{if}(num > 15) num = 15;                                                      \textcolor{comment}{//15 ? 16 need to be confirmed}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00390}00390     adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a67f5e96847b3c138fc037d1380119f16}{ANYCFG}} = num;}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00391}00391 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00397}\mbox{\hyperlink{group___a_d_c___exported___functions_ga7c690b9d90dd2deefd2e0f8156b24a14}{00397}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga7c690b9d90dd2deefd2e0f8156b24a14}{ADC\_ANY\_Cmd}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00398}00398 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00399}00399     (state) ? (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ae10d2d488f8d446a7d11219546ea3cd6}{ANYCR}} |= \mbox{\hyperlink{reg__adc_8h_ab9a66be6eb3fa35d54796916c8251937}{ADC1\_CHANY\_CR\_MDEN}}) : (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ae10d2d488f8d446a7d11219546ea3cd6}{ANYCR}} \&= \string~ADC1\_CHANY\_CR\_MDEN);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00400}00400 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00409}\mbox{\hyperlink{group___a_d_c___exported___functions_ga871db23d99fb4dc7dd005f31ffa3f92e}{00409}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga871db23d99fb4dc7dd005f31ffa3f92e}{ADC\_AutoInjectedConvCmd}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00410}00410 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00411}00411     (state) ? (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ae10d2d488f8d446a7d11219546ea3cd6}{ANYCR}} |= \mbox{\hyperlink{reg__adc_8h_adb1af9b692d653efa084cb308d7897bc}{ADC\_ANY\_CR\_JAUTO}}) : (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ae10d2d488f8d446a7d11219546ea3cd6}{ANYCR}} \&= \string~ADC\_ANY\_CR\_JAUTO);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00412}00412 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00413}00413 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00418}00418 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00421}\mbox{\hyperlink{group___a_d_c___exported___functions_gaf10328fa27ff65da3717c3b00054c749}{00421}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_gaf10328fa27ff65da3717c3b00054c749}{ADC\_ExternalTrigInjectedConvertConfig}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{group___a_d_c___exported___types_ga5f13a071acc94e4a8c099675d07585b8}{EXTER\_INJ\_TRIG\_TypeDef}} ADC\_ExtInjTrigSource)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00422}00422 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00423}00423     \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} tmpreg = 0;}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00424}00424     \textcolor{comment}{// Get the old register value}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00425}00425     tmpreg = adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ae10d2d488f8d446a7d11219546ea3cd6}{ANYCR}};}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00426}00426     \textcolor{comment}{// Clear the old external event selection for injected group}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00427}00427     tmpreg \&= \mbox{\hyperlink{reg__adc_8h_a0645fc613befc146543cb258f32667cd}{ADC\_ANY\_CR\_JTRGSEL}};}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00428}00428     \textcolor{comment}{// Set the external event selection for injected group}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00429}00429     tmpreg |= ADC\_ExtInjTrigSource;}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00430}00430     \textcolor{comment}{// Store the new register value}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00431}00431     adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ae10d2d488f8d446a7d11219546ea3cd6}{ANYCR}} = tmpreg;}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00432}00432 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00433}00433 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00434}00434 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00444}\mbox{\hyperlink{group___a_d_c___exported___functions_gadddfe38d24dc8bd173704b78afb78bdc}{00444}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_gadddfe38d24dc8bd173704b78afb78bdc}{ADC\_ExternalTrigInjectedConvCmd}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00445}00445 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00446}00446     (state) ? (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ae10d2d488f8d446a7d11219546ea3cd6}{ANYCR}} |= \mbox{\hyperlink{reg__adc_8h_af5618ad262e5de55e1a54ebedec3b18b}{ADC\_ANY\_CR\_JTRGEN}}) : (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ae10d2d488f8d446a7d11219546ea3cd6}{ANYCR}} \&= \string~ADC\_ANY\_CR\_JTRGEN);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00447}00447 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00456}\mbox{\hyperlink{group___a_d_c___exported___functions_ga345bbe54e6e3fb2c19bd5dbfb05822ef}{00456}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga345bbe54e6e3fb2c19bd5dbfb05822ef}{ADC\_InjectedConvCmd}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00457}00457 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00458}00458     (state) ? (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ae10d2d488f8d446a7d11219546ea3cd6}{ANYCR}} |= \mbox{\hyperlink{reg__adc_8h_a8c268491fbd6e7993ecf380e745f65c9}{ADC\_ANY\_CR\_JCEN}}) : (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ae10d2d488f8d446a7d11219546ea3cd6}{ANYCR}} \&= \string~ADC\_ANY\_CR\_JCEN);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00459}00459 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00468}\mbox{\hyperlink{group___a_d_c___exported___functions_ga9625f1ab9c83a38ea9a8ded6e6d286cf}{00468}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga9625f1ab9c83a38ea9a8ded6e6d286cf}{ADC\_SoftwareStartInjectedConvCmd}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}} state)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00469}00469 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00470}00470     (state) ? (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ae10d2d488f8d446a7d11219546ea3cd6}{ANYCR}} |= \mbox{\hyperlink{reg__adc_8h_a786a0a1c50f50e4a4b7c32c4298423a5}{ADC\_ANY\_CR\_JADST}}) : (adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ae10d2d488f8d446a7d11219546ea3cd6}{ANYCR}} \&= \string~ADC\_ANY\_CR\_JADST);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00471}00471 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00472}00472 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00473}00473 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00483}\mbox{\hyperlink{group___a_d_c___exported___functions_ga173353a7773856c3b629edb25c5e12df}{00483}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga173353a7773856c3b629edb25c5e12df}{ADC\_InjectedSequencerConfig}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} event, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} sample\_time)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00484}00484 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00485}00485     adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ae10d2d488f8d446a7d11219546ea3cd6}{ANYCR}} \&= \string~(\mbox{\hyperlink{reg__adc_8h_a8c268491fbd6e7993ecf380e745f65c9}{ADC\_ANY\_CR\_JCEN}} | \mbox{\hyperlink{reg__adc_8h_ae10b21aa83bc08403d0afd3fd1d9e18a}{ADC\_ANY\_CR\_CHANY\_MDEN}} | \mbox{\hyperlink{reg__adc_8h_ac60e7b8442c8ab0a70a3505f029f85b1}{ADC\_ANY\_CR\_JTRGSEL\_EXTI12}} \(\backslash\)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00486}00486                     | \mbox{\hyperlink{reg__adc_8h_af1196c6e6a6ee4498019ece37eaec899}{ADC\_ANY\_CR\_JTRGSHIFT\_512}} | \mbox{\hyperlink{reg__adc_8h_af5618ad262e5de55e1a54ebedec3b18b}{ADC\_ANY\_CR\_JTRGEN}});}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00487}00487     adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ae10d2d488f8d446a7d11219546ea3cd6}{ANYCR}} |= (\mbox{\hyperlink{reg__adc_8h_a8c268491fbd6e7993ecf380e745f65c9}{ADC\_ANY\_CR\_JCEN}} | \mbox{\hyperlink{reg__adc_8h_ae10b21aa83bc08403d0afd3fd1d9e18a}{ADC\_ANY\_CR\_CHANY\_MDEN}} | sample\_time | \textcolor{keyword}{event} | \mbox{\hyperlink{reg__adc_8h_af5618ad262e5de55e1a54ebedec3b18b}{ADC\_ANY\_CR\_JTRGEN}});}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00488}00488 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00495}\mbox{\hyperlink{group___a_d_c___exported___functions_ga9169c3563eeeeb6b2f106b22df58661e}{00495}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga9169c3563eeeeb6b2f106b22df58661e}{ADC\_InjectedSequencerLengthConfig}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{group___a_d_c___exported___types_gaa33e6ebc7d2ed9224c7b9d03923b2f9c}{ADC\_INJ\_SEQ\_LEN\_TypeDef}} Length)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00496}00496 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00497}00497     adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a93005eb3212d37b40466f4ebd50e800f}{JSQR}} \&= \string~(0x03 << \mbox{\hyperlink{reg__adc_8h_ab1dd38cefe9e4ca58d8535c9b2386cb1}{ADC\_JSQR\_JL\_Pos}});}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00498}00498     adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a93005eb3212d37b40466f4ebd50e800f}{JSQR}} |= Length << \mbox{\hyperlink{reg__adc_8h_ab1dd38cefe9e4ca58d8535c9b2386cb1}{ADC\_JSQR\_JL\_Pos}};}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00499}00499 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00507}\mbox{\hyperlink{group___a_d_c___exported___functions_gab3b3ba003e2a0cc61bf8e8684f624934}{00507}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_gab3b3ba003e2a0cc61bf8e8684f624934}{ADC\_InjectedSequencerChannelConfig}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{group___a_d_c___exported___types_gaa3104d160640c069354a88d946fe703c}{ADC\_INJ\_SEQ\_Channel\_TypeDef}} off\_addr, \mbox{\hyperlink{group___a_d_c___exported___types_ga1d9cc90acac78acbbbff830e4c078925}{ADCCHANNEL\_TypeDef}} channel)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00508}00508 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00509}00509     adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a93005eb3212d37b40466f4ebd50e800f}{JSQR}} \&= \string~(0x1F << (off\_addr >> 2) * 5);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00510}00510     adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_a93005eb3212d37b40466f4ebd50e800f}{JSQR}} |= (channel <<  (off\_addr >> 2) * 5);}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00511}00511 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00518}\mbox{\hyperlink{group___a_d_c___exported___functions_gaa2ce19e6e1afbabc6765136d96800970}{00518}} \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{group___a_d_c___exported___functions_gaa2ce19e6e1afbabc6765136d96800970}{ADC\_GetInjectedConversionValue}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{group___a_d_c___exported___types_gaa3104d160640c069354a88d946fe703c}{ADC\_INJ\_SEQ\_Channel\_TypeDef}} off\_addr)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00519}00519 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00520}00520     \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} value;}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00521}00521     value = (*(\mbox{\hyperlink{types_8h_afe8851af77f42df60783f067c5d9c213}{vu32}}*)(*(\mbox{\hyperlink{types_8h_afe8851af77f42df60783f067c5d9c213}{vu32}}*)\&adc + 0xB0 + off\_addr)) -\/ (*(\mbox{\hyperlink{types_8h_afe8851af77f42df60783f067c5d9c213}{vu32}}*)(*(\mbox{\hyperlink{types_8h_afe8851af77f42df60783f067c5d9c213}{vu32}}*)\&adc + 0x7C + off\_addr));}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00522}00522 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00523}00523     \textcolor{keywordflow}{return} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})value;}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00524}00524 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00530}\mbox{\hyperlink{group___a_d_c___exported___functions_ga0bc75ffebe9e5c16e1605e74196eab5f}{00530}} \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{group___a_d_c___exported___functions_ga0bc75ffebe9e5c16e1605e74196eab5f}{ADC\_GetInjectedCurrentConvertedValue}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00531}00531 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00532}00532     \textcolor{keywordflow}{return} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})adc-\/>\mbox{\hyperlink{struct_a_d_c___type_def_ac49f894f4632ce7b3d698fbe243ae432}{JDATA}};}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00533}00533 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00541}\mbox{\hyperlink{group___a_d_c___exported___functions_ga4d32cf98c85a9ade5443b01a4580141e}{00541}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___a_d_c___exported___functions_ga4d32cf98c85a9ade5443b01a4580141e}{ADC\_SetInjectedOffset}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{group___a_d_c___exported___types_gaa3104d160640c069354a88d946fe703c}{ADC\_INJ\_SEQ\_Channel\_TypeDef}} off\_addr, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} value)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00542}00542 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00543}00543     *(\mbox{\hyperlink{types_8h_afe8851af77f42df60783f067c5d9c213}{vu32}}*)(*(\mbox{\hyperlink{types_8h_afe8851af77f42df60783f067c5d9c213}{vu32}}*)\&adc + 0x7C + off\_addr) = value;}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00544}00544 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00545}00545 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00546}00546 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00553}\mbox{\hyperlink{group___a_d_c___exported___functions_gaa9754bedaf74ffffd727a361738256ef}{00553}} \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{group___a_d_c___exported___functions_gaa9754bedaf74ffffd727a361738256ef}{ADC\_GetChannelConvertedValue}}(\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\_TypeDef}}* adc, \mbox{\hyperlink{group___a_d_c___exported___types_ga1d9cc90acac78acbbbff830e4c078925}{ADCCHANNEL\_TypeDef}} channel)}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00554}00554 \{}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00555}00555     \textcolor{keywordflow}{return} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})(*(\mbox{\hyperlink{types_8h_afe8851af77f42df60783f067c5d9c213}{vu32}}*) ((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})adc + 0x18 + ((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})channel << 2)));}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00556}00556 \}}
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00557}00557 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00559}00559 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00561}00561 }
+\DoxyCodeLine{\Hypertarget{hal__adc_8c_source_l00563}00563 }
+
+\end{DoxyCode}

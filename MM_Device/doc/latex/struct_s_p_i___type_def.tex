@@ -1,0 +1,484 @@
+\hypertarget{struct_s_p_i___type_def}{}\doxysection{SPI\+\_\+\+Type\+Def结构体 参考}
+\label{struct_s_p_i___type_def}\index{SPI\_TypeDef@{SPI\_TypeDef}}
+
+
+{\ttfamily \#include $<$reg\+\_\+spi.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_ae367e87cdf8266c8c9ca32f2a7ebf43c}{TDR}}\\
+\>\>{\em SPI transmit data register, offset: 0x00 }\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_a31b1a58d7256ef2fbad9e973f3dd991a}{TXREG}}\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_a42f0592c9810c8eeba77ccf165467091}{RDR}}\\
+\>\>{\em SPI receive data register, offset: 0x04 }\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_aeee5c32ad7b8edf5b24ff65dd39096f5}{RXREG}}\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_ae55c4ec407b2ce119bb5749f3eb1bd1e}{SR}}\\
+\>\>{\em SPI current state register, offset: 0x08 }\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_a1fd763a0d8c3ea46926f4cecc466d36b}{CSTAT}}\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_ad0bb2791e834d83b7a1154243e825f70}{ISR}}\\
+\>\>{\em SPI interruput state register, offset: 0x0C }\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_abc68b5a0b4bc69b54e2c0ba1e445992a}{INTSTAT}}\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_a09bb0e58a91da03b92ac5dcdc2d42797}{IER}}\\
+\>\>{\em SPI interruput enable register, offset: 0x10 }\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_ad1143f9159d5c8a72428aaa0099f1fc5}{INTEN}}\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_a32df85aa5257be08b6c6626b2907db4a}{ICR}}\\
+\>\>{\em SPI interruput control register, offset: 0x14 }\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_ad4ff94a6159b76d07ae4eae520eff8be}{INTCLR}}\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_acfe3bcf4e826ea5574296e5f2519234c}{GCR}}\\
+\>\>{\em SPI global control register, offset: 0x18 }\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_a25bca8cdee572e3c6f6edbe7c6ff9593}{GCTL}}\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_aee10fb683467dfeb9dabab29ee8f7607}{CCR}}\\
+\>\>{\em SPI common control register, offset: 0x1C }\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_acef5f878957526045dcb917d3c27239e}{CCTL}}\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_ae7f53b6bb2ebdbb442483f300462d4b3}{BRR}}\\
+\>\>{\em SPI baud rate control register, offset: 0x20 }\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_ab7257902b7ca78b410a5968c7325d906}{SPBRG}}\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_a8a6ad3b3b8cc296d94a07aa86e29778e}{RDNR}}\\
+\>\>{\em SPI receive data number register, offset: 0x24 }\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_ad3c4deb9b18d1547450a5f66c69d67f5}{RXDNR}}\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_a3d940b093fd39425cac6aabf4f320210}{NSSR}}\\
+\>\>{\em SPI chip select register, offset: 0x28 }\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_a653f0ec8adfc021f2e9b38c7f6869ed6}{SCSR}}\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_a0f6153ed1675f9c59e00b7605d331564}{ECR}}\\
+\>\>{\em SPI extand control register, offset: 0x2C }\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_abe3318f84387f7faf29830ca37338c5e}{EXTCTL}}\\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_s_p_i___type_def_a2041cd4087be239ce3f9347fca3b0c32}{CFGR}}
+\begin{DoxyCompactList}\small\item\em I2S configuration register, offset\+: 0x30 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00062}{62}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{struct_s_p_i___type_def_a6b711d4e0547502d4656f6d88d98e54f}\label{struct_s_p_i___type_def_a6b711d4e0547502d4656f6d88d98e54f}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  SPI\+\_\+\+Type\+Def\+::@207}
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_a83d1f86d042dee4b1bb7975209a7e66c}\label{struct_s_p_i___type_def_a83d1f86d042dee4b1bb7975209a7e66c}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  SPI\+\_\+\+Type\+Def\+::@209}
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_accc3150f80263d2cbc730c1f1e3655a1}\label{struct_s_p_i___type_def_accc3150f80263d2cbc730c1f1e3655a1}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  SPI\+\_\+\+Type\+Def\+::@211}
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_a36df22132b98b6412028a5951320c3a4}\label{struct_s_p_i___type_def_a36df22132b98b6412028a5951320c3a4}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  SPI\+\_\+\+Type\+Def\+::@213}
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_aac42a8ebf5d79f5836914d043093c427}\label{struct_s_p_i___type_def_aac42a8ebf5d79f5836914d043093c427}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  SPI\+\_\+\+Type\+Def\+::@215}
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_a59bf55a4510a140346f1a7ca5557d40d}\label{struct_s_p_i___type_def_a59bf55a4510a140346f1a7ca5557d40d}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  SPI\+\_\+\+Type\+Def\+::@217}
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_a63a949858d0ecd848b478537f9d55b05}\label{struct_s_p_i___type_def_a63a949858d0ecd848b478537f9d55b05}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  SPI\+\_\+\+Type\+Def\+::@219}
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_a82dd55d9069e5c8d7b71701081ccecb3}\label{struct_s_p_i___type_def_a82dd55d9069e5c8d7b71701081ccecb3}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  SPI\+\_\+\+Type\+Def\+::@221}
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_a7cae0d3df980708c844cff21f63527ab}\label{struct_s_p_i___type_def_a7cae0d3df980708c844cff21f63527ab}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  SPI\+\_\+\+Type\+Def\+::@223}
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_a7ec69270f545e600ec54660e7f04cd81}\label{struct_s_p_i___type_def_a7ec69270f545e600ec54660e7f04cd81}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  SPI\+\_\+\+Type\+Def\+::@225}
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_a3fa2d367fe3deb350e9e699cbaca9144}\label{struct_s_p_i___type_def_a3fa2d367fe3deb350e9e699cbaca9144}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  SPI\+\_\+\+Type\+Def\+::@227}
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_aa2ea4391678a99e0996076706da1e429}\label{struct_s_p_i___type_def_aa2ea4391678a99e0996076706da1e429}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  SPI\+\_\+\+Type\+Def\+::@229}
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_ae7f53b6bb2ebdbb442483f300462d4b3}\label{struct_s_p_i___type_def_ae7f53b6bb2ebdbb442483f300462d4b3}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!BRR@{BRR}}
+\index{BRR@{BRR}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{BRR}{BRR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+BRR}
+
+
+
+SPI baud rate control register, offset\+: 0x20 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00096}{96}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_aee10fb683467dfeb9dabab29ee8f7607}\label{struct_s_p_i___type_def_aee10fb683467dfeb9dabab29ee8f7607}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!CCR@{CCR}}
+\index{CCR@{CCR}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CCR}{CCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+CCR}
+
+
+
+SPI common control register, offset\+: 0x1C 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00092}{92}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_acef5f878957526045dcb917d3c27239e}\label{struct_s_p_i___type_def_acef5f878957526045dcb917d3c27239e}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!CCTL@{CCTL}}
+\index{CCTL@{CCTL}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CCTL}{CCTL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+CCTL}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00093}{93}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_a2041cd4087be239ce3f9347fca3b0c32}\label{struct_s_p_i___type_def_a2041cd4087be239ce3f9347fca3b0c32}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!CFGR@{CFGR}}
+\index{CFGR@{CFGR}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CFGR}{CFGR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+CFGR}
+
+
+
+I2S configuration register, offset\+: 0x30 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00111}{111}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_a1fd763a0d8c3ea46926f4cecc466d36b}\label{struct_s_p_i___type_def_a1fd763a0d8c3ea46926f4cecc466d36b}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!CSTAT@{CSTAT}}
+\index{CSTAT@{CSTAT}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CSTAT}{CSTAT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+CSTAT}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00073}{73}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_a0f6153ed1675f9c59e00b7605d331564}\label{struct_s_p_i___type_def_a0f6153ed1675f9c59e00b7605d331564}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!ECR@{ECR}}
+\index{ECR@{ECR}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{ECR}{ECR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+ECR}
+
+
+
+SPI extand control register, offset\+: 0x2C 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00108}{108}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_abe3318f84387f7faf29830ca37338c5e}\label{struct_s_p_i___type_def_abe3318f84387f7faf29830ca37338c5e}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!EXTCTL@{EXTCTL}}
+\index{EXTCTL@{EXTCTL}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{EXTCTL}{EXTCTL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+EXTCTL}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00109}{109}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_acfe3bcf4e826ea5574296e5f2519234c}\label{struct_s_p_i___type_def_acfe3bcf4e826ea5574296e5f2519234c}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!GCR@{GCR}}
+\index{GCR@{GCR}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{GCR}{GCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+GCR}
+
+
+
+SPI global control register, offset\+: 0x18 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00088}{88}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_a25bca8cdee572e3c6f6edbe7c6ff9593}\label{struct_s_p_i___type_def_a25bca8cdee572e3c6f6edbe7c6ff9593}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!GCTL@{GCTL}}
+\index{GCTL@{GCTL}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{GCTL}{GCTL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+GCTL}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00089}{89}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_a32df85aa5257be08b6c6626b2907db4a}\label{struct_s_p_i___type_def_a32df85aa5257be08b6c6626b2907db4a}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!ICR@{ICR}}
+\index{ICR@{ICR}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{ICR}{ICR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+ICR}
+
+
+
+SPI interruput control register, offset\+: 0x14 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00084}{84}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_a09bb0e58a91da03b92ac5dcdc2d42797}\label{struct_s_p_i___type_def_a09bb0e58a91da03b92ac5dcdc2d42797}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!IER@{IER}}
+\index{IER@{IER}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{IER}{IER}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+IER}
+
+
+
+SPI interruput enable register, offset\+: 0x10 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00080}{80}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_ad4ff94a6159b76d07ae4eae520eff8be}\label{struct_s_p_i___type_def_ad4ff94a6159b76d07ae4eae520eff8be}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!INTCLR@{INTCLR}}
+\index{INTCLR@{INTCLR}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{INTCLR}{INTCLR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+INTCLR}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00085}{85}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_ad1143f9159d5c8a72428aaa0099f1fc5}\label{struct_s_p_i___type_def_ad1143f9159d5c8a72428aaa0099f1fc5}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!INTEN@{INTEN}}
+\index{INTEN@{INTEN}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{INTEN}{INTEN}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+INTEN}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00081}{81}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_abc68b5a0b4bc69b54e2c0ba1e445992a}\label{struct_s_p_i___type_def_abc68b5a0b4bc69b54e2c0ba1e445992a}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!INTSTAT@{INTSTAT}}
+\index{INTSTAT@{INTSTAT}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{INTSTAT}{INTSTAT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+INTSTAT}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00077}{77}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_ad0bb2791e834d83b7a1154243e825f70}\label{struct_s_p_i___type_def_ad0bb2791e834d83b7a1154243e825f70}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!ISR@{ISR}}
+\index{ISR@{ISR}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{ISR}{ISR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+ISR}
+
+
+
+SPI interruput state register, offset\+: 0x0C 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00076}{76}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_a3d940b093fd39425cac6aabf4f320210}\label{struct_s_p_i___type_def_a3d940b093fd39425cac6aabf4f320210}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!NSSR@{NSSR}}
+\index{NSSR@{NSSR}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{NSSR}{NSSR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+NSSR}
+
+
+
+SPI chip select register, offset\+: 0x28 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00104}{104}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_a8a6ad3b3b8cc296d94a07aa86e29778e}\label{struct_s_p_i___type_def_a8a6ad3b3b8cc296d94a07aa86e29778e}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!RDNR@{RDNR}}
+\index{RDNR@{RDNR}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RDNR}{RDNR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+RDNR}
+
+
+
+SPI receive data number register, offset\+: 0x24 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00100}{100}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_a42f0592c9810c8eeba77ccf165467091}\label{struct_s_p_i___type_def_a42f0592c9810c8eeba77ccf165467091}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!RDR@{RDR}}
+\index{RDR@{RDR}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RDR}{RDR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+RDR}
+
+
+
+SPI receive data register, offset\+: 0x04 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00068}{68}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_ad3c4deb9b18d1547450a5f66c69d67f5}\label{struct_s_p_i___type_def_ad3c4deb9b18d1547450a5f66c69d67f5}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!RXDNR@{RXDNR}}
+\index{RXDNR@{RXDNR}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RXDNR}{RXDNR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+RXDNR}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00101}{101}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_aeee5c32ad7b8edf5b24ff65dd39096f5}\label{struct_s_p_i___type_def_aeee5c32ad7b8edf5b24ff65dd39096f5}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!RXREG@{RXREG}}
+\index{RXREG@{RXREG}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{RXREG}{RXREG}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+RXREG}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00069}{69}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_a653f0ec8adfc021f2e9b38c7f6869ed6}\label{struct_s_p_i___type_def_a653f0ec8adfc021f2e9b38c7f6869ed6}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!SCSR@{SCSR}}
+\index{SCSR@{SCSR}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{SCSR}{SCSR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+SCSR}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00105}{105}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_ab7257902b7ca78b410a5968c7325d906}\label{struct_s_p_i___type_def_ab7257902b7ca78b410a5968c7325d906}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!SPBRG@{SPBRG}}
+\index{SPBRG@{SPBRG}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{SPBRG}{SPBRG}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+SPBRG}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00097}{97}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_ae55c4ec407b2ce119bb5749f3eb1bd1e}\label{struct_s_p_i___type_def_ae55c4ec407b2ce119bb5749f3eb1bd1e}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!SR@{SR}}
+\index{SR@{SR}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{SR}{SR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+SR}
+
+
+
+SPI current state register, offset\+: 0x08 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00072}{72}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_ae367e87cdf8266c8c9ca32f2a7ebf43c}\label{struct_s_p_i___type_def_ae367e87cdf8266c8c9ca32f2a7ebf43c}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!TDR@{TDR}}
+\index{TDR@{TDR}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{TDR}{TDR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+TDR}
+
+
+
+SPI transmit data register, offset\+: 0x00 
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00064}{64}} 行定义.
+
+\mbox{\Hypertarget{struct_s_p_i___type_def_a31b1a58d7256ef2fbad9e973f3dd991a}\label{struct_s_p_i___type_def_a31b1a58d7256ef2fbad9e973f3dd991a}} 
+\index{SPI\_TypeDef@{SPI\_TypeDef}!TXREG@{TXREG}}
+\index{TXREG@{TXREG}!SPI\_TypeDef@{SPI\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{TXREG}{TXREG}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} SPI\+\_\+\+Type\+Def\+::\+TXREG}
+
+
+
+在文件 \mbox{\hyperlink{reg__spi_8h_source}{reg\+\_\+spi.\+h}} 第 \mbox{\hyperlink{reg__spi_8h_source_l00065}{65}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/\mbox{\hyperlink{reg__spi_8h}{reg\+\_\+spi.\+h}}\end{DoxyCompactItemize}

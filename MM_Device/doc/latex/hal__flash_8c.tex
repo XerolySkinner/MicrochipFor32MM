@@ -1,0 +1,106 @@
+\hypertarget{hal__flash_8c}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Src/hal\+\_\+flash.c 文件参考}
+\label{hal__flash_8c}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_flash.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_flash.c}}
+
+
+THIS FILE PROVIDES ALL THE FLASH FIRMWARE FUNCTIONS.  
+
+
+{\ttfamily \#include \char`\"{}hal\+\_\+flash.\+h\char`\"{}}\newline
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{hal__flash_8c_abc95cd12239b20f9109d1661cbe05ff9}{\+\_\+\+HAL\+\_\+\+FLASH\+\_\+\+C\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_gab9d5d871cf12693c052ea0d1caaf47e9}{FLASH\+\_\+\+Set\+Latency}} (\mbox{\hyperlink{group___f_l_a_s_h___exported___types_gaa5b981d1729a55ceb15c3be9c31e4875}{FLASH\+\_\+\+Latency\+\_\+\+Type\+Def}} latency)
+\begin{DoxyCompactList}\small\item\em Sets the code latency value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_gaf5d06911713bd1b5b4dc6c3e65b2dd34}{FLASH\+\_\+\+Half\+Cycle\+Access\+Cmd}} (\mbox{\hyperlink{group___f_l_a_s_h___exported___types_ga3c034270555867c4d719bfa36e20736b}{FLASH\+\_\+\+Half\+Cycle\+Access\+\_\+\+Type\+Def}} half\+\_\+cycle\+\_\+access)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Half cycle flash access. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_ga579db6b8b3bc7bedc2a8a2260deaba9a}{FLASH\+\_\+\+Prefetch\+Buffer\+Cmd}} (\mbox{\hyperlink{group___f_l_a_s_h___exported___types_ga7ac8aa0eb363aea9696800b8ea9c1d8b}{FLASH\+\_\+\+Prefetch\+Buffer\+\_\+\+Type\+Def}} prefetch\+\_\+buffer)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Prefetch Buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_ga46899557353c4312ddbe3f25e65df1d8}{FLASH\+\_\+\+Lock}} (void)
+\begin{DoxyCompactList}\small\item\em Locks the FLASH Program Erase Controller. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_ga375930f02e82db922e036ed8da814cd6}{FLASH\+\_\+\+Unlock}} ()
+\begin{DoxyCompactList}\small\item\em Unlocks the FLASH Program Erase Controller. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_gaceb4894d570dee0ad9da962111544a9e}{FLASH\+\_\+\+OPTB\+\_\+\+Enable}} (void)
+\begin{DoxyCompactList}\small\item\em Enable to program the FLASH Option Byte. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{FLASH\+\_\+\+Status}} \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_gaf6a82db2d8980df2fd471a658704ad40}{FLASH\+\_\+\+Erase\+Page}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} page\+\_\+address)
+\begin{DoxyCompactList}\small\item\em Erases a specified FLASH page. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{FLASH\+\_\+\+Status}} \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_ga53b327137409fa4deaa80e03c9b3c3eb}{FLASH\+\_\+\+Erase\+All\+Pages}} ()
+\begin{DoxyCompactList}\small\item\em Erases all FLASH pages. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{FLASH\+\_\+\+Status}} \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_ga71293dd676c00316ad7c5c4c41857065}{FLASH\+\_\+\+Erase\+Option\+Bytes}} ()
+\begin{DoxyCompactList}\small\item\em Erases the FLASH option bytes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{FLASH\+\_\+\+Status}} \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_ga93a676ee392e25ea66dca6d281472839}{FLASH\+\_\+\+Program\+Half\+Word}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} address, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} data)
+\begin{DoxyCompactList}\small\item\em Programs a half word at a specified address. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{FLASH\+\_\+\+Status}} \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_ga631cbfcb0091c0c5eadcadfc55adcebd}{FLASH\+\_\+\+Program\+Word}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} address, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} data)
+\begin{DoxyCompactList}\small\item\em Programs a word at a specified address. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{FLASH\+\_\+\+Status}} \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_ga3ff9f1ec3d71dbe586808ec2038d878a}{FLASH\+\_\+\+Program\+Option\+Byte\+Data}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} address, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} data)
+\begin{DoxyCompactList}\small\item\em Programs a byte at a specified Option Byte Data address. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{FLASH\+\_\+\+Status}} \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_ga36b4a0c57c884a889f54d1e6138d91a1}{FLASH\+\_\+\+Program\+Option\+Half\+Word}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} address, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} data)
+\begin{DoxyCompactList}\small\item\em Programs a half word at a specified Option Byte Data address. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{FLASH\+\_\+\+Status}} \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_ga9f0d36eeaf0c88ddd7bcdda9ca9d7dde}{FLASH\+\_\+\+Program\+Protect}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} address, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} data)
+\begin{DoxyCompactList}\small\item\em Read protection for the specified address \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{FLASH\+\_\+\+Status}} \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_ga10d07d1afffb4cc2fa31abc38e826b3d}{FLASH\+\_\+\+Enable\+Write\+Protection}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} page)
+\begin{DoxyCompactList}\small\item\em Write protection for the specified address \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{FLASH\+\_\+\+Status}} \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_ga4a68063f000cfa657d52c47325dabbef}{FLASH\+\_\+\+User\+Option\+Byte\+Config}} (\mbox{\hyperlink{group___f_l_a_s_h___exported___types_ga9e4539b913a5c2c0936d3c28a71c650f}{OB\+\_\+\+IWDG\+\_\+\+Type\+Def}} ob\+\_\+iwdg, \mbox{\hyperlink{group___f_l_a_s_h___exported___types_ga20354cfd4bf512e0f53a7bbd97d3ce47}{OB\+\_\+\+STOP\+\_\+\+Type\+Def}} ob\+\_\+stop, \mbox{\hyperlink{group___f_l_a_s_h___exported___types_gaa256a568fada756a3bbd852f1faff085}{OB\+\_\+\+STDBY\+\_\+\+Type\+Def}} standby)
+\begin{DoxyCompactList}\small\item\em Programs the FLASH User Option Byte\+: IWDG\+\_\+\+SW / RST\+\_\+\+STOP / RST\+\_\+\+STDBY. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_ga409e758e6d678208feef9bfe7e8e891f}{FLASH\+\_\+\+Get\+User\+Option\+Byte}} ()
+\begin{DoxyCompactList}\small\item\em Returns the FLASH User Option Bytes values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_gaff61f1a6a1ea350327604811a2bfbc48}{FLASH\+\_\+\+Get\+Write\+Protection\+Option\+Byte}} ()
+\begin{DoxyCompactList}\small\item\em Returns the FLASH Write Protection Option Bytes Register value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_ga289bffe7f078d6a130222f03c59bc235}{FLASH\+\_\+\+Get\+Prefetch\+Buffer\+Status}} (void)
+\begin{DoxyCompactList}\small\item\em Checks whether the FLASH Prefetch Buffer status is set or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_gaa8701693ad5598340fa38eb0f8066f8e}{FLASH\+\_\+\+ITConfig}} (\mbox{\hyperlink{group___f_l_a_s_h___exported___types_ga84ea7733d1706f38fd6f70b19bc22275}{FLASH\+\_\+\+IT\+\_\+\+Type\+Def}} interrupt, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified FLASH interrupts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_gaa08481babdb354765977c41af5c09071}{FLASH\+\_\+\+Get\+Flag\+Status}} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} flag)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified FLASH flag is set or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_ga581401730f8582536faba362e41a991d}{FLASH\+\_\+\+Clear\+Flag}} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} flag)
+\begin{DoxyCompactList}\small\item\em Clears the FLASH\textquotesingle{}s pending flags. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{FLASH\+\_\+\+Status}} \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_ga54f8dfa81c2d841f7bbbd2655ea3339b}{FLASH\+\_\+\+Get\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Returns the FLASH Status. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{FLASH\+\_\+\+Status}} \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_ga255fd9aaf1496ce173a0034eede90db6}{FLASH\+\_\+\+Wait\+For\+Last\+Operation}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} time\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Waits for a Flash operation to complete or a TIMEOUT to occur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_gaf4abbe1b00f130491e79491bcee1c0c9}{ex\+FLASH\+\_\+\+Erase\+EE}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} page\+\_\+address)
+\begin{DoxyCompactList}\small\item\em Erases a specified FLASH page. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_ga296275aad64fb3b3b8f9706665d73a21}{ex\+FLASH\+\_\+\+Program\+EE}} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} $\ast$buf, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} addr, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} len)
+\begin{DoxyCompactList}\small\item\em Programs a buffer at a specified address. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_ga7fd2a24eef9e1fa32b5de00a4ea5f294}{ex\+FLASH\+\_\+\+Find\+Empty}} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} $\ast$ptr, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} len)
+\begin{DoxyCompactList}\small\item\em Determine if the data that at the ptr address with the length is len is empty. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_ga5f7388f9332f25d2cc3a4c57043ec70b}{ex\+FLASH\+\_\+\+Locate}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} page\+\_\+address, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} len)
+\begin{DoxyCompactList}\small\item\em Locate the writable area on the specified address. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_ga6fc2dfe01c38eeabe7e49b39fb03101a}{ex\+FLASH\+\_\+\+Write\+EE}} (\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} $\ast$buf, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} page\+\_\+address, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} len)
+\begin{DoxyCompactList}\small\item\em Programs a buffer at a specified address. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{group___f_l_a_s_h___exported___functions_ga2ede87763965ed231b67cec59159e186}{ex\+FLASH\+\_\+\+Read\+EE}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} page\+\_\+address, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} len)
+\begin{DoxyCompactList}\small\item\em Read the beginning address of the last written data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE PROVIDES ALL THE FLASH FIRMWARE FUNCTIONS. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{hal__flash_8c_source}{hal\+\_\+flash.\+c}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{hal__flash_8c_abc95cd12239b20f9109d1661cbe05ff9}\label{hal__flash_8c_abc95cd12239b20f9109d1661cbe05ff9}} 
+\index{hal\_flash.c@{hal\_flash.c}!\_HAL\_FLASH\_C\_@{\_HAL\_FLASH\_C\_}}
+\index{\_HAL\_FLASH\_C\_@{\_HAL\_FLASH\_C\_}!hal\_flash.c@{hal\_flash.c}}
+\doxysubsubsection{\texorpdfstring{\_HAL\_FLASH\_C\_}{\_HAL\_FLASH\_C\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+HAL\+\_\+\+FLASH\+\_\+\+C\+\_\+}
+
+
+
+在文件 \mbox{\hyperlink{hal__flash_8c_source}{hal\+\_\+flash.\+c}} 第 \mbox{\hyperlink{hal__flash_8c_source_l00019}{19}} 行定义.
+

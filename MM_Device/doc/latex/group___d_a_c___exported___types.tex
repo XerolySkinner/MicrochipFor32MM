@@ -1,0 +1,274 @@
+\hypertarget{group___d_a_c___exported___types}{}\doxysection{DAC\+\_\+\+Exported\+\_\+\+Types}
+\label{group___d_a_c___exported___types}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}}
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_d_a_c___init_type_def}{DAC\+\_\+\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em DAC Init structure definition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___d_a_c___exported___types_ga3add1c6af7148a2fd093c3a9dd1eabf5}{em\+DACTRIG\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5a2a84d20905a37456d852b7918229ddd2}{DAC\+\_\+\+Trigger\+\_\+\+None}} = 0x00000000
+, \mbox{\hyperlink{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5a7d3bc60b8a9f899b9c1b5f5bce10c255}{DAC\+\_\+\+Trigger\+\_\+\+T1\+\_\+\+TRIG}} = (DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+TIM1\+\_\+\+TRIG $\vert$ DAC\+\_\+\+CR\+\_\+\+TEN1)
+, \mbox{\hyperlink{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5a741db4099bbc34581462dd4ae605ec97}{DAC\+\_\+\+Trigger\+\_\+\+T3\+\_\+\+TRIG}} = (DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+TIM3\+\_\+\+TRIG $\vert$ DAC\+\_\+\+CR\+\_\+\+TEN1)
+, \mbox{\hyperlink{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5a3cb012ae0d8f5f38760149b304097d67}{DAC\+\_\+\+Trigger\+\_\+\+T2\+\_\+\+TRIG}} = (DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+TIM2\+\_\+\+TRIG $\vert$ DAC\+\_\+\+CR\+\_\+\+TEN1)
+, \newline
+\mbox{\hyperlink{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5a44d483066d2522503fa08310a8b4f119}{DAC\+\_\+\+Trigger\+\_\+\+T4\+\_\+\+TRIG}} = (DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+TIM4\+\_\+\+TRIG $\vert$ DAC\+\_\+\+CR\+\_\+\+TEN1)
+, \mbox{\hyperlink{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5aefbdf847e4ebf2bb29c9dbd845ca9078}{DAC\+\_\+\+Trigger\+\_\+\+Ext\+\_\+\+IT9}} = (DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+EXTI9 $\vert$ DAC\+\_\+\+CR\+\_\+\+TEN1)
+, \mbox{\hyperlink{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5ac78196bbfac35147d46f3ede4254a8a0}{DAC\+\_\+\+Trigger\+\_\+\+Software}} = (DAC\+\_\+\+CR\+\_\+\+TSEL1\+\_\+\+SOFTWARE)
+ \}
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+Trigger\+\_\+\+Selection \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___d_a_c___exported___types_ga1faa3be447f7db2a4f6dee23d48171a1}{em\+DACWAVE\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___d_a_c___exported___types_gga1faa3be447f7db2a4f6dee23d48171a1a93a69f0af567f82590ee4c3b7eee80e0}{DAC\+\_\+\+Wave\+Generation\+\_\+\+None}} = DAC\+\_\+\+CR\+\_\+\+WAVE1\+\_\+\+NONE
+, \mbox{\hyperlink{group___d_a_c___exported___types_gga1faa3be447f7db2a4f6dee23d48171a1a62401b9eab8cac0fdbd1f1d856785b45}{DAC\+\_\+\+Wave\+Generation\+\_\+\+Noise}} = DAC\+\_\+\+CR\+\_\+\+WAVE1\+\_\+\+NOISE
+, \mbox{\hyperlink{group___d_a_c___exported___types_gga1faa3be447f7db2a4f6dee23d48171a1a147eece5897397f6380cca05b3cab597}{DAC\+\_\+\+Wave\+Generation\+\_\+\+Triangle}} = DAC\+\_\+\+CR\+\_\+\+WAVE1\+\_\+\+TRIANGLE
+ \}
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+Wave\+\_\+\+Generation \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___d_a_c___exported___types_gae7506f8aeb2de2968ae38a082490e977}{em\+DACAMP\+\_\+\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a1d3f1b67a4541823885df92dcf8c664d}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+1}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+1
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a8f09d9a6789d731f6544bf00a268096f}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+3}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+3
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977aabf742d4b48b53577b4569ad462c1926}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+7}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+7
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a3d71741e32bf881c7acd3f39d8d98bd0}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+15}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+15
+, \newline
+\mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a6d1a7aa89fceaa22f64a91a3edfb7768}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+31}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+31
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a331bdbe6d1bbf91b8f6e7640fad8022c}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+63}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+63
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a209550fbd459302532105d1aaecda3f2}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+127}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+127
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977aef048d8e865d690259928155cec55c2f}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+255}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+255
+, \newline
+\mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a7f5988132d87ae59c476de6268fe9b49}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+511}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+511
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a5b27827245f4e2a3b390a23f32cdf58d}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+1023}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+1023
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977afab513622fab893cc9f7a748ab641d10}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+2047}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+2047
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a5bded37d8ecc0526e179d5c6ea133045}{DAC\+\_\+\+Triangle\+Amplitude\+\_\+4095}} = DAC\+\_\+\+CR\+\_\+\+MAMP1\+\_\+4095
+ \}
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+Mask\+\_\+\+Amplitude \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___d_a_c___exported___types_ga7e0c8ae673fea8abf7818ce324874723}{em\+DACCH\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___d_a_c___exported___types_gga7e0c8ae673fea8abf7818ce324874723ae1a419af74f34d32349f658d9e3b7657}{DAC\+\_\+\+Channel\+\_\+1}}
+, \mbox{\hyperlink{group___d_a_c___exported___types_gga7e0c8ae673fea8abf7818ce324874723a98549f575bf809212a780605930f0cb2}{DAC\+\_\+\+Channel\+\_\+2}} = (u32)0x00000010
+ \}
+\begin{DoxyCompactList}\small\item\em channel \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___d_a_c___exported___types_gac4883f249cc6e92a0ae887895598df89}{em\+DACALIGN\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___d_a_c___exported___types_ggac4883f249cc6e92a0ae887895598df89ab0428733486fe0de32e7bbfd1ab1507d}{DAC\+\_\+\+Align\+\_\+12b\+\_\+R}} = ((u32)0x00000000)
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggac4883f249cc6e92a0ae887895598df89abc08eab26462c294f8e7f98ed84b187a}{DAC\+\_\+\+Align\+\_\+12b\+\_\+L}} = ((u32)0x00000004)
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggac4883f249cc6e92a0ae887895598df89aa4f9866c2dc515048faf5e9d1de418af}{DAC\+\_\+\+Align\+\_\+8b\+\_\+R}} = ((u32)0x00000008)
+ \}
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+Data\+\_\+\+Alignement \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___d_a_c___exported___types_gae49e06c65417c70227c686bad6b513f4}{em\+DACBOFF\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group___d_a_c___exported___types_ggae49e06c65417c70227c686bad6b513f4a70b619c8ff2f6c71a7a26d672c18541e}{DAC\+\_\+\+Output\+Buffer\+\_\+\+Enable}} = 0x00000000
+, \mbox{\hyperlink{group___d_a_c___exported___types_ggae49e06c65417c70227c686bad6b513f4a0eadcf0224bbb3c14e3b23b2d6064a3b}{DAC\+\_\+\+Output\+Buffer\+\_\+\+Disable}} = DAC\+\_\+\+CR\+\_\+\+BOFF1
+ \}
+\begin{DoxyCompactList}\small\item\em DAC\+\_\+\+Output\+\_\+\+Buffer \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+\doxysubsection{枚举类型说明}
+\mbox{\Hypertarget{group___d_a_c___exported___types_gac4883f249cc6e92a0ae887895598df89}\label{group___d_a_c___exported___types_gac4883f249cc6e92a0ae887895598df89}} 
+\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!emDACALIGN\_TypeDef@{emDACALIGN\_TypeDef}}
+\index{emDACALIGN\_TypeDef@{emDACALIGN\_TypeDef}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{emDACALIGN\_TypeDef}{emDACALIGN\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___d_a_c___exported___types_gac4883f249cc6e92a0ae887895598df89}{em\+DACALIGN\+\_\+\+Type\+Def}}}
+
+
+
+DAC\+\_\+\+Data\+\_\+\+Alignement 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_Align\_12b\_R@{DAC\_Align\_12b\_R}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_Align\_12b\_R@{DAC\_Align\_12b\_R}}}\mbox{\Hypertarget{group___d_a_c___exported___types_ggac4883f249cc6e92a0ae887895598df89ab0428733486fe0de32e7bbfd1ab1507d}\label{group___d_a_c___exported___types_ggac4883f249cc6e92a0ae887895598df89ab0428733486fe0de32e7bbfd1ab1507d}} 
+DAC\+\_\+\+Align\+\_\+12b\+\_\+R&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_Align\_12b\_L@{DAC\_Align\_12b\_L}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_Align\_12b\_L@{DAC\_Align\_12b\_L}}}\mbox{\Hypertarget{group___d_a_c___exported___types_ggac4883f249cc6e92a0ae887895598df89abc08eab26462c294f8e7f98ed84b187a}\label{group___d_a_c___exported___types_ggac4883f249cc6e92a0ae887895598df89abc08eab26462c294f8e7f98ed84b187a}} 
+DAC\+\_\+\+Align\+\_\+12b\+\_\+L&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_Align\_8b\_R@{DAC\_Align\_8b\_R}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_Align\_8b\_R@{DAC\_Align\_8b\_R}}}\mbox{\Hypertarget{group___d_a_c___exported___types_ggac4883f249cc6e92a0ae887895598df89aa4f9866c2dc515048faf5e9d1de418af}\label{group___d_a_c___exported___types_ggac4883f249cc6e92a0ae887895598df89aa4f9866c2dc515048faf5e9d1de418af}} 
+DAC\+\_\+\+Align\+\_\+8b\+\_\+R&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__dac_8h_source}{hal\+\_\+dac.\+h}} 第 \mbox{\hyperlink{hal__dac_8h_source_l00091}{91}} 行定义.
+
+\mbox{\Hypertarget{group___d_a_c___exported___types_gae7506f8aeb2de2968ae38a082490e977}\label{group___d_a_c___exported___types_gae7506f8aeb2de2968ae38a082490e977}} 
+\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!emDACAMP\_TypeDef@{emDACAMP\_TypeDef}}
+\index{emDACAMP\_TypeDef@{emDACAMP\_TypeDef}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{emDACAMP\_TypeDef}{emDACAMP\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___d_a_c___exported___types_gae7506f8aeb2de2968ae38a082490e977}{em\+DACAMP\+\_\+\+Type\+Def}}}
+
+
+
+DAC\+\_\+\+Mask\+\_\+\+Amplitude 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_TriangleAmplitude\_1@{DAC\_TriangleAmplitude\_1}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_TriangleAmplitude\_1@{DAC\_TriangleAmplitude\_1}}}\mbox{\Hypertarget{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a1d3f1b67a4541823885df92dcf8c664d}\label{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a1d3f1b67a4541823885df92dcf8c664d}} 
+DAC\+\_\+\+Triangle\+Amplitude\+\_\+1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_TriangleAmplitude\_3@{DAC\_TriangleAmplitude\_3}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_TriangleAmplitude\_3@{DAC\_TriangleAmplitude\_3}}}\mbox{\Hypertarget{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a8f09d9a6789d731f6544bf00a268096f}\label{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a8f09d9a6789d731f6544bf00a268096f}} 
+DAC\+\_\+\+Triangle\+Amplitude\+\_\+3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_TriangleAmplitude\_7@{DAC\_TriangleAmplitude\_7}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_TriangleAmplitude\_7@{DAC\_TriangleAmplitude\_7}}}\mbox{\Hypertarget{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977aabf742d4b48b53577b4569ad462c1926}\label{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977aabf742d4b48b53577b4569ad462c1926}} 
+DAC\+\_\+\+Triangle\+Amplitude\+\_\+7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_TriangleAmplitude\_15@{DAC\_TriangleAmplitude\_15}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_TriangleAmplitude\_15@{DAC\_TriangleAmplitude\_15}}}\mbox{\Hypertarget{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a3d71741e32bf881c7acd3f39d8d98bd0}\label{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a3d71741e32bf881c7acd3f39d8d98bd0}} 
+DAC\+\_\+\+Triangle\+Amplitude\+\_\+15&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_TriangleAmplitude\_31@{DAC\_TriangleAmplitude\_31}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_TriangleAmplitude\_31@{DAC\_TriangleAmplitude\_31}}}\mbox{\Hypertarget{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a6d1a7aa89fceaa22f64a91a3edfb7768}\label{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a6d1a7aa89fceaa22f64a91a3edfb7768}} 
+DAC\+\_\+\+Triangle\+Amplitude\+\_\+31&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_TriangleAmplitude\_63@{DAC\_TriangleAmplitude\_63}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_TriangleAmplitude\_63@{DAC\_TriangleAmplitude\_63}}}\mbox{\Hypertarget{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a331bdbe6d1bbf91b8f6e7640fad8022c}\label{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a331bdbe6d1bbf91b8f6e7640fad8022c}} 
+DAC\+\_\+\+Triangle\+Amplitude\+\_\+63&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_TriangleAmplitude\_127@{DAC\_TriangleAmplitude\_127}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_TriangleAmplitude\_127@{DAC\_TriangleAmplitude\_127}}}\mbox{\Hypertarget{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a209550fbd459302532105d1aaecda3f2}\label{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a209550fbd459302532105d1aaecda3f2}} 
+DAC\+\_\+\+Triangle\+Amplitude\+\_\+127&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_TriangleAmplitude\_255@{DAC\_TriangleAmplitude\_255}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_TriangleAmplitude\_255@{DAC\_TriangleAmplitude\_255}}}\mbox{\Hypertarget{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977aef048d8e865d690259928155cec55c2f}\label{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977aef048d8e865d690259928155cec55c2f}} 
+DAC\+\_\+\+Triangle\+Amplitude\+\_\+255&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_TriangleAmplitude\_511@{DAC\_TriangleAmplitude\_511}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_TriangleAmplitude\_511@{DAC\_TriangleAmplitude\_511}}}\mbox{\Hypertarget{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a7f5988132d87ae59c476de6268fe9b49}\label{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a7f5988132d87ae59c476de6268fe9b49}} 
+DAC\+\_\+\+Triangle\+Amplitude\+\_\+511&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_TriangleAmplitude\_1023@{DAC\_TriangleAmplitude\_1023}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_TriangleAmplitude\_1023@{DAC\_TriangleAmplitude\_1023}}}\mbox{\Hypertarget{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a5b27827245f4e2a3b390a23f32cdf58d}\label{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a5b27827245f4e2a3b390a23f32cdf58d}} 
+DAC\+\_\+\+Triangle\+Amplitude\+\_\+1023&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_TriangleAmplitude\_2047@{DAC\_TriangleAmplitude\_2047}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_TriangleAmplitude\_2047@{DAC\_TriangleAmplitude\_2047}}}\mbox{\Hypertarget{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977afab513622fab893cc9f7a748ab641d10}\label{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977afab513622fab893cc9f7a748ab641d10}} 
+DAC\+\_\+\+Triangle\+Amplitude\+\_\+2047&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_TriangleAmplitude\_4095@{DAC\_TriangleAmplitude\_4095}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_TriangleAmplitude\_4095@{DAC\_TriangleAmplitude\_4095}}}\mbox{\Hypertarget{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a5bded37d8ecc0526e179d5c6ea133045}\label{group___d_a_c___exported___types_ggae7506f8aeb2de2968ae38a082490e977a5bded37d8ecc0526e179d5c6ea133045}} 
+DAC\+\_\+\+Triangle\+Amplitude\+\_\+4095&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__dac_8h_source}{hal\+\_\+dac.\+h}} 第 \mbox{\hyperlink{hal__dac_8h_source_l00065}{65}} 行定义.
+
+\mbox{\Hypertarget{group___d_a_c___exported___types_gae49e06c65417c70227c686bad6b513f4}\label{group___d_a_c___exported___types_gae49e06c65417c70227c686bad6b513f4}} 
+\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!emDACBOFF\_TypeDef@{emDACBOFF\_TypeDef}}
+\index{emDACBOFF\_TypeDef@{emDACBOFF\_TypeDef}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{emDACBOFF\_TypeDef}{emDACBOFF\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___d_a_c___exported___types_gae49e06c65417c70227c686bad6b513f4}{em\+DACBOFF\+\_\+\+Type\+Def}}}
+
+
+
+DAC\+\_\+\+Output\+\_\+\+Buffer 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_OutputBuffer\_Enable@{DAC\_OutputBuffer\_Enable}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_OutputBuffer\_Enable@{DAC\_OutputBuffer\_Enable}}}\mbox{\Hypertarget{group___d_a_c___exported___types_ggae49e06c65417c70227c686bad6b513f4a70b619c8ff2f6c71a7a26d672c18541e}\label{group___d_a_c___exported___types_ggae49e06c65417c70227c686bad6b513f4a70b619c8ff2f6c71a7a26d672c18541e}} 
+DAC\+\_\+\+Output\+Buffer\+\_\+\+Enable&DAC output buffer enable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_OutputBuffer\_Disable@{DAC\_OutputBuffer\_Disable}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_OutputBuffer\_Disable@{DAC\_OutputBuffer\_Disable}}}\mbox{\Hypertarget{group___d_a_c___exported___types_ggae49e06c65417c70227c686bad6b513f4a0eadcf0224bbb3c14e3b23b2d6064a3b}\label{group___d_a_c___exported___types_ggae49e06c65417c70227c686bad6b513f4a0eadcf0224bbb3c14e3b23b2d6064a3b}} 
+DAC\+\_\+\+Output\+Buffer\+\_\+\+Disable&DAC output buffer disable \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__dac_8h_source}{hal\+\_\+dac.\+h}} 第 \mbox{\hyperlink{hal__dac_8h_source_l00100}{100}} 行定义.
+
+\mbox{\Hypertarget{group___d_a_c___exported___types_ga7e0c8ae673fea8abf7818ce324874723}\label{group___d_a_c___exported___types_ga7e0c8ae673fea8abf7818ce324874723}} 
+\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!emDACCH\_TypeDef@{emDACCH\_TypeDef}}
+\index{emDACCH\_TypeDef@{emDACCH\_TypeDef}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{emDACCH\_TypeDef}{emDACCH\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___d_a_c___exported___types_ga7e0c8ae673fea8abf7818ce324874723}{em\+DACCH\+\_\+\+Type\+Def}}}
+
+
+
+channel 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_Channel\_1@{DAC\_Channel\_1}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_Channel\_1@{DAC\_Channel\_1}}}\mbox{\Hypertarget{group___d_a_c___exported___types_gga7e0c8ae673fea8abf7818ce324874723ae1a419af74f34d32349f658d9e3b7657}\label{group___d_a_c___exported___types_gga7e0c8ae673fea8abf7818ce324874723ae1a419af74f34d32349f658d9e3b7657}} 
+DAC\+\_\+\+Channel\+\_\+1&DAC channel 1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_Channel\_2@{DAC\_Channel\_2}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_Channel\_2@{DAC\_Channel\_2}}}\mbox{\Hypertarget{group___d_a_c___exported___types_gga7e0c8ae673fea8abf7818ce324874723a98549f575bf809212a780605930f0cb2}\label{group___d_a_c___exported___types_gga7e0c8ae673fea8abf7818ce324874723a98549f575bf809212a780605930f0cb2}} 
+DAC\+\_\+\+Channel\+\_\+2&DAC Channel 2 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__dac_8h_source}{hal\+\_\+dac.\+h}} 第 \mbox{\hyperlink{hal__dac_8h_source_l00083}{83}} 行定义.
+
+\mbox{\Hypertarget{group___d_a_c___exported___types_ga3add1c6af7148a2fd093c3a9dd1eabf5}\label{group___d_a_c___exported___types_ga3add1c6af7148a2fd093c3a9dd1eabf5}} 
+\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!emDACTRIG\_TypeDef@{emDACTRIG\_TypeDef}}
+\index{emDACTRIG\_TypeDef@{emDACTRIG\_TypeDef}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{emDACTRIG\_TypeDef}{emDACTRIG\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___d_a_c___exported___types_ga3add1c6af7148a2fd093c3a9dd1eabf5}{em\+DACTRIG\+\_\+\+Type\+Def}}}
+
+
+
+DAC\+\_\+\+Trigger\+\_\+\+Selection 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_Trigger\_None@{DAC\_Trigger\_None}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_Trigger\_None@{DAC\_Trigger\_None}}}\mbox{\Hypertarget{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5a2a84d20905a37456d852b7918229ddd2}\label{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5a2a84d20905a37456d852b7918229ddd2}} 
+DAC\+\_\+\+Trigger\+\_\+\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_Trigger\_T1\_TRIG@{DAC\_Trigger\_T1\_TRIG}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_Trigger\_T1\_TRIG@{DAC\_Trigger\_T1\_TRIG}}}\mbox{\Hypertarget{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5a7d3bc60b8a9f899b9c1b5f5bce10c255}\label{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5a7d3bc60b8a9f899b9c1b5f5bce10c255}} 
+DAC\+\_\+\+Trigger\+\_\+\+T1\+\_\+\+TRIG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_Trigger\_T3\_TRIG@{DAC\_Trigger\_T3\_TRIG}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_Trigger\_T3\_TRIG@{DAC\_Trigger\_T3\_TRIG}}}\mbox{\Hypertarget{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5a741db4099bbc34581462dd4ae605ec97}\label{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5a741db4099bbc34581462dd4ae605ec97}} 
+DAC\+\_\+\+Trigger\+\_\+\+T3\+\_\+\+TRIG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_Trigger\_T2\_TRIG@{DAC\_Trigger\_T2\_TRIG}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_Trigger\_T2\_TRIG@{DAC\_Trigger\_T2\_TRIG}}}\mbox{\Hypertarget{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5a3cb012ae0d8f5f38760149b304097d67}\label{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5a3cb012ae0d8f5f38760149b304097d67}} 
+DAC\+\_\+\+Trigger\+\_\+\+T2\+\_\+\+TRIG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_Trigger\_T4\_TRIG@{DAC\_Trigger\_T4\_TRIG}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_Trigger\_T4\_TRIG@{DAC\_Trigger\_T4\_TRIG}}}\mbox{\Hypertarget{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5a44d483066d2522503fa08310a8b4f119}\label{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5a44d483066d2522503fa08310a8b4f119}} 
+DAC\+\_\+\+Trigger\+\_\+\+T4\+\_\+\+TRIG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_Trigger\_Ext\_IT9@{DAC\_Trigger\_Ext\_IT9}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_Trigger\_Ext\_IT9@{DAC\_Trigger\_Ext\_IT9}}}\mbox{\Hypertarget{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5aefbdf847e4ebf2bb29c9dbd845ca9078}\label{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5aefbdf847e4ebf2bb29c9dbd845ca9078}} 
+DAC\+\_\+\+Trigger\+\_\+\+Ext\+\_\+\+IT9&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_Trigger\_Software@{DAC\_Trigger\_Software}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_Trigger\_Software@{DAC\_Trigger\_Software}}}\mbox{\Hypertarget{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5ac78196bbfac35147d46f3ede4254a8a0}\label{group___d_a_c___exported___types_gga3add1c6af7148a2fd093c3a9dd1eabf5ac78196bbfac35147d46f3ede4254a8a0}} 
+DAC\+\_\+\+Trigger\+\_\+\+Software&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__dac_8h_source}{hal\+\_\+dac.\+h}} 第 \mbox{\hyperlink{hal__dac_8h_source_l00043}{43}} 行定义.
+
+\mbox{\Hypertarget{group___d_a_c___exported___types_ga1faa3be447f7db2a4f6dee23d48171a1}\label{group___d_a_c___exported___types_ga1faa3be447f7db2a4f6dee23d48171a1}} 
+\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!emDACWAVE\_TypeDef@{emDACWAVE\_TypeDef}}
+\index{emDACWAVE\_TypeDef@{emDACWAVE\_TypeDef}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}
+\doxysubsubsection{\texorpdfstring{emDACWAVE\_TypeDef}{emDACWAVE\_TypeDef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___d_a_c___exported___types_ga1faa3be447f7db2a4f6dee23d48171a1}{em\+DACWAVE\+\_\+\+Type\+Def}}}
+
+
+
+DAC\+\_\+\+Wave\+\_\+\+Generation 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_WaveGeneration\_None@{DAC\_WaveGeneration\_None}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_WaveGeneration\_None@{DAC\_WaveGeneration\_None}}}\mbox{\Hypertarget{group___d_a_c___exported___types_gga1faa3be447f7db2a4f6dee23d48171a1a93a69f0af567f82590ee4c3b7eee80e0}\label{group___d_a_c___exported___types_gga1faa3be447f7db2a4f6dee23d48171a1a93a69f0af567f82590ee4c3b7eee80e0}} 
+DAC\+\_\+\+Wave\+Generation\+\_\+\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_WaveGeneration\_Noise@{DAC\_WaveGeneration\_Noise}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_WaveGeneration\_Noise@{DAC\_WaveGeneration\_Noise}}}\mbox{\Hypertarget{group___d_a_c___exported___types_gga1faa3be447f7db2a4f6dee23d48171a1a62401b9eab8cac0fdbd1f1d856785b45}\label{group___d_a_c___exported___types_gga1faa3be447f7db2a4f6dee23d48171a1a62401b9eab8cac0fdbd1f1d856785b45}} 
+DAC\+\_\+\+Wave\+Generation\+\_\+\+Noise&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAC\_WaveGeneration\_Triangle@{DAC\_WaveGeneration\_Triangle}!DAC\_Exported\_Types@{DAC\_Exported\_Types}}\index{DAC\_Exported\_Types@{DAC\_Exported\_Types}!DAC\_WaveGeneration\_Triangle@{DAC\_WaveGeneration\_Triangle}}}\mbox{\Hypertarget{group___d_a_c___exported___types_gga1faa3be447f7db2a4f6dee23d48171a1a147eece5897397f6380cca05b3cab597}\label{group___d_a_c___exported___types_gga1faa3be447f7db2a4f6dee23d48171a1a147eece5897397f6380cca05b3cab597}} 
+DAC\+\_\+\+Wave\+Generation\+\_\+\+Triangle&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{hal__dac_8h_source}{hal\+\_\+dac.\+h}} 第 \mbox{\hyperlink{hal__dac_8h_source_l00056}{56}} 行定义.
+

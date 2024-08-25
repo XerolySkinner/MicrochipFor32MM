@@ -1,0 +1,125 @@
+\hypertarget{hal__adc_8c}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+HAL\+\_\+\+Lib/\+Src/hal\+\_\+adc.c 文件参考}
+\label{hal__adc_8c}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_adc.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_adc.c}}
+
+
+THIS FILE PROVIDES ALL THE ADC FIRMWARE FUNCTIONS.  
+
+
+{\ttfamily \#include \char`\"{}hal\+\_\+adc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}hal\+\_\+rcc.\+h\char`\"{}}\newline
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{hal__adc_8c_ab97598ade107ff12f62660b7babde3b8}{\+\_\+\+HAL\+\_\+\+ADC\+\_\+\+C\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_gae91292994c16e7ddb1b289ae2541128d}{ADC\+\_\+\+De\+Init}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc)
+\begin{DoxyCompactList}\small\item\em Deinitializes the adc peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga27120f6d128276dad945f1219e043347}{ADC\+\_\+\+Init}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{struct_a_d_c___init_type_def}{ADC\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Initializes the adc peripheral according to the specified parameters in the init\+\_\+struct, Please use this function if you want to be compatible with older versions of the library. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga56b66c52c77c096d1aef17e5d67e3c05}{ADC\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{struct_a_d_c___init_type_def}{ADC\+\_\+\+Init\+Type\+Def}} $\ast$init\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Fills each init\+\_\+struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga90caa4a20126123e813cd0f0127e5518}{ADC\+\_\+\+Cmd}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified ADC peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga035bde6dcbf7e309d311eb0e1defdb85}{ADC\+\_\+\+DMACmd}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified ADC DMA request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga5b85e30ed4ba47913ab2520d1334f6a0}{ADC\+\_\+\+ITConfig}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{group___a_d_c___exported___types_ga6f254861fc56625c91961c4f58b5c58f}{ADCFLAG\+\_\+\+Type\+Def}} adc\+\_\+interrupt, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified ADC interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga0813ef7da97bfe472b26fe18363c266d}{ADC\+\_\+\+Software\+Start\+Conv\+Cmd}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the selected ADC software start conversion . \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___a_d_c___exported___functions_gad507ff2cbf800483b69a71275fd0d5d8}{ADC\+\_\+\+Get\+Software\+Start\+Conv\+Status}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc)
+\begin{DoxyCompactList}\small\item\em Gets the selected ADC Software start conversion Status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga322ccf21ea71c9f641c292fbf98f264d}{ADC\+\_\+\+Regular\+Channel\+Config}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} channel, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} rank, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} sample\+\_\+time)
+\begin{DoxyCompactList}\small\item\em Enable the selected ADC channel and configure its sample time. Please use this function if you want to be compatible with older versions of the library. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_gaeb2a4d48cad6dff001e54b85f0229a16}{ADC\+\_\+\+External\+Trig\+Conv\+Cmd}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the adc conversion through external trigger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga78b8e27313d2f6ced0ed207fde234b98}{ADC\+\_\+\+External\+Trig\+Conv\+Config}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{group___a_d_c___exported___types_gaa2158b25e8ce9095a9c2b40564576f40}{EXTERTRIG\+\_\+\+Type\+Def}} adc\+\_\+external\+\_\+trig\+\_\+source)
+\begin{DoxyCompactList}\small\item\em Configures the adc external trigger for injected channels conversion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{group___a_d_c___exported___functions_gaf5dd08b7165a8100b02517af06bb505a}{ADC\+\_\+\+Get\+Conversion\+Value}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc)
+\begin{DoxyCompactList}\small\item\em Returns the last adc conversion result data for regular channel. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___a_d_c___exported___functions_ga0df9ab39de442582b4446e21284d9f7a}{ADC\+\_\+\+Get\+Dual\+Mode\+Conversion\+Value}} ()
+\begin{DoxyCompactList}\small\item\em Returns the last ADC conversion result data in dual mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga4af5621015210721a120032b74b0ecf8}{ADC\+\_\+\+Analog\+Watchdog\+Cmd}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the analog watchdog. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga3a1812c364a931e2cae313f78358a1e0}{ADC\+\_\+\+Analog\+Watchdog\+Thresholds\+Config}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} high\+\_\+threshold, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} low\+\_\+threshold)
+\begin{DoxyCompactList}\small\item\em Configures the high and low thresholds of the analog watchdog. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga30b2200ebd9a606ae08139bdecf72d46}{ADC\+\_\+\+Analog\+Watchdog\+Single\+Channel\+Config}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{group___a_d_c___exported___types_ga1d9cc90acac78acbbbff830e4c078925}{ADCCHANNEL\+\_\+\+Type\+Def}} channel)
+\begin{DoxyCompactList}\small\item\em Configures the analog watchdog guarded single channel \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga059a5fc00d0652a153cb4a9d29cc6d9f}{ADC\+\_\+\+Temp\+Sensor\+Vrefint\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the temperature sensor and Vrefint channel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga7870f3f65bb30d4b211df5dff6fa157d}{ADC\+\_\+\+Temp\+Sensor\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the temperature sensor . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga7eeb7bc604dd71bb70e3ed1a32660d9e}{ADC\+\_\+\+Vrefint\+Cmd}} (\mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Vrefint channel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga2730bb49d7cc3cda404894bf2252d0c8}{ex\+ADC\+\_\+\+Temp\+Sensor\+Vrefint\+Cmd}} (\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} chs, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the temperature sensor and Vrefint channel. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___a_d_c___exported___functions_gad923662d453d8fcc0fb2aa6cb545070d}{ADC\+\_\+\+Get\+Flag\+Status}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{group___a_d_c___exported___types_ga6f254861fc56625c91961c4f58b5c58f}{ADCFLAG\+\_\+\+Type\+Def}} adc\+\_\+flag)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified ADC flag is set or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_gae24d81d84f123287e04d75f90037ec66}{ADC\+\_\+\+Clear\+Flag}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{group___a_d_c___exported___types_ga6f254861fc56625c91961c4f58b5c58f}{ADCFLAG\+\_\+\+Type\+Def}} adc\+\_\+flag)
+\begin{DoxyCompactList}\small\item\em Clears the adc\textquotesingle{}s pending flags. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}} \mbox{\hyperlink{group___a_d_c___exported___functions_gae31d48daf1297ec81f0c0505fed9fd7d}{ADC\+\_\+\+Get\+ITStatus}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{group___a_d_c___exported___types_ga6f254861fc56625c91961c4f58b5c58f}{ADCFLAG\+\_\+\+Type\+Def}} adc\+\_\+interrupt)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified adc\textquotesingle{}s interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_gaad9e0d54f00201258429b2d3c76c6f40}{ADC\+\_\+\+Clear\+ITPending\+Bit}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{group___a_d_c___exported___types_ga6f254861fc56625c91961c4f58b5c58f}{ADCFLAG\+\_\+\+Type\+Def}} adc\+\_\+interrupt)
+\begin{DoxyCompactList}\small\item\em Clears the adc\textquotesingle{}s interrupt pending bits. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga8f0c6a7e8db57d399e3e9b09ca1e876e}{ADC\+\_\+\+ANY\+\_\+\+CH\+\_\+\+Config}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} rank, \mbox{\hyperlink{group___a_d_c___exported___types_ga1d9cc90acac78acbbbff830e4c078925}{ADCCHANNEL\+\_\+\+Type\+Def}} adc\+\_\+channel)
+\begin{DoxyCompactList}\small\item\em Configures the adc any channels conversion rank and channel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_gabefb18b50de5e538215f04c2bcf8e5e8}{ADC\+\_\+\+ANY\+\_\+\+NUM\+\_\+\+Config}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} num)
+\begin{DoxyCompactList}\small\item\em Configures the adc any channels conversion Max rank number \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga7c690b9d90dd2deefd2e0f8156b24a14}{ADC\+\_\+\+ANY\+\_\+\+Cmd}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the ANY channel converter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga871db23d99fb4dc7dd005f31ffa3f92e}{ADC\+\_\+\+Auto\+Injected\+Conv\+Cmd}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the selected ADC automatic injected group conversion after regular one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_gaf10328fa27ff65da3717c3b00054c749}{ADC\+\_\+\+External\+Trig\+Injected\+Convert\+Config}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{group___a_d_c___exported___types_ga5f13a071acc94e4a8c099675d07585b8}{EXTER\+\_\+\+INJ\+\_\+\+TRIG\+\_\+\+Type\+Def}} ADC\+\_\+\+Ext\+Inj\+Trig\+Source)
+\begin{DoxyCompactList}\small\item\em Configures the adc external trigger for injected channels conversion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_gadddfe38d24dc8bd173704b78afb78bdc}{ADC\+\_\+\+External\+Trig\+Injected\+Conv\+Cmd}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the adc injected channels conversion through external trigger \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga345bbe54e6e3fb2c19bd5dbfb05822ef}{ADC\+\_\+\+Injected\+Conv\+Cmd}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the selected ADC start of the injected channels conversion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga9625f1ab9c83a38ea9a8ded6e6d286cf}{ADC\+\_\+\+Software\+Start\+Injected\+Conv\+Cmd}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} state)
+\begin{DoxyCompactList}\small\item\em Enables or disables the selected ADC start of the injected channels conversion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga173353a7773856c3b629edb25c5e12df}{ADC\+\_\+\+Injected\+Sequencer\+Config}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} event, \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} sample\+\_\+time)
+\begin{DoxyCompactList}\small\item\em Enable the selected ADC channel and configure its sample time. Please use this function if you want to be compatible with older versions of the library. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga9169c3563eeeeb6b2f106b22df58661e}{ADC\+\_\+\+Injected\+Sequencer\+Length\+Config}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{group___a_d_c___exported___types_gaa33e6ebc7d2ed9224c7b9d03923b2f9c}{ADC\+\_\+\+INJ\+\_\+\+SEQ\+\_\+\+LEN\+\_\+\+Type\+Def}} Length)
+\begin{DoxyCompactList}\small\item\em Injection channel length configuration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_gab3b3ba003e2a0cc61bf8e8684f624934}{ADC\+\_\+\+Injected\+Sequencer\+Channel\+Config}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{group___a_d_c___exported___types_gaa3104d160640c069354a88d946fe703c}{ADC\+\_\+\+INJ\+\_\+\+SEQ\+\_\+\+Channel\+\_\+\+Type\+Def}} off\+\_\+addr, \mbox{\hyperlink{group___a_d_c___exported___types_ga1d9cc90acac78acbbbff830e4c078925}{ADCCHANNEL\+\_\+\+Type\+Def}} channel)
+\begin{DoxyCompactList}\small\item\em Injection channel configuration. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{group___a_d_c___exported___functions_gaa2ce19e6e1afbabc6765136d96800970}{ADC\+\_\+\+Get\+Injected\+Conversion\+Value}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{group___a_d_c___exported___types_gaa3104d160640c069354a88d946fe703c}{ADC\+\_\+\+INJ\+\_\+\+SEQ\+\_\+\+Channel\+\_\+\+Type\+Def}} off\+\_\+addr)
+\begin{DoxyCompactList}\small\item\em Injection channel converted value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{group___a_d_c___exported___functions_ga0bc75ffebe9e5c16e1605e74196eab5f}{ADC\+\_\+\+Get\+Injected\+Current\+Converted\+Value}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc)
+\begin{DoxyCompactList}\small\item\em Injection current converted value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_d_c___exported___functions_ga4d32cf98c85a9ade5443b01a4580141e}{ADC\+\_\+\+Set\+Injected\+Offset}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{group___a_d_c___exported___types_gaa3104d160640c069354a88d946fe703c}{ADC\+\_\+\+INJ\+\_\+\+SEQ\+\_\+\+Channel\+\_\+\+Type\+Def}} off\+\_\+addr, \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} value)
+\begin{DoxyCompactList}\small\item\em Injection channel compensation configuration. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}} \mbox{\hyperlink{group___a_d_c___exported___functions_gaa9754bedaf74ffffd727a361738256ef}{ADC\+\_\+\+Get\+Channel\+Converted\+Value}} (\mbox{\hyperlink{struct_a_d_c___type_def}{ADC\+\_\+\+Type\+Def}} $\ast$adc, \mbox{\hyperlink{group___a_d_c___exported___types_ga1d9cc90acac78acbbbff830e4c078925}{ADCCHANNEL\+\_\+\+Type\+Def}} channel)
+\begin{DoxyCompactList}\small\item\em Get channel convertion result. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE PROVIDES ALL THE ADC FIRMWARE FUNCTIONS. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{hal__adc_8c_source}{hal\+\_\+adc.\+c}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{hal__adc_8c_ab97598ade107ff12f62660b7babde3b8}\label{hal__adc_8c_ab97598ade107ff12f62660b7babde3b8}} 
+\index{hal\_adc.c@{hal\_adc.c}!\_HAL\_ADC\_C\_@{\_HAL\_ADC\_C\_}}
+\index{\_HAL\_ADC\_C\_@{\_HAL\_ADC\_C\_}!hal\_adc.c@{hal\_adc.c}}
+\doxysubsubsection{\texorpdfstring{\_HAL\_ADC\_C\_}{\_HAL\_ADC\_C\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+HAL\+\_\+\+ADC\+\_\+\+C\+\_\+}
+
+
+
+在文件 \mbox{\hyperlink{hal__adc_8c_source}{hal\+\_\+adc.\+c}} 第 \mbox{\hyperlink{hal__adc_8c_source_l00019}{19}} 行定义.
+

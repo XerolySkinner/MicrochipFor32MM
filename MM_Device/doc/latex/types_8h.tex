@@ -1,0 +1,800 @@
+\hypertarget{types_8h}{}\doxysection{C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/types.h 文件参考}
+\label{types_8h}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/types.h@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/Include/types.h}}
+
+
+THIS FILE PROVIDES ALL THE TYPE FIRMWARE FUNCTIONS.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{types_8h_af63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}}~volatile const
+\begin{DoxyCompactList}\small\item\em Defines \textquotesingle{}read only\textquotesingle{} permissions \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{types_8h_a7e25d9380f9ef903923964322e71f2f6}{\+\_\+\+\_\+O}}~volatile
+\begin{DoxyCompactList}\small\item\em Defines \textquotesingle{}write only\textquotesingle{} permissions \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{types_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}}~volatile
+\begin{DoxyCompactList}\small\item\em Defines \textquotesingle{}read / write\textquotesingle{} permissions \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{types_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}~((void $\ast$)0)
+\item 
+\#define \mbox{\hyperlink{types_8h_affaf7c3f537d7a3370b1bbdda67a2bf6}{IS\+\_\+\+FUNCTIONAL\+\_\+\+STATE}}(STATE)~(((STATE) == \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d}{DISABLE}}) $\vert$$\vert$ ((STATE) == \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf}{ENABLE}}))
+\item 
+\#define \mbox{\hyperlink{types_8h_a1187e707402ca2fca73f06f7beb1e631}{U8\+\_\+\+MAX}}~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})255)
+\item 
+\#define \mbox{\hyperlink{types_8h_a8a167751446b89f3e5b3ea99cdc2d4ba}{S8\+\_\+\+MAX}}~((\mbox{\hyperlink{types_8h_a151f780fb455885061d3b77ec1c90c03}{s8}})127)
+\item 
+\#define \mbox{\hyperlink{types_8h_a365d111fbf927226b21ba4a0452b8840}{S8\+\_\+\+MIN}}~((\mbox{\hyperlink{types_8h_a151f780fb455885061d3b77ec1c90c03}{s8}})-\/128)
+\item 
+\#define \mbox{\hyperlink{types_8h_ac580728e242e90fe3082dc7fe45ec6c9}{U16\+\_\+\+MAX}}~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})65535u)
+\item 
+\#define \mbox{\hyperlink{types_8h_a0d07bb025f7bc9920aab710742473092}{S16\+\_\+\+MAX}}~((\mbox{\hyperlink{types_8h_a5ffa4f640862b25ba6d4f635b78bdbe1}{s16}})32767)
+\item 
+\#define \mbox{\hyperlink{types_8h_a361c4570b9b7e393dfe4d5c617ba2059}{S16\+\_\+\+MIN}}~((\mbox{\hyperlink{types_8h_a5ffa4f640862b25ba6d4f635b78bdbe1}{s16}})-\/32768)
+\item 
+\#define \mbox{\hyperlink{types_8h_a4028a1a55fd7b907a44c48d5ca42d6a6}{U32\+\_\+\+MAX}}~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})4294967295uL)
+\item 
+\#define \mbox{\hyperlink{types_8h_a7fef350f849a0cf0b785b7c4acfb3331}{S32\+\_\+\+MAX}}~((\mbox{\hyperlink{types_8h_a0ce6887c26c1c49ad3be5710dd42bfd6}{s32}})2147483647)
+\item 
+\#define \mbox{\hyperlink{types_8h_a95f2d9ec797e08f3556033649aea51b3}{S32\+\_\+\+MIN}}~((\mbox{\hyperlink{types_8h_a0ce6887c26c1c49ad3be5710dd42bfd6}{s32}})-\/2147483648uL)
+\item 
+\#define \mbox{\hyperlink{types_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}{MAX}}(a,  b)~((a)$>$(b)?(a)\+:(b))
+\item 
+\#define \mbox{\hyperlink{types_8h_a3acffbd305ee72dcd4593c0d8af64a4f}{MIN}}(a,  b)~((a)$<$(b)?(a)\+:(b))
+\item 
+\#define \mbox{\hyperlink{types_8h_a62af7cb8bfabd5a9f6ea45582e08843b}{SET\+\_\+\+BIT}}(reg,  bit)~((reg) $\vert$= (bit))
+\item 
+\#define \mbox{\hyperlink{types_8h_aa6e88ced7a7081f8ff415c9f5bd6b043}{CLEAR\+\_\+\+BIT}}(reg,  bit)~((reg) \&= $\sim$(bit))
+\item 
+\#define \mbox{\hyperlink{types_8h_aaef49ab0462bf902b59383f592140b05}{READ\+\_\+\+BIT}}(reg,  bit)~((reg) \& (bit))
+\item 
+\#define \mbox{\hyperlink{types_8h_af85dc01ce37049bc75783ea189ebe3b5}{CLEAR\+\_\+\+REG}}(reg)~((reg) = (0x0))
+\item 
+\#define \mbox{\hyperlink{types_8h_acfc33c0b3ebd1136ce4cd12cd652273c}{WRITE\+\_\+\+REG}}(reg,  value)~((reg) = (value))
+\item 
+\#define \mbox{\hyperlink{types_8h_ae627593fda08d9e63c92d8b45cd2582d}{READ\+\_\+\+REG}}(reg)~((reg))
+\item 
+\#define \mbox{\hyperlink{types_8h_a9604563d4bca5bd6bc9a17c9511e599b}{MODIFY\+\_\+\+REG}}(reg,  CLEARMASK,  SETMASK)~\mbox{\hyperlink{types_8h_acfc33c0b3ebd1136ce4cd12cd652273c}{WRITE\+\_\+\+REG}}((reg), (((\mbox{\hyperlink{types_8h_ae627593fda08d9e63c92d8b45cd2582d}{READ\+\_\+\+REG}}(reg)) \& ($\sim$(CLEARMASK))) $\vert$ (SETMASK)))
+\item 
+\#define \mbox{\hyperlink{types_8h_a02062aa185e870654c8c3401836357fa}{POSITION\+\_\+\+VAL}}(value)~(\mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_ga5d5bb1527e042be4a9fa5a33f65cc248}{\+\_\+\+\_\+\+CLZ}}(\+\_\+\+\_\+\+RBIT(value)))
+\item 
+\#define \mbox{\hyperlink{types_8h_af94bb01842c29a92ffd3d473b365ec67}{LEFT\+\_\+\+SHIFT\+\_\+\+BIT}}(x)~(1 $<$$<$ x)
+\end{DoxyCompactItemize}
+\doxysubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef long long \mbox{\hyperlink{types_8h_a93680f46d09022794e3923824923b42b}{s64}}
+\begin{DoxyCompactList}\small\item\em used for signed 64bit \end{DoxyCompactList}\item 
+typedef signed int \mbox{\hyperlink{types_8h_a0ce6887c26c1c49ad3be5710dd42bfd6}{s32}}
+\item 
+typedef signed short \mbox{\hyperlink{types_8h_a5ffa4f640862b25ba6d4f635b78bdbe1}{s16}}
+\item 
+typedef signed char \mbox{\hyperlink{types_8h_a151f780fb455885061d3b77ec1c90c03}{s8}}
+\item 
+typedef signed int const \mbox{\hyperlink{types_8h_a9cc5552a26d399da4a56ce1fc07d6d27}{sc32}}
+\begin{DoxyCompactList}\small\item\em Read Only \end{DoxyCompactList}\item 
+typedef signed short const \mbox{\hyperlink{types_8h_a5a76b66f3eac28162eaf1283421685ec}{sc16}}
+\begin{DoxyCompactList}\small\item\em Read Only \end{DoxyCompactList}\item 
+typedef signed char const \mbox{\hyperlink{types_8h_adceba0270037d06ce44b5bec74649340}{sc8}}
+\begin{DoxyCompactList}\small\item\em Read Only \end{DoxyCompactList}\item 
+typedef volatile signed int \mbox{\hyperlink{types_8h_a1964c41203ea36578b9fcff0d5be3802}{vs32}}
+\item 
+typedef volatile signed short \mbox{\hyperlink{types_8h_a273e1d525846284bb9fd6bbd73043645}{vs16}}
+\item 
+typedef volatile signed char \mbox{\hyperlink{types_8h_aa61122134519ad19a7af1d514b605c1c}{vs8}}
+\item 
+typedef volatile signed int const \mbox{\hyperlink{types_8h_a71b1336542e017a5a2598230cc1d1404}{vsc32}}
+\begin{DoxyCompactList}\small\item\em Read Only \end{DoxyCompactList}\item 
+typedef volatile signed short const \mbox{\hyperlink{types_8h_a70a81185cc09e58ab69a48ae980dafc6}{vsc16}}
+\begin{DoxyCompactList}\small\item\em Read Only \end{DoxyCompactList}\item 
+typedef volatile signed char const \mbox{\hyperlink{types_8h_a22c8d6dbd5a97fd9b1e7698d15da62cf}{vsc8}}
+\begin{DoxyCompactList}\small\item\em Read Only \end{DoxyCompactList}\item 
+typedef unsigned int \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}
+\item 
+typedef unsigned short \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}}
+\item 
+typedef unsigned char \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}
+\item 
+typedef unsigned int const \mbox{\hyperlink{types_8h_a9211daa108fd9f88e593d1393870d670}{uc32}}
+\begin{DoxyCompactList}\small\item\em Read Only \end{DoxyCompactList}\item 
+typedef unsigned short const \mbox{\hyperlink{types_8h_a5c47c470f72bc4eeb334c92196a79d2c}{uc16}}
+\begin{DoxyCompactList}\small\item\em Read Only \end{DoxyCompactList}\item 
+typedef unsigned char const \mbox{\hyperlink{types_8h_adecfb53d92575486dd9b5933c069e9fa}{uc8}}
+\begin{DoxyCompactList}\small\item\em Read Only \end{DoxyCompactList}\item 
+typedef volatile unsigned int \mbox{\hyperlink{types_8h_afe8851af77f42df60783f067c5d9c213}{vu32}}
+\item 
+typedef volatile unsigned short \mbox{\hyperlink{types_8h_a9e9f2c67df0bbcd2dd7753693525ee07}{vu16}}
+\item 
+typedef volatile unsigned char \mbox{\hyperlink{types_8h_aecf7c4189e2bd5ee7ac61f5639b1327a}{vu8}}
+\item 
+typedef volatile unsigned int const \mbox{\hyperlink{types_8h_af738e1caf8640d8f9cc4b79e4a7e532b}{vuc32}}
+\begin{DoxyCompactList}\small\item\em Read Only \end{DoxyCompactList}\item 
+typedef volatile unsigned short const \mbox{\hyperlink{types_8h_a8b53e26e5b283c366323372895f77752}{vuc16}}
+\begin{DoxyCompactList}\small\item\em Read Only \end{DoxyCompactList}\item 
+typedef volatile unsigned char const \mbox{\hyperlink{types_8h_ac0220a1c5bfa95ede2785c8e565b6a6d}{vuc8}}
+\begin{DoxyCompactList}\small\item\em Read Only \end{DoxyCompactList}\item 
+typedef bool \mbox{\hyperlink{types_8h_ab40a1f154aa44511af7f97b88296f7d3}{BOOL}}
+\item 
+typedef enum \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}}
+\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \{ \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}} = 0
+, \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792}{SET}} = !\+RESET
+ \}
+\item 
+enum \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} \{ \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d}{DISABLE}} = 0
+, \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf}{ENABLE}} = !\+DISABLE
+ \}
+\item 
+enum \mbox{\hyperlink{types_8h_a8333b96c67f83cba354b3407fcbb6ee8}{Error\+Status}} \{ \mbox{\hyperlink{types_8h_a8333b96c67f83cba354b3407fcbb6ee8a2fd6f336d08340583bd620a7f5694c90}{ERROR}} = 0
+, \mbox{\hyperlink{types_8h_a8333b96c67f83cba354b3407fcbb6ee8ac7f69f7c9e5aea9b8f54cf02870e2bf8}{SUCCESS}} = !\+ERROR
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+THIS FILE PROVIDES ALL THE TYPE FIRMWARE FUNCTIONS. 
+
+\begin{DoxyAuthor}{作者}
+AE TEAM 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+THE EXISTING FIRMWARE IS ONLY FOR REFERENCE, WHICH IS DESIGNED TO PROVIDE CUSTOMERS WITH CODING INFORMATION ABOUT THEIR PRODUCTS SO THEY CAN SAVE TIME. THEREFORE, MINDMOTION SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES ABOUT ANY CLAIMS ARISING OUT OF THE CONTENT OF SUCH HARDWARE AND/\+OR THE USE OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH PRODUCTS MADE BY CUSTOMERS.
+
+\doxysubsubsection*{\begin{center} COPYRIGHT MINDMOTION \end{center} }
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{types_8h_af63697ed9952cc71e1225efe205f6cd3}\label{types_8h_af63697ed9952cc71e1225efe205f6cd3}} 
+\index{types.h@{types.h}!\_\_I@{\_\_I}}
+\index{\_\_I@{\_\_I}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{\_\_I}{\_\_I}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+I~volatile const}
+
+
+
+Defines \textquotesingle{}read only\textquotesingle{} permissions 
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00031}{31}} 行定义.
+
+\mbox{\Hypertarget{types_8h_aec43007d9998a0a0e01faede4133d6be}\label{types_8h_aec43007d9998a0a0e01faede4133d6be}} 
+\index{types.h@{types.h}!\_\_IO@{\_\_IO}}
+\index{\_\_IO@{\_\_IO}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{\_\_IO}{\_\_IO}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+IO~volatile}
+
+
+
+Defines \textquotesingle{}read / write\textquotesingle{} permissions 
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00034}{34}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a7e25d9380f9ef903923964322e71f2f6}\label{types_8h_a7e25d9380f9ef903923964322e71f2f6}} 
+\index{types.h@{types.h}!\_\_O@{\_\_O}}
+\index{\_\_O@{\_\_O}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{\_\_O}{\_\_O}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+O~volatile}
+
+
+
+Defines \textquotesingle{}write only\textquotesingle{} permissions 
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00033}{33}} 行定义.
+
+\mbox{\Hypertarget{types_8h_aa6e88ced7a7081f8ff415c9f5bd6b043}\label{types_8h_aa6e88ced7a7081f8ff415c9f5bd6b043}} 
+\index{types.h@{types.h}!CLEAR\_BIT@{CLEAR\_BIT}}
+\index{CLEAR\_BIT@{CLEAR\_BIT}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{CLEAR\_BIT}{CLEAR\_BIT}}
+{\footnotesize\ttfamily \#define CLEAR\+\_\+\+BIT(\begin{DoxyParamCaption}\item[{}]{reg,  }\item[{}]{bit }\end{DoxyParamCaption})~((reg) \&= $\sim$(bit))}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00094}{94}} 行定义.
+
+\mbox{\Hypertarget{types_8h_af85dc01ce37049bc75783ea189ebe3b5}\label{types_8h_af85dc01ce37049bc75783ea189ebe3b5}} 
+\index{types.h@{types.h}!CLEAR\_REG@{CLEAR\_REG}}
+\index{CLEAR\_REG@{CLEAR\_REG}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{CLEAR\_REG}{CLEAR\_REG}}
+{\footnotesize\ttfamily \#define CLEAR\+\_\+\+REG(\begin{DoxyParamCaption}\item[{}]{reg }\end{DoxyParamCaption})~((reg) = (0x0))}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00096}{96}} 行定义.
+
+\mbox{\Hypertarget{types_8h_affaf7c3f537d7a3370b1bbdda67a2bf6}\label{types_8h_affaf7c3f537d7a3370b1bbdda67a2bf6}} 
+\index{types.h@{types.h}!IS\_FUNCTIONAL\_STATE@{IS\_FUNCTIONAL\_STATE}}
+\index{IS\_FUNCTIONAL\_STATE@{IS\_FUNCTIONAL\_STATE}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{IS\_FUNCTIONAL\_STATE}{IS\_FUNCTIONAL\_STATE}}
+{\footnotesize\ttfamily \#define IS\+\_\+\+FUNCTIONAL\+\_\+\+STATE(\begin{DoxyParamCaption}\item[{}]{STATE }\end{DoxyParamCaption})~(((STATE) == \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d}{DISABLE}}) $\vert$$\vert$ ((STATE) == \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf}{ENABLE}}))}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00078}{78}} 行定义.
+
+\mbox{\Hypertarget{types_8h_af94bb01842c29a92ffd3d473b365ec67}\label{types_8h_af94bb01842c29a92ffd3d473b365ec67}} 
+\index{types.h@{types.h}!LEFT\_SHIFT\_BIT@{LEFT\_SHIFT\_BIT}}
+\index{LEFT\_SHIFT\_BIT@{LEFT\_SHIFT\_BIT}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{LEFT\_SHIFT\_BIT}{LEFT\_SHIFT\_BIT}}
+{\footnotesize\ttfamily \#define LEFT\+\_\+\+SHIFT\+\_\+\+BIT(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(1 $<$$<$ x)}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00102}{102}} 行定义.
+
+\mbox{\Hypertarget{types_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}\label{types_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}} 
+\index{types.h@{types.h}!MAX@{MAX}}
+\index{MAX@{MAX}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{MAX}{MAX}}
+{\footnotesize\ttfamily \#define MAX(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~((a)$>$(b)?(a)\+:(b))}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00090}{90}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a3acffbd305ee72dcd4593c0d8af64a4f}\label{types_8h_a3acffbd305ee72dcd4593c0d8af64a4f}} 
+\index{types.h@{types.h}!MIN@{MIN}}
+\index{MIN@{MIN}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{MIN}{MIN}}
+{\footnotesize\ttfamily \#define MIN(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~((a)$<$(b)?(a)\+:(b))}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00091}{91}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a9604563d4bca5bd6bc9a17c9511e599b}\label{types_8h_a9604563d4bca5bd6bc9a17c9511e599b}} 
+\index{types.h@{types.h}!MODIFY\_REG@{MODIFY\_REG}}
+\index{MODIFY\_REG@{MODIFY\_REG}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{MODIFY\_REG}{MODIFY\_REG}}
+{\footnotesize\ttfamily \#define MODIFY\+\_\+\+REG(\begin{DoxyParamCaption}\item[{}]{reg,  }\item[{}]{CLEARMASK,  }\item[{}]{SETMASK }\end{DoxyParamCaption})~\mbox{\hyperlink{types_8h_acfc33c0b3ebd1136ce4cd12cd652273c}{WRITE\+\_\+\+REG}}((reg), (((\mbox{\hyperlink{types_8h_ae627593fda08d9e63c92d8b45cd2582d}{READ\+\_\+\+REG}}(reg)) \& ($\sim$(CLEARMASK))) $\vert$ (SETMASK)))}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00099}{99}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}\label{types_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}} 
+\index{types.h@{types.h}!NULL@{NULL}}
+\index{NULL@{NULL}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{NULL}{NULL}}
+{\footnotesize\ttfamily \#define NULL~((void $\ast$)0)}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00071}{71}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a02062aa185e870654c8c3401836357fa}\label{types_8h_a02062aa185e870654c8c3401836357fa}} 
+\index{types.h@{types.h}!POSITION\_VAL@{POSITION\_VAL}}
+\index{POSITION\_VAL@{POSITION\_VAL}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{POSITION\_VAL}{POSITION\_VAL}}
+{\footnotesize\ttfamily \#define POSITION\+\_\+\+VAL(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_ga5d5bb1527e042be4a9fa5a33f65cc248}{\+\_\+\+\_\+\+CLZ}}(\+\_\+\+\_\+\+RBIT(value)))}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00100}{100}} 行定义.
+
+\mbox{\Hypertarget{types_8h_aaef49ab0462bf902b59383f592140b05}\label{types_8h_aaef49ab0462bf902b59383f592140b05}} 
+\index{types.h@{types.h}!READ\_BIT@{READ\_BIT}}
+\index{READ\_BIT@{READ\_BIT}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{READ\_BIT}{READ\_BIT}}
+{\footnotesize\ttfamily \#define READ\+\_\+\+BIT(\begin{DoxyParamCaption}\item[{}]{reg,  }\item[{}]{bit }\end{DoxyParamCaption})~((reg) \& (bit))}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00095}{95}} 行定义.
+
+\mbox{\Hypertarget{types_8h_ae627593fda08d9e63c92d8b45cd2582d}\label{types_8h_ae627593fda08d9e63c92d8b45cd2582d}} 
+\index{types.h@{types.h}!READ\_REG@{READ\_REG}}
+\index{READ\_REG@{READ\_REG}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{READ\_REG}{READ\_REG}}
+{\footnotesize\ttfamily \#define READ\+\_\+\+REG(\begin{DoxyParamCaption}\item[{}]{reg }\end{DoxyParamCaption})~((reg))}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00098}{98}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a0d07bb025f7bc9920aab710742473092}\label{types_8h_a0d07bb025f7bc9920aab710742473092}} 
+\index{types.h@{types.h}!S16\_MAX@{S16\_MAX}}
+\index{S16\_MAX@{S16\_MAX}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{S16\_MAX}{S16\_MAX}}
+{\footnotesize\ttfamily \#define S16\+\_\+\+MAX~((\mbox{\hyperlink{types_8h_a5ffa4f640862b25ba6d4f635b78bdbe1}{s16}})32767)}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00084}{84}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a361c4570b9b7e393dfe4d5c617ba2059}\label{types_8h_a361c4570b9b7e393dfe4d5c617ba2059}} 
+\index{types.h@{types.h}!S16\_MIN@{S16\_MIN}}
+\index{S16\_MIN@{S16\_MIN}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{S16\_MIN}{S16\_MIN}}
+{\footnotesize\ttfamily \#define S16\+\_\+\+MIN~((\mbox{\hyperlink{types_8h_a5ffa4f640862b25ba6d4f635b78bdbe1}{s16}})-\/32768)}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00085}{85}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a7fef350f849a0cf0b785b7c4acfb3331}\label{types_8h_a7fef350f849a0cf0b785b7c4acfb3331}} 
+\index{types.h@{types.h}!S32\_MAX@{S32\_MAX}}
+\index{S32\_MAX@{S32\_MAX}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{S32\_MAX}{S32\_MAX}}
+{\footnotesize\ttfamily \#define S32\+\_\+\+MAX~((\mbox{\hyperlink{types_8h_a0ce6887c26c1c49ad3be5710dd42bfd6}{s32}})2147483647)}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00087}{87}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a95f2d9ec797e08f3556033649aea51b3}\label{types_8h_a95f2d9ec797e08f3556033649aea51b3}} 
+\index{types.h@{types.h}!S32\_MIN@{S32\_MIN}}
+\index{S32\_MIN@{S32\_MIN}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{S32\_MIN}{S32\_MIN}}
+{\footnotesize\ttfamily \#define S32\+\_\+\+MIN~((\mbox{\hyperlink{types_8h_a0ce6887c26c1c49ad3be5710dd42bfd6}{s32}})-\/2147483648uL)}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00088}{88}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a8a167751446b89f3e5b3ea99cdc2d4ba}\label{types_8h_a8a167751446b89f3e5b3ea99cdc2d4ba}} 
+\index{types.h@{types.h}!S8\_MAX@{S8\_MAX}}
+\index{S8\_MAX@{S8\_MAX}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{S8\_MAX}{S8\_MAX}}
+{\footnotesize\ttfamily \#define S8\+\_\+\+MAX~((\mbox{\hyperlink{types_8h_a151f780fb455885061d3b77ec1c90c03}{s8}})127)}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00081}{81}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a365d111fbf927226b21ba4a0452b8840}\label{types_8h_a365d111fbf927226b21ba4a0452b8840}} 
+\index{types.h@{types.h}!S8\_MIN@{S8\_MIN}}
+\index{S8\_MIN@{S8\_MIN}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{S8\_MIN}{S8\_MIN}}
+{\footnotesize\ttfamily \#define S8\+\_\+\+MIN~((\mbox{\hyperlink{types_8h_a151f780fb455885061d3b77ec1c90c03}{s8}})-\/128)}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00082}{82}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a62af7cb8bfabd5a9f6ea45582e08843b}\label{types_8h_a62af7cb8bfabd5a9f6ea45582e08843b}} 
+\index{types.h@{types.h}!SET\_BIT@{SET\_BIT}}
+\index{SET\_BIT@{SET\_BIT}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{SET\_BIT}{SET\_BIT}}
+{\footnotesize\ttfamily \#define SET\+\_\+\+BIT(\begin{DoxyParamCaption}\item[{}]{reg,  }\item[{}]{bit }\end{DoxyParamCaption})~((reg) $\vert$= (bit))}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00093}{93}} 行定义.
+
+\mbox{\Hypertarget{types_8h_ac580728e242e90fe3082dc7fe45ec6c9}\label{types_8h_ac580728e242e90fe3082dc7fe45ec6c9}} 
+\index{types.h@{types.h}!U16\_MAX@{U16\_MAX}}
+\index{U16\_MAX@{U16\_MAX}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{U16\_MAX}{U16\_MAX}}
+{\footnotesize\ttfamily \#define U16\+\_\+\+MAX~((\mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}})65535u)}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00083}{83}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a4028a1a55fd7b907a44c48d5ca42d6a6}\label{types_8h_a4028a1a55fd7b907a44c48d5ca42d6a6}} 
+\index{types.h@{types.h}!U32\_MAX@{U32\_MAX}}
+\index{U32\_MAX@{U32\_MAX}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{U32\_MAX}{U32\_MAX}}
+{\footnotesize\ttfamily \#define U32\+\_\+\+MAX~((\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}})4294967295uL)}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00086}{86}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a1187e707402ca2fca73f06f7beb1e631}\label{types_8h_a1187e707402ca2fca73f06f7beb1e631}} 
+\index{types.h@{types.h}!U8\_MAX@{U8\_MAX}}
+\index{U8\_MAX@{U8\_MAX}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{U8\_MAX}{U8\_MAX}}
+{\footnotesize\ttfamily \#define U8\+\_\+\+MAX~((\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}})255)}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00080}{80}} 行定义.
+
+\mbox{\Hypertarget{types_8h_acfc33c0b3ebd1136ce4cd12cd652273c}\label{types_8h_acfc33c0b3ebd1136ce4cd12cd652273c}} 
+\index{types.h@{types.h}!WRITE\_REG@{WRITE\_REG}}
+\index{WRITE\_REG@{WRITE\_REG}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{WRITE\_REG}{WRITE\_REG}}
+{\footnotesize\ttfamily \#define WRITE\+\_\+\+REG(\begin{DoxyParamCaption}\item[{}]{reg,  }\item[{}]{value }\end{DoxyParamCaption})~((reg) = (value))}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00097}{97}} 行定义.
+
+
+
+\doxysubsection{类型定义说明}
+\mbox{\Hypertarget{types_8h_ab40a1f154aa44511af7f97b88296f7d3}\label{types_8h_ab40a1f154aa44511af7f97b88296f7d3}} 
+\index{types.h@{types.h}!BOOL@{BOOL}}
+\index{BOOL@{BOOL}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{BOOL}{BOOL}}
+{\footnotesize\ttfamily typedef bool \mbox{\hyperlink{types_8h_ab40a1f154aa44511af7f97b88296f7d3}{BOOL}}}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00069}{69}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a39d4411201fb731279ad5a409b2b80d7}\label{types_8h_a39d4411201fb731279ad5a409b2b80d7}} 
+\index{types.h@{types.h}!ITStatus@{ITStatus}}
+\index{ITStatus@{ITStatus}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{ITStatus}{ITStatus}}
+{\footnotesize\ttfamily typedef  enum \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{types_8h_a39d4411201fb731279ad5a409b2b80d7}{ITStatus}}}
+
+\mbox{\Hypertarget{types_8h_a5ffa4f640862b25ba6d4f635b78bdbe1}\label{types_8h_a5ffa4f640862b25ba6d4f635b78bdbe1}} 
+\index{types.h@{types.h}!s16@{s16}}
+\index{s16@{s16}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{s16}{s16}}
+{\footnotesize\ttfamily typedef signed short \mbox{\hyperlink{types_8h_a5ffa4f640862b25ba6d4f635b78bdbe1}{s16}}}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00039}{39}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a0ce6887c26c1c49ad3be5710dd42bfd6}\label{types_8h_a0ce6887c26c1c49ad3be5710dd42bfd6}} 
+\index{types.h@{types.h}!s32@{s32}}
+\index{s32@{s32}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{s32}{s32}}
+{\footnotesize\ttfamily typedef signed int \mbox{\hyperlink{types_8h_a0ce6887c26c1c49ad3be5710dd42bfd6}{s32}}}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00038}{38}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a93680f46d09022794e3923824923b42b}\label{types_8h_a93680f46d09022794e3923824923b42b}} 
+\index{types.h@{types.h}!s64@{s64}}
+\index{s64@{s64}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{s64}{s64}}
+{\footnotesize\ttfamily typedef long long \mbox{\hyperlink{types_8h_a93680f46d09022794e3923824923b42b}{s64}}}
+
+
+
+used for signed 64bit 
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00036}{36}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a151f780fb455885061d3b77ec1c90c03}\label{types_8h_a151f780fb455885061d3b77ec1c90c03}} 
+\index{types.h@{types.h}!s8@{s8}}
+\index{s8@{s8}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{s8}{s8}}
+{\footnotesize\ttfamily typedef signed char \mbox{\hyperlink{types_8h_a151f780fb455885061d3b77ec1c90c03}{s8}}}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00040}{40}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a5a76b66f3eac28162eaf1283421685ec}\label{types_8h_a5a76b66f3eac28162eaf1283421685ec}} 
+\index{types.h@{types.h}!sc16@{sc16}}
+\index{sc16@{sc16}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{sc16}{sc16}}
+{\footnotesize\ttfamily typedef signed short const \mbox{\hyperlink{types_8h_a5a76b66f3eac28162eaf1283421685ec}{sc16}}}
+
+
+
+Read Only 
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00043}{43}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a9cc5552a26d399da4a56ce1fc07d6d27}\label{types_8h_a9cc5552a26d399da4a56ce1fc07d6d27}} 
+\index{types.h@{types.h}!sc32@{sc32}}
+\index{sc32@{sc32}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{sc32}{sc32}}
+{\footnotesize\ttfamily typedef signed int const \mbox{\hyperlink{types_8h_a9cc5552a26d399da4a56ce1fc07d6d27}{sc32}}}
+
+
+
+Read Only 
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00042}{42}} 行定义.
+
+\mbox{\Hypertarget{types_8h_adceba0270037d06ce44b5bec74649340}\label{types_8h_adceba0270037d06ce44b5bec74649340}} 
+\index{types.h@{types.h}!sc8@{sc8}}
+\index{sc8@{sc8}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{sc8}{sc8}}
+{\footnotesize\ttfamily typedef signed char const \mbox{\hyperlink{types_8h_adceba0270037d06ce44b5bec74649340}{sc8}}}
+
+
+
+Read Only 
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00044}{44}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a9e6c91d77e24643b888dbd1a1a590054}\label{types_8h_a9e6c91d77e24643b888dbd1a1a590054}} 
+\index{types.h@{types.h}!u16@{u16}}
+\index{u16@{u16}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{u16}{u16}}
+{\footnotesize\ttfamily typedef unsigned short \mbox{\hyperlink{types_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}}}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00055}{55}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}\label{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}} 
+\index{types.h@{types.h}!u32@{u32}}
+\index{u32@{u32}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{u32}{u32}}
+{\footnotesize\ttfamily typedef unsigned int \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00054}{54}} 行定义.
+
+\mbox{\Hypertarget{types_8h_aed742c436da53c1080638ce6ef7d13de}\label{types_8h_aed742c436da53c1080638ce6ef7d13de}} 
+\index{types.h@{types.h}!u8@{u8}}
+\index{u8@{u8}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{u8}{u8}}
+{\footnotesize\ttfamily typedef unsigned char \mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00056}{56}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a5c47c470f72bc4eeb334c92196a79d2c}\label{types_8h_a5c47c470f72bc4eeb334c92196a79d2c}} 
+\index{types.h@{types.h}!uc16@{uc16}}
+\index{uc16@{uc16}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{uc16}{uc16}}
+{\footnotesize\ttfamily typedef unsigned short const \mbox{\hyperlink{types_8h_a5c47c470f72bc4eeb334c92196a79d2c}{uc16}}}
+
+
+
+Read Only 
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00059}{59}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a9211daa108fd9f88e593d1393870d670}\label{types_8h_a9211daa108fd9f88e593d1393870d670}} 
+\index{types.h@{types.h}!uc32@{uc32}}
+\index{uc32@{uc32}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{uc32}{uc32}}
+{\footnotesize\ttfamily typedef unsigned int const \mbox{\hyperlink{types_8h_a9211daa108fd9f88e593d1393870d670}{uc32}}}
+
+
+
+Read Only 
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00058}{58}} 行定义.
+
+\mbox{\Hypertarget{types_8h_adecfb53d92575486dd9b5933c069e9fa}\label{types_8h_adecfb53d92575486dd9b5933c069e9fa}} 
+\index{types.h@{types.h}!uc8@{uc8}}
+\index{uc8@{uc8}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{uc8}{uc8}}
+{\footnotesize\ttfamily typedef unsigned char const \mbox{\hyperlink{types_8h_adecfb53d92575486dd9b5933c069e9fa}{uc8}}}
+
+
+
+Read Only 
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00060}{60}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a273e1d525846284bb9fd6bbd73043645}\label{types_8h_a273e1d525846284bb9fd6bbd73043645}} 
+\index{types.h@{types.h}!vs16@{vs16}}
+\index{vs16@{vs16}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{vs16}{vs16}}
+{\footnotesize\ttfamily typedef volatile signed short \mbox{\hyperlink{types_8h_a273e1d525846284bb9fd6bbd73043645}{vs16}}}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00047}{47}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a1964c41203ea36578b9fcff0d5be3802}\label{types_8h_a1964c41203ea36578b9fcff0d5be3802}} 
+\index{types.h@{types.h}!vs32@{vs32}}
+\index{vs32@{vs32}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{vs32}{vs32}}
+{\footnotesize\ttfamily typedef volatile signed int \mbox{\hyperlink{types_8h_a1964c41203ea36578b9fcff0d5be3802}{vs32}}}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00046}{46}} 行定义.
+
+\mbox{\Hypertarget{types_8h_aa61122134519ad19a7af1d514b605c1c}\label{types_8h_aa61122134519ad19a7af1d514b605c1c}} 
+\index{types.h@{types.h}!vs8@{vs8}}
+\index{vs8@{vs8}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{vs8}{vs8}}
+{\footnotesize\ttfamily typedef volatile signed char \mbox{\hyperlink{types_8h_aa61122134519ad19a7af1d514b605c1c}{vs8}}}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00048}{48}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a70a81185cc09e58ab69a48ae980dafc6}\label{types_8h_a70a81185cc09e58ab69a48ae980dafc6}} 
+\index{types.h@{types.h}!vsc16@{vsc16}}
+\index{vsc16@{vsc16}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{vsc16}{vsc16}}
+{\footnotesize\ttfamily typedef volatile signed short const \mbox{\hyperlink{types_8h_a70a81185cc09e58ab69a48ae980dafc6}{vsc16}}}
+
+
+
+Read Only 
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00051}{51}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a71b1336542e017a5a2598230cc1d1404}\label{types_8h_a71b1336542e017a5a2598230cc1d1404}} 
+\index{types.h@{types.h}!vsc32@{vsc32}}
+\index{vsc32@{vsc32}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{vsc32}{vsc32}}
+{\footnotesize\ttfamily typedef volatile signed int const \mbox{\hyperlink{types_8h_a71b1336542e017a5a2598230cc1d1404}{vsc32}}}
+
+
+
+Read Only 
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00050}{50}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a22c8d6dbd5a97fd9b1e7698d15da62cf}\label{types_8h_a22c8d6dbd5a97fd9b1e7698d15da62cf}} 
+\index{types.h@{types.h}!vsc8@{vsc8}}
+\index{vsc8@{vsc8}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{vsc8}{vsc8}}
+{\footnotesize\ttfamily typedef volatile signed char const \mbox{\hyperlink{types_8h_a22c8d6dbd5a97fd9b1e7698d15da62cf}{vsc8}}}
+
+
+
+Read Only 
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00052}{52}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a9e9f2c67df0bbcd2dd7753693525ee07}\label{types_8h_a9e9f2c67df0bbcd2dd7753693525ee07}} 
+\index{types.h@{types.h}!vu16@{vu16}}
+\index{vu16@{vu16}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{vu16}{vu16}}
+{\footnotesize\ttfamily typedef volatile unsigned short \mbox{\hyperlink{types_8h_a9e9f2c67df0bbcd2dd7753693525ee07}{vu16}}}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00063}{63}} 行定义.
+
+\mbox{\Hypertarget{types_8h_afe8851af77f42df60783f067c5d9c213}\label{types_8h_afe8851af77f42df60783f067c5d9c213}} 
+\index{types.h@{types.h}!vu32@{vu32}}
+\index{vu32@{vu32}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{vu32}{vu32}}
+{\footnotesize\ttfamily typedef volatile unsigned int \mbox{\hyperlink{types_8h_afe8851af77f42df60783f067c5d9c213}{vu32}}}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00062}{62}} 行定义.
+
+\mbox{\Hypertarget{types_8h_aecf7c4189e2bd5ee7ac61f5639b1327a}\label{types_8h_aecf7c4189e2bd5ee7ac61f5639b1327a}} 
+\index{types.h@{types.h}!vu8@{vu8}}
+\index{vu8@{vu8}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{vu8}{vu8}}
+{\footnotesize\ttfamily typedef volatile unsigned char \mbox{\hyperlink{types_8h_aecf7c4189e2bd5ee7ac61f5639b1327a}{vu8}}}
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00064}{64}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a8b53e26e5b283c366323372895f77752}\label{types_8h_a8b53e26e5b283c366323372895f77752}} 
+\index{types.h@{types.h}!vuc16@{vuc16}}
+\index{vuc16@{vuc16}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{vuc16}{vuc16}}
+{\footnotesize\ttfamily typedef volatile unsigned short const \mbox{\hyperlink{types_8h_a8b53e26e5b283c366323372895f77752}{vuc16}}}
+
+
+
+Read Only 
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00067}{67}} 行定义.
+
+\mbox{\Hypertarget{types_8h_af738e1caf8640d8f9cc4b79e4a7e532b}\label{types_8h_af738e1caf8640d8f9cc4b79e4a7e532b}} 
+\index{types.h@{types.h}!vuc32@{vuc32}}
+\index{vuc32@{vuc32}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{vuc32}{vuc32}}
+{\footnotesize\ttfamily typedef volatile unsigned int const \mbox{\hyperlink{types_8h_af738e1caf8640d8f9cc4b79e4a7e532b}{vuc32}}}
+
+
+
+Read Only 
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00066}{66}} 行定义.
+
+\mbox{\Hypertarget{types_8h_ac0220a1c5bfa95ede2785c8e565b6a6d}\label{types_8h_ac0220a1c5bfa95ede2785c8e565b6a6d}} 
+\index{types.h@{types.h}!vuc8@{vuc8}}
+\index{vuc8@{vuc8}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{vuc8}{vuc8}}
+{\footnotesize\ttfamily typedef volatile unsigned char const \mbox{\hyperlink{types_8h_ac0220a1c5bfa95ede2785c8e565b6a6d}{vuc8}}}
+
+
+
+Read Only 
+
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00068}{68}} 行定义.
+
+
+
+\doxysubsection{枚举类型说明}
+\mbox{\Hypertarget{types_8h_a8333b96c67f83cba354b3407fcbb6ee8}\label{types_8h_a8333b96c67f83cba354b3407fcbb6ee8}} 
+\index{types.h@{types.h}!ErrorStatus@{ErrorStatus}}
+\index{ErrorStatus@{ErrorStatus}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{ErrorStatus}{ErrorStatus}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{types_8h_a8333b96c67f83cba354b3407fcbb6ee8}{Error\+Status}}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERROR@{ERROR}!types.h@{types.h}}\index{types.h@{types.h}!ERROR@{ERROR}}}\mbox{\Hypertarget{types_8h_a8333b96c67f83cba354b3407fcbb6ee8a2fd6f336d08340583bd620a7f5694c90}\label{types_8h_a8333b96c67f83cba354b3407fcbb6ee8a2fd6f336d08340583bd620a7f5694c90}} 
+ERROR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SUCCESS@{SUCCESS}!types.h@{types.h}}\index{types.h@{types.h}!SUCCESS@{SUCCESS}}}\mbox{\Hypertarget{types_8h_a8333b96c67f83cba354b3407fcbb6ee8ac7f69f7c9e5aea9b8f54cf02870e2bf8}\label{types_8h_a8333b96c67f83cba354b3407fcbb6ee8ac7f69f7c9e5aea9b8f54cf02870e2bf8}} 
+SUCCESS&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00075}{75}} 行定义.
+
+\mbox{\Hypertarget{types_8h_a89136caac2e14c55151f527ac02daaff}\label{types_8h_a89136caac2e14c55151f527ac02daaff}} 
+\index{types.h@{types.h}!FlagStatus@{FlagStatus}}
+\index{FlagStatus@{FlagStatus}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{FlagStatus}{FlagStatus}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{Flag\+Status}}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RESET@{RESET}!types.h@{types.h}}\index{types.h@{types.h}!RESET@{RESET}}}\mbox{\Hypertarget{types_8h_a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}\label{types_8h_a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}} 
+RESET&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SET@{SET}!types.h@{types.h}}\index{types.h@{types.h}!SET@{SET}}}\mbox{\Hypertarget{types_8h_a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792}\label{types_8h_a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792}} 
+SET&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00073}{73}} 行定义.
+
+\mbox{\Hypertarget{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}\label{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}} 
+\index{types.h@{types.h}!FunctionalState@{FunctionalState}}
+\index{FunctionalState@{FunctionalState}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{FunctionalState}{FunctionalState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DISABLE@{DISABLE}!types.h@{types.h}}\index{types.h@{types.h}!DISABLE@{DISABLE}}}\mbox{\Hypertarget{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d}\label{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d}} 
+DISABLE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENABLE@{ENABLE}!types.h@{types.h}}\index{types.h@{types.h}!ENABLE@{ENABLE}}}\mbox{\Hypertarget{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf}\label{types_8h_ac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf}} 
+ENABLE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{types_8h_source}{types.\+h}} 第 \mbox{\hyperlink{types_8h_source_l00074}{74}} 行定义.
+

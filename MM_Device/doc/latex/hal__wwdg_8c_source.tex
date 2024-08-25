@@ -1,0 +1,65 @@
+\hypertarget{hal__wwdg_8c_source}{}\doxysection{hal\+\_\+wwdg.\+c}
+\label{hal__wwdg_8c_source}\index{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_wwdg.c@{C:/Users/XerolySkinner/Desktop/MM\_Device/MM32F327x/HAL\_Lib/Src/hal\_wwdg.c}}
+\mbox{\hyperlink{hal__wwdg_8c}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00018}00018 \textcolor{comment}{// Define to prevent recursive inclusion}}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00019}\mbox{\hyperlink{hal__wwdg_8c_af5a8bd1551d6d34658f8f3766b309254}{00019}} \textcolor{preprocessor}{\#define \_HAL\_WWDG\_C\_}}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00021}00021 \textcolor{comment}{// Files includes}}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00022}00022 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{hal__wwdg_8h}{hal\_wwdg.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00023}00023 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{hal__rcc_8h}{hal\_rcc.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00043}\mbox{\hyperlink{group___w_w_d_g___exported___functions_ga1b1260b29ebd4d77ddacfda1433fd3b8}{00043}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___w_w_d_g___exported___functions_ga1b1260b29ebd4d77ddacfda1433fd3b8}{WWDG\_DeInit}}()}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00044}00044 \{}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00045}00045     \mbox{\hyperlink{group___r_c_c___exported___functions_gad9e30971b169c6fee0f090ef9948a17a}{exRCC\_APB1PeriphReset}}(\mbox{\hyperlink{reg__rcc_8h_a20176ff20fae842440bff9788cea477c}{RCC\_APB1RSTR\_WWDG}});}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00046}00046 \}}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00058}\mbox{\hyperlink{group___w_w_d_g___exported___functions_ga34a589b9bcff65f66b668104a70474c2}{00058}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___w_w_d_g___exported___functions_ga34a589b9bcff65f66b668104a70474c2}{WWDG\_SetPrescaler}}(\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} prescaler)}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00059}00059 \{}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00060}00060     \mbox{\hyperlink{reg__wwdg_8h_a9821fd01757986612ddb8982e2fe27f1}{WWDG}}-\/>CFGR = (\mbox{\hyperlink{reg__wwdg_8h_a9821fd01757986612ddb8982e2fe27f1}{WWDG}}-\/>CFGR \& \string~WWDG\_CFGR\_WDGTB) | prescaler;}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00061}00061 \}}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00070}\mbox{\hyperlink{group___w_w_d_g___exported___functions_ga300fe6e036a39f0b2afb61eaef39e2ad}{00070}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___w_w_d_g___exported___functions_ga300fe6e036a39f0b2afb61eaef39e2ad}{WWDG\_SetWindowValue}}(\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} window\_value)}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00071}00071 \{}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00072}00072     \mbox{\hyperlink{reg__wwdg_8h_a9821fd01757986612ddb8982e2fe27f1}{WWDG}}-\/>CFGR = (\mbox{\hyperlink{reg__wwdg_8h_a9821fd01757986612ddb8982e2fe27f1}{WWDG}}-\/>CFGR \& \string~WWDG\_CFGR\_WINDOW) | (window\_value \& \mbox{\hyperlink{reg__wwdg_8h_a9edcab760275a33ffbece4edf0c154ba}{WWDG\_CFGR\_WINDOW}});}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00073}00073 \}}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00082}\mbox{\hyperlink{group___w_w_d_g___exported___functions_gaf89349338e1c76065d46c44ecfcc5399}{00082}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___w_w_d_g___exported___functions_gaf89349338e1c76065d46c44ecfcc5399}{WWDG\_EnableIT}}()}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00083}00083 \{}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00084}00084     \mbox{\hyperlink{reg__wwdg_8h_a9821fd01757986612ddb8982e2fe27f1}{WWDG}}-\/>CFGR |= \mbox{\hyperlink{reg__wwdg_8h_a7619aa91f93700621c265d4b4e2c39d7}{WWDG\_CFGR\_EWI}};}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00085}00085 \}}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00094}\mbox{\hyperlink{group___w_w_d_g___exported___functions_ga1cc54e88140ed41b5b841827fe24af8c}{00094}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___w_w_d_g___exported___functions_ga1cc54e88140ed41b5b841827fe24af8c}{WWDG\_SetCounter}}(\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} count)}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00095}00095 \{}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00096}00096     \mbox{\hyperlink{reg__wwdg_8h_a9821fd01757986612ddb8982e2fe27f1}{WWDG}}-\/>CR = count \& \mbox{\hyperlink{reg__wwdg_8h_a9edcab760275a33ffbece4edf0c154ba}{WWDG\_CFGR\_WINDOW}};}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00097}00097 \}}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00106}\mbox{\hyperlink{group___w_w_d_g___exported___functions_ga3fbec6b1ceeac07d7fbdfc3fd27fe122}{00106}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___w_w_d_g___exported___functions_ga3fbec6b1ceeac07d7fbdfc3fd27fe122}{WWDG\_GetCounter}}()}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00107}00107 \{}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00108}00108     \textcolor{keywordflow}{return} \mbox{\hyperlink{reg__wwdg_8h_a9821fd01757986612ddb8982e2fe27f1}{WWDG}}-\/>CR \& \mbox{\hyperlink{reg__wwdg_8h_ad6d2a9fdcf8116fc3ad5ae03a6b995b7}{WWDG\_CR\_CNT}};}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00109}00109 \}}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00110}00110 }
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00118}\mbox{\hyperlink{group___w_w_d_g___exported___functions_gafe7aa18bd66fb5548de08429070e831c}{00118}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___w_w_d_g___exported___functions_gafe7aa18bd66fb5548de08429070e831c}{WWDG\_Enable}}(\mbox{\hyperlink{types_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} count)}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00119}00119 \{}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00120}00120     \mbox{\hyperlink{reg__wwdg_8h_a9821fd01757986612ddb8982e2fe27f1}{WWDG}}-\/>CR = \mbox{\hyperlink{reg__wwdg_8h_ab647e9997b8b8e67de72af1aaea3f52f}{WWDG\_CR\_WDGA}} | count;}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00121}00121 \}}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00122}00122 }
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00128}\mbox{\hyperlink{group___w_w_d_g___exported___functions_ga72379e299a3ed528bc37dcf8e411c093}{00128}} \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaff}{FlagStatus}} \mbox{\hyperlink{group___w_w_d_g___exported___functions_ga72379e299a3ed528bc37dcf8e411c093}{WWDG\_GetFlagStatus}}()}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00129}00129 \{}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00130}00130     \textcolor{keywordflow}{return} \mbox{\hyperlink{reg__wwdg_8h_a9821fd01757986612ddb8982e2fe27f1}{WWDG}}-\/>SR ? \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792}{SET}} : \mbox{\hyperlink{types_8h_a89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}};}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00131}00131 \}}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00132}00132 }
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00138}\mbox{\hyperlink{group___w_w_d_g___exported___functions_gad16e73c97d4dae79cd88049e8438b98e}{00138}} \textcolor{keywordtype}{void} \mbox{\hyperlink{group___w_w_d_g___exported___functions_gad16e73c97d4dae79cd88049e8438b98e}{WWDG\_ClearFlag}}()}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00139}00139 \{}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00140}00140     \mbox{\hyperlink{reg__wwdg_8h_a9821fd01757986612ddb8982e2fe27f1}{WWDG}}-\/>SR \&= \string~WWDG\_SR\_EWIF;}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00141}00141 \}}
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00142}00142 }
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00144}00144 }
+\DoxyCodeLine{\Hypertarget{hal__wwdg_8c_source_l00146}00146 }
+
+\end{DoxyCode}

@@ -1,0 +1,418 @@
+\hypertarget{struct_r_c_c___type_def}{}\doxysection{RCC\+\_\+\+Type\+Def结构体 参考}
+\label{struct_r_c_c___type_def}\index{RCC\_TypeDef@{RCC\_TypeDef}}
+
+
+RCC Register Structure Definition  
+
+
+
+
+{\ttfamily \#include $<$reg\+\_\+rcc.\+h$>$}
+
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_ac9fcbf5f174ae0e2b07361baadd07462}{CR}}
+\begin{DoxyCompactList}\small\item\em Control Register offset\+: 0x00 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_a0e0039d00dcd0d6d43d08e052033cda2}{CFGR}}
+\begin{DoxyCompactList}\small\item\em Configuration Register offset\+: 0x04 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_aa5979dfc45c9131b4b50a5a560beb1cd}{CIR}}
+\begin{DoxyCompactList}\small\item\em Clock Interrupt Register offset\+: 0x08 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_a967d665dc30ba7e23d0c4cae5281b795}{AHB3\+RSTR}}
+\begin{DoxyCompactList}\small\item\em Advanced High Performance Bus 3 Reset Register offset\+: 0x0C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_aca7ecbd38c69641c8050fb8894d3f690}{AHB2\+RSTR}}
+\begin{DoxyCompactList}\small\item\em Advanced High Performance Bus 2 Reset Register offset\+: 0x10 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_a4aa565414cbb4cc61f42c6540d8d9e4b}{AHBRSTR}}
+\begin{DoxyCompactList}\small\item\em Advanced High Performance Bus 1 Reset Register offset\+: 0x14 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_afc8822cf3c18e588789f6710d14b95e1}{APB2\+RSTR}}
+\begin{DoxyCompactList}\small\item\em Advanced Peripheral Bus 2 Reset Register offset\+: 0x18 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_a972e8b4d66e145e925ad444902df2eeb}{APB1\+RSTR}}
+\begin{DoxyCompactList}\small\item\em Advanced Peripheral Bus 1 Reset Register offset\+: 0x1C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_a036bab13ac6021495ec6ffe810ef9622}{AHB3\+ENR}}
+\begin{DoxyCompactList}\small\item\em Advanced High Performance Bus 3 Enable Register offset\+: 0x20 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_ac1bbbb0fff77e656b947d48ce0848601}{AHB2\+ENR}}
+\begin{DoxyCompactList}\small\item\em Advanced High Performance Bus 2 Enable Register offset\+: 0x24 \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_a0e23ea1dc74d4175bcfb2ea72ea559cf}{AHBENR}}\\
+\>\>{\em Advanced High Performance Bus 1 Enable Register offset: 0x28 }\\
+\>\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_a7ed885e582dd3c37c11ab225beb5d1fd}{AHB1ENR}}\\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_ac1c9e6c6cb134a4e31912a688ba2e334}{APB2\+ENR}}
+\begin{DoxyCompactList}\small\item\em Advanced Peripheral Bus 2 Enable Register offset\+: 0x2C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_abb027fcaed1e4cd4f52eb8b7ded5ba1c}{APB1\+ENR}}
+\begin{DoxyCompactList}\small\item\em Advanced Peripheral Bus 1 Enable Register offset\+: 0x30 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_a71cbe86824c41bc40c20bbdb5df0f85a}{BDCR}}
+\begin{DoxyCompactList}\small\item\em Backup Domain Control Register offset\+: 0x34 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_afb2e12c8deffa12eee48e09fd3521cc8}{CSR}}
+\begin{DoxyCompactList}\small\item\em Control Status Register offset\+: 0x38 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_ab90e027e6cfe2a1fd12c20dcf04b93d3}{SYSCFGR}}
+\begin{DoxyCompactList}\small\item\em System Configuration Register offset\+: 0x3C \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_a01ccb44dd0c80c99ee8c2fe759c26f0d}{CFGR2}}
+\begin{DoxyCompactList}\small\item\em System Configuration Register offset\+: 0x40 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_a4604c0c4df24409485933cb3452285df}{ICSCR}}
+\begin{DoxyCompactList}\small\item\em Internal clock source calibration register offset\+: 0x44 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_a6408f91c8efc075e7b5c203b2d52678c}{PLLCFGR}}
+\begin{DoxyCompactList}\small\item\em PLL configures registers offset\+: 0x48 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_ac2a07bcd3fd5008200c47c34714a364b}{Reserved1}} \mbox{[}13\mbox{]}
+\begin{DoxyCompactList}\small\item\em Reserved space \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_a0560ef1adc22cdf37e4d72556b616ced}{HSIDLY}}
+\begin{DoxyCompactList}\small\item\em HSI delay register offset\+: 0x80 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_ae3bb006eeabe3890a86303c33997f177}{HSEDLY}}
+\begin{DoxyCompactList}\small\item\em HSE delay register offset\+: 0x84 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{struct_r_c_c___type_def_a2acab856d406f445daffb510fc61c297}{PLLDLY}}
+\begin{DoxyCompactList}\small\item\em PLL delay register offset\+: 0x88 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+RCC Register Structure Definition 
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00056}{56}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{struct_r_c_c___type_def_a9c8f110132eba5a0d519f7b091e1e751}\label{struct_r_c_c___type_def_a9c8f110132eba5a0d519f7b091e1e751}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union  \{ ... \}  RCC\+\_\+\+Type\+Def\+::@199}
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_a7ed885e582dd3c37c11ab225beb5d1fd}\label{struct_r_c_c___type_def_a7ed885e582dd3c37c11ab225beb5d1fd}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!AHB1ENR@{AHB1ENR}}
+\index{AHB1ENR@{AHB1ENR}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{AHB1ENR}{AHB1ENR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+AHB1\+ENR}
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00069}{69}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_ac1bbbb0fff77e656b947d48ce0848601}\label{struct_r_c_c___type_def_ac1bbbb0fff77e656b947d48ce0848601}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!AHB2ENR@{AHB2ENR}}
+\index{AHB2ENR@{AHB2ENR}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{AHB2ENR}{AHB2ENR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+AHB2\+ENR}
+
+
+
+Advanced High Performance Bus 2 Enable Register offset\+: 0x24 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00066}{66}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_aca7ecbd38c69641c8050fb8894d3f690}\label{struct_r_c_c___type_def_aca7ecbd38c69641c8050fb8894d3f690}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!AHB2RSTR@{AHB2RSTR}}
+\index{AHB2RSTR@{AHB2RSTR}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{AHB2RSTR}{AHB2RSTR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+AHB2\+RSTR}
+
+
+
+Advanced High Performance Bus 2 Reset Register offset\+: 0x10 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00061}{61}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_a036bab13ac6021495ec6ffe810ef9622}\label{struct_r_c_c___type_def_a036bab13ac6021495ec6ffe810ef9622}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!AHB3ENR@{AHB3ENR}}
+\index{AHB3ENR@{AHB3ENR}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{AHB3ENR}{AHB3ENR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+AHB3\+ENR}
+
+
+
+Advanced High Performance Bus 3 Enable Register offset\+: 0x20 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00065}{65}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_a967d665dc30ba7e23d0c4cae5281b795}\label{struct_r_c_c___type_def_a967d665dc30ba7e23d0c4cae5281b795}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!AHB3RSTR@{AHB3RSTR}}
+\index{AHB3RSTR@{AHB3RSTR}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{AHB3RSTR}{AHB3RSTR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+AHB3\+RSTR}
+
+
+
+Advanced High Performance Bus 3 Reset Register offset\+: 0x0C 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00060}{60}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_a0e23ea1dc74d4175bcfb2ea72ea559cf}\label{struct_r_c_c___type_def_a0e23ea1dc74d4175bcfb2ea72ea559cf}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!AHBENR@{AHBENR}}
+\index{AHBENR@{AHBENR}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{AHBENR}{AHBENR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+AHBENR}
+
+
+
+Advanced High Performance Bus 1 Enable Register offset\+: 0x28 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00068}{68}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_a4aa565414cbb4cc61f42c6540d8d9e4b}\label{struct_r_c_c___type_def_a4aa565414cbb4cc61f42c6540d8d9e4b}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!AHBRSTR@{AHBRSTR}}
+\index{AHBRSTR@{AHBRSTR}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{AHBRSTR}{AHBRSTR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+AHBRSTR}
+
+
+
+Advanced High Performance Bus 1 Reset Register offset\+: 0x14 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00062}{62}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_abb027fcaed1e4cd4f52eb8b7ded5ba1c}\label{struct_r_c_c___type_def_abb027fcaed1e4cd4f52eb8b7ded5ba1c}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!APB1ENR@{APB1ENR}}
+\index{APB1ENR@{APB1ENR}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{APB1ENR}{APB1ENR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+APB1\+ENR}
+
+
+
+Advanced Peripheral Bus 1 Enable Register offset\+: 0x30 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00073}{73}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_a972e8b4d66e145e925ad444902df2eeb}\label{struct_r_c_c___type_def_a972e8b4d66e145e925ad444902df2eeb}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!APB1RSTR@{APB1RSTR}}
+\index{APB1RSTR@{APB1RSTR}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{APB1RSTR}{APB1RSTR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+APB1\+RSTR}
+
+
+
+Advanced Peripheral Bus 1 Reset Register offset\+: 0x1C 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00064}{64}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_ac1c9e6c6cb134a4e31912a688ba2e334}\label{struct_r_c_c___type_def_ac1c9e6c6cb134a4e31912a688ba2e334}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!APB2ENR@{APB2ENR}}
+\index{APB2ENR@{APB2ENR}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{APB2ENR}{APB2ENR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+APB2\+ENR}
+
+
+
+Advanced Peripheral Bus 2 Enable Register offset\+: 0x2C 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00072}{72}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_afc8822cf3c18e588789f6710d14b95e1}\label{struct_r_c_c___type_def_afc8822cf3c18e588789f6710d14b95e1}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!APB2RSTR@{APB2RSTR}}
+\index{APB2RSTR@{APB2RSTR}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{APB2RSTR}{APB2RSTR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+APB2\+RSTR}
+
+
+
+Advanced Peripheral Bus 2 Reset Register offset\+: 0x18 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00063}{63}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_a71cbe86824c41bc40c20bbdb5df0f85a}\label{struct_r_c_c___type_def_a71cbe86824c41bc40c20bbdb5df0f85a}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!BDCR@{BDCR}}
+\index{BDCR@{BDCR}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{BDCR}{BDCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+BDCR}
+
+
+
+Backup Domain Control Register offset\+: 0x34 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00076}{76}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_a0e0039d00dcd0d6d43d08e052033cda2}\label{struct_r_c_c___type_def_a0e0039d00dcd0d6d43d08e052033cda2}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!CFGR@{CFGR}}
+\index{CFGR@{CFGR}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CFGR}{CFGR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+CFGR}
+
+
+
+Configuration Register offset\+: 0x04 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00058}{58}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_a01ccb44dd0c80c99ee8c2fe759c26f0d}\label{struct_r_c_c___type_def_a01ccb44dd0c80c99ee8c2fe759c26f0d}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!CFGR2@{CFGR2}}
+\index{CFGR2@{CFGR2}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CFGR2}{CFGR2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+CFGR2}
+
+
+
+System Configuration Register offset\+: 0x40 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00079}{79}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_aa5979dfc45c9131b4b50a5a560beb1cd}\label{struct_r_c_c___type_def_aa5979dfc45c9131b4b50a5a560beb1cd}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!CIR@{CIR}}
+\index{CIR@{CIR}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CIR}{CIR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+CIR}
+
+
+
+Clock Interrupt Register offset\+: 0x08 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00059}{59}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_ac9fcbf5f174ae0e2b07361baadd07462}\label{struct_r_c_c___type_def_ac9fcbf5f174ae0e2b07361baadd07462}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!CR@{CR}}
+\index{CR@{CR}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CR}{CR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+CR}
+
+
+
+Control Register offset\+: 0x00 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00057}{57}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_afb2e12c8deffa12eee48e09fd3521cc8}\label{struct_r_c_c___type_def_afb2e12c8deffa12eee48e09fd3521cc8}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!CSR@{CSR}}
+\index{CSR@{CSR}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{CSR}{CSR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+CSR}
+
+
+
+Control Status Register offset\+: 0x38 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00077}{77}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_ae3bb006eeabe3890a86303c33997f177}\label{struct_r_c_c___type_def_ae3bb006eeabe3890a86303c33997f177}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!HSEDLY@{HSEDLY}}
+\index{HSEDLY@{HSEDLY}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{HSEDLY}{HSEDLY}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+HSEDLY}
+
+
+
+HSE delay register offset\+: 0x84 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00084}{84}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_a0560ef1adc22cdf37e4d72556b616ced}\label{struct_r_c_c___type_def_a0560ef1adc22cdf37e4d72556b616ced}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!HSIDLY@{HSIDLY}}
+\index{HSIDLY@{HSIDLY}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{HSIDLY}{HSIDLY}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+HSIDLY}
+
+
+
+HSI delay register offset\+: 0x80 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00083}{83}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_a4604c0c4df24409485933cb3452285df}\label{struct_r_c_c___type_def_a4604c0c4df24409485933cb3452285df}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!ICSCR@{ICSCR}}
+\index{ICSCR@{ICSCR}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{ICSCR}{ICSCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+ICSCR}
+
+
+
+Internal clock source calibration register offset\+: 0x44 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00080}{80}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_a6408f91c8efc075e7b5c203b2d52678c}\label{struct_r_c_c___type_def_a6408f91c8efc075e7b5c203b2d52678c}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!PLLCFGR@{PLLCFGR}}
+\index{PLLCFGR@{PLLCFGR}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{PLLCFGR}{PLLCFGR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+PLLCFGR}
+
+
+
+PLL configures registers offset\+: 0x48 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00081}{81}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_a2acab856d406f445daffb510fc61c297}\label{struct_r_c_c___type_def_a2acab856d406f445daffb510fc61c297}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!PLLDLY@{PLLDLY}}
+\index{PLLDLY@{PLLDLY}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{PLLDLY}{PLLDLY}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+PLLDLY}
+
+
+
+PLL delay register offset\+: 0x88 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00085}{85}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_ac2a07bcd3fd5008200c47c34714a364b}\label{struct_r_c_c___type_def_ac2a07bcd3fd5008200c47c34714a364b}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!Reserved1@{Reserved1}}
+\index{Reserved1@{Reserved1}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{Reserved1}{Reserved1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+Reserved1\mbox{[}13\mbox{]}}
+
+
+
+Reserved space 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00082}{82}} 行定义.
+
+\mbox{\Hypertarget{struct_r_c_c___type_def_ab90e027e6cfe2a1fd12c20dcf04b93d3}\label{struct_r_c_c___type_def_ab90e027e6cfe2a1fd12c20dcf04b93d3}} 
+\index{RCC\_TypeDef@{RCC\_TypeDef}!SYSCFGR@{SYSCFGR}}
+\index{SYSCFGR@{SYSCFGR}!RCC\_TypeDef@{RCC\_TypeDef}}
+\doxysubsubsection{\texorpdfstring{SYSCFGR}{SYSCFGR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__armv8mbl_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{types_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} RCC\+\_\+\+Type\+Def\+::\+SYSCFGR}
+
+
+
+System Configuration Register offset\+: 0x3C 
+
+
+
+在文件 \mbox{\hyperlink{reg__rcc_8h_source}{reg\+\_\+rcc.\+h}} 第 \mbox{\hyperlink{reg__rcc_8h_source_l00078}{78}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/\+MM\+\_\+\+Device/\+MM32\+F327x/\+Include/\mbox{\hyperlink{reg__rcc_8h}{reg\+\_\+rcc.\+h}}\end{DoxyCompactItemize}
